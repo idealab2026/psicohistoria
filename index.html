@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#060b11"><meta name="color-scheme" content="dark">
+<meta name="description" content="Psicohistoria · Laboratorio público de IDEA LAB para el estudio de fenómenos sociales, escenarios y pronósticos sometidos a verificación.">
+<meta property="og:title" content="Psicohistoria | IDEA LAB">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg"><link rel="stylesheet" href="./styles.css">
+<title>Psicohistoria · IDEA LAB</title>
+
+</head>
+<body>
+<div class="ambient" aria-hidden="true"></div>
+<div class="shell">
+  <header class="header">
+    <a class="corporate-link" href="https://idealab2026.github.io/" aria-label="Ir a IDEA LAB"><img src="./favicon.svg" width="32" height="32" alt=""><span>IDEA LAB</span></a>
+    <div class="header-mid">PSICOHISTORIA <span class="version">LAB PÚBLICO · v0.4</span></div>
+    <button id="refresh" class="refresh" type="button" aria-label="Actualizar el registro público">↻ <span>Actualizar</span></button>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <div class="eyebrow">LABORATORIO CIENTÍFICO <span class="small-dot"></span> INVESTIGACIÓN EN CURSO</div>
+        <h1 id="hero-title">PSICOHISTORIA</h1>
+        <p class="hero-lead">¿Podemos anticipar fenómenos sociales? Investigación, hipótesis y evaluación separadas de las afirmaciones que aún requieren demostración.</p>
+        <div class="pills"><span class="pill"><i class="signal"></i> DATOS PÚBLICOS DE DEMOSTRACIÓN</span><span class="pill subdued" id="as-of">Sincronizando conjunto sintético…</span></div>
+      </div>
+      <svg class="orbital" viewBox="0 0 300 300" aria-hidden="true" focusable="false">
+        <defs><radialGradient id="glow"><stop stop-color="#92b1bb" stop-opacity=".28"/><stop offset="1" stop-color="#92b1bb" stop-opacity=".015"/></radialGradient><pattern id="pts" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1" fill="#bfd3d9" opacity=".48"/></pattern><clipPath id="sphere"><circle cx="150" cy="150" r="95"/></clipPath></defs>
+        <circle cx="150" cy="150" r="135" fill="none" stroke="#3a5563" stroke-width=".8" stroke-dasharray="1 8"/><circle cx="150" cy="150" r="115" fill="none" stroke="#3a5563" stroke-width=".8" stroke-dasharray="1 7"/>
+        <circle cx="150" cy="150" r="95" fill="url(#glow)" stroke="#7695a5" stroke-opacity=".4"/>
+        <g clip-path="url(#sphere)"><circle cx="150" cy="150" r="95" fill="url(#pts)"/></g>
+        <g fill="none" stroke="#a9c9d2" stroke-width="1"><ellipse cx="150" cy="150" rx="138" ry="49" transform="rotate(-30 150 150)" opacity=".8"/><ellipse cx="150" cy="150" rx="136" ry="48" transform="rotate(58 150 150)" opacity=".36"/></g><circle cx="262" cy="80" r="2.7" fill="#e9f5fa"/><circle cx="38" cy="217" r="3" fill="#80e7f0"/>
+      </svg>
+    </section>
+    <div class="sync" id="sync-status" role="status" aria-live="polite">Comprobando procedencia del registro público…</div>
+    <section class="metrics" aria-label="Indicadores generales">
+      <article class="metric"><span>ESTUDIOS METODOLÓGICOS</span><strong id="count-studies">—</strong><small>Protocolos sintéticos</small></article>
+      <article class="metric"><span>MODELOS DE REFERENCIA</span><strong id="count-models">—</strong><small>Ejemplos comparables</small></article>
+      <article class="metric"><span>INSCRIPCIONES HISTÓRICAS</span><strong id="count-predictions">0</strong><small>Sin reemitir ni recalcular</small></article>
+      <article class="metric"><span>EVALUACIONES PROSPECTIVAS</span><strong id="count-evaluated">0</strong><small>No acreditadas</small></article>
+    </section>
+    <nav class="primary-tabs" aria-label="Secciones principales">
+      <button data-section="brief" type="button">Inicio</button>
+      <button data-section="predictions" type="button">Predicciones</button>
+      <button data-section="research" type="button">Investigación</button>
+      <button data-section="create" type="button">Crear</button>
+    </nav>
+    <nav class="subtabs" id="subtabs" aria-label="Vistas de la sección" hidden></nav>
+    <section id="app" aria-live="polite" aria-label="Contenido del laboratorio">
+      <div class="panel">Preparando el laboratorio de investigación…</div>
+    </section>
+  </main>
+  <footer class="footer">
+    <span>IDEA LAB · Psicohistoria · Evaluación científica independiente</span>
+    <div><a href="https://idealab2026.github.io/">Web corporativa</a><span class="sep">·</span> Versión pública experimental</div>
+  </footer>
+</div>
+<script type="module" src="./src/site.mjs?v=c5f8bb86bc2c"></script>
+</body></html>

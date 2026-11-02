@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "data_class": "synthetic",
+    "version": "0.1.0",
+    "publication": "Demostración metodológica; no existen predicciones reales en este dataset",
+    "data_asof": "2026-10-31"
+  },
+  "studies": [
+    {
+      "id": "E-01",
+      "title": "Cambio de un indicador colectivo",
+      "domain": "Sociedad",
+      "status": "Exploración",
+      "question": "¿Mejora una señal anticipada la clasificación de un cambio definido ex ante?",
+      "horizon": "3 periodos ficticios",
+      "method": "Regresión probabilística ilustrativa frente a tasa base",
+      "limits": "Muestra inventada insuficiente para inferir capacidad predictiva real.",
+      "baseline": 0.5,
+      "issued": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6"
+      ],
+      "probabilities": [
+        0.2,
+        0.6,
+        0.4,
+        0.8,
+        0.3,
+        0.7
+      ],
+      "outcomes": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "E-02",
+      "title": "Persistencia de presión sistémica",
+      "domain": "Riesgo",
+      "status": "Protocolo",
+      "question": "¿Aporta información un índice estructural respecto a la persistencia simple?",
+      "horizon": "1 periodo ficticio",
+      "method": "Índice sintético contra frecuencia de entrenamiento",
+      "limits": "Sin fuentes temporales oficiales; no se permite inferencia fuera de la demo.",
+      "baseline": 0.42,
+      "issued": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6"
+      ],
+      "probabilities": [
+        0.3,
+        0.5,
+        0.7,
+        0.4,
+        0.6,
+        0.2
+      ],
+      "outcomes": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "E-03",
+      "title": "Variación de cooperación hipotética",
+      "domain": "Instituciones",
+      "status": "Exploración",
+      "question": "¿Cómo cambian las trayectorias bajo tres mecanismos alternativos?",
+      "horizon": "2 periodos ficticios",
+      "method": "Árbol de escenarios con probabilidades impuestas",
+      "limits": "Las probabilidades son supuestos narrativos; no están estimadas.",
+      "baseline": 0.5,
+      "issued": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6"
+      ],
+      "probabilities": [
+        0.4,
+        0.55,
+        0.45,
+        0.65,
+        0.5,
+        0.35
+      ],
+      "outcomes": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "branches": [
+    {
+      "id": "B-01",
+      "name": "Continuidad",
+      "weight": 0.55,
+      "mechanism": "Los incentivos agregados se mantienen en una trayectoria estable.",
+      "watch": "Cambios persistentes de indicadores y ausencia de rupturas definidas."
+    },
+    {
+      "id": "B-02",
+      "name": "Adaptación",
+      "weight": 0.3,
+      "mechanism": "Las interacciones ajustan gradualmente el equilibrio hipotético.",
+      "watch": "Desviaciones coordinadas con efecto acumulativo."
+    },
+    {
+      "id": "B-03",
+      "name": "Ruptura",
+      "weight": 0.15,
+      "mechanism": "Una perturbación ficticia produce un cambio de régimen.",
+      "watch": "Señales previamente registradas de discontinuidad."
+    }
+  ],
+  "programs": [
+    {
+      "id": "H1",
+      "name": "Estructuras históricas",
+      "summary": "Contrastar patrones estructurales entre periodos sin confundir asociación con causa.",
+      "state": "Investigación exploratoria",
+      "protocol": "Hipótesis, población y ventana fijadas antes de evaluar."
+    },
+    {
+      "id": "P1",
+      "name": "Forecasting probabilístico",
+      "summary": "Comparar pronósticos calibrados con frecuencias base y modelos sencillos.",
+      "state": "Protocolo sintético",
+      "protocol": "Origen, horizonte, vintage y regla de puntuación previos al resultado."
+    },
+    {
+      "id": "A1",
+      "name": "Simulación multiagente",
+      "summary": "Estudiar cómo reglas locales hipotéticas pueden generar dinámicas agregadas.",
+      "state": "Diseño en evaluación",
+      "protocol": "Reglas publicadas, semillas reproducibles y sensibilidad paramétrica."
+    },
+    {
+      "id": "M1",
+      "name": "Metodología y contraste",
+      "summary": "Comprobar cobertura, incertidumbre, disponibilidad temporal y robustez.",
+      "state": "Control permanente",
+      "protocol": "Baselines, controles negativos, validación temporal y trazabilidad."
+    }
+  ],
+  "milestones": [
+    {
+      "id": "K-01",
+      "group": "H1",
+      "title": "Definir la taxonomía de eventos",
+      "state": "verificado",
+      "evidence": "Contrato público de demostración; no valida predicciones."
+    },
+    {
+      "id": "K-02",
+      "group": "P1",
+      "title": "Calcular Brier y referencia constante",
+      "state": "verificado",
+      "evidence": "Pruebas unitarias sobre la muestra sintética."
+    },
+    {
+      "id": "K-03",
+      "group": "P1",
+      "title": "Obtener vintages de fuentes oficiales",
+      "state": "pendiente",
+      "evidence": "Revisión de procedencia, disponibilidad y licencia no concluida."
+    },
+    {
+      "id": "K-04",
+      "group": "A1",
+      "title": "Registrar experimentos multiagente reproducibles",
+      "state": "pendiente",
+      "evidence": "Faltan definiciones públicas de agentes y comprobaciones de sensibilidad."
+    },
+    {
+      "id": "K-05",
+      "group": "M1",
+      "title": "Auditar validación fuera de muestra",
+      "state": "pendiente",
+      "evidence": "No hay predicciones reales verificadas que puntuar."
+    },
+    {
+      "id": "K-06",
+      "group": "M1",
+      "title": "Publicar resultados prospectivos auditados",
+      "state": "bloqueado",
+      "evidence": "Requiere fechas anteriores al desenlace y resolución independiente."
+    }
+  ],
+  "ideas": [
+    {
+      "id": "I-01",
+      "title": "Revisión de incentivos",
+      "area": "Instituciones",
+      "links": [
+        "H1",
+        "A1"
+      ],
+      "question": "¿Qué mecanismos agregados cambiarían bajo incentivos hipotéticos alternativos?"
+    },
+    {
+      "id": "I-02",
+      "title": "Señales antecedentes",
+      "area": "Predicción",
+      "links": [
+        "P1",
+        "M1"
+      ],
+      "question": "¿Mejoran señales observables un baseline estable con datos point-in-time?"
+    },
+    {
+      "id": "I-03",
+      "title": "Interdependencia colectiva",
+      "area": "Simulación",
+      "links": [
+        "A1",
+        "P1"
+      ],
+      "question": "¿Qué patrones sobreviven a cambios en interacción y supuestos?"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+name: Auditoria y publicacion institucional
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages-institutional
+  cancel-in-progress: true
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verify institutional commit identity
+        run: |
+          git log --all --format='%H|%an|%ae|%cn|%ce' | while IFS='|' read -r sha author email committer commit_email; do
+            # GitHub synthesizes a merge commit for PR checks; audit every real commit, not that generated commit.
+            if [ "$GITHUB_EVENT_NAME" = "pull_request" ] && [ "$sha" = "$GITHUB_SHA" ]; then
+              continue
+            fi
+            test "$author" = "Idea Lab"
+            case "$email" in *+idealab2026@users.noreply.github.com) ;; *) exit 1 ;; esac
+            # GitHub creates the committer identity for website squash merges.
+            # Never waive or broaden the strict institutional AUTHOR check.
+            if [ "$committer" = "GitHub" ] && [ "$commit_email" = "noreply@github.com" ]; then
+              continue
+            fi
+            test "$committer" = "Idea Lab"
+            case "$commit_email" in *+idealab2026@users.noreply.github.com) ;; *) exit 1 ;; esac
+          done
+      - name: Check publication boundary
+        env:
+          IDEALAB_PUBLIC_DENY_TERMS_JSON: ${{ secrets.IDEALAB_PUBLIC_DENY_TERMS_JSON }}
+          IDEALAB_REQUIRE_PRIVATE_DENY_TERMS: 'true'
+        run: python3 scripts/audit_public.py
+      - name: Unit tests
+        run: |
+          node --test tests/*.test.mjs
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Build allowlisted static package
+        run: |
+          mkdir -p dist/src dist/data
+          cp index.html styles.css logo.svg favicon.svg dist/
+          cp src/scientific-archive.mjs src/site.mjs src/visuals.mjs src/neural.mjs src/markov-svg.mjs src/lab-renderers.mjs src/metrics.mjs src/research.mjs dist/src/
+          cp data/scientific-workbook.json data/demo.json data/research.json dist/data/
+          test "$(find dist -type f | wc -l)" -eq 15
+      - uses: actions/upload-artifact@v4
+        with:
+          name: audited-site
+          path: dist/
+          retention-days: 1
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: quality
+    runs-on: ubuntu-latest
+    environment: github-pages
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: audited-site
+          path: dist/
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist/
+      - uses: actions/deploy-pages@v4

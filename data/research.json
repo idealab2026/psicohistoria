@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "publication_date": "2026-10-31",
+  "class": "public_research_program",
+  "policy": "Programa científico institucional. No contiene datos identificadores, pronósticos emitidos, modelos entrenados ni resultados prospectivos.",
+  "forecast_issued": 0,
+  "prospective_results_verified": 0,
+  "programs": [
+    {
+      "id": "GEO-01",
+      "title": "Conflictos y violencia colectiva",
+      "domain": "Geopolítica",
+      "stage": "protocolo",
+      "question": "¿Mejoran las señales estructurales una referencia histórica al anticipar cambios de violencia colectiva?",
+      "outcome": "Evento país-año definido antes de observar el periodo objetivo",
+      "baseline": "Frecuencia histórica y persistencia",
+      "next_gate": "Confirmar edición, licencia, cobertura territorial y disponibilidad puntual de datos antes de evaluar o publicar puntuaciones.",
+      "source": {
+        "name": "UCDP · datos anuales y de eventos",
+        "url": "https://ucdp.uu.se/downloads/"
+      },
+      "public_evidence": "Fuente primaria identificada, sin evidencia prospectiva propia",
+      "skill_demonstrated": false
+    },
+    {
+      "id": "MAC-01",
+      "title": "Cambios macroeconómicos",
+      "domain": "Macroeconomía",
+      "stage": "fuente_identificada",
+      "question": "¿Las señales publicadas en tiempo real mejoran la anticipación de cambios del desempleo?",
+      "outcome": "Variación futura del desempleo a horizonte predefinido",
+      "baseline": "Persistencia y frecuencia incondicional",
+      "next_gate": "Reconstruir vintages disponibles al momento de predicción, sin sustituirlos por revisiones posteriores.",
+      "source": {
+        "name": "Federal Reserve Bank of Philadelphia · Real-Time Data",
+        "url": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/real-time-data-set-for-macroeconomists"
+      },
+      "public_evidence": "Serie histórica oficial identificada; validación temporal no publicada",
+      "skill_demonstrated": false
+    },
+    {
+      "id": "FIN-01",
+      "title": "Riesgo de mercado y pérdidas",
+      "domain": "Mercados",
+      "stage": "propuesta",
+      "question": "¿Una probabilidad de caída a plazo fijo mejora la referencia después de ajustar calendario y dividendos?",
+      "outcome": "Pérdida o caída sobre un horizonte fijado ex ante",
+      "baseline": "Frecuencia histórica y volatilidad simple",
+      "next_gate": "Fijar instrumento, datos aptos para redistribución, ajustes corporativos, fechas y costes; excluir cuentas particulares.",
+      "source": {
+        "name": "SEC · información pública de emisores",
+        "url": "https://www.sec.gov/edgar/search/"
+      },
+      "public_evidence": "Pregunta investigable; no hay resultados de inversión importados",
+      "skill_demonstrated": false
+    },
+    {
+      "id": "SOC-01",
+      "title": "Comportamiento social",
+      "domain": "Sociedad",
+      "stage": "fuente_identificada",
+      "question": "¿Puede anticiparse una respuesta social agregada sin confundir cambios en cuestionarios con cambios sociales?",
+      "outcome": "Proporción de una respuesta en una encuesta con ítem comparable",
+      "baseline": "Ola anterior o media estacional",
+      "next_gate": "Acreditar cuestionario, muestreo, revisión, trabajo de campo, incertidumbre y publicación inicial.",
+      "source": {
+        "name": "U.S. Census Bureau · HTOPS",
+        "url": "https://www.census.gov/programs-surveys/htops.html"
+      },
+      "public_evidence": "Instrumento oficial identificado; sin evaluación independiente",
+      "skill_demonstrated": false
+    },
+    {
+      "id": "DEM-01",
+      "title": "Demografía y población",
+      "domain": "Demografía",
+      "stage": "protocolo",
+      "question": "¿Qué error tiene una proyección con un universo, horizonte y definición poblacional comparables?",
+      "outcome": "Distancia entre proyección anterior y dato posterior bajo definición común",
+      "baseline": "Proyección demográfica anterior",
+      "next_gate": "Alinear universos de población residente y de facto, geografía y fecha de edición, y documentar revisiones.",
+      "source": {
+        "name": "U.S. Census Bureau · Population Projections",
+        "url": "https://www.census.gov/programs-surveys/popproj.html"
+      },
+      "public_evidence": "Ediciones oficiales identificadas; error prospectivo no acreditado",
+      "skill_demonstrated": false
+    },
+    {
+      "id": "SIS-01",
+      "title": "Riesgos naturales",
+      "domain": "Riesgo sistémico",
+      "stage": "fuente_identificada",
+      "question": "¿Una previsión condicionada de réplicas mejora a la referencia en una ventana futura?",
+      "outcome": "Réplicas tras un sismo, por región, magnitud y ventana",
+      "baseline": "Referencia previamente definida",
+      "next_gate": "Capturar la emisión antes de comenzar la ventana y fijar geometría, catálogos y versiones del proveedor.",
+      "source": {
+        "name": "USGS · Operational Aftershock Forecasting",
+        "url": "https://www.usgs.gov/software/operational-aftershock-forecasting"
+      },
+      "public_evidence": "Producto oficial documentado; contraste propio todavía pendiente",
+      "skill_demonstrated": false
+    },
+    {
+      "id": "TEC-01",
+      "title": "Transformación tecnológica",
+      "domain": "Tecnología",
+      "stage": "fuente_identificada",
+      "question": "¿Qué capacidad existe para anticipar adopción tecnológica en encuestas empresariales comparables?",
+      "outcome": "Proporción de empresas que declaran adopción bajo instrumento fijo",
+      "baseline": "Última ola comparable",
+      "next_gate": "Versionar suplemento, preguntas, fechas de campo y primera publicación; auditar cambios de instrumento.",
+      "source": {
+        "name": "U.S. Census Bureau · Business Trends and Outlook Survey",
+        "url": "https://www.census.gov/hfp/btos/"
+      },
+      "public_evidence": "Fuente pública identificada, todavía sin puntuación prospectiva",
+      "skill_demonstrated": false
+    }
+  ]
+}
