@@ -21,7 +21,8 @@
         "validation": "No presentar aciertos, probabilidades o certificaciones sin sus datos, fechas y recibos.",
         "limitations": "Programa de largo plazo. La publicación actual no demuestra capacidad prospectiva."
       },
-      "liveOperationalVerification": false
+      "liveOperationalVerification": false,
+      "stageNote": "Programa de investigación; no se acredita una capacidad prospectiva en producción."
     },
     {
       "id": "track-structural",
@@ -37,7 +38,8 @@
         "validation": "La asociación estadística no acredita mecanismos causales transportables.",
         "limitations": "Hipótesis estructurales en investigación; no son leyes históricas validadas."
       },
-      "liveOperationalVerification": false
+      "liveOperationalVerification": false,
+      "stageNote": "Enfoque metodológico documentado; requiere contrastación independiente antes de atribuir resultados."
     },
     {
       "id": "track-forecast",
@@ -53,7 +55,8 @@
         "validation": "Evitar fuga temporal y escoger modelos después de observar el conjunto de prueba.",
         "limitations": "La existencia de backtests no prueba acierto prospectivo."
       },
-      "liveOperationalVerification": false
+      "liveOperationalVerification": false,
+      "stageNote": "Enfoque metodológico documentado; requiere contrastación independiente antes de atribuir resultados."
     },
     {
       "id": "track-agents",
@@ -69,7 +72,8 @@
         "validation": "Un mundo simulado no implica que se haya predicho una sociedad real.",
         "limitations": "Experimentos de mecanismos sin calibración prospectiva acreditada."
       },
-      "liveOperationalVerification": false
+      "liveOperationalVerification": false,
+      "stageNote": "Enfoque metodológico documentado; requiere contrastación independiente antes de atribuir resultados."
     },
     {
       "id": "track-meta",
@@ -85,7 +89,8 @@
         "validation": "La evaluación sintética o retrospectiva no puede convertirse en emisión histórica certificada.",
         "limitations": "Programa metodológico de validación; sus controles no sustituyen fuentes firmadas."
       },
-      "liveOperationalVerification": false
+      "liveOperationalVerification": false,
+      "stageNote": "Enfoque metodológico documentado; requiere contrastación independiente antes de atribuir resultados."
     },
     {
       "id": "application-agenda",
@@ -101,7 +106,8 @@
         "validation": "Una agenda pública no demuestra quién asistió ni qué se decidió.",
         "limitations": "Diseño en fase exploratoria, sin pronósticos de decisiones demostrados."
       },
-      "liveOperationalVerification": false
+      "liveOperationalVerification": false,
+      "stageNote": "Aplicación exploratoria sin actividad predictiva o económica verificada."
     },
     {
       "id": "application-transmission",
@@ -117,7 +123,8 @@
         "validation": "No trasladar probabilidades geopolíticas directamente a señales operativas.",
         "limitations": "Hipótesis de investigación; no atribuye operaciones ni rentabilidad."
       },
-      "liveOperationalVerification": false
+      "liveOperationalVerification": false,
+      "stageNote": "Aplicación exploratoria sin actividad predictiva o económica verificada."
     },
     {
       "id": "application-radar",
@@ -133,7 +140,8 @@
         "validation": "No sustituir probabilidades no validadas por puntuaciones certificadas.",
         "limitations": "Concepto de producto sin clientes o ingresos acreditados."
       },
-      "liveOperationalVerification": false
+      "liveOperationalVerification": false,
+      "stageNote": "Aplicación exploratoria sin actividad predictiva o económica verificada."
     },
     {
       "id": "lab-public",
@@ -143,7 +151,8 @@
       "subtitle": "Interfaz experimental independiente",
       "summary": "Ofrecer una puerta de entrada comprensible a la investigación y sus límites.",
       "documentation": null,
-      "liveOperationalVerification": false
+      "liveOperationalVerification": false,
+      "stageNote": "Sitio experimental independiente; no sustituye por sí solo al sistema de investigación anterior."
     }
   ],
   "relations": [
