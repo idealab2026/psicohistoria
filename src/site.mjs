@@ -1,4 +1,5 @@
 import {verifyScientificArchive,scientificArchiveTable} from "./scientific-archive.mjs";
+import {loadProjectCatalog} from "./project-catalog.mjs";
 import {verify,score,calibration} from "./metrics.mjs";
 import {verifyResearch,parseForecastCSV,evaluateLocalForecast,CSV_TEMPLATE} from "./research.mjs";
 import {domainGraph} from "./visuals.mjs";
@@ -11,12 +12,12 @@ const formatPct=n=>typeof n==="number"&&Number.isFinite(n)?format(n*100)+" %":"�
 const groupViews={
  brief:[["brief","Inicio"]],
  predictions:[["futures","Explorador"],["shadow2027","Riesgos 2027"]],
- research:[["archive","Archivo científico"],["overview","Mapa del proyecto"],["registry","Líneas y fuentes"],["science","Evidencia"],["operations","Registro"],["roadmap","Hitos"]],
+ research:[["projects","Programa V1–V4"],["archive","Archivo científico"],["overview","Mapa del proyecto"],["registry","Líneas y fuentes"],["science","Evidencia"],["operations","Registro"],["roadmap","Hitos"]],
  create:[["ideas","Ideas y sinergias"],["video","Estudio audiovisual"]]
 };
 const viewIds=new Set(Object.values(groupViews).flat().map(x=>x[0]));
 const viewToGroup=Object.fromEntries(Object.entries(groupViews).flatMap(([k,items])=>items.map(([id])=>[id,k])));
-const state={archive:null,archiveTable:0,archiveQuery:"",archivePage:0,data:null,research:null,registryFilter:"todos",registryOutput:null,view:viewIds.has(new URLSearchParams(location.search).get("view"))?new URLSearchParams(location.search).get("view"):"brief",scenario:null,program:null,study:null,filter:"todos",ideas:[],flowState:"00",markovOrigin:2020,markovHorizon:6,markovQuestion:"atleast25",markovSelection:null,videoText:"",busy:false};
+const state={projectCatalog:null,projectId:"lab-core",archive:null,archiveTable:0,archiveQuery:"",archivePage:0,data:null,research:null,registryFilter:"todos",registryOutput:null,view:viewIds.has(new URLSearchParams(location.search).get("view"))?new URLSearchParams(location.search).get("view"):"brief",scenario:null,program:null,study:null,filter:"todos",ideas:[],flowState:"00",markovOrigin:2020,markovHorizon:6,markovQuestion:"atleast25",markovSelection:null,videoText:"",busy:false};
 const section=(eyebrow,title,description)=>'<header class="section-head"><div class="eyebrow">'+safe(eyebrow)+'</div><h2>'+safe(title)+'</h2><p>'+safe(description)+'</p></header>';
 const box=(contents,extra="")=>'<article class="panel '+extra+'">'+contents+'</article>';
 const tag=(t,cls="")=>'<span class="tag '+cls+'">'+safe(t)+'</span>';
@@ -128,10 +129,72 @@ function renderRoadmap(){
  '<div class="stack" style="margin-top:14px">'+ms.map(m=>box('<div class="item-row wrap"><div><span class="tiny">'+safe(m.id)+' · '+safe(m.group)+'</span><h3>'+safe(m.title)+'</h3></div>'+tag(labels[m.state]||m.state,m.state==="bloqueado"?"alert":"")+'</div><p>'+safe(m.evidence)+'</p>')).join("")+'</div>'+
  msg("Los estados de esta hoja de ruta describen únicamente la nueva aplicación pública y su demostración sintética.");
 }
+function renderProjectCatalog(){
+ const c=state.projectCatalog;
+ if(!c||c.status!=="PUBLIC_INSTITUTIONAL_PROJECTION")
+  return msg("Catálogo institucional no disponible. No se muestran proyectos inventados.","alert");
+ const selected=c.projects.find(p=>p.id===state.projectId)||c.projects[0];
+ const byId=new Map(c.projects.map(p=>[p.id,p]));
+ const sections=[
+  ["Programa",c.projects.filter(p=>p.category==="Programa")],
+  ["Cuatro vertientes",c.projects.filter(p=>p.category==="Vertiente")],
+  ["Tres aplicaciones",c.projects.filter(p=>p.category==="Aplicación")],
+  ["Web experimental",c.projects.filter(p=>p.category==="Plataforma")]
+ ];
+ const nav=sections.map(([label,items])=>
+  '<div class="catalogue-nav-group"><h3>'+safe(label)+'</h3>'+
+  items.map(p=>button(p.name,"project-select",p.id,
+    p.id===selected.id?"catalogue-project active":"catalogue-project")).join("")+
+  '</div>').join("");
+ const doc=selected.documentation;
+ const summary='<header class="catalogue-detail-head"><div>'+tag(selected.category)+
+  '<h3>'+safe(selected.name)+'</h3><p>'+safe(selected.subtitle)+'</p></div>'+
+  '<span class="catalogue-status">Ficha metodológica</span></header>'+
+  '<p>'+safe(selected.summary)+'</p>';
+ const explanation=doc?'<div class="catalogue-documentation">'+[
+  ["Objetivo y enfoque",doc.vision],
+  ["Ámbito de investigación",doc.scope],
+  ["Método",doc.method],
+  ["Validación necesaria",doc.validation],
+  ["Límites y precauciones",doc.limitations]
+ ].map(([h,v])=>'<div><strong>'+safe(h)+'</strong><p>'+safe(v)+'</p></div>').join("")+'</div>':
+ '<p class="tiny">La plataforma pública tiene una ficha de alcance, pero no es un motor científico validado.</p>';
+ const links=c.relations.filter(r=>r.source===selected.id||r.target===selected.id);
+ const connections='<details class="catalogue-details"><summary>Relaciones de esta línea ('+
+  links.length+')</summary><div class="catalogue-link-list">'+links.map(r=>{
+    const peer=r.source===selected.id?r.target:r.source;
+    const target=byId.get(peer);
+    const label=target?.name||c.externalReferences.find(x=>x.id===peer)?.name||"Referencia externa";
+    return '<div class="catalogue-link">'+tag(r.type.replaceAll("_"," ").toLowerCase())+
+     (target?button(label,"project-select",target.id,"catalogue-peer"):
+       '<strong>'+safe(label)+' · sin integración operativa</strong>')+
+      '<p>'+safe(r.description)+'</p></div>';
+  }).join("")+'</div></details>';
+ const graph='<details class="catalogue-details"><summary>Ver mapa completo de las '+
+  c.relations.length+' relaciones</summary><div class="catalogue-link-list">'+c.relations.map(r=>{
+   const from=byId.get(r.source)?.name||"Referencia";
+   const to=byId.get(r.target)?.name||c.externalReferences.find(x=>x.id===r.target)?.name||"Referencia externa";
+   return '<div class="catalogue-link"><span><strong>'+safe(from)+'</strong> · '+
+    safe(r.type.replaceAll("_"," ").toLowerCase())+' · <strong>'+safe(to)+
+    '</strong></span><p>'+safe(r.description)+'</p></div>';
+  }).join("")+'</div></details>';
+ return section("CATÁLOGO · PATRIMONIO METODOLÓGICO","Ideas y aplicaciones",
+   "Cuatro vertientes científicas y tres aplicaciones. Fichas institucionales independientes; los estados históricos no certifican operación actual.")+
+  '<div class="catalogue-metrics" aria-label="Cobertura del catálogo"><span><strong>4</strong> vertientes</span>'+
+  '<span><strong>3</strong> aplicaciones</span><span><strong>9</strong> proyectos</span>'+
+  '<span><strong>14</strong> relaciones</span></div>'+
+  '<div class="catalogue-layout"><nav class="catalogue-nav" aria-label="Seleccionar línea">'+nav+
+  '</nav><article class="panel catalogue-detail" id="project-details">'+summary+explanation+
+  '<div class="catalogue-caution">'+safe(selected.stageNote)+'</div>'+connections+
+  '</article></div>'+graph+
+  msg("Catálogo documental depurado: no publica identificadores originales, rutas internas ni evidencias privadas. Los resultados sintéticos y las inscripciones históricas se distinguen de predicciones verificadas.");
+}
+function renderProjects(){return renderProjectCatalog();}
 function renderIdeas(){
  const d=state.data,items=[...d.ideas,...state.ideas];
  const mapping=Object.fromEntries(d.programs.map(p=>[p.id,p.name]));
- return section("CREAR · INVESTIGACIÓN","Ideas y sinergias","Visualiza las relaciones entre preguntas de investigación y líneas metodológicas. Puedes redactar una idea de trabajo en esta sesión sin enviarla a ningún servidor.")+
+ return renderProjectCatalog()+
+ section("IDEAS LOCALES","Borradores de esta sesión","Las siguientes tarjetas son ejemplos sintéticos o hipótesis creadas en tu navegador, no proyectos incorporados al programa histórico.")+
  '<div class="section-grid three">'+items.map(x=>box('<div class="item-row wrap"><span class="tiny">'+safe(x.id)+'</span>'+tag(x.area)+'</div><h3>'+safe(x.title)+'</h3><p>'+safe(x.question)+'</p><div class="button-group">'+x.links.map(id=>tag(mapping[id]||id)).join("")+'</div>')).join("")+'</div>'+
  section("PROPONER","Crear una hipótesis local","Esta herramienta funciona únicamente en memoria. Si recargas la página, los borradores se descartan.")+
  '<form id="idea-form" class="panel" autocomplete="off"><div class="section-grid"><label class="field">Nombre de la hipótesis<input name="title" required maxlength="110" placeholder="Título contrastable"></label><label class="field">Línea de investigación<select name="program">'+d.programs.map(p=>'<option value="'+safe(p.id)+'">'+safe(p.name)+'</option>').join("")+'</select></label></div><label class="field">Pregunta falsable<textarea name="question" maxlength="600" required placeholder="¿Qué observación permitiría contrastarla?"></textarea></label><div class="form-actions"><button class="action primary" type="submit">Añadir a esta sesión</button>'+button("Exportar borradores JSON","export-ideas","","ghost")+'</div></form>'+
@@ -182,7 +245,7 @@ function render(){
   const b=document.createElement("button");b.type="button";b.textContent=label;b.dataset.action="navigate";b.dataset.value=id;
   b.classList.toggle("active",state.view===id);sub.append(b);
  }
- const views={archive:renderArchive,brief:()=>button("Abrir archivo científico · 1.835 registros","navigate","archive")+renderBrief(),futures:renderFutures,shadow2027:renderShadow,overview:renderOverview,
+ const views={projects:renderProjects,archive:renderArchive,brief:()=>button("Abrir archivo científico · 1.835 registros","navigate","archive")+renderBrief(),futures:renderFutures,shadow2027:renderShadow,overview:renderOverview,
   science:renderScience,registry:renderResearchRegistry,operations:renderOperations,roadmap:renderRoadmap,ideas:renderIdeas,video:renderVideo};
  $("app").innerHTML=views[state.view]();
  updateChart();
@@ -198,12 +261,14 @@ function navigate(view){
 async function load(){
  if(state.busy)return;state.busy=true;$("refresh").disabled=true;$("sync-status").textContent="Validando el registro público…";
  try{
-  const [response,researchResponse,archiveResponse]=await Promise.all([fetch("./data/demo.json",{cache:"no-store"}),fetch("./data/research.json",{cache:"no-store"}),fetch("./data/scientific-workbook.json",{cache:"no-store"})]);
+  const [response,researchResponse,archiveResponse,projectCatalog]=await Promise.all([fetch("./data/demo.json",{cache:"no-store"}),fetch("./data/research.json",{cache:"no-store"}),fetch("./data/scientific-workbook.json",{cache:"no-store"}),loadProjectCatalog()]);
    if(!response.ok||!researchResponse.ok)throw new Error("Public sources unavailable");
    const [data,research]=await Promise.all([response.json(),researchResponse.json()]);
    verify(data);verifyResearch(research);state.research=research;
   if(!archiveResponse.ok)throw Error("Archivo científico no disponible");const archive=await archiveResponse.json();verifyScientificArchive(archive);state.archive=archive;
   for(const key of ["programs","milestones","ideas"])if(!Array.isArray(data[key]))throw new Error("Incomplete public catalogue");
+  state.projectCatalog=projectCatalog;
+  if(!projectCatalog.projects.some(p=>p.id===state.projectId))state.projectId=projectCatalog.projects[0].id;
   state.data=data;state.scenario=state.scenario||data.branches[0].id;state.program=state.program||data.programs[0].id;state.study=state.study||data.studies[0].id;
   $("count-studies").textContent=data.studies.length;$("count-models").textContent=data.programs.length;
   $("count-predictions").textContent="1177";$("count-evaluated").textContent="0";
@@ -278,6 +343,9 @@ $("app").addEventListener("click",async event=>{
  case "archive-search":state.archiveQuery=$("archive-query").value;state.archivePage=0;render();break;
  case "scenario":state.scenario=value;render();break;
  case "program":state.program=value;navigate("overview");break;
+ case "project-select":
+  if(state.projectCatalog?.projects.some(p=>p.id===value)){state.projectId=value;render();}
+  break;
  case "state-flow":state.flowState=value;render();break;
  case "markov-origin": {
     const y=Number(value);
