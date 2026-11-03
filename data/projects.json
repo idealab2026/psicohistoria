@@ -1,0 +1,318 @@
+{
+  "schema": "idealab.psico.ideas.v1",
+  "ok": true,
+  "status": "HISTORICAL_CATALOGUE_RECOVERED",
+  "capturedAt": "2026-11-03T19:07:30.317Z",
+  "notice": "Catálogo histórico recuperado. Los estados y siguientes pasos conservan su fecha de origen; no acreditan el estado operativo actual ni nuevas predicciones.",
+  "publicationScope": "SANITIZED_PUBLIC_HISTORICAL_SNAPSHOT_NOT_OPERATIVE_STATUS",
+  "currentOperationalStatusVerified": false,
+  "prospectiveForecastIssued": false,
+  "projects": [
+    {
+      "id": "prj-psicohistoria",
+      "name": "Psicohistoria",
+      "alias": "Investigación psicohistoria",
+      "parentId": "prj-idea-lab",
+      "area": "Investigación / ciencia",
+      "type": "Programa de investigación",
+      "status": "ACTIVO",
+      "priority": "MEDIA",
+      "summary": "Investigar regularidades y predicción probabilística de fenómenos colectivos mediante historia cuantitativa, estadística, simulación e IA.",
+      "docsStatus": "PARCIAL",
+      "nextAction": "Reconstruir releases históricas, auditar covariables socioeconómicas y congelar siguiente evaluación antes de ver más resultados.",
+      "updatedAt": "2026-10-16",
+      "documentation": {
+        "vision": "Estudiar una psicohistoria probabilística, falsable y sometida a evaluación fuera de muestra.",
+        "objective": "Medir capacidad de anticipación de procesos sociales colectivos; distinguir explicación, simulación y predicción.",
+        "scope": "V1 cliodinámica; V2 predicción probabilística; V3 agentes; V4 meta-lab inspirado en A Second Foundation.",
+        "currentState": "Motor de cuatro estados calculado y reproducido con UCDP 26.1; cinco comparadores y horizontes 1/3/5/10. Gráfico en integración; sin disponibilidad as-of ni capacidad prospectiva acreditadas.",
+        "milestones": "Reconstruir vintages y crosswalk socioeconómico; congelar un periodo nuevo y comparar también con persistencia.",
+        "rules": "Coste operativo cero y privacidad; no atribuir resultados no contrastados; evitar leakage temporal; distinguir resultados observados de simulados. Separar trayectoria agregada de historia, IP paramétrico de cobertura empírica y modelos de mecanismos sintéticos."
+      }
+    },
+    {
+      "id": "prj-psico-cliodinamica",
+      "name": "V1 — Cliodinámica",
+      "alias": "V1",
+      "parentId": "prj-psicohistoria",
+      "area": "Investigación / historia cuantitativa",
+      "type": "Modelo estructural",
+      "status": "ACTIVO",
+      "priority": "MEDIA",
+      "summary": "Contrastar hipótesis históricas con índices estructurales y regularidades entre sociedades.",
+      "docsStatus": "PARCIAL",
+      "nextAction": "Auditar indicadores estructurales y vintages; sensibilidad de pesos y generalización entre sociedades sin seleccionar por test.",
+      "updatedAt": "2026-10-16",
+      "documentation": {
+        "vision": "Encontrar regularidades históricas comparables y contrastables.",
+        "objective": "Crear indicadores estructurales y comprobar su poder explicativo y prospectivo.",
+        "scope": "Historia cuantitativa, modelos de mecanismos, análisis de sensibilidad temporal y entre sociedades.",
+        "currentState": "Índice previo de memoria conservado. Nueva memoria de dos estados estimada y evaluada en transiciones; no equivale a cliodinámica estructural validada.",
+        "milestones": "Auditar proxies estructurales y su disponibilidad histórica; no asignar parámetros causales sin observaciones.",
+        "rules": "No llamar ley histórica a una correlación retrospectiva; comprobar transportabilidad. Separar trayectoria agregada de historia, IP paramétrico de cobertura empírica y modelos de mecanismos sintéticos."
+      }
+    },
+    {
+      "id": "prj-psico-forecast",
+      "name": "V2 — Predicción probabilística",
+      "alias": "V2",
+      "parentId": "prj-psicohistoria",
+      "area": "Investigación / ciencia de datos",
+      "type": "Forecasting ML",
+      "status": "ACTIVO",
+      "priority": "ALTA",
+      "summary": "Construir probabilidades calibradas con backtest temporal y comparación con referencias sencillas.",
+      "docsStatus": "PARCIAL",
+      "nextAction": "Reproducir con vintages disponibles por origen y una nueva evaluación congelada; evitar convertir persistencia en capacidad de anticipar crisis.",
+      "updatedAt": "2026-10-16",
+      "documentation": {
+        "vision": "Pronosticar probabilidades calibradas de fenómenos colectivos.",
+        "objective": "Superar de forma replicable baselines en predicción fuera de muestra.",
+        "scope": "Panel país-año, clasificación de presencia y episodios nuevos; forecasting prospectivo pendiente de sellado y validación as-of.",
+        "currentState": "Cinco comparadores de transición evaluados a 1/3/5/10 años en muestra pareada por horizonte. Resultados mixtos; persistencia sigue siendo referencia exigente a largo plazo. No forecasting prospectivo.",
+        "milestones": "Nuevo periodo y vintages verificables; no seleccionar ganador ni ensemble a partir del test ya observado.",
+        "rules": "Bloquear leakages, tuning sobre test y mezcla de ventanas; distinguir clase de riesgo y probabilidad. Separar trayectoria agregada de historia, IP paramétrico de cobertura empírica y modelos de mecanismos sintéticos."
+      }
+    },
+    {
+      "id": "prj-psico-agentes",
+      "name": "V3 — Sociedades artificiales",
+      "alias": "V3",
+      "parentId": "prj-psicohistoria",
+      "area": "Investigación / sistemas complejos",
+      "type": "Simulación multiagente",
+      "status": "ACTIVO",
+      "priority": "MEDIA",
+      "summary": "Simular interacciones de agentes y contrastar mecanismos y estadísticas emergentes.",
+      "docsStatus": "PARCIAL",
+      "nextAction": "Añadir recuperación y elegir patrones empíricos ex ante antes de calibrar o atribuir capacidad predictiva.",
+      "updatedAt": "2026-10-16",
+      "documentation": {
+        "vision": "Comprender mecanismos micro-macro mediante sociedades artificiales.",
+        "objective": "Reproducir patrones empíricos predefinidos con modelos sencillos y estudiar sensibilidad.",
+        "scope": "Simulación de redes, comportamientos por reglas, escenarios contrafactuales limitados.",
+        "currentState": "Nuevo motor reversible: 360 ejecuciones sintéticas, 18 celdas × 20 semillas, 180 agentes y 60 pasos; repetición de seed 0 por celda. Rejilla irreversible anterior conservada como otro modelo.",
+        "milestones": "Fijar patrones empíricos observables y correspondencia de escalas antes de calibrar o generar probabilidades de países.",
+        "rules": "Simular no es predecir; no interpretar escenarios como causalidad observada. Separar trayectoria agregada de historia, IP paramétrico de cobertura empírica y modelos de mecanismos sintéticos."
+      }
+    },
+    {
+      "id": "prj-psico-metalab",
+      "name": "V4 — Laboratorio Second Foundation",
+      "alias": "V4",
+      "parentId": "prj-psicohistoria",
+      "area": "Investigación / metodología",
+      "type": "Meta-lab experimental",
+      "status": "ACTIVO",
+      "priority": "ALTA",
+      "summary": "Orquestar hipótesis, registro de experimentos, validaciones, predicciones y comparación honesta de modelos.",
+      "docsStatus": "PARCIAL",
+      "nextAction": "Verificar dashboard desplegado, añadir control de ejecuciones reales/errores y conectar un verificador de sellos antes de shadow. No ensemble todavía.",
+      "updatedAt": "2026-10-16",
+      "documentation": {
+        "vision": "Un laboratorio científico transparente que integre las demás vertientes.",
+        "objective": "Hacer trazables hipótesis, datasets, modelos, predicciones y evaluaciones.",
+        "scope": "Registro de ejecuciones, scoring, leaderboard por horizonte, ablation, versiones y panel de evidencias.",
+        "currentState": "Nuevos catálogos y métricas versionados; 34 evaluaciones incluyendo dos rejillas sintéticas y 2 catálogos separados. Reproducción byte a byte y archivo de propietario. Explorador en integración.",
+        "milestones": "Verificar CI, deploy y grafo con datos canónicos; después resolver as-of y sellado independiente.",
+        "rules": "Nunca mezclar predicciones retrospectivas y prospectivas; no mostrar scores inventados. Separar trayectoria agregada de historia, IP paramétrico de cobertura empírica y modelos de mecanismos sintéticos."
+      }
+    },
+    {
+      "id": "prj-psico-agenda",
+      "name": "A1 — Agenda institucional",
+      "alias": "Agenda",
+      "parentId": "prj-psicohistoria",
+      "area": "Investigación / instituciones",
+      "type": "Aplicación de investigación",
+      "status": "ACTIVO",
+      "priority": "ALTA",
+      "summary": "Hipótesis: anticipar decisiones institucionales a partir de reuniones públicas y contexto, sin confundir agenda publicada con contenido o desenlace.",
+      "docsStatus": "PARCIAL",
+      "nextAction": "Auditar un lote de agendas y tiempos de publicación reales; congelar definición de decisión, universo y baseline.",
+      "updatedAt": "2026-10-20",
+      "documentation": {
+        "vision": "Estudiar decisiones públicas como fenómenos colectivos observables.",
+        "objective": "Comprobar si las señales previas a reuniones mejoran un baseline en outcomes predefinidos.",
+        "scope": "Agenda publicada, participantes confirmados, series de anuncios y políticas con etiqueta y as-of reproducible.",
+        "currentState": "Diseño registrado; no se ha demostrado previsión de decisiones ni se han ingerido agendas reales.",
+        "milestones": "Crear cohorte histórica point-in-time y etiquetas de decisión; baseline de frecuencia, calendario y consenso.",
+        "rules": "Inferir asistentes solo de listas públicas; ausencia en agenda NO prueba reunión inexistente. Nunca usar datos privados de personas."
+      }
+    },
+    {
+      "id": "prj-psico-transmision",
+      "name": "A2 — Transmisión macrofinanciera",
+      "alias": "Impacto",
+      "parentId": "prj-psicohistoria",
+      "area": "Investigación / economía",
+      "type": "Aplicación de investigación",
+      "status": "PENDIENTE",
+      "priority": "MEDIA",
+      "summary": "Estudiar mecanismos que conectan anuncios, expectativas de mercado, sectores y precios sin recomendar operaciones antes de validar señal económica neta.",
+      "docsStatus": "PARCIAL",
+      "nextAction": "Definir evento sorpresa frente a consenso, ventanas de event study y fuentes point-in-time con licencia.",
+      "updatedAt": "2026-10-20",
+      "documentation": {
+        "vision": "Evaluar canales económicos de choques institucionales.",
+        "objective": "Estimar efectos inesperados sobre sectores y activos con evaluación económica neta.",
+        "scope": "Sorpresa informativa, exposición sectorial e identificación temporal de precios/expectativas.",
+        "currentState": "Solo hipótesis; sin señales bursátiles verificadas ni trading.",
+        "milestones": "Primero verificar predictibilidad de decisiones y datos point-in-time; después event-study pre-registrado.",
+        "rules": "No trasladar porcentaje de conflicto 2027 a acciones; MIDAS solo recibe señales read-only cuando se validen."
+      }
+    },
+    {
+      "id": "prj-psico-radar",
+      "name": "A3 — Radar País empresarial",
+      "alias": "Radar país",
+      "parentId": "prj-psicohistoria",
+      "area": "Investigación / productos",
+      "type": "Aplicación de investigación",
+      "status": "PENDIENTE",
+      "priority": "MEDIA",
+      "summary": "Explorar utilidad comercial de inteligencia geopolítica trazable y personalizada sin vender como probadas las probabilidades experimentales.",
+      "docsStatus": "PARCIAL",
+      "nextAction": "Validar necesidades de clientes y pilotos no financieros; separar fuentes con licencia, indicadores y pronósticos no validados.",
+      "updatedAt": "2026-10-20",
+      "documentation": {
+        "vision": "Traducir investigación en inteligencia de riesgos empresarial auditable.",
+        "objective": "Comprobar demanda y utilidad decisional sin depender de predecir sucesos no validados.",
+        "scope": "Seguimiento por país/sector y trazabilidad de análisis y alertas con contexto.",
+        "currentState": "Idea documentada; sin clientes, ingresos ni producto comercial comprobado.",
+        "milestones": "Entrevistar usuarios, definir tres pilotos y evaluar valor; no desarrollar SaaS antes de validar demanda.",
+        "rules": "No compartir datos personales de empresas ni reutilizar datasets de licencias restrictivas."
+      }
+    },
+    {
+      "id": "prj-idea-lab-sistemas-publico",
+      "name": "Sistemas complejos — Laboratorio público",
+      "alias": "Investigación pública",
+      "parentId": "prj-psicohistoria",
+      "area": "Investigación / sistemas complejos",
+      "type": "Web experimental",
+      "status": "ACTIVO",
+      "priority": "MEDIA",
+      "summary": "Laboratorio independiente de escenarios y evaluación probabilística: primera versión demostrativa con datos sintéticos.",
+      "docsStatus": "PARCIAL",
+      "nextAction": "Habilitar GitHub Pages; mantener fuera resultados personales y revisar la admisión de datos oficiales.",
+      "updatedAt": "2026-10-31",
+      "documentation": {}
+    }
+  ],
+  "relations": [
+    {
+      "sourceProjectId": "prj-psico-cliodinamica",
+      "type": "SUBPROYECTO_DE",
+      "targetType": "PROYECTO",
+      "target": "prj-psicohistoria",
+      "description": "Teoría histórica y modelos estructurales del programa de investigación."
+    },
+    {
+      "sourceProjectId": "prj-psico-forecast",
+      "type": "SUBPROYECTO_DE",
+      "targetType": "PROYECTO",
+      "target": "prj-psicohistoria",
+      "description": "Modelos de predicción probabilística y validación fuera de muestra."
+    },
+    {
+      "sourceProjectId": "prj-psico-agentes",
+      "type": "SUBPROYECTO_DE",
+      "targetType": "PROYECTO",
+      "target": "prj-psicohistoria",
+      "description": "Modelado generativo de mecanismos sociales y redes de agentes."
+    },
+    {
+      "sourceProjectId": "prj-psico-agenda",
+      "type": "SUBPROYECTO_DE",
+      "targetType": "PROYECTO",
+      "target": "prj-psicohistoria",
+      "description": "Aplicación institucional bajo programa original, no V5 ni sustitución de V1–V4."
+    },
+    {
+      "sourceProjectId": "prj-psico-transmision",
+      "type": "SUBPROYECTO_DE",
+      "targetType": "PROYECTO",
+      "target": "prj-psicohistoria",
+      "description": "Aplicación macrofinanciera bajo programa original."
+    },
+    {
+      "sourceProjectId": "prj-psico-radar",
+      "type": "SUBPROYECTO_DE",
+      "targetType": "PROYECTO",
+      "target": "prj-psicohistoria",
+      "description": "Aplicación comercial bajo programa original."
+    },
+    {
+      "sourceProjectId": "prj-psico-agenda",
+      "type": "REUTILIZA_METODO_DE",
+      "targetType": "PROYECTO",
+      "target": "prj-psico-forecast",
+      "description": "Predicción calibrada, baselines y separación estricta as-of."
+    },
+    {
+      "sourceProjectId": "prj-psico-agenda",
+      "type": "AUDITADA_POR",
+      "targetType": "PROYECTO",
+      "target": "prj-psico-metalab",
+      "description": "Procedencia de documentos, freeze, sellado y scoring sin hindsight."
+    },
+    {
+      "sourceProjectId": "prj-psico-agenda",
+      "type": "APORTA_ESCENARIOS_A",
+      "targetType": "PROYECTO",
+      "target": "prj-psico-transmision",
+      "description": "Resultados institucionales predefinidos sirven como entrada candidata, nunca probabilidad validada por defecto."
+    },
+    {
+      "sourceProjectId": "prj-psico-transmision",
+      "type": "REUTILIZA_METODO_DE",
+      "targetType": "PROYECTO",
+      "target": "prj-psico-cliodinamica",
+      "description": "Variables macroestructurales como contexto, no causalidad supuesta."
+    },
+    {
+      "sourceProjectId": "prj-psico-transmision",
+      "type": "REQUIERE_VALIDACION_DE",
+      "targetType": "PROYECTO",
+      "target": "prj-psico-metalab",
+      "description": "Event study OOS, consenso previo, pruebas placebo y costes."
+    },
+    {
+      "sourceProjectId": "prj-psico-transmision",
+      "type": "PUEDE_TRANSFERIR_EVIDENCIA_A",
+      "targetType": "PROYECTO",
+      "target": "prj-midas",
+      "description": "Solo interfaz experimental de lectura con fuentes y scoring; sin órdenes ni compartir posiciones."
+    },
+    {
+      "sourceProjectId": "prj-psico-radar",
+      "type": "REUTILIZA_METODO_DE",
+      "targetType": "PROYECTO",
+      "target": "prj-psico-forecast",
+      "description": "Modelos colectivos solo cuando sus objetivos sean pertinentes y evidencia esté validada."
+    },
+    {
+      "sourceProjectId": "prj-psico-radar",
+      "type": "COMPARTE_OBSERVACIONES_CON",
+      "targetType": "PROYECTO",
+      "target": "prj-psico-agenda",
+      "description": "Documentos oficiales con procedencia y licencia verificadas; consumidores independientes."
+    }
+  ],
+  "externalReferences": [
+    {
+      "id": "prj-midas",
+      "name": "MIDAS",
+      "recordKind": "RELATION_TARGET_ONLY"
+    }
+  ],
+  "coverage": {
+    "projects": 9,
+    "documentationRecords": 8,
+    "relations": 14,
+    "coreTracks": 4,
+    "applications": 3,
+    "scope": "Canonical project catalogue only; ideas in other documents require a separate inventory."
+  }
+}
