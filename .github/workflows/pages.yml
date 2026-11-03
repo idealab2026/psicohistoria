@@ -10,7 +10,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: pages-institutional
+  group: pages-institutional-${{ github.ref }}
   cancel-in-progress: true
 jobs:
   quality:

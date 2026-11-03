@@ -69,25 +69,45 @@ if catalogue.exists():
 ideas=ROOT/"data/projects.json"
 if ideas.exists():
     try:
-        catalog=json.loads(ideas.read_text(encoding="utf8"))
+        raw=ideas.read_text(encoding="utf8")
+        catalog=json.loads(raw)
         projects=catalog.get("projects",[])
         relations=catalog.get("relations",[])
-        if catalog.get("schema")!="idealab.psico.ideas.v1" or catalog.get("ok") is not True or \
-           catalog.get("status")!="HISTORICAL_CATALOGUE_RECOVERED" or \
-           catalog.get("currentOperationalStatusVerified") is not False or \
-           catalog.get("prospectiveForecastIssued") is not False or \
-           catalog.get("publicationScope")!="SANITIZED_PUBLIC_HISTORICAL_SNAPSHOT_NOT_OPERATIVE_STATUS" or \
+        privacy=catalog.get("privacy") or {}
+        coverage=catalog.get("coverage") or {}
+        categories=[p.get("category") for p in projects]
+        ids=[p.get("id") for p in projects]
+        if catalog.get("schema")!="idealab.psico.public-project-catalog.v1" or \
+           catalog.get("ok") is not True or \
+           catalog.get("status")!="PUBLIC_INSTITUTIONAL_PROJECTION" or \
+           catalog.get("forecastIssued")!=0 or \
+           catalog.get("verifiedProspectiveResults")!=0 or \
            len(projects)!=9 or len(relations)!=14 or \
-           sum(p.get("type")=="Aplicación de investigación" for p in projects)!=3 or \
-           sum(bool(p.get("documentation",{}).get("vision")) for p in projects)!=8:
-            issues.append("Historical public ideas catalogue status or coverage invalid")
-        if re.search(r"https?://|[a-z0-9._%-]+@[a-z0-9.-]+\\.[a-z]{2,}|[a-z0-9_.-]+\\.(?:md|py|ts|mjs)\\b|(?:[a-z_-]+/){2,}",ideas.read_text(encoding="utf8"),flags=re.I):
-            issues.append("Historical public ideas catalogue reveals source identity or original infrastructure")
-        allowed_docs={"vision","objective","scope","currentState","milestones","rules"}
-        if any(set(p.get("documentation",{}))-allowed_docs for p in projects):
-            issues.append("Unapproved original-project documentation leaked")
-    except (OSError,ValueError,TypeError):
-        issues.append("Invalid public ideas catalogue")
+           len(set(ids))!=9 or \
+           categories.count("Vertiente")!=4 or categories.count("Aplicación")!=3 or \
+           sum(p.get("documentation") is not None for p in projects)!=8 or \
+           any(p.get("liveOperationalVerification") is not False for p in projects) or \
+           any(coverage.get(k)!=n for k,n in
+               (("projects",9),("coreTracks",4),("applications",3),
+                ("documentationRecords",8),("relations",14))) or \
+           any(privacy.get(k) is not False for k in
+               ("sourceIdsReused","internalPathsIncluded","historicPrivateNotesIncluded")) or \
+           privacy.get("independentPublication") is not True:
+            issues.append("Public research project projection is incomplete or claims unsupported operation")
+        if re.search(r"https?://|[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,}|"
+                     r"(?:[a-z_-]+/){2,}|\"id\"\s*:\s*\"prj-|"
+                     r"(?:PR|issue)\s*#\s*\d+",raw,flags=re.I):
+            issues.append("Public project projection reveals legacy identifiers or sources")
+        if any(set(p.get("documentation") or {})-
+               {"vision","scope","method","validation","limitations"} for p in projects):
+            issues.append("Public project projection includes private historical documentation")
+        external={x.get("id") for x in catalog.get("externalReferences",[])}
+        allowed=set(ids)|external
+        if len(external)!=1 or any(r.get("source") not in ids or
+           r.get("target") not in allowed for r in relations):
+            issues.append("Public project projection has an unresolved relation")
+    except (OSError,ValueError,TypeError,AttributeError):
+        issues.append("Invalid public project projection")
 
 sample=ROOT/"data/demo.json"
 if sample.exists():
