@@ -27,7 +27,7 @@ test("Public projection never displays original internal IDs, archived paths, pr
  assert.equal(html.includes("source/path"),false);
  assert.equal(html.includes("actualizado en origen"),false);
  assert.ok(html.includes("no activan operaciones"));
- assert.ok(html.includes("no verifica"));
+ assert.ok(html.includes("No certifica operación actual"));
 });
 test("All dynamic descriptions are escaped and cannot introduce malicious markup",()=>{
  const altered=structuredClone(data);
