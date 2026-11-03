@@ -9,8 +9,8 @@ sys.dont_write_bytecode = True
 from private_disclosure import configured_terms, contains_private_term
 
 ROOT = Path(__file__).resolve().parents[1]
-RELEASE = {"src/scientific-archive.mjs", "data/scientific-workbook.json","index.html", "styles.css", "favicon.svg", "logo.svg", "src/site.mjs", "src/visuals.mjs", "src/neural.mjs", "src/markov-svg.mjs", "src/lab-renderers.mjs", "src/metrics.mjs", "src/research.mjs", "data/demo.json", "data/research.json"}
-REPOSITORY = RELEASE | {"scripts/private_disclosure.py", "scripts/test_private_disclosure.py", "README.md", "scripts/audit_public.py", "tests/metrics.test.mjs", "tests/research.test.mjs", "tests/visuals.test.mjs", "tests/lab-renderers.test.mjs", ".github/workflows/pages.yml"}
+RELEASE = {"src/scientific-archive.mjs", "data/scientific-workbook.json","index.html", "styles.css", "favicon.svg", "logo.svg", "src/site.mjs", "src/visuals.mjs", "src/neural.mjs", "src/markov-svg.mjs", "src/lab-renderers.mjs", "src/metrics.mjs", "src/research.mjs", "src/project-catalog.mjs", "data/demo.json", "data/research.json", "data/projects.json"}
+REPOSITORY = RELEASE | {"scripts/private_disclosure.py", "scripts/test_private_disclosure.py", "README.md", "scripts/audit_public.py", "tests/metrics.test.mjs", "tests/research.test.mjs", "tests/visuals.test.mjs", "tests/lab-renderers.test.mjs", "tests/project-catalog.test.mjs", ".github/workflows/pages.yml"}
 issues = []
 try:
     private_terms = configured_terms()
