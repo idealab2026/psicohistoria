@@ -15,7 +15,10 @@ const PROJECT_KEYS=["id","name","alias","parentId","area","type","status",
  "priority","summary","docsStatus","nextAction","updatedAt","documentation"];
 const RELATION_KEYS=["sourceProjectId","type","targetType","target","description"];
 const REFERENCE_KEYS=["id","name","recordKind"];
-const DENY=/(?:\/Users\/|[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,}|mamg97|mayordomo|segundo[\s_-]*cerebro|github\.com\/|docs\/|research\/psychohistory\/|PR\s*#[0-9]+|PsicoExperimentos|Cloudflare|(?:^|[^\w])Worker(?:[^\w]|$)|\.workers\.dev)/i;
+// Public boundary: technical paths, addresses, emails and legacy source files
+// are inadmissible regardless of owner identity. CI also applies separately
+// configured private deny terms over every public repo file.
+const DENY=/(?:https?:\/\/|[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,}|[a-z0-9_.-]+\.(?:md|py|ts|mjs)\b|(?:\.\.\/)|(?:[a-z_-]+\/){2,}|(?:^|[^\w])Worker(?:[^\w]|$))/i;
 const sameKeys=(value,allowed)=>value&&typeof value==="object"&&!Array.isArray(value)&&
  Object.keys(value).every(x=>allowed.includes(x));
 const str=(v,max=2200)=>typeof v==="string"&&v.trim().length>0&&v.length<=max;
