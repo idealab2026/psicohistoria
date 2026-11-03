@@ -202,3 +202,44 @@ fieldset{border:0;padding:0;margin:0}.field{display:grid;gap:6px;margin:12px 0;f
 @media(max-width:800px){.science-prediction-question{grid-template-columns:1fr}.science-prediction-question p{grid-column:auto}.science-tree-states{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 .archive-controls{display:flex;gap:16px;align-items:end;flex-wrap:wrap;margin:24px 0}.archive-controls label{display:grid;gap:8px;max-width:100%}.archive-controls input,.archive-controls select{max-width:100%}.archive-scroll{max-width:100%;overflow:auto;max-height:70vh;margin:20px 0}.archive-scroll table{border-collapse:collapse}.archive-scroll td,.archive-scroll th{padding:12px;min-width:160px;max-width:400px;overflow-wrap:anywhere;vertical-align:top;border-bottom:1px solid #344b59}.archive-scroll th{position:sticky;top:0;background:#102130;text-align:left}
+
+
+/* Recovered public project catalogue — history, not live operational claims. */
+.portfolio-numbers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:15px 0}
+.portfolio-numbers>div{padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:#101c24;min-width:0}
+.portfolio-numbers strong{display:block;font:780 1.7rem/1.15 system-ui,sans-serif;color:var(--ink)}
+.portfolio-numbers span{font:620 .73rem/1.55 system-ui,sans-serif;color:var(--muted)}
+.portfolio-group{margin-top:24px}
+.portfolio-group-heading{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:0 0 11px}
+.portfolio-group-heading h3{font:760 1.16rem/1.3 system-ui,sans-serif;margin:0}
+.portfolio-group-heading span{color:var(--muted);font:.72rem system-ui,sans-serif}
+.portfolio-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.portfolio-card{min-width:0;border:1px solid var(--line);background:#0c141b;border-radius:11px;padding:16px 18px}
+.portfolio-card-head{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:7px}
+.portfolio-kind{font:750 .7rem system-ui,sans-serif;color:var(--blue)}
+.portfolio-state{font:550 .68rem system-ui,sans-serif;color:#c5b89c}
+.portfolio-card h4{font:750 1.1rem/1.35 system-ui,sans-serif;margin:2px 0 8px;color:var(--ink)}
+.portfolio-card>p{font:.83rem/1.6 system-ui,sans-serif;margin:6px 0;text-align:left}
+.portfolio-quick{display:flex;justify-content:space-between;gap:6px 15px;flex-wrap:wrap;padding:9px 0;
+ color:var(--muted);font:.7rem/1.5 system-ui,sans-serif}
+.portfolio-card details{border-top:1px solid var(--line);padding-top:10px}
+.portfolio-card summary{list-style-position:inside;color:var(--blue);font:.76rem/1.5 system-ui,sans-serif;
+ font-weight:750;cursor:pointer}
+.portfolio-detail{display:grid;gap:10px;margin:14px 0}
+.portfolio-detail-item{display:grid;gap:3px}
+.portfolio-detail dt{font:.7rem/1.5 system-ui,sans-serif;font-weight:800;color:var(--ink)}
+.portfolio-detail dd{margin:0;font:.78rem/1.56 system-ui,sans-serif;color:var(--muted);
+ white-space:normal;overflow-wrap:anywhere}
+.portfolio-relations{border-top:1px solid var(--line);padding:12px 0}
+.portfolio-relations strong{font:.75rem system-ui,sans-serif}
+.portfolio-relations ul{padding-left:18px;margin:8px 0;display:grid;gap:8px}
+.portfolio-relations li{font:.76rem/1.55 system-ui,sans-serif}
+.portfolio-relations li span{text-transform:capitalize;color:var(--blue)}
+.portfolio-relations small{display:block;color:var(--muted)}
+.portfolio-disclaimer{font:.71rem/1.6 system-ui,sans-serif!important;color:var(--muted);margin:12px 0;text-align:left}
+@media(max-width:730px){
+ .portfolio-grid{grid-template-columns:1fr}
+ .portfolio-numbers{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .portfolio-card{padding:13px 14px}
+ .portfolio-group{margin-top:18px}
+}
