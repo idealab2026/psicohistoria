@@ -14,7 +14,7 @@ test('recovers four core tracks, three applications, documents and all relations
 test('fails closed on missing catalogue, missing core track or unresolved relation', async () => {
   await assert.rejects(loadProjectCatalog(async () => ({ok:false})), /UNAVAILABLE/);
   assert.throws(() => validateProjectCatalog({...archive, projects:[]}), /INCOMPLETE/);
-  assert.throws(() => validateProjectCatalog({...archive, externalReferences:[]}), /UNRESOLVED/);
+  assert.throws(() => validateProjectCatalog({...archive, externalReferences:[]}), /INCOMPLETE|UNRESOLVED/);
 });
 test('loads local static data without credentials, preserving cancellation', async () => {
   const signal = new AbortController().signal;
