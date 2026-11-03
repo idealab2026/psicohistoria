@@ -1,0 +1,255 @@
+{
+  "schema": "idealab.psico.public-project-catalog.v1",
+  "ok": true,
+  "status": "PUBLIC_INSTITUTIONAL_PROJECTION",
+  "label": "Inventario metodológico, no estado operativo certificado",
+  "notice": "Las fichas describen líneas y aplicaciones investigables. Los registros previos no acreditan ejecución actual ni predicciones prospectivas emitidas.",
+  "forecastIssued": 0,
+  "verifiedProspectiveResults": 0,
+  "projects": [
+    {
+      "id": "lab-core",
+      "name": "Psicohistoria",
+      "category": "Programa",
+      "area": "Programa científico",
+      "subtitle": "Estudio cuantitativo de procesos colectivos",
+      "summary": "Definir fenómenos sociales mensurables y contrastar hipótesis sobre su evolución.",
+      "documentation": {
+        "vision": "Combina historia cuantitativa, inferencia estadística, simulación y evaluación predictiva.",
+        "scope": "La explicación retrospectiva, la simulación y la predicción ex ante se evalúan por separado.",
+        "method": "Establecer objetivos, universos y horizontes antes de evaluar; conservar trazabilidad y referencias sencillas.",
+        "validation": "No presentar aciertos, probabilidades o certificaciones sin sus datos, fechas y recibos.",
+        "limitations": "Programa de largo plazo. La publicación actual no demuestra capacidad prospectiva."
+      },
+      "liveOperationalVerification": false
+    },
+    {
+      "id": "track-structural",
+      "name": "V1 · Cliodinámica",
+      "category": "Vertiente",
+      "area": "Modelo estructural",
+      "subtitle": "Estructuras y regularidades históricas",
+      "summary": "Estudiar señales de largo plazo vinculadas a tensiones y cambios sociales.",
+      "documentation": {
+        "vision": "Índices estructurales y comparación entre sociedades y periodos.",
+        "scope": "Indicadores demográficos, institucionales y económicos bajo definiciones y cortes consistentes.",
+        "method": "Aislar cobertura, disponibilidad de las variables y sensibilidad a pesos y geografía.",
+        "validation": "La asociación estadística no acredita mecanismos causales transportables.",
+        "limitations": "Hipótesis estructurales en investigación; no son leyes históricas validadas."
+      },
+      "liveOperationalVerification": false
+    },
+    {
+      "id": "track-forecast",
+      "name": "V2 · Predicción probabilística",
+      "category": "Vertiente",
+      "area": "Forecasting",
+      "subtitle": "Probabilidades sometidas a contraste",
+      "summary": "Evaluar predicciones de fenómenos colectivos frente a métodos de referencia.",
+      "documentation": {
+        "vision": "Modelos de clasificación, calibración y validación fuera de muestra.",
+        "scope": "Frecuencias históricas, persistencia, transiciones y modelos regularizados.",
+        "method": "Prueba temporal prospectiva, calibración y comparación usando los mismos horizontes.",
+        "validation": "Evitar fuga temporal y escoger modelos después de observar el conjunto de prueba.",
+        "limitations": "La existencia de backtests no prueba acierto prospectivo."
+      },
+      "liveOperationalVerification": false
+    },
+    {
+      "id": "track-agents",
+      "name": "V3 · Sociedades artificiales",
+      "category": "Vertiente",
+      "area": "Simulación",
+      "subtitle": "Mecanismos de interacción y fenómenos emergentes",
+      "summary": "Explorar cómo reglas individuales podrían generar patrones agregados.",
+      "documentation": {
+        "vision": "Simulaciones de agentes con redes, interacción y recuperación.",
+        "scope": "Escenarios sintéticos con sensibilidad a parámetros, estructura social y semillas.",
+        "method": "Reproducibilidad, análisis de sensibilidad y contraste con patrones observados definidos previamente.",
+        "validation": "Un mundo simulado no implica que se haya predicho una sociedad real.",
+        "limitations": "Experimentos de mecanismos sin calibración prospectiva acreditada."
+      },
+      "liveOperationalVerification": false
+    },
+    {
+      "id": "track-meta",
+      "name": "V4 · Meta-laboratorio",
+      "category": "Vertiente",
+      "area": "Metodología",
+      "subtitle": "Auditoría y evaluación reproducible",
+      "summary": "Unificar registro de hipótesis, modelos, experimentos y evaluaciones.",
+      "documentation": {
+        "vision": "Metodología científica, control de versiones y trazabilidad.",
+        "scope": "Experimentos predefinidos, baselines, métricas por horizonte y control de procedencia.",
+        "method": "Reproducir ejecuciones, contrastar versiones y certificar fuentes y tiempos cuando existan recibos.",
+        "validation": "La evaluación sintética o retrospectiva no puede convertirse en emisión histórica certificada.",
+        "limitations": "Programa metodológico de validación; sus controles no sustituyen fuentes firmadas."
+      },
+      "liveOperationalVerification": false
+    },
+    {
+      "id": "application-agenda",
+      "name": "Agenda institucional",
+      "category": "Aplicación",
+      "area": "Instituciones",
+      "subtitle": "Decisiones públicas bajo calendario conocido",
+      "summary": "Examinar si información publicada antes de reuniones mejora predicciones de decisiones definidas.",
+      "documentation": {
+        "vision": "Documentos oficiales y calendarios institucionales.",
+        "scope": "Medir fechas de disponibilidad y separar agendas previstas de decisiones observadas.",
+        "method": "Etiquetas y baselines registrados antes del desenlace; cotejo de primeras publicaciones.",
+        "validation": "Una agenda pública no demuestra quién asistió ni qué se decidió.",
+        "limitations": "Diseño en fase exploratoria, sin pronósticos de decisiones demostrados."
+      },
+      "liveOperationalVerification": false
+    },
+    {
+      "id": "application-transmission",
+      "name": "Transmisión macrofinanciera",
+      "category": "Aplicación",
+      "area": "Macroeconomía",
+      "subtitle": "Canales de impacto entre instituciones y mercados",
+      "summary": "Estudiar la reacción económica a noticias e intervenciones bajo condiciones temporales comprobables.",
+      "documentation": {
+        "vision": "Estudios de evento, consenso anterior, exposición sectorial y precios.",
+        "scope": "Ventanas de reacción y factores de confusión fijados antes de observar la evolución.",
+        "method": "Evaluación fuera de muestra, estudios placebo, costes y variaciones de régimen.",
+        "validation": "No trasladar probabilidades geopolíticas directamente a señales operativas.",
+        "limitations": "Hipótesis de investigación; no atribuye operaciones ni rentabilidad."
+      },
+      "liveOperationalVerification": false
+    },
+    {
+      "id": "application-radar",
+      "name": "Radar País",
+      "category": "Aplicación",
+      "area": "Inteligencia de riesgos",
+      "subtitle": "Contexto verificable para decisiones empresariales",
+      "summary": "Presentar información pública y contrastar su utilidad en decisiones reales.",
+      "documentation": {
+        "vision": "Seguimiento por país y sector con procedencia y cobertura identificables.",
+        "scope": "Fichas explicativas, indicadores observados y advertencias de incertidumbre.",
+        "method": "Pilotos con usuarios, contraste de necesidades y calidad de fuentes permitidas.",
+        "validation": "No sustituir probabilidades no validadas por puntuaciones certificadas.",
+        "limitations": "Concepto de producto sin clientes o ingresos acreditados."
+      },
+      "liveOperationalVerification": false
+    },
+    {
+      "id": "lab-public",
+      "name": "Laboratorio público",
+      "category": "Plataforma",
+      "area": "Divulgación",
+      "subtitle": "Interfaz experimental independiente",
+      "summary": "Ofrecer una puerta de entrada comprensible a la investigación y sus límites.",
+      "documentation": null,
+      "liveOperationalVerification": false
+    }
+  ],
+  "relations": [
+    {
+      "source": "track-structural",
+      "target": "lab-core",
+      "type": "PERTENECE_A",
+      "description": "Explora patrones históricos del programa."
+    },
+    {
+      "source": "track-forecast",
+      "target": "lab-core",
+      "type": "PERTENECE_A",
+      "description": "Proporciona diseños de pronóstico contrastable."
+    },
+    {
+      "source": "track-agents",
+      "target": "lab-core",
+      "type": "PERTENECE_A",
+      "description": "Aporta simulaciones de mecanismos."
+    },
+    {
+      "source": "application-agenda",
+      "target": "lab-core",
+      "type": "PERTENECE_A",
+      "description": "Investiga decisiones institucionales."
+    },
+    {
+      "source": "application-transmission",
+      "target": "lab-core",
+      "type": "PERTENECE_A",
+      "description": "Estudia vínculos macrofinancieros."
+    },
+    {
+      "source": "application-radar",
+      "target": "lab-core",
+      "type": "PERTENECE_A",
+      "description": "Explora aplicación de inteligencia empresarial."
+    },
+    {
+      "source": "application-agenda",
+      "target": "track-forecast",
+      "type": "UTILIZA_METODO",
+      "description": "Evaluación temporal y calibración."
+    },
+    {
+      "source": "application-agenda",
+      "target": "track-meta",
+      "type": "REQUIERE_AUDITORIA",
+      "description": "Registro de fuente, corte y resultado."
+    },
+    {
+      "source": "application-agenda",
+      "target": "application-transmission",
+      "type": "APORTA_CONTEXTO",
+      "description": "Información institucional candidata para estudiar reacción económica."
+    },
+    {
+      "source": "application-transmission",
+      "target": "track-structural",
+      "type": "APORTA_CONTEXTO",
+      "description": "Variables macro y estructuras históricas."
+    },
+    {
+      "source": "application-transmission",
+      "target": "track-meta",
+      "type": "REQUIERE_VALIDACION",
+      "description": "Experimentos financieros con control de sesgo."
+    },
+    {
+      "source": "application-transmission",
+      "target": "ext-midas",
+      "type": "TRANSFERENCIA_CONDICIONAL",
+      "description": "Solo intercambio científico futuro tras autorización, sin posiciones ni órdenes."
+    },
+    {
+      "source": "application-radar",
+      "target": "track-forecast",
+      "type": "UTILIZA_METODO",
+      "description": "Estimación de riesgo cuando exista validación adecuada."
+    },
+    {
+      "source": "application-radar",
+      "target": "application-agenda",
+      "type": "COMPARTE_FUENTES",
+      "description": "Documentación institucional pública bajo licencias verificadas."
+    }
+  ],
+  "externalReferences": [
+    {
+      "id": "ext-midas",
+      "name": "MIDAS",
+      "scope": "Relación metodológica hipotética; no se transfieren posiciones, cuentas ni operaciones."
+    }
+  ],
+  "coverage": {
+    "projects": 9,
+    "coreTracks": 4,
+    "applications": 3,
+    "documentationRecords": 8,
+    "relations": 14
+  },
+  "privacy": {
+    "sourceIdsReused": false,
+    "internalPathsIncluded": false,
+    "historicPrivateNotesIncluded": false,
+    "independentPublication": true
+  }
+}
