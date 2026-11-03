@@ -2,6 +2,8 @@ import {verifyScientificArchive,scientificArchiveTable} from "./scientific-archi
 import {verify,score,calibration} from "./metrics.mjs";
 import {verifyResearch,parseForecastCSV,evaluateLocalForecast,CSV_TEMPLATE} from "./research.mjs";
 import {domainGraph} from "./visuals.mjs";
+import {loadProjectCatalog} from "./project-catalog.mjs";
+import {renderHistoricalProjectPortfolio} from "./project-portfolio.mjs";
 import {scientificNeuralPanel,enableScientificNeural,scientificMarkovPanel,syntheticFourStateModel} from "./lab-renderers.mjs";
 
 const $=id=>document.getElementById(id);
@@ -12,11 +14,11 @@ const groupViews={
  brief:[["brief","Inicio"]],
  predictions:[["futures","Explorador"],["shadow2027","Riesgos 2027"]],
  research:[["archive","Archivo científico"],["overview","Mapa del proyecto"],["registry","Líneas y fuentes"],["science","Evidencia"],["operations","Registro"],["roadmap","Hitos"]],
- create:[["ideas","Ideas y sinergias"],["video","Estudio audiovisual"]]
+ create:[["portfolio","Catálogo recuperado"],["ideas","Nuevas ideas"],["video","Estudio audiovisual"]]
 };
 const viewIds=new Set(Object.values(groupViews).flat().map(x=>x[0]));
 const viewToGroup=Object.fromEntries(Object.entries(groupViews).flatMap(([k,items])=>items.map(([id])=>[id,k])));
-const state={archive:null,archiveTable:0,archiveQuery:"",archivePage:0,data:null,research:null,registryFilter:"todos",registryOutput:null,view:viewIds.has(new URLSearchParams(location.search).get("view"))?new URLSearchParams(location.search).get("view"):"brief",scenario:null,program:null,study:null,filter:"todos",ideas:[],flowState:"00",markovOrigin:2020,markovHorizon:6,markovQuestion:"atleast25",markovSelection:null,videoText:"",busy:false};
+const state={archive:null,projectCatalog:null,archiveTable:0,archiveQuery:"",archivePage:0,data:null,research:null,registryFilter:"todos",registryOutput:null,view:viewIds.has(new URLSearchParams(location.search).get("view"))?new URLSearchParams(location.search).get("view"):"brief",scenario:null,program:null,study:null,filter:"todos",ideas:[],flowState:"00",markovOrigin:2020,markovHorizon:6,markovQuestion:"atleast25",markovSelection:null,videoText:"",busy:false};
 const section=(eyebrow,title,description)=>'<header class="section-head"><div class="eyebrow">'+safe(eyebrow)+'</div><h2>'+safe(title)+'</h2><p>'+safe(description)+'</p></header>';
 const box=(contents,extra="")=>'<article class="panel '+extra+'">'+contents+'</article>';
 const tag=(t,cls="")=>'<span class="tag '+cls+'">'+safe(t)+'</span>';
@@ -51,6 +53,7 @@ function renderBrief(){
  ["Árbol de futuros","Escenarios alternativos y supuestos explícitos. No son pronósticos.", "navigate","futures"],
  ["Evidencia y modelos","Evaluación probabilística sintética comparada con un baseline.", "navigate","science"],
  ["Programa de investigación","Mapa de líneas, protocolo, hitos y bloqueos.", "navigate","overview"],
+ ["Catálogo recuperado","Cuatro vertientes, tres aplicaciones y catorce relaciones en un registro histórico.", "navigate","portfolio"],
  ["Crear investigaciones","Conectar hipótesis y preparar ideas y guiones locales.", "navigate","ideas"]
  ])+syntheticWarning()+section("CRITERIOS","De la exploración a la evidencia","Qué deberá comprobarse antes de publicar datos o afirmaciones reales.")+methods();
 }
@@ -183,7 +186,8 @@ function render(){
   b.classList.toggle("active",state.view===id);sub.append(b);
  }
  const views={archive:renderArchive,brief:()=>button("Abrir archivo científico · 1.835 registros","navigate","archive")+renderBrief(),futures:renderFutures,shadow2027:renderShadow,overview:renderOverview,
-  science:renderScience,registry:renderResearchRegistry,operations:renderOperations,roadmap:renderRoadmap,ideas:renderIdeas,video:renderVideo};
+  science:renderScience,registry:renderResearchRegistry,operations:renderOperations,roadmap:renderRoadmap,
+  portfolio:()=>renderHistoricalProjectPortfolio(state.projectCatalog),ideas:renderIdeas,video:renderVideo};
  $("app").innerHTML=views[state.view]();
  updateChart();
  disposeScientificNeural=enableScientificNeural($("app"),state.data.programs,state.program);
@@ -198,11 +202,14 @@ function navigate(view){
 async function load(){
  if(state.busy)return;state.busy=true;$("refresh").disabled=true;$("sync-status").textContent="Validando el registro público…";
  try{
+  const catalogRead=loadProjectCatalog().then(data=>({available:true,data}))
+    .catch(()=>({available:false,data:null}));
   const [response,researchResponse,archiveResponse]=await Promise.all([fetch("./data/demo.json",{cache:"no-store"}),fetch("./data/research.json",{cache:"no-store"}),fetch("./data/scientific-workbook.json",{cache:"no-store"})]);
    if(!response.ok||!researchResponse.ok)throw new Error("Public sources unavailable");
    const [data,research]=await Promise.all([response.json(),researchResponse.json()]);
    verify(data);verifyResearch(research);state.research=research;
   if(!archiveResponse.ok)throw Error("Archivo científico no disponible");const archive=await archiveResponse.json();verifyScientificArchive(archive);state.archive=archive;
+  state.projectCatalog=(await catalogRead).data;
   for(const key of ["programs","milestones","ideas"])if(!Array.isArray(data[key]))throw new Error("Incomplete public catalogue");
   state.data=data;state.scenario=state.scenario||data.branches[0].id;state.program=state.program||data.programs[0].id;state.study=state.study||data.studies[0].id;
   $("count-studies").textContent=data.studies.length;$("count-models").textContent=data.programs.length;
