@@ -9,8 +9,8 @@ sys.dont_write_bytecode = True
 from private_disclosure import configured_terms, contains_private_term
 
 ROOT = Path(__file__).resolve().parents[1]
-RELEASE = {"src/scientific-archive.mjs", "data/scientific-workbook.json","index.html", "styles.css", "favicon.svg", "logo.svg", "src/site.mjs", "src/visuals.mjs", "src/neural.mjs", "src/markov-svg.mjs", "src/lab-renderers.mjs", "src/metrics.mjs", "src/research.mjs", "data/demo.json", "data/research.json"}
-REPOSITORY = RELEASE | {"scripts/private_disclosure.py", "scripts/test_private_disclosure.py", "README.md", "scripts/audit_public.py", "tests/metrics.test.mjs", "tests/research.test.mjs", "tests/visuals.test.mjs", "tests/lab-renderers.test.mjs", ".github/workflows/pages.yml"}
+RELEASE = {"src/scientific-archive.mjs", "data/scientific-workbook.json","index.html", "styles.css", "favicon.svg", "logo.svg", "src/site.mjs", "src/visuals.mjs", "src/neural.mjs", "src/markov-svg.mjs", "src/lab-renderers.mjs", "src/metrics.mjs", "src/research.mjs", "src/project-catalog.mjs", "src/project-portfolio.mjs", "data/demo.json", "data/research.json", "data/projects.json"}
+REPOSITORY = RELEASE | {"scripts/private_disclosure.py", "scripts/test_private_disclosure.py", "README.md", "scripts/audit_public.py", "tests/metrics.test.mjs", "tests/research.test.mjs", "tests/visuals.test.mjs", "tests/lab-renderers.test.mjs", "tests/project-catalog.test.mjs", "tests/project-portfolio.test.mjs", ".github/workflows/pages.yml"}
 issues = []
 try:
     private_terms = configured_terms()
@@ -66,6 +66,29 @@ if catalogue.exists():
             issues.append("Incomplete scientific programme")
     except (OSError,ValueError):
         issues.append("Invalid scientific programme")
+ideas=ROOT/"data/projects.json"
+if ideas.exists():
+    try:
+        catalog=json.loads(ideas.read_text(encoding="utf8"))
+        projects=catalog.get("projects",[])
+        relations=catalog.get("relations",[])
+        if catalog.get("schema")!="idealab.psico.ideas.v1" or catalog.get("ok") is not True or \
+           catalog.get("status")!="HISTORICAL_CATALOGUE_RECOVERED" or \
+           catalog.get("currentOperationalStatusVerified") is not False or \
+           catalog.get("prospectiveForecastIssued") is not False or \
+           catalog.get("publicationScope")!="SANITIZED_PUBLIC_HISTORICAL_SNAPSHOT_NOT_OPERATIVE_STATUS" or \
+           len(projects)!=9 or len(relations)!=14 or \
+           sum(p.get("type")=="Aplicación de investigación" for p in projects)!=3 or \
+           sum(bool(p.get("documentation",{}).get("vision")) for p in projects)!=8:
+            issues.append("Historical public ideas catalogue status or coverage invalid")
+        if re.search(r"/Users/|mayordomo|mamg97|segundo[-_ ]cerebro|https?://|docs/|research/psychohistory/|PR\\s*#\\d+|Cloudflare|Worker|PsicoExperimentos",ideas.read_text(encoding="utf8"),flags=re.I):
+            issues.append("Historical public ideas catalogue reveals source identity or original infrastructure")
+        allowed_docs={"vision","objective","scope","currentState","milestones","rules"}
+        if any(set(p.get("documentation",{}))-allowed_docs for p in projects):
+            issues.append("Unapproved original-project documentation leaked")
+    except (OSError,ValueError,TypeError):
+        issues.append("Invalid public ideas catalogue")
+
 sample=ROOT/"data/demo.json"
 if sample.exists():
     try:
