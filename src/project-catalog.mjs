@@ -9,8 +9,7 @@ const expected=new Set(["lab-core","track-structural","track-forecast","track-ag
 const restricted=[
  /github\.com\/(?!idealab2026\b)/i,/[\w.+-]+@[\w.-]+\.[a-z]{2,}/i,
  /\/Users\//i,/\/home\//i,/docs\/psicohistoria/i,
- /(?:PR|issue)\s*#\s*\d+/i,/psicoexperimentos/i,
- /segundo[\s_-]*cerebro/i,/mayordomo/i,/mamg97/i,
+ /(?:PR|issue)\s*#\s*\d+/i,/\/research\//i,
  /(?:\bworkers\.dev\b|cloudflare)/i,
  /(?:https?:\/\/)[^\s"']+/i
 ];
