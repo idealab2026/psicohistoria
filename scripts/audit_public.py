@@ -81,7 +81,7 @@ if ideas.exists():
            sum(p.get("type")=="Aplicación de investigación" for p in projects)!=3 or \
            sum(bool(p.get("documentation",{}).get("vision")) for p in projects)!=8:
             issues.append("Historical public ideas catalogue status or coverage invalid")
-        if re.search(r"/Users/|mayordomo|mamg97|segundo[-_ ]cerebro|https?://|docs/|research/psychohistory/|PR\\s*#\\d+|Cloudflare|Worker|PsicoExperimentos",ideas.read_text(encoding="utf8"),flags=re.I):
+        if re.search(r"https?://|[a-z0-9._%-]+@[a-z0-9.-]+\\.[a-z]{2,}|[a-z0-9_.-]+\\.(?:md|py|ts|mjs)\\b|(?:[a-z_-]+/){2,}",ideas.read_text(encoding="utf8"),flags=re.I):
             issues.append("Historical public ideas catalogue reveals source identity or original infrastructure")
         allowed_docs={"vision","objective","scope","currentState","milestones","rules"}
         if any(set(p.get("documentation",{}))-allowed_docs for p in projects):
