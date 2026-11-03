@@ -22,9 +22,9 @@ test("Historical status is not mistaken for live services or newly certified for
  assert.ok(html.includes("Los estados no son una lectura operativa de hoy"));
  assert.ok(html.includes("no verifica avances posteriores"));
  assert.ok(html.includes("no una transferencia de posiciones"));
- assert.ok(!html.includes("PR #535"));
- assert.ok(!html.includes("/Users/"));
- assert.ok(!html.includes("PsicoExperimentos"));
+ assert.ok(!html.includes("internal_document.md"));
+ assert.ok(!html.includes("unapproved/source/path"));
+ assert.ok(!html.includes("internal-experiment-registry"));
 });
 test("Rendering escapes untrusted text instead of injecting markup or HTML events",()=>{
  const altered=structuredClone(data);
