@@ -6,6 +6,22 @@
 const expected=new Set(["lab-core","track-structural","track-forecast","track-agents",
  "track-meta","application-agenda","application-transmission",
  "application-radar","lab-public"]);
+const requiredRelations=new Set([
+ "track-structural|PERTENECE_A|lab-core",
+ "track-forecast|PERTENECE_A|lab-core",
+ "track-agents|PERTENECE_A|lab-core",
+ "application-agenda|PERTENECE_A|lab-core",
+ "application-transmission|PERTENECE_A|lab-core",
+ "application-radar|PERTENECE_A|lab-core",
+ "application-agenda|UTILIZA_METODO|track-forecast",
+ "application-agenda|REQUIERE_AUDITORIA|track-meta",
+ "application-agenda|APORTA_CONTEXTO|application-transmission",
+ "application-transmission|APORTA_CONTEXTO|track-structural",
+ "application-transmission|REQUIERE_VALIDACION|track-meta",
+ "application-transmission|TRANSFERENCIA_CONDICIONAL|ext-midas",
+ "application-radar|UTILIZA_METODO|track-forecast",
+ "application-radar|COMPARTE_FUENTES|application-agenda"
+]);
 const restricted=[
  /github\.com\/(?!idealab2026\b)/i,/[\w.+-]+@[\w.-]+\.[a-z]{2,}/i,
  /\/Users\//i,/\/home\//i,/docs\/psicohistoria/i,
@@ -67,11 +83,13 @@ export function validateProjectCatalog(data){
      !(ids.has(r.target)||r.target==="ext-midas")||
      typeof r.type!=="string"||!/^[A-Z_]{5,42}$/.test(r.type)||
      typeof r.description!=="string"||r.description.length<10||
-     seen.has(r.source+"→"+r.target+"→"+r.type))
+     seen.has(r.source+"→"+r.target+"→"+r.type)||
+     !requiredRelations.has(r.source+"|"+r.type+"|"+r.target))
     throw Error("PUBLIC_PROJECT_RELATIONS_INVALID");
   seen.add(r.source+"→"+r.target+"→"+r.type);
  }
- if(data.relations.filter(r=>r.target==="ext-midas").length!==1||
+ if(seen.size!==requiredRelations.size||
+    data.relations.filter(r=>r.target==="ext-midas").length!==1||
     data.relations.filter(r=>r.type==="PERTENECE_A").length!==6)
    throw Error("PUBLIC_PROJECT_RELATIONS_INCOMPLETE");
  const raw=JSON.stringify(data);
