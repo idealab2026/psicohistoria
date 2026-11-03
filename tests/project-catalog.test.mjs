@@ -55,11 +55,10 @@ test("Publish gate rejects personal paths, old source identifiers and linkable a
   "https://github.com/another-account/source-repo",
   "user@example.com",
   "/Users/hidden/local/source",
-  "PR #535",
-  "PsicoExperimentos",
-  "Segundo Cerebro",
+  "PR #123",
+  "/research/source-note",
   "private.host.workers.dev",
-  "mamg97",
+  "operator@unknown.test",
   "https://example.com/unreviewed"
  ];
  for(const value of samples){
@@ -76,5 +75,5 @@ test("Public page references source by code and does not publish the private raw
   'Ideas y aplicaciones','PUBLIC_INSTITUTIONAL_PROJECTION'
  ])assert.ok(site.includes(required),"missing "+required);
  assert.ok(index.includes('data-section="create"'));
- assert.ok(!index.includes("prj-psico-"));
+ assert.ok(!index.includes("legacy-internal-source"));
 });
