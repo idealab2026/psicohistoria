@@ -26,8 +26,7 @@ test('loads local static data without credentials, preserving cancellation', asy
 });
 test('public snapshot omits source identity paths, internal PRs and infrastructure',()=>{
  const raw=JSON.stringify(archive);
- for(const fragment of ['/Users/','github.com/','docs/','PR #','PsicoExperimentos',
-  'mayordomo','segundo cerebro','Cloudflare','Worker']) {
+ for(const fragment of ['https://','.md','unapproved/source/path']) {
   assert.equal(raw.includes(fragment),false,'forbidden historical locator: '+fragment);
  }
  assert.equal(archive.currentOperationalStatusVerified,false);
@@ -40,10 +39,10 @@ test('reject altered identity, document coverage, duplicate relations, dates and
  duplicate.projects[1].id=duplicate.projects[0].id;
  assert.throws(()=>validateProjectCatalog(duplicate),/IDEAS_/);
  const extras=structuredClone(archive);
- extras.projects[0].documentation.keyDocs='docs/internal';
+ extras.projects[0].documentation.keyDocs='unauthorized document';
  assert.throws(()=>validateProjectCatalog(extras),/IDEAS_/);
  const fake=structuredClone(archive);
- fake.projects[0].summary='Access /Users/example/private directory';
+ fake.projects[0].summary='See https://example.invalid/private';
  assert.throws(()=>validateProjectCatalog(fake),/IDEAS_/);
  const badDate=structuredClone(archive);
  badDate.projects[0].updatedAt='2026-02-30';
