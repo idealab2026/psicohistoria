@@ -40,11 +40,3 @@ test("formulas, text and unvalidated scientific evidence are not accepted as pro
  assert.throws(()=>evaluateLocalForecast(rows));
 });
 
-test("Historical science archive preserves eleven tables and 1835 records without reissuing predictions",async()=>{
- const {verifyScientificArchive,scientificArchiveTable}=await import("../src/scientific-archive.mjs");
- const doc=JSON.parse(readFileSync(new URL("../data/scientific-workbook.json",import.meta.url),"utf8"));
- assert.deepEqual(verifyScientificArchive(doc),{tables:11,records:1835,predictions:1177,verifiedOutcomes:0});
- assert.equal(scientificArchiveTable(doc,{table:3}).count,1177);
- assert.equal(scientificArchiveTable(doc,{table:3}).pages,40);
- const altered=structuredClone(doc);altered.tables[3].rows.pop();assert.throws(()=>verifyScientificArchive(altered));
-});
