@@ -1,4 +1,3 @@
-import {verifyScientificArchive,scientificArchiveTable} from "./scientific-archive.mjs";
 import {verify,score,calibration} from "./metrics.mjs";
 import {verifyResearch,parseForecastCSV,evaluateLocalForecast,CSV_TEMPLATE} from "./research.mjs";
 import {domainGraph} from "./visuals.mjs";
@@ -33,13 +32,23 @@ const methods=()=>'<div class="section-grid three">'+[
 ].map(([t,p])=>box('<h3>'+safe(t)+'</h3><p>'+safe(p)+'</p>')).join("")+'</div>';
 const cards=items=>'<div class="section-grid">'+items.map(([title,body,action,value])=>box('<h3>'+safe(title)+'</h3><p>'+safe(body)+'</p>'+button("Explorar",action,value))).join("")+'</div>';
 const programCard=p=>box('<div class="item-row wrap"><h3>'+safe(p.name)+'</h3>'+tag(p.state)+'</div><p>'+safe(p.summary)+'</p><div class="tiny">Criterio metodológico</div><p>'+safe(p.protocol)+'</p>'+button("Examinar línea","program",p.id,p.id===state.program?"ghost active":"ghost"));
+// Public structure is intentionally independent from private research cells.
+// Never fetch, bundle or link raw scientific registers from a public website.
+const PUBLIC_RECORD_COUNTS=Object.freeze([
+ ["Hitos",21],["Indicadores",23],["Experimentos",164],
+ ["Inscripciones experimentales",1177],["Fases",57],
+ ["Avances de investigación",174],["Variables",13],
+ ["Eventos",2],["Fuentes de eventos",2],
+ ["Calendario",9],["Comparativas externas",193]
+]);
 function renderArchive(){
- if(!state.archive)return msg("El archivo científico no está disponible.");
- const t=scientificArchiveTable(state.archive,{table:state.archiveTable,query:state.archiveQuery,page:state.archivePage});
- return '<h2>Archivo científico</h2><p>Once tablas · 1.835 registros · corte 31/10/2026. Las 1.177 inscripciones históricas no acreditan desenlaces ni capacidad predictiva. Las referencias privadas se han retirado; las cifras y fórmulas no se recalculan.</p>'+
- '<div class="archive-controls"><label>Tabla<select id="archive-table">'+state.archive.tables.map((x,i)=>'<option value="'+i+'" '+(i===state.archiveTable?'selected':'')+'>'+safe(x.name)+' · '+x.records+'</option>').join("")+'</select></label><label>Buscar en la tabla<input type="search" id="archive-query" value="'+safe(state.archiveQuery)+'"></label><button type="button" data-action="archive-search">Buscar</button><a href="./data/scientific-workbook.json" download>Descargar archivo JSON</a></div>'+
- '<p>'+t.count+' registros · página '+(t.page+1)+' de '+t.pages+'</p>'+t.html+
- button("Anterior","archive-page",String(Math.max(0,t.page-1)))+button("Siguiente","archive-page",String(Math.min(t.pages-1,t.page+1)));
+ const counts=PUBLIC_RECORD_COUNTS.reduce((n,row)=>n+row[1],0);
+ return '<h2>Archivo científico · estructura pública</h2>'+
+ '<p>La web pública presenta únicamente el inventario agregado. Los registros completos, textos de investigación y sus fuentes no se publican aquí ni se ofrecen para descarga. Las inscripciones experimentales no acreditan aciertos ni resultados prospectivos.</p>'+
+ '<div class="section-grid three">'+PUBLIC_RECORD_COUNTS.map(([name,total])=>
+ box('<div class="card-number">'+total+'</div><h3>'+safe(name)+'</h3>')).join("")+
+ '</div><p class="tiny">'+PUBLIC_RECORD_COUNTS.length+
+ ' categorías · '+counts+' registros históricos inventariados. Acceso al contenido íntegro restringido a entornos autorizados.</p>';
 }
 function renderBrief(){
  const d=state.data;
@@ -185,7 +194,7 @@ function render(){
   const b=document.createElement("button");b.type="button";b.textContent=label;b.dataset.action="navigate";b.dataset.value=id;
   b.classList.toggle("active",state.view===id);sub.append(b);
  }
- const views={archive:renderArchive,brief:()=>button("Abrir archivo científico · 1.835 registros","navigate","archive")+renderBrief(),futures:renderFutures,shadow2027:renderShadow,overview:renderOverview,
+ const views={archive:renderArchive,brief:()=>button("Ver estructura del archivo científico","navigate","archive")+renderBrief(),futures:renderFutures,shadow2027:renderShadow,overview:renderOverview,
   science:renderScience,registry:renderResearchRegistry,operations:renderOperations,roadmap:renderRoadmap,
   portfolio:()=>renderHistoricalProjectPortfolio(state.projectCatalog),ideas:renderIdeas,video:renderVideo};
  $("app").innerHTML=views[state.view]();
@@ -204,18 +213,18 @@ async function load(){
  try{
   const catalogRead=loadProjectCatalog().then(data=>({available:true,data}))
     .catch(()=>({available:false,data:null}));
-  const [response,researchResponse,archiveResponse]=await Promise.all([fetch("./data/demo.json",{cache:"no-store"}),fetch("./data/research.json",{cache:"no-store"}),fetch("./data/scientific-workbook.json",{cache:"no-store"})]);
+  const [response,researchResponse]=await Promise.all([fetch("./data/demo.json",{cache:"no-store"}),fetch("./data/research.json",{cache:"no-store"})]);
    if(!response.ok||!researchResponse.ok)throw new Error("Public sources unavailable");
    const [data,research]=await Promise.all([response.json(),researchResponse.json()]);
    verify(data);verifyResearch(research);state.research=research;
-  if(!archiveResponse.ok)throw Error("Archivo científico no disponible");const archive=await archiveResponse.json();verifyScientificArchive(archive);state.archive=archive;
+  // Detailed scientific records are intentionally not read by the public client.
   state.projectCatalog=(await catalogRead).data;
   for(const key of ["programs","milestones","ideas"])if(!Array.isArray(data[key]))throw new Error("Incomplete public catalogue");
   state.data=data;state.scenario=state.scenario||data.branches[0].id;state.program=state.program||data.programs[0].id;state.study=state.study||data.studies[0].id;
   $("count-studies").textContent=data.studies.length;$("count-models").textContent=data.programs.length;
   $("count-predictions").textContent="1177";$("count-evaluated").textContent="0";
   $("as-of").textContent="Archivo histórico y demostraciones separadas";
-  $("sync-status").textContent="Archivo científico cargado · sin desenlaces prospectivos acreditados";
+  $("sync-status").textContent="Vista pública agregada · sin resultados prospectivos acreditados";
   render();
  }catch{
   $("sync-status").textContent="Fuente pública no disponible o inválida";
