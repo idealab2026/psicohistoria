@@ -9,15 +9,19 @@ sys.dont_write_bytecode = True
 from private_disclosure import configured_terms, contains_private_term
 
 ROOT = Path(__file__).resolve().parents[1]
-RELEASE = {"src/scientific-archive.mjs", "data/scientific-workbook.json","index.html", "styles.css", "favicon.svg", "logo.svg", "src/site.mjs", "src/visuals.mjs", "src/neural.mjs", "src/markov-svg.mjs", "src/lab-renderers.mjs", "src/metrics.mjs", "src/research.mjs", "src/project-catalog.mjs", "src/project-portfolio.mjs", "data/demo.json", "data/research.json", "data/projects.json"}
+RELEASE = {"index.html", "styles.css", "favicon.svg", "logo.svg", "src/site.mjs", "src/visuals.mjs", "src/neural.mjs", "src/markov-svg.mjs", "src/lab-renderers.mjs", "src/metrics.mjs", "src/research.mjs", "src/project-catalog.mjs", "src/project-portfolio.mjs", "data/demo.json", "data/research.json", "data/projects.json"}
 REPOSITORY = RELEASE | {"scripts/private_disclosure.py", "scripts/test_private_disclosure.py", "README.md", "scripts/audit_public.py", "tests/metrics.test.mjs", "tests/research.test.mjs", "tests/visuals.test.mjs", "tests/lab-renderers.test.mjs", "tests/project-catalog.test.mjs", "tests/project-portfolio.test.mjs", ".github/workflows/pages.yml"}
 issues = []
+# Historical research cells must never be admitted to a public release.
+BLOCKED = {"data/scientific-workbook.json", "src/scientific-archive.mjs"}
 try:
     private_terms = configured_terms()
 except ValueError as error:
     issues.append(str(error))
     private_terms = ()
 files = {str(p.relative_to(ROOT)) for p in ROOT.rglob("*") if p.is_file() and ".git" not in p.parts}
+if blocked := sorted(files & BLOCKED):
+    issues.append("Private scientific source must not exist in public checkout")
 if unknown := sorted(files - REPOSITORY):
     issues.append("Unapproved additional files: " + str(len(unknown)))
 if missing := sorted(REPOSITORY - files):
@@ -30,6 +34,10 @@ class Links(HTMLParser):
         if tag in ("a","link","img","script"):
             u=a.get("href") or a.get("src")
             if u: self.references.append(u)
+if (ROOT/"src/site.mjs").exists():
+    site = (ROOT/"src/site.mjs").read_text(encoding="utf8")
+    if re.search(r"scientific-workbook\\.json|scientificArchiveTable|verifyScientificArchive", site):
+        issues.append("Public client may load private scientific detail")
 if (ROOT/"index.html").exists():
     links=Links()
     links.feed((ROOT/"index.html").read_text(encoding="utf8"))
