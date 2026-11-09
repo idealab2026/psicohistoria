@@ -44,6 +44,6 @@ test("Predictive tree links to local country comparison without publishing priva
  assert.match(mainTree,/tree-country-select/);
  assert.match(mainTree,/Sociedad<select/);
  assert.doesNotMatch(mainTree,/tree-private-file|type="file"/);
- assert.match(mainTree,/NO ES UNA PREDICCIÓN EMITIDA/);
+ assert.match(mainTree,/no equivale a una predicción registrada/);
  assert.doesNotMatch(controller,/fetch\(|XMLHttpRequest|sendBeacon/);
 });
