@@ -4,6 +4,7 @@ import {domainGraph} from "./visuals.mjs";
 import {loadProjectCatalog} from "./project-catalog.mjs";
 import {renderHistoricalProjectPortfolio} from "./project-portfolio.mjs";
 import {scientificNeuralPanel,enableScientificNeural,scientificMarkovPanel,syntheticFourStateModel} from "./lab-renderers.mjs";
+import {renderHistoricalTree,acceptHistoricalFile,getHistoricalCatalog} from "./main-country-tree.mjs";
 
 const $=id=>document.getElementById(id);
 const safe=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -17,7 +18,7 @@ const groupViews={
 };
 const viewIds=new Set(Object.values(groupViews).flat().map(x=>x[0]));
 const viewToGroup=Object.fromEntries(Object.entries(groupViews).flatMap(([k,items])=>items.map(([id])=>[id,k])));
-const state={archive:null,projectCatalog:null,archiveTable:0,archiveQuery:"",archivePage:0,data:null,research:null,registryFilter:"todos",registryOutput:null,view:viewIds.has(new URLSearchParams(location.search).get("view"))?new URLSearchParams(location.search).get("view"):"brief",scenario:null,program:null,study:null,filter:"todos",ideas:[],flowState:"00",markovOrigin:2020,markovHorizon:6,markovQuestion:"atleast25",markovSelection:null,videoText:"",busy:false};
+const state={archive:null,projectCatalog:null,archiveTable:0,archiveQuery:"",archivePage:0,data:null,research:null,registryFilter:"todos",registryOutput:null,view:viewIds.has(new URLSearchParams(location.search).get("view"))?new URLSearchParams(location.search).get("view"):"brief",scenario:null,program:null,study:null,filter:"todos",ideas:[],flowState:"00",markovOrigin:2020,markovHorizon:6,markovQuestion:"atleast25",markovSelection:null,countryTreeOrigin:2020,countryTreeId:null,countryTreeModel:"country_shrinkage",countryTreeQuestion:"atleast25",countryTreeYear:null,countryTreeSelection:null,videoText:"",busy:false};
 const section=(eyebrow,title,description)=>'<header class="section-head"><div class="eyebrow">'+safe(eyebrow)+'</div><h2>'+safe(title)+'</h2><p>'+safe(description)+'</p></header>';
 const box=(contents,extra="")=>'<article class="panel '+extra+'">'+contents+'</article>';
 const tag=(t,cls="")=>'<span class="tag '+cls+'">'+safe(t)+'</span>';
@@ -69,12 +70,10 @@ function renderBrief(){
 function renderFutures(){
  const d=state.data;
  const chosen=d.branches.find(x=>x.id===state.scenario)||d.branches[0];
- return section("PREDICCIONES · EXPLORADOR","Árbol de posibilidades","Exploración de mecanismos hipotéticos. Los porcentajes siguientes son pesos fijados para la demostración; no están estimados a partir de resultados reales.")+
- scientificMarkovPanel({horizon:state.markovHorizon,selection:state.markovSelection,origin:state.markovOrigin,question:state.markovQuestion})+
-  '<section class="panel country-comparison-entry" aria-label="Comparación de países del árbol predictivo">'+
-  '<div class="eyebrow">PAÍSES · ANÁLISIS HISTÓRICO</div><h3>Comparar las líneas de cada país</h3>'+
-  '<p>Este árbol público utiliza solo una simulación. Para distinguir países reales mediante una línea por país, con sus años, cinco modelos y cuatro estados, abre el cuaderno y carga allí los catálogos privados. No se transfieren al servidor.</p>'+
-  '<a class="ghost" href="./trabajo.html">Comparar países reales en el cuaderno →</a></section>'+
+ return section("PREDICCIONES · EXPLORADOR","Árbol histórico por país","Selecciona un país y un modelo dentro del árbol. Las probabilidades históricas solo aparecen tras cargar un catálogo privado local; las simulaciones públicas están separadas.")+
+ renderHistoricalTree(state)+
+ '<details class="synthetic-tree-details"><summary>Ver simulación didáctica sin países (no representa resultados reales)</summary>'+
+ scientificMarkovPanel({horizon:state.markovHorizon,selection:state.markovSelection,origin:state.markovOrigin,question:state.markovQuestion})+'</details>'+
   '<div class="two-col">'+box('<div class="tiny">TRAYECTORIA ELEGIDA</div><h3>'+safe(chosen.name)+'</h3><div class="tree">'+d.branches.map(b=>'<div class="scenario '+(chosen.id===b.id?"active":"")+'"><div class="tiny">ESTADO POSIBLE</div><strong>'+safe(b.name)+'</strong>'+percentageBar(b.weight)+'</div>').join("")+'</div><p>La partición del universo es hipotética; cualquier cambio de supuestos exige documentar una nueva versión.</p>')+
  box('<h3>Lectura explicable</h3><p>'+safe(chosen.mechanism)+'</p><h4>Observación a vigilar</h4><p>'+safe(chosen.watch)+'</p><div class="notice">No hay resultados registrados ni probabilidades de países o eventos reales.</div>')+'</div>'+
   section("PROBABILIDADES","Modelo y trayectoria","La demostración permite alternar entre estudios y visualizar sus probabilidades sobre etiquetas inventadas.")+
@@ -262,6 +261,36 @@ document.querySelectorAll("[data-section]").forEach(button=>button.addEventListe
  const group=button.dataset.section;navigate(groupViews[group][0][0]);
 }));
 $("refresh").addEventListener("click",load);
+// True country selections are driven by user-supplied local JSON, never a public source fetch.
+$("app").addEventListener("change",async event=>{
+ const input=event.target;
+ if(input.id==="tree-private-file"){
+   const file=input.files?.[0];
+   if(!file)return;
+   try{
+     if(!file.name.toLowerCase().endsWith(".json")||file.size>12*1024*1024||file.size<20)
+       throw Error("ARCHIVO_JSON_INVALIDO_O_MAYOR_12_MB");
+     const data=JSON.parse(await file.text());
+     const found=acceptHistoricalFile(data);
+     state.countryTreeOrigin=found.some(c=>c.origin===2020)?2020:found[0].origin;
+     state.countryTreeId=null;state.countryTreeYear=null;state.countryTreeSelection=null;
+     render();
+   }catch(err){
+     const status=$("app").querySelector("[data-country-file-status]");
+     if(status)status.textContent="Catálogo rechazado: "+String(err.message)+
+       ". Se exige el catálogo privado canónico 2016/2020 completo, sin reconstrucciones ni probabilidades inventadas.";
+   }finally{input.value="";}
+   return;
+ }
+ const key={ "tree-country-origin":"countryTreeOrigin",
+   "tree-country-select":"countryTreeId","tree-country-model":"countryTreeModel",
+   "tree-country-question":"countryTreeQuestion","tree-country-year":"countryTreeYear"}[input.id];
+ if(!key)return;
+ state[key]=key==="countryTreeOrigin"||key==="countryTreeYear"?Number(input.value):input.value;
+ state.countryTreeSelection=null;
+ if(key==="countryTreeOrigin"){state.countryTreeId=null;state.countryTreeYear=null;}
+ render();
+});
 $("app").addEventListener("change",event=>{
   const select=event.target.closest?.("[data-public-question]");
   if(!select)return;
@@ -277,6 +306,27 @@ $("app").addEventListener("change",event=>{
 $("app").addEventListener("click",async event=>{
  const graphNode=event.target.closest("[data-fnode],[data-fedge]");
  if(graphNode){
+  const inRealTree=!!graphNode.closest("[data-country-tree]");
+  if(inRealTree){
+    const pair=String(graphNode.dataset.fnode||graphNode.dataset.fedge||"").split(":").map(Number);
+    const catalog=getHistoricalCatalog(state.countryTreeOrigin);
+    if(!catalog||pair.length!==2||!pair.every(Number.isInteger))return;
+    const level=pair[0],stateIndex=pair[1];
+    if(level<0||level>catalog.maxHorizon+1)return;
+    if(graphNode.dataset.fnode!==undefined){
+      if(stateIndex<0||stateIndex>3)return;
+      state.countryTreeSelection={kind:"node",level,state:stateIndex};
+    }else{
+      // Edge indices are validated by the SVG generator; select only that actual edge.
+      if(level<1||stateIndex<0||stateIndex>8)return;
+      state.countryTreeSelection={kind:"edge",level,index:stateIndex};
+    }
+    const scroll=graphNode.closest("[data-real-markov]")?.scrollLeft||0;
+    render();
+    const next=$("app").querySelector("[data-real-markov]");
+    if(next)next.scrollLeft=scroll;
+    return;
+  }
   const node=graphNode.dataset.fnode,edge=graphNode.dataset.fedge;
   const pair=String(node||edge||"").split(":").map(Number);
   if(pair.length!==2||!pair.every(Number.isInteger))return;

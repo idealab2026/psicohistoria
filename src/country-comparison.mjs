@@ -90,24 +90,29 @@ export function historicalCountryTrajectory(catalog,countryId,model="country_shr
  const country=catalog.countries.find(x=>String(x.id)===String(countryId));
  if(!country)throw Error("PAIS_NO_ENCONTRADO");
  const matrixRates=rates(catalog,country,model);
- const levels=[{year:catalog.cutoff,distribution:[0,1,2,3].map(i=>Number(i===country.initial))}];
+ const levels=[{year:catalog.cutoff,distribution:[0,1,2,3].map(i=>Number(i===country.initial)),flows:[]}];
  let dist=[...levels[0].distribution];
  for(let step=1;step<=catalog.maxHorizon+1;step++){
-   const next=[0,0,0,0];
+   const next=[0,0,0,0],flows=[];
    dist.forEach((mass,from)=>{
      const low=2*(from%2),p=matrixRates[from];
-     next[low]+=mass*(1-p);
-     next[low+1]+=mass*p;
+     for(const [to,conditional] of [[low,1-p],[low+1,p]]){
+       const flow=mass*conditional;
+       next[to]+=flow;
+       if(conditional>0&&flow>0)flows.push({from,to,conditional,mass:flow});
+     }
    });
    if(next.some(p=>!Number.isFinite(p)||p<0||p>1+1e-9)||
       Math.abs(sum(next)-1)>1e-9)throw Error("MASA_PROBABILISTICA_INVALIDA");
    dist=next;
-   levels.push({year:catalog.cutoff+step,distribution:[...next]});
+   levels.push({year:catalog.cutoff+step,distribution:[...next],flows});
  }
  return {
-   country:{id:country.id,name:country.name},
-   model,origin:catalog.origin,cutoff:catalog.cutoff,
+   country:{id:country.id,name:country.name},initial:country.initial,
+   model,origin:catalog.origin,cutoff:catalog.cutoff,maxHorizon:catalog.maxHorizon,
    historicalRevision:true,vintageVerified:false,prospectiveEligible:false,
+   observedStates:[],
+   snapshots:levels.slice(2).map(l=>({endYear:l.year,distribution:[...l.distribution],paths:[]})),
    levels:levels.map((l,i)=>({...l,kind:i===0?"corte":i===1?"puente_no_observado":"proyeccion_retroactiva",
      probabilityAtLeast25:l.distribution[1]+l.distribution[3]}))
  };
