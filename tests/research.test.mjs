@@ -71,3 +71,36 @@ test("question agenda is visible as an institutional research view",()=>{
  assert.match(source,/¿Qué queremos anticipar/);
  assert.match(source,/Sin validar/);
 });
+
+test("real UCDP empirical study is reproducible and explicitly NOT prospective",()=>{
+ const empirical=registry.empirical_studies[0];
+ assert.equal(empirical.source_sha256,"e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a");
+ assert.equal(empirical.observations,2939);
+ assert.equal(empirical.positive_events,41);
+ assert.ok(empirical.brier_country<empirical.brier_global);
+ assert.ok(empirical.delta_brier_confidence_interval[0]<0);
+ assert.ok(empirical.delta_brier_confidence_interval[1]>0);
+ assert.equal(empirical.prospective_validation,false);
+ assert.equal(empirical.source_point_in_time_verified,false);
+ assert.equal(empirical.more_reliable_than_baseline_demonstrated,false);
+ assert.equal(verifyResearch(registry),true);
+});
+test("research UI separates real retrospective source from synthetic software samples",()=>{
+ const source=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
+ assert.match(source,/function renderEmpiricalEvidence/);
+ assert.match(source,/renderEmpiricalEvidence\(\)\+section/);
+ assert.match(source,/no hay superioridad robusta demostrada/);
+ assert.match(source,/La tabla siguiente usa muestras inventadas/);
+});
+test("fabricated prospective achievement and invalid empirical scores are rejected",()=>{
+ let x=structuredClone(registry);x.empirical_studies[0].prospective_validation=true;
+ assert.throws(()=>verifyResearch(x),/cannot be displayed/);
+ x=structuredClone(registry);x.empirical_studies[0].more_reliable_than_baseline_demonstrated=true;
+ assert.throws(()=>verifyResearch(x),/cannot be displayed/);
+ x=structuredClone(registry);x.empirical_studies[0].brier_global=NaN;
+ assert.throws(()=>verifyResearch(x),/empirical score/);
+ x=structuredClone(registry);x.empirical_studies[0].source_sha256="f";
+ assert.throws(()=>verifyResearch(x),/provenance/);
+ x=structuredClone(registry);x.empirical_studies[0].delta_brier_confidence_interval=[1,0];
+ assert.throws(()=>verifyResearch(x),/confidence interval/);
+});
