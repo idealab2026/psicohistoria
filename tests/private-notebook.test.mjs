@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {makeDraft,validateDraft,validateNotebook,exportNotebook,describeScientificFile} from "../src/private-notebook.mjs";
+import {makeDraft,validateDraft,validateNotebook,exportNotebook,describeScientificFile,searchScientificObject} from "../src/private-notebook.mjs";
 const data={title:"Nuevo estudio",question:"¿Qué datos permitirían refutar este mecanismo?",hypothesis:"El mecanismo es falsable mediante datos externos.",method:"Comparación preregistrada",source:"https://www.census.gov/",notes:"Contrastar el calendario",target:"2027"};
 test("creates a non-issued research draft",()=>{
  const draft=makeDraft(data,"WEB-aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa","2026-11-09T11:00:00Z");
@@ -22,4 +22,14 @@ test("rejects duplicate IDs and any claim of issued forecasts",()=>{
 test("describes imports without leaking their content",()=>{
  assert.deepEqual(describeScientificFile({records:[1,2,3],meta:{schema:1}}),{kind:"object",topLevelKeys:["records","meta"],visibleArrayEntries:3});
  assert.throws(()=>describeScientificFile(null),/SCIENTIFIC_JSON_EXPECTED/);
+});
+
+test("finds text in real-shaped JSON locally without mutating source",()=>{
+ const doc={cohorte:{items:[{pais:"Tunisia",periodo:2027,notes:"Comparar prueba GED"},{pais:"Spain",periodo:2028}]}};
+ const original=JSON.stringify(doc);
+ const out=searchScientificObject(doc,"tunisia");
+ assert.equal(out.results.length,1);
+ assert.match(out.results[0].path,/items\[0\]\.pais/);
+ assert.equal(JSON.stringify(doc),original);
+ assert.throws(()=>searchScientificObject(doc,"a"),/INVALID_SEARCH/);
 });
