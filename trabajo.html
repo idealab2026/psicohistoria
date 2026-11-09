@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#060b11">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta name="description" content="Cuaderno local de investigación científica de Psicohistoria · IDEA LAB. Los datos seleccionados no se transmiten a la web.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./styles.css">
+<title>Cuaderno de investigación · Psicohistoria · IDEA LAB</title>
+<style>
+body{background:#070d14;color:#dceaf3;font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+.workbench{width:min(1450px,calc(100% - 36px));margin:24px auto 80px}
+.workbench-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;border-bottom:1px solid #223442;padding:12px 0 22px}
+.workbench-head a{color:#cde6fa}
+.workbench-head h1{font-size:clamp(1.9rem,3.4vw,3.2rem);margin:6px 0;color:#f1f8fb}
+.workbench-head p{max-width:760px;color:#a8bccc;line-height:1.65}
+.eyebrow{letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;color:#9ec4d4;font-weight:700}
+.workbench-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(290px,.75fr);gap:18px;margin:18px 0}
+.work-panel{background:#0e1925;border:1px solid #2a3c4c;border-radius:14px;padding:22px;min-width:0}
+.work-panel h2{font-size:1.28rem;margin:0 0 12px;color:#eaf7fd}
+.work-panel p{line-height:1.65;color:#aabcca}
+.work-panel label{display:block;margin:14px 0 5px;font-weight:650;color:#d4e4ee;font-size:.85rem}
+.work-panel input,.work-panel textarea{width:100%;min-width:0;border:1px solid #466078;background:#0a121b;color:#f1f8ff;border-radius:8px;padding:11px;font:inherit}
+.work-panel textarea{resize:vertical;min-height:90px}
+.work-panel input[type=file]{cursor:pointer}
+.work-panel button,.action-link{min-height:42px;padding:10px 16px;border:1px solid #608ba3;background:#183348;color:#f2fcff;border-radius:8px;font:650 .86rem system-ui;cursor:pointer;text-decoration:none}
+.work-panel button:hover,.action-link:hover{background:#254d68}
+.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.notice{padding:13px 16px;border-radius:8px;border:1px solid #3a556a;background:#122638;color:#c3dbe9}
+.notice strong{color:#f6faff}
+.status{font-size:.86rem;color:#b4d5e5;white-space:pre-wrap}
+.muted{font-size:.83rem;color:#98aebb}
+.item{border-top:1px solid #2d4352;padding:14px 0}
+.item h3{color:#eaf7fa;font-size:1rem;margin:3px 0 5px}
+.item small{color:#9cb8cb}
+.item p{font-size:.87rem;margin:6px 0;overflow-wrap:anywhere}
+.badge-draft{display:inline-block;border-radius:5px;background:#263e4a;color:#d9eef6;padding:4px 7px;font-size:.71rem;letter-spacing:.04em}
+.metricline{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.metric{background:#0a141e;border:1px solid #233b4e;border-radius:10px;padding:12px}
+.metric strong{display:block;color:#e1f5ff;font-size:1.6rem}
+.metric span{font-size:.75rem;color:#a9becb}
+.empty{padding:20px 0;color:#93aebe}
+code{color:#cbe5fc}
+@media(max-width:850px){.workbench-grid{grid-template-columns:1fr}.workbench{width:calc(100% - 22px)}}
+</style>
+</head>
+<body>
+<main class="workbench">
+ <header class="workbench-head">
+  <div>
+   <span class="eyebrow">IDEA LAB · PSICOHISTORIA / ENTORNO LOCAL PRIVADO</span>
+   <h1>Cuaderno de investigación</h1>
+   <p>Prepara y documenta nuevas líneas de trabajo desde IDEA LAB sin cargar archivos científicos en servidores públicos. Puedes inspeccionar JSON científicos locales y exportar nuevos expedientes.</p>
+  </div>
+  <a class="action-link" href="./">Volver a Psicohistoria</a>
+ </header>
+ <div class="notice" role="note"><strong>No es el registro certificado ICSA.</strong> Las fichas creadas son borradores: no emiten predicciones, no reciben sellos RFC3161 y no se sincronizan automáticamente con Drive. <strong>Exporta el cuaderno y consérvalo en el archivo institucional privado.</strong> Los ficheros seleccionados permanecen en la memoria del navegador.</div>
+ <div class="workbench-grid">
+  <section class="work-panel" aria-labelledby="new-title">
+   <div class="eyebrow">01 · Nueva actividad</div>
+   <h2 id="new-title">Registrar hipótesis de investigación</h2>
+   <form id="research-form">
+    <label for="title">Título del estudio</label><input id="title" name="title" maxlength="160" required placeholder="Ej.: Nuevo análisis de transiciones">
+    <label for="question">Pregunta contrastable</label><textarea id="question" name="question" maxlength="2000" required placeholder="¿Qué resultado concreto queremos explicar o anticipar?"></textarea>
+    <label for="hypothesis">Hipótesis</label><textarea id="hypothesis" name="hypothesis" maxlength="3000" required placeholder="Hipótesis falsable, mecanismo causal y alternativa de referencia"></textarea>
+    <label for="method">Diseño y método</label><textarea id="method" name="method" maxlength="3000" placeholder="Cohorte, unidad de análisis, período, fuentes, métricas, holdout..."></textarea>
+    <label for="source">Fuente primaria HTTPS</label><input id="source" name="source" type="url" maxlength="1500" placeholder="https://">
+    <label for="target">Ámbito u horizonte</label><input id="target" name="target" maxlength="100" placeholder="Países, 2027; o cohorte experimental">
+    <label for="notes">Notas y próximos contrastes</label><textarea id="notes" name="notes" maxlength="4000" placeholder="Qué queda por probar, qué puede invalidar la hipótesis..."></textarea>
+    <div class="buttons"><button type="submit">Añadir borrador</button><button type="button" id="export-notebook">Exportar expediente JSON</button></div>
+   </form>
+   <p class="status" id="work-status" role="status" aria-live="polite">Cuaderno vacío. No se transmite ningún contenido a GitHub Pages.</p>
+  </section>
+  <div>
+   <section class="work-panel" aria-labelledby="archive-title">
+    <div class="eyebrow">02 · Archivo científico</div>
+    <h2 id="archive-title">Inspeccionar objetos privados locales</h2>
+    <p>Selecciona los archivos JSON de tu laboratorio local. Solo se leen aquí; la web pública no puede descargarlos ni acceder a tu Drive.</p>
+    <label for="science-files">Objetos JSON</label><input type="file" id="science-files" multiple accept=".json,application/json">
+    <div class="metricline"><div class="metric"><strong id="loaded-count">0</strong><span>Objetos cargados en memoria</span></div><div class="metric"><strong id="draft-count">0</strong><span>Borradores preparados</span></div></div>
+    <div id="science-summary" aria-live="polite"><p class="empty">Ningún archivo cargado.</p></div>
+   </section>
+   <section class="work-panel" style="margin-top:18px" aria-labelledby="drafts-title">
+    <div class="eyebrow">03 · Continuidad</div>
+    <h2 id="drafts-title">Expedientes no emitidos</h2>
+    <p>Recupera aquí un cuaderno que hayas exportado anteriormente para continuar el estudio.</p>
+    <label for="notebook-file">Importar cuaderno JSON</label><input type="file" id="notebook-file" accept=".json,application/json">
+    <div id="drafts-list" aria-live="polite"><p class="empty">Todavía no hay borradores.</p></div>
+   </section>
+  </div>
+ </div>
+</main>
+<script type="module" src="./src/private-workbench.mjs"></script>
+</body>
+</html>
