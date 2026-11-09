@@ -10,7 +10,7 @@ from private_disclosure import configured_terms, contains_private_term
 
 ROOT = Path(__file__).resolve().parents[1]
 RELEASE = {"privacidad-icsa.html", "index.html", "trabajo.html", "src/private-notebook.mjs", "src/private-workbench.mjs", "src/country-comparison.mjs", "src/country-comparison-view.mjs", "src/main-country-tree.mjs", "styles.css", "favicon.svg", "logo.svg", "src/site.mjs", "src/visuals.mjs", "src/neural.mjs", "src/markov-svg.mjs", "src/lab-renderers.mjs", "src/metrics.mjs", "src/research.mjs", "src/project-catalog.mjs", "src/project-portfolio.mjs", "data/demo.json", "data/research.json", "data/projects.json"}
-REPOSITORY = RELEASE | {"scripts/private_disclosure.py", "scripts/test_private_disclosure.py", "README.md", "scripts/audit_public.py", "tests/metrics.test.mjs", "tests/research.test.mjs", "tests/visuals.test.mjs", "tests/lab-renderers.test.mjs", "tests/project-catalog.test.mjs", "tests/project-portfolio.test.mjs", "tests/public-science-boundary.test.mjs", "tests/private-notebook.test.mjs", "tests/country-comparison.test.mjs", ".github/workflows/pages.yml"}
+REPOSITORY = RELEASE | {"scripts/private_disclosure.py", "scripts/test_private_disclosure.py", "README.md", "scripts/audit_public.py", "scripts/build_official_countries.py", "scripts/test_build_official_countries.py", "tests/metrics.test.mjs", "tests/research.test.mjs", "tests/visuals.test.mjs", "tests/lab-renderers.test.mjs", "tests/project-catalog.test.mjs", "tests/project-portfolio.test.mjs", "tests/public-science-boundary.test.mjs", "tests/private-notebook.test.mjs", "tests/country-comparison.test.mjs", ".github/workflows/pages.yml"}
 issues = []
 # Historical research cells must never be admitted to a public release.
 BLOCKED = {"data/scientific-workbook.json", "src/scientific-archive.mjs"}
@@ -38,6 +38,10 @@ if (ROOT/"src/site.mjs").exists():
     site = (ROOT/"src/site.mjs").read_text(encoding="utf8")
     if re.search(r"scientific-workbook\\.json|scientificArchiveTable|verifyScientificArchive", site):
         issues.append("Public client may load private scientific detail")
+if (ROOT/"scripts/build_official_countries.py").is_file():
+    code=(ROOT/"scripts/build_official_countries.py").read_text(encoding="utf8")
+    if "OFFICIAL_URL" not in code or "ucdp.uu.se/downloads/organizedviolencecy/" not in code:
+        issues.append("Public official-source generator provenance missing")
 if (ROOT/"src/main-country-tree.mjs").is_file():
     source=(ROOT/"src/main-country-tree.mjs").read_text(encoding="utf8")
     if re.search(r"fetch\(|XMLHttpRequest|sendBeacon", source):
@@ -60,6 +64,7 @@ if (ROOT/"index.html").exists():
         if url.startswith("https://"):
             if not (url.startswith("https://idealab2026.github.io/") or url.startswith("https://github.com/idealab2026/")):
                 issues.append("Non-institutional external link")
+        elif url == "./?view=futures": continue
         elif url.startswith("./"):
             if url[2:].split("?",1)[0] not in RELEASE or ("?" in url and not re.fullmatch(r"v=[a-f0-9]{12}",url.split("?",1)[1])): issues.append("Dependency not on release allowlist")
         else: issues.append("Unexpected link or source type")

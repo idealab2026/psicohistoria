@@ -4,7 +4,7 @@ import {domainGraph} from "./visuals.mjs";
 import {loadProjectCatalog} from "./project-catalog.mjs";
 import {renderHistoricalProjectPortfolio} from "./project-portfolio.mjs";
 import {scientificNeuralPanel,enableScientificNeural,scientificMarkovPanel,syntheticFourStateModel} from "./lab-renderers.mjs";
-import {renderHistoricalTree,acceptHistoricalFile,getHistoricalCatalog} from "./main-country-tree.mjs";
+import {renderHistoricalTree,acceptPublicCountryCatalogs,setCountrySourceError,getHistoricalCatalog} from "./main-country-tree.mjs";
 
 const $=id=>document.getElementById(id);
 const safe=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -68,16 +68,8 @@ function renderBrief(){
  ])+syntheticWarning()+section("CRITERIOS","De la exploración a la evidencia","Qué deberá comprobarse antes de publicar datos o afirmaciones reales.")+methods();
 }
 function renderFutures(){
- const d=state.data;
- const chosen=d.branches.find(x=>x.id===state.scenario)||d.branches[0];
- return section("PREDICCIONES · EXPLORADOR","Árbol histórico por país","Selecciona un país y un modelo dentro del árbol. Las probabilidades históricas solo aparecen tras cargar un catálogo privado local; las simulaciones públicas están separadas.")+
- renderHistoricalTree(state)+
- '<details class="synthetic-tree-details"><summary>Ver simulación didáctica sin países (no representa resultados reales)</summary>'+
- scientificMarkovPanel({horizon:state.markovHorizon,selection:state.markovSelection,origin:state.markovOrigin,question:state.markovQuestion})+'</details>'+
-  '<div class="two-col">'+box('<div class="tiny">TRAYECTORIA ELEGIDA</div><h3>'+safe(chosen.name)+'</h3><div class="tree">'+d.branches.map(b=>'<div class="scenario '+(chosen.id===b.id?"active":"")+'"><div class="tiny">ESTADO POSIBLE</div><strong>'+safe(b.name)+'</strong>'+percentageBar(b.weight)+'</div>').join("")+'</div><p>La partición del universo es hipotética; cualquier cambio de supuestos exige documentar una nueva versión.</p>')+
- box('<h3>Lectura explicable</h3><p>'+safe(chosen.mechanism)+'</p><h4>Observación a vigilar</h4><p>'+safe(chosen.watch)+'</p><div class="notice">No hay resultados registrados ni probabilidades de países o eventos reales.</div>')+'</div>'+
-  section("PROBABILIDADES","Modelo y trayectoria","La demostración permite alternar entre estudios y visualizar sus probabilidades sobre etiquetas inventadas.")+
- renderStudySelector()+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Probabilidades ficticias y etiquetas simuladas"></svg><div class="tiny">Azul: probabilidad del modelo. Puntos verdes: resultados sintéticos. Línea discontinua: referencia.</div>')+syntheticWarning();
+ return section("PREDICCIONES · EXPLORADOR","Árbol de predicciones","Escoge una sociedad, la pregunta que quieres calcular y el año. El árbol se actualiza automáticamente con datos oficiales de UCDP.")+
+  renderHistoricalTree(state);
 }
 function renderShadow(){
  return section("PREDICCIONES · OBSERVATORIO","Riesgos 2027","Protocolo de observación futura. Un ranking experimental no equivale a probabilidades emitidas, y no debe publicarse sin comprobar origen, licencia y disponibilidad histórica.")+
@@ -211,6 +203,19 @@ function navigate(view){
  render();
  window.scrollTo({top:0,behavior:"auto"});
 }
+async function loadPublicTree(){
+ try{
+  const response=await fetch("./data/countries-ucdp261.json",{cache:"no-store"});
+  if(!response.ok)throw Error("DATOS_UCDP_NO_DISPONIBLES");
+  const text=await response.text();
+  if(text.length>500000)throw Error("CATALOGO_UCDP_EXCESIVO");
+  const records=JSON.parse(text);
+  acceptPublicCountryCatalogs(records);
+ }catch(error){
+  setCountrySourceError("No se ha podido cargar el registro de países de UCDP. "+String(error.message));
+ }
+ if(state.view==="futures")render();
+}
 async function load(){
  if(state.busy)return;state.busy=true;$("refresh").disabled=true;$("sync-status").textContent="Validando el registro público…";
  try{
@@ -229,6 +234,7 @@ async function load(){
   $("as-of").textContent="Archivo histórico y demostraciones separadas";
   $("sync-status").textContent="Vista pública agregada · sin resultados prospectivos acreditados";
   render();
+  await loadPublicTree();
  }catch{
   $("sync-status").textContent="Fuente pública no disponible o inválida";
   if(!state.data)$("app").innerHTML=msg("No se ha podido cargar el registro público. No se muestran resultados de respaldo inventados.");
@@ -262,34 +268,24 @@ document.querySelectorAll("[data-section]").forEach(button=>button.addEventListe
 }));
 $("refresh").addEventListener("click",load);
 // True country selections are driven by user-supplied local JSON, never a public source fetch.
-$("app").addEventListener("change",async event=>{
+$("app").addEventListener("change",event=>{
  const input=event.target;
- if(input.id==="tree-private-file"){
-   const file=input.files?.[0];
-   if(!file)return;
-   try{
-     if(!file.name.toLowerCase().endsWith(".json")||file.size>12*1024*1024||file.size<20)
-       throw Error("ARCHIVO_JSON_INVALIDO_O_MAYOR_12_MB");
-     const data=JSON.parse(await file.text());
-     const found=acceptHistoricalFile(data);
-     state.countryTreeOrigin=found.some(c=>c.origin===2020)?2020:found[0].origin;
-     state.countryTreeId=null;state.countryTreeYear=null;state.countryTreeSelection=null;
-     render();
-   }catch(err){
-     const status=$("app").querySelector("[data-country-file-status]");
-     if(status)status.textContent="Catálogo rechazado: "+String(err.message)+
-       ". Se exige el catálogo privado canónico 2016/2020 completo, sin reconstrucciones ni probabilidades inventadas.";
-   }finally{input.value="";}
-   return;
- }
- const key={ "tree-country-origin":"countryTreeOrigin",
-   "tree-country-select":"countryTreeId","tree-country-model":"countryTreeModel",
-   "tree-country-question":"countryTreeQuestion","tree-country-year":"countryTreeYear"}[input.id];
+ const key={
+  "tree-country-origin":"countryTreeOrigin",
+  "tree-country-select":"countryTreeId",
+  "tree-country-model":"countryTreeModel",
+  "tree-country-question":"countryTreeQuestion",
+  "tree-country-year":"countryTreeYear"
+ }[input.id];
  if(!key)return;
  state[key]=key==="countryTreeOrigin"||key==="countryTreeYear"?Number(input.value):input.value;
  state.countryTreeSelection=null;
  if(key==="countryTreeOrigin"){state.countryTreeId=null;state.countryTreeYear=null;}
+ const graph=$("app").querySelector("[data-real-markov]");
+ const scroll=graph?.scrollLeft||0;
  render();
+ const next=$("app").querySelector("[data-real-markov]");
+ if(next&&key!=="countryTreeOrigin")next.scrollLeft=scroll;
 });
 $("app").addEventListener("change",event=>{
   const select=event.target.closest?.("[data-public-question]");

@@ -36,11 +36,14 @@ test("Predictive tree links to local country comparison without publishing priva
  const ui=await readFile(path("trabajo.html"),"utf8");
  const controller=await readFile(path("src/country-comparison-view.mjs"),"utf8");
  assert.match(site,/renderHistoricalTree\(state\)/);
- assert.match(site,/simulación didáctica sin países/);
+ assert.match(site,/loadPublicTree\(/);
+ assert.doesNotMatch(site,/catálogo privado local/);
  assert.match(ui,/connect-src 'none'/);
  assert.match(ui,/comparison-chart/);
  const mainTree=await readFile(path("src/main-country-tree.mjs"),"utf8");
  assert.match(mainTree,/tree-country-select/);
- assert.match(mainTree,/NO ES UNA PREDICCIÓN EMITIDA/);
+ assert.match(mainTree,/Sociedad<select/);
+ assert.doesNotMatch(mainTree,/tree-private-file|type="file"/);
+ assert.match(mainTree,/no equivale a una predicción registrada/);
  assert.doesNotMatch(controller,/fetch\(|XMLHttpRequest|sendBeacon/);
 });
