@@ -44,7 +44,7 @@ test("External source and label text cannot inject HTML scripts",()=>{
 });
 test("Public app integrates components without external identity or private register",()=>{
  const site=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
- for(const fn of ["scientificNeuralPanel(","scientificMarkovPanel(","domainGraph("])assert.ok(site.includes(fn),fn);
+ for(const fn of ["scientificNeuralPanel(","renderHistoricalTree(","domainGraph("])assert.ok(site.includes(fn),fn);
  const audit=readFileSync(new URL("../scripts/audit_public.py",import.meta.url),"utf8");
  assert.match(audit,/src\/visuals\.mjs/);
 });
