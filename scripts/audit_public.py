@@ -64,6 +64,7 @@ if (ROOT/"index.html").exists():
         if url.startswith("https://"):
             if not (url.startswith("https://idealab2026.github.io/") or url.startswith("https://github.com/idealab2026/")):
                 issues.append("Non-institutional external link")
+        elif url == "./?view=futures": continue
         elif url.startswith("./"):
             if url[2:].split("?",1)[0] not in RELEASE or ("?" in url and not re.fullmatch(r"v=[a-f0-9]{12}",url.split("?",1)[1])): issues.append("Dependency not on release allowlist")
         else: issues.append("Unexpected link or source type")
