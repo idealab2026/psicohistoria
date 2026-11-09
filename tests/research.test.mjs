@@ -40,3 +40,34 @@ test("formulas, text and unvalidated scientific evidence are not accepted as pro
  assert.throws(()=>evaluateLocalForecast(rows));
 });
 
+
+test("priority research questions have decision-value protocols and no claimed predictive skill",()=>{
+ assert.equal(registry.questions.length,10);
+ assert.deepEqual(registry.questions.reduce((counts,q)=>(counts[q.priority]=(counts[q.priority]||0)+1,counts),{}),{P1:3,P2:5,P3:2});
+ assert.ok(registry.questions.every(q=>q.skill_demonstrated===false));
+ assert.ok(registry.questions.every(q=>q.target&&q.horizon&&q.baseline&&q.decision&&q.gate));
+ const legacy=registry.questions.find(q=>q.id==="Q-GEO-02");
+ assert.equal(legacy.model_status,"retrospectivo_no_prospectivo");
+});
+test("agenda rejects missing baselines, unsupported priorities or fabricated success",()=>{
+ let changed=structuredClone(registry);
+ changed.questions[0].baseline="";
+ assert.throws(()=>verifyResearch(changed),/protocol/);
+ changed=structuredClone(registry);
+ changed.questions[1].skill_demonstrated=true;
+ assert.throws(()=>verifyResearch(changed),/Premature/);
+ changed=structuredClone(registry);
+ changed.questions[2].priority="P0";
+ assert.throws(()=>verifyResearch(changed),/priority/);
+ changed=structuredClone(registry);
+ changed.questions[3].program="BAD-01";
+ assert.throws(()=>verifyResearch(changed),/orphan/);
+});
+test("question agenda is visible as an institutional research view",()=>{
+ const source=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
+ assert.match(source,/\["questions","Preguntas útiles"\]/);
+ assert.match(source,/function renderUsefulQuestions\(/);
+ assert.match(source,/case "question-priority"/);
+ assert.match(source,/¿Qué queremos anticipar/);
+ assert.match(source,/Sin validar/);
+});
