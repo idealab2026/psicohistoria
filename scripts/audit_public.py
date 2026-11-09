@@ -42,7 +42,7 @@ if (ROOT/"trabajo.html").is_file():
     private_html=(ROOT/"trabajo.html").read_text(encoding="utf8")
     if "connect-src 'none'" not in private_html or "BORRADOR" not in private_html.upper():
         issues.append("Research workbench must remain network-isolated and draft-only")
-    if re.search(r"fetch\\(|XMLHttpRequest|sendBeacon", (ROOT/"src/private-workbench.mjs").read_text(encoding="utf8")):
+    if re.search(r"fetch\(|XMLHttpRequest|sendBeacon", (ROOT/"src/private-workbench.mjs").read_text(encoding="utf8")):
         issues.append("Private workbench must not transmit scientific content")
 if (ROOT/"index.html").exists():
     links=Links()
