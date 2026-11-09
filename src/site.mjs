@@ -71,6 +71,10 @@ function renderFutures(){
  const chosen=d.branches.find(x=>x.id===state.scenario)||d.branches[0];
  return section("PREDICCIONES · EXPLORADOR","Árbol de posibilidades","Exploración de mecanismos hipotéticos. Los porcentajes siguientes son pesos fijados para la demostración; no están estimados a partir de resultados reales.")+
  scientificMarkovPanel({horizon:state.markovHorizon,selection:state.markovSelection,origin:state.markovOrigin,question:state.markovQuestion})+
+  '<section class="panel country-comparison-entry" aria-label="Comparación de países del árbol predictivo">'+
+  '<div class="eyebrow">PAÍSES · ANÁLISIS HISTÓRICO</div><h3>Comparar las líneas de cada país</h3>'+
+  '<p>Este árbol público utiliza solo una simulación. Para distinguir países reales mediante una línea por país, con sus años, cinco modelos y cuatro estados, abre el cuaderno y carga allí los catálogos privados. No se transfieren al servidor.</p>'+
+  '<a class="ghost" href="./trabajo.html">Comparar países reales en el cuaderno →</a></section>'+
   '<div class="two-col">'+box('<div class="tiny">TRAYECTORIA ELEGIDA</div><h3>'+safe(chosen.name)+'</h3><div class="tree">'+d.branches.map(b=>'<div class="scenario '+(chosen.id===b.id?"active":"")+'"><div class="tiny">ESTADO POSIBLE</div><strong>'+safe(b.name)+'</strong>'+percentageBar(b.weight)+'</div>').join("")+'</div><p>La partición del universo es hipotética; cualquier cambio de supuestos exige documentar una nueva versión.</p>')+
  box('<h3>Lectura explicable</h3><p>'+safe(chosen.mechanism)+'</p><h4>Observación a vigilar</h4><p>'+safe(chosen.watch)+'</p><div class="notice">No hay resultados registrados ni probabilidades de países o eventos reales.</div>')+'</div>'+
   section("PROBABILIDADES","Modelo y trayectoria","La demostración permite alternar entre estudios y visualizar sus probabilidades sobre etiquetas inventadas.")+
