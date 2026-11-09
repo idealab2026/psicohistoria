@@ -17,6 +17,28 @@ export function verifyResearch(data) {
     if (url.protocol !== "https:" || !["ucdp.uu.se","www.philadelphiafed.org","www.sec.gov","www.census.gov","www.usgs.gov"].includes(url.hostname) || url.username || url.password)
       throw Error("Source not on primary-source allowlist");
   }
+  if (!/^2026-11-09-priorities-v1$/.test(data.agenda_version) ||
+      typeof data.priority_method !== "string" || data.priority_method.length < 60 ||
+      !Array.isArray(data.questions) || data.questions.length !== 10)
+    throw Error("Incomplete useful questions research agenda");
+  const questionIds = new Set();
+  let p1=0,p2=0,p3=0;
+  for (const q of data.questions) {
+    if (!/^Q-[A-Z]{3}-\\d{2}$/.test(q.id) || questionIds.has(q.id) || !ids.has(q.program))
+      throw Error("Invalid or orphan scientific question");
+    questionIds.add(q.id);
+    if (q.priority === "P1") p1++;
+    else if (q.priority === "P2") p2++;
+    else if (q.priority === "P3") p3++;
+    else throw Error("Unsupported scientific question priority");
+    if (!["retrospectivo_no_prospectivo", "por_desarrollar", "fuente_pendiente"].includes(q.model_status) ||
+        q.skill_demonstrated !== false) throw Error("Premature predictive skill claim");
+    for (const key of ["question","target","horizon","baseline","decision","source_note","gate"])
+      if (typeof q[key] !== "string" || q[key].trim().length < 12 || q[key].length > 500)
+        throw Error("Scientific question missing measurable protocol: " + key);
+  }
+  if (p1 !== 3 || p2 !== 5 || p3 !== 2)
+    throw Error("Unexpected scientific research prioritization");
   return true;
 }
 const EXPECTED = "issued_at,input_available_at,event_start,event_end,outcome_verified_at,model_probability,baseline_probability,outcome";
