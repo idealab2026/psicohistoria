@@ -82,6 +82,10 @@ code{color:#cbe5fc}
     <label for="science-files">Objetos JSON</label><input type="file" id="science-files" multiple accept=".json,application/json">
     <div class="metricline"><div class="metric"><strong id="loaded-count">0</strong><span>Objetos cargados en memoria</span></div><div class="metric"><strong id="draft-count">0</strong><span>Borradores preparados</span></div></div>
     <div id="science-summary" aria-live="polite"><p class="empty">Ningún archivo cargado.</p></div>
+    <label for="search-science-query">Buscar en los objetos cargados (texto, países, fechas, expedientes)</label>
+    <input id="search-science-query" maxlength="100" placeholder="Escribe al menos tres caracteres">
+    <div class="buttons"><button type="button" id="search-science">Consultar contenido local</button></div>
+    <div id="search-science-results" aria-live="polite"><p class="empty">Importa los JSON para explorar las investigaciones auténticas.</p></div>
    </section>
    <section class="work-panel" style="margin-top:18px" aria-labelledby="drafts-title">
     <div class="eyebrow">03 · Continuidad</div>

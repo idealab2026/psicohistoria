@@ -1,6 +1,7 @@
-import {makeDraft,validateNotebook,exportNotebook,describeScientificFile} from "./private-notebook.mjs";
+import {makeDraft,validateNotebook,exportNotebook,describeScientificFile,searchScientificObject} from "./private-notebook.mjs";
 const $=id=>document.getElementById(id);
 const drafts=[],science=[];
+const scientificDocuments=new Map();
 let saved=true;
 const status=(msg)=>$("work-status").textContent=msg;
 const message=(t,text)=>{const x=document.createElement(t);x.textContent=text;return x;};
@@ -70,7 +71,7 @@ $("science-files").addEventListener("change",async(e)=>{
    const digest=await crypto.subtle.digest("SHA-256",bytes);
    const hash=Array.from(new Uint8Array(digest),n=>n.toString(16).padStart(2,"0")).join("");
    const existing=science.find(x=>x.sha256===hash);
-   if(!existing)science.push({name:f.name,sha256:hash,...info});
+   if(!existing){science.push({name:f.name,sha256:hash,...info});scientificDocuments.set(hash,decoded);}
    status("Objetos interpretados localmente. Datos sin transmitir; comprueba los hashes con el archivo canónico.");
   }catch(err){status("Archivo rechazado ("+f.name+"): "+String(err.message));}
  }
@@ -82,6 +83,25 @@ $("science-files").addEventListener("change",async(e)=>{
  }
  if(!science.length)summary.append(message("p","Ningún objeto válido cargado."));
  render();e.target.value="";
+});
+$("search-science").addEventListener("click",()=>{
+ const root=$("search-science-results");root.replaceChildren();
+ try{
+  if(!science.length)throw Error("IMPORTA_PRIMERO_UN_JSON");
+  const query=$("search-science-query").value;
+  let total=0;
+  for(const doc of science){
+   if(total>=50)break;
+   const {results,truncated}=searchScientificObject(scientificDocuments.get(doc.sha256),query,Math.min(40,50-total));
+   for(const row of results){
+     const item=document.createElement("div");item.className="item";
+     item.append(message("small",doc.name),message("h3",row.path),message("p",row.preview));root.append(item);total++;
+   }
+   if(truncated)root.append(message("small","Resultados limitados para "+doc.name+"; afina la búsqueda."));
+  }
+  if(!total)root.append(message("p","No hay coincidencias en los objetos cargados."));
+  status(total+" coincidencias consultadas solo en el navegador. No hay solicitudes a la red.");
+ }catch(err){root.append(message("p","Búsqueda no disponible: "+String(err.message)));}
 });
 window.addEventListener("beforeunload",e=>{if(!saved&&drafts.length){e.preventDefault();e.returnValue="";}});
 render();
