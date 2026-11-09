@@ -1,7 +1,9 @@
 import {makeDraft,validateNotebook,exportNotebook,describeScientificFile,searchScientificObject} from "./private-notebook.mjs";
+import {createCountryComparison} from "./country-comparison-view.mjs";
 const $=id=>document.getElementById(id);
 const drafts=[],science=[];
 const scientificDocuments=new Map();
+const countryComparison=createCountryComparison();
 let saved=true;
 const status=(msg)=>$("work-status").textContent=msg;
 const message=(t,text)=>{const x=document.createElement(t);x.textContent=text;return x;};
@@ -71,7 +73,12 @@ $("science-files").addEventListener("change",async(e)=>{
    const digest=await crypto.subtle.digest("SHA-256",bytes);
    const hash=Array.from(new Uint8Array(digest),n=>n.toString(16).padStart(2,"0")).join("");
    const existing=science.find(x=>x.sha256===hash);
-   if(!existing){science.push({name:f.name,sha256:hash,...info});scientificDocuments.set(hash,decoded);}
+   if(!existing){
+     science.push({name:f.name,sha256:hash,...info});
+     scientificDocuments.set(hash,decoded);
+     try{countryComparison.ingest(decoded);}
+     catch(e){$("comparison-source-status").textContent="Catálogo Markov incompatible o no verificable: "+String(e.message)+". El archivo sigue disponible solo para inspección local.";}
+   }
    status("Objetos interpretados localmente. Datos sin transmitir; comprueba los hashes con el archivo canónico.");
   }catch(err){status("Archivo rechazado ("+f.name+"): "+String(err.message));}
  }
