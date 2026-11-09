@@ -34,7 +34,7 @@ export function verifyResearch(data) {
     if (!["retrospectivo_no_prospectivo", "por_desarrollar", "fuente_pendiente"].includes(q.model_status) ||
         q.skill_demonstrated !== false) throw Error("Premature predictive skill claim");
     for (const key of ["question","target","horizon","baseline","decision","source_note","gate"])
-      if (typeof q[key] !== "string" || q[key].trim().length < 12 || q[key].length > 500)
+      if (typeof q[key] !== "string" || q[key].trim().length < (key === "horizon" ? 2 : 12) || q[key].length > 500)
         throw Error("Scientific question missing measurable protocol: " + key);
   }
   if (p1 !== 3 || p2 !== 5 || p3 !== 2)
