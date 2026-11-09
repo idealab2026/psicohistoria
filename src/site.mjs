@@ -92,9 +92,37 @@ function renderOverview(){
 function renderStudySelector(){
  return '<label class="field" style="max-width:460px">Estudio sintético <select id="study-selector">'+state.data.studies.map(s=>'<option value="'+safe(s.id)+'" '+(state.study===s.id?'selected':'')+'>'+safe(s.title)+'</option>').join("")+'</select></label>';
 }
+function renderEmpiricalEvidence(){
+ const study=state.research?.empirical_studies?.[0];
+ if(!study)return "";
+ const six=n=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:6,maximumFractionDigits:6}).format(n);
+ const p=n=>new Intl.NumberFormat("es-ES",{maximumFractionDigits:2}).format(n*100)+" %";
+ const ci=study.delta_brier_confidence_interval;
+ return section("INVESTIGACIÓN · UCDP · RESULTADOS REALES","Primer contraste retrospectivo",
+   "Resultados calculados sobre el dataset oficial, no una simulación. La edición UCDP 25.1 fue revisada después de los años evaluados: NO es una prueba prospectiva ni una reconstrucción point-in-time.")+
+ '<div class="section-grid three">'+
+  box('<span class="tiny">OBSERVACIONES PAÍS-AÑO</span><div class="card-number">'+safe(study.observations)+'</div><p>'+safe(study.countries)+' países; '+safe(study.positive_events)+' inicios/reanudaciones</p>')+
+  box('<span class="tiny">BRIER POR PAÍS</span><div class="card-number">'+safe(six(study.brier_country))+'</div><p>Modelo suavizado con historia específica de país</p>')+
+  box('<span class="tiny">BRIER GLOBAL</span><div class="card-number">'+safe(six(study.brier_global))+'</div><p>Referencia simple obligatoria</p>')+
+ '</div>'+
+ box('<h3>¿Mejora la predicción respecto a la tasa base?</h3>'+
+  '<p><strong>Mejora numérica Brier: '+safe(p(study.relative_brier_improvement))+'</strong>. Es pequeña y no demuestra una ventaja estable.</p>'+
+  '<p>Intervalo exploratorio del cambio de error (país − global): <strong>['+safe(six(ci[0]))+', '+safe(six(ci[1]))+']</strong>. Incluye cero; <strong>no hay superioridad robusta demostrada</strong>.</p>'+
+  '<div class="table-wrap"><table><thead><tr><th>Referencia</th><th>Brier ↓</th></tr></thead><tbody>'+
+  '<tr><td>Frecuencia histórica por país (suavizada)</td><td>'+safe(six(study.brier_country))+'</td></tr>'+
+  '<tr><td>Frecuencia histórica global</td><td>'+safe(six(study.brier_global))+'</td></tr>'+
+  '<tr><td>Siempre sin inicio</td><td>'+safe(six(study.brier_no_event))+'</td></tr>'+
+  '</tbody></table></div>'+
+  '<details><summary>Fuente, reproducibilidad y limitaciones</summary>'+
+  '<p><strong>Periodo:</strong> '+safe(study.period)+' · '+safe(study.data_version)+'</p>'+
+  '<p><strong>Fuente oficial:</strong> <a href="'+safe(study.source_url)+'" target="_blank" rel="noopener noreferrer">UCDP Onset 25.1 (CC BY 4.0)</a></p>'+
+  '<p><strong>SHA-256:</strong> <code>'+safe(study.source_sha256)+'</code></p>'+
+  '<p>'+safe(study.note)+'</p>'+
+  '</details>','soft');
+}
 function renderScience(){
  const d=state.data,rows=d.studies.map(s=>({s,score:score(s)}));
- return section("INVESTIGACIÓN · EVIDENCIA","Qué hemos demostrado y qué no","Las cifras que aparecen en este apartado son resultados matemáticos válidos sobre muestras inventadas. No constituyen pruebas empíricas de anticipación de fenómenos colectivos.")+
+ return renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
  '<div class="table-wrap"><table><thead><tr><th>Estudio sintético</th><th>Observaciones</th><th>Brier modelo</th><th>Brier referencia</th><th>Mejora relativa</th><th>Validez</th></tr></thead><tbody>'+rows.map(({s,score:r})=>'<tr><td>'+safe(s.title)+'</td><td>'+r.n+'</td><td>'+format(r.brier)+'</td><td>'+format(r.baselineBrier)+'</td><td>'+formatPct(r.skill)+'</td><td>Sintético</td></tr>').join("")+'</tbody></table></div>'+
  section("REPRODUCIBILIDAD","Evaluación de un experimento","Selecciona un estudio para analizar las probabilidades ficticias y compararlas con su referencia fija.")+
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+

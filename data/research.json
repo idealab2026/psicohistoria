@@ -262,5 +262,36 @@
       "model_status": "por_desarrollar",
       "skill_demonstrated": false
     }
+  ],
+  "empirical_studies": [
+    {
+      "id": "EMP-ONSET-25.1-20261109",
+      "linked_question": "Q-GEO-01",
+      "title": "Primer contraste UCDP: inicio de conflicto por país-año",
+      "class": "public_source_retrospective_evaluation",
+      "data_version": "UCDP Intrastate Country Level Onset 25.1",
+      "source_url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-251.csv",
+      "source_sha256": "e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a",
+      "publication_date": "2026-11-09",
+      "period": "2010–2024",
+      "countries": 196,
+      "observations": 2939,
+      "positive_events": 41,
+      "brier_country": 0.013766882751675385,
+      "brier_global": 0.01379832058041835,
+      "brier_no_event": 0.013950323239197007,
+      "logloss_country": 0.07096965532444292,
+      "logloss_global": 0.07464417982996031,
+      "relative_brier_improvement": 0.0022783808043697062,
+      "delta_brier_confidence_interval": [
+        -0.0002390160931996059,
+        0.00011613272307046084
+      ],
+      "cluster_bootstrap_replications": 200,
+      "source_point_in_time_verified": false,
+      "prospective_validation": false,
+      "more_reliable_than_baseline_demonstrated": false,
+      "note": "Comparación retrospectiva con una edición revisada en 2025. El intervalo exploratorio de mejora incluye cero: no hay superioridad robusta demostrada. El objetivo es onset2 en todos los países-año, no solo entre países sin conflicto activo. No produce alertas actuales."
+    }
   ]
 }

@@ -39,6 +39,37 @@ export function verifyResearch(data) {
   }
   if (p1 !== 3 || p2 !== 5 || p3 !== 2)
     throw Error("Unexpected scientific research prioritization");
+  if (!Array.isArray(data.empirical_studies) || data.empirical_studies.length !== 1)
+    throw Error("Incomplete empirical source-backed research inventory");
+  for (const study of data.empirical_studies) {
+    if (study.class !== "public_source_retrospective_evaluation" ||
+        !data.questions.some(q=>q.id===study.linked_question) ||
+        !/^EMP-[A-Z0-9.-]+$/.test(study.id) ||
+        study.source_url !== "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-251.csv" ||
+        !/^[0-9a-f]{64}$/.test(study.source_sha256))
+      throw Error("Empirical source provenance not validated");
+    if (study.source_point_in_time_verified !== false ||
+        study.prospective_validation !== false ||
+        study.more_reliable_than_baseline_demonstrated !== false)
+      throw Error("Retrospective results cannot be displayed as demonstrated forecast skill");
+    for (const key of ["countries","observations","positive_events","cluster_bootstrap_replications"]) {
+      if (!Number.isSafeInteger(study[key]) || study[key] < 1)
+        throw Error("Invalid empirical observation count");
+    }
+    if (study.positive_events > study.observations || study.countries > study.observations)
+      throw Error("Inconsistent empirical denominators");
+    for (const key of ["brier_country","brier_global","brier_no_event","relative_brier_improvement","logloss_country","logloss_global"])
+      if (typeof study[key] !== "number" || !Number.isFinite(study[key]))
+        throw Error("Invalid empirical score");
+    if (["brier_country","brier_global","brier_no_event"].some(key=>study[key]<0||study[key]>1) ||
+        !Array.isArray(study.delta_brier_confidence_interval) ||
+        study.delta_brier_confidence_interval.length!==2 ||
+        !study.delta_brier_confidence_interval.every(Number.isFinite) ||
+        study.delta_brier_confidence_interval[0]>study.delta_brier_confidence_interval[1])
+      throw Error("Invalid empirical confidence interval or Brier score");
+    if (typeof study.note!=="string" || !study.note.toLocaleLowerCase("es").includes("intervalo") || !study.note.toLocaleLowerCase("es").includes("no produce alertas"))
+      throw Error("Missing robust retrospective limitation notice");
+  }
   return true;
 }
 const EXPECTED = "issued_at,input_available_at,event_start,event_end,outcome_verified_at,model_probability,baseline_probability,outcome";
