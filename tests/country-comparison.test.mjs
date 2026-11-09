@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {validateCountryCatalog,discoverHistoricalCountryCatalogs,historicalCountryTrajectory,
  compareHistoricalCountries,COUNTRY_MODELS} from "../src/country-comparison.mjs";
-import {acceptHistoricalFile,getHistoricalCatalog,renderHistoricalTree} from "../src/main-country-tree.mjs";
+import {acceptPublicCountryCatalogs,getHistoricalCatalog,renderHistoricalTree} from "../src/main-country-tree.mjs";
 const hex="a".repeat(64);
 function example(origin=2020){
  const n=origin===2020?196:195;
@@ -63,34 +63,30 @@ test("country-specific lines differ without mixing origins or using future outco
  assert.equal(COUNTRY_MODELS.length,5);
 });
 
-test("main predictions view shows country-specific original tree after local catalog admission",()=>{
+test("country dropdown and question load directly from public official reconstruction",()=>{
  const blank=renderHistoricalTree({countryTreeOrigin:2020});
- assert.match(blank,/Seleccionar país y modelo/);
- assert.match(blank,/tree-private-file/);
- assert.doesNotMatch(blank,/25,0\s*%/);
- const data=example(2020);
- assert.deepEqual(acceptHistoricalFile({futuresCatalogs:[data]}),[{origin:2020,countries:196}]);
+ assert.match(blank,/Cargando países/);
+ assert.doesNotMatch(blank,/type="file"/);
+ const twenty=example(2020),sixteen=example(2016);
+ twenty.sourceClass="PUBLIC_OFFICIAL_INDEPENDENT_RECONSTRUCTION";twenty.sourceSha256="f".repeat(64);
+ sixteen.sourceClass="PUBLIC_OFFICIAL_INDEPENDENT_RECONSTRUCTION";sixteen.sourceSha256="f".repeat(64);
+ const source={schema:"idealab.psico.public_official_country_markov.v1",
+   source:{dataset:"UCDP OrganizedViolenceCY 26.1",license:"CC BY 4.0",
+     rowCount:7132,sha256:"f".repeat(64)},
+   forecastsIssued:0,prospectiveSkillVerified:false,catalogs:[sixteen,twenty]};
+ assert.equal(acceptPublicCountryCatalogs(source).length,2);
  assert.equal(getHistoricalCatalog(2020).countries.length,196);
- const page=renderHistoricalTree({
-   countryTreeOrigin:2020,countryTreeId:"1000",
-   countryTreeModel:"country_shrinkage",countryTreeQuestion:"atleast25",
-   countryTreeYear:2023,countryTreeSelection:null
- });
- assert.match(page,/País 0 · árbol de cuatro estados/);
- assert.match(page,/tree-country-select/);
- assert.match(page,/tree-country-model/);
- assert.match(page,/tree-country-year/);
+ const page=renderHistoricalTree({countryTreeOrigin:2020,countryTreeId:1000,
+   countryTreeModel:"country_shrinkage",countryTreeQuestion:"atleast25",countryTreeYear:2023});
+ assert.match(page,/Sociedad<select/);
+ assert.match(page,/¿Qué quieres calcular/);
+ assert.match(page,/País 0/);
  assert.match(page,/data-fnode=/);
- assert.match(page,/data-fedge=/);
- assert.match(page,/RETROSPECTIVO|RETROSPECTIVA|retrospectiva/i);
- assert.match(page,/NO ES UNA PREDICCIÓN EMITIDA/);
- assert.doesNotMatch(page,/https:\/\/api\.github\.com/);
- const changed=renderHistoricalTree({
-   countryTreeOrigin:2020,countryTreeId:"1001",
-   countryTreeModel:"country_shrinkage",countryTreeQuestion:"atleast25",
-   countryTreeYear:2023
- });
- assert.match(changed,/País 1 · árbol de cuatro estados/);
+ assert.doesNotMatch(page,/type="file"|tree-private-file/);
+ assert.match(page,/RETROSPECTIVO/);
+ assert.match(page,/no equivale a una predicción/);
+ const changed=renderHistoricalTree({countryTreeOrigin:2020,countryTreeId:1001,
+   countryTreeModel:"country_shrinkage",countryTreeQuestion:"atleast25",countryTreeYear:2023});
  assert.notEqual(page,changed);
 });
 test("real Markov geometry provides all year edges without future outcomes",()=>{
