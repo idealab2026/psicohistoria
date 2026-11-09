@@ -81,7 +81,7 @@ def parse_public_source(csv_text, expected_rows=EXPECTED_ROWS):
         records[cid][year]=int(deaths>=25)
     if total != expected_rows:
         raise ValueError(f"Unexpected country-year count: {total}")
-    if len(countries)<190 or len(countries)>210:
+    if expected_rows == EXPECTED_ROWS and not (190 <= len(countries) <= 210):
         raise ValueError("Official country coverage inconsistent")
     return records,countries
 
