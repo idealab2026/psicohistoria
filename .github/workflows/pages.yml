@@ -50,6 +50,8 @@ jobs:
           node --check src/site.mjs
           node --check src/private-workbench.mjs
           node --check src/private-notebook.mjs
+          node --check src/country-comparison.mjs
+          node --check src/country-comparison-view.mjs
           node --check src/project-catalog.mjs
           node --check src/project-portfolio.mjs
           node --test tests/*.test.mjs
@@ -58,9 +60,9 @@ jobs:
         run: |
           mkdir -p dist/src dist/data
           cp index.html trabajo.html privacidad-icsa.html styles.css logo.svg favicon.svg dist/
-          cp src/site.mjs src/visuals.mjs src/neural.mjs src/markov-svg.mjs src/lab-renderers.mjs src/metrics.mjs src/research.mjs src/project-catalog.mjs src/project-portfolio.mjs src/private-workbench.mjs src/private-notebook.mjs dist/src/
+          cp src/site.mjs src/visuals.mjs src/neural.mjs src/markov-svg.mjs src/lab-renderers.mjs src/metrics.mjs src/research.mjs src/project-catalog.mjs src/project-portfolio.mjs src/private-workbench.mjs src/private-notebook.mjs src/country-comparison.mjs src/country-comparison-view.mjs dist/src/
           cp data/demo.json data/research.json data/projects.json dist/data/
-          test "$(find dist -type f | wc -l)" -eq 20
+          test "$(find dist -type f | wc -l)" -eq 22
       - uses: actions/upload-artifact@v4
         with:
           name: audited-site
