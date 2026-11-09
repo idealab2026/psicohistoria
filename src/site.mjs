@@ -70,7 +70,7 @@ function renderBrief(){
 function renderFutures(){
  const d=state.data;
  const chosen=d.branches.find(x=>x.id===state.scenario)||d.branches[0];
- return section("PREDICCIONES · EXPLORADOR","Árbol de posibilidades","Exploración de mecanismos hipotéticos. Los porcentajes siguientes son pesos fijados para la demostración; no están estimados a partir de resultados reales.")+
+ return section("PREDICCIONES · EXPLORADOR","Árbol histórico por país","Selecciona un país y un modelo dentro del árbol. Las probabilidades históricas solo aparecen tras cargar un catálogo privado local; las simulaciones públicas están separadas.")+
  renderHistoricalTree(state)+
  '<details class="synthetic-tree-details"><summary>Ver simulación didáctica sin países (no representa resultados reales)</summary>'+
  scientificMarkovPanel({horizon:state.markovHorizon,selection:state.markovSelection,origin:state.markovOrigin,question:state.markovQuestion})+'</details>'+
