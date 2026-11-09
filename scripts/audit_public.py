@@ -9,7 +9,7 @@ sys.dont_write_bytecode = True
 from private_disclosure import configured_terms, contains_private_term
 
 ROOT = Path(__file__).resolve().parents[1]
-RELEASE = {"privacidad-icsa.html", "index.html", "trabajo.html", "src/private-notebook.mjs", "src/private-workbench.mjs", "src/country-comparison.mjs", "src/country-comparison-view.mjs", "styles.css", "favicon.svg", "logo.svg", "src/site.mjs", "src/visuals.mjs", "src/neural.mjs", "src/markov-svg.mjs", "src/lab-renderers.mjs", "src/metrics.mjs", "src/research.mjs", "src/project-catalog.mjs", "src/project-portfolio.mjs", "data/demo.json", "data/research.json", "data/projects.json"}
+RELEASE = {"privacidad-icsa.html", "index.html", "trabajo.html", "src/private-notebook.mjs", "src/private-workbench.mjs", "src/country-comparison.mjs", "src/country-comparison-view.mjs", "src/main-country-tree.mjs", "styles.css", "favicon.svg", "logo.svg", "src/site.mjs", "src/visuals.mjs", "src/neural.mjs", "src/markov-svg.mjs", "src/lab-renderers.mjs", "src/metrics.mjs", "src/research.mjs", "src/project-catalog.mjs", "src/project-portfolio.mjs", "data/demo.json", "data/research.json", "data/projects.json"}
 REPOSITORY = RELEASE | {"scripts/private_disclosure.py", "scripts/test_private_disclosure.py", "README.md", "scripts/audit_public.py", "tests/metrics.test.mjs", "tests/research.test.mjs", "tests/visuals.test.mjs", "tests/lab-renderers.test.mjs", "tests/project-catalog.test.mjs", "tests/project-portfolio.test.mjs", "tests/public-science-boundary.test.mjs", "tests/private-notebook.test.mjs", "tests/country-comparison.test.mjs", ".github/workflows/pages.yml"}
 issues = []
 # Historical research cells must never be admitted to a public release.
@@ -38,6 +38,10 @@ if (ROOT/"src/site.mjs").exists():
     site = (ROOT/"src/site.mjs").read_text(encoding="utf8")
     if re.search(r"scientific-workbook\\.json|scientificArchiveTable|verifyScientificArchive", site):
         issues.append("Public client may load private scientific detail")
+if (ROOT/"src/main-country-tree.mjs").is_file():
+    source=(ROOT/"src/main-country-tree.mjs").read_text(encoding="utf8")
+    if re.search(r"fetch\\(|XMLHttpRequest|sendBeacon", source):
+        issues.append("Main country tree must not transmit local scientific catalogues")
 if (ROOT/"src/country-comparison-view.mjs").is_file():
     content=(ROOT/"src/country-comparison-view.mjs").read_text(encoding="utf8")
     if re.search(r"fetch\(|XMLHttpRequest|sendBeacon", content):
