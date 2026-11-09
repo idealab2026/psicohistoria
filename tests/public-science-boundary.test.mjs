@@ -30,3 +30,14 @@ test("Published package must never copy raw cells or source reader",async()=>{
  assert.match(audit,/BLOCKED/);
  assert.match(audit,/Private scientific source must not exist in public checkout/);
 });
+
+test("Predictive tree links to local country comparison without publishing private catalogues",async()=>{
+ const site=await readFile(path("src/site.mjs"),"utf8");
+ const ui=await readFile(path("trabajo.html"),"utf8");
+ const controller=await readFile(path("src/country-comparison-view.mjs"),"utf8");
+ assert.match(site,/Comparar países reales en el cuaderno/);
+ assert.match(site,/Este árbol público utiliza solo una simulación/);
+ assert.match(ui,/connect-src 'none'/);
+ assert.match(ui,/comparison-chart/);
+ assert.doesNotMatch(controller,/fetch\(|XMLHttpRequest|sendBeacon/);
+});
