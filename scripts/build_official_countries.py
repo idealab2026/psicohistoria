@@ -19,6 +19,7 @@ from zipfile import ZipFile, BadZipFile
 
 OFFICIAL_URL = "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-261-csv.zip"
 SOURCE = "UCDP OrganizedViolenceCY 26.1"
+PINNED_SOURCE_SHA256 = "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
 SCHEMA = "idealab.psico.public_official_country_markov.v1"
 EXPECTED_ROWS = 7132
 MAX_ZIP = 4_000_000
@@ -167,8 +168,8 @@ def main():
                 raise ValueError("Official source unexpectedly redirected")
             data=stream.read(MAX_ZIP+1)
     digest=_sha(data)
-    if args.require_source_sha256 and digest!=args.require_source_sha256:
-        raise ValueError("Official source SHA-256 unexpectedly changed")
+    if digest != (args.require_source_sha256 or PINNED_SOURCE_SHA256):
+        raise ValueError("Official UCDP 26.1 source differs from validated SHA-256")
     source_file=Path(__file__).read_bytes()
     result=build(data,digest,_sha(source_file))
     output=Path(args.output);output.parent.mkdir(parents=True,exist_ok=True)
