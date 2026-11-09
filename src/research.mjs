@@ -67,7 +67,7 @@ export function verifyResearch(data) {
         !study.delta_brier_confidence_interval.every(Number.isFinite) ||
         study.delta_brier_confidence_interval[0]>study.delta_brier_confidence_interval[1])
       throw Error("Invalid empirical confidence interval or Brier score");
-    if (typeof study.note!=="string" || !study.note.includes("intervalo") || !study.note.includes("no produce alertas"))
+    if (typeof study.note!=="string" || !study.note.toLocaleLowerCase("es").includes("intervalo") || !study.note.toLocaleLowerCase("es").includes("no produce alertas"))
       throw Error("Missing robust retrospective limitation notice");
   }
   return true;
