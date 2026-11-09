@@ -39,5 +39,5 @@ test("Predictive tree links to local country comparison without publishing priva
  assert.match(site,/Este árbol público utiliza solo una simulación/);
  assert.match(ui,/connect-src 'none'/);
  assert.match(ui,/comparison-chart/);
- assert.doesNotMatch(controller,/fetch\\(|XMLHttpRequest|sendBeacon/);
+ assert.doesNotMatch(controller,/fetch\(|XMLHttpRequest|sendBeacon/);
 });
