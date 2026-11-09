@@ -24,7 +24,7 @@ export function verifyResearch(data) {
   const questionIds = new Set();
   let p1=0,p2=0,p3=0;
   for (const q of data.questions) {
-    if (!/^Q-[A-Z]{3}-\\d{2}$/.test(q.id) || questionIds.has(q.id) || !ids.has(q.program))
+    if (!/^Q-[A-Z]{3}-\d{2}$/.test(q.id) || questionIds.has(q.id) || !ids.has(q.program))
       throw Error("Invalid or orphan scientific question");
     questionIds.add(q.id);
     if (q.priority === "P1") p1++;
