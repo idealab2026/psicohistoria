@@ -40,7 +40,7 @@ if (ROOT/"src/site.mjs").exists():
         issues.append("Public client may load private scientific detail")
 if (ROOT/"src/main-country-tree.mjs").is_file():
     source=(ROOT/"src/main-country-tree.mjs").read_text(encoding="utf8")
-    if re.search(r"fetch\\(|XMLHttpRequest|sendBeacon", source):
+    if re.search(r"fetch\(|XMLHttpRequest|sendBeacon", source):
         issues.append("Main country tree must not transmit local scientific catalogues")
 if (ROOT/"src/country-comparison-view.mjs").is_file():
     content=(ROOT/"src/country-comparison-view.mjs").read_text(encoding="utf8")
