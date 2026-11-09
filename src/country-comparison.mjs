@@ -28,7 +28,10 @@ export function validateCountryCatalog(d){
    d.maxHorizon!==expected.h||d.priorStrength!==20||
    !rows(d.global?.transitions,2)||!rows(d.global?.memory,4)||
    !row(d.global?.frequency)||sum(d.global.frequency)===0||
-   !Array.isArray(d.countries)||d.countries.length!==expected.n)
+   !Array.isArray(d.countries)||
+   (d.sourceClass==="PUBLIC_OFFICIAL_INDEPENDENT_RECONSTRUCTION"?
+     !sha(d.sourceSha256)||d.countries.length<180||d.countries.length>210:
+     d.countries.length!==expected.n))
    throw Error("CATALOGO_HISTORICO_NO_VALIDADO");
  const ids=new Set();
  for(const c of d.countries){
