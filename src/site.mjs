@@ -13,12 +13,12 @@ const formatPct=n=>typeof n==="number"&&Number.isFinite(n)?format(n*100)+" %":"�
 const groupViews={
  brief:[["brief","Inicio"]],
  predictions:[["futures","Explorador"],["shadow2027","Riesgos 2027"]],
- research:[["archive","Archivo científico"],["overview","Mapa del proyecto"],["registry","Líneas y fuentes"],["science","Evidencia"],["operations","Registro"],["roadmap","Hitos"]],
+ research:[["questions","Preguntas útiles"],["archive","Archivo científico"],["overview","Mapa del proyecto"],["registry","Líneas y fuentes"],["science","Evidencia"],["operations","Registro"],["roadmap","Hitos"]],
  create:[["portfolio","Catálogo recuperado"],["ideas","Nuevas ideas"],["video","Estudio audiovisual"]]
 };
 const viewIds=new Set(Object.values(groupViews).flat().map(x=>x[0]));
 const viewToGroup=Object.fromEntries(Object.entries(groupViews).flatMap(([k,items])=>items.map(([id])=>[id,k])));
-const state={archive:null,projectCatalog:null,archiveTable:0,archiveQuery:"",archivePage:0,data:null,research:null,registryFilter:"todos",registryOutput:null,view:viewIds.has(new URLSearchParams(location.search).get("view"))?new URLSearchParams(location.search).get("view"):"brief",scenario:null,program:null,study:null,filter:"todos",ideas:[],flowState:"00",markovOrigin:2020,markovHorizon:6,markovQuestion:"atleast25",markovSelection:null,countryTreeOrigin:2020,countryTreeId:null,countryTreeModel:"country_shrinkage",countryTreeQuestion:"atleast25",countryTreeYear:null,countryTreeSelection:null,videoText:"",busy:false};
+const state={archive:null,projectCatalog:null,archiveTable:0,archiveQuery:"",archivePage:0,data:null,research:null,registryFilter:"todos",registryOutput:null,questionPriority:"P1",view:viewIds.has(new URLSearchParams(location.search).get("view"))?new URLSearchParams(location.search).get("view"):"brief",scenario:null,program:null,study:null,filter:"todos",ideas:[],flowState:"00",markovOrigin:2020,markovHorizon:6,markovQuestion:"atleast25",markovSelection:null,countryTreeOrigin:2020,countryTreeId:null,countryTreeModel:"country_shrinkage",countryTreeQuestion:"atleast25",countryTreeYear:null,countryTreeSelection:null,videoText:"",busy:false};
 const section=(eyebrow,title,description)=>'<header class="section-head"><div class="eyebrow">'+safe(eyebrow)+'</div><h2>'+safe(title)+'</h2><p>'+safe(description)+'</p></header>';
 const box=(contents,extra="")=>'<article class="panel '+extra+'">'+contents+'</article>';
 const tag=(t,cls="")=>'<span class="tag '+cls+'">'+safe(t)+'</span>';
@@ -100,6 +100,38 @@ function renderScience(){
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+
  box('<div class="tiny">CONTRASTE</div><div id="score-info"></div><p>La métrica de Brier mide el error cuadrático de probabilidades entre 0 y 1; valores menores indican menor error en este conjunto.</p>')+'</div>'+
  section("REGLAS DE ADMISIÓN","Separar evaluación retrospectiva y prospectiva","Los test revisados y las simulaciones no pueden presentarse como rendimientos reales de un sistema de anticipación.")+methods()+syntheticWarning();
+}
+function renderUsefulQuestions(){
+ const d=state.research;
+ if(!d)return section("INVESTIGACIÓN · AGENDA","Preguntas útiles","Registro temporalmente no disponible.")+
+   msg("No se mostrarán hipótesis sin protocolo revisado.", "alert");
+ const tiers=[["P1","Investigación prioritaria"],["P2","Siguientes experimentos"],["P3","Exploración a largo plazo"]];
+ const visible=d.questions.filter(q=>q.priority===state.questionPriority);
+ const names=Object.fromEntries(d.programs.map(p=>[p.id,p.title]));
+ return section("INVESTIGACIÓN · UTILIDAD","¿Qué queremos anticipar?",
+  "Priorizamos preguntas cuya respuesta podría cambiar una decisión, con un fenómeno verificable, horizonte y referencia. Prioridad no significa precisión demostrada.")+
+  '<div class="button-group" role="group" aria-label="Prioridad de investigaciones">'+tiers.map(([tier,label])=>
+   button(label+" · "+d.questions.filter(q=>q.priority===tier).length,"question-priority",tier,
+    state.questionPriority===tier?"ghost active":"ghost")).join("")+'</div>'+
+  '<p class="tiny" style="margin-top:12px">'+safe(d.priority_method)+'</p>'+
+  '<div class="section-grid research-questions">'+visible.map((q,i)=>
+   box('<div class="item-row wrap"><div class="eyebrow">'+safe(q.id)+' · '+safe(names[q.program])+
+      '</div>'+tag(q.model_status==="retrospectivo_no_prospectivo"?"Árbol retrospectivo disponible":
+      q.model_status==="fuente_pendiente"?"Fuente pendiente":"Modelo por desarrollar")+'</div>'+
+    '<h3>'+(i+1)+'. '+safe(q.question)+'</h3>'+
+    '<p><strong>¿Para qué serviría?</strong> '+safe(q.decision)+'</p>'+
+    '<div class="grid-stats"><div><strong>'+safe(q.horizon)+'</strong><span>Horizonte</span></div>'+
+    '<div><strong>Sin validar</strong><span>Capacidad predictiva</span></div></div>'+
+    '<details><summary>Protocolo, datos y condición de validación</summary>'+
+      '<p><strong>Desenlace observable:</strong> '+safe(q.target)+'</p>'+
+      '<p><strong>Referencia mínima:</strong> '+safe(q.baseline)+'</p>'+
+      '<p><strong>Fuente y límites:</strong> '+safe(q.source_note)+'</p>'+
+      '<p><strong>Siguiente experimento:</strong> '+safe(q.gate)+'</p>'+
+    '</details>'
+   )).join("")+'</div>'+
+   box('<h3>Cómo se demostrará utilidad</h3><p>Para cada pregunta registraremos una predicción antes del periodo objetivo, congelaremos las variables disponibles en esa fecha, compararemos contra una referencia simple y publicaremos los errores. Un resultado bonito en un árbol histórico no permite declarar que predice.</p>'+
+      '<p>Evaluaremos Brier score y calibración para probabilidades; MAE/CRPS para cantidades; y la mejora de decisiones con una función de coste definida antes de conocer el resultado. Los eventos raros requieren especial atención a tasa base y falsos positivos.</p>',
+      "soft");
 }
 function renderResearchRegistry(){
  const d=state.research;
@@ -190,7 +222,7 @@ function render(){
   b.classList.toggle("active",state.view===id);sub.append(b);
  }
  const views={archive:renderArchive,brief:()=>button("Ver estructura del archivo científico","navigate","archive")+renderBrief(),futures:renderFutures,shadow2027:renderShadow,overview:renderOverview,
-  science:renderScience,registry:renderResearchRegistry,operations:renderOperations,roadmap:renderRoadmap,
+  science:renderScience,questions:renderUsefulQuestions,registry:renderResearchRegistry,operations:renderOperations,roadmap:renderRoadmap,
   portfolio:()=>renderHistoricalProjectPortfolio(state.projectCatalog),ideas:renderIdeas,video:renderVideo};
  $("app").innerHTML=views[state.view]();
  updateChart();
@@ -340,6 +372,7 @@ $("app").addEventListener("click",async event=>{
  const {action,value}=b.dataset;
  switch(action){
  case "navigate":navigate(value);break;
+ case "question-priority":if(["P1","P2","P3"].includes(value)){state.questionPriority=value;render();}break;
  case "archive-page":state.archivePage=Number(value);render();break;
  case "archive-search":state.archiveQuery=$("archive-query").value;state.archivePage=0;render();break;
  case "scenario":state.scenario=value;render();break;
