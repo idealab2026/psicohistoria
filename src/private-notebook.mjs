@@ -46,3 +46,31 @@ export function describeScientificFile(value){
  const arrays=Array.isArray(value)?value.length: Object.values(value).filter(Array.isArray).reduce((n,arr)=>n+arr.length,0);
  return {kind:type,topLevelKeys:keys,visibleArrayEntries:arrays};
 }
+
+export function searchScientificObject(value,query,maxResults=40){
+ const q=String(query??"").trim().toLowerCase();
+ if(q.length<3||q.length>100||!Number.isInteger(maxResults)||maxResults<1||maxResults>100)throw Error("INVALID_SEARCH");
+ if(value===null||typeof value!=="object")throw Error("SCIENTIFIC_JSON_EXPECTED");
+ const results=[],stack=[{value,path:"$"}];
+ let examined=0;
+ while(stack.length&&examined<100000&&results.length<maxResults){
+  const item=stack.pop();examined++;
+  const v=item.value;
+  if(v===null||typeof v!=="object"){
+   const s=String(v);
+   if(s.toLowerCase().includes(q))results.push({path:item.path,preview:s.slice(0,700)});
+   continue;
+  }
+  const items=Array.isArray(v)?v.map((x,i)=>[String(i),x]):Object.entries(v);
+  for(let i=items.length-1;i>=0;i--){
+    const [key,child]=items[i];
+    const path=Array.isArray(v)?item.path+"["+key+"]":item.path+"."+key.replace(/[\x00-\x1f]/g,"");
+    if(String(key).toLowerCase().includes(q)&&results.length<maxResults){
+      const preview=(child!==null&&typeof child==="object")?"Objeto estructurado":String(child);
+      results.push({path,preview:preview.slice(0,700)});
+    }
+    stack.push({value:child,path});
+  }
+ }
+ return {results,examined,truncated:stack.length>0||results.length>=maxResults};
+}
