@@ -82,6 +82,20 @@ jobs:
         run: |
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/forecast_2027_statebased.py --output /tmp/idealab-geo2027.json --print-chunks
           test -s /tmp/idealab-geo2027.json
+  onset2_lagged_signal_ablation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Evaluate strict origin-only lag-onset1 1y and 2y model ablations on historical vintages
+        run: |
+          set -e
+          if test -f data/onset2-lagged-origin-ablation.json; then
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_onset2_lagged_signals.py --check-report data/onset2-lagged-origin-ablation.json
+          else
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_onset2_lagged_signals.py
+          fi
   onset2_homogeneous_holdout:
     runs-on: ubuntu-latest
     steps:
