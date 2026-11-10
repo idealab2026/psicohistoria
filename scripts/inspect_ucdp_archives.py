@@ -83,7 +83,7 @@ def discover(html):
         prefix=anchor["before"][-240:]
         m=list(re.finditer(r"(?:version\s*)?(\d\d\.1)\s*:",prefix,re.I))
         version=m[-1].group(1) if m else None
-        if version in ("22.1","23.1","24.1","25.1"):
+        if version in ("19.1","22.1","23.1","24.1","25.1"):
             selected.append({"version":version,"url":url,"caption":anchor["caption"].strip()})
     return selected
 
@@ -184,6 +184,7 @@ def inspect(fetcher=fetch):
             "archive_lists_22_1":False,
             "archive_lists_24_1":False,
             "archived_24_1_download":{"status":"NOT_CHECKED"},
+            "legacy_19_1_download":{"status":"NOT_CHECKED"},
             "historical_release_dates_cryptographically_verified":False,
             "prospective_predictions_issued":0}
     seen=set()
@@ -195,6 +196,38 @@ def inspect(fetcher=fetch):
             report["archive_lists_22_1"]=True
         if l["version"]=="24.1":
             report["archive_lists_24_1"]=True
+    legacy_links=[item for item in links if item["version"]=="19.1" and "CSV" in item["caption"]]
+    report["legacy_19_1_links"]=legacy_links
+    if legacy_links:
+        url=legacy_links[0]["url"]
+        try:
+            raw=fetcher(url,MAX_CSV)
+            header=next(csv.reader(io.StringIO(raw.decode("utf-8-sig"))),[])
+            legacy_rows=list(csv.DictReader(io.StringIO(raw.decode("utf-8-sig"))))
+            frequency={}
+            mixed={}
+            for row in legacy_rows:
+                key=(row.get("year",""),row.get("gwno_a",""))
+                frequency[key]=frequency.get(key,0)+1
+                mixed.setdefault(key,set()).add(row.get("onset2",""))
+            duplicates=[key for key,count in frequency.items() if count>1]
+            report["legacy_19_1_download"]={
+                "status":"RETRIEVED_UNPINNED",
+                "url":url,"sha256":digest(raw),"length":len(raw),
+                "headers":header[:40],
+                "record_count":len(legacy_rows),
+                "first_observation_year":min(int(row["year"]) for row in legacy_rows),
+                "last_observation_year":max(int(row["year"]) for row in legacy_rows),
+                "rows_after_2018":sum(int(row["year"])>2018 for row in legacy_rows),
+                "distinct_country_years":len(frequency),
+                "repeated_country_year_keys":len(duplicates),
+                "conflicting_onset2_within_key":sum(len(mixed[key])>1 for key in duplicates),
+                "blank_gwno_a_rows":sum(not row.get("gwno_a","").strip() for row in legacy_rows),
+                "duplicate_key_examples":duplicates[:5],
+                "preview_lines_count":min(10,len(raw.splitlines()))
+            }
+        except HTTPError as error:
+            report["legacy_19_1_download"]={"status":"HTTP_ERROR","http_status":error.code,"url":url}
     version_labels={}
     for item in links:
         if item["version"]=="24.1" and item["caption"]=="Intrastate Country Level Onset CSV":
