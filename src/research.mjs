@@ -487,6 +487,64 @@ export function verifyResearch(data) {
     {year:2025,origin_year:2023,n:196,inactive_to_active:4,active_to_active:30,inactive_to_inactive:158,active_to_inactive:4,model_top_10_hits:9,model_top_20_hits:18,model_top_35_hits:30}
   ]))
     throw Error("Conditional origin-state year-by-year confusion counts changed");
+  const entry=data.new_entry_2027_comparison;
+  if(!entry || entry.id!=="EMP-GEO2027-THRESHOLD-ENTRY-SPECIFIC-20261110" ||
+    entry.report_path!=="data/forecast-2027-entry-comparison.json" ||
+    entry.status!=="EXPLORATORY_EX_POST_TWO_TARGET_YEARS_NOT_PROSPECTIVE" ||
+    JSON.stringify(entry.target_years)!=="[2024,2025]" ||
+    entry.n!==321 || entry.entries!==8 ||
+    entry.new_model_tuned_on_outcomes!==false ||
+    entry.new_entry_comparator_exploratory_posthoc!==true ||
+    entry.prospectively_verified!==false ||
+    entry.original_2027_probabilities_unchanged!==true ||
+    entry.resolved_2027_forecasts!==0 ||
+    !entry.note?.includes("intervalo exploratorio incluye cero") ||
+    !entry.note?.includes("no es comienzo de guerra"))
+    throw Error("Cannot present post-hoc threshold entry as prospective onset prediction");
+  for(const [version,hash,year] of [
+    ["23.1","6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",2022],
+    ["24.1","00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",2023],
+    ["25.1","564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",2024],
+    ["26.1","66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34",2025]
+  ]){
+    const source=entry.source_vintages?.[version];
+    if(!source||source.sha256!==hash||source.last_year!==year||
+      !source.url.startsWith("https://ucdp.uu.se/downloads/organizedviolencecy/"))
+       throw Error("Entry comparator official source fingerprints changed");
+  }
+  if(![
+    ["model_brier",0.022647529679559648],
+    ["entry_prior_brier",0.024488096083760312],
+    ["global_markov_brier",0.025210281235017312],
+    ["model_logloss",0.1002593462099911],
+    ["entry_prior_logloss",0.11949284643213998],
+    ["global_markov_logloss",0.12748893747625176],
+    ["empirical_entry_rate",8/321],
+    ["model_predicted_entry_rate",0.042056007016355146],
+    ["forecast_over_outcome_ratio",1.6874972815312501]
+  ].every(([key,value])=>loose(entry[key],value))||
+    !loose(entry.skill_vs_entry_prior,1-entry.model_brier/entry.entry_prior_brier)||
+    !loose(entry.skill_vs_global_markov,1-entry.model_brier/entry.global_markov_brier)||
+    !Array.isArray(entry.country_bootstrap_95_delta_brier_vs_entry_prior)||
+    entry.country_bootstrap_95_delta_brier_vs_entry_prior.length!==2||
+    !loose(entry.country_bootstrap_95_delta_brier_vs_entry_prior[0],-0.007279033003436695)||
+    !loose(entry.country_bootstrap_95_delta_brier_vs_entry_prior[1],0.0017494189000956107))
+    throw Error("Entry comparator Brier, calibration, uncertainty or log-loss falsified");
+  if(JSON.stringify(entry.folds)!==JSON.stringify([
+    {year:2024,origin_year:2022,n:159,entries:4,
+      prior_probability:0.038632412594,
+      prior_training_exposures:5175,prior_training_entries:199,
+      ap_model:0.2541666666666667,
+      roc_auc_model:0.9225806451612903,
+      top_5_hits:2,top_10_hits:2,top_20_hits:3},
+    {year:2025,origin_year:2023,n:162,entries:4,
+      prior_probability:0.038569556263,
+      prior_training_exposures:5339,prior_training_entries:205,
+      ap_model:0.18091317741206406,
+      roc_auc_model:0.814873417721519,
+      top_5_hits:1,top_10_hits:1,top_20_hits:1}
+  ]))
+    throw Error("Entry comparator year-wise classification or training sample changed");
   return true;
 }
 export function verifyIssuedForecast2027(document, manifest){

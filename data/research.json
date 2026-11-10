@@ -1340,5 +1340,89 @@
     "prospective_2027_outcomes_resolved": 0,
     "prospective_skill_demonstrated": false,
     "note": "Subgrupos definidos según superar 25 muertes de violencia organizada state-based en el año de origen. Cruzar el umbral en el objetivo no implica inicio de un conflicto nuevo. Mejora retrospectiva por país en ambos estratos, pero intervalo de bootstrap para el estrato inicialmente por debajo del umbral incluye cero; solo ocho positivos nuevos en 321 observaciones. Ediciones oficiales históricas recuperadas en 2026: dos pasos entre años de datos NO prueban dos años de aviso operativo desde publicación. Pronósticos 2027 intactos."
+  },
+  "new_entry_2027_comparison": {
+    "id": "EMP-GEO2027-THRESHOLD-ENTRY-SPECIFIC-20261110",
+    "report_path": "data/forecast-2027-entry-comparison.json",
+    "status": "EXPLORATORY_EX_POST_TWO_TARGET_YEARS_NOT_PROSPECTIVE",
+    "source_vintages": {
+      "23.1": {
+        "last_year": 2022,
+        "sha256": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+        "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy_v23_1.xlsx"
+      },
+      "24.1": {
+        "last_year": 2023,
+        "sha256": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+        "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-241-csv.zip"
+      },
+      "25.1": {
+        "last_year": 2024,
+        "sha256": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+        "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-251-csv.zip"
+      },
+      "26.1": {
+        "last_year": 2025,
+        "sha256": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34",
+        "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-261-csv.zip"
+      }
+    },
+    "target_years": [
+      2024,
+      2025
+    ],
+    "n": 321,
+    "entries": 8,
+    "model_brier": 0.022647529679559648,
+    "entry_prior_brier": 0.024488096083760312,
+    "global_markov_brier": 0.025210281235017312,
+    "model_logloss": 0.1002593462099911,
+    "entry_prior_logloss": 0.11949284643213998,
+    "global_markov_logloss": 0.12748893747625176,
+    "skill_vs_entry_prior": 0.07516167847043309,
+    "skill_vs_global_markov": 0.10165501652151265,
+    "country_bootstrap_95_delta_brier_vs_entry_prior": [
+      -0.007279033003436695,
+      0.0017494189000956107
+    ],
+    "empirical_entry_rate": 0.024922118380062305,
+    "model_predicted_entry_rate": 0.042056007016355146,
+    "forecast_over_outcome_ratio": 1.6874972815312501,
+    "folds": [
+      {
+        "year": 2024,
+        "origin_year": 2022,
+        "n": 159,
+        "entries": 4,
+        "prior_probability": 0.038632412594,
+        "prior_training_exposures": 5175,
+        "prior_training_entries": 199,
+        "ap_model": 0.2541666666666667,
+        "roc_auc_model": 0.9225806451612903,
+        "top_5_hits": 2,
+        "top_10_hits": 2,
+        "top_20_hits": 3
+      },
+      {
+        "year": 2025,
+        "origin_year": 2023,
+        "n": 162,
+        "entries": 4,
+        "prior_probability": 0.038569556263,
+        "prior_training_exposures": 5339,
+        "prior_training_entries": 205,
+        "ap_model": 0.18091317741206406,
+        "roc_auc_model": 0.814873417721519,
+        "top_5_hits": 1,
+        "top_10_hits": 1,
+        "top_20_hits": 1
+      }
+    ],
+    "new_model_tuned_on_outcomes": false,
+    "new_entry_comparator_exploratory_posthoc": true,
+    "prospectively_verified": false,
+    "original_2027_probabilities_unchanged": true,
+    "resolved_2027_forecasts": 0,
+    "note": "Ocho nuevos cruces de 25 muertes state-based en 321 observaciones 2024/25; umbral no es comienzo de guerra ni UCDP onset2. Baseline directo de tasa de entrada a dos años calculado solo con ediciones de origen. La ventaja Brier del modelo por país es pequeña y el intervalo exploratorio incluye cero. Sus probabilidades medias sobreestiman entradas por factor ~1,69. Comparador elegido después de inspeccionar los resultados, sin validación confirmatoria. La emisión pública inmutable GEO-2027 conserva las 196 probabilidades; cero desenlaces 2027 evaluados."
   }
 }

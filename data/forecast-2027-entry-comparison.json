@@ -1,0 +1,281 @@
+{
+  "annual_brier_deltas": [
+    {
+      "brier_delta_model_minus_conditional_prior": -0.002682003105942604,
+      "brier_delta_model_minus_global_markov": -0.0034130289837419232,
+      "year": 2024
+    },
+    {
+      "brier_delta_model_minus_conditional_prior": -0.001014711863602094,
+      "brier_delta_model_minus_global_markov": -0.0017282200054749564,
+      "year": 2025
+    }
+  ],
+  "baseline_definition": "Beta(1,1) smoothed historical direct 2-year inactive-to-active event fraction, using only prior edition and countries eligible in origin year",
+  "brier_skill_vs_entry_prior": 0.07516167847043309,
+  "brier_skill_vs_global_markov": 0.10165501652151265,
+  "calibration_country_markov": [
+    {
+      "lower": 0,
+      "n": 227,
+      "observed": 0.004405286343612335,
+      "predicted": 0.021268660637920708,
+      "upper": 0.05
+    },
+    {
+      "lower": 0.05,
+      "n": 69,
+      "observed": 0.057971014492753624,
+      "predicted": 0.06625466593178261,
+      "upper": 0.1
+    },
+    {
+      "lower": 0.1,
+      "n": 20,
+      "observed": 0.05,
+      "predicted": 0.1421937506278,
+      "upper": 0.2
+    },
+    {
+      "lower": 0.2,
+      "n": 5,
+      "observed": 0.4,
+      "predicted": 0.25130906511859996,
+      "upper": 0.4
+    },
+    {
+      "lower": 0.4,
+      "n": 0,
+      "observed": null,
+      "predicted": null,
+      "upper": 0.6
+    },
+    {
+      "lower": 0.6,
+      "n": 0,
+      "observed": null,
+      "predicted": null,
+      "upper": 0.8
+    },
+    {
+      "lower": 0.8,
+      "n": 0,
+      "observed": null,
+      "predicted": null,
+      "upper": 1
+    }
+  ],
+  "candidate_model_tuning_performed": false,
+  "country_cluster_bootstrap_95pct_model_minus_entry_prior": [
+    -0.007279033003436695,
+    0.0017494189000956107
+  ],
+  "country_cluster_bootstrap_95pct_model_minus_global_markov": [
+    -0.0074009121930119414,
+    0.000684539310068031
+  ],
+  "country_years": 321,
+  "data_source": "UCDP OrganizedViolenceCY",
+  "entry_definition": "below 25 in origin year and >=25 in target year, NOT conflict onset2",
+  "folds": [
+    {
+      "alert_budgets": {
+        "10": {
+          "budget": 10,
+          "hits": 2,
+          "precision": 0.2,
+          "random_expected_hits": 0.25157232704402516,
+          "recall": 0.5,
+          "ties_at_threshold": false
+        },
+        "20": {
+          "budget": 20,
+          "hits": 3,
+          "precision": 0.15,
+          "random_expected_hits": 0.5031446540880503,
+          "recall": 0.75,
+          "ties_at_threshold": false
+        },
+        "5": {
+          "budget": 5,
+          "hits": 2,
+          "precision": 0.4,
+          "random_expected_hits": 0.12578616352201258,
+          "recall": 0.5,
+          "ties_at_threshold": false
+        }
+      },
+      "average_precision": {
+        "country_markov": 0.2541666666666667,
+        "entry_prior": 0.025157232704402517,
+        "global_markov": 0.025157232704402517
+      },
+      "entry_training": {
+        "eligible_countries_at_origin": 196,
+        "future_outcomes_used": false,
+        "historical_inactive_exposures": 5175,
+        "historical_last_eligible_origin_year": 2020,
+        "historical_two_year_entries": 199,
+        "probability": 0.038632412594
+      },
+      "evaluation_version": "25.1",
+      "mean_global_markov_prediction": 0.055366607919,
+      "mean_model_prediction": 0.042278659029352204,
+      "n": 159,
+      "new_entries": 4,
+      "observed_entry_rate": 0.025157232704402517,
+      "origin_version": "23.1",
+      "origin_year": 2022,
+      "outcome_year": 2024,
+      "roc_auc": {
+        "country_markov": 0.9225806451612903,
+        "entry_prior": 0.5,
+        "global_markov": 0.5
+      },
+      "scores": {
+        "p_entry_prior_2y": {
+          "brier": 0.02470592682011607,
+          "logloss": 0.12026045596304831
+        },
+        "p_global_markov": {
+          "brier": 0.025436952697915387,
+          "logloss": 0.12832491857589223
+        },
+        "p_model": {
+          "brier": 0.022023923714173464,
+          "logloss": 0.09433692857503244
+        }
+      }
+    },
+    {
+      "alert_budgets": {
+        "10": {
+          "budget": 10,
+          "hits": 1,
+          "precision": 0.1,
+          "random_expected_hits": 0.24691358024691357,
+          "recall": 0.25,
+          "ties_at_threshold": false
+        },
+        "20": {
+          "budget": 20,
+          "hits": 1,
+          "precision": 0.05,
+          "random_expected_hits": 0.49382716049382713,
+          "recall": 0.25,
+          "ties_at_threshold": true
+        },
+        "5": {
+          "budget": 5,
+          "hits": 1,
+          "precision": 0.2,
+          "random_expected_hits": 0.12345679012345678,
+          "recall": 0.25,
+          "ties_at_threshold": false
+        }
+      },
+      "average_precision": {
+        "country_markov": 0.18091317741206406,
+        "entry_prior": 0.024691358024691357,
+        "global_markov": 0.024691358024691357
+      },
+      "entry_training": {
+        "eligible_countries_at_origin": 196,
+        "future_outcomes_used": false,
+        "historical_inactive_exposures": 5339,
+        "historical_last_eligible_origin_year": 2021,
+        "historical_two_year_entries": 205,
+        "probability": 0.038569556263
+      },
+      "evaluation_version": "26.1",
+      "mean_global_markov_prediction": 0.054793061102999994,
+      "mean_model_prediction": 0.04183747818878395,
+      "n": 162,
+      "new_entries": 4,
+      "observed_entry_rate": 0.024691358024691357,
+      "origin_version": "24.1",
+      "origin_year": 2023,
+      "outcome_year": 2025,
+      "roc_auc": {
+        "country_markov": 0.814873417721519,
+        "entry_prior": 0.5,
+        "global_markov": 0.5
+      },
+      "scores": {
+        "p_entry_prior_2y": {
+          "brier": 0.024274299249929663,
+          "logloss": 0.11873945189254427
+        },
+        "p_global_markov": {
+          "brier": 0.024987807391802525,
+          "logloss": 0.1266684375080865
+        },
+        "p_model": {
+          "brier": 0.02325958738632757,
+          "logloss": 0.1060720894443018
+        }
+      }
+    }
+  ],
+  "future_source_asof_provenance_certified": false,
+  "horizon_calendar_steps": 2,
+  "limitations": "Exploratory comparator specified after 2024/25 labels were inspected, not independent confirmatory holdout. Eight positive entries only, two target years and country-cluster intervals ignore common year shocks. No verified historical original issue times or historically issued forecasts. Two annual steps do not imply two years of live lead time. Crossing 25 state-based deaths is neither new-war onset nor state violence against civilians.",
+  "mean_probability_over_outcome_ratio": 1.6874972815312501,
+  "new_model_hypothesis_only_after_seen_outcomes": true,
+  "pooled_mean_global_markov_probability": 0.055077154385691586,
+  "pooled_mean_model_probability": 0.042056007016355146,
+  "pooled_observed_entry_rate": 0.024922118380062305,
+  "pooled_scores": {
+    "p_entry_prior_2y": {
+      "brier": 0.024488096083760312,
+      "logloss": 0.11949284643213998
+    },
+    "p_global_markov": {
+      "brier": 0.025210281235017312,
+      "logloss": 0.12748893747625176
+    },
+    "p_model": {
+      "brier": 0.022647529679559648,
+      "logloss": 0.1002593462099911
+    }
+  },
+  "positive_threshold_entries": 8,
+  "primary_forecast_is_unmodified": true,
+  "prior_configuration": {
+    "alpha": 1,
+    "beta": 1
+  },
+  "prospective_skill_demonstrated": false,
+  "real_2027_outcomes_resolved": 0,
+  "real_2027_predictions_changed": 0,
+  "schema": "idealab.psico.geo2027_threshold_entry_comparator.v1",
+  "source_vintages": {
+    "23.1": {
+      "last_year": 2022,
+      "sha256": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+      "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy_v23_1.xlsx"
+    },
+    "24.1": {
+      "last_year": 2023,
+      "sha256": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+      "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-241-csv.zip"
+    },
+    "25.1": {
+      "last_year": 2024,
+      "sha256": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+      "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-251-csv.zip"
+    },
+    "26.1": {
+      "last_year": 2025,
+      "sha256": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34",
+      "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-261-csv.zip"
+    }
+  },
+  "status": "EXPLORATORY_EX_POST_TWO_TARGET_YEARS_NOT_PROSPECTIVE",
+  "study_id": "EMP-GEO2027-THRESHOLD-ENTRY-SPECIFIC-20261110",
+  "target_rule": "at least 25 state-based organized-violence deaths in later country-year",
+  "target_years": [
+    2024,
+    2025
+  ]
+}
