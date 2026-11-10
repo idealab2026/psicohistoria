@@ -184,7 +184,7 @@ function renderOnset2LaggedSignal(){
   "¿Aporta información un inicio de conflicto anterior?",
   "Cinco modelos comparados con el indicador onset1 del año de origen y horizontes de uno y dos años. El modelo nunca consulta 2023 para estimar 2024; la prueba externa usa la edición UCDP 25.1 distinta de la de entrenamiento.")+
  '<div class="section-grid three">'+
- box('<div class="eyebrow">BACKTEST INTERNO</div><div class="card-number">'+safe(x.internal.n)+'</div><p>'+safe(x.internal.events)+' inicios · ventanas históricas dentro de 23.1, revisadas ex post</p>')+
+ box('<div class="eyebrow">BACKTEST INTERNO</div><div class="card-number">'+safe(x.internal.n)+'</div><p>'+safe(x.internal.events)+' etiquetas positivas en evaluaciones solapadas; '+safe(x.internal.unique_positive_country_target_years)+' inicios únicos en '+safe(x.internal.unique_country_target_years)+' países-año distintos. Edición 23.1 revisada ex post</p>')+
  box('<div class="eyebrow">CONTRASTE ENTRE EDICIONES</div><div class="card-number">'+safe(x.external.n)+'</div><p>'+safe(x.external.events)+' inicios · 2023 y 2024</p>')+
  box('<div class="eyebrow">MEJOR BRIER EXTERNO</div><div class="card-number">'+num(bestExternal)+'</div><p>Referencia global reciente; las señales adicionales no la superan</p>')+
  '</div>'+
@@ -192,7 +192,7 @@ function renderOnset2LaggedSignal(){
  '<div class="table-wrap"><table><thead><tr><th>Modelo</th><th>Brier interno ↓</th><th>Brier externo ↓</th><th>Log-loss externo ↓</th></tr></thead><tbody>'+
  candidates.map(([label,key])=>'<tr><td>'+safe(label)+'</td><td>'+num(x.internal.scores[key].brier)+'</td><td>'+num(x.external.scores[key].brier)+'</td><td>'+num(x.external.scores[key].logloss)+'</td></tr>').join("")+
  '</tbody></table></div>'+
- '<p><strong>Resultado:</strong> la señal onset1 reduce mínimamente el Brier del modelo por país en el rolling-origin histórico, pero la diferencia externa respecto al mismo estimador tiene un intervalo que incluye cero. Frente a la tasa global reciente, ninguno de los dos modelos por país mejora el Brier.</p>'+
+ '<p><strong>Resultado:</strong> las 2.744 evaluaciones internas reutilizan algunos países-año entre horizontes y no son casos independientes. La señal onset1 reduce mínimamente el Brier del modelo por país en el rolling-origin histórico, pero la diferencia externa respecto al mismo estimador tiene un intervalo que incluye cero. Frente a la tasa global reciente, ninguno de los dos modelos por país mejora el Brier.</p>'+
  '<p>Este resultado es exploratorio: las hipótesis se formularon después de haber examinado los desenlaces de 2023 y 2024. No se ha demostrado superioridad ni calibración operativa.</p>','soft')+
  box('<h3>¿Identifica los nuevos inicios en la prueba externa?</h3>'+
  '<div class="table-wrap"><table><thead><tr><th>Objetivo</th><th>Horizonte</th><th>Inicios</th><th>Average precision</th><th>AUC</th><th>Top 20</th></tr></thead><tbody>'+
