@@ -84,8 +84,10 @@ def load_sources(fetcher=fetch):
             data["_19_1_diagnostics"]=diagnostics
         else:
             d=onset_labels(raw)
-        if max(year for year,_ in d)!=src["last_year"]:
-            raise ValueError("Unexpected last year of historical edition "+version)
+        last_observed_year=max(year for year,_ in d)
+        if last_observed_year!=src["last_year"]:
+            raise ValueError("Unexpected last year of historical edition "+version+
+                             ": "+str(last_observed_year)+" (expected "+str(src["last_year"])+")")
         if len(d)<9000:
             raise ValueError("Unexpectedly small historical edition "+version)
         data[version]=d
