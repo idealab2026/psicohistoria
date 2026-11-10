@@ -232,6 +232,20 @@ def evaluate(source):
     external,external_folds=evaluate_at_origin(base,later,EXTERNAL_CUTOFF)
     internal_scores=score_rows(internal)
     external_scores=score_rows(external)
+    distinct_internal={}
+    for row in internal:
+        key=(row["country"],row["year"])
+        if key in distinct_internal and distinct_internal[key]!=row["outcome"]:
+            raise ValueError("Contradictory repeated historical target label")
+        distinct_internal[key]=row["outcome"]
+    internal_by_horizon={
+        str(h):{
+            "n":sum(row["horizon"]==h for row in internal),
+            "events":sum(row["outcome"] for row in internal if row["horizon"]==h),
+            "scores":score_rows([row for row in internal if row["horizon"]==h])
+        }
+        for h in HORIZONS
+    }
     return {
         "schema":"idealab.psico.onset2_lagged_231_251_ablation.v1",
         "status":"POST_HOC_MODEL_FAMILY_EXPLORATION_NOT_PROSPECTIVE",
@@ -258,6 +272,10 @@ def evaluate(source):
         "internal":{
             "source_edition":"23.1","n":len(internal),
             "events":sum(r["outcome"] for r in internal),
+            "unique_country_target_years":len(distinct_internal),
+            "unique_positive_country_target_years":sum(distinct_internal.values()),
+            "repeated_target_evaluations":len(internal)-len(distinct_internal),
+            "by_horizon":internal_by_horizon,
             "scores":internal_scores,"folds":internal_folds,
             "country_bootstrap_delta_vs_global_h":
                  _pooled_bootstrap(internal,"global_h"),
@@ -282,7 +300,7 @@ def evaluate(source):
         "prospective_2027_issued_forecast_changed":False,
         "actual_2027_results_resolved":0,
         "predictive_skill_demonstrated":False,
-        "caution":"This study compares several hypothesis models with previously seen 2023/24 outcomes; it cannot claim independent testing or any certified skill. UCDP onset1 is an event marker, not the full underlying active-conflict risk-set definition. Country-onset2 labels are not state-based threshold crossings. Source 23.1 retrospective rolling windows have revised historical information. Country-bootstrap misses common-year shocks. The original 196 issued 2027 probabilities are untouched."
+        "caution":"This study compares several hypothesis models with previously seen 2023/24 outcomes; it cannot claim independent testing or any certified skill. UCDP onset1 is an event marker, not the full underlying active-conflict risk-set definition. Country-onset2 labels are not state-based threshold crossings. Source 23.1 retrospective rolling windows have revised historical information. Internal rolling folds reuse some target country-years under different origins/horizons, so 2744 forecast evaluations represent only 1568 distinct country-years and 22 distinct onsets; they are not independent cases. Country-bootstrap misses common-year shocks. The original 196 issued 2027 probabilities are untouched."
     }
 
 def main():
@@ -293,11 +311,11 @@ def main():
     later,info2=load_panel("25.1")
     study=evaluate({"23.1":original,"25.1":later})
     content=json.dumps(study,ensure_ascii=False,indent=2,sort_keys=True)+"\n"
-    if args.check_report and Path(args.check_report).read_bytes()!=content.encode("utf8"):
-        raise ValueError("Archived onset2 lagged-signal report disagrees with pinned UCDP editions")
     print("ONSET2_LAGGED_ABLATION_BEGIN")
     print(content,end="")
     print("ONSET2_LAGGED_ABLATION_END")
+    if args.check_report and Path(args.check_report).read_bytes()!=content.encode("utf8"):
+        raise ValueError("Archived onset2 lagged-signal report disagrees with pinned UCDP editions")
     print("ONSET2_LAGGED_ABLATION_SUMMARY",study["internal"]["n"],study["internal"]["events"],
           study["external"]["n"],study["external"]["events"],
           "prospective_2027_resolved",0)
