@@ -113,6 +113,50 @@ def parse_source(data):
             "latest_country_count":len(countries[max(counts)]),
             "headers":headers}
 
+def onset_labels(data):
+    """Internal comparison only: never emit country-level values to public results."""
+    reader=csv.DictReader(io.StringIO(data.decode("utf-8-sig")))
+    if not {"year","gwno_a","onset2"}.issubset(reader.fieldnames or []):
+        raise ValueError("Missing historical UCDP onset labels")
+    labels={}
+    for row in reader:
+        key=(int(row["year"]),row["gwno_a"].strip())
+        if key in labels: raise ValueError("Duplicate archived country-year")
+        if row["onset2"].strip() not in ("0","1"):
+            raise ValueError("Unexpected onset2 value")
+        labels[key]=int(row["onset2"])
+    return labels
+
+def compare_revisions(old, new, old_max_year):
+    """Compare frozen versions only on old-period country-years, without data leakage."""
+    a={k:v for k,v in old.items() if k[0]<=old_max_year}
+    b={k:v for k,v in new.items() if k[0]<=old_max_year}
+    old_keys,new_keys=set(a),set(b)
+    both=old_keys & new_keys
+    changes=[k for k in both if a[k]!=b[k]]
+    grouping=[
+        ("1946-1989",1946,1989),
+        ("1990-2009",1990,2009),
+        ("2010-2020",2010,2020),
+        ("2021-2022",2021,2022),
+    ]
+    return {
+        "comparison":"UCDP_Onset_23_1_vs_25_1_onset2_historical_label_drift",
+        "common_country_years":len(both),
+        "country_years_only_in_23_1":len(old_keys-new_keys),
+        "country_years_only_in_25_1":len(new_keys-old_keys),
+        "onset2_label_flips":len(changes),
+        "flips_0_to_1":sum(a[k]==0 for k in changes),
+        "flips_1_to_0":sum(a[k]==1 for k in changes),
+        "flips_by_period":[
+            {"period":label,"shared":sum(lo<=k[0]<=hi for k in both),
+             "flips":sum(lo<=k[0]<=hi for k in changes)}
+            for label,lo,hi in grouping
+        ],
+        "not_prospective":True,
+        "interpretation":"Measures cross-release retrospective label revisions, not forecast skill; incomplete territory overlap is reported separately."
+    }
+
 def fetch(url, limit):
     request=Request(url,headers={"User-Agent":"IDEA-LAB-scientific-archive-audit/1.0"})
     with urlopen(request,timeout=35) as response:
@@ -142,11 +186,14 @@ def inspect(fetcher=fetch):
             report["additional_vintage_22_1_available"]=True
         if l["version"]=="24.1":
             report["additional_vintage_24_1_available"]=True
+    version_labels={}
     for version,(url,sha) in PINNED.items():
         raw=fetcher(url,MAX_CSV)
         if digest(raw)!=sha:
             raise ValueError("Pinned UCDP "+version+" hash mismatch; abort")
         report["pinned_downloads"].append({"version":version,"url":url,"sha256":sha,**parse_source(raw)})
+        version_labels[version]=onset_labels(raw)
+    report["historical_label_revisions"]=compare_revisions(version_labels["23.1"],version_labels["25.1"],2022)
     return report
 
 def main():
