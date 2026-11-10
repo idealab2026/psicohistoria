@@ -92,6 +92,33 @@ function renderOverview(){
 function renderStudySelector(){
  return '<label class="field" style="max-width:460px">Estudio sintético <select id="study-selector">'+state.data.studies.map(s=>'<option value="'+safe(s.id)+'" '+(state.study===s.id?'selected':'')+'>'+safe(s.title)+'</option>').join("")+'</select></label>';
 }
+function renderConditionalRisksetEvidence(){
+ const study=state.research?.riskset_study;
+ if(!study)return "";
+ const fmt=n=>new Intl.NumberFormat("es-ES",{maximumFractionDigits:6,minimumFractionDigits:6}).format(n);
+ const percent=n=>new Intl.NumberFormat("es-ES",{maximumFractionDigits:2}).format(100*n)+" %";
+ const first=study.scenarios[0],second=study.scenarios[1];
+ return section("INVESTIGACIÓN · UCDP · SEGUNDO EXPERIMENTO","¿Importa que un país ya esté en guerra?",
+   "Hemos cruzado inicios de conflictos con la incidencia previa: el análisis distingue países sin violencia intrastatal activa durante uno o dos años anteriores.")+
+ '<div class="section-grid three">'+
+ box('<div class="eyebrow">SIN CONFLICTO EN EL AÑO PREVIO</div><div class="card-number">'+safe(percent(first.relative_brier_improvement))+'</div><p>Menor error Brier que la frecuencia global · '+safe(first.observations)+' países-año</p>')+
+ box('<div class="eyebrow">SIN CONFLICTO EN DOS AÑOS</div><div class="card-number">'+safe(percent(second.relative_brier_improvement))+'</div><p>Menor error Brier que la frecuencia global · '+safe(second.observations)+' países-año</p>')+
+ box('<div class="eyebrow">AVISO DE VALIDEZ</div><div class="card-number">Exploratorio</div><p>Sin emisión prospectiva ni vintages históricas verificadas</p>')+
+ '</div>'+
+ box('<h3>Comparativa del modelo por país frente a la referencia global</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Países sin conflicto en...</th><th>Países</th><th>Eventos</th><th>Brier país ↓</th><th>Brier global ↓</th><th>Mejora relativa</th></tr></thead><tbody>'+
+ study.scenarios.map(v=>'<tr><td>'+safe(v.preceding_inactive_years)+' año'+(v.preceding_inactive_years>1?'s':'')+
+ '</td><td>'+safe(v.countries)+'</td><td>'+safe(v.events)+'</td><td>'+safe(fmt(v.brier_model))+
+ '</td><td>'+safe(fmt(v.brier_baseline))+'</td><td>'+safe(percent(v.relative_brier_improvement))+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p><strong>Lectura:</strong> las dos comparaciones favorecen al modelo por país dentro de estas muestras. Los intervalos exploratorios excluyen cero, pero no están corregidos por seleccionar criterios tras mirar el primer experimento. Esto <strong>no acredita predicción futura</strong>.</p>'+
+ '<details><summary>Fuentes oficiales, intervalos y limitaciones</summary>'+
+ '<p><strong>Periodo:</strong> '+safe(study.period)+' · 40 eventos en cada muestra.</p>'+
+ study.scenarios.map(v=>'<p>Sin conflicto en '+safe(v.preceding_inactive_years)+' año(s), delta Brier país − global, intervalo exploratorio 95 %: ['+safe(fmt(v.cluster_delta_interval[0]))+', '+safe(fmt(v.cluster_delta_interval[1]))+'].</p>').join("")+
+ study.sources.map((src,i)=>'<p><a href="'+safe(src.url)+'" target="_blank" rel="noopener noreferrer">Fuente oficial '+(i+1)+'</a> · SHA-256 <code>'+safe(src.sha256)+'</code></p>').join("")+
+ '<p>'+safe(study.note)+'</p>'+
+ '</details>','soft');
+}
 function renderEmpiricalEvidence(){
  const study=state.research?.empirical_studies?.[0];
  if(!study)return "";
@@ -122,7 +149,7 @@ function renderEmpiricalEvidence(){
 }
 function renderScience(){
  const d=state.data,rows=d.studies.map(s=>({s,score:score(s)}));
- return renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
+ return renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
  '<div class="table-wrap"><table><thead><tr><th>Estudio sintético</th><th>Observaciones</th><th>Brier modelo</th><th>Brier referencia</th><th>Mejora relativa</th><th>Validez</th></tr></thead><tbody>'+rows.map(({s,score:r})=>'<tr><td>'+safe(s.title)+'</td><td>'+r.n+'</td><td>'+format(r.brier)+'</td><td>'+format(r.baselineBrier)+'</td><td>'+formatPct(r.skill)+'</td><td>Sintético</td></tr>').join("")+'</tbody></table></div>'+
  section("REPRODUCIBILIDAD","Evaluación de un experimento","Selecciona un estudio para analizar las probabilidades ficticias y compararlas con su referencia fija.")+
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+
