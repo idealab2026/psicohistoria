@@ -4,6 +4,30 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO-2027 · Nuevo contraste sobre entradas, calibración y ranking (10-11-2026)
+
+El modelo GEO-2027 había reducido el Brier agregado principalmente por **persistencia de estados violentos**. Para no confundir eso con detección de nuevas entradas, se ha ejecutado otro análisis —**exploratorio y especificado después de observar los resultados históricos**— solo sobre los países que estaban por debajo del umbral de 25 muertes por violencia organizada *state-based* en los años origen 2022 y 2023.
+
+**Universo**: 321 países-año inicialmente inferiores al umbral; solo **8** lo superan en 2024/2025 (4 por año). Ediciones UCDP **23.1→25.1** y **24.1→26.1**, cada archivo comprobado mediante SHA-256. El modelo por país es exactamente el previamente emitido; no se retoca ninguna de las 196 probabilidades de 2027.
+
+Nueva referencia *no usada para entrenar el modelo*: tasa histórica de entrada a los dos años de países inicialmente inactivos, con suavizado Beta(1,1), utilizando únicamente el archivo original anterior al año objetivo. Para origen 2022 hay **5.175** observaciones históricas elegibles, **199** entradas y tasa predictiva **3,8632 %**; para origen 2023, **5.339** observaciones, **205** entradas y tasa **3,8570 %**. El último año histórico usado en cada referencia acaba dos años antes del corte de origen, para permitir observar las transiciones sin fuga de datos.
+
+| Modelo | Brier ↓ | Log-loss ↓ |
+|---|---:|---:|
+| Markov por país, sin modificar | **0,02264753** | **0,10025935** |
+| Tasa histórica directa de entrada a 2 años | 0,02448810 | 0,11949285 |
+| Markov global, desde estado inactivo | 0,02521028 | 0,12748894 |
+
+La mejora retrospectiva Brier es **7,52 %** frente a la referencia directa y **10,17 %** frente al Markov global. El intervalo exploratorio de diferencia Brier frente a la referencia directa **[−0,00728, +0,00175] incluye cero**; no prueba una superioridad robusta con solo ocho positivos.
+
+**Calibración**: el modelo asignó una probabilidad media de **4,2056 %** frente al **2,4922 %** observado: pronosticó **1,6875 veces** más entradas esperadas que las ocurridas. No basta con un Brier relativamente favorable para decir que está bien calibrado.
+
+**Ordenación de alertas** (solo entre países inicialmente inferiores al umbral): para 2024 la *average precision* (AP/PR-AUC discreta) fue **25,42 %**, ROC-AUC **0,9226**, y el top-5 detectó **2 de 4** entradas; para 2025, AP **18,09 %**, ROC-AUC **0,8149**, top-5 detectó **1 de 4**. La tasa base de un clasificador sin capacidad de ordenación ronda **2,5 %**. Solo dos años objetivo: los resultados están muy expuestos al azar y no deben extrapolarse a otros periodos sin evaluación independiente.
+
+**No es predicción del inicio de guerras**: cruzar el umbral de 25 fallecimientos state-based no equivale a `onset2` y tampoco mide violencia gubernamental contra civiles. Las fuentes históricas se recuperaron y los modelos se reconstruyeron ex post en 2026; las fechas originales de emisión no están autenticadas de forma independiente. Ni estos datos ni las nuevas referencias validan prospectivamente el modelo. **En 2027 siguen pendientes los 196 desenlaces y no se ha alterado ninguna probabilidad emitida**.
+
+Reproducibilidad: `scripts/evaluate_2027_new_entries.py`, tests `scripts/test_evaluate_2027_new_entries.py`, informe `data/forecast-2027-entry-comparison.json`, resumen estricto en `data/research.json` y vista **Investigación → Evidencia**. Los análisis emplean solo ficheros oficiales anclados por SHA y se recalculan en CI, que impide desplegar si el informe cambia.
+
 ## GEO-2027 · Persistencia frente a nuevos cruces de umbral (10-11-2026)
 
 **La mejora agregada no responde necesariamente a predecir nuevas guerras.** Hemos descompuesto las 392 observaciones históricas de ediciones UCDP distintas según el estado del país al final del año de origen, utilizando **exactamente el modelo Markov emitido para 2027**, sin modificar las probabilidades públicas.
