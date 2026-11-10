@@ -82,6 +82,20 @@ jobs:
         run: |
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/forecast_2027_statebased.py --output /tmp/idealab-geo2027.json --print-chunks
           test -s /tmp/idealab-geo2027.json
+  onset2_country_riskset_codebook:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify country-level onset2 eligibility, not conflict-level or multiple-onset, from 23.1 and 25.1
+        run: |
+          set -e
+          if test -f data/onset2-country-riskset-audit.json; then
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_onset2_country_riskset.py --check-report data/onset2-country-riskset-audit.json
+          else
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_onset2_country_riskset.py
+          fi
   onset2_conflict_incidence:
     runs-on: ubuntu-latest
     steps:
