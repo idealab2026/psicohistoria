@@ -63,9 +63,9 @@ jobs:
           mkdir -p dist/src dist/data
           cp index.html trabajo.html privacidad-icsa.html styles.css logo.svg favicon.svg dist/
           cp src/site.mjs src/visuals.mjs src/neural.mjs src/markov-svg.mjs src/lab-renderers.mjs src/metrics.mjs src/research.mjs src/project-catalog.mjs src/project-portfolio.mjs src/private-workbench.mjs src/private-notebook.mjs src/country-comparison.mjs src/country-comparison-view.mjs src/main-country-tree.mjs dist/src/
-          cp data/demo.json data/research.json data/projects.json data/forecast-2027-ucdp261.json data/forecast-2027-manifest.json data/forecast-2027-audit.json data/forecast-2027-historical-backtest.json data/forecast-2027-archival-cross-release.json dist/data/
+          cp data/demo.json data/research.json data/projects.json data/forecast-2027-ucdp261.json data/forecast-2027-manifest.json data/forecast-2027-audit.json data/forecast-2027-historical-backtest.json data/forecast-2027-archival-cross-release.json data/forecast-2027-origin-state-diagnostic.json dist/data/
           python3 scripts/build_official_countries.py --output dist/data/countries-ucdp261.json
-          test "$(find dist -type f | wc -l)" -eq 29
+          test "$(find dist -type f | wc -l)" -eq 30
       - uses: actions/upload-artifact@v4
         with:
           name: audited-site
@@ -185,7 +185,7 @@ jobs:
           test -s /tmp/idealab-ucdp-archive.json
   deploy:
     if: github.event_name != 'pull_request'
-    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout]
+    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic]
     runs-on: ubuntu-latest
     environment: github-pages
     steps:
