@@ -112,6 +112,14 @@ function renderConditionalRisksetEvidence(){
  '</td><td>'+safe(fmt(v.brier_baseline))+'</td><td>'+safe(percent(v.relative_brier_improvement))+'</td></tr>').join("")+
  '</tbody></table></div>'+
  '<p><strong>Lectura:</strong> las dos comparaciones favorecen al modelo por país dentro de estas muestras. Los intervalos exploratorios excluyen cero, pero no están corregidos por seleccionar criterios tras mirar el primer experimento. Esto <strong>no acredita predicción futura</strong>.</p>'+
+ '<details><summary>¿Es estable el resultado entre periodos?</summary>'+
+ '<div class="table-wrap"><table><thead><tr><th>Inactividad previa</th><th>Periodo</th><th>Eventos</th><th>Mejora Brier</th></tr></thead><tbody>'+
+ study.temporal_robustness.periods.map(v=>'<tr><td>'+safe(v.prior_inactive_years)+' año(s)</td><td>'+safe(v.years)+
+ '</td><td>'+safe(v.events)+'</td><td>'+safe(percent(v.relative_brier_improvement))+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>El análisis también compara tres niveles de regularización: '+study.temporal_robustness.priors.map(v=>safe(v.prior_inactive_years)+' año(s) · prior '+safe(v.prior_strength)+': '+safe(percent(v.relative_brier_improvement))).join(' · ')+'.</p>'+
+ '<p>'+safe(study.temporal_robustness.note)+'</p>'+
+ '</details>'+
  '<details><summary>Fuentes oficiales, intervalos y limitaciones</summary>'+
  '<p><strong>Periodo:</strong> '+safe(study.period)+' · 40 eventos en cada muestra.</p>'+
  study.scenarios.map(v=>'<p>Sin conflicto en '+safe(v.preceding_inactive_years)+' año(s), delta Brier país − global, intervalo exploratorio 95 %: ['+safe(fmt(v.cluster_delta_interval[0]))+', '+safe(fmt(v.cluster_delta_interval[1]))+'].</p>').join("")+

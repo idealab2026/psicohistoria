@@ -357,6 +357,115 @@
     "operational_utility_demonstrated": false,
     "exploratory_confidence_intervals": true,
     "note": "Las dos ventanas de inactividad son escenarios exploratorios definidos después del primer estudio. Ambas dan un Brier menor, pero no hay verificación point-in-time ni corrección por selección de hipótesis. Las versiones de UCDP son retrospectivas y revisadas. No es una alerta actual por país ni un acierto certificado.",
-    "workflow_run": "42724553640"
+    "workflow_run": "42724553640",
+    "temporal_robustness": {
+      "status": "EXPLORATORY_REVISED_VINTAGE_NOT_CONFIRMATORY",
+      "independent_confirmation": false,
+      "retrospective_point_in_time_verified": false,
+      "workflow_run": "42725677247",
+      "periods": [
+        {
+          "prior_inactive_years": 1,
+          "years": "2010-2016",
+          "observations": 1173,
+          "events": 26,
+          "relative_brier_improvement": 0.02181772117561709,
+          "confidence_delta_brier": [
+            -0.0009224949266000253,
+            -0.00005502784405052655
+          ]
+        },
+        {
+          "prior_inactive_years": 1,
+          "years": "2017-2024",
+          "observations": 1292,
+          "events": 14,
+          "relative_brier_improvement": 0.039569269749025415,
+          "confidence_delta_brier": [
+            -0.0009344258879187984,
+            -0.000044162566655840674
+          ]
+        },
+        {
+          "prior_inactive_years": 2,
+          "years": "2010-2016",
+          "observations": 1146,
+          "events": 26,
+          "relative_brier_improvement": 0.024464545068044297,
+          "confidence_delta_brier": [
+            -0.0011228148059459556,
+            -0.00002664216816951684
+          ]
+        },
+        {
+          "prior_inactive_years": 2,
+          "years": "2017-2024",
+          "observations": 1258,
+          "events": 14,
+          "relative_brier_improvement": 0.048314094106724825,
+          "confidence_delta_brier": [
+            -0.0010720107675378163,
+            -0.000096512647033151
+          ]
+        }
+      ],
+      "priors": [
+        {
+          "prior_inactive_years": 1,
+          "prior_strength": 5,
+          "relative_brier_improvement": 0.0272869838787847,
+          "confidence_delta_brier": [
+            -0.0008483891215354811,
+            -0.00006563479227300606
+          ]
+        },
+        {
+          "prior_inactive_years": 1,
+          "prior_strength": 20,
+          "relative_brier_improvement": 0.02812775603476958,
+          "confidence_delta_brier": [
+            -0.0007464551113409088,
+            -0.0001966175840042786
+          ]
+        },
+        {
+          "prior_inactive_years": 1,
+          "prior_strength": 100,
+          "relative_brier_improvement": 0.016295013054177132,
+          "confidence_delta_brier": [
+            -0.0003943191881734566,
+            -0.00015451586210073545
+          ]
+        },
+        {
+          "prior_inactive_years": 2,
+          "prior_strength": 5,
+          "relative_brier_improvement": 0.03649569279937892,
+          "confidence_delta_brier": [
+            -0.0015838834895066933,
+            0.00004231729218314578
+          ]
+        },
+        {
+          "prior_inactive_years": 2,
+          "prior_strength": 20,
+          "relative_brier_improvement": 0.03294194747083512,
+          "confidence_delta_brier": [
+            -0.0010174040221890591,
+            -0.00020292105604013955
+          ]
+        },
+        {
+          "prior_inactive_years": 2,
+          "prior_strength": 100,
+          "relative_brier_improvement": 0.017426436056534156,
+          "confidence_delta_brier": [
+            -0.00044226075418052,
+            -0.00016743632568890117
+          ]
+        }
+      ],
+      "note": "Esta división temporal y los priors de sensibilidad se estudiaron DESPUÉS de observar los resultados generales. Hay solo 14 inicios en el periodo 2017–2024; ni los intervalos exploratorios ni la estabilidad descriptiva constituyen validación confirmatoria."
+    }
   }
 }

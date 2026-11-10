@@ -139,3 +139,28 @@ test("new actual study remains separate from retrospective all-year and syntheti
  assert.match(site,/no acredita predicción futura/);
  assert.match(site,/La tabla siguiente usa muestras inventadas/);
 });
+
+test("historical temporal and prior sensitivity studies remain exploratory",()=>{
+ const d=registry.riskset_study.temporal_robustness;
+ assert.equal(d.periods.length,4);
+ assert.deepEqual(d.periods.map(x=>x.events),[26,14,26,14]);
+ assert.equal(d.priors.length,6);
+ assert.equal(d.independent_confirmation,false);
+ assert.equal(d.retrospective_point_in_time_verified,false);
+ assert.ok(d.periods.every(x=>x.relative_brier_improvement>0));
+ assert.ok(verifyResearch(registry));
+ const site=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
+ assert.match(site,/¿Es estable el resultado entre periodos/);
+ assert.match(site,/study\.temporal_robustness\.note/);
+});
+test("robustness evidence cannot be declared independent confirmation or altered after source",()=>{
+ let r=structuredClone(registry);
+ r.riskset_study.temporal_robustness.independent_confirmation=true;
+ assert.throws(()=>verifyResearch(r),/Temporal stability/);
+ r=structuredClone(registry);
+ r.riskset_study.temporal_robustness.priors[1].relative_brier_improvement=0.9;
+ assert.throws(()=>verifyResearch(r),/Sensitivity does not reproduce/);
+ r=structuredClone(registry);
+ r.riskset_study.temporal_robustness.periods[1].confidence_delta_brier=[NaN,1];
+ assert.throws(()=>verifyResearch(r),/Temporal stability score/);
+});
