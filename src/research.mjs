@@ -201,6 +201,9 @@ export function verifyResearch(data) {
      e.prospective_predictions_issued!==0 ||
      e.operational_utility_demonstrated!==false ||
      e.more_reliable_than_global_demonstrated!==false ||
+     e.unit_comparability_verified!==false ||
+     e.interpretation_downgraded!==true ||
+     !e.unit_comparability_note?.includes("no constituye un backtest homogéneo") ||
      e.exploratory_confidence_intervals!==true ||
      e.legacy_19_1_duplicates?.duplicate_country_year_keys!==47 ||
      e.legacy_19_1_duplicates?.contradictory_onset2_keys!==13 ||
