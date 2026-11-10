@@ -312,6 +312,68 @@ export function verifyResearch(data) {
        outer.metrics.global_5.brier<outer.metrics.global_full.brier &&
        inner.pooled_metrics.country_full.brier>inner.pooled_metrics.global_full.brier))
     throw Error("Recency sensitivity must preserve cross-source negative Brier and reference");
+  const backtest=data.statebased_2027_spec_backtest;
+  if(!backtest ||
+    backtest.id!=="EMP-GEO2027-MODEL-2012-2025-RETROSPECTIVE-V1" ||
+    backtest.source_dataset!=="UCDP OrganizedViolenceCY 26.1" ||
+    backtest.source_sha256!=="66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34" ||
+    backtest.source_url!=="https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-261-csv.zip" ||
+    backtest.report_path!=="data/forecast-2027-historical-backtest.json" ||
+    backtest.analysis_type!=="RETROSPECTIVE_REVISED_26_1_NOT_ASOF_OR_PROSPECTIVE" ||
+    backtest.source_observed_through!==2025 ||
+    backtest.model_spec_frozen_2027_unmodified!==true ||
+    backtest.historical_source_asof_verified!==false ||
+    backtest.prospective_skill_demonstrated!==false ||
+    backtest.actual_2027_outcomes_resolved!==0 ||
+    backtest.cohort_observations!==2742 ||
+    backtest.country_year_positive!==454 ||
+    backtest.unique_countries!==196 ||
+    JSON.stringify(backtest.years)!==JSON.stringify(
+      Array.from({length:14},(_,i)=>i+2012)) ||
+    !backtest.caution?.includes("única edición UCDP 26.1") ||
+    !backtest.caution?.includes("no existen resultados de 2027"))
+    throw Error("Historical 2027-model diagnostic cannot claim verified prospective skill");
+  const nearHistorical=(n,target)=>Number.isFinite(n)&&Math.abs(n-target)<1e-10;
+  if(!nearHistorical(backtest.primary_brier_model,0.04502180264456287) ||
+     !nearHistorical(backtest.primary_brier_global_5y,0.1382851740295057) ||
+     !nearHistorical(backtest.secondary_brier_global_markov,0.051519121533228296) ||
+     !nearHistorical(backtest.logloss_model,0.17294717580211652) ||
+     !nearHistorical(backtest.logloss_global_5y,0.4493836951270839) ||
+     !nearHistorical(backtest.logloss_global_markov,0.20554571679333772) ||
+     !nearHistorical(backtest.brier_skill_vs_global_5y,
+        1-backtest.primary_brier_model/backtest.primary_brier_global_5y) ||
+     !nearHistorical(backtest.brier_skill_vs_global_markov,
+        1-backtest.primary_brier_model/backtest.secondary_brier_global_markov) ||
+     !nearHistorical(backtest.model_expected_calibration_error_bins,0.03200214429534682) ||
+     !nearHistorical(backtest.global_markov_expected_calibration_error_bins,0.04805398293657659))
+    throw Error("Historical backtest Brier, log-loss or calibration metrics were changed");
+  if(!Array.isArray(backtest.annual_results) ||
+     backtest.annual_results.length!==14 ||
+     backtest.annual_results.some((v,i)=>
+       v.year!==i+2012 || !Number.isSafeInteger(v.n)||v.n<175||v.n>196 ||
+       !Number.isSafeInteger(v.positives)||v.positives<0||v.positives>v.n||
+       ![v.model_brier,v.global_5y_brier,v.global_markov_brier].every(
+         x=>Number.isFinite(x)&&x>=0&&x<=1)) ||
+     backtest.annual_results.reduce((n,v)=>n+v.n,0)!==2742 ||
+     backtest.annual_results.reduce((n,v)=>n+v.positives,0)!==454)
+    throw Error("Historical backtest annual cohort or events falsified");
+  if(!Array.isArray(backtest.reliability_bins) ||
+     backtest.reliability_bins.length!==7 ||
+     backtest.reliability_bins.some(v=>!Number.isSafeInteger(v.n)||v.n<0||
+       !Number.isFinite(v.lower)||!Number.isFinite(v.upper)||v.lower>=v.upper||
+       v.n>0&&(!Number.isFinite(v.predicted)||!Number.isFinite(v.observed)||
+           v.predicted<0||v.predicted>1||v.observed<0||v.observed>1)) ||
+     backtest.reliability_bins.reduce((n,v)=>n+v.n,0)!==2742)
+    throw Error("Historical backtest calibration bins incomplete");
+  for(const [key,low,high] of [
+    ["exploratory_country_cluster_ci_vs_global_5y",-0.12115165728219118,-0.06744286379252605],
+    ["exploratory_country_cluster_ci_vs_markov",-0.009323930713180878,-0.003791108698483742]
+  ]){
+    const ci=backtest[key];
+    if(!Array.isArray(ci)||ci.length!==2||
+       !nearHistorical(ci[0],low)||!nearHistorical(ci[1],high))
+      throw Error("Historical backtest uncertainty cannot be recast as certified");
+  }
   return true;
 }
 export function verifyIssuedForecast2027(document, manifest){

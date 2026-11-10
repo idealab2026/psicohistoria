@@ -167,6 +167,47 @@ function renderHistoricalLabelRevisions(){
  r.source_urls.map((url,i)=>'<p><a href="'+safe(url)+'" target="_blank" rel="noopener noreferrer">UCDP '+(i===0?'23.1':'25.1')+'</a> · SHA-256 <code>'+safe(r.source_sha256s[i])+'</code></p>').join("")+
  '<p>Contraste reproducible en el expediente institucional. Las fechas de publicación originales no están certificadas criptográficamente. Este hallazgo no acredita skill prospectivo.</p></details>','soft');
 }
+function renderStatebasedHistoricalBacktest(){
+ const e=state.research?.statebased_2027_spec_backtest;
+ if(!e)return "";
+ const n=value=>new Intl.NumberFormat("es-ES",{maximumFractionDigits:5,minimumFractionDigits:5}).format(value);
+ const pct=value=>new Intl.NumberFormat("es-ES",{maximumFractionDigits:2,minimumFractionDigits:2}).format(value*100)+" %";
+ const models=[
+   ["Markov por país",e.primary_brier_model,e.logloss_model],
+   ["Markov global",e.secondary_brier_global_markov,e.logloss_global_markov],
+   ["Frecuencia global · 5 años",e.primary_brier_global_5y,e.logloss_global_5y]
+ ];
+ return section("INVESTIGACIÓN · RETROSPECTIVA HISTÓRICA · UCDP 26.1",
+   "El modelo emitido para 2027, probado con resultados históricos",
+   "Reproducción del mismo modelo de horizonte dos años sobre 2012–2025. Fuentes históricas tomadas de una única edición revisada en 2026: no constituye un pronóstico emitido en aquellos años.")+
+ '<div class="section-grid three">'+
+ box('<div class="eyebrow">AÑOS OBJETIVO</div><div class="card-number">'+safe(e.years.length)+'</div><p>2012–2025; entrenamiento separado dos años del objetivo</p>')+
+ box('<div class="eyebrow">PAÍSES-AÑO OBSERVADOS</div><div class="card-number">'+safe(e.cohort_observations)+'</div><p>'+safe(e.country_year_positive)+' con al menos 25 muertes registradas</p>')+
+ box('<div class="eyebrow">BRIER SKILL VS MARKOV GLOBAL</div><div class="card-number">'+pct(e.brier_skill_vs_global_markov)+'</div><p>Ventaja retrospectiva; sin demostración prospectiva</p>')+
+ '</div>'+
+ box('<h3>Comparación de errores de los tres modelos</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Modelo</th><th>Brier ↓</th><th>Log-loss ↓</th></tr></thead><tbody>'+
+ models.map(([label,brier,ll])=>'<tr><td>'+safe(label)+'</td><td>'+n(brier)+'</td><td>'+n(ll)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>El Markov por país mejora un '+pct(e.brier_skill_vs_global_5y)+' respecto a frecuencia global y un '+pct(e.brier_skill_vs_global_markov)+' respecto a Markov global en esta muestra <strong>retrospectiva</strong>. Brier y log-loss son menores; las probabilidades de 2027 no se han modificado.</p>'+
+ '<p>Intervalo exploratorio de la diferencia Brier modelo − Markov global, remuestreando por país: ['+
+ n(e.exploratory_country_cluster_ci_vs_markov[0])+', '+n(e.exploratory_country_cluster_ci_vs_markov[1])+
+ ']. No capta choques comunes entre países ni toda la dependencia temporal.</p>','soft')+
+ box('<h3>Calibración histórica: probabilidad media frente a frecuencia observada</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Rango</th><th>Registros</th><th>Predicción media</th><th>Frecuencia observada</th></tr></thead><tbody>'+
+ e.reliability_bins.map(v=>'<tr><td>'+pct(v.lower)+'–'+pct(v.upper)+'</td><td>'+safe(v.n)+'</td><td>'+(v.predicted===null?'—':pct(v.predicted))+'</td><td>'+(v.observed===null?'—':pct(v.observed))+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>Error de calibración agrupado descriptivo: '+pct(e.model_expected_calibration_error_bins)+
+ ' para el modelo por país y '+pct(e.global_markov_expected_calibration_error_bins)+
+ ' para Markov global. Estas diferencias dependen de los intervalos de agrupación y del archivo revisado.</p>','soft')+
+ box('<details><summary>Los 14 años, fuentes y limitaciones</summary>'+
+ '<div class="table-wrap"><table><thead><tr><th>Año</th><th>Países</th><th>Con el umbral</th><th>Brier país</th><th>Brier Markov global</th></tr></thead><tbody>'+
+ e.annual_results.map(v=>'<tr><td>'+safe(v.year)+'</td><td>'+safe(v.n)+'</td><td>'+safe(v.positives)+'</td><td>'+n(v.model_brier)+'</td><td>'+n(v.global_markov_brier)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>'+safe(e.caution)+'</p>'+
+ '<p><a href="./data/forecast-2027-historical-backtest.json" target="_blank" rel="noopener noreferrer">Descargar resultados agregados reproducibles</a> · <a href="'+safe(e.source_url)+'" target="_blank" rel="noopener noreferrer">Fuente oficial UCDP 26.1</a></p>'+
+ '<p>SHA-256 de entrada <code>'+safe(e.source_sha256)+'</code>. No se han registrado resultados de 2027; la evaluación futura utilizará exclusivamente las 196 probabilidades ya publicadas.</p></details>','soft');
+}
 function renderRecencySensitivity(){
  const r=state.research?.recency_sensitivity_study;
  if(!r)return "";
@@ -324,7 +365,7 @@ function renderEmpiricalEvidence(){
 }
 function renderScience(){
  const d=state.data,rows=d.studies.map(s=>({s,score:score(s)}));
- return renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
+ return renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
  '<div class="table-wrap"><table><thead><tr><th>Estudio sintético</th><th>Observaciones</th><th>Brier modelo</th><th>Brier referencia</th><th>Mejora relativa</th><th>Validez</th></tr></thead><tbody>'+rows.map(({s,score:r})=>'<tr><td>'+safe(s.title)+'</td><td>'+r.n+'</td><td>'+format(r.brier)+'</td><td>'+format(r.baselineBrier)+'</td><td>'+formatPct(r.skill)+'</td><td>Sintético</td></tr>').join("")+'</tbody></table></div>'+
  section("REPRODUCIBILIDAD","Evaluación de un experimento","Selecciona un estudio para analizar las probabilidades ficticias y compararlas con su referencia fija.")+
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+

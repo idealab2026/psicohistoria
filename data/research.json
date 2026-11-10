@@ -899,5 +899,221 @@
     "skill_demonstrated": false,
     "independently_notarized": false,
     "note": "Primer pronóstico prospectivo emitido antes de 2027, todavía sin resultados. Variable distinta de onset2: umbral de fallecimientos de violencia organizada de base estatal según UCDP 26.1."
+  },
+  "statebased_2027_spec_backtest": {
+    "id": "EMP-GEO2027-MODEL-2012-2025-RETROSPECTIVE-V1",
+    "source_dataset": "UCDP OrganizedViolenceCY 26.1",
+    "source_sha256": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34",
+    "source_url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-261-csv.zip",
+    "report_path": "data/forecast-2027-historical-backtest.json",
+    "source_observed_through": 2025,
+    "analysis_type": "RETROSPECTIVE_REVISED_26_1_NOT_ASOF_OR_PROSPECTIVE",
+    "years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "cohort_observations": 2742,
+    "country_year_positive": 454,
+    "unique_countries": 196,
+    "model_spec_frozen_2027_unmodified": true,
+    "historical_source_asof_verified": false,
+    "prospective_skill_demonstrated": false,
+    "actual_2027_outcomes_resolved": 0,
+    "primary_brier_model": 0.04502180264456287,
+    "primary_brier_global_5y": 0.1382851740295057,
+    "secondary_brier_global_markov": 0.051519121533228296,
+    "logloss_model": 0.17294717580211652,
+    "logloss_global_5y": 0.4493836951270839,
+    "logloss_global_markov": 0.20554571679333772,
+    "brier_skill_vs_global_5y": 0.6744278411584699,
+    "brier_skill_vs_global_markov": 0.12611470644884448,
+    "model_expected_calibration_error_bins": 0.03200214429534682,
+    "global_markov_expected_calibration_error_bins": 0.04805398293657659,
+    "exploratory_country_cluster_ci_vs_global_5y": [
+      -0.12115165728219118,
+      -0.06744286379252605
+    ],
+    "exploratory_country_cluster_ci_vs_markov": [
+      -0.009323930713180878,
+      -0.003791108698483742
+    ],
+    "annual_results": [
+      {
+        "year": 2012,
+        "n": 195,
+        "positives": 22,
+        "model_brier": 0.031262643328942685,
+        "global_markov_brier": 0.0347886939714286,
+        "global_5y_brier": 0.10036134122288727
+      },
+      {
+        "year": 2013,
+        "n": 195,
+        "positives": 25,
+        "model_brier": 0.050607200149407,
+        "global_markov_brier": 0.05478443276411491,
+        "global_5y_brier": 0.11176937117124612
+      },
+      {
+        "year": 2014,
+        "n": 196,
+        "positives": 31,
+        "model_brier": 0.05450581514519903,
+        "global_markov_brier": 0.058679548084305595,
+        "global_5y_brier": 0.13401556830951103
+      },
+      {
+        "year": 2015,
+        "n": 196,
+        "positives": 34,
+        "model_brier": 0.05720734474860917,
+        "global_markov_brier": 0.06619212731882217,
+        "global_5y_brier": 0.14567784256556246
+      },
+      {
+        "year": 2016,
+        "n": 196,
+        "positives": 36,
+        "model_brier": 0.057629949524078024,
+        "global_markov_brier": 0.06742423978101507,
+        "global_5y_brier": 0.15265975649300892
+      },
+      {
+        "year": 2017,
+        "n": 196,
+        "positives": 33,
+        "model_brier": 0.03187065276630349,
+        "global_markov_brier": 0.03501784245393801,
+        "global_5y_brier": 0.14063397186600238
+      },
+      {
+        "year": 2018,
+        "n": 196,
+        "positives": 33,
+        "model_brier": 0.05453436826703179,
+        "global_markov_brier": 0.06503206900509897,
+        "global_5y_brier": 0.1402329295878095
+      },
+      {
+        "year": 2019,
+        "n": 196,
+        "positives": 33,
+        "model_brier": 0.05101587569183387,
+        "global_markov_brier": 0.0578602753537436,
+        "global_5y_brier": 0.1400392864825086
+      },
+      {
+        "year": 2020,
+        "n": 196,
+        "positives": 35,
+        "model_brier": 0.033256995749912664,
+        "global_markov_brier": 0.0411430634827699,
+        "global_5y_brier": 0.1467398035159528
+      },
+      {
+        "year": 2021,
+        "n": 196,
+        "positives": 32,
+        "model_brier": 0.03526214924348863,
+        "global_markov_brier": 0.039940095196416885,
+        "global_5y_brier": 0.13670678387456972
+      },
+      {
+        "year": 2022,
+        "n": 196,
+        "positives": 37,
+        "model_brier": 0.055060596237483855,
+        "global_markov_brier": 0.06070166927952526,
+        "global_5y_brier": 0.15335367848675277
+      },
+      {
+        "year": 2023,
+        "n": 196,
+        "positives": 34,
+        "model_brier": 0.038567353660066576,
+        "global_markov_brier": 0.04612135155281732,
+        "global_5y_brier": 0.14338937569378424
+      },
+      {
+        "year": 2024,
+        "n": 196,
+        "positives": 35,
+        "model_brier": 0.04095535264240852,
+        "global_markov_brier": 0.049566080842010724,
+        "global_5y_brier": 0.14670336051842622
+      },
+      {
+        "year": 2025,
+        "n": 196,
+        "positives": 34,
+        "model_brier": 0.038527237002733354,
+        "global_markov_brier": 0.043947512806072286,
+        "global_5y_brier": 0.14338059297370598
+      }
+    ],
+    "reliability_bins": [
+      {
+        "lower": 0,
+        "n": 1645,
+        "observed": 0.011550151975683891,
+        "predicted": 0.025008952542009726,
+        "upper": 0.05
+      },
+      {
+        "lower": 0.05,
+        "n": 413,
+        "observed": 0.048426150121065374,
+        "predicted": 0.06915107787443342,
+        "upper": 0.1
+      },
+      {
+        "lower": 0.1,
+        "n": 202,
+        "observed": 0.1188118811881188,
+        "predicted": 0.13742257647499506,
+        "upper": 0.2
+      },
+      {
+        "lower": 0.2,
+        "n": 48,
+        "observed": 0.3125,
+        "predicted": 0.24868360594674999,
+        "upper": 0.4
+      },
+      {
+        "lower": 0.4,
+        "n": 14,
+        "observed": 0.8571428571428571,
+        "predicted": 0.568809756399,
+        "upper": 0.6
+      },
+      {
+        "lower": 0.6,
+        "n": 272,
+        "observed": 0.8235294117647058,
+        "predicted": 0.7086076645606066,
+        "upper": 0.8
+      },
+      {
+        "lower": 0.8,
+        "n": 148,
+        "observed": 0.9459459459459459,
+        "predicted": 0.8450484354617568,
+        "upper": 1
+      }
+    ],
+    "caution": "Los años históricos se reconstruyen utilizando una única edición UCDP 26.1 publicada en 2026; no se certifica el conocimiento disponible originalmente. Los intervalos agrupados por país no cubren choques globales ni dependencia entre años de horizonte solapado. Los 196 pronósticos reales de 2027 permanecen inmutables y todavía no existen resultados de 2027."
   }
 }
