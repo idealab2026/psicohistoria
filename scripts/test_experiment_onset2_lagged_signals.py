@@ -26,6 +26,13 @@ class Onset2LaggedSignalTest(unittest.TestCase):
         self.assertEqual(len(s["external"]["folds"]),2)
         self.assertEqual(len(s["internal"]["folds"]),14)
         self.assertEqual(s["internal"]["n"],len(TRAIN_CUTOFFS)*2*196)
+        self.assertEqual(s["internal"]["unique_country_target_years"],8*196)
+        self.assertEqual(s["internal"]["repeated_target_evaluations"],6*196)
+        self.assertEqual(s["internal"]["unique_positive_country_target_years"],22)
+        self.assertEqual(s["internal"]["by_horizon"]["1"]["n"],7*196)
+        self.assertEqual(s["internal"]["by_horizon"]["2"]["n"],7*196)
+        self.assertEqual(s["internal"]["by_horizon"]["1"]["events"],19)
+        self.assertEqual(s["internal"]["by_horizon"]["2"]["events"],18)
         self.assertEqual(s["sample_definitions"]["horizons"],[1,2])
         self.assertEqual(s["sample_definitions"]["rolling_origins"],list(TRAIN_CUTOFFS))
         self.assertEqual(set(s["internal"]["scores"]),set(MODELS))
@@ -38,6 +45,7 @@ class Onset2LaggedSignalTest(unittest.TestCase):
         self.assertEqual(s["actual_2027_results_resolved"],0)
         self.assertFalse(s["country_risks_published"])
         self.assertIn("not the full underlying active-conflict risk-set",s["caution"])
+        self.assertIn("not independent cases",s["caution"])
 
     def test_target_2024_does_not_use_2023_feature_or_label(self):
         original=panel(2022)
