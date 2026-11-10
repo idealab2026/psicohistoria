@@ -1,0 +1,263 @@
+{
+  "actual_2027_results": 0,
+  "bootstrap_country_95pct_delta_brier": {
+    "global": [
+      8.119187152832382e-06,
+      0.00046373996178438316
+    ],
+    "no_onset": [
+      -4.7140591374720596e-05,
+      0.0006290906095002515
+    ],
+    "recent_global": [
+      5.165215404857589e-05,
+      0.0005203322107909931
+    ]
+  },
+  "brier_skill_vs_global": -0.044733701447686514,
+  "brier_skill_vs_no_onset": -0.06500562084033423,
+  "brier_skill_vs_recent_global": -0.05668646293633883,
+  "caution": "The 19.1 edition is deliberately excluded because of duplicate country-years and potentially different analytical unit. 23.1/25.1 is a consistent country-level onset2 family, but 23.1 was not issued before the end of 2022. Two tested outcomes and few onset events do not certify predictive skill, even if ranking or Brier were favorable. Study reconstructed ex post in 2026; no issued historical forecasts. Country bootstrap omits common year shocks.",
+  "events": 2,
+  "forecast_2027_changed": false,
+  "historical_forecasts_issued": false,
+  "historical_revisions": {
+    "common_country_years": 12161,
+    "comparison": "UCDP_Onset_23_1_vs_25_1_onset2_historical_label_drift",
+    "country_years_only_in_23_1": 0,
+    "country_years_only_in_25_1": 0,
+    "flips_0_to_1": 1,
+    "flips_1_to_0": 1,
+    "flips_by_period": [
+      {
+        "flips": 0,
+        "period": "1946-1989",
+        "shared": 5789
+      },
+      {
+        "flips": 0,
+        "period": "1990-2009",
+        "shared": 3825
+      },
+      {
+        "flips": 1,
+        "period": "2010-2020",
+        "shared": 2155
+      },
+      {
+        "flips": 1,
+        "period": "2021-2022",
+        "shared": 392
+      }
+    ],
+    "interpretation": "Measures cross-release retrospective label revisions, not forecast skill; incomplete territory overlap is reported separately.",
+    "not_prospective": true,
+    "onset2_label_flips": 2,
+    "shared_positive_labels_23_1": 242,
+    "shared_positive_labels_25_1": 242,
+    "years_with_revisions": [
+      {
+        "flips_0_to_1": 1,
+        "flips_1_to_0": 0,
+        "year": 2018
+      },
+      {
+        "flips_0_to_1": 0,
+        "flips_1_to_0": 1,
+        "year": 2021
+      }
+    ]
+  },
+  "independent_release_timestamp_proof": false,
+  "legacy_19_1_included": false,
+  "model_vs_baselines": {
+    "global": {
+      "brier": 0.005201040360443132,
+      "logloss": 0.03734211513950919
+    },
+    "model": {
+      "brier": 0.0054337021471445625,
+      "logloss": 0.03769405226924217
+    },
+    "no_onset": {
+      "brier": 0.00510204081632653,
+      "logloss": null
+    },
+    "recent_global": {
+      "brier": 0.005142208533688694,
+      "logloss": 0.03532320286384879
+    }
+  },
+  "n": 392,
+  "question": "Q-GEO-01: intrastate country onset2; NOT 25 deaths state-based threshold",
+  "ranking_pooled": {
+    "auc_country_model": 0.5923076923076923,
+    "average_precision_country_model": 0.007358712715855573,
+    "base_rate": 0.00510204081632653,
+    "events": 2,
+    "n": 392,
+    "top_k_country_model": {
+      "10": {
+        "hits": 0,
+        "k": 10,
+        "precision": 0.0,
+        "random_expected_hits": 0.05102040816326531,
+        "ties_at_k": true
+      },
+      "20": {
+        "hits": 0,
+        "k": 20,
+        "precision": 0.0,
+        "random_expected_hits": 0.10204081632653061,
+        "ties_at_k": true
+      },
+      "5": {
+        "hits": 0,
+        "k": 5,
+        "precision": 0.0,
+        "random_expected_hits": 0.025510204081632654,
+        "ties_at_k": true
+      }
+    }
+  },
+  "schema": "idealab.psico.onset2_homogeneous_231_to_251.v1",
+  "skill_demonstrated_prospectively": false,
+  "source_vintages": {
+    "23.1": {
+      "last_year": 2022,
+      "sha256": "e2cadfa7a87b3949f8c638c27381fbb1b44fb076ccb00570782252d0935a2289",
+      "url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-231.csv"
+    },
+    "25.1": {
+      "last_year": 2024,
+      "sha256": "e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a",
+      "url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-251.csv"
+    }
+  },
+  "status": "EX_POST_HOMOGENEOUS_CROSS_RELEASE_NOT_PROSPECTIVE",
+  "study_id": "EMP-GEO-ONSET2-231-251-HOMOGENEOUS-20261110",
+  "training": {
+    "future_outcome_labels_used_in_fit": false,
+    "global_probability": 0.016283738567923266,
+    "origin_country_universe": 196,
+    "recent_country_years": 980,
+    "recent_global_probability": 0.013238289205702648,
+    "recent_onset2_events": 12,
+    "regularization": 20,
+    "source_last_year": 2022,
+    "training_country_years": 4481,
+    "training_onset2_events": 72
+  },
+  "years": [
+    {
+      "events": 1,
+      "origin_countries": 196,
+      "ranking": {
+        "auc_country_model": 0.358974358974359,
+        "average_precision_country_model": 0.00510204081632653,
+        "base_rate": 0.00510204081632653,
+        "events": 1,
+        "n": 196,
+        "top_k_country_model": {
+          "10": {
+            "hits": 0,
+            "k": 10,
+            "precision": 0.0,
+            "random_expected_hits": 0.05102040816326531,
+            "ties_at_k": true
+          },
+          "20": {
+            "hits": 0,
+            "k": 20,
+            "precision": 0.0,
+            "random_expected_hits": 0.10204081632653061,
+            "ties_at_k": true
+          },
+          "5": {
+            "hits": 0,
+            "k": 5,
+            "precision": 0.0,
+            "random_expected_hits": 0.025510204081632654,
+            "ties_at_k": true
+          }
+        }
+      },
+      "resolved": 196,
+      "scores": {
+        "global": {
+          "brier": 0.005201040360443132,
+          "logloss": 0.03734211513950924
+        },
+        "model": {
+          "brier": 0.005552354259152156,
+          "logloss": 0.0413356079838414
+        },
+        "no_onset": {
+          "brier": 0.00510204081632653,
+          "logloss": null
+        },
+        "recent_global": {
+          "brier": 0.005142208533688694,
+          "logloss": 0.035323202863848546
+        }
+      },
+      "unresolved": 0,
+      "year": 2023
+    },
+    {
+      "events": 1,
+      "origin_countries": 196,
+      "ranking": {
+        "auc_country_model": 0.8256410256410256,
+        "average_precision_country_model": 0.019230769230769232,
+        "base_rate": 0.00510204081632653,
+        "events": 1,
+        "n": 196,
+        "top_k_country_model": {
+          "10": {
+            "hits": 0,
+            "k": 10,
+            "precision": 0.0,
+            "random_expected_hits": 0.05102040816326531,
+            "ties_at_k": true
+          },
+          "20": {
+            "hits": 0,
+            "k": 20,
+            "precision": 0.0,
+            "random_expected_hits": 0.10204081632653061,
+            "ties_at_k": true
+          },
+          "5": {
+            "hits": 0,
+            "k": 5,
+            "precision": 0.0,
+            "random_expected_hits": 0.025510204081632654,
+            "ties_at_k": true
+          }
+        }
+      },
+      "resolved": 196,
+      "scores": {
+        "global": {
+          "brier": 0.005201040360443132,
+          "logloss": 0.03734211513950928
+        },
+        "model": {
+          "brier": 0.005315050035136969,
+          "logloss": 0.034052496554643014
+        },
+        "no_onset": {
+          "brier": 0.00510204081632653,
+          "logloss": null
+        },
+        "recent_global": {
+          "brier": 0.005142208533688694,
+          "logloss": 0.035323202863848574
+        }
+      },
+      "unresolved": 0,
+      "year": 2024
+    }
+  ]
+}
