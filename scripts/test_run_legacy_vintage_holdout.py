@@ -24,9 +24,9 @@ class VintageCrossReleaseTests(unittest.TestCase):
 
     def test_future_outcomes_cannot_change_training_probabilities(self):
         src=self.sources()
-        a,_=records_for_study(src["19.1"],src["23.1"],2018,(2020,2021,2022))
+        a,_=records_for_study(src["19.1"],src["23.1"],2017,(2020,2021,2022))
         src["23.1"][(2020,"201")]=1
-        b,_=records_for_study(src["19.1"],src["23.1"],2018,(2020,2021,2022))
+        b,_=records_for_study(src["19.1"],src["23.1"],2017,(2020,2021,2022))
         self.assertEqual([r["model"] for r in a],[r["model"] for r in b])
         self.assertNotEqual(score(a,"model")["brier"],score(b,"model")["brier"])
 
@@ -34,7 +34,7 @@ class VintageCrossReleaseTests(unittest.TestCase):
         src=self.sources()
         reduced={k:v for k,v in src["23.1"].items() if not (k[0]==2020 and int(k[1])>345)}
         with self.assertRaisesRegex(ValueError,"Insufficient covered"):
-            records_for_study(src["19.1"],reduced,2018,(2020,2021,2022))
+            records_for_study(src["19.1"],reduced,2017,(2020,2021,2022))
         with self.assertRaisesRegex(ValueError,"not beyond"):
             records_for_study(src["19.1"],src["23.1"],2017,(2017,))
 
@@ -68,7 +68,7 @@ class VintageCrossReleaseTests(unittest.TestCase):
 
     def test_cluster_bootstrap_is_deterministic(self):
         src=self.sources()
-        rows,_=records_for_study(src["19.1"],src["23.1"],2018,(2020,2021,2022))
+        rows,_=records_for_study(src["19.1"],src["23.1"],2017,(2020,2021,2022))
         self.assertEqual(grouped_bootstrap(rows,replications=100,seed=14),
                          grouped_bootstrap(rows,replications=100,seed=14))
 
