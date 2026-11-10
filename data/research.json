@@ -1577,7 +1577,20 @@
       "bootstrap_lag_country_vs_country_eb": [
         -0.000023462166080975527,
         -0.000008801123248814191
-      ]
+      ],
+      "unique_country_target_years": 1568,
+      "unique_positive_country_target_years": 22,
+      "repeated_target_evaluations": 1176,
+      "by_horizon": {
+        "1": {
+          "n": 1372,
+          "events": 19
+        },
+        "2": {
+          "n": 1372,
+          "events": 18
+        }
+      }
     },
     "external": {
       "n": 392,
@@ -1650,6 +1663,6 @@
     "real_2027_probabilities_unchanged": true,
     "actual_2027_results": 0,
     "predictive_skill_demonstrated": false,
-    "caveat": "Familia de modelos diseñada tras observar datos externos de 2023/2024; los resultados no son confirmatorios. El rolling-origin interno utiliza la misma edición 23.1 revisada, sin certificación as-of. Señal onset1 del año de origen no identifica por sí sola todos los países realmente en riesgo según el código UCDP. Mejoras Brier internas marginales y no confirmadas externamente; la referencia de frecuencia global reciente es mejor en 2023/2024. Dos únicos eventos externos; las 196 probabilidades prospectivas GEO-2027 permanecen intactas, con cero resultados evaluados."
+    "caveat": "Familia de modelos diseñada tras observar datos externos de 2023/2024; los resultados no son confirmatorios. El rolling-origin interno utiliza la misma edición 23.1 revisada, sin certificación as-of. Señal onset1 del año de origen no identifica por sí sola todos los países realmente en riesgo según el código UCDP. Las 2.744 evaluaciones internas cuentan 1.568 países-año distintos y 22 eventos únicos, porque algunos años se evalúan desde dos orígenes; no son independientes. Mejoras Brier internas marginales y no confirmadas externamente; la referencia de frecuencia global reciente es mejor en 2023/2024. Dos únicos eventos externos; las 196 probabilidades prospectivas GEO-2027 permanecen intactas, con cero resultados evaluados."
   }
 }
