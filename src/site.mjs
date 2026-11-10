@@ -92,6 +92,25 @@ function renderOverview(){
 function renderStudySelector(){
  return '<label class="field" style="max-width:460px">Estudio sintético <select id="study-selector">'+state.data.studies.map(s=>'<option value="'+safe(s.id)+'" '+(state.study===s.id?'selected':'')+'>'+safe(s.title)+'</option>').join("")+'</select></label>';
 }
+function renderHistoricalLabelRevisions(){
+ const r=state.research?.historical_label_revisions;
+ if(!r)return "";
+ return section("INVESTIGACIÓN · REVISIÓN DE EDICIONES · UCDP","¿Cambian los acontecimientos históricos entre versiones?",
+  "Comparación exacta de las etiquetas de inicio de conflicto onset2, entre UCDP 23.1 y 25.1, para los mismos países-año hasta 2022. No representa una predicción emitida.")+
+ '<div class="section-grid three">'+
+ box('<div class="eyebrow">ETIQUETAS HISTÓRICAS COMPARADAS</div><div class="card-number">'+safe(r.observations)+'</div><p>Países-año comunes, 1946–2022.</p>')+
+ box('<div class="eyebrow">ETIQUETAS REVISADAS</div><div class="card-number">'+safe(r.labels_flipped)+'</div><p>Una de 0 a 1 y otra de 1 a 0.</p>')+
+ box('<div class="eyebrow">POSITIVOS EN AMBAS EDICIONES</div><div class="card-number">'+safe(r.positives_23_1)+'</div><p>Recuento igual; episodios individuales revisados.</p>')+
+ '</div>'+
+ box('<h3>Dos modificaciones de etiquetas publicadas</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Año</th><th>0 → 1</th><th>1 → 0</th></tr></thead><tbody>'+
+ r.changes_by_year.map(v=>'<tr><td>'+safe(v.year)+'</td><td>'+safe(v.flips_zero_to_one)+'</td><td>'+safe(v.flips_one_to_zero)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p><strong>Interpretación:</strong> '+safe(r.note)+'</p>'+
+ '<details><summary>Fuentes, huellas y limitaciones</summary>'+
+ r.source_urls.map((url,i)=>'<p><a href="'+safe(url)+'" target="_blank" rel="noopener noreferrer">UCDP '+(i===0?'23.1':'25.1')+'</a> · SHA-256 <code>'+safe(r.source_sha256s[i])+'</code></p>').join("")+
+ '<p>Contraste reproducible en el expediente institucional. Las fechas de publicación originales no están certificadas criptográficamente. Este hallazgo no acredita skill prospectivo.</p></details>','soft');
+}
 function renderVintageHoldout(){
  const r=state.research?.historical_vintage_2024;
  if(!r)return "";
@@ -184,7 +203,7 @@ function renderEmpiricalEvidence(){
 }
 function renderScience(){
  const d=state.data,rows=d.studies.map(s=>({s,score:score(s)}));
- return renderVintageHoldout()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
+ return renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
  '<div class="table-wrap"><table><thead><tr><th>Estudio sintético</th><th>Observaciones</th><th>Brier modelo</th><th>Brier referencia</th><th>Mejora relativa</th><th>Validez</th></tr></thead><tbody>'+rows.map(({s,score:r})=>'<tr><td>'+safe(s.title)+'</td><td>'+r.n+'</td><td>'+format(r.brier)+'</td><td>'+format(r.baselineBrier)+'</td><td>'+formatPct(r.skill)+'</td><td>Sintético</td></tr>').join("")+'</tbody></table></div>'+
  section("REPRODUCIBILIDAD","Evaluación de un experimento","Selecciona un estudio para analizar las probabilidades ficticias y compararlas con su referencia fija.")+
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+

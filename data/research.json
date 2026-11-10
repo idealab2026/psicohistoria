@@ -511,5 +511,46 @@
     "workflow_run": "42834798784",
     "conclusion": "La ventaja Brier no se reproduce: el modelo por país empeora 0,32 % en un holdout de año objetivo 2024. La muestra tiene solo 1 episodio positivo y no admite inferencia sólida. No fue una predicción realmente registrada en 2024.",
     "caveat": "Versiones UCDP 23.1 archívadas como edición 2023, sin garantía criptográfica de inmutabilidad histórica. Sin variables de 2023 ni 2024 en el entrenamiento; tampoco sabemos con la edición 23.1 si un país estaba en conflicto durante 2023. La etiqueta 2024 se obtuvo después de los acontecimientos."
+  },
+  "historical_label_revisions": {
+    "id": "EMP-ONSET-231-251-LABEL-DRIFT-20261110",
+    "linked_question": "Q-GEO-01",
+    "title": "Revisiones de onset2 en las ediciones UCDP 23.1 y 25.1",
+    "status": "RETROSPECTIVE_CROSS_RELEASE_LABEL_REVISION_NOT_FORECAST",
+    "period": "1946–2022",
+    "observations": 12161,
+    "shared_countries_per_year_same": true,
+    "labels_flipped": 2,
+    "flips_zero_to_one": 1,
+    "flips_one_to_zero": 1,
+    "positives_23_1": 242,
+    "positives_25_1": 242,
+    "country_years_only_in_23_1": 0,
+    "country_years_only_in_25_1": 0,
+    "changes_by_year": [
+      {
+        "year": 2018,
+        "flips_zero_to_one": 1,
+        "flips_one_to_zero": 0
+      },
+      {
+        "year": 2021,
+        "flips_zero_to_one": 0,
+        "flips_one_to_zero": 1
+      }
+    ],
+    "source_urls": [
+      "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-231.csv",
+      "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-251.csv"
+    ],
+    "source_sha256s": [
+      "e2cadfa7a87b3949f8c638c27381fbb1b44fb076ccb00570782252d0935a2289",
+      "e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a"
+    ],
+    "evaluated_at": "2026-11-10",
+    "workflow_run": "42848508792",
+    "historical_release_dates_verified": false,
+    "prospective_skill_demonstrated": false,
+    "note": "Dos etiquetas onset2 cambiaron entre ediciones: incorporación retrospectiva en 2018 y retirada en 2021. Aunque el recuento agregado de eventos positivos permanece en 242, la identidad de las etiquetas no es idéntica. No es un pronóstico emitido ni mide habilidad predictiva."
   }
 }

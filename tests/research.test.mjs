@@ -201,10 +201,38 @@ test("real archival source and negative score are fail-closed",()=>{
 test("website leads with source-backed negative holdout rather than a synthetic prediction",()=>{
  const source=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
  assert.match(source,/function renderVintageHoldout/);
- assert.match(source,/renderVintageHoldout\(\)\+renderConditionalRisksetEvidence\(\)/);
+ assert.match(source,/renderVintageHoldout\(\)\+renderHistoricalLabelRevisions\(\)\+renderConditionalRisksetEvidence\(\)/);
  assert.match(source,/No concluyente/);
  assert.match(source,/Valor negativo/);
  assert.match(source,/Discrepancia de pérdidas/);
  assert.match(source,/log-loss mejora/);
  assert.match(source,/no se emitió ninguna predicción en 2024/);
+});
+
+test("cross-release onset2 historical drift is recorded without prospective claims",()=>{
+ const r=registry.historical_label_revisions;
+ assert.equal(r.observations,12161);
+ assert.equal(r.labels_flipped,2);
+ assert.equal(r.flips_zero_to_one,1);
+ assert.equal(r.flips_one_to_zero,1);
+ assert.equal(r.positives_23_1,242);
+ assert.equal(r.positives_25_1,242);
+ assert.deepEqual(r.changes_by_year.map(x=>x.year),[2018,2021]);
+ assert.equal(r.prospective_skill_demonstrated,false);
+ assert.equal(verifyResearch(registry),true);
+ const site=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
+ assert.match(site,/function renderHistoricalLabelRevisions/);
+ assert.match(site,/Revisiones de etiquetas|ETIQUETAS REVISADAS/);
+});
+
+test("historical revision score and event counts cannot be falsely changed",()=>{
+ let x=structuredClone(registry);
+ x.historical_label_revisions.labels_flipped=0;
+ assert.throws(()=>verifyResearch(x),/historical onset revision/);
+ x=structuredClone(registry);
+ x.historical_label_revisions.prospective_skill_demonstrated=true;
+ assert.throws(()=>verifyResearch(x),/historical onset revision/);
+ x=structuredClone(registry);
+ x.historical_label_revisions.source_sha256s[0]="f".repeat(64);
+ assert.throws(()=>verifyResearch(x),/historical onset revision/);
 });
