@@ -107,6 +107,36 @@ export function verifyResearch(data) {
     if (Math.abs((1-v.brier_model/v.brier_baseline)-v.relative_brier_improvement)>1e-9)
       throw Error("Conditional onset improvement inconsistent with Brier values");
   }
+  const rob=r.temporal_robustness;
+  if (!rob || rob.status!=="EXPLORATORY_REVISED_VINTAGE_NOT_CONFIRMATORY" ||
+      rob.independent_confirmation!==false ||
+      rob.retrospective_point_in_time_verified!==false ||
+      !/^[0-9]{8,15}$/.test(rob.workflow_run||"") ||
+      !Array.isArray(rob.periods)||rob.periods.length!==4 ||
+      !Array.isArray(rob.priors)||rob.priors.length!==6 ||
+      !rob.note?.includes("DESPUÉS")||!rob.note?.includes("14 inicios"))
+    throw Error("Temporal stability lacks exploratory design and provenance");
+  for(const period of rob.periods){
+    if(![1,2].includes(period.prior_inactive_years) ||
+       !["2010-2016","2017-2024"].includes(period.years) ||
+       !Number.isInteger(period.observations)||period.observations<100||
+       !Number.isInteger(period.events)||period.events<1||
+       !Number.isFinite(period.relative_brier_improvement)||
+       !Array.isArray(period.confidence_delta_brier)||period.confidence_delta_brier.length!==2||
+       !period.confidence_delta_brier.every(Number.isFinite))
+      throw Error("Temporal stability score inconsistent");
+  }
+  for(const p of rob.priors){
+    if(![1,2].includes(p.prior_inactive_years)||![5,20,100].includes(p.prior_strength)||
+       !Number.isFinite(p.relative_brier_improvement)||
+       !Array.isArray(p.confidence_delta_brier)||p.confidence_delta_brier.length!==2||
+       !p.confidence_delta_brier.every(Number.isFinite))
+      throw Error("Shrinkage sensitivity not valid");
+  }
+  const p20=rob.priors.filter(x=>x.prior_strength===20);
+  if(p20.length!==2||p20.some(x=>Math.abs(x.relative_brier_improvement-
+      r.scenarios.find(v=>v.preceding_inactive_years===x.prior_inactive_years).relative_brier_improvement)>1e-10))
+    throw Error("Sensitivity does not reproduce primary fixed prior");
   return true;
 }
 const EXPECTED = "issued_at,input_available_at,event_start,event_end,outcome_verified_at,model_probability,baseline_probability,outcome";
