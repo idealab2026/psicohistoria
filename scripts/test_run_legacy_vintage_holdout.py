@@ -1,6 +1,6 @@
 import unittest
 from run_legacy_vintage_holdout import (records_for_study,experiment,score,
-    grouped_bootstrap,load_sources,SOURCES,STUDIES)
+    grouped_bootstrap,load_sources,SOURCES,STUDIES,canonicalize_legacy_19)
 
 class VintageCrossReleaseTests(unittest.TestCase):
     def make_dataset(self, first,last):
@@ -37,6 +37,17 @@ class VintageCrossReleaseTests(unittest.TestCase):
             records_for_study(src["19.1"],reduced,2018,(2020,2021,2022))
         with self.assertRaisesRegex(ValueError,"not beyond"):
             records_for_study(src["19.1"],src["23.1"],2018,(2018,))
+
+    def test_legacy_duplicate_or_is_explicit_and_exclusion_is_separate(self):
+        raw=("year,gwno_a,onset2\n"
+             "2017,230,0\n2017,230,1\n"
+             "2018,230,1\n2018,231,0\n").encode()
+        merged,omitted,info=canonicalize_legacy_19(raw)
+        self.assertEqual(merged[(2017,"230")],1)
+        self.assertNotIn((2017,"230"),omitted)
+        self.assertEqual(info["duplicate_country_year_keys"],1)
+        self.assertEqual(info["contradictory_onset2_keys"],1)
+        self.assertTrue(info["choice_made_after_data_diagnostics"])
 
     def test_official_sha_must_match_allowlisted_vintage(self):
         def fake(url,limit):return b"tampered"
