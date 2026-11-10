@@ -449,6 +449,44 @@ export function verifyResearch(data) {
      calib.reduce((n,v)=>n+v.n,0)!==392||
      !loose(archival.model_bin_ece,0.034583910580885203))
     throw Error("Cross-edition calibration data incomplete or revised");
+  const split=data.origin_state_diagnostic_2027;
+  if(!split||split.id!=="EMP-GEO2027-ORIGIN-STATE-20261110"||
+    split.report_path!=="data/forecast-2027-origin-state-diagnostic.json"||
+    split.status!=="POST_HOC_PERSISTENCE_VS_THRESHOLD_ENTRY_ARCHIVED_COUNTRY_VINTAGES"||
+    JSON.stringify(split.assessment_years)!=="[2024,2025]"||
+    split.observed_country_years!==392||split.positive_threshold_years!==69||
+    split.persisted_threshold_positives!==61||split.new_threshold_entries!==8||
+    !loose(split.persisted_fraction_of_positives,61/69)||
+    split.observation_calendar_steps!==2||
+    split.earliest_release_timestamps_verified!==false||
+    split.forecast_2027_unchanged!==true||
+    split.prospective_2027_outcomes_resolved!==0||
+    split.prospective_skill_demonstrated!==false||
+    !split.note?.includes("intervalo de bootstrap")||
+    !split.note?.includes("NO prueban dos años"))
+    throw Error("Cannot present post-hoc origin-state discrimination as prospective onset skill");
+  const low=split.prior_below_threshold,high=split.prior_above_threshold;
+  if(low?.n!==321||low.events!==8||
+     high?.n!==71||high.events!==61||
+     !loose(low.event_rate,8/321)||!loose(high.event_rate,61/71)||
+     !loose(low.brier_model,0.022647529679559648)||
+     !loose(low.brier_global_markov,0.025210281235017312)||
+     !loose(high.brier_model,0.1189168067986626)||
+     !loose(high.brier_global_markov,0.14507855707469983)||
+     !loose(low.brier_skill_model_vs_markov,1-low.brier_model/low.brier_global_markov)||
+     !loose(high.brier_skill_model_vs_markov,1-high.brier_model/high.brier_global_markov)||
+     !Array.isArray(low.bootstrap_delta_brier_95pct)||
+     !Array.isArray(high.bootstrap_delta_brier_95pct)||
+     !low.bootstrap_delta_brier_95pct.every(Number.isFinite)||
+     !high.bootstrap_delta_brier_95pct.every(Number.isFinite)||
+     !(low.bootstrap_delta_brier_95pct[0]<0&&low.bootstrap_delta_brier_95pct[1]>0)||
+     !(high.bootstrap_delta_brier_95pct[0]<0&&high.bootstrap_delta_brier_95pct[1]<0))
+    throw Error("Conditional origin-state scores and bootstrap conclusions corrupted");
+  if(JSON.stringify(split.annual)!==JSON.stringify([
+    {year:2024,origin_year:2022,n:196,inactive_to_active:4,active_to_active:31,inactive_to_inactive:155,active_to_inactive:6,model_top_10_hits:10,model_top_20_hits:19,model_top_35_hits:30},
+    {year:2025,origin_year:2023,n:196,inactive_to_active:4,active_to_active:30,inactive_to_inactive:158,active_to_inactive:4,model_top_10_hits:9,model_top_20_hits:18,model_top_35_hits:30}
+  ]))
+    throw Error("Conditional origin-state year-by-year confusion counts changed");
   return true;
 }
 export function verifyIssuedForecast2027(document, manifest){
