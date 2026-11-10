@@ -467,5 +467,49 @@
       ],
       "note": "Esta división temporal y los priors de sensibilidad se estudiaron DESPUÉS de observar los resultados generales. Hay solo 14 inicios en el periodo 2017–2024; ni los intervalos exploratorios ni la estabilidad descriptiva constituyen validación confirmatoria."
     }
+  },
+  "historical_vintage_2024": {
+    "id": "EMP-ONSET-231-251-CROSS-RELEASE-2024",
+    "linked_question": "Q-GEO-01",
+    "title": "2024 · Contraste con edición de 2023, sin entrenamiento con datos futuros",
+    "analysis_type": "RETROSPECTIVE_CROSS_RELEASE_NOT_ACTUALLY_ISSUED",
+    "data_origin_version": "UCDP Onset 23.1 and UCDP PRIO 23.1 (covers through 2022)",
+    "data_outcome_version": "UCDP Onset 25.1 (labels for 2024 only)",
+    "sources": [
+      {
+        "url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-231.csv",
+        "sha256": "e2cadfa7a87b3949f8c638c27381fbb1b44fb076ccb00570782252d0935a2289"
+      },
+      {
+        "url": "https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-231-csv.zip",
+        "sha256": "8fe95d8a5780cba1d312f9673ffd9e93b90c91bb26e348393a583853a892b718"
+      },
+      {
+        "url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-251.csv",
+        "sha256": "e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a"
+      }
+    ],
+    "year": 2024,
+    "training_last_year": 2022,
+    "sample_size": 160,
+    "positives": 1,
+    "brier_model": 0.0064914305566494915,
+    "brier_global": 0.00647090925989707,
+    "logloss_model": 0.040029669287166905,
+    "logloss_global": 0.04623550222504912,
+    "relative_brier_skill": -0.0031713157963131344,
+    "uncertainty_brier_delta": [
+      -0.00018627155423500338,
+      0.00023001098281485565
+    ],
+    "model_issued_before_event": false,
+    "prospective_skill_demonstrated": false,
+    "bootstraps": 500,
+    "historical_release_timing_cryptographically_verified": false,
+    "actual_train_features_from_target_year": false,
+    "too_few_events_for_skill_inference": true,
+    "workflow_run": "42834798784",
+    "conclusion": "La ventaja Brier no se reproduce: el modelo por país empeora 0,32 % en un holdout de año objetivo 2024. La muestra tiene solo 1 episodio positivo y no admite inferencia sólida. No fue una predicción realmente registrada en 2024.",
+    "caveat": "Versiones UCDP 23.1 archívadas como edición 2023, sin garantía criptográfica de inmutabilidad histórica. Sin variables de 2023 ni 2024 en el entrenamiento; tampoco sabemos con la edición 23.1 si un país estaba en conflicto durante 2023. La etiqueta 2024 se obtuvo después de los acontecimientos."
   }
 }
