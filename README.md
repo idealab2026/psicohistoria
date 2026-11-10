@@ -4,6 +4,28 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## Q-GEO-01 · Prueba de información adicional: `onset1` previo y horizonte estrictamente congelado (10-11-2026)
+
+**Nueva investigación reproducida, resultado externo desfavorable:** hemos contrastado cinco especificaciones para predecir `onset2` de UCDP utilizando únicamente el indicador `onset1` **del último año disponible en la edición de origen**, sin leer nunca datos del año objetivo ni del año intermedio. Los modelos tienen parámetros fijos, Beta-Laplace(1,1) para tasas, shrinkage=20 para país/grupo, y dos horizontes separados de **1 y 2 pasos anuales**. No se han calibrado ni seleccionado modelos mediante los resultados externos.
+
+La edición **UCDP Intrastate Country-Level Onset 23.1** (SHA-256 `e2cadfa7a87b3949f8c638c27381fbb1b44fb076ccb00570782252d0935a2289`) aporta la historia de `onset1`/`onset2` y toda la estimación. Los resultados de 2023–2024 proceden exclusivamente de **25.1** (SHA-256 `e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a`). Una validación interna aplica cortes anuales 2014–2020 dentro de 23.1, cada uno con horizontes 1 y 2. La revisión de esos datos históricos en la edición de 2023 impide llamarlos históricos *as-of* auténticos.
+
+| Especificación | Brier interno 2015–2022 ↓ | Brier externo 2023–2024 ↓ |
+|---|---:|---:|
+| Global · últimos 5 años | 0,01332696 | **0,00514221** |
+| Global · tasa según horizonte | 0,01331910 | 0,00519987 |
+| País · tasa Empirical Bayes | 0,01332146 | 0,00543315 |
+| Señal `onset1` del origen, tasa condicionada | 0,01331239 | 0,00519769 |
+| País + señal `onset1` | **0,01330592** | 0,00542598 |
+
+**Validación interna:** 2.744 países-año y **37** eventos `onset2`; la señal adicional mejora ligeramente el Brier frente a la tasa solo por país. **Contraste externo:** 392 países-año con **solo dos eventos**; ninguna especificación por país supera a la tasa global de los últimos cinco años. El delta Brier externo del modelo con señal frente al modelo solo por país tiene intervalo exploratorio **[−0,0000170, +0,0000002]**, incluye cero; frente a la tasa global-h también es peor. En los dos años el top-20 del modelo con señal encuentra **cero de dos eventos**. Los indicadores de ranking tienen enorme incertidumbre por la escasez de positivos.
+
+**Qué aprende realmente:** `onset1` marca un inicio de conflicto pasado, pero **no contiene el estado completo de actividad bélica ni determina el conjunto de países en riesgo** de `onset2` de acuerdo con la definición oficial. El siguiente experimento útil deberá incorporar *incidencia de conflicto* y factores explicativos exógenos, verificando cuidadosamente las series y fechas de disponibilidad. Añadir variantes del propio historial `onset2` sin esa información no es un sustituto satisfactorio.
+
+**Limitación metodológica:** las cinco variantes se diseñaron después de observar el contraste 2023–2024 en investigaciones anteriores. Este estudio es post hoc y **no permite afirmar mejora confirmatoria**. Los bootstraps por país no capturan choques globales compartidos; la validación interna comparte edición revisada. No se emiten nuevas predicciones prospectivas ni se modifica la emisión GEO-2027 de **196 probabilidades**.
+
+Código y reporte: `scripts/experiment_onset2_lagged_signals.py`, `scripts/test_experiment_onset2_lagged_signals.py` y `data/onset2-lagged-origin-ablation.json`. Se registran los 14 cortes internos, los dos cortes externos, pérdidas, ordenaciones e intervalos; un job CI obligatorio recalcula todos los datos desde los dos archivos oficiales verificados por SHA-256.
+
 ## Q-GEO-01 · Inicio real de conflictos (`onset2`), separado de persistencia (10-11-2026)
 
 **Nuevo resultado negativo con unidad homogénea:** hemos utilizado exclusivamente ediciones originales **UCDP Intrastate Country Level Onset 23.1 y 25.1**, con URL y SHA-256 comprobados, sin mezclar el archivo 19.1 que tiene 47 país-año duplicados y posibles divergencias de unidad. La edición 23.1 proporciona entrenamiento 2000–2022 y 25.1 resultados de los años 2023 y 2024. La edición 23.1 no estuvo disponible al inicio de 2022: los cortes anuales no equivalen a años completos de preaviso operativo.
