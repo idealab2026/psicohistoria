@@ -439,6 +439,16 @@ export function verifyResearch(data) {
        ci=>Array.isArray(ci)&&ci.length===2&&
        ci.every(Number.isFinite)&&ci[0]<ci[1]&&ci[1]<0))
     throw Error("Cross-edition model score cannot be presented as confirmed skill");
+  const calib=archival.model_calibration_bins;
+  if(!Array.isArray(calib)||calib.length!==7||
+     !calib.every(v=>Number.isSafeInteger(v.n)&&v.n>=0&&
+       Number.isFinite(v.lower)&&Number.isFinite(v.upper)&&v.upper>v.lower&&
+       (v.n===0 ? v.predicted===null&&v.observed===null :
+        Number.isFinite(v.predicted)&&Number.isFinite(v.observed)&&
+        v.predicted>=0&&v.predicted<=1&&v.observed>=0&&v.observed<=1))||
+     calib.reduce((n,v)=>n+v.n,0)!==392||
+     !loose(archival.model_bin_ece,0.034583910580885203))
+    throw Error("Cross-edition calibration data incomplete or revised");
   return true;
 }
 export function verifyIssuedForecast2027(document, manifest){
