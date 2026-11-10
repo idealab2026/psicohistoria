@@ -1,6 +1,6 @@
 import unittest
 import hashlib
-from inspect_ucdp_archives import HISTORY,PINNED,discover,parse_source,inspect
+from inspect_ucdp_archives import HISTORY,PINNED,discover,parse_source,inspect,onset_labels,compare_revisions
 
 class DiscoveryTests(unittest.TestCase):
     def test_official_links_section_and_version(self):
@@ -28,6 +28,19 @@ class DiscoveryTests(unittest.TestCase):
             return html if url==HISTORY else b"incorrect-data"
         with self.assertRaisesRegex(ValueError,"hash mismatch"):
             inspect(fake)
+
+    def test_historical_label_drift_distinguishes_flips_from_coverage(self):
+        header="year,gwno_a,onset2\n"
+        old=header+"2021,230,0\n2021,231,1\n2022,230,1\n2022,231,0\n"
+        new=header+"2021,230,1\n2021,231,1\n2022,230,0\n2022,232,1\n2023,230,1\n"
+        score=compare_revisions(onset_labels(old.encode()),onset_labels(new.encode()),2022)
+        self.assertEqual(score["common_country_years"],3)
+        self.assertEqual(score["country_years_only_in_23_1"],1)
+        self.assertEqual(score["country_years_only_in_25_1"],1)
+        self.assertEqual(score["onset2_label_flips"],2)
+        self.assertEqual(score["flips_0_to_1"],1)
+        self.assertEqual(score["flips_1_to_0"],1)
+        self.assertTrue(score["not_prospective"])
 
     def test_labels_are_not_presented_as_prospective(self):
         # The schema and historical-issuance flags cannot depend on URL names.
