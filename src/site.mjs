@@ -387,7 +387,7 @@ document.querySelectorAll("[data-section]").forEach(button=>button.addEventListe
  const group=button.dataset.section;navigate(groupViews[group][0][0]);
 }));
 $("refresh").addEventListener("click",load);
-// True country selections are driven by user-supplied local JSON, never a public source fetch.
+// Country controls use the official UCDP-derived public tree, fetched automatically.
 $("app").addEventListener("change",event=>{
  const input=event.target;
  const key={
