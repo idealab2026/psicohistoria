@@ -1,0 +1,667 @@
+{
+  "analysis_type": "RETROSPECTIVE_REVISED_26_1_NOT_ASOF_OR_PROSPECTIVE",
+  "brier_skill_vs_global_5y": 0.6744278411584699,
+  "cohorts_by_year": [
+    {
+      "baseline_probability": 0.129230769231,
+      "origin_cohort": 195,
+      "origin_cutoff": 2010,
+      "positives": 22,
+      "resolved": 195,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.10036134122288727,
+          "logloss": 0.353614695691237
+        },
+        "p_global_markov": {
+          "brier": 0.0347886939714286,
+          "logloss": 0.15384459196937264
+        },
+        "p_model": {
+          "brier": 0.031262643328942685,
+          "logloss": 0.14099591283368937
+        }
+      },
+      "target_year": 2012,
+      "unresolved": 0
+    },
+    {
+      "baseline_probability": 0.129098360656,
+      "origin_cohort": 195,
+      "origin_cutoff": 2011,
+      "positives": 25,
+      "resolved": 195,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.11176937117124612,
+          "logloss": 0.3829639859714095
+        },
+        "p_global_markov": {
+          "brier": 0.05478443276411491,
+          "logloss": 0.21162480623765717
+        },
+        "p_model": {
+          "brier": 0.050607200149407,
+          "logloss": 0.19862102496755765
+        }
+      },
+      "target_year": 2013,
+      "unresolved": 0
+    },
+    {
+      "baseline_probability": 0.128702757916,
+      "origin_cohort": 196,
+      "origin_cutoff": 2012,
+      "positives": 31,
+      "resolved": 196,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.13401556830951103,
+          "logloss": 0.44025580349168203
+        },
+        "p_global_markov": {
+          "brier": 0.058679548084305595,
+          "logloss": 0.23262112027740814
+        },
+        "p_model": {
+          "brier": 0.05450581514519903,
+          "logloss": 0.21293017303748749
+        }
+      },
+      "target_year": 2014,
+      "unresolved": 0
+    },
+    {
+      "baseline_probability": 0.125510204082,
+      "origin_cohort": 196,
+      "origin_cutoff": 2013,
+      "positives": 34,
+      "resolved": 196,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.14567784256556246,
+          "logloss": 0.47086272015679087
+        },
+        "p_global_markov": {
+          "brier": 0.06619212731882217,
+          "logloss": 0.2550030728719851
+        },
+        "p_model": {
+          "brier": 0.05720734474860917,
+          "logloss": 0.2085549495757713
+        }
+      },
+      "target_year": 2015,
+      "unresolved": 0
+    },
+    {
+      "baseline_probability": 0.131498470948,
+      "origin_cohort": 196,
+      "origin_cutoff": 2014,
+      "positives": 36,
+      "resolved": 196,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.15265975649300892,
+          "logloss": 0.4877199552301096
+        },
+        "p_global_markov": {
+          "brier": 0.06742423978101507,
+          "logloss": 0.2557043581179472
+        },
+        "p_model": {
+          "brier": 0.057629949524078024,
+          "logloss": 0.20522031124408166
+        }
+      },
+      "target_year": 2016,
+      "unresolved": 0
+    },
+    {
+      "baseline_probability": 0.143584521385,
+      "origin_cohort": 196,
+      "origin_cutoff": 2015,
+      "positives": 33,
+      "resolved": 196,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.14063397186600238,
+          "logloss": 0.4556754055071563
+        },
+        "p_global_markov": {
+          "brier": 0.03501784245393801,
+          "logloss": 0.1558480776241083
+        },
+        "p_model": {
+          "brier": 0.03187065276630349,
+          "logloss": 0.13238598984035757
+        }
+      },
+      "target_year": 2017,
+      "unresolved": 0
+    },
+    {
+      "baseline_probability": 0.153767820774,
+      "origin_cohort": 196,
+      "origin_cutoff": 2016,
+      "positives": 33,
+      "resolved": 196,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.1402329295878095,
+          "logloss": 0.45408676153644567
+        },
+        "p_global_markov": {
+          "brier": 0.06503206900509897,
+          "logloss": 0.23925838172054067
+        },
+        "p_model": {
+          "brier": 0.05453436826703179,
+          "logloss": 0.18874028570355855
+        }
+      },
+      "target_year": 2018,
+      "unresolved": 0
+    },
+    {
+      "baseline_probability": 0.163951120163,
+      "origin_cohort": 196,
+      "origin_cutoff": 2017,
+      "positives": 33,
+      "resolved": 196,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.1400392864825086,
+          "logloss": 0.4533585997563348
+        },
+        "p_global_markov": {
+          "brier": 0.0578602753537436,
+          "logloss": 0.22219732250097324
+        },
+        "p_model": {
+          "brier": 0.05101587569183387,
+          "logloss": 0.18318405320826456
+        }
+      },
+      "target_year": 2019,
+      "unresolved": 0
+    },
+    {
+      "baseline_probability": 0.171079429735,
+      "origin_cohort": 196,
+      "origin_cutoff": 2018,
+      "positives": 35,
+      "resolved": 196,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.1467398035159528,
+          "logloss": 0.4694160113875247
+        },
+        "p_global_markov": {
+          "brier": 0.0411430634827699,
+          "logloss": 0.1774066166181346
+        },
+        "p_model": {
+          "brier": 0.033256995749912664,
+          "logloss": 0.1393775546267383
+        }
+      },
+      "target_year": 2020,
+      "unresolved": 0
+    },
+    {
+      "baseline_probability": 0.173116089613,
+      "origin_cohort": 196,
+      "origin_cutoff": 2019,
+      "positives": 32,
+      "resolved": 196,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.13670678387456972,
+          "logloss": 0.44538923808852754
+        },
+        "p_global_markov": {
+          "brier": 0.039940095196416885,
+          "logloss": 0.16948738541618538
+        },
+        "p_model": {
+          "brier": 0.03526214924348863,
+          "logloss": 0.1415042792159202
+        }
+      },
+      "target_year": 2021,
+      "unresolved": 0
+    },
+    {
+      "baseline_probability": 0.174134419552,
+      "origin_cohort": 196,
+      "origin_cutoff": 2020,
+      "positives": 37,
+      "resolved": 196,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.15335367848675277,
+          "logloss": 0.4851720624618634
+        },
+        "p_global_markov": {
+          "brier": 0.06070166927952526,
+          "logloss": 0.2338541823831926
+        },
+        "p_model": {
+          "brier": 0.055060596237483855,
+          "logloss": 0.20533762449380222
+        }
+      },
+      "target_year": 2022,
+      "unresolved": 0
+    },
+    {
+      "baseline_probability": 0.170061099796,
+      "origin_cohort": 196,
+      "origin_cutoff": 2021,
+      "positives": 34,
+      "resolved": 196,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.14338937569378424,
+          "logloss": 0.4613858799504459
+        },
+        "p_global_markov": {
+          "brier": 0.04612135155281732,
+          "logloss": 0.1912523716821937
+        },
+        "p_model": {
+          "brier": 0.038567353660066576,
+          "logloss": 0.1572890480773053
+        }
+      },
+      "target_year": 2023,
+      "unresolved": 0
+    },
+    {
+      "baseline_probability": 0.174134419552,
+      "origin_cohort": 196,
+      "origin_cutoff": 2022,
+      "positives": 35,
+      "resolved": 196,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.14670336051842622,
+          "logloss": 0.46928834309847267
+        },
+        "p_global_markov": {
+          "brier": 0.049566080842010724,
+          "logloss": 0.1966796122452838
+        },
+        "p_model": {
+          "brier": 0.04095535264240852,
+          "logloss": 0.15281470247515402
+        }
+      },
+      "target_year": 2024,
+      "unresolved": 0
+    },
+    {
+      "baseline_probability": 0.175152749491,
+      "origin_cohort": 196,
+      "origin_cutoff": 2023,
+      "positives": 34,
+      "resolved": 196,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.14338059297370598,
+          "logloss": 0.4613547760400408
+        },
+        "p_global_markov": {
+          "brier": 0.043947512806072286,
+          "logloss": 0.18262536995515705
+        },
+        "p_model": {
+          "brier": 0.038527237002733354,
+          "logloss": 0.1542725243085062
+        }
+      },
+      "target_year": 2025,
+      "unresolved": 0
+    }
+  ],
+  "confidence_limitations": "Country bootstrap ignores shared shocks across countries and dependence across overlapping two-year horizons. Intervals are exploratory, not independently calibrated.",
+  "country_years": 2742,
+  "delta_brier_vs_global_5y": -0.09326337138494281,
+  "delta_logloss_vs_global_5y": -0.2764365193249674,
+  "horizon_years": 2,
+  "interpretation": "Temporal holdout by observation year within a 2026 revised archival edition: historical source availability in each origin year is NOT verified. Same model is now prospectively issued for 2027, but this study does not score or alter that commitment.",
+  "leave_one_target_year_out_deltas": {
+    "p_baseline_global_5y": [
+      {
+        "delta_brier": -0.09511343472642089,
+        "excluded_year": 2012
+      },
+      {
+        "delta_brier": -0.09572106045867865,
+        "excluded_year": 2013
+      },
+      {
+        "delta_brier": -0.09432217310184919,
+        "excluded_year": 2014
+      },
+      {
+        "delta_brier": -0.09363234358420672,
+        "excluded_year": 2015
+      },
+      {
+        "delta_brier": -0.0931273849849186,
+        "excluded_year": 2016
+      },
+      {
+        "delta_brier": -0.09207013110525222,
+        "excluded_year": 2017
+      },
+      {
+        "delta_brier": -0.09384573696725873,
+        "excluded_year": 2018
+      },
+      {
+        "delta_brier": -0.09358977840633971,
+        "excluded_year": 2019
+      },
+      {
+        "delta_brier": -0.09170680833282376,
+        "excluded_year": 2020
+      },
+      {
+        "delta_brier": -0.0926335490769133,
+        "excluded_year": 2021
+      },
+      {
+        "delta_brier": -0.09287616662083914,
+        "excluded_year": 2022
+      },
+      {
+        "delta_brier": -0.09237354596186352,
+        "excluded_year": 2023
+      },
+      {
+        "delta_brier": -0.0923022603274995,
+        "excluded_year": 2024
+      },
+      {
+        "delta_brier": -0.09237113376559407,
+        "excluded_year": 2025
+      }
+    ],
+    "p_global_markov": [
+      {
+        "delta_brier": -0.006724801145440072,
+        "excluded_year": 2012
+      },
+      {
+        "delta_brier": -0.006674946224127433,
+        "excluded_year": 2013
+      },
+      {
+        "delta_brier": -0.006676196675827077,
+        "excluded_year": 2014
+      },
+      {
+        "delta_brier": -0.006305825219543933,
+        "excluded_year": 2015
+      },
+      {
+        "delta_brier": -0.006243506481681441,
+        "excluded_year": 2016
+      },
+      {
+        "delta_brier": -0.006755223571855554,
+        "excluded_year": 2017
+      },
+      {
+        "delta_brier": -0.006189355478420831,
+        "excluded_year": 2018
+      },
+      {
+        "delta_brier": -0.006470599394731463,
+        "excluded_year": 2019
+      },
+      {
+        "delta_brier": -0.006390408137109414,
+        "excluded_year": 2020
+      },
+      {
+        "delta_brier": -0.006637380591495157,
+        "excluded_year": 2021
+      },
+      {
+        "delta_brier": -0.006563235693825796,
+        "excluded_year": 2022
+      },
+      {
+        "delta_brier": -0.006415972036819116,
+        "excluded_year": 2023
+      },
+      {
+        "delta_brier": -0.006334621235506113,
+        "excluded_year": 2024
+      },
+      {
+        "delta_brier": -0.006580233438831962,
+        "excluded_year": 2025
+      }
+    ]
+  },
+  "model": "SAME_EQUATIONS_AS_FROZEN_2027_WITH_EARLIER_CUTOFF",
+  "paired_country_bootstrap_95pct": {
+    "model_minus_global_5y": [
+      -0.12115165728219118,
+      -0.06744286379252605
+    ],
+    "model_minus_global_markov": [
+      -0.009323930713180878,
+      -0.003791108698483742
+    ]
+  },
+  "parameters": {
+    "global_baseline_years": 5,
+    "laplace": 1,
+    "shrinkage": 20
+  },
+  "pooled_scores": {
+    "p_baseline_global_5y": {
+      "brier": 0.1382851740295057,
+      "logloss": 0.4493836951270839
+    },
+    "p_global_markov": {
+      "brier": 0.051519121533228296,
+      "logloss": 0.20554571679333772
+    },
+    "p_model": {
+      "brier": 0.04502180264456287,
+      "logloss": 0.17294717580211652
+    }
+  },
+  "positive_events": 454,
+  "prospective_2027_outcomes_resolved": 0,
+  "prospective_skill_demonstrated": false,
+  "question": "GEO-2027 methodological diagnostic",
+  "reliability": {
+    "global_5y": [
+      {
+        "lower": 0,
+        "n": 0,
+        "observed": null,
+        "predicted": null,
+        "upper": 0.05
+      },
+      {
+        "lower": 0.05,
+        "n": 0,
+        "observed": null,
+        "predicted": null,
+        "upper": 0.1
+      },
+      {
+        "lower": 0.1,
+        "n": 2742,
+        "observed": 0.16557257476294676,
+        "predicted": 0.15309045533090335,
+        "upper": 0.2
+      },
+      {
+        "lower": 0.2,
+        "n": 0,
+        "observed": null,
+        "predicted": null,
+        "upper": 0.4
+      },
+      {
+        "lower": 0.4,
+        "n": 0,
+        "observed": null,
+        "predicted": null,
+        "upper": 0.6
+      },
+      {
+        "lower": 0.6,
+        "n": 0,
+        "observed": null,
+        "predicted": null,
+        "upper": 0.8
+      },
+      {
+        "lower": 0.8,
+        "n": 0,
+        "observed": null,
+        "predicted": null,
+        "upper": 1
+      }
+    ],
+    "global_markov": [
+      {
+        "lower": 0,
+        "n": 0,
+        "observed": null,
+        "predicted": null,
+        "upper": 0.05
+      },
+      {
+        "lower": 0.05,
+        "n": 2308,
+        "observed": 0.033795493934142114,
+        "predicted": 0.05673860676902643,
+        "upper": 0.1
+      },
+      {
+        "lower": 0.1,
+        "n": 0,
+        "observed": null,
+        "predicted": null,
+        "upper": 0.2
+      },
+      {
+        "lower": 0.2,
+        "n": 0,
+        "observed": null,
+        "predicted": null,
+        "upper": 0.4
+      },
+      {
+        "lower": 0.4,
+        "n": 0,
+        "observed": null,
+        "predicted": null,
+        "upper": 0.6
+      },
+      {
+        "lower": 0.6,
+        "n": 434,
+        "observed": 0.8663594470046083,
+        "predicted": 0.6847665511770046,
+        "upper": 0.8
+      },
+      {
+        "lower": 0.8,
+        "n": 0,
+        "observed": null,
+        "predicted": null,
+        "upper": 1
+      }
+    ],
+    "model": [
+      {
+        "lower": 0,
+        "n": 1645,
+        "observed": 0.011550151975683891,
+        "predicted": 0.025008952542009726,
+        "upper": 0.05
+      },
+      {
+        "lower": 0.05,
+        "n": 413,
+        "observed": 0.048426150121065374,
+        "predicted": 0.06915107787443342,
+        "upper": 0.1
+      },
+      {
+        "lower": 0.1,
+        "n": 202,
+        "observed": 0.1188118811881188,
+        "predicted": 0.13742257647499506,
+        "upper": 0.2
+      },
+      {
+        "lower": 0.2,
+        "n": 48,
+        "observed": 0.3125,
+        "predicted": 0.24868360594674999,
+        "upper": 0.4
+      },
+      {
+        "lower": 0.4,
+        "n": 14,
+        "observed": 0.8571428571428571,
+        "predicted": 0.568809756399,
+        "upper": 0.6
+      },
+      {
+        "lower": 0.6,
+        "n": 272,
+        "observed": 0.8235294117647058,
+        "predicted": 0.7086076645606066,
+        "upper": 0.8
+      },
+      {
+        "lower": 0.8,
+        "n": 148,
+        "observed": 0.9459459459459459,
+        "predicted": 0.8450484354617568,
+        "upper": 1
+      }
+    ]
+  },
+  "schema": "idealab.psico.statebased_two_year_backtest.v1",
+  "source": {
+    "historical_revisions_not_asof": true,
+    "observed_through": 2025,
+    "sha256": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34",
+    "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-261-csv.zip",
+    "version": "26.1"
+  },
+  "target_rule": "sb_total_deaths_best >=25; state-based organized violence country-year",
+  "target_years": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "unique_countries": 196
+}
