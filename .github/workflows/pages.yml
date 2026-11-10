@@ -132,7 +132,7 @@ jobs:
           test -s /tmp/idealab-ucdp-archive.json
   deploy:
     if: github.event_name != 'pull_request'
-    needs: quality
+    needs: [quality, independent_2027_reproducibility]
     runs-on: ubuntu-latest
     environment: github-pages
     steps:
