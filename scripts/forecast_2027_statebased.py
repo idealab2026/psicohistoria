@@ -26,8 +26,7 @@ SOURCE_VERSION = "26.1"
 RECENT_YEARS = (2021, 2022, 2023, 2024, 2025)
 TRANSITION_PRIOR = 20
 LAPLACE = 1
-MIN_COHORT = 190
-MAX_COHORT = 210
+EXPECTED_COHORT = 196
 
 def sha256(b):
     return hashlib.sha256(b).hexdigest()
@@ -43,7 +42,7 @@ def estimate_from_history(records, names):
 
     cohort=sorted(cid for cid,h in records.items()
                   if CUTOFF_YEAR in h and CUTOFF_YEAR-1 in h)
-    if not (MIN_COHORT<=len(cohort)<=MAX_COHORT):
+    if len(cohort)!=EXPECTED_COHORT:
         raise ValueError("2025 frozen country cohort incomplete")
     global_transition=[[0,0],[0,0]]
     per_country={}
@@ -163,7 +162,7 @@ def validate_candidate(document):
     if document.get("forecast_id")!=PROTOCOL_ID or document.get("state")!="PREPARED_FOR_PUBLIC_GIT_COMMIT":
         raise ValueError("Invalid freeze protocol state")
     countries=document.get("countries",[])
-    if len(countries)!=document.get("training_summary",{}).get("cohort_n") or len(countries)<MIN_COHORT:
+    if len(countries)!=document.get("training_summary",{}).get("cohort_n") or len(countries)!=EXPECTED_COHORT:
         raise ValueError("Invalid cohort")
     ids=[c["country_id"] for c in countries]
     if sorted(ids)!=ids or len(set(ids))!=len(ids):
