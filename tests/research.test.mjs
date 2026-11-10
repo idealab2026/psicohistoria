@@ -201,7 +201,7 @@ test("real archival source and negative score are fail-closed",()=>{
 test("website leads with source-backed negative holdout rather than a synthetic prediction",()=>{
  const source=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
  assert.match(source,/function renderVintageHoldout/);
- assert.match(source,/renderVintageHoldout\(\)\+renderHistoricalLabelRevisions\(\)\+renderConditionalRisksetEvidence\(\)/);
+ assert.match(source,/renderExternalVintageHoldout\(\)\+renderVintageHoldout\(\)\+renderHistoricalLabelRevisions\(\)\+renderConditionalRisksetEvidence\(\)/);
  assert.match(source,/No concluyente/);
  assert.match(source,/Valor negativo/);
  assert.match(source,/Discrepancia de pérdidas/);
@@ -235,4 +235,44 @@ test("historical revision score and event counts cannot be falsely changed",()=>
  x=structuredClone(registry);
  x.historical_label_revisions.source_sha256s[0]="f".repeat(64);
  assert.throws(()=>verifyResearch(x),/historical onset revision/);
+});
+
+test("multiple genuine UCDP vintages expose a negative Brier score in 715 country-years",()=>{
+ const e=registry.external_vintage_holdout;
+ assert.equal(e.aggregate.country_years,715);
+ assert.equal(e.aggregate.events,7);
+ assert.ok(e.aggregate.brier_model>e.aggregate.brier_global);
+ assert.ok(e.aggregate.logloss_model>e.aggregate.logloss_global);
+ assert.ok(e.aggregate.brier_global>e.aggregate.brier_no_event);
+ assert.ok(e.aggregate.relative_brier_skill_global<0);
+ assert.deepEqual(e.studies.flatMap(s=>s.years.map(x=>x.year)),[2020,2021,2022,2024]);
+ assert.equal(e.sources["19.1"].last_year,2017);
+ assert.equal(e.legacy_19_1_duplicates.duplicate_country_year_keys,47);
+ assert.equal(e.legacy_19_1_duplicates.contradictory_onset2_keys,13);
+ assert.equal(e.legacy_19_1_duplicates.choice_made_after_data_diagnostics,true);
+ assert.equal(e.point_in_time_verified,false);
+ assert.equal(e.prospective_predictions_issued,0);
+ assert.equal(e.operational_utility_demonstrated,false);
+ assert.equal(verifyResearch(registry),true);
+ const html=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
+ assert.match(html,/function renderExternalVintageHoldout/);
+ assert.match(html,/no se emitieron predicciones en esos años/i);
+ assert.match(html,/peor Brier y peor log-loss/);
+});
+test("do not allow fabricated success, missing source, or changed events in archived evaluation",()=>{
+ let e=structuredClone(registry);
+ e.external_vintage_holdout.more_reliable_than_global_demonstrated=true;
+ assert.throws(()=>verifyResearch(e),/Unverified cross-release/);
+ e=structuredClone(registry);
+ e.external_vintage_holdout.aggregate.brier_model=0.001;
+ assert.throws(()=>verifyResearch(e),/Cross-release negative score/);
+ e=structuredClone(registry);
+ e.external_vintage_holdout.sources["19.1"].last_year=2018;
+ assert.throws(()=>verifyResearch(e),/source hash or cutoff/);
+ e=structuredClone(registry);
+ e.external_vintage_holdout.studies[0].years[2].events=99;
+ assert.throws(()=>verifyResearch(e),/target years and events/);
+ e=structuredClone(registry);
+ e.external_vintage_holdout.legacy_19_1_duplicates.contradictory_onset2_keys=0;
+ assert.throws(()=>verifyResearch(e),/Unverified cross-release/);
 });
