@@ -82,6 +82,17 @@ jobs:
         run: |
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/forecast_2027_statebased.py --output /tmp/idealab-geo2027.json --print-chunks
           test -s /tmp/idealab-geo2027.json
+  inspect_country_vintages:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Discover actual UCDP OrganizedViolenceCY historic editions and hash their bytes
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/probe_ucdp_organized_vintages.py --report /tmp/ucdp-organized-vintage-metadata.json
+          test -s /tmp/ucdp-organized-vintage-metadata.json
   historical_statebased_backtest:
     runs-on: ubuntu-latest
     steps:
