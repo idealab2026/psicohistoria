@@ -71,6 +71,17 @@ jobs:
           name: audited-site
           path: dist/
           retention-days: 1
+  recency_sensitivity:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Evaluate only homogeneous archived country-level onset labels
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_recency_onset.py --report /tmp/idealab-geo01-recency.json
+          test -s /tmp/idealab-geo01-recency.json
   cross_release_holdout:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest

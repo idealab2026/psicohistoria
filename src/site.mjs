@@ -111,6 +111,38 @@ function renderHistoricalLabelRevisions(){
  r.source_urls.map((url,i)=>'<p><a href="'+safe(url)+'" target="_blank" rel="noopener noreferrer">UCDP '+(i===0?'23.1':'25.1')+'</a> · SHA-256 <code>'+safe(r.source_sha256s[i])+'</code></p>').join("")+
  '<p>Contraste reproducible en el expediente institucional. Las fechas de publicación originales no están certificadas criptográficamente. Este hallazgo no acredita skill prospectivo.</p></details>','soft');
 }
+function renderRecencySensitivity(){
+ const r=state.research?.recency_sensitivity_study;
+ if(!r)return "";
+ const inside=r.internally_revised_vintage, outside=r.cross_release_holdout_2024;
+ const number=n=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:6,maximumFractionDigits:6}).format(n);
+ const names=[["global_full","Global · histórico completo"],
+  ["global_20","Global · 20 años"],["global_10","Global · 10 años"],["global_5","Global · 5 años"],
+  ["country_full","Por país · histórico completo"],["country_20","Por país · 20 años"],
+  ["country_10","Por país · 10 años"],["country_5","Por país · 5 años"]];
+ return section("INVESTIGACIÓN · HIPÓTESIS DE RECENCIA · UCDP","¿Ayuda utilizar una frecuencia reciente de conflictos?",
+  "Comparación de 5, 10 y 20 años frente al histórico completo, utilizando ediciones UCDP con la misma unidad de país-año. Exploración diseñada después de los primeros resultados, NO validación prospectiva.")+
+ '<div class="section-grid three">'+
+ box('<div class="eyebrow">RETROSPECTIVA INTERNA · 2015–2022</div><div class="card-number">'+safe(inside.n)+'</div><p>'+safe(inside.events)+' eventos. Datos revisados de la misma edición.</p>')+
+ box('<div class="eyebrow">CONTRASTE 2024 · EDICIÓN POSTERIOR</div><div class="card-number">'+safe(outside.n)+'</div><p>'+safe(outside.events)+' evento. Etiqueta de 25.1; resultado conocido anteriormente.</p>')+
+ box('<div class="eyebrow">NUEVAS EMISIONES PROSPECTIVAS</div><div class="card-number">0</div><p>No se ha certificado una predicción anterior al desenlace.</p>')+
+ '</div>'+
+ box('<h3>Cuadrícula completa de ocho modelos (sin seleccionar ganador)</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Referencia</th><th>Brier 2015–2022 ↓</th><th>Brier 2024 ↓</th><th>Log-loss 2024 ↓</th></tr></thead><tbody>'+
+ names.map(([key,name])=>'<tr><td>'+safe(name)+'</td><td>'+number(inside.pooled_metrics[key].brier)+'</td><td>'+number(outside.metrics[key].brier)+'</td><td>'+number(outside.metrics[key].logloss)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p><strong>Resultado:</strong> el baseline global de 5 años reduce ligeramente el Brier de 2024 respecto al global completo ('+
+ number(outside.metrics.global_5.brier)+' frente a '+number(outside.metrics.global_full.brier)+
+ '), pero el predictor por país continúa peor en Brier. Solo hay un positivo en 2024: las diferencias no demuestran superioridad estable.</p>'+
+ '<details><summary>Procedencia, cobertura y limitaciones científicas</summary>'+
+ '<p>'+safe(r.caveat)+'</p>'+
+ '<p>Probabilidades históricas globales de entrenamiento: 5 años '+number(outside.training_rates["5"])+
+ ', 10 años '+number(outside.training_rates["10"])+', 20 años '+number(outside.training_rates["20"])+
+ ', histórico completo '+number(outside.training_full_global_rate)+'. Son frecuencias anteriores al año 2024, no probabilidades de alerta certificadas.</p>'+
+ Object.entries(r.source_urls).map(([version,url])=>'<p><a href="'+safe(url)+'" target="_blank" rel="noopener noreferrer">UCDP '+safe(version)+'</a> · SHA-256 <code>'+safe(r.source_sha256[version])+'</code></p>').join("")+
+ '<p>Protocolo, código y pruebas reproducibles en la cuenta institucional IDEA LAB. No se publican predicciones nacionales individuales.</p>'+
+ '</details>','soft');
+}
 function renderExternalVintageHoldout(){
  const e=state.research?.external_vintage_holdout;
  if(!e)return "";
@@ -118,9 +150,10 @@ function renderExternalVintageHoldout(){
  const six=n=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:6,maximumFractionDigits:6}).format(n);
  const pct=n=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:2,maximumFractionDigits:2}).format(n*100)+" %";
  const periods=e.studies.flatMap(s=>s.years);
- return section("INVESTIGACIÓN · CONTRASTE EXTERNO ENTRE EDICIONES · UCDP",
-   "¿Supera el modelo por país a la referencia global en cuatro años distintos?",
-   "Evaluación retrospectiva de 2020, 2021, 2022 y 2024 usando una edición anterior para ajustar el modelo y otra posterior para comprobar los desenlaces. No se emitieron predicciones en esos años.")+
+ return section("INVESTIGACIÓN · ARCHIVO METODOLÓGICO · COMPARABILIDAD NO ACREDITADA",
+   "Contraste mixto anterior: 715 observaciones, interpretación limitada",
+   "Estudio exploratorio entre archivos históricos con posibles unidades de análisis diferentes. El fichero antiguo incluye varias entradas por país-año, a diferencia del formato posterior. No se emitieron predicciones en esos años.")+
+ '<div class="notice alert"><strong>Advertencia de revisión científica:</strong> el resultado de −8,94 % en Brier NO constituye un backtest homogéneo validado. La agregación OR de duplicados del fichero 19.1 puede alterar la definición del evento. Conservamos las cifras para trazabilidad, no para compararlas directamente con el nuevo experimento de unidades homogéneas.</div>'+
  '<div class="section-grid three">'+
  box('<div class="eyebrow">PAÍSES-AÑO EVALUADOS</div><div class="card-number">'+safe(a.country_years)+'</div><p>'+safe(a.events)+' comienzos de conflicto observados</p>')+
  box('<div class="eyebrow">MEJORA BRIER DEL MODELO</div><div class="card-number">'+safe(pct(a.relative_brier_skill_global))+'</div><p>Un valor negativo: el modelo por país empeora frente al global</p>')+
@@ -235,7 +268,7 @@ function renderEmpiricalEvidence(){
 }
 function renderScience(){
  const d=state.data,rows=d.studies.map(s=>({s,score:score(s)}));
- return renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
+ return renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
  '<div class="table-wrap"><table><thead><tr><th>Estudio sintético</th><th>Observaciones</th><th>Brier modelo</th><th>Brier referencia</th><th>Mejora relativa</th><th>Validez</th></tr></thead><tbody>'+rows.map(({s,score:r})=>'<tr><td>'+safe(s.title)+'</td><td>'+r.n+'</td><td>'+format(r.brier)+'</td><td>'+format(r.baselineBrier)+'</td><td>'+formatPct(r.skill)+'</td><td>Sintético</td></tr>').join("")+'</tbody></table></div>'+
  section("REPRODUCIBILIDAD","Evaluación de un experimento","Selecciona un estudio para analizar las probabilidades ficticias y compararlas con su referencia fija.")+
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+

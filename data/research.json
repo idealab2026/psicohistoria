@@ -696,6 +696,190 @@
     "explanatory_note": "El modelo por país no mejoró el Brier ni el log-loss agregados frente a la tasa global en cuatro años evaluados. Las fuentes están verificadas por hashes, pero la edición vinculada como 19.1 acaba en 2017 pese a la descripción del codebook de 2018. Se aplicó limpieza post hoc de duplicados y no se acreditan emisiones históricas, calibración operativa ni capacidad predictiva prospectiva.",
     "point_in_time_verified": false,
     "exploratory_confidence_intervals": true,
-    "more_reliable_than_global_demonstrated": false
+    "more_reliable_than_global_demonstrated": false,
+    "unit_comparability_verified": false,
+    "interpretation_downgraded": true,
+    "unit_comparability_note": "Diagnóstico posterior: Onset 19.1 incluye 47 registros país-año duplicados, 13 con onset2 discordante. No puede presumirse identidad con la edición Intrastate Country Level Onset 23.1, que admite una sola observación por país-año. La agregación OR no corrige por sí sola la discrepancia de unidad, de exposición al riesgo o de definición. El resultado de 715 observaciones no constituye un backtest homogéneo ni una prueba de superioridad/inferioridad del modelo."
+  },
+  "recency_sensitivity_study": {
+    "id": "EMP-ONSET-231-251-RECENCY-20261110",
+    "linked_question": "Q-GEO-01",
+    "analysis_date": "2026-11-10",
+    "workflow_run": "42859240878",
+    "schema": "idealab.psico.recency_sensitivity.v1",
+    "status": "EXPLORATORY_POSTHOC_NOT_PROSPECTIVE",
+    "question": "Q-GEO-01",
+    "source_urls": {
+      "23.1": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-231.csv",
+      "25.1": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-251.csv"
+    },
+    "source_sha256": {
+      "23.1": "e2cadfa7a87b3949f8c638c27381fbb1b44fb076ccb00570782252d0935a2289",
+      "25.1": "e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a"
+    },
+    "source_vintages": [
+      "23.1",
+      "25.1"
+    ],
+    "legacy_19_1_excluded_due_to_country_year_unit_mismatch": true,
+    "training_start": 2000,
+    "country_prior_strength": 20,
+    "windows_years": [
+      5,
+      10,
+      20
+    ],
+    "internally_revised_vintage": {
+      "assessment": "SAME_VINTAGE_REVISED_DATA_LEAKAGE_NOT_HISTORICALLY_ASOF",
+      "tested_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "n": 1568,
+      "events": 22,
+      "annual_events": [
+        {
+          "year": 2015,
+          "n": 196,
+          "events": 4
+        },
+        {
+          "year": 2016,
+          "n": 196,
+          "events": 6
+        },
+        {
+          "year": 2017,
+          "n": 196,
+          "events": 0
+        },
+        {
+          "year": 2018,
+          "n": 196,
+          "events": 3
+        },
+        {
+          "year": 2019,
+          "n": 196,
+          "events": 3
+        },
+        {
+          "year": 2020,
+          "n": 196,
+          "events": 2
+        },
+        {
+          "year": 2021,
+          "n": 196,
+          "events": 1
+        },
+        {
+          "year": 2022,
+          "n": 196,
+          "events": 3
+        }
+      ],
+      "pooled_metrics": {
+        "country_10": {
+          "brier": 0.013889233767725061,
+          "logloss": 0.07299504278355223
+        },
+        "country_20": {
+          "brier": 0.013888501401053398,
+          "logloss": 0.07308041138074295
+        },
+        "country_5": {
+          "brier": 0.013895517177938348,
+          "logloss": 0.07331105707566155
+        },
+        "country_full": {
+          "brier": 0.013888437542162018,
+          "logloss": 0.07309661494652882
+        },
+        "global_10": {
+          "brier": 0.013847747806839053,
+          "logloss": 0.07422193602437084
+        },
+        "global_20": {
+          "brier": 0.013845907345831547,
+          "logloss": 0.07417131048284294
+        },
+        "global_5": {
+          "brier": 0.013859690585637297,
+          "logloss": 0.07453736169207414
+        },
+        "global_full": {
+          "brier": 0.013845770858981579,
+          "logloss": 0.07416723368965279
+        },
+        "no_event": {
+          "brier": 0.01403061224489796,
+          "logloss": null
+        }
+      }
+    },
+    "cross_release_holdout_2024": {
+      "assessment": "EXTERNAL_VINTAGE_LABELS_BUT_2024_PREVIOUSLY_EXAMINED",
+      "events": 1,
+      "metrics": {
+        "country_10": {
+          "brier": 0.00530493721927878,
+          "logloss": 0.03366048098649258
+        },
+        "country_20": {
+          "brier": 0.005318793623621823,
+          "logloss": 0.034193866682803636
+        },
+        "country_5": {
+          "brier": 0.005285405943679529,
+          "logloss": 0.0328549646837205
+        },
+        "country_full": {
+          "brier": 0.005315050035136969,
+          "logloss": 0.03405249655464307
+        },
+        "global_10": {
+          "brier": 0.005179815101418622,
+          "logloss": 0.03665920511361197
+        },
+        "global_20": {
+          "brier": 0.00520915907559639,
+          "logloss": 0.037592821654241215
+        },
+        "global_5": {
+          "brier": 0.005142208533688694,
+          "logloss": 0.03532320286384879
+        },
+        "global_full": {
+          "brier": 0.005201040360443132,
+          "logloss": 0.03734211513950955
+        },
+        "no_event": {
+          "brier": 0.00510204081632653,
+          "logloss": null
+        }
+      },
+      "n": 196,
+      "training_full_global_rate": 0.016283738567923266,
+      "training_last_year": 2022,
+      "training_rates": {
+        "5": 0.013238289205702648,
+        "10": 0.01529051987767584,
+        "20": 0.016641065028161803
+      },
+      "year": 2024
+    },
+    "prospective_forecasts_issued": 0,
+    "skill_demonstrated": false,
+    "source_release_dates_verified": false,
+    "new_independent_confirmatory_holdout": false,
+    "caveat": "La prueba interna de 2015–2022 usa etiquetas de la edición UCDP 23.1 revisada en 2023, no disponibles necesariamente en las fechas simuladas. El único año externo 2024 ya se había examinado en otros experimentos; la cuadrícula 5/10/20 años se diseñó después de ver ese resultado. El modelo antiguo basado en 19.1 no comparte una unidad país-año inequívoca y se excluye. No se demuestra capacidad predictiva prospectiva ni hay pronósticos emitidos.",
+    "conclusion": "Exploratory grid only. Model selection on these results would be post-hoc. The older 19.1 archive and the later 23.1 country-level set do not have demonstrated identical units of analysis; the 715-row mixed-vintage result is excluded from this assessment."
   }
 }
