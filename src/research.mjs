@@ -70,6 +70,43 @@ export function verifyResearch(data) {
     if (typeof study.note!=="string" || !study.note.toLocaleLowerCase("es").includes("intervalo") || !study.note.toLocaleLowerCase("es").includes("no produce alertas"))
       throw Error("Missing robust retrospective limitation notice");
   }
+  const r=data.riskset_study;
+  if (!r || r.id!=="EMP-ONSET-251-RISKSET-20261110" ||
+      r.linked_question!=="Q-GEO-01" ||
+      r.status!=="RETROSPECTIVE_REVISED_VINTAGES_NOT_ASOF" ||
+      r.point_in_time_verified!==false ||
+      r.operational_utility_demonstrated!==false ||
+      r.prospective_forecasts_issued!==0 ||
+      r.exploratory_confidence_intervals!==true ||
+      !Array.isArray(r.sources) || r.sources.length!==2 ||
+      r.sources[0].sha256!=="e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a" ||
+      r.sources[1].sha256!=="b49f7e80510d8a5779a52d872aef5b26456b3f5cbdd3ec32031339488e81813f" ||
+      !r.sources.every(x=>typeof x.url==="string"&&x.url.startsWith("https://ucdp.uu.se/downloads/")) ||
+      !Array.isArray(r.scenarios) || r.scenarios.length!==2)
+    throw Error("Conditional UCDP scientific provenance or retrospective status invalid");
+  if (r.scenarios[0].preceding_inactive_years!==1 ||
+      r.scenarios[1].preceding_inactive_years!==2 ||
+      !r.note?.includes("point-in-time") || !r.note?.includes("No es una alerta actual"))
+    throw Error("Conditional UCDP sensitivity design is incomplete");
+  for (const v of r.scenarios) {
+    if (!Number.isSafeInteger(v.observations)||v.observations<100||
+        !Number.isSafeInteger(v.countries)||v.countries<100||
+        !Number.isSafeInteger(v.events)||v.events<=0||
+        v.events>=v.observations||
+        v.countries>=v.observations)
+      throw Error("Conditional onset sample inconsistent");
+    for (const key of ["brier_model","brier_baseline","brier_no_event",
+                       "relative_brier_improvement","logloss_model","logloss_baseline"])
+      if (typeof v[key]!=="number" || !Number.isFinite(v[key]) ||
+          v[key]<0 || (key.startsWith("brier_") && v[key]>1))
+        throw Error("Conditional Brier or log-loss invalid");
+    if (!Array.isArray(v.cluster_delta_interval)||v.cluster_delta_interval.length!==2||
+        !v.cluster_delta_interval.every(Number.isFinite)||
+        v.cluster_delta_interval[0]>v.cluster_delta_interval[1])
+      throw Error("Conditional onset interval invalid");
+    if (Math.abs((1-v.brier_model/v.brier_baseline)-v.relative_brier_improvement)>1e-9)
+      throw Error("Conditional onset improvement inconsistent with Brier values");
+  }
   return true;
 }
 const EXPECTED = "issued_at,input_available_at,event_start,event_end,outcome_verified_at,model_probability,baseline_probability,outcome";

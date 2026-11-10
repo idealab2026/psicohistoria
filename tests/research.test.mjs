@@ -104,3 +104,38 @@ test("fabricated prospective achievement and invalid empirical scores are reject
  x=structuredClone(registry);x.empirical_studies[0].delta_brier_confidence_interval=[1,0];
  assert.throws(()=>verifyResearch(x),/confidence interval/);
 });
+
+test("conditional risk-set benchmark uses two authentic UCDP 25.1 sources and exploratory labels",()=>{
+ const r=registry.riskset_study;
+ assert.equal(r.scenarios.length,2);
+ assert.deepEqual(r.scenarios.map(x=>x.observations),[2465,2404]);
+ assert.deepEqual(r.scenarios.map(x=>x.events),[40,40]);
+ assert.ok(r.scenarios.every(x=>x.brier_model<x.brier_baseline));
+ assert.ok(r.scenarios.every(x=>x.cluster_delta_interval[0]<0&&x.cluster_delta_interval[1]<0));
+ assert.equal(r.point_in_time_verified,false);
+ assert.equal(r.prospective_forecasts_issued,0);
+ assert.equal(r.operational_utility_demonstrated,false);
+ assert.equal(r.exploratory_confidence_intervals,true);
+ assert.ok(verifyResearch(registry));
+});
+test("falsified vintages, utility claims and inconsistent scoring are prohibited",()=>{
+ let r=structuredClone(registry);
+ r.riskset_study.point_in_time_verified=true;
+ assert.throws(()=>verifyResearch(r),/provenance|retrospective/i);
+ r=structuredClone(registry);
+ r.riskset_study.operational_utility_demonstrated=true;
+ assert.throws(()=>verifyResearch(r),/provenance|retrospective/i);
+ r=structuredClone(registry);
+ r.riskset_study.sources[1].sha256="bad";
+ assert.throws(()=>verifyResearch(r),/provenance/i);
+ r=structuredClone(registry);
+ r.riskset_study.scenarios[0].relative_brier_improvement=0.999;
+ assert.throws(()=>verifyResearch(r),/inconsistent/);
+});
+test("new actual study remains separate from retrospective all-year and synthetic evaluator",()=>{
+ const site=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
+ assert.match(site,/function renderConditionalRisksetEvidence\(/);
+ assert.match(site,/renderConditionalRisksetEvidence\(\)\+renderEmpiricalEvidence\(\)/);
+ assert.match(site,/no acredita predicción futura/);
+ assert.match(site,/La tabla siguiente usa muestras inventadas/);
+});
