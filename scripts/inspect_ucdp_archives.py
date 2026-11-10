@@ -15,6 +15,7 @@ import re
 from html.parser import HTMLParser
 from urllib.parse import urljoin, urlsplit
 from urllib.request import Request, urlopen
+from urllib.error import HTTPError
 
 HISTORY = "https://ucdp.uu.se/downloads/olddw.html"
 PINNED = {
@@ -146,6 +147,13 @@ def compare_revisions(old, new, old_max_year):
         "country_years_only_in_23_1":len(old_keys-new_keys),
         "country_years_only_in_25_1":len(new_keys-old_keys),
         "onset2_label_flips":len(changes),
+        "shared_positive_labels_23_1":sum(a[k] for k in both),
+        "shared_positive_labels_25_1":sum(b[k] for k in both),
+        "years_with_revisions":[
+            {"year":year,"flips_0_to_1":sum(k[0]==year and a[k]==0 for k in changes),
+             "flips_1_to_0":sum(k[0]==year and a[k]==1 for k in changes)}
+            for year in sorted(set(k[0] for k in changes))
+        ],
         "flips_0_to_1":sum(a[k]==0 for k in changes),
         "flips_1_to_0":sum(a[k]==1 for k in changes),
         "flips_by_period":[
@@ -173,8 +181,9 @@ def inspect(fetcher=fetch):
             "archive_url":HISTORY,"archive_sha256":digest(archive),
             "official_onset_country_links":[],
             "pinned_downloads":[],
-            "additional_vintage_22_1_available":False,
-            "additional_vintage_24_1_available":False,
+            "archive_lists_22_1":False,
+            "archive_lists_24_1":False,
+            "archived_24_1_download":{"status":"NOT_CHECKED"},
             "historical_release_dates_cryptographically_verified":False,
             "prospective_predictions_issued":0}
     seen=set()
@@ -183,10 +192,20 @@ def inspect(fetcher=fetch):
         seen.add(l["url"])
         report["official_onset_country_links"].append(l)
         if l["version"]=="22.1":
-            report["additional_vintage_22_1_available"]=True
+            report["archive_lists_22_1"]=True
         if l["version"]=="24.1":
-            report["additional_vintage_24_1_available"]=True
+            report["archive_lists_24_1"]=True
     version_labels={}
+    for item in links:
+        if item["version"]=="24.1" and item["caption"]=="Intrastate Country Level Onset CSV":
+            try:
+                raw=fetcher(item["url"],MAX_CSV)
+                report["archived_24_1_download"]={"status":"RETRIEVED_UNPINNED",
+                    "url":item["url"],"sha256":digest(raw),**parse_source(raw)}
+            except HTTPError as error:
+                report["archived_24_1_download"]={"status":"HTTP_ERROR",
+                    "url":item["url"],"http_status":error.code}
+            break
     for version,(url,sha) in PINNED.items():
         raw=fetcher(url,MAX_CSV)
         if digest(raw)!=sha:
