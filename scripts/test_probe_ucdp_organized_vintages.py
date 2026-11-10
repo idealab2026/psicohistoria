@@ -41,11 +41,16 @@ class UCDPArchiveProbe(unittest.TestCase):
     def test_xlsx_accepted_as_provenance_pending_field_validation(self):
         out=io.BytesIO()
         with zipfile.ZipFile(out,"w") as z:
-            z.writestr("xl/workbook.xml","test")
-            z.writestr("xl/worksheets/sheet1.xml","test")
+            z.writestr("xl/workbook.xml","<workbook/>")
+            z.writestr("xl/worksheets/sheet1.xml",
+                '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">'
+                '<sheetData><row r="1"><c r="A1" t="inlineStr"><is><t>country_id_cy</t></is></c>'
+                '<c r="B1" t="inlineStr"><is><t>year_cy</t></is></c></row></sheetData></worksheet>')
         report=source_metadata(out.getvalue(),"EXCEL")
         self.assertEqual(report["format"],"XLSX")
         self.assertTrue(report["requires_column_validation"])
+        self.assertEqual(report["country_id_field"],"country_id_cy")
+        self.assertEqual(report["year_field"],"year_cy")
 
     def test_probe_never_claims_original_release_dates(self):
         expected={
