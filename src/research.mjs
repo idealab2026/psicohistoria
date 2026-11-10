@@ -374,6 +374,71 @@ export function verifyResearch(data) {
        !nearHistorical(ci[0],low)||!nearHistorical(ci[1],high))
       throw Error("Historical backtest uncertainty cannot be recast as certified");
   }
+  const archival=data.historical_cross_release_statebased;
+  const loose=(x,y)=>Number.isFinite(x)&&Math.abs(x-y)<1e-10;
+  if(!archival ||
+    archival.id!=="EMP-GEO2027-CROSS-RELEASE-231-241-251-261-20261110"||
+    archival.linked_question!=="GEO-2027"||
+    archival.report_path!=="data/forecast-2027-archival-cross-release.json"||
+    archival.model_protocol!=="country_markov_2step_laplace_global_shrink20"||
+    archival.status!=="EX_POST_ARCHIVED_VINTAGE_SEPARATED_OUTCOMES_NOT_HISTORICALLY_ISSUED"||
+    archival.sample_size!==392||archival.events!==69||
+    JSON.stringify(archival.fold_years)!=="[2024,2025]"||
+    archival.historical_issue_not_verified!==true||
+    archival.dates_independently_notarized!==false||
+    archival.forecast_2027_unmodified!==true||
+    archival.prospective_results_2027!==0||
+    archival.prospective_skill_demonstrated!==false||
+    !archival.caution?.includes("ex post")||
+    !archival.caution?.includes("196 probabilidades"))
+    throw Error("Unverified archival cross-release or false prospective claim");
+  const origins=[
+    ["23.1",2022,6544,"6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff"],
+    ["24.1",2023,6740,"00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260"],
+    ["25.1",2024,6936,"564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917"],
+    ["26.1",2025,7132,"66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"]
+  ];
+  if(!origins.every(([version,year,n,sha])=>
+    archival.source_releases?.[version]?.sha256===sha &&
+    archival.source_releases[version].last_year===year &&
+    archival.source_releases[version].rows===n &&
+    archival.source_releases[version].url.startsWith("https://ucdp.uu.se/downloads/organizedviolencecy/")))
+    throw Error("Archival cross-release sources or historical cutoff changed");
+  const expectedFolds=[
+    ["23.1","25.1",2022,2024,196,35],
+    ["24.1","26.1",2023,2025,196,34]
+  ];
+  if(!Array.isArray(archival.folds)||archival.folds.length!==2||
+    !expectedFolds.every(([oldv,newv,cutoff,year,n,events],i)=>{
+      const f=archival.folds[i];
+      return f.origin===oldv&&f.assessment===newv&&f.cutoff===cutoff&&
+        f.year===year&&f.observations===n&&f.events===events&&
+        [f.model_brier,f.global_markov_brier,f.global_5y_brier].every(x=>Number.isFinite(x)&&x>=0&&x<=1);
+    })||
+    JSON.stringify(archival.historical_revisions)!==
+      JSON.stringify([
+        {origin:"23.1",assessment:"25.1",country_years:6544,label_flips:6},
+        {origin:"24.1",assessment:"26.1",country_years:6740,label_flips:7}
+      ]))
+    throw Error("Archival cross-release year coverage or label drift invalid");
+  const exactScores=[
+    ["model_brier",0.04008405691286656],
+    ["global_markov_brier",0.046921116910061844],
+    ["global_5y_brier",0.1450678698979093],
+    ["model_logloss",0.15439773864360035],
+    ["global_markov_logloss",0.19006909182503545],
+    ["global_5y_logloss",0.4654125692715784]
+  ];
+  if(!exactScores.every(([key,value])=>loose(archival[key],value)) ||
+     !loose(archival.brier_skill_vs_markov,
+        1-archival.model_brier/archival.global_markov_brier) ||
+     !loose(archival.brier_skill_vs_global_5y,
+        1-archival.model_brier/archival.global_5y_brier)||
+     ![archival.bootstrap95_delta_brier_markov,
+       archival.bootstrap95_delta_brier_global_5y].every(
+       ci=>Array.isArray(ci)&&ci.length===2&&
+       ci.every(Number.isFinite)&&ci[0]<ci[1]&&ci[1]<0))
+    throw Error("Cross-edition model score cannot be presented as confirmed skill");
   return true;
 }
 export function verifyIssuedForecast2027(document, manifest){
