@@ -4,6 +4,39 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## Q-GEO-01 · Incidencia real de conflictos internos UCDP/PRIO (10-11-2026)
+
+**Nueva fuente oficial, nuevo experimento y resultado no confirmatorio:** hemos incorporado el [UCDP/PRIO Armed Conflict Dataset, ediciones históricas 23.1 y 25.1](https://ucdp.uu.se/downloads/olddw.html) para conocer la **presencia de conflicto interno activo en un país y año**, en vez de depender únicamente de la señal puntual `onset1`. El código comprueba que el UCDP/PRIO es una fuente **conflicto-año**, filtra únicamente los tipos 3 (*intrastate*) y 4 (*internationalized intrastate*), y agrega por el código Gleditsch-Ward `gwno_a` del gobierno primario. **Nunca** se une directamente un registro conflicto-año con una etiqueta `onset2` país-año sin esta transformación. Los conflictos de tipo 1 y 2 se excluyen del predictor.
+
+**Fuentes originales ancladas por SHA-256**:
+- UCDP/PRIO Armed Conflict Dataset **23.1**, ZIP CSV con **2.626 filas conflicto-año**, 2.368 internas/internacionalizadas, **1.711 país-año activos** hasta 2022 y **34 países** con conflicto interno activo en 2022. SHA-256 `8fe95d8a5780cba1d312f9673ffd9e93b90c91bb26e348393a583853a892b718`.
+- UCDP/PRIO Armed Conflict Dataset **25.1**, ZIP CSV con **2.752 filas conflicto-año**, 2.488 internas/internacionalizadas, **1.780 país-año activos** hasta 2024 y **33 países** con actividad en 2024. SHA-256 `b49f7e80510d8a5779a52d872aef5b26456b3f5cbdd3ec32031339488e81813f`.
+- UCDP Intrastate Country Onset **23.1** (para todo el entrenamiento, SHA-256 `e2cadfa7a87b3949f8c638c27381fbb1b44fb076ccb00570782252d0935a2289`) y **25.1** (solo resultados 2023–2024, SHA-256 `e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a`).
+
+La unión automática no detectó códigos gubernamentales multivaluados ni incompatibles en los conflictos internos, y todos los códigos de país utilizados están representados en el archivo `onset2`. Entre las dos ediciones de actividad, el histórico común hasta 2022 registra **5 país-año añadidos y 2 eliminados** por revisiones; **ningún valor revisado de 25.1 entra en la estimación**.
+
+### Comparación reproducible
+
+Se evalúan siete referencias/variantes predefinidas, incluyendo dos nuevas señales de conflictos armados: actividad interna en el origen y cualquier actividad en los últimos tres años del origen, con regularización empírico-bayesiana de fuerza 20. Los cortes internos 2014–2020 y el origen externo 2022 emplean **solo información existente hasta cada corte** en ambas fuentes de 23.1. Para evaluar el año 2024, el modelo **no lee ni utiliza la situación de 2023**.
+
+| Especificación | Brier rolling interno ↓ | Brier externo 2023–24 ↓ |
+|---|---:|---:|
+| Tasa global últimos cinco años | 0,01332696 | **0,00514221** |
+| Tasa global completa, por horizonte | 0,01331910 | 0,00519987 |
+| País EB sin conflictos activos | 0,01332146 | 0,00543315 |
+| País + marcador anterior `onset1` | 0,01330592 | 0,00542598 |
+| Actividad interna en origen, tasa condicionada global | 0,01327676 | 0,00520147 |
+| **País + actividad interna en origen** | **0,01321659** | **0,00536699** |
+| País + actividad en últimos 3 años | 0,01332036 | 0,00547462 |
+
+El nuevo predictor mejora modestamente el Brier del estimador país EB en el rolling (**0,79 %**) y en la prueba externa (**1,22 %**). El intervalo por bootstrap agrupado en países para la diferencia externa Brier modelo actividad-país menos EB es **[−0,00010153, −0,00003292]**, pero **no supera** la referencia más competitiva, tasa global reciente (Brier 0,00514221); su intervalo frente a esta es **[−0,00000891, +0,00043796]**, cruza cero. Con solo **dos inicios externos**, dichos intervalos son exploratorios y no capturan shocks globales ni multiplicidad de modelos.
+
+El rolling interno contiene **2.744 evaluaciones**, pero solo **1.568 país-año distintos y 22 inicios únicos** por solapamiento de orígenes/horizontes. En la validación 2023–24 hay **392 evaluaciones y 2 eventos**. Los **dos `onset2` positivos se dan en países sin conflicto interno activo en 2022**. El modelo país+actividad identifica **0 de los 2 eventos en los top-20** de cada año. La variable aporta información descriptiva sobre incidencia, pero **no demuestra anticipación útil del inicio de guerras**.
+
+**Limitaciones y transparencia:** hipótesis seleccionadas después de haber inspeccionado resultados 2023/24, estudio ex post realizado en 2026; no es evaluación independiente ni se conocen fechas originales de acceso notarizadas. UCDP/PRIO y el indicador `onset2` tienen unidades y semántica distintas. La actividad de un conflicto no impide el inicio simultáneo de otro. La serie del mismo archivo revisado tampoco constituye backtest histórico point-in-time. En ningún caso se modifican las **196 probabilidades ya emitidas de GEO-2027** ni se acreditan resultados de 2027.
+
+**Archivos:** `scripts/probe_ucdp_prio_incidence.py`, `scripts/experiment_onset2_conflict_incidence.py` y sus tests adversariales; informe de fuentes `data/ucdp-prio-incidence-vintages.json`, resultados `data/onset2-conflict-incidence-ablation.json`, registro científico `data/research.json`, vista **Investigación → Evidencia** y dos nuevas condiciones obligatorias en CI antes de publicar.
+
 ## Q-GEO-01 · Prueba de información adicional: `onset1` previo y horizonte estrictamente congelado (10-11-2026)
 
 **Nueva investigación reproducida, resultado externo desfavorable:** hemos contrastado cinco especificaciones para predecir `onset2` de UCDP utilizando únicamente el indicador `onset1` **del último año disponible en la edición de origen**, sin leer nunca datos del año objetivo ni del año intermedio. Los modelos tienen parámetros fijos, Beta-Laplace(1,1) para tasas, shrinkage=20 para país/grupo, y dos horizontes separados de **1 y 2 pasos anuales**. No se han calibrado ni seleccionado modelos mediante los resultados externos.
