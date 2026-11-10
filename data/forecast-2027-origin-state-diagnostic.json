@@ -1,0 +1,610 @@
+{
+  "annual": [
+    {
+      "active_cohort": {
+        "brier_skill_model_vs_global_markov": 0.1895166297646469,
+        "calibration_bins": [
+          {
+            "lower": 0,
+            "n": 0,
+            "observed": null,
+            "predicted": null,
+            "upper": 0.05
+          },
+          {
+            "lower": 0.05,
+            "n": 0,
+            "observed": null,
+            "predicted": null,
+            "upper": 0.1
+          },
+          {
+            "lower": 0.1,
+            "n": 0,
+            "observed": null,
+            "predicted": null,
+            "upper": 0.2
+          },
+          {
+            "lower": 0.2,
+            "n": 0,
+            "observed": null,
+            "predicted": null,
+            "upper": 0.4
+          },
+          {
+            "lower": 0.4,
+            "n": 0,
+            "observed": null,
+            "predicted": null,
+            "upper": 0.6
+          },
+          {
+            "lower": 0.6,
+            "n": 25,
+            "observed": 0.76,
+            "predicted": 0.71788785339076,
+            "upper": 0.8
+          },
+          {
+            "lower": 0.8,
+            "n": 12,
+            "observed": 1.0,
+            "predicted": 0.8527316520815833,
+            "upper": 1
+          }
+        ],
+        "country_years": 37,
+        "delta_brier_model_minus_global_markov": -0.02918953241584589,
+        "mean_probabilities": {
+          "p_baseline_global_5y": 0.170061099796,
+          "p_global_markov": 0.703096009658,
+          "p_model": 0.7616209772904865
+        },
+        "observed_rate": 0.8378378378378378,
+        "positive_threshold_outcomes": 31,
+        "scores": {
+          "p_baseline_global_5y": {
+            "brier": 0.581791367194852,
+            "logloss": 1.514538960670516
+          },
+          "p_global_markov": {
+            "brier": 0.15402095558629972,
+            "logloss": 0.492059333061694
+          },
+          "p_model": {
+            "brier": 0.12483142317045383,
+            "logloss": 0.4100773557224296
+          }
+        }
+      },
+      "active_to_active": 31,
+      "active_to_inactive": 6,
+      "country_years": 196,
+      "inactive_cohort": {
+        "brier_skill_model_vs_global_markov": 0.1341760164542677,
+        "calibration_bins": [
+          {
+            "lower": 0,
+            "n": 114,
+            "observed": 0.0,
+            "predicted": 0.02158064292050877,
+            "upper": 0.05
+          },
+          {
+            "lower": 0.05,
+            "n": 33,
+            "observed": 0.06060606060606061,
+            "predicted": 0.06643419618824242,
+            "upper": 0.1
+          },
+          {
+            "lower": 0.1,
+            "n": 9,
+            "observed": 0.1111111111111111,
+            "predicted": 0.1446096186481111,
+            "upper": 0.2
+          },
+          {
+            "lower": 0.2,
+            "n": 3,
+            "observed": 0.3333333333333333,
+            "predicted": 0.25609948356133333,
+            "upper": 0.4
+          },
+          {
+            "lower": 0.4,
+            "n": 0,
+            "observed": null,
+            "predicted": null,
+            "upper": 0.6
+          },
+          {
+            "lower": 0.6,
+            "n": 0,
+            "observed": null,
+            "predicted": null,
+            "upper": 0.8
+          },
+          {
+            "lower": 0.8,
+            "n": 0,
+            "observed": null,
+            "predicted": null,
+            "upper": 1
+          }
+        ],
+        "country_years": 159,
+        "delta_brier_model_minus_global_markov": -0.0034130289837419232,
+        "mean_probabilities": {
+          "p_baseline_global_5y": 0.170061099796,
+          "p_global_markov": 0.055366607919,
+          "p_model": 0.042278659029352204
+        },
+        "observed_rate": 0.025157232704402517,
+        "positive_threshold_outcomes": 4,
+        "scores": {
+          "p_baseline_global_5y": {
+            "brier": 0.04552147704515841,
+            "logloss": 0.22628229702078484
+          },
+          "p_global_markov": {
+            "brier": 0.025436952697915387,
+            "logloss": 0.12832491857589223
+          },
+          "p_model": {
+            "brier": 0.022023923714173464,
+            "logloss": 0.09433692857503244
+          }
+        }
+      },
+      "inactive_to_active": 4,
+      "inactive_to_inactive": 155,
+      "origin_active": 37,
+      "origin_inactive": 159,
+      "origin_release": "23.1",
+      "origin_year": 2022,
+      "target_release": "25.1",
+      "target_year": 2024,
+      "top_k": {
+        "10": {
+          "budget": 10,
+          "precision_at_k": 1.0,
+          "random_ranking_expected_hits": 1.7857142857142858,
+          "recall_at_k": 0.2857142857142857,
+          "target_positives": 35,
+          "true_positives": 10
+        },
+        "20": {
+          "budget": 20,
+          "precision_at_k": 0.95,
+          "random_ranking_expected_hits": 3.5714285714285716,
+          "recall_at_k": 0.5428571428571428,
+          "target_positives": 35,
+          "true_positives": 19
+        },
+        "35": {
+          "budget": 35,
+          "precision_at_k": 0.8571428571428571,
+          "random_ranking_expected_hits": 6.25,
+          "recall_at_k": 0.8571428571428571,
+          "target_positives": 35,
+          "true_positives": 30
+        }
+      }
+    },
+    {
+      "active_cohort": {
+        "brier_skill_model_vs_global_markov": 0.16894936747910028,
+        "calibration_bins": [
+          {
+            "lower": 0,
+            "n": 0,
+            "observed": null,
+            "predicted": null,
+            "upper": 0.05
+          },
+          {
+            "lower": 0.05,
+            "n": 0,
+            "observed": null,
+            "predicted": null,
+            "upper": 0.1
+          },
+          {
+            "lower": 0.1,
+            "n": 0,
+            "observed": null,
+            "predicted": null,
+            "upper": 0.2
+          },
+          {
+            "lower": 0.2,
+            "n": 0,
+            "observed": null,
+            "predicted": null,
+            "upper": 0.4
+          },
+          {
+            "lower": 0.4,
+            "n": 0,
+            "observed": null,
+            "predicted": null,
+            "upper": 0.6
+          },
+          {
+            "lower": 0.6,
+            "n": 20,
+            "observed": 0.85,
+            "predicted": 0.71793540039405,
+            "upper": 0.8
+          },
+          {
+            "lower": 0.8,
+            "n": 14,
+            "observed": 0.9285714285714286,
+            "predicted": 0.8493793204091429,
+            "upper": 1
+          }
+        ],
+        "country_years": 34,
+        "delta_brier_model_minus_global_markov": -0.02286681088859839,
+        "mean_probabilities": {
+          "p_baseline_global_5y": 0.172097759674,
+          "p_global_markov": 0.704755376366,
+          "p_model": 0.7720593674590883
+        },
+        "observed_rate": 0.8823529411764706,
+        "positive_threshold_outcomes": 30,
+        "scores": {
+          "p_baseline_global_5y": {
+            "brier": 0.6082686512248099,
+            "logloss": 1.5748887822997393
+          },
+          "p_global_markov": {
+            "brier": 0.13534712340031171,
+            "logloss": 0.4522629335957081
+          },
+          "p_model": {
+            "brier": 0.11248031251171332,
+            "logloss": 0.38728827215160905
+          }
+        }
+      },
+      "active_to_active": 30,
+      "active_to_inactive": 4,
+      "country_years": 196,
+      "inactive_cohort": {
+        "brier_skill_model_vs_global_markov": 0.06916253108473669,
+        "calibration_bins": [
+          {
+            "lower": 0,
+            "n": 113,
+            "observed": 0.008849557522123894,
+            "predicted": 0.020953917450176992,
+            "upper": 0.05
+          },
+          {
+            "lower": 0.05,
+            "n": 36,
+            "observed": 0.05555555555555555,
+            "predicted": 0.06609009653002779,
+            "upper": 0.1
+          },
+          {
+            "lower": 0.1,
+            "n": 11,
+            "observed": 0.0,
+            "predicted": 0.14021713133845456,
+            "upper": 0.2
+          },
+          {
+            "lower": 0.2,
+            "n": 2,
+            "observed": 0.5,
+            "predicted": 0.2441234374545,
+            "upper": 0.4
+          },
+          {
+            "lower": 0.4,
+            "n": 0,
+            "observed": null,
+            "predicted": null,
+            "upper": 0.6
+          },
+          {
+            "lower": 0.6,
+            "n": 0,
+            "observed": null,
+            "predicted": null,
+            "upper": 0.8
+          },
+          {
+            "lower": 0.8,
+            "n": 0,
+            "observed": null,
+            "predicted": null,
+            "upper": 1
+          }
+        ],
+        "country_years": 162,
+        "delta_brier_model_minus_global_markov": -0.0017282200054749564,
+        "mean_probabilities": {
+          "p_baseline_global_5y": 0.172097759674,
+          "p_global_markov": 0.054793061102999994,
+          "p_model": 0.04183747818878395
+        },
+        "observed_rate": 0.024691358024691357,
+        "positive_threshold_outcomes": 4,
+        "scores": {
+          "p_baseline_global_5y": {
+            "brier": 0.04581034211078518,
+            "logloss": 0.2276461838589785
+          },
+          "p_global_markov": {
+            "brier": 0.024987807391802525,
+            "logloss": 0.1266684375080865
+          },
+          "p_model": {
+            "brier": 0.02325958738632757,
+            "logloss": 0.1060720894443018
+          }
+        }
+      },
+      "inactive_to_active": 4,
+      "inactive_to_inactive": 158,
+      "origin_active": 34,
+      "origin_inactive": 162,
+      "origin_release": "24.1",
+      "origin_year": 2023,
+      "target_release": "26.1",
+      "target_year": 2025,
+      "top_k": {
+        "10": {
+          "budget": 10,
+          "precision_at_k": 0.9,
+          "random_ranking_expected_hits": 1.7346938775510203,
+          "recall_at_k": 0.2647058823529412,
+          "target_positives": 34,
+          "true_positives": 9
+        },
+        "20": {
+          "budget": 20,
+          "precision_at_k": 0.9,
+          "random_ranking_expected_hits": 3.4693877551020407,
+          "recall_at_k": 0.5294117647058824,
+          "target_positives": 34,
+          "true_positives": 18
+        },
+        "35": {
+          "budget": 35,
+          "precision_at_k": 0.8571428571428571,
+          "random_ranking_expected_hits": 6.071428571428571,
+          "recall_at_k": 0.8823529411764706,
+          "target_positives": 34,
+          "true_positives": 30
+        }
+      }
+    }
+  ],
+  "conditional_groups": {
+    "AT_LEAST_25_AT_ORIGIN": {
+      "brier_skill_model_vs_global_markov": 0.18032816705343124,
+      "calibration_bins": [
+        {
+          "lower": 0,
+          "n": 0,
+          "observed": null,
+          "predicted": null,
+          "upper": 0.05
+        },
+        {
+          "lower": 0.05,
+          "n": 0,
+          "observed": null,
+          "predicted": null,
+          "upper": 0.1
+        },
+        {
+          "lower": 0.1,
+          "n": 0,
+          "observed": null,
+          "predicted": null,
+          "upper": 0.2
+        },
+        {
+          "lower": 0.2,
+          "n": 0,
+          "observed": null,
+          "predicted": null,
+          "upper": 0.4
+        },
+        {
+          "lower": 0.4,
+          "n": 0,
+          "observed": null,
+          "predicted": null,
+          "upper": 0.6
+        },
+        {
+          "lower": 0.6,
+          "n": 45,
+          "observed": 0.8,
+          "predicted": 0.7179089853922223,
+          "upper": 0.8
+        },
+        {
+          "lower": 0.8,
+          "n": 26,
+          "observed": 0.9615384615384616,
+          "predicted": 0.8509265504118078,
+          "upper": 1
+        }
+      ],
+      "country_cluster_bootstrap_95pct_delta_brier_model_minus_global_markov": [
+        -0.03965111093111225,
+        -0.01219934225892796
+      ],
+      "country_years": 71,
+      "delta_brier_model_minus_global_markov": -0.026161750276037232,
+      "mean_probabilities": {
+        "p_baseline_global_5y": 0.17103640170940845,
+        "p_global_markov": 0.7038906359688732,
+        "p_model": 0.7666196430050282
+      },
+      "observed_rate": 0.8591549295774648,
+      "positive_threshold_outcomes": 61,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.5944706299697614,
+          "logloss": 1.5434388752535262
+        },
+        "p_global_markov": {
+          "brier": 0.14507855707469983,
+          "logloss": 0.47300190233150397
+        },
+        "p_model": {
+          "brier": 0.1189168067986626,
+          "logloss": 0.399164273449079
+        }
+      }
+    },
+    "BELOW_25_AT_ORIGIN": {
+      "brier_skill_model_vs_global_markov": 0.10165501652151265,
+      "calibration_bins": [
+        {
+          "lower": 0,
+          "n": 227,
+          "observed": 0.004405286343612335,
+          "predicted": 0.021268660637920708,
+          "upper": 0.05
+        },
+        {
+          "lower": 0.05,
+          "n": 69,
+          "observed": 0.057971014492753624,
+          "predicted": 0.06625466593178261,
+          "upper": 0.1
+        },
+        {
+          "lower": 0.1,
+          "n": 20,
+          "observed": 0.05,
+          "predicted": 0.1421937506278,
+          "upper": 0.2
+        },
+        {
+          "lower": 0.2,
+          "n": 5,
+          "observed": 0.4,
+          "predicted": 0.25130906511859996,
+          "upper": 0.4
+        },
+        {
+          "lower": 0.4,
+          "n": 0,
+          "observed": null,
+          "predicted": null,
+          "upper": 0.6
+        },
+        {
+          "lower": 0.6,
+          "n": 0,
+          "observed": null,
+          "predicted": null,
+          "upper": 0.8
+        },
+        {
+          "lower": 0.8,
+          "n": 0,
+          "observed": null,
+          "predicted": null,
+          "upper": 1
+        }
+      ],
+      "country_cluster_bootstrap_95pct_delta_brier_model_minus_global_markov": [
+        -0.0074009121930119414,
+        0.000684539310068031
+      ],
+      "country_years": 321,
+      "delta_brier_model_minus_global_markov": -0.0025627515554576645,
+      "mean_probabilities": {
+        "p_baseline_global_5y": 0.17108894683723364,
+        "p_global_markov": 0.055077154385691586,
+        "p_model": 0.042056007016355146
+      },
+      "observed_rate": 0.024922118380062305,
+      "positive_threshold_outcomes": 8,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.04566725941472705,
+          "logloss": 0.226970613742865
+        },
+        "p_global_markov": {
+          "brier": 0.025210281235017312,
+          "logloss": 0.12748893747625176
+        },
+        "p_model": {
+          "brier": 0.022647529679559648,
+          "logloss": 0.1002593462099911
+        }
+      }
+    }
+  },
+  "ex_post_status": "Not historically issued. Source editions were acquired during 2026. Vintage dated 23.1/24.1 describes data through origin year but was published after the corresponding year's end; two calendar transition steps are NOT two years of verified prospective notice.",
+  "false_interpretation_prohibited": "Origin 0 to target 1 is threshold entry, not necessarily conflict onset, war initiation, or civilians killed by governments.",
+  "first_historical_release_timestamps_verified": false,
+  "observation_horizon_calendar_steps": 2,
+  "origin_definition": "1 if sb_total_deaths_best >=25 in source cutoff year",
+  "original_2027_forecast_unchanged": true,
+  "pooled_positive": 69,
+  "pooled_total": 392,
+  "schema": "idealab.psico.geo2027_origin_state_skill_diagnostic.v1",
+  "source": "UCDP OrganizedViolenceCY",
+  "source_editions": {
+    "23.1": {
+      "country_year_unique": true,
+      "format": "XLSX",
+      "last_year": 2022,
+      "rows": 6544,
+      "sha256": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+      "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy_v23_1.xlsx",
+      "years": 2022
+    },
+    "24.1": {
+      "country_year_unique": true,
+      "format": "CSV_ZIP",
+      "last_year": 2023,
+      "rows": 6740,
+      "sha256": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+      "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-241-csv.zip",
+      "years": 2023
+    },
+    "25.1": {
+      "country_year_unique": true,
+      "format": "CSV_ZIP",
+      "last_year": 2024,
+      "rows": 6936,
+      "sha256": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+      "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-251-csv.zip",
+      "years": 2024
+    },
+    "26.1": {
+      "country_year_unique": true,
+      "format": "CSV_ZIP",
+      "last_year": 2025,
+      "rows": 7132,
+      "sha256": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34",
+      "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-261-csv.zip",
+      "years": 2025
+    }
+  },
+  "study_type": "POST_HOC_PERSISTENCE_VS_THRESHOLD_ENTRY_ARCHIVED_COUNTRY_VINTAGES",
+  "target_definition": "1 if sb_total_deaths_best >=25 in target year",
+  "target_years": [
+    2024,
+    2025
+  ],
+  "true_issued_prospective_forecasts_evaluated": 0,
+  "uncertainty_limits": "Only two target years. Country bootstrap cannot estimate global year shocks; per-year subgroup skill may differ and negative results must not be concealed."
+}
