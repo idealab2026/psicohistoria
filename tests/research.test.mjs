@@ -438,6 +438,8 @@ test("GEO-2027 source-separated historical holdouts use real archived versions w
  assert.deepEqual(report.sources["23.1"].last_year,2022);
  assert.equal(report.sources["23.1"].format,"XLSX");
  assert.equal(report.country_years,r.sample_size);
+ assert.equal(r.model_calibration_bins.reduce((n,x)=>n+x.n,0),392);
+ assert.ok(r.model_bin_ece>0.03&&r.model_bin_ece<0.04);
  assert.equal(report.positives,r.events);
  assert.equal(report.metrics.p_model.brier,r.model_brier);
  assert.equal(report.metrics.p_global_markov.brier,r.global_markov_brier);
@@ -455,6 +457,7 @@ test("GEO-2027 source-separated historical holdouts use real archived versions w
  assert.match(source,/function renderArchivalCrossRelease/);
  assert.match(source,/reconstrucción ex post/i);
  assert.match(source,/ediciones oficiales diferentes/i);
+ assert.match(source,/Calibración retrospectiva entre ediciones/);
 });
 
 test("historical release and score integrity cannot be fabricated or relabeled prospective",()=>{
@@ -473,4 +476,7 @@ test("historical release and score integrity cannot be fabricated or relabeled p
  d=structuredClone(registry);
  d.historical_cross_release_statebased.historical_revisions[0].label_flips=0;
  assert.throws(()=>verifyResearch(d),/Archival cross-release year coverage/);
+ d=structuredClone(registry);
+ d.historical_cross_release_statebased.model_calibration_bins[0].n=0;
+ assert.throws(()=>verifyResearch(d),/Cross-edition calibration/);
 });
