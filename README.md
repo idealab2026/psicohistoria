@@ -4,6 +4,22 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO-2027 · Backtest retrospectivo del modelo emitido (10-11-2026)
+
+Se ha evaluado **exactamente el modelo y los baselines fijados para GEO-2027**, sin alterar el JSON de 196 pronósticos ni sus parámetros: Markov por país con prior 20, Laplace 1 y horizonte de dos años; referencias Markov global y frecuencia global de los cinco años anteriores al origen.
+
+El motor `scripts/backtest_statebased_2027_spec.py` genera un *rolling-origin* de **14 años objetivo, 2012–2025**, fijando el entrenamiento en cada año objetivo menos dos. La fuente es la única edición oficial UCDP OrganizedViolenceCY 26.1 (SHA-256 **`66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34`**), por lo que su **historial está revisado retrospectivamente en 2026**: no es un estudio *point-in-time* verificado ni evidencia de predicciones emitidas antes de cada año.
+
+| Modelo | Brier (menor es mejor) | Log-loss (menor es mejor) |
+|---|---:|---:|
+| Markov por país (idéntica fórmula a GEO-2027) | **0,04502180** | **0,17294718** |
+| Markov global | 0,05151912 | 0,20554572 |
+| Frecuencia global de los últimos cinco años | 0,13828517 | 0,44938370 |
+
+Resultados: **2.742** observaciones país-año, **454** observaciones que superaron el umbral de 25 fallecimientos; **12,61 %** de reducción relativa de Brier respecto al Markov global y **67,44 %** respecto a la frecuencia global. El contraste por bootstrap agrupado en país (2.000 réplicas) da un intervalo exploratorio para la diferencia Brier modelo menos Markov global de **[−0,00932, −0,00379]**. La agrupación por país no captura choques comunes entre países ni toda la dependencia derivada de horizontes solapados; no se utiliza para reclamar significación confirmatoria. El error absoluto de calibración por los grupos fijados es aproximadamente **3,20 pp** (modelo) y **4,81 pp** (Markov global), dependiente de los intervalos de agrupación.
+
+El estudio completo incluye los 14 años individuales, intervalos, probabilidades medias frente a tasas observadas, ausencia de etiquetas interpretadas como cero y pruebas contra fuga de información posterior al origen. Archivo agregado `data/forecast-2027-historical-backtest.json`, resumen en `data/research.json`, tests en `scripts/test_backtest_statebased_2027_spec.py`. **No hay datos de resultado de 2027 y no se modifican las 196 predicciones publicadas**. La evaluación verdaderamente prospectiva sigue pendiente de la primera edición oficial completa posterior a 2027.
+
 ## GEO-2027 · Auditoría independiente de reproducibilidad (10-11-2026)
 
 Un segundo cálculo independiente ha reconstruido **las 196 probabilidades originales** utilizando únicamente el ZIP oficial **UCDP OrganizedViolenceCY 26.1** con SHA-256 fijo. El job ejecuta dos comprobaciones complementarias: (i) regenera el fichero de emisión **byte por byte** con el código preregistrado, y (ii) implementa las ecuaciones Markov de forma separada y compara cada probabilidad por país con la ya publicada. El fichero original no se reescribe.
