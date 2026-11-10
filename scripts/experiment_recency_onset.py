@@ -37,7 +37,7 @@ def verified_sources(fetcher=fetch):
 
 def frozen_probabilities(source, cutoff, universe, windows=CANDIDATE_WINDOWS):
     """Fit every candidate exclusively from historical information <=cutoff."""
-    if tuple(windows)!=CANDIDATE_WINDOWS or not isinstance(cutoff,int) or cutoff<TRAIN_START+20:
+    if tuple(windows)!=CANDIDATE_WINDOWS or not isinstance(cutoff,int) or cutoff<TRAIN_START+4:
         raise ValueError("Cannot change exploratory fixed grid or origin")
     history=[(year,code,y) for (year,code),y in source.items()
              if TRAIN_START<=year<=cutoff and code in universe]
@@ -49,7 +49,7 @@ def frozen_probabilities(source, cutoff, universe, windows=CANDIDATE_WINDOWS):
     recent={}
     for w in windows:
         subset=[r for r in history if r[0]>cutoff-w]
-        if not subset or min(r[0] for r in subset)!=cutoff-w+1:
+        if not subset or min(r[0] for r in subset)!=max(TRAIN_START,cutoff-w+1):
             raise ValueError("Window does not cover required calendar years")
         recent[w]=global_p(subset)
     by_country=defaultdict(lambda:[0,0])
