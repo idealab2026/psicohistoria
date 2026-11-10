@@ -789,6 +789,45 @@ export function verifyResearch(data) {
          a.model_ap>0&&a.model_roc_auc>0;
      }))
     throw Error("UCDP PRIO activity model failed to preserve missed onset2 top20 alerts");
+  const risk=data.onset2_country_riskset_codebook;
+  if(!risk ||
+     risk.id!=="EMP-ONSET2-RISKSET-231-251-20261110"||
+     risk.status!=="POST_HOC_CODEBOOK_SEMANTIC_RISKSET_AUDIT_NOT_MODEL_SELECTION"||
+     risk.report_path!=="data/onset2-country-riskset-audit.json"||
+     risk.codebook!=="https://ucdp.uu.se/downloads/onset/ucdp-codebook-onset-251.pdf"||
+     risk.dataset!=="UCDP_INTRASTATE_COUNTRY_LEVEL_ONSET_VERSION_2"||
+     risk.multiple_onset_distinct!=="UCDP_INTRASTATE_COUNTRY_LEVEL_MULTIPLE_ONSET_VERSION_3"||
+     risk.source23_onset_hash!=="e2cadfa7a87b3949f8c638c27381fbb1b44fb076ccb00570782252d0935a2289"||
+     risk.source25_onset_hash!=="e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a"||
+     risk.source23_acd_hash!=="8fe95d8a5780cba1d312f9673ffd9e93b90c91bb26e348393a583853a892b718"||
+     risk.source25_acd_hash!=="b49f7e80510d8a5779a52d872aef5b26456b3f5cbdd3ec32031339488e81813f"||
+     risk.historic_rolls!==14||risk.historic_positives_in_known_ineligible!==0||
+     risk.future_year_eligibility_never_assumed_known!==true||
+     risk.revised_source_used_to_filter_training!==false||
+     risk.codebook_semantics_corrected!==true||
+     risk.no_new_forecasts_issued!==true||
+     risk.prospective_2027_forecast_unchanged!==true||
+     risk.prospective_2027_results_resolved!==0||
+     !risk.method_note?.includes("Country Level Multiple Onset")||
+     !risk.method_note?.includes("NO prueban habilidad condicional")||
+     !acd.interpretation?.includes("CORRECCIÓN UCDP"))
+    throw Error("Risk-set eligibility cannot be confused with multiple-onset or look-ahead");
+  const riskExpected=[
+    [2023,2022,196,1,160,36,0,0,159,1],
+    [2024,2022,196,1,0,34,162,0,159,1]
+  ];
+  if(!Array.isArray(risk.assessed_years)||risk.assessed_years.length!==2||
+    !riskExpected.every(([target,origin,total,outcomes,eligible,ineligible,unknown,illegal,realized,realizedEvents],i)=>{
+      const y=risk.assessed_years[i];
+      return y?.target===target&&y.origin===origin&&
+       y.total===total&&y.outcomes===outcomes&&
+       y.known_eligible===eligible&&y.known_ineligible===ineligible&&
+       y.unknown_intermediate===unknown&&
+       y.positives_in_known_ineligible===illegal&&
+       y.later_eligible_diagnostic_only===realized&&
+       y.later_eligible_onsets_diagnostic_only===realizedEvents;
+    }))
+    throw Error("Verified country-level onset2 known and contingent eligibility counts altered");
   return true;
 }
 export function verifyIssuedForecast2027(document, manifest){
