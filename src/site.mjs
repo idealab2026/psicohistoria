@@ -200,7 +200,7 @@ function renderArchivalCrossRelease(){
  r.historical_revisions.map(x=>safe(x.label_flips)+' cambios entre '+safe(x.origin)+' y '+safe(x.assessment)).join(' y ')+
  '. Las probabilidades se ajustaron con la versión antigua, sin incorporar esas revisiones futuras.</p>','soft')+
  box('<h3>Calibración retrospectiva entre ediciones</h3>'+
- '<div class="table-wrap"><table><thead><tr><th>Probabilidad emitida en simulación</th><th>Países-año</th><th>Predicción media</th><th>Frecuencia observada</th></tr></thead><tbody>'+
+ '<div class="table-wrap"><table><thead><tr><th>Probabilidad estimada en retrospectiva</th><th>Países-año</th><th>Predicción media</th><th>Frecuencia observada</th></tr></thead><tbody>'+
  r.model_calibration_bins.map(x=>'<tr><td>'+pct(x.lower)+'–'+pct(x.upper)+'</td><td>'+safe(x.n)+'</td><td>'+(x.predicted===null?'—':pct(x.predicted))+'</td><td>'+(x.observed===null?'—':pct(x.observed))+'</td></tr>').join("")+
  '</tbody></table></div>'+
  '<p>Error de calibración descriptivo por bandas: '+pct(r.model_bin_ece)+'. Algunas bandas contienen muy pocos países-año, por lo que no debe interpretarse como calibración prospectiva certificada.</p>','soft')+
