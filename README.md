@@ -4,6 +4,29 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## Q-GEO-01 · Inicio real de conflictos (`onset2`), separado de persistencia (10-11-2026)
+
+**Nuevo resultado negativo con unidad homogénea:** hemos utilizado exclusivamente ediciones originales **UCDP Intrastate Country Level Onset 23.1 y 25.1**, con URL y SHA-256 comprobados, sin mezclar el archivo 19.1 que tiene 47 país-año duplicados y posibles divergencias de unidad. La edición 23.1 proporciona entrenamiento 2000–2022 y 25.1 resultados de los años 2023 y 2024. La edición 23.1 no estuvo disponible al inicio de 2022: los cortes anuales no equivalen a años completos de preaviso operativo.
+
+**392 país-año, dos positivos `onset2`** (uno en 2023 y otro en 2024). El resultado mide *inicio/reinicio* de conflicto armado según UCDP; es radicalmente distinto de la variable binaria de 25 muertes por violencia organizada de base estatal del modelo GEO-2027.
+
+| Estimador | Brier ↓ | Log-loss ↓ |
+|---|---:|---:|
+| Tasa empírica por país, regularización 20 | 0,00543370 | 0,03769405 |
+| Tasa global histórica | 0,00520104 | 0,03734212 |
+| Tasa global 2018–2022 | 0,00514221 | **0,03532320** |
+| Pronosticar ausencia de inicios | **0,00510204** | No definido para eventos positivos |
+
+El estimador por país pierde en Brier frente a todas las referencias; su skill relativo al global es **−4,47 %**. El contraste es desfavorable incluso sin utilizar el problemático archivo 19.1. Intervalo exploratorio de diferencia Brier modelo − global, bootstrap por país 2000 réplicas: **[+0,0000081,+0,0004637]**; los shocks compartidos entre países no están representados y solo hay dos eventos.
+
+**Ordenación muy limitada:** 2023 tiene un solo positivo, average precision **0,51 %**, ROC-AUC **0,359**; 2024 tiene uno, average precision **1,92 %**, ROC-AUC **0,826**. En ninguno de los dos años el evento aparece entre los **20 primeros países** del modelo. No basta para demostrar que ningún modelo sea capaz de anticipar guerras; sí refuta que el estimador ensayado ya ofrezca utilidad validada.
+
+**Revisiones históricas:** al comparar 23.1 y 25.1, las ediciones comparten 12.161 país-año hasta 2022, con **dos cambios `onset2`** (2018: 0→1; 2021: 1→0), reportados por separado. No se utilizaron las revisiones de 25.1 al ajustar el estimador.
+
+Todos los resultados se reproducen en `scripts/evaluate_homogeneous_onset2.py` y `data/onset2-231-251-homogeneous.json`; pruebas `scripts/test_evaluate_homogeneous_onset2.py`, auditoría de privacidad, contrato de integridad `src/research.mjs` y vista **Investigación → Evidencia**. Se fuerza un nuevo job de verificación de UCDP Onset antes de desplegar la web.
+
+**Alcance:** reconstrucción retrospectiva efectuada en 2026, sin emisiones prospectivas anteriores, sin fechas independientemente notariadas y con solo dos casos positivos. **No modifica las 196 probabilidades de GEO-2027 ni resuelve resultados de 2027.**
+
 ## GEO-2027 · Nuevo contraste sobre entradas, calibración y ranking (10-11-2026)
 
 El modelo GEO-2027 había reducido el Brier agregado principalmente por **persistencia de estados violentos**. Para no confundir eso con detección de nuevas entradas, se ha ejecutado otro análisis —**exploratorio y especificado después de observar los resultados históricos**— solo sobre los países que estaban por debajo del umbral de 25 muertes por violencia organizada *state-based* en los años origen 2022 y 2023.
