@@ -203,10 +203,24 @@ def inspect(fetcher=fetch):
         try:
             raw=fetcher(url,MAX_CSV)
             header=next(csv.reader(io.StringIO(raw.decode("utf-8-sig"))),[])
+            legacy_rows=list(csv.DictReader(io.StringIO(raw.decode("utf-8-sig"))))
+            frequency={}
+            mixed={}
+            for row in legacy_rows:
+                key=(row.get("year",""),row.get("gwno_a",""))
+                frequency[key]=frequency.get(key,0)+1
+                mixed.setdefault(key,set()).add(row.get("onset2",""))
+            duplicates=[key for key,count in frequency.items() if count>1]
             report["legacy_19_1_download"]={
                 "status":"RETRIEVED_UNPINNED",
                 "url":url,"sha256":digest(raw),"length":len(raw),
                 "headers":header[:40],
+                "record_count":len(legacy_rows),
+                "distinct_country_years":len(frequency),
+                "repeated_country_year_keys":len(duplicates),
+                "conflicting_onset2_within_key":sum(len(mixed[key])>1 for key in duplicates),
+                "blank_gwno_a_rows":sum(not row.get("gwno_a","").strip() for row in legacy_rows),
+                "duplicate_key_examples":duplicates[:5],
                 "preview_lines_count":min(10,len(raw.splitlines()))
             }
         except HTTPError as error:
