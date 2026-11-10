@@ -1,0 +1,1794 @@
+{
+  "actual_2027_results_resolved": 0,
+  "caution": "This study compares several hypothesis models with previously seen 2023/24 outcomes; it cannot claim independent testing or any certified skill. UCDP onset1 is an event marker, not the full underlying active-conflict risk-set definition. Country-onset2 labels are not state-based threshold crossings. Source 23.1 retrospective rolling windows have revised historical information. Country-bootstrap misses common-year shocks. The original 196 issued 2027 probabilities are untouched.",
+  "country_risks_published": false,
+  "external": {
+    "assessment_release": "25.1",
+    "country_bootstrap_delta_vs_country_eb": [
+      -1.7035699177024188e-05,
+      1.6635022799375386e-07
+    ],
+    "country_bootstrap_delta_vs_global_h": [
+      1.0744573559557702e-06,
+      0.00045514563140717
+    ],
+    "events": 2,
+    "folds": [
+      {
+        "cutoff": 2022,
+        "fit": {
+          "cutoff": 2022,
+          "global_rate": 0.016328434802892467,
+          "global_recent5_rate": 0.013238289205702648,
+          "historical_origin_target_pairs": 4285,
+          "horizon": 1,
+          "horizon_2_feature_not_from_intermediate_year": true,
+          "lag1_0_events": 69,
+          "lag1_0_exposure": 4189,
+          "lag1_1_events": 0,
+          "lag1_1_exposure": 96,
+          "max_fitted_outcome_year": 2022
+        },
+        "horizon": 1,
+        "origin_countries": 196,
+        "positive_onset2": 1,
+        "ranking_country_eb": {
+          "auc_country_model": 0.358974358974359,
+          "average_precision_country_model": 0.00510204081632653,
+          "base_rate": 0.00510204081632653,
+          "events": 1,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "ties_at_k": true
+            }
+          }
+        },
+        "ranking_lag1_country": {
+          "auc_country_model": 0.358974358974359,
+          "average_precision_country_model": 0.00510204081632653,
+          "base_rate": 0.00510204081632653,
+          "events": 1,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "ties_at_k": true
+            }
+          }
+        },
+        "resolved": 196,
+        "scores": {
+          "country_eb": {
+            "brier": 0.005552819476351315,
+            "logloss": 0.0413427383405587
+          },
+          "global_h": {
+            "brier": 0.0052020419177766725,
+            "logloss": 0.037373335360076455
+          },
+          "global_recent5": {
+            "brier": 0.005142208533688694,
+            "logloss": 0.035323202863848546
+          },
+          "lag1_country": {
+            "brier": 0.00554561051884837,
+            "logloss": 0.04123160536185558
+          },
+          "lag1_global": {
+            "brier": 0.005199889046988314,
+            "logloss": 0.037191799083927175
+          }
+        },
+        "unresolved": 0,
+        "year": 2023
+      },
+      {
+        "cutoff": 2022,
+        "fit": {
+          "cutoff": 2022,
+          "global_rate": 0.016132974822781716,
+          "global_recent5_rate": 0.013238289205702648,
+          "historical_origin_target_pairs": 4089,
+          "horizon": 2,
+          "horizon_2_feature_not_from_intermediate_year": true,
+          "lag1_0_events": 65,
+          "lag1_0_exposure": 3995,
+          "lag1_1_events": 0,
+          "lag1_1_exposure": 94,
+          "max_fitted_outcome_year": 2022
+        },
+        "horizon": 2,
+        "origin_countries": 196,
+        "positive_onset2": 1,
+        "ranking_country_eb": {
+          "auc_country_model": 0.8256410256410256,
+          "average_precision_country_model": 0.019230769230769232,
+          "base_rate": 0.00510204081632653,
+          "events": 1,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "ties_at_k": true
+            }
+          }
+        },
+        "ranking_lag1_country": {
+          "auc_country_model": 0.8333333333333334,
+          "average_precision_country_model": 0.02040816326530612,
+          "base_rate": 0.00510204081632653,
+          "events": 1,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "ties_at_k": true
+            }
+          }
+        },
+        "resolved": 196,
+        "scores": {
+          "country_eb": {
+            "brier": 0.005313487255105095,
+            "logloss": 0.033992902433921515
+          },
+          "global_h": {
+            "brier": 0.005197691500889838,
+            "logloss": 0.03723710689217483
+          },
+          "global_recent5": {
+            "brier": 0.005142208533688694,
+            "logloss": 0.035323202863848574
+          },
+          "lag1_country": {
+            "brier": 0.005306353579930783,
+            "logloss": 0.03391492133253929
+          },
+          "lag1_global": {
+            "brier": 0.005195486985614383,
+            "logloss": 0.0370553648789341
+          }
+        },
+        "unresolved": 0,
+        "year": 2024
+      }
+    ],
+    "n": 392,
+    "origin_release": "23.1",
+    "scores": {
+      "country_eb": {
+        "brier": 0.005433153365728204,
+        "logloss": 0.037667820387240446
+      },
+      "global_h": {
+        "brier": 0.005199866709333255,
+        "logloss": 0.0373052211261253
+      },
+      "global_recent5": {
+        "brier": 0.005142208533688694,
+        "logloss": 0.03532320286384879
+      },
+      "lag1_country": {
+        "brier": 0.005425982049389577,
+        "logloss": 0.037573263347197024
+      },
+      "lag1_global": {
+        "brier": 0.005197688016301349,
+        "logloss": 0.03712358198143064
+      }
+    }
+  },
+  "feature_definition": "Observed onset1 flag in origin-year country row only; never target-year or intermediate-year onset1",
+  "historical_predictions_were_issued": false,
+  "hypotheses_were_designated_after_previous_holdout_inspection": true,
+  "independently_timestamped_original_release": false,
+  "internal": {
+    "country_bootstrap_delta_vs_country_eb": [
+      -2.3462166080975527e-05,
+      -8.801123248814191e-06
+    ],
+    "country_bootstrap_delta_vs_global_h": [
+      -0.00027423951191351295,
+      0.00022235066469068063
+    ],
+    "events": 37,
+    "folds": [
+      {
+        "cutoff": 2014,
+        "fit": {
+          "cutoff": 2014,
+          "global_rate": 0.017653549098933432,
+          "global_recent5_rate": 0.017346938775510204,
+          "historical_origin_target_pairs": 2717,
+          "horizon": 1,
+          "horizon_2_feature_not_from_intermediate_year": true,
+          "lag1_0_events": 47,
+          "lag1_0_exposure": 2659,
+          "lag1_1_events": 0,
+          "lag1_1_exposure": 58,
+          "max_fitted_outcome_year": 2014
+        },
+        "horizon": 1,
+        "origin_countries": 196,
+        "positive_onset2": 4,
+        "ranking_country_eb": {
+          "auc_country_model": 0.51171875,
+          "average_precision_country_model": 0.021556122448979594,
+          "base_rate": 0.02040816326530612,
+          "events": 4,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.20408163265306123,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 1,
+              "k": 20,
+              "precision": 0.05,
+              "random_expected_hits": 0.40816326530612246,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "ties_at_k": true
+            }
+          }
+        },
+        "ranking_lag1_country": {
+          "auc_country_model": 0.5162760416666666,
+          "average_precision_country_model": 0.02232905982905983,
+          "base_rate": 0.02040816326530612,
+          "events": 4,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.20408163265306123,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 1,
+              "k": 20,
+              "precision": 0.05,
+              "random_expected_hits": 0.40816326530612246,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "ties_at_k": true
+            }
+          }
+        },
+        "resolved": 196,
+        "scores": {
+          "country_eb": {
+            "brier": 0.020271139290092423,
+            "logloss": 0.10438318223010014
+          },
+          "global_h": {
+            "brier": 0.019999258036648312,
+            "logloss": 0.09983178666949168
+          },
+          "global_recent5": {
+            "brier": 0.02000104123281966,
+            "logloss": 0.09988365104489857
+          },
+          "lag1_country": {
+            "brier": 0.020252817720086674,
+            "logloss": 0.10413533456366342
+          },
+          "lag1_global": {
+            "brier": 0.019990199848586944,
+            "logloss": 0.09942124398083606
+          }
+        },
+        "unresolved": 0,
+        "year": 2015
+      },
+      {
+        "cutoff": 2014,
+        "fit": {
+          "cutoff": 2014,
+          "global_rate": 0.01743955608402695,
+          "global_recent5_rate": 0.017364657814096015,
+          "historical_origin_target_pairs": 2521,
+          "horizon": 2,
+          "horizon_2_feature_not_from_intermediate_year": true,
+          "lag1_0_events": 43,
+          "lag1_0_exposure": 2468,
+          "lag1_1_events": 0,
+          "lag1_1_exposure": 53,
+          "max_fitted_outcome_year": 2014
+        },
+        "horizon": 2,
+        "origin_countries": 196,
+        "positive_onset2": 6,
+        "ranking_country_eb": {
+          "auc_country_model": 0.8035087719298246,
+          "average_precision_country_model": 0.10926870748299321,
+          "base_rate": 0.030612244897959183,
+          "events": 6,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.30612244897959184,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 1,
+              "k": 20,
+              "precision": 0.05,
+              "random_expected_hits": 0.6122448979591837,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.15306122448979592,
+              "ties_at_k": true
+            }
+          }
+        },
+        "ranking_lag1_country": {
+          "auc_country_model": 0.8127192982456141,
+          "average_precision_country_model": 0.12086894586894588,
+          "base_rate": 0.030612244897959183,
+          "events": 6,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.30612244897959184,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 2,
+              "k": 20,
+              "precision": 0.1,
+              "random_expected_hits": 0.6122448979591837,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.15306122448979592,
+              "ties_at_k": true
+            }
+          }
+        },
+        "resolved": 196,
+        "scores": {
+          "country_eb": {
+            "brier": 0.029106349782997327,
+            "logloss": 0.1231885733308987
+          },
+          "global_h": {
+            "brier": 0.029848655090855256,
+            "logloss": 0.1410042604257729
+          },
+          "global_recent5": {
+            "brier": 0.029850633923811095,
+            "logloss": 0.14106212369978868
+          },
+          "lag1_country": {
+            "brier": 0.02908904223851075,
+            "logloss": 0.12295977746590524
+          },
+          "lag1_global": {
+            "brier": 0.02984049365413402,
+            "logloss": 0.1406254398910934
+          }
+        },
+        "unresolved": 0,
+        "year": 2016
+      },
+      {
+        "cutoff": 2015,
+        "fit": {
+          "cutoff": 2015,
+          "global_rate": 0.01783876500857633,
+          "global_recent5_rate": 0.019367991845056064,
+          "historical_origin_target_pairs": 2913,
+          "horizon": 1,
+          "horizon_2_feature_not_from_intermediate_year": true,
+          "lag1_0_events": 51,
+          "lag1_0_exposure": 2849,
+          "lag1_1_events": 0,
+          "lag1_1_exposure": 64,
+          "max_fitted_outcome_year": 2015
+        },
+        "horizon": 1,
+        "origin_countries": 196,
+        "positive_onset2": 6,
+        "ranking_country_eb": {
+          "auc_country_model": 0.7934210526315789,
+          "average_precision_country_model": 0.10200126562252809,
+          "base_rate": 0.030612244897959183,
+          "events": 6,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.30612244897959184,
+              "ties_at_k": false
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.6122448979591837,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.15306122448979592,
+              "ties_at_k": true
+            }
+          }
+        },
+        "ranking_lag1_country": {
+          "auc_country_model": 0.8004385964912281,
+          "average_precision_country_model": 0.1092948717948718,
+          "base_rate": 0.030612244897959183,
+          "events": 6,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.30612244897959184,
+              "ties_at_k": false
+            },
+            "20": {
+              "hits": 1,
+              "k": 20,
+              "precision": 0.05,
+              "random_expected_hits": 0.6122448979591837,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.15306122448979592,
+              "ties_at_k": true
+            }
+          }
+        },
+        "resolved": 196,
+        "scores": {
+          "country_eb": {
+            "brier": 0.02916148685930974,
+            "logloss": 0.12411605695874883
+          },
+          "global_h": {
+            "brier": 0.02983829714875103,
+            "logloss": 0.14070535245739688
+          },
+          "global_recent5": {
+            "brier": 0.029801568586984274,
+            "logloss": 0.1396980743537161
+          },
+          "lag1_country": {
+            "brier": 0.02914747935717748,
+            "logloss": 0.12390887193913638
+          },
+          "lag1_global": {
+            "brier": 0.029829007625209417,
+            "logloss": 0.1403082649948113
+          }
+        },
+        "unresolved": 0,
+        "year": 2016
+      },
+      {
+        "cutoff": 2015,
+        "fit": {
+          "cutoff": 2015,
+          "global_rate": 0.017653549098933432,
+          "global_recent5_rate": 0.019387755102040816,
+          "historical_origin_target_pairs": 2717,
+          "horizon": 2,
+          "horizon_2_feature_not_from_intermediate_year": true,
+          "lag1_0_events": 47,
+          "lag1_0_exposure": 2659,
+          "lag1_1_events": 0,
+          "lag1_1_exposure": 58,
+          "max_fitted_outcome_year": 2015
+        },
+        "horizon": 2,
+        "origin_countries": 196,
+        "positive_onset2": 0,
+        "ranking_country_eb": {
+          "auc_country_model": null,
+          "average_precision_country_model": null,
+          "base_rate": 0.0,
+          "events": 0,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "ties_at_k": false
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "ties_at_k": true
+            }
+          }
+        },
+        "ranking_lag1_country": {
+          "auc_country_model": null,
+          "average_precision_country_model": null,
+          "base_rate": 0.0,
+          "events": 0,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "ties_at_k": false
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "ties_at_k": true
+            }
+          }
+        },
+        "resolved": 196,
+        "scores": {
+          "country_eb": {
+            "brier": 0.0005695773433917709,
+            "logloss": 0.0178670505313641
+          },
+          "global_h": {
+            "brier": 0.0003116477957884534,
+            "logloss": 0.017811231522509758
+          },
+          "global_recent5": {
+            "brier": 0.0003758850478967098,
+            "logloss": 0.01957816269432519
+          },
+          "lag1_country": {
+            "brier": 0.0005573612915329777,
+            "logloss": 0.017686650378024124
+          },
+          "lag1_global": {
+            "brier": 0.0003049812405848565,
+            "logloss": 0.017494524854952374
+          }
+        },
+        "unresolved": 0,
+        "year": 2017
+      },
+      {
+        "cutoff": 2016,
+        "fit": {
+          "cutoff": 2016,
+          "global_rate": 0.01864352298296368,
+          "global_recent5_rate": 0.020366598778004074,
+          "historical_origin_target_pairs": 3109,
+          "horizon": 1,
+          "horizon_2_feature_not_from_intermediate_year": true,
+          "lag1_0_events": 57,
+          "lag1_0_exposure": 3040,
+          "lag1_1_events": 0,
+          "lag1_1_exposure": 69,
+          "max_fitted_outcome_year": 2016
+        },
+        "horizon": 1,
+        "origin_countries": 196,
+        "positive_onset2": 0,
+        "ranking_country_eb": {
+          "auc_country_model": null,
+          "average_precision_country_model": null,
+          "base_rate": 0.0,
+          "events": 0,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "ties_at_k": true
+            }
+          }
+        },
+        "ranking_lag1_country": {
+          "auc_country_model": null,
+          "average_precision_country_model": null,
+          "base_rate": 0.0,
+          "events": 0,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "ties_at_k": true
+            }
+          }
+        },
+        "resolved": 196,
+        "scores": {
+          "country_eb": {
+            "brier": 0.0006338964519084481,
+            "logloss": 0.018786818690374445
+          },
+          "global_h": {
+            "brier": 0.00034758094921629487,
+            "logloss": 0.018819504162759213
+          },
+          "global_recent5": {
+            "brier": 0.000414798345784197,
+            "logloss": 0.020576857688759363
+          },
+          "lag1_country": {
+            "brier": 0.0006016577588133823,
+            "logloss": 0.018505939669120734
+          },
+          "lag1_global": {
+            "brier": 0.00033790440211537424,
+            "logloss": 0.01832611926548312
+          }
+        },
+        "unresolved": 0,
+        "year": 2017
+      },
+      {
+        "cutoff": 2016,
+        "fit": {
+          "cutoff": 2016,
+          "global_rate": 0.018524871355060035,
+          "global_recent5_rate": 0.020387359836901122,
+          "historical_origin_target_pairs": 2913,
+          "horizon": 2,
+          "horizon_2_feature_not_from_intermediate_year": true,
+          "lag1_0_events": 53,
+          "lag1_0_exposure": 2849,
+          "lag1_1_events": 0,
+          "lag1_1_exposure": 64,
+          "max_fitted_outcome_year": 2016
+        },
+        "horizon": 2,
+        "origin_countries": 196,
+        "positive_onset2": 3,
+        "ranking_country_eb": {
+          "auc_country_model": 0.37823834196891193,
+          "average_precision_country_model": 0.015306122448979591,
+          "base_rate": 0.015306122448979591,
+          "events": 3,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.15306122448979592,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.30612244897959184,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.07653061224489796,
+              "ties_at_k": true
+            }
+          }
+        },
+        "ranking_lag1_country": {
+          "auc_country_model": 0.37823834196891193,
+          "average_precision_country_model": 0.015306122448979591,
+          "base_rate": 0.015306122448979591,
+          "events": 3,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.15306122448979592,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.30612244897959184,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.07653061224489796,
+              "ties_at_k": true
+            }
+          }
+        },
+        "resolved": 196,
+        "scores": {
+          "country_eb": {
+            "brier": 0.015631102510856216,
+            "logloss": 0.08903383301569695
+          },
+          "global_h": {
+            "brier": 0.015082205409076826,
+            "logloss": 0.07946303093579614
+          },
+          "global_recent5": {
+            "brier": 0.015097664037948847,
+            "logloss": 0.07986706287185093
+          },
+          "lag1_country": {
+            "brier": 0.015597861992390815,
+            "logloss": 0.08868128922805373
+          },
+          "lag1_global": {
+            "brier": 0.01506938047037542,
+            "logloss": 0.07889089642959884
+          }
+        },
+        "unresolved": 0,
+        "year": 2018
+      },
+      {
+        "cutoff": 2017,
+        "fit": {
+          "cutoff": 2017,
+          "global_rate": 0.017538554581191412,
+          "global_recent5_rate": 0.018329938900203666,
+          "historical_origin_target_pairs": 3305,
+          "horizon": 1,
+          "horizon_2_feature_not_from_intermediate_year": true,
+          "lag1_0_events": 57,
+          "lag1_0_exposure": 3228,
+          "lag1_1_events": 0,
+          "lag1_1_exposure": 77,
+          "max_fitted_outcome_year": 2017
+        },
+        "horizon": 1,
+        "origin_countries": 196,
+        "positive_onset2": 3,
+        "ranking_country_eb": {
+          "auc_country_model": 0.37823834196891193,
+          "average_precision_country_model": 0.015306122448979591,
+          "base_rate": 0.015306122448979591,
+          "events": 3,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.15306122448979592,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.30612244897959184,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.07653061224489796,
+              "ties_at_k": true
+            }
+          }
+        },
+        "ranking_lag1_country": {
+          "auc_country_model": 0.37823834196891193,
+          "average_precision_country_model": 0.015306122448979591,
+          "base_rate": 0.015306122448979591,
+          "events": 3,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.15306122448979592,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.30612244897959184,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.07653061224489796,
+              "ties_at_k": true
+            }
+          }
+        },
+        "resolved": 196,
+        "scores": {
+          "country_eb": {
+            "brier": 0.015603486144991689,
+            "logloss": 0.08925522222643914
+          },
+          "global_h": {
+            "brier": 0.015076828817781364,
+            "logloss": 0.07931141494212135
+          },
+          "global_recent5": {
+            "brier": 0.01508098853048713,
+            "logloss": 0.0794293944079161
+          },
+          "lag1_country": {
+            "brier": 0.015592577786004161,
+            "logloss": 0.08909583377880288
+          },
+          "lag1_global": {
+            "brier": 0.015072800931668953,
+            "logloss": 0.0791099217548736
+          }
+        },
+        "unresolved": 0,
+        "year": 2018
+      },
+      {
+        "cutoff": 2017,
+        "fit": {
+          "cutoff": 2017,
+          "global_rate": 0.017357762777242044,
+          "global_recent5_rate": 0.018329938900203666,
+          "historical_origin_target_pairs": 3109,
+          "horizon": 2,
+          "horizon_2_feature_not_from_intermediate_year": true,
+          "lag1_0_events": 53,
+          "lag1_0_exposure": 3040,
+          "lag1_1_events": 0,
+          "lag1_1_exposure": 69,
+          "max_fitted_outcome_year": 2017
+        },
+        "horizon": 2,
+        "origin_countries": 196,
+        "positive_onset2": 3,
+        "ranking_country_eb": {
+          "auc_country_model": 0.7331606217616581,
+          "average_precision_country_model": 0.04406307977736549,
+          "base_rate": 0.015306122448979591,
+          "events": 3,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 1,
+              "k": 10,
+              "precision": 0.1,
+              "random_expected_hits": 0.15306122448979592,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 1,
+              "k": 20,
+              "precision": 0.05,
+              "random_expected_hits": 0.30612244897959184,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.07653061224489796,
+              "ties_at_k": true
+            }
+          }
+        },
+        "ranking_lag1_country": {
+          "auc_country_model": 0.7348877374784111,
+          "average_precision_country_model": 0.04478458049886621,
+          "base_rate": 0.015306122448979591,
+          "events": 3,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 1,
+              "k": 10,
+              "precision": 0.1,
+              "random_expected_hits": 0.15306122448979592,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 1,
+              "k": 20,
+              "precision": 0.05,
+              "random_expected_hits": 0.30612244897959184,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.07653061224489796,
+              "ties_at_k": true
+            }
+          }
+        },
+        "resolved": 196,
+        "scores": {
+          "country_eb": {
+            "brier": 0.014797489023390106,
+            "logloss": 0.0722329573873067
+          },
+          "global_h": {
+            "brier": 0.01507605429259299,
+            "logloss": 0.0792888271801678
+          },
+          "global_recent5": {
+            "brier": 0.01508098853048713,
+            "logloss": 0.07942939440791628
+          },
+          "lag1_country": {
+            "brier": 0.014786872397313328,
+            "logloss": 0.072127103748797
+          },
+          "lag1_global": {
+            "brier": 0.015071952522062717,
+            "logloss": 0.0790887358290527
+          }
+        },
+        "unresolved": 0,
+        "year": 2019
+      },
+      {
+        "cutoff": 2018,
+        "fit": {
+          "cutoff": 2018,
+          "global_rate": 0.01741364544675992,
+          "global_recent5_rate": 0.018329938900203666,
+          "historical_origin_target_pairs": 3501,
+          "horizon": 1,
+          "horizon_2_feature_not_from_intermediate_year": true,
+          "lag1_0_events": 60,
+          "lag1_0_exposure": 3421,
+          "lag1_1_events": 0,
+          "lag1_1_exposure": 80,
+          "max_fitted_outcome_year": 2018
+        },
+        "horizon": 1,
+        "origin_countries": 196,
+        "positive_onset2": 3,
+        "ranking_country_eb": {
+          "auc_country_model": 0.727979274611399,
+          "average_precision_country_model": 0.043095961788970905,
+          "base_rate": 0.015306122448979591,
+          "events": 3,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 1,
+              "k": 10,
+              "precision": 0.1,
+              "random_expected_hits": 0.15306122448979592,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 1,
+              "k": 20,
+              "precision": 0.05,
+              "random_expected_hits": 0.30612244897959184,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.07653061224489796,
+              "ties_at_k": true
+            }
+          }
+        },
+        "ranking_lag1_country": {
+          "auc_country_model": 0.7322970639032815,
+          "average_precision_country_model": 0.04444160490672119,
+          "base_rate": 0.015306122448979591,
+          "events": 3,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 1,
+              "k": 10,
+              "precision": 0.1,
+              "random_expected_hits": 0.15306122448979592,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 1,
+              "k": 20,
+              "precision": 0.05,
+              "random_expected_hits": 0.30612244897959184,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.07653061224489796,
+              "ties_at_k": true
+            }
+          }
+        },
+        "resolved": 196,
+        "scores": {
+          "country_eb": {
+            "brier": 0.01481303009866811,
+            "logloss": 0.07259005019180692
+          },
+          "global_h": {
+            "brier": 0.015076286717742606,
+            "logloss": 0.07929562978209666
+          },
+          "global_recent5": {
+            "brier": 0.01508098853048713,
+            "logloss": 0.07942939440791628
+          },
+          "lag1_country": {
+            "brier": 0.014803774011029154,
+            "logloss": 0.07241435526793491
+          },
+          "lag1_global": {
+            "brier": 0.015069289315532496,
+            "logloss": 0.07894897607491393
+          }
+        },
+        "unresolved": 0,
+        "year": 2019
+      },
+      {
+        "cutoff": 2018,
+        "fit": {
+          "cutoff": 2018,
+          "global_rate": 0.017236165709101903,
+          "global_recent5_rate": 0.018329938900203666,
+          "historical_origin_target_pairs": 3305,
+          "horizon": 2,
+          "horizon_2_feature_not_from_intermediate_year": true,
+          "lag1_0_events": 56,
+          "lag1_0_exposure": 3228,
+          "lag1_1_events": 0,
+          "lag1_1_exposure": 77,
+          "max_fitted_outcome_year": 2018
+        },
+        "horizon": 2,
+        "origin_countries": 196,
+        "positive_onset2": 2,
+        "ranking_country_eb": {
+          "auc_country_model": 0.6855670103092784,
+          "average_precision_country_model": 0.25510204081632654,
+          "base_rate": 0.01020408163265306,
+          "events": 2,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 1,
+              "k": 10,
+              "precision": 0.1,
+              "random_expected_hits": 0.10204081632653061,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 1,
+              "k": 20,
+              "precision": 0.05,
+              "random_expected_hits": 0.20408163265306123,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 1,
+              "k": 5,
+              "precision": 0.2,
+              "random_expected_hits": 0.05102040816326531,
+              "ties_at_k": true
+            }
+          }
+        },
+        "ranking_lag1_country": {
+          "auc_country_model": 0.6868556701030928,
+          "average_precision_country_model": 0.2551282051282051,
+          "base_rate": 0.01020408163265306,
+          "events": 2,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 1,
+              "k": 10,
+              "precision": 0.1,
+              "random_expected_hits": 0.10204081632653061,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 1,
+              "k": 20,
+              "precision": 0.05,
+              "random_expected_hits": 0.20408163265306123,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 1,
+              "k": 5,
+              "precision": 0.2,
+              "random_expected_hits": 0.05102040816326531,
+              "ties_at_k": true
+            }
+          }
+        },
+        "resolved": 196,
+        "scores": {
+          "country_eb": {
+            "brier": 0.009800813292692891,
+            "logloss": 0.05361696226146193
+          },
+          "global_h": {
+            "brier": 0.010149408557145459,
+            "logloss": 0.058645203040552735
+          },
+          "global_recent5": {
+            "brier": 0.010165987907019818,
+            "logloss": 0.05911960085325108
+          },
+          "lag1_country": {
+            "brier": 0.009792289128898521,
+            "logloss": 0.053453218518242474
+          },
+          "lag1_global": {
+            "brier": 0.010143632212614696,
+            "logloss": 0.058336045046794335
+          }
+        },
+        "unresolved": 0,
+        "year": 2020
+      },
+      {
+        "cutoff": 2019,
+        "fit": {
+          "cutoff": 2019,
+          "global_rate": 0.01730197350635307,
+          "global_recent5_rate": 0.017311608961303463,
+          "historical_origin_target_pairs": 3697,
+          "horizon": 1,
+          "horizon_2_feature_not_from_intermediate_year": true,
+          "lag1_0_events": 63,
+          "lag1_0_exposure": 3612,
+          "lag1_1_events": 0,
+          "lag1_1_exposure": 85,
+          "max_fitted_outcome_year": 2019
+        },
+        "horizon": 1,
+        "origin_countries": 196,
+        "positive_onset2": 2,
+        "ranking_country_eb": {
+          "auc_country_model": 0.6829896907216495,
+          "average_precision_country_model": 0.1717687074829932,
+          "base_rate": 0.01020408163265306,
+          "events": 2,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 1,
+              "k": 10,
+              "precision": 0.1,
+              "random_expected_hits": 0.10204081632653061,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 1,
+              "k": 20,
+              "precision": 0.05,
+              "random_expected_hits": 0.20408163265306123,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 1,
+              "k": 5,
+              "precision": 0.2,
+              "random_expected_hits": 0.05102040816326531,
+              "ties_at_k": true
+            }
+          }
+        },
+        "ranking_lag1_country": {
+          "auc_country_model": 0.6842783505154639,
+          "average_precision_country_model": 0.25510204081632654,
+          "base_rate": 0.01020408163265306,
+          "events": 2,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 1,
+              "k": 10,
+              "precision": 0.1,
+              "random_expected_hits": 0.10204081632653061,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 1,
+              "k": 20,
+              "precision": 0.05,
+              "random_expected_hits": 0.20408163265306123,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 1,
+              "k": 5,
+              "precision": 0.2,
+              "random_expected_hits": 0.05102040816326531,
+              "ties_at_k": true
+            }
+          }
+        },
+        "resolved": 196,
+        "scores": {
+          "country_eb": {
+            "brier": 0.009832723316337456,
+            "logloss": 0.05385459973673623
+          },
+          "global_h": {
+            "brier": 0.01015033841973795,
+            "logloss": 0.05867259887103794
+          },
+          "global_recent5": {
+            "brier": 0.010150475295414726,
+            "logloss": 0.05867662290612026
+          },
+          "lag1_country": {
+            "brier": 0.009815602148487656,
+            "logloss": 0.05368982858773956
+          },
+          "lag1_global": {
+            "brier": 0.010144849720841603,
+            "logloss": 0.05836637150265153
+          }
+        },
+        "unresolved": 0,
+        "year": 2020
+      },
+      {
+        "cutoff": 2019,
+        "fit": {
+          "cutoff": 2019,
+          "global_rate": 0.01712817584927205,
+          "global_recent5_rate": 0.017311608961303463,
+          "historical_origin_target_pairs": 3501,
+          "horizon": 2,
+          "horizon_2_feature_not_from_intermediate_year": true,
+          "lag1_0_events": 59,
+          "lag1_0_exposure": 3421,
+          "lag1_1_events": 0,
+          "lag1_1_exposure": 80,
+          "max_fitted_outcome_year": 2019
+        },
+        "horizon": 2,
+        "origin_countries": 196,
+        "positive_onset2": 1,
+        "ranking_country_eb": {
+          "auc_country_model": 0.8384615384615385,
+          "average_precision_country_model": 0.020833333333333332,
+          "base_rate": 0.00510204081632653,
+          "events": 1,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "ties_at_k": true
+            }
+          }
+        },
+        "ranking_lag1_country": {
+          "auc_country_model": 0.8435897435897436,
+          "average_precision_country_model": 0.021739130434782608,
+          "base_rate": 0.00510204081632653,
+          "events": 1,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "ties_at_k": true
+            }
+          }
+        },
+        "resolved": 196,
+        "scores": {
+          "country_eb": {
+            "brier": 0.005327054672790593,
+            "logloss": 0.03450567364908354
+          },
+          "global_h": {
+            "brier": 0.005220637919665708,
+            "logloss": 0.03793856955853667
+          },
+          "global_recent5": {
+            "brier": 0.005225083550121904,
+            "logloss": 0.0380699149608002
+          },
+          "lag1_country": {
+            "brier": 0.005310791514473528,
+            "logloss": 0.03437085841009283
+          },
+          "lag1_global": {
+            "brier": 0.00521619146674217,
+            "logloss": 0.03766643261420862
+          }
+        },
+        "unresolved": 0,
+        "year": 2021
+      },
+      {
+        "cutoff": 2020,
+        "fit": {
+          "cutoff": 2020,
+          "global_rate": 0.016944801026957636,
+          "global_recent5_rate": 0.015274949083503055,
+          "historical_origin_target_pairs": 3893,
+          "horizon": 1,
+          "horizon_2_feature_not_from_intermediate_year": true,
+          "lag1_0_events": 65,
+          "lag1_0_exposure": 3803,
+          "lag1_1_events": 0,
+          "lag1_1_exposure": 90,
+          "max_fitted_outcome_year": 2020
+        },
+        "horizon": 1,
+        "origin_countries": 196,
+        "positive_onset2": 1,
+        "ranking_country_eb": {
+          "auc_country_model": 0.8358974358974359,
+          "average_precision_country_model": 0.02040816326530612,
+          "base_rate": 0.00510204081632653,
+          "events": 1,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "ties_at_k": true
+            }
+          }
+        },
+        "ranking_lag1_country": {
+          "auc_country_model": 0.8384615384615385,
+          "average_precision_country_model": 0.020833333333333332,
+          "base_rate": 0.00510204081632653,
+          "events": 1,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "ties_at_k": true
+            }
+          }
+        },
+        "resolved": 196,
+        "scores": {
+          "country_eb": {
+            "brier": 0.005334179029367193,
+            "logloss": 0.03438987166132035
+          },
+          "global_h": {
+            "brier": 0.005216260965241575,
+            "logloss": 0.03780788544720142
+          },
+          "global_recent5": {
+            "brier": 0.005179498058447458,
+            "logloss": 0.03664867154581995
+          },
+          "lag1_country": {
+            "brier": 0.005325992236048396,
+            "logloss": 0.034306383607976734
+          },
+          "lag1_global": {
+            "brier": 0.005213977595249057,
+            "logloss": 0.03762318690992909
+          }
+        },
+        "unresolved": 0,
+        "year": 2021
+      },
+      {
+        "cutoff": 2020,
+        "fit": {
+          "cutoff": 2020,
+          "global_rate": 0.016761286834279535,
+          "global_recent5_rate": 0.015274949083503055,
+          "historical_origin_target_pairs": 3697,
+          "horizon": 2,
+          "horizon_2_feature_not_from_intermediate_year": true,
+          "lag1_0_events": 61,
+          "lag1_0_exposure": 3612,
+          "lag1_1_events": 0,
+          "lag1_1_exposure": 85,
+          "max_fitted_outcome_year": 2020
+        },
+        "horizon": 2,
+        "origin_countries": 196,
+        "positive_onset2": 3,
+        "ranking_country_eb": {
+          "auc_country_model": 0.36528497409326427,
+          "average_precision_country_model": 0.015306122448979591,
+          "base_rate": 0.015306122448979591,
+          "events": 3,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.15306122448979592,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.30612244897959184,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.07653061224489796,
+              "ties_at_k": true
+            }
+          }
+        },
+        "ranking_lag1_country": {
+          "auc_country_model": 0.3704663212435233,
+          "average_precision_country_model": 0.015463917525773196,
+          "base_rate": 0.015306122448979591,
+          "events": 3,
+          "n": 196,
+          "top_k_country_model": {
+            "10": {
+              "hits": 0,
+              "k": 10,
+              "precision": 0.0,
+              "random_expected_hits": 0.15306122448979592,
+              "ties_at_k": true
+            },
+            "20": {
+              "hits": 0,
+              "k": 20,
+              "precision": 0.0,
+              "random_expected_hits": 0.30612244897959184,
+              "ties_at_k": true
+            },
+            "5": {
+              "hits": 0,
+              "k": 5,
+              "precision": 0.0,
+              "random_expected_hits": 0.07653061224489796,
+              "ties_at_k": true
+            }
+          }
+        },
+        "resolved": 196,
+        "scores": {
+          "country_eb": {
+            "brier": 0.015618171774567324,
+            "logloss": 0.09045358483147577
+          },
+          "global_h": {
+            "brier": 0.015073962567944679,
+            "logloss": 0.07922651102824933
+          },
+          "global_recent5": {
+            "brier": 0.01507184603633515,
+            "logloss": 0.07916038883511724
+          },
+          "lag1_country": {
+            "brier": 0.01560871403134468,
+            "logloss": 0.0902591440280681
+          },
+          "lag1_global": {
+            "brier": 0.015068733562165685,
+            "logloss": 0.0789557653258617
+          }
+        },
+        "unresolved": 0,
+        "year": 2022
+      }
+    ],
+    "n": 2744,
+    "scores": {
+      "country_eb": {
+        "brier": 0.013321464256525806,
+        "logloss": 0.06987674547877132
+      },
+      "global_h": {
+        "brier": 0.013319101620584894,
+        "logloss": 0.07198727185883456
+      },
+      "global_recent5": {
+        "brier": 0.013326960543860374,
+        "logloss": 0.0721878081913037
+      },
+      "lag1_country": {
+        "brier": 0.013305916686579393,
+        "logloss": 0.06968532779939846
+      },
+      "lag1_global": {
+        "brier": 0.013312385326277387,
+        "logloss": 0.07165442317678943
+      }
+    },
+    "source_edition": "23.1"
+  },
+  "model_definitions": {
+    "country_eb": "country onset2 history since 2000, shrink20 to global_h",
+    "global_h": "global onset2 rate in country origin-target pairs with horizon h, Laplace1",
+    "global_recent5": "global onset2 rate in last five eligible target years, Laplace1",
+    "lag1_country": "country onset2 count shrunk by 20 to lag1_global",
+    "lag1_global": "empirical onset2 rate conditioned on origin-year onset1, shrink20 to global_h"
+  },
+  "model_selected_or_retrained_on_outcomes": false,
+  "predictive_skill_demonstrated": false,
+  "prospective_2027_issued_forecast_changed": false,
+  "question": "UCDP Intrastate Country-Level Onset2 rather than state-based violence threshold",
+  "revised_internal_vintage_verified_asof": false,
+  "sample_definitions": {
+    "external_origin": 2022,
+    "horizons": [
+      1,
+      2
+    ],
+    "laplace": 1,
+    "prior_strength": 20,
+    "recent_baseline_years": 5,
+    "rolling_origins": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "start_train": 2000
+  },
+  "schema": "idealab.psico.onset2_lagged_231_251_ablation.v1",
+  "source_vintages": {
+    "23.1": {
+      "max_year": 2022,
+      "sha256": "e2cadfa7a87b3949f8c638c27381fbb1b44fb076ccb00570782252d0935a2289",
+      "url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-231.csv"
+    },
+    "25.1": {
+      "max_year": 2024,
+      "sha256": "e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a",
+      "url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-251.csv"
+    }
+  },
+  "status": "POST_HOC_MODEL_FAMILY_EXPLORATION_NOT_PROSPECTIVE"
+}
