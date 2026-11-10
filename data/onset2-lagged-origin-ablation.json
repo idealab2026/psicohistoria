@@ -1,6 +1,6 @@
 {
   "actual_2027_results_resolved": 0,
-  "caution": "This study compares several hypothesis models with previously seen 2023/24 outcomes; it cannot claim independent testing or any certified skill. UCDP onset1 is an event marker, not the full underlying active-conflict risk-set definition. Country-onset2 labels are not state-based threshold crossings. Source 23.1 retrospective rolling windows have revised historical information. Country-bootstrap misses common-year shocks. The original 196 issued 2027 probabilities are untouched.",
+  "caution": "This study compares several hypothesis models with previously seen 2023/24 outcomes; it cannot claim independent testing or any certified skill. UCDP onset1 is an event marker, not the full underlying active-conflict risk-set definition. Country-onset2 labels are not state-based threshold crossings. Source 23.1 retrospective rolling windows have revised historical information. Internal rolling folds reuse some target country-years under different origins/horizons, so 2744 forecast evaluations represent only 1568 distinct country-years and 22 distinct onsets; they are not independent cases. Country-bootstrap misses common-year shocks. The original 196 issued 2027 probabilities are untouched.",
   "country_risks_published": false,
   "external": {
     "assessment_release": "25.1",
@@ -253,6 +253,60 @@
   "hypotheses_were_designated_after_previous_holdout_inspection": true,
   "independently_timestamped_original_release": false,
   "internal": {
+    "by_horizon": {
+      "1": {
+        "events": 19,
+        "n": 1372,
+        "scores": {
+          "country_eb": {
+            "brier": 0.013664277312953579,
+            "logloss": 0.07105368595650517
+          },
+          "global_h": {
+            "brier": 0.013672121579302733,
+            "logloss": 0.07349202461887028
+          },
+          "global_recent5": {
+            "brier": 0.013672765511489226,
+            "logloss": 0.07347752376502008
+          },
+          "lag1_country": {
+            "brier": 0.013648557288235271,
+            "logloss": 0.07086522105919647
+          },
+          "lag1_global": {
+            "brier": 0.01366543277702912,
+            "logloss": 0.0731577263547855
+          }
+        }
+      },
+      "2": {
+        "events": 18,
+        "n": 1372,
+        "scores": {
+          "country_eb": {
+            "brier": 0.012978651200098033,
+            "logloss": 0.06869980500104077
+          },
+          "global_h": {
+            "brier": 0.012966081661867053,
+            "logloss": 0.07048251909879776
+          },
+          "global_recent5": {
+            "brier": 0.012981155576231522,
+            "logloss": 0.07089809261757736
+          },
+          "lag1_country": {
+            "brier": 0.012963276084923514,
+            "logloss": 0.06850543453959862
+          },
+          "lag1_global": {
+            "brier": 0.012959337875525652,
+            "logloss": 0.07015111999879485
+          }
+        }
+      }
+    },
     "country_bootstrap_delta_vs_country_eb": [
       -2.3462166080975527e-05,
       -8.801123248814191e-06
@@ -1721,6 +1775,7 @@
       }
     ],
     "n": 2744,
+    "repeated_target_evaluations": 1176,
     "scores": {
       "country_eb": {
         "brier": 0.013321464256525806,
@@ -1743,7 +1798,9 @@
         "logloss": 0.07165442317678943
       }
     },
-    "source_edition": "23.1"
+    "source_edition": "23.1",
+    "unique_country_target_years": 1568,
+    "unique_positive_country_target_years": 22
   },
   "model_definitions": {
     "country_eb": "country onset2 history since 2000, shrink20 to global_h",
