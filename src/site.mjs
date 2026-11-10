@@ -167,6 +167,51 @@ function renderHistoricalLabelRevisions(){
  r.source_urls.map((url,i)=>'<p><a href="'+safe(url)+'" target="_blank" rel="noopener noreferrer">UCDP '+(i===0?'23.1':'25.1')+'</a> · SHA-256 <code>'+safe(r.source_sha256s[i])+'</code></p>').join("")+
  '<p>Contraste reproducible en el expediente institucional. Las fechas de publicación originales no están certificadas criptográficamente. Este hallazgo no acredita skill prospectivo.</p></details>','soft');
 }
+function renderConflictIncidenceOnset2(){
+ const x=state.research?.onset2_conflict_activity_study;
+ if(!x)return "";
+ const num=v=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:5,maximumFractionDigits:5}).format(v);
+ const percent=v=>new Intl.NumberFormat("es-ES",{style:"percent",minimumFractionDigits:1,maximumFractionDigits:2}).format(v);
+ const names=[
+   ["Global últimos 5 años","global_recent5"],
+   ["Global por horizonte","global_h"],
+   ["País, tasa histórica","country_eb"],
+   ["País + inicio previo onset1","lag1_country"],
+   ["Actividad interna en origen · global","active_global"],
+   ["País + actividad interna en origen","active_country"],
+   ["País + actividad en últimos 3 años","recent3_country"]
+ ];
+ const bestExternal=Math.min(...names.map(([,key])=>x.external.scores[key].brier));
+ const relImprove=1-x.external.scores.active_country.brier/x.external.scores.country_eb.brier;
+ return section("INVESTIGACIÓN · INCIDENCIA DE CONFLICTOS · UCDP/PRIO",
+   "¿Aporta señal conocer dónde hay guerras activas?",
+   "Nueva fuente oficial: UCDP/PRIO Armed Conflict Dataset (conflicto–año), versiones 23.1/25.1. Solo tipos 3 y 4 y país de gobierno primario gwno_a; estado del año de origen, nunca los resultados de una edición posterior.")+
+ '<div class="section-grid three">'+
+ box('<div class="eyebrow">CONFLICTOS ACTIVOS EN ORIGEN 2022</div><div class="card-number">'+safe(x.first_origin2022_active_countries)+'</div><p>De 196 países del universo UCDP onset2, según la edición de entrenamiento 23.1</p>')+
+ box('<div class="eyebrow">MEJORA SOBRE TASA POR PAÍS</div><div class="card-number">'+percent(relImprove)+'</div><p>Brier externo 2023–2024; exploratorio, sin validar utilidad futura</p>')+
+ box('<div class="eyebrow">INICIOS IDENTIFICADOS TOP-20</div><div class="card-number">0/2</div><p>Los dos inicios onset2 registrados no se encuentran entre las veinte alertas de mayor riesgo</p>')+
+ '</div>'+
+ box('<h3>¿Mejora la predicción al añadir conflictos activos?</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Estimador</th><th>Brier rolling ↓</th><th>Brier externo ↓</th><th>Log-loss externo ↓</th></tr></thead><tbody>'+
+ names.map(([label,key])=>'<tr><td>'+safe(label)+'</td><td>'+num(x.internal.scores[key].brier)+'</td><td>'+num(x.external.scores[key].brier)+'</td><td>'+num(x.external.scores[key].logloss)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>La nueva señal mejora ligeramente el estimador por país, pero <strong>no supera la tasa global reciente</strong> ('+num(bestExternal)+' Brier). El intervalo exploratorio de diferencia Brier frente a esa referencia abarca ['+
+ num(x.external.country_bootstrap_delta_ci.active_country_minus_global_recent5[0])+', +'+
+ num(x.external.country_bootstrap_delta_ci.active_country_minus_global_recent5[1])+
+ '] y contiene cero: no demuestra ventaja sobre el baseline más exigente.</p>','soft')+
+ box('<h3>Comprobación de los inicios 2023 y 2024</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Objetivo</th><th>Países</th><th>Con conflicto en 2022</th><th>Inicios onset2</th><th>Inicios entre activos</th><th>Top-20</th></tr></thead><tbody>'+
+ x.annual_external.map(y=>'<tr><td>'+safe(y.target_year)+'</td><td>'+safe(y.n)+'</td><td>'+safe(y.origin_active_n)+'</td><td>'+safe(y.events)+'</td><td>'+safe(y.onsets_among_origin_active)+'</td><td>'+safe(y.top20_hits)+'/20</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>Los dos inicios se registran fuera del grupo de países con conflicto interno activo en 2022. <strong>Actividad previa no es sinónimo de riesgo de nuevo inicio</strong>: pueden surgir nuevos conflictos dentro de países ya activos y también aparecer en países sin conflicto registrado.</p>','soft')+
+ box('<details><summary>Fuente, cambios entre ediciones y límites científicos</summary>'+
+ '<p>El archivo original registra conflictos por año. Se han agregado a país–año solo registros intrastatales (tipos 3 y 4), con código GW único del gobierno implicado. En la edición 23.1 hay '+safe(x.source23_intrastate_country_years)+' país-año con actividad; en 25.1 hay '+safe(x.source25_intrastate_country_years)+'.</p>'+
+ '<p>La revisión histórica de actividad hasta 2022 añade '+safe(x.historical_acd_revisions.added_in_later_vintage_through_2022)+' registros país-año y elimina '+safe(x.historical_acd_revisions.removed_in_later_vintage_through_2022)+' entre ediciones. Las revisiones posteriores no entran en los predictores.</p>'+
+ '<p>'+safe(x.interpretation)+'</p>'+
+ '<p><a href="./data/onset2-conflict-incidence-ablation.json" target="_blank" rel="noopener noreferrer">Ver evaluación completa con siete modelos e intervalos</a> · <a href="./data/ucdp-prio-incidence-vintages.json" target="_blank" rel="noopener noreferrer">Ver auditoría de las fuentes y hashes</a>.</p>'+
+ '<p><a href="https://ucdp.uu.se/downloads/olddw.html" target="_blank" rel="noopener noreferrer">Archivo histórico oficial de UCDP</a>. Las 196 probabilidades de GEO-2027 siguen intactas; cero resultados de 2027 evaluados.</p>'+
+ '</details>','soft');
+}
 function renderOnset2LaggedSignal(){
  const x=state.research?.onset2_lagged_signal_study;
  if(!x)return "";
@@ -558,7 +603,7 @@ function renderEmpiricalEvidence(){
 }
 function renderScience(){
  const d=state.data,rows=d.studies.map(s=>({s,score:score(s)}));
- return renderOnset2LaggedSignal()+renderOnset2Homogeneous()+renderNewEntryComparator()+renderOriginStateSkill()+renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
+ return renderConflictIncidenceOnset2()+renderOnset2LaggedSignal()+renderOnset2Homogeneous()+renderNewEntryComparator()+renderOriginStateSkill()+renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
  '<div class="table-wrap"><table><thead><tr><th>Estudio sintético</th><th>Observaciones</th><th>Brier modelo</th><th>Brier referencia</th><th>Mejora relativa</th><th>Validez</th></tr></thead><tbody>'+rows.map(({s,score:r})=>'<tr><td>'+safe(s.title)+'</td><td>'+r.n+'</td><td>'+format(r.brier)+'</td><td>'+format(r.baselineBrier)+'</td><td>'+formatPct(r.skill)+'</td><td>Sintético</td></tr>').join("")+'</tbody></table></div>'+
  section("REPRODUCIBILIDAD","Evaluación de un experimento","Selecciona un estudio para analizar las probabilidades ficticias y compararlas con su referencia fija.")+
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+
