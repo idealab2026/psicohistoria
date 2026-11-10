@@ -108,7 +108,7 @@ function renderShadow(){
  '<div><div class="tiny">Referencia global 2021–2025</div><div class="card-number">'+pct(selected.p_baseline_global_5y)+'</div></div>'+
  '<div><div class="tiny">Referencia Markov global</div><div class="card-number">'+pct(selected.p_global_markov)+'</div></div>'+
  '</div>'+
- '<p>Estado de 2025 para esta variable: '+(selected.last_observed_state_2025===1?'al menos 25 fallecimientos estimados':'menos de 25 fallecimientos estimados')+'. Horizonte: año natural 2027, dos años desde la última observación.</p>'+
+ '<p>Estado de 2025 para esta variable: '+(selected.last_observed_state_2025===1?'al menos 25 fallecimientos estimados':'menos de 25 fallecimientos estimados')+'. Horizonte: año natural 2027, dos pasos de calendario desde 2025. La emisión se publicó en noviembre de 2026: no implica dos años completos de preaviso operativo.</p>'+
  '<p class="notice info">Probabilidades experimentales, no evaluadas. Este indicador mide muertes registradas en conflictos state-based dentro del país; no predice víctimas civiles ni atribuye necesariamente muertes al Gobierno.</p>','soft')+
  box('<h3>Distribución y control de probabilidades · 2027</h3>'+
  '<div class="section-grid three">'+
