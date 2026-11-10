@@ -71,6 +71,18 @@ jobs:
           name: audited-site
           path: dist/
           retention-days: 1
+  vintage_archive_audit:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Inspect official UCDP historical Onset archive (non-public metadata)
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/inspect_ucdp_archives.py --report /tmp/idealab-ucdp-archive.json
+          test -s /tmp/idealab-ucdp-archive.json
   deploy:
     if: github.event_name != 'pull_request'
     needs: quality
