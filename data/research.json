@@ -293,5 +293,70 @@
       "more_reliable_than_baseline_demonstrated": false,
       "note": "Comparación retrospectiva con una edición revisada en 2025. El intervalo exploratorio de mejora incluye cero: no hay superioridad robusta demostrada. El objetivo es onset2 en todos los países-año, no solo entre países sin conflicto activo. No produce alertas actuales."
     }
-  ]
+  ],
+  "riskset_study": {
+    "id": "EMP-ONSET-251-RISKSET-20261110",
+    "linked_question": "Q-GEO-01",
+    "title": "Inicio de conflicto: comparación entre países realmente expuestos",
+    "status": "RETROSPECTIVE_REVISED_VINTAGES_NOT_ASOF",
+    "study_date": "2026-11-10",
+    "source_versions": [
+      "UCDP Intrastate Country Level Onset 25.1",
+      "UCDP/PRIO Armed Conflict 25.1"
+    ],
+    "sources": [
+      {
+        "url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-251.csv",
+        "sha256": "e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a"
+      },
+      {
+        "url": "https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-251-csv.zip",
+        "sha256": "b49f7e80510d8a5779a52d872aef5b26456b3f5cbdd3ec32031339488e81813f"
+      }
+    ],
+    "period": "2010–2024",
+    "baseline": "Global prior event rate Beta(1,1)",
+    "model": "Historical country rate regularized toward global (prior strength 20)",
+    "observed_target": "onset2 among countries with zero registered type 3/4 government-side intrastate conflict in preceding one or two years",
+    "scenarios": [
+      {
+        "preceding_inactive_years": 1,
+        "observations": 2465,
+        "countries": 187,
+        "events": 40,
+        "brier_model": 0.015553604023636909,
+        "brier_baseline": 0.016003753703448035,
+        "brier_no_event": 0.016227180527383367,
+        "relative_brier_improvement": 0.02812775603476958,
+        "logloss_model": 0.07397015539971685,
+        "logloss_baseline": 0.08396825810786605,
+        "cluster_delta_interval": [
+          -0.0007464551113409088,
+          -0.0001966175840042786
+        ]
+      },
+      {
+        "preceding_inactive_years": 2,
+        "observations": 2404,
+        "countries": 182,
+        "events": 40,
+        "brier_model": 0.01586025768176218,
+        "brier_baseline": 0.016400522843776084,
+        "brier_no_event": 0.016638935108153077,
+        "relative_brier_improvement": 0.03294194747083512,
+        "logloss_model": 0.07487071420969724,
+        "logloss_baseline": 0.08560109737308415,
+        "cluster_delta_interval": [
+          -0.0010174040221890591,
+          -0.00020292105604013955
+        ]
+      }
+    ],
+    "point_in_time_verified": false,
+    "prospective_forecasts_issued": 0,
+    "operational_utility_demonstrated": false,
+    "exploratory_confidence_intervals": true,
+    "note": "Las dos ventanas de inactividad son escenarios exploratorios definidos después del primer estudio. Ambas dan un Brier menor, pero no hay verificación point-in-time ni corrección por selección de hipótesis. Las versiones de UCDP son retrospectivas y revisadas. No es una alerta actual por país ni un acierto certificado.",
+    "workflow_run": "42724553640"
+  }
 }
