@@ -82,6 +82,20 @@ jobs:
         run: |
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/forecast_2027_statebased.py --output /tmp/idealab-geo2027.json --print-chunks
           test -s /tmp/idealab-geo2027.json
+  onset2_homogeneous_holdout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Independently evaluate onset2 23.1 to 25.1 with source-pinned hashes
+        run: |
+          set -e
+          if test -f data/onset2-231-251-homogeneous.json; then
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/evaluate_homogeneous_onset2.py --check-report data/onset2-231-251-homogeneous.json
+          else
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/evaluate_homogeneous_onset2.py
+          fi
   new_entry_baseline_diagnostic:
     runs-on: ubuntu-latest
     steps:
