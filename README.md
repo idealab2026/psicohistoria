@@ -4,6 +4,14 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO-2027 · Auditoría independiente de reproducibilidad (10-11-2026)
+
+Un segundo cálculo independiente ha reconstruido **las 196 probabilidades originales** utilizando únicamente el ZIP oficial **UCDP OrganizedViolenceCY 26.1** con SHA-256 fijo. El job ejecuta dos comprobaciones complementarias: (i) regenera el fichero de emisión **byte por byte** con el código preregistrado, y (ii) implementa las ecuaciones Markov de forma separada y compara cada probabilidad por país con la ya publicada. El fichero original no se reescribe.
+
+Resultados agregados registrados en `data/forecast-2027-audit.json`: 34 países superaban el umbral en 2025; para 2027 la suma de probabilidades del modelo es **33,6254** países y la suma de la referencia global es **34,5295**. Existen 73 valores de probabilidad diferentes entre 196 países; 112 están por debajo del 5 % y 34 por encima del 50 %. Se trata de **distribuciones previstas, no resultados futuros observados**. Ningún pronóstico ha sido evaluado ni se reclama superioridad del modelo.
+
+La auditoría se ejecuta en CI con `scripts/audit_frozen_2027.py --check-report data/forecast-2027-audit.json` y se convierte en una puerta obligatoria del despliegue público. Pruebas adversariales en `scripts/test_audit_frozen_2027.py` rechazan cambios en probabilidades, huellas, manifiesto o información posterior al corte de 2025. El conjunto de predicciones emitidas sigue siendo idéntico al registrado antes de 2027.
+
 ## GEO-2027 · Primera cohorte prospectiva pública emitida
 
 Se ha añadido un protocolo científico para elaborar **antes de 2027** una primera cohorte prospectiva de **196 países**, prediciendo si en 2027 se registrarán **25 o más muertes anuales por violencia organizada de base estatal** en el campo `sb_total_deaths_best` del UCDP OrganizedViolenceCY. **No equivale a UCDP Onset `onset2`** ni a violencia gubernamental contra civiles: es una nueva pregunta científica y un horizonte fijo de dos años desde 2025.

@@ -352,3 +352,25 @@ test("2027 issue refuses to claim independently verified outcomes or valid skill
  mutatedRegistry.prospective_2027_issue.skill_demonstrated=true;
  assert.throws(()=>verifyResearch(mutatedRegistry),/Unverified or mutated GEO-2027/);
 });
+
+test("reproducibility audit is public, purely pre-outcome, and concordant with the frozen issue",()=>{
+ const audit=JSON.parse(readFileSync(new URL("../data/forecast-2027-audit.json",import.meta.url),"utf8"));
+ const forecast=JSON.parse(readFileSync(new URL("../data/forecast-2027-ucdp261.json",import.meta.url),"utf8"));
+ assert.equal(audit.schema,"idealab.psico.forecast_2027_frozen_audit.v1");
+ assert.equal(audit.countries,196);
+ assert.equal(audit.resolution_count,0);
+ assert.equal(audit.forecast_skill_demonstrated,false);
+ assert.equal(audit.forecast_file_sha256,"5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5");
+ assert.equal(audit.active_state_countries_in_2025,34);
+ assert.equal(audit.inactive_state_countries_in_2025,162);
+ assert.equal(audit.distinct_model_probabilities,73);
+ assert.equal(audit.model_histogram.reduce((n,v)=>n+v.countries,0),196);
+ assert.equal(audit.model_expected_positive_countries,Number(
+     forecast.countries.reduce((a,r)=>a+r.p_model,0).toFixed(9)));
+ assert.equal(audit.global_5y_expected_positive_countries,Number(
+     forecast.countries.reduce((a,r)=>a+r.p_baseline_global_5y,0).toFixed(9)));
+ assert.match(audit.not_an_outcome,/not actual 2027 conflict outcomes/);
+ const ui=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
+ assert.match(ui,/Distribución y control de probabilidades/);
+ assert.match(ui,/data\/forecast-2027-audit\.json/);
+});

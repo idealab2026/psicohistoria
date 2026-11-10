@@ -81,6 +81,14 @@ function renderShadow(){
  const listed=[...rows].sort((a,b)=>a.country.localeCompare(b.country,"es"));
  const ranked=[...rows].sort((a,b)=>b.p_model-a.p_model || a.country.localeCompare(b.country,"es")).slice(0,10);
  const pct=n=>new Intl.NumberFormat("es-ES",{style:"percent",maximumFractionDigits:2}).format(n);
+ const decimal=n=>new Intl.NumberFormat("es-ES",{maximumFractionDigits:2,minimumFractionDigits:2}).format(n);
+ const sumModel=rows.reduce((n,r)=>n+r.p_model,0);
+ const sumGlobal=rows.reduce((n,r)=>n+r.p_baseline_global_5y,0);
+ const active2025=rows.filter(r=>r.last_observed_state_2025===1).length;
+ const ranges=[[0,.05],[.05,.1],[.1,.2],[.2,.5],[.5,.8],[.8,1]];
+ const probabilityBuckets=ranges.map(([lower,upper])=>({
+  lower,upper,countries:rows.filter(r=>r.p_model>=lower&&r.p_model<upper).length
+ }));
  const options=listed.map(r=>'<option value="'+safe(r.country_id)+'"'+(r.country_id===selected.country_id?' selected':'')+'>'+safe(r.country)+'</option>').join("");
  const firstCommit="https://github.com/idealab2026/psicohistoria/commit/"+m.first_public_forecast_commit;
  const frozenProtocol="https://github.com/idealab2026/psicohistoria/commit/"+m.preregistered_protocol_main_commit;
@@ -102,6 +110,19 @@ function renderShadow(){
  '</div>'+
  '<p>Estado de 2025 para esta variable: '+(selected.last_observed_state_2025===1?'al menos 25 fallecimientos estimados':'menos de 25 fallecimientos estimados')+'. Horizonte: año natural 2027, dos años desde la última observación.</p>'+
  '<p class="notice info">Probabilidades experimentales, no evaluadas. Este indicador mide muertes registradas en conflictos state-based dentro del país; no predice víctimas civiles ni atribuye necesariamente muertes al Gobierno.</p>','soft')+
+ box('<h3>Distribución y control de probabilidades · 2027</h3>'+
+ '<div class="section-grid three">'+
+ '<div><div class="tiny">Países con el umbral en 2025</div><div class="card-number">'+safe(active2025)+'</div></div>'+
+ '<div><div class="tiny">Países esperados por el modelo para 2027</div><div class="card-number">'+decimal(sumModel)+'</div></div>'+
+ '<div><div class="tiny">Países esperados por la referencia global</div><div class="card-number">'+decimal(sumGlobal)+'</div></div>'+
+ '</div>'+
+ '<p>Los valores esperados son <strong>sumas de probabilidades</strong>, no números de países realmente afectados. No representan aciertos ni calibración observada.</p>'+
+ '<details><summary>Distribución de los 196 pronósticos emitidos</summary>'+
+ '<div class="table-wrap"><table><thead><tr><th>Probabilidad</th><th>Países</th></tr></thead><tbody>'+
+ probabilityBuckets.map(v=>'<tr><td>'+pct(v.lower)+'–'+pct(v.upper)+'</td><td>'+safe(v.countries)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p><a href="./data/forecast-2027-audit.json" target="_blank" rel="noopener noreferrer">Ver auditoría independiente con las huellas de reproducción</a>. Se recalculan todas las probabilidades desde la misma fuente UCDP oficial, sin cambiar las 196 emitidas.</p>'+
+ '</details>','soft')+
  box('<h3>Diez probabilidades más altas del modelo experimental</h3>'+
  '<div class="table-wrap"><table><thead><tr><th>País</th><th>Pronóstico 2027</th><th>Refer. global</th></tr></thead><tbody>'+
  ranked.map(row=>'<tr><td>'+safe(row.country)+'</td><td>'+pct(row.p_model)+'</td><td>'+pct(row.p_baseline_global_5y)+'</td></tr>').join("")+
