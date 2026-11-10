@@ -167,6 +167,45 @@ function renderHistoricalLabelRevisions(){
  r.source_urls.map((url,i)=>'<p><a href="'+safe(url)+'" target="_blank" rel="noopener noreferrer">UCDP '+(i===0?'23.1':'25.1')+'</a> · SHA-256 <code>'+safe(r.source_sha256s[i])+'</code></p>').join("")+
  '<p>Contraste reproducible en el expediente institucional. Las fechas de publicación originales no están certificadas criptográficamente. Este hallazgo no acredita skill prospectivo.</p></details>','soft');
 }
+function renderOnset2LaggedSignal(){
+ const x=state.research?.onset2_lagged_signal_study;
+ if(!x)return "";
+ const num=n=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:5,maximumFractionDigits:5}).format(n);
+ const percent=n=>new Intl.NumberFormat("es-ES",{maximumFractionDigits:2,style:"percent"}).format(n);
+ const candidates=[
+  ["Tasa global · últimos 5 años","global_recent5"],
+  ["Tasa global histórica por horizonte","global_h"],
+  ["Tasa por país, prior global","country_eb"],
+  ["Historial de onset1 · global","lag1_global"],
+  ["País + historial de onset1","lag1_country"]
+ ];
+ const bestExternal=Math.min(...candidates.map(([,k])=>x.external.scores[k].brier));
+ return section("INVESTIGACIÓN · SEÑALES TEMPRANAS · ONSET2",
+  "¿Aporta información un inicio de conflicto anterior?",
+  "Cinco modelos comparados con el indicador onset1 del año de origen y horizontes de uno y dos años. El modelo nunca consulta 2023 para estimar 2024; la prueba externa usa la edición UCDP 25.1 distinta de la de entrenamiento.")+
+ '<div class="section-grid three">'+
+ box('<div class="eyebrow">BACKTEST INTERNO</div><div class="card-number">'+safe(x.internal.n)+'</div><p>'+safe(x.internal.events)+' inicios · ventanas históricas dentro de 23.1, revisadas ex post</p>')+
+ box('<div class="eyebrow">CONTRASTE ENTRE EDICIONES</div><div class="card-number">'+safe(x.external.n)+'</div><p>'+safe(x.external.events)+' inicios · 2023 y 2024</p>')+
+ box('<div class="eyebrow">MEJOR BRIER EXTERNO</div><div class="card-number">'+num(bestExternal)+'</div><p>Referencia global reciente; las señales adicionales no la superan</p>')+
+ '</div>'+
+ box('<h3>Comparación completa: cinco especificaciones, sin escoger retrospectivamente ganadora</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Modelo</th><th>Brier interno ↓</th><th>Brier externo ↓</th><th>Log-loss externo ↓</th></tr></thead><tbody>'+
+ candidates.map(([label,key])=>'<tr><td>'+safe(label)+'</td><td>'+num(x.internal.scores[key].brier)+'</td><td>'+num(x.external.scores[key].brier)+'</td><td>'+num(x.external.scores[key].logloss)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p><strong>Resultado:</strong> la señal onset1 reduce mínimamente el Brier del modelo por país en el rolling-origin histórico, pero la diferencia externa respecto al mismo estimador tiene un intervalo que incluye cero. Frente a la tasa global reciente, ninguno de los dos modelos por país mejora el Brier.</p>'+
+ '<p>Este resultado es exploratorio: las hipótesis se formularon después de haber examinado los desenlaces de 2023 y 2024. No se ha demostrado superioridad ni calibración operativa.</p>','soft')+
+ box('<h3>¿Identifica los nuevos inicios en la prueba externa?</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Objetivo</th><th>Horizonte</th><th>Inicios</th><th>Average precision</th><th>AUC</th><th>Top 20</th></tr></thead><tbody>'+
+ x.external_folds.map(f=>'<tr><td>'+safe(f.year)+'</td><td>'+safe(f.horizon)+' año(s)</td><td>'+safe(f.events)+'</td><td>'+percent(f.lag_country_average_precision)+'</td><td>'+num(f.lag_country_auc)+'</td><td>'+safe(f.lag_country_top20)+'/20</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p><strong>Cero inicios entre las 20 primeras alertas</strong> en ambos años. onset1 en el año de origen es una señal de evento pasado, no una observación completa del estado de conflicto o del conjunto en riesgo.</p>','soft')+
+ box('<details><summary>Fuente, reproducción y límites del estudio</summary>'+
+ '<p>'+safe(x.caveat)+'</p>'+
+ '<p>Ediciones oficiales 23.1 y 25.1, SHA-256 anclados; años de origen internos 2014–2020 y externo 2022. Todos los parámetros permanecen fijos.</p>'+
+ '<p><a href="./data/onset2-lagged-origin-ablation.json" target="_blank" rel="noopener noreferrer">Ver los cinco modelos, los 14 cortes históricos y los intervalos de incertidumbre</a>.</p>'+
+ '<p>El modelo de violencia state-based GEO-2027 es independiente y sus 196 probabilidades emitidas no se han modificado.</p>'+
+ '</details>','soft');
+}
 function renderOnset2Homogeneous(){
  const e=state.research?.onset2_homogeneous_vintage;
  if(!e)return "";
@@ -519,7 +558,7 @@ function renderEmpiricalEvidence(){
 }
 function renderScience(){
  const d=state.data,rows=d.studies.map(s=>({s,score:score(s)}));
- return renderOnset2Homogeneous()+renderNewEntryComparator()+renderOriginStateSkill()+renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
+ return renderOnset2LaggedSignal()+renderOnset2Homogeneous()+renderNewEntryComparator()+renderOriginStateSkill()+renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
  '<div class="table-wrap"><table><thead><tr><th>Estudio sintético</th><th>Observaciones</th><th>Brier modelo</th><th>Brier referencia</th><th>Mejora relativa</th><th>Validez</th></tr></thead><tbody>'+rows.map(({s,score:r})=>'<tr><td>'+safe(s.title)+'</td><td>'+r.n+'</td><td>'+format(r.brier)+'</td><td>'+format(r.baselineBrier)+'</td><td>'+formatPct(r.skill)+'</td><td>Sintético</td></tr>').join("")+'</tbody></table></div>'+
  section("REPRODUCIBILIDAD","Evaluación de un experimento","Selecciona un estudio para analizar las probabilidades ficticias y compararlas con su referencia fija.")+
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+
