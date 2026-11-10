@@ -1424,5 +1424,85 @@
     "original_2027_probabilities_unchanged": true,
     "resolved_2027_forecasts": 0,
     "note": "Ocho nuevos cruces de 25 muertes state-based en 321 observaciones 2024/25; umbral no es comienzo de guerra ni UCDP onset2. Baseline directo de tasa de entrada a dos años calculado solo con ediciones de origen. La ventaja Brier del modelo por país es pequeña y el intervalo exploratorio incluye cero. Sus probabilidades medias sobreestiman entradas por factor ~1,69. Comparador elegido después de inspeccionar los resultados, sin validación confirmatoria. La emisión pública inmutable GEO-2027 conserva las 196 probabilidades; cero desenlaces 2027 evaluados."
+  },
+  "onset2_homogeneous_vintage": {
+    "id": "EMP-GEO-ONSET2-231-251-HOMOGENEOUS-20261110",
+    "question": "Q-GEO-01",
+    "dataset": "UCDP Intrastate Country-Level Onset",
+    "report_path": "data/onset2-231-251-homogeneous.json",
+    "status": "EX_POST_HOMOGENEOUS_CROSS_RELEASE_NOT_PROSPECTIVE",
+    "sources": {
+      "23.1": {
+        "last_year": 2022,
+        "sha256": "e2cadfa7a87b3949f8c638c27381fbb1b44fb076ccb00570782252d0935a2289",
+        "url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-231.csv"
+      },
+      "25.1": {
+        "last_year": 2024,
+        "sha256": "e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a",
+        "url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-251.csv"
+      }
+    },
+    "origin_year": 2022,
+    "assessed_years": [
+      2023,
+      2024
+    ],
+    "country_years": 392,
+    "events": 2,
+    "training_country_years": 4481,
+    "training_events": 72,
+    "training_prob_global": 0.016283738567923266,
+    "training_prob_recent_global": 0.013238289205702648,
+    "model_kind": "COUNTRY_EMPIRICAL_BAYES_REGULARIZED_RATE_NOT_TWO_STEP_MARKOV",
+    "model_brier": 0.0054337021471445625,
+    "global_brier": 0.005201040360443132,
+    "recent_brier": 0.005142208533688694,
+    "no_onset_brier": 0.00510204081632653,
+    "model_logloss": 0.03769405226924217,
+    "global_logloss": 0.03734211513950919,
+    "recent_logloss": 0.03532320286384879,
+    "brier_skill_global": -0.044733701447686514,
+    "brier_skill_recent": -0.05668646293633883,
+    "brier_skill_no_onset": -0.06500562084033423,
+    "years": [
+      {
+        "year": 2023,
+        "n": 196,
+        "events": 1,
+        "model_brier": 0.005552354259152156,
+        "recent_brier": 0.005142208533688694,
+        "ap_model": 0.00510204081632653,
+        "roc_auc_model": 0.358974358974359,
+        "top_5_hits": 0,
+        "top_10_hits": 0,
+        "top_20_hits": 0
+      },
+      {
+        "year": 2024,
+        "n": 196,
+        "events": 1,
+        "model_brier": 0.005315050035136969,
+        "recent_brier": 0.005142208533688694,
+        "ap_model": 0.019230769230769232,
+        "roc_auc_model": 0.8256410256410256,
+        "top_5_hits": 0,
+        "top_10_hits": 0,
+        "top_20_hits": 0
+      }
+    ],
+    "vintage_label_flips": 2,
+    "vintage_common_country_years": 12161,
+    "bootstrap_country95_model_minus_global": [
+      0.000008119187152832382,
+      0.00046373996178438316
+    ],
+    "legacy19_excluded": true,
+    "asof_historical_release_timestamps_verified": false,
+    "historically_issued_forecasts": false,
+    "prospective_2027_forecasts_unchanged": true,
+    "prospective_2027_results_resolved": 0,
+    "predictive_skill_demonstrated": false,
+    "warning": "Estudio Onset2 de inicio/reinicio de conflictos, no la variable de 25 muertes state-based. Únicamente dos positivos en 392 países-año 2023/2024: el modelo por país tiene Brier superior al global, reciente y sin evento; top-20 cero aciertos ambos años. Las ediciones UCDP 23.1 y 25.1 son homogéneas pero el experimento se reconstruyó ex post en 2026, sin emisión histórica ni datación point-in-time verificada. No incorporar 19.1 por duplicados y discrepancia de unidad. No prueba incapacidad universal de anticipar guerras. Las 196 probabilidades emitidas para GEO-2027 permanecen inmutables y sin resultados."
   }
 }
