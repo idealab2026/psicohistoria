@@ -621,6 +621,13 @@ export function verifyResearch(data) {
     JSON.stringify(lag.origin_cutoffs)!=="[2014,2015,2016,2017,2018,2019,2020]"||
     JSON.stringify(lag.horizons)!=="[1,2]"||
     lag.internal?.n!==2744||lag.internal?.events!==37||
+    lag.internal.unique_country_target_years!==1568||
+    lag.internal.unique_positive_country_target_years!==22||
+    lag.internal.repeated_target_evaluations!==1176||
+    lag.internal.by_horizon?.["1"]?.n!==1372||
+    lag.internal.by_horizon?.["2"]?.n!==1372||
+    lag.internal.by_horizon["1"].events!==19||
+    lag.internal.by_horizon["2"].events!==18||
     lag.external?.n!==392||lag.external?.events!==2||
     lag.candidate_selection_or_retraining!==false||
     lag.hypotheses_exploratory_after_previous_outcomes!==true||
