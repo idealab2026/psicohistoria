@@ -14,6 +14,12 @@ Fuente de entrada: UCDP OrganizedViolenceCY 26.1, con datos hasta 2025 y SHA-256
 
 Protocolo completo: `docs/forecast-2027-protocol.md`. Código y pruebas: `scripts/forecast_2027_statebased.py` y `scripts/test_forecast_2027_statebased.py`.
 
+### Preparación de evaluación futura de GEO-2027
+
+`scripts/evaluate_2027_official.py` proporciona un evaluador **offline, sin acceso a nuevos datos hasta su aportación explícita**. Exige los bytes íntegros y SHA-256 de la cohorte original, manifiesto de emisión, un ZIP oficial nuevo con etiquetas de 2027, URL y SHA-256 proporcionados para esa edición y una fecha de publicación posterior al cierre de 2027. Rechaza duplicados país-año, esquemas incompatibles y fuentes sin observaciones de 2027. No trata países ausentes como 0, reporta denominadores y bloquea puntuaciones si se resuelve menos del **95 %** de los 196 países.
+
+Cuando exista una fuente futura, calculará Brier, log-loss, comparación contra ambas referencias congeladas y bootstrap de 2.000 repeticiones, sin entrenar de nuevo ni modificar probabilidades. El resultado queda etiquetado **SELF_REPORTED_OFFICIAL_SOURCE_NEEDS_FIRST_RELEASE_ATTESTATION** hasta comprobar externamente la fecha y el carácter de *primera edición* oficial. Este software **no implica que hayan aparecido resultados de 2027**: los ejemplos en `scripts/test_evaluate_2027_official.py` son sintéticos.
+
 ## Navegación
 
 | Grupo | Vistas | Función pública |
