@@ -1,0 +1,390 @@
+{
+  "classification": "POST_HOC_CODEBOOK_SEMANTIC_RISKSET_AUDIT_NOT_MODEL_SELECTION",
+  "country_level_dataset": "UCDP_INTRASTATE_COUNTRY_LEVEL_ONSET_VERSION_2",
+  "different_multiple_onset_dataset": "UCDP_INTRASTATE_COUNTRY_LEVEL_MULTIPLE_ONSET_VERSION_3",
+  "external": [
+    {
+      "asof_origin_status_counts": {
+        "certain_ineligible": 36,
+        "eligible_known_origin": 160,
+        "possible_pending_intermediate_year": 0
+      },
+      "calendar_steps": 1,
+      "cutoff": 2022,
+      "future_target_year_eligibility_cannot_be_fully_known_at_origin": false,
+      "future_vintage_used_to_select_fitted_or_issued_forecast_cohort": false,
+      "known_ineligible_positive_mismatches_between_vintages": 0,
+      "later_vintage_realized_eligible_country_years_DESCRIPTIVE_ONLY": 159,
+      "later_vintage_realized_onsets_in_eligible_country_years_DESCRIPTIVE_ONLY": 1,
+      "observed_outcomes": 196,
+      "origin_population": 196,
+      "positive_onset2": 1,
+      "positive_outcomes_by_asof_status": {
+        "certain_ineligible": 0,
+        "eligible_known_origin": 1,
+        "possible_pending_intermediate_year": 0
+      },
+      "target_year": 2023
+    },
+    {
+      "asof_origin_status_counts": {
+        "certain_ineligible": 34,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 162
+      },
+      "calendar_steps": 2,
+      "cutoff": 2022,
+      "future_target_year_eligibility_cannot_be_fully_known_at_origin": true,
+      "future_vintage_used_to_select_fitted_or_issued_forecast_cohort": false,
+      "known_ineligible_positive_mismatches_between_vintages": 0,
+      "later_vintage_realized_eligible_country_years_DESCRIPTIVE_ONLY": 159,
+      "later_vintage_realized_onsets_in_eligible_country_years_DESCRIPTIVE_ONLY": 1,
+      "observed_outcomes": 196,
+      "origin_population": 196,
+      "positive_onset2": 1,
+      "positive_outcomes_by_asof_status": {
+        "certain_ineligible": 0,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 1
+      },
+      "target_year": 2024
+    }
+  ],
+  "forecast_2027_results_resolved": 0,
+  "horizon_1": "At cutoff T-1, T-1 and T-2 activity are known. Restrict eligibility only using frozen source edition.",
+  "horizon_2": "At cutoff T-2, status in T-1 is future/unknown. Activity in T-2 makes onset2 impossible, otherwise eligibility remains contingent; no future-riskset conditioning is allowed.",
+  "limitations": "Codebook-based feasibility accounting only; no new predictive ability is claimed. UCDP 23.1 and 25.1 can revise historical incidence and onset2. Later-vintage realized risk set cannot be an ex-ante subset, especially at two-year horizon. Multiple-onset dataset allows new conflict while another persists; current country-level outcome does not. Historical rolling folds overlap; independently time-stamped origin snapshots unavailable.",
+  "new_predictive_skill_demonstrated": false,
+  "official_codebook_url": "https://ucdp.uu.se/downloads/onset/ucdp-codebook-onset-251.pdf",
+  "original_2027_prospective_country_forecast_untouched": true,
+  "risk_definition": "Onset2 of country-level intrastate conflict requires absence of all intrastate conflict in both calendar years immediately before target; ongoing conflict rules out country-level onset, even if a different conflict begins.",
+  "rolling_same_vintage_non_asof": [
+    {
+      "asof_origin_status_counts": {
+        "certain_ineligible": 33,
+        "eligible_known_origin": 163,
+        "possible_pending_intermediate_year": 0
+      },
+      "calendar_steps": 1,
+      "cutoff": 2014,
+      "future_target_year_eligibility_cannot_be_fully_known_at_origin": false,
+      "future_vintage_used_to_select_fitted_or_issued_forecast_cohort": false,
+      "known_ineligible_positive_mismatches_between_vintages": 0,
+      "later_vintage_realized_eligible_country_years_DESCRIPTIVE_ONLY": 163,
+      "later_vintage_realized_onsets_in_eligible_country_years_DESCRIPTIVE_ONLY": 4,
+      "observed_outcomes": 196,
+      "origin_population": 196,
+      "positive_onset2": 4,
+      "positive_outcomes_by_asof_status": {
+        "certain_ineligible": 0,
+        "eligible_known_origin": 4,
+        "possible_pending_intermediate_year": 0
+      },
+      "target_year": 2015
+    },
+    {
+      "asof_origin_status_counts": {
+        "certain_ineligible": 31,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 165
+      },
+      "calendar_steps": 2,
+      "cutoff": 2014,
+      "future_target_year_eligibility_cannot_be_fully_known_at_origin": true,
+      "future_vintage_used_to_select_fitted_or_issued_forecast_cohort": false,
+      "known_ineligible_positive_mismatches_between_vintages": 0,
+      "later_vintage_realized_eligible_country_years_DESCRIPTIVE_ONLY": 160,
+      "later_vintage_realized_onsets_in_eligible_country_years_DESCRIPTIVE_ONLY": 6,
+      "observed_outcomes": 196,
+      "origin_population": 196,
+      "positive_onset2": 6,
+      "positive_outcomes_by_asof_status": {
+        "certain_ineligible": 0,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 6
+      },
+      "target_year": 2016
+    },
+    {
+      "asof_origin_status_counts": {
+        "certain_ineligible": 36,
+        "eligible_known_origin": 160,
+        "possible_pending_intermediate_year": 0
+      },
+      "calendar_steps": 1,
+      "cutoff": 2015,
+      "future_target_year_eligibility_cannot_be_fully_known_at_origin": false,
+      "future_vintage_used_to_select_fitted_or_issued_forecast_cohort": false,
+      "known_ineligible_positive_mismatches_between_vintages": 0,
+      "later_vintage_realized_eligible_country_years_DESCRIPTIVE_ONLY": 160,
+      "later_vintage_realized_onsets_in_eligible_country_years_DESCRIPTIVE_ONLY": 6,
+      "observed_outcomes": 196,
+      "origin_population": 196,
+      "positive_onset2": 6,
+      "positive_outcomes_by_asof_status": {
+        "certain_ineligible": 0,
+        "eligible_known_origin": 6,
+        "possible_pending_intermediate_year": 0
+      },
+      "target_year": 2016
+    },
+    {
+      "asof_origin_status_counts": {
+        "certain_ineligible": 33,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 163
+      },
+      "calendar_steps": 2,
+      "cutoff": 2015,
+      "future_target_year_eligibility_cannot_be_fully_known_at_origin": true,
+      "future_vintage_used_to_select_fitted_or_issued_forecast_cohort": false,
+      "known_ineligible_positive_mismatches_between_vintages": 0,
+      "later_vintage_realized_eligible_country_years_DESCRIPTIVE_ONLY": 155,
+      "later_vintage_realized_onsets_in_eligible_country_years_DESCRIPTIVE_ONLY": 0,
+      "observed_outcomes": 196,
+      "origin_population": 196,
+      "positive_onset2": 0,
+      "positive_outcomes_by_asof_status": {
+        "certain_ineligible": 0,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 0
+      },
+      "target_year": 2017
+    },
+    {
+      "asof_origin_status_counts": {
+        "certain_ineligible": 41,
+        "eligible_known_origin": 155,
+        "possible_pending_intermediate_year": 0
+      },
+      "calendar_steps": 1,
+      "cutoff": 2016,
+      "future_target_year_eligibility_cannot_be_fully_known_at_origin": false,
+      "future_vintage_used_to_select_fitted_or_issued_forecast_cohort": false,
+      "known_ineligible_positive_mismatches_between_vintages": 0,
+      "later_vintage_realized_eligible_country_years_DESCRIPTIVE_ONLY": 155,
+      "later_vintage_realized_onsets_in_eligible_country_years_DESCRIPTIVE_ONLY": 0,
+      "observed_outcomes": 196,
+      "origin_population": 196,
+      "positive_onset2": 0,
+      "positive_outcomes_by_asof_status": {
+        "certain_ineligible": 0,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 0
+      },
+      "target_year": 2017
+    },
+    {
+      "asof_origin_status_counts": {
+        "certain_ineligible": 37,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 159
+      },
+      "calendar_steps": 2,
+      "cutoff": 2016,
+      "future_target_year_eligibility_cannot_be_fully_known_at_origin": true,
+      "future_vintage_used_to_select_fitted_or_issued_forecast_cohort": false,
+      "known_ineligible_positive_mismatches_between_vintages": 0,
+      "later_vintage_realized_eligible_country_years_DESCRIPTIVE_ONLY": 156,
+      "later_vintage_realized_onsets_in_eligible_country_years_DESCRIPTIVE_ONLY": 3,
+      "observed_outcomes": 196,
+      "origin_population": 196,
+      "positive_onset2": 3,
+      "positive_outcomes_by_asof_status": {
+        "certain_ineligible": 0,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 3
+      },
+      "target_year": 2018
+    },
+    {
+      "asof_origin_status_counts": {
+        "certain_ineligible": 40,
+        "eligible_known_origin": 156,
+        "possible_pending_intermediate_year": 0
+      },
+      "calendar_steps": 1,
+      "cutoff": 2017,
+      "future_target_year_eligibility_cannot_be_fully_known_at_origin": false,
+      "future_vintage_used_to_select_fitted_or_issued_forecast_cohort": false,
+      "known_ineligible_positive_mismatches_between_vintages": 0,
+      "later_vintage_realized_eligible_country_years_DESCRIPTIVE_ONLY": 156,
+      "later_vintage_realized_onsets_in_eligible_country_years_DESCRIPTIVE_ONLY": 3,
+      "observed_outcomes": 196,
+      "origin_population": 196,
+      "positive_onset2": 3,
+      "positive_outcomes_by_asof_status": {
+        "certain_ineligible": 0,
+        "eligible_known_origin": 3,
+        "possible_pending_intermediate_year": 0
+      },
+      "target_year": 2018
+    },
+    {
+      "asof_origin_status_counts": {
+        "certain_ineligible": 33,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 163
+      },
+      "calendar_steps": 2,
+      "cutoff": 2017,
+      "future_target_year_eligibility_cannot_be_fully_known_at_origin": true,
+      "future_vintage_used_to_select_fitted_or_issued_forecast_cohort": false,
+      "known_ineligible_positive_mismatches_between_vintages": 0,
+      "later_vintage_realized_eligible_country_years_DESCRIPTIVE_ONLY": 158,
+      "later_vintage_realized_onsets_in_eligible_country_years_DESCRIPTIVE_ONLY": 3,
+      "observed_outcomes": 196,
+      "origin_population": 196,
+      "positive_onset2": 3,
+      "positive_outcomes_by_asof_status": {
+        "certain_ineligible": 0,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 3
+      },
+      "target_year": 2019
+    },
+    {
+      "asof_origin_status_counts": {
+        "certain_ineligible": 38,
+        "eligible_known_origin": 158,
+        "possible_pending_intermediate_year": 0
+      },
+      "calendar_steps": 1,
+      "cutoff": 2018,
+      "future_target_year_eligibility_cannot_be_fully_known_at_origin": false,
+      "future_vintage_used_to_select_fitted_or_issued_forecast_cohort": false,
+      "known_ineligible_positive_mismatches_between_vintages": 0,
+      "later_vintage_realized_eligible_country_years_DESCRIPTIVE_ONLY": 158,
+      "later_vintage_realized_onsets_in_eligible_country_years_DESCRIPTIVE_ONLY": 3,
+      "observed_outcomes": 196,
+      "origin_population": 196,
+      "positive_onset2": 3,
+      "positive_outcomes_by_asof_status": {
+        "certain_ineligible": 0,
+        "eligible_known_origin": 3,
+        "possible_pending_intermediate_year": 0
+      },
+      "target_year": 2019
+    },
+    {
+      "asof_origin_status_counts": {
+        "certain_ineligible": 33,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 163
+      },
+      "calendar_steps": 2,
+      "cutoff": 2018,
+      "future_target_year_eligibility_cannot_be_fully_known_at_origin": true,
+      "future_vintage_used_to_select_fitted_or_issued_forecast_cohort": false,
+      "known_ineligible_positive_mismatches_between_vintages": 0,
+      "later_vintage_realized_eligible_country_years_DESCRIPTIVE_ONLY": 158,
+      "later_vintage_realized_onsets_in_eligible_country_years_DESCRIPTIVE_ONLY": 2,
+      "observed_outcomes": 196,
+      "origin_population": 196,
+      "positive_onset2": 2,
+      "positive_outcomes_by_asof_status": {
+        "certain_ineligible": 0,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 2
+      },
+      "target_year": 2020
+    },
+    {
+      "asof_origin_status_counts": {
+        "certain_ineligible": 38,
+        "eligible_known_origin": 158,
+        "possible_pending_intermediate_year": 0
+      },
+      "calendar_steps": 1,
+      "cutoff": 2019,
+      "future_target_year_eligibility_cannot_be_fully_known_at_origin": false,
+      "future_vintage_used_to_select_fitted_or_issued_forecast_cohort": false,
+      "known_ineligible_positive_mismatches_between_vintages": 0,
+      "later_vintage_realized_eligible_country_years_DESCRIPTIVE_ONLY": 158,
+      "later_vintage_realized_onsets_in_eligible_country_years_DESCRIPTIVE_ONLY": 2,
+      "observed_outcomes": 196,
+      "origin_population": 196,
+      "positive_onset2": 2,
+      "positive_outcomes_by_asof_status": {
+        "certain_ineligible": 0,
+        "eligible_known_origin": 2,
+        "possible_pending_intermediate_year": 0
+      },
+      "target_year": 2020
+    },
+    {
+      "asof_origin_status_counts": {
+        "certain_ineligible": 35,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 161
+      },
+      "calendar_steps": 2,
+      "cutoff": 2019,
+      "future_target_year_eligibility_cannot_be_fully_known_at_origin": true,
+      "future_vintage_used_to_select_fitted_or_issued_forecast_cohort": false,
+      "known_ineligible_positive_mismatches_between_vintages": 0,
+      "later_vintage_realized_eligible_country_years_DESCRIPTIVE_ONLY": 157,
+      "later_vintage_realized_onsets_in_eligible_country_years_DESCRIPTIVE_ONLY": 1,
+      "observed_outcomes": 196,
+      "origin_population": 196,
+      "positive_onset2": 1,
+      "positive_outcomes_by_asof_status": {
+        "certain_ineligible": 0,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 1
+      },
+      "target_year": 2021
+    },
+    {
+      "asof_origin_status_counts": {
+        "certain_ineligible": 39,
+        "eligible_known_origin": 157,
+        "possible_pending_intermediate_year": 0
+      },
+      "calendar_steps": 1,
+      "cutoff": 2020,
+      "future_target_year_eligibility_cannot_be_fully_known_at_origin": false,
+      "future_vintage_used_to_select_fitted_or_issued_forecast_cohort": false,
+      "known_ineligible_positive_mismatches_between_vintages": 0,
+      "later_vintage_realized_eligible_country_years_DESCRIPTIVE_ONLY": 157,
+      "later_vintage_realized_onsets_in_eligible_country_years_DESCRIPTIVE_ONLY": 1,
+      "observed_outcomes": 196,
+      "origin_population": 196,
+      "positive_onset2": 1,
+      "positive_outcomes_by_asof_status": {
+        "certain_ineligible": 0,
+        "eligible_known_origin": 1,
+        "possible_pending_intermediate_year": 0
+      },
+      "target_year": 2021
+    },
+    {
+      "asof_origin_status_counts": {
+        "certain_ineligible": 36,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 160
+      },
+      "calendar_steps": 2,
+      "cutoff": 2020,
+      "future_target_year_eligibility_cannot_be_fully_known_at_origin": true,
+      "future_vintage_used_to_select_fitted_or_issued_forecast_cohort": false,
+      "known_ineligible_positive_mismatches_between_vintages": 0,
+      "later_vintage_realized_eligible_country_years_DESCRIPTIVE_ONLY": 158,
+      "later_vintage_realized_onsets_in_eligible_country_years_DESCRIPTIVE_ONLY": 3,
+      "observed_outcomes": 196,
+      "origin_population": 196,
+      "positive_onset2": 3,
+      "positive_outcomes_by_asof_status": {
+        "certain_ineligible": 0,
+        "eligible_known_origin": 0,
+        "possible_pending_intermediate_year": 3
+      },
+      "target_year": 2022
+    }
+  ],
+  "schema": "idealab.psico.onset2_country_riskset_codebook_audit.v1",
+  "source_23_1_used_for_origin_features": true,
+  "source_25_1_activity_used_only_for_descriptive_audit": true,
+  "study_id": "EMP-ONSET2-RISKSET-231-251-20261110",
+  "target_definition": "UCDP Onset country-level onset2, not conflict-level or multiple-onset"
+}
