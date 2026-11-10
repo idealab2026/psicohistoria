@@ -190,6 +190,61 @@ export function verifyResearch(data) {
      drift.source_urls[1]!==v.sources[2].url ||
      !drift.note?.includes("No es un pronóstico"))
     throw Error("Public historical onset revision claims lack verified provenance or safety boundary");
+  const e=data.external_vintage_holdout;
+  if(!e || e.id!=="EMP-ONSET-171-231-251-CROSS-RELEASE-20261110" ||
+     e.linked_question!=="Q-GEO-01" || e.study_date!=="2026-11-10" ||
+     e.status!=="RETROSPECTIVE_CROSS_RELEASE_NOT_HISTORICALLY_ISSUED" ||
+     e.schema!=="idealab.psico.cross_release_external_holdout.v1" ||
+     e.training_since!==2000 || e.country_prior_strength!==20 ||
+     e.historical_release_timing_cryptographically_verified!==false ||
+     e.point_in_time_verified!==false ||
+     e.prospective_predictions_issued!==0 ||
+     e.operational_utility_demonstrated!==false ||
+     e.more_reliable_than_global_demonstrated!==false ||
+     e.exploratory_confidence_intervals!==true ||
+     e.legacy_19_1_duplicates?.duplicate_country_year_keys!==47 ||
+     e.legacy_19_1_duplicates?.contradictory_onset2_keys!==13 ||
+     e.legacy_19_1_duplicates?.choice_made_after_data_diagnostics!==true ||
+     !e.legacy_source_version_caveat?.includes("2017, not 2018") ||
+     !e.disclaimer?.includes("not an actual historical issue") ||
+     !e.explanatory_note?.includes("no se acreditan emisiones históricas"))
+    throw Error("Unverified cross-release forecasting claim or unsupported provenance");
+  const expectedSources=[
+     ["19.1",2017,"ba54aeace175173b7643a2c14ba35ce89a2fcfd31712085e4fd13de656f752a8"],
+     ["23.1",2022,"e2cadfa7a87b3949f8c638c27381fbb1b44fb076ccb00570782252d0935a2289"],
+     ["25.1",2024,"e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a"]
+  ];
+  if(!expectedSources.every(([version,last,sha])=>
+     e.sources?.[version]?.last_year===last &&
+     e.sources[version].sha256===sha &&
+     e.sources[version].url.startsWith("https://ucdp.uu.se/downloads/onset/")))
+    throw Error("Cross-release official source hash or cutoff mismatch");
+  const periods=e.studies?.flatMap(s=>s.years.map(y=>({year:y.year,n:y.n,events:y.events})));
+  if(!Array.isArray(e.studies)||e.studies.length!==2||
+     e.studies[0].origin_version!=="19.1"||e.studies[0].outcome_version!=="23.1"||
+     e.studies[1].origin_version!=="23.1"||e.studies[1].outcome_version!=="25.1"||
+     JSON.stringify(periods)!==JSON.stringify([
+        {year:2020,n:173,events:2},
+        {year:2021,n:173,events:1},
+        {year:2022,n:173,events:3},
+        {year:2024,n:196,events:1}]))
+    throw Error("Cross-release target years and events differ from source-backed experiment");
+  const a=e.aggregate;
+  if(a?.country_years!==715||a.events!==7||
+     ![a.brier_model,a.brier_global,a.brier_no_event,
+       a.logloss_model,a.logloss_global,a.relative_brier_skill_global].every(Number.isFinite)||
+     !(a.brier_model>a.brier_global&&a.brier_global>a.brier_no_event&&
+       a.logloss_model>a.logloss_global&&a.relative_brier_skill_global<0)||
+     Math.abs(a.relative_brier_skill_global-(1-a.brier_model/a.brier_global))>1e-10)
+    throw Error("Cross-release negative score cannot be presented as positive");
+  const ci=a.cluster_bootstrap?.global?.delta_brier_95pct_interval;
+  if(!Array.isArray(ci)||ci.length!==2||
+     !ci.every(Number.isFinite)||ci[0]<=0||ci[1]<=ci[0]||
+     a.cluster_bootstrap?.global?.replications!==2000||
+     a.cluster_bootstrap?.global?.resampling_unit!=="country"||
+     !Number.isFinite(e.legacy_duplicate_exclusion_sensitivity?.relative_brier_skill_global)||
+     e.legacy_duplicate_exclusion_sensitivity.relative_brier_skill_global>=0)
+    throw Error("Cross-release uncertainty, provenance or sensitivity not validated");
   return true;
 }
 const EXPECTED = "issued_at,input_available_at,event_start,event_end,outcome_verified_at,model_probability,baseline_probability,outcome";

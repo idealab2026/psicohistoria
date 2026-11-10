@@ -552,5 +552,150 @@
     "historical_release_dates_verified": false,
     "prospective_skill_demonstrated": false,
     "note": "Dos etiquetas onset2 cambiaron entre ediciones: incorporación retrospectiva en 2018 y retirada en 2021. Aunque el recuento agregado de eventos positivos permanece en 242, la identidad de las etiquetas no es idéntica. No es un pronóstico emitido ni mide habilidad predictiva."
+  },
+  "external_vintage_holdout": {
+    "id": "EMP-ONSET-171-231-251-CROSS-RELEASE-20261110",
+    "linked_question": "Q-GEO-01",
+    "study_date": "2026-11-10",
+    "workflow_run": "42856960583",
+    "aggregate": {
+      "brier_global": 0.010190138316171321,
+      "brier_model": 0.011100848419106805,
+      "brier_no_event": 0.009790209790209791,
+      "cluster_bootstrap": {
+        "global": {
+          "delta_brier_95pct_interval": [
+            0.00019932883537230657,
+            0.0016579175943622685
+          ],
+          "replications": 2000,
+          "resampling_unit": "country"
+        },
+        "no_event": {
+          "delta_brier_95pct_interval": [
+            0.00044538551068808505,
+            0.002180877230281924
+          ],
+          "replications": 2000,
+          "resampling_unit": "country"
+        }
+      },
+      "country_years": 715,
+      "events": 7,
+      "logloss_global": 0.06495330563742947,
+      "logloss_model": 0.06770207123335475,
+      "relative_brier_skill_global": -0.08937171161751789
+    },
+    "country_prior_strength": 20,
+    "disclaimer": "The model never saw holdout labels during fitting, but this study was conducted ex post in 2026. Publication date of archived releases has not been cryptographically verified. This is not an actual historical issue, and any comparisons are exploratory rather than prospective.",
+    "historical_release_timing_cryptographically_verified": false,
+    "legacy_19_1_duplicates": {
+      "choice_made_after_data_diagnostics": true,
+      "contradictory_onset2_keys": 13,
+      "country_years": 10142,
+      "duplicate_country_year_keys": 47,
+      "primary_rule": "boolean OR (at least one recorded onset)",
+      "raw_rows": 10203,
+      "sensitivity_rule": "omit all repeated country-year keys"
+    },
+    "legacy_duplicate_exclusion_sensitivity": {
+      "brier_global": 0.012002903670444182,
+      "brier_model": 0.012894712824730982,
+      "country_years": 516,
+      "exclusion_policy": "drop 47 repeated historical keys",
+      "origin_country_universe": 173,
+      "relative_brier_skill_global": -0.07429945109721925
+    },
+    "legacy_source_version_caveat": "UCDP archive labels onsets_computed.csv as 19.1, while the linked CSV ends in 2017, not 2018 as described in the 19.1 codebook; treat it as an uncertain-source-vintage 2017 cutoff.",
+    "operational_utility_demonstrated": false,
+    "prospective_predictions_issued": 0,
+    "question": "Q-GEO-01",
+    "schema": "idealab.psico.cross_release_external_holdout.v1",
+    "sources": {
+      "19.1": {
+        "last_year": 2017,
+        "sha256": "ba54aeace175173b7643a2c14ba35ce89a2fcfd31712085e4fd13de656f752a8",
+        "url": "https://ucdp.uu.se/downloads/onset/onsets_computed.csv"
+      },
+      "23.1": {
+        "last_year": 2022,
+        "sha256": "e2cadfa7a87b3949f8c638c27381fbb1b44fb076ccb00570782252d0935a2289",
+        "url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-231.csv"
+      },
+      "25.1": {
+        "last_year": 2024,
+        "sha256": "e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a",
+        "url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-251.csv"
+      }
+    },
+    "status": "RETROSPECTIVE_CROSS_RELEASE_NOT_HISTORICALLY_ISSUED",
+    "studies": [
+      {
+        "baseline_probability": 0.037001287001287,
+        "origin_universe_size": 174,
+        "origin_version": "19.1",
+        "outcome_version": "23.1",
+        "training_country_years": 3106,
+        "training_events": 114,
+        "years": [
+          {
+            "brier_global": 0.012074267794635147,
+            "brier_model": 0.012677393716937014,
+            "brier_no_event": 0.011560693641618497,
+            "events": 2,
+            "logloss_global": 0.07538065310870558,
+            "logloss_model": 0.07384293282260743,
+            "n": 173,
+            "year": 2020
+          },
+          {
+            "brier_global": 0.006721681517193379,
+            "brier_model": 0.008034870364343688,
+            "brier_no_event": 0.005780346820809248,
+            "events": 1,
+            "logloss_global": 0.056541928371772354,
+            "logloss_model": 0.06104012792192028,
+            "n": 173,
+            "year": 2021
+          },
+          {
+            "brier_global": 0.017426854072076916,
+            "brier_model": 0.01914528974978589,
+            "brier_no_event": 0.017341040462427744,
+            "events": 3,
+            "logloss_global": 0.09421937784563882,
+            "logloss_model": 0.10634637051060877,
+            "n": 173,
+            "year": 2022
+          }
+        ]
+      },
+      {
+        "baseline_probability": 0.016283738567923266,
+        "origin_universe_size": 196,
+        "origin_version": "23.1",
+        "outcome_version": "25.1",
+        "training_country_years": 4481,
+        "training_events": 72,
+        "years": [
+          {
+            "brier_global": 0.005201040360443132,
+            "brier_model": 0.005315050035136969,
+            "brier_no_event": 0.00510204081632653,
+            "events": 1,
+            "logloss_global": 0.03734211513950955,
+            "logloss_model": 0.03405249655464307,
+            "n": 196,
+            "year": 2024
+          }
+        ]
+      }
+    ],
+    "target": "UCDP intrastate country level onset2 across all available origin countries",
+    "training_since": 2000,
+    "explanatory_note": "El modelo por país no mejoró el Brier ni el log-loss agregados frente a la tasa global en cuatro años evaluados. Las fuentes están verificadas por hashes, pero la edición vinculada como 19.1 acaba en 2017 pese a la descripción del codebook de 2018. Se aplicó limpieza post hoc de duplicados y no se acreditan emisiones históricas, calibración operativa ni capacidad predictiva prospectiva.",
+    "point_in_time_verified": false,
+    "exploratory_confidence_intervals": true,
+    "more_reliable_than_global_demonstrated": false
   }
 }
