@@ -71,6 +71,17 @@ jobs:
           name: audited-site
           path: dist/
           retention-days: 1
+  cross_release_holdout:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Run independent 19.1/23.1 and 23.1/25.1 cross-release holdouts
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/run_legacy_vintage_holdout.py --report /tmp/idealab-geo01-cross-release.json
+          test -s /tmp/idealab-geo01-cross-release.json
   vintage_archive_audit:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
