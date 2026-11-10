@@ -137,7 +137,7 @@ export function verifyResearch(data) {
   if(p20.length!==2||p20.some(x=>Math.abs(x.relative_brier_improvement-
       r.scenarios.find(v=>v.preceding_inactive_years===x.prior_inactive_years).relative_brier_improvement)>1e-10))
     throw Error("Sensitivity does not reproduce primary fixed prior");
-  const vintage=data.historical_vintage_2024;
+  const v=data.historical_vintage_2024;
   if(!v||v.id!=="EMP-ONSET-231-251-CROSS-RELEASE-2024"||
      v.analysis_type!=="RETROSPECTIVE_CROSS_RELEASE_NOT_ACTUALLY_ISSUED"||
      v.linked_question!=="Q-GEO-01"||
