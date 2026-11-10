@@ -182,7 +182,7 @@ def experiment(src):
         combined.extend(scores)
     sensitivity=None
     if "_19_1_without_duplicates" in src:
-        subset,universe=records_for_study(src["_19_1_without_duplicates"],src["23.1"],2018,
+        subset,universe=records_for_study(src["_19_1_without_duplicates"],src["23.1"],2017,
                                           (2020,2021,2022))
         m=score(subset,"model")["brier"]
         g=score(subset,"global")["brier"]
