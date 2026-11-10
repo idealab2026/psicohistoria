@@ -167,6 +167,46 @@ function renderHistoricalLabelRevisions(){
  r.source_urls.map((url,i)=>'<p><a href="'+safe(url)+'" target="_blank" rel="noopener noreferrer">UCDP '+(i===0?'23.1':'25.1')+'</a> · SHA-256 <code>'+safe(r.source_sha256s[i])+'</code></p>').join("")+
  '<p>Contraste reproducible en el expediente institucional. Las fechas de publicación originales no están certificadas criptográficamente. Este hallazgo no acredita skill prospectivo.</p></details>','soft');
 }
+function renderArchivalCrossRelease(){
+ const r=state.research?.historical_cross_release_statebased;
+ if(!r)return "";
+ const n=v=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:5,maximumFractionDigits:5}).format(v);
+ const pct=v=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:2,maximumFractionDigits:2}).format(v*100)+" %";
+ const method=[
+   ["Markov por país",r.model_brier,r.model_logloss],
+   ["Markov global",r.global_markov_brier,r.global_markov_logloss],
+   ["Frecuencia global · 5 años",r.global_5y_brier,r.global_5y_logloss]
+ ];
+ return section("EVIDENCIA · EDICIONES OFICIALES DIFERENTES · UCDP",
+    "¿Resiste el modelo las revisiones históricas de UCDP?",
+    "Dos pruebas con entrenamiento de una edición antigua y resultados de otra posterior; mismo umbral y horizonte de dos años que GEO-2027. Reconstrucción ex post, no predicciones realmente emitidas en 2023/2024.")+
+ '<div class="section-grid three">'+
+ box('<div class="eyebrow">OBSERVACIONES EXTERNAS</div><div class="card-number">'+safe(r.sample_size)+'</div><p>'+safe(r.events)+' países-año por encima del umbral, en 2024 y 2025</p>')+
+ box('<div class="eyebrow">SKILL BRIER VS MARKOV GLOBAL</div><div class="card-number">'+pct(r.brier_skill_vs_markov)+'</div><p>Reducción retrospectiva de error; no resultado prospectivo certificado</p>')+
+ box('<div class="eyebrow">EDICIONES INDEPENDIENTES</div><div class="card-number">4</div><p>23.1 y 24.1 para entrenamiento; 25.1 y 26.1 para resultados</p>')+
+ '</div>'+
+ box('<h3>Resultados agregados con auténticas ediciones históricas</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Modelo</th><th>Brier ↓</th><th>Log-loss ↓</th></tr></thead><tbody>'+
+ method.map(([name,brier,ll])=>'<tr><td>'+safe(name)+'</td><td>'+n(brier)+'</td><td>'+n(ll)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>El modelo por país mejora el Brier un '+pct(r.brier_skill_vs_markov)+' frente a Markov global y un '+
+ pct(r.brier_skill_vs_global_5y)+' frente a la tasa global en esta muestra retrospectiva. El intervalo de bootstrap exploratorio por país para la diferencia Brier modelo − Markov global es ['+
+ n(r.bootstrap95_delta_brier_markov[0])+', '+n(r.bootstrap95_delta_brier_markov[1])+']. No capta choques comunes de ambos años.</p>','soft')+
+ box('<h3>Origen histórico, resultado y revisiones de etiquetas</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Origen</th><th>Resultado</th><th>Países-año</th><th>Con umbral</th><th>Brier país</th><th>Brier Markov global</th></tr></thead><tbody>'+
+ r.folds.map(f=>'<tr><td>UCDP '+safe(f.origin)+' · '+safe(f.cutoff)+'</td><td>UCDP '+safe(f.assessment)+' · '+safe(f.year)+'</td><td>'+safe(f.observations)+'</td><td>'+safe(f.events)+'</td><td>'+n(f.model_brier)+'</td><td>'+n(f.global_markov_brier)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>Al comparar las etiquetas previas al corte de cada edición, se observan '+
+ r.historical_revisions.map(x=>safe(x.label_flips)+' cambios entre '+safe(x.origin)+' y '+safe(x.assessment)).join(' y ')+
+ '. Las probabilidades se ajustaron con la versión antigua, sin incorporar esas revisiones futuras.</p>','soft')+
+ box('<details><summary>Fuentes oficiales, huellas y alcance científico</summary>'+
+ Object.entries(r.source_releases).map(([version,source])=>
+ '<p><a href="'+safe(source.url)+'" target="_blank" rel="noopener noreferrer">UCDP OrganizedViolenceCY '+safe(version)+'</a> · '+safe(source.rows)+' país-año hasta '+safe(source.last_year)+' · SHA-256 <code>'+safe(source.sha256)+'</code></p>').join("")+
+ '<p>'+safe(r.caution)+'</p>'+
+ '<p><a href="./data/forecast-2027-archival-cross-release.json" target="_blank" rel="noopener noreferrer">Examinar el experimento completo y las incertidumbres</a></p>'+
+ '<p><strong>Estado GEO-2027:</strong> 196 pronósticos emitidos, cero desenlaces de 2027 resueltos. No se han alterado las probabilidades ni el protocolo original.</p>'+
+ '</details>','soft');
+}
 function renderStatebasedHistoricalBacktest(){
  const e=state.research?.statebased_2027_spec_backtest;
  if(!e)return "";
@@ -365,7 +405,7 @@ function renderEmpiricalEvidence(){
 }
 function renderScience(){
  const d=state.data,rows=d.studies.map(s=>({s,score:score(s)}));
- return renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
+ return renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
  '<div class="table-wrap"><table><thead><tr><th>Estudio sintético</th><th>Observaciones</th><th>Brier modelo</th><th>Brier referencia</th><th>Mejora relativa</th><th>Validez</th></tr></thead><tbody>'+rows.map(({s,score:r})=>'<tr><td>'+safe(s.title)+'</td><td>'+r.n+'</td><td>'+format(r.brier)+'</td><td>'+format(r.baselineBrier)+'</td><td>'+formatPct(r.skill)+'</td><td>Sintético</td></tr>').join("")+'</tbody></table></div>'+
  section("REPRODUCIBILIDAD","Evaluación de un experimento","Selecciona un estudio para analizar las probabilidades ficticias y compararlas con su referencia fija.")+
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+
