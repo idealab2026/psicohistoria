@@ -12,6 +12,7 @@ import io
 import json
 import re
 import zipfile
+import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from urllib.parse import urljoin, urlsplit
 from urllib.request import Request, urlopen
@@ -87,28 +88,67 @@ def discover(html):
         selected.setdefault(link["version"],[]).append(link)
     return selected
 
+def xlsx_first_row(data):
+    """Read first sheet column labels with stdlib only."""
+    with zipfile.ZipFile(io.BytesIO(data)) as z:
+        members=z.namelist()
+        if "xl/worksheets/sheet1.xml" not in members:
+            raise ValueError("No first XLSX worksheet")
+        strings=[]
+        if "xl/sharedStrings.xml" in members:
+            with z.open("xl/sharedStrings.xml") as f:
+                for _,el in ET.iterparse(f,events=("end",)):
+                    if el.tag.endswith("}si"):
+                        strings.append("".join(el.itertext()))
+                        el.clear()
+        with z.open("xl/worksheets/sheet1.xml") as f:
+            for _,el in ET.iterparse(f,events=("end",)):
+                if el.tag.endswith("}row"):
+                    values={}
+                    for cell in el:
+                        if not cell.tag.endswith("}c"): continue
+                        addr=cell.attrib.get("r","")
+                        m=re.match(r"([A-Z]+)",addr)
+                        if not m:continue
+                        col=0
+                        for char in m.group(1):
+                            col=col*26+ord(char)-64
+                        value_el=next((ch for ch in cell if ch.tag.endswith("}v")),None)
+                        if value_el is not None and value_el.text is not None:
+                            value=value_el.text
+                            if cell.attrib.get("t")=="s":
+                                value=strings[int(value)]
+                            values[col]=value
+                        elif cell.attrib.get("t")=="inlineStr":
+                            values[col]="".join(cell.itertext())
+                    return [values.get(i,"") for i in range(1,max(values,default=0)+1)]
+    raise ValueError("XLSX has no row values")
+
 def source_metadata(data,format_label):
     import csv
     def describe_csv(raw):
         decoded=raw.decode("utf-8-sig")
         reader=csv.DictReader(io.StringIO(decoded))
         header=reader.fieldnames or []
-        if not {"country_id","year"}.issubset(header):
+        country=next((col for col in ("country_id","country_id_cy") if col in header),None)
+        year=next((col for col in ("year","year_cy") if col in header),None)
+        deaths=next((col for col in ("sb_total_deaths_best","sb_total_deaths_best_cy")
+                     if col in header),None)
+        if not country or not year:
             raise ValueError("Country/year columns missing")
-        deaths="sb_total_deaths_best" if "sb_total_deaths_best" in header else (
-            "sb_total_deaths_best_cy" if "sb_total_deaths_best_cy" in header else None)
         if deaths is None: raise ValueError("No comparable state-based deaths field")
         years=set(); keys=set(); count=0; positives_last=0; last=0
         for row in reader:
             count+=1
-            y=int(row["year"])
-            key=(int(row["country_id"]),y)
+            y=int(row[year])
+            key=(int(row[country]),y)
             if key in keys:raise ValueError("Country-year duplication detected")
             keys.add(key); years.add(y)
             last=max(last,y)
         return {"format":"CSV","columns":header[:30],
                 "rows":count,"last_year":last,
-                "country_year_unique":True,"deaths_field":deaths}
+                "country_year_unique":True,"deaths_field":deaths,
+                "country_id_field":country,"year_field":year}
     if data[:2]==b"PK":
         with zipfile.ZipFile(io.BytesIO(data)) as z:
             members=z.namelist()
@@ -120,9 +160,14 @@ def source_metadata(data,format_label):
                 result["format"]="CSV_ZIP"
                 return result
             if xlsx:
+                headers=xlsx_first_row(data)
                 return {"format":"XLSX","entries":len(members),
                         "shared_strings":"xl/sharedStrings.xml" in members,
                         "sheet_files":len([x for x in members if re.fullmatch(r"xl/worksheets/sheet\d+\.xml",x)]),
+                        "headers":headers[:35],
+                        "country_id_field":next((x for x in ("country_id","country_id_cy") if x in headers),None),
+                        "year_field":next((x for x in ("year","year_cy") if x in headers),None),
+                        "deaths_field":next((x for x in ("sb_total_deaths_best","sb_total_deaths_best_cy") if x in headers),None),
                         "requires_column_validation":True}
             raise ValueError("Unknown ZIP download contents")
     return describe_csv(data)
