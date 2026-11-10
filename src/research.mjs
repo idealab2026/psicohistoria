@@ -245,6 +245,55 @@ export function verifyResearch(data) {
      !Number.isFinite(e.legacy_duplicate_exclusion_sensitivity?.relative_brier_skill_global)||
      e.legacy_duplicate_exclusion_sensitivity.relative_brier_skill_global>=0)
     throw Error("Cross-release uncertainty, provenance or sensitivity not validated");
+  const rs=data.recency_sensitivity_study;
+  if(!rs || rs.id!=="EMP-ONSET-231-251-RECENCY-20261110" ||
+     rs.linked_question!=="Q-GEO-01" ||
+     rs.analysis_date!=="2026-11-10" ||
+     rs.schema!=="idealab.psico.recency_sensitivity.v1" ||
+     rs.status!=="EXPLORATORY_POSTHOC_NOT_PROSPECTIVE" ||
+     rs.legacy_19_1_excluded_due_to_country_year_unit_mismatch!==true ||
+     rs.training_start!==2000 || rs.country_prior_strength!==20 ||
+     JSON.stringify(rs.windows_years)!==JSON.stringify([5,10,20]) ||
+     JSON.stringify(rs.source_vintages)!==JSON.stringify(["23.1","25.1"]) ||
+     rs.source_sha256?.["23.1"]!==e.sources["23.1"].sha256 ||
+     rs.source_sha256?.["25.1"]!==e.sources["25.1"].sha256 ||
+     rs.source_urls?.["23.1"]!==e.sources["23.1"].url ||
+     rs.source_urls?.["25.1"]!==e.sources["25.1"].url ||
+     rs.prospective_forecasts_issued!==0 ||
+     rs.skill_demonstrated!==false ||
+     rs.source_release_dates_verified!==false ||
+     rs.new_independent_confirmatory_holdout!==false ||
+     !rs.caveat?.includes("después de ver") ||
+     !rs.conclusion?.includes("excluded from this assessment"))
+    throw Error("Recency experiment is not a verified cross-release exploratory study");
+  const inner=rs.internally_revised_vintage,outer=rs.cross_release_holdout_2024;
+  if(inner?.assessment!=="SAME_VINTAGE_REVISED_DATA_LEAKAGE_NOT_HISTORICALLY_ASOF" ||
+     inner.n!==1568||inner.events!==22 ||
+     JSON.stringify(inner.tested_years)!==JSON.stringify([2015,2016,2017,2018,2019,2020,2021,2022]) ||
+     !Array.isArray(inner.annual_events)||inner.annual_events.length!==8 ||
+     inner.annual_events.reduce((n,v)=>n+v.events,0)!==22 ||
+     !inner.annual_events.every(v=>v.n===196) ||
+     outer?.assessment!=="EXTERNAL_VINTAGE_LABELS_BUT_2024_PREVIOUSLY_EXAMINED" ||
+     outer.year!==2024 || outer.training_last_year!==2022 ||
+     outer.n!==196||outer.events!==1)
+    throw Error("Recency temporal comparison or sample coverage manipulated");
+  const candidateNames=["country_10","country_20","country_5","country_full",
+                         "global_10","global_20","global_5","global_full"];
+  for(const metrics of [inner.pooled_metrics,outer.metrics]){
+    if(!metrics || candidateNames.some(k=>!metrics[k]||
+       !Number.isFinite(metrics[k].brier)||metrics[k].brier<0||metrics[k].brier>1||
+       !Number.isFinite(metrics[k].logloss)||metrics[k].logloss<0)||
+       metrics.no_event?.logloss!==null ||
+       !Number.isFinite(metrics.no_event?.brier))
+      throw Error("Recency scientific metrics incomplete or invalid");
+  }
+  const near=(a,b)=>Math.abs(a-b)<1e-10;
+  if(!near(outer.metrics.global_full.brier, e.studies[1].years[0].brier_global)||
+     !near(outer.metrics.country_full.brier,e.studies[1].years[0].brier_model)||
+     !(outer.metrics.country_5.brier>outer.metrics.global_5.brier &&
+       outer.metrics.global_5.brier<outer.metrics.global_full.brier &&
+       inner.pooled_metrics.country_full.brier>inner.pooled_metrics.global_full.brier))
+    throw Error("Recency sensitivity must preserve cross-source negative Brier and reference");
   return true;
 }
 const EXPECTED = "issued_at,input_available_at,event_start,event_end,outcome_verified_at,model_probability,baseline_probability,outcome";
