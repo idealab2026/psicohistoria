@@ -167,6 +167,43 @@ function renderHistoricalLabelRevisions(){
  r.source_urls.map((url,i)=>'<p><a href="'+safe(url)+'" target="_blank" rel="noopener noreferrer">UCDP '+(i===0?'23.1':'25.1')+'</a> · SHA-256 <code>'+safe(r.source_sha256s[i])+'</code></p>').join("")+
  '<p>Contraste reproducible en el expediente institucional. Las fechas de publicación originales no están certificadas criptográficamente. Este hallazgo no acredita skill prospectivo.</p></details>','soft');
 }
+function renderOnset2Homogeneous(){
+ const e=state.research?.onset2_homogeneous_vintage;
+ if(!e)return "";
+ const n=v=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:5,maximumFractionDigits:5}).format(v);
+ const pct=v=>new Intl.NumberFormat("es-ES",{style:"percent",maximumFractionDigits:2}).format(v);
+ const table=[
+  ["Tasa por país · Empirical Bayes",e.model_brier,e.model_logloss],
+  ["Tasa global histórica",e.global_brier,e.global_logloss],
+  ["Tasa global de los últimos cinco años",e.recent_brier,e.recent_logloss],
+  ["Sin inicio de conflicto",e.no_onset_brier,null]
+ ];
+ return section("INVESTIGACIÓN · INICIO DE CONFLICTO ARMADO · UCDP ONSET2",
+  "¿Podemos anticipar el inicio o reinicio de guerras?",
+  "Esta pregunta es distinta de alcanzar 25 muertes anuales de violencia organizada state-based. Uso exclusivo de ediciones homogéneas UCDP Onset 23.1 para entrenamiento y 25.1 para resultados, reconstruidas en 2026.")+
+ '<div class="section-grid three">'+
+ box('<div class="eyebrow">OBSERVACIONES EN DOS AÑOS</div><div class="card-number">'+safe(e.country_years)+'</div><p>2023 y 2024, 196 países por año</p>')+
+ box('<div class="eyebrow">INICIOS O REINICIOS ONSET2</div><div class="card-number">'+safe(e.events)+'</div><p>Solo un positivo en cada año; resultados inestables</p>')+
+ box('<div class="eyebrow">BRIER SKILL VS GLOBAL</div><div class="card-number">'+pct(e.brier_skill_global)+'</div><p>Negativo: el modelo por país obtuvo peor Brier</p>')+
+ '</div>'+
+ box('<h3>Resultado desfavorable frente a las referencias</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Estimador</th><th>Brier ↓</th><th>Log-loss ↓</th></tr></thead><tbody>'+
+ table.map(([label,brier,logloss])=>'<tr><td>'+safe(label)+'</td><td>'+n(brier)+'</td><td>'+(logloss===null?'No definido':n(logloss))+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>El estimador por país es una tasa Empirical Bayes regularizada, <strong>no el modelo Markov de dos pasos de GEO-2027</strong>. En esta muestra de dos inicios no supera a la tasa global, la tasa reciente ni la regla sin inicio. La regla sin inicio no tiene log-loss finito cuando se observa un evento.</p>','soft')+
+ box('<h3>Ordenación de las alertas de inicio</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Año</th><th>Inicios</th><th>Average precision</th><th>ROC-AUC</th><th>Aciertos top-5</th><th>Aciertos top-20</th></tr></thead><tbody>'+
+ e.years.map(f=>'<tr><td>'+safe(f.year)+'</td><td>'+safe(f.events)+'</td><td>'+pct(f.ap_model)+'</td><td>'+n(f.roc_auc_model)+'</td><td>'+safe(f.top_5_hits)+'</td><td>'+safe(f.top_20_hits)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p><strong>Ninguno de los dos inicios aparece en los veinte primeros puestos de su año.</strong> Un único positivo por año impide inferencias sólidas sobre ROC-AUC o average precision.</p>','soft')+
+ box('<details><summary>Control de ediciones, diferencias y limitaciones</summary>'+
+ '<p>'+safe(e.warning)+'</p>'+
+ '<p>Comparación de las dos ediciones: '+safe(e.vintage_label_flips)+' cambios de etiqueta en '+safe(e.vintage_common_country_years)+' registros históricos comunes. La edición antigua 19.1 se excluye por duplicados y unidad posiblemente distinta.</p>'+
+ Object.entries(e.sources).map(([version,source])=>'<p><a href="'+safe(source.url)+'" target="_blank" rel="noopener noreferrer">UCDP Onset '+safe(version)+'</a> · hasta '+safe(source.last_year)+' · SHA-256 <code>'+safe(source.sha256)+'</code></p>').join("")+
+ '<p><a href="./data/onset2-231-251-homogeneous.json" target="_blank" rel="noopener noreferrer">Examinar el estudio reproducible y sus intervalos</a></p>'+
+ '<p>Estado de la emisión GEO-2027: sus 196 probabilidades permanecen intactas y no hay resultados de 2027 evaluados.</p>'+
+ '</details>','soft');
+}
 function renderNewEntryComparator(){
  const x=state.research?.new_entry_2027_comparison;
  if(!x)return "";
@@ -482,7 +519,7 @@ function renderEmpiricalEvidence(){
 }
 function renderScience(){
  const d=state.data,rows=d.studies.map(s=>({s,score:score(s)}));
- return renderNewEntryComparator()+renderOriginStateSkill()+renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
+ return renderOnset2Homogeneous()+renderNewEntryComparator()+renderOriginStateSkill()+renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
  '<div class="table-wrap"><table><thead><tr><th>Estudio sintético</th><th>Observaciones</th><th>Brier modelo</th><th>Brier referencia</th><th>Mejora relativa</th><th>Validez</th></tr></thead><tbody>'+rows.map(({s,score:r})=>'<tr><td>'+safe(s.title)+'</td><td>'+r.n+'</td><td>'+format(r.brier)+'</td><td>'+format(r.baselineBrier)+'</td><td>'+formatPct(r.skill)+'</td><td>Sintético</td></tr>').join("")+'</tbody></table></div>'+
  section("REPRODUCIBILIDAD","Evaluación de un experimento","Selecciona un estudio para analizar las probabilidades ficticias y compararlas con su referencia fija.")+
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+
