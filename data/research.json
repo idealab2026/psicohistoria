@@ -1824,6 +1824,53 @@
     "model_improvement_prospectively_confirmed": false,
     "same_original_2027_issue_unchanged": true,
     "outcomes_2027_resolved": 0,
-    "interpretation": "La incidencia real de conflictos internos activos en el origen mejora marginalmente los estimadores por país en la evaluación interna y externa 2023/24, pero no supera el baseline global reciente externo. Los dos onset2 externos se dieron en países que no registraban conflicto interno activo en el origen 2022; top20 cero aciertos. La definición tiene unidad conflicto-año agregada a país-año para 3/4 de UCDP/PRIO; un país con conflicto activo aún puede experimentar otro inicio. Todos los modelos se formularon después de examinar outcomes 2023/24 y se reconstruyeron ex post en 2026, sin histórico as-of ni confirmación prospectiva. Los 2.744 pronósticos internos representan 1.568 país-año y 22 eventos únicos; las 196 probabilidades reales GEO-2027 no se modifican."
+    "interpretation": "La incidencia real de conflictos internos activos en el origen mejora marginalmente los estimadores por país en la evaluación interna y externa 2023/24, pero no supera el baseline global reciente externo. Los dos onset2 externos se dieron en países que no registraban conflicto interno activo en el origen 2022; top20 cero aciertos. La definición tiene unidad conflicto-año agregada a país-año para tipos 3/4 de UCDP/PRIO. CORRECCIÓN UCDP: este target Country Level Onset no registra otro onset si hay un conflicto intrastatal activo; la variante Country Level Multiple Onset sí permite episodios simultáneos. Las métricas publicadas incluyen países conocidos inelegibles y no prueban capacidad condicional entre países elegibles. Todos los modelos se formularon después de examinar outcomes 2023/24 y se reconstruyeron ex post en 2026, sin histórico as-of ni confirmación prospectiva. Los 2.744 pronósticos internos representan 1.568 país-año y 22 eventos únicos; las 196 probabilidades reales GEO-2027 no se modifican."
+  },
+  "onset2_country_riskset_codebook": {
+    "id": "EMP-ONSET2-RISKSET-231-251-20261110",
+    "status": "POST_HOC_CODEBOOK_SEMANTIC_RISKSET_AUDIT_NOT_MODEL_SELECTION",
+    "codebook": "https://ucdp.uu.se/downloads/onset/ucdp-codebook-onset-251.pdf",
+    "report_path": "data/onset2-country-riskset-audit.json",
+    "dataset": "UCDP_INTRASTATE_COUNTRY_LEVEL_ONSET_VERSION_2",
+    "multiple_onset_distinct": "UCDP_INTRASTATE_COUNTRY_LEVEL_MULTIPLE_ONSET_VERSION_3",
+    "source23_onset_hash": "e2cadfa7a87b3949f8c638c27381fbb1b44fb076ccb00570782252d0935a2289",
+    "source25_onset_hash": "e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a",
+    "source23_acd_hash": "8fe95d8a5780cba1d312f9673ffd9e93b90c91bb26e348393a583853a892b718",
+    "source25_acd_hash": "b49f7e80510d8a5779a52d872aef5b26456b3f5cbdd3ec32031339488e81813f",
+    "assessed_years": [
+      {
+        "target": 2023,
+        "origin": 2022,
+        "total": 196,
+        "outcomes": 1,
+        "known_eligible": 160,
+        "known_ineligible": 36,
+        "unknown_intermediate": 0,
+        "positives_in_known_ineligible": 0,
+        "later_eligible_diagnostic_only": 159,
+        "later_eligible_onsets_diagnostic_only": 1
+      },
+      {
+        "target": 2024,
+        "origin": 2022,
+        "total": 196,
+        "outcomes": 1,
+        "known_eligible": 0,
+        "known_ineligible": 34,
+        "unknown_intermediate": 162,
+        "positives_in_known_ineligible": 0,
+        "later_eligible_diagnostic_only": 159,
+        "later_eligible_onsets_diagnostic_only": 1
+      }
+    ],
+    "historic_rolls": 14,
+    "historic_positives_in_known_ineligible": 0,
+    "future_year_eligibility_never_assumed_known": true,
+    "revised_source_used_to_filter_training": false,
+    "codebook_semantics_corrected": true,
+    "no_new_forecasts_issued": true,
+    "prospective_2027_forecast_unchanged": true,
+    "prospective_2027_results_resolved": 0,
+    "method_note": "CORRECCIÓN DEL ESTUDIO ANTERIOR: UCDP Intrastate Country Level Onset (version 2) no registra onsets en un país con otro conflicto interno activo. La variante Country Level Multiple Onset (version 3) sí permite nuevos conflictos concurrentes. Para onset2 se requieren T-1 y T-2 sin conflicto. A horizonte +1 el conjunto elegible se conoce con el origen; a +2 el año intermedio T-1 se desconoce y jamás debe usarse la edición futura para filtrar el pronóstico. Los Brier y rankings anteriores se calculan sobre todos los países, incluidos algunos inelegibles, y NO prueban habilidad condicional al conjunto elegible. Estudio de factibilidad retrospectivo, sin nueva habilidad prospectiva."
   }
 }

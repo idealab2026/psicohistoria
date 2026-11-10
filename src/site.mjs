@@ -167,6 +167,24 @@ function renderHistoricalLabelRevisions(){
  r.source_urls.map((url,i)=>'<p><a href="'+safe(url)+'" target="_blank" rel="noopener noreferrer">UCDP '+(i===0?'23.1':'25.1')+'</a> · SHA-256 <code>'+safe(r.source_sha256s[i])+'</code></p>').join("")+
  '<p>Contraste reproducible en el expediente institucional. Las fechas de publicación originales no están certificadas criptográficamente. Este hallazgo no acredita skill prospectivo.</p></details>','soft');
 }
+function renderOnset2CountryRiskset(){
+ const x=state.research?.onset2_country_riskset_codebook;
+ if(!x)return "";
+ return section("INVESTIGACIÓN · CONJUNTO EN RIESGO · CORRECCIÓN UCDP",
+ "¿Qué países pueden registrar un inicio onset2?",
+ "El manual oficial distingue Country Level Onset (este estudio) de Country Level Multiple Onset. En el primero NO se codifica onset cuando otra guerra intrastatal continúa activa en el país.")+
+ box('<div class="table-wrap"><table><thead><tr><th>Pronóstico desde 2022</th><th>Universo</th><th>Elegibles conocidos</th><th>Pendientes por año intermedio</th><th>Inelegibles conocidos</th><th>Inicios observados</th></tr></thead><tbody>'+
+ x.assessed_years.map(y=>'<tr><td>'+safe(y.target)+'</td><td>'+safe(y.total)+'</td><td>'+safe(y.known_eligible)+'</td><td>'+safe(y.unknown_intermediate)+'</td><td>'+safe(y.known_ineligible)+'</td><td>'+safe(y.outcomes)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p><strong>Regla onset2:</strong> para un inicio en T hacen falta dos años completos sin conflictos intrastatales (T−1 y T−2). Para 2023, observando hasta 2022, el estado es conocido. Para 2024, T−1 = 2023 era futuro; los 162 países no descartados son <strong>potencialmente elegibles, no confirmados</strong>. Filtrar por lo ocurrido en 2023 después de conocerlo sería fuga de información.</p>'+
+ '<p>Los dos inicios evaluados aparecen entre los países no descartados al emitir. Los 14 cortes históricos no registran inicios contradictorios con el conjunto de riesgo conocido.</p>','soft')+
+ box('<details><summary>Corrección, fuente y consecuencias para la investigación</summary>'+
+ '<p>'+safe(x.method_note)+'</p>'+
+ '<p>El Brier histórico de los modelos de inicio se calculó sobre todos los países (incluidos algunos que no podían registrar onset2). No debe interpretarse como rendimiento entre países elegibles ni compararse con una tasa base condicional sin reconstruir el estudio.</p>'+
+ '<p><a href="'+safe(x.codebook)+'" target="_blank" rel="noopener noreferrer">Manual oficial UCDP Onset v25.1</a> · <a href="./data/onset2-country-riskset-audit.json" target="_blank" rel="noopener noreferrer">Informe reproducible de elegibilidad por año y origen</a>.</p>'+
+ '<p>La variante Country Level Multiple Onset estudia otra pregunta y requeriría otras etiquetas; no cambia la emisión GEO-2027 de violencia state-based.</p>'+
+ '</details>','soft');
+}
 function renderConflictIncidenceOnset2(){
  const x=state.research?.onset2_conflict_activity_study;
  if(!x)return "";
@@ -203,7 +221,7 @@ function renderConflictIncidenceOnset2(){
  '<div class="table-wrap"><table><thead><tr><th>Objetivo</th><th>Países</th><th>Con conflicto en 2022</th><th>Inicios onset2</th><th>Inicios entre activos</th><th>Top-20</th></tr></thead><tbody>'+
  x.annual_external.map(y=>'<tr><td>'+safe(y.target_year)+'</td><td>'+safe(y.n)+'</td><td>'+safe(y.origin_active_n)+'</td><td>'+safe(y.events)+'</td><td>'+safe(y.onsets_among_origin_active)+'</td><td>'+safe(y.top20_hits)+'/20</td></tr>').join("")+
  '</tbody></table></div>'+
- '<p>Los dos inicios se registran fuera del grupo de países con conflicto interno activo en 2022. <strong>Actividad previa no es sinónimo de riesgo de nuevo inicio</strong>: pueden surgir nuevos conflictos dentro de países ya activos y también aparecer en países sin conflicto registrado.</p>','soft')+
+ '<p>Los dos inicios se registran fuera del grupo de países con conflicto interno activo en 2022. <strong>Actividad previa no es sinónimo de riesgo de nuevo inicio</strong>: un país puede experimentar otro conflicto nuevo, pero <strong>esta variante Country Level Onset no lo cuenta como onset2 si ya hay un conflicto intrastatal activo</strong>; para esa otra pregunta UCDP tiene la variante Multiple Onset.</p>','soft')+
  box('<details><summary>Fuente, cambios entre ediciones y límites científicos</summary>'+
  '<p>El archivo original registra conflictos por año. Se han agregado a país–año solo registros intrastatales (tipos 3 y 4), con código GW único del gobierno implicado. En la edición 23.1 hay '+safe(x.source23_intrastate_country_years)+' país-año con actividad; en 25.1 hay '+safe(x.source25_intrastate_country_years)+'.</p>'+
  '<p>La revisión histórica de actividad hasta 2022 añade '+safe(x.historical_acd_revisions.added_in_later_vintage_through_2022)+' registros país-año y elimina '+safe(x.historical_acd_revisions.removed_in_later_vintage_through_2022)+' entre ediciones. Las revisiones posteriores no entran en los predictores.</p>'+
@@ -603,7 +621,7 @@ function renderEmpiricalEvidence(){
 }
 function renderScience(){
  const d=state.data,rows=d.studies.map(s=>({s,score:score(s)}));
- return renderConflictIncidenceOnset2()+renderOnset2LaggedSignal()+renderOnset2Homogeneous()+renderNewEntryComparator()+renderOriginStateSkill()+renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
+ return renderOnset2CountryRiskset()+renderConflictIncidenceOnset2()+renderOnset2LaggedSignal()+renderOnset2Homogeneous()+renderNewEntryComparator()+renderOriginStateSkill()+renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
  '<div class="table-wrap"><table><thead><tr><th>Estudio sintético</th><th>Observaciones</th><th>Brier modelo</th><th>Brier referencia</th><th>Mejora relativa</th><th>Validez</th></tr></thead><tbody>'+rows.map(({s,score:r})=>'<tr><td>'+safe(s.title)+'</td><td>'+r.n+'</td><td>'+format(r.brier)+'</td><td>'+format(r.baselineBrier)+'</td><td>'+formatPct(r.skill)+'</td><td>Sintético</td></tr>').join("")+'</tbody></table></div>'+
  section("REPRODUCIBILIDAD","Evaluación de un experimento","Selecciona un estudio para analizar las probabilidades ficticias y compararlas con su referencia fija.")+
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+
