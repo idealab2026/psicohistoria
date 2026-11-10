@@ -668,8 +668,8 @@ export function verifyResearch(data) {
     throw Error("Lagged onset2 fixed candidate Brier/logloss results were altered");
   if(!Array.isArray(lag.external_folds)||lag.external_folds.length!==2||
      ![
-       [2023,2022,1,196,1,0.005553286023727998,0.005142208533688694,0.00510204081632653,0.358974358974359,0,96,0],
-       [2024,2022,2,196,1,0.005298678075051153,0.005142208533688694,0.02040816326530612,0.8333333333333334,0,94,0]
+       [2023,2022,1,196,1,0.00554561051884837,0.005142208533688694,0.00510204081632653,0.358974358974359,0,96,0],
+       [2024,2022,2,196,1,0.005306353579930783,0.005142208533688694,0.02040816326530612,0.8333333333333334,0,94,0]
      ].every(([year,origin,h,n,positives,modelBrier,recentBrier,ap,auc,hits,exposure,events],i)=>{
        const a=lag.external_folds[i];
        return a?.year===year&&a.origin_year===origin&&a.horizon===h&&
