@@ -18,7 +18,7 @@ SOURCES = {
     "19.1": {
         "url":"https://ucdp.uu.se/downloads/onset/onsets_computed.csv",
         "sha256":"ba54aeace175173b7643a2c14ba35ce89a2fcfd31712085e4fd13de656f752a8",
-        "last_year":2018,
+        "last_year":2017,  # Actual linked CSV; the 19.1 codebook mentions 2018.
     },
     "23.1": {
         "url":"https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-231.csv",
@@ -107,7 +107,7 @@ def records_for_study(orig, final, origin_last, years, prior_strength=REGULARIZA
     if (not isinstance(prior_strength,(int,float)) or not math.isfinite(prior_strength)
         or prior_strength<=0):
         raise ValueError("Invalid prior strength")
-    if any(y <= origin_last or y>origin_last+4 for y in years):
+    if any(y <= origin_last or y>origin_last+5 for y in years):
         raise ValueError("Temporal holdout not beyond archival vintage")
     training=[(year,code,y) for (year,code),y in orig.items()
               if START_TRAIN_YEAR<=year<=origin_last]
@@ -198,6 +198,7 @@ def experiment(src):
     return {
         "schema":"idealab.psico.cross_release_external_holdout.v1",
         "status":"RETROSPECTIVE_CROSS_RELEASE_NOT_HISTORICALLY_ISSUED",
+        "legacy_source_version_caveat":"UCDP archive labels onsets_computed.csv as 19.1, while the linked CSV ends in 2017, not 2018 as described in the 19.1 codebook; treat it as an uncertain-source-vintage 2017 cutoff.",
         "question":"Q-GEO-01",
         "target":"UCDP intrastate country level onset2 across all available origin countries",
         "training_since":START_TRAIN_YEAR,
