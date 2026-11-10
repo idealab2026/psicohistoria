@@ -54,14 +54,14 @@ function renderArchive(){
 function renderBrief(){
  const d=state.data;
  const ready=d.milestones.filter(x=>x.state==="verificado").length;
- return section("INICIO · ESTADO PÚBLICO","Próximos pasos y resultados","Preparar, publicar y demostrar utilidad son hitos distintos. Las cifras de esta web son ilustrativas y no constituyen evidencia predictiva.")+
+ return section("INICIO · ESTADO PÚBLICO","Próximos pasos y resultados","Preparar, publicar y demostrar utilidad son hitos distintos. La sección Evidencia incluye estudios reales retrospectivos; otras vistas utilizan muestras sintéticas y no acreditan capacidad prospectiva.")+
  scientificNeuralPanel(d.programs,state.program)+
  box('<div class="item-row wrap"><div><h3>Registro público experimental</h3><p>Versión funcional con muestras sintéticas y revisión de procedimientos.</p></div>'+tag("Sin predicciones reales","alert")+'</div>'+
  '<div class="section-grid three"><div><div class="card-number">'+d.programs.length+'</div><div class="tiny">Líneas de estudio</div></div><div><div class="card-number">'+ready+'/'+d.milestones.length+'</div><div class="tiny">Pasos técnicos verificados</div></div><div><div class="card-number">0</div><div class="tiny">Pronósticos prospectivos acreditados</div></div></div>','highlight')+
  section("LECTURA RÁPIDA","Qué se puede explorar","Cada módulo tiene un propósito concreto y muestra los supuestos, las fuentes y las limitaciones de los ejemplos.")+
  cards([
  ["Árbol de futuros","Escenarios alternativos y supuestos explícitos. No son pronósticos.", "navigate","futures"],
- ["Evidencia y modelos","Evaluación probabilística sintética comparada con un baseline.", "navigate","science"],
+ ["Evidencia y modelos","Estudios retrospectivos reales separados de evaluaciones sintéticas.", "navigate","science"],
  ["Programa de investigación","Mapa de líneas, protocolo, hitos y bloqueos.", "navigate","overview"],
  ["Catálogo recuperado","Cuatro vertientes, tres aplicaciones y catorce relaciones en un registro histórico.", "navigate","portfolio"],
  ["Crear investigaciones","Conectar hipótesis y preparar ideas y guiones locales.", "navigate","ideas"]
@@ -110,6 +110,38 @@ function renderHistoricalLabelRevisions(){
  '<details><summary>Fuentes, huellas y limitaciones</summary>'+
  r.source_urls.map((url,i)=>'<p><a href="'+safe(url)+'" target="_blank" rel="noopener noreferrer">UCDP '+(i===0?'23.1':'25.1')+'</a> · SHA-256 <code>'+safe(r.source_sha256s[i])+'</code></p>').join("")+
  '<p>Contraste reproducible en el expediente institucional. Las fechas de publicación originales no están certificadas criptográficamente. Este hallazgo no acredita skill prospectivo.</p></details>','soft');
+}
+function renderExternalVintageHoldout(){
+ const e=state.research?.external_vintage_holdout;
+ if(!e)return "";
+ const a=e.aggregate;
+ const six=n=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:6,maximumFractionDigits:6}).format(n);
+ const pct=n=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:2,maximumFractionDigits:2}).format(n*100)+" %";
+ const periods=e.studies.flatMap(s=>s.years);
+ return section("INVESTIGACIÓN · CONTRASTE EXTERNO ENTRE EDICIONES · UCDP",
+   "¿Supera el modelo por país a la referencia global en cuatro años distintos?",
+   "Evaluación retrospectiva de 2020, 2021, 2022 y 2024 usando una edición anterior para ajustar el modelo y otra posterior para comprobar los desenlaces. No se emitieron predicciones en esos años.")+
+ '<div class="section-grid three">'+
+ box('<div class="eyebrow">PAÍSES-AÑO EVALUADOS</div><div class="card-number">'+safe(a.country_years)+'</div><p>'+safe(a.events)+' comienzos de conflicto observados</p>')+
+ box('<div class="eyebrow">MEJORA BRIER DEL MODELO</div><div class="card-number">'+safe(pct(a.relative_brier_skill_global))+'</div><p>Un valor negativo: el modelo por país empeora frente al global</p>')+
+ box('<div class="eyebrow">VALIDEZ DE LA PREDICCIÓN</div><div class="card-number">No acreditada</div><p>Estudio ex post; ediciones y disponibilidad histórica imperfectas</p>')+
+ '</div>'+
+ box('<h3>Comparación externa de pérdidas probabilísticas</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Modelo</th><th>Brier ↓</th><th>Log-loss ↓</th></tr></thead><tbody>'+
+ '<tr><td>País regularizado (prior 20)</td><td>'+six(a.brier_model)+'</td><td>'+six(a.logloss_model)+'</td></tr>'+
+ '<tr><td>Frecuencia global</td><td>'+six(a.brier_global)+'</td><td>'+six(a.logloss_global)+'</td></tr>'+
+ '<tr><td>Siempre sin conflicto (p=0)</td><td>'+six(a.brier_no_event)+'</td><td>No se presenta: p=0 asigna pérdida infinita si hay eventos</td></tr>'+
+ '</tbody></table></div>'+
+ '<p>El modelo por país tiene peor Brier y peor log-loss que la frecuencia global. El intervalo de bootstrap exploratorio (países, 2.000 réplicas) para la diferencia Brier país − global está entre '+six(a.cluster_bootstrap.global.delta_brier_95pct_interval[0])+' y '+six(a.cluster_bootstrap.global.delta_brier_95pct_interval[1])+'. No es una validación confirmatoria.</p>'+
+ '<details><summary>Desglose anual y método</summary>'+
+ '<div class="table-wrap"><table><thead><tr><th>Año</th><th>Países</th><th>Eventos</th><th>Brier país</th><th>Brier global</th></tr></thead><tbody>'+
+ periods.map(p=>'<tr><td>'+safe(p.year)+'</td><td>'+safe(p.n)+'</td><td>'+safe(p.events)+'</td><td>'+six(p.brier_model)+'</td><td>'+six(p.brier_global)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>Edición catalogada como 19.1: el CSV oficial enlazado acaba en 2017, aunque el codebook menciona 2018. Contiene '+safe(e.legacy_19_1_duplicates.duplicate_country_year_keys)+' claves país-año repetidas; '+safe(e.legacy_19_1_duplicates.contradictory_onset2_keys)+' con etiqueta incompatible. Se utilizó una agregación OR exploratoria y otra sensibilidad eliminando esos casos. En esta última el Brier Skill frente al global es '+safe(pct(e.legacy_duplicate_exclusion_sensitivity.relative_brier_skill_global))+'.</p>'+
+ '<p>'+safe(e.explanatory_note)+'</p>'+
+ Object.entries(e.sources).map(([version,item])=>'<p><a href="'+safe(item.url)+'" target="_blank" rel="noopener noreferrer">UCDP '+safe(version)+'</a> · SHA-256 <code>'+safe(item.sha256)+'</code></p>').join("")+
+ '<p>Expediente reproducible en GitHub Actions #'+safe(e.workflow_run)+'. Fuentes oficiales abiertas; solo se publica el agregado, no pronósticos nacionales ni archivos privados.</p>'+
+ '</details>','soft');
 }
 function renderVintageHoldout(){
  const r=state.research?.historical_vintage_2024;
@@ -203,7 +235,7 @@ function renderEmpiricalEvidence(){
 }
 function renderScience(){
  const d=state.data,rows=d.studies.map(s=>({s,score:score(s)}));
- return renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
+ return renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
  '<div class="table-wrap"><table><thead><tr><th>Estudio sintético</th><th>Observaciones</th><th>Brier modelo</th><th>Brier referencia</th><th>Mejora relativa</th><th>Validez</th></tr></thead><tbody>'+rows.map(({s,score:r})=>'<tr><td>'+safe(s.title)+'</td><td>'+r.n+'</td><td>'+format(r.brier)+'</td><td>'+format(r.baselineBrier)+'</td><td>'+formatPct(r.skill)+'</td><td>Sintético</td></tr>').join("")+'</tbody></table></div>'+
  section("REPRODUCIBILIDAD","Evaluación de un experimento","Selecciona un estudio para analizar las probabilidades ficticias y compararlas con su referencia fija.")+
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+
