@@ -149,6 +149,7 @@ if issued_file.exists() and manifest_file.exists():
            manifest.get("forecast_sha256")!="5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5" or \
            manifest.get("status")!="ISSUED_PROSPECTIVE_UNRESOLVED" or \
            manifest.get("first_public_forecast_commit")!="3bb3561c8d6182c30624591276c705fb76ce99dc" or \
+           manifest.get("canonical_document_commit")!="8b924e0b0c7a07e27977160c9658cfed77940aff" or \
            manifest.get("preregistered_protocol_main_commit")!="87959a117e1b30323392a488c48c9afb1cb0bffc" or \
            manifest.get("outcomes_resolved")!=0 or \
            manifest.get("demonstrated_predictive_skill") is not False or \
