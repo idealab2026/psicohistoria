@@ -167,6 +167,45 @@ function renderHistoricalLabelRevisions(){
  r.source_urls.map((url,i)=>'<p><a href="'+safe(url)+'" target="_blank" rel="noopener noreferrer">UCDP '+(i===0?'23.1':'25.1')+'</a> · SHA-256 <code>'+safe(r.source_sha256s[i])+'</code></p>').join("")+
  '<p>Contraste reproducible en el expediente institucional. Las fechas de publicación originales no están certificadas criptográficamente. Este hallazgo no acredita skill prospectivo.</p></details>','soft');
 }
+function renderNewEntryComparator(){
+ const x=state.research?.new_entry_2027_comparison;
+ if(!x)return "";
+ const dec=n=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:5,maximumFractionDigits:5}).format(n);
+ const pct=n=>new Intl.NumberFormat("es-ES",{style:"percent",minimumFractionDigits:1,maximumFractionDigits:2}).format(n);
+ const met=[
+  ["Markov por país",x.model_brier,x.model_logloss],
+  ["Frecuencia directa de entradas a dos años",x.entry_prior_brier,x.entry_prior_logloss],
+  ["Markov global",x.global_markov_brier,x.global_markov_logloss]
+ ];
+ return section("INVESTIGACIÓN · NUEVOS CRUCES DE UMBRAL",
+   "¿Se anticipan realmente entradas nuevas?",
+   "Evaluamos exclusivamente los países que partían por debajo de 25 muertes estatales-organizadas: el origen no equivale a inicio de guerra. El baseline específico se calcula solo con registros anteriores a cada corte, pero se eligió después de observar los resultados.")+
+ '<div class="section-grid three">'+
+ box('<div class="eyebrow">PAÍSES-AÑO INICIALMENTE POR DEBAJO</div><div class="card-number">'+safe(x.n)+'</div><p>'+safe(x.entries)+' terminan superando las 25 muertes en el año de evaluación</p>')+
+ box('<div class="eyebrow">BRIER SKILL VS ENTRADA DIRECTA</div><div class="card-number">'+pct(x.skill_vs_entry_prior)+'</div><p>Mejora descriptiva, intervalo de incertidumbre incluye cero</p>')+
+ box('<div class="eyebrow">SOBREESTIMACIÓN DEL NÚMERO DE ENTRADAS</div><div class="card-number">'+pct(x.model_predicted_entry_rate/x.empirical_entry_rate-1)+'</div><p>Probabilidad media '+pct(x.model_predicted_entry_rate)+' frente a frecuencia observada '+pct(x.empirical_entry_rate)+'</p>')+
+ '</div>'+
+ box('<h3>Modelo congelado frente a referencias pertinentes</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Modelo</th><th>Brier ↓</th><th>Log-loss ↓</th></tr></thead><tbody>'+
+ met.map(([name,brier,ll])=>'<tr><td>'+safe(name)+'</td><td>'+dec(brier)+'</td><td>'+dec(ll)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>La mejora Brier por país frente a la tasa directa de entradas es '+pct(x.skill_vs_entry_prior)+
+ '. El intervalo exploratorio de diferencia Brier modelo menos referencia ['+
+ dec(x.country_bootstrap_95_delta_brier_vs_entry_prior[0])+', +'+
+ dec(x.country_bootstrap_95_delta_brier_vs_entry_prior[1])+
+ '] <strong>incluye cero</strong>: no está demostrada una ventaja estadísticamente fiable.</p>','soft')+
+ box('<h3>¿Qué países señalaba primero el modelo?</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Año evaluado</th><th>Nuevas entradas</th><th>AP (ranking)</th><th>ROC-AUC</th><th>Top 5</th><th>Top 10</th><th>Top 20</th></tr></thead><tbody>'+
+ x.folds.map(f=>'<tr><td>'+safe(f.year)+'</td><td>'+safe(f.entries)+' de '+safe(f.n)+'</td><td>'+pct(f.ap_model)+'</td><td>'+dec(f.roc_auc_model)+'</td><td>'+safe(f.top_5_hits)+'/5</td><td>'+safe(f.top_10_hits)+'/10</td><td>'+safe(f.top_20_hits)+'/20</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>La precisión promedio (AP) mide la ordenación de alertas sobre los países inicialmente inactivos; no es una precisión probabilística ni una validación temporal prospectiva. Apenas se registran cuatro entradas positivas por año. La clasificación de riesgo puede ser útil incluso si las probabilidades están sobreestimadas, pero estos dos años no bastan para certificarlo.</p>','soft')+
+ box('<details><summary>Hipótesis nueva, trazabilidad y limitaciones</summary>'+
+ '<p>'+safe(x.note)+'</p>'+
+ '<p>La referencia específica usa 5.175 pares históricos iniciales para 2024 y 5.339 para 2025. Ambos casos se extraen de la edición original disponible en la reconstrucción, sin incorporar años de resultado a la estimación.</p>'+
+ '<p><a href="./data/forecast-2027-entry-comparison.json" target="_blank" rel="noopener noreferrer">Ver todas las métricas, intervalos y presupuestos de alerta</a> · <a href="./data/forecast-2027-origin-state-diagnostic.json" target="_blank" rel="noopener noreferrer">Ver persistencia frente a entrada</a>.</p>'+
+ '<p>**Estado**: estudio retrospectivo exploratorio (post hoc), 0 resultados 2027 evaluados y las 196 probabilidades emitidas sin modificar.</p>'+
+ '</details>','soft');
+}
 function renderOriginStateSkill(){
  const x=state.research?.origin_state_diagnostic_2027;
  if(!x)return "";
@@ -443,7 +482,7 @@ function renderEmpiricalEvidence(){
 }
 function renderScience(){
  const d=state.data,rows=d.studies.map(s=>({s,score:score(s)}));
- return renderOriginStateSkill()+renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
+ return renderNewEntryComparator()+renderOriginStateSkill()+renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
  '<div class="table-wrap"><table><thead><tr><th>Estudio sintético</th><th>Observaciones</th><th>Brier modelo</th><th>Brier referencia</th><th>Mejora relativa</th><th>Validez</th></tr></thead><tbody>'+rows.map(({s,score:r})=>'<tr><td>'+safe(s.title)+'</td><td>'+r.n+'</td><td>'+format(r.brier)+'</td><td>'+format(r.baselineBrier)+'</td><td>'+formatPct(r.skill)+'</td><td>Sintético</td></tr>').join("")+'</tbody></table></div>'+
  section("REPRODUCIBILIDAD","Evaluación de un experimento","Selecciona un estudio para analizar las probabilidades ficticias y compararlas con su referencia fija.")+
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+
