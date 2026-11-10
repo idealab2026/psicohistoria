@@ -1,0 +1,70 @@
+{
+  "active_state_countries_in_2025": 34,
+  "canonical_document_commit": "8b924e0b0c7a07e27977160c9658cfed77940aff",
+  "countries": 196,
+  "distinct_model_probabilities": 73,
+  "first_public_forecast_commit": "3bb3561c8d6182c30624591276c705fb76ce99dc",
+  "forecast_file_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "forecast_id": "PSICO-GEO2027-STATEBASED25-V1",
+  "forecast_skill_demonstrated": false,
+  "global_5y_expected_positive_countries": 34.529531568,
+  "global_markov_expected_positive_countries": 33.000469691,
+  "inactive_state_countries_in_2025": 162,
+  "method": "BYTE_EXACT_PREREGISTERED_GENERATOR_PLUS_SEPARATE_FORMULA_RECONSTRUCTION",
+  "model_expected_positive_countries": 33.625439664,
+  "model_histogram": [
+    {
+      "countries": 112,
+      "range": [
+        0,
+        0.05
+      ]
+    },
+    {
+      "countries": 35,
+      "range": [
+        0.05,
+        0.1
+      ]
+    },
+    {
+      "countries": 11,
+      "range": [
+        0.1,
+        0.2
+      ]
+    },
+    {
+      "countries": 4,
+      "range": [
+        0.2,
+        0.5
+      ]
+    },
+    {
+      "countries": 18,
+      "range": [
+        0.5,
+        0.8
+      ]
+    },
+    {
+      "countries": 16,
+      "range": [
+        0.8,
+        1.0
+      ]
+    }
+  ],
+  "model_probability_max": 0.893769476037,
+  "model_probability_median": 0.019829505225,
+  "model_probability_min": 0.019044029623,
+  "not_an_outcome": "These are sums and distributions of probabilities issued in 2026, not actual 2027 conflict outcomes. Source 26.1 contains only observations to 2025; no 2026/2027 events were used.",
+  "preregistered_protocol_commit": "87959a117e1b30323392a488c48c9afb1cb0bffc",
+  "resolution_count": 0,
+  "schema": "idealab.psico.forecast_2027_frozen_audit.v1",
+  "source_zip_sha256": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34",
+  "status": "PRE_OUTCOME_PROBABILITY_REPRODUCIBILITY_AUDIT",
+  "target_year": 2027,
+  "training_last_year": 2025
+}
