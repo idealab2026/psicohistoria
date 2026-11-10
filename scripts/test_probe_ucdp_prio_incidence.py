@@ -55,7 +55,9 @@ class PRIOProvenanceProbeTests(unittest.TestCase):
                 "101":{end:(0,0)},
                 "102":{end:(1,0)},
             },{"max_year":end,"sha256":"sha-fixture"}
-        summary=audit(fake_fetch,fake_onset)
+        summary=audit(fake_fetch,fake_onset,require_pinned=False)
+        with self.assertRaisesRegex(ValueError,"Source not pinned"):
+            audit(fake_fetch,fake_onset)
         a=summary["versions"]["23.1"]
         self.assertEqual(a["raw_conflict_year_rows"],6)
         self.assertEqual(a["unique_intrastate_country_years"],3)
