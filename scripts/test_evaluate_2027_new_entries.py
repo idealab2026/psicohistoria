@@ -39,7 +39,7 @@ class NewEntryComparatorTests(unittest.TestCase):
           {"country_id":4,"outcome":0,"p_model":.1},
         ]
         self.assertAlmostEqual(average_precision(rows,"p_model"),.5*.5+.5*(2/3))
-        self.assertAlmostEqual(roc_auc(rows,"p_model"),.75)
+        self.assertAlmostEqual(roc_auc(rows,"p_model"),.625)
         self.assertIsNone(average_precision([
            {"outcome":0,"p_model":.1}],"p_model"))
         self.assertIsNone(roc_auc([
@@ -64,6 +64,9 @@ class NewEntryComparatorTests(unittest.TestCase):
 
     def test_each_origin_has_predefined_conditional_reference(self):
         src=versions()
+        for version,target in (("25.1",2024),("26.1",2025)):
+            for cid in src[version]:
+                src[version][cid][target]=int(cid in (1,2,3,4))
         batches=rows_from_vintages(src)
         self.assertEqual(len(batches),2)
         for fold,rows,details in batches:
