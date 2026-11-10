@@ -10,6 +10,8 @@ import csv
 import hashlib
 import io
 import json
+from pathlib import Path
+import argparse
 import re
 from collections import Counter,defaultdict
 from zipfile import ZipFile
@@ -22,6 +24,10 @@ SOURCES={
  "25.1":"https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-251-csv.zip",
 }
 MAX_ZIP=8_000_000
+PINNED_SHA={
+ "23.1":"8fe95d8a5780cba1d312f9673ffd9e93b90c91bb26e348393a583853a892b718",
+ "25.1":"b49f7e80510d8a5779a52d872aef5b26456b3f5cbdd3ec32031339488e81813f"
+}
 ALLOWED_TYPES={"3","4"}
 NEEDED={"year","type_of_conflict","gwno_a","gwno_loc","conflict_id"}
 
@@ -47,7 +53,7 @@ def parse_country_code(value):
     s=(value or "").strip()
     return s if s.isdigit() else None
 
-def audit(fetcher=fetch,panel_loader=load_panel):
+def audit(fetcher=fetch,panel_loader=load_panel,require_pinned=True):
     report={
       "schema":"idealab.psico.acd_vintage_provenance_probe.v1",
       "source_family":"UCDP/PRIO Armed Conflict Dataset (conflict-year)",
@@ -60,6 +66,9 @@ def audit(fetcher=fetch,panel_loader=load_panel):
     }
     for version,url in SOURCES.items():
         data=fetcher(url,MAX_ZIP)
+        checksum=hashlib.sha256(data).hexdigest()
+        if require_pinned and checksum!=PINNED_SHA[version]:
+            raise ValueError("Source not pinned to authentic UCDP/PRIO edition: "+version)
         records,fields=source_zip(data)
         code_counts=Counter()
         included={}
@@ -91,7 +100,7 @@ def audit(fetcher=fetch,panel_loader=load_panel):
             raise ValueError("UCDP/PRIO version does not cover the requested cutoff year")
         report["versions"][version]={
           "url":url,
-          "sha256":hashlib.sha256(data).hexdigest(),
+          "sha256":checksum,
           "bytes":len(data),
           "raw_conflict_year_rows":len(records),
           "fields":fields,
@@ -111,7 +120,13 @@ def audit(fetcher=fetch,panel_loader=load_panel):
     return report
 
 if __name__=="__main__":
+    p=argparse.ArgumentParser()
+    p.add_argument("--check-report")
+    args=p.parse_args()
     d=audit()
+    content=json.dumps(d,sort_keys=True,indent=2)+"\n"
     print("UCDPPRIO_INCIDENCE_AUDIT_BEGIN")
-    print(json.dumps(d,sort_keys=True,indent=2))
+    print(content,end="")
     print("UCDPPRIO_INCIDENCE_AUDIT_END")
+    if args.check_report and Path(args.check_report).read_text(encoding="utf-8")!=content:
+        raise ValueError("Official source incidence audit differs from published metadata")
