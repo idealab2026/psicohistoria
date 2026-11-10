@@ -696,7 +696,10 @@
     "explanatory_note": "El modelo por país no mejoró el Brier ni el log-loss agregados frente a la tasa global en cuatro años evaluados. Las fuentes están verificadas por hashes, pero la edición vinculada como 19.1 acaba en 2017 pese a la descripción del codebook de 2018. Se aplicó limpieza post hoc de duplicados y no se acreditan emisiones históricas, calibración operativa ni capacidad predictiva prospectiva.",
     "point_in_time_verified": false,
     "exploratory_confidence_intervals": true,
-    "more_reliable_than_global_demonstrated": false
+    "more_reliable_than_global_demonstrated": false,
+    "unit_comparability_verified": false,
+    "interpretation_downgraded": true,
+    "unit_comparability_note": "Diagnóstico posterior: Onset 19.1 incluye 47 registros país-año duplicados, 13 con onset2 discordante. No puede presumirse identidad con la edición Intrastate Country Level Onset 23.1, que admite una sola observación por país-año. La agregación OR no corrige por sí sola la discrepancia de unidad, de exposición al riesgo o de definición. El resultado de 715 observaciones no constituye un backtest homogéneo ni una prueba de superioridad/inferioridad del modelo."
   },
   "recency_sensitivity_study": {
     "id": "EMP-ONSET-231-251-RECENCY-20261110",
