@@ -82,6 +82,20 @@ jobs:
         run: |
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/forecast_2027_statebased.py --output /tmp/idealab-geo2027.json --print-chunks
           test -s /tmp/idealab-geo2027.json
+  origin_state_diagnostic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Audit threshold entry versus persistence using archived official UCDP releases
+        run: |
+          set -e
+          if test -f data/forecast-2027-origin-state-diagnostic.json; then
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_2027_origin_state.py --check-report data/forecast-2027-origin-state-diagnostic.json
+          else
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_2027_origin_state.py
+          fi
   archived_country_holdout:
     runs-on: ubuntu-latest
     steps:
