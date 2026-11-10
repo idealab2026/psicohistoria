@@ -9,16 +9,16 @@ class VintageCrossReleaseTests(unittest.TestCase):
 
     def sources(self):
         return {
-            "19.1":self.make_dataset(2000,2018),
+            "19.1":self.make_dataset(2000,2017),
             "23.1":self.make_dataset(2000,2022),
             "25.1":self.make_dataset(2000,2024),
         }
 
     def test_2019_origin_is_strictly_before_2020_2022_outcomes(self):
         src=self.sources()
-        rows,training=records_for_study(src["19.1"],src["23.1"],2018,(2020,2021,2022))
+        rows,training=records_for_study(src["19.1"],src["23.1"],2017,(2020,2021,2022))
         self.assertEqual(len(rows),480)
-        self.assertEqual(training["training_country_years"],19*160)
+        self.assertEqual(training["training_country_years"],18*160)
         self.assertTrue(all(0<r["model"]<1 for r in rows))
         self.assertEqual({r["year"] for r in rows},{2020,2021,2022})
 
@@ -36,7 +36,7 @@ class VintageCrossReleaseTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"Insufficient covered"):
             records_for_study(src["19.1"],reduced,2018,(2020,2021,2022))
         with self.assertRaisesRegex(ValueError,"not beyond"):
-            records_for_study(src["19.1"],src["23.1"],2018,(2018,))
+            records_for_study(src["19.1"],src["23.1"],2017,(2017,))
 
     def test_legacy_duplicate_or_is_explicit_and_exclusion_is_separate(self):
         raw=("year,gwno_a,onset2\n"
