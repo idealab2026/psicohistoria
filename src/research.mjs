@@ -332,6 +332,10 @@ export function verifyIssuedForecast2027(document, manifest){
      manifest.preregistered_protocol_main_commit!=="87959a117e1b30323392a488c48c9afb1cb0bffc" ||
      manifest.first_public_forecast_commit!=="3bb3561c8d6182c30624591276c705fb76ce99dc" ||
      manifest.first_public_forecast_commit_utc!=="2026-11-10T17:23:12Z" ||
+     manifest.canonical_document_commit!=="8b924e0b0c7a07e27977160c9658cfed77940aff" ||
+     manifest.canonical_document_commit_utc!=="2026-11-10T17:32:54Z" ||
+     manifest.canonical_document_status!=="BYTE_IDENTICAL_TO_FROZEN_GENERATOR_OUTPUT" ||
+     !(manifest.first_public_forecast_commit_utc<manifest.canonical_document_commit_utc) ||
      manifest.preregistered_at_utc!=="2026-11-10T17:20:43Z" ||
      !(manifest.preregistered_at_utc<manifest.first_public_forecast_commit_utc) ||
      !(manifest.first_public_forecast_commit_utc<"2027-01-01T00:00:00Z") ||
