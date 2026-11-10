@@ -71,6 +71,17 @@ jobs:
           name: audited-site
           path: dist/
           retention-days: 1
+  prepare_2027_issue_candidate:
+    if: github.event_name == 'pull_request' && startsWith(github.event.pull_request.title, '[ISSUE-2027]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Generate source-pinned 2027 candidate and print full immutable probabilities
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/forecast_2027_statebased.py --output /tmp/idealab-geo2027.json --print-chunks
+          test -s /tmp/idealab-geo2027.json
   recency_sensitivity:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
