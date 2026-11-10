@@ -2,8 +2,8 @@
   "schema_version": 1,
   "publication_date": "2026-10-31",
   "class": "public_research_program",
-  "policy": "Programa científico institucional. No contiene datos identificadores, pronósticos emitidos, modelos entrenados ni resultados prospectivos.",
-  "forecast_issued": 0,
+  "policy": "Programa científico institucional con una emisión prospectiva GEO-2027 no resuelta. No se ha demostrado habilidad predictiva ni se ha evaluado ningún resultado prospectivo. Los experimentos históricos se mantienen diferenciados y sin fuentes personales.",
+  "forecast_issued": 1,
   "prospective_results_verified": 0,
   "programs": [
     {
@@ -881,5 +881,23 @@
     "new_independent_confirmatory_holdout": false,
     "caveat": "La prueba interna de 2015–2022 usa etiquetas de la edición UCDP 23.1 revisada en 2023, no disponibles necesariamente en las fechas simuladas. El único año externo 2024 ya se había examinado en otros experimentos; la cuadrícula 5/10/20 años se diseñó después de ver ese resultado. El modelo antiguo basado en 19.1 no comparte una unidad país-año inequívoca y se excluye. No se demuestra capacidad predictiva prospectiva ni hay pronósticos emitidos.",
     "conclusion": "Exploratory grid only. Model selection on these results would be post-hoc. The older 19.1 archive and the later 23.1 country-level set do not have demonstrated identical units of analysis; the 715-row mixed-vintage result is excluded from this assessment."
+  },
+  "prospective_2027_issue": {
+    "question": "Q-GEO-2027-01",
+    "forecast_id": "PSICO-GEO2027-STATEBASED25-V1",
+    "publication_class": "PROSPECTIVE_ISSUED_UNRESOLVED",
+    "year": 2027,
+    "source_observed_through": 2025,
+    "countries_issued": 196,
+    "outcomes_resolved": 0,
+    "forecast_document_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+    "preregistered_protocol_main_commit": "87959a117e1b30323392a488c48c9afb1cb0bffc",
+    "first_public_forecast_commit": "3bb3561c8d6182c30624591276c705fb76ce99dc",
+    "first_public_utc": "2026-11-10T17:23:12Z",
+    "manifest_path": "data/forecast-2027-manifest.json",
+    "data_path": "data/forecast-2027-ucdp261.json",
+    "skill_demonstrated": false,
+    "independently_notarized": false,
+    "note": "Primer pronóstico prospectivo emitido antes de 2027, todavía sin resultados. Variable distinta de onset2: umbral de fallecimientos de violencia organizada de base estatal según UCDP 26.1."
   }
 }

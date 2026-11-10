@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Fail-closed allowlisted public build gate for an institutional static research site."""
 from pathlib import Path
+import hashlib
 from html.parser import HTMLParser
 import json
 import re
@@ -9,7 +10,7 @@ sys.dont_write_bytecode = True
 from private_disclosure import configured_terms, contains_private_term
 
 ROOT = Path(__file__).resolve().parents[1]
-RELEASE = {"privacidad-icsa.html", "index.html", "trabajo.html", "src/private-notebook.mjs", "src/private-workbench.mjs", "src/country-comparison.mjs", "src/country-comparison-view.mjs", "src/main-country-tree.mjs", "styles.css", "favicon.svg", "logo.svg", "src/site.mjs", "src/visuals.mjs", "src/neural.mjs", "src/markov-svg.mjs", "src/lab-renderers.mjs", "src/metrics.mjs", "src/research.mjs", "src/project-catalog.mjs", "src/project-portfolio.mjs", "data/demo.json", "data/research.json", "data/projects.json"}
+RELEASE = {"privacidad-icsa.html", "index.html", "trabajo.html", "src/private-notebook.mjs", "src/private-workbench.mjs", "src/country-comparison.mjs", "src/country-comparison-view.mjs", "src/main-country-tree.mjs", "styles.css", "favicon.svg", "logo.svg", "src/site.mjs", "src/visuals.mjs", "src/neural.mjs", "src/markov-svg.mjs", "src/lab-renderers.mjs", "src/metrics.mjs", "src/research.mjs", "src/project-catalog.mjs", "src/project-portfolio.mjs", "data/demo.json", "data/research.json", "data/projects.json", "data/forecast-2027-ucdp261.json", "data/forecast-2027-manifest.json"}
 REPOSITORY = RELEASE | {"scripts/private_disclosure.py", "scripts/test_private_disclosure.py", "README.md", "scripts/audit_public.py", "scripts/build_official_countries.py", "scripts/test_build_official_countries.py", "scripts/inspect_ucdp_archives.py", "scripts/test_inspect_ucdp_archives.py", "scripts/run_legacy_vintage_holdout.py", "scripts/test_run_legacy_vintage_holdout.py", "scripts/experiment_recency_onset.py", "scripts/test_experiment_recency_onset.py", "scripts/forecast_2027_statebased.py", "scripts/test_forecast_2027_statebased.py", "docs/forecast-2027-protocol.md", "tests/metrics.test.mjs", "tests/research.test.mjs", "tests/temporal-validation.test.mjs", "src/temporal-validation.mjs", "tests/visuals.test.mjs", "tests/lab-renderers.test.mjs", "tests/project-catalog.test.mjs", "tests/project-portfolio.test.mjs", "tests/public-science-boundary.test.mjs", "tests/private-notebook.test.mjs", "tests/country-comparison.test.mjs", ".github/workflows/pages.yml"}
 issues = []
 # Historical research cells must never be admitted to a public release.
@@ -64,7 +65,7 @@ if (ROOT/"index.html").exists():
         if url.startswith("https://"):
             if not (url.startswith("https://idealab2026.github.io/") or url.startswith("https://github.com/idealab2026/")):
                 issues.append("Non-institutional external link")
-        elif url == "./?view=futures": continue
+        elif url in ("./?view=futures","./?view=shadow2027"): continue
         elif url.startswith("./"):
             if url[2:].split("?",1)[0] not in RELEASE or ("?" in url and not re.fullmatch(r"v=[a-f0-9]{12}",url.split("?",1)[1])): issues.append("Dependency not on release allowlist")
         else: issues.append("Unexpected link or source type")
@@ -87,7 +88,7 @@ catalogue=ROOT/"data/research.json"
 if catalogue.exists():
     try:
         data=json.loads(catalogue.read_text(encoding="utf8"))
-        if data.get("class")!="public_research_program" or data.get("forecast_issued")!=0 or data.get("prospective_results_verified")!=0:
+        if data.get("class")!="public_research_program" or data.get("forecast_issued")!=1 or data.get("prospective_results_verified")!=0:
             issues.append("Unverified scientific claim in public dataset")
         if len(data.get("programs",[]))!=7:
             issues.append("Incomplete scientific programme")
@@ -135,6 +136,32 @@ if ideas.exists():
             issues.append("Public project projection has an unresolved relation")
     except (OSError,ValueError,TypeError,AttributeError):
         issues.append("Invalid public project projection")
+
+# A public issue is valid only when all frozen probabilities match the first-public document digest.
+issued_file=ROOT/"data/forecast-2027-ucdp261.json"
+manifest_file=ROOT/"data/forecast-2027-manifest.json"
+if issued_file.exists() and manifest_file.exists():
+    try:
+        raw=issued_file.read_bytes()
+        issue=json.loads(raw.decode("utf8"))
+        manifest=json.loads(manifest_file.read_text(encoding="utf8"))
+        if hashlib.sha256(raw).hexdigest()!=manifest.get("forecast_sha256") or \
+           manifest.get("forecast_sha256")!="5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5" or \
+           manifest.get("status")!="ISSUED_PROSPECTIVE_UNRESOLVED" or \
+           manifest.get("first_public_forecast_commit")!="3bb3561c8d6182c30624591276c705fb76ce99dc" or \
+           manifest.get("canonical_document_commit")!="8b924e0b0c7a07e27977160c9658cfed77940aff" or \
+           manifest.get("preregistered_protocol_main_commit")!="87959a117e1b30323392a488c48c9afb1cb0bffc" or \
+           manifest.get("outcomes_resolved")!=0 or \
+           manifest.get("demonstrated_predictive_skill") is not False or \
+           manifest.get("independently_notarized") is not False or \
+           issue.get("target",{}).get("year")!=2027 or \
+           issue.get("source",{}).get("data_last_year")!=2025 or \
+           issue.get("source",{}).get("sha256")!="66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34" or \
+           issue.get("protocol",{}).get("skill_not_demonstrated") is not True or \
+           len(issue.get("countries",[]))!=196:
+            issues.append("Prospective forecast issue is not exactly the preregistered public content")
+    except (OSError,ValueError,TypeError,AttributeError):
+        issues.append("Invalid prospective issue manifest or document")
 
 sample=ROOT/"data/demo.json"
 if sample.exists():

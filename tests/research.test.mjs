@@ -1,7 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {readFileSync} from "node:fs";
-import {verifyResearch,parseForecastCSV,evaluateLocalForecast,CSV_TEMPLATE} from "../src/research.mjs";
+import {createHash} from "node:crypto";
+import {verifyResearch,verifyIssuedForecast2027,parseForecastCSV,evaluateLocalForecast,CSV_TEMPLATE} from "../src/research.mjs";
 
 const registry=JSON.parse(readFileSync(new URL("../data/research.json",import.meta.url),"utf8"));
 test("the institutional research registry is complete and does not claim forecasting skill",()=>{
@@ -14,8 +15,8 @@ test("unknown source domains are rejected",()=>{
  assert.throws(()=>verifyResearch(changed),/allowlist/);
 });
 test("prematurely issued forecasts are rejected",()=>{
- const changed=structuredClone(registry);changed.forecast_issued=1;
- assert.throws(()=>verifyResearch(changed),/Unverified/);
+ const changed=structuredClone(registry);changed.forecast_issued=2;
+ assert.throws(()=>verifyResearch(changed),/Invalid issued/);
 });
 test("the local Brier score is correct and not verified",()=>{
  const result=evaluateLocalForecast(parseForecastCSV(CSV_TEMPLATE));
@@ -313,4 +314,41 @@ test("recency and vintage compatibility safeguards reject rewritten study metada
  r=structuredClone(registry);
  r.recency_sensitivity_study.source_sha256["23.1"]="f".repeat(64);
  assert.throws(()=>verifyResearch(r),/Recency experiment/);
+});
+
+test("a frozen 196-country 2027 issue is publicly committed after its preregistration",()=>{
+ const raw=readFileSync(new URL("../data/forecast-2027-ucdp261.json",import.meta.url),"utf8");
+ const forecast=JSON.parse(raw);
+ const manifest=JSON.parse(readFileSync(new URL("../data/forecast-2027-manifest.json",import.meta.url),"utf8"));
+ assert.equal(createHash("sha256").update(raw,"utf8").digest("hex"),manifest.forecast_sha256);
+ assert.equal(verifyIssuedForecast2027(forecast,manifest),true);
+ assert.equal(registry.forecast_issued,1);
+ assert.equal(registry.prospective_results_verified,0);
+ assert.equal(registry.prospective_2027_issue.countries_issued,196);
+ assert.equal(registry.prospective_2027_issue.outcomes_resolved,0);
+ assert.equal(registry.prospective_2027_issue.first_public_forecast_commit,manifest.first_public_forecast_commit);
+ assert.equal(forecast.target.not_onset2,true);
+ assert.equal(forecast.source.data_last_year,2025);
+ assert.ok(manifest.preregistered_at_utc<manifest.first_public_forecast_commit_utc);
+ assert.ok(manifest.first_public_forecast_commit_utc<"2027-01-01T00:00:00Z");
+});
+
+test("2027 issue refuses to claim independently verified outcomes or valid skill",()=>{
+ const f=JSON.parse(readFileSync(new URL("../data/forecast-2027-ucdp261.json",import.meta.url),"utf8"));
+ const m=JSON.parse(readFileSync(new URL("../data/forecast-2027-manifest.json",import.meta.url),"utf8"));
+ let mutated={...m,outcomes_resolved:1};
+ assert.throws(()=>verifyIssuedForecast2027(f,mutated),/Invalid frozen GEO-2027/);
+ mutated={...m,demonstrated_predictive_skill:true};
+ assert.throws(()=>verifyIssuedForecast2027(f,mutated),/Invalid frozen GEO-2027/);
+ mutated={...m,first_public_forecast_commit_utc:"2027-02-01T00:00:00Z"};
+ assert.throws(()=>verifyIssuedForecast2027(f,mutated),/Invalid frozen GEO-2027/);
+ mutated=structuredClone(f);mutated.countries[0].p_model=1.2;
+ assert.throws(()=>verifyIssuedForecast2027(mutated,m),/Invalid frozen GEO-2027/);
+ mutated=structuredClone(f);mutated.countries[1].country_id=mutated.countries[0].country_id;
+ assert.throws(()=>verifyIssuedForecast2027(mutated,m),/Invalid frozen GEO-2027/);
+ mutated=structuredClone(f);mutated.source.data_last_year=2026;
+ assert.throws(()=>verifyIssuedForecast2027(mutated,m),/Invalid frozen GEO-2027/);
+ const mutatedRegistry=structuredClone(registry);
+ mutatedRegistry.prospective_2027_issue.skill_demonstrated=true;
+ assert.throws(()=>verifyResearch(mutatedRegistry),/Unverified or mutated GEO-2027/);
 });

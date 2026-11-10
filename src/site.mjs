@@ -1,5 +1,5 @@
 import {verify,score,calibration} from "./metrics.mjs";
-import {verifyResearch,parseForecastCSV,evaluateLocalForecast,CSV_TEMPLATE} from "./research.mjs";
+import {verifyResearch,verifyIssuedForecast2027,parseForecastCSV,evaluateLocalForecast,CSV_TEMPLATE} from "./research.mjs";
 import {domainGraph} from "./visuals.mjs";
 import {loadProjectCatalog} from "./project-catalog.mjs";
 import {renderHistoricalProjectPortfolio} from "./project-portfolio.mjs";
@@ -18,7 +18,7 @@ const groupViews={
 };
 const viewIds=new Set(Object.values(groupViews).flat().map(x=>x[0]));
 const viewToGroup=Object.fromEntries(Object.entries(groupViews).flatMap(([k,items])=>items.map(([id])=>[id,k])));
-const state={archive:null,projectCatalog:null,archiveTable:0,archiveQuery:"",archivePage:0,data:null,research:null,registryFilter:"todos",registryOutput:null,questionPriority:"P1",view:viewIds.has(new URLSearchParams(location.search).get("view"))?new URLSearchParams(location.search).get("view"):"brief",scenario:null,program:null,study:null,filter:"todos",ideas:[],flowState:"00",markovOrigin:2020,markovHorizon:6,markovQuestion:"atleast25",markovSelection:null,countryTreeOrigin:2020,countryTreeId:null,countryTreeModel:"country_shrinkage",countryTreeQuestion:"atleast25",countryTreeYear:null,countryTreeSelection:null,videoText:"",busy:false};
+const state={archive:null,projectCatalog:null,archiveTable:0,archiveQuery:"",archivePage:0,data:null,research:null,registryFilter:"todos",registryOutput:null,questionPriority:"P1",view:viewIds.has(new URLSearchParams(location.search).get("view"))?new URLSearchParams(location.search).get("view"):"brief",scenario:null,program:null,study:null,filter:"todos",ideas:[],flowState:"00",markovOrigin:2020,markovHorizon:6,markovQuestion:"atleast25",markovSelection:null,countryTreeOrigin:2020,countryTreeId:null,countryTreeModel:"country_shrinkage",countryTreeQuestion:"atleast25",countryTreeYear:null,countryTreeSelection:null,videoText:"",forecastCountryId:null,prospective2027:null,prospective2027Manifest:null,busy:false};
 const section=(eyebrow,title,description)=>'<header class="section-head"><div class="eyebrow">'+safe(eyebrow)+'</div><h2>'+safe(title)+'</h2><p>'+safe(description)+'</p></header>';
 const box=(contents,extra="")=>'<article class="panel '+extra+'">'+contents+'</article>';
 const tag=(t,cls="")=>'<span class="tag '+cls+'">'+safe(t)+'</span>';
@@ -56,8 +56,8 @@ function renderBrief(){
  const ready=d.milestones.filter(x=>x.state==="verificado").length;
  return section("INICIO · ESTADO PÚBLICO","Próximos pasos y resultados","Preparar, publicar y demostrar utilidad son hitos distintos. La sección Evidencia incluye estudios reales retrospectivos; otras vistas utilizan muestras sintéticas y no acreditan capacidad prospectiva.")+
  scientificNeuralPanel(d.programs,state.program)+
- box('<div class="item-row wrap"><div><h3>Registro público experimental</h3><p>Versión funcional con muestras sintéticas y revisión de procedimientos.</p></div>'+tag("Sin predicciones reales","alert")+'</div>'+
- '<div class="section-grid three"><div><div class="card-number">'+d.programs.length+'</div><div class="tiny">Líneas de estudio</div></div><div><div class="card-number">'+ready+'/'+d.milestones.length+'</div><div class="tiny">Pasos técnicos verificados</div></div><div><div class="card-number">0</div><div class="tiny">Pronósticos prospectivos acreditados</div></div></div>','highlight')+
+ box('<div class="item-row wrap"><div><h3>Registro público experimental</h3><p>Fuente real de emisión GEO-2027, resultados aún desconocidos; demostraciones sintéticas separadas.</p></div>'+tag("1 cohorte 2027 · sin resultados","alert")+'</div>'+
+ '<div class="section-grid three"><div><div class="card-number">'+d.programs.length+'</div><div class="tiny">Líneas de estudio</div></div><div><div class="card-number">'+ready+'/'+d.milestones.length+'</div><div class="tiny">Pasos técnicos verificados</div></div><div><div class="card-number">1</div><div class="tiny">Cohorte prospectiva emitida · sin evaluar</div></div></div>','highlight')+
  section("LECTURA RÁPIDA","Qué se puede explorar","Cada módulo tiene un propósito concreto y muestra los supuestos, las fuentes y las limitaciones de los ejemplos.")+
  cards([
  ["Árbol de futuros","Escenarios alternativos y supuestos explícitos. No son pronósticos.", "navigate","futures"],
@@ -72,13 +72,48 @@ function renderFutures(){
   renderHistoricalTree(state);
 }
 function renderShadow(){
- return section("PREDICCIONES · OBSERVATORIO","Riesgos 2027","Protocolo de observación futura. Un ranking experimental no equivale a probabilidades emitidas, y no debe publicarse sin comprobar origen, licencia y disponibilidad histórica.")+
- '<div class="section-grid four">'+[
- ["Cobertura de países","No disponible"],["Emisiones preregistradas","0"],["Resoluciones independientes","0"],["Validez prospectiva","No acreditada"]
- ].map(([k,v])=>box('<div class="tiny">'+safe(k)+'</div><div class="card-number">'+safe(v)+'</div>')).join("")+'</div>'+
- box('<h3>Condiciones para activar un observatorio público</h3><ul class="compact-list"><li>Universo, eventos y horizontes fijados ex ante.</li><li>Fuentes geográficas y temporales con derecho de redistribución.</li><li>Disponibilidad de cada variable antes del origen de predicción.</li><li>Probabilidades firmadas y selladas antes del desenlace.</li><li>Evaluación posterior contra referencia y publicación de errores.</li></ul>'+msg("No se publican puntuaciones por país ni un listado de riesgos porque aún no existe un dataset público independiente aprobado."),"soft")+
- section("ESTADO","Registro de emisiones","Ausencia explícita de emisiones; no se deduce capacidad predictiva de un conjunto de pruebas sintéticas.")+
- box('<div class="tiny">PREDICCIONES PÚBLICAS EMITIDAS</div><h3>Sin registros</h3><p>El módulo permanecerá sin cifras de riesgo hasta disponer de fuentes point-in-time y de un protocolo de publicación verificable.</p>');
+ const d=state.prospective2027,m=state.prospective2027Manifest;
+ if(!d||!m)return section("PREDICCIONES · GEO-2027","Registro prospectivo","No ha podido verificarse el documento emitido. Se ocultan las puntuaciones mientras no sea posible comprobar su procedencia.")+
+   msg("Registro 2027 no disponible o incompleto: comprobar la publicación institucional.","alert");
+ const rows=d.countries;
+ const selected=rows.find(r=>String(r.country_id)===String(state.forecastCountryId))||
+   rows.find(r=>r.country.toLowerCase()==="spain")||rows[0];
+ const listed=[...rows].sort((a,b)=>a.country.localeCompare(b.country,"es"));
+ const ranked=[...rows].sort((a,b)=>b.p_model-a.p_model || a.country.localeCompare(b.country,"es")).slice(0,10);
+ const pct=n=>new Intl.NumberFormat("es-ES",{style:"percent",maximumFractionDigits:2}).format(n);
+ const options=listed.map(r=>'<option value="'+safe(r.country_id)+'"'+(r.country_id===selected.country_id?' selected':'')+'>'+safe(r.country)+'</option>').join("");
+ const firstCommit="https://github.com/idealab2026/psicohistoria/commit/"+m.first_public_forecast_commit;
+ const frozenProtocol="https://github.com/idealab2026/psicohistoria/commit/"+m.preregistered_protocol_main_commit;
+ return section("PREDICCIONES · PRIMERA EMISIÓN PROSPECTIVA",
+  "2027 · ¿Se superarán 25 muertes de violencia organizada state-based?",
+  "196 probabilidades publicadas antes del año objetivo. No son predicciones sobre el inicio de una guerra ni sobre violencia gubernamental contra civiles. La capacidad predictiva todavía no está demostrada.")+
+ '<div class="section-grid three">'+
+ box('<div class="eyebrow">PAÍSES EN LA EMISIÓN</div><div class="card-number">'+safe(rows.length)+'</div><p>Cohorte fija de la edición UCDP 26.1 (datos hasta 2025).</p>')+
+ box('<div class="eyebrow">PREDICCIONES EMITIDAS</div><div class="card-number">1 cohorte</div><p>Publicada el 10-11-2026, por commit institucional verificable.</p>')+
+ box('<div class="eyebrow">RESULTADOS OFICIALES 2027</div><div class="card-number">Pendientes</div><p>0 desenlaces evaluados; no hay aciertos certificados.</p>')+
+ '</div>'+
+ box('<h3>Consultar la predicción congelada de un país</h3>'+
+ '<label for="geo2027-country">País (código UCDP):</label> '+
+ '<select id="geo2027-country" aria-label="Elegir país para previsión 2027">'+options+'</select>'+
+ '<div class="section-grid three">'+
+ '<div><div class="tiny">Modelo prospectivo · '+safe(selected.country)+'</div><div class="card-number">'+pct(selected.p_model)+'</div></div>'+
+ '<div><div class="tiny">Referencia global 2021–2025</div><div class="card-number">'+pct(selected.p_baseline_global_5y)+'</div></div>'+
+ '<div><div class="tiny">Referencia Markov global</div><div class="card-number">'+pct(selected.p_global_markov)+'</div></div>'+
+ '</div>'+
+ '<p>Estado de 2025 para esta variable: '+(selected.last_observed_state_2025===1?'al menos 25 fallecimientos estimados':'menos de 25 fallecimientos estimados')+'. Horizonte: año natural 2027, dos años desde la última observación.</p>'+
+ '<p class="notice info">Probabilidades experimentales, no evaluadas. Este indicador mide muertes registradas en conflictos state-based dentro del país; no predice víctimas civiles ni atribuye necesariamente muertes al Gobierno.</p>','soft')+
+ box('<h3>Diez probabilidades más altas del modelo experimental</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>País</th><th>Pronóstico 2027</th><th>Refer. global</th></tr></thead><tbody>'+
+ ranked.map(row=>'<tr><td>'+safe(row.country)+'</td><td>'+pct(row.p_model)+'</td><td>'+pct(row.p_baseline_global_5y)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>Clasificación descriptiva de los valores ya emitidos, sin interpretación de causalidad ni demostración de calibración. Pueden existir empates.</p>')+
+ box('<h3>Protocolo, huellas y evaluación futura</h3>'+
+ '<p>Pregunta registrada: <strong>'+safe(m.question)+'</strong>. Primer compromiso público: '+safe(m.first_public_forecast_commit_utc)+'. La metodología se fijó antes, el '+safe(m.preregistered_at_utc)+'. GitHub no es una autoridad independiente de sellado temporal.</p>'+
+ '<p><a href="'+safe(frozenProtocol)+'" target="_blank" rel="noopener noreferrer">Ver el protocolo congelado</a> · <a href="'+safe(firstCommit)+'" target="_blank" rel="noopener noreferrer">Ver primer commit de probabilidades</a></p>'+
+ '<p>Archivo emitido SHA-256: <code>'+safe(m.forecast_sha256)+'</code></p>'+
+ '<p>Fuente oficial UCDP 26.1 SHA-256: <code>'+safe(m.source_zip_sha256)+'</code>. <a href="'+safe(d.source.url)+'" target="_blank" rel="noopener noreferrer">Descargar fuente oficial</a> · licencia CC BY 4.0.</p>'+
+ '<p>La primera edición anual oficial completa que incluya 2027 decidirá las etiquetas. Las ausencias seguirán pendientes, no se convertirán en ceros. Métrica principal: Brier frente a frecuencia global 2021–2025; log-loss y Markov global como controles secundarios.</p>'+
+ '<p class="notice info">Estado actual: <strong>EMITIDO · NO EVALUADO</strong>. La emisión es real y anterior al desenlace; su valor predictivo sigue sin demostrar.</p>','soft');
 }
 function renderOverview(){
  const d=state.data;
@@ -427,18 +462,33 @@ async function load(){
  try{
   const catalogRead=loadProjectCatalog().then(data=>({available:true,data}))
     .catch(()=>({available:false,data:null}));
-  const [response,researchResponse]=await Promise.all([fetch("./data/demo.json",{cache:"no-store"}),fetch("./data/research.json",{cache:"no-store"})]);
-   if(!response.ok||!researchResponse.ok)throw new Error("Public sources unavailable");
-   const [data,research]=await Promise.all([response.json(),researchResponse.json()]);
-   verify(data);verifyResearch(research);state.research=research;
+  const [response,researchResponse,forecastResponse,manifestResponse]=await Promise.all([
+     fetch("./data/demo.json",{cache:"no-store"}),
+     fetch("./data/research.json",{cache:"no-store"}),
+     fetch("./data/forecast-2027-ucdp261.json",{cache:"no-store"}),
+     fetch("./data/forecast-2027-manifest.json",{cache:"no-store"})
+   ]);
+   if(!response.ok||!researchResponse.ok||!forecastResponse.ok||!manifestResponse.ok)
+     throw new Error("Public sources unavailable");
+   const [data,research,forecastText,manifest]=await Promise.all([
+     response.json(),researchResponse.json(),forecastResponse.text(),manifestResponse.json()
+   ]);
+   if(!globalThis.crypto?.subtle)throw new Error("SHA-256 unavailable on this client");
+   const bytes=new TextEncoder().encode(forecastText);
+   const digest=await crypto.subtle.digest("SHA-256",bytes);
+   const hash=Array.from(new Uint8Array(digest)).map(x=>x.toString(16).padStart(2,"0")).join("");
+   if(hash!==manifest.forecast_sha256)throw new Error("Forecast content integrity failure");
+   const prospective=JSON.parse(forecastText);
+   verify(data);verifyResearch(research);verifyIssuedForecast2027(prospective,manifest);
+   state.research=research;state.prospective2027=prospective;state.prospective2027Manifest=manifest;
   // Detailed scientific records are intentionally not read by the public client.
   state.projectCatalog=(await catalogRead).data;
   for(const key of ["programs","milestones","ideas"])if(!Array.isArray(data[key]))throw new Error("Incomplete public catalogue");
   state.data=data;state.scenario=state.scenario||data.branches[0].id;state.program=state.program||data.programs[0].id;state.study=state.study||data.studies[0].id;
   $("count-studies").textContent=data.studies.length;$("count-models").textContent=data.programs.length;
   $("count-predictions").textContent="1177";$("count-evaluated").textContent="0";
-  $("as-of").textContent="Archivo histórico y demostraciones separadas";
-  $("sync-status").textContent="Vista pública agregada · sin resultados prospectivos acreditados";
+  $("as-of").textContent="1 cohorte GEO-2027 emitida · evaluación pendiente";
+  $("sync-status").textContent="Emisión GEO-2027 pública y con SHA-256 verificado · 0 resultados resueltos";
   render();
   await loadPublicTree();
  }catch{
@@ -474,6 +524,12 @@ document.querySelectorAll("[data-section]").forEach(button=>button.addEventListe
 }));
 $("refresh").addEventListener("click",load);
 // Country controls use the official UCDP-derived public tree, fetched automatically.
+$("app").addEventListener("change",event=>{
+ if(event.target?.id!=="geo2027-country")return;
+ const id=Number(event.target.value);
+ if(!state.prospective2027?.countries.some(x=>x.country_id===id))return;
+ state.forecastCountryId=id;render();
+});
 $("app").addEventListener("change",event=>{
  const input=event.target;
  const key={

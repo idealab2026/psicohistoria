@@ -4,13 +4,13 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
-## GEO-2027 · Protocolo prospectivo preregistrado (sin emisión todavía)
+## GEO-2027 · Primera cohorte prospectiva pública emitida
 
 Se ha añadido un protocolo científico para elaborar **antes de 2027** una primera cohorte prospectiva de **196 países**, prediciendo si en 2027 se registrarán **25 o más muertes anuales por violencia organizada de base estatal** en el campo `sb_total_deaths_best` del UCDP OrganizedViolenceCY. **No equivale a UCDP Onset `onset2`** ni a violencia gubernamental contra civiles: es una nueva pregunta científica y un horizonte fijo de dos años desde 2025.
 
 Fuente de entrada: UCDP OrganizedViolenceCY 26.1, con datos hasta 2025 y SHA-256 publicado. Se congela una estimación Markov a dos pasos por país regularizada (prior 20), la tasa global de los últimos cinco años como referencia principal, el comparador Markov global, Brier como pérdida primaria y un criterio de resolución futura que impide convertir países ausentes en negativos.
 
-**Situación en esta fase:** solo se ha preregistrado el método; no hay probabilidades emitidas ni aciertos evaluados. El siguiente commit deberá contener el JSON íntegro con las 196 probabilidades antes del comienzo de 2027. La trazabilidad GitHub y SHA-256 no equivalen a una autoridad independiente de sellado temporal.
+**Estado actual:** primera cohorte de 196 probabilidades **emitida públicamente el 10 de noviembre de 2026 a las 17:23:12 UTC**, antes de comenzar 2027. La metodología estaba congelada en `main` desde las 17:20:43 UTC. La primera publicación íntegra corresponde al commit institucional `3bb3561c8d6182c30624591276c705fb76ce99dc`. SHA-256 inmutable del fichero `data/forecast-2027-ucdp261.json`: `5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5`. El commit `8b924e0b0c7a07e27977160c9658cfed77940aff` (17:32:54 UTC) preserva por primera vez el fichero **byte a byte idéntico** al producido por el generador, incluido el salto de línea final; el commit anterior `3bb3561c` ya publicaba las 196 probabilidades, pero sin ese terminador de archivo. Ambas publicaciones preceden a 2027. El manifiesto `data/forecast-2027-manifest.json` registra origen, estatus y corte. **No hay resultados oficiales observados de 2027, calibración demostrada ni evaluación prospectiva completada.** El commit de GitHub es un compromiso público verificable por hashes, pero **no** un sello de tiempo criptográfico de autoridad independiente.
 
 Protocolo completo: `docs/forecast-2027-protocol.md`. Código y pruebas: `scripts/forecast_2027_statebased.py` y `scripts/test_forecast_2027_statebased.py`.
 
@@ -23,7 +23,7 @@ Protocolo completo: `docs/forecast-2027-protocol.md`. Código y pruebas: `script
 | Investigación | Mapa; Líneas y fuentes; Evidencia; Registro; Hitos | Estudios de demostración, Brier score, baselines y trazabilidad |
 | Crear | Catálogo recuperado; Nuevas ideas; Estudio audiovisual | Cartera histórica institucional depurada (9 proyectos, 14 relaciones), borradores locales y guion de texto |
 
-**Investigación institucional:** siete líneas de preguntas científicas con fuentes primarias, comparadores y condiciones pendientes. El CSV local permite comprobar fórmulas y un orden temporal declarado; la fecha real de publicación no se certifica y no existe evidencia de utilidad predictiva prospectiva.
+**Investigación institucional:** siete líneas de preguntas científicas con fuentes primarias, comparadores y condiciones pendientes. El CSV local permite comprobar fórmulas y un orden temporal declarado; la fecha real de publicación no se certifica y todavía no existe evidencia de utilidad predictiva prospectiva validada.
 
 **Catálogo de ideas recuperado:** proviene del archivo histórico aportado al proceso de migración. Se publican nueve proyectos (cuatro vertientes V1–V4, tres aplicaciones y dos fichas de estructura), ocho fichas documentadas y catorce relaciones. La publicación usa una **proyección de campos permitidos**: elimina rutas, enlaces a PR antiguos, identificadores personales y referencias de implementación heredadas. Sus estados y fechas son históricos, no acreditan ejecución actual, nuevos experimentos ni pronósticos.
 
@@ -69,7 +69,7 @@ Para evitar el cambio de unidad, `scripts/experiment_recency_onset.py` utiliza *
 
 En el contraste externo de 2024, el Brier de la **frecuencia global 5 años** es **0,005142209**, ligeramente inferior al global histórico **0,005201040**. El Brier del **modelo por país con prior de 5 años** es **0,005285406**, peor que el global. En la muestra interna, el Brier agregado del global completo es **0,013845771**, frente a **0,013888438** del modelo por país completo. Con un solo inicio en 2024, seleccionar un vencedor entre ocho variantes equivaldría a *selection bias*. El log-loss puede ordenar los modelos de forma diferente y se muestra por separado.
 
-**Pruebas y trazabilidad:** Actions `42859240878`, scripts `experiment_recency_onset.py` / `test_experiment_recency_onset.py`; la investigación pública expone agregados en `data/research.json`. Se mantienen 0 predicciones prospectivas emitidas y 0 pruebas confirmatorias nuevas. Próximo paso científicamente defendible: emitir y sellar prospectivamente predicciones antes de un nuevo periodo objetivo y validarlas cuando se publiquen resultados.
+**Pruebas y trazabilidad:** Actions `42859240878`, scripts `experiment_recency_onset.py` / `test_experiment_recency_onset.py`; la investigación pública expone agregados en `data/research.json`. El experimento retrospectivo no contiene emisiones; la nueva cohorte GEO-2027 es independiente, está emitida y tiene 0 resultados resueltos. No hay pruebas confirmatorias nuevas. Próximo paso científicamente defendible: emitir y sellar prospectivamente predicciones antes de un nuevo periodo objetivo y validarlas cuando se publiquen resultados.
 
 ## Q-GEO-01 · Contraste real entre ediciones 2017/2022 (10-11-2026)
 
@@ -104,7 +104,7 @@ node --test tests/*.test.mjs
 python3 scripts/audit_public.py
 ```
 
-GitHub Actions ejecuta las pruebas, comprueba los autores, audita el árbol público y publica exclusivamente `index.html`, `styles.css`, `logo.svg`, `favicon.svg`, `src/site.mjs`, `src/metrics.mjs` y `data/demo.json`, así como `src/research.mjs` y `data/research.json`, además de `src/project-catalog.mjs`, `src/project-portfolio.mjs` y `data/projects.json` depurado. Ningún README, workflow, archivo de desarrollo o configuración de repositorio forma parte del paquete desplegado.
+GitHub Actions ejecuta las pruebas, comprueba los autores, audita el árbol público y publica exclusivamente `index.html`, `styles.css`, `logo.svg`, `favicon.svg`, `src/site.mjs`, `src/metrics.mjs` y `data/demo.json`, así como `src/research.mjs` y `data/research.json`, además de `src/project-catalog.mjs`, `src/project-portfolio.mjs` y `data/projects.json` depurado. El paquete público incluye ahora además el manifiesto y las 196 probabilidades GEO-2027, con verificación de SHA-256. Ningún README, workflow, archivo de desarrollo o configuración de repositorio forma parte del paquete desplegado.
 
 ## Requisitos para datos reales
 
