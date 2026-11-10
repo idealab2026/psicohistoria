@@ -1504,5 +1504,165 @@
     "prospective_2027_results_resolved": 0,
     "predictive_skill_demonstrated": false,
     "warning": "Estudio Onset2 de inicio/reinicio de conflictos, no la variable de 25 muertes state-based. Únicamente dos positivos en 392 países-año 2023/2024: el modelo por país tiene Brier superior al global, reciente y sin evento; top-20 cero aciertos ambos años. Las ediciones UCDP 23.1 y 25.1 son homogéneas pero el experimento se reconstruyó ex post en 2026, sin emisión histórica ni datación point-in-time verificada. No incorporar 19.1 por duplicados y discrepancia de unidad. No prueba incapacidad universal de anticipar guerras. Las 196 probabilidades emitidas para GEO-2027 permanecen inmutables y sin resultados."
+  },
+  "onset2_lagged_signal_study": {
+    "id": "EMP-ONSET2-LAG-ONSET1-231-251-20261110",
+    "question": "Q-GEO-01",
+    "report_path": "data/onset2-lagged-origin-ablation.json",
+    "status": "POST_HOC_MODEL_FAMILY_EXPLORATION_NOT_PROSPECTIVE",
+    "dataset": "UCDP Intrastate Country Level Onset, onset1 lag and onset2 target",
+    "sources": {
+      "23.1": {
+        "max_year": 2022,
+        "sha256": "e2cadfa7a87b3949f8c638c27381fbb1b44fb076ccb00570782252d0935a2289",
+        "url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-231.csv"
+      },
+      "25.1": {
+        "max_year": 2024,
+        "sha256": "e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a",
+        "url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-onset-251.csv"
+      }
+    },
+    "origin_cutoffs": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "external_origin": 2022,
+    "horizons": [
+      1,
+      2
+    ],
+    "predictors": "lag-onset1 from origin year only (never target or intermediate year)",
+    "models": {
+      "country_eb": "country onset2 history since 2000, shrink20 to global_h",
+      "global_h": "global onset2 rate in country origin-target pairs with horizon h, Laplace1",
+      "global_recent5": "global onset2 rate in last five eligible target years, Laplace1",
+      "lag1_country": "country onset2 count shrunk by 20 to lag1_global",
+      "lag1_global": "empirical onset2 rate conditioned on origin-year onset1, shrink20 to global_h"
+    },
+    "internal": {
+      "n": 2744,
+      "events": 37,
+      "scores": {
+        "country_eb": {
+          "brier": 0.013321464256525806,
+          "logloss": 0.06987674547877132
+        },
+        "global_h": {
+          "brier": 0.013319101620584894,
+          "logloss": 0.07198727185883456
+        },
+        "global_recent5": {
+          "brier": 0.013326960543860374,
+          "logloss": 0.0721878081913037
+        },
+        "lag1_country": {
+          "brier": 0.013305916686579393,
+          "logloss": 0.06968532779939846
+        },
+        "lag1_global": {
+          "brier": 0.013312385326277387,
+          "logloss": 0.07165442317678943
+        }
+      },
+      "bootstrap_lag_country_vs_global_h": [
+        -0.00027423951191351295,
+        0.00022235066469068063
+      ],
+      "bootstrap_lag_country_vs_country_eb": [
+        -0.000023462166080975527,
+        -0.000008801123248814191
+      ],
+      "unique_country_target_years": 1568,
+      "unique_positive_country_target_years": 22,
+      "repeated_target_evaluations": 1176,
+      "by_horizon": {
+        "1": {
+          "n": 1372,
+          "events": 19
+        },
+        "2": {
+          "n": 1372,
+          "events": 18
+        }
+      }
+    },
+    "external": {
+      "n": 392,
+      "events": 2,
+      "scores": {
+        "country_eb": {
+          "brier": 0.005433153365728204,
+          "logloss": 0.037667820387240446
+        },
+        "global_h": {
+          "brier": 0.005199866709333255,
+          "logloss": 0.0373052211261253
+        },
+        "global_recent5": {
+          "brier": 0.005142208533688694,
+          "logloss": 0.03532320286384879
+        },
+        "lag1_country": {
+          "brier": 0.005425982049389577,
+          "logloss": 0.037573263347197024
+        },
+        "lag1_global": {
+          "brier": 0.005197688016301349,
+          "logloss": 0.03712358198143064
+        }
+      },
+      "bootstrap_lag_country_vs_global_h": [
+        0.0000010744573559557702,
+        0.00045514563140717
+      ],
+      "bootstrap_lag_country_vs_country_eb": [
+        -0.000017035699177024188,
+        1.6635022799375386e-7
+      ]
+    },
+    "external_folds": [
+      {
+        "year": 2023,
+        "origin_year": 2022,
+        "horizon": 1,
+        "countries": 196,
+        "events": 1,
+        "lag_country_brier": 0.00554561051884837,
+        "global_recent_brier": 0.005142208533688694,
+        "lag_country_average_precision": 0.00510204081632653,
+        "lag_country_auc": 0.358974358974359,
+        "lag_country_top20": 0,
+        "lag1_historical_exposure": 96,
+        "lag1_historical_onsets": 0
+      },
+      {
+        "year": 2024,
+        "origin_year": 2022,
+        "horizon": 2,
+        "countries": 196,
+        "events": 1,
+        "lag_country_brier": 0.005306353579930783,
+        "global_recent_brier": 0.005142208533688694,
+        "lag_country_average_precision": 0.02040816326530612,
+        "lag_country_auc": 0.8333333333333334,
+        "lag_country_top20": 0,
+        "lag1_historical_exposure": 94,
+        "lag1_historical_onsets": 0
+      }
+    ],
+    "candidate_selection_or_retraining": false,
+    "hypotheses_exploratory_after_previous_outcomes": true,
+    "historical_rolling_vintage_asof_verified": false,
+    "historical_forecasts_issued": false,
+    "real_2027_probabilities_unchanged": true,
+    "actual_2027_results": 0,
+    "predictive_skill_demonstrated": false,
+    "caveat": "Familia de modelos diseñada tras observar datos externos de 2023/2024; los resultados no son confirmatorios. El rolling-origin interno utiliza la misma edición 23.1 revisada, sin certificación as-of. Señal onset1 del año de origen no identifica por sí sola todos los países realmente en riesgo según el código UCDP. Las 2.744 evaluaciones internas cuentan 1.568 países-año distintos y 22 eventos únicos, porque algunos años se evalúan desde dos orígenes; no son independientes. Mejoras Brier internas marginales y no confirmadas externamente; la referencia de frecuencia global reciente es mejor en 2023/2024. Dos únicos eventos externos; las 196 probabilidades prospectivas GEO-2027 permanecen intactas, con cero resultados evaluados."
   }
 }

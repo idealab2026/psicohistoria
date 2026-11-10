@@ -609,6 +609,93 @@ export function verifyResearch(data) {
     !loose(onset.bootstrap_country95_model_minus_global[0],0.000008119187152832382)||
     !loose(onset.bootstrap_country95_model_minus_global[1],0.00046373996178438316))
       throw Error("Onset2 uncertainty interval changed to imply higher skill");
+  const lag=data.onset2_lagged_signal_study;
+  if(!lag ||
+    lag.id!=="EMP-ONSET2-LAG-ONSET1-231-251-20261110"||
+    lag.question!=="Q-GEO-01"||
+    lag.report_path!=="data/onset2-lagged-origin-ablation.json"||
+    lag.status!=="POST_HOC_MODEL_FAMILY_EXPLORATION_NOT_PROSPECTIVE"||
+    lag.dataset!=="UCDP Intrastate Country Level Onset, onset1 lag and onset2 target"||
+    lag.predictors!=="lag-onset1 from origin year only (never target or intermediate year)"||
+    lag.external_origin!==2022||
+    JSON.stringify(lag.origin_cutoffs)!=="[2014,2015,2016,2017,2018,2019,2020]"||
+    JSON.stringify(lag.horizons)!=="[1,2]"||
+    lag.internal?.n!==2744||lag.internal?.events!==37||
+    lag.internal.unique_country_target_years!==1568||
+    lag.internal.unique_positive_country_target_years!==22||
+    lag.internal.repeated_target_evaluations!==1176||
+    lag.internal.by_horizon?.["1"]?.n!==1372||
+    lag.internal.by_horizon?.["2"]?.n!==1372||
+    lag.internal.by_horizon["1"].events!==19||
+    lag.internal.by_horizon["2"].events!==18||
+    lag.external?.n!==392||lag.external?.events!==2||
+    lag.candidate_selection_or_retraining!==false||
+    lag.hypotheses_exploratory_after_previous_outcomes!==true||
+    lag.historical_rolling_vintage_asof_verified!==false||
+    lag.historical_forecasts_issued!==false||
+    lag.real_2027_probabilities_unchanged!==true||
+    lag.actual_2027_results!==0||
+    lag.predictive_skill_demonstrated!==false||
+    !lag.caveat?.includes("Mejoras Brier internas marginales")||
+    !lag.caveat?.includes("Dos únicos eventos externos")||
+    !lag.caveat?.includes("onset1"))
+    throw Error("Lagged onset2 ablation cannot claim prospective success");
+  const lagSources=[
+    ["23.1",2022,"e2cadfa7a87b3949f8c638c27381fbb1b44fb076ccb00570782252d0935a2289"],
+    ["25.1",2024,"e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a"]
+  ];
+  if(!lagSources.every(([version,year,hash])=>
+    lag.sources?.[version]?.max_year===year&&
+    lag.sources[version].sha256===hash&&
+    lag.sources[version].url.startsWith("https://ucdp.uu.se/downloads/onset/")))
+      throw Error("Lagged onset2 official archive fingerprints changed");
+  const lagKeys=["global_h","global_recent5","country_eb","lag1_global","lag1_country"];
+  const expectedLagScores={
+    internal:{
+      global_h:[0.013319101620584894,0.07198727185883456],
+      global_recent5:[0.013326960543860374,0.0721878081913037],
+      country_eb:[0.013321464256525806,0.06987674547877132],
+      lag1_global:[0.013312385326277387,0.07165442317678943],
+      lag1_country:[0.013305916686579393,0.06968532779939846]
+    },
+    external:{
+      global_h:[0.005199866709333255,0.0373052211261253],
+      global_recent5:[0.005142208533688694,0.03532320286384879],
+      country_eb:[0.005433153365728204,0.037667820387240446],
+      lag1_global:[0.005197688016301349,0.03712358198143064],
+      lag1_country:[0.005425982049389577,0.037573263347197024]
+    }
+  };
+  if(!["internal","external"].every(section=>
+     lagKeys.every(key=>{
+       const score=lag[section]?.scores?.[key];
+       const expected=expectedLagScores[section][key];
+       return score&&loose(score.brier,expected[0])&&loose(score.logloss,expected[1]);
+     })))
+    throw Error("Lagged onset2 fixed candidate Brier/logloss results were altered");
+  if(!Array.isArray(lag.external_folds)||lag.external_folds.length!==2||
+     ![
+       [2023,2022,1,196,1,0.00554561051884837,0.005142208533688694,0.00510204081632653,0.358974358974359,0,96,0],
+       [2024,2022,2,196,1,0.005306353579930783,0.005142208533688694,0.02040816326530612,0.8333333333333334,0,94,0]
+     ].every(([year,origin,h,n,positives,modelBrier,recentBrier,ap,auc,hits,exposure,events],i)=>{
+       const a=lag.external_folds[i];
+       return a?.year===year&&a.origin_year===origin&&a.horizon===h&&
+         a.countries===n&&a.events===positives&&
+         loose(a.lag_country_brier,modelBrier)&&loose(a.global_recent_brier,recentBrier)&&
+         loose(a.lag_country_average_precision,ap)&&loose(a.lag_country_auc,auc)&&
+         a.lag_country_top20===hits&&a.lag1_historical_exposure===exposure&&
+         a.lag1_historical_onsets===events;
+     }))
+    throw Error("Lagged onset2 annual external risk ranking was changed");
+  for(const [key,low,high] of [
+    ["internal", -0.000023462166080975527,-0.000008801123248814191],
+    ["external", -0.000017035699177024188,0.00000016635022799375386]
+  ]){
+    const interval=lag[key]?.bootstrap_lag_country_vs_country_eb;
+    if(!Array.isArray(interval)||interval.length!==2||
+       !loose(interval[0],low)||!loose(interval[1],high))
+      throw Error("Lagged onset2 uncertainty claims falsified");
+  }
   return true;
 }
 export function verifyIssuedForecast2027(document, manifest){

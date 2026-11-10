@@ -63,9 +63,9 @@ jobs:
           mkdir -p dist/src dist/data
           cp index.html trabajo.html privacidad-icsa.html styles.css logo.svg favicon.svg dist/
           cp src/site.mjs src/visuals.mjs src/neural.mjs src/markov-svg.mjs src/lab-renderers.mjs src/metrics.mjs src/research.mjs src/project-catalog.mjs src/project-portfolio.mjs src/private-workbench.mjs src/private-notebook.mjs src/country-comparison.mjs src/country-comparison-view.mjs src/main-country-tree.mjs dist/src/
-          cp data/demo.json data/research.json data/projects.json data/forecast-2027-ucdp261.json data/forecast-2027-manifest.json data/forecast-2027-audit.json data/forecast-2027-historical-backtest.json data/forecast-2027-archival-cross-release.json data/forecast-2027-origin-state-diagnostic.json data/forecast-2027-entry-comparison.json data/onset2-231-251-homogeneous.json dist/data/
+          cp data/demo.json data/research.json data/projects.json data/forecast-2027-ucdp261.json data/forecast-2027-manifest.json data/forecast-2027-audit.json data/forecast-2027-historical-backtest.json data/forecast-2027-archival-cross-release.json data/forecast-2027-origin-state-diagnostic.json data/forecast-2027-entry-comparison.json data/onset2-231-251-homogeneous.json data/onset2-lagged-origin-ablation.json dist/data/
           python3 scripts/build_official_countries.py --output dist/data/countries-ucdp261.json
-          test "$(find dist -type f | wc -l)" -eq 32
+          test "$(find dist -type f | wc -l)" -eq 33
       - uses: actions/upload-artifact@v4
         with:
           name: audited-site
@@ -82,6 +82,20 @@ jobs:
         run: |
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/forecast_2027_statebased.py --output /tmp/idealab-geo2027.json --print-chunks
           test -s /tmp/idealab-geo2027.json
+  onset2_lagged_signal_ablation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Evaluate strict origin-only lag-onset1 1y and 2y model ablations on historical vintages
+        run: |
+          set -e
+          if test -f data/onset2-lagged-origin-ablation.json; then
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_onset2_lagged_signals.py --check-report data/onset2-lagged-origin-ablation.json
+          else
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_onset2_lagged_signals.py
+          fi
   onset2_homogeneous_holdout:
     runs-on: ubuntu-latest
     steps:
@@ -213,7 +227,7 @@ jobs:
           test -s /tmp/idealab-ucdp-archive.json
   deploy:
     if: github.event_name != 'pull_request'
-    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic, new_entry_baseline_diagnostic, onset2_homogeneous_holdout]
+    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic, new_entry_baseline_diagnostic, onset2_homogeneous_holdout, onset2_lagged_signal_ablation]
     runs-on: ubuntu-latest
     environment: github-pages
     steps:
