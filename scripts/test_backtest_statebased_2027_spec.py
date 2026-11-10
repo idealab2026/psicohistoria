@@ -46,8 +46,7 @@ class Historical2027SpecificationTests(unittest.TestCase):
         keys=("country_id","p_model","p_global_markov","p_baseline_global_5y")
         self.assertEqual([tuple(r[x] for x in keys) for r in before],
                          [tuple(r[x] for x in keys) for r in after])
-        self.assertNotEqual(_metrics(before)["_UNDEFINED_"] if False else
-                            _metrics(before)["p_model"]["brier"],
+        self.assertNotEqual(_metrics(before)["p_model"]["brier"],
                             _metrics(after)["p_model"]["brier"])
 
     def test_missing_future_country_label_is_unresolved_not_negative(self):
