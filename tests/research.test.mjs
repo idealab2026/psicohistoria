@@ -201,7 +201,7 @@ test("real archival source and negative score are fail-closed",()=>{
 test("website leads with source-backed negative holdout rather than a synthetic prediction",()=>{
  const source=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
  assert.match(source,/function renderVintageHoldout/);
- assert.match(source,/renderExternalVintageHoldout\(\)\+renderVintageHoldout\(\)\+renderHistoricalLabelRevisions\(\)\+renderConditionalRisksetEvidence\(\)/);
+ assert.match(source,/renderRecencySensitivity\(\)\+renderExternalVintageHoldout\(\)\+renderVintageHoldout\(\)\+renderHistoricalLabelRevisions\(\)\+renderConditionalRisksetEvidence\(\)/);
  assert.match(source,/No concluyente/);
  assert.match(source,/Valor negativo/);
  assert.match(source,/Discrepancia de pérdidas/);
@@ -275,4 +275,42 @@ test("do not allow fabricated success, missing source, or changed events in arch
  e=structuredClone(registry);
  e.external_vintage_holdout.legacy_19_1_duplicates.contradictory_onset2_keys=0;
  assert.throws(()=>verifyResearch(e),/Unverified cross-release/);
+});
+
+test("consistent UCDP country-level recency experiment is cautious about post-hoc selection",()=>{
+ const r=registry.recency_sensitivity_study;
+ assert.deepEqual(r.source_vintages,["23.1","25.1"]);
+ assert.deepEqual(r.windows_years,[5,10,20]);
+ assert.equal(r.status,"EXPLORATORY_POSTHOC_NOT_PROSPECTIVE");
+ assert.equal(r.internally_revised_vintage.n,1568);
+ assert.equal(r.internally_revised_vintage.events,22);
+ assert.equal(r.cross_release_holdout_2024.n,196);
+ assert.equal(r.cross_release_holdout_2024.events,1);
+ assert.ok(r.cross_release_holdout_2024.metrics.global_5.brier <
+           r.cross_release_holdout_2024.metrics.global_full.brier);
+ assert.ok(r.cross_release_holdout_2024.metrics.country_5.brier >
+           r.cross_release_holdout_2024.metrics.global_5.brier);
+ assert.equal(r.legacy_19_1_excluded_due_to_country_year_unit_mismatch,true);
+ assert.equal(r.new_independent_confirmatory_holdout,false);
+ assert.equal(r.prospective_forecasts_issued,0);
+ assert.ok(verifyResearch(registry));
+ const html=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
+ assert.match(html,/function renderRecencySensitivity/);
+ assert.match(html,/Cuadrícula completa de ocho modelos/);
+ assert.match(html,/backtest homogéneo validado/);
+});
+
+test("recency and vintage compatibility safeguards reject rewritten study metadata",()=>{
+ let r=structuredClone(registry);
+ r.recency_sensitivity_study.skill_demonstrated=true;
+ assert.throws(()=>verifyResearch(r),/Recency experiment/);
+ r=structuredClone(registry);
+ r.recency_sensitivity_study.legacy_19_1_excluded_due_to_country_year_unit_mismatch=false;
+ assert.throws(()=>verifyResearch(r),/Recency experiment/);
+ r=structuredClone(registry);
+ r.recency_sensitivity_study.cross_release_holdout_2024.metrics.global_5.brier=0.99;
+ assert.throws(()=>verifyResearch(r),/Recency sensitivity/);
+ r=structuredClone(registry);
+ r.recency_sensitivity_study.source_sha256["23.1"]="f".repeat(64);
+ assert.throws(()=>verifyResearch(r),/Recency experiment/);
 });
