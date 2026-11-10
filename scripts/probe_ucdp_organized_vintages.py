@@ -143,9 +143,21 @@ def inspect(fetch=request):
         if chosen:
             try:
                 data=fetch(chosen["url"])
-                rec["results"].append({"url":chosen["url"],
-                                     "download_status":"retrieved","sha256":sha(data),
-                                     "bytes":len(data),**source_metadata(data,chosen["format"])})
+                basic={"url":chosen["url"],"download_status":"retrieved",
+                       "sha256":sha(data),"bytes":len(data)}
+                try:
+                    basic.update(source_metadata(data,chosen["format"]))
+                except ValueError as error:
+                    basic["schema_status"]="NOT_YET_COMPATIBLE"
+                    basic["schema_error"]=str(error)[:150]
+                    if data[:2]==b"PK":
+                        with zipfile.ZipFile(io.BytesIO(data)) as z:
+                            basic["archive_members"]=[item.filename for item in z.infolist() if not item.is_dir()][:12]
+                            csv_members=[item.filename for item in z.infolist() if item.filename.lower().endswith(".csv")]
+                            if len(csv_members)==1:
+                                first=z.read(csv_members[0],5000).decode("utf-8-sig").splitlines()[0]
+                                basic["original_headers"]=first[:800]
+                rec["results"].append(basic)
             except Exception as exc:
                 rec["results"].append({"url":chosen["url"],
                                       "download_status":"unavailable",
