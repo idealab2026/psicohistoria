@@ -179,7 +179,7 @@ function renderNewEntryComparator(){
  ];
  return section("INVESTIGACIÓN · NUEVOS CRUCES DE UMBRAL",
    "¿Se anticipan realmente entradas nuevas?",
-   "Evaluamos exclusivamente los países que partían por debajo de 25 muertes estatales-organizadas: el origen no equivale a inicio de guerra. El baseline específico se calcula solo con registros anteriores a cada corte, pero se eligió después de observar los resultados.")+
+   "Evaluamos exclusivamente los países que partían por debajo de 25 muertes por violencia organizada de base estatal: el origen no equivale a inicio de guerra. El baseline específico se calcula solo con registros anteriores a cada corte, pero se eligió después de observar los resultados.")+
  '<div class="section-grid three">'+
  box('<div class="eyebrow">PAÍSES-AÑO INICIALMENTE POR DEBAJO</div><div class="card-number">'+safe(x.n)+'</div><p>'+safe(x.entries)+' terminan superando las 25 muertes en el año de evaluación</p>')+
  box('<div class="eyebrow">BRIER SKILL VS ENTRADA DIRECTA</div><div class="card-number">'+pct(x.skill_vs_entry_prior)+'</div><p>Mejora descriptiva, intervalo de incertidumbre incluye cero</p>')+
@@ -203,7 +203,7 @@ function renderNewEntryComparator(){
  '<p>'+safe(x.note)+'</p>'+
  '<p>La referencia específica usa 5.175 pares históricos iniciales para 2024 y 5.339 para 2025. Ambos casos se extraen de la edición original disponible en la reconstrucción, sin incorporar años de resultado a la estimación.</p>'+
  '<p><a href="./data/forecast-2027-entry-comparison.json" target="_blank" rel="noopener noreferrer">Ver todas las métricas, intervalos y presupuestos de alerta</a> · <a href="./data/forecast-2027-origin-state-diagnostic.json" target="_blank" rel="noopener noreferrer">Ver persistencia frente a entrada</a>.</p>'+
- '<p>**Estado**: estudio retrospectivo exploratorio (post hoc), 0 resultados 2027 evaluados y las 196 probabilidades emitidas sin modificar.</p>'+
+ '<p><strong>Estado</strong>: estudio retrospectivo exploratorio (post hoc), 0 resultados 2027 evaluados y las 196 probabilidades emitidas sin modificar.</p>'+
  '</details>','soft');
 }
 function renderOriginStateSkill(){
