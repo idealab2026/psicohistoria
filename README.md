@@ -4,6 +4,34 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO-2027 · Contraste histórico entre ediciones oficiales realmente distintas (10-11-2026)
+
+**Resultado nuevo:** investigación con la misma ecuación probabilística, horizonte de dos años y referencias previamente congelados para GEO-2027, pero esta vez los años de entrenamiento proceden de una edición UCDP previa **diferente** de la utilizada para observar cada desenlace. No se reconstruye el pasado únicamente con una misma edición revisada.
+
+| Ficheros de origen → resultado | Corte de entrenamiento | Año observado | Países | Umbral superado |
+|---|---:|---:|---:|---:|
+| OrganizedViolenceCY **23.1 → 25.1** | 2022 | 2024 | 196 | 35 |
+| OrganizedViolenceCY **24.1 → 26.1** | 2023 | 2025 | 196 | 34 |
+| **Total** | | | **392** | **69** |
+
+La versión 23.1 original existe como **Excel XLSX**, mientras 24.1/25.1/26.1 se descargan en CSV comprimido; se procesan por separado con validación estricta de la unidad país-año y las columnas oficiales `country_id_cy`, `year_cy`, `sb_total_deaths_best_cy` (alias sin sufijo en 26.1). El motor verifica SHA-256 **antes** de cargar cada archivo, prohíbe cualquier observación posterior al corte dentro del entrenamiento y solo añade el resultado del año objetivo a la evaluación.
+
+| Modelo | Brier ↓ | Log-loss ↓ |
+|---|---:|---:|
+| Markov por país, prior 20 | **0,04008406** | **0,15439774** |
+| Markov global | 0,04692112 | 0,19006909 |
+| Frecuencia global últimos cinco años | 0,14506787 | 0,46541257 |
+
+Mejora retrospectiva en Brier: **14,57 % frente a Markov global** y **72,37 % frente a frecuencia global**. La calibración descriptiva por siete bandas presenta un error absoluto agrupado de **3,46 puntos porcentuales**; algunas bandas tienen muy pocos casos y no permiten inferencia prospectiva. El bootstrap exploratorio agrupado en país (2000 réplicas) arroja una diferencia modelo menos Markov global entre **−0,01133 y −0,00287**. No captura adecuadamente los choques compartidos ni el escaso número de años objetivo.
+
+La revisión histórica de etiquetas binarias aporta un control empírico: **6 cambios** entre las ediciones 23.1→25.1 en 6544 países-año comunes hasta 2022; **7 cambios** entre 24.1→26.1 en 6740 registros hasta 2023. El entrenamiento se basa estrictamente en la versión antigua, sin utilizar esas revisiones posteriores.
+
+**Ficheros fuente oficiales y sus huellas**: 23.1 XLSX `6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff`; 24.1 ZIP `00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260`; 25.1 ZIP `564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917`; 26.1 ZIP `66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34`. Los enlaces se descubrieron en el [archivo histórico oficial](https://ucdp.uu.se/downloads/olddw.html), no se infirieron.
+
+**Límite irrenunciable:** el estudio se ha ejecutado **ex post en 2026**. Aunque la estructura y el contenido de las ediciones archivadas se verifican, **las fechas originales no tienen un sellado independiente y no se emitió realmente ninguna predicción en 2023–2024**. El nuevo contraste es mejor evidencia histórica que la prueba de vintage revisada, pero todavía no equivale a la validación prospectiva de 2027.
+
+Resultados reproducibles en `data/forecast-2027-archival-cross-release.json`; código `scripts/backtest_archived_country_vintages.py` y pruebas `scripts/test_backtest_archived_country_vintages.py`. GitHub Actions recalcula el resultado desde los cuatro archivos oficiales con hash fijado y bloquea el despliegue si cambia. **Las 196 probabilidades de 2027, su SHA y su protocolo no cambian; cero resultados de 2027 evaluados.**
+
 ## GEO-2027 · Backtest retrospectivo del modelo emitido (10-11-2026)
 
 Se ha evaluado **exactamente el modelo y los baselines fijados para GEO-2027**, sin alterar el JSON de 196 pronósticos ni sus parámetros: Markov por país con prior 20, Laplace 1 y horizonte de dos años; referencias Markov global y frecuencia global de los cinco años anteriores al origen.

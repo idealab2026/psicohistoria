@@ -422,3 +422,61 @@ test("historical study cannot falsify scores or be represented as skill demonstr
  changed.statebased_2027_spec_backtest.reliability_bins[0].n=0;
  assert.throws(()=>verifyResearch(changed),/Historical backtest calibration/);
 });
+
+test("GEO-2027 source-separated historical holdouts use real archived versions without forecast issuance claims",()=>{
+ const r=registry.historical_cross_release_statebased;
+ const report=JSON.parse(readFileSync(new URL("../data/forecast-2027-archival-cross-release.json",import.meta.url),"utf8"));
+ assert.equal(report.schema,"idealab.psico.statebased_archival_cross_release_v1");
+ assert.equal(r.sample_size,392);
+ assert.equal(r.events,69);
+ assert.deepEqual(r.fold_years,[2024,2025]);
+ assert.deepEqual(r.folds.map(x=>[x.origin,x.assessment,x.cutoff,x.year,x.observations,x.events]),
+ [[ "23.1","25.1",2022,2024,196,35 ],[ "24.1","26.1",2023,2025,196,34 ]]);
+ assert.deepEqual(r.historical_revisions.map(x=>x.label_flips),[6,7]);
+ assert.deepEqual(r.historical_revisions.map(x=>x.country_years),[6544,6740]);
+ assert.deepEqual(Object.keys(r.source_releases),["23.1","24.1","25.1","26.1"]);
+ assert.deepEqual(report.sources["23.1"].last_year,2022);
+ assert.equal(report.sources["23.1"].format,"XLSX");
+ assert.equal(report.country_years,r.sample_size);
+ assert.equal(r.model_calibration_bins.reduce((n,x)=>n+x.n,0),392);
+ assert.ok(r.model_bin_ece>0.03&&r.model_bin_ece<0.04);
+ assert.equal(report.positives,r.events);
+ assert.equal(report.metrics.p_model.brier,r.model_brier);
+ assert.equal(report.metrics.p_global_markov.brier,r.global_markov_brier);
+ assert.equal(report.metrics.p_baseline_global_5y.brier,r.global_5y_brier);
+ assert.ok(r.model_brier<r.global_markov_brier);
+ assert.ok(r.global_markov_brier<r.global_5y_brier);
+ assert.equal(r.historical_issue_not_verified,true);
+ assert.equal(r.dates_independently_notarized,false);
+ assert.equal(r.forecast_2027_unmodified,true);
+ assert.equal(r.prospective_results_2027,0);
+ assert.equal(r.prospective_skill_demonstrated,false);
+ assert.equal(report.prospective_2027_outcomes_resolved,0);
+ assert.equal(verifyResearch(registry),true);
+ const source=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
+ assert.match(source,/function renderArchivalCrossRelease/);
+ assert.match(source,/reconstrucción ex post/i);
+ assert.match(source,/ediciones oficiales diferentes/i);
+ assert.match(source,/Calibración retrospectiva entre ediciones/);
+});
+
+test("historical release and score integrity cannot be fabricated or relabeled prospective",()=>{
+ let d=structuredClone(registry);
+ d.historical_cross_release_statebased.prospective_skill_demonstrated=true;
+ assert.throws(()=>verifyResearch(d),/Unverified archival cross-release/);
+ d=structuredClone(registry);
+ d.historical_cross_release_statebased.source_releases["24.1"].sha256="f".repeat(64);
+ assert.throws(()=>verifyResearch(d),/Archival cross-release sources/);
+ d=structuredClone(registry);
+ d.historical_cross_release_statebased.folds[0].events=0;
+ assert.throws(()=>verifyResearch(d),/Archival cross-release year coverage/);
+ d=structuredClone(registry);
+ d.historical_cross_release_statebased.model_brier=0.001;
+ assert.throws(()=>verifyResearch(d),/Cross-edition model score/);
+ d=structuredClone(registry);
+ d.historical_cross_release_statebased.historical_revisions[0].label_flips=0;
+ assert.throws(()=>verifyResearch(d),/Archival cross-release year coverage/);
+ d=structuredClone(registry);
+ d.historical_cross_release_statebased.model_calibration_bins[0].n=0;
+ assert.throws(()=>verifyResearch(d),/Cross-edition calibration/);
+});

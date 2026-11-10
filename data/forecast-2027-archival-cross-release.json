@@ -1,0 +1,207 @@
+{
+  "2027_issued_model_or_probabilities_modified": false,
+  "brier_skill_vs_global_5y": 0.7236875612699387,
+  "brier_skill_vs_global_markov": 0.14571392258842697,
+  "country_bootstrap_interval_model_minus_global_5y": [
+    -0.13675957379943915,
+    -0.07380210777581231
+  ],
+  "country_bootstrap_interval_model_minus_global_markov": [
+    -0.01132838619400008,
+    -0.0028651250579874005
+  ],
+  "country_years": 392,
+  "folds": [
+    {
+      "baseline_probability": 0.170061099796,
+      "evaluated_year": 2024,
+      "origin_cohort": 196,
+      "origin_cutoff": 2022,
+      "origin_max_year": 2022,
+      "origin_version": "23.1",
+      "outcome_version": "25.1",
+      "positives": 35,
+      "resolved": 196,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.14675609916525365,
+          "logloss": 0.46947360597507076
+        },
+        "p_global_markov": {
+          "brier": 0.04971046344725325,
+          "logloss": 0.19698906824923232
+        },
+        "p_model": {
+          "brier": 0.04143146187683863,
+          "logloss": 0.1539409888018366
+        }
+      },
+      "target_year": 2024,
+      "unresolved": 0
+    },
+    {
+      "baseline_probability": 0.172097759674,
+      "evaluated_year": 2025,
+      "origin_cohort": 196,
+      "origin_cutoff": 2023,
+      "origin_max_year": 2023,
+      "origin_version": "24.1",
+      "outcome_version": "26.1",
+      "positives": 34,
+      "resolved": 196,
+      "scores": {
+        "p_baseline_global_5y": {
+          "brier": 0.14337964063056496,
+          "logloss": 0.4613515325680911
+        },
+        "p_global_markov": {
+          "brier": 0.044131770372870444,
+          "logloss": 0.18314911540083717
+        },
+        "p_model": {
+          "brier": 0.03873665194889448,
+          "logloss": 0.15485448848536554
+        }
+      },
+      "target_year": 2025,
+      "unresolved": 0
+    }
+  ],
+  "historical_forecasts_actually_issued": false,
+  "historical_revision_diagnostics": [
+    {
+      "common_historical_country_years": 6544,
+      "origin_version": "23.1",
+      "outcome_version": "25.1",
+      "revised_binary_labels": 6,
+      "revision_fraction": 0.0009168704156479218,
+      "scope": "historical data through origin cutoff; measures cross-edition label drift"
+    },
+    {
+      "common_historical_country_years": 6740,
+      "origin_version": "24.1",
+      "outcome_version": "26.1",
+      "revised_binary_labels": 7,
+      "revision_fraction": 0.0010385756676557863,
+      "scope": "historical data through origin cutoff; measures cross-edition label drift"
+    }
+  ],
+  "horizon_years": 2,
+  "limitations": "Origin and outcome editions are distinct official archived UCDP releases, reducing contamination by future label revisions. This is still an ex-post reconstruction in 2026: release provenance is not independently time-notarized and predictions were not issued at the historical origin dates. Only two later years are available; overlapping countries and macro shocks limit inference.",
+  "metrics": {
+    "p_baseline_global_5y": {
+      "brier": 0.1450678698979093,
+      "logloss": 0.4654125692715784
+    },
+    "p_global_markov": {
+      "brier": 0.046921116910061844,
+      "logloss": 0.19006909182503545
+    },
+    "p_model": {
+      "brier": 0.04008405691286656,
+      "logloss": 0.15439773864360035
+    }
+  },
+  "model_parameters": {
+    "global_baseline_years": 5,
+    "laplace": 1,
+    "shrinkage": 20
+  },
+  "model_reliability": [
+    {
+      "lower": 0,
+      "n": 227,
+      "observed": 0.004405286343612335,
+      "predicted": 0.021268660637920708,
+      "upper": 0.05
+    },
+    {
+      "lower": 0.05,
+      "n": 69,
+      "observed": 0.057971014492753624,
+      "predicted": 0.06625466593178261,
+      "upper": 0.1
+    },
+    {
+      "lower": 0.1,
+      "n": 20,
+      "observed": 0.05,
+      "predicted": 0.1421937506278,
+      "upper": 0.2
+    },
+    {
+      "lower": 0.2,
+      "n": 5,
+      "observed": 0.4,
+      "predicted": 0.25130906511859996,
+      "upper": 0.4
+    },
+    {
+      "lower": 0.4,
+      "n": 0,
+      "observed": null,
+      "predicted": null,
+      "upper": 0.6
+    },
+    {
+      "lower": 0.6,
+      "n": 45,
+      "observed": 0.8,
+      "predicted": 0.7179089853922223,
+      "upper": 0.8
+    },
+    {
+      "lower": 0.8,
+      "n": 26,
+      "observed": 0.9615384615384616,
+      "predicted": 0.8509265504118078,
+      "upper": 1
+    }
+  ],
+  "original_release_timestamps_independently_notarized": false,
+  "positives": 69,
+  "prospective_2027_outcomes_resolved": 0,
+  "prospective_skill_demonstrated": false,
+  "question": "GEO-2027 same frozen 2-year horizon model",
+  "schema": "idealab.psico.statebased_archival_cross_release_v1",
+  "sources": {
+    "23.1": {
+      "country_year_unique": true,
+      "format": "XLSX",
+      "last_year": 2022,
+      "rows": 6544,
+      "sha256": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+      "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy_v23_1.xlsx",
+      "years": 2022
+    },
+    "24.1": {
+      "country_year_unique": true,
+      "format": "CSV_ZIP",
+      "last_year": 2023,
+      "rows": 6740,
+      "sha256": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+      "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-241-csv.zip",
+      "years": 2023
+    },
+    "25.1": {
+      "country_year_unique": true,
+      "format": "CSV_ZIP",
+      "last_year": 2024,
+      "rows": 6936,
+      "sha256": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+      "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-251-csv.zip",
+      "years": 2024
+    },
+    "26.1": {
+      "country_year_unique": true,
+      "format": "CSV_ZIP",
+      "last_year": 2025,
+      "rows": 7132,
+      "sha256": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34",
+      "url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-261-csv.zip",
+      "years": 2025
+    }
+  },
+  "study_type": "EX_POST_ARCHIVED_VINTAGE_SEPARATED_OUTCOMES_NOT_HISTORICALLY_ISSUED",
+  "target_rule": "UCDP OrganizedViolenceCY sb_total_deaths_best >=25"
+}
