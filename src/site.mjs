@@ -108,7 +108,7 @@ function renderShadow(){
  '<div><div class="tiny">Referencia global 2021–2025</div><div class="card-number">'+pct(selected.p_baseline_global_5y)+'</div></div>'+
  '<div><div class="tiny">Referencia Markov global</div><div class="card-number">'+pct(selected.p_global_markov)+'</div></div>'+
  '</div>'+
- '<p>Estado de 2025 para esta variable: '+(selected.last_observed_state_2025===1?'al menos 25 fallecimientos estimados':'menos de 25 fallecimientos estimados')+'. Horizonte: año natural 2027, dos años desde la última observación.</p>'+
+ '<p>Estado de 2025 para esta variable: '+(selected.last_observed_state_2025===1?'al menos 25 fallecimientos estimados':'menos de 25 fallecimientos estimados')+'. Horizonte: año natural 2027, dos pasos de calendario desde 2025. La emisión se publicó en noviembre de 2026: no implica dos años completos de preaviso operativo.</p>'+
  '<p class="notice info">Probabilidades experimentales, no evaluadas. Este indicador mide muertes registradas en conflictos state-based dentro del país; no predice víctimas civiles ni atribuye necesariamente muertes al Gobierno.</p>','soft')+
  box('<h3>Distribución y control de probabilidades · 2027</h3>'+
  '<div class="section-grid three">'+
@@ -166,6 +166,39 @@ function renderHistoricalLabelRevisions(){
  '<details><summary>Fuentes, huellas y limitaciones</summary>'+
  r.source_urls.map((url,i)=>'<p><a href="'+safe(url)+'" target="_blank" rel="noopener noreferrer">UCDP '+(i===0?'23.1':'25.1')+'</a> · SHA-256 <code>'+safe(r.source_sha256s[i])+'</code></p>').join("")+
  '<p>Contraste reproducible en el expediente institucional. Las fechas de publicación originales no están certificadas criptográficamente. Este hallazgo no acredita skill prospectivo.</p></details>','soft');
+}
+function renderOriginStateSkill(){
+ const x=state.research?.origin_state_diagnostic_2027;
+ if(!x)return "";
+ const pct=n=>new Intl.NumberFormat("es-ES",{style:"percent",minimumFractionDigits:1,maximumFractionDigits:2}).format(n);
+ const num=n=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:5,maximumFractionDigits:5}).format(n);
+ const low=x.prior_below_threshold,high=x.prior_above_threshold;
+ const labels=[["Por debajo del umbral en origen",low],["Ya por encima del umbral en origen",high]];
+ return section("INVESTIGACIÓN · ORIGEN DEL PODER PREDICTIVO",
+  "¿Detecta nuevas entradas o principalmente la persistencia?",
+  "Dos años evaluados entre ediciones UCDP originales. Estado en el año de origen frente al estado dos años calendario después; NO mide el inicio de una guerra.")+
+ '<div class="section-grid three">'+
+ box('<div class="eyebrow">UMBRAL YA SUPERADO</div><div class="card-number">'+safe(x.persisted_threshold_positives)+'</div><p>De '+safe(x.positive_threshold_years)+' positivos evaluados ('+pct(x.persisted_fraction_of_positives)+') son persistencia</p>')+
+ box('<div class="eyebrow">NUEVOS CRUCES DEL UMBRAL</div><div class="card-number">'+safe(x.new_threshold_entries)+'</div><p>Solo ocho casos positivos partían por debajo de 25 muertes</p>')+
+ box('<div class="eyebrow">PREDICCIONES 2027 EVALUADAS</div><div class="card-number">0</div><p>Las 196 probabilidades originales permanecen inalteradas</p>')+
+ '</div>'+
+ box('<h3>Comparación por estado inicial (Brier, menor es mejor)</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Estado en origen</th><th>Países-año</th><th>Positivos</th><th>Modelo por país</th><th>Markov global</th><th>Mejora Brier</th></tr></thead><tbody>'+
+ labels.map(([name,g])=>'<tr><td>'+safe(name)+'</td><td>'+safe(g.n)+'</td><td>'+safe(g.events)+'</td><td>'+num(g.brier_model)+'</td><td>'+num(g.brier_global_markov)+'</td><td>'+pct(g.brier_skill_model_vs_markov)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>Para países inicialmente por debajo del umbral, el intervalo exploratorio de diferencia Brier modelo − Markov global abarca ['+
+ num(low.bootstrap_delta_brier_95pct[0])+', +'+num(low.bootstrap_delta_brier_95pct[1])+'] e <strong>incluye cero</strong>. No se ha demostrado una mejora fiable al detectar cruces nuevos. En el grupo ya activo, el intervalo es ['+
+ num(high.bootstrap_delta_brier_95pct[0])+', '+num(high.bootstrap_delta_brier_95pct[1])+']. Ambos se basan solo en dos años objetivo.</p>','soft')+
+ box('<h3>Transiciones observadas: de 2022 a 2024 y de 2023 a 2025</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Año evaluado</th><th>Por debajo → por encima</th><th>Por encima → por encima</th><th>Por encima → por debajo</th><th>Por debajo → por debajo</th></tr></thead><tbody>'+
+ x.annual.map(a=>'<tr><td>'+safe(a.year)+'</td><td>'+safe(a.inactive_to_active)+'</td><td>'+safe(a.active_to_active)+'</td><td>'+safe(a.active_to_inactive)+'</td><td>'+safe(a.inactive_to_inactive)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>Las alertas top-10 del modelo identificaron '+safe(x.annual[0].model_top_10_hits)+'/10 positivos en 2024 y '+safe(x.annual[1].model_top_10_hits)+'/10 en 2025. Sin embargo, este ranking está dominado por situaciones persistentes: <strong>no demuestra detección de nuevas guerras</strong>.</p>','soft')+
+ box('<details><summary>Limitaciones y expediente reproducible</summary>'+
+ '<p>'+safe(x.note)+'</p>'+
+ '<p>Un horizonte de dos pasos de calendario desde el último año observado no equivale a dos años reales de preaviso desde la publicación de los datos. Los archivos históricos fueron recuperados y el cálculo se realizó ex post en 2026.</p>'+
+ '<p><a href="./data/forecast-2027-origin-state-diagnostic.json" target="_blank" rel="noopener noreferrer">Ver informe íntegro por estado inicial, año y presupuesto de alertas</a>. Solo se publican agregados de la misma fuente UCDP institucional.</p>'+
+ '</details>','soft');
 }
 function renderArchivalCrossRelease(){
  const r=state.research?.historical_cross_release_statebased;
@@ -410,7 +443,7 @@ function renderEmpiricalEvidence(){
 }
 function renderScience(){
  const d=state.data,rows=d.studies.map(s=>({s,score:score(s)}));
- return renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
+ return renderOriginStateSkill()+renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
  '<div class="table-wrap"><table><thead><tr><th>Estudio sintético</th><th>Observaciones</th><th>Brier modelo</th><th>Brier referencia</th><th>Mejora relativa</th><th>Validez</th></tr></thead><tbody>'+rows.map(({s,score:r})=>'<tr><td>'+safe(s.title)+'</td><td>'+r.n+'</td><td>'+format(r.brier)+'</td><td>'+format(r.baselineBrier)+'</td><td>'+formatPct(r.skill)+'</td><td>Sintético</td></tr>').join("")+'</tbody></table></div>'+
  section("REPRODUCIBILIDAD","Evaluación de un experimento","Selecciona un estudio para analizar las probabilidades ficticias y compararlas con su referencia fija.")+
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+

@@ -4,6 +4,23 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO-2027 · Persistencia frente a nuevos cruces de umbral (10-11-2026)
+
+**La mejora agregada no responde necesariamente a predecir nuevas guerras.** Hemos descompuesto las 392 observaciones históricas de ediciones UCDP distintas según el estado del país al final del año de origen, utilizando **exactamente el modelo Markov emitido para 2027**, sin modificar las probabilidades públicas.
+
+| Estado en el año de origen | Países-año | Resultados positivos en el año evaluado | Brier modelo | Brier Markov global | Brier Skill |
+|---|---:|---:|---:|---:|---:|
+| Ya superaban 25 muertes `state-based` | **71** | **61** | 0,11892 | 0,14508 | **+18,03 %** |
+| Estaban por debajo del umbral | **321** | **8** | 0,02265 | 0,02521 | **+10,17 %** |
+
+**61 de 69 positivos (88,41 %) corresponden a persistencia de una situación ya por encima del umbral.** Solo ocho positivos partían de un estado anterior por debajo de 25. El intervalo de bootstrap agrupado por país para la diferencia Brier (modelo menos Markov global) en el estrato inicialmente inferior a 25 es **[−0,00740, +0,00068]**, **incluye cero**; no acredita una mejora sólida para nuevos cruces del umbral. Para países ya por encima del umbral el intervalo exploratorio es **[−0,03965, −0,01220]**. Dos años objetivo no permiten modelar adecuadamente choques compartidos entre países.
+
+Por año, 2024 registra 4 entradas al estado positivo y 31 persistencias, frente a 2025 con otras 4 entradas y 30 persistencias. La precisión retrospectiva top-10 (10/10 en 2024 y 9/10 en 2025) está dominada por continuidad de conflictos violentos existentes, **no demuestra detección del inicio de nuevas guerras**. La variable es *muertes por violencia organizada con participación estatal*, no el indicador UCDP `onset2`.
+
+**Otra restricción temporal:** el horizonte Markov es de **dos pasos entre años de datos** (2022→2024; 2023→2025); las ediciones que contienen el estado del año de origen solo se publican después del cierre de ese año. Por tanto, no cabe afirmar que esos resultados habrían estado disponibles con **dos años completos de preaviso operativo**. Las fechas de publicación originales carecen de notarización independiente y el experimento se reconstruyó en 2026.
+
+El estudio se ejecuta con los cuatro archivos UCDP protegidos por hash y se publica en `data/forecast-2027-origin-state-diagnostic.json`; código `scripts/diagnose_2027_origin_state.py`, tests adversariales y control obligatorio `origin_state_diagnostic` antes de despliegue. **No se han emitido nuevas predicciones ni evaluado resultados de 2027.** La cohorte prospectiva original de 196 países conserva sus probabilidades y su SHA-256.
+
 ## GEO-2027 · Contraste histórico entre ediciones oficiales realmente distintas (10-11-2026)
 
 **Resultado nuevo:** investigación con la misma ecuación probabilística, horizonte de dos años y referencias previamente congelados para GEO-2027, pero esta vez los años de entrenamiento proceden de una edición UCDP previa **diferente** de la utilizada para observar cada desenlace. No se reconstruye el pasado únicamente con una misma edición revisada.

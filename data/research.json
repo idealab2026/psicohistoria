@@ -1270,5 +1270,75 @@
       }
     ],
     "model_bin_ece": 0.034583910580885203
+  },
+  "origin_state_diagnostic_2027": {
+    "id": "EMP-GEO2027-ORIGIN-STATE-20261110",
+    "report_path": "data/forecast-2027-origin-state-diagnostic.json",
+    "status": "POST_HOC_PERSISTENCE_VS_THRESHOLD_ENTRY_ARCHIVED_COUNTRY_VINTAGES",
+    "assessment_years": [
+      2024,
+      2025
+    ],
+    "observed_country_years": 392,
+    "positive_threshold_years": 69,
+    "persisted_threshold_positives": 61,
+    "new_threshold_entries": 8,
+    "persisted_fraction_of_positives": 0.8840579710144928,
+    "observation_calendar_steps": 2,
+    "earliest_release_timestamps_verified": false,
+    "prior_below_threshold": {
+      "n": 321,
+      "events": 8,
+      "event_rate": 0.024922118380062305,
+      "brier_model": 0.022647529679559648,
+      "brier_global_markov": 0.025210281235017312,
+      "brier_skill_model_vs_markov": 0.10165501652151265,
+      "bootstrap_delta_brier_95pct": [
+        -0.0074009121930119414,
+        0.000684539310068031
+      ]
+    },
+    "prior_above_threshold": {
+      "n": 71,
+      "events": 61,
+      "event_rate": 0.8591549295774648,
+      "brier_model": 0.1189168067986626,
+      "brier_global_markov": 0.14507855707469983,
+      "brier_skill_model_vs_markov": 0.18032816705343124,
+      "bootstrap_delta_brier_95pct": [
+        -0.03965111093111225,
+        -0.01219934225892796
+      ]
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "origin_year": 2022,
+        "n": 196,
+        "inactive_to_active": 4,
+        "active_to_active": 31,
+        "inactive_to_inactive": 155,
+        "active_to_inactive": 6,
+        "model_top_10_hits": 10,
+        "model_top_20_hits": 19,
+        "model_top_35_hits": 30
+      },
+      {
+        "year": 2025,
+        "origin_year": 2023,
+        "n": 196,
+        "inactive_to_active": 4,
+        "active_to_active": 30,
+        "inactive_to_inactive": 158,
+        "active_to_inactive": 4,
+        "model_top_10_hits": 9,
+        "model_top_20_hits": 18,
+        "model_top_35_hits": 30
+      }
+    ],
+    "forecast_2027_unchanged": true,
+    "prospective_2027_outcomes_resolved": 0,
+    "prospective_skill_demonstrated": false,
+    "note": "Subgrupos definidos según superar 25 muertes de violencia organizada state-based en el año de origen. Cruzar el umbral en el objetivo no implica inicio de un conflicto nuevo. Mejora retrospectiva por país en ambos estratos, pero intervalo de bootstrap para el estrato inicialmente por debajo del umbral incluye cero; solo ocho positivos nuevos en 321 observaciones. Ediciones oficiales históricas recuperadas en 2026: dos pasos entre años de datos NO prueban dos años de aviso operativo desde publicación. Pronósticos 2027 intactos."
   }
 }
