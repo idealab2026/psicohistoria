@@ -166,6 +166,30 @@ export function verifyResearch(data) {
      !(v.uncertainty_brier_delta[0]<0&&v.uncertainty_brier_delta[1]>0)||
      !v.conclusion.includes("no se reproduce")||!v.caveat.includes("2023"))
       throw Error("Vintage result obscures negative or uncertain finding");
+  const drift=data.historical_label_revisions;
+  if(!drift || drift.id!=="EMP-ONSET-231-251-LABEL-DRIFT-20261110" ||
+     drift.linked_question!=="Q-GEO-01" ||
+     drift.status!=="RETROSPECTIVE_CROSS_RELEASE_LABEL_REVISION_NOT_FORECAST" ||
+     drift.period!=="1946–2022" || drift.observations!==12161 ||
+     drift.labels_flipped!==2 || drift.flips_zero_to_one!==1 ||
+     drift.flips_one_to_zero!==1 || drift.positives_23_1!==242 ||
+     drift.positives_25_1!==242 ||
+     drift.country_years_only_in_23_1!==0 ||
+     drift.country_years_only_in_25_1!==0 ||
+     drift.historical_release_dates_verified!==false ||
+     drift.prospective_skill_demonstrated!==false ||
+     !Array.isArray(drift.changes_by_year) ||
+     JSON.stringify(drift.changes_by_year)!==JSON.stringify([
+       {year:2018,flips_zero_to_one:1,flips_one_to_zero:0},
+       {year:2021,flips_zero_to_one:0,flips_one_to_zero:1}]) ||
+     !Array.isArray(drift.source_sha256s) ||
+     drift.source_sha256s[0]!==v.sources[0].sha256 ||
+     drift.source_sha256s[1]!==v.sources[2].sha256 ||
+     !Array.isArray(drift.source_urls) ||
+     drift.source_urls[0]!==v.sources[0].url ||
+     drift.source_urls[1]!==v.sources[2].url ||
+     !drift.note?.includes("No es un pronóstico"))
+    throw Error("Public historical onset revision claims lack verified provenance or safety boundary");
   return true;
 }
 const EXPECTED = "issued_at,input_available_at,event_start,event_end,outcome_verified_at,model_probability,baseline_probability,outcome";
