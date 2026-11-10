@@ -6,6 +6,8 @@ Only public aggregates are emitted. Never persist or print country-level predict
 """
 from __future__ import annotations
 from collections import defaultdict
+import csv
+import io
 import argparse
 import json
 import math
@@ -38,13 +40,50 @@ REGULARIZATION=20
 BOOTSTRAPS=2000
 RANDOM_SEED=20261110
 
+def canonicalize_legacy_19(raw):
+    """Explicit OR aggregation for duplicated country-years, with omission sensitivity.
+
+    This is a methodological sensitivity defined AFTER detecting source duplicates:
+    it cannot be represented as an independent pre-registered confirmatory test.
+    """
+    reader=csv.DictReader(io.StringIO(raw.decode("utf-8-sig")))
+    required={"year","gwno_a","onset2"}
+    if not required.issubset(reader.fieldnames or []):
+        raise ValueError("Incompatible old onset source schema")
+    groups=defaultdict(list)
+    for row in reader:
+        year=int(row["year"])
+        country=row["gwno_a"].strip()
+        v=row["onset2"].strip()
+        if not country or v not in ("0","1"):
+            raise ValueError("Invalid historical country or binary onset")
+        groups[(year,country)].append(int(v))
+    duplicated={k:vals for k,vals in groups.items() if len(vals)>1}
+    conflict_count=sum(len(set(vals))>1 for vals in duplicated.values())
+    # For a country-level ANY-onset outcome, OR is the only aggregator used here.
+    aggregate={k:max(v) for k,v in groups.items()}
+    drop={k:vals[0] for k,vals in groups.items() if len(vals)==1}
+    info={"raw_rows":sum(map(len,groups.values())),
+          "country_years":len(groups),
+          "duplicate_country_year_keys":len(duplicated),
+          "contradictory_onset2_keys":conflict_count,
+          "primary_rule":"boolean OR (at least one recorded onset)",
+          "sensitivity_rule":"omit all repeated country-year keys",
+          "choice_made_after_data_diagnostics":True}
+    return aggregate,drop,info
+
 def load_sources(fetcher=fetch):
     data={}
     for version,src in SOURCES.items():
         raw=fetcher(src["url"],6_000_000)
         if digest(raw)!=src["sha256"]:
             raise ValueError("Refused altered official edition "+version)
-        d=onset_labels(raw)
+        if version=="19.1":
+            d,excluded,diagnostics=canonicalize_legacy_19(raw)
+            data["_19_1_without_duplicates"]=excluded
+            data["_19_1_diagnostics"]=diagnostics
+        else:
+            d=onset_labels(raw)
         if max(year for year,_ in d)!=src["last_year"]:
             raise ValueError("Unexpected last year of historical edition "+version)
         if len(d)<9000:
@@ -139,6 +178,17 @@ def experiment(src):
         studies.append({"origin_version":spec["origin"],"outcome_version":spec["outcome"],
                         **train,"years":tests})
         combined.extend(scores)
+    sensitivity=None
+    if "_19_1_without_duplicates" in src:
+        subset,universe=records_for_study(src["_19_1_without_duplicates"],src["23.1"],2018,
+                                          (2020,2021,2022))
+        m=score(subset,"model")["brier"]
+        g=score(subset,"global")["brier"]
+        sensitivity={"exclusion_policy":"drop 47 repeated historical keys",
+                     "country_years":len(subset),
+                     "brier_model":m,"brier_global":g,
+                     "relative_brier_skill_global":1-m/g,
+                     "origin_country_universe":universe["origin_universe_size"]}
     model=score(combined,"model")
     global_=score(combined,"global")
     zero=score(combined,"no_event")
@@ -153,6 +203,8 @@ def experiment(src):
         "sources":{k:{"url":v["url"],"sha256":v["sha256"],"last_year":v["last_year"]}
                    for k,v in SOURCES.items()},
         "studies":studies,
+        "legacy_19_1_duplicates":src.get("_19_1_diagnostics"),
+        "legacy_duplicate_exclusion_sensitivity":sensitivity,
         "aggregate":{"country_years":len(combined),"events":positive,
                      "brier_model":model["brier"],"brier_global":global_["brier"],
                      "brier_no_event":zero["brier"],
