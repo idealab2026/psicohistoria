@@ -769,3 +769,58 @@ test("conflict-incidence evidence rejects false skill and manipulated official v
  data.onset2_conflict_activity_study.external.country_bootstrap_delta_ci.active_country_minus_global_recent5=[-.01,-.001];
  assert.throws(()=>verifyResearch(data),/UCDP PRIO activity uncertainty/);
 });
+
+test("official UCDP country-level onset2 risk set is NOT multiple-onset and horizon 2 remains contingent",()=>{
+ const x=registry.onset2_country_riskset_codebook;
+ const report=JSON.parse(readFileSync(new URL("../data/onset2-country-riskset-audit.json",import.meta.url),"utf8"));
+ assert.equal(x.id,"EMP-ONSET2-RISKSET-231-251-20261110");
+ assert.equal(report.schema,"idealab.psico.onset2_country_riskset_codebook_audit.v1");
+ assert.equal(x.status,"POST_HOC_CODEBOOK_SEMANTIC_RISKSET_AUDIT_NOT_MODEL_SELECTION");
+ assert.equal(x.dataset,"UCDP_INTRASTATE_COUNTRY_LEVEL_ONSET_VERSION_2");
+ assert.equal(x.multiple_onset_distinct,"UCDP_INTRASTATE_COUNTRY_LEVEL_MULTIPLE_ONSET_VERSION_3");
+ assert.equal(report.official_codebook_url,x.codebook);
+ assert.equal(report.source_23_1_used_for_origin_features,true);
+ assert.equal(report.source_25_1_activity_used_only_for_descriptive_audit,true);
+ assert.equal(report.original_2027_prospective_country_forecast_untouched,true);
+ assert.equal(report.forecast_2027_results_resolved,0);
+ assert.deepEqual(x.assessed_years.map(y=>[
+  y.target,y.origin,y.total,y.outcomes,y.known_eligible,y.unknown_intermediate,y.known_ineligible
+ ]),[
+  [2023,2022,196,1,160,0,36],
+  [2024,2022,196,1,0,162,34]
+ ]);
+ assert.equal(x.assessed_years.every(y=>y.positives_in_known_ineligible===0),true);
+ assert.equal(report.rolling_same_vintage_non_asof.length,14);
+ assert.equal(x.historic_positives_in_known_ineligible,0);
+ assert.equal(x.future_year_eligibility_never_assumed_known,true);
+ assert.equal(x.revised_source_used_to_filter_training,false);
+ assert.equal(x.codebook_semantics_corrected,true);
+ assert.equal(x.no_new_forecasts_issued,true);
+ assert.equal(x.prospective_2027_results_resolved,0);
+ assert.equal(registry.prospective_results_verified,0);
+ assert.equal(verifyResearch(registry),true);
+ assert.match(registry.onset2_conflict_activity_study.interpretation,/CORRECCIÓN UCDP/);
+ const ui=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
+ assert.match(ui,/function renderOnset2CountryRiskset/);
+ assert.match(ui,/renderOnset2CountryRiskset\(\)\+renderConflictIncidenceOnset2\(\)/);
+ assert.match(ui,/potencialmente elegibles, no confirmados/);
+ assert.match(ui,/NO se codifica onset/);
+ assert.match(ui,/data\/onset2-country-riskset-audit\.json/);
+});
+test("risk set rejects future leakage and recasting country-level as multiple-onset",()=>{
+ let d=structuredClone(registry);
+ d.onset2_country_riskset_codebook.assessed_years[1].unknown_intermediate=0;
+ assert.throws(()=>verifyResearch(d),/Verified country-level onset2 known and contingent/);
+ d=structuredClone(registry);
+ d.onset2_country_riskset_codebook.assessed_years[0].known_ineligible=35;
+ assert.throws(()=>verifyResearch(d),/Verified country-level onset2 known and contingent/);
+ d=structuredClone(registry);
+ d.onset2_country_riskset_codebook.revised_source_used_to_filter_training=true;
+ assert.throws(()=>verifyResearch(d),/Risk-set eligibility cannot be confused/);
+ d=structuredClone(registry);
+ d.onset2_country_riskset_codebook.dataset=d.onset2_country_riskset_codebook.multiple_onset_distinct;
+ assert.throws(()=>verifyResearch(d),/Risk-set eligibility cannot be confused/);
+ d=structuredClone(registry);
+ d.onset2_conflict_activity_study.interpretation="No statement on country-level risk sets";
+ assert.throws(()=>verifyResearch(d),/UCDP PRIO conflict incidence study/);
+});
