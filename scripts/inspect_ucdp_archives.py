@@ -83,7 +83,7 @@ def discover(html):
         prefix=anchor["before"][-240:]
         m=list(re.finditer(r"(?:version\s*)?(\d\d\.1)\s*:",prefix,re.I))
         version=m[-1].group(1) if m else None
-        if version in ("22.1","23.1","24.1","25.1"):
+        if version in ("19.1","22.1","23.1","24.1","25.1"):
             selected.append({"version":version,"url":url,"caption":anchor["caption"].strip()})
     return selected
 
@@ -184,6 +184,7 @@ def inspect(fetcher=fetch):
             "archive_lists_22_1":False,
             "archive_lists_24_1":False,
             "archived_24_1_download":{"status":"NOT_CHECKED"},
+            "legacy_19_1_download":{"status":"NOT_CHECKED"},
             "historical_release_dates_cryptographically_verified":False,
             "prospective_predictions_issued":0}
     seen=set()
@@ -195,6 +196,21 @@ def inspect(fetcher=fetch):
             report["archive_lists_22_1"]=True
         if l["version"]=="24.1":
             report["archive_lists_24_1"]=True
+    legacy_links=[item for item in links if item["version"]=="19.1" and "CSV" in item["caption"]]
+    report["legacy_19_1_links"]=legacy_links
+    if legacy_links:
+        url=legacy_links[0]["url"]
+        try:
+            raw=fetcher(url,MAX_CSV)
+            header=next(csv.reader(io.StringIO(raw.decode("utf-8-sig"))),[])
+            report["legacy_19_1_download"]={
+                "status":"RETRIEVED_UNPINNED",
+                "url":url,"sha256":digest(raw),"length":len(raw),
+                "headers":header[:40],
+                "preview_lines_count":min(10,len(raw.splitlines()))
+            }
+        except HTTPError as error:
+            report["legacy_19_1_download"]={"status":"HTTP_ERROR","http_status":error.code,"url":url}
     version_labels={}
     for item in links:
         if item["version"]=="24.1" and item["caption"]=="Intrastate Country Level Onset CSV":
