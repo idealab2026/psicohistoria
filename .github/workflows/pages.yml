@@ -82,6 +82,16 @@ jobs:
         run: |
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/forecast_2027_statebased.py --output /tmp/idealab-geo2027.json --print-chunks
           test -s /tmp/idealab-geo2027.json
+  probe_ucdp_prio_vintages:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Inspect authentic UCDP PRIO armed conflict versions 23.1 and 25.1, GW join and column coverage
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/probe_ucdp_prio_incidence.py
   onset2_lagged_signal_ablation:
     runs-on: ubuntu-latest
     steps:
