@@ -21,5 +21,9 @@
   "source_zip_sha256": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34",
   "observed_data_through": 2025,
   "interpretation": "Primera emisión prospectiva de probabilidades individuales país-año para 2027. El modelo es experimental y carece de capacidad predictiva validada; la variable mide el umbral de 25 muertes anuales de violencia organizada de base estatal, no el inicio de guerras ni violencia gubernamental contra civiles.",
-  "resolution_status": "PENDING_FIRST_OFFICIAL_UCDP_YEAR_2027_RELEASE"
+  "resolution_status": "PENDING_FIRST_OFFICIAL_UCDP_YEAR_2027_RELEASE",
+  "canonical_document_commit": "8b924e0b0c7a07e27977160c9658cfed77940aff",
+  "canonical_document_commit_utc": "2026-11-10T17:32:54Z",
+  "canonical_document_status": "BYTE_IDENTICAL_TO_FROZEN_GENERATOR_OUTPUT",
+  "record_distinction": "First public forecast values appeared in 3bb3561c at 17:23:12Z; an unmodified canonical export including its terminating newline was recorded in 8b924e0b at 17:32:54Z. Both predate 2027. Neither GitHub timestamp constitutes independent cryptographic notarization."
 }
