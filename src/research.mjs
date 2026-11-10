@@ -3,7 +3,22 @@ export const STAGES = Object.freeze(["propuesta", "fuente_identificada", "protoc
 
 export function verifyResearch(data) {
   if (!data || data.schema_version !== 1 || data.class !== "public_research_program") throw Error("Unexpected research schema");
-  if (data.forecast_issued !== 0 || data.prospective_results_verified !== 0) throw Error("Unverified issue counts");
+  if (data.forecast_issued !== 1 || data.prospective_results_verified !== 0) throw Error("Invalid issued/prospective result counts");
+  const issued=data.prospective_2027_issue;
+  if(!issued || issued.question!=="Q-GEO-2027-01" ||
+     issued.forecast_id!=="PSICO-GEO2027-STATEBASED25-V1" ||
+     issued.publication_class!=="PROSPECTIVE_ISSUED_UNRESOLVED" ||
+     issued.year!==2027 || issued.source_observed_through!==2025 ||
+     issued.countries_issued!==196 || issued.outcomes_resolved!==0 ||
+     issued.skill_demonstrated!==false || issued.independently_notarized!==false ||
+     issued.forecast_document_sha256!=="5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5" ||
+     issued.preregistered_protocol_main_commit!=="87959a117e1b30323392a488c48c9afb1cb0bffc" ||
+     issued.first_public_forecast_commit!=="3bb3561c8d6182c30624591276c705fb76ce99dc" ||
+     issued.first_public_utc!=="2026-11-10T17:23:12Z" ||
+     issued.manifest_path!=="data/forecast-2027-manifest.json" ||
+     issued.data_path!=="data/forecast-2027-ucdp261.json" ||
+     !issued.note?.includes("distinta de onset2"))
+    throw Error("Unverified or mutated GEO-2027 prospective issuance");
   if (!Array.isArray(data.programs) || data.programs.length !== 7) throw Error("Incomplete public registry");
   const ids = new Set();
   for (const p of data.programs) {
@@ -299,6 +314,71 @@ export function verifyResearch(data) {
     throw Error("Recency sensitivity must preserve cross-source negative Brier and reference");
   return true;
 }
+export function verifyIssuedForecast2027(document, manifest){
+  const e="Invalid frozen GEO-2027 prospective issuance";
+  if(!document || !manifest ||
+     document.schema!=="idealab.psico.prospective_country_2027.v1" ||
+     document.forecast_id!=="PSICO-GEO2027-STATEBASED25-V1" ||
+     document.state!=="PREPARED_FOR_PUBLIC_GIT_COMMIT" ||
+     manifest.schema!=="idealab.psico.prospective_issue_manifest.v1" ||
+     manifest.forecast_id!==document.forecast_id ||
+     manifest.status!=="ISSUED_PROSPECTIVE_UNRESOLVED" ||
+     manifest.question!=="Q-GEO-2027-01" ||
+     manifest.target_year!==2027 || manifest.issued_country_count!==196 ||
+     manifest.outcomes_resolved!==0 || manifest.demonstrated_predictive_skill!==false ||
+     manifest.independently_notarized!==false ||
+     manifest.forecast_path!=="data/forecast-2027-ucdp261.json" ||
+     manifest.forecast_sha256!=="5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5" ||
+     manifest.preregistered_protocol_main_commit!=="87959a117e1b30323392a488c48c9afb1cb0bffc" ||
+     manifest.first_public_forecast_commit!=="3bb3561c8d6182c30624591276c705fb76ce99dc" ||
+     manifest.first_public_forecast_commit_utc!=="2026-11-10T17:23:12Z" ||
+     manifest.preregistered_at_utc!=="2026-11-10T17:20:43Z" ||
+     !(manifest.preregistered_at_utc<manifest.first_public_forecast_commit_utc) ||
+     !(manifest.first_public_forecast_commit_utc<"2027-01-01T00:00:00Z") ||
+     manifest.time_provenance!=="PUBLIC_GITHUB_COMMIT_METADATA_NOT_INDEPENDENT_TIMESTAMP_NOTARY" ||
+     manifest.source_zip_sha256!=="66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34" ||
+     manifest.observed_data_through!==2025 ||
+     manifest.resolution_status!=="PENDING_FIRST_OFFICIAL_UCDP_YEAR_2027_RELEASE")
+    throw Error(e);
+  const s=document.source,t=document.target,p=document.protocol,a=document.training_summary;
+  if(s?.dataset!=="UCDP OrganizedViolenceCY" || s.version!=="26.1" ||
+     s.sha256!==manifest.source_zip_sha256 ||
+     s.url!=="https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-261-csv.zip" ||
+     s.license!=="CC BY 4.0" || s.records_in_edition!==7132 ||
+     s.data_last_year!==2025 ||
+     t?.year!==2027 || t.source_field!=="sb_total_deaths_best" ||
+     t.binary_rule!=="1 iff UCDP official 2027 country-year sb_total_deaths_best >= 25; otherwise 0" ||
+     t.not_onset2!==true ||
+     t.not_state_violence_against_civilians!==true ||
+     !t.missing_policy?.includes("never assumed 0") ||
+     p?.horizon_years!==2 || p.training_last_year!==2025 ||
+     p.model_primary!=="country_markov_2step_laplace_global_shrink20" ||
+     p.baseline_primary!=="global_laplace_5y_2021_2025" ||
+     p.secondary_comparator!=="global_markov_2step_laplace" ||
+     p.skill_not_demonstrated!==true ||
+     p.primary_loss!=="Brier score of frozen p_model minus frozen p_baseline_global_5y over resolved cohort" ||
+     document.provenance?.independent_timestamp_authority!==false ||
+     document.provenance?.historical_forecasts_issued!==false ||
+     !/^[a-f0-9]{64}$/.test(document.provenance?.generator_sha256||"") ||
+     a?.cohort_n!==196 || a.global_5y_exposures!==980 ||
+     a.global_5y_positive!==172 ||
+     !Number.isFinite(a.baseline_global_5y) ||
+     !Array.isArray(document.countries) || document.countries.length!==196)
+    throw Error(e);
+  let prev=0;
+  for(const row of document.countries){
+    if(!Number.isSafeInteger(row.country_id)||row.country_id<=prev||
+       typeof row.country!=="string"||!row.country||row.country.length>150||
+       ![0,1].includes(row.last_observed_state_2025) ||
+       !["p_model","p_global_markov","p_baseline_global_5y"].every(key=>
+          Number.isFinite(row[key])&&row[key]>0&&row[key]<1) ||
+       row.p_baseline_global_5y!==a.baseline_global_5y)
+      throw Error(e);
+    prev=row.country_id;
+  }
+  return true;
+}
+
 const EXPECTED = "issued_at,input_available_at,event_start,event_end,outcome_verified_at,model_probability,baseline_probability,outcome";
 export function parseForecastCSV(csv) {
   if (typeof csv !== "string" || csv.length > 500000) throw Error("Invalid local dataset size");
