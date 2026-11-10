@@ -644,6 +644,16 @@ test("origin-only onset1 signal ablation includes every candidate and both fixed
  assert.deepEqual(e.horizons,[1,2]);
  assert.equal(e.internal.n,2744);
  assert.equal(e.internal.events,37);
+ assert.equal(e.internal.unique_country_target_years,1568);
+ assert.equal(e.internal.unique_positive_country_target_years,22);
+ assert.equal(e.internal.repeated_target_evaluations,1176);
+ assert.equal(report.internal.unique_country_target_years,1568);
+ assert.equal(report.internal.unique_positive_country_target_years,22);
+ assert.equal(report.internal.repeated_target_evaluations,1176);
+ assert.equal(report.internal.by_horizon["1"].n,1372);
+ assert.equal(report.internal.by_horizon["2"].n,1372);
+ assert.equal(report.internal.by_horizon["1"].events,19);
+ assert.equal(report.internal.by_horizon["2"].events,18);
  assert.equal(e.external.n,392);
  assert.equal(e.external.events,2);
  assert.equal(report.internal.folds.length,14);
