@@ -137,6 +137,33 @@ export function verifyResearch(data) {
   if(p20.length!==2||p20.some(x=>Math.abs(x.relative_brier_improvement-
       r.scenarios.find(v=>v.preceding_inactive_years===x.prior_inactive_years).relative_brier_improvement)>1e-10))
     throw Error("Sensitivity does not reproduce primary fixed prior");
+  const v=data.historical_vintage_2024;
+  if(!v||v.id!=="EMP-ONSET-231-251-CROSS-RELEASE-2024"||
+     v.analysis_type!=="RETROSPECTIVE_CROSS_RELEASE_NOT_ACTUALLY_ISSUED"||
+     v.linked_question!=="Q-GEO-01"||
+     v.training_last_year!==2022||v.year!==2024||
+     v.sample_size!==160||v.positives!==1||
+     v.model_issued_before_event!==false||
+     v.prospective_skill_demonstrated!==false||
+     v.historical_release_timing_cryptographically_verified!==false||
+     v.actual_train_features_from_target_year!==false||
+     v.too_few_events_for_skill_inference!==true||
+     !Array.isArray(v.sources)||v.sources.length!==3||
+     v.sources[0].sha256!=="e2cadfa7a87b3949f8c638c27381fbb1b44fb076ccb00570782252d0935a2289"||
+     v.sources[1].sha256!=="8fe95d8a5780cba1d312f9673ffd9e93b90c91bb26e348393a583853a892b718"||
+     v.sources[2].sha256!=="e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a"||
+     !v.sources.every(x=>x.url.startsWith("https://ucdp.uu.se/downloads/")))
+      throw Error("Invalid real archived vintage scientific provenance");
+  for(const k of ["brier_model","brier_global","logloss_model","logloss_global","relative_brier_skill"])
+    if(typeof v[k]!=="number"||!Number.isFinite(v[k]))throw Error("Invalid vintage holdout scores");
+  if(!(v.brier_model>v.brier_global&&v.brier_global>0&&
+       v.relative_brier_skill<0&&
+       Math.abs(v.relative_brier_skill-(1-v.brier_model/v.brier_global))<1e-9)||
+     !Array.isArray(v.uncertainty_brier_delta)||v.uncertainty_brier_delta.length!==2||
+     !v.uncertainty_brier_delta.every(Number.isFinite)||
+     !(v.uncertainty_brier_delta[0]<0&&v.uncertainty_brier_delta[1]>0)||
+     !v.conclusion.includes("no se reproduce")||!v.caveat.includes("2023"))
+      throw Error("Vintage result obscures negative or uncertain finding");
   return true;
 }
 const EXPECTED = "issued_at,input_available_at,event_start,event_end,outcome_verified_at,model_probability,baseline_probability,outcome";

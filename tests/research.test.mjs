@@ -164,3 +164,40 @@ test("robustness evidence cannot be declared independent confirmation or altered
  r.riskset_study.temporal_robustness.periods[1].confidence_delta_brier=[NaN,1];
  assert.throws(()=>verifyResearch(r),/Temporal stability score/);
 });
+
+test("one-event historical holdout is negative for Brier and cannot establish skill",()=>{
+ const v=registry.historical_vintage_2024;
+ assert.equal(v.sample_size,160);
+ assert.equal(v.positives,1);
+ assert.equal(v.training_last_year,2022);
+ assert.equal(v.year,2024);
+ assert.ok(v.brier_model>v.brier_global);
+ assert.ok(v.relative_brier_skill<0);
+ assert.ok(v.uncertainty_brier_delta[0]<0&&v.uncertainty_brier_delta[1]>0);
+ assert.equal(v.model_issued_before_event,false);
+ assert.equal(v.prospective_skill_demonstrated,false);
+ assert.equal(v.too_few_events_for_skill_inference,true);
+ assert.equal(verifyResearch(registry),true);
+});
+test("real archival source and negative score are fail-closed",()=>{
+ let v=structuredClone(registry);
+ v.historical_vintage_2024.model_issued_before_event=true;
+ assert.throws(()=>verifyResearch(v),/archived vintage/);
+ v=structuredClone(registry);
+ v.historical_vintage_2024.sources[0].sha256="bogus";
+ assert.throws(()=>verifyResearch(v),/archived vintage/);
+ v=structuredClone(registry);
+ v.historical_vintage_2024.relative_brier_skill=1;
+ assert.throws(()=>verifyResearch(v),/negative or uncertain/);
+ v=structuredClone(registry);
+ v.historical_vintage_2024.brier_model=0;
+ assert.throws(()=>verifyResearch(v),/negative or uncertain/);
+});
+test("website leads with source-backed negative holdout rather than a synthetic prediction",()=>{
+ const source=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
+ assert.match(source,/function renderVintageHoldout/);
+ assert.match(source,/renderVintageHoldout\(\)\+renderConditionalRisksetEvidence\(\)/);
+ assert.match(source,/No concluyente/);
+ assert.match(source,/Valor negativo/);
+ assert.match(source,/no se emitió ninguna predicción en 2024/);
+});

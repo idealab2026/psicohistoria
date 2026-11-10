@@ -92,6 +92,31 @@ function renderOverview(){
 function renderStudySelector(){
  return '<label class="field" style="max-width:460px">Estudio sintético <select id="study-selector">'+state.data.studies.map(s=>'<option value="'+safe(s.id)+'" '+(state.study===s.id?'selected':'')+'>'+safe(s.title)+'</option>').join("")+'</select></label>';
 }
+function renderVintageHoldout(){
+ const r=state.research?.historical_vintage_2024;
+ if(!r)return "";
+ const number=n=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:6,maximumFractionDigits:6}).format(n);
+ const improvement=new Intl.NumberFormat("es-ES",{maximumFractionDigits:2}).format(r.relative_brier_skill*100)+" %";
+ return section("INVESTIGACIÓN · VALIDACIÓN ENTRE EDICIONES · UCDP","¿Qué ocurre cuando no entrenamos con datos revisados del futuro?",
+  "Contraste para 2024 con datos UCDP 23.1, publicados como edición de 2023. La etiqueta del resultado procede de UCDP 25.1. Se calculó retrospectivamente, no se emitió ninguna predicción en 2024.")+
+ '<div class="section-grid three">'+
+ box('<div class="eyebrow">PAÍSES ANALIZADOS</div><div class="card-number">'+safe(r.sample_size)+'</div><p>'+safe(r.positives)+' inicio/reanudación observado</p>')+
+ box('<div class="eyebrow">MEJORA BRIER</div><div class="card-number">'+safe(improvement)+'</div><p>Valor negativo: el modelo por país empeora respecto al global.</p>')+
+ box('<div class="eyebrow">VALIDEZ</div><div class="card-number">No concluyente</div><p>Un solo episodio; no hay prueba de capacidad anticipatoria.</p>')+
+ '</div>'+
+ box('<h3>Comparación sin variables posteriores a 2022</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Referencia</th><th>Brier ↓</th><th>Log-loss ↓</th></tr></thead><tbody>'+
+ '<tr><td>Frecuencia histórica global</td><td>'+safe(number(r.brier_global))+'</td><td>'+safe(number(r.logloss_global))+'</td></tr>'+
+ '<tr><td>Modelo histórico por país</td><td>'+safe(number(r.brier_model))+'</td><td>'+safe(number(r.logloss_model))+'</td></tr>'+
+ '</tbody></table></div>'+
+ '<p><strong>Resultado:</strong> '+safe(r.conclusion)+'</p>'+
+ '<p>El intervalo exploratorio de la diferencia Brier país − global incluye cero: ['+safe(number(r.uncertainty_brier_delta[0]))+', '+safe(number(r.uncertainty_brier_delta[1]))+']. Por su diseño y número de eventos no permite declarar superioridad ni inferioridad estable.</p>'+
+ '<details><summary>Cómo se verificaron las versiones y qué falta</summary>'+
+ '<p>'+safe(r.caveat)+'</p>'+
+ r.sources.map((src,i)=>'<p><a href="'+safe(src.url)+'" target="_blank" rel="noopener noreferrer">Edición UCDP '+(i===2?'25.1':'23.1')+' · fuente '+(i+1)+'</a> · SHA-256 <code>'+safe(src.sha256)+'</code></p>').join("")+
+ '<p>La validación reproducible y los tests están disponibles en el estudio institucional privado; el archivo público solo contiene agregados oficiales, sin datos del laboratorio personal.</p>'+
+ '</details>','soft');
+}
 function renderConditionalRisksetEvidence(){
  const study=state.research?.riskset_study;
  if(!study)return "";
@@ -157,7 +182,7 @@ function renderEmpiricalEvidence(){
 }
 function renderScience(){
  const d=state.data,rows=d.studies.map(s=>({s,score:score(s)}));
- return renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
+ return renderVintageHoldout()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
  '<div class="table-wrap"><table><thead><tr><th>Estudio sintético</th><th>Observaciones</th><th>Brier modelo</th><th>Brier referencia</th><th>Mejora relativa</th><th>Validez</th></tr></thead><tbody>'+rows.map(({s,score:r})=>'<tr><td>'+safe(s.title)+'</td><td>'+r.n+'</td><td>'+format(r.brier)+'</td><td>'+format(r.baselineBrier)+'</td><td>'+formatPct(r.skill)+'</td><td>Sintético</td></tr>').join("")+'</tbody></table></div>'+
  section("REPRODUCIBILIDAD","Evaluación de un experimento","Selecciona un estudio para analizar las probabilidades ficticias y compararlas con su referencia fija.")+
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+
