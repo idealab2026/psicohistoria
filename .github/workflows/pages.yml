@@ -82,6 +82,21 @@ jobs:
         run: |
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/forecast_2027_statebased.py --output /tmp/idealab-geo2027.json --print-chunks
           test -s /tmp/idealab-geo2027.json
+  archived_country_holdout:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Score genuine 23.1 to 25.1 and 24.1 to 26.1 source-separated 2-year horizons
+        run: |
+          set -e
+          if test -f data/forecast-2027-archival-cross-release.json; then
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/backtest_archived_country_vintages.py --check-report data/forecast-2027-archival-cross-release.json
+          else
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/backtest_archived_country_vintages.py
+          fi
   inspect_country_vintages:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
