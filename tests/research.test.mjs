@@ -172,6 +172,8 @@ test("one-event historical holdout is negative for Brier and cannot establish sk
  assert.equal(v.training_last_year,2022);
  assert.equal(v.year,2024);
  assert.ok(v.brier_model>v.brier_global);
+ assert.ok(v.logloss_model<v.logloss_global);
+ assert.ok((1-v.logloss_model/v.logloss_global)>0.13);
  assert.ok(v.relative_brier_skill<0);
  assert.ok(v.uncertainty_brier_delta[0]<0&&v.uncertainty_brier_delta[1]>0);
  assert.equal(v.model_issued_before_event,false);
@@ -192,6 +194,9 @@ test("real archival source and negative score are fail-closed",()=>{
  v=structuredClone(registry);
  v.historical_vintage_2024.brier_model=0;
  assert.throws(()=>verifyResearch(v),/negative or uncertain/);
+ v=structuredClone(registry);
+ v.historical_vintage_2024.logloss_model=0.99;
+ assert.throws(()=>verifyResearch(v),/log-loss disagreement/);
 });
 test("website leads with source-backed negative holdout rather than a synthetic prediction",()=>{
  const source=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
@@ -199,5 +204,7 @@ test("website leads with source-backed negative holdout rather than a synthetic 
  assert.match(source,/renderVintageHoldout\(\)\+renderConditionalRisksetEvidence\(\)/);
  assert.match(source,/No concluyente/);
  assert.match(source,/Valor negativo/);
+ assert.match(source,/Discrepancia de pérdidas/);
+ assert.match(source,/log-loss mejora/);
  assert.match(source,/no se emitió ninguna predicción en 2024/);
 });

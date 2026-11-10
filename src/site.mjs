@@ -97,6 +97,7 @@ function renderVintageHoldout(){
  if(!r)return "";
  const number=n=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:6,maximumFractionDigits:6}).format(n);
  const improvement=new Intl.NumberFormat("es-ES",{maximumFractionDigits:2}).format(r.relative_brier_skill*100)+" %";
+ const loglossGain=new Intl.NumberFormat("es-ES",{maximumFractionDigits:2}).format(100*(1-r.logloss_model/r.logloss_global))+" %";
  return section("INVESTIGACIÓN · VALIDACIÓN ENTRE EDICIONES · UCDP","¿Qué ocurre cuando no entrenamos con datos revisados del futuro?",
   "Contraste para 2024 con datos UCDP 23.1, publicados como edición de 2023. La etiqueta del resultado procede de UCDP 25.1. Se calculó retrospectivamente, no se emitió ninguna predicción en 2024.")+
  '<div class="section-grid three">'+
@@ -110,6 +111,7 @@ function renderVintageHoldout(){
  '<tr><td>Modelo histórico por país</td><td>'+safe(number(r.brier_model))+'</td><td>'+safe(number(r.logloss_model))+'</td></tr>'+
  '</tbody></table></div>'+
  '<p><strong>Resultado:</strong> '+safe(r.conclusion)+'</p>'+
+ '<p><strong>Discrepancia de pérdidas:</strong> Brier empeora, mientras log-loss mejora '+safe(loglossGain)+' frente a la frecuencia histórica global. Son métricas diferentes y seleccionar después la favorable no demuestra capacidad predictiva. Un solo positivo impide valorar calibración o utilidad operativa con fiabilidad.</p>'+
  '<p>El intervalo exploratorio de la diferencia Brier país − global incluye cero: ['+safe(number(r.uncertainty_brier_delta[0]))+', '+safe(number(r.uncertainty_brier_delta[1]))+']. Por su diseño y número de eventos no permite declarar superioridad ni inferioridad estable.</p>'+
  '<details><summary>Cómo se verificaron las versiones y qué falta</summary>'+
  '<p>'+safe(r.caveat)+'</p>'+

@@ -156,6 +156,8 @@ export function verifyResearch(data) {
       throw Error("Invalid real archived vintage scientific provenance");
   for(const k of ["brier_model","brier_global","logloss_model","logloss_global","relative_brier_skill"])
     if(typeof v[k]!=="number"||!Number.isFinite(v[k]))throw Error("Invalid vintage holdout scores");
+  if(!(v.logloss_model>0&&v.logloss_global>0&&v.logloss_model<v.logloss_global))
+    throw Error("Archived vintage log-loss disagreement cannot be misreported");
   if(!(v.brier_model>v.brier_global&&v.brier_global>0&&
        v.relative_brier_skill<0&&
        Math.abs(v.relative_brier_skill-(1-v.brier_model/v.brier_global))<1e-9)||

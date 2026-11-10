@@ -48,6 +48,7 @@ jobs:
       - name: Unit tests
         run: |
           node --check src/site.mjs
+          node --check src/temporal-validation.mjs
           node --check src/private-workbench.mjs
           node --check src/private-notebook.mjs
           node --check src/country-comparison.mjs
