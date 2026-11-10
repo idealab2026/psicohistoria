@@ -82,6 +82,20 @@ jobs:
         run: |
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/forecast_2027_statebased.py --output /tmp/idealab-geo2027.json --print-chunks
           test -s /tmp/idealab-geo2027.json
+  onset2_conflict_incidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Compare onset2 with source-frozen intrastate conflict incidence, full calibration and baselines
+        run: |
+          set -e
+          if test -f data/onset2-conflict-incidence-ablation.json; then
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_onset2_conflict_incidence.py --check-report data/onset2-conflict-incidence-ablation.json
+          else
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_onset2_conflict_incidence.py
+          fi
   probe_ucdp_prio_vintages:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
