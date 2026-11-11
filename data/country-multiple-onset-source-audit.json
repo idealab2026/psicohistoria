@@ -1,0 +1,146 @@
+{
+  "archive_index": "https://ucdp.uu.se/downloads/olddw.html",
+  "archive_index_sha256": "07b1513207ba3c28522cee19f9773fec710733ad84a61d257c629610c47c98ec",
+  "comparison": {},
+  "duplicate_country_year_rows_are_valid_in_variant_3": true,
+  "forecasts_2027_changed": false,
+  "new_prospective_predictions_issued": 0,
+  "newconf_distinct_from_onset2": true,
+  "not_a_prospective_comparison": true,
+  "official_codebook": "https://ucdp.uu.se/downloads/onset/ucdp-codebook-onset-251.pdf",
+  "provenance_asof_release_timestamp_verified": false,
+  "schema": "idealab.psico.onset2_country_multiple_vintage_probe.v1",
+  "status": "SOURCE_INSPECTION_ONLY_NOT_HISTORICALLY_ISSUED",
+  "variant_2": "INTRASTATE_COUNTRY_LEVEL_ONSET",
+  "variant_3": "INTRASTATE_COUNTRY_LEVEL_MULTIPLE_ONSET",
+  "versions": {
+    "23.1": {
+      "common_country_years_with_variant_2": 12161,
+      "duplicate_country_year_keys": 39,
+      "episode_rows": 12212,
+      "extra_episode_rows_over_country_years": 51,
+      "fields": [
+        "abc",
+        "name",
+        "year",
+        "gwno_a",
+        "newconf",
+        "onset1",
+        "onset2",
+        "onset3",
+        "onset5",
+        "onset10",
+        "onset20",
+        "conflict_ids",
+        "year_prev"
+      ],
+      "first_year": 1946,
+      "last_year": 2022,
+      "latest_country_count": 196,
+      "latest_year": {
+        "country_years": 196,
+        "country_years_any_new_conflict": 2,
+        "country_years_any_onset2": 3,
+        "new_conflict_episode_rows": 2,
+        "new_conflict_without_onset2_country_years": 0,
+        "onset2_episode_rows": 3
+      },
+      "max_rows_in_a_country_year": 5,
+      "multiple_onset2_country_years_not_in_standard_onset2": 0,
+      "new_conflict_country_years_not_in_standard_onset2": 67,
+      "newconf_positive_without_onset2_in_multiple_source": 67,
+      "old_country_onset_sha256": "e2cadfa7a87b3949f8c638c27381fbb1b44fb076ccb00570782252d0935a2289",
+      "recent_2023_2024": {},
+      "recent_2023_2024_differences": {},
+      "source_bytes": 505001,
+      "source_sha256": "a31abf6c278bd3a14d6c5b64e075cb38cebe63c95e0535454426c09be21d60e3",
+      "source_url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-multiple-onset-231.csv",
+      "standard_onset2_country_years_not_in_multiple_onset2": 0,
+      "total_country_years_any_newconf": 207,
+      "total_country_years_any_onset2": 242,
+      "total_newconf_episode_rows": 226,
+      "total_onset2_episode_rows": 261,
+      "unique_country_years": 12161,
+      "unit": "episode rows (possibly several per country-year); ANY flags for country-year; no row treated as independent country"
+    },
+    "25.1": {
+      "common_country_years_with_variant_2": 12553,
+      "duplicate_country_year_keys": 41,
+      "episode_rows": 12606,
+      "extra_episode_rows_over_country_years": 53,
+      "fields": [
+        "abc",
+        "name",
+        "year",
+        "gwno_a",
+        "newconf",
+        "onset1",
+        "onset2",
+        "onset3",
+        "onset5",
+        "onset10",
+        "onset20",
+        "conflict_ids",
+        "year_prev"
+      ],
+      "first_year": 1946,
+      "last_year": 2024,
+      "latest_country_count": 196,
+      "latest_year": {
+        "country_years": 196,
+        "country_years_any_new_conflict": 1,
+        "country_years_any_onset2": 1,
+        "new_conflict_episode_rows": 1,
+        "new_conflict_without_onset2_country_years": 1,
+        "onset2_episode_rows": 1
+      },
+      "max_rows_in_a_country_year": 5,
+      "multiple_onset2_country_years_not_in_standard_onset2": 0,
+      "new_conflict_country_years_not_in_standard_onset2": 70,
+      "newconf_positive_without_onset2_in_multiple_source": 70,
+      "old_country_onset_sha256": "e2b59e65aaca88403991465b78fb407d7eddcefadeb18c7f1397bfe2ea83fe6a",
+      "recent_2023_2024": {
+        "2023": {
+          "country_years": 196,
+          "country_years_any_new_conflict": 2,
+          "country_years_any_onset2": 1,
+          "new_conflict_episode_rows": 2,
+          "new_conflict_without_onset2_country_years": 2,
+          "onset2_episode_rows": 1
+        },
+        "2024": {
+          "country_years": 196,
+          "country_years_any_new_conflict": 1,
+          "country_years_any_onset2": 1,
+          "new_conflict_episode_rows": 1,
+          "new_conflict_without_onset2_country_years": 1,
+          "onset2_episode_rows": 1
+        }
+      },
+      "recent_2023_2024_differences": {
+        "2023": {
+          "multiple_newconf_positive_multiple_onset2_negative": 2,
+          "multiple_newconf_positive_standard_onset2_negative": 2,
+          "multiple_onset2_positive_standard_negative": 0,
+          "standard_onset2_positive_multiple_negative": 0
+        },
+        "2024": {
+          "multiple_newconf_positive_multiple_onset2_negative": 1,
+          "multiple_newconf_positive_standard_onset2_negative": 1,
+          "multiple_onset2_positive_standard_negative": 0,
+          "standard_onset2_positive_multiple_negative": 0
+        }
+      },
+      "source_bytes": 522945,
+      "source_sha256": "5fe7411942aa7e6a38d6386faa64f4d7f0703482509f121c4136c0e3223d7f05",
+      "source_url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-multiple-onset-251.csv",
+      "standard_onset2_country_years_not_in_multiple_onset2": 0,
+      "total_country_years_any_newconf": 211,
+      "total_country_years_any_onset2": 244,
+      "total_newconf_episode_rows": 230,
+      "total_onset2_episode_rows": 263,
+      "unique_country_years": 12553,
+      "unit": "episode rows (possibly several per country-year); ANY flags for country-year; no row treated as independent country"
+    }
+  }
+}
