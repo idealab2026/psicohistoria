@@ -95,7 +95,7 @@ jobs:
       - name: Reproduce source separated 2024 and 2025 GEO transitions
         run: |
           set -e
-          PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_transition_skill.py
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_transition_skill.py --check-report data/geo2027-transition-attribution-archival.json
   newconf_persistence_ablation:
     runs-on: ubuntu-latest
     steps:
