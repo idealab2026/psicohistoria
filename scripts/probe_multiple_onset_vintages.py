@@ -44,35 +44,62 @@ def source_urls(html):
     return out
 
 def scan(data,last_year):
+    """Preserve episode rows; derive country-year ANY flags without miscounting."""
     reader=csv.DictReader(io.StringIO(data.decode("utf-8-sig")))
     fields=reader.fieldnames or []
-    if not {"gwno_a","year","onset2"}.issubset(fields):
-        raise ValueError("Multiple-onset source lacks country-year onset2")
-    counts=Counter()
-    annual=Counter()
-    labels={}
+    if not {"gwno_a","year","onset2","newconf"}.issubset(fields):
+        raise ValueError("Multiple-onset source requires both onset2 and newconf")
+    groups={}
+    row_total=0
     for row in reader:
         code=row["gwno_a"].strip()
         year=int(row["year"])
-        v=row["onset2"].strip()
-        if not code.isdecimal() or v not in ("0","1"):
+        onset=row["onset2"].strip()
+        newconf=row["newconf"].strip()
+        if not code.isdecimal() or onset not in ("0","1") or newconf not in ("0","1"):
             raise ValueError("Non-binary country-level multiple-onset row or country")
         key=(year,code)
-        if key in labels:
-            raise ValueError("Duplicate country-year: multiple-onset dataset may require another unit")
-        labels[key]=int(v)
-        counts[v]+=1
-        annual[year]+=int(v)
-    if len(labels)<9000 or max(y for y,_ in labels)!=last_year:
+        # This official variant can contain several conflict episode rows
+        # within the same country-year. NEVER deduplicate them silently.
+        if key not in groups:
+            groups[key]={"rows":0,"onset2_episode_count":0,
+                         "new_conflict_episode_count":0}
+        v=groups[key]
+        v["rows"]+=1
+        v["onset2_episode_count"]+=int(onset)
+        v["new_conflict_episode_count"]+=int(newconf)
+        row_total+=1
+    if len(groups)<9000 or max(y for y,_ in groups)!=last_year:
         raise ValueError("Unexpected multiple onset dataset coverage")
-    return labels,{
-        "rows":len(labels),"first_year":min(y for y,_ in labels),
-        "last_year":max(y for y,_ in labels),
-        "total_positives":counts["1"],
-        "latest_year_positives":annual[last_year],
-        "latest_country_count":len({code for y,code in labels if y==last_year}),
-        "country_year_unique":True,
-        "binary_onset2":True,
+    annual={}
+    for year in sorted({year for year,_ in groups}):
+        cohort=[x for (y,_),x in groups.items() if y==year]
+        annual[year]={
+           "country_years":len(cohort),
+           "country_years_any_new_conflict":sum(v["new_conflict_episode_count"]>0 for v in cohort),
+           "country_years_any_onset2":sum(v["onset2_episode_count"]>0 for v in cohort),
+           "new_conflict_episode_rows":sum(v["new_conflict_episode_count"] for v in cohort),
+           "onset2_episode_rows":sum(v["onset2_episode_count"] for v in cohort),
+           "new_conflict_without_onset2_country_years":sum(
+             v["new_conflict_episode_count"]>0 and v["onset2_episode_count"]==0
+             for v in cohort)
+        }
+    return groups,{
+        "episode_rows":row_total,
+        "unique_country_years":len(groups),
+        "duplicate_country_year_keys":sum(x["rows"]>1 for x in groups.values()),
+        "extra_episode_rows_over_country_years":row_total-len(groups),
+        "max_rows_in_a_country_year":max(x["rows"] for x in groups.values()),
+        "first_year":min(y for y,_ in groups),
+        "last_year":max(y for y,_ in groups),
+        "total_country_years_any_newconf":sum(x["new_conflict_episode_count"]>0 for x in groups.values()),
+        "total_country_years_any_onset2":sum(x["onset2_episode_count"]>0 for x in groups.values()),
+        "total_newconf_episode_rows":sum(x["new_conflict_episode_count"] for x in groups.values()),
+        "total_onset2_episode_rows":sum(x["onset2_episode_count"] for x in groups.values()),
+        "latest_year":annual[last_year],
+        "recent_2023_2024":{str(year):annual[year] for year in (2023,2024) if year in annual},
+        "latest_country_count":annual[last_year]["country_years"],
+        "unit":"episode rows (possibly several per country-year); ANY flags for country-year; no row treated as independent country",
         "fields":fields
     }
 
@@ -87,6 +114,9 @@ def probe(fetcher=fetch):
         "official_codebook":"https://ucdp.uu.se/downloads/onset/ucdp-codebook-onset-251.pdf",
         "variant_2":"INTRASTATE_COUNTRY_LEVEL_ONSET",
         "variant_3":"INTRASTATE_COUNTRY_LEVEL_MULTIPLE_ONSET",
+        "newconf_distinct_from_onset2":True,
+        "duplicate_country_year_rows_are_valid_in_variant_3":True,
+        "not_a_prospective_comparison":True,
         "versions":{},
         "comparison":{},
         "provenance_asof_release_timestamp_verified":False,
@@ -102,8 +132,13 @@ def probe(fetcher=fetch):
             raise ValueError("Original country-level onset2 reference has been revised")
         oldlabels=onset_labels(oldbytes)
         common=set(labels)&set(oldlabels)
-        newpositive=[k for k in common if labels[k]==1 and oldlabels[k]==0]
-        reverse=[k for k in common if oldlabels[k]==1 and labels[k]==0]
+        newpositive=[k for k in common if labels[k]["onset2_episode_count"]>0 and oldlabels[k]==0]
+        reverse=[k for k in common if oldlabels[k]==1 and labels[k]["onset2_episode_count"]==0]
+        newconf_concurrent=[k for k in common
+                            if labels[k]["new_conflict_episode_count"]>0 and oldlabels[k]==0]
+        episodes_with_newconf_no_onset2=[k for k in common
+                           if labels[k]["new_conflict_episode_count"]>0 and
+                              labels[k]["onset2_episode_count"]==0]
         if len(common)<9000:
             raise ValueError("Country-level variants have too few common country-year rows")
         result["versions"][version]={
@@ -113,10 +148,17 @@ def probe(fetcher=fetch):
            **summary,
            "old_country_onset_sha256":country_source["sha256"],
            "common_country_years_with_variant_2":len(common),
-           "multiple_positive_country_years_not_in_country_onset":len(newpositive),
-           "country_onset_positive_country_years_not_in_multiple":len(reverse),
-           "new_positive_2023_2024":{
-              str(y):sum(labels[k]==1 and oldlabels[k]==0 and k[0]==y for k in common)
+           "multiple_onset2_country_years_not_in_standard_onset2":len(newpositive),
+           "standard_onset2_country_years_not_in_multiple_onset2":len(reverse),
+           "new_conflict_country_years_not_in_standard_onset2":len(newconf_concurrent),
+           "newconf_positive_without_onset2_in_multiple_source":len(episodes_with_newconf_no_onset2),
+           "recent_2023_2024_differences":{
+              str(y):{
+                  "multiple_onset2_positive_standard_negative":sum(k[0]==y for k in newpositive),
+                  "standard_onset2_positive_multiple_negative":sum(k[0]==y for k in reverse),
+                  "multiple_newconf_positive_standard_onset2_negative":sum(k[0]==y for k in newconf_concurrent),
+                  "multiple_newconf_positive_multiple_onset2_negative":sum(k[0]==y for k in episodes_with_newconf_no_onset2)
+              }
               for y in (2023,2024) if y<=summary["last_year"]
            }
         }
