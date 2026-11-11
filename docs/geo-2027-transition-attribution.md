@@ -53,3 +53,27 @@ La validación por ediciones archivadas es mejor que usar una edición revisada 
 No se tocan los documentos, hashes, manifiestos, parámetros ni contratos de resolución de **GEO-2027** ni **NEWCONF-2027**, y no se observa ningún resultado 2027. El estudio produce únicamente **agregados** sin registros identificables de países.
 
 **Se publica un resultado solo después de que GitHub Actions reproduzca los valores de las fuentes originales y la auditoría institucional y de privacidad resulte satisfactoria.**
+
+## Resultado verificado con las fuentes originales
+
+Ejecución fuente-separada en GitHub Actions con los SHA originales fijados; agregado publicado en `data/geo2027-transition-attribution-archival.json`. CI vuelve a comprobar que el informe sea **idéntico byte a byte** al que genera el script, sin exponer registros individuales.
+
+| Segmento | País-años | Positivos (umbral >=25) | Brier modelo nacional | Brier Markov global |
+|---|---:|---:|---:|---:|
+| Todos | 392 | 69 | **0.04008406** | 0.04692112 |
+| Sin estado activo al origen (ex ante) | 321 | 8 | 0.02264753 | 0.02521028 |
+| Con estado activo al origen (ex ante) | 71 | 61 | 0.11891681 | 0.14507856 |
+| Cambió el estado (ex post) | 18 | 8 | 0.62885871 | 0.67198768 |
+| Estado estable (ex post) | 374 | 61 | 0.01174731 | 0.01683770 |
+
+Hubo **8 entradas** de inactivo a activo y **10 salidas** de activo a inactivo. **Entrar en el estado de >=25 muertes por violencia estatal organizada no es un episodio `newconf` de UCDP, ni necesariamente una guerra que nunca existió antes.**
+
+- Comparador duro de persistencia de origen `P=0/1`: Brier 0.04591837. Modelo nacional 0.04008406, mejora numérica de 0.00583431.
+- La ventaja de Brier frente al Markov global es `-0.00683706`, de la que aproximadamente **71,0 %** procede de los **374 estados estables** (374/392 × 0.00509039) y **29,0 %** de los **18 cambios** (18/392 × 0.04312897). Es una descomposición contable posterior, **no una capacidad de seleccionar los cambios antes de que sucedan**.
+- Sin conflicto al origen: probabilidad media prevista **0.04206** frente a frecuencia observada **0.02492**. Con conflicto al origen: previsión media **0.76662** frente a frecuencia observada **0.85915**. La calibración desagregada es desigual aunque los promedios globales sean similares.
+- Intervalo bootstrap por país para (Brier nacional − Brier Markov global): sin conflicto al origen **[-0.00793, +0.00061]**, compatible con diferencia nula; con conflicto al origen **[-0.03922, -0.01164]**. Los intervalos no representan una certificación de validez estadística bajo shocks globales comunes.
+- Por año objetivo: 2024, 4 entradas y 6 salidas; 2025, 4 entradas y 4 salidas. Un único objetivo anual no basta para demostrar que la descomposición sea estable en el tiempo.
+
+**Decisión científica:** conservar la predicción GEO-2027 ya emitida sin recalibración ni cambios, y **no trasladar el buen Brier total a titulares de capacidad de detección de conflictos nuevos**. El nuevo subprograma útil es pronosticar específicamente **cambios de estado** sobre un umbral y validarlos con más cohortes fuente-separadas, pruebas de calibración condicional y costes de falsos positivos.
+
+Este contraste es una reconstrucción retrospectiva, no un pronóstico históricamente registrado en su origen ni un resultado de 2027.
