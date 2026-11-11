@@ -95,7 +95,7 @@ jobs:
       - name: Run fixed post-hoc 2023/24 UCDP 23.1 to 25.1 persistence comparison
         run: |
           set -e
-          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_newconf_persistence.py
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_newconf_persistence.py --check-report data/newconf-persistence-2023-24-ablation.json
   prospective_newconf_2027_resolution_contract:
     runs-on: ubuntu-latest
     steps:
