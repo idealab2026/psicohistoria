@@ -127,7 +127,7 @@ jobs:
       - name: Calculate source-frozen 12-year revised and 2-year cross-release count diagnostics
         run: |
           set -e
-          PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_historical_count_dispersion.py
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_historical_count_dispersion.py --check-report data/geo2027-historical-count-dispersion-archival.json
   geo2027_alert_dependence_scenarios:
     runs-on: ubuntu-latest
     steps:
