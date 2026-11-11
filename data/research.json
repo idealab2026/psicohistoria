@@ -1872,5 +1872,138 @@
     "prospective_2027_forecast_unchanged": true,
     "prospective_2027_results_resolved": 0,
     "method_note": "CORRECCIÓN DEL ESTUDIO ANTERIOR: UCDP Intrastate Country Level Onset (version 2) no registra onsets en un país con otro conflicto interno activo. La variante Country Level Multiple Onset (version 3) sí permite nuevos conflictos concurrentes. Para onset2 se requieren T-1 y T-2 sin conflicto. A horizonte +1 el conjunto elegible se conoce con el origen; a +2 el año intermedio T-1 se desconoce y jamás debe usarse la edición futura para filtrar el pronóstico. Los Brier y rankings anteriores se calculan sobre todos los países, incluidos algunos inelegibles, y NO prueban habilidad condicional al conjunto elegible. Estudio de factibilidad retrospectivo, sin nueva habilidad prospectiva."
+  },
+  "multiple_onset_newconf_study": {
+    "id": "EMP-QGEO01-MULTIPLE-NEWCONF-20261111",
+    "status": "POST_HOC_SOURCE_SEPARATED_NO_CONFIRMATORY_OR_PROSPECTIVE_SKILL",
+    "question": "Q-GEO-01",
+    "source_report": "data/country-multiple-onset-source-audit.json",
+    "experiment_report": "data/country-multiple-newconf-experiment.json",
+    "codebook": "https://ucdp.uu.se/downloads/onset/ucdp-codebook-onset-251.pdf",
+    "target": "ANY(newconf=1), UCDP Intrastate Country Level Multiple Onset country-year aggregate",
+    "alternate_target": "UCDP Intrastate Country Level Onset onset2, NOT comparable as same event",
+    "source23": {
+      "url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-multiple-onset-231.csv",
+      "sha256": "a31abf6c278bd3a14d6c5b64e075cb38cebe63c95e0535454426c09be21d60e3",
+      "source_episode_rows": 12212,
+      "unique_country_years": 12161,
+      "duplicate_country_year_keys": 39
+    },
+    "source25": {
+      "url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-multiple-onset-251.csv",
+      "sha256": "5fe7411942aa7e6a38d6386faa64f4d7f0703482509f121c4136c0e3223d7f05",
+      "source_episode_rows": 12606,
+      "unique_country_years": 12553,
+      "duplicate_country_year_keys": 41
+    },
+    "country_level_variant3_has_valid_multi_episode_rows": true,
+    "codebook_newconf_different_from_onset2": true,
+    "origin_conflict_active_included_as_eligible": true,
+    "historical_rolling": {
+      "evaluations": 2744,
+      "distinct_country_years": 1568,
+      "positive_evaluations": 49,
+      "distinct_positive_country_years": 33,
+      "metrics": {
+        "global_full": {
+          "brier": 0.017621516930017327,
+          "logloss": 0.09319054432975116
+        },
+        "global_last5": {
+          "brier": 0.017785903916758276,
+          "logloss": 0.09584209560185958
+        },
+        "country_eb": {
+          "brier": 0.01756740861572361,
+          "logloss": 0.09202493518253232
+        },
+        "activity_global": {
+          "brier": 0.017364728546763367,
+          "logloss": 0.08452885167599168
+        },
+        "activity_country": {
+          "brier": 0.017523343045439396,
+          "logloss": 0.0874429754904633
+        },
+        "no_newconf": {
+          "brier": 0.017857142857142856,
+          "logloss": null
+        }
+      }
+    },
+    "historical_cross_vintage": {
+      "evaluations": 392,
+      "positive_country_years": 3,
+      "metrics": {
+        "global_full": {
+          "brier": 0.007622419971211855,
+          "logloss": 0.04619501232740663
+        },
+        "global_last5": {
+          "brier": 0.00760089398355316,
+          "logloss": 0.04526181035933084
+        },
+        "country_eb": {
+          "brier": 0.007221450462189987,
+          "logloss": 0.03572861061648642
+        },
+        "activity_global": {
+          "brier": 0.007345959482985376,
+          "logloss": 0.036990723914213736
+        },
+        "activity_country": {
+          "brier": 0.007154106725744002,
+          "logloss": 0.033778678521398556
+        },
+        "no_newconf": {
+          "brier": 0.007653061224489796,
+          "logloss": null
+        }
+      },
+      "country_bootstrap_activity_minus_last5": [
+        -0.0015270316160196414,
+        0.00036350568341151626
+      ],
+      "annual": [
+        {
+          "year": 2023,
+          "origin": 2022,
+          "horizon": 1,
+          "n": 196,
+          "new_conflict_countries": 2,
+          "new_conflict_episode_rows": 2,
+          "onset2_positive_countries": 1,
+          "newconf_positive_without_onset2": 2,
+          "active_at_origin": 34,
+          "newconf_positive_active_at_origin": 2,
+          "average_precision": 0.2011494252873563,
+          "roc_auc": 0.9497422680412371,
+          "top20_hits": 2,
+          "top20_boundary_tied": true
+        },
+        {
+          "year": 2024,
+          "origin": 2022,
+          "horizon": 2,
+          "n": 196,
+          "new_conflict_countries": 1,
+          "new_conflict_episode_rows": 1,
+          "onset2_positive_countries": 1,
+          "newconf_positive_without_onset2": 1,
+          "active_at_origin": 34,
+          "newconf_positive_active_at_origin": 1,
+          "average_precision": 0.125,
+          "roc_auc": 0.9743589743589743,
+          "top20_hits": 1,
+          "top20_boundary_tied": true
+        }
+      ]
+    },
+    "all_external_newconf_in_active_countries": true,
+    "original_2027_probabilities_unchanged": true,
+    "outcome_2027_evaluated": 0,
+    "prospectively_demonstrated_skill": false,
+    "independent_confirmatory_holdout": false,
+    "limitations": "El objetivo ANY(newconf) no es onset2. En los dos años 2023/24 existen solo 3 positivos newconf, todos con conflicto interno activo en el origen 2022, y ninguno tiene onset2=1 en esos mismos país-año. El Brier externo del modelo con actividad es menor que la tasa global de cinco años, pero el intervalo bootstrap agrupado por país incluye cero. El ranking top-k tiene empates en los puntos de corte: no es un orden único ni demuestra capacidad de alertar sobre individuos. Los cinco modelos y la elección del objetivo son posteriores a la inspección de estos años: estudio exploratorio ex post, no confirmatorio. Los 2744 pronósticos internos representan solo 1568 país-año únicos, con 33 positivos distintos. Nunca se modifican los 196 pronósticos GEO-2027."
   }
 }

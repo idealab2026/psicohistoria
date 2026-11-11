@@ -167,6 +167,53 @@ function renderHistoricalLabelRevisions(){
  r.source_urls.map((url,i)=>'<p><a href="'+safe(url)+'" target="_blank" rel="noopener noreferrer">UCDP '+(i===0?'23.1':'25.1')+'</a> · SHA-256 <code>'+safe(r.source_sha256s[i])+'</code></p>').join("")+
  '<p>Contraste reproducible en el expediente institucional. Las fechas de publicación originales no están certificadas criptográficamente. Este hallazgo no acredita skill prospectivo.</p></details>','soft');
 }
+function renderMultipleNewconf(){
+ const m=state.research?.multiple_onset_newconf_study;
+ if(!m)return "";
+ const pct=n=>new Intl.NumberFormat("es-ES",{style:"percent",minimumFractionDigits:1,maximumFractionDigits:2}).format(n);
+ const val=n=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:5,maximumFractionDigits:5}).format(n);
+ const models=[
+  ["Global · últimos 5 años","global_last5"],
+  ["Global · histórico completo","global_full"],
+  ["País · tasa Empirical Bayes","country_eb"],
+  ["Actividad armada en origen · global","activity_global"],
+  ["País + actividad armada en origen","activity_country"],
+  ["Sin nuevos conflictos · referencia","no_newconf"]
+ ];
+ const internal=m.historical_rolling,ext=m.historical_cross_vintage;
+ const gain=1-ext.metrics.activity_country.brier/ext.metrics.global_last5.brier;
+ return section("INVESTIGACIÓN · CONFLICTOS NUEVOS · UCDP MULTIPLE ONSET",
+  "Un conflicto nuevo no es lo mismo que un inicio onset2",
+  "Analizamos newconf, no onset2: nuevos conflictos identificados por UCDP incluso si el país ya registra otros conflictos activos. La edición Multiple Onset tiene filas por episodio, que se agregan a país-año sin duplicar observaciones.")+
+ '<div class="section-grid three">'+
+ box('<div class="eyebrow">CONFLICTOS NUEVOS 2023–2024</div><div class="card-number">'+safe(ext.positive_country_years)+'</div><p>Dos en 2023 y uno en 2024, en 392 países-año evaluados</p>')+
+ box('<div class="eyebrow">CONFLICTO ACTIVO EN ORIGEN</div><div class="card-number">3/3</div><p>Todos los países con newconf positivo tenían un conflicto interno activo en 2022</p>')+
+ box('<div class="eyebrow">MEJORA BRIER FRENTE A GLOBAL RECIENTE</div><div class="card-number">'+pct(gain)+'</div><p>Resultado exploratorio: el intervalo de incertidumbre incluye cero</p>')+
+ '</div>'+
+ box('<h3>Dos unidades distintas: episodios y países-año</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Edición</th><th>Filas de episodios</th><th>Países-año únicos</th><th>Claves repetidas</th></tr></thead><tbody>'+
+ [["23.1",m.source23],["25.1",m.source25]].map(([name,s])=>'<tr><td>'+safe(name)+'</td><td>'+safe(s.source_episode_rows)+'</td><td>'+safe(s.unique_country_years)+'</td><td>'+safe(s.duplicate_country_year_keys)+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p><strong>Importante:</strong> la variante Country Level Multiple Onset puede contener varios episodios en un mismo país y año. Se conserva el número de episodios, pero para clasificar países se usa la etiqueta binaria <code>ANY(newconf=1)</code>. <code>onset2</code> mide otra cosa y no puede sustituirla.</p>','soft')+
+ box('<h3>Seis estimadores, sin ocultar resultados negativos</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Estimador</th><th>Brier histórico ↓</th><th>Brier 2023–24 ↓</th><th>Log-loss 2023–24 ↓</th></tr></thead><tbody>'+
+ models.map(([label,key])=>'<tr><td>'+safe(label)+'</td><td>'+val(internal.metrics[key].brier)+'</td><td>'+val(ext.metrics[key].brier)+'</td><td>'+(ext.metrics[key].logloss===null?'No definido':val(ext.metrics[key].logloss))+'</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>El estimador país+actividad obtiene un Brier de '+val(ext.metrics.activity_country.brier)+
+ ', frente a '+val(ext.metrics.global_last5.brier)+' de la tasa global reciente. El intervalo bootstrap agrupado por país para la diferencia Brier incluye cero ['+
+ val(ext.country_bootstrap_activity_minus_last5[0])+', +'+val(ext.country_bootstrap_activity_minus_last5[1])+']. No demuestra una mejora fiable, dado el número mínimo de casos y que el diseño es posterior al examen de estos años.</p>','soft')+
+ box('<h3>Resultados anuales y alertas</h3>'+
+ '<div class="table-wrap"><table><thead><tr><th>Año</th><th>Países nuevos</th><th>Episodios</th><th>Newconf sin onset2</th><th>Newconf entre activos en 2022</th><th>Top-20 *</th></tr></thead><tbody>'+
+ ext.annual.map(x=>'<tr><td>'+safe(x.year)+'</td><td>'+safe(x.new_conflict_countries)+'</td><td>'+safe(x.new_conflict_episode_rows)+'</td><td>'+safe(x.newconf_positive_without_onset2)+'</td><td>'+safe(x.newconf_positive_active_at_origin)+'</td><td>'+safe(x.top20_hits)+'/20</td></tr>').join("")+
+ '</tbody></table></div>'+
+ '<p>* Los cortes top-20 coinciden con <strong>empates de probabilidad</strong>. Los aciertos dependen del desempate administrativo y no constituyen una clasificación única verificable. No utilizar estas cifras como justificación de alertas individuales.</p>','soft')+
+ box('<details><summary>Alcance científico, variantes y trazabilidad</summary>'+
+ '<p>'+safe(m.limitations)+'</p>'+
+ '<p>El backtest interno contiene '+safe(internal.evaluations)+' predicciones evaluadas, pero solo '+safe(internal.distinct_country_years)+' país-año únicos y '+safe(internal.distinct_positive_country_years)+' positivos únicos; las evaluaciones comparten desenlaces entre horizontes.</p>'+
+ '<p><a href="'+safe(m.codebook)+'" target="_blank" rel="noopener noreferrer">Manual oficial UCDP</a> · <a href="./data/country-multiple-onset-source-audit.json" target="_blank" rel="noopener noreferrer">Auditoría de las dos ediciones y sus hashes</a> · <a href="./data/country-multiple-newconf-experiment.json" target="_blank" rel="noopener noreferrer">Estudio completo reproducible</a>.</p>'+
+ '<p>Las 196 probabilidades ya emitidas GEO-2027 sobre otra variable no se modifican y siguen sin desenlaces observados de 2027.</p>'+
+ '</details>','soft');
+}
 function renderOnset2CountryRiskset(){
  const x=state.research?.onset2_country_riskset_codebook;
  if(!x)return "";
@@ -621,7 +668,7 @@ function renderEmpiricalEvidence(){
 }
 function renderScience(){
  const d=state.data,rows=d.studies.map(s=>({s,score:score(s)}));
- return renderOnset2CountryRiskset()+renderConflictIncidenceOnset2()+renderOnset2LaggedSignal()+renderOnset2Homogeneous()+renderNewEntryComparator()+renderOriginStateSkill()+renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
+ return renderMultipleNewconf()+renderOnset2CountryRiskset()+renderConflictIncidenceOnset2()+renderOnset2LaggedSignal()+renderOnset2Homogeneous()+renderNewEntryComparator()+renderOriginStateSkill()+renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
  '<div class="table-wrap"><table><thead><tr><th>Estudio sintético</th><th>Observaciones</th><th>Brier modelo</th><th>Brier referencia</th><th>Mejora relativa</th><th>Validez</th></tr></thead><tbody>'+rows.map(({s,score:r})=>'<tr><td>'+safe(s.title)+'</td><td>'+r.n+'</td><td>'+format(r.brier)+'</td><td>'+format(r.baselineBrier)+'</td><td>'+formatPct(r.skill)+'</td><td>Sintético</td></tr>').join("")+'</tbody></table></div>'+
  section("REPRODUCIBILIDAD","Evaluación de un experimento","Selecciona un estudio para analizar las probabilidades ficticias y compararlas con su referencia fija.")+
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+

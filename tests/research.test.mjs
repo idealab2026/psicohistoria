@@ -824,3 +824,75 @@ test("risk set rejects future leakage and recasting country-level as multiple-on
  d.onset2_conflict_activity_study.interpretation="No statement on country-level risk sets";
  assert.throws(()=>verifyResearch(d),/UCDP PRIO conflict incidence study/);
 });
+
+test("official Multiple Onset newconf distinguishes country-year labels from valid duplicate conflict episodes",()=>{
+ const x=registry.multiple_onset_newconf_study;
+ const source=JSON.parse(readFileSync(new URL("../data/country-multiple-onset-source-audit.json",import.meta.url),"utf8"));
+ const full=JSON.parse(readFileSync(new URL("../data/country-multiple-newconf-experiment.json",import.meta.url),"utf8"));
+ assert.equal(x.id,"EMP-QGEO01-MULTIPLE-NEWCONF-20261111");
+ assert.equal(x.status,"POST_HOC_SOURCE_SEPARATED_NO_CONFIRMATORY_OR_PROSPECTIVE_SKILL");
+ assert.equal(full.schema,"idealab.psico.country_multiple_newconf_v231_v251_exploratory.v1");
+ assert.equal(source.schema,"idealab.psico.onset2_country_multiple_vintage_probe.v1");
+ assert.equal(source.versions["23.1"].source_sha256,x.source23.sha256);
+ assert.equal(source.versions["25.1"].source_sha256,x.source25.sha256);
+ assert.equal(source.versions["23.1"].duplicate_country_year_keys,39);
+ assert.equal(source.versions["25.1"].duplicate_country_year_keys,41);
+ assert.equal(source.versions["23.1"].episode_rows,12212);
+ assert.equal(source.versions["25.1"].episode_rows,12606);
+ assert.equal(x.target,"ANY(newconf=1), UCDP Intrastate Country Level Multiple Onset country-year aggregate");
+ assert.equal(source.newconf_distinct_from_onset2,true);
+ assert.equal(source.duplicate_country_year_rows_are_valid_in_variant_3,true);
+ assert.equal(x.codebook_newconf_different_from_onset2,true);
+ assert.equal(x.origin_conflict_active_included_as_eligible,true);
+ assert.deepEqual(x.historical_cross_vintage.annual.map(y=>[
+     y.year,y.n,y.new_conflict_countries,y.newconf_positive_without_onset2,
+     y.active_at_origin,y.newconf_positive_active_at_origin,y.top20_hits,y.top20_boundary_tied
+   ]),[
+     [2023,196,2,2,34,2,2,true],
+     [2024,196,1,1,34,1,1,true],
+   ]);
+ assert.equal(full.external.positive_forecast_evaluations,3);
+ assert.equal(full.external.folds.map(f=>f.positive_country_years).reduce((a,b)=>a+b),3);
+ assert.equal(full.external.folds.every(f=>f.rank_activity_country.alert_budgets["20"].tie_at_boundary),true);
+ assert.equal(full.internal.unique_positive_country_years,33);
+ assert.equal(x.historical_rolling.positive_evaluations,49);
+ assert.equal(x.historical_rolling.distinct_country_years,1568);
+ assert.equal(x.historical_cross_vintage.country_bootstrap_activity_minus_last5[0]<0,true);
+ assert.equal(x.historical_cross_vintage.country_bootstrap_activity_minus_last5[1]>0,true);
+ assert.ok(x.historical_cross_vintage.metrics.activity_country.brier<
+           x.historical_cross_vintage.metrics.global_last5.brier);
+ assert.equal(x.original_2027_probabilities_unchanged,true);
+ assert.equal(x.outcome_2027_evaluated,0);
+ assert.equal(x.independent_confirmatory_holdout,false);
+ assert.equal(x.prospectively_demonstrated_skill,false);
+ assert.equal(registry.prospective_results_verified,0);
+ assert.equal(verifyResearch(registry),true);
+ const ui=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
+ assert.match(ui,/function renderMultipleNewconf/);
+ assert.match(ui,/renderMultipleNewconf\(\)\+renderOnset2CountryRiskset\(\)/);
+ assert.match(ui,/empates de probabilidad/);
+ assert.match(ui,/country-multiple-newconf-experiment\.json/);
+});
+test("country multiple newconf cannot overclaim skill or erase evidence of multiple episodes",()=>{
+ let d=structuredClone(registry);
+ d.multiple_onset_newconf_study.prospectively_demonstrated_skill=true;
+ assert.throws(()=>verifyResearch(d),/Multiple newconf cannot be presented/);
+ d=structuredClone(registry);
+ d.multiple_onset_newconf_study.origin_conflict_active_included_as_eligible=false;
+ assert.throws(()=>verifyResearch(d),/Multiple newconf cannot be presented/);
+ d=structuredClone(registry);
+ d.multiple_onset_newconf_study.source25.sha256="0".repeat(64);
+ assert.throws(()=>verifyResearch(d),/Multiple newconf cannot be presented/);
+ d=structuredClone(registry);
+ d.multiple_onset_newconf_study.historical_rolling.distinct_positive_country_years=49;
+ assert.throws(()=>verifyResearch(d),/Multiple newconf historical forecast evaluations/);
+ d=structuredClone(registry);
+ d.multiple_onset_newconf_study.historical_cross_vintage.metrics.activity_country.brier=0.00001;
+ assert.throws(()=>verifyResearch(d),/Multiple newconf candidates Brier/);
+ d=structuredClone(registry);
+ d.multiple_onset_newconf_study.historical_cross_vintage.annual[1].top20_boundary_tied=false;
+ assert.throws(()=>verifyResearch(d),/Multiple newconf 2023\/24 episode labels/);
+ d=structuredClone(registry);
+ d.multiple_onset_newconf_study.historical_cross_vintage.country_bootstrap_activity_minus_last5=[-1,-0.2];
+ assert.throws(()=>verifyResearch(d),/Multiple newconf uncertainty must not be presented/);
+});

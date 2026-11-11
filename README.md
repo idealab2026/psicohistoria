@@ -4,6 +4,44 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## Q-GEO-01 · Conflictos nuevos en países con actividad: `newconf` versus `onset2` (11-11-2026)
+
+**Nuevo objetivo de investigación separado de Country Level Onset:** UCDP distingue tres variantes de inicio de conflicto. El [manual de UCDP Onset 25.1](https://ucdp.uu.se/downloads/onset/ucdp-codebook-onset-251.pdf) define *Intrastate Country Level Onset* (versión 2) y *Intrastate Country Level Multiple Onset* (versión 3). El primero no admite un `onset2` mientras otro conflicto interno está activo en el país. El segundo admite episodios de **conflictos nuevos** en países que ya tienen otros activos; su columna `newconf` **no equivale** a `onset2`, pues esta última exige un determinado período de inactividad antes del reinicio.
+
+Se han descargado del **[índice oficial de versiones históricas de UCDP](https://ucdp.uu.se/downloads/olddw.html)** los dos CSV correspondientes a la versión 3:
+
+- **UCDP Country Multiple Onset 23.1**, `https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-multiple-onset-231.csv`, SHA-256 `a31abf6c278bd3a14d6c5b64e075cb38cebe63c95e0535454426c09be21d60e3`: **12.212 filas de episodios**, pero **12.161 países-año únicos**, con 39 claves país-año repetidas.
+- **UCDP Country Multiple Onset 25.1**, `https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-multiple-onset-251.csv`, SHA-256 `5fe7411942aa7e6a38d6386faa64f4d7f0703482509f121c4136c0e3223d7f05`: **12.606 filas de episodios**, pero **12.553 países-año únicos**, con 41 claves repetidas.
+
+**Regla de integridad:** repetir un país-año en este archivo es legítimo: pueden existir varios episodios de conflictos distintos dentro del mismo país y año. Se preserva el número de episodios por separado y, al evaluar el riesgo por país-año, se agrega **`ANY(newconf=1)`**. Jamás se cuentan las 12.606 filas como 12.606 países-año independientes.
+
+### Dos resultados diferentes en el mismo año
+
+| Indicador en la versión Multiple Onset 25.1 | 2023 | 2024 |
+|---|---:|---:|
+| Países-año con `newconf=1` | **2** | **1** |
+| Países-año con `onset2=1` | 1 | 1 |
+| Países-año con `newconf=1` y `onset2=0` | **2** | **1** |
+
+Se ha elaborado un **nuevo estimador de `newconf`**, separado del modelo de `onset2`, con fuentes congeladas y límites temporales: edición 23.1 exclusivamente para modelos e incidencia de conflicto interno (UCDP/PRIO 23.1), y etiquetas de la edición 25.1 solo para resolver 2023–2024. El origen de emisión simulado es **2022 para ambos años**; para 2024 no se utiliza ningún dato de 2023 como predictor. La variante Multiple Onset admite países con conflicto activo como **elegibles**.
+
+| Modelo | Brier rolling histórico ↓ | Brier externo 2023–24 ↓ | Log-loss externo ↓ |
+|---|---:|---:|---:|
+| Global, últimos cinco años | 0,01778590 | 0,00760089 | 0,04526181 |
+| Global, histórico completo | 0,01762152 | 0,00762242 | 0,04619501 |
+| País, regularización EB | 0,01756741 | 0,00722145 | 0,03572861 |
+| Actividad interna en origen, global | **0,01736473** | 0,00734596 | 0,03699072 |
+| **País + actividad interna en origen** | 0,01752334 | **0,00715411** | **0,03377868** |
+| Sin nuevos conflictos (referencia Brier) | 0,01785714 | 0,00765306 | No definido con positivos |
+
+**Validación interna:** 2.744 evaluaciones de pronósticos solapados, **1.568 país-año distintos y 33 etiquetas `newconf` positivas únicas**. Los 49 positivos registrados por pronóstico incluyen desenlaces repetidos entre horizontes. El estimador más favorable en el histórico interno por Brier es *actividad global*, mientras que el más favorable en el contraste externo es *país + actividad interna*; **no se selecciona ninguno como modelo ganador prospectivo**.
+
+**Contraste externo:** **392 países-año y solo tres positivos** de `newconf` en 2023/2024: dos en 2023 y uno en 2024. **Los tres tenían conflictos internos activos en 2022** (34 países activos frente a 162 sin esa actividad). El modelo país+actividad obtiene menor Brier que la tasa global reciente, pero su intervalo descriptivo de diferencia por bootstrap país **[−0,00152703, +0,00036351] cruza cero**. Además, la lista top-20 presenta **empates en su frontera ambos años**: los 2/20 y 1/20 casos contados dependen del desempate por identificador, por lo que no constituyen tres alertas inequívocas ni una demostración de capacidad de ranking operativo.
+
+**Límites científicos:** todos los modelos y el cambio de objetivo se desarrollaron **después de inspeccionar 2023 y 2024**. Por tanto, este estudio es *post hoc*, no test independiente ni prospectivo. Hay solo **tres** positivos externos y ni siquiera el bootstrap por país captura shocks internacionales compartidos. `newconf` indica conflictos nuevos codificados por UCDP, no todos los cambios de violencia ni la totalidad de guerras simultáneas. La procedencia de cada archivo está identificada mediante SHA-256; la fecha original de disponibilidad pública de las ediciones históricas no está independientemente certificada.
+
+**Código y publicaciones:** `scripts/probe_multiple_onset_vintages.py`, `scripts/experiment_multiple_newconf.py` y sus pruebas adversariales; fuentes y diferencias agregadas en `data/country-multiple-onset-source-audit.json`, estimaciones completas en `data/country-multiple-newconf-experiment.json`, contratos `src/research.mjs`, web **Investigación → Evidencia**, y jobs obligatorios de CI para futuros despliegues. El experimento no modifica ninguna de las **196 probabilidades originalmente emitidas para GEO-2027**, ni atribuye resultados a 2027.
+
 ## Q-GEO-01 · Corrección del conjunto en riesgo oficial de onset2 (10-11-2026)
 
 **Corrección sustantiva tras verificar el [manual UCDP Onset 25.1](https://ucdp.uu.se/downloads/onset/ucdp-codebook-onset-251.pdf):** nuestra variable dependiente procede de **UCDP Intrastate Country Level Onset, versión 2**. Su unidad es **país-año**. En esta variante *no se registra un inicio de conflicto interno si ya continúa otro conflicto intrastatal en el país*. Esto contradice la afirmación anterior de que podía contarse un onset de otro conflicto simultáneo. Esa propiedad pertenece a la variante distinta **UCDP Intrastate Country Level Multiple Onset, versión 3**, o al dataset específico por conflicto. Los tres productos **no son intercambiables**.
