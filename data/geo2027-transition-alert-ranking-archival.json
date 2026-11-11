@@ -1,0 +1,332 @@
+{
+  "alert_capacity_predefined": {
+    "entry": 10,
+    "resolution": 5
+  },
+  "all_predictions_ex_post_not_issued_in_the_past": true,
+  "confidence_intervals_miss_shared_shocks": true,
+  "fixed_origin_to_target_vintages": [
+    "23.1→25.1 (2022→2024)",
+    "24.1→26.1 (2023→2025)"
+  ],
+  "interpretation_limits": "Only 8 entries and 10 resolutions in two externally source-separated target years. Rankings can be dominated by ties. Fixed-budget top-k best/worst are descriptive, not future performance. Global Markov has no within-year country discrimination conditional on origin state. Retrospective releases are not independently timestamp-notarized. Never select a threshold ex post.",
+  "per_origin_risk_group": {
+    "0": {
+      "bootstrap_country_delta_brier_95pct": [
+        -0.007205822635871432,
+        0.0006633074661242534
+      ],
+      "brier_delta_country_minus_global": -0.0025627515554576645,
+      "event_rate": 0.024922118380062305,
+      "fixed_alert_capacity": 10,
+      "models": {
+        "country_markov": {
+          "brier": 0.022647529679559648,
+          "mean_predicted_transition_probability": 0.042056007016355146,
+          "roc_auc_midrank": 0.8714057507987221,
+          "tie_group_pr_area": 0.18125910454574176,
+          "top_k": {
+            "boundary_tie": false,
+            "boundary_tied_candidates": 1,
+            "budget": 10,
+            "hits_max": 3,
+            "hits_min": 3,
+            "precision_max": 0.3,
+            "precision_min": 0.3,
+            "precision_random_expectation": 0.024922118380062305,
+            "random_expected_hits": 0.24922118380062305,
+            "remaining_slots_in_boundary": 1
+          }
+        },
+        "global_markov": {
+          "brier": 0.025210281235017312,
+          "mean_predicted_transition_probability": 0.055077154385691586,
+          "roc_auc_midrank": 0.5023961661341853,
+          "tie_group_pr_area": 0.02503967554223241,
+          "top_k": {
+            "boundary_tie": true,
+            "boundary_tied_candidates": 159,
+            "budget": 10,
+            "hits_max": 4,
+            "hits_min": 0,
+            "precision_max": 0.4,
+            "precision_min": 0.0,
+            "precision_random_expectation": 0.024922118380062305,
+            "random_expected_hits": 0.24922118380062305,
+            "remaining_slots_in_boundary": 10
+          }
+        }
+      },
+      "n": 321,
+      "origin_state": 0,
+      "question": "entry_0_to_1",
+      "target_year": null,
+      "transitions": 8
+    },
+    "1": {
+      "bootstrap_country_delta_brier_95pct": [
+        -0.03949484354056751,
+        -0.012755442611285413
+      ],
+      "brier_delta_country_minus_global": -0.026161750276037232,
+      "event_rate": 0.14084507042253522,
+      "fixed_alert_capacity": 5,
+      "models": {
+        "country_markov": {
+          "brier": 0.1189168067986626,
+          "mean_predicted_transition_probability": 0.23338035699497184,
+          "roc_auc_midrank": 0.7581967213114754,
+          "tie_group_pr_area": 0.37271849560340037,
+          "top_k": {
+            "boundary_tie": false,
+            "boundary_tied_candidates": 1,
+            "budget": 5,
+            "hits_max": 2,
+            "hits_min": 2,
+            "precision_max": 0.4,
+            "precision_min": 0.4,
+            "precision_random_expectation": 0.14084507042253522,
+            "random_expected_hits": 0.704225352112676,
+            "remaining_slots_in_boundary": 1
+          }
+        },
+        "global_markov": {
+          "brier": 0.14507855707469983,
+          "mean_predicted_transition_probability": 0.2961093640311267,
+          "roc_auc_midrank": 0.5459016393442623,
+          "tie_group_pr_area": 0.1536353254663114,
+          "top_k": {
+            "boundary_tie": true,
+            "boundary_tied_candidates": 37,
+            "budget": 5,
+            "hits_max": 5,
+            "hits_min": 0,
+            "precision_max": 1.0,
+            "precision_min": 0.0,
+            "precision_random_expectation": 0.14084507042253522,
+            "random_expected_hits": 0.704225352112676,
+            "remaining_slots_in_boundary": 5
+          }
+        }
+      },
+      "n": 71,
+      "origin_state": 1,
+      "question": "resolution_1_to_0",
+      "target_year": null,
+      "transitions": 10
+    }
+  },
+  "per_target_year": {
+    "2024": {
+      "0": {
+        "brier_delta_country_minus_global": -0.0034130289837419232,
+        "event_rate": 0.025157232704402517,
+        "fixed_alert_capacity": 10,
+        "models": {
+          "country_markov": {
+            "brier": 0.022023923714173464,
+            "mean_predicted_transition_probability": 0.042278659029352204,
+            "roc_auc_midrank": 0.9225806451612903,
+            "tie_group_pr_area": 0.2541666666666667,
+            "top_k": {
+              "boundary_tie": false,
+              "boundary_tied_candidates": 1,
+              "budget": 10,
+              "hits_max": 2,
+              "hits_min": 2,
+              "precision_max": 0.2,
+              "precision_min": 0.2,
+              "precision_random_expectation": 0.025157232704402517,
+              "random_expected_hits": 0.25157232704402516,
+              "remaining_slots_in_boundary": 1
+            }
+          },
+          "global_markov": {
+            "brier": 0.025436952697915387,
+            "mean_predicted_transition_probability": 0.055366607919,
+            "roc_auc_midrank": 0.5,
+            "tie_group_pr_area": 0.025157232704402517,
+            "top_k": {
+              "boundary_tie": true,
+              "boundary_tied_candidates": 159,
+              "budget": 10,
+              "hits_max": 4,
+              "hits_min": 0,
+              "precision_max": 0.4,
+              "precision_min": 0.0,
+              "precision_random_expectation": 0.025157232704402517,
+              "random_expected_hits": 0.25157232704402516,
+              "remaining_slots_in_boundary": 10
+            }
+          }
+        },
+        "n": 159,
+        "origin_state": 0,
+        "question": "entry_0_to_1",
+        "target_year": 2024,
+        "transitions": 4
+      },
+      "1": {
+        "brier_delta_country_minus_global": -0.02918953241584589,
+        "event_rate": 0.16216216216216217,
+        "fixed_alert_capacity": 5,
+        "models": {
+          "country_markov": {
+            "brier": 0.12483142317045383,
+            "mean_predicted_transition_probability": 0.23837902270951353,
+            "roc_auc_midrank": 0.8145161290322581,
+            "tie_group_pr_area": 0.46965452847805783,
+            "top_k": {
+              "boundary_tie": false,
+              "boundary_tied_candidates": 1,
+              "budget": 5,
+              "hits_max": 2,
+              "hits_min": 2,
+              "precision_max": 0.4,
+              "precision_min": 0.4,
+              "precision_random_expectation": 0.16216216216216217,
+              "random_expected_hits": 0.8108108108108109,
+              "remaining_slots_in_boundary": 1
+            }
+          },
+          "global_markov": {
+            "brier": 0.15402095558629972,
+            "mean_predicted_transition_probability": 0.296903990342,
+            "roc_auc_midrank": 0.5,
+            "tie_group_pr_area": 0.16216216216216217,
+            "top_k": {
+              "boundary_tie": true,
+              "boundary_tied_candidates": 37,
+              "budget": 5,
+              "hits_max": 5,
+              "hits_min": 0,
+              "precision_max": 1.0,
+              "precision_min": 0.0,
+              "precision_random_expectation": 0.16216216216216217,
+              "random_expected_hits": 0.8108108108108109,
+              "remaining_slots_in_boundary": 5
+            }
+          }
+        },
+        "n": 37,
+        "origin_state": 1,
+        "question": "resolution_1_to_0",
+        "target_year": 2024,
+        "transitions": 6
+      }
+    },
+    "2025": {
+      "0": {
+        "brier_delta_country_minus_global": -0.0017282200054749564,
+        "event_rate": 0.024691358024691357,
+        "fixed_alert_capacity": 10,
+        "models": {
+          "country_markov": {
+            "brier": 0.02325958738632757,
+            "mean_predicted_transition_probability": 0.04183747818878395,
+            "roc_auc_midrank": 0.814873417721519,
+            "tie_group_pr_area": 0.18091317741206406,
+            "top_k": {
+              "boundary_tie": false,
+              "boundary_tied_candidates": 1,
+              "budget": 10,
+              "hits_max": 1,
+              "hits_min": 1,
+              "precision_max": 0.1,
+              "precision_min": 0.1,
+              "precision_random_expectation": 0.024691358024691357,
+              "random_expected_hits": 0.24691358024691357,
+              "remaining_slots_in_boundary": 1
+            }
+          },
+          "global_markov": {
+            "brier": 0.024987807391802525,
+            "mean_predicted_transition_probability": 0.054793061102999994,
+            "roc_auc_midrank": 0.5,
+            "tie_group_pr_area": 0.024691358024691357,
+            "top_k": {
+              "boundary_tie": true,
+              "boundary_tied_candidates": 162,
+              "budget": 10,
+              "hits_max": 4,
+              "hits_min": 0,
+              "precision_max": 0.4,
+              "precision_min": 0.0,
+              "precision_random_expectation": 0.024691358024691357,
+              "random_expected_hits": 0.24691358024691357,
+              "remaining_slots_in_boundary": 10
+            }
+          }
+        },
+        "n": 162,
+        "origin_state": 0,
+        "question": "entry_0_to_1",
+        "target_year": 2025,
+        "transitions": 4
+      },
+      "1": {
+        "brier_delta_country_minus_global": -0.02286681088859839,
+        "event_rate": 0.11764705882352941,
+        "fixed_alert_capacity": 5,
+        "models": {
+          "country_markov": {
+            "brier": 0.11248031251171332,
+            "mean_predicted_transition_probability": 0.22794063254091176,
+            "roc_auc_midrank": 0.6916666666666667,
+            "tie_group_pr_area": 0.37700320512820507,
+            "top_k": {
+              "boundary_tie": false,
+              "boundary_tied_candidates": 1,
+              "budget": 5,
+              "hits_max": 2,
+              "hits_min": 2,
+              "precision_max": 0.4,
+              "precision_min": 0.4,
+              "precision_random_expectation": 0.11764705882352941,
+              "random_expected_hits": 0.5882352941176471,
+              "remaining_slots_in_boundary": 1
+            }
+          },
+          "global_markov": {
+            "brier": 0.13534712340031171,
+            "mean_predicted_transition_probability": 0.29524462363399995,
+            "roc_auc_midrank": 0.5,
+            "tie_group_pr_area": 0.11764705882352941,
+            "top_k": {
+              "boundary_tie": true,
+              "boundary_tied_candidates": 34,
+              "budget": 5,
+              "hits_max": 4,
+              "hits_min": 0,
+              "precision_max": 0.8,
+              "precision_min": 0.0,
+              "precision_random_expectation": 0.11764705882352941,
+              "random_expected_hits": 0.5882352941176471,
+              "remaining_slots_in_boundary": 5
+            }
+          }
+        },
+        "n": 34,
+        "origin_state": 1,
+        "question": "resolution_1_to_0",
+        "target_year": 2025,
+        "transitions": 4
+      }
+    }
+  },
+  "posthoc_hypothesis_after_outcomes_inspected": true,
+  "prospective_2027_prediction_documents_modified": false,
+  "prospective_2027_results_observed": 0,
+  "question": "Can the issued GEO2027 country Markov score rank state transitions beyond the global Markov comparator?",
+  "risk_sets_are_known_at_origin": true,
+  "schema": "idealab.psico.geo2027_transition_alerts_archival.v1",
+  "source_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "status": "EXPLORATORY_SOURCE_SEPARATED_NOT_PROSPECTIVELY_VERIFIED",
+  "target": "GEO >=25 deaths state change (NOT newconf or onset2)",
+  "tie_group_pr_area_not_standard_arbitrarily_tiebroken_average_precision": true
+}
