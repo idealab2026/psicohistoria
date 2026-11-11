@@ -82,6 +82,27 @@ jobs:
         run: |
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/forecast_2027_statebased.py --output /tmp/idealab-geo2027.json --print-chunks
           test -s /tmp/idealab-geo2027.json
+  prospective_geo2027_transition_alert_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test prospective source SHA and anti-tamper alert issuance contracts
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_prepare_geo2027_transition_alerts.py' -v
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_audit_issued_geo2027_transition_alerts.py' -v
+      - name: Produce exact 2027 alert issue candidate only from immutable source
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/prepare_geo2027_transition_alerts.py --output /tmp/geo2027-alert-issue.json --print-canonical
+          test -s /tmp/geo2027-alert-issue.json
+          if test -f data/forecast-2027-transition-alerts.json; then
+            cmp /tmp/geo2027-alert-issue.json data/forecast-2027-transition-alerts.json
+            test -s data/forecast-2027-transition-alerts-manifest.json
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_issued_geo2027_transition_alerts.py --check-report data/forecast-2027-transition-alerts-audit.json
+          fi
   geo2027_exact_alert_null:
     runs-on: ubuntu-latest
     steps:
@@ -400,7 +421,7 @@ jobs:
           test -s /tmp/idealab-ucdp-archive.json
   deploy:
     if: github.event_name != 'pull_request'
-    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic, new_entry_baseline_diagnostic, onset2_homogeneous_holdout, onset2_lagged_signal_ablation, probe_ucdp_prio_vintages, onset2_conflict_incidence, onset2_country_riskset_codebook, country_multiple_onset_probe, country_multiple_newconf_experiment, prospective_newconf_2027_source_audit, prospective_newconf_2027_candidate, prospective_newconf_2027_immutable, prospective_newconf_2027_resolution_contract, newconf_persistence_ablation, geo2027_transition_diagnostic, geo2027_transition_alert_ranking, geo2027_exact_alert_null]
+    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic, new_entry_baseline_diagnostic, onset2_homogeneous_holdout, onset2_lagged_signal_ablation, probe_ucdp_prio_vintages, onset2_conflict_incidence, onset2_country_riskset_codebook, country_multiple_onset_probe, country_multiple_newconf_experiment, prospective_newconf_2027_source_audit, prospective_newconf_2027_candidate, prospective_newconf_2027_immutable, prospective_newconf_2027_resolution_contract, newconf_persistence_ablation, geo2027_transition_diagnostic, geo2027_transition_alert_ranking, geo2027_exact_alert_null, prospective_geo2027_transition_alert_issue]
     runs-on: ubuntu-latest
     environment: github-pages
     steps:
