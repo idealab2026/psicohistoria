@@ -976,7 +976,7 @@ test("NEWCONF-2027 future resolution contract is shipped but no 2027 results are
  assert.match(file,/first_complete_official_2027_release_independently_attested/);
  assert.match(file,/future_predictive_skill_independently_verified/);
  assert.match(file,/status":"CANDIDATE_NEEDS_INDEPENDENT_FIRST_COMPLETE_RELEASE_ATTESTATION"/);
- assert.match(protocol,/no se modifica el protocolo preregistrado/i);
+ assert.match(protocol,/no modifica el protocolo preregistrado/i);
  assert.match(protocol,/187 países resueltos/);
  assert.match(protocol,/196\/196/);
  assert.match(ui,/Evaluación futura preparada, no realizada/);
