@@ -964,3 +964,24 @@ test("future NEWCONF forecast must not be recast as validated or reissued silent
  d.prospective_newconf_2027_issue.original_statebased_sha256="0".repeat(64);
  assert.throws(()=>verifyResearch(d),/Prospective NEWCONF 2027 issued probabilities/);
 });
+
+test("NEWCONF-2027 future resolution contract is shipped but no 2027 results are asserted",()=>{
+ const file=readFileSync(new URL("../scripts/evaluate_2027_newconf_official.py",import.meta.url),"utf8");
+ const protocol=readFileSync(new URL("../docs/newconf-2027-evaluation-contract.md",import.meta.url),"utf8");
+ const ui=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
+ assert.match(file,/MIN_RESOLVED=187/);
+ assert.match(file,/REPLICATIONS=2000/);
+ assert.match(file,/def parse_official_2027_csv/);
+ assert.match(file,/def topk_tie_bounds/);
+ assert.match(file,/first_complete_official_2027_release_independently_attested/);
+ assert.match(file,/future_predictive_skill_independently_verified/);
+ assert.match(file,/status":"CANDIDATE_NEEDS_INDEPENDENT_FIRST_COMPLETE_RELEASE_ATTESTATION"/);
+ assert.match(protocol,/no se modifica el protocolo preregistrado/i);
+ assert.match(protocol,/187 países resueltos/);
+ assert.match(protocol,/196\/196/);
+ assert.match(ui,/Evaluación futura preparada, no realizada/);
+ assert.match(ui,/newconf-2027-evaluation-contract\.md/);
+ assert.equal(registry.prospective_newconf_2027_issue.forecast_country_outcomes_resolved,0);
+ assert.equal(registry.prospective_newconf_2027_issue.demonstrated_predictive_skill,false);
+ assert.equal(verifyResearch(registry),true);
+});
