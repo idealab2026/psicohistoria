@@ -1,0 +1,2061 @@
+{
+  "2027_outcomes_evaluated": 0,
+  "active_countries_eligible_for_newconf": true,
+  "conflict_activity_origin_has_no_future_years": true,
+  "country_year_rows_are_unique_after_aggregating_episode_rows": true,
+  "external": {
+    "bootstrap_country_delta_activity_minus_last5": [
+      -0.0015270316160196414,
+      0.00036350568341151626
+    ],
+    "folds": [
+      {
+        "fit": {
+          "cutoff": 2022,
+          "horizon": 1,
+          "later_release_activity_used": false,
+          "later_release_labels_used_in_fit": false,
+          "latest_training_year": 2022,
+          "prior_strength": 20,
+          "training_country_years": 4481,
+          "training_onsets": 57,
+          "training_paired_group_active_n": 634,
+          "training_paired_group_active_positive": 31,
+          "training_paired_group_inactive_n": 3651,
+          "training_paired_group_inactive_positive": 24,
+          "training_recent5_n": 980,
+          "training_recent5_positives": 9
+        },
+        "horizon": 1,
+        "n": 196,
+        "new_conflict_episode_rows": 2,
+        "newconf_positive_origin_active": 2,
+        "newconf_positive_without_onset2": 2,
+        "onset2_positive": 1,
+        "origin_active_n": 34,
+        "origin_year": 2022,
+        "positive_country_years": 2,
+        "rank_activity_country": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 1,
+              "precision": 0.1,
+              "random_expected_hits": 0.10204081632653061,
+              "recall": 0.5,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 2,
+              "precision": 0.1,
+              "random_expected_hits": 0.20408163265306123,
+              "recall": 1.0,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 1,
+              "precision": 0.2,
+              "random_expected_hits": 0.05102040816326531,
+              "recall": 0.5,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.2011494252873563,
+          "base_rate": 0.01020408163265306,
+          "n": 196,
+          "positive_country_years": 2,
+          "roc_auc": 0.9497422680412371
+        },
+        "rank_country_eb": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 1,
+              "precision": 0.1,
+              "random_expected_hits": 0.10204081632653061,
+              "recall": 0.5,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 1,
+              "precision": 0.05,
+              "random_expected_hits": 0.20408163265306123,
+              "recall": 0.5,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 1,
+              "precision": 0.2,
+              "random_expected_hits": 0.05102040816326531,
+              "recall": 0.5,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.18992248062015504,
+          "base_rate": 0.01020408163265306,
+          "n": 196,
+          "positive_country_years": 2,
+          "roc_auc": 0.9304123711340206
+        },
+        "scores": {
+          "activity_country": {
+            "brier": 0.009358489546916308,
+            "logloss": 0.040713646703057944
+          },
+          "activity_global": {
+            "brier": 0.009661028873871722,
+            "logloss": 0.044504793112694944
+          },
+          "country_eb": {
+            "brier": 0.00950446478376193,
+            "logloss": 0.043662242094201
+          },
+          "global_full": {
+            "brier": 0.010107431374836431,
+            "logloss": 0.05725262086540563
+          },
+          "global_last5": {
+            "brier": 0.010099958782588864,
+            "logloss": 0.056937245847765515
+          },
+          "no_newconf": {
+            "brier": 0.01020408163265306,
+            "logloss": null
+          }
+        },
+        "target_year": 2023
+      },
+      {
+        "fit": {
+          "cutoff": 2022,
+          "horizon": 2,
+          "later_release_activity_used": false,
+          "later_release_labels_used_in_fit": false,
+          "latest_training_year": 2022,
+          "prior_strength": 20,
+          "training_country_years": 4481,
+          "training_onsets": 57,
+          "training_paired_group_active_n": 602,
+          "training_paired_group_active_positive": 27,
+          "training_paired_group_inactive_n": 3487,
+          "training_paired_group_inactive_positive": 25,
+          "training_recent5_n": 980,
+          "training_recent5_positives": 9
+        },
+        "horizon": 2,
+        "n": 196,
+        "new_conflict_episode_rows": 1,
+        "newconf_positive_origin_active": 1,
+        "newconf_positive_without_onset2": 1,
+        "onset2_positive": 1,
+        "origin_active_n": 34,
+        "origin_year": 2022,
+        "positive_country_years": 1,
+        "rank_activity_country": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 1,
+              "precision": 0.1,
+              "random_expected_hits": 0.05102040816326531,
+              "recall": 1.0,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 1,
+              "precision": 0.05,
+              "random_expected_hits": 0.10204081632653061,
+              "recall": 1.0,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.125,
+          "base_rate": 0.00510204081632653,
+          "n": 196,
+          "positive_country_years": 1,
+          "roc_auc": 0.9743589743589743
+        },
+        "rank_country_eb": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 1,
+              "precision": 0.1,
+              "random_expected_hits": 0.05102040816326531,
+              "recall": 1.0,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 1,
+              "precision": 0.05,
+              "random_expected_hits": 0.10204081632653061,
+              "recall": 1.0,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.09090909090909091,
+          "base_rate": 0.00510204081632653,
+          "n": 196,
+          "positive_country_years": 1,
+          "roc_auc": 0.9666666666666667
+        },
+        "scores": {
+          "activity_country": {
+            "brier": 0.004949723904571695,
+            "logloss": 0.02684371033973917
+          },
+          "activity_global": {
+            "brier": 0.005030890092099029,
+            "logloss": 0.029476654715732527
+          },
+          "country_eb": {
+            "brier": 0.004938436140618043,
+            "logloss": 0.027794979138771842
+          },
+          "global_full": {
+            "brier": 0.005137408567587277,
+            "logloss": 0.03513740378940761
+          },
+          "global_last5": {
+            "brier": 0.0051018291845174564,
+            "logloss": 0.03358637487089616
+          },
+          "no_newconf": {
+            "brier": 0.00510204081632653,
+            "logloss": null
+          }
+        },
+        "target_year": 2024
+      }
+    ],
+    "forecast_evaluations": 392,
+    "overlapping_forecasts": 0,
+    "positive_forecast_evaluations": 3,
+    "scores": {
+      "activity_country": {
+        "brier": 0.007154106725744002,
+        "logloss": 0.033778678521398556
+      },
+      "activity_global": {
+        "brier": 0.007345959482985376,
+        "logloss": 0.036990723914213736
+      },
+      "country_eb": {
+        "brier": 0.007221450462189987,
+        "logloss": 0.03572861061648642
+      },
+      "global_full": {
+        "brier": 0.007622419971211855,
+        "logloss": 0.04619501232740663
+      },
+      "global_last5": {
+        "brier": 0.00760089398355316,
+        "logloss": 0.04526181035933084
+      },
+      "no_newconf": {
+        "brier": 0.007653061224489796,
+        "logloss": null
+      }
+    },
+    "unique_country_years": 392,
+    "unique_positive_country_years": 3
+  },
+  "external_origin_year": 2022,
+  "historical_pseudo_origins_use_revised_single_edition": true,
+  "horizons": [
+    1,
+    2
+  ],
+  "hypothesis_defined_after_external_outcomes_seen": true,
+  "internal": {
+    "bootstrap_country_delta_activity_minus_last5": [
+      -0.0005184086054050461,
+      -3.518456294065222e-05
+    ],
+    "folds": [
+      {
+        "fit": {
+          "cutoff": 2014,
+          "horizon": 1,
+          "later_release_activity_used": false,
+          "later_release_labels_used_in_fit": false,
+          "latest_training_year": 2014,
+          "prior_strength": 20,
+          "training_country_years": 2913,
+          "training_onsets": 24,
+          "training_paired_group_active_n": 364,
+          "training_paired_group_active_positive": 9,
+          "training_paired_group_inactive_n": 2353,
+          "training_paired_group_inactive_positive": 13,
+          "training_recent5_n": 979,
+          "training_recent5_positives": 10
+        },
+        "horizon": 1,
+        "n": 196,
+        "new_conflict_episode_rows": 15,
+        "newconf_positive_origin_active": 10,
+        "newconf_positive_without_onset2": 11,
+        "onset2_positive": 4,
+        "origin_active_n": 31,
+        "origin_year": 2014,
+        "positive_country_years": 15,
+        "rank_activity_country": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 5,
+              "precision": 0.5,
+              "random_expected_hits": 0.7653061224489796,
+              "recall": 0.3333333333333333,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 6,
+              "precision": 0.3,
+              "random_expected_hits": 1.530612244897959,
+              "recall": 0.4,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 2,
+              "precision": 0.4,
+              "random_expected_hits": 0.3826530612244898,
+              "recall": 0.13333333333333333,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.26235230934479054,
+          "base_rate": 0.07653061224489796,
+          "n": 196,
+          "positive_country_years": 15,
+          "roc_auc": 0.7620626151012891
+        },
+        "rank_country_eb": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 3,
+              "precision": 0.3,
+              "random_expected_hits": 0.7653061224489796,
+              "recall": 0.2,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 6,
+              "precision": 0.3,
+              "random_expected_hits": 1.530612244897959,
+              "recall": 0.4,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 1,
+              "precision": 0.2,
+              "random_expected_hits": 0.3826530612244898,
+              "recall": 0.06666666666666667,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.170160791589363,
+          "base_rate": 0.07653061224489796,
+          "n": 196,
+          "positive_country_years": 15,
+          "roc_auc": 0.6517495395948435
+        },
+        "scores": {
+          "activity_country": {
+            "brier": 0.07317428417353261,
+            "logloss": 0.33537667406646526
+          },
+          "activity_global": {
+            "brier": 0.07392641877004213,
+            "logloss": 0.3301677226672323
+          },
+          "country_eb": {
+            "brier": 0.07392120154619601,
+            "logloss": 0.3522169726372878
+          },
+          "global_full": {
+            "brier": 0.07529146220065482,
+            "logloss": 0.3721441306555341
+          },
+          "global_last5": {
+            "brier": 0.07494006184492395,
+            "logloss": 0.35408767368265837
+          },
+          "no_newconf": {
+            "brier": 0.07653061224489796,
+            "logloss": null
+          }
+        },
+        "target_year": 2015
+      },
+      {
+        "fit": {
+          "cutoff": 2014,
+          "horizon": 2,
+          "later_release_activity_used": false,
+          "later_release_labels_used_in_fit": false,
+          "latest_training_year": 2014,
+          "prior_strength": 20,
+          "training_country_years": 2913,
+          "training_onsets": 24,
+          "training_paired_group_active_n": 337,
+          "training_paired_group_active_positive": 8,
+          "training_paired_group_inactive_n": 2184,
+          "training_paired_group_inactive_positive": 11,
+          "training_recent5_n": 979,
+          "training_recent5_positives": 10
+        },
+        "horizon": 2,
+        "n": 196,
+        "new_conflict_episode_rows": 6,
+        "newconf_positive_origin_active": 4,
+        "newconf_positive_without_onset2": 4,
+        "onset2_positive": 6,
+        "origin_active_n": 31,
+        "origin_year": 2014,
+        "positive_country_years": 6,
+        "rank_activity_country": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 1,
+              "precision": 0.1,
+              "random_expected_hits": 0.30612244897959184,
+              "recall": 0.16666666666666666,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 1,
+              "precision": 0.05,
+              "random_expected_hits": 0.6122448979591837,
+              "recall": 0.16666666666666666,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 1,
+              "precision": 0.2,
+              "random_expected_hits": 0.15306122448979592,
+              "recall": 0.16666666666666666,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.16937636298538555,
+          "base_rate": 0.030612244897959183,
+          "n": 196,
+          "positive_country_years": 6,
+          "roc_auc": 0.8157894736842105
+        },
+        "rank_country_eb": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 1,
+              "precision": 0.1,
+              "random_expected_hits": 0.30612244897959184,
+              "recall": 0.16666666666666666,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 2,
+              "precision": 0.1,
+              "random_expected_hits": 0.6122448979591837,
+              "recall": 0.3333333333333333,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 1,
+              "precision": 0.2,
+              "random_expected_hits": 0.15306122448979592,
+              "recall": 0.16666666666666666,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.1188930117501546,
+          "base_rate": 0.030612244897959183,
+          "n": 196,
+          "positive_country_years": 6,
+          "roc_auc": 0.6162280701754386
+        },
+        "scores": {
+          "activity_country": {
+            "brier": 0.02937613731864122,
+            "logloss": 0.13487382804370016
+          },
+          "activity_global": {
+            "brier": 0.029679033063635105,
+            "logloss": 0.13842421821249043
+          },
+          "country_eb": {
+            "brier": 0.02961908471808766,
+            "logloss": 0.14803716649469867
+          },
+          "global_full": {
+            "brier": 0.03016071693513867,
+            "logloss": 0.15402564286908255
+          },
+          "global_last5": {
+            "brier": 0.030051464204032728,
+            "logloss": 0.1484009023138241
+          },
+          "no_newconf": {
+            "brier": 0.030612244897959183,
+            "logloss": null
+          }
+        },
+        "target_year": 2016
+      },
+      {
+        "fit": {
+          "cutoff": 2015,
+          "horizon": 1,
+          "later_release_activity_used": false,
+          "later_release_labels_used_in_fit": false,
+          "latest_training_year": 2015,
+          "prior_strength": 20,
+          "training_country_years": 3109,
+          "training_onsets": 39,
+          "training_paired_group_active_n": 395,
+          "training_paired_group_active_positive": 19,
+          "training_paired_group_inactive_n": 2518,
+          "training_paired_group_inactive_positive": 18,
+          "training_recent5_n": 980,
+          "training_recent5_positives": 24
+        },
+        "horizon": 1,
+        "n": 196,
+        "new_conflict_episode_rows": 6,
+        "newconf_positive_origin_active": 4,
+        "newconf_positive_without_onset2": 4,
+        "onset2_positive": 6,
+        "origin_active_n": 33,
+        "origin_year": 2015,
+        "positive_country_years": 6,
+        "rank_activity_country": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 1,
+              "precision": 0.1,
+              "random_expected_hits": 0.30612244897959184,
+              "recall": 0.16666666666666666,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 1,
+              "precision": 0.05,
+              "random_expected_hits": 0.6122448979591837,
+              "recall": 0.16666666666666666,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.15306122448979592,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.1006398625539909,
+          "base_rate": 0.030612244897959183,
+          "n": 196,
+          "positive_country_years": 6,
+          "roc_auc": 0.7885964912280702
+        },
+        "rank_country_eb": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 1,
+              "precision": 0.1,
+              "random_expected_hits": 0.30612244897959184,
+              "recall": 0.16666666666666666,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 1,
+              "precision": 0.05,
+              "random_expected_hits": 0.6122448979591837,
+              "recall": 0.16666666666666666,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.15306122448979592,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.05497037524687294,
+          "base_rate": 0.030612244897959183,
+          "n": 196,
+          "positive_country_years": 6,
+          "roc_auc": 0.5916666666666667
+        },
+        "scores": {
+          "activity_country": {
+            "brier": 0.029229090025974968,
+            "logloss": 0.12718643143471803
+          },
+          "activity_global": {
+            "brier": 0.02897701332434852,
+            "logloss": 0.12597438115492313
+          },
+          "country_eb": {
+            "brier": 0.029685949482405178,
+            "logloss": 0.1443917175755198
+          },
+          "global_full": {
+            "brier": 0.0299903627026689,
+            "logloss": 0.1458250295076377
+          },
+          "global_last5": {
+            "brier": 0.02970169903942015,
+            "logloss": 0.13736733220512654
+          },
+          "no_newconf": {
+            "brier": 0.030612244897959183,
+            "logloss": null
+          }
+        },
+        "target_year": 2016
+      },
+      {
+        "fit": {
+          "cutoff": 2015,
+          "horizon": 2,
+          "later_release_activity_used": false,
+          "later_release_labels_used_in_fit": false,
+          "latest_training_year": 2015,
+          "prior_strength": 20,
+          "training_country_years": 3109,
+          "training_onsets": 39,
+          "training_paired_group_active_n": 364,
+          "training_paired_group_active_positive": 18,
+          "training_paired_group_inactive_n": 2353,
+          "training_paired_group_inactive_positive": 16,
+          "training_recent5_n": 980,
+          "training_recent5_positives": 24
+        },
+        "horizon": 2,
+        "n": 196,
+        "new_conflict_episode_rows": 3,
+        "newconf_positive_origin_active": 2,
+        "newconf_positive_without_onset2": 3,
+        "onset2_positive": 0,
+        "origin_active_n": 33,
+        "origin_year": 2015,
+        "positive_country_years": 3,
+        "rank_activity_country": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 1,
+              "precision": 0.1,
+              "random_expected_hits": 0.15306122448979592,
+              "recall": 0.3333333333333333,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 2,
+              "precision": 0.1,
+              "random_expected_hits": 0.30612244897959184,
+              "recall": 0.6666666666666666,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 1,
+              "precision": 0.2,
+              "random_expected_hits": 0.07653061224489796,
+              "recall": 0.3333333333333333,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.08170659568175095,
+          "base_rate": 0.015306122448979591,
+          "n": 196,
+          "positive_country_years": 3,
+          "roc_auc": 0.7668393782383419
+        },
+        "rank_country_eb": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 1,
+              "precision": 0.1,
+              "random_expected_hits": 0.15306122448979592,
+              "recall": 0.3333333333333333,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 2,
+              "precision": 0.1,
+              "random_expected_hits": 0.30612244897959184,
+              "recall": 0.6666666666666666,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 1,
+              "precision": 0.2,
+              "random_expected_hits": 0.07653061224489796,
+              "recall": 0.3333333333333333,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.07422646477946017,
+          "base_rate": 0.015306122448979591,
+          "n": 196,
+          "positive_country_years": 3,
+          "roc_auc": 0.768566493955095
+        },
+        "scores": {
+          "activity_country": {
+            "brier": 0.01448869886564348,
+            "logloss": 0.06891175958293452
+          },
+          "activity_global": {
+            "brier": 0.014685542108118484,
+            "logloss": 0.06989431316473982
+          },
+          "country_eb": {
+            "brier": 0.014598493735078927,
+            "logloss": 0.06886460592357045
+          },
+          "global_full": {
+            "brier": 0.015077840316665318,
+            "logloss": 0.07938300298222617
+          },
+          "global_last5": {
+            "brier": 0.015174910727353979,
+            "logloss": 0.08157762455331909
+          },
+          "no_newconf": {
+            "brier": 0.015306122448979591,
+            "logloss": null
+          }
+        },
+        "target_year": 2017
+      },
+      {
+        "fit": {
+          "cutoff": 2016,
+          "horizon": 1,
+          "later_release_activity_used": false,
+          "later_release_labels_used_in_fit": false,
+          "latest_training_year": 2016,
+          "prior_strength": 20,
+          "training_country_years": 3305,
+          "training_onsets": 45,
+          "training_paired_group_active_n": 428,
+          "training_paired_group_active_positive": 23,
+          "training_paired_group_inactive_n": 2681,
+          "training_paired_group_inactive_positive": 20,
+          "training_recent5_n": 980,
+          "training_recent5_positives": 27
+        },
+        "horizon": 1,
+        "n": 196,
+        "new_conflict_episode_rows": 3,
+        "newconf_positive_origin_active": 3,
+        "newconf_positive_without_onset2": 3,
+        "onset2_positive": 0,
+        "origin_active_n": 37,
+        "origin_year": 2016,
+        "positive_country_years": 3,
+        "rank_activity_country": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 1,
+              "precision": 0.1,
+              "random_expected_hits": 0.15306122448979592,
+              "recall": 0.3333333333333333,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 2,
+              "precision": 0.1,
+              "random_expected_hits": 0.30612244897959184,
+              "recall": 0.6666666666666666,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 1,
+              "precision": 0.2,
+              "random_expected_hits": 0.07653061224489796,
+              "recall": 0.3333333333333333,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.09404953607852158,
+          "base_rate": 0.015306122448979591,
+          "n": 196,
+          "positive_country_years": 3,
+          "roc_auc": 0.8989637305699482
+        },
+        "rank_country_eb": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 1,
+              "precision": 0.1,
+              "random_expected_hits": 0.15306122448979592,
+              "recall": 0.3333333333333333,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 2,
+              "precision": 0.1,
+              "random_expected_hits": 0.30612244897959184,
+              "recall": 0.6666666666666666,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 1,
+              "precision": 0.2,
+              "random_expected_hits": 0.07653061224489796,
+              "recall": 0.3333333333333333,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.06581632653061224,
+          "base_rate": 0.015306122448979591,
+          "n": 196,
+          "positive_country_years": 3,
+          "roc_auc": 0.7590673575129534
+        },
+        "scores": {
+          "activity_country": {
+            "brier": 0.014336682703685724,
+            "logloss": 0.06019949500861402
+          },
+          "activity_global": {
+            "brier": 0.014270895960897385,
+            "logloss": 0.0606339354160267
+          },
+          "country_eb": {
+            "brier": 0.014662171628705839,
+            "logloss": 0.06983429638074144
+          },
+          "global_full": {
+            "brier": 0.015073794534868696,
+            "logloss": 0.07922918687564035
+          },
+          "global_last5": {
+            "brier": 0.015246272973373585,
+            "logloss": 0.08293466488484899
+          },
+          "no_newconf": {
+            "brier": 0.015306122448979591,
+            "logloss": null
+          }
+        },
+        "target_year": 2017
+      },
+      {
+        "fit": {
+          "cutoff": 2016,
+          "horizon": 2,
+          "later_release_activity_used": false,
+          "later_release_labels_used_in_fit": false,
+          "latest_training_year": 2016,
+          "prior_strength": 20,
+          "training_country_years": 3305,
+          "training_onsets": 45,
+          "training_paired_group_active_n": 395,
+          "training_paired_group_active_positive": 22,
+          "training_paired_group_inactive_n": 2518,
+          "training_paired_group_inactive_positive": 18,
+          "training_recent5_n": 980,
+          "training_recent5_positives": 27
+        },
+        "horizon": 2,
+        "n": 196,
+        "new_conflict_episode_rows": 1,
+        "newconf_positive_origin_active": 1,
+        "newconf_positive_without_onset2": 1,
+        "onset2_positive": 3,
+        "origin_active_n": 37,
+        "origin_year": 2016,
+        "positive_country_years": 1,
+        "rank_activity_country": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.021739130434782608,
+          "base_rate": 0.00510204081632653,
+          "n": 196,
+          "positive_country_years": 1,
+          "roc_auc": 0.7948717948717948
+        },
+        "rank_country_eb": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.00510204081632653,
+          "base_rate": 0.00510204081632653,
+          "n": 196,
+          "positive_country_years": 1,
+          "roc_auc": 0.4025641025641026
+        },
+        "scores": {
+          "activity_country": {
+            "brier": 0.00554168798991798,
+            "logloss": 0.03326846298161568
+          },
+          "activity_global": {
+            "brier": 0.005140349587999063,
+            "logloss": 0.030919769319362092
+          },
+          "country_eb": {
+            "brier": 0.005438894056903492,
+            "logloss": 0.0389450451426049
+          },
+          "global_full": {
+            "brier": 0.0051535881698915,
+            "logloss": 0.03574808708686255
+          },
+          "global_last5": {
+            "brier": 0.005624094162949213,
+            "logloss": 0.046929979565735906
+          },
+          "no_newconf": {
+            "brier": 0.00510204081632653,
+            "logloss": null
+          }
+        },
+        "target_year": 2018
+      },
+      {
+        "fit": {
+          "cutoff": 2017,
+          "horizon": 1,
+          "later_release_activity_used": false,
+          "later_release_labels_used_in_fit": false,
+          "latest_training_year": 2017,
+          "prior_strength": 20,
+          "training_country_years": 3501,
+          "training_onsets": 48,
+          "training_paired_group_active_n": 465,
+          "training_paired_group_active_positive": 26,
+          "training_paired_group_inactive_n": 2840,
+          "training_paired_group_inactive_positive": 20,
+          "training_recent5_n": 980,
+          "training_recent5_positives": 28
+        },
+        "horizon": 1,
+        "n": 196,
+        "new_conflict_episode_rows": 1,
+        "newconf_positive_origin_active": 1,
+        "newconf_positive_without_onset2": 1,
+        "onset2_positive": 3,
+        "origin_active_n": 33,
+        "origin_year": 2017,
+        "positive_country_years": 1,
+        "rank_activity_country": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "recall": 0.0,
+              "tie_at_boundary": false
+            },
+            "20": {
+              "budget": 20,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.024390243902439025,
+          "base_rate": 0.00510204081632653,
+          "n": 196,
+          "positive_country_years": 1,
+          "roc_auc": 0.8051282051282052
+        },
+        "rank_country_eb": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "recall": 0.0,
+              "tie_at_boundary": false
+            },
+            "20": {
+              "budget": 20,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.00510204081632653,
+          "base_rate": 0.00510204081632653,
+          "n": 196,
+          "positive_country_years": 1,
+          "roc_auc": 0.4
+        },
+        "scores": {
+          "activity_country": {
+            "brier": 0.0055646119651500976,
+            "logloss": 0.03287116430210685
+          },
+          "activity_global": {
+            "brier": 0.005085276488147784,
+            "logloss": 0.029887445559620147
+          },
+          "country_eb": {
+            "brier": 0.0054575936150498905,
+            "logloss": 0.03913963486966241
+          },
+          "global_full": {
+            "brier": 0.005154970449089411,
+            "logloss": 0.035798335718393505
+          },
+          "global_last5": {
+            "brier": 0.005672811805397949,
+            "logloss": 0.04779435915775219
+          },
+          "no_newconf": {
+            "brier": 0.00510204081632653,
+            "logloss": null
+          }
+        },
+        "target_year": 2018
+      },
+      {
+        "fit": {
+          "cutoff": 2017,
+          "horizon": 2,
+          "later_release_activity_used": false,
+          "later_release_labels_used_in_fit": false,
+          "latest_training_year": 2017,
+          "prior_strength": 20,
+          "training_country_years": 3501,
+          "training_onsets": 48,
+          "training_paired_group_active_n": 428,
+          "training_paired_group_active_positive": 24,
+          "training_paired_group_inactive_n": 2681,
+          "training_paired_group_inactive_positive": 19,
+          "training_recent5_n": 980,
+          "training_recent5_positives": 28
+        },
+        "horizon": 2,
+        "n": 196,
+        "new_conflict_episode_rows": 5,
+        "newconf_positive_origin_active": 2,
+        "newconf_positive_without_onset2": 4,
+        "onset2_positive": 3,
+        "origin_active_n": 33,
+        "origin_year": 2017,
+        "positive_country_years": 5,
+        "rank_activity_country": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.25510204081632654,
+              "recall": 0.0,
+              "tie_at_boundary": false
+            },
+            "20": {
+              "budget": 20,
+              "hits": 1,
+              "precision": 0.05,
+              "random_expected_hits": 0.5102040816326531,
+              "recall": 0.2,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.12755102040816327,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.032205077152812345,
+          "base_rate": 0.025510204081632654,
+          "n": 196,
+          "positive_country_years": 5,
+          "roc_auc": 0.5759162303664922
+        },
+        "rank_country_eb": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.25510204081632654,
+              "recall": 0.0,
+              "tie_at_boundary": false
+            },
+            "20": {
+              "budget": 20,
+              "hits": 1,
+              "precision": 0.05,
+              "random_expected_hits": 0.5102040816326531,
+              "recall": 0.2,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.12755102040816327,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.02596371882086168,
+          "base_rate": 0.025510204081632654,
+          "n": 196,
+          "positive_country_years": 5,
+          "roc_auc": 0.4968586387434555
+        },
+        "scores": {
+          "activity_country": {
+            "brier": 0.025298448423028527,
+            "logloss": 0.13283161477319338
+          },
+          "activity_global": {
+            "brier": 0.024722555341009714,
+            "logloss": 0.12005487607422621
+          },
+          "country_eb": {
+            "brier": 0.025296734103193705,
+            "logloss": 0.13132694698510558
+          },
+          "global_full": {
+            "brier": 0.024992194519419798,
+            "logloss": 0.12264462062851589
+          },
+          "global_last5": {
+            "brier": 0.024875604938944647,
+            "logloss": 0.11906617698770583
+          },
+          "no_newconf": {
+            "brier": 0.025510204081632654,
+            "logloss": null
+          }
+        },
+        "target_year": 2019
+      },
+      {
+        "fit": {
+          "cutoff": 2018,
+          "horizon": 1,
+          "later_release_activity_used": false,
+          "later_release_labels_used_in_fit": false,
+          "latest_training_year": 2018,
+          "prior_strength": 20,
+          "training_country_years": 3697,
+          "training_onsets": 49,
+          "training_paired_group_active_n": 498,
+          "training_paired_group_active_positive": 27,
+          "training_paired_group_inactive_n": 3003,
+          "training_paired_group_inactive_positive": 20,
+          "training_recent5_n": 980,
+          "training_recent5_positives": 27
+        },
+        "horizon": 1,
+        "n": 196,
+        "new_conflict_episode_rows": 5,
+        "newconf_positive_origin_active": 4,
+        "newconf_positive_without_onset2": 4,
+        "onset2_positive": 3,
+        "origin_active_n": 33,
+        "origin_year": 2018,
+        "positive_country_years": 5,
+        "rank_activity_country": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.25510204081632654,
+              "recall": 0.0,
+              "tie_at_boundary": false
+            },
+            "20": {
+              "budget": 20,
+              "hits": 2,
+              "precision": 0.1,
+              "random_expected_hits": 0.5102040816326531,
+              "recall": 0.4,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.12755102040816327,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.07109530680959253,
+          "base_rate": 0.025510204081632654,
+          "n": 196,
+          "positive_country_years": 5,
+          "roc_auc": 0.762303664921466
+        },
+        "rank_country_eb": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.25510204081632654,
+              "recall": 0.0,
+              "tie_at_boundary": false
+            },
+            "20": {
+              "budget": 20,
+              "hits": 1,
+              "precision": 0.05,
+              "random_expected_hits": 0.5102040816326531,
+              "recall": 0.2,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.12755102040816327,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.03692774407060122,
+          "base_rate": 0.025510204081632654,
+          "n": 196,
+          "positive_country_years": 5,
+          "roc_auc": 0.5931937172774869
+        },
+        "scores": {
+          "activity_country": {
+            "brier": 0.024532944043721885,
+            "logloss": 0.10928249642256473
+          },
+          "activity_global": {
+            "brier": 0.02379701732033128,
+            "logloss": 0.09918291180176235
+          },
+          "country_eb": {
+            "brier": 0.02504052527205336,
+            "logloss": 0.124229214670165
+          },
+          "global_full": {
+            "brier": 0.025003266512540638,
+            "logloss": 0.12305286128907525
+          },
+          "global_last5": {
+            "brier": 0.024868451783797957,
+            "logloss": 0.11893935020396208
+          },
+          "no_newconf": {
+            "brier": 0.025510204081632654,
+            "logloss": null
+          }
+        },
+        "target_year": 2019
+      },
+      {
+        "fit": {
+          "cutoff": 2018,
+          "horizon": 2,
+          "later_release_activity_used": false,
+          "later_release_labels_used_in_fit": false,
+          "latest_training_year": 2018,
+          "prior_strength": 20,
+          "training_country_years": 3697,
+          "training_onsets": 49,
+          "training_paired_group_active_n": 465,
+          "training_paired_group_active_positive": 25,
+          "training_paired_group_inactive_n": 2840,
+          "training_paired_group_inactive_positive": 19,
+          "training_recent5_n": 980,
+          "training_recent5_positives": 27
+        },
+        "horizon": 2,
+        "n": 196,
+        "new_conflict_episode_rows": 1,
+        "newconf_positive_origin_active": 0,
+        "newconf_positive_without_onset2": 0,
+        "onset2_positive": 2,
+        "origin_active_n": 33,
+        "origin_year": 2018,
+        "positive_country_years": 1,
+        "rank_activity_country": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "recall": 0.0,
+              "tie_at_boundary": false
+            },
+            "20": {
+              "budget": 20,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.00510204081632653,
+          "base_rate": 0.00510204081632653,
+          "n": 196,
+          "positive_country_years": 1,
+          "roc_auc": 0.37948717948717947
+        },
+        "rank_country_eb": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "recall": 0.0,
+              "tie_at_boundary": false
+            },
+            "20": {
+              "budget": 20,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.00510204081632653,
+          "base_rate": 0.00510204081632653,
+          "n": 196,
+          "positive_country_years": 1,
+          "roc_auc": 0.3974358974358974
+        },
+        "scores": {
+          "activity_country": {
+            "brier": 0.005744649919637893,
+            "logloss": 0.043151483194690664
+          },
+          "activity_global": {
+            "brier": 0.005528126945776155,
+            "logloss": 0.04010754900804419
+          },
+          "country_eb": {
+            "brier": 0.005438582138653847,
+            "logloss": 0.03896567009540518
+          },
+          "global_full": {
+            "brier": 0.005146824341187105,
+            "logloss": 0.03549805657462013
+          },
+          "global_last5": {
+            "brier": 0.005624094162949213,
+            "logloss": 0.046929979565735906
+          },
+          "no_newconf": {
+            "brier": 0.00510204081632653,
+            "logloss": null
+          }
+        },
+        "target_year": 2020
+      },
+      {
+        "fit": {
+          "cutoff": 2019,
+          "horizon": 1,
+          "later_release_activity_used": false,
+          "later_release_labels_used_in_fit": false,
+          "latest_training_year": 2019,
+          "prior_strength": 20,
+          "training_country_years": 3893,
+          "training_onsets": 54,
+          "training_paired_group_active_n": 531,
+          "training_paired_group_active_positive": 31,
+          "training_paired_group_inactive_n": 3166,
+          "training_paired_group_inactive_positive": 21,
+          "training_recent5_n": 980,
+          "training_recent5_positives": 30
+        },
+        "horizon": 1,
+        "n": 196,
+        "new_conflict_episode_rows": 1,
+        "newconf_positive_origin_active": 0,
+        "newconf_positive_without_onset2": 0,
+        "onset2_positive": 2,
+        "origin_active_n": 35,
+        "origin_year": 2019,
+        "positive_country_years": 1,
+        "rank_activity_country": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "recall": 0.0,
+              "tie_at_boundary": false
+            },
+            "20": {
+              "budget": 20,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.00510204081632653,
+          "base_rate": 0.00510204081632653,
+          "n": 196,
+          "positive_country_years": 1,
+          "roc_auc": 0.3717948717948718
+        },
+        "rank_country_eb": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.025510204081632654,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.00510204081632653,
+          "base_rate": 0.00510204081632653,
+          "n": 196,
+          "positive_country_years": 1,
+          "roc_auc": 0.38974358974358975
+        },
+        "scores": {
+          "activity_country": {
+            "brier": 0.005822795792096781,
+            "logloss": 0.04428150159069115
+          },
+          "activity_global": {
+            "brier": 0.005646116395190917,
+            "logloss": 0.04146299231021612
+          },
+          "country_eb": {
+            "brier": 0.005462717953550621,
+            "logloss": 0.039486853738538816
+          },
+          "global_full": {
+            "brier": 0.005157345623499738,
+            "logloss": 0.03588403956159294
+          },
+          "global_last5": {
+            "brier": 0.005776469065482184,
+            "logloss": 0.04954421957468907
+          },
+          "no_newconf": {
+            "brier": 0.00510204081632653,
+            "logloss": null
+          }
+        },
+        "target_year": 2020
+      },
+      {
+        "fit": {
+          "cutoff": 2019,
+          "horizon": 2,
+          "later_release_activity_used": false,
+          "later_release_labels_used_in_fit": false,
+          "latest_training_year": 2019,
+          "prior_strength": 20,
+          "training_country_years": 3893,
+          "training_onsets": 54,
+          "training_paired_group_active_n": 498,
+          "training_paired_group_active_positive": 27,
+          "training_paired_group_inactive_n": 3003,
+          "training_paired_group_inactive_positive": 22,
+          "training_recent5_n": 980,
+          "training_recent5_positives": 30
+        },
+        "horizon": 2,
+        "n": 196,
+        "new_conflict_episode_rows": 0,
+        "newconf_positive_origin_active": 0,
+        "newconf_positive_without_onset2": 0,
+        "onset2_positive": 1,
+        "origin_active_n": 35,
+        "origin_year": 2019,
+        "positive_country_years": 0,
+        "rank_activity_country": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "recall": null,
+              "tie_at_boundary": false
+            },
+            "20": {
+              "budget": 20,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "recall": null,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "recall": null,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": null,
+          "base_rate": 0.0,
+          "n": 196,
+          "positive_country_years": 0,
+          "roc_auc": null
+        },
+        "rank_country_eb": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "recall": null,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "recall": null,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "recall": null,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": null,
+          "base_rate": 0.0,
+          "n": 196,
+          "positive_country_years": 0,
+          "roc_auc": null
+        },
+        "scores": {
+          "activity_country": {
+            "brier": 0.0007154741633840438,
+            "logloss": 0.01510080438963311
+          },
+          "activity_global": {
+            "brier": 0.0005399857614434703,
+            "logloss": 0.01573901012886996
+          },
+          "country_eb": {
+            "brier": 0.0004327213592774823,
+            "logloss": 0.014251253851933222
+          },
+          "global_full": {
+            "brier": 0.00019939325127998932,
+            "logloss": 0.014221312723076097
+          },
+          "global_last5": {
+            "brier": 0.0009965530257465334,
+            "logloss": 0.03207724580907558
+          },
+          "no_newconf": {
+            "brier": 0.0,
+            "logloss": null
+          }
+        },
+        "target_year": 2021
+      },
+      {
+        "fit": {
+          "cutoff": 2020,
+          "horizon": 1,
+          "later_release_activity_used": false,
+          "later_release_labels_used_in_fit": false,
+          "latest_training_year": 2020,
+          "prior_strength": 20,
+          "training_country_years": 4089,
+          "training_onsets": 55,
+          "training_paired_group_active_n": 566,
+          "training_paired_group_active_positive": 31,
+          "training_paired_group_inactive_n": 3327,
+          "training_paired_group_inactive_positive": 22,
+          "training_recent5_n": 980,
+          "training_recent5_positives": 16
+        },
+        "horizon": 1,
+        "n": 196,
+        "new_conflict_episode_rows": 0,
+        "newconf_positive_origin_active": 0,
+        "newconf_positive_without_onset2": 0,
+        "onset2_positive": 1,
+        "origin_active_n": 36,
+        "origin_year": 2020,
+        "positive_country_years": 0,
+        "rank_activity_country": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "recall": null,
+              "tie_at_boundary": false
+            },
+            "20": {
+              "budget": 20,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "recall": null,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "recall": null,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": null,
+          "base_rate": 0.0,
+          "n": 196,
+          "positive_country_years": 0,
+          "roc_auc": null
+        },
+        "rank_country_eb": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "recall": null,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "recall": null,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.0,
+              "recall": null,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": null,
+          "base_rate": 0.0,
+          "n": 196,
+          "positive_country_years": 0,
+          "roc_auc": null
+        },
+        "scores": {
+          "activity_country": {
+            "brier": 0.0007028207568641581,
+            "logloss": 0.014745647884809759
+          },
+          "activity_global": {
+            "brier": 0.0005592851619827884,
+            "logloss": 0.015524270883795542
+          },
+          "country_eb": {
+            "brier": 0.0004106209992559142,
+            "logloss": 0.013807749601963517
+          },
+          "global_full": {
+            "brier": 0.00018737735103754532,
+            "logloss": 0.013783137225349393
+          },
+          "global_last5": {
+            "brier": 0.0002996918048290824,
+            "logloss": 0.017463207015479962
+          },
+          "no_newconf": {
+            "brier": 0.0,
+            "logloss": null
+          }
+        },
+        "target_year": 2021
+      },
+      {
+        "fit": {
+          "cutoff": 2020,
+          "horizon": 2,
+          "later_release_activity_used": false,
+          "later_release_labels_used_in_fit": false,
+          "latest_training_year": 2020,
+          "prior_strength": 20,
+          "training_country_years": 4089,
+          "training_onsets": 55,
+          "training_paired_group_active_n": 531,
+          "training_paired_group_active_positive": 27,
+          "training_paired_group_inactive_n": 3166,
+          "training_paired_group_inactive_positive": 23,
+          "training_recent5_n": 980,
+          "training_recent5_positives": 16
+        },
+        "horizon": 2,
+        "n": 196,
+        "new_conflict_episode_rows": 2,
+        "newconf_positive_origin_active": 0,
+        "newconf_positive_without_onset2": 0,
+        "onset2_positive": 3,
+        "origin_active_n": 36,
+        "origin_year": 2020,
+        "positive_country_years": 2,
+        "rank_activity_country": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "recall": 0.0,
+              "tie_at_boundary": false
+            },
+            "20": {
+              "budget": 20,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.20408163265306123,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.01020408163265306,
+          "base_rate": 0.01020408163265306,
+          "n": 196,
+          "positive_country_years": 2,
+          "roc_auc": 0.3711340206185567
+        },
+        "rank_country_eb": {
+          "alert_budgets": {
+            "10": {
+              "budget": 10,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.10204081632653061,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            },
+            "20": {
+              "budget": 20,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.20408163265306123,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            },
+            "5": {
+              "budget": 5,
+              "hits": 0,
+              "precision": 0.0,
+              "random_expected_hits": 0.05102040816326531,
+              "recall": 0.0,
+              "tie_at_boundary": true
+            }
+          },
+          "average_precision": 0.01020408163265306,
+          "base_rate": 0.01020408163265306,
+          "n": 196,
+          "positive_country_years": 2,
+          "roc_auc": 0.3865979381443299
+        },
+        "scores": {
+          "activity_country": {
+            "brier": 0.010798476494872202,
+            "logloss": 0.07212029319074893
+          },
+          "activity_global": {
+            "brier": 0.010548583425764304,
+            "logloss": 0.06543052776257444
+          },
+          "country_eb": {
+            "brier": 0.010478430011718652,
+            "logloss": 0.06485196458825591
+          },
+          "global_full": {
+            "brier": 0.010112100112300447,
+            "logloss": 0.057430176918909594
+          },
+          "global_last5": {
+            "brier": 0.010150475295414726,
+            "logloss": 0.05867662290612047
+          },
+          "no_newconf": {
+            "brier": 0.01020408163265306,
+            "logloss": null
+          }
+        },
+        "target_year": 2022
+      }
+    ],
+    "forecast_evaluations": 2744,
+    "overlapping_forecasts": 1176,
+    "positive_forecast_evaluations": 49,
+    "scores": {
+      "activity_country": {
+        "brier": 0.017523343045439396,
+        "logloss": 0.0874429754904633
+      },
+      "activity_global": {
+        "brier": 0.017364728546763367,
+        "logloss": 0.08452885167599168
+      },
+      "country_eb": {
+        "brier": 0.01756740861572361,
+        "logloss": 0.09202493518253232
+      },
+      "global_full": {
+        "brier": 0.017621516930017327,
+        "logloss": 0.09319054432975116
+      },
+      "global_last5": {
+        "brier": 0.017785903916758276,
+        "logloss": 0.09584209560185958
+      },
+      "no_newconf": {
+        "brier": 0.017857142857142856,
+        "logloss": null
+      }
+    },
+    "unique_country_years": 1568,
+    "unique_positive_country_years": 33
+  },
+  "limitations": "Retrospective exploratory exercise with only three 2023/24 newconf-positive country-years. Models were specified after the holdout was inspected. Newconf is not onset2 and not a count of all ongoing wars; episode-level duplicates are collapsed to country-year ANY labels for the classifier while episode counts are reported separately. Internal rolling origin-target assessments overlap. Country-block bootstrap does not model shared time shocks. No historical time-stamped issuance or independent prospective validation.",
+  "models": {
+    "activity_country": "country rate regularized 20 to origin-activity group prior",
+    "activity_global": "group-specific future newconf probability conditioned on current active conflict at origin",
+    "country_eb": "country historical ANY(newconf), regularized 20 to global_full",
+    "global_full": "smoothed prevalence of ANY(newconf) up to cutoff",
+    "global_last5": "smoothed prevalence of ANY(newconf) in last five known years",
+    "no_newconf": "zero-event Brier reference, log-loss undefined when positives exist"
+  },
+  "original_2027_prospective_country_risk_probabilities_changed": false,
+  "predictive_skill_demonstrated": false,
+  "riskset_does_not_require_two_prior_conflict_free_years": true,
+  "rolling_internal_origin_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020
+  ],
+  "schema": "idealab.psico.country_multiple_newconf_v231_v251_exploratory.v1",
+  "separate_comparator_target": "Country Level Onset onset2; must NOT treat as identical",
+  "source_activity_version": "UCDP/PRIO Armed Conflict Dataset 23.1 ONLY",
+  "source_metadata": {
+    "acd_23_sha256": "8fe95d8a5780cba1d312f9673ffd9e93b90c91bb26e348393a583853a892b718",
+    "multiple_23_1": {
+      "duplicate_country_year_keys": 39,
+      "episode_rows": 12212,
+      "total_newconf_episode_rows": 226,
+      "unique_country_years": 12161
+    },
+    "multiple_25_1": {
+      "duplicate_country_year_keys": 41,
+      "episode_rows": 12606,
+      "total_newconf_episode_rows": 230,
+      "unique_country_years": 12553
+    }
+  },
+  "source_multiple_onset_sha256": {
+    "23.1": "a31abf6c278bd3a14d6c5b64e075cb38cebe63c95e0535454426c09be21d60e3",
+    "25.1": "5fe7411942aa7e6a38d6386faa64f4d7f0703482509f121c4136c0e3223d7f05"
+  },
+  "status": "POST_HOC_SOURCE_SEPARATED_NO_CONFIRMATORY_OR_PROSPECTIVE_SKILL",
+  "study_id": "EMP-QGEO01-MULTIPLE-NEWCONF-20261111",
+  "target": "ANY(newconf=1) per country-year in UCDP Intrastate Country Level Multiple Onset",
+  "target_years": [
+    2023,
+    2024
+  ]
+}
