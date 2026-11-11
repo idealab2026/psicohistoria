@@ -23,3 +23,20 @@ Is the **persistence** of intrastate armed conflict at the prediction origin mor
 The public script `scripts/experiment_newconf_persistence.py` emits aggregate results only: no individual country predictions, labels, or identifiers. Source-frozen comparisons are run in CI; until the check and report are available, **no result or superiority is claimed**.
 
 This ablation concerns national persistence, not a spatial-neighbor effect. A genuine regional-contagion model requires a separately sourced, time-valid geography/border mapping; it must not infer geographic proximity from Gleditsch–Ward IDs.
+
+## Observed aggregate results (original 23.1 → 25.1 comparison)
+
+Officially reproduced in GitHub Actions, using the sources and frozen external cohort specified above. Exact output is pinned in `data/newconf-persistence-2023-24-ablation.json` and CI now runs the experiment with `--check-report` to reject a byte-level change.
+
+| Candidate | Brier (lower is better) | Log-loss |
+|---|---:|---:|
+| Country EB + current binary conflict activity | **0.007154106725744002** | **0.033778678521398556** |
+| Country EB + 3-year conflict persistence | 0.007183644632859890 | 0.033919852541463960 |
+| Global last-five-years prevalence | 0.007600893983553160 | Reference only |
+
+- `Brier(persistence) − Brier(binary) = +0.0000295379071158881`, **against** the added persistence.
+- Country bootstrap 95% for this delta: **[-0.00000642701033508, +0.00007471567062404]**, includes zero.
+- 2023: persistence Brier `0.009397686976206274` vs binary `0.009358489546916308`; 2024: `0.004969602289513505` vs binary `0.004949723904571695`. Candidate loses in both periods.
+- 392 heldout evaluations, only 3 distinct positive country-years; no independent prospective performance certification.
+
+**Predeclared interpretative decision:** retain the simpler binary activity comparator for future research; do not promote persistence on these data. More elaborate thresholds/windows after the fact would constitute exploratory overfitting. This is a legitimate **negative result**. Neither the 2027 forecasts nor their registered comparators are changed.
