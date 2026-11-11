@@ -82,8 +82,21 @@ jobs:
         run: |
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/forecast_2027_statebased.py --output /tmp/idealab-geo2027.json --print-chunks
           test -s /tmp/idealab-geo2027.json
+  prospective_newconf_2027_candidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Recompute proposed newconf 2027 forecast from three SHA-pinned source vintages
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/forecast_2027_newconf.py --output /tmp/newconf2027-source-derived.json
+          test -s /tmp/newconf2027-source-derived.json
+          if test -f data/forecast-2027-newconf.json; then
+            cmp /tmp/newconf2027-source-derived.json data/forecast-2027-newconf.json
+          fi
   prospective_newconf_2027_source_audit:
-    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -307,7 +320,7 @@ jobs:
           test -s /tmp/idealab-ucdp-archive.json
   deploy:
     if: github.event_name != 'pull_request'
-    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic, new_entry_baseline_diagnostic, onset2_homogeneous_holdout, onset2_lagged_signal_ablation, probe_ucdp_prio_vintages, onset2_conflict_incidence, onset2_country_riskset_codebook, country_multiple_onset_probe, country_multiple_newconf_experiment]
+    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic, new_entry_baseline_diagnostic, onset2_homogeneous_holdout, onset2_lagged_signal_ablation, probe_ucdp_prio_vintages, onset2_conflict_incidence, onset2_country_riskset_codebook, country_multiple_onset_probe, country_multiple_newconf_experiment, prospective_newconf_2027_source_audit, prospective_newconf_2027_candidate]
     runs-on: ubuntu-latest
     environment: github-pages
     steps:
