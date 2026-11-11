@@ -48,7 +48,7 @@ class ProspectiveAlertAuditTests(unittest.TestCase):
     def test_fails_on_altered_issue_bytes_or_generator(self):
         raw, manifest, generator, original, prior = fixture()
         with self.assertRaisesRegex(ValueError, "source-reproducible"):
-            audit(raw + b" ", manifest, generator, original, prior)
+            audit(raw[:-1] + b" \n", manifest, generator, original, prior)
         with self.assertRaisesRegex(ValueError, "source-reproducible"):
             audit(raw, manifest, generator + b"edited", original, prior)
         wrong = copy.deepcopy(manifest)
