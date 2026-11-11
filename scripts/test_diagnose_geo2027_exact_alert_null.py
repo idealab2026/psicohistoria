@@ -15,6 +15,13 @@ from test_evaluate_geo2027_transition_alerts import (
 
 def fixed_toy():
     rows = toy_rows()
+    # The shared toy fixture intentionally reuses country probabilities in
+    # both years; add a tiny FIXED year offset to test the unambiguous branch.
+    # A separate test below exercises genuine score ties and refusal to
+    # report arbitrary randomization tails.
+    for row in rows:
+        if row["target_year"] == 2025:
+            row["p_model"] += 0.00003
     report = prior_study(rows, source_meta(), toy_report(rows))
     return rows, report
 
