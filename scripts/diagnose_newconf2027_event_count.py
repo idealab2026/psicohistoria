@@ -33,6 +33,41 @@ def quantile(pmf, level):
     return len(pmf) - 1
 
 
+def comonotonic_pmf(probabilities):
+    """Exact count law with a single common uniform and unchanged Bernoulli marginals."""
+    if not probabilities:
+        return [1.0]
+    sorted_ps = sorted(probabilities, reverse=True)
+    poisson_binomial(sorted_ps)  # reject invalid / NaN values using the same validator
+    return [1.0 - sorted_ps[0]] + [
+        sorted_ps[k - 1] - sorted_ps[k] for k in range(1, len(sorted_ps))
+    ] + [sorted_ps[-1]]
+
+
+def dependence_sensitivity(probabilities, common_shock_weights=(0.0, 0.1, 0.25, 1.0)):
+    """Mixture of independent and perfectly common-uniform Bernoulli worlds.
+
+    Weight is a scenario MIXTURE WEIGHT, not an estimated pairwise correlation.
+    Each country's forecast marginal stays exactly unchanged.
+    """
+    independent = poisson_binomial(probabilities)
+    common = comonotonic_pmf(probabilities)
+    mean = sum(probabilities)
+    scenarios = []
+    for weight in common_shock_weights:
+        if not 0 <= weight <= 1:
+            raise ValueError("Common shock mixture weight must be in [0,1]")
+        pmf = [(1 - weight) * a + weight * b for a, b in zip(independent, common)]
+        scenarios.append({
+            "common_shock_mixture_weight": weight,
+            "expected_events": mean,
+            "p_zero": pmf[0],
+            "p_six_or_more": sum(pmf[6:]),
+            "variance_events": sum(k * k * mass for k, mass in enumerate(pmf)) - mean * mean,
+            "central_95_count_range": [quantile(pmf, 0.025), quantile(pmf, 0.975)],
+        })
+    return scenarios
+
 def diagnose(path):
     issued = json.loads(Path(path).read_text(encoding="utf-8"))
     rows = issued["countries"]
@@ -56,6 +91,8 @@ def diagnose(path):
         "model_implied_central_95_count_range": [quantile(pmf, 0.025), quantile(pmf, 0.975)],
         "distinct_probabilities": len(set(ps)),
         "top20_expected_events": sum(sorted(ps, reverse=True)[:20]),
+        "dependence_sensitivity": dependence_sensitivity(ps),
+        "dependence_sensitivity_note": "Illustrative mixtures, not estimated correlation or calibrated country dependence; all model country marginals held fixed.",
         "note": "Not observed performance or a calibrated uncertainty interval; this cannot prove model skill.",
     }
 
