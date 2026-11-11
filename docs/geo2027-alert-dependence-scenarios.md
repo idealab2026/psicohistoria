@@ -39,3 +39,29 @@ El programa proporciona, para cada grupo y la suma de las 15 alertas: esperanza,
 - Las pruebas sintéticas verifican la conservación de marginales, esperanza, masas totales, modelos de dependencia, rechazo de datos corruptos y protección de la emisión original. CI reproduce el informe desde los documentos oficiales y rechaza divergencias.
 
 La amplitud de la incertidumbre puede impedir comprometerse científicamente con afirmaciones como «sucederán exactamente 2 cambios»: **una esperanza bien definida no determina la distribución del recuento sin hipótesis conjuntas adicionales**. El siguiente progreso real requiere fuentes externas que permitan estimar y validar dependencias regionales sin mirar retrospectivamente el objetivo 2027.
+
+## Valores calculados a partir de las 15 probabilidades emitidas
+
+Se muestran valores **algebraicamente reproducibles**, no resultados reales de 2027. El programa repite el cálculo y comprueba que las probabilidades proceden del mismo documento público.
+
+| Conjunto de alertas | Nº alertas | E[cambios] | P(0) si independientes | P(0) con uniforme común |
+|---|---:|---:|---:|---:|
+| Entrada del umbral | 10 | **1.887985** | **12.08 %** | **70.93 %** |
+| Resolución del umbral | 5 | **1.715851** | **12.09 %** | **57.34 %** |
+| Conjunto completo | 15 | **3.603836** | **1.46 %** | **57.34 %** |
+
+Las dos construcciones tienen **idéntica esperanza**; la dependencia cambia la varianza y las probabilidades de los extremos. En las 15 alertas, la varianza del recuento pasa de **2.62235** bajo independencia a **29.95053** bajo un único uniforme común.
+
+Otros escenarios ilustrativos, sin estimación de correlaciones:
+
+| Acoplamiento de las 15 alertas | P(cero cambios) | Rango central 95 % condicionado al escenario |
+|---|---:|---|
+| Independencia de los 15 indicadores | 1.46 % | 1–7 |
+| Comonotonía dentro de cada grupo, shocks independientes entre grupos | 40.67 % | 0–15 |
+| Mezcla global con peso común `w=.10` | 7.05 % | 0–8 |
+| Mezcla global con peso común `w=.25` | 15.43 % | 0–15 |
+| Uniforme común para todas las alertas | 57.34 % | 0–15 |
+
+Los **límites de Fréchet** para la probabilidad de ningún cambio, bajo *cualquier* estructura de dependencia que preserve estas probabilidades marginales, son **[0 %, 70.93 %]** para entradas, **[0 %, 57.34 %]** para resoluciones y **[0 %, 57.34 %]** para las 15 en conjunto.
+
+**Consecuencia operacional:** sería incorrecto divulgar «se esperan 3 o 4 cambios» sin explicar que el intervalo de recuento depende radicalmente de la hipótesis conjunta; tampoco procede llamar **intervalo de confianza del 95 %** al rango de un escenario arbitrario. El Brier futuro para cada país sigue siendo evaluable sin especificar la dependencia entre países, pero los tests de significación y sus incertidumbres deben reconocer shocks comunes.
