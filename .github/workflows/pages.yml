@@ -82,6 +82,20 @@ jobs:
         run: |
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/forecast_2027_statebased.py --output /tmp/idealab-geo2027.json --print-chunks
           test -s /tmp/idealab-geo2027.json
+  country_multiple_newconf_experiment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Evaluate country-level new conflicts under source-pinned multiple-onset variants 23.1 and 25.1
+        run: |
+          set -e
+          if test -f data/country-multiple-newconf-experiment.json; then
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_multiple_newconf.py --check-report data/country-multiple-newconf-experiment.json
+          else
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_multiple_newconf.py
+          fi
   country_multiple_onset_probe:
     runs-on: ubuntu-latest
     steps:
