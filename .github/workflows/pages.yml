@@ -101,7 +101,7 @@ jobs:
           if test -f data/forecast-2027-transition-alerts.json; then
             cmp /tmp/geo2027-alert-issue.json data/forecast-2027-transition-alerts.json
             test -s data/forecast-2027-transition-alerts-manifest.json
-            PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_issued_geo2027_transition_alerts.py
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_issued_geo2027_transition_alerts.py --check-report data/forecast-2027-transition-alerts-audit.json
           fi
   geo2027_exact_alert_null:
     runs-on: ubuntu-latest
