@@ -82,6 +82,17 @@ jobs:
         run: |
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/forecast_2027_statebased.py --output /tmp/idealab-geo2027.json --print-chunks
           test -s /tmp/idealab-geo2027.json
+  prepare_newconf_2027_issue:
+    if: github.event_name == 'pull_request' && startsWith(github.event.pull_request.title, '[ISSUE-NEWCONF-2027]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Print source-verified full 196-country prospective newconf document for institutional publication
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/forecast_2027_newconf.py --output /tmp/newconf2027-issue.json --print-chunks
+          test -s /tmp/newconf2027-issue.json
   prospective_newconf_2027_candidate:
     runs-on: ubuntu-latest
     steps:
