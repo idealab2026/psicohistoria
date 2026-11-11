@@ -24,7 +24,9 @@ class Geo2027AlertDependenceTests(unittest.TestCase):
                 self.assertAlmostEqual(a,b)
             self.assertAlmostEqual(sum(got),1)
             self.assertAlmostEqual(sum(k*mass for k,mass in enumerate(got)),.6)
-        self.assertEqual(frechet_zero_bounds(p), [0.4, 0.6])
+        bounds = frechet_zero_bounds(p)
+        self.assertAlmostEqual(bounds[0],0.4)
+        self.assertAlmostEqual(bounds[1],0.6)
 
     def test_comonotonic_changes_no_marginal_or_mean(self):
         p = [.2]*10
