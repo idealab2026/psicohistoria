@@ -36,3 +36,5 @@ La Poisson-binomial requiere **independencia**. Una alternativa extrema es impon
 **Hallazgo:** con idénticas probabilidades por país y la misma esperanza de 2,49094 eventos, la probabilidad de ningún conflicto cambia radicalmente según la dependencia. El rango 0–6 del escenario independiente **no** es un intervalo robusto frente a shocks compartidos; tampoco lo son los escenarios mezclados, que son experimentos de sensibilidad, no descripciones estimadas del mundo. El objetivo de 2027 sigue siendo el Brier por país contra referencias congeladas, no validar retrospectivamente el agregado `P(K=0)`.
 
 No se introduce ninguna nueva etiqueta ni se reinterpretan predicciones después de conocer los resultados.
+
+**Protección de integridad del diagnóstico:** antes de calcular, el script compara el SHA-256 real del fichero de emisión con `e4482da7396872645d5101115435143d98fd9fdb1db1b1fdf41a42c99fc04b74` y con el manifiesto original. Una copia editada o una emisión marcada como resuelta provoca error, sin generar una cifra aparentemente certificada.
