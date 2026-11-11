@@ -193,7 +193,9 @@ function renderProspectiveNewconf2027(){
  '<p>La variable objetivo es <code>ANY(newconf=1)</code> entre episodios registrados por UCDP Country Level Multiple Onset durante 2027, <strong>no onset2</strong> ni la permanencia de violencia previa. La métrica primaria será Brier del modelo menos Brier de la referencia global de cinco años para países resueltos en la primera edición completa con 2027. Los resultados no publicados no se interpretan como ausencia de conflicto.</p>'+
  '<p>Hasta ahora <strong>'+safe(x.forecast_country_outcomes_resolved)+'</strong> desenlaces de 2027 han sido verificados. No se ha demostrado habilidad predictiva. El modelo se diseñó después de examinar el período 2023–2024; los ensayos históricos no son confirmatorios.</p>'+
  '<p>Las probabilidades individuales oscilan entre '+percent(x.p_min)+' y '+percent(x.p_max)+
- '. No se emitieron certezas ni se recalibró la emisión previa GEO-2027.</p>','soft');
+ '. No se emitieron certezas ni se recalibró la emisión previa GEO-2027.</p>'+
+ '<p><strong>Evaluación futura preparada, no realizada.</strong> El evaluador exige la edición oficial de Multiple Onset con 2027, como mínimo 187 de 196 etiquetas disponibles y prueba independiente de que la fuente corresponde a la primera publicación completa. Los países sin dato se mantienen sin resolver; no se convierten en negativos.</p>'+
+ '<p><a href="https://github.com/idealab2026/psicohistoria/blob/main/docs/newconf-2027-evaluation-contract.md" target="_blank" rel="noopener noreferrer">Contrato de evaluación futura</a> · <a href="https://github.com/idealab2026/psicohistoria/blob/main/scripts/evaluate_2027_newconf_official.py" target="_blank" rel="noopener noreferrer">Código del evaluador</a></p>','soft');
 }
 function renderMultipleNewconf(){
  const m=state.research?.multiple_onset_newconf_study;
