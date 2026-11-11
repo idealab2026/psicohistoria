@@ -21,3 +21,18 @@ El escaso número de eventos puede volver anchos e inestables los intervalos de 
 ## Integridad
 
 Este diagnóstico únicamente lee la emisión original. No escribe `data/forecast-2027-newconf.json`, no cambia el protocolo ni el comparador preregistrado, no introduce outcomes de 2027 y no usa información posterior a la emisión. Los porcentajes se redondean para lectura.
+
+## Sensibilidad explícita a dependencia común (sin datos futuros)
+
+La Poisson-binomial requiere **independencia**. Una alternativa extrema es imponer un único uniforme común `U` a los 196 países: `Y_i = 1[U < p_i]`. Esto preserva **exactamente** cada probabilidad marginal `p_i`, pero introduce dependencia positiva máxima en este acoplamiento. Para visualizar sensibilidad, se mezcla con peso `w` el escenario comonótono y con peso `1-w` el escenario independiente. `w` **no** es una correlación estimada.
+
+| Peso de escenario común w | P(0 nuevos conflictos) | P(6 o más) |
+|---:|---:|---:|
+| 0 (independencia) | 7,85 % | 3,80 % |
+| 0,10 (hipótesis ilustrativa) | 15,99 % | 4,05 % |
+| 0,25 (hipótesis ilustrativa) | 28,20 % | 4,43 % |
+| 1 (dependencia común extrema) | 89,23 % | 6,33 % |
+
+**Hallazgo:** con idénticas probabilidades por país y la misma esperanza de 2,49094 eventos, la probabilidad de ningún conflicto cambia radicalmente según la dependencia. El rango 0–6 del escenario independiente **no** es un intervalo robusto frente a shocks compartidos; tampoco lo son los escenarios mezclados, que son experimentos de sensibilidad, no descripciones estimadas del mundo. El objetivo de 2027 sigue siendo el Brier por país contra referencias congeladas, no validar retrospectivamente el agregado `P(K=0)`.
+
+No se introduce ninguna nueva etiqueta ni se reinterpretan predicciones después de conocer los resultados.
