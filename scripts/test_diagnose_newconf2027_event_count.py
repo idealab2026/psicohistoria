@@ -1,5 +1,7 @@
 import math
+import tempfile
 import unittest
+from pathlib import Path
 
 from diagnose_newconf2027_event_count import (comonotonic_pmf, dependence_sensitivity, diagnose, poisson_binomial, quantile)
 
@@ -29,6 +31,13 @@ class EventCountDiagnosticTests(unittest.TestCase):
         for value in (-0.1, 1.1, float("nan"), True):
             with self.assertRaises(ValueError):
                 poisson_binomial([value])
+
+    def test_reject_changed_frozen_issue_bytes(self):
+        with tempfile.TemporaryDirectory() as temp:
+            changed = Path(temp) / "tampered.json"
+            changed.write_bytes(Path("data/forecast-2027-newconf.json").read_bytes() + b" ")
+            with self.assertRaisesRegex(ValueError, "immutable issue"):
+                diagnose(changed)
 
     def test_original_issued_forecast_only(self):
         result = diagnose("data/forecast-2027-newconf.json")
