@@ -1,0 +1,85 @@
+{
+  "2027_outcomes_observed": 0,
+  "benchmark": "country EB shrink20 toward binary current-activity strata",
+  "bootstrap_country_delta_persistence_minus_binary_95": [
+    -6.4270103350848985e-06,
+    7.471567062404491e-05
+  ],
+  "brier_binary_activity": 0.007154106725744002,
+  "brier_persistence": 0.00718364463285989,
+  "brier_recent5_global": 0.00760089398355316,
+  "by_horizon": [
+    {
+      "brier_binary_activity": 0.009358489546916308,
+      "brier_persistence": 0.009397686976206274,
+      "brier_recent5_global": 0.010099958782588864,
+      "fit": {
+        "group_definition": "0 / 1 / 2+ active years among t-2,t-1,t",
+        "horizon": 1,
+        "max_activity_source_year": 2022,
+        "max_fitted_newconf_year": 2022,
+        "origin": 2022,
+        "prior_strength": 20,
+        "stratum_events": {
+          "0": 21,
+          "1": 6,
+          "2": 28
+        },
+        "stratum_exposure": {
+          "0": 3491,
+          "1": 175,
+          "2": 619
+        }
+      },
+      "horizon": 1,
+      "n": 196,
+      "positive_country_years": 2,
+      "target_year": 2023
+    },
+    {
+      "brier_binary_activity": 0.004949723904571695,
+      "brier_persistence": 0.004969602289513505,
+      "brier_recent5_global": 0.0051018291845174564,
+      "fit": {
+        "group_definition": "0 / 1 / 2+ active years among t-2,t-1,t",
+        "horizon": 2,
+        "max_activity_source_year": 2022,
+        "max_fitted_newconf_year": 2022,
+        "origin": 2022,
+        "prior_strength": 20,
+        "stratum_events": {
+          "0": 22,
+          "1": 5,
+          "2": 25
+        },
+        "stratum_exposure": {
+          "0": 3335,
+          "1": 170,
+          "2": 584
+        }
+      },
+      "horizon": 2,
+      "n": 196,
+      "positive_country_years": 1,
+      "target_year": 2024
+    }
+  ],
+  "candidate": "country EB shrink20 toward 0/1/2+ origin-activity-year strata",
+  "cohort_n": 196,
+  "delta_brier_persistence_minus_binary": 2.95379071158881e-05,
+  "delta_brier_persistence_minus_recent5": -0.0004172493506932702,
+  "evaluations": 392,
+  "forecast_2027_modified": false,
+  "limitations": "2023/24 external outcomes had already been inspected; three positives only; no claim of prospective skill; bootstrap by country misses shared shocks; vintage releases not independently notarized. No geographic region inferred.",
+  "logloss_binary_activity": 0.033778678521398556,
+  "logloss_persistence": 0.03391985254146396,
+  "origin_year": 2022,
+  "positive_evaluations": 3,
+  "posthoc_model_design_after_2023_2024_seen": true,
+  "schema": "idealab.psico.newconf_persistence_2023_24_exploratory.v1",
+  "source_activity_acd_23_1_sha256": "8fe95d8a5780cba1d312f9673ffd9e93b90c91bb26e348393a583853a892b718",
+  "source_multiple_onset_23_1_sha256": "a31abf6c278bd3a14d6c5b64e075cb38cebe63c95e0535454426c09be21d60e3",
+  "source_multiple_onset_25_1_sha256": "5fe7411942aa7e6a38d6386faa64f4d7f0703482509f121c4136c0e3223d7f05",
+  "status": "POST_HOC_NOT_CONFIRMATORY_OR_PROSPECTIVE_SKILL",
+  "target": "ANY(newconf=1) UCDP Multiple Onset per GW country-year"
+}
