@@ -145,7 +145,7 @@ def build(scriptbytes,panel,acd_historical,acd2025):
          "future_newconf_2025_observed":False,
          "future_newconf_2026_observed":False,
          "newconf_2027_outcome_observed":False,
-         "sources_are_uсdp_public":True
+         "sources_are_ucdp_public":True
       },
       "protocol":{
          "calendar_horizon_years":HORIZON,
