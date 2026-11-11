@@ -95,7 +95,7 @@ jobs:
       - name: Reproduce 2024/2025 source-pinned, within-year exact alert null
         run: |
           set -e
-          PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_exact_alert_null.py
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_exact_alert_null.py --check-report data/geo2027-exact-alert-null-archival.json
   geo2027_transition_alert_ranking:
     runs-on: ubuntu-latest
     steps:
