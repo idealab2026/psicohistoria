@@ -1,0 +1,19 @@
+{
+  "alerts_entry": 10,
+  "alerts_resolution": 5,
+  "cohort_id": "PSICO-GEO2027-TRANSITION-ALERTS-V1",
+  "first_public_github_commit": "5938db3c93661ce04ed35902b2bdaa68abfb8daa",
+  "first_public_github_commit_utc": "2026-11-11T19:28:31Z",
+  "independently_notarized": false,
+  "issued_file_sha256": "309b4f270e1d0d6382b7a90ae64c28d7621f96fbf3177a45aaebbffb0f958acb",
+  "origin_2025_country_count": 196,
+  "origin_active": 34,
+  "origin_inactive": 162,
+  "outcomes_2027_resolved": 0,
+  "prospective_skill_demonstrated": false,
+  "schema": "idealab.psico.prospective_geo2027_transition_alert_audit.v1",
+  "source_generator_sha256": "9048508f5b1639b89b4620ea6b1c3089744c2c245cb5bb934ea30082e8e44dad",
+  "source_original_forecast_unchanged": true,
+  "source_original_geo2027_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "status": "PROSPECTIVE_ISSUED_UNRESOLVED"
+}
