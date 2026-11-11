@@ -40,3 +40,22 @@ Solo se publican agregados año×estado (n, E, K, V, residuales) y totales. No s
 - El informe reproducible queda protegido por CI y, tras su primera ejecución válida, archivado byte a byte.
 
 **Decisión científica prevista:** no ajustar el peso de dependencia de las 15 alertas GEO-2027 con estas muestras: sería introducir hipótesis oportunistas dependientes de datos revisados y de muy pocos años externos. El siguiente paso confirmatorio requeriría más ediciones independientes fechadas al origen o una cohorte futura completa.
+
+## Resultados calculados desde las fuentes oficiales
+
+El informe completo queda archivado en `data/geo2027-historical-count-dispersion-archival.json`. La auditoría obtiene de nuevo las cinco fuentes UCDP a partir de sus enlaces oficiales, verifica sus SHA-256 y reproduce exactamente los bytes del informe; no publica datos de país.
+
+| Periodo y objetivo binario de cambio | País-años | Transiciones observadas | Transiciones esperadas por Markov nacional | Markov global esperadas | Razón de dispersión de recuentos (Markov nacional) |
+|---|---:|---:|---:|---:|---:|
+| 2012–2023 · entradas | 1.987 | **70** | **95,83** | 113,29 | 1,356 |
+| 2012–2023 · resoluciones | 363 | **48** | **91,97** | 115,99 | 3,025 |
+| 2024–2025 · entradas | 321 | **8** | **13,50** | 17,68 | 1,225 |
+| 2024–2025 · resoluciones | 71 | **10** | **16,57** | 21,02 | 1,829 |
+
+Los datos muestran sobreestimación del número de cambios en ambos periodos, más marcada para las resoluciones en el bloque revisado de 12 años. Los recuentos son sumas de **país-años**, no países únicos y no episodios de guerra.
+
+**Resultado negativo importante:** aunque algunas razones de dispersión superen 1, la desviación sistemática entre eventos observados y esperados impide interpretar ese exceso como señal inequívoca de dependencia entre países. En la descomposición `(K−E)²/V` un error marginal persistente aumenta el numerador incluso bajo independencia condicional. El Markov global presenta una sobreestimación aún mayor; eso **no valida** por sí solo las probabilidades nacionales.
+
+El bloque de ediciones separadas solo ofrece dos años objetivo y comparte muchos países con el bloque revisado. No hay evidencia suficiente para ajustar un parámetro de correlación, demostrar validación prospectiva, extrapolar una cobertura del 95 % ni decidir que la dependencia comonótona sea preferible.
+
+**Decisión:** no recalibrar los modelos emitidos GEO-2027 ni NEWCONF-2027 a partir de estos resultados. Conservar sus métricas y compromisos originales, incorporar este fallo metodológico al programa de investigación y exigir futuras fuentes fechadas independientemente antes de certificar calibración o dependencia.
