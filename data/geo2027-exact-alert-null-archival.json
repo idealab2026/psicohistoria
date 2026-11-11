@@ -1,0 +1,415 @@
+{
+  "alert_budget_selection_not_optimized": true,
+  "candidate_ranking_chosen_after_external_labels_seen": true,
+  "limits": "Conditional random-ranking reference is an exact combinatorial benchmark, not independent predictive-skill significance: model family and questions explored after historical outcomes inspected. Only two years, rare transitions and non-independent countries; within-year AUC excludes cross-year prevalence effects. No country-level scores, labels or IDs are published.",
+  "null_hypothesis": "exchangeable transition labels within each known origin-state and target-year cell, conditional on event counts and alert allocations by year",
+  "probabilities_are_not_confirmatory_p_values": true,
+  "prospective_2027_forecasts_unchanged": true,
+  "prospective_2027_outcomes_observed": 0,
+  "risk_sets": {
+    "0": {
+      "models": {
+        "country_markov": {
+          "per_year_fixed_capacity": {
+            "2024": {
+              "alert_capacity": 10,
+              "cutoff_tie": false,
+              "null_status": "EXACT_YEAR_CONDITIONAL_EXCHANGEABILITY",
+              "observed_total_events": 4,
+              "risk_set_n": 159,
+              "top_k_hits_max": 2,
+              "top_k_hits_min": 2,
+              "year_conditional_null": {
+                "cells": [
+                  {
+                    "events": 4,
+                    "expected_random_hits": 0.25157232704402516,
+                    "population": 159,
+                    "selected_slots": 10,
+                    "year": 2024
+                  }
+                ],
+                "central_95pct_random_hit_range": [
+                  0,
+                  1
+                ],
+                "expected_hits": 0.25157232704402516,
+                "hit_count_probability_mass": {
+                  "0": 0.7692007735226128,
+                  "1": 0.21073993795140078,
+                  "2": 0.019353667771047012,
+                  "3": 0.0006974294692269193,
+                  "4": 8.191285712396704e-06
+                },
+                "observed_hits": 2,
+                "one_sided_probability_random_hits_at_least_observed": 0.02005928852598633
+              }
+            },
+            "2025": {
+              "alert_capacity": 10,
+              "cutoff_tie": false,
+              "null_status": "EXACT_YEAR_CONDITIONAL_EXCHANGEABILITY",
+              "observed_total_events": 4,
+              "risk_set_n": 162,
+              "top_k_hits_max": 1,
+              "top_k_hits_min": 1,
+              "year_conditional_null": {
+                "cells": [
+                  {
+                    "events": 4,
+                    "expected_random_hits": 0.24691358024691357,
+                    "population": 162,
+                    "selected_slots": 10,
+                    "year": 2025
+                  }
+                ],
+                "central_95pct_random_hit_range": [
+                  0,
+                  1
+                ],
+                "expected_hits": 0.24691358024691357,
+                "hit_count_probability_mass": {
+                  "0": 0.7731078181584061,
+                  "1": 0.20754572299554525,
+                  "2": 0.018679115069599073,
+                  "3": 0.0006597479936282233,
+                  "4": 7.595782821377571e-06
+                },
+                "observed_hits": 1,
+                "one_sided_probability_random_hits_at_least_observed": 0.22689218184159393
+              }
+            }
+          },
+          "pooled_fixed_capacity": {
+            "alert_capacity": 10,
+            "cutoff_tie": false,
+            "null_status": "EXACT_YEAR_CONDITIONAL_EXCHANGEABILITY",
+            "observed_total_events": 8,
+            "risk_set_n": 321,
+            "top_k_hits_max": 3,
+            "top_k_hits_min": 3,
+            "year_conditional_null": {
+              "cells": [
+                {
+                  "events": 4,
+                  "expected_random_hits": 0.1509433962264151,
+                  "population": 159,
+                  "selected_slots": 6,
+                  "year": 2024
+                },
+                {
+                  "events": 4,
+                  "expected_random_hits": 0.09876543209876543,
+                  "population": 162,
+                  "selected_slots": 4,
+                  "year": 2025
+                }
+              ],
+              "central_95pct_random_hit_range": [
+                0,
+                1
+              ],
+              "expected_hits": 0.24970882832518052,
+              "hit_count_probability_mass": {
+                "0": 0.7738910095659364,
+                "1": 0.2037080850986465,
+                "2": 0.0212362011021599,
+                "3": 0.001131021420268538,
+                "4": 3.3141888477895944e-05,
+                "5": 5.363573020136963e-07,
+                "6": 4.549495295721831e-09,
+                "7": 1.7692270075560068e-11,
+                "8": 2.1163002482727355e-14
+              },
+              "observed_hits": 3,
+              "one_sided_probability_random_hits_at_least_observed": 0.0011647042332571763
+            }
+          },
+          "within_year_auc": {
+            "auc_pair_weighted": 0.8682108626198083,
+            "by_year": [
+              {
+                "comparable_positive_negative_pairs": 620,
+                "events": 4,
+                "n": 159,
+                "roc_auc_midrank": 0.9225806451612903,
+                "year": 2024
+              },
+              {
+                "comparable_positive_negative_pairs": 632,
+                "events": 4,
+                "n": 162,
+                "roc_auc_midrank": 0.814873417721519,
+                "year": 2025
+              }
+            ],
+            "positive_negative_pairs": 1252.0
+          }
+        },
+        "global_markov": {
+          "per_year_fixed_capacity": {
+            "2024": {
+              "alert_capacity": 10,
+              "cutoff_tie": true,
+              "null_status": "UNDEFINED_BOUNDARY_TIE",
+              "observed_total_events": 4,
+              "risk_set_n": 159,
+              "top_k_hits_max": 4,
+              "top_k_hits_min": 0,
+              "year_conditional_null": null
+            },
+            "2025": {
+              "alert_capacity": 10,
+              "cutoff_tie": true,
+              "null_status": "UNDEFINED_BOUNDARY_TIE",
+              "observed_total_events": 4,
+              "risk_set_n": 162,
+              "top_k_hits_max": 4,
+              "top_k_hits_min": 0,
+              "year_conditional_null": null
+            }
+          },
+          "pooled_fixed_capacity": {
+            "alert_capacity": 10,
+            "cutoff_tie": true,
+            "null_status": "UNDEFINED_BOUNDARY_TIE",
+            "observed_total_events": 8,
+            "risk_set_n": 321,
+            "top_k_hits_max": 4,
+            "top_k_hits_min": 0,
+            "year_conditional_null": null
+          },
+          "within_year_auc": {
+            "auc_pair_weighted": 0.5,
+            "by_year": [
+              {
+                "comparable_positive_negative_pairs": 620,
+                "events": 4,
+                "n": 159,
+                "roc_auc_midrank": 0.5,
+                "year": 2024
+              },
+              {
+                "comparable_positive_negative_pairs": 632,
+                "events": 4,
+                "n": 162,
+                "roc_auc_midrank": 0.5,
+                "year": 2025
+              }
+            ],
+            "positive_negative_pairs": 1252.0
+          }
+        }
+      },
+      "risk_set_n": 321,
+      "transitions": 8
+    },
+    "1": {
+      "models": {
+        "country_markov": {
+          "per_year_fixed_capacity": {
+            "2024": {
+              "alert_capacity": 5,
+              "cutoff_tie": false,
+              "null_status": "EXACT_YEAR_CONDITIONAL_EXCHANGEABILITY",
+              "observed_total_events": 6,
+              "risk_set_n": 37,
+              "top_k_hits_max": 2,
+              "top_k_hits_min": 2,
+              "year_conditional_null": {
+                "cells": [
+                  {
+                    "events": 6,
+                    "expected_random_hits": 0.8108108108108109,
+                    "population": 37,
+                    "selected_slots": 5,
+                    "year": 2024
+                  }
+                ],
+                "central_95pct_random_hit_range": [
+                  0,
+                  2
+                ],
+                "expected_hits": 0.8108108108108109,
+                "hit_count_probability_mass": {
+                  "0": 0.3897962133256251,
+                  "1": 0.433106903695139,
+                  "2": 0.1546810370339782,
+                  "3": 0.021335315452962512,
+                  "4": 0.0010667657726481255,
+                  "5": 1.3764719647072588e-05
+                },
+                "observed_hits": 2,
+                "one_sided_probability_random_hits_at_least_observed": 0.17709688297923593
+              }
+            },
+            "2025": {
+              "alert_capacity": 5,
+              "cutoff_tie": false,
+              "null_status": "EXACT_YEAR_CONDITIONAL_EXCHANGEABILITY",
+              "observed_total_events": 4,
+              "risk_set_n": 34,
+              "top_k_hits_max": 2,
+              "top_k_hits_min": 2,
+              "year_conditional_null": {
+                "cells": [
+                  {
+                    "events": 4,
+                    "expected_random_hits": 0.5882352941176471,
+                    "population": 34,
+                    "selected_slots": 5,
+                    "year": 2025
+                  }
+                ],
+                "central_95pct_random_hit_range": [
+                  0,
+                  2
+                ],
+                "expected_hits": 0.5882352941176471,
+                "hit_count_probability_mass": {
+                  "0": 0.512139899948249,
+                  "1": 0.39395376919096087,
+                  "2": 0.08754528204243574,
+                  "3": 0.006253234431602553,
+                  "4": 0.00010781438675176815
+                },
+                "observed_hits": 2,
+                "one_sided_probability_random_hits_at_least_observed": 0.09390633086079006
+              }
+            }
+          },
+          "pooled_fixed_capacity": {
+            "alert_capacity": 5,
+            "cutoff_tie": false,
+            "null_status": "EXACT_YEAR_CONDITIONAL_EXCHANGEABILITY",
+            "observed_total_events": 10,
+            "risk_set_n": 71,
+            "top_k_hits_max": 2,
+            "top_k_hits_min": 2,
+            "year_conditional_null": {
+              "cells": [
+                {
+                  "events": 6,
+                  "expected_random_hits": 0.6486486486486487,
+                  "population": 37,
+                  "selected_slots": 4,
+                  "year": 2024
+                },
+                {
+                  "events": 4,
+                  "expected_random_hits": 0.11764705882352941,
+                  "population": 34,
+                  "selected_slots": 1,
+                  "year": 2025
+                }
+              ],
+              "central_95pct_random_hit_range": [
+                0,
+                2
+              ],
+              "expected_hits": 0.7662957074721781,
+              "hit_count_probability_mass": {
+                "0": 0.4203684653511643,
+                "1": 0.4163649561573437,
+                "2": 0.14122723811305127,
+                "3": 0.0207078061749342,
+                "4": 0.0013048144536033808,
+                "5": 2.6719749903140906e-05
+              },
+              "observed_hits": 2,
+              "one_sided_probability_random_hits_at_least_observed": 0.16326657849149198
+            }
+          },
+          "within_year_auc": {
+            "auc_pair_weighted": 0.7663398692810458,
+            "by_year": [
+              {
+                "comparable_positive_negative_pairs": 186,
+                "events": 6,
+                "n": 37,
+                "roc_auc_midrank": 0.8145161290322581,
+                "year": 2024
+              },
+              {
+                "comparable_positive_negative_pairs": 120,
+                "events": 4,
+                "n": 34,
+                "roc_auc_midrank": 0.6916666666666667,
+                "year": 2025
+              }
+            ],
+            "positive_negative_pairs": 306.0
+          }
+        },
+        "global_markov": {
+          "per_year_fixed_capacity": {
+            "2024": {
+              "alert_capacity": 5,
+              "cutoff_tie": true,
+              "null_status": "UNDEFINED_BOUNDARY_TIE",
+              "observed_total_events": 6,
+              "risk_set_n": 37,
+              "top_k_hits_max": 5,
+              "top_k_hits_min": 0,
+              "year_conditional_null": null
+            },
+            "2025": {
+              "alert_capacity": 5,
+              "cutoff_tie": true,
+              "null_status": "UNDEFINED_BOUNDARY_TIE",
+              "observed_total_events": 4,
+              "risk_set_n": 34,
+              "top_k_hits_max": 4,
+              "top_k_hits_min": 0,
+              "year_conditional_null": null
+            }
+          },
+          "pooled_fixed_capacity": {
+            "alert_capacity": 5,
+            "cutoff_tie": true,
+            "null_status": "UNDEFINED_BOUNDARY_TIE",
+            "observed_total_events": 10,
+            "risk_set_n": 71,
+            "top_k_hits_max": 5,
+            "top_k_hits_min": 0,
+            "year_conditional_null": null
+          },
+          "within_year_auc": {
+            "auc_pair_weighted": 0.5,
+            "by_year": [
+              {
+                "comparable_positive_negative_pairs": 186,
+                "events": 6,
+                "n": 37,
+                "roc_auc_midrank": 0.5,
+                "year": 2024
+              },
+              {
+                "comparable_positive_negative_pairs": 120,
+                "events": 4,
+                "n": 34,
+                "roc_auc_midrank": 0.5,
+                "year": 2025
+              }
+            ],
+            "positive_negative_pairs": 306.0
+          }
+        }
+      },
+      "risk_set_n": 71,
+      "transitions": 10
+    }
+  },
+  "schema": "idealab.psico.geo2027_exact_conditional_ranking_null.v1",
+  "source_prior_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "source_separation": [
+    "23.1→25.1 (2022→2024)",
+    "24.1→26.1 (2023→2025)"
+  ],
+  "status": "POST_HOC_EXPLORATORY_DESCRIPTIVE_RANDOMIZATION"
+}
