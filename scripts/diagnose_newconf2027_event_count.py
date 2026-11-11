@@ -7,6 +7,7 @@ The 196 issued probabilities are read without alteration. Conditional
 independence across countries is assumed only for this illustrative scenario.
 """
 import argparse
+import hashlib
 import json
 from pathlib import Path
 
@@ -68,8 +69,15 @@ def dependence_sensitivity(probabilities, common_shock_weights=(0.0, 0.1, 0.25, 
         })
     return scenarios
 
+FROZEN_ISSUE_SHA256 = "e4482da7396872645d5101115435143d98fd9fdb1db1b1fdf41a42c99fc04b74"
+
+
 def diagnose(path):
-    issued = json.loads(Path(path).read_text(encoding="utf-8"))
+    issued_bytes = Path(path).read_bytes()
+    manifest = json.loads(Path("data/forecast-2027-newconf-manifest.json").read_text(encoding="utf-8"))
+    if hashlib.sha256(issued_bytes).hexdigest() != FROZEN_ISSUE_SHA256 or manifest.get("forecast_sha256") != FROZEN_ISSUE_SHA256 or manifest.get("outcomes_resolved") != 0:
+        raise ValueError("NEWCONF-2027 immutable issue bytes, manifest, or unresolved state mismatch")
+    issued = json.loads(issued_bytes.decode("utf-8"))
     rows = issued["countries"]
     ids = [str(row["country_id"]) for row in rows]
     if len(rows) != 196 or len(set(ids)) != 196 or issued.get("forecast_id") != "PSICO-QGEO01-NEWCONF2027-ORIGIN2025-V1":
