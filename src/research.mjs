@@ -828,6 +828,92 @@ export function verifyResearch(data) {
        y.later_eligible_onsets_diagnostic_only===realizedEvents;
     }))
     throw Error("Verified country-level onset2 known and contingent eligibility counts altered");
+  const mult=data.multiple_onset_newconf_study;
+  if(!mult||
+     mult.id!=="EMP-QGEO01-MULTIPLE-NEWCONF-20261111"||
+     mult.status!=="POST_HOC_SOURCE_SEPARATED_NO_CONFIRMATORY_OR_PROSPECTIVE_SKILL"||
+     mult.question!=="Q-GEO-01"||
+     mult.source_report!=="data/country-multiple-onset-source-audit.json"||
+     mult.experiment_report!=="data/country-multiple-newconf-experiment.json"||
+     mult.codebook!=="https://ucdp.uu.se/downloads/onset/ucdp-codebook-onset-251.pdf"||
+     mult.target!=="ANY(newconf=1), UCDP Intrastate Country Level Multiple Onset country-year aggregate"||
+     !mult.alternate_target?.includes("NOT comparable as same event")||
+     mult.source23?.sha256!=="a31abf6c278bd3a14d6c5b64e075cb38cebe63c95e0535454426c09be21d60e3"||
+     mult.source25?.sha256!=="5fe7411942aa7e6a38d6386faa64f4d7f0703482509f121c4136c0e3223d7f05"||
+     mult.source23?.url!=="https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-multiple-onset-231.csv"||
+     mult.source25?.url!=="https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-multiple-onset-251.csv"||
+     mult.source23.source_episode_rows!==12212||
+     mult.source23.unique_country_years!==12161||
+     mult.source23.duplicate_country_year_keys!==39||
+     mult.source25.source_episode_rows!==12606||
+     mult.source25.unique_country_years!==12553||
+     mult.source25.duplicate_country_year_keys!==41||
+     mult.country_level_variant3_has_valid_multi_episode_rows!==true||
+     mult.codebook_newconf_different_from_onset2!==true||
+     mult.origin_conflict_active_included_as_eligible!==true||
+     mult.all_external_newconf_in_active_countries!==true||
+     mult.original_2027_probabilities_unchanged!==true||
+     mult.outcome_2027_evaluated!==0||
+     mult.prospectively_demonstrated_skill!==false||
+     mult.independent_confirmatory_holdout!==false||
+     !mult.limitations?.includes("intervalo bootstrap agrupado por país incluye cero")||
+     !mult.limitations?.includes("ranking top-k tiene empates")||
+     !mult.limitations?.includes("33 positivos distintos"))
+      throw Error("Multiple newconf cannot be presented as country onset2 or independently validated");
+  if(mult.historical_rolling?.evaluations!==2744||
+     mult.historical_rolling.distinct_country_years!==1568||
+     mult.historical_rolling.positive_evaluations!==49||
+     mult.historical_rolling.distinct_positive_country_years!==33||
+     mult.historical_cross_vintage?.evaluations!==392||
+     mult.historical_cross_vintage.positive_country_years!==3)
+      throw Error("Multiple newconf historical forecast evaluations cannot be counted as independent onsets");
+  const expectedNewconf={
+    internal:{
+      global_full:[0.017621516930017327,0.09319054432975116],
+      global_last5:[0.017785903916758276,0.09584209560185958],
+      country_eb:[0.01756740861572361,0.09202493518253232],
+      activity_global:[0.017364728546763367,0.08452885167599168],
+      activity_country:[0.017523343045439396,0.0874429754904633],
+      no_newconf:[0.017857142857142856,null]
+    },
+    external:{
+      global_full:[0.007622419971211855,0.04619501232740663],
+      global_last5:[0.00760089398355316,0.04526181035933084],
+      country_eb:[0.007221450462189987,0.03572861061648642],
+      activity_global:[0.007345959482985376,0.036990723914213736],
+      activity_country:[0.007154106725744002,0.033778678521398556],
+      no_newconf:[0.007653061224489796,null]
+    }
+  };
+  if(!["internal","external"].every(part=>
+    Object.entries(expectedNewconf[part]).every(([key,[brier,ll]])=>{
+      const row=part==="internal"?mult.historical_rolling.metrics?.[key]:
+              mult.historical_cross_vintage.metrics?.[key];
+      return row&&loose(row.brier,brier)&&(ll===null?row.logloss===null:loose(row.logloss,ll));
+    })))
+      throw Error("Multiple newconf candidates Brier/logloss results changed");
+  const newconfCI=mult.historical_cross_vintage.country_bootstrap_activity_minus_last5;
+  if(!Array.isArray(newconfCI)||newconfCI.length!==2||
+    !loose(newconfCI[0],-0.0015270316160196414)||
+    !loose(newconfCI[1],0.00036350568341151626))
+      throw Error("Multiple newconf uncertainty must not be presented as significant improvement");
+  const expectedNewconfAnnual=[
+    [2023,2022,1,196,2,2,1,2,34,2,2,true],
+    [2024,2022,2,196,1,1,1,1,34,1,1,true]
+  ];
+  if(!Array.isArray(mult.historical_cross_vintage.annual)||
+     mult.historical_cross_vintage.annual.length!==2||
+    !expectedNewconfAnnual.every(([year,origin,horizon,n,events,episodes,onset2,notOnset2,active,activeEvents,top20,tied],i)=>{
+      const a=mult.historical_cross_vintage.annual[i];
+      return a?.year===year&&a.origin===origin&&a.horizon===horizon&&
+       a.n===n&&a.new_conflict_countries===events&&
+       a.new_conflict_episode_rows===episodes&&a.onset2_positive_countries===onset2&&
+       a.newconf_positive_without_onset2===notOnset2&&
+       a.active_at_origin===active&&a.newconf_positive_active_at_origin===activeEvents&&
+       a.top20_hits===top20&&a.top20_boundary_tied===tied&&
+       Number.isFinite(a.average_precision)&&Number.isFinite(a.roc_auc);
+    }))
+      throw Error("Multiple newconf 2023/24 episode labels or tied alert rankings altered");
   return true;
 }
 export function verifyIssuedForecast2027(document, manifest){
