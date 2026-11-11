@@ -95,7 +95,7 @@ jobs:
       - name: Reconstruct original GEO two-year transition scores from SHA-pinned releases
         run: |
           set -e
-          PYTHONDONTWRITEBYTECODE=1 python3 scripts/evaluate_geo2027_transition_alerts.py
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/evaluate_geo2027_transition_alerts.py --check-report data/geo2027-transition-alert-ranking-archival.json
   geo2027_transition_diagnostic:
     runs-on: ubuntu-latest
     steps:
