@@ -15,9 +15,12 @@ from probe_multiple_onset_vintages import PINNED as MULTIPLE_PINNED
 from experiment_multiple_newconf import load_multiple
 URL="https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-261-csv.zip"
 LIMIT=8_000_000
+PINNED_SHA="5f951743222964674a446e32a5a871077b29bd13349588d85fc59953d89c878a"
 
 def audit(fetcher=fetch,multiple_loader=load_multiple):
     raw=fetcher(URL,LIMIT)
+    if hashlib.sha256(raw).hexdigest()!=PINNED_SHA:
+        raise ValueError("Official UCDP PRIO 26.1 source digest changed")
     rows,cols=source_zip(raw)
     origin,meta=multiple_loader("25.1")
     cohort={cid for cid,h in origin.items() if 2024 in h}
@@ -64,6 +67,28 @@ def audit(fetcher=fetch,multiple_loader=load_multiple):
         "2026_2027_labels_observed":False,
         "2027_prospective_forecast_issued":False
     }
+
+def activity_2025(fetcher=fetch):
+    raw=fetcher(URL,LIMIT)
+    if hashlib.sha256(raw).hexdigest()!=PINNED_SHA:
+        raise ValueError("Official UCDP PRIO 26.1 source hash changed")
+    rows,fields=source_zip(raw)
+    found=set()
+    for row in rows:
+        if row["type_of_conflict"].strip() not in ALLOWED_TYPES:
+            continue
+        cid=parse_country_code(row["gwno_a"])
+        loc=parse_country_code(row["gwno_loc"])
+        if cid is None or cid!=loc:
+            raise ValueError("2025 UCDP government GW country ID ambiguous")
+        if int(row["year"])==2025:
+            found.add(cid)
+        if int(row["year"])>2025:
+            raise ValueError("Future official activity in 26.1 source")
+    if len(found)!=32:
+        raise ValueError("2025 origin armed-conflict country count changed")
+    return found
+
 
 if __name__=="__main__":
     d=audit()
