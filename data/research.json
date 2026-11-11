@@ -2005,5 +2005,42 @@
     "prospectively_demonstrated_skill": false,
     "independent_confirmatory_holdout": false,
     "limitations": "El objetivo ANY(newconf) no es onset2. En los dos años 2023/24 existen solo 3 positivos newconf, todos con conflicto interno activo en el origen 2022, y ninguno tiene onset2=1 en esos mismos país-año. El Brier externo del modelo con actividad es menor que la tasa global de cinco años, pero el intervalo bootstrap agrupado por país incluye cero. El ranking top-k tiene empates en los puntos de corte: no es un orden único ni demuestra capacidad de alertar sobre individuos. Los cinco modelos y la elección del objetivo son posteriores a la inspección de estos años: estudio exploratorio ex post, no confirmatorio. Los 2744 pronósticos internos representan solo 1568 país-año únicos, con 33 positivos distintos. Nunca se modifican los 196 pronósticos GEO-2027."
+  },
+  "prospective_newconf_2027_issue": {
+    "id": "PSICO-QGEO01-NEWCONF2027-ORIGIN2025-V1",
+    "status": "ISSUED_PROSPECTIVE_UNRESOLVED",
+    "distinct_from_statebased_geo2027": true,
+    "target": "ANY(newconf=1) of UCDP Country Level Multiple Onset in 2027, government-country-year",
+    "target_year": 2027,
+    "forecast_file": "data/forecast-2027-newconf.json",
+    "manifest_file": "data/forecast-2027-newconf-manifest.json",
+    "audit_file": "data/forecast-2027-newconf-audit.json",
+    "protocol_file": "docs/newconf-2027-protocol.md",
+    "first_public_commit": "f3f2c17c9d4f5dd56266e376cd2d765f33f3dd97",
+    "first_public_commit_utc": "2026-11-11T10:10:21Z",
+    "preregistered_main_commit": "1ff68f29914124763e29651e956f0086ce0caac4",
+    "forecast_sha256": "e4482da7396872645d5101115435143d98fd9fdb1db1b1fdf41a42c99fc04b74",
+    "generator_sha256": "353508031023a16f901b61c80d23f6ee83af29e80745a757011881f0dc8c2d14",
+    "source_shas": {
+      "multiple_onset_25_1_sha256": "5fe7411942aa7e6a38d6386faa64f4d7f0703482509f121c4136c0e3223d7f05",
+      "acd_25_1_sha256": "b49f7e80510d8a5779a52d872aef5b26456b3f5cbdd3ec32031339488e81813f",
+      "acd_26_1_sha256": "5f951743222964674a446e32a5a871077b29bd13349588d85fc59953d89c878a"
+    },
+    "country_count": 196,
+    "origin_2025_active": 32,
+    "data_last_year_newconf": 2024,
+    "activity_origin_year": 2025,
+    "forecast_year": 2027,
+    "model_expected_positive_country_years": 2.490944756,
+    "baseline_expected_positive_country_years": 1.397148676,
+    "p_min": 0.003162675831,
+    "p_max": 0.107705006576,
+    "unique_model_probabilities": 12,
+    "forecast_country_outcomes_resolved": 0,
+    "demonstrated_predictive_skill": false,
+    "historical_hypotheses_chosen_after_2023_24_observed": true,
+    "official_first_complete_2027_outcome_release_pending": true,
+    "original_statebased_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+    "notice": "Emisión prospectiva publicada antes de 2027, distinta del proyecto GEO-2027 sobre violencia state-based. Las 196 probabilidades de NEWCONF-2027 son compromisos congelados y las cifras 2,49 y 1,397 son sumas de probabilidades, no conflictos observados. Entrenamiento Multiple Onset 25.1 hasta 2024 y actividad intrastatal origen 2025 de ACD 26.1. Se esperará a la primera edición oficial UCDP Multiple Onset completa con 2027; no hay skill demostrado. Los modelos se diseñaron tras ver 2023/24, sin validación externa independiente."
   }
 }

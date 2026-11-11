@@ -1,0 +1,34 @@
+{
+  "activity_global_expected_newconf_country_years": 2.521787855,
+  "baseline_expected_newconf_country_years": 1.397148676,
+  "country_eb_expected_newconf_country_years": 2.474803118,
+  "first_public_commit_utc": "2026-11-11T10:10:21Z",
+  "first_public_forecast_commit": "f3f2c17c9d4f5dd56266e376cd2d765f33f3dd97",
+  "forecast_id": "PSICO-QGEO01-NEWCONF2027-ORIGIN2025-V1",
+  "forecast_sha256": "e4482da7396872645d5101115435143d98fd9fdb1db1b1fdf41a42c99fc04b74",
+  "generator_sha256": "353508031023a16f901b61c80d23f6ee83af29e80745a757011881f0dc8c2d14",
+  "independent_skill_demonstrated": false,
+  "interpretation": "Expected value sums of issued probabilities, NOT observed events. First official UCDP Multiple Onset edition with 2027 outcomes required before evaluation; historical 2023/24 comparisons are exploratory.",
+  "issued_country_count": 196,
+  "maximum_model_probability": 0.107705006576,
+  "minimum_model_probability": 0.003162675831,
+  "model_expected_newconf_country_years": 2.490944756,
+  "model_probability_quantile_median": [
+    0.003162675831,
+    0.003162675831
+  ],
+  "origin_2025_active_countries": 32,
+  "preregistered_protocol_main_commit": "1ff68f29914124763e29651e956f0086ce0caac4",
+  "schema": "idealab.psico.prospective_newconf_2027_immutable_audit.v1",
+  "source_sha256": {
+    "acd_25_1": "b49f7e80510d8a5779a52d872aef5b26456b3f5cbdd3ec32031339488e81813f",
+    "acd_26_1": "5f951743222964674a446e32a5a871077b29bd13349588d85fc59953d89c878a",
+    "multiple_onset_25_1": "5fe7411942aa7e6a38d6386faa64f4d7f0703482509f121c4136c0e3223d7f05"
+  },
+  "statebased_2027_forecast_unchanged": true,
+  "status": "ISSUED_PROSPECTIVE_OUTCOMES_UNRESOLVED",
+  "target_labels_2027_resolved": 0,
+  "target_year": 2027,
+  "training_newconf_last_year": 2024,
+  "unique_model_probabilities": 12
+}

@@ -914,6 +914,42 @@ export function verifyResearch(data) {
        Number.isFinite(a.average_precision)&&Number.isFinite(a.roc_auc);
     }))
       throw Error("Multiple newconf 2023/24 episode labels or tied alert rankings altered");
+  const issuedNew=data.prospective_newconf_2027_issue;
+  if(!issuedNew||
+     issuedNew.id!=="PSICO-QGEO01-NEWCONF2027-ORIGIN2025-V1"||
+     issuedNew.status!=="ISSUED_PROSPECTIVE_UNRESOLVED"||
+     issuedNew.distinct_from_statebased_geo2027!==true||
+     issuedNew.target!=="ANY(newconf=1) of UCDP Country Level Multiple Onset in 2027, government-country-year"||
+     issuedNew.target_year!==2027||
+     issuedNew.forecast_file!=="data/forecast-2027-newconf.json"||
+     issuedNew.manifest_file!=="data/forecast-2027-newconf-manifest.json"||
+     issuedNew.audit_file!=="data/forecast-2027-newconf-audit.json"||
+     issuedNew.protocol_file!=="docs/newconf-2027-protocol.md"||
+     issuedNew.first_public_commit!=="f3f2c17c9d4f5dd56266e376cd2d765f33f3dd97"||
+     issuedNew.first_public_commit_utc!=="2026-11-11T10:10:21Z"||
+     issuedNew.preregistered_main_commit!=="1ff68f29914124763e29651e956f0086ce0caac4"||
+     issuedNew.forecast_sha256!=="e4482da7396872645d5101115435143d98fd9fdb1db1b1fdf41a42c99fc04b74"||
+     issuedNew.generator_sha256!=="353508031023a16f901b61c80d23f6ee83af29e80745a757011881f0dc8c2d14"||
+     issuedNew.original_statebased_sha256!=="5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5"||
+     issuedNew.source_shas?.multiple_onset_25_1_sha256!=="5fe7411942aa7e6a38d6386faa64f4d7f0703482509f121c4136c0e3223d7f05"||
+     issuedNew.source_shas?.acd_25_1_sha256!=="b49f7e80510d8a5779a52d872aef5b26456b3f5cbdd3ec32031339488e81813f"||
+     issuedNew.source_shas?.acd_26_1_sha256!=="5f951743222964674a446e32a5a871077b29bd13349588d85fc59953d89c878a"||
+     issuedNew.country_count!==196||issuedNew.origin_2025_active!==32||
+     issuedNew.data_last_year_newconf!==2024||
+     issuedNew.activity_origin_year!==2025||
+     issuedNew.forecast_year!==2027||
+     !loose(issuedNew.model_expected_positive_country_years,2.490944756)||
+     !loose(issuedNew.baseline_expected_positive_country_years,1.397148676)||
+     !loose(issuedNew.p_min,0.003162675831)||
+     !loose(issuedNew.p_max,0.107705006576)||
+     issuedNew.unique_model_probabilities!==12||
+     issuedNew.forecast_country_outcomes_resolved!==0||
+     issuedNew.demonstrated_predictive_skill!==false||
+     issuedNew.historical_hypotheses_chosen_after_2023_24_observed!==true||
+     issuedNew.official_first_complete_2027_outcome_release_pending!==true||
+     !issuedNew.notice?.includes("2,49 y 1,397 son sumas de probabilidades")||
+     !issuedNew.notice?.includes("no hay skill demostrado"))
+       throw Error("Prospective NEWCONF 2027 issued probabilities or outcome status falsified");
   return true;
 }
 export function verifyIssuedForecast2027(document, manifest){

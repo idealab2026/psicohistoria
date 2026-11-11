@@ -167,6 +167,34 @@ function renderHistoricalLabelRevisions(){
  r.source_urls.map((url,i)=>'<p><a href="'+safe(url)+'" target="_blank" rel="noopener noreferrer">UCDP '+(i===0?'23.1':'25.1')+'</a> · SHA-256 <code>'+safe(r.source_sha256s[i])+'</code></p>').join("")+
  '<p>Contraste reproducible en el expediente institucional. Las fechas de publicación originales no están certificadas criptográficamente. Este hallazgo no acredita skill prospectivo.</p></details>','soft');
 }
+function renderProspectiveNewconf2027(){
+ const x=state.research?.prospective_newconf_2027_issue;
+ if(!x)return "";
+ const num=v=>new Intl.NumberFormat("es-ES",{minimumFractionDigits:2,maximumFractionDigits:2}).format(v);
+ const percent=v=>new Intl.NumberFormat("es-ES",{style:"percent",minimumFractionDigits:2,maximumFractionDigits:2}).format(v);
+ return section("PREDICCIONES · CONFLICTOS NUEVOS 2027 · EMISIÓN PROSPECTIVA",
+   "¿En qué países aparecerán conflictos adicionales en 2027?",
+   "Pronóstico newconf para 196 países, con actividad de origen en 2025 y etiquetas históricas hasta 2024. Es una cohorte científica independiente de GEO-2027, que predice la variable de 25 muertes organizadas.")+
+ '<div class="section-grid three">'+
+ box('<div class="eyebrow">PAÍSES EMITIDOS</div><div class="card-number">'+safe(x.country_count)+'</div><p>32 con conflictos intrastatales activos en el origen de 2025</p>')+
+ box('<div class="eyebrow">SUMA DE PROBABILIDADES DEL MODELO</div><div class="card-number">'+num(x.model_expected_positive_country_years)+'</div><p>Países-año con newconf esperados en 2027, NO casos observados</p>')+
+ box('<div class="eyebrow">REFERENCIA GLOBAL 2020–2024</div><div class="card-number">'+num(x.baseline_expected_positive_country_years)+'</div><p>Expectativa de la tasa histórica, fijada antes del resultado</p>')+
+ '</div>'+
+ box('<h3>Emisión registrada antes del año objetivo</h3>'+
+ '<p><strong>Estado: emitida y no evaluada.</strong> Primer commit público de las 196 probabilidades: <code>'+
+ safe(x.first_public_commit.slice(0,12))+'</code>, fecha '+safe(x.first_public_commit_utc)+
+ '. Protocolo preregistrado en commit <code>'+safe(x.preregistered_main_commit.slice(0,12))+'</code>.</p>'+
+ '<p><a href="./data/forecast-2027-newconf.json" target="_blank" rel="noopener noreferrer">196 probabilidades individuales por código de país</a> · '+
+ '<a href="./data/forecast-2027-newconf-manifest.json" target="_blank" rel="noopener noreferrer">Manifiesto de emisión y hash SHA-256</a> · '+
+ '<a href="./data/forecast-2027-newconf-audit.json" target="_blank" rel="noopener noreferrer">Auditoría inmutable</a></p>'+
+ '<p><a href="https://github.com/idealab2026/psicohistoria/commit/'+safe(x.first_public_commit)+
+ '" target="_blank" rel="noopener noreferrer">Ver commit original en GitHub</a></p>','soft')+
+ box('<h3>Qué significará acertar</h3>'+
+ '<p>La variable objetivo es <code>ANY(newconf=1)</code> entre episodios registrados por UCDP Country Level Multiple Onset durante 2027, <strong>no onset2</strong> ni la permanencia de violencia previa. La métrica primaria será Brier del modelo menos Brier de la referencia global de cinco años para países resueltos en la primera edición completa con 2027. Los resultados no publicados no se interpretan como ausencia de conflicto.</p>'+
+ '<p>Hasta ahora <strong>'+safe(x.forecast_country_outcomes_resolved)+'</strong> desenlaces de 2027 han sido verificados. No se ha demostrado habilidad predictiva. El modelo se diseñó después de examinar el período 2023–2024; los ensayos históricos no son confirmatorios.</p>'+
+ '<p>Las probabilidades individuales oscilan entre '+percent(x.p_min)+' y '+percent(x.p_max)+
+ '. No se emitieron certezas ni se recalibró la emisión previa GEO-2027.</p>','soft');
+}
 function renderMultipleNewconf(){
  const m=state.research?.multiple_onset_newconf_study;
  if(!m)return "";
@@ -668,7 +696,7 @@ function renderEmpiricalEvidence(){
 }
 function renderScience(){
  const d=state.data,rows=d.studies.map(s=>({s,score:score(s)}));
- return renderMultipleNewconf()+renderOnset2CountryRiskset()+renderConflictIncidenceOnset2()+renderOnset2LaggedSignal()+renderOnset2Homogeneous()+renderNewEntryComparator()+renderOriginStateSkill()+renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
+ return renderProspectiveNewconf2027()+renderMultipleNewconf()+renderOnset2CountryRiskset()+renderConflictIncidenceOnset2()+renderOnset2LaggedSignal()+renderOnset2Homogeneous()+renderNewEntryComparator()+renderOriginStateSkill()+renderArchivalCrossRelease()+renderStatebasedHistoricalBacktest()+renderRecencySensitivity()+renderExternalVintageHoldout()+renderVintageHoldout()+renderHistoricalLabelRevisions()+renderConditionalRisksetEvidence()+renderEmpiricalEvidence()+section("INVESTIGACIÓN · DEMOSTRACIONES","Pruebas sintéticas del evaluador","La tabla siguiente usa muestras inventadas para probar el software; no debe confundirse con el contraste UCDP real mostrado arriba.")+
  '<div class="table-wrap"><table><thead><tr><th>Estudio sintético</th><th>Observaciones</th><th>Brier modelo</th><th>Brier referencia</th><th>Mejora relativa</th><th>Validez</th></tr></thead><tbody>'+rows.map(({s,score:r})=>'<tr><td>'+safe(s.title)+'</td><td>'+r.n+'</td><td>'+format(r.brier)+'</td><td>'+format(r.baselineBrier)+'</td><td>'+formatPct(r.skill)+'</td><td>Sintético</td></tr>').join("")+'</tbody></table></div>'+
  section("REPRODUCIBILIDAD","Evaluación de un experimento","Selecciona un estudio para analizar las probabilidades ficticias y compararlas con su referencia fija.")+
  renderStudySelector()+'<div class="two-col">'+box('<svg id="study-chart" class="chart-svg frame-chart" viewBox="0 0 760 285" role="img" aria-label="Evaluación probabilística ficticia"></svg>')+
@@ -795,7 +823,7 @@ function render(){
   const b=document.createElement("button");b.type="button";b.textContent=label;b.dataset.action="navigate";b.dataset.value=id;
   b.classList.toggle("active",state.view===id);sub.append(b);
  }
- const views={archive:renderArchive,brief:()=>button("Ver estructura del archivo científico","navigate","archive")+renderBrief(),futures:renderFutures,shadow2027:renderShadow,overview:renderOverview,
+ const views={archive:renderArchive,brief:()=>button("Ver estructura del archivo científico","navigate","archive")+renderBrief(),futures:renderFutures,shadow2027:()=>renderProspectiveNewconf2027()+renderShadow(),overview:renderOverview,
   science:renderScience,questions:renderUsefulQuestions,registry:renderResearchRegistry,operations:renderOperations,roadmap:renderRoadmap,
   portfolio:()=>renderHistoricalProjectPortfolio(state.projectCatalog),ideas:renderIdeas,video:renderVideo};
  $("app").innerHTML=views[state.view]();
