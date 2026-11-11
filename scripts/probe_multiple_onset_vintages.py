@@ -20,6 +20,18 @@ from evaluate_homogeneous_onset2 import SOURCES
 VERSIONS=("23.1","25.1")
 REQUESTED_CAPTION="Intrastate Country Level Multiple Onset CSV"
 SCHEMA="idealab.psico.onset2_country_multiple_vintage_probe.v1"
+PINNED={
+ "23.1":{
+   "url":"https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-multiple-onset-231.csv",
+   "sha256":"a31abf6c278bd3a14d6c5b64e075cb38cebe63c95e0535454426c09be21d60e3",
+   "last_year":2022,
+ },
+ "25.1":{
+   "url":"https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-multiple-onset-251.csv",
+   "sha256":"5fe7411942aa7e6a38d6386faa64f4d7f0703482509f121c4136c0e3223d7f05",
+   "last_year":2024,
+ }
+}
 
 def source_urls(html):
     links=discover(html.decode("utf-8-sig"))
@@ -41,6 +53,8 @@ def source_urls(html):
         out[version]=url
     if out[VERSIONS[0]]==out[VERSIONS[1]]:
         raise ValueError("Different editions cannot share source bytes")
+    if any(out[v]!=PINNED[v]["url"] for v in VERSIONS):
+        raise ValueError("Official multiple-onset archive changed from source-pinned links")
     return out
 
 def scan(data,last_year):
@@ -125,7 +139,9 @@ def probe(fetcher=fetch):
     }
     for version in VERSIONS:
         data=fetcher(urls[version],MAX_CSV)
-        labels,summary=scan(data,2022 if version=="23.1" else 2024)
+        if digest(data)!=PINNED[version]["sha256"]:
+            raise ValueError("Official multiple onset source SHA-256 changed: "+version)
+        labels,summary=scan(data,PINNED[version]["last_year"])
         country_source=SOURCES[version]
         oldbytes=fetcher(country_source["url"],MAX_CSV)
         if digest(oldbytes)!=country_source["sha256"]:
