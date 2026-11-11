@@ -168,7 +168,7 @@ class OfficialNewconf2027CandidateTests(unittest.TestCase):
         self.assertEqual(r["boundary_tied_countries"],6)
         self.assertEqual(r["lower_possible_hits"],1)
         self.assertEqual(r["upper_possible_hits"],2)
-        with self.assertRaisesRegex(ValueError,"all 196"):
+        with self.assertRaisesRegex(ValueError,"any issued country outcome is missing"):
             topk_tie_bounds(rows[:-1],10)
 
     def test_no_false_prospective_skill_even_with_perfect_synthetic_outcomes(self):
