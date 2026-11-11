@@ -185,6 +185,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", required=True)
     parser.add_argument("--print-summary", action="store_true")
+    parser.add_argument("--print-canonical", action="store_true")
     args = parser.parse_args()
     raw = FORECAST_PATH.read_bytes()
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf8"))
@@ -196,6 +197,10 @@ def main():
           "entry", len(result["risk_groups"]["0"]["selected_countries"]),
           "resolution", len(result["risk_groups"]["1"]["selected_countries"]),
           "outcomes_resolved", 0)
+    if args.print_canonical:
+        print("GEO2027_ALERTS_CANONICAL_BEGIN")
+        print(body, end="")
+        print("GEO2027_ALERTS_CANONICAL_END")
     if args.print_summary:
         print("GEO2027_ALERTS_CANDIDATE_BEGIN")
         print(json.dumps(result, indent=2, ensure_ascii=False, sort_keys=True))
