@@ -1,0 +1,162 @@
+{
+  "by_target_year": {
+    "2024": {
+      "brier": {
+        "hard_origin_persistence": 0.05102040816326531,
+        "p_baseline_global_5y": 0.14675609916525365,
+        "p_global_markov": 0.04971046344725325,
+        "p_model": 0.04143146187683863
+      },
+      "delta_model_minus_global_markov": -0.00827900157041462,
+      "delta_model_minus_hard_persistence": -0.009588946286426675,
+      "empirical_outcome_rate": 0.17857142857142858,
+      "mean_prediction_model": 0.1780728721704847,
+      "n": 196,
+      "newly_active": 4,
+      "origin_active": 37,
+      "positives": 35,
+      "resolved": 6,
+      "transitions": 10
+    },
+    "2025": {
+      "brier": {
+        "hard_origin_persistence": 0.04081632653061224,
+        "p_baseline_global_5y": 0.14337964063056496,
+        "p_global_markov": 0.044131770372870444,
+        "p_model": 0.03873665194889448
+      },
+      "delta_model_minus_global_markov": -0.005395118423975963,
+      "delta_model_minus_hard_persistence": -0.002079674581717761,
+      "empirical_outcome_rate": 0.17346938775510204,
+      "mean_prediction_model": 0.16850862224587754,
+      "n": 196,
+      "newly_active": 4,
+      "origin_active": 34,
+      "positives": 34,
+      "resolved": 4,
+      "transitions": 8
+    }
+  },
+  "country_bootstrap_95_model_minus_global_markov": {
+    "0": [
+      -0.007929661537173997,
+      0.0006065840076577564
+    ],
+    "1": [
+      -0.03921559582757574,
+      -0.01164312545481721
+    ]
+  },
+  "ex_ante_origin_state": {
+    "0": {
+      "brier": {
+        "hard_origin_persistence": 0.024922118380062305,
+        "p_baseline_global_5y": 0.04566725941472705,
+        "p_global_markov": 0.025210281235017312,
+        "p_model": 0.022647529679559648
+      },
+      "delta_model_minus_global_markov": -0.0025627515554576645,
+      "delta_model_minus_hard_persistence": -0.002274588700502657,
+      "empirical_outcome_rate": 0.024922118380062305,
+      "mean_prediction_model": 0.042056007016355146,
+      "n": 321,
+      "newly_active": 8,
+      "origin_active": 0,
+      "positives": 8,
+      "resolved": 0,
+      "transitions": 8
+    },
+    "1": {
+      "brier": {
+        "hard_origin_persistence": 0.14084507042253522,
+        "p_baseline_global_5y": 0.5944706299697614,
+        "p_global_markov": 0.14507855707469983,
+        "p_model": 0.1189168067986626
+      },
+      "delta_model_minus_global_markov": -0.026161750276037232,
+      "delta_model_minus_hard_persistence": -0.021928263623872624,
+      "empirical_outcome_rate": 0.8591549295774648,
+      "mean_prediction_model": 0.7666196430050282,
+      "n": 71,
+      "newly_active": 0,
+      "origin_active": 71,
+      "positives": 61,
+      "resolved": 10,
+      "transitions": 10
+    }
+  },
+  "ex_post_outcome_class_descriptive_only": {
+    "changed": {
+      "brier": {
+        "hard_origin_persistence": 1.0,
+        "p_baseline_global_5y": 0.3216043339975961,
+        "p_global_markov": 0.6719876758857288,
+        "p_model": 0.6288587073126134
+      },
+      "delta_model_minus_global_markov": -0.043128968573115434,
+      "delta_model_minus_hard_persistence": -0.3711412926873866,
+      "empirical_outcome_rate": 0.4444444444444444,
+      "mean_prediction_model": 0.4453397435095,
+      "n": 18,
+      "newly_active": 8,
+      "origin_active": 10,
+      "positives": 8,
+      "resolved": 10,
+      "transitions": 18
+    },
+    "unchanged": {
+      "brier": {
+        "hard_origin_persistence": 0.0,
+        "p_baseline_global_5y": 0.13657146253482277,
+        "p_global_markov": 0.016837699633158093,
+        "p_model": 0.011747309032664839
+      },
+      "delta_model_minus_global_markov": -0.005090390600493254,
+      "delta_model_minus_hard_persistence": 0.011747309032664839,
+      "empirical_outcome_rate": 0.16310160427807488,
+      "mean_prediction_model": 0.16019748000651338,
+      "n": 374,
+      "newly_active": 0,
+      "origin_active": 61,
+      "positives": 61,
+      "resolved": 0,
+      "transitions": 0
+    }
+  },
+  "frozen_comparison": "Original GEO2027 country two-step Markov vs global two-step Markov, global 5-year rate and hard persistence",
+  "historical_forecasts_actually_issued": false,
+  "horizon_years": 2,
+  "hypothesis_posthoc_after_both_targets_known": true,
+  "limitations": "Results are retrospective source-separated reconstructions, not historically time-stamped forecasts. Forecasting ANY conflict is easier than predicting a change; evaluation conditional on observed changes is retrospective only. Bootstrap by country does not handle shared global or year shocks. Do not infer NEWCONF or onset2 skill from state-based conflict incidence.",
+  "outcome_conditioned_slices_not_predictive_subgroups": true,
+  "overall": {
+    "brier": {
+      "hard_origin_persistence": 0.04591836734693878,
+      "p_baseline_global_5y": 0.1450678698979093,
+      "p_global_markov": 0.046921116910061844,
+      "p_model": 0.04008405691286656
+    },
+    "delta_model_minus_global_markov": -0.006837059997195284,
+    "delta_model_minus_hard_persistence": -0.005834310434072218,
+    "empirical_outcome_rate": 0.1760204081632653,
+    "mean_prediction_model": 0.17329074720818113,
+    "n": 392,
+    "newly_active": 8,
+    "origin_active": 71,
+    "positives": 69,
+    "resolved": 10,
+    "transitions": 18
+  },
+  "prospective_2027_forecast_modified": false,
+  "prospective_2027_outcomes_resolved": 0,
+  "schema": "idealab.psico.geo2027_transition_attribution_cross_release.v1",
+  "source_release_dates_independently_notarized": false,
+  "source_versions_and_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "status": "RETROSPECTIVE_EX_POST_DIAGNOSTIC_NO_PROSPECTIVE_SKILL",
+  "target": "UCDP OrganizedViolenceCY sb_total_deaths_best >=25 per GW country-year"
+}
