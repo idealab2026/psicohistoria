@@ -4,6 +4,19 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## Q-GEO-01 · Evaluador oficial FUTURO de NEWCONF-2027 (11-11-2026)
+
+**Implementado antes de que exista el outcome, sin evaluar ni modificar la emisión original.** Se añade un [contrato de evaluación explícito](docs/newconf-2027-evaluation-contract.md) y el ejecutable `scripts/evaluate_2027_newconf_official.py`. El evaluador toma un CSV **futuro** original de UCDP Intrastate Country Level Multiple Onset con **2027**, URL UCDP HTTPS literal, SHA-256 y fecha posterior a 2027, pero **nunca certifica automáticamente** que el operador haya identificado la primera edición completa.
+
+- Lee y audita **antes de puntuar** el pronóstico de 196 países emitido el 11-11-2026, su hash, generador y manifiesto; no puede modificar ni reentrenar el modelo, la cohorte ni los comparadores.
+- Agrega registros de **episodios de conflictos** a `ANY(newconf=1)` por país-año. No utiliza `onset2`, no contabiliza episodios como países y, si falta un registro o una etiqueta en una fila, el país queda **no resuelto**, nunca negativo por defecto.
+- Con **menos de 187/196 outcomes resueltos**, informa solo cobertura y casos observados. Entre **187 y 195** permite puntuaciones explícitamente exploratorias, pero no rankings. Con **196** puede medir Brier, log-loss, calibración e **intervalos de top-k** válidos para cualquier desempate de probabilidades.
+- La métrica principal permanece congelada: **diferencia Brier modelo − global 2020–24** en la misma cohorte resuelta. Compara adicionalmente país EB, actividad global y referencia sin eventos; intervalo bootstrap de 2.000 remuestreos país.
+- Todos los informes se titulan **candidato de resolución** y conservan `first_complete_official_2027_release_independently_attested=false`, `future_predictive_skill_independently_verified=false`; el archivo de fuente por sí solo **no** acredita publicación original, independencia ni superioridad del modelo.
+- Se ejecutan pruebas adversariales `scripts/test_evaluate_2027_newconf_official.py` con datos **sintéticos**, como un job `prospective_newconf_2027_resolution_contract` obligatorio para próximos despliegues. **Ningún dato de 2027 se ha observado ni generado en esta implementación.**
+
+El [expediente de futura resolución #45](https://github.com/idealab2026/psicohistoria/issues/45) permanece abierto. La nueva herramienta es un contrato de falsación científica, **no** una mejora del pronóstico inicial ni una evaluación realizada.
+
 ## Q-GEO-01 · EMISIÓN PROSPECTIVA REAL NEWCONF-2027 (11-11-2026)
 
 **Estado: EMITIDA, PENDIENTE DE RESULTADOS.** El objetivo es **`ANY(newconf=1)` por país-año** en UCDP *Intrastate Country Level Multiple Onset*, **NO** el `onset2` de *Country Level Onset* ni la violencia anual state-based de 25 muertes ya emitida para GEO-2027.
