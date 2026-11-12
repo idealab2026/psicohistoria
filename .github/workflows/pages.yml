@@ -130,7 +130,7 @@ jobs:
           if test -f data/geo2027-shadow-break-even-frontier.json; then
             PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_shadow_break_even.py --check-report data/geo2027-shadow-break-even-frontier.json
           else
-            PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_shadow_break_even.py
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_shadow_break_even.py --check-report data/geo2027-shadow-break-even-frontier.json
           fi
   prospective_geo2027_calibrated_shadow_future_contract:
     runs-on: ubuntu-latest
