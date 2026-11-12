@@ -63,7 +63,7 @@ class ACD2027OfficialCountryNamesTests(unittest.TestCase):
             make_view(self.acd,self.geo+b" ",self.manifest)
         old=copy.deepcopy(self.manifest)
         old["forecast_sha256"]="0"*64
-        with self.assertRaisesRegex(ValueError,"already issued GEO2027"):
+        with self.assertRaisesRegex(ValueError,"Original public forecast issuance not verified"):
             make_view(self.acd,self.geo,old)
 
 
