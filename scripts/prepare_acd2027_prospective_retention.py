@@ -17,10 +17,10 @@ from backtest_ucdp_prio_retention_four_vintages import (
     START, HORIZON, PRIOR_STRENGTH, RECENT_ORIGIN_YEARS,
 )
 from evaluate_geo2027_calibrated_shadow_official import load_authenticated
-from prepare_geo2027_transition_alerts import FORECAST_PATH, SOURCE_SHA256, sha
+from prepare_geo2027_transition_alerts import FORECAST_PATH, SOURCE_SHA256 as ORIGINAL_GEO_SHA256, sha
 
 SOURCE_URL = "https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-261-csv.zip"
-SOURCE_SHA256 = None  # Pin only from official ZIP bytes in first CI source probe.
+ACD_SOURCE_SHA256 = None  # Pin only from official ZIP bytes in first CI source probe.
 ISSUE_PATH = Path("data/forecast-2027-acd-retention.json")
 FORECAST_ID = "PSICO-ACD2027-INTRASTATE-T2-PERSISTENCE-V1"
 ORIGIN = 2025
@@ -31,9 +31,9 @@ COMPARATORS = ("p_country_eb", "p_lag1_group")
 
 def official_source(raw, probe=False):
     digest=hashlib.sha256(raw).hexdigest()
-    if SOURCE_SHA256 is None and not probe:
+    if ACD_SOURCE_SHA256 is None and not probe:
         raise ValueError("26.1 UCDP/PRIO archive not SHA-pinned yet")
-    if SOURCE_SHA256 is not None and digest != SOURCE_SHA256:
+    if ACD_SOURCE_SHA256 is not None and digest != ACD_SOURCE_SHA256:
         raise ValueError("26.1 official ACD original source hash changed")
     rows,fields=source_zip(raw)
     active=set()
@@ -67,7 +67,7 @@ def official_source(raw, probe=False):
     return active,{
         "official_url":SOURCE_URL,
         "source_zip_sha256":digest,
-        "pinned":SOURCE_SHA256 is not None,
+        "pinned":ACD_SOURCE_SHA256 is not None,
         "last_observed_year":ORIGIN,
         "total_conflict_year_records":len(rows),
         "intrastate_active_country_years":len(active),
@@ -179,7 +179,7 @@ def main():
     original,shadow,_=load_authenticated()
     if (len(original["countries"])!=196 or len(shadow["countries"])!=196
         or shadow["2027_outcomes_resolved"]!=0
-        or sha(FORECAST_PATH.read_bytes())!=SOURCE_SHA256):
+        or sha(FORECAST_PATH.read_bytes())!=ORIGINAL_GEO_SHA256):
         raise ValueError("Existing GEO2027 original/shadow must remain immutable")
     active,source=official_source(fetch(SOURCE_URL,MAX_ZIP),args.probe_source)
     if args.probe_source:
