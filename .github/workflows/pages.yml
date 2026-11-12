@@ -130,7 +130,7 @@ jobs:
           if test -f data/ucdp-prio-retention-vintage-yearblock-robustness.json; then
             PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_acd_retention_vintage_yearblock.py --check-report
           else
-            PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_acd_retention_vintage_yearblock.py
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_acd_retention_vintage_yearblock.py --check-report
           fi
   ucdp_prio_retention_four_vintage:
     runs-on: ubuntu-latest
