@@ -127,7 +127,7 @@ jobs:
       - name: Verify SHA-pinned 24.1 official target edition and reproduce four ACD historical persistence folds
         run: |
           set -e
-          PYTHONDONTWRITEBYTECODE=1 python3 scripts/backtest_ucdp_prio_retention_four_vintages.py
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/backtest_ucdp_prio_retention_four_vintages.py --check-report data/ucdp-prio-2021-2024-retention-four-vintage.json
   ucdp_prio_old_vintages_source_probe:
     runs-on: ubuntu-latest
     steps:
