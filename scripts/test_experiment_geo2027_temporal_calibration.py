@@ -87,7 +87,7 @@ class TemporalInterceptCalibrationTests(unittest.TestCase):
         wrong["24.1"]="bad"
         with self.assertRaisesRegex(ValueError,"SHA"):
             evaluate(old,outside,wrong,previous)
-        with self.assertRaisesRegex(ValueError,"original committed"):
+        with self.assertRaisesRegex(ValueError,"[Oo]riginal committed"):
             evaluate(old,outside,hashes,{**previous,"status":"altered"})
         with self.assertRaisesRegex(ValueError,"training/development"):
             evaluate(old[:-196],outside,hashes,previous)
