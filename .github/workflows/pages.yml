@@ -124,13 +124,21 @@ jobs:
         run: |
           set -e
           PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_prepare_acd2027_prospective_retention.py' -v
-      - name: Verify official 26.1 ACD source before issuing any 2027 country forecasts
+      - name: Verify official 26.1 ACD source and immutable first-public 2027 country forecasts
         run: |
           set -e
-          if test -f data/forecast-2027-acd-retention.json; then
-            PYTHONDONTWRITEBYTECODE=1 python3 scripts/prepare_acd2027_prospective_retention.py --check-issued
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/prepare_acd2027_prospective_retention.py --check-issued
+      - name: Test ACD2027 first-public manifest, tamper resistance and future-outcome exclusion
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_audit_issued_acd2027_retention.py' -v
+      - name: Reconstruct original 32-country 2027 issue from SHA-pinned official 26.1 ZIP
+        run: |
+          set -e
+          if test -f data/forecast-2027-acd-retention-audit.json; then
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_issued_acd2027_retention.py --check-report
           else
-            PYTHONDONTWRITEBYTECODE=1 python3 scripts/prepare_acd2027_prospective_retention.py --print-canonical
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_issued_acd2027_retention.py
           fi
   acd_retention_vintage_yearblock_robustness:
     runs-on: ubuntu-latest
