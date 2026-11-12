@@ -79,7 +79,7 @@ class GenuineACDRetentionIssueTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"Unpinned"):
             s.forecast(active,meta)
         import hashlib
-        with patch.object(s,"SOURCE_SHA256",hashlib.sha256(raw).hexdigest()):
+        with patch.object(s,"ACD_SOURCE_SHA256",hashlib.sha256(raw).hexdigest()):
             active2,meta2=s.official_source(raw)
             self.assertTrue(meta2["pinned"])
             self.assertEqual(active,active2)
