@@ -130,7 +130,7 @@ jobs:
           if test -f data/forecast-2027-acd-retention.json; then
             PYTHONDONTWRITEBYTECODE=1 python3 scripts/prepare_acd2027_prospective_retention.py --check-issued
           else
-            PYTHONDONTWRITEBYTECODE=1 python3 scripts/prepare_acd2027_prospective_retention.py --probe-source
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/prepare_acd2027_prospective_retention.py --print-canonical
           fi
   acd_retention_vintage_yearblock_robustness:
     runs-on: ubuntu-latest
