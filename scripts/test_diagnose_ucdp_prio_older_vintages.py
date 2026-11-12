@@ -89,8 +89,11 @@ class OlderACDVintageTests(unittest.TestCase):
 
     def test_duplicate_year_and_multicode_country_fail_closed(self):
         wrong=fake_zip(2019,unsafe=True)
-        with self.assertRaisesRegex(ValueError,"Cannot resolve"):
-            study.parse_version(wrong,"20.1",allow_probe=True)
+        patched=copy.deepcopy(study.HISTORICAL)
+        patched["20.1"]["sha256"]=None
+        with patch.object(study,"HISTORICAL",patched):
+            with self.assertRaisesRegex(ValueError,"Cannot resolve"):
+                study.parse_version(wrong,"20.1",allow_probe=True)
         stream=io.StringIO();w=csv.DictWriter(stream,fieldnames=FIELDS)
         w.writeheader()
         for cid in range(1,106):
@@ -103,8 +106,9 @@ class OlderACDVintageTests(unittest.TestCase):
         buffer=io.BytesIO()
         with ZipFile(buffer,"w",ZIP_DEFLATED) as z:
             z.writestr("test.csv",stream.getvalue())
-        with self.assertRaisesRegex(ValueError,"Repeated conflict-year"):
-            study.parse_version(buffer.getvalue(),"20.1",allow_probe=True)
+        with patch.object(study,"HISTORICAL",patched):
+            with self.assertRaisesRegex(ValueError,"Repeated conflict-year"):
+                study.parse_version(buffer.getvalue(),"20.1",allow_probe=True)
 
     def test_historical_revisions_are_edits_not_future_changes(self):
         old={("10",2018),("11",2018),("12",2019)}
