@@ -1,0 +1,370 @@
+{
+  "2027_outcomes_resolved": 0,
+  "actual_2027_outcomes_used": false,
+  "countries": [
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 41,
+      "origin_only_historical_country_training_rows": 2,
+      "p_country_eb": 0.683633841886,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 100,
+      "origin_only_historical_country_training_rows": 34,
+      "p_country_eb": 0.9471929084,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 432,
+      "origin_only_historical_country_training_rows": 18,
+      "p_country_eb": 0.752362459547,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 434,
+      "origin_only_historical_country_training_rows": 2,
+      "p_country_eb": 0.826490984743,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 436,
+      "origin_only_historical_country_training_rows": 16,
+      "p_country_eb": 0.7346740638,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 439,
+      "origin_only_historical_country_training_rows": 6,
+      "p_country_eb": 0.865048543689,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 461,
+      "origin_only_historical_country_training_rows": 2,
+      "p_country_eb": 0.826490984743,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 471,
+      "origin_only_historical_country_training_rows": 9,
+      "p_country_eb": 0.884327323162,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 475,
+      "origin_only_historical_country_training_rows": 15,
+      "p_country_eb": 0.872995325423,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 482,
+      "origin_only_historical_country_training_rows": 17,
+      "p_country_eb": 0.778305992635,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 490,
+      "origin_only_historical_country_training_rows": 22,
+      "p_country_eb": 0.781496287836,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 501,
+      "origin_only_historical_country_training_rows": 9,
+      "p_country_eb": 0.884327323162,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 517,
+      "origin_only_historical_country_training_rows": 21,
+      "p_country_eb": 0.714268902618,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 520,
+      "origin_only_historical_country_training_rows": 27,
+      "p_country_eb": 0.835150609908,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 530,
+      "origin_only_historical_country_training_rows": 31,
+      "p_country_eb": 0.873741250847,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 540,
+      "origin_only_historical_country_training_rows": 22,
+      "p_country_eb": 0.781496287836,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 541,
+      "origin_only_historical_country_training_rows": 12,
+      "p_country_eb": 0.773786407767,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 625,
+      "origin_only_historical_country_training_rows": 33,
+      "p_country_eb": 0.923797195254,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": false,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 626,
+      "origin_only_historical_country_training_rows": 11,
+      "p_country_eb": 0.807429295061,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.546119278779
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 630,
+      "origin_only_historical_country_training_rows": 22,
+      "p_country_eb": 0.693260993718,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 640,
+      "origin_only_historical_country_training_rows": 33,
+      "p_country_eb": 0.923797195254,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 645,
+      "origin_only_historical_country_training_rows": 27,
+      "p_country_eb": 0.88643266119,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 652,
+      "origin_only_historical_country_training_rows": 13,
+      "p_country_eb": 0.902834951456,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 666,
+      "origin_only_historical_country_training_rows": 29,
+      "p_country_eb": 0.867582287473,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 678,
+      "origin_only_historical_country_training_rows": 17,
+      "p_country_eb": 0.881754268497,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 700,
+      "origin_only_historical_country_training_rows": 34,
+      "p_country_eb": 0.9471929084,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 750,
+      "origin_only_historical_country_training_rows": 34,
+      "p_country_eb": 0.9471929084,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 770,
+      "origin_only_historical_country_training_rows": 23,
+      "p_country_eb": 0.844882108183,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 775,
+      "origin_only_historical_country_training_rows": 34,
+      "p_country_eb": 0.9471929084,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 800,
+      "origin_only_historical_country_training_rows": 21,
+      "p_country_eb": 0.92639011474,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 840,
+      "origin_only_historical_country_training_rows": 34,
+      "p_country_eb": 0.9471929084,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    },
+    {
+      "also_active_in_2024": true,
+      "conflict_present_in_origin_2025": true,
+      "country_id": 850,
+      "origin_only_historical_country_training_rows": 18,
+      "p_country_eb": 0.78569579288,
+      "p_global_recent5": 0.859195402299,
+      "p_lag1_group": 0.848030607957
+    }
+  ],
+  "forecast_id": "PSICO-ACD2027-INTRASTATE-T2-PERSISTENCE-V1",
+  "forecast_not_for_full_196_country_universe": true,
+  "historical_model_selection_exploratory_post_hoc": true,
+  "interpretation": "Original 2027 forecast awaits first public GitHub commit. Secondary models not independently validated, and no 2027 outcome is observed.",
+  "model_expected_2027_persistence": {
+    "p_country_eb": 27.048417995308,
+    "p_global_recent5": 27.494252873568,
+    "p_lag1_group": 26.835068125446
+  },
+  "n_origin_active_countries": 32,
+  "origin_year": 2025,
+  "primary_model": "p_global_recent5",
+  "prospective_skill_demonstrated": false,
+  "schema": "idealab.psico.acd2027_intrastate_retention_forecast.v1",
+  "secondary_models": [
+    "p_country_eb",
+    "p_lag1_group"
+  ],
+  "source_data_last_year": 2025,
+  "source_facts": {
+    "csv_schema": [
+      "conflict_id",
+      "location",
+      "side_a",
+      "side_a_id",
+      "side_a_2nd",
+      "side_b",
+      "side_b_id",
+      "side_b_2nd",
+      "incompatibility",
+      "territory_name",
+      "year",
+      "intensity_level",
+      "cumulative_intensity",
+      "type_of_conflict",
+      "start_date",
+      "start_prec",
+      "start_date2",
+      "start_prec2",
+      "ep_end",
+      "ep_end_date",
+      "ep_end_prec",
+      "gwno_a",
+      "gwno_a_2nd",
+      "gwno_b",
+      "gwno_b_2nd",
+      "gwno_loc",
+      "region",
+      "version"
+    ],
+    "intrastate_2025_risk_countries": 32,
+    "intrastate_active_country_years": 1813,
+    "last_observed_year": 2025,
+    "no_actual_2027_outcomes": true,
+    "official_url": "https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-261-csv.zip",
+    "pinned": true,
+    "source_zip_sha256": "5f951743222964674a446e32a5a871077b29bd13349588d85fc59953d89c878a",
+    "total_conflict_year_records": 2816
+  },
+  "source_official_url": "https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-261-csv.zip",
+  "source_release": "UCDP/PRIO Armed Conflict Dataset 26.1",
+  "source_zip_sha256": "5f951743222964674a446e32a5a871077b29bd13349588d85fc59953d89c878a",
+  "status": "CANDIDATE_PRIOR_TO_FIRST_PUBLIC_ISSUE",
+  "target": "Presence of >=1 type 3/4 intrastate ACD conflict in 2027 among countries with such a conflict in 2025; NOT >=25 deaths GEO, onset, or peace",
+  "target_year": 2027,
+  "training_n_country_years": 1029,
+  "training_n_persisted": 821,
+  "training_origin_latest_year": 2023,
+  "training_recent_origin_years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "training_target_latest_year": 2025
+}
