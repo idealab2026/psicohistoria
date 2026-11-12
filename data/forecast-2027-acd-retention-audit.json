@@ -1,0 +1,19 @@
+{
+  "2027_outcomes_resolved": 0,
+  "all_three_models_source_reproducible": true,
+  "country_risk_set_size": 32,
+  "first_public_git_commit": "41db7bd154e0140ced15abd8727a7d52d998852c",
+  "first_public_git_commit_utc": "2026-11-12T22:24:56Z",
+  "first_public_timestamp_independently_notarized": false,
+  "forecast_id": "PSICO-ACD2027-INTRASTATE-T2-PERSISTENCE-V1",
+  "generator_git_blob_sha": "4feffa1d138b41231dc52db4e418c8e9018eb64a",
+  "issued_json_sha256": "6cf7d0340a4c25062af7a040586fb6a73a98c9e6ab80473527171c0a5a963d9c",
+  "original_geo2027_and_shadow_unchanged": true,
+  "primary_expected_persistent_2027": 27.494252873568,
+  "primary_model": "p_global_recent5",
+  "prospective_skill_demonstrated": false,
+  "schema": "idealab.psico.acd2027_intrastate_retention_issued_audit.v1",
+  "source_last_year": 2025,
+  "source_zip_sha256": "5f951743222964674a446e32a5a871077b29bd13349588d85fc59953d89c878a",
+  "status": "ISSUED_ACD2027_FUTURE_LABELS_UNOBSERVED"
+}
