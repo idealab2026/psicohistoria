@@ -31,7 +31,7 @@ from evaluate_geo2027_calibrated_shadow_official import load_authenticated
 
 SOURCE_241={
     "url":"https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-241-csv.zip",
-    "sha256":None,
+    "sha256":"35c157c5f5aa2b08dc5b268bab7f0125da504ec3aa9dc5f28c9adba93b1717f5",
     "last_year":2023,
 }
 PAIRS=(
