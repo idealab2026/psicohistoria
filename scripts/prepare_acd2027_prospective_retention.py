@@ -20,7 +20,7 @@ from evaluate_geo2027_calibrated_shadow_official import load_authenticated
 from prepare_geo2027_transition_alerts import FORECAST_PATH, SOURCE_SHA256 as ORIGINAL_GEO_SHA256, sha
 
 SOURCE_URL = "https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-261-csv.zip"
-ACD_SOURCE_SHA256 = None  # Pin only from official ZIP bytes in first CI source probe.
+ACD_SOURCE_SHA256 = "5f951743222964674a446e32a5a871077b29bd13349588d85fc59953d89c878a"  # Pin only from official ZIP bytes in first CI source probe.
 ISSUE_PATH = Path("data/forecast-2027-acd-retention.json")
 FORECAST_ID = "PSICO-ACD2027-INTRASTATE-T2-PERSISTENCE-V1"
 ORIGIN = 2025
