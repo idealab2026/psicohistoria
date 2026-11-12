@@ -39,3 +39,25 @@ La primera fase `--probe-source` descubre la huella SHA-256 real del ZIP de la e
 El estudio no incorpora ninguna referencia a repositorios personales ni modifica las probabilidades GEO-2027 originales o shadow, las 15 alertas emitidas ni NEWCONF-2027.
 
 **Estado de resultados observados del objetivo 2027:** cero. La predicción solo tendrá validez prospectiva del **resultado futuro**, no validación independiente de la elección histórica de método.
+
+## Primera emisión pública, certificación y valores congelados
+
+La cohorte ACD2027 **ya fue emitida por primera vez**, sin observar resultados de 2027, en el commit público de GitHub **`41db7bd154e0140ced15abd8727a7d52d998852c`**, con fecha del propio commit **2026-11-12T22:24:56Z**. Esa fecha es metadata pública de GitHub, **no una notarización independiente**.
+
+- Archivo exacto de las **32 probabilidades por cada uno de los tres modelos**: `data/forecast-2027-acd-retention.json`.
+- SHA-256 de los bytes originales de dicho archivo: `6cf7d0340a4c25062af7a040586fb6a73a98c9e6ab80473527171c0a5a963d9c`.
+- ZIP oficial UCDP/PRIO ACD edición 26.1 hasta 2025: `5f951743222964674a446e32a5a871077b29bd13349588d85fc59953d89c878a`.
+- Huella Git SHA-1 del blob del generador original: `4feffa1d138b41231dc52db4e418c8e9018eb64a`. No cambiará la receta sin fallar la auditoría.
+- El manifiesto `data/forecast-2027-acd-retention-manifest.json` y el informe `data/forecast-2027-acd-retention-audit.json` verifican la identidad de esta **nueva cohorte distinta de GEO**.
+
+El origen 2025 tiene exactamente **32 países con registros intraestatales tipo 3/4** en la fuente 26.1. La receta utiliza **1.029 casos históricos de entrenamiento** con origen 1990–2023 y etiqueta de persistencia a dos años hasta 2025, sin observar ninguna etiqueta de 2027.
+
+| Modelo congelado | Esperanza de países con registro intraestatal en 2027 entre los 32 de origen |
+|---|---:|
+| Primario: tasa global de los últimos cinco años de origen | **27,494252873568** |
+| Secundario: historial individual del país con prior de 12 | **27,048417995308** |
+| Secundario: persistencia condicionada a actividad en 2024 | **26,835068125446** |
+
+Esos números son **sumas de probabilidades emitidas**: no son recuentos observados, ni las probabilidades de que el total sea exactamente 27, ni certificación de calibración o independencia entre países.
+
+Se exige en cada nueva ejecución de GitHub Actions **reconstruir el mismo documento byte a byte desde la misma edición oficial UCDP/PRIO** y comprobar el manifiesto, la huella del generador, su commit público primero y el informe de auditoría. El resultado futuro solo podrá puntuarse con la primera fuente UCDP/PRIO completa que abarque 2027, verificando por separado su procedencia y la cobertura del conjunto de 32 códigos.
