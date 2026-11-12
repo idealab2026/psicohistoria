@@ -1,0 +1,2499 @@
+{
+  "2027_outcomes_observed": 0,
+  "all_196_country_scores_required_for_future_actual_evaluation": true,
+  "by_known_2025_origin_state": {
+    "0": {
+      "all_persist_delta_brier_shadow_minus_original": -0.0015842642224468955,
+      "all_transition_delta_brier_shadow_minus_original": 0.018447934192590176,
+      "fewest_transitions_original_can_beat_shadow": 3,
+      "fewest_transitions_original_must_beat_shadow": 27,
+      "n": 162,
+      "sharp_bounds_by_total_number_of_transitions": [
+        {
+          "best_case_shadow_delta_brier": -0.0015842642224468955,
+          "classification": "SHADOW_BEATS_ORIGINAL_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 0,
+          "worst_case_shadow_delta_brier": -0.0015842642224468955
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0015255506188296118,
+          "classification": "SHADOW_BEATS_ORIGINAL_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 1,
+          "worst_case_shadow_delta_brier": -0.000888087187681463
+        },
+        {
+          "best_case_shadow_delta_brier": -0.001466837015212328,
+          "classification": "SHADOW_BEATS_ORIGINAL_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 2,
+          "worst_case_shadow_delta_brier": -0.0002797994408666477
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0014081234115950443,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 3,
+          "worst_case_shadow_delta_brier": 0.00028992539784940144
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0013494098079777606,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 4,
+          "worst_case_shadow_delta_brier": 0.0008590937103061918
+        },
+        {
+          "best_case_shadow_delta_brier": -0.001290696204360477,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 5,
+          "worst_case_shadow_delta_brier": 0.001385277163318537
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0012317355991506,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 6,
+          "worst_case_shadow_delta_brier": 0.0018516209035407583
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0011727749939407233,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 7,
+          "worst_case_shadow_delta_brier": 0.0022659096006765614
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0011138143887308462,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 8,
+          "worst_case_shadow_delta_brier": 0.0026366704379358202
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0010548537835209694,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 9,
+          "worst_case_shadow_delta_brier": 0.0030060797461827333
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0009958931783110928,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 10,
+          "worst_case_shadow_delta_brier": 0.003373457323046931
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0009369325731012157,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 11,
+          "worst_case_shadow_delta_brier": 0.003725209475367919
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0008779719678913388,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 12,
+          "worst_case_shadow_delta_brier": 0.004075621475417302
+        },
+        {
+          "best_case_shadow_delta_brier": -0.000819011362681462,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 13,
+          "worst_case_shadow_delta_brier": 0.004426033475466684
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0007600507574715851,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 14,
+          "worst_case_shadow_delta_brier": 0.00477019200267656
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0007010901522617081,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 15,
+          "worst_case_shadow_delta_brier": 0.005092612733800017
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0006421295470518312,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 16,
+          "worst_case_shadow_delta_brier": 0.005374142932898783
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0005831689418419543,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 17,
+          "worst_case_shadow_delta_brier": 0.005638323801688905
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0005242083366320772,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 18,
+          "worst_case_shadow_delta_brier": 0.005901906142972855
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0004652477314222003,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 19,
+          "worst_case_shadow_delta_brier": 0.006163519623935817
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0004062871262123234,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 20,
+          "worst_case_shadow_delta_brier": 0.006424825318022236
+        },
+        {
+          "best_case_shadow_delta_brier": -0.00034732652100244644,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 21,
+          "worst_case_shadow_delta_brier": 0.0066802569697382835
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0002883659157925695,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 22,
+          "worst_case_shadow_delta_brier": 0.006935688621454332
+        },
+        {
+          "best_case_shadow_delta_brier": -0.00022940531058269253,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 23,
+          "worst_case_shadow_delta_brier": 0.007187938655046925
+        },
+        {
+          "best_case_shadow_delta_brier": -0.0001704447053728156,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 24,
+          "worst_case_shadow_delta_brier": 0.007440188688639517
+        },
+        {
+          "best_case_shadow_delta_brier": -0.00011148410016293864,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 25,
+          "worst_case_shadow_delta_brier": 0.007681459457553098
+        },
+        {
+          "best_case_shadow_delta_brier": -5.2523494953061695e-05,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 26,
+          "worst_case_shadow_delta_brier": 0.00788912776183705
+        },
+        {
+          "best_case_shadow_delta_brier": 6.437110256815078e-06,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 27,
+          "worst_case_shadow_delta_brier": 0.008080973949158035
+        },
+        {
+          "best_case_shadow_delta_brier": 6.539771546669202e-05,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 28,
+          "worst_case_shadow_delta_brier": 0.008272820136479023
+        },
+        {
+          "best_case_shadow_delta_brier": 0.00012435832067656896,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 29,
+          "worst_case_shadow_delta_brier": 0.008440919622355566
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0001833189258864459,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 30,
+          "worst_case_shadow_delta_brier": 0.008606696930034578
+        },
+        {
+          "best_case_shadow_delta_brier": 0.00024227953109632287,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 31,
+          "worst_case_shadow_delta_brier": 0.008770927970985195
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0003012401363061998,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 32,
+          "worst_case_shadow_delta_brier": 0.008931517155158034
+        },
+        {
+          "best_case_shadow_delta_brier": 0.00036020074151607676,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 33,
+          "worst_case_shadow_delta_brier": 0.009090733667392601
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0004191613467259537,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 34,
+          "worst_case_shadow_delta_brier": 0.009249950179627169
+        },
+        {
+          "best_case_shadow_delta_brier": 0.00047812195193583064,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 35,
+          "worst_case_shadow_delta_brier": 0.009407138095540748
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0005370825571457076,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 36,
+          "worst_case_shadow_delta_brier": 0.009564326011454329
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0005960431623555846,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 37,
+          "worst_case_shadow_delta_brier": 0.009721513927367907
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0006550037675654615,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 38,
+          "worst_case_shadow_delta_brier": 0.009877951354207415
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0007139643727753385,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 39,
+          "worst_case_shadow_delta_brier": 0.010031704791762968
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0007729249779852154,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 40,
+          "worst_case_shadow_delta_brier": 0.010185458229318524
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0008318855831950924,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 41,
+          "worst_case_shadow_delta_brier": 0.010339211666874078
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0008908461884049693,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 42,
+          "worst_case_shadow_delta_brier": 0.010492965104429633
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0009498067936148462,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 43,
+          "worst_case_shadow_delta_brier": 0.010646718541985189
+        },
+        {
+          "best_case_shadow_delta_brier": 0.001008767398824723,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 44,
+          "worst_case_shadow_delta_brier": 0.010800471979540743
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0010677280040346001,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 45,
+          "worst_case_shadow_delta_brier": 0.0109542254170963
+        },
+        {
+          "best_case_shadow_delta_brier": 0.001126688609244477,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 46,
+          "worst_case_shadow_delta_brier": 0.011107978854651855
+        },
+        {
+          "best_case_shadow_delta_brier": 0.001185649214454354,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 47,
+          "worst_case_shadow_delta_brier": 0.011261732292207411
+        },
+        {
+          "best_case_shadow_delta_brier": 0.001244609819664231,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 48,
+          "worst_case_shadow_delta_brier": 0.011415485729762968
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0013035704248741079,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 49,
+          "worst_case_shadow_delta_brier": 0.011569239167318524
+        },
+        {
+          "best_case_shadow_delta_brier": 0.001362531030083985,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 50,
+          "worst_case_shadow_delta_brier": 0.01172258518689877
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0014214916352938618,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 51,
+          "worst_case_shadow_delta_brier": 0.011810898052775316
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0014804522405037388,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 52,
+          "worst_case_shadow_delta_brier": 0.011894814392923466
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0015394128457136157,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 53,
+          "worst_case_shadow_delta_brier": 0.011971131330441984
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0015983734509234927,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 54,
+          "worst_case_shadow_delta_brier": 0.012038436506787663
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0016573340561333695,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 55,
+          "worst_case_shadow_delta_brier": 0.012105056428750626
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0017162946613432466,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 56,
+          "worst_case_shadow_delta_brier": 0.012169669138664206
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0017752552665531234,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 57,
+          "worst_case_shadow_delta_brier": 0.012233066398923466
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0018342158717630005,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 58,
+          "worst_case_shadow_delta_brier": 0.012296463659182726
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0018931764769728773,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 59,
+          "worst_case_shadow_delta_brier": 0.0123586903373926
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0019521370821827544,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 60,
+          "worst_case_shadow_delta_brier": 0.01242014100154075
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0020110976873926314,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 61,
+          "worst_case_shadow_delta_brier": 0.012481239526812354
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0020700582926025082,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 62,
+          "worst_case_shadow_delta_brier": 0.012542338052083959
+        },
+        {
+          "best_case_shadow_delta_brier": 0.002129018897812385,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 63,
+          "worst_case_shadow_delta_brier": 0.012603436577355564
+        },
+        {
+          "best_case_shadow_delta_brier": 0.002187979503022262,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 64,
+          "worst_case_shadow_delta_brier": 0.012664535102627168
+        },
+        {
+          "best_case_shadow_delta_brier": 0.002246940108232139,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 65,
+          "worst_case_shadow_delta_brier": 0.012725633627898773
+        },
+        {
+          "best_case_shadow_delta_brier": 0.002305900713442016,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 66,
+          "worst_case_shadow_delta_brier": 0.012786732153170378
+        },
+        {
+          "best_case_shadow_delta_brier": 0.002364861318651893,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 67,
+          "worst_case_shadow_delta_brier": 0.01284680223199754
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0024238219238617697,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 68,
+          "worst_case_shadow_delta_brier": 0.012906872310824703
+        },
+        {
+          "best_case_shadow_delta_brier": 0.002482782529071647,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 69,
+          "worst_case_shadow_delta_brier": 0.01296583291603458
+        },
+        {
+          "best_case_shadow_delta_brier": 0.002541743134281524,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 70,
+          "worst_case_shadow_delta_brier": 0.013024793521244457
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0026007037394914006,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 71,
+          "worst_case_shadow_delta_brier": 0.013083754126454334
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0026596643447012775,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 72,
+          "worst_case_shadow_delta_brier": 0.01314271473166421
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0027186249499111547,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 73,
+          "worst_case_shadow_delta_brier": 0.013201675336874087
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0027775855551210316,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 74,
+          "worst_case_shadow_delta_brier": 0.013260635942083964
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0028365461603309084,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 75,
+          "worst_case_shadow_delta_brier": 0.013319596547293842
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0028955067655407857,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 76,
+          "worst_case_shadow_delta_brier": 0.013378557152503719
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0029544673707506625,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 77,
+          "worst_case_shadow_delta_brier": 0.013437517757713595
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0030134279759605393,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 78,
+          "worst_case_shadow_delta_brier": 0.013496478362923472
+        },
+        {
+          "best_case_shadow_delta_brier": 0.003072388581170416,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 79,
+          "worst_case_shadow_delta_brier": 0.013555438968133349
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0031313491863802934,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 80,
+          "worst_case_shadow_delta_brier": 0.013614399573343226
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0031903097915901703,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 81,
+          "worst_case_shadow_delta_brier": 0.013673360178553104
+        },
+        {
+          "best_case_shadow_delta_brier": 0.003249270396800047,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 82,
+          "worst_case_shadow_delta_brier": 0.013732320783762979
+        },
+        {
+          "best_case_shadow_delta_brier": 0.003308231002009924,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 83,
+          "worst_case_shadow_delta_brier": 0.013791281388972856
+        },
+        {
+          "best_case_shadow_delta_brier": 0.003367191607219801,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 84,
+          "worst_case_shadow_delta_brier": 0.013850241994182734
+        },
+        {
+          "best_case_shadow_delta_brier": 0.003426152212429678,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 85,
+          "worst_case_shadow_delta_brier": 0.013909202599392611
+        },
+        {
+          "best_case_shadow_delta_brier": 0.003485112817639555,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 86,
+          "worst_case_shadow_delta_brier": 0.013968163204602488
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0035440734228494317,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 87,
+          "worst_case_shadow_delta_brier": 0.014027123809812365
+        },
+        {
+          "best_case_shadow_delta_brier": 0.003603034028059309,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 88,
+          "worst_case_shadow_delta_brier": 0.014086084415022241
+        },
+        {
+          "best_case_shadow_delta_brier": 0.003661994633269186,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 89,
+          "worst_case_shadow_delta_brier": 0.014145045020232118
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0037209552384790626,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 90,
+          "worst_case_shadow_delta_brier": 0.014204005625441996
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0037799158436889395,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 91,
+          "worst_case_shadow_delta_brier": 0.014262966230651873
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0038388764488988167,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 92,
+          "worst_case_shadow_delta_brier": 0.01432192683586175
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0038978370541086936,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 93,
+          "worst_case_shadow_delta_brier": 0.014380887441071626
+        },
+        {
+          "best_case_shadow_delta_brier": 0.003956797659318571,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 94,
+          "worst_case_shadow_delta_brier": 0.014439848046281503
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0040168677381457315,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 95,
+          "worst_case_shadow_delta_brier": 0.01449880865149138
+        },
+        {
+          "best_case_shadow_delta_brier": 0.004076937816972892,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 96,
+          "worst_case_shadow_delta_brier": 0.014557769256701257
+        },
+        {
+          "best_case_shadow_delta_brier": 0.004138036342244498,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 97,
+          "worst_case_shadow_delta_brier": 0.014616729861911135
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0041991348675161026,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 98,
+          "worst_case_shadow_delta_brier": 0.014675690467121012
+        },
+        {
+          "best_case_shadow_delta_brier": 0.004260233392787707,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 99,
+          "worst_case_shadow_delta_brier": 0.014734651072330887
+        },
+        {
+          "best_case_shadow_delta_brier": 0.004321331918059312,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 100,
+          "worst_case_shadow_delta_brier": 0.014793611677540765
+        },
+        {
+          "best_case_shadow_delta_brier": 0.004382430443330917,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 101,
+          "worst_case_shadow_delta_brier": 0.014852572282750642
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0044435289686025215,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 102,
+          "worst_case_shadow_delta_brier": 0.01491153288796052
+        },
+        {
+          "best_case_shadow_delta_brier": 0.00450497963275067,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 103,
+          "worst_case_shadow_delta_brier": 0.014970493493170397
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0045672063109605445,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 104,
+          "worst_case_shadow_delta_brier": 0.015029454098380272
+        },
+        {
+          "best_case_shadow_delta_brier": 0.004630603571219805,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 105,
+          "worst_case_shadow_delta_brier": 0.01508841470359015
+        },
+        {
+          "best_case_shadow_delta_brier": 0.004694000831479065,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 106,
+          "worst_case_shadow_delta_brier": 0.015147375308800027
+        },
+        {
+          "best_case_shadow_delta_brier": 0.004758613541392644,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 107,
+          "worst_case_shadow_delta_brier": 0.015206335914009904
+        },
+        {
+          "best_case_shadow_delta_brier": 0.004825233463355608,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 108,
+          "worst_case_shadow_delta_brier": 0.015265296519219781
+        },
+        {
+          "best_case_shadow_delta_brier": 0.004892538639701287,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 109,
+          "worst_case_shadow_delta_brier": 0.015324257124429657
+        },
+        {
+          "best_case_shadow_delta_brier": 0.004968855577219807,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 110,
+          "worst_case_shadow_delta_brier": 0.015383217729639534
+        },
+        {
+          "best_case_shadow_delta_brier": 0.005052771917367956,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 111,
+          "worst_case_shadow_delta_brier": 0.015442178334849411
+        },
+        {
+          "best_case_shadow_delta_brier": 0.005141084783244499,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 112,
+          "worst_case_shadow_delta_brier": 0.015501138940059288
+        },
+        {
+          "best_case_shadow_delta_brier": 0.005294430802824746,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 113,
+          "worst_case_shadow_delta_brier": 0.015560099545269166
+        },
+        {
+          "best_case_shadow_delta_brier": 0.005448184240380301,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 114,
+          "worst_case_shadow_delta_brier": 0.015619060150479043
+        },
+        {
+          "best_case_shadow_delta_brier": 0.005601937677935855,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 115,
+          "worst_case_shadow_delta_brier": 0.01567802075568892
+        },
+        {
+          "best_case_shadow_delta_brier": 0.00575569111549141,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 116,
+          "worst_case_shadow_delta_brier": 0.015736981360898798
+        },
+        {
+          "best_case_shadow_delta_brier": 0.005909444553046965,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 117,
+          "worst_case_shadow_delta_brier": 0.015795941966108673
+        },
+        {
+          "best_case_shadow_delta_brier": 0.00606319799060252,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 118,
+          "worst_case_shadow_delta_brier": 0.01585490257131855
+        },
+        {
+          "best_case_shadow_delta_brier": 0.006216951428158075,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 119,
+          "worst_case_shadow_delta_brier": 0.015913863176528428
+        },
+        {
+          "best_case_shadow_delta_brier": 0.00637070486571363,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 120,
+          "worst_case_shadow_delta_brier": 0.015972823781738303
+        },
+        {
+          "best_case_shadow_delta_brier": 0.006524458303269184,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 121,
+          "worst_case_shadow_delta_brier": 0.016031784386948182
+        },
+        {
+          "best_case_shadow_delta_brier": 0.006678211740824739,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 122,
+          "worst_case_shadow_delta_brier": 0.016090744992158058
+        },
+        {
+          "best_case_shadow_delta_brier": 0.006831965178380295,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 123,
+          "worst_case_shadow_delta_brier": 0.016149705597367933
+        },
+        {
+          "best_case_shadow_delta_brier": 0.006985718615935849,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 124,
+          "worst_case_shadow_delta_brier": 0.016208666202577812
+        },
+        {
+          "best_case_shadow_delta_brier": 0.007142156042775355,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 125,
+          "worst_case_shadow_delta_brier": 0.016267626807787688
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0072993439586889345,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 126,
+          "worst_case_shadow_delta_brier": 0.016326587412997567
+        },
+        {
+          "best_case_shadow_delta_brier": 0.007456531874602514,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 127,
+          "worst_case_shadow_delta_brier": 0.016385548018207442
+        },
+        {
+          "best_case_shadow_delta_brier": 0.007613719790516095,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 128,
+          "worst_case_shadow_delta_brier": 0.016444508623417318
+        },
+        {
+          "best_case_shadow_delta_brier": 0.007772936302750662,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 129,
+          "worst_case_shadow_delta_brier": 0.016503469228627197
+        },
+        {
+          "best_case_shadow_delta_brier": 0.00793215281498523,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 130,
+          "worst_case_shadow_delta_brier": 0.016562429833837072
+        },
+        {
+          "best_case_shadow_delta_brier": 0.008092741999158068,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 131,
+          "worst_case_shadow_delta_brier": 0.01662139043904695
+        },
+        {
+          "best_case_shadow_delta_brier": 0.008256973040108686,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 132,
+          "worst_case_shadow_delta_brier": 0.016680351044256827
+        },
+        {
+          "best_case_shadow_delta_brier": 0.008422750347787698,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 133,
+          "worst_case_shadow_delta_brier": 0.016739311649466706
+        },
+        {
+          "best_case_shadow_delta_brier": 0.008590849833664241,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 134,
+          "worst_case_shadow_delta_brier": 0.01679827225467658
+        },
+        {
+          "best_case_shadow_delta_brier": 0.008782696020985227,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 135,
+          "worst_case_shadow_delta_brier": 0.016857232859886457
+        },
+        {
+          "best_case_shadow_delta_brier": 0.008974542208306215,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 136,
+          "worst_case_shadow_delta_brier": 0.016916193465096336
+        },
+        {
+          "best_case_shadow_delta_brier": 0.009182210512590164,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 137,
+          "worst_case_shadow_delta_brier": 0.01697515407030621
+        },
+        {
+          "best_case_shadow_delta_brier": 0.009423481281503745,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 138,
+          "worst_case_shadow_delta_brier": 0.01703411467551609
+        },
+        {
+          "best_case_shadow_delta_brier": 0.009675731315096338,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 139,
+          "worst_case_shadow_delta_brier": 0.017093075280725966
+        },
+        {
+          "best_case_shadow_delta_brier": 0.00992798134868893,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 140,
+          "worst_case_shadow_delta_brier": 0.01715203588593584
+        },
+        {
+          "best_case_shadow_delta_brier": 0.010183413000404979,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 141,
+          "worst_case_shadow_delta_brier": 0.01721099649114572
+        },
+        {
+          "best_case_shadow_delta_brier": 0.010438844652121027,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 142,
+          "worst_case_shadow_delta_brier": 0.017269957096355596
+        },
+        {
+          "best_case_shadow_delta_brier": 0.010700150346207445,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 143,
+          "worst_case_shadow_delta_brier": 0.017328917701565475
+        },
+        {
+          "best_case_shadow_delta_brier": 0.01096176382717041,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 144,
+          "worst_case_shadow_delta_brier": 0.01738787830677535
+        },
+        {
+          "best_case_shadow_delta_brier": 0.011225346168454359,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 145,
+          "worst_case_shadow_delta_brier": 0.017446838911985226
+        },
+        {
+          "best_case_shadow_delta_brier": 0.011489527037244483,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 146,
+          "worst_case_shadow_delta_brier": 0.017505799517195105
+        },
+        {
+          "best_case_shadow_delta_brier": 0.011771057236343248,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 147,
+          "worst_case_shadow_delta_brier": 0.01756476012240498
+        },
+        {
+          "best_case_shadow_delta_brier": 0.012093477967466706,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 148,
+          "worst_case_shadow_delta_brier": 0.01762372072761486
+        },
+        {
+          "best_case_shadow_delta_brier": 0.012437636494676581,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 149,
+          "worst_case_shadow_delta_brier": 0.017682681332824735
+        },
+        {
+          "best_case_shadow_delta_brier": 0.012788048494725963,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 150,
+          "worst_case_shadow_delta_brier": 0.01774164193803461
+        },
+        {
+          "best_case_shadow_delta_brier": 0.013138460494775343,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 151,
+          "worst_case_shadow_delta_brier": 0.01780060254324449
+        },
+        {
+          "best_case_shadow_delta_brier": 0.013490212647096331,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 152,
+          "worst_case_shadow_delta_brier": 0.017859563148454365
+        },
+        {
+          "best_case_shadow_delta_brier": 0.013857590223960528,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 153,
+          "worst_case_shadow_delta_brier": 0.017918523753664244
+        },
+        {
+          "best_case_shadow_delta_brier": 0.014226999532207442,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 154,
+          "worst_case_shadow_delta_brier": 0.01797748435887412
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0145977603694667,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 155,
+          "worst_case_shadow_delta_brier": 0.018036444964083995
+        },
+        {
+          "best_case_shadow_delta_brier": 0.015012049066602503,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 156,
+          "worst_case_shadow_delta_brier": 0.018095405569293874
+        },
+        {
+          "best_case_shadow_delta_brier": 0.015478392806824722,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 157,
+          "worst_case_shadow_delta_brier": 0.01815436617450375
+        },
+        {
+          "best_case_shadow_delta_brier": 0.016004576259837068,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 158,
+          "worst_case_shadow_delta_brier": 0.018213079778121036
+        },
+        {
+          "best_case_shadow_delta_brier": 0.016573744572293856,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 159,
+          "worst_case_shadow_delta_brier": 0.01827179338173832
+        },
+        {
+          "best_case_shadow_delta_brier": 0.017143469411009905,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 160,
+          "worst_case_shadow_delta_brier": 0.018330506985355606
+        },
+        {
+          "best_case_shadow_delta_brier": 0.01775175715782472,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 161,
+          "worst_case_shadow_delta_brier": 0.01838922058897289
+        },
+        {
+          "best_case_shadow_delta_brier": 0.01844793419259015,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 162,
+          "worst_case_shadow_delta_brier": 0.018447934192590176
+        }
+      ]
+    },
+    "1": {
+      "all_persist_delta_brier_shadow_minus_original": -0.03580506452981272,
+      "all_transition_delta_brier_shadow_minus_original": 0.15737676733071673,
+      "fewest_transitions_original_can_beat_shadow": 5,
+      "fewest_transitions_original_must_beat_shadow": 11,
+      "n": 34,
+      "sharp_bounds_by_total_number_of_transitions": [
+        {
+          "best_case_shadow_delta_brier": -0.03580506452981272,
+          "classification": "SHADOW_BEATS_ORIGINAL_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 0,
+          "worst_case_shadow_delta_brier": -0.03580506452981272
+        },
+        {
+          "best_case_shadow_delta_brier": -0.032722704145459774,
+          "classification": "SHADOW_BEATS_ORIGINAL_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 1,
+          "worst_case_shadow_delta_brier": -0.02615858478169507
+        },
+        {
+          "best_case_shadow_delta_brier": -0.02964034376110683,
+          "classification": "SHADOW_BEATS_ORIGINAL_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 2,
+          "worst_case_shadow_delta_brier": -0.017723129790283308
+        },
+        {
+          "best_case_shadow_delta_brier": -0.026557983376753885,
+          "classification": "SHADOW_BEATS_ORIGINAL_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 3,
+          "worst_case_shadow_delta_brier": -0.009768008444048012
+        },
+        {
+          "best_case_shadow_delta_brier": -0.02347562299240094,
+          "classification": "SHADOW_BEATS_ORIGINAL_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 4,
+          "worst_case_shadow_delta_brier": -0.0018235954841068344
+        },
+        {
+          "best_case_shadow_delta_brier": -0.020393262608047996,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 5,
+          "worst_case_shadow_delta_brier": 0.006030345717540222
+        },
+        {
+          "best_case_shadow_delta_brier": -0.01731090222369505,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 6,
+          "worst_case_shadow_delta_brier": 0.013598664796657866
+        },
+        {
+          "best_case_shadow_delta_brier": -0.01337745415516564,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 7,
+          "worst_case_shadow_delta_brier": 0.02075982483112845
+        },
+        {
+          "best_case_shadow_delta_brier": -0.009388358573989172,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 8,
+          "worst_case_shadow_delta_brier": 0.027639168330834324
+        },
+        {
+          "best_case_shadow_delta_brier": -0.004909299409047999,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 9,
+          "worst_case_shadow_delta_brier": 0.03451851183054021
+        },
+        {
+          "best_case_shadow_delta_brier": -0.00013876184363623308,
+          "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+          "n_actual_transitions": 10,
+          "worst_case_shadow_delta_brier": 0.04126617167642257
+        },
+        {
+          "best_case_shadow_delta_brier": 0.004673060131834354,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 11,
+          "worst_case_shadow_delta_brier": 0.04789596989318728
+        },
+        {
+          "best_case_shadow_delta_brier": 0.009529664319187297,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 12,
+          "worst_case_shadow_delta_brier": 0.05451380264330491
+        },
+        {
+          "best_case_shadow_delta_brier": 0.014424186482834356,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 13,
+          "worst_case_shadow_delta_brier": 0.061078082456481386
+        },
+        {
+          "best_case_shadow_delta_brier": 0.01958166403224612,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 14,
+          "worst_case_shadow_delta_brier": 0.06764236226965786
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0247614835431873,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 15,
+          "worst_case_shadow_delta_brier": 0.07387211845795197
+        },
+        {
+          "best_case_shadow_delta_brier": 0.03016979967812848,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 16,
+          "worst_case_shadow_delta_brier": 0.08006374217459902
+        },
+        {
+          "best_case_shadow_delta_brier": 0.03572243170577554,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 17,
+          "worst_case_shadow_delta_brier": 0.08584927109512844
+        },
+        {
+          "best_case_shadow_delta_brier": 0.04150796062630495,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 18,
+          "worst_case_shadow_delta_brier": 0.0914019031227755
+        },
+        {
+          "best_case_shadow_delta_brier": 0.047699584342952,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 19,
+          "worst_case_shadow_delta_brier": 0.09681021925771668
+        },
+        {
+          "best_case_shadow_delta_brier": 0.053929340531246116,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 20,
+          "worst_case_shadow_delta_brier": 0.10199003876865788
+        },
+        {
+          "best_case_shadow_delta_brier": 0.060493620344422586,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 21,
+          "worst_case_shadow_delta_brier": 0.10714751631806962
+        },
+        {
+          "best_case_shadow_delta_brier": 0.06705790015759906,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 22,
+          "worst_case_shadow_delta_brier": 0.11204203848171669
+        },
+        {
+          "best_case_shadow_delta_brier": 0.0736757329077167,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 23,
+          "worst_case_shadow_delta_brier": 0.11689864266906963
+        },
+        {
+          "best_case_shadow_delta_brier": 0.08030553112448141,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 24,
+          "worst_case_shadow_delta_brier": 0.1217104646445402
+        },
+        {
+          "best_case_shadow_delta_brier": 0.08705319097036376,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 25,
+          "worst_case_shadow_delta_brier": 0.12648100220995198
+        },
+        {
+          "best_case_shadow_delta_brier": 0.09393253447006965,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 26,
+          "worst_case_shadow_delta_brier": 0.13096006137489316
+        },
+        {
+          "best_case_shadow_delta_brier": 0.10081187796977553,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 27,
+          "worst_case_shadow_delta_brier": 0.1349491569560696
+        },
+        {
+          "best_case_shadow_delta_brier": 0.10797303800424612,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 28,
+          "worst_case_shadow_delta_brier": 0.13888260502459904
+        },
+        {
+          "best_case_shadow_delta_brier": 0.11554135708336376,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 29,
+          "worst_case_shadow_delta_brier": 0.14196496540895195
+        },
+        {
+          "best_case_shadow_delta_brier": 0.12339529828501081,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 30,
+          "worst_case_shadow_delta_brier": 0.14504732579330493
+        },
+        {
+          "best_case_shadow_delta_brier": 0.131339711244952,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 31,
+          "worst_case_shadow_delta_brier": 0.14812968617765787
+        },
+        {
+          "best_case_shadow_delta_brier": 0.13929483259118727,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 32,
+          "worst_case_shadow_delta_brier": 0.15121204656201084
+        },
+        {
+          "best_case_shadow_delta_brier": 0.147730287582599,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 33,
+          "worst_case_shadow_delta_brier": 0.15429440694636376
+        },
+        {
+          "best_case_shadow_delta_brier": 0.1573767673307167,
+          "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+          "n_actual_transitions": 34,
+          "worst_case_shadow_delta_brier": 0.15737676733071673
+        }
+      ]
+    }
+  },
+  "exact_math": "For country i with original p_i, shadow q_i, known state s_i, define Delta_i(Y)=(q_i-Y)^2-(p_i-Y)^2. With binary transition T_i=1[Y_i != s_i], Delta_i=base_i+T_i*w_i, base_i=(q_i-s_i)^2-(p_i-s_i)^2<0, w_i=2*abs(q_i-p_i)>0. For K changes among n fixed countries, sharp min/max of SUM Delta_i / n use K smallest/largest w_i, respectively.",
+  "expected_paired_brier_delta_if_original_probabilities_are_true": 0.0019350544879728165,
+  "expected_paired_brier_delta_if_shadow_probabilities_are_true": -0.0019350544879728174,
+  "first_public_shadow_commit": "ed3e764a191b24bc2a01f4d877b115db2e247a20",
+  "highest_brier_leverage_not_highest_probability_of_transition": [
+    {
+      "2025_origin_state": 1,
+      "country": "Haiti",
+      "country_id": 41,
+      "original_p_transition": 0.42656637612500004,
+      "penalty_to_shadow_brier_if_country_transitions": 0.0016733689358979591,
+      "shadow_p_transition": 0.262576220407
+    },
+    {
+      "2025_origin_state": 1,
+      "country": "Niger",
+      "country_id": 436,
+      "original_p_transition": 0.34416601660699997,
+      "penalty_to_shadow_brier_if_country_transitions": 0.0014632932127959183,
+      "shadow_p_transition": 0.20076328175299996
+    },
+    {
+      "2025_origin_state": 1,
+      "country": "Angola",
+      "country_id": 540,
+      "original_p_transition": 0.317051601514,
+      "penalty_to_shadow_brier_if_country_transitions": 0.0013799700294489798,
+      "shadow_p_transition": 0.181814538628
+    },
+    {
+      "2025_origin_state": 1,
+      "country": "Lebanon",
+      "country_id": 660,
+      "original_p_transition": 0.31647044171000005,
+      "penalty_to_shadow_brier_if_country_transitions": 0.0013781124522346947,
+      "shadow_p_transition": 0.18141542139099998
+    },
+    {
+      "2025_origin_state": 1,
+      "country": "Mozambique",
+      "country_id": 541,
+      "original_p_transition": 0.311596687954,
+      "penalty_to_shadow_brier_if_country_transitions": 0.001362418371714285,
+      "shadow_p_transition": 0.178079687526
+    },
+    {
+      "2025_origin_state": 1,
+      "country": "Iran",
+      "country_id": 630,
+      "original_p_transition": 0.29660827748999996,
+      "penalty_to_shadow_brier_if_country_transitions": 0.0013128716769897953,
+      "shadow_p_transition": 0.16794685314500002
+    },
+    {
+      "2025_origin_state": 1,
+      "country": "Central African Republic",
+      "country_id": 482,
+      "original_p_transition": 0.27616278288499996,
+      "penalty_to_shadow_brier_if_country_transitions": 0.0012422420467959178,
+      "shadow_p_transition": 0.15442306229900005
+    },
+    {
+      "2025_origin_state": 1,
+      "country": "Mali",
+      "country_id": 432,
+      "original_p_transition": 0.26255804973600005,
+      "penalty_to_shadow_brier_if_country_transitions": 0.0011933555050510202,
+      "shadow_p_transition": 0.14560921024100004
+    },
+    {
+      "2025_origin_state": 1,
+      "country": "Indonesia",
+      "country_id": 850,
+      "original_p_transition": 0.26255804973600005,
+      "penalty_to_shadow_brier_if_country_transitions": 0.0011933555050510202,
+      "shadow_p_transition": 0.14560921024100004
+    },
+    {
+      "2025_origin_state": 1,
+      "country": "Israel",
+      "country_id": 666,
+      "original_p_transition": 0.25633752703,
+      "penalty_to_shadow_brier_if_country_transitions": 0.0011705124222448982,
+      "shadow_p_transition": 0.14162730965000003
+    }
+  ],
+  "limitations": "SHARP conditional on an arbitrary K-subset: no geopolitical feasibility constraint, independence assumption, estimated correlation or probability assigned to K or to any switching combination. All 2027 labels remain unknown. Probability-weighted score expectation under the original and under the shadow are mutually exclusive hypothetical data-generating assumptions. The secondary shadow was chosen post hoc after looking at historical 2024/25 labels, even though its 2027 outcomes are future.",
+  "observed_2027_scenarios_used": false,
+  "original_forecast_or_shadow_modified": false,
+  "original_issued_forecast_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "per_country_squared_forecast_differences_mean": 0.001935054487972817,
+  "schema": "idealab.psico.geo2027_shadow_break_even.v1",
+  "shadow_issued_forecast_sha256": "1d0880f6e95e77d5e203b186e45a035676c7f724ecbe6a8b323f776b9eaa9188",
+  "status": "PRE_OUTCOME_EXACT_COMBINATORIAL_SENSITIVITY_NOT_EVIDENCE_OF_SKILL",
+  "target_definition": "Change in state-based UCDP OrganizedViolenceCY 25+ deaths threshold from 2025 status to 2027 status; not war onset or negotiated peace",
+  "target_year": 2027,
+  "total_196_country_exact_frontier": {
+    "all_persist_delta_brier_shadow_minus_original": -0.007520525500255252,
+    "all_transition_delta_brier_shadow_minus_original": 0.04254783381859169,
+    "fewest_transitions_original_can_beat_shadow": 6,
+    "fewest_transitions_original_must_beat_shadow": 128,
+    "n": 196,
+    "sharp_bounds_by_total_number_of_transitions": [
+      {
+        "best_case_shadow_delta_brier": -0.007520525500255252,
+        "classification": "SHADOW_BEATS_ORIGINAL_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 0,
+        "worst_case_shadow_delta_brier": -0.007520525500255252
+      },
+      {
+        "best_case_shadow_delta_brier": -0.007471996909510355,
+        "classification": "SHADOW_BEATS_ORIGINAL_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 1,
+        "worst_case_shadow_delta_brier": -0.005847156564357293
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0074234683187654575,
+        "classification": "SHADOW_BEATS_ORIGINAL_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 2,
+        "worst_case_shadow_delta_brier": -0.004383863351561375
+      },
+      {
+        "best_case_shadow_delta_brier": -0.007374939728020558,
+        "classification": "SHADOW_BEATS_ORIGINAL_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 3,
+        "worst_case_shadow_delta_brier": -0.0030038933221123955
+      },
+      {
+        "best_case_shadow_delta_brier": -0.007326411137275661,
+        "classification": "SHADOW_BEATS_ORIGINAL_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 4,
+        "worst_case_shadow_delta_brier": -0.0016257808698777012
+      },
+      {
+        "best_case_shadow_delta_brier": -0.007277882546530764,
+        "classification": "SHADOW_BEATS_ORIGINAL_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 5,
+        "worst_case_shadow_delta_brier": -0.00026336249816341585
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0072291498014083145,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 6,
+        "worst_case_shadow_delta_brier": 0.0010495091788263796
+      },
+      {
+        "best_case_shadow_delta_brier": -0.007180417056285865,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 7,
+        "worst_case_shadow_delta_brier": 0.0022917512256222967
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0071316843111634155,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 8,
+        "worst_case_shadow_delta_brier": 0.0034851067306733165
+      },
+      {
+        "best_case_shadow_delta_brier": -0.007082951566040966,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 9,
+        "worst_case_shadow_delta_brier": 0.004678462235724337
+      },
+      {
+        "best_case_shadow_delta_brier": -0.007034218820918517,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 10,
+        "worst_case_shadow_delta_brier": 0.005848974657969235
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006985486075796068,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 11,
+        "worst_case_shadow_delta_brier": 0.006999041695571277
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006936753330673618,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 12,
+        "worst_case_shadow_delta_brier": 0.008147033090999846
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006888020585551169,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 13,
+        "worst_case_shadow_delta_brier": 0.009285734691244746
+      },
+      {
+        "best_case_shadow_delta_brier": -0.00683928784042872,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 14,
+        "worst_case_shadow_delta_brier": 0.010424436291489644
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006790555095306271,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 15,
+        "worst_case_shadow_delta_brier": 0.011505108283336582
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006741822350183821,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 16,
+        "worst_case_shadow_delta_brier": 0.012579165458673316
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006693089605061372,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 17,
+        "worst_case_shadow_delta_brier": 0.013582777618356988
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006644356859938923,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 18,
+        "worst_case_shadow_delta_brier": 0.014545989296622297
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006595624114816474,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 19,
+        "worst_case_shadow_delta_brier": 0.015484166585336584
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006546891369694024,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 20,
+        "worst_case_shadow_delta_brier": 0.016382706704581484
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0064981586245715746,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 21,
+        "worst_case_shadow_delta_brier": 0.017277371177438626
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0064494258794491255,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 22,
+        "worst_case_shadow_delta_brier": 0.018126420940520256
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006400693134326676,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 23,
+        "worst_case_shadow_delta_brier": 0.018968893095469237
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006351960389204226,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 24,
+        "worst_case_shadow_delta_brier": 0.019803596907540664
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006303227644081777,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 25,
+        "worst_case_shadow_delta_brier": 0.020631139138275356
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006254494898959328,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 26,
+        "worst_case_shadow_delta_brier": 0.021408118789336582
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006205762153836879,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 27,
+        "worst_case_shadow_delta_brier": 0.022100104757499843
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006157029408714429,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 28,
+        "worst_case_shadow_delta_brier": 0.022782437585714133
+      },
+      {
+        "best_case_shadow_delta_brier": -0.00610829666359198,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 29,
+        "worst_case_shadow_delta_brier": 0.023357849216489642
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006059563918469531,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 30,
+        "worst_case_shadow_delta_brier": 0.023892544385203933
+      },
+      {
+        "best_case_shadow_delta_brier": -0.006010831173347082,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 31,
+        "worst_case_shadow_delta_brier": 0.024427239553918217
+      },
+      {
+        "best_case_shadow_delta_brier": -0.005962098428224632,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 32,
+        "worst_case_shadow_delta_brier": 0.024961934722632508
+      },
+      {
+        "best_case_shadow_delta_brier": -0.005913365683102183,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 33,
+        "worst_case_shadow_delta_brier": 0.02549662989134679
+      },
+      {
+        "best_case_shadow_delta_brier": -0.005864632937979734,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 34,
+        "worst_case_shadow_delta_brier": 0.026031325060061082
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0058159001928572845,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 35,
+        "worst_case_shadow_delta_brier": 0.026566020228775366
+      },
+      {
+        "best_case_shadow_delta_brier": -0.005767167447734835,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 36,
+        "worst_case_shadow_delta_brier": 0.027068788672571283
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0057184347026123855,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 37,
+        "worst_case_shadow_delta_brier": 0.02753968369232639
+      },
+      {
+        "best_case_shadow_delta_brier": -0.005669701957489936,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 38,
+        "worst_case_shadow_delta_brier": 0.028010118726091698
+      },
+      {
+        "best_case_shadow_delta_brier": -0.005620969212367487,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 39,
+        "worst_case_shadow_delta_brier": 0.028445025457663125
+      },
+      {
+        "best_case_shadow_delta_brier": -0.005572236467245037,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 40,
+        "worst_case_shadow_delta_brier": 0.028830472834785573
+      },
+      {
+        "best_case_shadow_delta_brier": -0.005523503722122588,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 41,
+        "worst_case_shadow_delta_brier": 0.029172895125275364
+      },
+      {
+        "best_case_shadow_delta_brier": -0.005474770977000139,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 42,
+        "worst_case_shadow_delta_brier": 0.029479340307091696
+      },
+      {
+        "best_case_shadow_delta_brier": -0.00542603823187769,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 43,
+        "worst_case_shadow_delta_brier": 0.029784668408805982
+      },
+      {
+        "best_case_shadow_delta_brier": -0.00537730548675524,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 44,
+        "worst_case_shadow_delta_brier": 0.030088317222336597
+      },
+      {
+        "best_case_shadow_delta_brier": -0.005328572741632791,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 45,
+        "worst_case_shadow_delta_brier": 0.03037905114415292
+      },
+      {
+        "best_case_shadow_delta_brier": -0.005279839996510342,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 46,
+        "worst_case_shadow_delta_brier": 0.030668677389091695
+      },
+      {
+        "best_case_shadow_delta_brier": -0.005231107251387893,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 47,
+        "worst_case_shadow_delta_brier": 0.030958303634030467
+      },
+      {
+        "best_case_shadow_delta_brier": -0.005182374506265443,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 48,
+        "worst_case_shadow_delta_brier": 0.031242761192234545
+      },
+      {
+        "best_case_shadow_delta_brier": -0.005133641761142994,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 49,
+        "worst_case_shadow_delta_brier": 0.03150925179653047
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0050849090160205454,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 50,
+        "worst_case_shadow_delta_brier": 0.031741945124357
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0050361762708980955,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 51,
+        "worst_case_shadow_delta_brier": 0.03196029869958149
+      },
+      {
+        "best_case_shadow_delta_brier": -0.004987443525775646,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 52,
+        "worst_case_shadow_delta_brier": 0.03217815757349985
+      },
+      {
+        "best_case_shadow_delta_brier": -0.004938710780653197,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 53,
+        "worst_case_shadow_delta_brier": 0.032394389124091684
+      },
+      {
+        "best_case_shadow_delta_brier": -0.004889978035530748,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 54,
+        "worst_case_shadow_delta_brier": 0.03261036627940801
+      },
+      {
+        "best_case_shadow_delta_brier": -0.004841245290408298,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 55,
+        "worst_case_shadow_delta_brier": 0.032821488358887596
+      },
+      {
+        "best_case_shadow_delta_brier": -0.004792512545285849,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 56,
+        "worst_case_shadow_delta_brier": 0.03303261043836719
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0047437798001634,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 57,
+        "worst_case_shadow_delta_brier": 0.03324110281307127
+      },
+      {
+        "best_case_shadow_delta_brier": -0.004695047055040951,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 58,
+        "worst_case_shadow_delta_brier": 0.033449595187775356
+      },
+      {
+        "best_case_shadow_delta_brier": -0.004646314309918501,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 59,
+        "worst_case_shadow_delta_brier": 0.03364901286412229
+      },
+      {
+        "best_case_shadow_delta_brier": -0.004597581564796052,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 60,
+        "worst_case_shadow_delta_brier": 0.033820657074805964
+      },
+      {
+        "best_case_shadow_delta_brier": -0.004548848819673603,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 61,
+        "worst_case_shadow_delta_brier": 0.03397922382146923
+      },
+      {
+        "best_case_shadow_delta_brier": -0.004500116074551154,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 62,
+        "worst_case_shadow_delta_brier": 0.0341377905681325
+      },
+      {
+        "best_case_shadow_delta_brier": -0.004451383329428704,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 63,
+        "worst_case_shadow_delta_brier": 0.034276729939112086
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0044026505843062546,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 64,
+        "worst_case_shadow_delta_brier": 0.03441374995872433
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0043539178391838055,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 65,
+        "worst_case_shadow_delta_brier": 0.03454949194155086
+      },
+      {
+        "best_case_shadow_delta_brier": -0.004305185094061356,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 66,
+        "worst_case_shadow_delta_brier": 0.03468222381826515
+      },
+      {
+        "best_case_shadow_delta_brier": -0.004256452348938906,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 67,
+        "worst_case_shadow_delta_brier": 0.03481382113960188
+      },
+      {
+        "best_case_shadow_delta_brier": -0.004207719603816457,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 68,
+        "worst_case_shadow_delta_brier": 0.03494541846093861
+      },
+      {
+        "best_case_shadow_delta_brier": -0.004158986858694008,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 69,
+        "worst_case_shadow_delta_brier": 0.03507533908531617
+      },
+      {
+        "best_case_shadow_delta_brier": -0.004110254113571559,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 70,
+        "worst_case_shadow_delta_brier": 0.035205259709693716
+      },
+      {
+        "best_case_shadow_delta_brier": -0.00406152136844911,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 71,
+        "worst_case_shadow_delta_brier": 0.03533518033407127
+      },
+      {
+        "best_case_shadow_delta_brier": -0.00401278862332666,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 72,
+        "worst_case_shadow_delta_brier": 0.03546448065625494
+      },
+      {
+        "best_case_shadow_delta_brier": -0.003964055878204211,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 73,
+        "worst_case_shadow_delta_brier": 0.03559156257913249
+      },
+      {
+        "best_case_shadow_delta_brier": -0.003915323133081762,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 74,
+        "worst_case_shadow_delta_brier": 0.03571864450201004
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0038665903879593123,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 75,
+        "worst_case_shadow_delta_brier": 0.03584572642488759
+      },
+      {
+        "best_case_shadow_delta_brier": -0.003817857642836863,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 76,
+        "worst_case_shadow_delta_brier": 0.03597280834776514
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0037691248977144137,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 77,
+        "worst_case_shadow_delta_brier": 0.03609989027064269
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0037203921525919646,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 78,
+        "worst_case_shadow_delta_brier": 0.03622697219352024
+      },
+      {
+        "best_case_shadow_delta_brier": -0.003671659407469515,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 79,
+        "worst_case_shadow_delta_brier": 0.036354054116397784
+      },
+      {
+        "best_case_shadow_delta_brier": -0.003622926662347066,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 80,
+        "worst_case_shadow_delta_brier": 0.03648113603927534
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0035741939172246164,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 81,
+        "worst_case_shadow_delta_brier": 0.036608217962152884
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0035254611721021673,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 82,
+        "worst_case_shadow_delta_brier": 0.03673529988503044
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0034767284269797178,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 83,
+        "worst_case_shadow_delta_brier": 0.03686238180790798
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0034279956818572687,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 84,
+        "worst_case_shadow_delta_brier": 0.036989126987356964
+      },
+      {
+        "best_case_shadow_delta_brier": -0.003379262936734819,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 85,
+        "worst_case_shadow_delta_brier": 0.03706212027445901
+      },
+      {
+        "best_case_shadow_delta_brier": -0.00333053019161237,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 86,
+        "worst_case_shadow_delta_brier": 0.037131479698459
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0032817974464899205,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 87,
+        "worst_case_shadow_delta_brier": 0.03719455798355084
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0032330647013674714,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 88,
+        "worst_case_shadow_delta_brier": 0.03725018777216309
+      },
+      {
+        "best_case_shadow_delta_brier": -0.003184331956245022,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 89,
+        "worst_case_shadow_delta_brier": 0.037305251177050844
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0031355992111225727,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 90,
+        "worst_case_shadow_delta_brier": 0.03735865555973451
+      },
+      {
+        "best_case_shadow_delta_brier": -0.003086866466000123,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 91,
+        "worst_case_shadow_delta_brier": 0.037411055336071246
+      },
+      {
+        "best_case_shadow_delta_brier": -0.003038133720877674,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 92,
+        "worst_case_shadow_delta_brier": 0.03746345511240798
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0029894009757552246,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 93,
+        "worst_case_shadow_delta_brier": 0.03751488736684676
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0029406682306327755,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 94,
+        "worst_case_shadow_delta_brier": 0.03756567822190798
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0028910184716021622,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 95,
+        "worst_case_shadow_delta_brier": 0.03761617802340798
+      },
+      {
+        "best_case_shadow_delta_brier": -0.00284136871257155,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 96,
+        "worst_case_shadow_delta_brier": 0.03766667782490798
+      },
+      {
+        "best_case_shadow_delta_brier": -0.00279086891107155,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 97,
+        "worst_case_shadow_delta_brier": 0.03771717762640797
+      },
+      {
+        "best_case_shadow_delta_brier": -0.00274036910957155,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 98,
+        "worst_case_shadow_delta_brier": 0.03776767742790797
+      },
+      {
+        "best_case_shadow_delta_brier": -0.00268986930807155,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 99,
+        "worst_case_shadow_delta_brier": 0.037818177229407966
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0026393695065715502,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 100,
+        "worst_case_shadow_delta_brier": 0.03786867703090797
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0025888697050715503,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 101,
+        "worst_case_shadow_delta_brier": 0.03791832678993858
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0025383699035715504,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 102,
+        "worst_case_shadow_delta_brier": 0.03796797654896919
+      },
+      {
+        "best_case_shadow_delta_brier": -0.002487579048510326,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 103,
+        "worst_case_shadow_delta_brier": 0.03801670929409164
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0024361467940715517,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 104,
+        "worst_case_shadow_delta_brier": 0.03806544203921409
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0023837470177348165,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 105,
+        "worst_case_shadow_delta_brier": 0.03811417478433654
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0023313472413980813,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 106,
+        "worst_case_shadow_delta_brier": 0.03816290752945899
+      },
+      {
+        "best_case_shadow_delta_brier": -0.002277942858714408,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 107,
+        "worst_case_shadow_delta_brier": 0.03821164027458144
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0022228794538266526,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 108,
+        "worst_case_shadow_delta_brier": 0.03826037301970389
+      },
+      {
+        "best_case_shadow_delta_brier": -0.002167249665214408,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 109,
+        "worst_case_shadow_delta_brier": 0.03830910576482634
+      },
+      {
+        "best_case_shadow_delta_brier": -0.00210417138012257,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 110,
+        "worst_case_shadow_delta_brier": 0.03835783850994879
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0020348119561225692,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 111,
+        "worst_case_shadow_delta_brier": 0.038406571255071235
+      },
+      {
+        "best_case_shadow_delta_brier": -0.001961818669020528,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 112,
+        "worst_case_shadow_delta_brier": 0.03845530400019369
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0018350734895715489,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 113,
+        "worst_case_shadow_delta_brier": 0.038504036745316134
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0017079915666939984,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 114,
+        "worst_case_shadow_delta_brier": 0.038552769490438586
+      },
+      {
+        "best_case_shadow_delta_brier": -0.001580909643816448,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 115,
+        "worst_case_shadow_delta_brier": 0.03860150223556103
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0014538277209388975,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 116,
+        "worst_case_shadow_delta_brier": 0.038650234980683484
+      },
+      {
+        "best_case_shadow_delta_brier": -0.001326745798061347,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 117,
+        "worst_case_shadow_delta_brier": 0.03869896772580593
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0011996638751837966,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 118,
+        "worst_case_shadow_delta_brier": 0.03874770047092838
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0010725819523062462,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 119,
+        "worst_case_shadow_delta_brier": 0.03879643321605083
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0009455000294286958,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 120,
+        "worst_case_shadow_delta_brier": 0.03884516596117328
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0008184181065511453,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 121,
+        "worst_case_shadow_delta_brier": 0.038893898706295726
+      },
+      {
+        "best_case_shadow_delta_brier": -0.000691336183673595,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 122,
+        "worst_case_shadow_delta_brier": 0.03894263145141818
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0005642542607960445,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 123,
+        "worst_case_shadow_delta_brier": 0.03899136419654063
+      },
+      {
+        "best_case_shadow_delta_brier": -0.00043717233791849407,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 124,
+        "worst_case_shadow_delta_brier": 0.03904009694166308
+      },
+      {
+        "best_case_shadow_delta_brier": -0.0003078720157348209,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 125,
+        "worst_case_shadow_delta_brier": 0.03908882968678553
+      },
+      {
+        "best_case_shadow_delta_brier": -0.00017795139135727016,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 126,
+        "worst_case_shadow_delta_brier": 0.039137562431907975
+      },
+      {
+        "best_case_shadow_delta_brier": -4.803076697971946e-05,
+        "classification": "IDENTITY_OF_TRANSITIONING_COUNTRIES_MATTERS_OR_TIE_POSSIBLE",
+        "n_actual_transitions": 127,
+        "worst_case_shadow_delta_brier": 0.03918629517703043
+      },
+      {
+        "best_case_shadow_delta_brier": 8.188985739783126e-05,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 128,
+        "worst_case_shadow_delta_brier": 0.039235027922152874
+      },
+      {
+        "best_case_shadow_delta_brier": 0.00021348717873456542,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 129,
+        "worst_case_shadow_delta_brier": 0.039283760667275326
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0003450845000712996,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 130,
+        "worst_case_shadow_delta_brier": 0.03933249341239777
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0004778163767855851,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 131,
+        "worst_case_shadow_delta_brier": 0.039381226157520224
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0006135583596121161,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 132,
+        "worst_case_shadow_delta_brier": 0.03942995890264267
+      },
+      {
+        "best_case_shadow_delta_brier": 0.00075057837922436,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 133,
+        "worst_case_shadow_delta_brier": 0.03947869164776512
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0008895177502039517,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 134,
+        "worst_case_shadow_delta_brier": 0.03952742439288757
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0010480844968672165,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 135,
+        "worst_case_shadow_delta_brier": 0.03957615713801002
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0012066512435304811,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 136,
+        "worst_case_shadow_delta_brier": 0.039624889883132466
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0013782954542141549,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 137,
+        "worst_case_shadow_delta_brier": 0.03967362262825492
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0015777131305610935,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 138,
+        "worst_case_shadow_delta_brier": 0.03972235537337737
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0017862055052651753,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 139,
+        "worst_case_shadow_delta_brier": 0.03977108811849982
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0019946978799692573,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 140,
+        "worst_case_shadow_delta_brier": 0.03981982086362227
+      },
+      {
+        "best_case_shadow_delta_brier": 0.002205819959448848,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 141,
+        "worst_case_shadow_delta_brier": 0.039868553608744715
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0024169420389284386,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 142,
+        "worst_case_shadow_delta_brier": 0.03991728635386717
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0026329191942447644,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 143,
+        "worst_case_shadow_delta_brier": 0.039966019098989614
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0028491507448366016,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 144,
+        "worst_case_shadow_delta_brier": 0.040014751844112066
+      },
+      {
+        "best_case_shadow_delta_brier": 0.003067009618754968,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 145,
+        "worst_case_shadow_delta_brier": 0.04006348458923451
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0032853631939794587,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 146,
+        "worst_case_shadow_delta_brier": 0.040112217334356964
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0035180565218059894,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 147,
+        "worst_case_shadow_delta_brier": 0.04016095007947941
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0037845471261019076,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 148,
+        "worst_case_shadow_delta_brier": 0.04020968282460186
+      },
+      {
+        "best_case_shadow_delta_brier": 0.004069004684305989,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 149,
+        "worst_case_shadow_delta_brier": 0.04025841556972431
+      },
+      {
+        "best_case_shadow_delta_brier": 0.004358630929244763,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 150,
+        "worst_case_shadow_delta_brier": 0.04030714831484676
+      },
+      {
+        "best_case_shadow_delta_brier": 0.004648257174183538,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 151,
+        "worst_case_shadow_delta_brier": 0.040355881059969206
+      },
+      {
+        "best_case_shadow_delta_brier": 0.004938991095999864,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 152,
+        "worst_case_shadow_delta_brier": 0.04040461380509166
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0052426399095304764,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 153,
+        "worst_case_shadow_delta_brier": 0.040453346550214105
+      },
+      {
+        "best_case_shadow_delta_brier": 0.005547968011244761,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 154,
+        "worst_case_shadow_delta_brier": 0.04050207929533656
+      },
+      {
+        "best_case_shadow_delta_brier": 0.005854413193061087,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 155,
+        "worst_case_shadow_delta_brier": 0.04055081204045901
+      },
+      {
+        "best_case_shadow_delta_brier": 0.006196835483550882,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 156,
+        "worst_case_shadow_delta_brier": 0.040599544785581455
+      },
+      {
+        "best_case_shadow_delta_brier": 0.00658228286067333,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 157,
+        "worst_case_shadow_delta_brier": 0.04064827753070391
+      },
+      {
+        "best_case_shadow_delta_brier": 0.007017189592244758,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 158,
+        "worst_case_shadow_delta_brier": 0.040697010275826354
+      },
+      {
+        "best_case_shadow_delta_brier": 0.007487624626010063,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 159,
+        "worst_case_shadow_delta_brier": 0.040745743020948806
+      },
+      {
+        "best_case_shadow_delta_brier": 0.007958519645765164,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 160,
+        "worst_case_shadow_delta_brier": 0.04079447576607125
+      },
+      {
+        "best_case_shadow_delta_brier": 0.008461288089561082,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 161,
+        "worst_case_shadow_delta_brier": 0.040843208511193704
+      },
+      {
+        "best_case_shadow_delta_brier": 0.008995983258275367,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 162,
+        "worst_case_shadow_delta_brier": 0.04089194125631615
+      },
+      {
+        "best_case_shadow_delta_brier": 0.009530678426989653,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 163,
+        "worst_case_shadow_delta_brier": 0.0409406740014386
+      },
+      {
+        "best_case_shadow_delta_brier": 0.010065373595703937,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 164,
+        "worst_case_shadow_delta_brier": 0.04098940674656105
+      },
+      {
+        "best_case_shadow_delta_brier": 0.010600068764418222,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 165,
+        "worst_case_shadow_delta_brier": 0.0410381394916835
+      },
+      {
+        "best_case_shadow_delta_brier": 0.011134763933132508,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 166,
+        "worst_case_shadow_delta_brier": 0.041086872236805946
+      },
+      {
+        "best_case_shadow_delta_brier": 0.011669459101846793,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 167,
+        "worst_case_shadow_delta_brier": 0.0411356049819284
+      },
+      {
+        "best_case_shadow_delta_brier": 0.012244870732622303,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 168,
+        "worst_case_shadow_delta_brier": 0.041184337727050845
+      },
+      {
+        "best_case_shadow_delta_brier": 0.012927203560836589,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 169,
+        "worst_case_shadow_delta_brier": 0.0412330704721733
+      },
+      {
+        "best_case_shadow_delta_brier": 0.013619189528999855,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 170,
+        "worst_case_shadow_delta_brier": 0.04128180321729574
+      },
+      {
+        "best_case_shadow_delta_brier": 0.014396169180061077,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 171,
+        "worst_case_shadow_delta_brier": 0.041330535962418195
+      },
+      {
+        "best_case_shadow_delta_brier": 0.015223711410795772,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 172,
+        "worst_case_shadow_delta_brier": 0.04137926870754065
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0160584152228672,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 173,
+        "worst_case_shadow_delta_brier": 0.041428001452663094
+      },
+      {
+        "best_case_shadow_delta_brier": 0.016900887377816178,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 174,
+        "worst_case_shadow_delta_brier": 0.041476734197785546
+      },
+      {
+        "best_case_shadow_delta_brier": 0.01774993714089781,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 175,
+        "worst_case_shadow_delta_brier": 0.04152546694290799
+      },
+      {
+        "best_case_shadow_delta_brier": 0.018644601613754953,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 176,
+        "worst_case_shadow_delta_brier": 0.041574199688030444
+      },
+      {
+        "best_case_shadow_delta_brier": 0.019543141732999852,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 177,
+        "worst_case_shadow_delta_brier": 0.04162293243315289
+      },
+      {
+        "best_case_shadow_delta_brier": 0.02048131902171414,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 178,
+        "worst_case_shadow_delta_brier": 0.04167166517827534
+      },
+      {
+        "best_case_shadow_delta_brier": 0.02144453069997945,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 179,
+        "worst_case_shadow_delta_brier": 0.04172039792339779
+      },
+      {
+        "best_case_shadow_delta_brier": 0.02244814285966312,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 180,
+        "worst_case_shadow_delta_brier": 0.04176913066852024
+      },
+      {
+        "best_case_shadow_delta_brier": 0.02352220003499985,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 181,
+        "worst_case_shadow_delta_brier": 0.041817863413642686
+      },
+      {
+        "best_case_shadow_delta_brier": 0.024602872026846793,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 182,
+        "worst_case_shadow_delta_brier": 0.04186659615876514
+      },
+      {
+        "best_case_shadow_delta_brier": 0.02574157362709169,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 183,
+        "worst_case_shadow_delta_brier": 0.041915328903887585
+      },
+      {
+        "best_case_shadow_delta_brier": 0.026880275227336586,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 184,
+        "worst_case_shadow_delta_brier": 0.04196406164901004
+      },
+      {
+        "best_case_shadow_delta_brier": 0.02802826662276516,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 185,
+        "worst_case_shadow_delta_brier": 0.04201279439413248
+      },
+      {
+        "best_case_shadow_delta_brier": 0.0291783336603672,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 186,
+        "worst_case_shadow_delta_brier": 0.042061527139254935
+      },
+      {
+        "best_case_shadow_delta_brier": 0.030348846082612096,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 187,
+        "worst_case_shadow_delta_brier": 0.04211025988437739
+      },
+      {
+        "best_case_shadow_delta_brier": 0.03154220158766311,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 188,
+        "worst_case_shadow_delta_brier": 0.042158992629499834
+      },
+      {
+        "best_case_shadow_delta_brier": 0.03273555709271413,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 189,
+        "worst_case_shadow_delta_brier": 0.042207725374622286
+      },
+      {
+        "best_case_shadow_delta_brier": 0.03397779913951005,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 190,
+        "worst_case_shadow_delta_brier": 0.04225645811974473
+      },
+      {
+        "best_case_shadow_delta_brier": 0.03529067081649985,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 191,
+        "worst_case_shadow_delta_brier": 0.042305190864867184
+      },
+      {
+        "best_case_shadow_delta_brier": 0.03665308918821414,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 192,
+        "worst_case_shadow_delta_brier": 0.04235371945561208
+      },
+      {
+        "best_case_shadow_delta_brier": 0.03803120164044883,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 193,
+        "worst_case_shadow_delta_brier": 0.042402248046356984
+      },
+      {
+        "best_case_shadow_delta_brier": 0.039411171669897806,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 194,
+        "worst_case_shadow_delta_brier": 0.04245077663710189
+      },
+      {
+        "best_case_shadow_delta_brier": 0.04087446488269372,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 195,
+        "worst_case_shadow_delta_brier": 0.042499305227846784
+      },
+      {
+        "best_case_shadow_delta_brier": 0.04254783381859169,
+        "classification": "ORIGINAL_BEATS_SHADOW_FOR_ANY_K_COUNTRIES",
+        "n_actual_transitions": 196,
+        "worst_case_shadow_delta_brier": 0.04254783381859169
+      }
+    ]
+  }
+}
