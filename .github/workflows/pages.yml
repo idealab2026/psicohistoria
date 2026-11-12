@@ -124,10 +124,10 @@ jobs:
         run: |
           set -e
           PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_backtest_ucdp_prio_retention_four_vintages.py' -v
-      - name: Audit 24.1 official edition and four ex-post ACD persistence folds
+      - name: Verify SHA-pinned 24.1 official target edition and reproduce four ACD historical persistence folds
         run: |
           set -e
-          PYTHONDONTWRITEBYTECODE=1 python3 scripts/backtest_ucdp_prio_retention_four_vintages.py --probe
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/backtest_ucdp_prio_retention_four_vintages.py
   ucdp_prio_old_vintages_source_probe:
     runs-on: ubuntu-latest
     steps:
