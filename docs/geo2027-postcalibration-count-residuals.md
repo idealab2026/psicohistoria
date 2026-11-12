@@ -41,3 +41,30 @@ Esta investigación se eligió después de examinar los resultados históricos 2
 Se informa de valores **antes y después de la calibración** para cada año y estado inicial, sin seleccionar ni excluir años en función del resultado. Las comparaciones no modifican probabilidades GEO-2027, su segundo modelo shadow, las 15 alertas emitidas o NEWCONF-2027. Cualquier conclusión sobre shocks compartidos exigirá un programa adicional con hipótesis estructurales comprobables y muestras independientes de más años.
 
 El informe completo se archivará como `data/geo2027-postcalibration-count-residuals-archival.json` y GitHub Actions deberá reconstruirlo byte a byte desde las fuentes UCDP oficiales.
+
+## Datos reproducidos desde las fuentes UCDP originales
+
+El informe `data/geo2027-postcalibration-count-residuals-archival.json` contiene cada año y cada estado inicial por separado, junto a tres modelos comparados **sobre idénticas etiquetas**. Se reconstruye desde las cuatro ediciones oficiales y se valida **byte a byte** en CI.
+
+| Conjunto y transición | País-años | Cambios observados | Esperados originalmente | Esperados tras calibración | Media anual `Z²` original | Media anual `Z²` calibrada |
+|---|---:|---:|---:|---:|---:|---:|
+| 2020–2023, entradas | 651 | 19 | 29,18 | 22,31 | 1,326 | **0,581** |
+| 2020–2023, resoluciones | 133 | 14 | 31,88 | 17,77 | 3,630 | **0,551** |
+| 2024–2025, entradas | 321 | 8 | 13,50 | 10,31 | 1,225 | **0,277** |
+| 2024–2025, resoluciones | 71 | 10 | 16,57 | 9,19 | 1,829 | **0,155** |
+
+**El resultado cambia el diagnóstico:** en los dos grupos de riesgo y en ambos bloques, la discrepancia anual respecto a los recuentos esperados **cae notablemente** tras corregir las marginales. No es legítimo presentar la antigua sobredispersión como evidencia suficiente de correlación o contagio geopolítico.
+
+Hay también **subdispersión descriptiva** frente al modelo Poisson-binomial bajo independencia en todos los bloques calibrados (media de `Z²` inferior a 1). Esto no prueba dependencia negativa, independencia ni que las probabilidades calibradas sean correctas: el denominador utiliza varianzas hipotéticas de eventos independientes, el método fue seleccionado tras explorar resultados de evaluación, las observaciones de años contiguos se solapan y la muestra separada solo incluye dos años.
+
+### Diagnóstico anual que impide ocultar resultados adversos
+
+El informe registra expresamente que en el periodo revisado **2022 las entradas observadas (7) superaron las esperadas tras calibración (~5,42)**, mientras que en 2020, 2021 y 2023 ocurrieron menos entradas que las esperadas. En las resoluciones revisadas se observaron **5 frente a 4,56 esperadas en 2022**, y menos de las esperadas en los otros tres años. El signo del residual, por tanto, **no es siempre negativo**.
+
+En 2024, las resoluciones observadas fueron **6 frente a 4,90 esperadas** tras calibración; en 2025 fueron **4 frente a 4,29**. En ningún caso se excluyen años o riesgos por producir diferencias desfavorables. Se publican la Brier y el log-loss de los tres modelos y las masas Poisson-binomial, claramente marcadas como cálculos condicionales a independencia **no válidos como p-valores confirmatorios**.
+
+### Implicación para PSICOHISTORIA
+
+Con la evidencia disponible en 2026 **no está identificado un parámetro de dependencia entre países**. Lo que sí está documentado es que el error agregado de calibración explica parte importante de los residuos de recuentos históricos. Antes de aumentar la complejidad del modelo conjunto, se necesitarán más años realmente separados por edición y nuevas cohortes fechadas con criterios fijados antes de conocer sus resultados.
+
+Permanecen inalterados el primer modelo GEO-2027, su shadow, las 15 alertas emitidas y NEWCONF-2027. **Ningún dato 2027 se ha observado ni incorporado.**
