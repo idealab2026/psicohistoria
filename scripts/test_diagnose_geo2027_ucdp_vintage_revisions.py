@@ -51,7 +51,7 @@ def synthetic_archives():
                 "target_year":year,
                 "origin_state":origin,
                 "outcome":editions[target_version][cid][year],
-                "p_model":.80 if origin==1 else .05,
+                "p_model":.80 if origin==1 else .05+cid/10000,
                 "p_global_markov":.72 if origin==1 else .08,
             })
     assert sum(r["outcome"] for r in holdout)==69
@@ -105,7 +105,7 @@ class UCDPVintageRevisionsTests(unittest.TestCase):
             diagnose(sources,changed,rows)
         damaged=copy.deepcopy(rows)
         damaged.pop()
-        with self.assertRaisesRegex(ValueError,"392/69"):
+        with self.assertRaisesRegex(ValueError,"published 2024/25 separated holdout"):
             diagnose(sources,meta,damaged)
 
     def test_missing_later_label_not_assumed_zero(self):
