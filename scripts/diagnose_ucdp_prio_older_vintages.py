@@ -24,9 +24,9 @@ from probe_ucdp_prio_incidence import (
 )
 
 HISTORICAL={
-    "20.1":{"last_year":2019,"url":"https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-201-csv.zip","sha256":None},
-    "21.1":{"last_year":2020,"url":"https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-211-csv.zip","sha256":None},
-    "22.1":{"last_year":2021,"url":"https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-221-csv.zip","sha256":None},
+    "20.1":{"last_year":2019,"url":"https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-201-csv.zip","sha256":"f4f924c1c7ce4ca5c8451512afced6182350b2ea849dd271617febc224218c93"},
+    "21.1":{"last_year":2020,"url":"https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-211-csv.zip","sha256":"4bebac361a42a9db813da58bf6244f7ec04b780dc24a8c236993672e32460dc4"},
+    "22.1":{"last_year":2021,"url":"https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-221-csv.zip","sha256":"82e8326c2de196f1acf3538e6bd8efd818fdde175c399b43282b4d9ee15b954d"},
     "23.1":{"last_year":2022,"url":CURRENT_SOURCES["23.1"],"sha256":CURRENT_PINS["23.1"]},
     "25.1":{"last_year":2024,"url":CURRENT_SOURCES["25.1"],"sha256":CURRENT_PINS["25.1"]},
 }
