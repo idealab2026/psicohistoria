@@ -25,7 +25,7 @@ from diagnose_geo2027_transition_skill import make_holdout_rows
 from diagnose_newconf2027_event_count import poisson_binomial
 from evaluate_geo2027_calibrated_shadow_official import load_authenticated
 from experiment_geo2027_temporal_calibration import (
-    COUNT_ARCHIVE, REPORT_PATH, TRAIN_YEARS,
+    COUNT_ARCHIVE, TRAIN_YEARS,
     REVISED_VALIDATION_YEARS, SEPARATE_VALIDATION_YEARS,
     evaluate as original_calibration_evaluate, logistic_shift, transition_pair,
 )
@@ -34,6 +34,7 @@ from prepare_geo2027_transition_alerts import SOURCE_SHA256, sha
 from build_official_countries import PINNED_SOURCE_SHA256
 
 REPORT = Path("data/geo2027-postcalibration-count-residuals-archival.json")
+REPORT_PATH = Path("data/geo2027-temporal-calibration-ablation.json")
 MIN_PER_GROUP_YEAR = 15
 ORIGINAL_SHADOW_SHA = "1d0880f6e95e77d5e203b186e45a035676c7f724ecbe6a8b323f776b9eaa9188"
 
