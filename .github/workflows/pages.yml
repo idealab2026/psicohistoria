@@ -127,7 +127,7 @@ jobs:
       - name: Recompute train-only log-odds intercept calibration on SHA-pinned historical UCDP releases
         run: |
           set -e
-          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_geo2027_temporal_calibration.py
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_geo2027_temporal_calibration.py --check-report data/geo2027-temporal-calibration-ablation.json
   geo2027_historical_count_dispersion:
     runs-on: ubuntu-latest
     steps:
