@@ -1,0 +1,898 @@
+{
+  "2027_outcomes_observed": 0,
+  "calibration_refit_using_2020_to_2025_outcomes": false,
+  "cross_release_holdout_confirmatory": false,
+  "historical_model_selected_after_outcomes_inspected": true,
+  "independence_assumption_in_count_variance_and_poisson_binomial_tails": "CONDITIONAL_ILLUSTRATIVE_ONLY_NOT_TESTED",
+  "independent_p_values_computed": false,
+  "issued_15_alerts_modified": false,
+  "issued_original_forecast_modified": false,
+  "issued_shadow_forecast_modified": false,
+  "limitations": "Annual Pearson count ratio is mean Z_t^2 with Z=(K-E)/sqrt(sum p(1-p)); both denominator and numerator change after intercept calibration. No dispersion ratio measures dependence in isolation; a lower ratio can arise from removal of marginal bias. Poisson-binomial tails assume unverified conditional independence, are only descriptive scenarios, and are NOT reported as significance p-values. 2020-23 labels derive from a 2026 REVISED archive (not as-of), 2024-25 from only two separately archived outcomes; the method was selected after looking at those outcomes. Years overlap in two-year horizons, countries recur, temporal shocks can persist, and cross-state residual products are NOT an estimate of shared country or global shocks. No updates to any 2027 issue.",
+  "periods": {
+    "revised_2020_2023": {
+      "0": {
+        "calibrated_minus_original_mean_annual_squared_standardized_residual": -0.7449039476090682,
+        "calibrated_minus_original_weighted_brier": -6.733082014296135e-05,
+        "models": {
+          "historical_odds_intercept": {
+            "brier_weighted_by_country_years": 0.026014369704564312,
+            "country_years": 651,
+            "expected_transitions": 22.309977233474537,
+            "log_loss_weighted_by_country_years": 0.11232307669880773,
+            "mean_annual_signed_standardized_count_residual": -0.36043435297598964,
+            "mean_annual_squared_standardized_count_residual": 0.5807361272634803,
+            "observed_transitions": 19,
+            "total_count_bias_observed_minus_expected": -3.3099772334745383
+          },
+          "issued_country_markov": {
+            "brier_weighted_by_country_years": 0.026081700524707273,
+            "country_years": 651,
+            "expected_transitions": 29.180176196504,
+            "log_loss_weighted_by_country_years": 0.11528654088856252,
+            "mean_annual_signed_standardized_count_residual": -0.9850511662641043,
+            "mean_annual_squared_standardized_count_residual": 1.3256400748725485,
+            "observed_transitions": 19,
+            "total_count_bias_observed_minus_expected": -10.180176196504
+          },
+          "original_global_markov": {
+            "brier_weighted_by_country_years": 0.029055310733483188,
+            "country_years": 651,
+            "expected_transitions": 36.446418438529,
+            "log_loss_weighted_by_country_years": 0.14009179441679698,
+            "mean_annual_signed_standardized_count_residual": -1.4852996709934587,
+            "mean_annual_squared_standardized_count_residual": 2.4793097965069824,
+            "observed_transitions": 19,
+            "total_count_bias_observed_minus_expected": -17.446418438529
+          }
+        },
+        "n_target_years": 4,
+        "relative_reduction_in_abs_aggregate_count_bias": 0.6748605162048937,
+        "target_year_by_year": [
+          {
+            "delta_brier_calibrated_minus_original": -0.00010951321000035943,
+            "delta_logloss_calibrated_minus_original": -0.0046224067170289596,
+            "models": {
+              "historical_odds_intercept": {
+                "brier": 0.021459912725895848,
+                "expected_transitions": 5.7314986396257765,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.8333370121796169,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.31338475413131106,
+                "independence_count_variance": 5.3270159799287224,
+                "log_loss": 0.0944201801016031,
+                "n": 163,
+                "observed_minus_expected_transitions": -1.7314986396257765,
+                "observed_transitions": 4,
+                "squared_standardized_count_residual_independence": 0.5628080618346541,
+                "standardized_count_residual_independence": -0.7502053464449945,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "issued_country_markov": {
+                "brier": 0.021569425935896207,
+                "expected_transitions": 7.499473340439,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9488403763359409,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.12022722484317656,
+                "independence_count_variance": 6.828132963973919,
+                "log_loss": 0.09904258681863205,
+                "n": 163,
+                "observed_minus_expected_transitions": -3.4994733404389997,
+                "observed_transitions": 4,
+                "squared_standardized_count_residual_independence": 1.79350837557739,
+                "standardized_count_residual_independence": -1.339219315712475,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "original_global_markov": {
+                "brier": 0.024989706791207114,
+                "expected_transitions": 9.286919683103,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9848524576082892,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.04171596403523709,
+                "independence_count_variance": 8.75779773708824,
+                "log_loss": 0.1275331460772406,
+                "n": 163,
+                "observed_minus_expected_transitions": -5.286919683102999,
+                "observed_transitions": 4,
+                "squared_standardized_count_residual_independence": 3.1916151268498165,
+                "standardized_count_residual_independence": -1.7865092014456059,
+                "these_tails_are_valid_significance_p_values": false
+              }
+            },
+            "n": 163,
+            "observed_transitions": 4,
+            "origin_state": 0,
+            "year": 2020
+          },
+          {
+            "delta_brier_calibrated_minus_original": -0.0006594368456602044,
+            "delta_logloss_calibrated_minus_original": -0.005818449194827352,
+            "models": {
+              "historical_odds_intercept": {
+                "brier": 0.01788998202096248,
+                "expected_transitions": 5.437499520777268,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9151602619905106,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.19919579189082337,
+                "independence_count_variance": 5.079146530130427,
+                "log_loss": 0.08361264116107887,
+                "n": 163,
+                "observed_minus_expected_transitions": -2.4374995207772683,
+                "observed_transitions": 3,
+                "squared_standardized_count_residual_independence": 1.169764226832976,
+                "standardized_count_residual_independence": -1.0815563909630308,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "issued_country_markov": {
+                "brier": 0.018549418866622685,
+                "expected_transitions": 7.125537270071,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.977454692931716,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.06684198313990505,
+                "independence_count_variance": 6.528174917459503,
+                "log_loss": 0.08943109035590623,
+                "n": 163,
+                "observed_minus_expected_transitions": -4.125537270071,
+                "observed_transitions": 3,
+                "squared_standardized_count_residual_independence": 2.607169382245717,
+                "standardized_count_residual_independence": -1.6146731502832754,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "original_global_markov": {
+                "brier": 0.019475799530013323,
+                "expected_transitions": 9.119846216444,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9952100716203087,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.017177270636431586,
+                "independence_count_variance": 8.609591032323829,
+                "log_loss": 0.10958326101393005,
+                "n": 163,
+                "observed_minus_expected_transitions": -6.1198462164439995,
+                "observed_transitions": 3,
+                "squared_standardized_count_residual_independence": 4.350092538926912,
+                "standardized_count_residual_independence": -2.0856875458531445,
+                "these_tails_are_valid_significance_p_values": false
+              }
+            },
+            "n": 163,
+            "observed_transitions": 3,
+            "origin_state": 0,
+            "year": 2021
+          },
+          {
+            "delta_brier_calibrated_minus_original": 0.0003831203158686444,
+            "delta_logloss_calibrated_minus_original": 0.0014056231374851014,
+            "models": {
+              "historical_odds_intercept": {
+                "brier": 0.03885051184369272,
+                "expected_transitions": 5.42476821451005,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.29844355416450263,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.8260910770986165,
+                "independence_count_variance": 5.033483792584459,
+                "log_loss": 0.1578878823824592,
+                "n": 161,
+                "observed_minus_expected_transitions": 1.57523178548995,
+                "observed_transitions": 7,
+                "squared_standardized_count_residual_independence": 0.49296973632327834,
+                "standardized_count_residual_independence": 0.7021180358908881,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "issued_country_markov": {
+                "brier": 0.03846739152782407,
+                "expected_transitions": 7.09490814855,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.5718089532093701,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.5843523027048185,
+                "independence_count_variance": 6.449018051740325,
+                "log_loss": 0.1564822592449741,
+                "n": 161,
+                "observed_minus_expected_transitions": -0.09490814855000007,
+                "observed_transitions": 7,
+                "squared_standardized_count_residual_independence": 0.001396733051283383,
+                "standardized_count_residual_independence": -0.03737289193096224,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "original_global_markov": {
+                "brier": 0.041744989931636785,
+                "expected_transitions": 9.017890982674,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.8026877387861747,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.31500080682293824,
+                "independence_count_variance": 8.512783170404479,
+                "log_loss": 0.18044817746520533,
+                "n": 161,
+                "observed_minus_expected_transitions": -2.0178909826740004,
+                "observed_transitions": 7,
+                "squared_standardized_count_residual_independence": 0.4783258232293928,
+                "standardized_count_residual_independence": -0.6916110346353598,
+                "these_tails_are_valid_significance_p_values": false
+              }
+            },
+            "n": 161,
+            "observed_transitions": 7,
+            "origin_state": 0,
+            "year": 2022
+          },
+          {
+            "delta_brier_calibrated_minus_original": 0.00012087880673630064,
+            "delta_logloss_calibrated_minus_original": -0.002766225603859182,
+            "models": {
+              "historical_odds_intercept": {
+                "brier": 0.02601456967743252,
+                "expected_transitions": 5.7162108585614435,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.6854353791855139,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.4875832322146414,
+                "independence_count_variance": 5.266374865649929,
+                "log_loss": 0.11392087805811424,
+                "n": 164,
+                "observed_minus_expected_transitions": -0.7162108585614435,
+                "observed_transitions": 5,
+                "squared_standardized_count_residual_independence": 0.0974024840630131,
+                "standardized_count_residual_independence": -0.3120937103868213,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "issued_country_markov": {
+                "brier": 0.02589369087069622,
+                "expected_transitions": 7.4602574374440005,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.8783118336079015,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.2316065551473235,
+                "independence_count_variance": 6.721779067015819,
+                "log_loss": 0.11668710366197342,
+                "n": 164,
+                "observed_minus_expected_transitions": -2.4602574374440005,
+                "observed_transitions": 5,
+                "squared_standardized_count_residual_independence": 0.9004858086158033,
+                "standardized_count_residual_independence": -0.9489393071297044,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "original_global_markov": {
+                "brier": 0.03015967303747014,
+                "expected_transitions": 9.021761556308,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9503652516741417,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.10763384539812965,
+                "independence_count_variance": 8.525467766192897,
+                "log_loss": 0.14327821486326797,
+                "n": 164,
+                "observed_minus_expected_transitions": -4.021761556308,
+                "observed_transitions": 5,
+                "squared_standardized_count_residual_independence": 1.8972056970218076,
+                "standardized_count_residual_independence": -1.377390902039725,
+                "these_tails_are_valid_significance_p_values": false
+              }
+            },
+            "n": 164,
+            "observed_transitions": 5,
+            "origin_state": 0,
+            "year": 2023
+          }
+        ],
+        "years": [
+          2020,
+          2021,
+          2022,
+          2023
+        ]
+      },
+      "1": {
+        "calibrated_minus_original_mean_annual_squared_standardized_residual": -3.078568111587102,
+        "calibrated_minus_original_weighted_brier": -0.018243233830864555,
+        "models": {
+          "historical_odds_intercept": {
+            "brier_weighted_by_country_years": 0.0930473192296024,
+            "country_years": 133,
+            "expected_transitions": 17.768605025862495,
+            "log_loss_weighted_by_country_years": 0.3269224145569853,
+            "mean_annual_signed_standardized_count_residual": -0.48761884640169956,
+            "mean_annual_squared_standardized_count_residual": 0.5513130451736343,
+            "observed_transitions": 14,
+            "total_count_bias_observed_minus_expected": -3.7686050258624952
+          },
+          "issued_country_markov": {
+            "brier_weighted_by_country_years": 0.11129055306046695,
+            "country_years": 133,
+            "expected_transitions": 31.879332431563,
+            "log_loss_weighted_by_country_years": 0.3840310461552169,
+            "mean_annual_signed_standardized_count_residual": -1.8518205506067709,
+            "mean_annual_squared_standardized_count_residual": 3.6298811567607365,
+            "observed_transitions": 14,
+            "total_count_bias_observed_minus_expected": -17.879332431563
+          },
+          "original_global_markov": {
+            "brier_weighted_by_country_years": 0.13469626990046765,
+            "country_years": 133,
+            "expected_transitions": 40.694721242159,
+            "log_loss_weighted_by_country_years": 0.4519725626331404,
+            "mean_annual_signed_standardized_count_residual": -2.5142450674301537,
+            "mean_annual_squared_standardized_count_residual": 6.48018494747493,
+            "observed_transitions": 14,
+            "total_count_bias_observed_minus_expected": -26.694721242158998
+          }
+        },
+        "n_target_years": 4,
+        "relative_reduction_in_abs_aggregate_count_bias": 0.7892200371413394,
+        "target_year_by_year": [
+          {
+            "delta_brier_calibrated_minus_original": -0.030113176144334543,
+            "delta_logloss_calibrated_minus_original": -0.09496805071453374,
+            "models": {
+              "historical_odds_intercept": {
+                "brier": 0.060873331111174565,
+                "expected_transitions": 4.586137733762774,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9565403555360635,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.140580094436975,
+                "independence_count_variance": 3.8502582148294855,
+                "log_loss": 0.24363979944921288,
+                "n": 33,
+                "observed_minus_expected_transitions": -2.586137733762774,
+                "observed_transitions": 2,
+                "squared_standardized_count_residual_independence": 1.7370545051321575,
+                "standardized_count_residual_independence": -1.317973635977654,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "issued_country_markov": {
+                "brier": 0.09098650725550911,
+                "expected_transitions": 8.176216441669,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.999166950304538,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.005062221939356366,
+                "independence_count_variance": 5.9104242434152,
+                "log_loss": 0.3386078501637466,
+                "n": 33,
+                "observed_minus_expected_transitions": -6.176216441669,
+                "observed_transitions": 2,
+                "squared_standardized_count_residual_independence": 6.453961333966937,
+                "standardized_count_residual_independence": -2.54046478699606,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "original_global_markov": {
+                "brier": 0.12093085562594368,
+                "expected_transitions": 10.348275377385,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9999349039172001,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.000511316391210859,
+                "independence_count_variance": 7.103220732348858,
+                "log_loss": 0.423751334744366,
+                "n": 33,
+                "observed_minus_expected_transitions": -8.348275377385,
+                "observed_transitions": 2,
+                "squared_standardized_count_residual_independence": 9.811563571333183,
+                "standardized_count_residual_independence": -3.1323415476817313,
+                "these_tails_are_valid_significance_p_values": false
+              }
+            },
+            "n": 33,
+            "observed_transitions": 2,
+            "origin_state": 1,
+            "year": 2020
+          },
+          {
+            "delta_brier_calibrated_minus_original": -0.014807353294507192,
+            "delta_logloss_calibrated_minus_original": -0.04837196667914151,
+            "models": {
+              "historical_odds_intercept": {
+                "brier": 0.1030055550831981,
+                "expected_transitions": 4.510961586092848,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.6809711119930295,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.5221205572557664,
+                "independence_count_variance": 3.8121545390472984,
+                "log_loss": 0.3503423059968469,
+                "n": 33,
+                "observed_minus_expected_transitions": -0.510961586092848,
+                "observed_transitions": 4,
+                "squared_standardized_count_residual_independence": 0.06848666280138956,
+                "standardized_count_residual_independence": -0.2616995659174649,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "issued_country_markov": {
+                "brier": 0.11781290837770529,
+                "expected_transitions": 8.08040256466,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9778297901332372,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.06332673768936437,
+                "independence_count_variance": 5.898583026531726,
+                "log_loss": 0.3987142726759884,
+                "n": 33,
+                "observed_minus_expected_transitions": -4.08040256466,
+                "observed_transitions": 4,
+                "squared_standardized_count_residual_independence": 2.822658427421282,
+                "standardized_count_residual_independence": -1.6800769111624865,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "original_global_markov": {
+                "brier": 0.14102131318501632,
+                "expected_transitions": 10.129617447971999,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9967015884520694,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.012053836499749174,
+                "independence_count_variance": 7.020249276994461,
+                "log_loss": 0.46537745443338796,
+                "n": 33,
+                "observed_minus_expected_transitions": -6.129617447971999,
+                "observed_transitions": 4,
+                "squared_standardized_count_residual_independence": 5.351976628751328,
+                "standardized_count_residual_independence": -2.3134339473499836,
+                "these_tails_are_valid_significance_p_values": false
+              }
+            },
+            "n": 33,
+            "observed_transitions": 4,
+            "origin_state": 1,
+            "year": 2021
+          },
+          {
+            "delta_brier_calibrated_minus_original": -0.009594038449588171,
+            "delta_logloss_calibrated_minus_original": -0.02642629265903984,
+            "models": {
+              "historical_odds_intercept": {
+                "brier": 0.1217952994523307,
+                "expected_transitions": 4.563811948790382,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.48834917118938137,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.6989239807505307,
+                "independence_count_variance": 3.8816583452460836,
+                "log_loss": 0.4036460119793705,
+                "n": 35,
+                "observed_minus_expected_transitions": 0.43618805120961834,
+                "observed_transitions": 5,
+                "squared_standardized_count_residual_independence": 0.04901513711299669,
+                "standardized_count_residual_independence": 0.2213936248246473,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "issued_country_markov": {
+                "brier": 0.13138933790191887,
+                "expected_transitions": 8.217599170207,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9415783337095971,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.13268727794503915,
+                "independence_count_variance": 6.07052339949184,
+                "log_loss": 0.43007230463841034,
+                "n": 35,
+                "observed_minus_expected_transitions": -3.2175991702070004,
+                "observed_transitions": 5,
+                "squared_standardized_count_residual_independence": 1.7054451056038127,
+                "standardized_count_residual_independence": -1.305926914342381,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "original_global_markov": {
+                "brier": 0.1479023942798122,
+                "expected_transitions": 10.583944214690002,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9915682893480303,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.025123878459491447,
+                "independence_count_variance": 7.3833763535565735,
+                "log_loss": 0.47952180500593583,
+                "n": 35,
+                "observed_minus_expected_transitions": -5.583944214690002,
+                "observed_transitions": 5,
+                "squared_standardized_count_residual_independence": 4.223058868961802,
+                "standardized_count_residual_independence": -2.055008240606787,
+                "these_tails_are_valid_significance_p_values": false
+              }
+            },
+            "n": 35,
+            "observed_transitions": 5,
+            "origin_state": 1,
+            "year": 2022
+          },
+          {
+            "delta_brier_calibrated_minus_original": -0.019005665071488237,
+            "delta_logloss_calibrated_minus_original": -0.0606345995470976,
+            "models": {
+              "historical_odds_intercept": {
+                "brier": 0.08451421038410144,
+                "expected_transitions": 4.1076937572164915,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.8004002638059226,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.3958063621000146,
+                "independence_count_variance": 3.4987165375390896,
+                "log_loss": 0.3047394136587845,
+                "n": 32,
+                "observed_minus_expected_transitions": -1.1076937572164915,
+                "observed_transitions": 3,
+                "squared_standardized_count_residual_independence": 0.3506958756479937,
+                "standardized_count_residual_independence": -0.5921958085363267,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "issued_country_markov": {
+                "brier": 0.10351987545558967,
+                "expected_transitions": 7.405114255027,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9889168963885865,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.03927011075652813,
+                "independence_count_variance": 5.48558370019813,
+                "log_loss": 0.3653740132058821,
+                "n": 32,
+                "observed_minus_expected_transitions": -4.405114255027,
+                "observed_transitions": 3,
+                "squared_standardized_count_residual_independence": 3.5374597600509134,
+                "standardized_count_residual_independence": -1.8808135899261558,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "original_global_markov": {
+                "brier": 0.1279249539439716,
+                "expected_transitions": 9.632884202111999,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9988748649215772,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.005299986151582519,
+                "independence_count_variance": 6.733119888008908,
+                "log_loss": 0.43711992537918887,
+                "n": 32,
+                "observed_minus_expected_transitions": -6.632884202111999,
+                "observed_transitions": 3,
+                "squared_standardized_count_residual_independence": 6.534140720853406,
+                "standardized_count_residual_independence": -2.5561965340821127,
+                "these_tails_are_valid_significance_p_values": false
+              }
+            },
+            "n": 32,
+            "observed_transitions": 3,
+            "origin_state": 1,
+            "year": 2023
+          }
+        ],
+        "years": [
+          2020,
+          2021,
+          2022,
+          2023
+        ]
+      }
+    },
+    "separated_2024_2025": {
+      "0": {
+        "calibrated_minus_original_mean_annual_squared_standardized_residual": -0.9484512076033178,
+        "calibrated_minus_original_weighted_brier": -0.00014371230704606983,
+        "models": {
+          "historical_odds_intercept": {
+            "brier_weighted_by_country_years": 0.022503817372513578,
+            "country_years": 321,
+            "expected_transitions": 10.307239464094373,
+            "log_loss_weighted_by_country_years": 0.0967670358401424,
+            "mean_annual_signed_standardized_count_residual": -0.5262470706621531,
+            "mean_annual_squared_standardized_count_residual": 0.2769709590455891,
+            "observed_transitions": 8,
+            "total_count_bias_observed_minus_expected": -2.3072394640943727
+          },
+          "issued_country_markov": {
+            "brier_weighted_by_country_years": 0.022647529679559648,
+            "country_years": 321,
+            "expected_transitions": 13.499978252250001,
+            "log_loss_weighted_by_country_years": 0.10025934620999072,
+            "mean_annual_signed_standardized_count_residual": -1.1069662184415092,
+            "mean_annual_squared_standardized_count_residual": 1.225422166648907,
+            "observed_transitions": 8,
+            "total_count_bias_observed_minus_expected": -5.499978252250001
+          },
+          "original_global_markov": {
+            "brier_weighted_by_country_years": 0.025210281235017312,
+            "country_years": 321,
+            "expected_transitions": 17.679766557807,
+            "log_loss_weighted_by_country_years": 0.12748893747625212,
+            "mean_annual_signed_standardized_count_residual": -1.674594697675246,
+            "mean_annual_squared_standardized_count_residual": 2.804347343851333,
+            "observed_transitions": 8,
+            "total_count_bias_observed_minus_expected": -9.679766557807
+          }
+        },
+        "n_target_years": 2,
+        "relative_reduction_in_abs_aggregate_count_bias": 0.5805002568600162,
+        "target_year_by_year": [
+          {
+            "delta_brier_calibrated_minus_original": 2.246338269000156e-05,
+            "delta_logloss_calibrated_minus_original": -0.0034853585790068087,
+            "models": {
+              "historical_odds_intercept": {
+                "brier": 0.022046387096863466,
+                "expected_transitions": 5.137048266748861,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.7640581121304896,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.4098194223094993,
+                "independence_count_variance": 4.775243755155315,
+                "log_loss": 0.09085156999602557,
+                "n": 159,
+                "observed_minus_expected_transitions": -1.1370482667488613,
+                "observed_transitions": 4,
+                "squared_standardized_count_residual_independence": 0.27074612882762433,
+                "standardized_count_residual_independence": -0.5203327097421652,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "issued_country_markov": {
+                "brier": 0.022023923714173464,
+                "expected_transitions": 6.7223067856670005,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9130195846512464,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.18688136706454964,
+                "independence_count_variance": 6.12429839835942,
+                "log_loss": 0.09433692857503238,
+                "n": 159,
+                "observed_minus_expected_transitions": -2.7223067856670005,
+                "observed_transitions": 4,
+                "squared_standardized_count_residual_independence": 1.2100903243502712,
+                "standardized_count_residual_independence": -1.10004105575668,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "original_global_markov": {
+                "brier": 0.025436952697915387,
+                "expected_transitions": 8.803290659121,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9783239310512241,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.05696750899454333,
+                "independence_count_variance": 8.315882316800451,
+                "log_loss": 0.12832491857589243,
+                "n": 159,
+                "observed_minus_expected_transitions": -4.803290659121,
+                "observed_transitions": 4,
+                "squared_standardized_count_residual_independence": 2.7744020750976532,
+                "standardized_count_residual_independence": -1.6656536480005841,
+                "these_tails_are_valid_significance_p_values": false
+              }
+            },
+            "n": 159,
+            "observed_transitions": 4,
+            "origin_state": 0,
+            "year": 2024
+          },
+          {
+            "delta_brier_calibrated_minus_original": -0.0003068106691944336,
+            "delta_logloss_calibrated_minus_original": -0.0034991334238223815,
+            "models": {
+              "historical_odds_intercept": {
+                "brier": 0.022952776717133135,
+                "expected_transitions": 5.1701911973455115,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.7675729415085264,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.40459929499370206,
+                "independence_count_variance": 4.835338272175191,
+                "log_loss": 0.10257295602047929,
+                "n": 162,
+                "observed_minus_expected_transitions": -1.1701911973455115,
+                "observed_transitions": 4,
+                "squared_standardized_count_residual_independence": 0.2831957892635538,
+                "standardized_count_residual_independence": -0.5321614315821411,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "issued_country_markov": {
+                "brier": 0.02325958738632757,
+                "expected_transitions": 6.7776714665830005,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9153747385423475,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.1822992940095898,
+                "independence_count_variance": 6.218362963673934,
+                "log_loss": 0.10607208944430167,
+                "n": 162,
+                "observed_minus_expected_transitions": -2.7776714665830005,
+                "observed_transitions": 4,
+                "squared_standardized_count_residual_independence": 1.2407540089475426,
+                "standardized_count_residual_independence": -1.1138913811263387,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "original_global_markov": {
+                "brier": 0.024987807391802525,
+                "expected_transitions": 8.876475898686,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9794205000201316,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.05444826791889404,
+                "independence_count_variance": 8.390106612389992,
+                "log_loss": 0.12666843750808662,
+                "n": 162,
+                "observed_minus_expected_transitions": -4.8764758986859995,
+                "observed_transitions": 4,
+                "squared_standardized_count_residual_independence": 2.834292612605013,
+                "standardized_count_residual_independence": -1.683535747349908,
+                "these_tails_are_valid_significance_p_values": false
+              }
+            },
+            "n": 162,
+            "observed_transitions": 4,
+            "origin_state": 0,
+            "year": 2025
+          }
+        ],
+        "years": [
+          2024,
+          2025
+        ]
+      },
+      "1": {
+        "calibrated_minus_original_mean_annual_squared_standardized_residual": -1.6740697447341328,
+        "calibrated_minus_original_weighted_brier": -0.006040339329579286,
+        "models": {
+          "historical_odds_intercept": {
+            "brier_weighted_by_country_years": 0.11287646746908331,
+            "country_years": 71,
+            "expected_transitions": 9.190026830648648,
+            "log_loss_weighted_by_country_years": 0.37212667446576503,
+            "mean_annual_signed_standardized_count_residual": 0.19379631171975864,
+            "mean_annual_squared_standardized_count_residual": 0.15504388727736312,
+            "observed_transitions": 10,
+            "total_count_bias_observed_minus_expected": 0.8099731693513528
+          },
+          "issued_country_markov": {
+            "brier_weighted_by_country_years": 0.1189168067986626,
+            "country_years": 71,
+            "expected_transitions": 16.570005346643,
+            "log_loss_weighted_by_country_years": 0.39916427344907884,
+            "mean_annual_signed_standardized_count_residual": -1.3333273339853027,
+            "mean_annual_squared_standardized_count_residual": 1.829113632011496,
+            "observed_transitions": 10,
+            "total_count_bias_observed_minus_expected": -6.570005346643001
+          },
+          "original_global_markov": {
+            "brier_weighted_by_country_years": 0.14507855707469983,
+            "country_years": 71,
+            "expected_transitions": 21.02376484621,
+            "log_loss_weighted_by_country_years": 0.47300190233150347,
+            "mean_annual_signed_standardized_count_residual": -2.0320344115923428,
+            "mean_annual_squared_standardized_count_residual": 4.185892045688481,
+            "observed_transitions": 10,
+            "total_count_bias_observed_minus_expected": -11.023764846209998
+          }
+        },
+        "n_target_years": 2,
+        "relative_reduction_in_abs_aggregate_count_bias": 0.876716512907373,
+        "target_year_by_year": [
+          {
+            "delta_brier_calibrated_minus_original": -0.00024994532054967156,
+            "delta_logloss_calibrated_minus_original": -0.014308288614421072,
+            "models": {
+              "historical_odds_intercept": {
+                "brier": 0.12458147784990416,
+                "expected_transitions": 4.90480705785238,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.3653537906243582,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.7897219897100282,
+                "independence_count_variance": 4.166245421473106,
+                "log_loss": 0.39576906710800847,
+                "n": 37,
+                "observed_minus_expected_transitions": 1.0951929421476203,
+                "observed_transitions": 6,
+                "squared_standardized_count_residual_independence": 0.28789652533380006,
+                "standardized_count_residual_independence": 0.5365598991108076,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "issued_country_markov": {
+                "brier": 0.12483142317045383,
+                "expected_transitions": 8.820023840252,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9087414445000227,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.18259110395213357,
+                "independence_count_variance": 6.492795440491208,
+                "log_loss": 0.41007735572242954,
+                "n": 37,
+                "observed_minus_expected_transitions": -2.8200238402520004,
+                "observed_transitions": 6,
+                "squared_standardized_count_residual_independence": 1.2248244277025917,
+                "standardized_count_residual_independence": -1.1067178627376497,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "original_global_markov": {
+                "brier": 0.15402095558629972,
+                "expected_transitions": 10.985447642654,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9810438781301903,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.04776540439637784,
+                "independence_count_variance": 7.72382440185691,
+                "log_loss": 0.49205933306169364,
+                "n": 37,
+                "observed_minus_expected_transitions": -4.985447642654,
+                "observed_transitions": 6,
+                "squared_standardized_count_residual_independence": 3.2179250724121755,
+                "standardized_count_residual_independence": -1.7938575953548195,
+                "these_tails_are_valid_significance_p_values": false
+              }
+            },
+            "n": 37,
+            "observed_transitions": 6,
+            "origin_state": 1,
+            "year": 2024
+          },
+          {
+            "delta_brier_calibrated_minus_original": -0.012341650457052683,
+            "delta_logloss_calibrated_minus_original": -0.040890083796520815,
+            "models": {
+              "historical_odds_intercept": {
+                "brier": 0.10013866205466064,
+                "expected_transitions": 4.2852197727962675,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.6383543773385516,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.5693607928645654,
+                "independence_count_variance": 3.6658737858363413,
+                "log_loss": 0.34639818835508823,
+                "n": 34,
+                "observed_minus_expected_transitions": -0.28521977279626753,
+                "observed_transitions": 4,
+                "squared_standardized_count_residual_independence": 0.022191249220926197,
+                "standardized_count_residual_independence": -0.14896727567129028,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "issued_country_markov": {
+                "brier": 0.11248031251171332,
+                "expected_transitions": 7.749981506391,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.969778748345756,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.08194437378712628,
+                "independence_count_variance": 5.778887526710747,
+                "log_loss": 0.38728827215160905,
+                "n": 34,
+                "observed_minus_expected_transitions": -3.7499815063910003,
+                "observed_transitions": 4,
+                "squared_standardized_count_residual_independence": 2.4334028363204006,
+                "standardized_count_residual_independence": -1.5599368052329556,
+                "these_tails_are_valid_significance_p_values": false
+              },
+              "original_global_markov": {
+                "brier": 0.13534712340031171,
+                "expected_transitions": 10.038317203555998,
+                "illustrative_poisson_binomial_independence_p_at_least_observed": 0.9962281264010221,
+                "illustrative_poisson_binomial_independence_p_at_most_observed": 0.013503226197522443,
+                "independence_count_variance": 7.0745580188734,
+                "log_loss": 0.4522629335957083,
+                "n": 34,
+                "observed_minus_expected_transitions": -6.038317203555998,
+                "observed_transitions": 4,
+                "squared_standardized_count_residual_independence": 5.153859018964787,
+                "standardized_count_residual_independence": -2.270211227829866,
+                "these_tails_are_valid_significance_p_values": false
+              }
+            },
+            "n": 34,
+            "observed_transitions": 4,
+            "origin_state": 1,
+            "year": 2025
+          }
+        ],
+        "years": [
+          2024,
+          2025
+        ]
+      }
+    }
+  },
+  "revised_validation_target_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "same_year_entry_resolution_residual_products_no_inference": {
+    "revised_2020_2023": [
+      {
+        "calibrated_residual_product": 0.9887508681839849,
+        "original_residual_product": 3.402239513632502,
+        "structural_correlation_estimated": false,
+        "year": 2020
+      },
+      {
+        "calibrated_residual_product": 0.2830428380302851,
+        "original_residual_product": 2.7127750788649267,
+        "structural_correlation_estimated": false,
+        "year": 2021
+      },
+      {
+        "calibrated_residual_product": 0.15544445702064552,
+        "original_residual_product": 0.048806265439452795,
+        "structural_correlation_estimated": false,
+        "year": 2022
+      },
+      {
+        "calibrated_residual_product": 0.18482058716162583,
+        "original_residual_product": 1.7847779448646583,
+        "structural_correlation_estimated": false,
+        "year": 2023
+      }
+    ],
+    "separated_2024_2025": [
+      {
+        "calibrated_residual_product": -0.27918966624330926,
+        "original_residual_product": 1.2174350861507006,
+        "structural_correlation_estimated": false,
+        "year": 2024
+      },
+      {
+        "calibrated_residual_product": 0.0792746386801253,
+        "original_residual_product": 1.7376001624507453,
+        "structural_correlation_estimated": false,
+        "year": 2025
+      }
+    ]
+  },
+  "schema": "idealab.psico.geo2027_postcalibration_count_residuals.v1",
+  "separate_release_target_years": [
+    2024,
+    2025
+  ],
+  "source_versions_and_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "status": "POSTHOC_RETROSPECTIVE_COUNTS_NOT_DEPENDENCE_IDENTIFICATION",
+  "structural_cross_country_correlation_estimated": false,
+  "three_models": [
+    "issued_country_markov",
+    "historical_odds_intercept",
+    "original_global_markov"
+  ],
+  "training_target_years_excluded": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019
+  ]
+}
