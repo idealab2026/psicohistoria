@@ -130,7 +130,7 @@ jobs:
           if test -f data/geo2027-ucdp-vintage-revisions-archival.json; then
             PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_ucdp_vintage_revisions.py --check-report data/geo2027-ucdp-vintage-revisions-archival.json
           else
-            PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_ucdp_vintage_revisions.py
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_ucdp_vintage_revisions.py --check-report data/geo2027-ucdp-vintage-revisions-archival.json
           fi
   geo2027_shadow_break_even_frontier:
     runs-on: ubuntu-latest
