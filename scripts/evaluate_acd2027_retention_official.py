@@ -304,8 +304,16 @@ def main():
         raise ValueError("Official 2027 candidate ZIP does not match its SHA256")
     report=candidate_evaluation(issued,parse_future_archive(raw),claim,True)
     out=Path(args.output)
-    if out.resolve()==ISSUE_PATH.resolve() or out.resolve()==MANIFEST.resolve():
-        raise ValueError("Candidate scoring can NEVER overwrite original issuance")
+    protected={
+        ISSUE_PATH.resolve(),MANIFEST.resolve(),AUDIT_PATH.resolve(),
+        GENERATOR.resolve(),
+        Path("data/forecast-2027-ucdp261.json").resolve(),
+        Path("data/forecast-2027-geo-shadow.json").resolve(),
+        Path("data/forecast-2027-newconf.json").resolve(),
+        Path("data/forecast-2027-transition-alerts.json").resolve(),
+    }
+    if out.resolve() in protected:
+        raise ValueError("Candidate scoring can NEVER overwrite a frozen public issue")
     out.write_text(json.dumps(report,indent=2,sort_keys=True,ensure_ascii=False)+"\n",
                    encoding="utf8")
 
