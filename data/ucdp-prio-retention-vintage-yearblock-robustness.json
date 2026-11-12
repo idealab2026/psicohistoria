@@ -1,0 +1,464 @@
+{
+  "2027_outcomes_observed": 0,
+  "countries_reappear_across_years": true,
+  "four_original_2021_2024_target_years": [
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "frozen_acd_original_4fold_report_reproduced": true,
+  "historical_source_release_dates_independently_notarized": false,
+  "historically_independently_issued_probabilities": false,
+  "latest_later_target_vintage_pooled_descriptive_only": {
+    "brier_winner_descriptive": "p_lag1_group",
+    "n_country_year_fold_evaluations": 137,
+    "n_persisted": 117,
+    "not_an_independent_test_or_selected_prospective_model": true,
+    "paired_brier_country_eb_minus_global_recent5": 0.007077508063978665,
+    "paired_brier_lag1_minus_country_eb": -0.010226959771915367,
+    "paired_brier_lag1_minus_global_recent5": -0.003149451707936703,
+    "pooled_brier": {
+      "p_country_eb": 0.13237998286062866,
+      "p_global_recent5": 0.12530247479664997,
+      "p_lag1_group": 0.12215302308871329
+    },
+    "pooled_logloss": {
+      "p_country_eb": 0.43200702546389674,
+      "p_global_recent5": 0.41808987258892366,
+      "p_lag1_group": 0.4072280573986656
+    },
+    "target_years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "leave_one_year_out_first_vintage": [
+    {
+      "no_model_retraining_or_hyperparameter_tuning": true,
+      "not_an_independent_year_test": true,
+      "three_year_pooled": {
+        "brier_winner_descriptive": "p_lag1_group",
+        "n_country_year_fold_evaluations": 102,
+        "n_persisted": 87,
+        "not_an_independent_test_or_selected_prospective_model": true,
+        "paired_brier_country_eb_minus_global_recent5": 0.0034053397549763252,
+        "paired_brier_lag1_minus_country_eb": -0.0035686859695015787,
+        "paired_brier_lag1_minus_global_recent5": -0.00016334621452525425,
+        "pooled_brier": {
+          "p_country_eb": 0.1299298099482568,
+          "p_global_recent5": 0.1265244701932805,
+          "p_lag1_group": 0.12636112397875526
+        },
+        "pooled_logloss": {
+          "p_country_eb": 0.42418296030999375,
+          "p_global_recent5": 0.4218140778733762,
+          "p_lag1_group": 0.4176109124977501
+        },
+        "target_years": [
+          2022,
+          2023,
+          2024
+        ]
+      },
+      "withheld_target_year": 2021
+    },
+    {
+      "no_model_retraining_or_hyperparameter_tuning": true,
+      "not_an_independent_year_test": true,
+      "three_year_pooled": {
+        "brier_winner_descriptive": "p_global_recent5",
+        "n_country_year_fold_evaluations": 101,
+        "n_persisted": 87,
+        "not_an_independent_test_or_selected_prospective_model": true,
+        "paired_brier_country_eb_minus_global_recent5": 0.006248951825612004,
+        "paired_brier_lag1_minus_country_eb": -0.005679208799030225,
+        "paired_brier_lag1_minus_global_recent5": 0.0005697430265817785,
+        "pooled_brier": {
+          "p_country_eb": 0.1263991543703261,
+          "p_global_recent5": 0.12015020254471409,
+          "p_lag1_group": 0.12071994557129587
+        },
+        "pooled_logloss": {
+          "p_country_eb": 0.41512057313519707,
+          "p_global_recent5": 0.40527925258190517,
+          "p_lag1_group": 0.40397963393196457
+        },
+        "target_years": [
+          2021,
+          2023,
+          2024
+        ]
+      },
+      "withheld_target_year": 2022
+    },
+    {
+      "no_model_retraining_or_hyperparameter_tuning": true,
+      "not_an_independent_year_test": true,
+      "three_year_pooled": {
+        "brier_winner_descriptive": "p_lag1_group",
+        "n_country_year_fold_evaluations": 105,
+        "n_persisted": 87,
+        "not_an_independent_test_or_selected_prospective_model": true,
+        "paired_brier_country_eb_minus_global_recent5": 0.0028338716863948125,
+        "paired_brier_lag1_minus_country_eb": -0.011041308120489993,
+        "paired_brier_lag1_minus_global_recent5": -0.008207436434095182,
+        "pooled_brier": {
+          "p_country_eb": 0.14600855162761497,
+          "p_global_recent5": 0.14317467994122016,
+          "p_lag1_group": 0.13496724350712497
+        },
+        "pooled_logloss": {
+          "p_country_eb": 0.46408025188309066,
+          "p_global_recent5": 0.4625232135958539,
+          "p_lag1_group": 0.4381634996134513
+        },
+        "target_years": [
+          2021,
+          2022,
+          2024
+        ]
+      },
+      "withheld_target_year": 2023
+    },
+    {
+      "no_model_retraining_or_hyperparameter_tuning": true,
+      "not_an_independent_year_test": true,
+      "three_year_pooled": {
+        "brier_winner_descriptive": "p_lag1_group",
+        "n_country_year_fold_evaluations": 103,
+        "n_persisted": 87,
+        "not_an_independent_test_or_selected_prospective_model": true,
+        "paired_brier_country_eb_minus_global_recent5": 0.009105471674542443,
+        "paired_brier_lag1_minus_country_eb": -0.014991271231868648,
+        "paired_brier_lag1_minus_global_recent5": -0.005885799557326204,
+        "pooled_brier": {
+          "p_country_eb": 0.14116506972461015,
+          "p_global_recent5": 0.13205959805006773,
+          "p_lag1_group": 0.12617379849274152
+        },
+        "pooled_logloss": {
+          "p_country_eb": 0.4551489031691998,
+          "p_global_recent5": 0.4352243978276207,
+          "p_lag1_group": 0.41704214214861596
+        },
+        "target_years": [
+          2021,
+          2022,
+          2023
+        ]
+      },
+      "withheld_target_year": 2024
+    }
+  ],
+  "leave_one_year_out_latest_later_vintage": [
+    {
+      "no_model_retraining_or_hyperparameter_tuning": true,
+      "not_an_independent_year_test": true,
+      "three_year_pooled": {
+        "brier_winner_descriptive": "p_global_recent5",
+        "n_country_year_fold_evaluations": 102,
+        "n_persisted": 88,
+        "not_an_independent_test_or_selected_prospective_model": true,
+        "paired_brier_country_eb_minus_global_recent5": 0.0056764081057982425,
+        "paired_brier_lag1_minus_country_eb": -0.005406058907841717,
+        "paired_brier_lag1_minus_global_recent5": 0.00027034919795652516,
+        "pooled_brier": {
+          "p_country_eb": 0.12508705716086738,
+          "p_global_recent5": 0.11941064905506912,
+          "p_lag1_group": 0.11968099825302565
+        },
+        "pooled_logloss": {
+          "p_country_eb": 0.41356950983037016,
+          "p_global_recent5": 0.403786779756975,
+          "p_lag1_group": 0.4013036163808638
+        },
+        "target_years": [
+          2022,
+          2023,
+          2024
+        ]
+      },
+      "withheld_target_year": 2021
+    },
+    {
+      "no_model_retraining_or_hyperparameter_tuning": true,
+      "not_an_independent_year_test": true,
+      "three_year_pooled": {
+        "brier_winner_descriptive": "p_global_recent5",
+        "n_country_year_fold_evaluations": 101,
+        "n_persisted": 87,
+        "not_an_independent_test_or_selected_prospective_model": true,
+        "paired_brier_country_eb_minus_global_recent5": 0.006248951825612004,
+        "paired_brier_lag1_minus_country_eb": -0.005679208799030225,
+        "paired_brier_lag1_minus_global_recent5": 0.0005697430265817785,
+        "pooled_brier": {
+          "p_country_eb": 0.1263991543703261,
+          "p_global_recent5": 0.12015020254471409,
+          "p_lag1_group": 0.12071994557129587
+        },
+        "pooled_logloss": {
+          "p_country_eb": 0.41512057313519707,
+          "p_global_recent5": 0.40527925258190517,
+          "p_lag1_group": 0.40397963393196457
+        },
+        "target_years": [
+          2021,
+          2023,
+          2024
+        ]
+      },
+      "withheld_target_year": 2022
+    },
+    {
+      "no_model_retraining_or_hyperparameter_tuning": true,
+      "not_an_independent_year_test": true,
+      "three_year_pooled": {
+        "brier_winner_descriptive": "p_lag1_group",
+        "n_country_year_fold_evaluations": 105,
+        "n_persisted": 88,
+        "not_an_independent_test_or_selected_prospective_model": true,
+        "paired_brier_country_eb_minus_global_recent5": 0.005040052370050389,
+        "paired_brier_lag1_minus_country_eb": -0.01282618468916327,
+        "paired_brier_lag1_minus_global_recent5": -0.007786132319112882,
+        "pooled_brier": {
+          "p_country_eb": 0.14130416320557948,
+          "p_global_recent5": 0.13626411083552908,
+          "p_lag1_group": 0.12847797851641624
+        },
+        "pooled_logloss": {
+          "p_country_eb": 0.45377004284574207,
+          "p_global_recent5": 0.4450109811399214,
+          "p_lag1_group": 0.4223221262427617
+        },
+        "target_years": [
+          2021,
+          2022,
+          2024
+        ]
+      },
+      "withheld_target_year": 2023
+    },
+    {
+      "no_model_retraining_or_hyperparameter_tuning": true,
+      "not_an_independent_year_test": true,
+      "three_year_pooled": {
+        "brier_winner_descriptive": "p_lag1_group",
+        "n_country_year_fold_evaluations": 103,
+        "n_persisted": 88,
+        "not_an_independent_test_or_selected_prospective_model": true,
+        "paired_brier_country_eb_minus_global_recent5": 0.011354490818074828,
+        "paired_brier_lag1_minus_country_eb": -0.016810805597991894,
+        "paired_brier_lag1_minus_global_recent5": -0.0054563147799170635,
+        "pooled_brier": {
+          "p_country_eb": 0.136369333954574,
+          "p_global_recent5": 0.12501484313649916,
+          "p_lag1_group": 0.11955852835658211
+        },
+        "pooled_logloss": {
+          "p_country_eb": 0.44463849589811627,
+          "p_global_recent5": 0.4173721220230293,
+          "p_lag1_group": 0.40089316929500046
+        },
+        "target_years": [
+          2021,
+          2022,
+          2023
+        ]
+      },
+      "withheld_target_year": 2024
+    }
+  ],
+  "limitations": "This is an exploratory ex-post comparison of the same original origin-only ACD models under increasingly revised target labels, not independent prospective validation. Four adjacent target years and recurrent countries do not create independent years or countries; leave-one-target-year-out stress uses no new validation data and is NOT a cross-validation estimator. Later target vintage 25.1 is only available for years <=2024; 2024 has no later source in this experiment. ACD does not provide an inactive-denominator for all GEO countries. No probabilities or released 2027 alerts were modified.",
+  "model_hyperparameters_tuned_against_results": false,
+  "n_distinct_target_years": 4,
+  "n_pooled_origin_active_country_year_evaluations": 137,
+  "no_full_country_year_inactive_denominator_invented": true,
+  "not_geo2027_or_newconf_endpoint": true,
+  "original_geo2027_shadow_alerts_newconf_changed": false,
+  "primary_first_target_vintage_pooled": {
+    "brier_winner_descriptive": "p_lag1_group",
+    "n_country_year_fold_evaluations": 137,
+    "n_persisted": 116,
+    "not_an_independent_test_or_selected_prospective_model": true,
+    "paired_brier_country_eb_minus_global_recent5": 0.005386639656797383,
+    "paired_brier_lag1_minus_country_eb": -0.008858988679136579,
+    "paired_brier_lag1_minus_global_recent5": -0.0034723490223391956,
+    "pooled_brier": {
+      "p_country_eb": 0.13598553603080182,
+      "p_global_recent5": 0.13059889637400446,
+      "p_lag1_group": 0.12712654735166523
+    },
+    "pooled_logloss": {
+      "p_country_eb": 0.43990901049252157,
+      "p_global_recent5": 0.43151165658799606,
+      "p_lag1_group": 0.41936925596744223
+    },
+    "target_years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "revisions_by_target_year_and_later_edition": [
+    {
+      "first_target_version": "22.1",
+      "later_revisions": [
+        {
+          "delta_brier_lag1_minus_global_after_revision": -0.013115728633682683,
+          "delta_brier_later_minus_first_by_model": {
+            "p_country_eb": 0.0,
+            "p_global_recent5": 0.0,
+            "p_lag1_group": 0.0
+          },
+          "first_release_original_probabilities_unchanged": true,
+          "later_release_used_for_training": false,
+          "n_origin_countries_kept_fixed": 35,
+          "n_persisted_from_later_ed": 29,
+          "n_source_version_reclassified_origin_country_outcomes": 0,
+          "newly_recorded_conflicts_in_target_year": 0,
+          "no_longer_recorded_conflicts_in_target_year": 0,
+          "revised_label_edition": "23.1"
+        },
+        {
+          "delta_brier_lag1_minus_global_after_revision": -0.013115728633682683,
+          "delta_brier_later_minus_first_by_model": {
+            "p_country_eb": 0.0,
+            "p_global_recent5": 0.0,
+            "p_lag1_group": 0.0
+          },
+          "first_release_original_probabilities_unchanged": true,
+          "later_release_used_for_training": false,
+          "n_origin_countries_kept_fixed": 35,
+          "n_persisted_from_later_ed": 29,
+          "n_source_version_reclassified_origin_country_outcomes": 0,
+          "newly_recorded_conflicts_in_target_year": 0,
+          "no_longer_recorded_conflicts_in_target_year": 0,
+          "revised_label_edition": "24.1"
+        },
+        {
+          "delta_brier_lag1_minus_global_after_revision": -0.013115728633682683,
+          "delta_brier_later_minus_first_by_model": {
+            "p_country_eb": 0.0,
+            "p_global_recent5": 0.0,
+            "p_lag1_group": 0.0
+          },
+          "first_release_original_probabilities_unchanged": true,
+          "later_release_used_for_training": false,
+          "n_origin_countries_kept_fixed": 35,
+          "n_persisted_from_later_ed": 29,
+          "n_source_version_reclassified_origin_country_outcomes": 0,
+          "newly_recorded_conflicts_in_target_year": 0,
+          "no_longer_recorded_conflicts_in_target_year": 0,
+          "revised_label_edition": "25.1"
+        }
+      ],
+      "later_target_outcome_injected_into_origin_fit": false,
+      "latest_known_label_edition": "25.1",
+      "n_first_release_persisted": 29,
+      "n_origin_countries": 35,
+      "no_later_release_available": false,
+      "origin_version": "20.1",
+      "target_year": 2021
+    },
+    {
+      "first_target_version": "23.1",
+      "later_revisions": [
+        {
+          "delta_brier_lag1_minus_global_after_revision": -0.013583859157557998,
+          "delta_brier_later_minus_first_by_model": {
+            "p_country_eb": -0.013721132897603489,
+            "p_global_recent5": -0.020155826558265588,
+            "p_lag1_group": -0.018927022889567213
+          },
+          "first_release_original_probabilities_unchanged": true,
+          "later_release_used_for_training": false,
+          "n_origin_countries_kept_fixed": 36,
+          "n_persisted_from_later_ed": 30,
+          "n_source_version_reclassified_origin_country_outcomes": 1,
+          "newly_recorded_conflicts_in_target_year": 1,
+          "no_longer_recorded_conflicts_in_target_year": 0,
+          "revised_label_edition": "24.1"
+        },
+        {
+          "delta_brier_lag1_minus_global_after_revision": -0.013583859157557998,
+          "delta_brier_later_minus_first_by_model": {
+            "p_country_eb": -0.013721132897603489,
+            "p_global_recent5": -0.020155826558265588,
+            "p_lag1_group": -0.018927022889567213
+          },
+          "first_release_original_probabilities_unchanged": true,
+          "later_release_used_for_training": false,
+          "n_origin_countries_kept_fixed": 36,
+          "n_persisted_from_later_ed": 30,
+          "n_source_version_reclassified_origin_country_outcomes": 1,
+          "newly_recorded_conflicts_in_target_year": 1,
+          "no_longer_recorded_conflicts_in_target_year": 0,
+          "revised_label_edition": "25.1"
+        }
+      ],
+      "later_target_outcome_injected_into_origin_fit": false,
+      "latest_known_label_edition": "25.1",
+      "n_first_release_persisted": 29,
+      "n_origin_countries": 36,
+      "no_later_release_available": false,
+      "origin_version": "21.1",
+      "target_year": 2022
+    },
+    {
+      "first_target_version": "24.1",
+      "later_revisions": [
+        {
+          "delta_brier_lag1_minus_global_after_revision": 0.012064656547485134,
+          "delta_brier_later_minus_first_by_model": {
+            "p_country_eb": 0.0,
+            "p_global_recent5": 0.0,
+            "p_lag1_group": 0.0
+          },
+          "first_release_original_probabilities_unchanged": true,
+          "later_release_used_for_training": false,
+          "n_origin_countries_kept_fixed": 32,
+          "n_persisted_from_later_ed": 29,
+          "n_source_version_reclassified_origin_country_outcomes": 0,
+          "newly_recorded_conflicts_in_target_year": 0,
+          "no_longer_recorded_conflicts_in_target_year": 0,
+          "revised_label_edition": "25.1"
+        }
+      ],
+      "later_target_outcome_injected_into_origin_fit": false,
+      "latest_known_label_edition": "25.1",
+      "n_first_release_persisted": 29,
+      "n_origin_countries": 32,
+      "no_later_release_available": false,
+      "origin_version": "22.1",
+      "target_year": 2023
+    },
+    {
+      "first_target_version": "25.1",
+      "later_revisions": [],
+      "later_target_outcome_injected_into_origin_fit": false,
+      "latest_known_label_edition": "25.1",
+      "n_first_release_persisted": 29,
+      "n_origin_countries": 34,
+      "no_later_release_available": true,
+      "origin_version": "23.1",
+      "target_year": 2024
+    }
+  ],
+  "schema": "idealab.psico.acd_retention_target_vintage_and_yearblock_sensitivity.v1",
+  "selection_after_other_historical_outcomes_previously_seen": true,
+  "source_sha256_by_version": {
+    "20.1": "f4f924c1c7ce4ca5c8451512afced6182350b2ea849dd271617febc224218c93",
+    "21.1": "4bebac361a42a9db813da58bf6244f7ec04b780dc24a8c236993672e32460dc4",
+    "22.1": "82e8326c2de196f1acf3538e6bd8efd818fdde175c399b43282b4d9ee15b954d",
+    "23.1": "8fe95d8a5780cba1d312f9673ffd9e93b90c91bb26e348393a583853a892b718",
+    "24.1": "35c157c5f5aa2b08dc5b268bab7f0125da504ec3aa9dc5f28c9adba93b1717f5",
+    "25.1": "b49f7e80510d8a5779a52d872aef5b26456b3f5cbdd3ec32031339488e81813f"
+  },
+  "statistical_significance_or_dependence_estimated": false,
+  "status": "EX_POST_ORIGIN_FIXED_TARGET_VINTAGE_SENSITIVITY_NO_NEW_2027_LABELS",
+  "target": "ACD intrastate 3/4 conflict incidence in t+2 among countries with recorded intrastate conflict in t, NOT GEO >=25 deaths"
+}
