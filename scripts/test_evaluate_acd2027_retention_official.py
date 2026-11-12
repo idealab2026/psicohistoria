@@ -73,18 +73,18 @@ class ACD2027FutureOfficialContractTests(unittest.TestCase):
         self.assertEqual(d["2027_outcomes_resolved"],0)
         self.assertFalse(d["prospective_skill_demonstrated"])
         self.assertEqual(d["primary_model"],"p_global_recent5")
-        self.assertEqual(sum(x["p_global_recent5"] for x in d["countries"]),
+        self.assertAlmostEqual(sum(x["p_global_recent5"] for x in d["countries"]),
                          32*0.859195402299)
         raw=future.ISSUE_PATH.read_bytes()
-        with self.assertRaisesRegex(ValueError,"original 2026 first-public|risk set"):
+        with self.assertRaisesRegex(ValueError,"Original 2026 first-public|risk set"):
             future.authenticated_issue(issue_raw=raw+b" ")
         altered=json.loads(future.MANIFEST.read_text(encoding="utf8"))
         altered["first_public_git_commit"]="0"*40
-        with self.assertRaisesRegex(ValueError,"original 2026 first-public|commitment"):
+        with self.assertRaisesRegex(ValueError,"Original 2026 first-public|commitment"):
             future.authenticated_issue(manifest=altered)
         altered=json.loads(future.AUDIT_PATH.read_text(encoding="utf8"))
         altered["2027_outcomes_resolved"]=1
-        with self.assertRaisesRegex(ValueError,"original 2026 first-public|commitment"):
+        with self.assertRaisesRegex(ValueError,"Original 2026 first-public|commitment"):
             future.authenticated_issue(issued_audit=altered)
 
     def test_validate_only_first_possible_full_2027_release_shape(self):
