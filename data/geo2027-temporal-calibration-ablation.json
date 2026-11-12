@@ -1,0 +1,306 @@
+{
+  "external_holdout_confirmatory": false,
+  "external_label_years_source_separated": [
+    2024,
+    2025
+  ],
+  "historical_26_1_revisions_not_contemporaneous": true,
+  "historical_question_selected_after_historical_outcomes_seen": true,
+  "historical_source_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "hyperparameters": "Two scalar intercepts (entry vs resolution), fit by training-only Bernoulli likelihood, no tuning on validation labels",
+  "limitations": "Calibration was designed AFTER inspecting aggregate historical overprediction from both study periods, so even held-out external years DO NOT constitute untouched confirmatory evidence. Training/validation labels are from a single 2026 revised source, not signed contemporaneous origin releases. Tiny counts, shared country-years and geopolitical shocks. An intercept improves marginal mean fit if stable but cannot establish dependence structure or prospective predictive skill. 2027 remains frozen.",
+  "model": "additive_log_odds_intercept_per_origin_state_from_train_only",
+  "original_probabilities_retrained_or_modified": false,
+  "per_known_origin_state": {
+    "0": {
+      "alpha_log_odds_shift_estimated_from_2012_2019_only": -0.2921540997775962,
+      "cross_vintage_by_year": {
+        "2024": {
+          "country_years": 159,
+          "delta_brier_calibrated_minus_global": -0.0033905656010519217,
+          "delta_brier_calibrated_minus_original": 2.246338269000156e-05,
+          "delta_logloss_calibrated_minus_original": -0.0034853585790068087,
+          "observed_transitions": 4,
+          "odds_intercept_calibrated": {
+            "brier": 0.022046387096863466,
+            "expected_events": 5.137048266748861,
+            "log_loss": 0.09085156999602557,
+            "mean_probability": 0.03230847966508718
+          },
+          "original_country_markov": {
+            "brier": 0.022023923714173464,
+            "expected_events": 6.7223067856670005,
+            "log_loss": 0.09433692857503238,
+            "mean_probability": 0.042278659029352204
+          },
+          "original_global_markov": {
+            "brier": 0.025436952697915387,
+            "expected_events": 8.803290659121,
+            "log_loss": 0.12832491857589243,
+            "mean_probability": 0.055366607919
+          }
+        },
+        "2025": {
+          "country_years": 162,
+          "delta_brier_calibrated_minus_global": -0.00203503067466939,
+          "delta_brier_calibrated_minus_original": -0.0003068106691944336,
+          "delta_logloss_calibrated_minus_original": -0.0034991334238223815,
+          "observed_transitions": 4,
+          "odds_intercept_calibrated": {
+            "brier": 0.022952776717133135,
+            "expected_events": 5.1701911973455115,
+            "log_loss": 0.10257295602047929,
+            "mean_probability": 0.03191476047744143
+          },
+          "original_country_markov": {
+            "brier": 0.02325958738632757,
+            "expected_events": 6.7776714665830005,
+            "log_loss": 0.10607208944430167,
+            "mean_probability": 0.04183747818878395
+          },
+          "original_global_markov": {
+            "brier": 0.024987807391802525,
+            "expected_events": 8.876475898686,
+            "log_loss": 0.12666843750808662,
+            "mean_probability": 0.054793061102999994
+          }
+        }
+      },
+      "evaluation_separate_source_2024_2025": {
+        "country_years": 321,
+        "delta_brier_calibrated_minus_global": -0.002706463862503731,
+        "delta_brier_calibrated_minus_original": -0.00014371230704606636,
+        "delta_logloss_calibrated_minus_original": -0.003492310369848317,
+        "observed_transitions": 8,
+        "odds_intercept_calibrated": {
+          "brier": 0.02250381737251358,
+          "expected_events": 10.307239464094373,
+          "log_loss": 0.0967670358401424,
+          "mean_probability": 0.03210978026197624
+        },
+        "original_country_markov": {
+          "brier": 0.022647529679559648,
+          "expected_events": 13.499978252250001,
+          "log_loss": 0.10025934620999072,
+          "mean_probability": 0.042056007016355146
+        },
+        "original_global_markov": {
+          "brier": 0.025210281235017312,
+          "expected_events": 17.679766557807,
+          "log_loss": 0.12748893747625212,
+          "mean_probability": 0.055077154385691586
+        }
+      },
+      "odds_multiplier": 0.746653467974252,
+      "origin_state": 0,
+      "train_revised_2012_2019": {
+        "country_years": 1336,
+        "delta_brier_calibrated_minus_global": -0.0029287820246901436,
+        "delta_brier_calibrated_minus_original": 8.407640510428582e-05,
+        "delta_logloss_calibrated_minus_original": -0.0016414263747646096,
+        "observed_transitions": 51,
+        "odds_intercept_calibrated": {
+          "brier": 0.03417675280556125,
+          "expected_events": 50.99999999999999,
+          "log_loss": 0.13888554448430562,
+          "mean_probability": 0.038173652694610774
+        },
+        "original_country_markov": {
+          "brier": 0.03409267640045696,
+          "expected_events": 66.653732414885,
+          "log_loss": 0.14052697085907023,
+          "mean_probability": 0.04989051827461452
+        },
+        "original_global_markov": {
+          "brier": 0.03710553483025139,
+          "expected_events": 76.845465182592,
+          "log_loss": 0.166123895138751,
+          "mean_probability": 0.05751906076541317
+        }
+      },
+      "validation_revised_2020_2023": {
+        "country_years": 651,
+        "delta_brier_calibrated_minus_global": -0.0030409410289188726,
+        "delta_brier_calibrated_minus_original": -6.733082014295788e-05,
+        "delta_logloss_calibrated_minus_original": -0.002963464189754822,
+        "observed_transitions": 19,
+        "odds_intercept_calibrated": {
+          "brier": 0.026014369704564316,
+          "expected_events": 22.309977233474537,
+          "log_loss": 0.11232307669880773,
+          "mean_probability": 0.03427031833099007
+        },
+        "original_country_markov": {
+          "brier": 0.026081700524707273,
+          "expected_events": 29.180176196504,
+          "log_loss": 0.11528654088856255,
+          "mean_probability": 0.04482361934946851
+        },
+        "original_global_markov": {
+          "brier": 0.029055310733483188,
+          "expected_events": 36.446418438529,
+          "log_loss": 0.14009179441679698,
+          "mean_probability": 0.05598528177961444
+        }
+      }
+    },
+    "1": {
+      "alpha_log_odds_shift_estimated_from_2012_2019_only": -0.7367471232834963,
+      "cross_vintage_by_year": {
+        "2024": {
+          "country_years": 37,
+          "delta_brier_calibrated_minus_global": -0.02943947773639556,
+          "delta_brier_calibrated_minus_original": -0.00024994532054967156,
+          "delta_logloss_calibrated_minus_original": -0.014308288614421072,
+          "observed_transitions": 6,
+          "odds_intercept_calibrated": {
+            "brier": 0.12458147784990416,
+            "expected_events": 4.90480705785238,
+            "log_loss": 0.39576906710800847,
+            "mean_probability": 0.13256235291492918
+          },
+          "original_country_markov": {
+            "brier": 0.12483142317045383,
+            "expected_events": 8.820023840252,
+            "log_loss": 0.41007735572242954,
+            "mean_probability": 0.23837902270951353
+          },
+          "original_global_markov": {
+            "brier": 0.15402095558629972,
+            "expected_events": 10.985447642654,
+            "log_loss": 0.49205933306169364,
+            "mean_probability": 0.296903990342
+          }
+        },
+        "2025": {
+          "country_years": 34,
+          "delta_brier_calibrated_minus_global": -0.035208461345651074,
+          "delta_brier_calibrated_minus_original": -0.012341650457052683,
+          "delta_logloss_calibrated_minus_original": -0.040890083796520815,
+          "observed_transitions": 4,
+          "odds_intercept_calibrated": {
+            "brier": 0.10013866205466064,
+            "expected_events": 4.2852197727962675,
+            "log_loss": 0.34639818835508823,
+            "mean_probability": 0.12603587567047847
+          },
+          "original_country_markov": {
+            "brier": 0.11248031251171332,
+            "expected_events": 7.749981506391,
+            "log_loss": 0.38728827215160905,
+            "mean_probability": 0.22794063254091176
+          },
+          "original_global_markov": {
+            "brier": 0.13534712340031171,
+            "expected_events": 10.038317203555998,
+            "log_loss": 0.4522629335957083,
+            "mean_probability": 0.29524462363399995
+          }
+        }
+      },
+      "evaluation_separate_source_2024_2025": {
+        "country_years": 71,
+        "delta_brier_calibrated_minus_global": -0.03220208960561652,
+        "delta_brier_calibrated_minus_original": -0.006040339329579286,
+        "delta_logloss_calibrated_minus_original": -0.02703759898331387,
+        "observed_transitions": 10,
+        "odds_intercept_calibrated": {
+          "brier": 0.11287646746908331,
+          "expected_events": 9.190026830648646,
+          "log_loss": 0.372126674465765,
+          "mean_probability": 0.12943699761476968
+        },
+        "original_country_markov": {
+          "brier": 0.1189168067986626,
+          "expected_events": 16.570005346643,
+          "log_loss": 0.39916427344907884,
+          "mean_probability": 0.23338035699497184
+        },
+        "original_global_markov": {
+          "brier": 0.14507855707469983,
+          "expected_events": 21.023764846209996,
+          "log_loss": 0.4730019023315035,
+          "mean_probability": 0.2961093640311267
+        }
+      },
+      "odds_multiplier": 0.4786684352277079,
+      "origin_state": 1,
+      "train_revised_2012_2019": {
+        "country_years": 230,
+        "delta_brier_calibrated_minus_global": -0.03860518833125723,
+        "delta_brier_calibrated_minus_original": -0.012554700677754826,
+        "delta_logloss_calibrated_minus_original": -0.038933151394337784,
+        "observed_transitions": 34,
+        "odds_intercept_calibrated": {
+          "brier": 0.12023899067575192,
+          "expected_events": 33.99999999999999,
+          "log_loss": 0.3965466715404074,
+          "mean_probability": 0.14782608695652172
+        },
+        "original_country_markov": {
+          "brier": 0.13279369135350674,
+          "expected_events": 60.091294864428,
+          "log_loss": 0.4354798229347452,
+          "mean_probability": 0.2612664994105565
+        },
+        "original_global_markov": {
+          "brier": 0.15884417900700915,
+          "expected_events": 75.299245068736,
+          "log_loss": 0.5043867218919128,
+          "mean_probability": 0.3273880220379826
+        }
+      },
+      "validation_revised_2020_2023": {
+        "country_years": 133,
+        "delta_brier_calibrated_minus_global": -0.041648950670865256,
+        "delta_brier_calibrated_minus_original": -0.018243233830864555,
+        "delta_logloss_calibrated_minus_original": -0.057108631598231596,
+        "observed_transitions": 14,
+        "odds_intercept_calibrated": {
+          "brier": 0.0930473192296024,
+          "expected_events": 17.768605025862495,
+          "log_loss": 0.3269224145569853,
+          "mean_probability": 0.13359853402904132
+        },
+        "original_country_markov": {
+          "brier": 0.11129055306046695,
+          "expected_events": 31.879332431563,
+          "log_loss": 0.3840310461552169,
+          "mean_probability": 0.23969422880874436
+        },
+        "original_global_markov": {
+          "brier": 0.13469626990046765,
+          "expected_events": 40.694721242159,
+          "log_loss": 0.4519725626331404,
+          "mean_probability": 0.305975347685406
+        }
+      }
+    }
+  },
+  "prospective_2027_forecast_modified": false,
+  "prospective_2027_results_observed": 0,
+  "revised_source_sha256": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34",
+  "schema": "idealab.psico.geo2027_posthoc_intercept_calibration_split.v1",
+  "status": "EXPLORATORY_POSTHOC_TEMPORAL_SPLIT_NOT_ASOF",
+  "train_years_revised_26_1": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019
+  ],
+  "validation_years_revised_26_1": [
+    2020,
+    2021,
+    2022,
+    2023
+  ]
+}
