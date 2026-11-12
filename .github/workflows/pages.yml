@@ -114,6 +114,34 @@ jobs:
             test -s data/forecast-2027-transition-alerts-manifest.json
             PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_issued_geo2027_transition_alerts.py --check-report data/forecast-2027-transition-alerts-audit.json
           fi
+  geo2027_temporal_calibration_ablation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate disjoint calibration years and source integrity with synthetic outcomes
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_experiment_geo2027_temporal_calibration.py' -v
+      - name: Recompute train-only log-odds intercept calibration on SHA-pinned historical UCDP releases
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_geo2027_temporal_calibration.py --check-report data/geo2027-temporal-calibration-ablation.json
+  geo2027_historical_count_dispersion:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Reject incomplete/invalid retrospective country-year count panels
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_diagnose_geo2027_historical_count_dispersion.py' -v
+      - name: Calculate source-frozen 12-year revised and 2-year cross-release count diagnostics
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_historical_count_dispersion.py --check-report data/geo2027-historical-count-dispersion-archival.json
   geo2027_alert_dependence_scenarios:
     runs-on: ubuntu-latest
     steps:
@@ -446,7 +474,7 @@ jobs:
           test -s /tmp/idealab-ucdp-archive.json
   deploy:
     if: github.event_name != 'pull_request'
-    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic, new_entry_baseline_diagnostic, onset2_homogeneous_holdout, onset2_lagged_signal_ablation, probe_ucdp_prio_vintages, onset2_conflict_incidence, onset2_country_riskset_codebook, country_multiple_onset_probe, country_multiple_newconf_experiment, prospective_newconf_2027_source_audit, prospective_newconf_2027_candidate, prospective_newconf_2027_immutable, prospective_newconf_2027_resolution_contract, newconf_persistence_ablation, geo2027_transition_diagnostic, geo2027_transition_alert_ranking, geo2027_exact_alert_null, prospective_geo2027_transition_alert_issue, geo2027_alert_dependence_scenarios, prospective_geo2027_alert_resolution_contract]
+    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic, new_entry_baseline_diagnostic, onset2_homogeneous_holdout, onset2_lagged_signal_ablation, probe_ucdp_prio_vintages, onset2_conflict_incidence, onset2_country_riskset_codebook, country_multiple_onset_probe, country_multiple_newconf_experiment, prospective_newconf_2027_source_audit, prospective_newconf_2027_candidate, prospective_newconf_2027_immutable, prospective_newconf_2027_resolution_contract, newconf_persistence_ablation, geo2027_transition_diagnostic, geo2027_transition_alert_ranking, geo2027_exact_alert_null, prospective_geo2027_transition_alert_issue, geo2027_alert_dependence_scenarios, prospective_geo2027_alert_resolution_contract, geo2027_historical_count_dispersion, geo2027_temporal_calibration_ablation]
     runs-on: ubuntu-latest
     environment: github-pages
     steps:
