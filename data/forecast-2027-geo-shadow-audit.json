@@ -1,0 +1,20 @@
+{
+  "2027_outcomes_resolved": 0,
+  "calibration_report_sha256": "990a237dd1f828557a76a20bb29ad34601a1a63085ef783478680b85199ab678",
+  "demonstrated_prospective_skill": false,
+  "first_public_github_commit": "ed3e764a191b24bc2a01f4d877b115db2e247a20",
+  "first_public_github_commit_utc": "2026-11-12T19:36:39Z",
+  "forecast_id": "PSICO-GEO2027-STATEBASED25-CALIBRATED-SHADOW-V1",
+  "generator_sha256": "dbc8a551474c8a90a3f313d3bc89d0376e7efa1f40775895b09bdf23d3c3b4b3",
+  "historical_intercepts_fit_only_through_target_year": 2019,
+  "historical_method_devised_after_2024_2025_outcomes_seen": true,
+  "independently_notarized": false,
+  "issued_country_count": 196,
+  "issued_target_year": 2027,
+  "original_alerts_sha256": "309b4f270e1d0d6382b7a90ae64c28d7621f96fbf3177a45aaebbffb0f958acb",
+  "original_forecast_and_alert_issues_unchanged": true,
+  "original_forecast_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "schema": "idealab.psico.geo2027_shadow_issued_audit.v1",
+  "shadow_forecast_sha256": "1d0880f6e95e77d5e203b186e45a035676c7f724ecbe6a8b323f776b9eaa9188",
+  "status": "ISSUED_SHADOW_NO_2027_RESULTS"
+}
