@@ -114,6 +114,31 @@ jobs:
             test -s data/forecast-2027-transition-alerts-manifest.json
             PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_issued_geo2027_transition_alerts.py --check-report data/forecast-2027-transition-alerts-audit.json
           fi
+  prospective_geo2027_calibrated_shadow_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify SHA-pinned original and future-only shadow generator against adversarial tests
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_prepare_geo2027_calibrated_shadow.py' -v
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_audit_issued_geo2027_shadow.py' -v
+      - name: Reconstruct exact canonical 196-country shadow from previously issued public probabilities
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/prepare_geo2027_calibrated_shadow.py --output /tmp/geo2027-shadow.json --print-canonical
+          test -s /tmp/geo2027-shadow.json
+          if test -f data/forecast-2027-geo-shadow.json; then
+            cmp /tmp/geo2027-shadow.json data/forecast-2027-geo-shadow.json
+            test -s data/forecast-2027-geo-shadow-manifest.json
+            if test -f data/forecast-2027-geo-shadow-audit.json; then
+              PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_issued_geo2027_shadow.py --check-report data/forecast-2027-geo-shadow-audit.json
+            else
+              PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_issued_geo2027_shadow.py
+            fi
+          fi
   geo2027_temporal_calibration_ablation:
     runs-on: ubuntu-latest
     steps:
@@ -474,7 +499,7 @@ jobs:
           test -s /tmp/idealab-ucdp-archive.json
   deploy:
     if: github.event_name != 'pull_request'
-    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic, new_entry_baseline_diagnostic, onset2_homogeneous_holdout, onset2_lagged_signal_ablation, probe_ucdp_prio_vintages, onset2_conflict_incidence, onset2_country_riskset_codebook, country_multiple_onset_probe, country_multiple_newconf_experiment, prospective_newconf_2027_source_audit, prospective_newconf_2027_candidate, prospective_newconf_2027_immutable, prospective_newconf_2027_resolution_contract, newconf_persistence_ablation, geo2027_transition_diagnostic, geo2027_transition_alert_ranking, geo2027_exact_alert_null, prospective_geo2027_transition_alert_issue, geo2027_alert_dependence_scenarios, prospective_geo2027_alert_resolution_contract, geo2027_historical_count_dispersion, geo2027_temporal_calibration_ablation]
+    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic, new_entry_baseline_diagnostic, onset2_homogeneous_holdout, onset2_lagged_signal_ablation, probe_ucdp_prio_vintages, onset2_conflict_incidence, onset2_country_riskset_codebook, country_multiple_onset_probe, country_multiple_newconf_experiment, prospective_newconf_2027_source_audit, prospective_newconf_2027_candidate, prospective_newconf_2027_immutable, prospective_newconf_2027_resolution_contract, newconf_persistence_ablation, geo2027_transition_diagnostic, geo2027_transition_alert_ranking, geo2027_exact_alert_null, prospective_geo2027_transition_alert_issue, geo2027_alert_dependence_scenarios, prospective_geo2027_alert_resolution_contract, geo2027_historical_count_dispersion, geo2027_temporal_calibration_ablation, prospective_geo2027_calibrated_shadow_issue]
     runs-on: ubuntu-latest
     environment: github-pages
     steps:
