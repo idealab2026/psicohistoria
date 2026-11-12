@@ -127,11 +127,8 @@ jobs:
       - name: Reconstruct readable source-verified ACD2027 32-country original and secondary views
         run: |
           set -e
-          if test -f data/forecast-2027-acd-retention-country-view.json; then
-            PYTHONDONTWRITEBYTECODE=1 python3 scripts/publish_acd2027_named_country_view.py --check-report
-          else
-            PYTHONDONTWRITEBYTECODE=1 python3 scripts/publish_acd2027_named_country_view.py
-          fi
+          test -s data/forecast-2027-acd-retention-country-view.json
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/publish_acd2027_named_country_view.py --check-report
   prospective_acd2027_retention_issuance:
     runs-on: ubuntu-latest
     steps:
