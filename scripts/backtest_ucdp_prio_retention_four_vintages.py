@@ -107,7 +107,7 @@ def train_origin(active,cutoff):
         if START<=y<=cutoff-HORIZON:
             training.append((cid,y,int((cid,y+HORIZON) in active),
                              int((cid,y-1) in active)))
-    if len(training)<500 or len({cid for cid,_,_,_ in training})<85:
+    if len(training)<250 or len({cid for cid,_,_,_ in training})<35:
         raise ValueError("Insufficient origin-only training exposure")
     successes=sum(row[2] for row in training)
     if not 0<successes<len(training):
