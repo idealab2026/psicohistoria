@@ -49,3 +49,44 @@ La CI debe comparar el informe final `data/ucdp-prio-retention-vintage-yearblock
 **No es GEO-2027:** el objetivo ACD es persistencia de cualquier conflicto intraestatal tipo 3/4 registrado dos años después entre países que tenían conflictos en el origen. No es un umbral de 25 muertes de violencia estatal, inicio de una guerra, cese de violencia ni paz negociada. No se crean nuevas predicciones 2027, no se introducen datos futuros y las fechas originales de edición no están independientemente notarizadas.
 
 Los resultados son **exploratorios**, pues la hipótesis y los modelos se han propuesto después de explorar resultados históricos. Una variación de signo o la estabilidad de la ventaja entre tres años restantes deben interpretarse como una comprobación limitada de robustez, **nunca** como prueba de capacidad predictiva general.
+
+## Resultados oficiales obtenidos y fijados en el archivo de auditoría
+
+El informe `data/ucdp-prio-retention-vintage-yearblock-robustness.json` ha sido reconstruido por GitHub Actions a partir de las **seis ediciones UCDP/PRIO ACD**, todas con SHA-256 fijo. Se conserva el compromiso original de 137 evaluaciones y 116 etiquetas de persistencia de la PR #62. La nueva auditoría comprueba el informe **byte a byte** y no cambia los valores originales.
+
+### 1. Robustez de etiquetas: apenas una revisión entre 137 evaluaciones
+
+| Año objetivo | Edición primera | Ediciones de revisión verificadas | Cambios en etiquetas dentro del conjunto original |
+|---|---|---|---:|
+| 2021 | 22.1 | 23.1, 24.1 y 25.1 | **0** |
+| 2022 | 23.1 | 24.1 y 25.1 | **1** (de 0 a 1) |
+| 2023 | 24.1 | 25.1 | **0** |
+| 2024 | 25.1 | Ninguna posterior disponible | **No evaluable** |
+
+Con la última edición disponible (25.1), las 137 evaluaciones contienen **117** etiquetas de persistencia, frente a **116** en las ediciones primeras. La revisión cambia la **etiqueta de un país en 2022**, nunca su probabilidad emitida con la edición de origen. El resto de etiquetas sigue estable en los cortes examinados. **No** puede afirmarse estabilidad editorial de 2024 en ausencia de una edición posterior.
+
+| Brier ponderado por las 137 evaluaciones | Primera edición de cada objetivo | Última edición disponible |
+|---|---:|---:|
+| Tasa global reciente | 0,13060 | 0,12530 |
+| Historia individual del país | 0,13599 | 0,13238 |
+| Actividad del año anterior | **0,12713** | **0,12215** |
+| Diferencia actividad previa menos global | **−0,00347** | **−0,00315** |
+
+Todos los modelos mejoran sus pérdidas con esa única revisión, pero ello refleja la **etiqueta histórica corregida**, no una predicción de un hecho nuevo.
+
+### 2. Sensibilidad al excluir años objetivos completos
+
+| Año objetivo excluido | Diferencia de Brier (primera edición) | Diferencia de Brier (etiquetas revisadas) |
+|---|---:|---:|
+| 2021 | −0,000163 | **+0,000270** |
+| 2022 | **+0,000570** | **+0,000570** |
+| 2023 | −0,008207 | −0,007786 |
+| 2024 | −0,005886 | −0,005456 |
+
+**Hallazgo principal:** la ventaja del modelo de actividad previa **cambia de signo** en la primera serie si se excluye 2022, y **en dos de los cuatro escenarios** si se usan las etiquetas revisadas. Excluir 2021 deja el resultado casi empatado o con el signo opuesto, dependiendo de la edición. Por tanto, la diferencia de Brier agregada de −0,00347 **no puede presentarse como mejora robusta de la capacidad predictiva**. Ni siquiera estos cuatro ensayos de exclusión equivalen a validación estadística independiente, ya que las cohortes anuales repiten países y pueden compartir shocks políticos.
+
+### 3. Implicación para el programa científico
+
+La sensibilidad a ediciones oficiales es **baja** en este caso; la sensibilidad a qué año se evalúa es comparativamente **elevada**. Se debe conservar la tasa global reciente como referencia principal y registrar el modelo de actividad del año anterior como candidato **exploratorio sin superioridad demostrada**. La evolución futura requiere más años de evaluación independiente, periodos con fuentes originales auténticamente fechadas y análisis explícito de recurrencia de países; no aumentar la complejidad del modelo seleccionado con cuatro bloques.
+
+El experimento estudia **presencia a dos años de conflictos intraestatales ACD tipo 3/4**, no el umbral de 25 muertes por violencia estatal de GEO-2027. Ninguna probabilidad ni alerta de GEO, shadow o NEWCONF-2027 ha sido modificada, y siguen sin observarse etiquetas de 2027.
