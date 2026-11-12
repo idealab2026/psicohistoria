@@ -65,9 +65,12 @@ class OlderACDVintageTests(unittest.TestCase):
 
     def test_unpinned_source_is_discovery_only_never_certified(self):
         body=fake_zip(2019)
-        with self.assertRaisesRegex(ValueError,"Unpinned historical"):
-            study.parse_version(body,"20.1",allow_probe=False)
-        active,meta=study.parse_version(body,"20.1",allow_probe=True)
+        source=copy.deepcopy(study.HISTORICAL)
+        source["20.1"]["sha256"]=None
+        with patch.object(study,"HISTORICAL",source):
+            with self.assertRaisesRegex(ValueError,"Unpinned historical"):
+                study.parse_version(body,"20.1",allow_probe=False)
+            active,meta=study.parse_version(body,"20.1",allow_probe=True)
         self.assertEqual(meta["last_year"],2019)
         self.assertFalse(meta["sha256_pinned_before_run"])
         self.assertGreater(len(active),1200)
