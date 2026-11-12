@@ -48,3 +48,37 @@ Aún son posibles análisis espaciales/sectoriales con una estructura mucho más
 El informe resultante `data/geo2027-ucdp-vintage-revisions-archival.json` contendrá únicamente recuentos agregados por edición y año, la sensibilidad histórica de Brier/log-loss y la advertencia de no identificabilidad. La auditoría comprobará las cuatro fuentes originales, sus hashes, la cohorte histórica de 392 país-años, la cobertura 196 del objetivo 2024 y la coincidencia exacta de las etiquetas de la edición primera. Pruebas sintéticas aseguran que una revisión no se convierte falsamente en transición real y que una etiqueta faltante bloquea su uso.
 
 Los 196 pronósticos GEO-2027, el segundo modelo shadow, las 15 alertas originales, NEWCONF-2027, todos sus documentos de primera emisión y sus fechas permanecen **completamente inalterados**. El estudio no aporta ninguna observación real de 2027 ni prueba capacidad predictiva futura.
+
+## Resultados verificables: revisiones reales de cuatro ediciones
+
+El informe completo, reproducido desde las fuentes UCDP con los cuatro SHA-256, está archivado en `data/geo2027-ucdp-vintage-revisions-archival.json`. Cada auditoría posterior debe recomputarlo y confirmar **igualdad exacta de los bytes**.
+
+| Edición inicial → posterior | Países-año idénticos | Cambios 0→1 | Cambios 1→0 | Total de etiquetas revisadas |
+|---|---:|---:|---:|---:|
+| 23.1 → 24.1 | 6.544 | 1 | 1 | **2** |
+| 24.1 → 25.1 | 6.740 | 4 | 0 | **4** |
+| 25.1 → 26.1 | 6.936 | 2 | 1 | **3** |
+| 23.1 → 25.1 | 6.544 | 5 | 1 | **6** |
+| 24.1 → 26.1 | 6.740 | 6 | 1 | **7** |
+
+Estas comparaciones **no son muestras independientes**: los pares que saltan una edición solapan los pares consecutivos. No se suman los cambios para obtener una tasa total única. La variable describe el cruce del umbral binario entre dos ediciones de un **mismo país y mismo año**, no el número de conflictos que comenzaron o terminaron.
+
+### Caso particularmente informativo: las 196 etiquetas del objetivo 2024
+
+En los **196 países exactos** del diagnóstico con origen 2022 (edición 23.1), la primera edición de etiquetas objetivo 2024 (25.1) y su revisión posterior (26.1) coinciden completamente:
+
+| Bloque fijado por estado de origen en 2022 | Países | Transiciones 2024 según 25.1 | Transiciones 2024 según 26.1 | Variación de Brier |
+|---|---:|---:|---:|---:|
+| Inicialmente inactivos | 159 | 4 | 4 | **0** |
+| Inicialmente activos | 37 | 6 | 6 | **0** |
+| **Total** | **196** | **10** | **10** | **0** |
+
+Ambas fuentes clasifican como activos en 2024 a los mismos **35 países** y como inactivos a los otros **161**. También son exactamente iguales las diferencias de log-loss de aquel diagnóstico al cambiar de edición. No hay ninguna revisión de umbral en ese corte 2024.
+
+**Inferencia permitida:** el sesgo de calibración detectado en ese diagnóstico de 2024 **no se explica por revisiones de etiquetas 2024 entre 25.1 y 26.1**. **Inferencia no permitida:** concluir que el modelo está mal calibrado en 2027 o que 2025 será estable frente a ediciones futuras. El corte de 2025 solo se ha observado en 26.1.
+
+### Dependencia entre países: no identificada
+
+Las dos cohortes anuales 2024–2025 constituyen únicamente **dos bloques temporales** para el análisis de shocks compartidos. La matriz de covarianza empírica centrada en un espacio de **196 países** tendría rango máximo **1** con dos observaciones, independientemente del algoritmo empleado. Una matriz sin restricciones contiene **19.110 pares de covarianza**; incluso los 12 años revisados de otras pruebas tendrían rango máximo 11 y además no son cohortes archivadas con las fechas correspondientes.
+
+No se ha inferido ninguna correlación, ni se ha aplicado una matriz regularizada elegida retrospectivamente, ni se ha ajustado el número de alertas. La investigación continúa separando **revisiones de fuentes, calibración marginal y dependencia conjunta** en lugar de amalgamarlas en una supuesta mejora predictiva.
