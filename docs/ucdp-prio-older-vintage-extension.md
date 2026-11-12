@@ -33,3 +33,30 @@ El protocolo para cada par de ediciones consecutivas compara **exactamente los m
 Los años de publicación de cada edición se infieren de su nombre; **no existe certificación notarial independiente de la fecha real de primera publicación**. Toda extensión posterior de predicción histórica debe utilizar un protocolo específico de ACD, una cohorte de países con casos negativos verificables y estricta separación de etiquetas posteriores. Ninguna mejora histórica de ACD podrá atribuirse retroactivamente a GEO-2027.
 
 **Integridad:** no se cambia ningún vector de GEO-2027, GEO shadow, las 15 alertas, NEWCONF-2027 ni sus compromisos públicos; siguen sin existir observaciones finales de 2027.
+
+## Fase B completada: ediciones originales descargadas, hashes fijados
+
+Las cinco ediciones oficiales han sido recuperadas de UCDP mediante la auditoría de GitHub Actions, y las ediciones 20.1, 21.1 y 22.1 tienen ahora **SHA-256 inmutables en el código**.
+
+| Edición ACD | Corte máximo de datos | SHA-256 oficial verificado | Países-año con conflicto intraestatal registrado |
+|---|---:|---|---:|
+| 20.1 | 2019 | `f4f924c1c7ce4ca5c8451512afced6182350b2ea849dd271617febc224218c93` | **1.602** |
+| 21.1 | 2020 | `4bebac361a42a9db813da58bf6244f7ec04b780dc24a8c236993672e32460dc4` | **1.637** |
+| 22.1 | 2021 | `82e8326c2de196f1acf3538e6bd8efd818fdde175c399b43282b4d9ee15b954d` | **1.674** |
+| 23.1 | 2022 | `8fe95d8a5780cba1d312f9673ffd9e93b90c91bb26e348393a583853a892b718` | **1.711** |
+| 25.1 | 2024 | `b49f7e80510d8a5779a52d872aef5b26456b3f5cbdd3ec32031339488e81813f` | **1.780** |
+
+Los totales de cada edición representan **todo su histórico 1946–año de corte**, no el mismo denominador temporal. No deben interpretarse como una tendencia anual de conflictos. Las comparaciones estrictas entre ediciones sobre **el mismo periodo anterior** son:
+
+| Comparación | Países-año añadidos al histórico previo | Países-año retirados | Cambios de codificación |
+|---|---:|---:|---:|
+| 20.1 → 21.1 | 0 | 1 | **1** |
+| 21.1 → 22.1 | 6 | 1 | **7** |
+| 22.1 → 23.1 | 3 | 0 | **3** |
+| 23.1 → 25.1 | 5 | 2 | **7** |
+
+Los cambios indican variaciones de registros de presencia de conflicto intraestatal **en los mismos años históricos**, no transiciones de un país entre años ni cambios medidos en la etiqueta GEO por muertes estatales.
+
+El informe institucional `data/ucdp-prio-2020-2022-vintages-archival.json` contiene la procedencia, SHA-256, tamaños y estructura de cada archivo, recuentos por tipo de conflicto, controles de identidades país y revisiones históricas. La CI exige ahora la reproducción **exacta byte a byte** de ese documento con las fuentes oficiales.
+
+**Límite no resuelto:** no existen aquí emisiones históricas de probabilidades fechadas fehacientemente, ni el universo de países-año con conflicto ausente, ni una correspondencia validada entre la etiqueta ACD y la de 25 muertes de violencia estatal de GEO. La nueva evidencia es una **ampliación verificable de fuentes**, no una ampliación de éxitos predictivos de GEO-2027 ni un estimador fiable de dependencia geopolítica.
