@@ -127,7 +127,7 @@ jobs:
       - name: Verify PINNED older ACD edition hashes and all four archival incidence comparisons
         run: |
           set -e
-          PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_ucdp_prio_older_vintages.py
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_ucdp_prio_older_vintages.py --check-report data/ucdp-prio-2020-2022-vintages-archival.json
   geo2027_postcalibration_count_residuals:
     runs-on: ubuntu-latest
     steps:
