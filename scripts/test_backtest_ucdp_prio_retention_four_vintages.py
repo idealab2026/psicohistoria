@@ -67,9 +67,12 @@ class ACDRetentionFourVintagesTests(unittest.TestCase):
 
     def test_source_241_sha_pin_gate_and_csv_format(self):
         sample=fake_zip(2023)
-        with self.assertRaisesRegex(ValueError,"SHA-pinned"):
-            study.load_241(sample)
-        records,info=study.load_241(sample,allow_probe=True)
+        unpinned=dict(study.SOURCE_241)
+        unpinned["sha256"]=None
+        with patch.object(study,"SOURCE_241",unpinned):
+            with self.assertRaisesRegex(ValueError,"SHA-pinned"):
+                study.load_241(sample)
+            records,info=study.load_241(sample,allow_probe=True)
         self.assertFalse(info["sha256_pinned_before_run"])
         self.assertGreater(len(records),1600)
         spec=dict(study.SOURCE_241)
@@ -81,8 +84,9 @@ class ACDRetentionFourVintagesTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,"SHA-256"):
                 study.load_241(sample+b"corrupt")
         bad=fake_zip(2023,unsafe=True)
-        with self.assertRaisesRegex(ValueError,"ambiguous government"):
-            study.load_241(bad,allow_probe=True)
+        with patch.object(study,"SOURCE_241",unpinned):
+            with self.assertRaisesRegex(ValueError,"ambiguous government"):
+                study.load_241(bad,allow_probe=True)
 
     def test_origin_training_never_loads_two_year_future_labels(self):
         active,meta=cohorts()
