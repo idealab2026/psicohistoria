@@ -124,10 +124,10 @@ jobs:
         run: |
           set -e
           PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_diagnose_ucdp_prio_older_vintages.py' -v
-      - name: Inspect old ACD editions 20.1 21.1 22.1 with provisional source checks
+      - name: Verify PINNED older ACD edition hashes and all four archival incidence comparisons
         run: |
           set -e
-          PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_ucdp_prio_older_vintages.py --probe
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_ucdp_prio_older_vintages.py
   geo2027_postcalibration_count_residuals:
     runs-on: ubuntu-latest
     steps:
