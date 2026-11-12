@@ -247,7 +247,7 @@ def evaluate(versions,meta,frozen):
 
 def main():
     p=argparse.ArgumentParser()
-    p.add_argument("--check-report")
+    p.add_argument("--check-report",action="store_true")
     args=p.parse_args()
     original,shadow,_=load_authenticated()
     if (len(original["countries"])!=196 or len(shadow["countries"])!=196
