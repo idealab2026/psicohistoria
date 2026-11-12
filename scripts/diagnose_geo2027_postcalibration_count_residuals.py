@@ -172,14 +172,28 @@ def aggregate(rows, years, alpha_by_state, historic_report=None, calibration_rep
         }
         if historic_report is not None:
             reference=historic_report[str(s)]
-            if (reference["number_of_target_years"]!=len(years)
-                or reference["n_country_years"]!=old["country_years"]
-                or reference["observed_transitions"]!=old["observed_transitions"]
-                or abs(reference["expected_model_transitions"] -
-                       old["expected_transitions"])>1e-8
-                or abs(reference["pearson_dispersion_ratio_model"] -
-                       old["mean_annual_squared_standardized_count_residual"])>1e-9):
-                raise ValueError("Published historical count dispersion mismatch")
+            reference_years={x["target_year"]:x
+                             for x in reference["yearly_aggregate_count_residuals"]}
+            if not set(years).issubset(reference_years):
+                raise ValueError("Original published historical year missing")
+            for x in annual:
+                old_annual=x["models"]["issued_country_markov"]
+                previous=reference_years[x["year"]]
+                if (old_annual["n"]!=previous["n"]
+                    or old_annual["observed_transitions"]!=
+                       previous["observed_transitions"]
+                    or abs(old_annual["expected_transitions"]-
+                           previous["expected_transitions_given_original_model"])>1e-8
+                    or abs(old_annual["squared_standardized_count_residual_independence"]-
+                           previous["count_pearson_contribution"])>1e-9):
+                    raise ValueError("Original published annual historical count changed")
+            if (period=="SEPARATED_RELEASES_2024_2025"
+                and (reference["number_of_target_years"]!=len(years)
+                     or reference["n_country_years"]!=old["country_years"]
+                     or reference["observed_transitions"]!=old["observed_transitions"]
+                     or abs(reference["expected_model_transitions"]-
+                            old["expected_transitions"])>1e-8)):
+                raise ValueError("Original separated historical counts changed")
         if calibration_report is not None:
             published=calibration_report["per_known_origin_state"][str(s)][
                 "validation_revised_2020_2023" if
