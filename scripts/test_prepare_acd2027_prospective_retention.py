@@ -70,9 +70,10 @@ class GenuineACDRetentionIssueTests(unittest.TestCase):
 
     def test_source_sha_must_be_frozen_before_factual_forecast(self):
         raw=fake_source()
-        with self.assertRaisesRegex(ValueError,"not SHA-pinned"):
-            s.official_source(raw)
-        active,meta=s.official_source(raw,probe=True)
+        with patch.object(s,"ACD_SOURCE_SHA256",None):
+            with self.assertRaisesRegex(ValueError,"not SHA-pinned"):
+                s.official_source(raw)
+            active,meta=s.official_source(raw,probe=True)
         self.assertFalse(meta["pinned"])
         self.assertEqual(meta["intrastate_2025_risk_countries"],40)
         self.assertEqual(len(active),len(synthetic_active()))
@@ -87,10 +88,11 @@ class GenuineACDRetentionIssueTests(unittest.TestCase):
                 s.official_source(raw+b"corrupted")
 
     def test_no_future_outcomes_or_duplicate_conflict_years(self):
-        with self.assertRaisesRegex(ValueError,"2026/27"):
-            s.official_source(fake_source(future=True),probe=True)
-        with self.assertRaisesRegex(ValueError,"Duplicated"):
-            s.official_source(fake_source(duplicate=True),probe=True)
+        with patch.object(s,"ACD_SOURCE_SHA256",None):
+            with self.assertRaisesRegex(ValueError,"2026/27"):
+                s.official_source(fake_source(future=True),probe=True)
+            with self.assertRaisesRegex(ValueError,"Duplicated"):
+                s.official_source(fake_source(duplicate=True),probe=True)
         source={"pinned":True,"last_observed_year":2025,
                 "no_actual_2027_outcomes":True,"source_zip_sha256":"a"*64}
         future=set(synthetic_active())
