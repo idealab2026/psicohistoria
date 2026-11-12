@@ -1,0 +1,259 @@
+{
+  "2027_outcomes_observed": 0,
+  "all_sources_sha_pinned": true,
+  "cross_country_independence_tested": false,
+  "endpoint": "Any UCDP/PRIO ACD intrastate type3/4 conflict recorded for a country in t+2, among countries with such a conflict in year t",
+  "first_source_publication_dates_independently_notarized": false,
+  "fixed_model_prior_strength": 12.0,
+  "fixed_origin_fold_years": [
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "fixed_pre_evaluation_horizon_years": 2,
+  "folds": [
+    {
+      "delta_brier_country_eb_minus_global_recent5": 0.011160713656390181,
+      "delta_brier_lag1_group_minus_global_recent5": -0.013115728633682683,
+      "models": {
+        "p_country_eb": {
+          "brier": 0.15363365204279011,
+          "logloss": 0.4857392138816026,
+          "n": 35,
+          "n_persisted_intrastate_country_conflict": 29,
+          "sum_model_expected_persisted": 28.553222305270374
+        },
+        "p_global_recent5": {
+          "brier": 0.14247293838639993,
+          "logloss": 0.4597731716991739,
+          "n": 35,
+          "n_persisted_intrastate_country_conflict": 29,
+          "sum_model_expected_persisted": 29.727564102564102
+        },
+        "p_lag1_group": {
+          "brier": 0.12935720975271725,
+          "logloss": 0.4244935712219736,
+          "n": 35,
+          "n_persisted_intrastate_country_conflict": 29,
+          "sum_model_expected_persisted": 27.971212457374577
+        }
+      },
+      "n_origin_active_countries": 35,
+      "n_target_no_recorded_intrastate_conflict": 6,
+      "n_target_persistent_country_incidence": 29,
+      "no_negative_countries_outside_origin_active_risk_set_added": true,
+      "origin_edition": "20.1",
+      "origin_training_cutoff": {
+        "future_labels_used_in_training": false,
+        "latest_training_target_year": 2019,
+        "n_origin_country_risk_set": 35,
+        "n_training_2year_persistent": 635,
+        "n_training_origin_target_country_pairs": 816,
+        "origin_max_year": 2019,
+        "prior_strength_country_and_lag1_group": 12.0,
+        "recent_global_training_origin_years": 5
+      },
+      "origin_year": 2019,
+      "outcome_edition": "22.1",
+      "target_missingness_interpretation": "ACD complete global country-conflict year registry; only formerly active countries with recognizable codes included; absence of conflict record is no recorded type3/4 conflict, not peace",
+      "target_year": 2021
+    },
+    {
+      "delta_brier_country_eb_minus_global_recent5": 0.002967374960956365,
+      "delta_brier_lag1_group_minus_global_recent5": -0.014812662826256373,
+      "models": {
+        "p_country_eb": {
+          "brier": 0.16288066235602544,
+          "logloss": 0.5094543486339043,
+          "n": 36,
+          "n_persisted_intrastate_country_conflict": 29,
+          "sum_model_expected_persisted": 29.49442646959907
+        },
+        "p_global_recent5": {
+          "brier": 0.15991328739506908,
+          "logloss": 0.5051081233828624,
+          "n": 36,
+          "n_persisted_intrastate_country_conflict": 29,
+          "sum_model_expected_persisted": 31.0609756097561
+        },
+        "p_lag1_group": {
+          "brier": 0.1451006245688127,
+          "logloss": 0.4625456955669768,
+          "n": 36,
+          "n_persisted_intrastate_country_conflict": 29,
+          "sum_model_expected_persisted": 29.03720047850837
+        }
+      },
+      "n_origin_active_countries": 36,
+      "n_target_no_recorded_intrastate_conflict": 7,
+      "n_target_persistent_country_incidence": 29,
+      "no_negative_countries_outside_origin_active_risk_set_added": true,
+      "origin_edition": "21.1",
+      "origin_training_cutoff": {
+        "future_labels_used_in_training": false,
+        "latest_training_target_year": 2020,
+        "n_origin_country_risk_set": 36,
+        "n_training_2year_persistent": 666,
+        "n_training_origin_target_country_pairs": 849,
+        "origin_max_year": 2020,
+        "prior_strength_country_and_lag1_group": 12.0,
+        "recent_global_training_origin_years": 5
+      },
+      "origin_year": 2020,
+      "outcome_edition": "23.1",
+      "target_missingness_interpretation": "ACD complete global country-conflict year registry; only formerly active countries with recognizable codes included; absence of conflict record is no recorded type3/4 conflict, not peace",
+      "target_year": 2022
+    },
+    {
+      "delta_brier_country_eb_minus_global_recent5": 0.01376290955968082,
+      "delta_brier_lag1_group_minus_global_recent5": 0.012064656547485134,
+      "models": {
+        "p_country_eb": {
+          "brier": 0.1030975161037587,
+          "logloss": 0.3605971246797168,
+          "n": 32,
+          "n_persisted_intrastate_country_conflict": 29,
+          "sum_model_expected_persisted": 26.405289636021806
+        },
+        "p_global_recent5": {
+          "brier": 0.08933460654407788,
+          "logloss": 0.3297549851559625,
+          "n": 32,
+          "n_persisted_intrastate_country_conflict": 29,
+          "sum_model_expected_persisted": 26.88372093023256
+        },
+        "p_lag1_group": {
+          "brier": 0.10139926309156301,
+          "logloss": 0.35770064400397517,
+          "n": 32,
+          "n_persisted_intrastate_country_conflict": 29,
+          "sum_model_expected_persisted": 26.34502193662071
+        }
+      },
+      "n_origin_active_countries": 32,
+      "n_target_no_recorded_intrastate_conflict": 3,
+      "n_target_persistent_country_incidence": 29,
+      "no_negative_countries_outside_origin_active_risk_set_added": true,
+      "origin_edition": "22.1",
+      "origin_training_cutoff": {
+        "future_labels_used_in_training": false,
+        "latest_training_target_year": 2021,
+        "n_origin_country_risk_set": 32,
+        "n_training_2year_persistent": 699,
+        "n_training_origin_target_country_pairs": 889,
+        "origin_max_year": 2021,
+        "prior_strength_country_and_lag1_group": 12.0,
+        "recent_global_training_origin_years": 5
+      },
+      "origin_year": 2021,
+      "outcome_edition": "24.1",
+      "target_missingness_interpretation": "ACD complete global country-conflict year registry; only formerly active countries with recognizable codes included; absence of conflict record is no recorded type3/4 conflict, not peace",
+      "target_year": 2023
+    },
+    {
+      "delta_brier_country_eb_minus_global_recent5": -0.005879233808724418,
+      "delta_brier_lag1_group_minus_global_recent5": 0.0038389864218861536,
+      "models": {
+        "p_country_eb": {
+          "brier": 0.1202945957230883,
+          "logloss": 0.3937411003249374,
+          "n": 34,
+          "n_persisted_intrastate_country_conflict": 29,
+          "sum_model_expected_persisted": 28.207453409221014
+        },
+        "p_global_recent5": {
+          "brier": 0.12617382953181272,
+          "logloss": 0.4202642345973685,
+          "n": 34,
+          "n_persisted_intrastate_country_conflict": 29,
+          "sum_model_expected_persisted": 28.074285714285715
+        },
+        "p_lag1_group": {
+          "brier": 0.13001281595369887,
+          "logloss": 0.4264190419480042,
+          "n": 34,
+          "n_persisted_intrastate_country_conflict": 29,
+          "sum_model_expected_persisted": 27.370071225328235
+        }
+      },
+      "n_origin_active_countries": 34,
+      "n_target_no_recorded_intrastate_conflict": 5,
+      "n_target_persistent_country_incidence": 29,
+      "no_negative_countries_outside_origin_active_risk_set_added": true,
+      "origin_edition": "23.1",
+      "origin_training_cutoff": {
+        "future_labels_used_in_training": false,
+        "latest_training_target_year": 2022,
+        "n_origin_country_risk_set": 34,
+        "n_training_2year_persistent": 729,
+        "n_training_origin_target_country_pairs": 926,
+        "origin_max_year": 2022,
+        "prior_strength_country_and_lag1_group": 12.0,
+        "recent_global_training_origin_years": 5
+      },
+      "origin_year": 2022,
+      "outcome_edition": "25.1",
+      "target_missingness_interpretation": "ACD complete global country-conflict year registry; only formerly active countries with recognizable codes included; absence of conflict record is no recorded type3/4 conflict, not peace",
+      "target_year": 2024
+    }
+  ],
+  "four_target_edition_years_distinct": true,
+  "historical_predictions_actually_issued_at_origin": false,
+  "limitations": "Exploratory ex-post reconstruction using historical source-edition separation, not contemporaneously published predictions. ACD unit is conflict-year; any intrastate conflict presence at t+2 for a country active at t, NOT OrganizedViolenceCY >=25 deaths, not country conflict onset and not a peace definition. Only countries historically active at origin in archived edition can enter; no negative controls for never-active countries, no claim of full 196-country country-year denominator. Countries repeat across folds and geopolitical macro shocks persist. 2023 and 2024 have distinct 24.1 and 25.1 target editions, but timestamps are not independently notarized. No new model issued for 2027.",
+  "n_country_year_fold_evaluations": 137,
+  "n_country_year_persistence_positives": 116,
+  "no_training_on_future_target_labels": true,
+  "not_geo2027_statebased_25_death_threshold": true,
+  "not_onset2_or_newconf2027": true,
+  "original_geo2027_shadow_newconf_predictions_modified": false,
+  "pooled_models": {
+    "p_country_eb": {
+      "expected_persisted": 112.66039182011227,
+      "n_country_year_fold_evaluations": 137,
+      "n_persisted": 116,
+      "pooled_brier": 0.13598553603080182,
+      "pooled_logloss": 0.43990901049252157
+    },
+    "p_global_recent5": {
+      "expected_persisted": 115.74654635683848,
+      "n_country_year_fold_evaluations": 137,
+      "n_persisted": 116,
+      "pooled_brier": 0.13059889637400446,
+      "pooled_logloss": 0.43151165658799606
+    },
+    "p_lag1_group": {
+      "expected_persisted": 110.72350609783189,
+      "n_country_year_fold_evaluations": 137,
+      "n_persisted": 116,
+      "pooled_brier": 0.12712654735166523,
+      "pooled_logloss": 0.41936925596744223
+    }
+  },
+  "schema": "idealab.psico.ucdp_prio_intrastate_country_persistence_four_source_folds.v1",
+  "selection_after_other_history_seen": true,
+  "source_archives_last_year": {
+    "20.1": 2019,
+    "21.1": 2020,
+    "22.1": 2021,
+    "23.1": 2022,
+    "24.1": 2023,
+    "25.1": 2024
+  },
+  "source_sha256_by_version": {
+    "20.1": "f4f924c1c7ce4ca5c8451512afced6182350b2ea849dd271617febc224218c93",
+    "21.1": "4bebac361a42a9db813da58bf6244f7ec04b780dc24a8c236993672e32460dc4",
+    "22.1": "82e8326c2de196f1acf3538e6bd8efd818fdde175c399b43282b4d9ee15b954d",
+    "23.1": "8fe95d8a5780cba1d312f9673ffd9e93b90c91bb26e348393a583853a892b718",
+    "24.1": "35c157c5f5aa2b08dc5b268bab7f0125da504ec3aa9dc5f28c9adba93b1717f5",
+    "25.1": "b49f7e80510d8a5779a52d872aef5b26456b3f5cbdd3ec32031339488e81813f"
+  },
+  "status": "SHA_PINNED_EX_POST_FOUR_ORIGIN_TARGET_VINTAGES",
+  "target_years": [
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "valid_independent_forecast_claim": false
+}
