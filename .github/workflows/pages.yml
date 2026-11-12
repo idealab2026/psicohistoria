@@ -130,7 +130,7 @@ jobs:
           if test -f data/geo2027-postcalibration-count-residuals-archival.json; then
             PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_postcalibration_count_residuals.py --check-report data/geo2027-postcalibration-count-residuals-archival.json
           else
-            PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_postcalibration_count_residuals.py
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_postcalibration_count_residuals.py --check-report data/geo2027-postcalibration-count-residuals-archival.json
           fi
   geo2027_ucdp_vintage_revision_audit:
     runs-on: ubuntu-latest
