@@ -97,7 +97,7 @@ test("render shows real source and pending flags, never invented official succes
 });
 test("source-induced XSS is escaped in readable search result",()=>{
  const d=fakeDoc();
- d.rows[0].country="<img onerror=alert(1)>";
+ for(const row of d.rows)if(row.country_id===1)row.country="<img onerror=alert(1)>";
  const html=renderProspectiveRegistry(d,{cohort:"GEO2027"});
  assert.doesNotMatch(html,/<img onerror/);
  assert.match(html,/&lt;img onerror/);
