@@ -1,0 +1,2096 @@
+{
+  "2027_outcomes_used": 0,
+  "country_names_for_original_cohort": {
+    "100": "Colombia",
+    "41": "Haiti",
+    "432": "Mali",
+    "434": "Benin",
+    "436": "Niger",
+    "439": "Burkina Faso",
+    "461": "Togo",
+    "471": "Cameroon",
+    "475": "Nigeria",
+    "482": "Central African Republic",
+    "490": "DR Congo (Zaire)",
+    "501": "Kenya",
+    "517": "Rwanda",
+    "520": "Somalia",
+    "530": "Ethiopia",
+    "540": "Angola",
+    "541": "Mozambique",
+    "625": "Sudan",
+    "626": "South Sudan",
+    "630": "Iran",
+    "640": "Turkey",
+    "645": "Iraq",
+    "652": "Syria",
+    "666": "Israel",
+    "678": "Yemen (North Yemen)",
+    "700": "Afghanistan",
+    "750": "India",
+    "770": "Pakistan",
+    "775": "Myanmar (Burma)",
+    "800": "Thailand",
+    "840": "Philippines",
+    "850": "Indonesia"
+  },
+  "decision_contract": {
+    "a_single_year_2027_is_only_one_joint_country_panel": true,
+    "actual_country_dependence_estimated": false,
+    "actual_temporal_dependence_estimated": false,
+    "future_dependence_study_requires_multiple_preissued_disjoint_target_year_panels": true,
+    "historical_2021_to_2024_target_years_not_independent_validation": true,
+    "max_variance_is_sharp_given_assumed_marginals": true,
+    "no_2027_empirical_scores_or_event_count_distribution": true,
+    "no_iid_country_p_values": true,
+    "no_model_reissue_or_automatic_switch": true
+  },
+  "limitations": "Both marginal truth worlds are hypothetical and unverified. The independence scenario and signed-comonotone maximum-variance coupling are mathematically coherent but do not estimate real country joint probabilities. Variance maximum is SHARP only conditional on those given Bernoulli marginal probabilities; independence is NOT guaranteed to be the minimum variance. Maximal-variance scenario's winner probability is not a predictive probability. The 2027 ACD vector is ONE annual joint country panel, not 32 independent retrospective years. Four adjacent past ACD target years with recurring countries do not identify a 2027 copula or time-varying cross-country dependence. No empirical confidence interval, sample-size claim, IID significance, new 2027 event likelihood, forecast refit, or observational skill.",
+  "models": {
+    "p_country_eb": {
+      "do_not_interpret_scenario_probabilities_as_empirical_forecast": true,
+      "first_public_commit": "41db7bd154e0140ced15abd8727a7d52d998852c",
+      "issued_probability_vector_sha256": "6cf7d0340a4c25062af7a040586fb6a73a98c9e6ab80473527171c0a5a963d9c",
+      "scenarios_by_hypothetically_true_marginals": {
+        "p_country_eb": {
+          "counterfactual_not_estimated_joint_probabilities": true,
+          "expected_paired_brier_secondary_minus_primary": -0.006240611445072909,
+          "hypothetical_true_marginal_model": "p_country_eb",
+          "max_variance_coupling_atoms": [
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                432,
+                434,
+                436,
+                461,
+                482,
+                490,
+                517,
+                520,
+                540,
+                541,
+                626,
+                630,
+                770,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 15,
+              "paired_brier_secondary_minus_primary": 0.06158103292872759,
+              "probability_mass": 0.05280709159999997,
+              "winner": "primary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                100,
+                432,
+                434,
+                436,
+                461,
+                482,
+                490,
+                517,
+                520,
+                540,
+                541,
+                626,
+                630,
+                700,
+                750,
+                770,
+                775,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 20,
+              "paired_brier_secondary_minus_primary": 0.034081812272165085,
+              "probability_mass": 0.02080279366000004,
+              "winner": "primary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                100,
+                432,
+                434,
+                436,
+                461,
+                482,
+                490,
+                517,
+                520,
+                540,
+                541,
+                626,
+                630,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 21,
+              "paired_brier_secondary_minus_primary": 0.02988214274460259,
+              "probability_mass": 0.002592919486000045,
+              "winner": "primary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                100,
+                432,
+                434,
+                436,
+                461,
+                482,
+                490,
+                517,
+                520,
+                540,
+                541,
+                625,
+                626,
+                630,
+                640,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 23,
+              "paired_brier_secondary_minus_primary": 0.0218069186252276,
+              "probability_mass": 0.020962243797999935,
+              "winner": "primary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                100,
+                432,
+                434,
+                436,
+                461,
+                482,
+                490,
+                517,
+                520,
+                540,
+                541,
+                625,
+                626,
+                630,
+                640,
+                652,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 24,
+              "paired_brier_secondary_minus_primary": 0.019079446802915102,
+              "probability_mass": 0.01640229026600004,
+              "winner": "primary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                100,
+                432,
+                434,
+                436,
+                461,
+                482,
+                490,
+                517,
+                520,
+                540,
+                541,
+                625,
+                626,
+                630,
+                640,
+                645,
+                652,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 25,
+              "paired_brier_secondary_minus_primary": 0.017377118122227607,
+              "probability_mass": 0.002105338027999948,
+              "winner": "primary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                100,
+                432,
+                434,
+                436,
+                461,
+                471,
+                482,
+                490,
+                501,
+                517,
+                520,
+                540,
+                541,
+                625,
+                626,
+                630,
+                640,
+                645,
+                652,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 27,
+              "paired_brier_secondary_minus_primary": 0.01423562801435261,
+              "probability_mass": 0.0025730546650000186,
+              "winner": "primary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                100,
+                432,
+                434,
+                436,
+                461,
+                471,
+                482,
+                490,
+                501,
+                517,
+                520,
+                540,
+                541,
+                625,
+                626,
+                630,
+                640,
+                645,
+                652,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 28,
+              "paired_brier_secondary_minus_primary": 0.012825698876977612,
+              "probability_mass": 0.008013017649999954,
+              "winner": "primary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                100,
+                432,
+                434,
+                436,
+                461,
+                471,
+                482,
+                490,
+                501,
+                517,
+                520,
+                530,
+                540,
+                541,
+                625,
+                626,
+                630,
+                640,
+                645,
+                652,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 29,
+              "paired_brier_secondary_minus_primary": 0.011916583342727612,
+              "probability_mass": 0.0007459254240000934,
+              "winner": "primary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                100,
+                432,
+                434,
+                436,
+                461,
+                471,
+                475,
+                482,
+                490,
+                501,
+                517,
+                520,
+                530,
+                540,
+                541,
+                625,
+                626,
+                630,
+                640,
+                645,
+                652,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 30,
+              "paired_brier_secondary_minus_primary": 0.011054088147477617,
+              "probability_mass": 0.0054130379499999215,
+              "winner": "primary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                100,
+                432,
+                434,
+                436,
+                461,
+                471,
+                475,
+                482,
+                490,
+                501,
+                517,
+                520,
+                530,
+                540,
+                541,
+                625,
+                626,
+                630,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 31,
+              "paired_brier_secondary_minus_primary": 0.010529907824102618,
+              "probability_mass": 0.0025337437840000643,
+              "winner": "primary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                100,
+                432,
+                434,
+                436,
+                439,
+                461,
+                471,
+                475,
+                482,
+                490,
+                501,
+                517,
+                520,
+                530,
+                540,
+                541,
+                625,
+                626,
+                630,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 32,
+              "paired_brier_secondary_minus_primary": 0.010164086487227622,
+              "probability_mass": 0.5486823855749999,
+              "winner": "primary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                100,
+                432,
+                434,
+                436,
+                439,
+                461,
+                471,
+                475,
+                482,
+                490,
+                501,
+                517,
+                520,
+                530,
+                540,
+                541,
+                625,
+                626,
+                630,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 31,
+              "paired_brier_secondary_minus_primary": -0.0008085110385848832,
+              "probability_mass": 0.009627151832000025,
+              "winner": "secondary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                100,
+                432,
+                434,
+                436,
+                439,
+                461,
+                471,
+                475,
+                482,
+                490,
+                501,
+                517,
+                520,
+                530,
+                540,
+                541,
+                625,
+                626,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 30,
+              "paired_brier_secondary_minus_primary": -0.011179411574897387,
+              "probability_mass": 0.02100790890000004,
+              "winner": "secondary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                100,
+                432,
+                434,
+                436,
+                439,
+                461,
+                471,
+                475,
+                482,
+                490,
+                501,
+                520,
+                530,
+                540,
+                541,
+                625,
+                626,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 29,
+              "paired_brier_secondary_minus_primary": -0.020237317804959888,
+              "probability_mass": 0.020405161181999976,
+              "winner": "secondary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                100,
+                432,
+                434,
+                439,
+                461,
+                471,
+                475,
+                482,
+                490,
+                501,
+                520,
+                530,
+                540,
+                541,
+                625,
+                626,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 28,
+              "paired_brier_secondary_minus_primary": -0.02801990146114739,
+              "probability_mass": 0.017688395746999985,
+              "winner": "secondary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                100,
+                434,
+                439,
+                461,
+                471,
+                475,
+                482,
+                490,
+                501,
+                520,
+                530,
+                540,
+                541,
+                625,
+                626,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 27,
+              "paired_brier_secondary_minus_primary": -0.034696960383147395,
+              "probability_mass": 0.021423948220000044,
+              "winner": "secondary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                100,
+                434,
+                439,
+                461,
+                471,
+                475,
+                482,
+                490,
+                501,
+                520,
+                530,
+                540,
+                625,
+                626,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 26,
+              "paired_brier_secondary_minus_primary": -0.040035022541397396,
+              "probability_mass": 0.004519584867999971,
+              "winner": "secondary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                100,
+                434,
+                439,
+                461,
+                471,
+                475,
+                490,
+                501,
+                520,
+                530,
+                540,
+                625,
+                626,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 25,
+              "paired_brier_secondary_minus_primary": -0.0450906106453974,
+              "probability_mass": 0.003190295201000004,
+              "winner": "secondary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                100,
+                434,
+                439,
+                461,
+                471,
+                475,
+                501,
+                520,
+                530,
+                625,
+                626,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 23,
+              "paired_brier_secondary_minus_primary": -0.054802999953272404,
+              "probability_mass": 0.004199505044000018,
+              "winner": "secondary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                100,
+                434,
+                439,
+                461,
+                471,
+                475,
+                501,
+                520,
+                530,
+                625,
+                626,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840
+              ],
+              "n_hypothetical_2027_acd_presences": 22,
+              "paired_brier_secondary_minus_primary": -0.059396725541959905,
+              "probability_mass": 0.02173350218100001,
+              "winner": "secondary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                100,
+                434,
+                439,
+                461,
+                471,
+                475,
+                501,
+                520,
+                530,
+                625,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840
+              ],
+              "n_hypothetical_2027_acd_presences": 21,
+              "paired_brier_secondary_minus_primary": -0.0626321072443349,
+              "probability_mass": 0.01906168968199995,
+              "winner": "secondary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                100,
+                439,
+                471,
+                475,
+                501,
+                520,
+                530,
+                625,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840
+              ],
+              "n_hypothetical_2027_acd_presences": 19,
+              "paired_brier_secondary_minus_primary": -0.06672015943883491,
+              "probability_mass": 0.008659625165000073,
+              "winner": "secondary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                100,
+                439,
+                471,
+                475,
+                501,
+                530,
+                625,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840
+              ],
+              "n_hypothetical_2027_acd_presences": 18,
+              "paired_brier_secondary_minus_primary": -0.0682229589632724,
+              "probability_mass": 0.009731498274999972,
+              "winner": "secondary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                100,
+                439,
+                471,
+                475,
+                501,
+                530,
+                625,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                775,
+                800,
+                840
+              ],
+              "n_hypothetical_2027_acd_presences": 17,
+              "paired_brier_secondary_minus_primary": -0.06911753984552241,
+              "probability_mass": 0.15511789181699998,
+              "winner": "secondary_wins"
+            }
+          ],
+          "max_variance_coupling_is_attainable": true,
+          "max_variance_coupling_probability_primary_wins": 0.683633841886,
+          "max_variance_coupling_probability_secondary_wins": 0.31636615811400004,
+          "max_variance_coupling_probability_tie": 0,
+          "observed_2027_labels_used": 0,
+          "sharp_maximum_variance_given_exact_marginals": 0.0013172754278405257,
+          "standard_deviation_if_independent_countries": 0.011088526120217039,
+          "standard_deviation_maximum_over_all_dependence_structures": 0.036294289190457026,
+          "variance_amplification_vs_independence": 10.713440031387343,
+          "variance_if_independent_countries": 0.00012295541151873554
+        },
+        "p_global_recent5": {
+          "counterfactual_not_estimated_joint_probabilities": true,
+          "expected_paired_brier_secondary_minus_primary": 0.00624061144507301,
+          "hypothetical_true_marginal_model": "p_global_recent5",
+          "max_variance_coupling_atoms": [
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                432,
+                434,
+                436,
+                461,
+                482,
+                490,
+                517,
+                520,
+                540,
+                541,
+                626,
+                630,
+                770,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 15,
+              "paired_brier_secondary_minus_primary": 0.06158103292872759,
+              "probability_mass": 0.14080459770099996,
+              "winner": "primary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                100,
+                432,
+                434,
+                436,
+                439,
+                461,
+                471,
+                475,
+                482,
+                490,
+                501,
+                517,
+                520,
+                530,
+                540,
+                541,
+                625,
+                626,
+                630,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 32,
+              "paired_brier_secondary_minus_primary": 0.010164086487227622,
+              "probability_mass": 0.7183908045980001,
+              "winner": "primary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                100,
+                439,
+                471,
+                475,
+                501,
+                530,
+                625,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                775,
+                800,
+                840
+              ],
+              "n_hypothetical_2027_acd_presences": 17,
+              "paired_brier_secondary_minus_primary": -0.06911753984552241,
+              "probability_mass": 0.14080459770099996,
+              "winner": "secondary_wins"
+            }
+          ],
+          "max_variance_coupling_is_attainable": true,
+          "max_variance_coupling_probability_primary_wins": 0.859195402299,
+          "max_variance_coupling_probability_secondary_wins": 0.14080459770099996,
+          "max_variance_coupling_probability_tie": 0,
+          "observed_2027_labels_used": 0,
+          "sharp_maximum_variance_given_exact_marginals": 0.0012418898324180027,
+          "standard_deviation_if_independent_countries": 0.009714556273468594,
+          "standard_deviation_maximum_over_all_dependence_structures": 0.035240457324189234,
+          "variance_amplification_vs_independence": 13.159431711858492,
+          "variance_if_independent_countries": 9.437260359038802e-05
+        }
+      }
+    },
+    "p_lag1_group": {
+      "do_not_interpret_scenario_probabilities_as_empirical_forecast": true,
+      "first_public_commit": "41db7bd154e0140ced15abd8727a7d52d998852c",
+      "issued_probability_vector_sha256": "6cf7d0340a4c25062af7a040586fb6a73a98c9e6ab80473527171c0a5a963d9c",
+      "scenarios_by_hypothetically_true_marginals": {
+        "p_global_recent5": {
+          "counterfactual_not_estimated_joint_probabilities": true,
+          "exact_independent_rank_probability": {
+            "all_64_independent_hypothetical_cells": [
+              {
+                "other_31_acd2027_presences_hypothetical": 0,
+                "paired_brier_secondary_minus_primary": -0.03221425371787839,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 5.698213989447802e-28,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 1,
+                "paired_brier_secondary_minus_primary": -0.031516454071503386,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 1.0778927646583048e-25,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 2,
+                "paired_brier_secondary_minus_primary": -0.030818654425128385,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 9.866018468364223e-24,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 3,
+                "paired_brier_secondary_minus_primary": -0.030120854778753384,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 5.81960858090421e-22,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 4,
+                "paired_brier_secondary_minus_primary": -0.029423055132378383,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 2.4858042367035837e-20,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 5,
+                "paired_brier_secondary_minus_primary": -0.02872525548600338,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 8.190978613441968e-19,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 6,
+                "paired_brier_secondary_minus_primary": -0.02802745583962838,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 2.165873052414168e-17,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 7,
+                "paired_brier_secondary_minus_primary": -0.02732965619325338,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 4.720087774581898e-16,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 8,
+                "paired_brier_secondary_minus_primary": -0.02663185654687838,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 8.640650477153455e-15,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 9,
+                "paired_brier_secondary_minus_primary": -0.025934056900503377,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 1.347432048332375e-13,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 10,
+                "paired_brier_secondary_minus_primary": -0.025236257254128376,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 1.8088587783553698e-12,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 11,
+                "paired_brier_secondary_minus_primary": -0.024538457607753375,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 2.1072030184243786e-11,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 12,
+                "paired_brier_secondary_minus_primary": -0.023840657961378374,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 2.143039804454652e-10,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 13,
+                "paired_brier_secondary_minus_primary": -0.023142858315003373,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 1.9112416215262035e-09,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 14,
+                "paired_brier_secondary_minus_primary": -0.022445058668628372,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 1.499460992283781e-08,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 15,
+                "paired_brier_secondary_minus_primary": -0.02174725902225337,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 1.0369741801071941e-07,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 16,
+                "paired_brier_secondary_minus_primary": -0.02104945937587837,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 6.327658772498655e-07,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 17,
+                "paired_brier_secondary_minus_primary": -0.02035165972950337,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 3.4069087148489235e-06,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 18,
+                "paired_brier_secondary_minus_primary": -0.019653860083128367,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 1.6169296916525184e-05,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 19,
+                "paired_brier_secondary_minus_primary": -0.018956060436753366,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 6.750811720151563e-05,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 20,
+                "paired_brier_secondary_minus_primary": -0.018258260790378365,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.00024716237195850744,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 21,
+                "paired_brier_secondary_minus_primary": -0.017560461144003364,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.000790006842927634,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 22,
+                "paired_brier_secondary_minus_primary": -0.016862661497628363,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.0021912063639671093,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 23,
+                "paired_brier_secondary_minus_primary": -0.016164861851253362,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.005232064175193235,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 24,
+                "paired_brier_secondary_minus_primary": -0.015467062204878361,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.01064208971690279,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 25,
+                "paired_brier_secondary_minus_primary": -0.01476926255850336,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.018182770430616373,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 26,
+                "paired_brier_secondary_minus_primary": -0.014071462912128359,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.025604309381919994,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 27,
+                "paired_brier_secondary_minus_primary": -0.013373663265753358,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.02893306313380022,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 28,
+                "paired_brier_secondary_minus_primary": -0.012675863619378357,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.025221533169145636,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 29,
+                "paired_brier_secondary_minus_primary": -0.011978063973003356,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.015920981880894854,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 30,
+                "paired_brier_secondary_minus_primary": -0.011280264326628354,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.006476698751555704,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 31,
+                "paired_brier_secondary_minus_primary": -0.010582464680253353,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.001274873552809446,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 0,
+                "paired_brier_secondary_minus_primary": -0.012646995997878385,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 3.477073434381628e-27,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 1,
+                "paired_brier_secondary_minus_primary": -0.011949196351503384,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 6.577345645576149e-25,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 2,
+                "paired_brier_secondary_minus_primary": -0.011251396705128383,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 6.020284738866423e-23,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 3,
+                "paired_brier_secondary_minus_primary": -0.010553597058753382,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 3.5511489095765485e-21,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 4,
+                "paired_brier_secondary_minus_primary": -0.009855797412378381,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 1.5168478913781424e-19,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 5,
+                "paired_brier_secondary_minus_primary": -0.00915799776600338,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 4.998168582494233e-18,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 6,
+                "paired_brier_secondary_minus_primary": -0.008460198119628379,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 1.3216245768829312e-16,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 7,
+                "paired_brier_secondary_minus_primary": -0.007762398473253378,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 2.8802168257178183e-15,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 8,
+                "paired_brier_secondary_minus_primary": -0.007064598826878377,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 5.272560189126684e-14,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 9,
+                "paired_brier_secondary_minus_primary": -0.0063667991805033755,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 8.222085356160772e-13,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 10,
+                "paired_brier_secondary_minus_primary": -0.005668999534128374,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 1.1037730096508648e-11,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 11,
+                "paired_brier_secondary_minus_primary": -0.004971199887753373,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 1.285823882672791e-10,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 12,
+                "paired_brier_secondary_minus_primary": -0.004273400241378372,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 1.3076916357810868e-09,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 13,
+                "paired_brier_secondary_minus_primary": -0.003575600595003371,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 1.1662474384429406e-08,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 14,
+                "paired_brier_secondary_minus_primary": -0.00287780094862837,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 9.149772177416417e-08,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 15,
+                "paired_brier_secondary_minus_primary": -0.002180001302253369,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 6.327658772498655e-07,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 16,
+                "paired_brier_secondary_minus_primary": -0.001482201655878368,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 3.861163210162113e-06,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 17,
+                "paired_brier_secondary_minus_primary": -0.0007844020095033669,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 2.078909603553238e-05,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 18,
+                "paired_brier_secondary_minus_primary": -8.660236312836578e-05,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 9.86657097560613e-05,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 19,
+                "paired_brier_secondary_minus_primary": 0.0006111972832466353,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.00041193728659751246,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 20,
+                "paired_brier_secondary_minus_primary": 0.0013089969296216364,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.0015081948819527556,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 21,
+                "paired_brier_secondary_minus_primary": 0.0020067965759966375,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.004820654000727641,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 22,
+                "paired_brier_secondary_minus_primary": 0.0027045962223716385,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.013370830669938268,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 23,
+                "paired_brier_secondary_minus_primary": 0.0034023958687466396,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.03192626915070836,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 24,
+                "paired_brier_secondary_minus_primary": 0.004100195515121641,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.0649384658236299,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 25,
+                "paired_brier_secondary_minus_primary": 0.004797995161496642,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.11095200732165332,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 26,
+                "paired_brier_secondary_minus_primary": 0.005495794807871643,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.15623854092252118,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 27,
+                "paired_brier_secondary_minus_primary": 0.006193594454246644,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.17655073218401945,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 28,
+                "paired_brier_secondary_minus_primary": 0.006891394100621645,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.15390282484865025,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 29,
+                "paired_brier_secondary_minus_primary": 0.007589193746996646,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.09715048127333557,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 30,
+                "paired_brier_secondary_minus_primary": 0.008286993393371647,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.03952108013709282,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 31,
+                "paired_brier_secondary_minus_primary": 0.008984793039746648,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.007779330454908068,
+                "winner": "primary_wins"
+              }
+            ],
+            "assumption": "COUNTRIES_INDEPENDENT_BERNOULLI_HYPOTHETICAL_NOT_VALIDATED",
+            "n_exact_independent_binomial_plus_pivot_cells": 64,
+            "probability_primary_wins_if_independent": 0.8590713489557351,
+            "probability_secondary_wins_if_independent": 0.1409286510442648,
+            "probability_tie_if_independent": 0.0
+          },
+          "expected_paired_brier_secondary_minus_primary": 0.003183777835374567,
+          "hypothetical_true_marginal_model": "p_global_recent5",
+          "max_variance_coupling_atoms": [
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                100,
+                432,
+                434,
+                436,
+                439,
+                461,
+                471,
+                475,
+                482,
+                490,
+                501,
+                517,
+                520,
+                530,
+                540,
+                541,
+                625,
+                626,
+                630,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 32,
+              "paired_brier_secondary_minus_primary": 0.008984793039746648,
+              "probability_mass": 0.859195402299,
+              "winner": "primary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [],
+              "n_hypothetical_2027_acd_presences": 0,
+              "paired_brier_secondary_minus_primary": -0.03221425371787839,
+              "probability_mass": 0.14080459770099996,
+              "winner": "secondary_wins"
+            }
+          ],
+          "max_variance_coupling_is_attainable": true,
+          "max_variance_coupling_probability_primary_wins": 0.859195402299,
+          "max_variance_coupling_probability_secondary_wins": 0.14080459770099996,
+          "max_variance_coupling_probability_tie": 0,
+          "observed_2027_labels_used": 0,
+          "sharp_maximum_variance_given_exact_marginals": 0.00020534451924526302,
+          "standard_deviation_if_independent_countries": 0.006938742552764903,
+          "standard_deviation_maximum_over_all_dependence_structures": 0.014329847146611964,
+          "variance_amplification_vs_independence": 4.265024864179482,
+          "variance_if_independent_countries": 4.81461482135504e-05
+        },
+        "p_lag1_group": {
+          "counterfactual_not_estimated_joint_probabilities": true,
+          "exact_independent_rank_probability": {
+            "all_64_independent_hypothetical_cells": [
+              {
+                "other_31_acd2027_presences_hypothetical": 0,
+                "paired_brier_secondary_minus_primary": -0.03221425371787839,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 1.9560576228366724e-26,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 1,
+                "paired_brier_secondary_minus_primary": -0.031516454071503386,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 3.383753668853015e-24,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 2,
+                "paired_brier_secondary_minus_primary": -0.030818654425128385,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 2.8323400940126956e-22,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 3,
+                "paired_brier_secondary_minus_primary": -0.030120854778753384,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 1.5278388349065605e-20,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 4,
+                "paired_brier_secondary_minus_primary": -0.029423055132378383,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 5.968029844862855e-19,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 5,
+                "paired_brier_secondary_minus_primary": -0.02872525548600338,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 1.7983745484451012e-17,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 6,
+                "paired_brier_secondary_minus_primary": -0.02802745583962838,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 4.3486819582437225e-16,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 7,
+                "paired_brier_secondary_minus_primary": -0.02732965619325338,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 8.666725006933324e-15,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 8,
+                "paired_brier_secondary_minus_primary": -0.02663185654687838,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 1.450880597300713e-13,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 9,
+                "paired_brier_secondary_minus_primary": -0.025934056900503377,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 2.0690567418878193e-12,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 10,
+                "paired_brier_secondary_minus_primary": -0.025236257254128376,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 2.5400980624395758e-11,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 11,
+                "paired_brier_secondary_minus_primary": -0.024538457607753375,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 2.706029297278862e-10,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 12,
+                "paired_brier_secondary_minus_primary": -0.023840657961378374,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 2.5167301117577796e-09,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 13,
+                "paired_brier_secondary_minus_primary": -0.023142858315003373,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 2.0525904097107798e-08,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 14,
+                "paired_brier_secondary_minus_primary": -0.022445058668628372,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 1.4726588997108202e-07,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 15,
+                "paired_brier_secondary_minus_primary": -0.02174725902225337,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 9.313549563800177e-07,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 16,
+                "paired_brier_secondary_minus_primary": -0.02104945937587837,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 5.197214381559359e-06,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 17,
+                "paired_brier_secondary_minus_primary": -0.02035165972950337,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 2.5589887150140735e-05,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 18,
+                "paired_brier_secondary_minus_primary": -0.019653860083128367,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.00011106553238578153,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 19,
+                "paired_brier_secondary_minus_primary": -0.018956060436753366,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.000424057213764783,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 20,
+                "paired_brier_secondary_minus_primary": -0.018258260790378365,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.0014198128661161477,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 21,
+                "paired_brier_secondary_minus_primary": -0.017560461144003364,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.0041501127833208275,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 22,
+                "paired_brier_secondary_minus_primary": -0.016862661497628363,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.010526709058186989,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 23,
+                "paired_brier_secondary_minus_primary": -0.016164861851253362,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.022985962548264422,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 24,
+                "paired_brier_secondary_minus_primary": -0.015467062204878361,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.04275597766153242,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 25,
+                "paired_brier_secondary_minus_primary": -0.01476926255850336,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.06680520088911619,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 26,
+                "paired_brier_secondary_minus_primary": -0.014071462912128359,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.08602874317155522,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 27,
+                "paired_brier_secondary_minus_primary": -0.013373663265753358,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.08890070802438155,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 28,
+                "paired_brier_secondary_minus_primary": -0.012675863619378357,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.07087002422960857,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 29,
+                "paired_brier_secondary_minus_primary": -0.011978063973003356,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.04091110779435219,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 30,
+                "paired_brier_secondary_minus_primary": -0.011280264326628354,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.015219675115114482,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 31,
+                "paired_brier_secondary_minus_primary": -0.010582464680253353,
+                "pivotal_south_sudan_acd_2027_hypothetical": false,
+                "probability_if_countries_independent": 0.0027396752700609545,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 0,
+                "paired_brier_secondary_minus_primary": -0.012646995997878385,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 2.3535716065666282e-26,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 1,
+                "paired_brier_secondary_minus_primary": -0.011949196351503384,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 4.071406928738053e-24,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 2,
+                "paired_brier_secondary_minus_primary": -0.011251396705128383,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 3.4079339726921446e-22,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 3,
+                "paired_brier_secondary_minus_primary": -0.010553597058753382,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 1.8383293310302284e-20,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 4,
+                "paired_brier_secondary_minus_primary": -0.009855797412378381,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 7.180864932619771e-19,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 5,
+                "paired_brier_secondary_minus_primary": -0.00915799776600338,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 2.1638438590854775e-17,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 6,
+                "paired_brier_secondary_minus_primary": -0.008460198119628379,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 5.232429895428284e-16,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 7,
+                "paired_brier_secondary_minus_primary": -0.007762398473253378,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 1.0427994380174972e-14,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 8,
+                "paired_brier_secondary_minus_primary": -0.007064598826878377,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 1.7457314848288157e-13,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 9,
+                "paired_brier_secondary_minus_primary": -0.0063667991805033755,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 2.489534634987099e-12,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 10,
+                "paired_brier_secondary_minus_primary": -0.005668999534128374,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 3.056301924778149e-11,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 11,
+                "paired_brier_secondary_minus_primary": -0.004971199887753373,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 3.255954040544521e-10,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 12,
+                "paired_brier_secondary_minus_primary": -0.004273400241378372,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 3.0281850919270962e-09,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 13,
+                "paired_brier_secondary_minus_primary": -0.003575600595003371,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 2.4697219815030097e-08,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 14,
+                "paired_brier_secondary_minus_primary": -0.00287780094862837,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 1.771935617873382e-07,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 15,
+                "paired_brier_secondary_minus_primary": -0.002180001302253369,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 1.1206267930861153e-06,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 16,
+                "paired_brier_secondary_minus_primary": -0.001482201655878368,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 6.2534027928783555e-06,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 17,
+                "paired_brier_secondary_minus_primary": -0.0007844020095033669,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 3.079031573950946e-05,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 18,
+                "paired_brier_secondary_minus_primary": -8.660236312836578e-05,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.0001336364943647717,
+                "winner": "secondary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 19,
+                "paired_brier_secondary_minus_primary": 0.0006111972832466353,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.0005102349778577478,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 20,
+                "paired_brier_secondary_minus_primary": 0.0013089969296216364,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.001708350106518294,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 21,
+                "paired_brier_secondary_minus_primary": 0.0020067965759966375,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.004993507091426149,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 22,
+                "paired_brier_secondary_minus_primary": 0.0027045962223716385,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.01266596814975595,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 23,
+                "paired_brier_secondary_minus_primary": 0.0034023958687466396,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.027657216316942946,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 24,
+                "paired_brier_secondary_minus_primary": 0.004100195515121641,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.05144493386102159,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 25,
+                "paired_brier_secondary_minus_primary": 0.004797995161496642,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.08038148884161582,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 26,
+                "paired_brier_secondary_minus_primary": 0.005495794807871643,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.10351167824164419,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 27,
+                "paired_brier_secondary_minus_primary": 0.006193594454246644,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.10696728959672633,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 28,
+                "paired_brier_secondary_minus_primary": 0.006891394100621645,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.08527237379725343,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 29,
+                "paired_brier_secondary_minus_primary": 0.007589193746996646,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.04922514581055049,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 30,
+                "paired_brier_secondary_minus_primary": 0.008286993393371647,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.01831264825427542,
+                "winner": "primary_wins"
+              },
+              {
+                "other_31_acd2027_presences_hypothetical": 31,
+                "paired_brier_secondary_minus_primary": 0.008984793039746648,
+                "pivotal_south_sudan_acd_2027_hypothetical": true,
+                "probability_if_countries_independent": 0.003296437615921206,
+                "winner": "primary_wins"
+              }
+            ],
+            "assumption": "COUNTRIES_INDEPENDENT_BERNOULLI_HYPOTHETICAL_NOT_VALIDATED",
+            "n_exact_independent_binomial_plus_pivot_cells": 64,
+            "probability_primary_wins_if_independent": 0.5459472726615098,
+            "probability_secondary_wins_if_independent": 0.4540527273384903,
+            "probability_tie_if_independent": 0.0
+          },
+          "expected_paired_brier_secondary_minus_primary": -0.0031837778353744385,
+          "hypothetical_true_marginal_model": "p_lag1_group",
+          "max_variance_coupling_atoms": [
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                100,
+                432,
+                434,
+                436,
+                439,
+                461,
+                471,
+                475,
+                482,
+                490,
+                501,
+                517,
+                520,
+                530,
+                540,
+                541,
+                625,
+                626,
+                630,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 32,
+              "paired_brier_secondary_minus_primary": 0.008984793039746648,
+              "probability_mass": 0.546119278779,
+              "winner": "primary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [
+                41,
+                100,
+                432,
+                434,
+                436,
+                439,
+                461,
+                471,
+                475,
+                482,
+                490,
+                501,
+                517,
+                520,
+                530,
+                540,
+                541,
+                625,
+                630,
+                640,
+                645,
+                652,
+                666,
+                678,
+                700,
+                750,
+                770,
+                775,
+                800,
+                840,
+                850
+              ],
+              "n_hypothetical_2027_acd_presences": 31,
+              "paired_brier_secondary_minus_primary": -0.010582464680253353,
+              "probability_mass": 0.301911329178,
+              "winner": "secondary_wins"
+            },
+            {
+              "hypothetical_recorded_country_ids": [],
+              "n_hypothetical_2027_acd_presences": 0,
+              "paired_brier_secondary_minus_primary": -0.03221425371787839,
+              "probability_mass": 0.15196939204299997,
+              "winner": "secondary_wins"
+            }
+          ],
+          "max_variance_coupling_is_attainable": true,
+          "max_variance_coupling_probability_primary_wins": 0.546119278779,
+          "max_variance_coupling_probability_secondary_wins": 0.453880721221,
+          "max_variance_coupling_probability_tie": 0,
+          "observed_2027_labels_used": 0,
+          "sharp_maximum_variance_given_exact_marginals": 0.00022546794854314472,
+          "standard_deviation_if_independent_countries": 0.00984125686846259,
+          "standard_deviation_maximum_over_all_dependence_structures": 0.01501559018297798,
+          "variance_amplification_vs_independence": 2.3280037644337064,
+          "variance_if_independent_countries": 9.68503367510621e-05
+        }
+      }
+    }
+  },
+  "n_frozen_ACD_issued_country_questions": 32,
+  "n_frozen_unique_country_endpoint_questions_all_2027": 424,
+  "original_primary_model": "p_global_recent5",
+  "schema": "idealab.psico.acd2027_extreme_dependence_paired_brier_sensitivity.v1",
+  "source_five_issued_files_and_manifests_sha_checked": true,
+  "status": "EX_ANTE_COUNTERFACTUAL_DEPENDENCE_MOMENTS_ZERO_2027_LABELS",
+  "year_target": 2027
+}
