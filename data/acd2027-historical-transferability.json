@@ -1,0 +1,295 @@
+{
+  "2025_membership_used_only_as_posthoc_stratifier": true,
+  "country_balancing_is_diagnostic_not_a_new_2027_scoring_weight": true,
+  "first_issued_acd2027_public_commit": "41db7bd154e0140ced15abd8727a7d52d998852c",
+  "first_issued_acd2027_sha256": "6cf7d0340a4c25062af7a040586fb6a73a98c9e6ab80473527171c0a5a963d9c",
+  "fraction_of_issued_2025_countries_with_historical_test_support": 0.96875,
+  "frozen_official_historical_source_sha256_by_version": {
+    "20.1": "f4f924c1c7ce4ca5c8451512afced6182350b2ea849dd271617febc224218c93",
+    "21.1": "4bebac361a42a9db813da58bf6244f7ec04b780dc24a8c236993672e32460dc4",
+    "22.1": "82e8326c2de196f1acf3538e6bd8efd818fdde175c399b43282b4d9ee15b954d",
+    "23.1": "8fe95d8a5780cba1d312f9673ffd9e93b90c91bb26e348393a583853a892b718",
+    "24.1": "35c157c5f5aa2b08dc5b268bab7f0125da504ec3aa9dc5f28c9adba93b1717f5",
+    "25.1": "b49f7e80510d8a5779a52d872aef5b26456b3f5cbdd3ec32031339488e81813f"
+  },
+  "historical_116_acd_persistence_positive": 116,
+  "historical_137_country_year_evaluations": 137,
+  "historical_country_ids_absent_from_issued_2025_cohort": [
+    2,
+    365,
+    369,
+    373,
+    483,
+    500,
+    510,
+    516,
+    615,
+    620,
+    651
+  ],
+  "historical_scored_countries_not_in_issued_2025_cohort": 11,
+  "historical_targets": [
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "historical_unique_countries": 42,
+  "individual_historical_target_years": {
+    "2021": {
+      "brier_by_model": {
+        "p_country_eb": 0.15363365204279011,
+        "p_global_recent5": 0.14247293838639993,
+        "p_lag1_group": 0.12935720975271725
+      },
+      "country_equally_weighted_paired_delta": {
+        "p_country_eb": 0.011160713656390204,
+        "p_lag1_group": -0.013115728633682683
+      },
+      "n_country_years": 35,
+      "n_recorded_acd_persistence": 29,
+      "n_unique_countries": 35,
+      "paired_delta_brier_candidate_minus_global": {
+        "p_country_eb": 0.011160713656390204,
+        "p_lag1_group": -0.013115728633682683
+      }
+    },
+    "2022": {
+      "brier_by_model": {
+        "p_country_eb": 0.16288066235602544,
+        "p_global_recent5": 0.15991328739506908,
+        "p_lag1_group": 0.1451006245688127
+      },
+      "country_equally_weighted_paired_delta": {
+        "p_country_eb": 0.0029673749609563788,
+        "p_lag1_group": -0.01481266282625637
+      },
+      "n_country_years": 36,
+      "n_recorded_acd_persistence": 29,
+      "n_unique_countries": 36,
+      "paired_delta_brier_candidate_minus_global": {
+        "p_country_eb": 0.0029673749609563788,
+        "p_lag1_group": -0.01481266282625637
+      }
+    },
+    "2023": {
+      "brier_by_model": {
+        "p_country_eb": 0.1030975161037587,
+        "p_global_recent5": 0.08933460654407788,
+        "p_lag1_group": 0.10139926309156301
+      },
+      "country_equally_weighted_paired_delta": {
+        "p_country_eb": 0.013762909559680826,
+        "p_lag1_group": 0.012064656547485135
+      },
+      "n_country_years": 32,
+      "n_recorded_acd_persistence": 29,
+      "n_unique_countries": 32,
+      "paired_delta_brier_candidate_minus_global": {
+        "p_country_eb": 0.013762909559680826,
+        "p_lag1_group": 0.012064656547485135
+      }
+    },
+    "2024": {
+      "brier_by_model": {
+        "p_country_eb": 0.1202945957230883,
+        "p_global_recent5": 0.12617382953181272,
+        "p_lag1_group": 0.13001281595369887
+      },
+      "country_equally_weighted_paired_delta": {
+        "p_country_eb": -0.005879233808724407,
+        "p_lag1_group": 0.0038389864218861657
+      },
+      "n_country_years": 34,
+      "n_recorded_acd_persistence": 29,
+      "n_unique_countries": 34,
+      "paired_delta_brier_candidate_minus_global": {
+        "p_country_eb": -0.005879233808724407,
+        "p_lag1_group": 0.0038389864218861657
+      }
+    }
+  },
+  "issued_2025_countries_also_scored_historically": 31,
+  "issued_2025_countries_without_any_historical_test_row": 1,
+  "issued_2025_country_hist_score_counts": {
+    "0": 1,
+    "1": 2,
+    "2": 2,
+    "3": 5,
+    "4": 22
+  },
+  "issued_2025_country_ids_without_historical_test_row": [
+    41
+  ],
+  "issued_acd2027_2025_origin_active_countries": 32,
+  "limitations": "Historical prediction vectors reconstructed ex post from six SHA-pinned UCDP/PRIO ACD source editions, not separately issued at historical origin dates. 2025 origin-active membership is known only later and creates retrospective survivorship/selection bias if interpreted as contemporaneous historical evaluation. Only source-defined active-origin country risk sets are used. Country-balanced historical differences change the estimand; neither country weights nor chronological halves are external validation, independent replication or a 2027 performance prediction. Country/year geopolitical dependence unmodeled. No new future labels, no 2027 forecast modification.",
+  "no_2027_outcomes_or_probabilities_changed": true,
+  "schema": "idealab.psico.acd2027_historical_cohort_transferability.v1",
+  "status": "RETROSPECTIVE_SUPPORT_SHIFT_NO_INDEPENDENT_FORECAST_SKILL",
+  "temporal_and_2025_cohort_subsets": {
+    "early_2021_2022": {
+      "brier_by_model": {
+        "p_country_eb": 0.15832227699034607,
+        "p_global_recent5": 0.1513159322499505,
+        "p_lag1_group": 0.13733978627918816
+      },
+      "country_equally_weighted_paired_delta": {
+        "p_country_eb": 0.008230696373264778,
+        "p_lag1_group": -0.025387511586744523
+      },
+      "n_country_years": 71,
+      "n_recorded_acd_persistence": 58,
+      "n_unique_countries": 39,
+      "paired_delta_brier_candidate_minus_global": {
+        "p_country_eb": 0.007006344740395588,
+        "p_lag1_group": -0.0139761459707623
+      }
+    },
+    "full_historical": {
+      "brier_by_model": {
+        "p_country_eb": 0.13598553603080185,
+        "p_global_recent5": 0.13059889637400446,
+        "p_lag1_group": 0.12712654735166523
+      },
+      "country_equally_weighted_paired_delta": {
+        "p_country_eb": 0.003307955035964779,
+        "p_lag1_group": -0.022461368519991132
+      },
+      "n_country_years": 137,
+      "n_recorded_acd_persistence": 116,
+      "n_unique_countries": 42,
+      "paired_delta_brier_candidate_minus_global": {
+        "p_country_eb": 0.005386639656797397,
+        "p_lag1_group": -0.0034723490223391917
+      }
+    },
+    "historical_not_issued_2025": {
+      "brier_by_model": {
+        "p_country_eb": 0.4015529506093828,
+        "p_global_recent5": 0.39199750490125956,
+        "p_lag1_group": 0.3432554840735239
+      },
+      "country_equally_weighted_paired_delta": {
+        "p_country_eb": 0.006675931263992686,
+        "p_lag1_group": -0.13476464633422738
+      },
+      "n_country_years": 28,
+      "n_recorded_acd_persistence": 13,
+      "n_unique_countries": 11,
+      "paired_delta_brier_candidate_minus_global": {
+        "p_country_eb": 0.009555445708123177,
+        "p_lag1_group": -0.04874202082773571
+      }
+    },
+    "issued_2025_cohort_historical": {
+      "brier_by_model": {
+        "p_country_eb": 0.06776638366199204,
+        "p_global_recent5": 0.0634506299633334,
+        "p_lag1_group": 0.07160718745981165
+      },
+      "country_equally_weighted_paired_delta": {
+        "p_country_eb": 0.002112866696987134,
+        "p_lag1_group": 0.017388181672157218
+      },
+      "n_country_years": 109,
+      "n_recorded_acd_persistence": 103,
+      "n_unique_countries": 31,
+      "paired_delta_brier_candidate_minus_global": {
+        "p_country_eb": 0.004315753698658665,
+        "p_lag1_group": 0.008156557496478263
+      }
+    },
+    "issued_2025_early": {
+      "brier_by_model": {
+        "p_country_eb": 0.08957698559647335,
+        "p_global_recent5": 0.08694770570833545,
+        "p_lag1_group": 0.08844570490226591
+      },
+      "country_equally_weighted_paired_delta": {
+        "p_country_eb": 0.0022309517129853315,
+        "p_lag1_group": 0.005072954840164738
+      },
+      "n_country_years": 54,
+      "n_recorded_acd_persistence": 49,
+      "n_unique_countries": 28,
+      "paired_delta_brier_candidate_minus_global": {
+        "p_country_eb": 0.002629279888137907,
+        "p_lag1_group": 0.001497999193930462
+      }
+    },
+    "issued_2025_late": {
+      "brier_by_model": {
+        "p_country_eb": 0.0463523381263195,
+        "p_global_recent5": 0.04038077377733136,
+        "p_lag1_group": 0.055074824879947464
+      },
+      "country_equally_weighted_paired_delta": {
+        "p_country_eb": 0.008579669465585103,
+        "p_lag1_group": 0.022801060130654565
+      },
+      "n_country_years": 55,
+      "n_recorded_acd_persistence": 54,
+      "n_unique_countries": 30,
+      "paired_delta_brier_candidate_minus_global": {
+        "p_country_eb": 0.005971564348988136,
+        "p_lag1_group": 0.014694051102616101
+      }
+    },
+    "late_2023_2024": {
+      "brier_by_model": {
+        "p_country_eb": 0.11195661772583758,
+        "p_global_recent5": 0.108312388083214,
+        "p_lag1_group": 0.11613957820236027
+      },
+      "country_equally_weighted_paired_delta": {
+        "p_country_eb": 0.006167998565074267,
+        "p_lag1_group": 0.00946578968942848
+      },
+      "n_country_years": 66,
+      "n_recorded_acd_persistence": 58,
+      "n_unique_countries": 36,
+      "paired_delta_brier_candidate_minus_global": {
+        "p_country_eb": 0.003644229642623585,
+        "p_lag1_group": 0.007827190119146272
+      }
+    },
+    "other_historical_early": {
+      "brier_by_model": {
+        "p_country_eb": 0.3766896731826476,
+        "p_global_recent5": 0.355779710676257,
+        "p_lag1_group": 0.29265039771176476
+      },
+      "country_equally_weighted_paired_delta": {
+        "p_country_eb": 0.023502773690339738,
+        "p_lag1_group": -0.10292324430978628
+      },
+      "n_country_years": 17,
+      "n_recorded_acd_persistence": 9,
+      "n_unique_countries": 11,
+      "paired_delta_brier_candidate_minus_global": {
+        "p_country_eb": 0.020909962506390576,
+        "p_lag1_group": -0.06312931296449224
+      }
+    },
+    "other_historical_late": {
+      "brier_by_model": {
+        "p_country_eb": 0.43997801572342804,
+        "p_global_recent5": 0.4479704596126272,
+        "p_lag1_group": 0.4214633448144243
+      },
+      "country_equally_weighted_paired_delta": {
+        "p_country_eb": -0.005890355937479907,
+        "p_lag1_group": -0.05721056251670193
+      },
+      "n_country_years": 11,
+      "n_recorded_acd_persistence": 4,
+      "n_unique_countries": 6,
+      "paired_delta_brier_candidate_minus_global": {
+        "p_country_eb": -0.007992443889199168,
+        "p_lag1_group": -0.026507114798202877
+      }
+    }
+  },
+  "temporal_halves_share_country_ids": true,
+  "zero_observed_2027_outcomes_attested": true
+}
