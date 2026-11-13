@@ -266,8 +266,27 @@ def main():
     print("PROSPECTIVE_2027_REGISTRY_JSON_BEGIN")
     print(body.decode(),end="")
     print("PROSPECTIVE_2027_REGISTRY_JSON_END")
-    if args.check_report and OUT.read_bytes()!=body:
-        raise ValueError("Frozen three-cohort prospective registry altered or out of sync")
+    if args.check_report:
+        if OUT.read_bytes()!=body:
+            raise ValueError("Frozen three-cohort prospective registry altered or out of sync")
+        manifest=json.loads(META.read_text(encoding="utf8"))
+        expected_sha={c:EXPECTED[k][1] for c,k in zip(COHORTS,("geo","newconf","acd"))}
+        expected_commits={c:EXPECTED[k][2] for c,k in zip(COHORTS,("geo","newconf","acd"))}
+        if (manifest.get("schema")!="idealab.psico.prospective_2027_registry_attestation.v1"
+            or manifest.get("status")!="DERIVED_FROM_ALREADY_ISSUED_2027_COHORTS_NO_NEW_FORECAST"
+            or manifest.get("registry_sha256")!=sha
+            or manifest.get("n_country_endpoint_rows")!=424
+            or manifest.get("n_cohorts")!=3
+            or manifest.get("n_2027_outcomes_resolved")!=0
+            or manifest.get("n_geo_alerts_subset_not_additional")!=15
+            or manifest.get("n_unique_countries")!=196
+            or manifest.get("original_forecast_sha256")!=expected_sha
+            or manifest.get("first_public_commits")!=expected_commits
+            or manifest.get("sha_issued_shadow")!=EXPECTED["shadow"][1]
+            or manifest.get("sha_issued_geo_15_alerts")!=EXPECTED["alerts"][1]
+            or manifest.get("not_issued_on_registry_creation") is not True
+            or manifest.get("forecast_skill_certified") is not False):
+            raise ValueError("Derived 2027 registry SHA/first-public issue attestation altered")
 
 
 if __name__=="__main__":
