@@ -233,8 +233,6 @@ def main() -> None:
     frozen=json.loads(FROZEN_REPORT.read_text(encoding="utf8"))
     report=evaluate(versions,metadata,frozen,docs,manifests)
     body=json.dumps(report,sort_keys=True,ensure_ascii=False,indent=2)+"\n"
-    if args.check_report and Path(args.check_report).read_bytes()!=body.encode("utf8"):
-        raise ValueError("ACD historical country-cluster diagnostic changed")
     if args.summary:
         view={k:report[k] for k in (
             "schema","2027_outcomes_observed","total_country_year_fold_scores",
@@ -246,6 +244,8 @@ def main() -> None:
         for value in view["per_model"].values():
             value.pop("all_leave_one_country_out",None)
         body=json.dumps(view,sort_keys=True,ensure_ascii=False,indent=2)+"\n"
+    if args.check_report and Path(args.check_report).read_bytes()!=body.encode("utf8"):
+        raise ValueError("ACD historical country-cluster diagnostic changed")
     print("ACD_HISTORICAL_COUNTRY_INFLUENCE_BEGIN")
     print(body,end="")
     print("ACD_HISTORICAL_COUNTRY_INFLUENCE_END")
