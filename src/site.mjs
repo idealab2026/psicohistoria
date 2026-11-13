@@ -3,6 +3,7 @@ import {verifyResearch,verifyIssuedForecast2027,parseForecastCSV,evaluateLocalFo
 import {domainGraph} from "./visuals.mjs";
 import {loadProjectCatalog} from "./project-catalog.mjs";
 import {renderHistoricalProjectPortfolio} from "./project-portfolio.mjs";
+import {validateProspectiveRegistry,renderProspectiveRegistry,ORIGINAL_SHA,ORIGINAL_COMMITS} from "./prospective-registry.mjs";
 import {scientificNeuralPanel,enableScientificNeural,scientificMarkovPanel,syntheticFourStateModel} from "./lab-renderers.mjs";
 import {renderHistoricalTree,acceptPublicCountryCatalogs,setCountrySourceError,getHistoricalCatalog} from "./main-country-tree.mjs";
 
@@ -12,13 +13,13 @@ const format=n=>typeof n==="number"&&Number.isFinite(n)?new Intl.NumberFormat("e
 const formatPct=n=>typeof n==="number"&&Number.isFinite(n)?format(n*100)+" %":"—";
 const groupViews={
  brief:[["brief","Inicio"]],
- predictions:[["futures","Explorador"],["shadow2027","Riesgos 2027"]],
+ predictions:[["registry2027","Registro real 2027"],["futures","Explorador"],["shadow2027","GEO-2027"]],
  research:[["questions","Preguntas útiles"],["archive","Archivo científico"],["overview","Mapa del proyecto"],["registry","Líneas y fuentes"],["science","Evidencia"],["operations","Registro"],["roadmap","Hitos"]],
  create:[["portfolio","Catálogo recuperado"],["ideas","Nuevas ideas"],["video","Estudio audiovisual"]]
 };
 const viewIds=new Set(Object.values(groupViews).flat().map(x=>x[0]));
 const viewToGroup=Object.fromEntries(Object.entries(groupViews).flatMap(([k,items])=>items.map(([id])=>[id,k])));
-const state={archive:null,projectCatalog:null,archiveTable:0,archiveQuery:"",archivePage:0,data:null,research:null,registryFilter:"todos",registryOutput:null,questionPriority:"P1",view:viewIds.has(new URLSearchParams(location.search).get("view"))?new URLSearchParams(location.search).get("view"):"brief",scenario:null,program:null,study:null,filter:"todos",ideas:[],flowState:"00",markovOrigin:2020,markovHorizon:6,markovQuestion:"atleast25",markovSelection:null,countryTreeOrigin:2020,countryTreeId:null,countryTreeModel:"country_shrinkage",countryTreeQuestion:"atleast25",countryTreeYear:null,countryTreeSelection:null,videoText:"",forecastCountryId:null,prospective2027:null,prospective2027Manifest:null,busy:false};
+const state={archive:null,projectCatalog:null,archiveTable:0,archiveQuery:"",archivePage:0,data:null,research:null,registryFilter:"todos",registryOutput:null,questionPriority:"P1",view:viewIds.has(new URLSearchParams(location.search).get("view"))?new URLSearchParams(location.search).get("view"):"brief",scenario:null,program:null,study:null,filter:"todos",ideas:[],flowState:"00",markovOrigin:2020,markovHorizon:6,markovQuestion:"atleast25",markovSelection:null,countryTreeOrigin:2020,countryTreeId:null,countryTreeModel:"country_shrinkage",countryTreeQuestion:"atleast25",countryTreeYear:null,countryTreeSelection:null,videoText:"",forecastCountryId:null,prospective2027:null,prospective2027Manifest:null,prospectiveRegistry:null,prospectiveCohort:"TODAS",prospectiveQuery:"",prospectivePage:0,busy:false};
 const section=(eyebrow,title,description)=>'<header class="section-head"><div class="eyebrow">'+safe(eyebrow)+'</div><h2>'+safe(title)+'</h2><p>'+safe(description)+'</p></header>';
 const box=(contents,extra="")=>'<article class="panel '+extra+'">'+contents+'</article>';
 const tag=(t,cls="")=>'<span class="tag '+cls+'">'+safe(t)+'</span>';
@@ -56,10 +57,11 @@ function renderBrief(){
  const ready=d.milestones.filter(x=>x.state==="verificado").length;
  return section("INICIO · ESTADO PÚBLICO","Próximos pasos y resultados","Preparar, publicar y demostrar utilidad son hitos distintos. La sección Evidencia incluye estudios reales retrospectivos; otras vistas utilizan muestras sintéticas y no acreditan capacidad prospectiva.")+
  scientificNeuralPanel(d.programs,state.program)+
- box('<div class="item-row wrap"><div><h3>Registro público experimental</h3><p>Fuente real de emisión GEO-2027, resultados aún desconocidos; demostraciones sintéticas separadas.</p></div>'+tag("1 cohorte 2027 · sin resultados","alert")+'</div>'+
- '<div class="section-grid three"><div><div class="card-number">'+d.programs.length+'</div><div class="tiny">Líneas de estudio</div></div><div><div class="card-number">'+ready+'/'+d.milestones.length+'</div><div class="tiny">Pasos técnicos verificados</div></div><div><div class="card-number">1</div><div class="tiny">Cohorte prospectiva emitida · sin evaluar</div></div></div>','highlight')+
+ box('<div class="item-row wrap"><div><h3>Registro público experimental</h3><p>Tres emisiones reales GEO, NEWCONF y ACD con resultados 2027 aún desconocidos; demostraciones sintéticas separadas.</p></div>'+tag("3 cohortes 2027 · sin resultados","alert")+'</div>'+
+ '<div class="section-grid three"><div><div class="card-number">'+d.programs.length+'</div><div class="tiny">Líneas de estudio</div></div><div><div class="card-number">'+ready+'/'+d.milestones.length+'</div><div class="tiny">Pasos técnicos verificados</div></div><div><div class="card-number">1</div><div class="tiny">Cohortes prospectivas emitidas · sin evaluar</div></div></div>','highlight')+
  section("LECTURA RÁPIDA","Qué se puede explorar","Cada módulo tiene un propósito concreto y muestra los supuestos, las fuentes y las limitaciones de los ejemplos.")+
  cards([
+ ["Registro real 2027","424 predicciones país-variable emitidas, tres objetivos distintos y cero resultados verificados.", "navigate","registry2027"],
  ["Árbol de futuros","Escenarios alternativos y supuestos explícitos. No son pronósticos.", "navigate","futures"],
  ["Evidencia y modelos","Estudios retrospectivos reales separados de evaluaciones sintéticas.", "navigate","science"],
  ["Programa de investigación","Mapa de líneas, protocolo, hitos y bloqueos.", "navigate","overview"],
@@ -825,7 +827,7 @@ function render(){
   const b=document.createElement("button");b.type="button";b.textContent=label;b.dataset.action="navigate";b.dataset.value=id;
   b.classList.toggle("active",state.view===id);sub.append(b);
  }
- const views={archive:renderArchive,brief:()=>button("Ver estructura del archivo científico","navigate","archive")+renderBrief(),futures:renderFutures,shadow2027:()=>renderProspectiveNewconf2027()+renderShadow(),overview:renderOverview,
+ const views={archive:renderArchive,brief:()=>button("Ver estructura del archivo científico","navigate","archive")+renderBrief(),registry2027:()=>renderProspectiveRegistry(state.prospectiveRegistry,{cohort:state.prospectiveCohort,query:state.prospectiveQuery,page:state.prospectivePage}),futures:renderFutures,shadow2027:()=>renderProspectiveNewconf2027()+renderShadow(),overview:renderOverview,
   science:renderScience,questions:renderUsefulQuestions,registry:renderResearchRegistry,operations:renderOperations,roadmap:renderRoadmap,
   portfolio:()=>renderHistoricalProjectPortfolio(state.projectCatalog),ideas:renderIdeas,video:renderVideo};
  $("app").innerHTML=views[state.view]();
@@ -857,16 +859,18 @@ async function load(){
  try{
   const catalogRead=loadProjectCatalog().then(data=>({available:true,data}))
     .catch(()=>({available:false,data:null}));
-  const [response,researchResponse,forecastResponse,manifestResponse]=await Promise.all([
+  const [response,researchResponse,forecastResponse,manifestResponse,registryResponse,registryManifestResponse]=await Promise.all([
      fetch("./data/demo.json",{cache:"no-store"}),
      fetch("./data/research.json",{cache:"no-store"}),
      fetch("./data/forecast-2027-ucdp261.json",{cache:"no-store"}),
-     fetch("./data/forecast-2027-manifest.json",{cache:"no-store"})
+     fetch("./data/forecast-2027-manifest.json",{cache:"no-store"}),
+     fetch("./data/prospective-2027-registry.json",{cache:"no-store"}),
+     fetch("./data/prospective-2027-registry-manifest.json",{cache:"no-store"})
    ]);
-   if(!response.ok||!researchResponse.ok||!forecastResponse.ok||!manifestResponse.ok)
+   if(!response.ok||!researchResponse.ok||!forecastResponse.ok||!manifestResponse.ok||!registryResponse.ok||!registryManifestResponse.ok)
      throw new Error("Public sources unavailable");
-   const [data,research,forecastText,manifest]=await Promise.all([
-     response.json(),researchResponse.json(),forecastResponse.text(),manifestResponse.json()
+   const [data,research,forecastText,manifest,registryText,registryManifest]=await Promise.all([
+     response.json(),researchResponse.json(),forecastResponse.text(),manifestResponse.json(),registryResponse.text(),registryManifestResponse.json()
    ]);
    if(!globalThis.crypto?.subtle)throw new Error("SHA-256 unavailable on this client");
    const bytes=new TextEncoder().encode(forecastText);
@@ -874,7 +878,21 @@ async function load(){
    const hash=Array.from(new Uint8Array(digest)).map(x=>x.toString(16).padStart(2,"0")).join("");
    if(hash!==manifest.forecast_sha256)throw new Error("Forecast content integrity failure");
    const prospective=JSON.parse(forecastText);
+   const registryDigest=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(registryText));
+   const registryHash=Array.from(new Uint8Array(registryDigest)).map(x=>x.toString(16).padStart(2,"0")).join("");
+   if(registryManifest?.schema!=="idealab.psico.prospective_2027_registry_attestation.v1"||
+      registryManifest?.registry_sha256!==registryHash||
+      registryManifest?.n_country_endpoint_rows!==424||
+      registryManifest?.n_cohorts!==3||
+      registryManifest?.n_2027_outcomes_resolved!==0||
+      JSON.stringify(registryManifest?.original_forecast_sha256)!==JSON.stringify(ORIGINAL_SHA)||
+      JSON.stringify(registryManifest?.first_public_commits)!==JSON.stringify(ORIGINAL_COMMITS))
+     throw Error("Unverified prospective prediction registry");
+   const registry=validateProspectiveRegistry(JSON.parse(registryText));
    verify(data);verifyResearch(research);verifyIssuedForecast2027(prospective,manifest);
+   if(registry.cohorts.GEO2027.forecast_sha256!==manifest.forecast_sha256)
+     throw Error("GEO2027 registry differs from its original issue");
+   state.prospectiveRegistry=registry;
    state.research=research;state.prospective2027=prospective;state.prospective2027Manifest=manifest;
   // Detailed scientific records are intentionally not read by the public client.
   state.projectCatalog=(await catalogRead).data;
@@ -882,8 +900,8 @@ async function load(){
   state.data=data;state.scenario=state.scenario||data.branches[0].id;state.program=state.program||data.programs[0].id;state.study=state.study||data.studies[0].id;
   $("count-studies").textContent=data.studies.length;$("count-models").textContent=data.programs.length;
   $("count-predictions").textContent="1177";$("count-evaluated").textContent="0";
-  $("as-of").textContent="1 cohorte GEO-2027 emitida · evaluación pendiente";
-  $("sync-status").textContent="Emisión GEO-2027 pública y con SHA-256 verificado · 0 resultados resueltos";
+  $("as-of").textContent="3 cohortes y 424 predicciones país-variable · evaluación 2027 pendiente";
+  $("sync-status").textContent="GEO · NEWCONF · ACD: tres emisiones verificadas · cero resultados 2027";
   render();
   await loadPublicTree();
  }catch{
@@ -918,6 +936,13 @@ document.querySelectorAll("[data-section]").forEach(button=>button.addEventListe
  const group=button.dataset.section;navigate(groupViews[group][0][0]);
 }));
 $("refresh").addEventListener("click",load);
+// Registry controls display only authenticated, immutable, prospectively issued rows.
+$("app").addEventListener("change",event=>{
+ if(event.target?.id!=="prospective-cohort")return;
+ const value=event.target.value;
+ if(!["TODAS","GEO2027","NEWCONF2027","ACD2027"].includes(value))return;
+ state.prospectiveCohort=value;state.prospectivePage=0;render();
+});
 // Country controls use the official UCDP-derived public tree, fetched automatically.
 $("app").addEventListener("change",event=>{
  if(event.target?.id!=="geo2027-country")return;
@@ -999,6 +1024,15 @@ $("app").addEventListener("click",async event=>{
  case "navigate":navigate(value);break;
  case "question-priority":if(["P1","P2","P3"].includes(value)){state.questionPriority=value;render();}break;
  case "archive-page":state.archivePage=Number(value);render();break;
+ case "prospective-page":{
+  const p=Number(value);
+  if(Number.isInteger(p)&&p>=0&&p<=21){state.prospectivePage=p;render();}
+  break;
+ }
+ case "prospective-search":{
+  state.prospectiveQuery=String($("prospective-query")?.value||"").slice(0,120);
+  state.prospectivePage=0;render();break;
+ }
  case "archive-search":state.archiveQuery=$("archive-query").value;state.archivePage=0;render();break;
  case "scenario":state.scenario=value;render();break;
  case "program":state.program=value;navigate("overview");break;
