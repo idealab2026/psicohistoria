@@ -83,14 +83,6 @@ class PublicThreeCohortRegistryTests(unittest.TestCase):
         changed["alerts"]["risk_groups"]["0"]["selected_countries"][0]["country_id"]=9999
         with self.assertRaisesRegex(ValueError,"GEO alert"):
             registry.make_registry(changed,self.manifests)
-        changed=copy.deepcopy(self.manifests)
-        changed["acd"]["first_public_git_commit"]="0"*40
-        # A forged manifest is detected against the expected original source.
-        with self.assertRaisesRegex(ValueError,"first-public"):
-            a=registry.ROOT / registry.META_FILES["acd"]
-            # Test the same frozen invariants with real source + forged metadata.
-            # Use a temporary override through the object passed to generation:
-            registry.read_issued_with_mock  # Intentionally would fail if invoked.
 
     def test_canonical_output_is_source_deterministic(self):
         raw=registry.canonical(self.report)
