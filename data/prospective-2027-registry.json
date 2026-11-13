@@ -1,0 +1,6230 @@
+{
+  "cohort_order": [
+    "GEO2027",
+    "NEWCONF2027",
+    "ACD2027"
+  ],
+  "cohorts": {
+    "ACD2027": {
+      "evaluation": "Brier primario de persistencia ACD en los 32 países de origen 2025.",
+      "first_public_commit": "41db7bd154e0140ced15abd8727a7d52d998852c",
+      "fixed_country_count": 32,
+      "forecast_sha256": "6cf7d0340a4c25062af7a040586fb6a73a98c9e6ab80473527171c0a5a963d9c",
+      "issue_utc": "2026-11-12T22:24:56Z",
+      "origin_data_through": 2025,
+      "primary_model": "p_global_recent5",
+      "question": "¿Seguirá registrándose algún conflicto intraestatal ACD tipo 3/4 en 2027 entre países activos en 2025?",
+      "resolution": "PENDIENTE_FUENTE_ANUAL_OFICIAL_2027",
+      "source": "UCDP/PRIO Armed Conflict Dataset 26.1",
+      "source_sha256": "5f951743222964674a446e32a5a871077b29bd13349588d85fc59953d89c878a",
+      "source_url": "https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-261-csv.zip"
+    },
+    "GEO2027": {
+      "evaluation": "Brier del modelo principal sobre las 196 etiquetas completas del primer corte anual oficial.",
+      "first_public_commit": "3bb3561c8d6182c30624591276c705fb76ce99dc",
+      "fixed_country_count": 196,
+      "forecast_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+      "issue_utc": "2026-11-10T17:23:12Z",
+      "origin_data_through": 2025,
+      "primary_model": "p_model",
+      "question": "¿Se superará el umbral de 25 muertes anuales de violencia organizada estatal en 2027?",
+      "resolution": "PENDIENTE_FUENTE_ANUAL_OFICIAL_2027",
+      "source": "UCDP OrganizedViolenceCY 26.1",
+      "source_sha256": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34",
+      "source_url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-261-csv.zip"
+    },
+    "NEWCONF2027": {
+      "evaluation": "Brier sobre los 196 países originales con ANY(newconf=1) por país; sin ceros imputados.",
+      "first_public_commit": "f3f2c17c9d4f5dd56266e376cd2d765f33f3dd97",
+      "fixed_country_count": 196,
+      "forecast_sha256": "e4482da7396872645d5101115435143d98fd9fdb1db1b1fdf41a42c99fc04b74",
+      "issue_utc": "2026-11-11T10:10:21Z",
+      "origin_data_through": 2025,
+      "primary_model": "p_model",
+      "question": "¿Se registrará al menos un nuevo episodio de conflicto intraestatal (newconf) en 2027?",
+      "resolution": "PENDIENTE_FUENTE_ANUAL_OFICIAL_2027",
+      "source": "UCDP Intrastate Country Level Multiple Onset 25.1 + ACD 26.1",
+      "source_sha256": "5fe7411942aa7e6a38d6386faa64f4d7f0703482509f121c4136c0e3223d7f05",
+      "source_url": "https://ucdp.uu.se/downloads/onset/ucdp-intrastate-country-multiple-onset-251.csv"
+    }
+  },
+  "first_commit_times_are_public_metadata_not_independent_notarization": true,
+  "independent_country_endpoints_or_country_years": false,
+  "interpretation": "Three genuinely distinct 2027 binary targets: GEO state-based >=25 death threshold, NEWCONF intrastate multiple-onset, ACD intrastate conflict persistence. A GEO selected alert is NOT an additional event forecast. Shadow/EB models are comparators, not new country-question rows. 424 records share country-years; no 2027 labels observed or prospective skill certified.",
+  "n_distinct_issued_endpoints": 3,
+  "n_original_geo_shadow_comparator_countries": 196,
+  "n_original_geo_transition_alerts_subset": 15,
+  "n_unique_country_endpoint_rows": 424,
+  "n_verified_future_2027_outcomes": 0,
+  "observational_skill_demonstrated": false,
+  "possible_cross_cohort_overlap": true,
+  "rows": [
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "United States of America",
+      "country_id": 2,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.05113613046,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.038682102018
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Canada",
+      "country_id": 20,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Bahamas",
+      "country_id": 31,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Cuba",
+      "country_id": 40,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Haiti",
+      "country_id": 41,
+      "geo_transition_alert": "RESOLUCION",
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.573433623875,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.737423779593
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Dominican Republic",
+      "country_id": 42,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Jamaica",
+      "country_id": 51,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Trinidad and Tobago",
+      "country_id": 52,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.05113613046,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.038682102018
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Barbados",
+      "country_id": 53,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Dominica",
+      "country_id": 54,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Grenada",
+      "country_id": 55,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Saint Lucia",
+      "country_id": 56,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Saint Vincent and the Grenadines",
+      "country_id": 57,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Antigua & Barbuda",
+      "country_id": 58,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Saint Kitts and Nevis",
+      "country_id": 60,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Mexico",
+      "country_id": 70,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.082304727197,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.062761794915
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Belize",
+      "country_id": 80,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Guatemala",
+      "country_id": 90,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.021878205447,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.016426486163
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Honduras",
+      "country_id": 91,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "El Salvador",
+      "country_id": 92,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.019945564095,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014968060299
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Nicaragua",
+      "country_id": 93,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.019490667533,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014624991148
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Costa Rica",
+      "country_id": 94,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Panama",
+      "country_id": 95,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.019044029623,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.01428822773
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Colombia",
+      "country_id": 100,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.893769476037,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.946169602571
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Venezuela",
+      "country_id": 101,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.05113613046,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.038682102018
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Guyana",
+      "country_id": 110,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Suriname",
+      "country_id": 115,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Ecuador",
+      "country_id": 130,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.05113613046,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.038682102018
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Peru",
+      "country_id": 135,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.070134904942,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.053313772295
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Brazil",
+      "country_id": 140,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Bolivia",
+      "country_id": 145,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Paraguay",
+      "country_id": 150,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.019044029623,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.01428822773
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Chile",
+      "country_id": 155,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Argentina",
+      "country_id": 160,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Uruguay",
+      "country_id": 165,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "United Kingdom",
+      "country_id": 200,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.053510971771,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.040503247853
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Ireland",
+      "country_id": 205,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Netherlands",
+      "country_id": 210,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Belgium",
+      "country_id": 211,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Luxembourg",
+      "country_id": 212,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "France",
+      "country_id": 220,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Monaco",
+      "country_id": 221,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Liechtenstein",
+      "country_id": 223,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Switzerland",
+      "country_id": 225,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Spain",
+      "country_id": 230,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.05113613046,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.038682102018
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Andorra",
+      "country_id": 232,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Portugal",
+      "country_id": 235,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Germany",
+      "country_id": 260,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Poland",
+      "country_id": 290,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Austria",
+      "country_id": 305,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Hungary",
+      "country_id": 310,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Czech Republic",
+      "country_id": 316,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.020587508751,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.01545233067
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Slovakia",
+      "country_id": 317,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.020587508751,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.01545233067
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Italy",
+      "country_id": 325,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Vatican City State",
+      "country_id": 327,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "San Marino",
+      "country_id": 331,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Malta",
+      "country_id": 338,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Albania",
+      "country_id": 339,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.05113613046,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.038682102018
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Montenegro",
+      "country_id": 341,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.027393974646,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.020596751094
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "North Macedonia",
+      "country_id": 343,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.053033319471,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.04013678198
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Croatia",
+      "country_id": 344,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.055319799476,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.041891837554
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Serbia (Yugoslavia)",
+      "country_id": 345,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.086339884657,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.065907631936
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Bosnia-Herzegovina",
+      "country_id": 346,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.021651692377,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.016255478698
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Kosovo",
+      "country_id": 347,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.028861958994,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.021708616858
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Slovenia",
+      "country_id": 349,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.020201399235,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.0151610383
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Greece",
+      "country_id": 350,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Cyprus",
+      "country_id": 352,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Bulgaria",
+      "country_id": 355,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Moldova",
+      "country_id": 359,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.053033319471,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.04013678198
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Romania",
+      "country_id": 360,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.019044029623,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.01428822773
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Russia (Soviet Union)",
+      "country_id": 365,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.796837890613,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.891232635083
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Estonia",
+      "country_id": 366,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.019829505225,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014880524678
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Latvia",
+      "country_id": 367,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.019829505225,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014880524678
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Lithuania",
+      "country_id": 368,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.019829505225,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014880524678
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Ukraine",
+      "country_id": 369,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.813346535943,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.901023654283
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Belarus",
+      "country_id": 370,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.019829505225,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014880524678
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Armenia",
+      "country_id": 371,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.089690764734,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.068525003513
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Georgia",
+      "country_id": 372,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.089805021831,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.068614329873
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Azerbaijan",
+      "country_id": 373,
+      "geo_transition_alert": "ENTRADA",
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.199544842021,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.156923982327
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Finland",
+      "country_id": 375,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Sweden",
+      "country_id": 380,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Norway",
+      "country_id": 385,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Denmark",
+      "country_id": 390,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Iceland",
+      "country_id": 395,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Cape Verde",
+      "country_id": 402,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Sao Tome and Principe",
+      "country_id": 403,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Guinea-Bissau",
+      "country_id": 404,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.052328129301,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.039595908112
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Equatorial Guinea",
+      "country_id": 411,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Gambia",
+      "country_id": 420,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Mali",
+      "country_id": 432,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.737441950264,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.854390789759
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Senegal",
+      "country_id": 433,
+      "geo_transition_alert": "ENTRADA",
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.240451385272,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.19118007778
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Benin",
+      "country_id": 434,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.752191097798,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.863783854622
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Mauritania",
+      "country_id": 435,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Niger",
+      "country_id": 436,
+      "geo_transition_alert": "RESOLUCION",
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.655833983393,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.799236718247
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Ivory Coast",
+      "country_id": 437,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.086339884657,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.065907631936
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Guinea",
+      "country_id": 438,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.052328129301,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.039595908112
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Burkina Faso",
+      "country_id": 439,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.786882791984,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.885236783633
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Liberia",
+      "country_id": 450,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.056131227274,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.042515168918
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Sierra Leone",
+      "country_id": 451,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.064494414307,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.048954873134
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Ghana",
+      "country_id": 452,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Togo",
+      "country_id": 461,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.752191097798,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.863783854622
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Cameroon",
+      "country_id": 471,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.767378193999,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.8732840492
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Nigeria",
+      "country_id": 475,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.749161316888,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.861867886573
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Gabon",
+      "country_id": 481,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Central African Republic",
+      "country_id": 482,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.723837217115,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.845576937701
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Chad",
+      "country_id": 483,
+      "geo_transition_alert": "ENTRADA",
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.220660681382,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.174512969446
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Congo",
+      "country_id": 484,
+      "geo_transition_alert": "ENTRADA",
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.149894844129,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.116337459661
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "DR Congo (Zaire)",
+      "country_id": 490,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.840695350111,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.916839355915
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Uganda",
+      "country_id": 500,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.123859390909,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.095476018905
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Kenya",
+      "country_id": 501,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.824087359198,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.90729423598
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Tanzania",
+      "country_id": 510,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.05113613046,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.038682102018
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Burundi",
+      "country_id": 516,
+      "geo_transition_alert": "ENTRADA",
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.290690880667,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.234300540851
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Rwanda",
+      "country_id": 517,
+      "geo_transition_alert": "ENTRADA",
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.13063649383,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.100878910104
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Somalia",
+      "country_id": 520,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.812425234772,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.900482166458
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Djibouti",
+      "country_id": 522,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.124391314236,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.095899389898
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Ethiopia",
+      "country_id": 530,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.827427581633,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.909228555216
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Eritrea",
+      "country_id": 531,
+      "geo_transition_alert": "ENTRADA",
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.131454494821,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.101532340853
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Angola",
+      "country_id": 540,
+      "geo_transition_alert": "RESOLUCION",
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.682948398486,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.818185461372
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Mozambique",
+      "country_id": 541,
+      "geo_transition_alert": "RESOLUCION",
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.688403312046,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.821920312474
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Zambia",
+      "country_id": 551,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Zimbabwe (Rhodesia)",
+      "country_id": 552,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Malawi",
+      "country_id": 553,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "South Africa",
+      "country_id": 560,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.019044029623,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.01428822773
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Namibia",
+      "country_id": 565,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.052067453538,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.039396021964
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Lesotho",
+      "country_id": 570,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.05113613046,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.038682102018
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Botswana",
+      "country_id": 571,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Kingdom of eSwatini (Swaziland)",
+      "country_id": 572,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Madagascar (Malagasy)",
+      "country_id": 580,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Comoros",
+      "country_id": 581,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.050994887327,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.038573859741
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Mauritius",
+      "country_id": 590,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Seychelles",
+      "country_id": 591,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Morocco",
+      "country_id": 600,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.019044029623,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.01428822773
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Algeria",
+      "country_id": 615,
+      "geo_transition_alert": "ENTRADA",
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.17226878787,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.134494944912
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Tunisia",
+      "country_id": 616,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.054780115573,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.041477401256
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Libya",
+      "country_id": 620,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.09725092476,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.074446978633
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Sudan",
+      "country_id": 625,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.861897343982,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.928765961147
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "South Sudan",
+      "country_id": 626,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.769080903038,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.874338506221
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Iran",
+      "country_id": 630,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.70339172251,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.832053146855
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Turkey",
+      "country_id": 640,
+      "geo_transition_alert": "ENTRADA",
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.131999410572,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.101967782754
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Iraq",
+      "country_id": 645,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.893769476037,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.946169602571
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Egypt",
+      "country_id": 651,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.112877909769,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.086761830548
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Syria",
+      "country_id": 652,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.829088499059,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.910187637671
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Lebanon",
+      "country_id": 660,
+      "geo_transition_alert": "RESOLUCION",
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.68352955829,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.818584578609
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Jordan",
+      "country_id": 663,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.05113613046,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.038682102018
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Israel",
+      "country_id": 666,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.74366247297,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.85837269035
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Saudi Arabia",
+      "country_id": 670,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.121384892732,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.093508052028
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Yemen (North Yemen)",
+      "country_id": 678,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.802920783246,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.89486215754
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Kuwait",
+      "country_id": 690,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.052328129301,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.039595908112
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Bahrain",
+      "country_id": 692,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Qatar",
+      "country_id": 694,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "United Arab Emirates",
+      "country_id": 696,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Oman",
+      "country_id": 698,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Afghanistan",
+      "country_id": 700,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.893769476037,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.946169602571
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Turkmenistan",
+      "country_id": 701,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.019829505225,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014880524678
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Tajikistan",
+      "country_id": 702,
+      "geo_transition_alert": "ENTRADA",
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.220383046269,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.17428041296
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Kyrgyzstan",
+      "country_id": 703,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.087514820137,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.066824856348
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Uzbekistan",
+      "country_id": 704,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.087514820137,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.066824856348
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Kazakhstan",
+      "country_id": 705,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.019829505225,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014880524678
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "China",
+      "country_id": 710,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.05113613046,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.038682102018
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Mongolia",
+      "country_id": 712,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Taiwan",
+      "country_id": 713,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "North Korea",
+      "country_id": 731,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "South Korea",
+      "country_id": 732,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Japan",
+      "country_id": 740,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "India",
+      "country_id": 750,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.893769476037,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.946169602571
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Bhutan",
+      "country_id": 760,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Pakistan",
+      "country_id": 770,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859764344227,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.927578969107
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Bangladesh",
+      "country_id": 771,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.090759038245,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.069360387873
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Myanmar (Burma)",
+      "country_id": 775,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.893769476037,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.946169602571
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Sri Lanka",
+      "country_id": 780,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.123859390909,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.095476018905
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Maldives",
+      "country_id": 781,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Nepal",
+      "country_id": 790,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.064494414307,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.048954873134
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Thailand",
+      "country_id": 800,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.825621034822,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.908183306007
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Cambodia (Kampuchea)",
+      "country_id": 811,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.749716054465,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.862219211217
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Laos",
+      "country_id": 812,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.019490667533,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014624991148
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Vietnam (North Vietnam)",
+      "country_id": 816,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Malaysia",
+      "country_id": 820,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.05113613046,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.038682102018
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Singapore",
+      "country_id": 830,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Brunei",
+      "country_id": 835,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Philippines",
+      "country_id": 840,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.893769476037,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.946169602571
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Indonesia",
+      "country_id": 850,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.737441950264,
+      "p_secondary": {
+        "p_global_markov": 0.718058266541,
+        "p_shadow_exploratorio": 0.854390789759
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "East Timor",
+      "country_id": 860,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.024864609293,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.018682937354
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Australia",
+      "country_id": 900,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Papua New Guinea",
+      "country_id": 910,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.090536479797,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.069186310153
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "New Zealand",
+      "country_id": 920,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Vanuatu",
+      "country_id": 935,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Solomon Islands",
+      "country_id": 940,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Fiji",
+      "country_id": 950,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Kiribati",
+      "country_id": 970,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Nauru",
+      "country_id": 971,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Tonga",
+      "country_id": 972,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Tuvalu",
+      "country_id": 973,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Marshall Islands",
+      "country_id": 983,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Palau",
+      "country_id": 986,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.020988664697,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.015755035194
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Federated States of Micronesia",
+      "country_id": 987,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "GEO2027",
+      "country": "Samoa (Western Samoa)",
+      "country_id": 990,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.01912533508,
+      "p_secondary": {
+        "p_global_markov": 0.053003016226,
+        "p_shadow_exploratorio": 0.014349526058
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "United States of America",
+      "country_id": 2,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Canada",
+      "country_id": 20,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Bahamas",
+      "country_id": 31,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Cuba",
+      "country_id": 40,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Haiti",
+      "country_id": 41,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.018816117687,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Dominican Republic",
+      "country_id": 42,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Jamaica",
+      "country_id": 51,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Trinidad and Tobago",
+      "country_id": 52,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Barbados",
+      "country_id": 53,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Dominica",
+      "country_id": 54,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Grenada",
+      "country_id": 55,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Saint Lucia",
+      "country_id": 56,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Saint Vincent and the Grenadines",
+      "country_id": 57,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Antigua & Barbuda",
+      "country_id": 58,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Saint Kitts and Nevis",
+      "country_id": 60,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Mexico",
+      "country_id": 70,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Belize",
+      "country_id": 80,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Guatemala",
+      "country_id": 90,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Honduras",
+      "country_id": 91,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "El Salvador",
+      "country_id": 92,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Nicaragua",
+      "country_id": 93,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Costa Rica",
+      "country_id": 94,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Panama",
+      "country_id": 95,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Colombia",
+      "country_id": 100,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.018816117687,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Venezuela",
+      "country_id": 101,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Guyana",
+      "country_id": 110,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Suriname",
+      "country_id": 115,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Ecuador",
+      "country_id": 130,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Peru",
+      "country_id": 135,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Brazil",
+      "country_id": 140,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Bolivia",
+      "country_id": 145,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Paraguay",
+      "country_id": 150,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Chile",
+      "country_id": 155,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Argentina",
+      "country_id": 160,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Uruguay",
+      "country_id": 165,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "United Kingdom",
+      "country_id": 200,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Ireland",
+      "country_id": 205,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Netherlands",
+      "country_id": 210,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Belgium",
+      "country_id": 211,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Luxembourg",
+      "country_id": 212,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "France",
+      "country_id": 220,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Monaco",
+      "country_id": 221,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Liechtenstein",
+      "country_id": 223,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Switzerland",
+      "country_id": 225,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Spain",
+      "country_id": 230,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Andorra",
+      "country_id": 232,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Portugal",
+      "country_id": 235,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Germany",
+      "country_id": 260,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Poland",
+      "country_id": 290,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Austria",
+      "country_id": 305,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Hungary",
+      "country_id": 310,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Czech Republic",
+      "country_id": 316,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Slovakia",
+      "country_id": 317,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Italy",
+      "country_id": 325,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Vatican City State",
+      "country_id": 327,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "San Marino",
+      "country_id": 331,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Malta",
+      "country_id": 338,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Albania",
+      "country_id": 339,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Montenegro",
+      "country_id": 341,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003649241344,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "North Macedonia",
+      "country_id": 343,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Croatia",
+      "country_id": 344,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Serbia (Yugoslavia)",
+      "country_id": 345,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Bosnia-Herzegovina",
+      "country_id": 346,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Kosovo",
+      "country_id": 347,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003846497632,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Slovenia",
+      "country_id": 349,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Greece",
+      "country_id": 350,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Cyprus",
+      "country_id": 352,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Bulgaria",
+      "country_id": 355,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Moldova",
+      "country_id": 359,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Romania",
+      "country_id": 360,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Russia (Soviet Union)",
+      "country_id": 365,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.047607120276,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Estonia",
+      "country_id": 366,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Latvia",
+      "country_id": 367,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Lithuania",
+      "country_id": 368,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Ukraine",
+      "country_id": 369,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Belarus",
+      "country_id": 370,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Armenia",
+      "country_id": 371,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Georgia",
+      "country_id": 372,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Azerbaijan",
+      "country_id": 373,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Finland",
+      "country_id": 375,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Sweden",
+      "country_id": 380,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Norway",
+      "country_id": 385,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Denmark",
+      "country_id": 390,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Iceland",
+      "country_id": 395,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Cape Verde",
+      "country_id": 402,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Sao Tome and Principe",
+      "country_id": 403,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Guinea-Bissau",
+      "country_id": 404,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Equatorial Guinea",
+      "country_id": 411,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Gambia",
+      "country_id": 420,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Mali",
+      "country_id": 432,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.107705006576,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Senegal",
+      "country_id": 433,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Benin",
+      "country_id": 434,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.04103833991,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Mauritania",
+      "country_id": 435,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Niger",
+      "country_id": 436,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.04103833991,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Ivory Coast",
+      "country_id": 437,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Guinea",
+      "country_id": 438,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Burkina Faso",
+      "country_id": 439,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.04103833991,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Liberia",
+      "country_id": 450,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Sierra Leone",
+      "country_id": 451,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Ghana",
+      "country_id": 452,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Togo",
+      "country_id": 461,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.018816117687,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Cameroon",
+      "country_id": 471,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.063260562132,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Nigeria",
+      "country_id": 475,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.063260562132,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Gabon",
+      "country_id": 481,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Central African Republic",
+      "country_id": 482,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.063260562132,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Chad",
+      "country_id": 483,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Congo",
+      "country_id": 484,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "DR Congo (Zaire)",
+      "country_id": 490,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.063260562132,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Uganda",
+      "country_id": 500,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Kenya",
+      "country_id": 501,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.04103833991,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Tanzania",
+      "country_id": 510,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Burundi",
+      "country_id": 516,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Rwanda",
+      "country_id": 517,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.018816117687,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Somalia",
+      "country_id": 520,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.085482784354,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Djibouti",
+      "country_id": 522,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Ethiopia",
+      "country_id": 530,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.063260562132,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Eritrea",
+      "country_id": 531,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Angola",
+      "country_id": 540,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.018816117687,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Mozambique",
+      "country_id": 541,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.04103833991,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Zambia",
+      "country_id": 551,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Zimbabwe (Rhodesia)",
+      "country_id": 552,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Malawi",
+      "country_id": 553,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "South Africa",
+      "country_id": 560,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Namibia",
+      "country_id": 565,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Lesotho",
+      "country_id": 570,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Botswana",
+      "country_id": 571,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Kingdom of eSwatini (Swaziland)",
+      "country_id": 572,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Madagascar (Malagasy)",
+      "country_id": 580,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Comoros",
+      "country_id": 581,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Mauritius",
+      "country_id": 590,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Seychelles",
+      "country_id": 591,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Morocco",
+      "country_id": 600,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Algeria",
+      "country_id": 615,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Tunisia",
+      "country_id": 616,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Libya",
+      "country_id": 620,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.047607120276,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Sudan",
+      "country_id": 625,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.04103833991,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "South Sudan",
+      "country_id": 626,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.05431544988,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Iran",
+      "country_id": 630,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.04103833991,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Turkey",
+      "country_id": 640,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.04103833991,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Iraq",
+      "country_id": 645,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.018816117687,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Egypt",
+      "country_id": 651,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Syria",
+      "country_id": 652,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.085482784354,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Lebanon",
+      "country_id": 660,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Jordan",
+      "country_id": 663,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Israel",
+      "country_id": 666,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.018816117687,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Saudi Arabia",
+      "country_id": 670,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Yemen (North Yemen)",
+      "country_id": 678,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.04103833991,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Kuwait",
+      "country_id": 690,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Bahrain",
+      "country_id": 692,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Qatar",
+      "country_id": 694,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "United Arab Emirates",
+      "country_id": 696,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Oman",
+      "country_id": 698,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Afghanistan",
+      "country_id": 700,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.04103833991,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Turkmenistan",
+      "country_id": 701,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Tajikistan",
+      "country_id": 702,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Kyrgyzstan",
+      "country_id": 703,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Uzbekistan",
+      "country_id": 704,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Kazakhstan",
+      "country_id": 705,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "China",
+      "country_id": 710,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Mongolia",
+      "country_id": 712,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Taiwan",
+      "country_id": 713,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "North Korea",
+      "country_id": 731,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "South Korea",
+      "country_id": 732,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Japan",
+      "country_id": 740,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "India",
+      "country_id": 750,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.085482784354,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Bhutan",
+      "country_id": 760,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Pakistan",
+      "country_id": 770,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.04103833991,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Bangladesh",
+      "country_id": 771,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.047607120276,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Myanmar (Burma)",
+      "country_id": 775,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.04103833991,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Sri Lanka",
+      "country_id": 780,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Maldives",
+      "country_id": 781,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Nepal",
+      "country_id": 790,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Thailand",
+      "country_id": 800,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.04103833991,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Cambodia (Kampuchea)",
+      "country_id": 811,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Laos",
+      "country_id": 812,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Vietnam (North Vietnam)",
+      "country_id": 816,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Malaysia",
+      "country_id": 820,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.025384898053,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Singapore",
+      "country_id": 830,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Brunei",
+      "country_id": 835,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Philippines",
+      "country_id": 840,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.04103833991,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Indonesia",
+      "country_id": 850,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.018816117687,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "East Timor",
+      "country_id": 860,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003309777033,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Australia",
+      "country_id": 900,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Papua New Guinea",
+      "country_id": 910,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "New Zealand",
+      "country_id": 920,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Vanuatu",
+      "country_id": 935,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Solomon Islands",
+      "country_id": 940,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Fiji",
+      "country_id": 950,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Kiribati",
+      "country_id": 970,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Nauru",
+      "country_id": 971,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Tonga",
+      "country_id": 972,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Tuvalu",
+      "country_id": 973,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Marshall Islands",
+      "country_id": 983,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Palau",
+      "country_id": 986,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Federated States of Micronesia",
+      "country_id": 987,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "NEWCONF2027",
+      "country": "Samoa (Western Samoa)",
+      "country_id": 990,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.003162675831,
+      "p_secondary": {
+        "p_baseline_global_5y": 0.007128309572
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Haiti",
+      "country_id": 41,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.683633841886,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Colombia",
+      "country_id": 100,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.9471929084,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Mali",
+      "country_id": 432,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.752362459547,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Benin",
+      "country_id": 434,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.826490984743,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Niger",
+      "country_id": 436,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.7346740638,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Burkina Faso",
+      "country_id": 439,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.865048543689,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Togo",
+      "country_id": 461,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.826490984743,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Cameroon",
+      "country_id": 471,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.884327323162,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Nigeria",
+      "country_id": 475,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.872995325423,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Central African Republic",
+      "country_id": 482,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.778305992635,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "DR Congo (Zaire)",
+      "country_id": 490,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.781496287836,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Kenya",
+      "country_id": 501,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.884327323162,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Rwanda",
+      "country_id": 517,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.714268902618,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Somalia",
+      "country_id": 520,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.835150609908,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Ethiopia",
+      "country_id": 530,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.873741250847,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Angola",
+      "country_id": 540,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.781496287836,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Mozambique",
+      "country_id": 541,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.773786407767,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Sudan",
+      "country_id": 625,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.923797195254,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "South Sudan",
+      "country_id": 626,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.807429295061,
+        "p_lag1_group_exploratorio": 0.546119278779
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Iran",
+      "country_id": 630,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.693260993718,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Turkey",
+      "country_id": 640,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.923797195254,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Iraq",
+      "country_id": 645,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.88643266119,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Syria",
+      "country_id": 652,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.902834951456,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Israel",
+      "country_id": 666,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.867582287473,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Yemen (North Yemen)",
+      "country_id": 678,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.881754268497,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Afghanistan",
+      "country_id": 700,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.9471929084,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "India",
+      "country_id": 750,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.9471929084,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Pakistan",
+      "country_id": 770,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.844882108183,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Myanmar (Burma)",
+      "country_id": 775,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.9471929084,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Thailand",
+      "country_id": 800,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.92639011474,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Philippines",
+      "country_id": 840,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.9471929084,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    },
+    {
+      "certified_result": false,
+      "cohort": "ACD2027",
+      "country": "Indonesia",
+      "country_id": 850,
+      "geo_transition_alert": null,
+      "issued_status": "EMITIDA_PENDIENTE",
+      "observed_2027": null,
+      "p_primary": 0.859195402299,
+      "p_secondary": {
+        "p_country_eb_exploratorio": 0.78569579288,
+        "p_lag1_group_exploratorio": 0.848030607957
+      },
+      "resolved_2027": false
+    }
+  ],
+  "schema": "idealab.psico.prospective_2027_issued_registry.v1",
+  "status": "PROSPECTIVE_ISSUED_ALL_OUTCOMES_2027_UNRESOLVED",
+  "target_year": 2027
+}
