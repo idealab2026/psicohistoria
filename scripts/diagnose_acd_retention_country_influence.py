@@ -160,8 +160,10 @@ def reconstruct_ledger(versions: dict, metadata: dict,
         for cid,ps in sorted(predictions.items()):
             if cid not in target_country_ids:
                 raise ValueError("Historical target code missing from official source")
+            if not isinstance(cid,str) or not cid.isdecimal() or not 1 <= int(cid) <= 2000:
+                raise ValueError("Invalid singleton source GWNO string")
             result.append({
-                "country_id":cid,
+                "country_id":int(cid),
                 "target_year":target_year,
                 "observed_acd":int((cid,target_year) in target_set),
                 "models":{name:ps[name] for name in (PRIMARY_BASELINE,)+MODELS},
