@@ -62,10 +62,10 @@ jobs:
         run: |
           mkdir -p dist/src dist/data
           cp index.html trabajo.html privacidad-icsa.html styles.css logo.svg favicon.svg dist/
-          cp src/site.mjs src/visuals.mjs src/neural.mjs src/markov-svg.mjs src/lab-renderers.mjs src/metrics.mjs src/research.mjs src/project-catalog.mjs src/project-portfolio.mjs src/private-workbench.mjs src/private-notebook.mjs src/country-comparison.mjs src/country-comparison-view.mjs src/main-country-tree.mjs dist/src/
-          cp data/demo.json data/research.json data/projects.json data/forecast-2027-ucdp261.json data/forecast-2027-manifest.json data/forecast-2027-audit.json data/forecast-2027-historical-backtest.json data/forecast-2027-archival-cross-release.json data/forecast-2027-origin-state-diagnostic.json data/forecast-2027-entry-comparison.json data/onset2-231-251-homogeneous.json data/onset2-lagged-origin-ablation.json data/onset2-conflict-incidence-ablation.json data/ucdp-prio-incidence-vintages.json data/onset2-country-riskset-audit.json data/country-multiple-onset-source-audit.json data/country-multiple-newconf-experiment.json data/forecast-2027-newconf.json data/forecast-2027-newconf-manifest.json data/forecast-2027-newconf-audit.json dist/data/
+          cp src/site.mjs src/visuals.mjs src/neural.mjs src/markov-svg.mjs src/lab-renderers.mjs src/metrics.mjs src/research.mjs src/project-catalog.mjs src/project-portfolio.mjs src/prospective-registry.mjs src/private-workbench.mjs src/private-notebook.mjs src/country-comparison.mjs src/country-comparison-view.mjs src/main-country-tree.mjs dist/src/
+          cp data/demo.json data/research.json data/projects.json data/forecast-2027-ucdp261.json data/forecast-2027-manifest.json data/forecast-2027-audit.json data/forecast-2027-historical-backtest.json data/forecast-2027-archival-cross-release.json data/forecast-2027-origin-state-diagnostic.json data/forecast-2027-entry-comparison.json data/onset2-231-251-homogeneous.json data/onset2-lagged-origin-ablation.json data/onset2-conflict-incidence-ablation.json data/ucdp-prio-incidence-vintages.json data/onset2-country-riskset-audit.json data/country-multiple-onset-source-audit.json data/country-multiple-newconf-experiment.json data/forecast-2027-newconf.json data/forecast-2027-newconf-manifest.json data/forecast-2027-newconf-audit.json data/prospective-2027-registry.json data/prospective-2027-registry-manifest.json dist/data/
           python3 scripts/build_official_countries.py --output dist/data/countries-ucdp261.json
-          test "$(find dist -type f | wc -l)" -eq 41
+          test "$(find dist -type f | wc -l)" -eq 44
       - uses: actions/upload-artifact@v4
         with:
           name: audited-site
@@ -114,6 +114,26 @@ jobs:
             test -s data/forecast-2027-transition-alerts-manifest.json
             PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_issued_geo2027_transition_alerts.py --check-report data/forecast-2027-transition-alerts-audit.json
           fi
+  prospective2027_public_registry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test original issue SHA integrity, 424 country-question pairs and no 2027 outcomes
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_build_2027_prospective_registry.py' -v
+      - name: Test 424-row public table search, labels, pagination and unchanged issue identities
+        run: |
+          set -e
+          node --test tests/prospective-registry.test.mjs
+      - name: Recompute original 2027 GEO NEWCONF ACD public issuance registry
+        run: |
+          set -e
+          test -s data/prospective-2027-registry.json
+          test -s data/prospective-2027-registry-manifest.json
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/build_2027_prospective_registry.py --check-report
   acd2027_future_official_scoring_contract:
     runs-on: ubuntu-latest
     steps:
@@ -662,7 +682,7 @@ jobs:
           test -s /tmp/idealab-ucdp-archive.json
   deploy:
     if: github.event_name != 'pull_request'
-    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic, new_entry_baseline_diagnostic, onset2_homogeneous_holdout, onset2_lagged_signal_ablation, probe_ucdp_prio_vintages, onset2_conflict_incidence, onset2_country_riskset_codebook, country_multiple_onset_probe, country_multiple_newconf_experiment, prospective_newconf_2027_source_audit, prospective_newconf_2027_candidate, prospective_newconf_2027_immutable, prospective_newconf_2027_resolution_contract, newconf_persistence_ablation, geo2027_transition_diagnostic, geo2027_transition_alert_ranking, geo2027_exact_alert_null, prospective_geo2027_transition_alert_issue, geo2027_alert_dependence_scenarios, prospective_geo2027_alert_resolution_contract, geo2027_historical_count_dispersion, geo2027_temporal_calibration_ablation, prospective_geo2027_calibrated_shadow_issue, prospective_geo2027_calibrated_shadow_future_contract, geo2027_shadow_break_even_frontier, geo2027_ucdp_vintage_revision_audit, geo2027_postcalibration_count_residuals, ucdp_prio_old_vintages_source_probe, ucdp_prio_retention_four_vintage, acd_retention_vintage_yearblock_robustness, prospective_acd2027_retention_issuance, acd2027_named_32_country_view, acd2027_future_official_scoring_contract]
+    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic, new_entry_baseline_diagnostic, onset2_homogeneous_holdout, onset2_lagged_signal_ablation, probe_ucdp_prio_vintages, onset2_conflict_incidence, onset2_country_riskset_codebook, country_multiple_onset_probe, country_multiple_newconf_experiment, prospective_newconf_2027_source_audit, prospective_newconf_2027_candidate, prospective_newconf_2027_immutable, prospective_newconf_2027_resolution_contract, newconf_persistence_ablation, geo2027_transition_diagnostic, geo2027_transition_alert_ranking, geo2027_exact_alert_null, prospective_geo2027_transition_alert_issue, geo2027_alert_dependence_scenarios, prospective_geo2027_alert_resolution_contract, geo2027_historical_count_dispersion, geo2027_temporal_calibration_ablation, prospective_geo2027_calibrated_shadow_issue, prospective_geo2027_calibrated_shadow_future_contract, geo2027_shadow_break_even_frontier, geo2027_ucdp_vintage_revision_audit, geo2027_postcalibration_count_residuals, ucdp_prio_old_vintages_source_probe, ucdp_prio_retention_four_vintage, acd_retention_vintage_yearblock_robustness, prospective_acd2027_retention_issuance, acd2027_named_32_country_view, acd2027_future_official_scoring_contract, prospective2027_public_registry]
     runs-on: ubuntu-latest
     environment: github-pages
     steps:

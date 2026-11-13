@@ -1,0 +1,27 @@
+{
+  "schema": "idealab.psico.prospective_2027_registry_attestation.v1",
+  "status": "DERIVED_FROM_ALREADY_ISSUED_2027_COHORTS_NO_NEW_FORECAST",
+  "file": "data/prospective-2027-registry.json",
+  "registry_sha256": "6e21afbf47a01d6ef8959c520c3c772dd99b5ac6869b1f68cae92e07dddb6e0d",
+  "n_country_endpoint_rows": 424,
+  "n_cohorts": 3,
+  "n_2027_outcomes_resolved": 0,
+  "n_geo_alerts_subset_not_additional": 15,
+  "n_unique_countries": 196,
+  "original_forecast_sha256": {
+    "GEO2027": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+    "NEWCONF2027": "e4482da7396872645d5101115435143d98fd9fdb1db1b1fdf41a42c99fc04b74",
+    "ACD2027": "6cf7d0340a4c25062af7a040586fb6a73a98c9e6ab80473527171c0a5a963d9c"
+  },
+  "first_public_commits": {
+    "GEO2027": "3bb3561c8d6182c30624591276c705fb76ce99dc",
+    "NEWCONF2027": "f3f2c17c9d4f5dd56266e376cd2d765f33f3dd97",
+    "ACD2027": "41db7bd154e0140ced15abd8727a7d52d998852c"
+  },
+  "sha_issued_shadow": "1d0880f6e95e77d5e203b186e45a035676c7f724ecbe6a8b323f776b9eaa9188",
+  "sha_issued_geo_15_alerts": "309b4f270e1d0d6382b7a90ae64c28d7621f96fbf3177a45aaebbffb0f958acb",
+  "not_issued_on_registry_creation": true,
+  "forecast_skill_certified": false,
+  "first_public_dates_are_not_independently_notarized": true,
+  "note": "Deterministic public table of three separately frozen genuine 2027 forecast targets. No 2027 outcomes; no new 2027 forecasts created and no 15 GEO alerts double counted."
+}
