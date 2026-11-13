@@ -87,6 +87,25 @@ class FixedCountryInfluenceTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"No independent country"):
             country.analyze_ledger([self.rows[0]])
 
+    def test_exhaustive_two_country_deletions_find_sign_reversal(self):
+        report=country.analyze_ledger(self.rows)
+        for model in country.MODELS:
+            m=report["per_model"][model]
+            self.assertEqual(m["n_two_country_deletions"],3)
+            self.assertLessEqual(m["n_two_country_sign_reversals"],3)
+            for pair in m["top_eight_two_country_abs_influence"]:
+                codes=set(pair["country_ids"])
+                retained=[r for r in self.rows if r["country_id"] not in codes]
+                expected=sum(country.difference(
+                    r["models"][model],r["models"][country.PRIMARY_BASELINE],
+                    r["observed_acd"]) for r in retained)/len(retained)
+                self.assertAlmostEqual(pair["remaining_paired_delta"],expected,places=14)
+        lag=report["per_model"]["p_lag1_group"]
+        self.assertEqual(lag["n_two_country_sign_reversals"],1)
+        self.assertEqual(lag["minimum_cluster_deletions_to_reverse_within_two"],1)
+        self.assertEqual(
+            lag["top_eight_two_country_reversals"][0]["country_ids"],[10,12])
+
     def test_country_relabel_does_not_retrain(self):
         # The metric depends only on outcomes and frozen probabilities;
         # the country codes only determine cluster membership.
