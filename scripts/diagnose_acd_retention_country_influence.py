@@ -94,11 +94,40 @@ def analyze_ledger(rows: list[dict]) -> dict:
         ordered_contributions = sorted(
             contributions.items(), key=lambda pair:-abs(pair[1])
         )
+        # Exact exhaustive 42 choose 2 country-cluster omissions. This is
+        # deletion-only robustness, NOT a new model or two-fold training.
+        country_ids=sorted(by_country)
+        pair_deletions=[]
+        for i,first_id in enumerate(country_ids):
+            for second_id in country_ids[i+1:]:
+                remaining_n=N-len(by_country[first_id])-len(by_country[second_id])
+                if remaining_n<=0:
+                    raise ValueError("No historical countries remain after pair deletion")
+                score=(total-contributions[first_id]-contributions[second_id])/remaining_n
+                pair_deletions.append({
+                    "country_ids":[first_id,second_id],
+                    "removed_country_year_rows":N-remaining_n,
+                    "remaining_paired_delta":score,
+                    "delta_change_vs_original":score-mean,
+                    "reverses_pooled_sign":((mean < -EPS and score > EPS) or
+                                             (mean > EPS and score < -EPS)),
+                })
+        pair_deletions.sort(key=lambda r:(
+            -abs(r["delta_change_vs_original"]),r["country_ids"]
+        ))
+        pair_reversals=[r for r in pair_deletions if r["reverses_pooled_sign"]]
         per_model[candidate] = {
             "pooled_delta_brier_candidate_minus_global":mean,
             "pooled_sum_paired_loss":total,
             "n_country_deletions":len(deletions),
             "n_sign_reversals":sum(r["reverses_pooled_sign"] for r in deletions),
+            "n_two_country_deletions":len(pair_deletions),
+            "n_two_country_sign_reversals":len(pair_reversals),
+            "minimum_cluster_deletions_to_reverse_within_two":(
+                1 if any(r["reverses_pooled_sign"] for r in deletions)
+                else 2 if pair_reversals else None),
+            "top_eight_two_country_abs_influence":pair_deletions[:8],
+            "top_eight_two_country_reversals":pair_reversals[:8],
             "sign_reversals":sorted(
                 [r["country_id"] for r in deletions
                  if r["reverses_pooled_sign"]]
@@ -200,6 +229,11 @@ def evaluate(versions: dict, metadata: dict, frozen: dict,
         for record in model_report["top_eight_absolute_influence"]:
             record["country_name_from_2025_gwno_crosswalk"]=names.get(
                 record["country_id"])
+        for category in ("top_eight_two_country_abs_influence",
+                         "top_eight_two_country_reversals"):
+            for record in model_report[category]:
+                record["country_names_from_2025_gwno_crosswalk"]=[
+                    names.get(cid) for cid in record["country_ids"]]
     return {
         "schema":"idealab.psico.acd_historical_country_cluster_influence.v1",
         "status":"EX_POST_FIXED_FORECAST_DIAGNOSTIC_NO_PROSPECTIVE_SKILL",
