@@ -58,7 +58,7 @@ function renderBrief(){
  return section("INICIO · ESTADO PÚBLICO","Próximos pasos y resultados","Preparar, publicar y demostrar utilidad son hitos distintos. La sección Evidencia incluye estudios reales retrospectivos; otras vistas utilizan muestras sintéticas y no acreditan capacidad prospectiva.")+
  scientificNeuralPanel(d.programs,state.program)+
  box('<div class="item-row wrap"><div><h3>Registro público experimental</h3><p>Tres emisiones reales GEO, NEWCONF y ACD con resultados 2027 aún desconocidos; demostraciones sintéticas separadas.</p></div>'+tag("3 cohortes 2027 · sin resultados","alert")+'</div>'+
- '<div class="section-grid three"><div><div class="card-number">'+d.programs.length+'</div><div class="tiny">Líneas de estudio</div></div><div><div class="card-number">'+ready+'/'+d.milestones.length+'</div><div class="tiny">Pasos técnicos verificados</div></div><div><div class="card-number">1</div><div class="tiny">Cohortes prospectivas emitidas · sin evaluar</div></div></div>','highlight')+
+ '<div class="section-grid three"><div><div class="card-number">'+d.programs.length+'</div><div class="tiny">Líneas de estudio</div></div><div><div class="card-number">'+ready+'/'+d.milestones.length+'</div><div class="tiny">Pasos técnicos verificados</div></div><div><div class="card-number">3</div><div class="tiny">Cohortes prospectivas emitidas · sin evaluar</div></div></div>','highlight')+
  section("LECTURA RÁPIDA","Qué se puede explorar","Cada módulo tiene un propósito concreto y muestra los supuestos, las fuentes y las limitaciones de los ejemplos.")+
  cards([
  ["Registro real 2027","424 predicciones país-variable emitidas, tres objetivos distintos y cero resultados verificados.", "navigate","registry2027"],
