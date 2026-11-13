@@ -1,0 +1,301 @@
+{
+  "GEO_alerts_and_shadow_are_not_additional_independent_outcome_questions": true,
+  "GEO_and_NEWCONF_scores_not_pooled_or_compared_across_endpoints": true,
+  "all_five_original_2027_issues_and_manifests_sha_checked": true,
+  "decision_contract": {
+    "do_not_auto_promote_exploratory_secondary_models": true,
+    "first_complete_independently_certified_2027_official_release_required": true,
+    "independence_is_not_a_lower_variance_bound": true,
+    "max_variance_coupling_winner_probabilities_are_not_forecasts": true,
+    "never_pool_distinct_endpoints_to_claim_effective_n_424": true,
+    "primary_issued_probabilities_and_model_choices_unchanged": true,
+    "real_joint_country_correlation_estimated": false,
+    "real_joint_cross_endpoint_correlation_estimated": false,
+    "sharp_upper_variance_bound_requires_hypothetically_true_marginals": true,
+    "temporal_dependency_or_skill_inferred": false
+  },
+  "limitations": "The Bernoulli world assumes either first-issued primary or first-issued comparator probabilities are the TRUE marginals, which is not empirically established. Independence and signed-comonotone Frechet maximum-variance couplings preserve the chosen marginals but do not estimate geopolitical dependence. The attained variance maximum is sharp conditional on a chosen marginal vector, not an interval or distribution for real 2027 scores. Independent variance is not generally a sharp minimum. Joint GEO+NEWCONF dependence is NOT modeled; their endpoints differ, and their 196 overlapping GWNOs are not 392 independent events. No true 2027 outcome, source completeness, significance test, confidence interval, new forecast or model reissue is asserted.",
+  "n_distinct_country_questions_in_each_endpoint": 196,
+  "n_distinct_endpoints_analyzed": 2,
+  "n_original_issued_country_endpoint_questions_all_three_cohorts": 424,
+  "origin_year_last_observed": 2025,
+  "original_2027_labels_observed": 0,
+  "per_endpoint": {
+    "GEO2027": {
+      "comparisons": {
+        "p_baseline_global_5y_archival_diagnostic_only": {
+          "archival_only_not_issued_as_registered_comparator": true,
+          "comparison_primary": "p_model",
+          "comparison_secondary": "p_baseline_global_5y_archival_diagnostic_only",
+          "hypothetical_marginal_worlds": {
+            "comparator": {
+              "2027_outcomes_used": 0,
+              "confidence_or_significance_test_performed": false,
+              "cross_country_independence_estimated": false,
+              "hypothetical_issued_model_mse_gap": 0.08205818490046805,
+              "hypothetical_true_marginal_vector": "comparator",
+              "max_variance_coupling_atom_count": 3,
+              "max_variance_coupling_comparator_win_probability_conditional_only": 0.82382892057,
+              "max_variance_coupling_primary_win_probability_conditional_only": 0.17617107943,
+              "max_variance_coupling_tie_probability_conditional_only": 0,
+              "mean_paired_brier_comparator_minus_primary": -0.0820581849004681,
+              "real_world_joint_distribution_inferred": false,
+              "sharp_max_standard_deviation": 0.13004000517065284,
+              "sharp_max_variance_under_arbitrary_joint_bernoulli_dependence": 0.01691040294478342,
+              "standard_deviation_if_independent": 0.015590094141860902,
+              "variance_multiplier_over_independence": 69.57552318296804,
+              "variance_under_independent_bernoulli_countries": 0.00024305103535208564
+            },
+            "primary": {
+              "2027_outcomes_used": 0,
+              "confidence_or_significance_test_performed": false,
+              "cross_country_independence_estimated": false,
+              "hypothetical_issued_model_mse_gap": 0.08205818490046805,
+              "hypothetical_true_marginal_vector": "primary",
+              "max_variance_coupling_atom_count": 74,
+              "max_variance_coupling_comparator_win_probability_conditional_only": 0.174378965178,
+              "max_variance_coupling_primary_win_probability_conditional_only": 0.825621034822,
+              "max_variance_coupling_tie_probability_conditional_only": 0,
+              "mean_paired_brier_comparator_minus_primary": 0.0820581849004679,
+              "real_world_joint_distribution_inferred": false,
+              "sharp_max_standard_deviation": 0.0929224610193468,
+              "sharp_max_variance_under_arbitrary_joint_bernoulli_dependence": 0.008634583761892025,
+              "standard_deviation_if_independent": 0.014550521523120223,
+              "variance_multiplier_over_independence": 40.7834806274495,
+              "variance_under_independent_bernoulli_countries": 0.00021171767659478483
+            }
+          },
+          "largest_single_country_share_of_squared_probability_gap": 0.03201731742316721,
+          "n_same_endpoint_issued_country_questions": 196,
+          "sum_first_issued_comparator_probabilities": 34.52953156828,
+          "sum_first_issued_primary_probabilities": 33.625439663908,
+          "top_three_country_id_discrepancies": [
+            {
+              "country": "Colombia",
+              "gwno": 100,
+              "share_of_squared_gap": 0.03201731742316721
+            },
+            {
+              "country": "Iraq",
+              "gwno": 645,
+              "share_of_squared_gap": 0.03201731742316721
+            },
+            {
+              "country": "Afghanistan",
+              "gwno": 700,
+              "share_of_squared_gap": 0.03201731742316721
+            }
+          ]
+        },
+        "p_global_markov": {
+          "archival_only_not_issued_as_registered_comparator": false,
+          "comparison_primary": "p_model",
+          "comparison_secondary": "p_global_markov",
+          "hypothetical_marginal_worlds": {
+            "comparator": {
+              "2027_outcomes_used": 0,
+              "confidence_or_significance_test_performed": false,
+              "cross_country_independence_estimated": false,
+              "hypothetical_issued_model_mse_gap": 0.0037635224626072442,
+              "hypothetical_true_marginal_vector": "comparator",
+              "max_variance_coupling_atom_count": 5,
+              "max_variance_coupling_comparator_win_probability_conditional_only": 0.281941733459,
+              "max_variance_coupling_primary_win_probability_conditional_only": 0.718058266541,
+              "max_variance_coupling_tie_probability_conditional_only": 0,
+              "mean_paired_brier_comparator_minus_primary": -0.0037635224626072807,
+              "real_world_joint_distribution_inferred": false,
+              "sharp_max_standard_deviation": 0.019184559771818856,
+              "sharp_max_variance_under_arbitrary_joint_bernoulli_dependence": 0.00036804733363849035,
+              "standard_deviation_if_independent": 0.0031009525606968237,
+              "variance_multiplier_over_independence": 38.27484416370064,
+              "variance_under_independent_bernoulli_countries": 9.615906783692188e-06
+            },
+            "primary": {
+              "2027_outcomes_used": 0,
+              "confidence_or_significance_test_performed": false,
+              "cross_country_independence_estimated": false,
+              "hypothetical_issued_model_mse_gap": 0.0037635224626072442,
+              "hypothetical_true_marginal_vector": "primary",
+              "max_variance_coupling_atom_count": 74,
+              "max_variance_coupling_comparator_win_probability_conditional_only": 0.21311720801599998,
+              "max_variance_coupling_primary_win_probability_conditional_only": 0.786882791984,
+              "max_variance_coupling_tie_probability_conditional_only": 0,
+              "mean_paired_brier_comparator_minus_primary": 0.003763522462607201,
+              "real_world_joint_distribution_inferred": false,
+              "sharp_max_standard_deviation": 0.015790727949230247,
+              "sharp_max_variance_under_arbitrary_joint_bernoulli_dependence": 0.00024934708916660126,
+              "standard_deviation_if_independent": 0.003028749296788015,
+              "variance_multiplier_over_independence": 27.181764788822285,
+              "variance_under_independent_bernoulli_countries": 9.173322302793895e-06
+            }
+          },
+          "largest_single_country_share_of_squared_probability_gap": 0.07658847700476257,
+          "n_same_endpoint_issued_country_questions": 196,
+          "sum_first_issued_comparator_probabilities": 33.000469691006,
+          "sum_first_issued_primary_probabilities": 33.625439663908,
+          "top_three_country_id_discrepancies": [
+            {
+              "country": "Burundi",
+              "gwno": 516,
+              "share_of_squared_gap": 0.07658847700476257
+            },
+            {
+              "country": "Senegal",
+              "gwno": 433,
+              "share_of_squared_gap": 0.04763352792972843
+            },
+            {
+              "country": "Colombia",
+              "gwno": 100,
+              "share_of_squared_gap": 0.0418550969819191
+            }
+          ]
+        },
+        "p_shadow_exploratorio": {
+          "archival_only_not_issued_as_registered_comparator": false,
+          "comparison_primary": "p_model",
+          "comparison_secondary": "p_shadow_exploratorio",
+          "hypothetical_marginal_worlds": {
+            "comparator": {
+              "2027_outcomes_used": 0,
+              "confidence_or_significance_test_performed": false,
+              "cross_country_independence_estimated": false,
+              "hypothetical_issued_model_mse_gap": 0.0019350544879728191,
+              "hypothetical_true_marginal_vector": "comparator",
+              "max_variance_coupling_atom_count": 74,
+              "max_variance_coupling_comparator_win_probability_conditional_only": 0.821920312474,
+              "max_variance_coupling_primary_win_probability_conditional_only": 0.178079687526,
+              "max_variance_coupling_tie_probability_conditional_only": 0,
+              "mean_paired_brier_comparator_minus_primary": -0.001935054487972803,
+              "real_world_joint_distribution_inferred": false,
+              "sharp_max_standard_deviation": 0.012703543106695117,
+              "sharp_max_variance_under_arbitrary_joint_bernoulli_dependence": 0.00016138000746366104,
+              "standard_deviation_if_independent": 0.0021764806534601087,
+              "variance_multiplier_over_independence": 34.06748779523069,
+              "variance_under_independent_bernoulli_countries": 4.737068034886141e-06
+            },
+            "primary": {
+              "2027_outcomes_used": 0,
+              "confidence_or_significance_test_performed": false,
+              "cross_country_independence_estimated": false,
+              "hypothetical_issued_model_mse_gap": 0.0019350544879728191,
+              "hypothetical_true_marginal_vector": "primary",
+              "max_variance_coupling_atom_count": 74,
+              "max_variance_coupling_comparator_win_probability_conditional_only": 0.70339172251,
+              "max_variance_coupling_primary_win_probability_conditional_only": 0.29660827748999996,
+              "max_variance_coupling_tie_probability_conditional_only": 0,
+              "mean_paired_brier_comparator_minus_primary": 0.0019350544879728343,
+              "real_world_joint_distribution_inferred": false,
+              "sharp_max_standard_deviation": 0.015325475612552422,
+              "sharp_max_variance_under_arbitrary_joint_bernoulli_dependence": 0.000234870202750939,
+              "standard_deviation_if_independent": 0.0026690270578960907,
+              "variance_multiplier_over_independence": 32.97022944986131,
+              "variance_under_independent_bernoulli_countries": 7.123705435781461e-06
+            }
+          },
+          "largest_single_country_share_of_squared_probability_gap": 0.07090653882802324,
+          "n_same_endpoint_issued_country_questions": 196,
+          "sum_first_issued_comparator_probabilities": 35.286922733919,
+          "sum_first_issued_primary_probabilities": 33.625439663908,
+          "top_three_country_id_discrepancies": [
+            {
+              "country": "Haiti",
+              "gwno": 41,
+              "share_of_squared_gap": 0.07090653882802324
+            },
+            {
+              "country": "Niger",
+              "gwno": 436,
+              "share_of_squared_gap": 0.054220759651078795
+            },
+            {
+              "country": "Angola",
+              "gwno": 540,
+              "share_of_squared_gap": 0.04822166373436214
+            }
+          ]
+        }
+      },
+      "endpoint": "¿Se superará el umbral de 25 muertes anuales de violencia organizada estatal en 2027?",
+      "first_issued_forecast_commit": "3bb3561c8d6182c30624591276c705fb76ce99dc",
+      "first_issued_forecast_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+      "n_original_issued_country_questions": 196
+    },
+    "NEWCONF2027": {
+      "comparisons": {
+        "p_baseline_global_5y": {
+          "archival_only_not_issued_as_registered_comparator": false,
+          "comparison_primary": "p_model",
+          "comparison_secondary": "p_baseline_global_5y",
+          "hypothetical_marginal_worlds": {
+            "comparator": {
+              "2027_outcomes_used": 0,
+              "confidence_or_significance_test_performed": false,
+              "cross_country_independence_estimated": false,
+              "hypothetical_issued_model_mse_gap": 0.0003905236215696361,
+              "hypothetical_true_marginal_vector": "comparator",
+              "max_variance_coupling_atom_count": 3,
+              "max_variance_coupling_comparator_win_probability_conditional_only": 0.992871690428,
+              "max_variance_coupling_primary_win_probability_conditional_only": 0.007128309572,
+              "max_variance_coupling_tie_probability_conditional_only": 0,
+              "mean_paired_brier_comparator_minus_primary": -0.0003905236215696376,
+              "real_world_joint_distribution_inferred": false,
+              "sharp_max_standard_deviation": 0.001512802129011829,
+              "sharp_max_variance_under_arbitrary_joint_bernoulli_dependence": 2.2885702815427225e-06,
+              "standard_deviation_if_independent": 0.0002375010063171838,
+              "variance_multiplier_over_independence": 40.57264731743994,
+              "variance_under_independent_bernoulli_countries": 5.640672800167498e-08
+            },
+            "primary": {
+              "2027_outcomes_used": 0,
+              "confidence_or_significance_test_performed": false,
+              "cross_country_independence_estimated": false,
+              "hypothetical_issued_model_mse_gap": 0.0003905236215696361,
+              "hypothetical_true_marginal_vector": "primary",
+              "max_variance_coupling_atom_count": 13,
+              "max_variance_coupling_comparator_win_probability_conditional_only": 0.892294993424,
+              "max_variance_coupling_primary_win_probability_conditional_only": 0.107705006576,
+              "max_variance_coupling_tie_probability_conditional_only": 0,
+              "mean_paired_brier_comparator_minus_primary": 0.0003905236215696357,
+              "real_world_joint_distribution_inferred": false,
+              "sharp_max_standard_deviation": 0.0032290731574693334,
+              "sharp_max_variance_under_arbitrary_joint_bernoulli_dependence": 1.0426913456288972e-05,
+              "standard_deviation_if_independent": 0.0006832822250461163,
+              "variance_multiplier_over_independence": 22.33343488207262,
+              "variance_under_independent_bernoulli_countries": 4.668745990639716e-07
+            }
+          },
+          "largest_single_country_share_of_squared_probability_gap": 0.13215736123793898,
+          "n_same_endpoint_issued_country_questions": 196,
+          "sum_first_issued_comparator_probabilities": 1.397148676112,
+          "sum_first_issued_primary_probabilities": 2.490944756323,
+          "top_three_country_id_discrepancies": [
+            {
+              "country": "Mali",
+              "gwno": 432,
+              "share_of_squared_gap": 0.13215736123793898
+            },
+            {
+              "country": "Somalia",
+              "gwno": 520,
+              "share_of_squared_gap": 0.08020920802155908
+            },
+            {
+              "country": "Syria",
+              "gwno": 652,
+              "share_of_squared_gap": 0.08020920802155908
+            }
+          ]
+        }
+      },
+      "endpoint": "¿Se registrará al menos un nuevo episodio de conflicto intraestatal (newconf) en 2027?",
+      "first_issued_forecast_commit": "f3f2c17c9d4f5dd56266e376cd2d765f33f3dd97",
+      "first_issued_forecast_sha256": "e4482da7396872645d5101115435143d98fd9fdb1db1b1fdf41a42c99fc04b74",
+      "n_original_issued_country_questions": 196
+    }
+  },
+  "schema": "idealab.psico.geo_newconf2027_sharp_dependence_paired_brier.v1",
+  "status": "PRE_OUTCOME_COUNTERFACTUAL_DEPENDENCE_BOUNDS_NOT_EMPIRICAL_SKILL",
+  "target_year": 2027,
+  "underlying_country_years_overlap_across_endpoints": true
+}
