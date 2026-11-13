@@ -26,6 +26,7 @@ from audit_issued_acd2027_retention import (
 )
 from prepare_acd2027_prospective_retention import ISSUE_PATH, FORECAST_ID
 from probe_ucdp_prio_incidence import ALLOWED_TYPES, source_zip
+from diagnose_acd2027_exact_count_evidence import sharp_frontier, compare_labels
 
 TARGET_YEAR=2027
 REQUIRED_INITIAL_VERSION="281"  # 28.1: first candidate annual edition covering 2027.
@@ -200,7 +201,22 @@ def score_same_issued_countries(document,labels):
             "log_loss":-sum(y*math.log(p)+(1-y)*math.log1p(-p)
                            for p,y in zip(ps,ys))/n,
         }
+    # An independent algebraic certificate computed from FIRST-ISSUED
+    # probabilities alone: future scores must lie inside the exact feasible
+    # Brier interval for the observed event count, with no IID assumption.
+    hypothetical_recorded={cid for cid,value in labels.items() if value==1}
+    for secondary in ("p_country_eb","p_lag1_group"):
+        bounds=sharp_frontier(rows,secondary)[
+            "k_conditioned_sharp_frontier"][k]
+        empirical=models[secondary]["brier"]-models[MODELS[0]]["brier"]
+        arithmetic=compare_labels(rows,secondary,hypothetical_recorded)
+        if (abs(empirical-arithmetic)>1e-12 or
+            empirical<bounds["sharp_min_secondary_minus_primary_brier"]-1e-12 or
+            empirical>bounds["sharp_max_secondary_minus_primary_brier"]+1e-12):
+            raise ValueError("Observed future ACD Brier contradicts frozen exact k frontier")
     return {
+        "ex_ante_sharp_brier_count_frontier_checked":True,
+        "automatic_primary_model_switch_authorized":False,
         "n_issued_country_risk_set":n,
         "n_2027_intrastate_persistence_recorded":k,
         "n_no_recorded_intrastate_2027":n-k,
