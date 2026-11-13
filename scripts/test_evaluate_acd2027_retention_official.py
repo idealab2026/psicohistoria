@@ -138,6 +138,20 @@ class ACD2027FutureOfficialContractTests(unittest.TestCase):
             (5*(1-p)**2+27*p*p)/32)
         self.assertFalse(scored["independent_iid_significance_test_performed"])
 
+    def test_future_candidate_is_guarded_by_frozen_count_frontier(self):
+        # Fully synthetic outcomes: never consult or assert actual 2027 labels.
+        labels={cid:int(i<7) for i,cid in enumerate(self.ids)}
+        result=future.score_same_issued_countries(self.issued,labels)
+        self.assertTrue(result["ex_ante_sharp_brier_count_frontier_checked"])
+        self.assertFalse(result["automatic_primary_model_switch_authorized"])
+        impossible={"k_conditioned_sharp_frontier":[{
+            "sharp_min_secondary_minus_primary_brier":2.0,
+            "sharp_max_secondary_minus_primary_brier":3.0,
+        } for _ in range(33)]}
+        with patch.object(future,"sharp_frontier",return_value=impossible):
+            with self.assertRaisesRegex(ValueError,"contradicts frozen exact"):
+                future.score_same_issued_countries(self.issued,labels)
+
     def test_missing_any_one_issued_country_never_becomes_zero(self):
         missing=self.ids[6]
         raw=fake_future_zip(self.ids,active=self.ids[:3],drop=(missing,))
