@@ -1,0 +1,611 @@
+{
+  "2027_outcomes_observed": 0,
+  "country_cluster_appearances_histogram": {
+    "1": 5,
+    "2": 5,
+    "3": 6,
+    "4": 26
+  },
+  "historical_folds_reproduced": true,
+  "limitations": "Exploratory ex-post country influence: all forecast probabilities are fixed while each country is excluded from all folds; not leave-one-country-out retraining, independence, external holdout or population-generalizable significance. All four adjacent years share geopolitical dependence and countries recur. Source editions are pinned but contemporaneous historical issue timestamps are not independently notarized. No 2027 labels or new forecasts.",
+  "per_model": {
+    "p_country_eb": {
+      "max_leave_one_country_out_delta": 0.008182494391304742,
+      "min_leave_one_country_out_delta": 0.0031148632178088554,
+      "minimum_cluster_deletions_to_reverse_within_two": null,
+      "n_country_deletions": 42,
+      "n_sign_reversals": 0,
+      "n_two_country_deletions": 861,
+      "n_two_country_sign_reversals": 0,
+      "pooled_delta_brier_candidate_minus_global": 0.005386639656797397,
+      "pooled_sum_paired_loss": 0.7379696329812434,
+      "share_abs_total_contributions_top_five": 0.417757329681839,
+      "sign_reversals": [],
+      "top_eight_absolute_influence": [
+        {
+          "country_id": 517,
+          "country_name_from_2025_gwno_crosswalk": "Rwanda",
+          "delta_change_when_country_excluded": 0.002795854734507345,
+          "leave_one_country_out_delta_brier": 0.008182494391304742,
+          "n_original_fold_appearances": 2,
+          "reverses_pooled_sign": false,
+          "sum_original_paired_loss_contribution": -0.3666671098448968,
+          "target_years": [
+            2021,
+            2022
+          ]
+        },
+        {
+          "country_id": 436,
+          "country_name_from_2025_gwno_crosswalk": "Niger",
+          "delta_change_when_country_excluded": -0.002271776438988542,
+          "leave_one_country_out_delta_brier": 0.0031148632178088554,
+          "n_original_fold_appearances": 4,
+          "reverses_pooled_sign": false,
+          "sum_original_paired_loss_contribution": 0.3236928250126656,
+          "target_years": [
+            2021,
+            2022,
+            2023,
+            2024
+          ]
+        },
+        {
+          "country_id": 482,
+          "country_name_from_2025_gwno_crosswalk": "Central African Republic",
+          "delta_change_when_country_excluded": -0.0021894055227078104,
+          "leave_one_country_out_delta_brier": 0.003197234134089587,
+          "n_original_fold_appearances": 4,
+          "reverses_pooled_sign": false,
+          "sum_original_paired_loss_contribution": 0.31273749314732835,
+          "target_years": [
+            2021,
+            2022,
+            2023,
+            2024
+          ]
+        },
+        {
+          "country_id": 432,
+          "country_name_from_2025_gwno_crosswalk": "Mali",
+          "delta_change_when_country_excluded": -0.0017915657635294534,
+          "leave_one_country_out_delta_brier": 0.003595073893267944,
+          "n_original_fold_appearances": 4,
+          "reverses_pooled_sign": false,
+          "sum_original_paired_loss_contribution": 0.2598248051766069,
+          "target_years": [
+            2021,
+            2022,
+            2023,
+            2024
+          ]
+        },
+        {
+          "country_id": 541,
+          "country_name_from_2025_gwno_crosswalk": "Mozambique",
+          "delta_change_when_country_excluded": -0.0016104765842719845,
+          "leave_one_country_out_delta_brier": 0.0037761630725254127,
+          "n_original_fold_appearances": 4,
+          "reverses_pooled_sign": false,
+          "sum_original_paired_loss_contribution": 0.23573994433536355,
+          "target_years": [
+            2021,
+            2022,
+            2023,
+            2024
+          ]
+        },
+        {
+          "country_id": 490,
+          "country_name_from_2025_gwno_crosswalk": "DR Congo (Zaire)",
+          "delta_change_when_country_excluded": -0.0011092736407664608,
+          "leave_one_country_out_delta_brier": 0.0042773660160309365,
+          "n_original_fold_appearances": 4,
+          "reverses_pooled_sign": false,
+          "sum_original_paired_loss_contribution": 0.16907995284912875,
+          "target_years": [
+            2021,
+            2022,
+            2023,
+            2024
+          ]
+        },
+        {
+          "country_id": 630,
+          "country_name_from_2025_gwno_crosswalk": "Iran",
+          "delta_change_when_country_excluded": 0.0010422089969530993,
+          "leave_one_country_out_delta_brier": 0.0064288486537504965,
+          "n_original_fold_appearances": 3,
+          "reverses_pooled_sign": false,
+          "sum_original_paired_loss_contribution": -0.12349608662132322,
+          "target_years": [
+            2021,
+            2022,
+            2023
+          ]
+        },
+        {
+          "country_id": 510,
+          "country_name_from_2025_gwno_crosswalk": "Tanzania",
+          "delta_change_when_country_excluded": 0.0009924883295036957,
+          "leave_one_country_out_delta_brier": 0.006379127986301093,
+          "n_original_fold_appearances": 1,
+          "reverses_pooled_sign": false,
+          "sum_original_paired_loss_contribution": -0.12959177315570525,
+          "target_years": [
+            2022
+          ]
+        }
+      ],
+      "top_eight_two_country_abs_influence": [
+        {
+          "country_ids": [
+            436,
+            482
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Niger",
+            "Central African Republic"
+          ],
+          "delta_change_vs_original": -0.004599513185314844,
+          "remaining_paired_delta": 0.0007871264714825538,
+          "removed_country_year_rows": 8,
+          "reverses_pooled_sign": false
+        },
+        {
+          "country_ids": [
+            432,
+            436
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Mali",
+            "Niger"
+          ],
+          "delta_change_vs_original": -0.004189337309572817,
+          "remaining_paired_delta": 0.0011973023472245806,
+          "removed_country_year_rows": 8,
+          "reverses_pooled_sign": false
+        },
+        {
+          "country_ids": [
+            432,
+            482
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Mali",
+            "Central African Republic"
+          ],
+          "delta_change_vs_original": -0.004104412256353148,
+          "remaining_paired_delta": 0.0012822274004442493,
+          "removed_country_year_rows": 8,
+          "reverses_pooled_sign": false
+        },
+        {
+          "country_ids": [
+            436,
+            541
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Niger",
+            "Mozambique"
+          ],
+          "delta_change_vs_original": -0.004002632961966279,
+          "remaining_paired_delta": 0.0013840066948311181,
+          "removed_country_year_rows": 8,
+          "reverses_pooled_sign": false
+        },
+        {
+          "country_ids": [
+            482,
+            541
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Central African Republic",
+            "Mozambique"
+          ],
+          "delta_change_vs_original": -0.00391770790874661,
+          "remaining_paired_delta": 0.0014689317480507868,
+          "removed_country_year_rows": 8,
+          "reverses_pooled_sign": false
+        },
+        {
+          "country_ids": [
+            517,
+            630
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Rwanda",
+            "Iran"
+          ],
+          "delta_change_vs_original": 0.003917396929925813,
+          "remaining_paired_delta": 0.00930403658672321,
+          "removed_country_year_rows": 5,
+          "reverses_pooled_sign": false
+        },
+        {
+          "country_ids": [
+            510,
+            517
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Tanzania",
+            "Rwanda"
+          ],
+          "delta_change_vs_original": 0.003824020910231302,
+          "remaining_paired_delta": 0.009210660567028699,
+          "removed_country_year_rows": 3,
+          "reverses_pooled_sign": false
+        },
+        {
+          "country_ids": [
+            517,
+            700
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Rwanda",
+            "Afghanistan"
+          ],
+          "delta_change_vs_original": 0.0036697045428858077,
+          "remaining_paired_delta": 0.009056344199683205,
+          "removed_country_year_rows": 6,
+          "reverses_pooled_sign": false
+        }
+      ],
+      "top_eight_two_country_reversals": []
+    },
+    "p_lag1_group": {
+      "max_leave_one_country_out_delta": -0.00011934866583494837,
+      "min_leave_one_country_out_delta": -0.005213793214525607,
+      "minimum_cluster_deletions_to_reverse_within_two": 2,
+      "n_country_deletions": 42,
+      "n_sign_reversals": 0,
+      "n_two_country_deletions": 861,
+      "n_two_country_sign_reversals": 27,
+      "pooled_delta_brier_candidate_minus_global": -0.003472349022339192,
+      "pooled_sum_paired_loss": -0.4757118160604693,
+      "share_abs_total_contributions_top_five": 0.4970708339486336,
+      "sign_reversals": [],
+      "top_eight_absolute_influence": [
+        {
+          "country_id": 510,
+          "country_name_from_2025_gwno_crosswalk": "Tanzania",
+          "delta_change_when_country_excluded": 0.0033530003565042437,
+          "leave_one_country_out_delta_brier": -0.00011934866583494837,
+          "n_original_fold_appearances": 1,
+          "reverses_pooled_sign": false,
+          "sum_original_paired_loss_contribution": -0.4594803975069163,
+          "target_years": [
+            2022
+          ]
+        },
+        {
+          "country_id": 615,
+          "country_name_from_2025_gwno_crosswalk": "Algeria",
+          "delta_change_when_country_excluded": 0.0033530003565042437,
+          "leave_one_country_out_delta_brier": -0.00011934866583494837,
+          "n_original_fold_appearances": 1,
+          "reverses_pooled_sign": false,
+          "sum_original_paired_loss_contribution": -0.4594803975069163,
+          "target_years": [
+            2022
+          ]
+        },
+        {
+          "country_id": 2,
+          "country_name_from_2025_gwno_crosswalk": "United States of America",
+          "delta_change_when_country_excluded": 0.0032518420972656088,
+          "leave_one_country_out_delta_brier": -0.0002205069250735833,
+          "n_original_fold_appearances": 1,
+          "reverses_pooled_sign": false,
+          "sum_original_paired_loss_contribution": -0.445722874250462,
+          "target_years": [
+            2021
+          ]
+        },
+        {
+          "country_id": 500,
+          "country_name_from_2025_gwno_crosswalk": "Uganda",
+          "delta_change_when_country_excluded": 0.0030588510078664423,
+          "leave_one_country_out_delta_brier": -0.00041349801447275,
+          "n_original_fold_appearances": 2,
+          "reverses_pooled_sign": false,
+          "sum_original_paired_loss_contribution": -0.41988958410664806,
+          "target_years": [
+            2021,
+            2024
+          ]
+        },
+        {
+          "country_id": 540,
+          "country_name_from_2025_gwno_crosswalk": "Angola",
+          "delta_change_when_country_excluded": 0.0018167571464901195,
+          "leave_one_country_out_delta_brier": -0.0016555918758490726,
+          "n_original_fold_appearances": 3,
+          "reverses_pooled_sign": false,
+          "sum_original_paired_loss_contribution": -0.2538625046966936,
+          "target_years": [
+            2021,
+            2022,
+            2024
+          ]
+        },
+        {
+          "country_id": 373,
+          "country_name_from_2025_gwno_crosswalk": "Azerbaijan",
+          "delta_change_when_country_excluded": -0.0017414441921864148,
+          "leave_one_country_out_delta_brier": -0.005213793214525607,
+          "n_original_fold_appearances": 3,
+          "reverses_pooled_sign": false,
+          "sum_original_paired_loss_contribution": 0.22293647468596206,
+          "target_years": [
+            2022,
+            2023,
+            2024
+          ]
+        },
+        {
+          "country_id": 516,
+          "country_name_from_2025_gwno_crosswalk": "Burundi",
+          "delta_change_when_country_excluded": -0.0016340514777653504,
+          "leave_one_country_out_delta_brier": -0.0051064005001045425,
+          "n_original_fold_appearances": 4,
+          "reverses_pooled_sign": false,
+          "sum_original_paired_loss_contribution": 0.20343945045343476,
+          "target_years": [
+            2021,
+            2022,
+            2023,
+            2024
+          ]
+        },
+        {
+          "country_id": 530,
+          "country_name_from_2025_gwno_crosswalk": "Ethiopia",
+          "delta_change_when_country_excluded": -0.0016340514777653504,
+          "leave_one_country_out_delta_brier": -0.0051064005001045425,
+          "n_original_fold_appearances": 4,
+          "reverses_pooled_sign": false,
+          "sum_original_paired_loss_contribution": 0.20343945045343476,
+          "target_years": [
+            2021,
+            2022,
+            2023,
+            2024
+          ]
+        }
+      ],
+      "top_eight_two_country_abs_influence": [
+        {
+          "country_ids": [
+            510,
+            615
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Tanzania",
+            "Algeria"
+          ],
+          "delta_change_vs_original": 0.006755674792364106,
+          "remaining_paired_delta": 0.0032833257700249138,
+          "removed_country_year_rows": 2,
+          "reverses_pooled_sign": true
+        },
+        {
+          "country_ids": [
+            2,
+            510
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "United States of America",
+            "Tanzania"
+          ],
+          "delta_change_vs_original": 0.0066537672126866666,
+          "remaining_paired_delta": 0.003181418190347474,
+          "removed_country_year_rows": 2,
+          "reverses_pooled_sign": true
+        },
+        {
+          "country_ids": [
+            2,
+            615
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "United States of America",
+            "Algeria"
+          ],
+          "delta_change_vs_original": 0.0066537672126866666,
+          "remaining_paired_delta": 0.003181418190347474,
+          "removed_country_year_rows": 2,
+          "reverses_pooled_sign": true
+        },
+        {
+          "country_ids": [
+            500,
+            510
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Uganda",
+            "Tanzania"
+          ],
+          "delta_change_vs_original": 0.00648472339213841,
+          "remaining_paired_delta": 0.0030123743697992172,
+          "removed_country_year_rows": 3,
+          "reverses_pooled_sign": true
+        },
+        {
+          "country_ids": [
+            500,
+            615
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Uganda",
+            "Algeria"
+          ],
+          "delta_change_vs_original": 0.00648472339213841,
+          "remaining_paired_delta": 0.0030123743697992172,
+          "removed_country_year_rows": 3,
+          "reverses_pooled_sign": true
+        },
+        {
+          "country_ids": [
+            2,
+            500
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "United States of America",
+            "Uganda"
+          ],
+          "delta_change_vs_original": 0.0063820553081350186,
+          "remaining_paired_delta": 0.0029097062857958264,
+          "removed_country_year_rows": 3,
+          "reverses_pooled_sign": true
+        },
+        {
+          "country_ids": [
+            510,
+            540
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Tanzania",
+            "Angola"
+          ],
+          "delta_change_vs_original": 0.00525904891815228,
+          "remaining_paired_delta": 0.0017866998958130872,
+          "removed_country_year_rows": 4,
+          "reverses_pooled_sign": true
+        },
+        {
+          "country_ids": [
+            540,
+            615
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Angola",
+            "Algeria"
+          ],
+          "delta_change_vs_original": 0.00525904891815228,
+          "remaining_paired_delta": 0.0017866998958130872,
+          "removed_country_year_rows": 4,
+          "reverses_pooled_sign": true
+        }
+      ],
+      "top_eight_two_country_reversals": [
+        {
+          "country_ids": [
+            510,
+            615
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Tanzania",
+            "Algeria"
+          ],
+          "delta_change_vs_original": 0.006755674792364106,
+          "remaining_paired_delta": 0.0032833257700249138,
+          "removed_country_year_rows": 2,
+          "reverses_pooled_sign": true
+        },
+        {
+          "country_ids": [
+            2,
+            510
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "United States of America",
+            "Tanzania"
+          ],
+          "delta_change_vs_original": 0.0066537672126866666,
+          "remaining_paired_delta": 0.003181418190347474,
+          "removed_country_year_rows": 2,
+          "reverses_pooled_sign": true
+        },
+        {
+          "country_ids": [
+            2,
+            615
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "United States of America",
+            "Algeria"
+          ],
+          "delta_change_vs_original": 0.0066537672126866666,
+          "remaining_paired_delta": 0.003181418190347474,
+          "removed_country_year_rows": 2,
+          "reverses_pooled_sign": true
+        },
+        {
+          "country_ids": [
+            500,
+            510
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Uganda",
+            "Tanzania"
+          ],
+          "delta_change_vs_original": 0.00648472339213841,
+          "remaining_paired_delta": 0.0030123743697992172,
+          "removed_country_year_rows": 3,
+          "reverses_pooled_sign": true
+        },
+        {
+          "country_ids": [
+            500,
+            615
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Uganda",
+            "Algeria"
+          ],
+          "delta_change_vs_original": 0.00648472339213841,
+          "remaining_paired_delta": 0.0030123743697992172,
+          "removed_country_year_rows": 3,
+          "reverses_pooled_sign": true
+        },
+        {
+          "country_ids": [
+            2,
+            500
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "United States of America",
+            "Uganda"
+          ],
+          "delta_change_vs_original": 0.0063820553081350186,
+          "remaining_paired_delta": 0.0029097062857958264,
+          "removed_country_year_rows": 3,
+          "reverses_pooled_sign": true
+        },
+        {
+          "country_ids": [
+            510,
+            540
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Tanzania",
+            "Angola"
+          ],
+          "delta_change_vs_original": 0.00525904891815228,
+          "remaining_paired_delta": 0.0017866998958130872,
+          "removed_country_year_rows": 4,
+          "reverses_pooled_sign": true
+        },
+        {
+          "country_ids": [
+            540,
+            615
+          ],
+          "country_names_from_2025_gwno_crosswalk": [
+            "Angola",
+            "Algeria"
+          ],
+          "delta_change_vs_original": 0.00525904891815228,
+          "remaining_paired_delta": 0.0017866998958130872,
+          "removed_country_year_rows": 4,
+          "reverses_pooled_sign": true
+        }
+      ]
+    }
+  },
+  "repeated_country_clusters": 37,
+  "schema": "idealab.psico.acd_historical_country_cluster_influence.v1",
+  "total_country_year_fold_scores": 137,
+  "unique_country_clusters": 42
+}

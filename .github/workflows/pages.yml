@@ -680,9 +680,27 @@ jobs:
         run: |
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/inspect_ucdp_archives.py --report /tmp/idealab-ucdp-archive.json
           test -s /tmp/idealab-ucdp-archive.json
+  acd_historical_country_cluster_influence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify no-refit country-cluster deletion contracts
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_diagnose_acd_retention_country_influence.py' -v
+      - name: Rebuild original four source-pinned ACD folds and calculate country influence
+        run: |
+          set -e
+          if test -f data/acd-historical-country-influence.json; then
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_acd_retention_country_influence.py --summary --check-report data/acd-historical-country-influence.json
+          else
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_acd_retention_country_influence.py --summary
+          fi
   deploy:
     if: github.event_name != 'pull_request'
-    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic, new_entry_baseline_diagnostic, onset2_homogeneous_holdout, onset2_lagged_signal_ablation, probe_ucdp_prio_vintages, onset2_conflict_incidence, onset2_country_riskset_codebook, country_multiple_onset_probe, country_multiple_newconf_experiment, prospective_newconf_2027_source_audit, prospective_newconf_2027_candidate, prospective_newconf_2027_immutable, prospective_newconf_2027_resolution_contract, newconf_persistence_ablation, geo2027_transition_diagnostic, geo2027_transition_alert_ranking, geo2027_exact_alert_null, prospective_geo2027_transition_alert_issue, geo2027_alert_dependence_scenarios, prospective_geo2027_alert_resolution_contract, geo2027_historical_count_dispersion, geo2027_temporal_calibration_ablation, prospective_geo2027_calibrated_shadow_issue, prospective_geo2027_calibrated_shadow_future_contract, geo2027_shadow_break_even_frontier, geo2027_ucdp_vintage_revision_audit, geo2027_postcalibration_count_residuals, ucdp_prio_old_vintages_source_probe, ucdp_prio_retention_four_vintage, acd_retention_vintage_yearblock_robustness, prospective_acd2027_retention_issuance, acd2027_named_32_country_view, acd2027_future_official_scoring_contract, prospective2027_public_registry]
+    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic, new_entry_baseline_diagnostic, onset2_homogeneous_holdout, onset2_lagged_signal_ablation, probe_ucdp_prio_vintages, onset2_conflict_incidence, onset2_country_riskset_codebook, country_multiple_onset_probe, country_multiple_newconf_experiment, prospective_newconf_2027_source_audit, prospective_newconf_2027_candidate, prospective_newconf_2027_immutable, prospective_newconf_2027_resolution_contract, newconf_persistence_ablation, geo2027_transition_diagnostic, geo2027_transition_alert_ranking, geo2027_exact_alert_null, prospective_geo2027_transition_alert_issue, geo2027_alert_dependence_scenarios, prospective_geo2027_alert_resolution_contract, geo2027_historical_count_dispersion, geo2027_temporal_calibration_ablation, prospective_geo2027_calibrated_shadow_issue, prospective_geo2027_calibrated_shadow_future_contract, geo2027_shadow_break_even_frontier, geo2027_ucdp_vintage_revision_audit, geo2027_postcalibration_count_residuals, ucdp_prio_old_vintages_source_probe, ucdp_prio_retention_four_vintage, acd_retention_vintage_yearblock_robustness, prospective_acd2027_retention_issuance, acd2027_named_32_country_view, acd2027_future_official_scoring_contract, prospective2027_public_registry, acd_historical_country_cluster_influence]
     runs-on: ubuntu-latest
     environment: github-pages
     steps:
