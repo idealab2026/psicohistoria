@@ -103,7 +103,7 @@ class DependenceVarianceTests(unittest.TestCase):
 
     def test_invalid_cohort_world_probabilities_cannot_enter(self):
         rows=[testrow(1,.6,.8),testrow(2,.7,.9)]
-        with self.assertRaisesRegex(ValueError,"incompatible"):
+        with self.assertRaisesRegex(ValueError,"Incompatible"):
             dependence.signed_comonotonic_distribution({1:.2},{1:.7,2:.4},0.)
         for invalid in (0,1,float("nan"),float("inf"),True):
             bad=copy.deepcopy(rows)
