@@ -1,0 +1,612 @@
+{
+  "2027_outcomes_used": 0,
+  "full_joint_country_copula_estimated": false,
+  "geo_pinned_existing_annual_count_reanalysis_by_origin_state": {
+    "0": {
+      "definition": "entry 0->1",
+      "distinct_from_NEWCONF2027_endpoint": true,
+      "revised_2012_2023": {
+        "forward_only_pseudo_bias_adjusted_diagnostics": {
+          "adjusted_mean_squared_residual_scored_years": 0.6799402362155121,
+          "annual_adjustment_trace": [
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -0.6863312456659327,
+              "n_earlier_years_used_for_count_bias": 4,
+              "posthoc_bias_adjusted_standardized_residual": 0.9906699115087625,
+              "target_year": 2016,
+              "uncorrected_standardized_residual": 0.30433866584282976
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -0.48819726336418023,
+              "n_earlier_years_used_for_count_bias": 5,
+              "posthoc_bias_adjusted_standardized_residual": -1.6169511978227877,
+              "target_year": 2017,
+              "uncorrected_standardized_residual": -2.105148461186968
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -0.7576891296679782,
+              "n_earlier_years_used_for_count_bias": 6,
+              "posthoc_bias_adjusted_standardized_residual": 0.17258860078920346,
+              "target_year": 2018,
+              "uncorrected_standardized_residual": -0.5851005288787747
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -0.7330336152695205,
+              "n_earlier_years_used_for_count_bias": 7,
+              "posthoc_bias_adjusted_standardized_residual": 0.14490252792988867,
+              "target_year": 2019,
+              "uncorrected_standardized_residual": -0.5881310873396318
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -0.7149207992782844,
+              "n_earlier_years_used_for_count_bias": 8,
+              "posthoc_bias_adjusted_standardized_residual": -0.6242985164341899,
+              "target_year": 2020,
+              "uncorrected_standardized_residual": -1.3392193157124743
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -0.7842873011043054,
+              "n_earlier_years_used_for_count_bias": 9,
+              "posthoc_bias_adjusted_standardized_residual": -0.8303858491789722,
+              "target_year": 2021,
+              "uncorrected_standardized_residual": -1.6146731502832776
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -0.8673258860222027,
+              "n_earlier_years_used_for_count_bias": 10,
+              "posthoc_bias_adjusted_standardized_residual": 0.8299529940912455,
+              "target_year": 2022,
+              "uncorrected_standardized_residual": -0.03737289193095731
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -0.7918756138320895,
+              "n_earlier_years_used_for_count_bias": 11,
+              "posthoc_bias_adjusted_standardized_residual": -0.1570636932976115,
+              "target_year": 2023,
+              "uncorrected_standardized_residual": -0.948939307129701
+            }
+          ],
+          "first_scored_target_year": 2016,
+          "independently_issued_historical_forecasts": false,
+          "is_not_a_new_model_or_unbiased_out_of_sample_score": true,
+          "n_scored_years": 8,
+          "raw_mean_squared_residual_scored_years": 1.3143841464305706,
+          "revised_historical_labels_available_asof_origins": false
+        },
+        "fraction_of_raw_squared_residual_due_to_mean_bias": 0.47768493607755297,
+        "mean_centered_squared_year_residual": 0.7085070836645365,
+        "mean_signed_standardized_count_residual": -0.8049642549402237,
+        "mean_squared_directional_bias_component": 0.6479674517314695,
+        "mean_squared_standardized_count_residual": 1.3564745353960062,
+        "n_target_years": 12,
+        "negative_count_residual_years": 10,
+        "positive_count_residual_years": 2,
+        "raw_independence_pearson_ratio_years": 1.3564745353960062,
+        "target_years": [
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023
+        ]
+      },
+      "source_separated_2024_2025": {
+        "annual": [
+          {
+            "earlier_revised_block_mean_bias_applied_only_as_sensitivity": -0.8049642549402237,
+            "posthoc_bias_centered_residual": -0.29507680081645427,
+            "standardized_count_residual": -1.100041055756678,
+            "target_year": 2024
+          },
+          {
+            "earlier_revised_block_mean_bias_applied_only_as_sensitivity": -0.8049642549402237,
+            "posthoc_bias_centered_residual": -0.30892712618611917,
+            "standardized_count_residual": -1.113891381126343,
+            "target_year": 2025
+          }
+        ],
+        "bias_centered_mean_squared_standardized_residual": 0.09125314383684391,
+        "cannot_estimate_covariance_from_one_or_two_target_years": true,
+        "n_separate_release_target_years": 2,
+        "raw_mean_squared_standardized_residual": 1.2254221666489094
+      }
+    },
+    "1": {
+      "definition": "resolution 1->0",
+      "distinct_from_NEWCONF2027_endpoint": true,
+      "revised_2012_2023": {
+        "forward_only_pseudo_bias_adjusted_diagnostics": {
+          "adjusted_mean_squared_residual_scored_years": 0.5636871228056111,
+          "annual_adjustment_trace": [
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -1.5448979347303398,
+              "n_earlier_years_used_for_count_bias": 4,
+              "posthoc_bias_adjusted_standardized_residual": -0.18752857623127706,
+              "target_year": 2016,
+              "uncorrected_standardized_residual": -1.7324265109616168
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -1.5824036499765952,
+              "n_earlier_years_used_for_count_bias": 5,
+              "posthoc_bias_adjusted_standardized_residual": -0.7757909707633452,
+              "target_year": 2017,
+              "uncorrected_standardized_residual": -2.3581946207399405
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -1.7117021451038195,
+              "n_earlier_years_used_for_count_bias": 6,
+              "posthoc_bias_adjusted_standardized_residual": 1.4773099098593072,
+              "target_year": 2018,
+              "uncorrected_standardized_residual": -0.23439223524451225
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -1.5006578722667754,
+              "n_earlier_years_used_for_count_bias": 7,
+              "posthoc_bias_adjusted_standardized_residual": 0.5218039338383343,
+              "target_year": 2019,
+              "uncorrected_standardized_residual": -0.978853938428441
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -1.4354323805369837,
+              "n_earlier_years_used_for_count_bias": 8,
+              "posthoc_bias_adjusted_standardized_residual": -1.1050324064590753,
+              "target_year": 2020,
+              "uncorrected_standardized_residual": -2.540464786996059
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -1.5582137590324365,
+              "n_earlier_years_used_for_count_bias": 9,
+              "posthoc_bias_adjusted_standardized_residual": -0.12186315213004972,
+              "target_year": 2021,
+              "uncorrected_standardized_residual": -1.6800769111624863
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -1.5704000742454416,
+              "n_earlier_years_used_for_count_bias": 10,
+              "posthoc_bias_adjusted_standardized_residual": 0.26447315990306053,
+              "target_year": 2022,
+              "uncorrected_standardized_residual": -1.305926914342381
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -1.5463570597087999,
+              "n_earlier_years_used_for_count_bias": 11,
+              "posthoc_bias_adjusted_standardized_residual": -0.33445653021735566,
+              "target_year": 2023,
+              "uncorrected_standardized_residual": -1.8808135899261555
+            }
+          ],
+          "first_scored_target_year": 2016,
+          "independently_issued_historical_forecasts": false,
+          "is_not_a_new_model_or_unbiased_out_of_sample_score": true,
+          "n_scored_years": 8,
+          "raw_mean_squared_residual_scored_years": 3.01187535811652,
+          "revised_historical_labels_available_asof_origins": false
+        },
+        "fraction_of_raw_squared_residual_due_to_mean_bias": 0.8191031784655396,
+        "mean_centered_squared_year_residual": 0.5473030036343841,
+        "mean_signed_standardized_count_residual": -1.5742284372269129,
+        "mean_squared_directional_bias_component": 2.4781951725738884,
+        "mean_squared_standardized_count_residual": 3.0254981762082718,
+        "n_target_years": 12,
+        "negative_count_residual_years": 12,
+        "positive_count_residual_years": 0,
+        "raw_independence_pearson_ratio_years": 3.0254981762082718,
+        "target_years": [
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023
+        ]
+      },
+      "source_separated_2024_2025": {
+        "annual": [
+          {
+            "earlier_revised_block_mean_bias_applied_only_as_sensitivity": -1.5742284372269129,
+            "posthoc_bias_centered_residual": 0.4675105744892638,
+            "standardized_count_residual": -1.106717862737649,
+            "target_year": 2024
+          },
+          {
+            "earlier_revised_block_mean_bias_applied_only_as_sensitivity": -1.5742284372269129,
+            "posthoc_bias_centered_residual": 0.014291631993957887,
+            "standardized_count_residual": -1.559936805232955,
+            "target_year": 2025
+          }
+        ],
+        "bias_centered_mean_squared_standardized_residual": 0.1093851940021661,
+        "cannot_estimate_covariance_from_one_or_two_target_years": true,
+        "n_separate_release_target_years": 2,
+        "raw_mean_squared_standardized_residual": 1.8291136320114938
+      }
+    }
+  },
+  "historical_geo_definition": "GEO state-based violence >=25 annual deaths; 2-year transition 0->1 and 1->0 stratified",
+  "historical_geo_source_hashes": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "historical_newconf_definition": "ANY(newconf=1) country-year per UCDP Intrastate Country Level Multiple Onset; repeated episode rows collapsed, not onset2",
+  "historical_newconf_source_hashes": {
+    "23.1": "a31abf6c278bd3a14d6c5b64e075cb38cebe63c95e0535454426c09be21d60e3",
+    "25.1": "5fe7411942aa7e6a38d6386faa64f4d7f0703482509f121c4136c0e3223d7f05",
+    "activity_23.1": "8fe95d8a5780cba1d312f9673ffd9e93b90c91bb26e348393a583853a892b718"
+  },
+  "limitations": "Seven NEWCONF 2016-22 years use a single retrospectively revised 23.1 release, not independently issued origins; 2024 is only ONE target from independent 25.1 release, origin 23.1 (horizon=2). Do not include 2023 horizon-1 as another independent horizon-2 target. GEO has 12 revised 2012-23 and two separate-release 2024-25 years but source vintage revisions and shared countries. Observed-vs-expected Pearson count residuals mix marginal forecast calibration, year effects, regime shifts, dependence, country selection and revisions. The squared mean signed standardized residual is an ALGEBRAIC bias component, not a causal identification of correlation. Historical pseudo-forward count corrections are retrospective diagnostics, never emitted forecasts, verified operational calibration or permission to modify 2027 first-issued forecasts. Models and endpoints differ and their metrics must not be pooled. There are too few source-separated year replicates to estimate structural or temporal correlations; no p-values or predictive intervals.",
+  "mean_count_bias_is_not_country_dependence": true,
+  "n_2027_country_endpoint_questions_preserved": 424,
+  "n_independent_historical_2027_validation_years": 0,
+  "newconf_origin_only_model_comparison_revised_and_separated": {
+    "activity_country": {
+      "annual_horizon_2_revised_years": [
+        {
+          "expected_count_from_origin_only_model": 1.5898180668988375,
+          "independence_count_variance_for_model": 1.54444346981858,
+          "n_eligible_countries": 196,
+          "observed_minus_expected": 4.410181933101162,
+          "observed_newconf_country_years": 6,
+          "origin_year": 2014,
+          "source_issues_outcomes_observed_2027": 0,
+          "squared_standardized_count_residual": 12.593341914506322,
+          "standardized_count_residual": 3.5487098943850457,
+          "target_year": 2016
+        },
+        {
+          "expected_count_from_origin_only_model": 2.601288117390457,
+          "independence_count_variance_for_model": 2.481569562653746,
+          "n_eligible_countries": 196,
+          "observed_minus_expected": 0.3987118826095428,
+          "observed_newconf_country_years": 3,
+          "origin_year": 2015,
+          "source_issues_outcomes_observed_2027": 0,
+          "squared_standardized_count_residual": 0.06406073306445818,
+          "standardized_count_residual": 0.25310221860832866,
+          "target_year": 2017
+        },
+        {
+          "expected_count_from_origin_only_model": 2.9345917658999383,
+          "independence_count_variance_for_model": 2.7903858882581143,
+          "n_eligible_countries": 196,
+          "observed_minus_expected": -1.9345917658999383,
+          "observed_newconf_country_years": 1,
+          "origin_year": 2016,
+          "source_issues_outcomes_observed_2027": 0,
+          "squared_standardized_count_residual": 1.3412644166661016,
+          "standardized_count_residual": -1.1581297063222675,
+          "target_year": 2018
+        },
+        {
+          "expected_count_from_origin_only_model": 2.8410781050827207,
+          "independence_count_variance_for_model": 2.6933129391211605,
+          "n_eligible_countries": 196,
+          "observed_minus_expected": 2.1589218949172793,
+          "observed_newconf_country_years": 5,
+          "origin_year": 2017,
+          "source_issues_outcomes_observed_2027": 0,
+          "squared_standardized_count_residual": 1.730561525417875,
+          "standardized_count_residual": 1.3155080864129551,
+          "target_year": 2019
+        },
+        {
+          "expected_count_from_origin_only_model": 2.723661810502137,
+          "independence_count_variance_for_model": 2.5907997777553504,
+          "n_eligible_countries": 196,
+          "observed_minus_expected": -1.7236618105021368,
+          "observed_newconf_country_years": 1,
+          "origin_year": 2018,
+          "source_issues_outcomes_observed_2027": 0,
+          "squared_standardized_count_residual": 1.146754011055831,
+          "standardized_count_residual": -1.0708660098517606,
+          "target_year": 2020
+        },
+        {
+          "expected_count_from_origin_only_model": 2.8863028489123344,
+          "independence_count_variance_for_model": 2.746069912889052,
+          "n_eligible_countries": 196,
+          "observed_minus_expected": -2.8863028489123344,
+          "observed_newconf_country_years": 0,
+          "origin_year": 2019,
+          "source_issues_outcomes_observed_2027": 0,
+          "squared_standardized_count_residual": 3.0336970288112406,
+          "standardized_count_residual": -1.741751138599094,
+          "target_year": 2021
+        },
+        {
+          "expected_count_from_origin_only_model": 2.800309841165497,
+          "independence_count_variance_for_model": 2.6695547640990887,
+          "n_eligible_countries": 196,
+          "observed_minus_expected": -0.8003098411654972,
+          "observed_newconf_country_years": 2,
+          "origin_year": 2020,
+          "source_issues_outcomes_observed_2027": 0,
+          "squared_standardized_count_residual": 0.2399260919760511,
+          "standardized_count_residual": -0.48982251068734184,
+          "target_year": 2022
+        }
+      ],
+      "annual_horizon_2_separate_source_years": [
+        {
+          "expected_count_from_origin_only_model": 2.5719270935393737,
+          "independence_count_variance_for_model": 2.467991100866079,
+          "n_eligible_countries": 196,
+          "observed_minus_expected": -1.5719270935393737,
+          "observed_newconf_country_years": 1,
+          "origin_year": 2022,
+          "source_issues_outcomes_observed_2027": 0,
+          "squared_standardized_count_residual": 1.0012008497664453,
+          "standardized_count_residual": -1.000600244736351,
+          "target_year": 2024
+        }
+      ],
+      "separate_source_2024": {
+        "annual": [
+          {
+            "earlier_revised_block_mean_bias_applied_only_as_sensitivity": 0.0938215477065522,
+            "posthoc_bias_centered_residual": -1.0944217924429032,
+            "standardized_count_residual": -1.000600244736351,
+            "target_year": 2024
+          }
+        ],
+        "bias_centered_mean_squared_standardized_residual": 1.197759059773937,
+        "cannot_estimate_covariance_from_one_or_two_target_years": true,
+        "n_separate_release_target_years": 1,
+        "raw_mean_squared_standardized_residual": 1.0012008497664453
+      },
+      "source_revised_2016_2022": {
+        "forward_only_pseudo_bias_adjusted_diagnostics": {
+          "adjusted_mean_squared_residual_scored_years": 2.569568605921374,
+          "annual_adjustment_trace": [
+            {
+              "count_bias_estimate_from_earlier_target_years_only": 0.8812274688903688,
+              "n_earlier_years_used_for_count_bias": 3,
+              "posthoc_bias_adjusted_standardized_residual": 0.4342806175225863,
+              "target_year": 2019,
+              "uncorrected_standardized_residual": 1.3155080864129551
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": 0.9897976232710155,
+              "n_earlier_years_used_for_count_bias": 4,
+              "posthoc_bias_adjusted_standardized_residual": -2.0606636331227763,
+              "target_year": 2020,
+              "uncorrected_standardized_residual": -1.0708660098517606
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": 0.5776648966464603,
+              "n_earlier_years_used_for_count_bias": 5,
+              "posthoc_bias_adjusted_standardized_residual": -2.3194160352455544,
+              "target_year": 2021,
+              "uncorrected_standardized_residual": -1.741751138599094
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": 0.19109555743886789,
+              "n_earlier_years_used_for_count_bias": 6,
+              "posthoc_bias_adjusted_standardized_residual": -0.6809180681262097,
+              "target_year": 2022,
+              "uncorrected_standardized_residual": -0.48982251068734184
+            }
+          ],
+          "first_scored_target_year": 2019,
+          "independently_issued_historical_forecasts": false,
+          "is_not_a_new_model_or_unbiased_out_of_sample_score": true,
+          "n_scored_years": 4,
+          "raw_mean_squared_residual_scored_years": 1.5377346643152494,
+          "revised_historical_labels_available_asof_origins": false
+        },
+        "fraction_of_raw_squared_residual_due_to_mean_bias": 0.0030579943126445176,
+        "mean_centered_squared_year_residual": 2.8697126202570726,
+        "mean_signed_standardized_count_residual": 0.0938215477065522,
+        "mean_squared_directional_bias_component": 0.00880248281405285,
+        "mean_squared_standardized_count_residual": 2.8785151030711256,
+        "n_target_years": 7,
+        "negative_count_residual_years": 4,
+        "positive_count_residual_years": 3,
+        "raw_independence_pearson_ratio_years": 2.8785151030711256,
+        "target_years": [
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ]
+      }
+    },
+    "global_last5": {
+      "annual_horizon_2_revised_years": [
+        {
+          "expected_count_from_origin_only_model": 2.1977573904179413,
+          "independence_count_variance_for_model": 2.173113831503968,
+          "n_eligible_countries": 196,
+          "observed_minus_expected": 3.8022426095820587,
+          "observed_newconf_country_years": 6,
+          "origin_year": 2014,
+          "source_issues_outcomes_observed_2027": 0,
+          "squared_standardized_count_residual": 6.652688254308313,
+          "standardized_count_residual": 2.5792805691332443,
+          "target_year": 2016
+        },
+        {
+          "expected_count_from_origin_only_model": 4.9898167006110095,
+          "independence_count_variance_for_model": 4.862784707214585,
+          "n_eligible_countries": 196,
+          "observed_minus_expected": -1.9898167006110095,
+          "observed_newconf_country_years": 3,
+          "origin_year": 2015,
+          "source_issues_outcomes_observed_2027": 0,
+          "squared_standardized_count_residual": 0.8142187533320636,
+          "standardized_count_residual": -0.9023407080100418,
+          "target_year": 2017
+        },
+        {
+          "expected_count_from_origin_only_model": 5.588594704684292,
+          "independence_count_variance_for_model": 5.4292457721678815,
+          "n_eligible_countries": 196,
+          "observed_minus_expected": -4.588594704684292,
+          "observed_newconf_country_years": 1,
+          "origin_year": 2016,
+          "source_issues_outcomes_observed_2027": 0,
+          "squared_standardized_count_residual": 3.8781079817371102,
+          "standardized_count_residual": -1.9692912384249086,
+          "target_year": 2018
+        },
+        {
+          "expected_count_from_origin_only_model": 5.7881873727087525,
+          "independence_count_variance_for_model": 5.617253122394537,
+          "n_eligible_countries": 196,
+          "observed_minus_expected": -0.7881873727087525,
+          "observed_newconf_country_years": 5,
+          "origin_year": 2017,
+          "source_issues_outcomes_observed_2027": 0,
+          "squared_standardized_count_residual": 0.11059486210810143,
+          "standardized_count_residual": -0.33255805825164036,
+          "target_year": 2019
+        },
+        {
+          "expected_count_from_origin_only_model": 5.588594704684292,
+          "independence_count_variance_for_model": 5.4292457721678815,
+          "n_eligible_countries": 196,
+          "observed_minus_expected": -4.588594704684292,
+          "observed_newconf_country_years": 1,
+          "origin_year": 2018,
+          "source_issues_outcomes_observed_2027": 0,
+          "squared_standardized_count_residual": 3.8781079817371102,
+          "standardized_count_residual": -1.9692912384249086,
+          "target_year": 2020
+        },
+        {
+          "expected_count_from_origin_only_model": 6.187372708757651,
+          "independence_count_variance_for_model": 5.992048315711329,
+          "n_eligible_countries": 196,
+          "observed_minus_expected": -6.187372708757651,
+          "observed_newconf_country_years": 0,
+          "origin_year": 2019,
+          "source_issues_outcomes_observed_2027": 0,
+          "squared_standardized_count_residual": 6.389064143007376,
+          "standardized_count_residual": -2.527659815522527,
+          "target_year": 2021
+        },
+        {
+          "expected_count_from_origin_only_model": 3.3930753564154785,
+          "independence_count_variance_for_model": 3.334335762668987,
+          "n_eligible_countries": 196,
+          "observed_minus_expected": -1.3930753564154785,
+          "observed_newconf_country_years": 2,
+          "origin_year": 2020,
+          "source_issues_outcomes_observed_2027": 0,
+          "squared_standardized_count_residual": 0.5820226536210323,
+          "standardized_count_residual": -0.7629040920201126,
+          "target_year": 2022
+        }
+      ],
+      "annual_horizon_2_separate_source_years": [
+        {
+          "expected_count_from_origin_only_model": 1.9959266802444064,
+          "independence_count_variance_for_model": 1.975601561300977,
+          "n_eligible_countries": 196,
+          "observed_minus_expected": -0.9959266802444064,
+          "observed_newconf_country_years": 1,
+          "origin_year": 2022,
+          "source_issues_outcomes_observed_2027": 0,
+          "squared_standardized_count_residual": 0.5020597127740051,
+          "standardized_count_residual": -0.7085617212170052,
+          "target_year": 2024
+        }
+      ],
+      "separate_source_2024": {
+        "annual": [
+          {
+            "earlier_revised_block_mean_bias_applied_only_as_sensitivity": -0.840680654502985,
+            "posthoc_bias_centered_residual": 0.1321189332859798,
+            "standardized_count_residual": -0.7085617212170052,
+            "target_year": 2024
+          }
+        ],
+        "bias_centered_mean_squared_standardized_residual": 0.017455412532625177,
+        "cannot_estimate_covariance_from_one_or_two_target_years": true,
+        "n_separate_release_target_years": 1,
+        "raw_mean_squared_standardized_residual": 0.5020597127740051
+      },
+      "source_revised_2016_2022": {
+        "forward_only_pseudo_bias_adjusted_diagnostics": {
+          "adjusted_mean_squared_residual_scored_years": 1.846516587213541,
+          "annual_adjustment_trace": [
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -0.09745045910056871,
+              "n_earlier_years_used_for_count_bias": 3,
+              "posthoc_bias_adjusted_standardized_residual": -0.23510759915107166,
+              "target_year": 2019,
+              "uncorrected_standardized_residual": -0.33255805825164036
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -0.1562273588883366,
+              "n_earlier_years_used_for_count_bias": 4,
+              "posthoc_bias_adjusted_standardized_residual": -1.813063879536572,
+              "target_year": 2020,
+              "uncorrected_standardized_residual": -1.9692912384249086
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -0.518840134795651,
+              "n_earlier_years_used_for_count_bias": 5,
+              "posthoc_bias_adjusted_standardized_residual": -2.008819680726876,
+              "target_year": 2021,
+              "uncorrected_standardized_residual": -2.527659815522527
+            },
+            {
+              "count_bias_estimate_from_earlier_target_years_only": -0.853643414916797,
+              "n_earlier_years_used_for_count_bias": 6,
+              "posthoc_bias_adjusted_standardized_residual": 0.0907393228966844,
+              "target_year": 2022,
+              "uncorrected_standardized_residual": -0.7629040920201126
+            }
+          ],
+          "first_scored_target_year": 2019,
+          "independently_issued_historical_forecasts": false,
+          "is_not_a_new_model_or_unbiased_out_of_sample_score": true,
+          "n_scored_years": 4,
+          "raw_mean_squared_residual_scored_years": 2.739947410118405,
+          "revised_historical_labels_available_asof_origins": false
+        },
+        "fraction_of_raw_squared_residual_due_to_mean_bias": 0.22180009294356218,
+        "mean_centered_squared_year_residual": 2.4796566985517337,
+        "mean_signed_standardized_count_residual": -0.840680654502985,
+        "mean_squared_directional_bias_component": 0.7067439628555673,
+        "mean_squared_standardized_count_residual": 3.186400661407301,
+        "n_target_years": 7,
+        "negative_count_residual_years": 6,
+        "positive_count_residual_years": 1,
+        "raw_independence_pearson_ratio_years": 3.186400661407301,
+        "target_years": [
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ]
+      }
+    }
+  },
+  "sampled_target_years_are_independent_or_confirmatory": false,
+  "schema": "idealab.psico.geo_newconf2027_empirical_historical_count_bias_v1",
+  "status": "EX_POST_HISTORICAL_YEAR_COUNT_MISFIT_NOT_IDENTIFIED_COUNTRY_DEPENDENCE",
+  "structural_country_correlation_estimated": false,
+  "temporal_correlation_estimated": false
+}
