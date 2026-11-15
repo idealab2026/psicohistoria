@@ -153,7 +153,10 @@ class RolloverAttributionExAnteTests(unittest.TestCase):
     def test_source_and_candidate_tampering_are_rejected(self):
         bad=copy.deepcopy(self.new)
         bad["countries"][0]["p_model"]+=.01
-        with self.assertRaisesRegex(ValueError,"not source reproducible"):
+        # The underlying candidate may reject a tampered row earlier because
+        # its frozen sum no longer matches; that is correct fail-closed order.
+        with self.assertRaisesRegex(
+            ValueError,"Candidate expected count disagrees|not source reproducible"):
             attribution.decompose_for_source(
                 self.records,self.names,self.original,bad)
         bad=copy.deepcopy(self.new)
