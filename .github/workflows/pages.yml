@@ -804,7 +804,7 @@ jobs:
           if test -f data/forecast-2028-geo3.json; then
             PYTHONDONTWRITEBYTECODE=1 python3 scripts/prepare_geo2028_three_year.py --check-issued --summary
           else
-            PYTHONDONTWRITEBYTECODE=1 python3 scripts/prepare_geo2028_three_year.py --summary
+            PYTHONDONTWRITEBYTECODE=1 python3 scripts/prepare_geo2028_three_year.py --summary --print-canonical
           fi
   deploy:
     if: github.event_name != 'pull_request'
