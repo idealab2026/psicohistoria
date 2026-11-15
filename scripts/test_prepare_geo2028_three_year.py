@@ -53,6 +53,21 @@ class GEO2028ThreeYearTests(unittest.TestCase):
             self.assertTrue(0<x["p_model"]<1)
         self.assertGreater(len(set(x["p_model"] for x in rows)),2)
 
+    def test_retired_historical_countries_can_exist_outside_196_riskset(self):
+        records,names,_=old_issued_from_toy()
+        records[997]={year:int(year%2==0) for year in range(1989,1999)}
+        names[997]="Retired historical government territory"
+        original_rows,_=original.estimate_from_history(records,names)
+        prior={
+            "forecast_id":original.PROTOCOL_ID,
+            "target":{"year":2027},
+            "source":{"sha256":prep.SOURCE_SHA,"data_last_year":2025},
+            "countries":original_rows,
+        }
+        rows,_=prep.build_from_records(records,names,prior)
+        self.assertEqual(len(rows),196)
+        self.assertNotIn(997,{row["country_id"] for row in rows})
+
     def test_rejects_retroactively_rewritten_original_geo2027(self):
         records,names,issued=old_issued_from_toy()
         tampered=copy.deepcopy(issued)
