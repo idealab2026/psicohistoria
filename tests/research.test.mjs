@@ -970,7 +970,10 @@ test("NEWCONF-2027 future resolution contract is shipped but no 2027 results are
  const protocol=readFileSync(new URL("../docs/newconf-2027-evaluation-contract.md",import.meta.url),"utf8");
  const ui=readFileSync(new URL("../src/site.mjs",import.meta.url),"utf8");
  assert.match(file,/MIN_RESOLVED=187/);
- assert.match(file,/REPLICATIONS=2000/);
+ assert.doesNotMatch(file,/REPLICATIONS=2000/);
+ assert.doesNotMatch(file,/def bootstrap_delta/);
+ assert.match(file,/iid_country_bootstrap_disabled/);
+ assert.match(file,/sharp_full_cohort_brier_delta_bounds_not_confidence_interval/);
  assert.match(file,/def parse_official_2027_csv/);
  assert.match(file,/def topk_tie_bounds/);
  assert.match(file,/first_complete_official_2027_release_independently_attested/);
