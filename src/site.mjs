@@ -5,6 +5,7 @@ import {loadProjectCatalog} from "./project-catalog.mjs";
 import {renderHistoricalProjectPortfolio} from "./project-portfolio.mjs";
 import {validateProspectiveRegistry,renderProspectiveRegistry,ORIGINAL_SHA,ORIGINAL_COMMITS} from "./prospective-registry.mjs";
 import {validateIssuedGEO2028,renderGEO2028,GEO2028_FORECAST_SHA} from "./prospective-2028.mjs";
+import {verifyFutureEvaluationContracts,renderFutureEvaluationContracts} from "./future-evaluation-register.mjs";
 import {scientificNeuralPanel,enableScientificNeural,scientificMarkovPanel,syntheticFourStateModel} from "./lab-renderers.mjs";
 import {renderHistoricalTree,acceptPublicCountryCatalogs,setCountrySourceError,getHistoricalCatalog} from "./main-country-tree.mjs";
 
@@ -14,13 +15,13 @@ const format=n=>typeof n==="number"&&Number.isFinite(n)?new Intl.NumberFormat("e
 const formatPct=n=>typeof n==="number"&&Number.isFinite(n)?format(n*100)+" %":"—";
 const groupViews={
  brief:[["brief","Inicio"]],
- predictions:[["registry2027","Registro real 2027"],["registry2028","GEO-2028 emitida"],["futures","Explorador"],["shadow2027","GEO-2027"]],
+ predictions:[["evaluationRegister","Evaluaciones futuras"],["registry2027","Registro real 2027"],["registry2028","GEO-2028 emitida"],["futures","Explorador"],["shadow2027","GEO-2027"]],
  research:[["questions","Preguntas útiles"],["archive","Archivo científico"],["overview","Mapa del proyecto"],["registry","Líneas y fuentes"],["science","Evidencia"],["operations","Registro"],["roadmap","Hitos"]],
  create:[["portfolio","Catálogo recuperado"],["ideas","Nuevas ideas"],["video","Estudio audiovisual"]]
 };
 const viewIds=new Set(Object.values(groupViews).flat().map(x=>x[0]));
 const viewToGroup=Object.fromEntries(Object.entries(groupViews).flatMap(([k,items])=>items.map(([id])=>[id,k])));
-const state={archive:null,projectCatalog:null,archiveTable:0,archiveQuery:"",archivePage:0,data:null,research:null,registryFilter:"todos",registryOutput:null,questionPriority:"P1",view:viewIds.has(new URLSearchParams(location.search).get("view"))?new URLSearchParams(location.search).get("view"):"brief",scenario:null,program:null,study:null,filter:"todos",ideas:[],flowState:"00",markovOrigin:2020,markovHorizon:6,markovQuestion:"atleast25",markovSelection:null,countryTreeOrigin:2020,countryTreeId:null,countryTreeModel:"country_shrinkage",countryTreeQuestion:"atleast25",countryTreeYear:null,countryTreeSelection:null,videoText:"",forecastCountryId:null,prospective2027:null,prospective2027Manifest:null,prospectiveRegistry:null,prospectiveCohort:"TODAS",prospectiveQuery:"",prospectivePage:0,prospective2028:null,prospective2028Manifest:null,prospective2028Query:"",prospective2028Order:"risk",prospective2028Page:0,busy:false};
+const state={archive:null,projectCatalog:null,archiveTable:0,archiveQuery:"",archivePage:0,data:null,research:null,registryFilter:"todos",registryOutput:null,questionPriority:"P1",view:viewIds.has(new URLSearchParams(location.search).get("view"))?new URLSearchParams(location.search).get("view"):"brief",scenario:null,program:null,study:null,filter:"todos",ideas:[],flowState:"00",markovOrigin:2020,markovHorizon:6,markovQuestion:"atleast25",markovSelection:null,countryTreeOrigin:2020,countryTreeId:null,countryTreeModel:"country_shrinkage",countryTreeQuestion:"atleast25",countryTreeYear:null,countryTreeSelection:null,videoText:"",forecastCountryId:null,prospective2027:null,prospective2027Manifest:null,prospectiveRegistry:null,prospectiveCohort:"TODAS",prospectiveQuery:"",prospectivePage:0,prospective2028:null,prospective2028Manifest:null,prospective2028Query:"",prospective2028Order:"risk",prospective2028Page:0,futureEvaluationReport:null,busy:false};
 const section=(eyebrow,title,description)=>'<header class="section-head"><div class="eyebrow">'+safe(eyebrow)+'</div><h2>'+safe(title)+'</h2><p>'+safe(description)+'</p></header>';
 const box=(contents,extra="")=>'<article class="panel '+extra+'">'+contents+'</article>';
 const tag=(t,cls="")=>'<span class="tag '+cls+'">'+safe(t)+'</span>';
@@ -828,7 +829,7 @@ function render(){
   const b=document.createElement("button");b.type="button";b.textContent=label;b.dataset.action="navigate";b.dataset.value=id;
   b.classList.toggle("active",state.view===id);sub.append(b);
  }
- const views={archive:renderArchive,brief:()=>button("Ver estructura del archivo científico","navigate","archive")+renderBrief(),registry2027:()=>renderProspectiveRegistry(state.prospectiveRegistry,{cohort:state.prospectiveCohort,query:state.prospectiveQuery,page:state.prospectivePage}),registry2028:()=>renderGEO2028(state.prospective2028,state.prospective2028Manifest,state.prospectiveRegistry,{query:state.prospective2028Query,order:state.prospective2028Order,page:state.prospective2028Page}),futures:renderFutures,shadow2027:()=>renderProspectiveNewconf2027()+renderShadow(),overview:renderOverview,
+ const views={archive:renderArchive,brief:()=>button("Ver estructura del archivo científico","navigate","archive")+renderBrief(),evaluationRegister:()=>renderFutureEvaluationContracts(state.futureEvaluationReport,state.prospectiveRegistry,state.prospective2028,state.prospective2028Manifest),registry2027:()=>renderProspectiveRegistry(state.prospectiveRegistry,{cohort:state.prospectiveCohort,query:state.prospectiveQuery,page:state.prospectivePage}),registry2028:()=>renderGEO2028(state.prospective2028,state.prospective2028Manifest,state.prospectiveRegistry,{query:state.prospective2028Query,order:state.prospective2028Order,page:state.prospective2028Page}),futures:renderFutures,shadow2027:()=>renderProspectiveNewconf2027()+renderShadow(),overview:renderOverview,
   science:renderScience,questions:renderUsefulQuestions,registry:renderResearchRegistry,operations:renderOperations,roadmap:renderRoadmap,
   portfolio:()=>renderHistoricalProjectPortfolio(state.projectCatalog),ideas:renderIdeas,video:renderVideo};
  $("app").innerHTML=views[state.view]();
@@ -895,6 +896,8 @@ async function load(){
      throw Error("GEO2027 registry differs from its original issue");
    state.prospectiveRegistry=registry;
    state.research=research;state.prospective2027=prospective;state.prospective2027Manifest=manifest;
+   // Four-cohort evaluation register is separately source-frozen, never a scored report.
+   state.futureEvaluationReport=null;
    // Separate endpoint/year; a 2028 source failure NEVER degrades the verified 2027 registry.
    // Fail closed rather than displaying stale probabilities on a failed refresh.
    state.prospective2028=null;state.prospective2028Manifest=null;
@@ -914,6 +917,19 @@ async function load(){
      state.prospective2028=issuedDocument;state.prospective2028Manifest=issuedManifest;
    }catch{
      state.prospective2028=null;state.prospective2028Manifest=null;
+   }
+   if(state.prospective2028){
+     try{
+       const er=await fetch("./data/future-evaluation-contracts.json",{cache:"no-store"});
+       if(!er.ok)throw Error("Future evaluation contracts unavailable");
+       const raw=await er.text();
+       if(raw.length>30000)throw Error("Evaluation contracts oversize");
+       state.futureEvaluationReport=verifyFutureEvaluationContracts(
+         JSON.parse(raw),registry,state.prospective2028,state.prospective2028Manifest
+       );
+     }catch{
+       state.futureEvaluationReport=null;
+     }
    }
   // Detailed scientific records are intentionally not read by the public client.
   state.projectCatalog=(await catalogRead).data;
