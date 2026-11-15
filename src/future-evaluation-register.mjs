@@ -178,7 +178,12 @@ export function renderFutureEvaluationContracts(
   'y no constituirán dos ensayos independientes. La cohorte 2026 puede '+
   'tener países distintos y revisiones históricas.</p>'+
   '<p><a href="'+base+'blob/main/docs/geo2028-origin2026-preregistration.md" '+
-  'target="_blank" rel="noopener noreferrer">Ver protocolo previo a los datos de 2026</a></p></section>'+
+  'target="_blank" rel="noopener noreferrer">Ver protocolo previo a los datos de 2026</a></p>'+
+  '<p class="tiny">Método predefinido: separar cambios por revisión de la fuente UCDP, '+
+  'sorpresa del estado observado 2026 y reajuste del kernel. Son '+
+  '<strong>componentes algebraicas, no efectos causales</strong>.</p>'+
+  '<p><a href="'+base+'blob/main/docs/geo2028-2026-origin-update-attribution.md" '+
+  'target="_blank" rel="noopener noreferrer">Cómo explicar el futuro cambio del pronóstico</a></p></section>'+
   '<section class="panel"><h3>Condiciones para poder puntuar cada emisión</h3>'+
   '<div class="prospective-table-wrap"><table class="prospective-table future-eval-table">'+
   '<thead><tr><th>Emisión</th><th>Modelo y referencia</th><th>Cobertura</th>'+
