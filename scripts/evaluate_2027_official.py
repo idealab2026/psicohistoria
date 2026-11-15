@@ -58,7 +58,7 @@ def load_frozen_issue(document_path,manifest_path):
 def validate_future_source(url,source_sha,release_date):
     parts=urlsplit(url)
     m=re.fullmatch(
-        r"/downloads/organizedviolencecy/organizedviolencecy-(\\d{3})-csv\\.zip",
+        r"/downloads/organizedviolencecy/organizedviolencecy-(\d{3})-csv\.zip",
         parts.path)
     if (parts.scheme!="https" or parts.netloc!="ucdp.uu.se" or
         parts.username is not None or parts.password is not None or
