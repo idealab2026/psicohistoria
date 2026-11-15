@@ -46,6 +46,12 @@ test("readable unified status exposes 187 provisional distinct from certified 19
  assert.match(h,/no son 620 ensayos independientes/);
  assert.match(h,/desactivado los bootstrap IID por países/);
  assert.match(h,/cotas de identificación/);
+ assert.match(h,/GEO2028 · Nuevo origen 2026/);
+ assert.match(h,/0 probabilidades emitidas con origen 2026/);
+ assert.match(h,/2026 → 2028/);
+ assert.match(h,/2025 → 2028/);
+ assert.match(h,/geo2028-origin2026-preregistration\.md/);
+ assert.doesNotMatch(h,/5 emisiones con evaluación futura/);
  assert.doesNotMatch(h,/Aciertos certificados: [1-9]/);
 });
 test("reject every independently certified flag or false first-complete claim",()=>{
