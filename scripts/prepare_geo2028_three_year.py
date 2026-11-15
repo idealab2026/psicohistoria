@@ -78,8 +78,13 @@ def build_from_records(records,names,issued2027):
     by_old={r["country_id"]:r for r in rows2027}
     ids=[r["country_id"] for r in rows2027]
     if (len(set(ids))!=N or ids!=sorted(ids) or
-        any(max(h)>ORIGIN or ORIGIN not in h or ORIGIN-1 not in h
-            for h in records.values() if h)):
+        any(max(h)>ORIGIN for h in records.values() if h) or
+        any(ORIGIN not in records[cid] or ORIGIN-1 not in records[cid]
+            for cid in ids)):
+        # A historical UCDP archive may also retain retired countries that
+        # are NOT among the 196 current GWNO risk countries. Do not require
+        # an obsolete country to have a 2025 row; require both recent years
+        # for EVERY registered country and no post-origin data anywhere.
         raise ValueError("Origin coverage or country identifiers changed")
     per={cid:[[0,0],[0,0]] for cid in records}
     for cid,h in sorted(records.items()):
