@@ -127,8 +127,16 @@ def audit_git_first_commit(manifest,raw):
         raise ValueError("First public issue commit is not a single file addition")
     if _git("merge-base","--is-ancestor",PREREG_MAIN,FIRST,check=False).returncode!=0:
         raise ValueError("2028 model preregistration not ancestral to issuance")
-    if _git("merge-base","--is-ancestor",FIRST,"HEAD",check=False).returncode!=0:
-        raise ValueError("First public issue commit cannot be found in HEAD ancestry")
+    # Squash-merging the PR preserves FIRST's public PR ref, but it DOES NOT
+    # preserve FIRST in main's first-parent history. Fetch the immutable
+    # refs/pull/76/head before audit and compare the first-public original
+    # to current canonical bytes; never forge a main-branch first issue.
+    if (_git("merge-base","--is-ancestor",FIRST,
+             "refs/remotes/origin/geo2028-first-public-pr",check=False
+            ).returncode!=0 or
+        _git("merge-base","--is-ancestor",PREREG_MAIN,"HEAD",check=False
+            ).returncode!=0):
+        raise ValueError("First public PR ref or preregistration ancestry missing")
     when=_git("show","-s","--format=%cI",FIRST).stdout.decode().strip()
     at=datetime.fromisoformat(when)
     utc=at.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
