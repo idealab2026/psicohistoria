@@ -1,0 +1,1844 @@
+{
+  "2028_outcomes_resolved": 0,
+  "countries": [
+    {
+      "country": "United States of America",
+      "country_id": 2,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.05113613046,
+      "p_model": 0.068463390028
+    },
+    {
+      "country": "Canada",
+      "country_id": 20,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Bahamas",
+      "country_id": 31,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Cuba",
+      "country_id": 40,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Haiti",
+      "country_id": 41,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.573433623875,
+      "p_model": 0.456943731185
+    },
+    {
+      "country": "Dominican Republic",
+      "country_id": 42,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Jamaica",
+      "country_id": 51,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "country_id": 52,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.05113613046,
+      "p_model": 0.068463390028
+    },
+    {
+      "country": "Barbados",
+      "country_id": 53,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Dominica",
+      "country_id": 54,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Grenada",
+      "country_id": 55,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Saint Lucia",
+      "country_id": 56,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Saint Vincent and the Grenadines",
+      "country_id": 57,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Antigua & Barbuda",
+      "country_id": 58,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Saint Kitts and Nevis",
+      "country_id": 60,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Mexico",
+      "country_id": 70,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.082304727197,
+      "p_model": 0.10711440409
+    },
+    {
+      "country": "Belize",
+      "country_id": 80,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Guatemala",
+      "country_id": 90,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.021878205447,
+      "p_model": 0.030206607026
+    },
+    {
+      "country": "Honduras",
+      "country_id": 91,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "El Salvador",
+      "country_id": 92,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.019945564095,
+      "p_model": 0.027181996096
+    },
+    {
+      "country": "Nicaragua",
+      "country_id": 93,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.019490667533,
+      "p_model": 0.026455123143
+    },
+    {
+      "country": "Costa Rica",
+      "country_id": 94,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Panama",
+      "country_id": 95,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.019044029623,
+      "p_model": 0.025734569847
+    },
+    {
+      "country": "Colombia",
+      "country_id": 100,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.893769476037,
+      "p_model": 0.847299748728
+    },
+    {
+      "country": "Venezuela",
+      "country_id": 101,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.05113613046,
+      "p_model": 0.068463390028
+    },
+    {
+      "country": "Guyana",
+      "country_id": 110,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Suriname",
+      "country_id": 115,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Ecuador",
+      "country_id": 130,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.05113613046,
+      "p_model": 0.068463390028
+    },
+    {
+      "country": "Peru",
+      "country_id": 135,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.070134904942,
+      "p_model": 0.09582545796
+    },
+    {
+      "country": "Brazil",
+      "country_id": 140,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Bolivia",
+      "country_id": 145,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Paraguay",
+      "country_id": 150,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.019044029623,
+      "p_model": 0.025734569847
+    },
+    {
+      "country": "Chile",
+      "country_id": 155,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Argentina",
+      "country_id": 160,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Uruguay",
+      "country_id": 165,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "United Kingdom",
+      "country_id": 200,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.053510971771,
+      "p_model": 0.070956217061
+    },
+    {
+      "country": "Ireland",
+      "country_id": 205,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Netherlands",
+      "country_id": 210,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Belgium",
+      "country_id": 211,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Luxembourg",
+      "country_id": 212,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "France",
+      "country_id": 220,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Monaco",
+      "country_id": 221,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Liechtenstein",
+      "country_id": 223,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Switzerland",
+      "country_id": 225,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Spain",
+      "country_id": 230,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.05113613046,
+      "p_model": 0.068463390028
+    },
+    {
+      "country": "Andorra",
+      "country_id": 232,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Portugal",
+      "country_id": 235,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Germany",
+      "country_id": 260,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Poland",
+      "country_id": 290,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Austria",
+      "country_id": 305,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Hungary",
+      "country_id": 310,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Czech Republic",
+      "country_id": 316,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.020587508751,
+      "p_model": 0.028387857689
+    },
+    {
+      "country": "Slovakia",
+      "country_id": 317,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.020587508751,
+      "p_model": 0.028387857689
+    },
+    {
+      "country": "Italy",
+      "country_id": 325,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Vatican City State",
+      "country_id": 327,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "San Marino",
+      "country_id": 331,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Malta",
+      "country_id": 338,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Albania",
+      "country_id": 339,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.05113613046,
+      "p_model": 0.068463390028
+    },
+    {
+      "country": "Montenegro",
+      "country_id": 341,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.027393974646,
+      "p_model": 0.037701238713
+    },
+    {
+      "country": "North Macedonia",
+      "country_id": 343,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.053033319471,
+      "p_model": 0.070964090653
+    },
+    {
+      "country": "Croatia",
+      "country_id": 344,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.055319799476,
+      "p_model": 0.072964403487
+    },
+    {
+      "country": "Serbia (Yugoslavia)",
+      "country_id": 345,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.086339884657,
+      "p_model": 0.113371318036
+    },
+    {
+      "country": "Bosnia-Herzegovina",
+      "country_id": 346,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.021651692377,
+      "p_model": 0.029605664179
+    },
+    {
+      "country": "Kosovo",
+      "country_id": 347,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.028861958994,
+      "p_model": 0.039705189723
+    },
+    {
+      "country": "Slovenia",
+      "country_id": 349,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.020201399235,
+      "p_model": 0.027858463008
+    },
+    {
+      "country": "Greece",
+      "country_id": 350,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Cyprus",
+      "country_id": 352,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Bulgaria",
+      "country_id": 355,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Moldova",
+      "country_id": 359,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.053033319471,
+      "p_model": 0.070964090653
+    },
+    {
+      "country": "Romania",
+      "country_id": 360,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.019044029623,
+      "p_model": 0.025734569847
+    },
+    {
+      "country": "Russia (Soviet Union)",
+      "country_id": 365,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.796837890613,
+      "p_model": 0.738688184052
+    },
+    {
+      "country": "Estonia",
+      "country_id": 366,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.019829505225,
+      "p_model": 0.027348450159
+    },
+    {
+      "country": "Latvia",
+      "country_id": 367,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.019829505225,
+      "p_model": 0.027348450159
+    },
+    {
+      "country": "Lithuania",
+      "country_id": 368,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.019829505225,
+      "p_model": 0.027348450159
+    },
+    {
+      "country": "Ukraine",
+      "country_id": 369,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.813346535943,
+      "p_model": 0.738731760407
+    },
+    {
+      "country": "Belarus",
+      "country_id": 370,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.019829505225,
+      "p_model": 0.027348450159
+    },
+    {
+      "country": "Armenia",
+      "country_id": 371,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.089690764734,
+      "p_model": 0.117652141598
+    },
+    {
+      "country": "Georgia",
+      "country_id": 372,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.089805021831,
+      "p_model": 0.115868151624
+    },
+    {
+      "country": "Azerbaijan",
+      "country_id": 373,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.199544842021,
+      "p_model": 0.251172296383
+    },
+    {
+      "country": "Finland",
+      "country_id": 375,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Sweden",
+      "country_id": 380,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Norway",
+      "country_id": 385,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Denmark",
+      "country_id": 390,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Iceland",
+      "country_id": 395,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Cape Verde",
+      "country_id": 402,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Sao Tome and Principe",
+      "country_id": 403,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Guinea-Bissau",
+      "country_id": 404,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.052328129301,
+      "p_model": 0.070358447023
+    },
+    {
+      "country": "Equatorial Guinea",
+      "country_id": 411,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Gambia",
+      "country_id": 420,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Mali",
+      "country_id": 432,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.737441950264,
+      "p_model": 0.658304426797
+    },
+    {
+      "country": "Senegal",
+      "country_id": 433,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.240451385272,
+      "p_model": 0.279219151752
+    },
+    {
+      "country": "Benin",
+      "country_id": 434,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.752191097798,
+      "p_model": 0.6580207674
+    },
+    {
+      "country": "Mauritania",
+      "country_id": 435,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Niger",
+      "country_id": 436,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.655833983393,
+      "p_model": 0.575565848718
+    },
+    {
+      "country": "Ivory Coast",
+      "country_id": 437,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.086339884657,
+      "p_model": 0.113371318036
+    },
+    {
+      "country": "Guinea",
+      "country_id": 438,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.052328129301,
+      "p_model": 0.070358447023
+    },
+    {
+      "country": "Burkina Faso",
+      "country_id": 439,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.786882791984,
+      "p_model": 0.70325319255
+    },
+    {
+      "country": "Liberia",
+      "country_id": 450,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.056131227274,
+      "p_model": 0.075007794446
+    },
+    {
+      "country": "Sierra Leone",
+      "country_id": 451,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.064494414307,
+      "p_model": 0.088879722263
+    },
+    {
+      "country": "Ghana",
+      "country_id": 452,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Togo",
+      "country_id": 461,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.752191097798,
+      "p_model": 0.6580207674
+    },
+    {
+      "country": "Cameroon",
+      "country_id": 471,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.767378193999,
+      "p_model": 0.682576458145
+    },
+    {
+      "country": "Nigeria",
+      "country_id": 475,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.749161316888,
+      "p_model": 0.665381304655
+    },
+    {
+      "country": "Gabon",
+      "country_id": 481,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Central African Republic",
+      "country_id": 482,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.723837217115,
+      "p_model": 0.640842605427
+    },
+    {
+      "country": "Chad",
+      "country_id": 483,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.220660681382,
+      "p_model": 0.287746464848
+    },
+    {
+      "country": "Congo",
+      "country_id": 484,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.149894844129,
+      "p_model": 0.186863660274
+    },
+    {
+      "country": "DR Congo (Zaire)",
+      "country_id": 490,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.840695350111,
+      "p_model": 0.781446119534
+    },
+    {
+      "country": "Uganda",
+      "country_id": 500,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.123859390909,
+      "p_model": 0.165652891728
+    },
+    {
+      "country": "Kenya",
+      "country_id": 501,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.824087359198,
+      "p_model": 0.753004827822
+    },
+    {
+      "country": "Tanzania",
+      "country_id": 510,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.05113613046,
+      "p_model": 0.068463390028
+    },
+    {
+      "country": "Burundi",
+      "country_id": 516,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.290690880667,
+      "p_model": 0.354238267907
+    },
+    {
+      "country": "Rwanda",
+      "country_id": 517,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.13063649383,
+      "p_model": 0.169422678526
+    },
+    {
+      "country": "Somalia",
+      "country_id": 520,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.812425234772,
+      "p_model": 0.74571930523
+    },
+    {
+      "country": "Djibouti",
+      "country_id": 522,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.124391314236,
+      "p_model": 0.160303377809
+    },
+    {
+      "country": "Ethiopia",
+      "country_id": 530,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.827427581633,
+      "p_model": 0.76710201954
+    },
+    {
+      "country": "Eritrea",
+      "country_id": 531,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.131454494821,
+      "p_model": 0.168252267955
+    },
+    {
+      "country": "Angola",
+      "country_id": 540,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.682948398486,
+      "p_model": 0.603210634628
+    },
+    {
+      "country": "Mozambique",
+      "country_id": 541,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.688403312046,
+      "p_model": 0.591364481601
+    },
+    {
+      "country": "Zambia",
+      "country_id": 551,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Zimbabwe (Rhodesia)",
+      "country_id": 552,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Malawi",
+      "country_id": 553,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "South Africa",
+      "country_id": 560,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.019044029623,
+      "p_model": 0.025734569847
+    },
+    {
+      "country": "Namibia",
+      "country_id": 565,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.052067453538,
+      "p_model": 0.069691329731
+    },
+    {
+      "country": "Lesotho",
+      "country_id": 570,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.05113613046,
+      "p_model": 0.068463390028
+    },
+    {
+      "country": "Botswana",
+      "country_id": 571,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Kingdom of eSwatini (Swaziland)",
+      "country_id": 572,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Madagascar (Malagasy)",
+      "country_id": 580,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Comoros",
+      "country_id": 581,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.050994887327,
+      "p_model": 0.066995188241
+    },
+    {
+      "country": "Mauritius",
+      "country_id": 590,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Seychelles",
+      "country_id": 591,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Morocco",
+      "country_id": 600,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.019044029623,
+      "p_model": 0.025734569847
+    },
+    {
+      "country": "Algeria",
+      "country_id": 615,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.17226878787,
+      "p_model": 0.233531557475
+    },
+    {
+      "country": "Tunisia",
+      "country_id": 616,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.054780115573,
+      "p_model": 0.074199201898
+    },
+    {
+      "country": "Libya",
+      "country_id": 620,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.09725092476,
+      "p_model": 0.129758214938
+    },
+    {
+      "country": "Sudan",
+      "country_id": 625,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.861897343982,
+      "p_model": 0.807970143476
+    },
+    {
+      "country": "South Sudan",
+      "country_id": 626,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.769080903038,
+      "p_model": 0.687025057671
+    },
+    {
+      "country": "Iran",
+      "country_id": 630,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.70339172251,
+      "p_model": 0.634835136314
+    },
+    {
+      "country": "Turkey",
+      "country_id": 640,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.131999410572,
+      "p_model": 0.182010077524
+    },
+    {
+      "country": "Iraq",
+      "country_id": 645,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.893769476037,
+      "p_model": 0.847299748728
+    },
+    {
+      "country": "Egypt",
+      "country_id": 651,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.112877909769,
+      "p_model": 0.15231885888
+    },
+    {
+      "country": "Syria",
+      "country_id": 652,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.829088499059,
+      "p_model": 0.75979602841
+    },
+    {
+      "country": "Lebanon",
+      "country_id": 660,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.68352955829,
+      "p_model": 0.593886312402
+    },
+    {
+      "country": "Jordan",
+      "country_id": 663,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.05113613046,
+      "p_model": 0.068463390028
+    },
+    {
+      "country": "Israel",
+      "country_id": 666,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.74366247297,
+      "p_model": 0.676496037472
+    },
+    {
+      "country": "Saudi Arabia",
+      "country_id": 670,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.121384892732,
+      "p_model": 0.155855693251
+    },
+    {
+      "country": "Yemen (North Yemen)",
+      "country_id": 678,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.802920783246,
+      "p_model": 0.729565496759
+    },
+    {
+      "country": "Kuwait",
+      "country_id": 690,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.052328129301,
+      "p_model": 0.070358447023
+    },
+    {
+      "country": "Bahrain",
+      "country_id": 692,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Qatar",
+      "country_id": 694,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "United Arab Emirates",
+      "country_id": 696,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Oman",
+      "country_id": 698,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Afghanistan",
+      "country_id": 700,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.893769476037,
+      "p_model": 0.847299748728
+    },
+    {
+      "country": "Turkmenistan",
+      "country_id": 701,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.019829505225,
+      "p_model": 0.027348450159
+    },
+    {
+      "country": "Tajikistan",
+      "country_id": 702,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.220383046269,
+      "p_model": 0.272427422033
+    },
+    {
+      "country": "Kyrgyzstan",
+      "country_id": 703,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.087514820137,
+      "p_model": 0.114317457529
+    },
+    {
+      "country": "Uzbekistan",
+      "country_id": 704,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.087514820137,
+      "p_model": 0.114317457529
+    },
+    {
+      "country": "Kazakhstan",
+      "country_id": 705,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.019829505225,
+      "p_model": 0.027348450159
+    },
+    {
+      "country": "China",
+      "country_id": 710,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.05113613046,
+      "p_model": 0.068463390028
+    },
+    {
+      "country": "Mongolia",
+      "country_id": 712,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Taiwan",
+      "country_id": 713,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "North Korea",
+      "country_id": 731,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "South Korea",
+      "country_id": 732,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Japan",
+      "country_id": 740,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "India",
+      "country_id": 750,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.893769476037,
+      "p_model": 0.847299748728
+    },
+    {
+      "country": "Bhutan",
+      "country_id": 760,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Pakistan",
+      "country_id": 770,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.859764344227,
+      "p_model": 0.808912673009
+    },
+    {
+      "country": "Bangladesh",
+      "country_id": 771,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.090759038245,
+      "p_model": 0.118180833093
+    },
+    {
+      "country": "Myanmar (Burma)",
+      "country_id": 775,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.893769476037,
+      "p_model": 0.847299748728
+    },
+    {
+      "country": "Sri Lanka",
+      "country_id": 780,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.123859390909,
+      "p_model": 0.165652891728
+    },
+    {
+      "country": "Maldives",
+      "country_id": 781,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Nepal",
+      "country_id": 790,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.064494414307,
+      "p_model": 0.088879722263
+    },
+    {
+      "country": "Thailand",
+      "country_id": 800,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.825621034822,
+      "p_model": 0.760439101906
+    },
+    {
+      "country": "Cambodia (Kampuchea)",
+      "country_id": 811,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.749716054465,
+      "p_model": 0.655724684249
+    },
+    {
+      "country": "Laos",
+      "country_id": 812,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.019490667533,
+      "p_model": 0.026455123143
+    },
+    {
+      "country": "Vietnam (North Vietnam)",
+      "country_id": 816,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Malaysia",
+      "country_id": 820,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.05113613046,
+      "p_model": 0.068463390028
+    },
+    {
+      "country": "Singapore",
+      "country_id": 830,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Brunei",
+      "country_id": 835,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Philippines",
+      "country_id": 840,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.893769476037,
+      "p_model": 0.847299748728
+    },
+    {
+      "country": "Indonesia",
+      "country_id": 850,
+      "last_observed_state_2025": 1,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.614777693557,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.737441950264,
+      "p_model": 0.658304426797
+    },
+    {
+      "country": "East Timor",
+      "country_id": 860,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.024864609293,
+      "p_model": 0.034244467162
+    },
+    {
+      "country": "Australia",
+      "country_id": 900,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Papua New Guinea",
+      "country_id": 910,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.090536479797,
+      "p_model": 0.119755871153
+    },
+    {
+      "country": "New Zealand",
+      "country_id": 920,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Vanuatu",
+      "country_id": 935,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Solomon Islands",
+      "country_id": 940,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Fiji",
+      "country_id": 950,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Kiribati",
+      "country_id": 970,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Nauru",
+      "country_id": 971,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Tonga",
+      "country_id": 972,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Tuvalu",
+      "country_id": 973,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Marshall Islands",
+      "country_id": 983,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Palau",
+      "country_id": 986,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.020988664697,
+      "p_model": 0.028937760332
+    },
+    {
+      "country": "Federated States of Micronesia",
+      "country_id": 987,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    },
+    {
+      "country": "Samoa (Western Samoa)",
+      "country_id": 990,
+      "last_observed_state_2025": 0,
+      "p_baseline_global_5y": 0.17617107943,
+      "p_global_markov_3step": 0.072419020442,
+      "p_issued_geo2027_2step_for_temporal_comparison_only": 0.01912533508,
+      "p_model": 0.026382463094
+    }
+  ],
+  "first_issue_provenance": {
+    "GitHub_first_public_file_commit_required_before_target_year": true,
+    "independent_timestamp_notary": false,
+    "official_2028_outcomes_observed": 0,
+    "original_GEO2027_SHA256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+    "original_GEO2027_first_public_commit": "3bb3561c8d6182c30624591276c705fb76ce99dc",
+    "protocol_preregistered_before_probability_issue": true
+  },
+  "forecast_id": "PSICO-GEO2028-STATEBASED25-H3-ORIGIN2025-V1",
+  "model_expected_2028_active_countries": {
+    "p_baseline_global_5y": 34.52953156828,
+    "p_global_markov_3step": 32.634322892542,
+    "p_model": 33.438734715114
+  },
+  "n_countries": 196,
+  "origin": {
+    "cohort_rule": "196 original 2025 source GWNO countries with both 2024 and 2025 data",
+    "official_data_last_year": 2025,
+    "official_sha256": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34",
+    "official_url": "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-261-csv.zip",
+    "same_2025_origin_as_GEO2027": true,
+    "source_version": "26.1",
+    "year": 2025
+  },
+  "origin_2025_training_summary": {
+    "baseline_global_5y": 0.17617107943,
+    "cohort_n": 196,
+    "global_5y_exposures": 980,
+    "global_5y_positive": 172,
+    "global_transition_counts": [
+      [
+        5652,
+        169
+      ],
+      [
+        172,
+        940
+      ]
+    ],
+    "global_transition_p_active": [
+      0.029194573244,
+      0.844703770197
+    ]
+  },
+  "prospective_predictive_skill_demonstrated": false,
+  "protocol": {
+    "cannot_pool_with_GEO2027_as_independent_forecasts": true,
+    "first_complete_2028_source_required": true,
+    "horizon_years": 3,
+    "no_automatic_promotion_or_model_selection": true,
+    "not_independent_rolling_origin_two_year_replication": true,
+    "original_2027_forecast_immutable": true,
+    "posthoc_prior_2024_2025_history_inspected": true,
+    "primary_baseline": "global_laplace_5y_2021_2025",
+    "primary_metric": "paired mean Brier p_model minus p_baseline_global_5y over all 196 fixed country endpoints on first complete official source",
+    "primary_model": "country_markov_3step_laplace_global_shrink20",
+    "secondary_comparator": "global_markov_3step_laplace",
+    "secondary_metrics": [
+      "log-loss",
+      "Brier against global Markov 3-step",
+      "predeclared origin-stratum calibration"
+    ],
+    "statistical_generalization_not_established": true,
+    "training_rule": "same 1-year country/state global-Laplace/shrink20 Markov transitions trained only through 2025; compose exactly three steps"
+  },
+  "schema": "idealab.psico.prospective_geo2028_three_year.v1",
+  "state": "CANDIDATE_BEFORE_FIRST_PUBLIC_2028_ISSUE",
+  "target": {
+    "binary_rule": "1 iff UCDP OrganizedViolenceCY official 2028 country-year state-based best fatalities >=25",
+    "missing_country_rule": "unresolved, never assume absence is zero",
+    "not_newconf_or_ACD_conflict_presence": true,
+    "source_release": "first complete post-2028 UCDP OrganizedViolenceCY edition; later revisions sensitivity only",
+    "unit": "Gleditsch-Ward government country-year",
+    "year": 2028
+  }
+}
