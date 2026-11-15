@@ -51,6 +51,10 @@ test("readable unified status exposes 187 provisional distinct from certified 19
  assert.match(h,/2026 → 2028/);
  assert.match(h,/2025 → 2028/);
  assert.match(h,/geo2028-origin2026-preregistration\.md/);
+ assert.match(h,/revisión de la fuente UCDP/);
+ assert.match(h,/sorpresa del estado observado 2026/);
+ assert.match(h,/componentes algebraicas, no efectos causales/);
+ assert.match(h,/geo2028-2026-origin-update-attribution\.md/);
  assert.doesNotMatch(h,/5 emisiones con evaluación futura/);
  assert.doesNotMatch(h,/Aciertos certificados: [1-9]/);
 });
