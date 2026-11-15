@@ -7,7 +7,7 @@ from evaluate_2027_newconf_official import (
     COHORT, MIN_RESOLVED, YEAR, FROZEN_SHA, FIRST_COMMIT,
     FORECAST, MANIFEST, GENERATOR,
     load_issued, validate_future_source, parse_official_2027_csv,
-    score, bootstrap_delta, calibration, topk_tie_bounds, evaluate,
+    score, calibration, topk_tie_bounds, evaluate,
 )
 
 def synthetic():
@@ -126,6 +126,13 @@ class OfficialNewconf2027CandidateTests(unittest.TestCase):
         self.assertEqual(len(r["unresolved_issued_country_ids"]),r["unresolved"])
         self.assertIsNone(r["scores"])
         self.assertIsNone(r["bootstrap_country_delta_brier_95pct"])
+        self.assertTrue(r["iid_country_bootstrap_disabled"])
+        b=r["sharp_full_cohort_brier_delta_bounds_not_confidence_interval"]
+        self.assertEqual(b["fixed_issued_cohort_n"],196)
+        self.assertEqual(b["resolved_country_outcomes"],MIN_RESOLVED-1)
+        self.assertLessEqual(b["lower_full_cohort_delta_brier"],
+                             b["upper_full_cohort_delta_brier"])
+        self.assertIsNone(b["confidence_level"])
         self.assertIsNone(r["alert_budgets_tie_safe"])
         self.assertFalse(r["enough_coverage_for_exploratory_score"])
         self.assertFalse(r["first_complete_official_2027_release_independently_attested"])
@@ -144,6 +151,12 @@ class OfficialNewconf2027CandidateTests(unittest.TestCase):
             "p_model","p_baseline_global_5y","p_country_eb",
             "p_activity_global","no_newconf_brier_reference"})
         self.assertEqual(sum(b["n"] for b in results["calibration"]),MIN_RESOLVED)
+        self.assertIsNone(results["bootstrap_country_delta_brier_95pct"])
+        bounds=results["sharp_full_cohort_brier_delta_bounds_not_confidence_interval"]
+        self.assertEqual(bounds["unresolved_country_outcomes"],COHORT-MIN_RESOLVED)
+        self.assertLessEqual(bounds["lower_full_cohort_delta_brier"],
+                             bounds["upper_full_cohort_delta_brier"])
+        self.assertFalse(bounds["bootstrap_resampling_used"])
         self.assertIsNone(results["alert_budgets_tie_safe"])
         self.assertEqual(results["model_expected_events_issued"],14.7)
         self.assertFalse(results["future_predictive_skill_independently_verified"])
@@ -185,13 +198,16 @@ class OfficialNewconf2027CandidateTests(unittest.TestCase):
             report["scores"]["p_baseline_global_5y"]["brier"])
         self.assertFalse(report["future_predictive_skill_independently_verified"])
         self.assertFalse(report["first_complete_official_2027_release_independently_attested"])
-        self.assertEqual(bootstrap_delta([
-            {"country_id":"1","p_model":.3,"p_baseline_global_5y":.1,"outcome":0},
-            {"country_id":"2","p_model":.4,"p_baseline_global_5y":.1,"outcome":1},
-        ],100,99),bootstrap_delta([
-            {"country_id":"1","p_model":.3,"p_baseline_global_5y":.1,"outcome":0},
-            {"country_id":"2","p_model":.4,"p_baseline_global_5y":.1,"outcome":1},
-        ],100,99))
+        self.assertIsNone(report["bootstrap_country_delta_brier_95pct"])
+        self.assertTrue(report["iid_country_bootstrap_disabled"])
+        self.assertFalse(report["confidence_interval_justified_by_country_independence"])
+        bounds=report["sharp_full_cohort_brier_delta_bounds_not_confidence_interval"]
+        self.assertAlmostEqual(bounds["lower_full_cohort_delta_brier"],
+                               report["delta_brier_model_minus_global_recent"])
+        self.assertAlmostEqual(bounds["upper_full_cohort_delta_brier"],
+                               report["delta_brier_model_minus_global_recent"])
+        self.assertIsNone(bounds["confidence_level"])
+        self.assertNotIn("bootstrap_delta",evaluate.__globals__)
 
 if __name__=="__main__":
     unittest.main()
