@@ -890,13 +890,11 @@ jobs:
         run: |
           set -e
           PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_build_future_evaluation_contract_registry.py' -v
-          # Browser integrity test resumes after canonical report bytes are frozen.
+          node --test tests/future-evaluation-register.test.mjs
       - name: Rebuild source-pinned 620-question 4-cohort evaluation contract registry
         run: |
           set -e
-          # Generate candidate from source-frozen issued records during this migration.
-          # Reinstate mandatory --check-report after the updated report is committed.
-          PYTHONDONTWRITEBYTECODE=1 python3 scripts/build_future_evaluation_contract_registry.py
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/build_future_evaluation_contract_registry.py --check-report data/future-evaluation-contracts.json
   non_iid_2027_country_scoring:
     runs-on: ubuntu-latest
     steps:
