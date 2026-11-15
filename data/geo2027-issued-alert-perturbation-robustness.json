@@ -1,0 +1,1822 @@
+{
+  "cohort_2025_fixed_both_stages": true,
+  "countrywise_topk_robustness_claims_are_exact_for_the_artificial_rectangle": true,
+  "group_results": {
+    "0": {
+      "eligible_country_count": 162,
+      "first_excluded_transition_probability": 0.124391314236,
+      "issued_boundary_gap_percentage_points": 0.624517959,
+      "issued_boundary_gap_probability": 0.006245179594,
+      "issued_country_alert_budget": 10,
+      "issued_country_alert_ids": [
+        516,
+        433,
+        483,
+        702,
+        373,
+        615,
+        484,
+        640,
+        531,
+        517
+      ],
+      "last_issued_cutoff_transition_probability": 0.13063649383,
+      "origin_state_2025": 0,
+      "perturbation_scenarios": [
+        {
+          "budget_k": 10,
+          "epsilon_percentage_points": 0.0,
+          "epsilon_probability_absolute": 0.0,
+          "guaranteed_issued_topk_country_ids": [
+            373,
+            433,
+            483,
+            484,
+            516,
+            517,
+            531,
+            615,
+            640,
+            702
+          ],
+          "guaranteed_issued_topk_n": 10,
+          "issued_selected_members_that_may_exit": [],
+          "issued_selected_members_that_may_exit_n": 0,
+          "issued_topk_country_ids": [
+            516,
+            433,
+            483,
+            702,
+            373,
+            615,
+            484,
+            640,
+            531,
+            517
+          ],
+          "not_confidence_probability_or_real_future_revision": true,
+          "outsiders_that_may_enter": [],
+          "outsiders_that_may_enter_n": 0,
+          "potential_members_including_issued": 10,
+          "rank_bounds_for_original_selected": [
+            {
+              "best_possible_rank": 1,
+              "country_id": 516,
+              "guaranteed_member": true,
+              "original_rank": 1,
+              "worst_possible_rank": 1
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 433,
+              "guaranteed_member": true,
+              "original_rank": 2,
+              "worst_possible_rank": 2
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 483,
+              "guaranteed_member": true,
+              "original_rank": 3,
+              "worst_possible_rank": 3
+            },
+            {
+              "best_possible_rank": 4,
+              "country_id": 702,
+              "guaranteed_member": true,
+              "original_rank": 4,
+              "worst_possible_rank": 4
+            },
+            {
+              "best_possible_rank": 5,
+              "country_id": 373,
+              "guaranteed_member": true,
+              "original_rank": 5,
+              "worst_possible_rank": 5
+            },
+            {
+              "best_possible_rank": 6,
+              "country_id": 615,
+              "guaranteed_member": true,
+              "original_rank": 6,
+              "worst_possible_rank": 6
+            },
+            {
+              "best_possible_rank": 7,
+              "country_id": 484,
+              "guaranteed_member": true,
+              "original_rank": 7,
+              "worst_possible_rank": 7
+            },
+            {
+              "best_possible_rank": 8,
+              "country_id": 640,
+              "guaranteed_member": true,
+              "original_rank": 8,
+              "worst_possible_rank": 8
+            },
+            {
+              "best_possible_rank": 9,
+              "country_id": 531,
+              "guaranteed_member": true,
+              "original_rank": 9,
+              "worst_possible_rank": 9
+            },
+            {
+              "best_possible_rank": 10,
+              "country_id": 517,
+              "guaranteed_member": true,
+              "original_rank": 10,
+              "worst_possible_rank": 10
+            }
+          ],
+          "risk_group_n": 162,
+          "scenario": "NO_PERTURBATION",
+          "selection_invariant_for_all_allowed_score_perturbations": true,
+          "sharp_individual_possible_and_guaranteed_membership": true,
+          "total_replacements_not_assumed_jointly_independent": true
+        },
+        {
+          "budget_k": 10,
+          "epsilon_percentage_points": 0.2,
+          "epsilon_probability_absolute": 0.002,
+          "guaranteed_issued_topk_country_ids": [
+            373,
+            433,
+            483,
+            484,
+            516,
+            517,
+            531,
+            615,
+            640,
+            702
+          ],
+          "guaranteed_issued_topk_n": 10,
+          "issued_selected_members_that_may_exit": [],
+          "issued_selected_members_that_may_exit_n": 0,
+          "issued_topk_country_ids": [
+            516,
+            433,
+            483,
+            702,
+            373,
+            615,
+            484,
+            640,
+            531,
+            517
+          ],
+          "not_confidence_probability_or_real_future_revision": true,
+          "outsiders_that_may_enter": [],
+          "outsiders_that_may_enter_n": 0,
+          "potential_members_including_issued": 10,
+          "rank_bounds_for_original_selected": [
+            {
+              "best_possible_rank": 1,
+              "country_id": 516,
+              "guaranteed_member": true,
+              "original_rank": 1,
+              "worst_possible_rank": 1
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 433,
+              "guaranteed_member": true,
+              "original_rank": 2,
+              "worst_possible_rank": 2
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 483,
+              "guaranteed_member": true,
+              "original_rank": 3,
+              "worst_possible_rank": 4
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 702,
+              "guaranteed_member": true,
+              "original_rank": 4,
+              "worst_possible_rank": 4
+            },
+            {
+              "best_possible_rank": 5,
+              "country_id": 373,
+              "guaranteed_member": true,
+              "original_rank": 5,
+              "worst_possible_rank": 5
+            },
+            {
+              "best_possible_rank": 6,
+              "country_id": 615,
+              "guaranteed_member": true,
+              "original_rank": 6,
+              "worst_possible_rank": 6
+            },
+            {
+              "best_possible_rank": 7,
+              "country_id": 484,
+              "guaranteed_member": true,
+              "original_rank": 7,
+              "worst_possible_rank": 7
+            },
+            {
+              "best_possible_rank": 8,
+              "country_id": 640,
+              "guaranteed_member": true,
+              "original_rank": 8,
+              "worst_possible_rank": 10
+            },
+            {
+              "best_possible_rank": 8,
+              "country_id": 531,
+              "guaranteed_member": true,
+              "original_rank": 9,
+              "worst_possible_rank": 10
+            },
+            {
+              "best_possible_rank": 8,
+              "country_id": 517,
+              "guaranteed_member": true,
+              "original_rank": 10,
+              "worst_possible_rank": 10
+            }
+          ],
+          "risk_group_n": 162,
+          "scenario": "TWO_TENTHS_PP",
+          "selection_invariant_for_all_allowed_score_perturbations": true,
+          "sharp_individual_possible_and_guaranteed_membership": true,
+          "total_replacements_not_assumed_jointly_independent": true
+        },
+        {
+          "budget_k": 10,
+          "epsilon_percentage_points": 0.256363188,
+          "epsilon_probability_absolute": 0.002563631883,
+          "guaranteed_issued_topk_country_ids": [
+            373,
+            433,
+            483,
+            484,
+            516,
+            517,
+            531,
+            615,
+            640,
+            702
+          ],
+          "guaranteed_issued_topk_n": 10,
+          "issued_selected_members_that_may_exit": [],
+          "issued_selected_members_that_may_exit_n": 0,
+          "issued_topk_country_ids": [
+            516,
+            433,
+            483,
+            702,
+            373,
+            615,
+            484,
+            640,
+            531,
+            517
+          ],
+          "not_confidence_probability_or_real_future_revision": true,
+          "outsiders_that_may_enter": [],
+          "outsiders_that_may_enter_n": 0,
+          "potential_members_including_issued": 10,
+          "rank_bounds_for_original_selected": [
+            {
+              "best_possible_rank": 1,
+              "country_id": 516,
+              "guaranteed_member": true,
+              "original_rank": 1,
+              "worst_possible_rank": 1
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 433,
+              "guaranteed_member": true,
+              "original_rank": 2,
+              "worst_possible_rank": 2
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 483,
+              "guaranteed_member": true,
+              "original_rank": 3,
+              "worst_possible_rank": 4
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 702,
+              "guaranteed_member": true,
+              "original_rank": 4,
+              "worst_possible_rank": 4
+            },
+            {
+              "best_possible_rank": 5,
+              "country_id": 373,
+              "guaranteed_member": true,
+              "original_rank": 5,
+              "worst_possible_rank": 5
+            },
+            {
+              "best_possible_rank": 6,
+              "country_id": 615,
+              "guaranteed_member": true,
+              "original_rank": 6,
+              "worst_possible_rank": 6
+            },
+            {
+              "best_possible_rank": 7,
+              "country_id": 484,
+              "guaranteed_member": true,
+              "original_rank": 7,
+              "worst_possible_rank": 7
+            },
+            {
+              "best_possible_rank": 8,
+              "country_id": 640,
+              "guaranteed_member": true,
+              "original_rank": 8,
+              "worst_possible_rank": 10
+            },
+            {
+              "best_possible_rank": 8,
+              "country_id": 531,
+              "guaranteed_member": true,
+              "original_rank": 9,
+              "worst_possible_rank": 10
+            },
+            {
+              "best_possible_rank": 8,
+              "country_id": 517,
+              "guaranteed_member": true,
+              "original_rank": 10,
+              "worst_possible_rank": 10
+            }
+          ],
+          "risk_group_n": 162,
+          "scenario": "HISTORICAL_H2_LARGEST_WITHIN_PAIR_P95",
+          "selection_invariant_for_all_allowed_score_perturbations": true,
+          "sharp_individual_possible_and_guaranteed_membership": true,
+          "total_replacements_not_assumed_jointly_independent": true
+        },
+        {
+          "budget_k": 10,
+          "epsilon_percentage_points": 0.5,
+          "epsilon_probability_absolute": 0.005,
+          "guaranteed_issued_topk_country_ids": [
+            373,
+            433,
+            483,
+            484,
+            516,
+            615,
+            702
+          ],
+          "guaranteed_issued_topk_n": 7,
+          "issued_selected_members_that_may_exit": [
+            517,
+            531,
+            640
+          ],
+          "issued_selected_members_that_may_exit_n": 3,
+          "issued_topk_country_ids": [
+            516,
+            433,
+            483,
+            702,
+            373,
+            615,
+            484,
+            640,
+            531,
+            517
+          ],
+          "not_confidence_probability_or_real_future_revision": true,
+          "outsiders_that_may_enter": [
+            500,
+            522,
+            670,
+            780
+          ],
+          "outsiders_that_may_enter_n": 4,
+          "potential_members_including_issued": 14,
+          "rank_bounds_for_original_selected": [
+            {
+              "best_possible_rank": 1,
+              "country_id": 516,
+              "guaranteed_member": true,
+              "original_rank": 1,
+              "worst_possible_rank": 1
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 433,
+              "guaranteed_member": true,
+              "original_rank": 2,
+              "worst_possible_rank": 2
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 483,
+              "guaranteed_member": true,
+              "original_rank": 3,
+              "worst_possible_rank": 4
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 702,
+              "guaranteed_member": true,
+              "original_rank": 4,
+              "worst_possible_rank": 4
+            },
+            {
+              "best_possible_rank": 5,
+              "country_id": 373,
+              "guaranteed_member": true,
+              "original_rank": 5,
+              "worst_possible_rank": 5
+            },
+            {
+              "best_possible_rank": 6,
+              "country_id": 615,
+              "guaranteed_member": true,
+              "original_rank": 6,
+              "worst_possible_rank": 6
+            },
+            {
+              "best_possible_rank": 7,
+              "country_id": 484,
+              "guaranteed_member": true,
+              "original_rank": 7,
+              "worst_possible_rank": 7
+            },
+            {
+              "best_possible_rank": 8,
+              "country_id": 640,
+              "guaranteed_member": false,
+              "original_rank": 8,
+              "worst_possible_rank": 13
+            },
+            {
+              "best_possible_rank": 8,
+              "country_id": 531,
+              "guaranteed_member": false,
+              "original_rank": 9,
+              "worst_possible_rank": 13
+            },
+            {
+              "best_possible_rank": 8,
+              "country_id": 517,
+              "guaranteed_member": false,
+              "original_rank": 10,
+              "worst_possible_rank": 14
+            }
+          ],
+          "risk_group_n": 162,
+          "scenario": "HALF_PP",
+          "selection_invariant_for_all_allowed_score_perturbations": false,
+          "sharp_individual_possible_and_guaranteed_membership": true,
+          "total_replacements_not_assumed_jointly_independent": true
+        },
+        {
+          "budget_k": 10,
+          "epsilon_percentage_points": 1.0,
+          "epsilon_probability_absolute": 0.01,
+          "guaranteed_issued_topk_country_ids": [
+            373,
+            433,
+            483,
+            484,
+            516,
+            615,
+            702
+          ],
+          "guaranteed_issued_topk_n": 7,
+          "issued_selected_members_that_may_exit": [
+            517,
+            531,
+            640
+          ],
+          "issued_selected_members_that_may_exit_n": 3,
+          "issued_topk_country_ids": [
+            516,
+            433,
+            483,
+            702,
+            373,
+            615,
+            484,
+            640,
+            531,
+            517
+          ],
+          "not_confidence_probability_or_real_future_revision": true,
+          "outsiders_that_may_enter": [
+            500,
+            522,
+            651,
+            670,
+            780
+          ],
+          "outsiders_that_may_enter_n": 5,
+          "potential_members_including_issued": 15,
+          "rank_bounds_for_original_selected": [
+            {
+              "best_possible_rank": 1,
+              "country_id": 516,
+              "guaranteed_member": true,
+              "original_rank": 1,
+              "worst_possible_rank": 1
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 433,
+              "guaranteed_member": true,
+              "original_rank": 2,
+              "worst_possible_rank": 3
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 483,
+              "guaranteed_member": true,
+              "original_rank": 3,
+              "worst_possible_rank": 4
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 702,
+              "guaranteed_member": true,
+              "original_rank": 4,
+              "worst_possible_rank": 4
+            },
+            {
+              "best_possible_rank": 5,
+              "country_id": 373,
+              "guaranteed_member": true,
+              "original_rank": 5,
+              "worst_possible_rank": 5
+            },
+            {
+              "best_possible_rank": 6,
+              "country_id": 615,
+              "guaranteed_member": true,
+              "original_rank": 6,
+              "worst_possible_rank": 6
+            },
+            {
+              "best_possible_rank": 7,
+              "country_id": 484,
+              "guaranteed_member": true,
+              "original_rank": 7,
+              "worst_possible_rank": 10
+            },
+            {
+              "best_possible_rank": 7,
+              "country_id": 640,
+              "guaranteed_member": false,
+              "original_rank": 8,
+              "worst_possible_rank": 15
+            },
+            {
+              "best_possible_rank": 7,
+              "country_id": 531,
+              "guaranteed_member": false,
+              "original_rank": 9,
+              "worst_possible_rank": 15
+            },
+            {
+              "best_possible_rank": 7,
+              "country_id": 517,
+              "guaranteed_member": false,
+              "original_rank": 10,
+              "worst_possible_rank": 15
+            }
+          ],
+          "risk_group_n": 162,
+          "scenario": "ONE_PP",
+          "selection_invariant_for_all_allowed_score_perturbations": false,
+          "sharp_individual_possible_and_guaranteed_membership": true,
+          "total_replacements_not_assumed_jointly_independent": true
+        },
+        {
+          "budget_k": 10,
+          "epsilon_percentage_points": 2.5,
+          "epsilon_probability_absolute": 0.025,
+          "guaranteed_issued_topk_country_ids": [
+            373,
+            433,
+            483,
+            516,
+            702
+          ],
+          "guaranteed_issued_topk_n": 5,
+          "issued_selected_members_that_may_exit": [
+            484,
+            517,
+            531,
+            615,
+            640
+          ],
+          "issued_selected_members_that_may_exit_n": 5,
+          "issued_topk_country_ids": [
+            516,
+            433,
+            483,
+            702,
+            373,
+            615,
+            484,
+            640,
+            531,
+            517
+          ],
+          "not_confidence_probability_or_real_future_revision": true,
+          "outsiders_that_may_enter": [
+            70,
+            345,
+            371,
+            372,
+            437,
+            500,
+            522,
+            620,
+            651,
+            670,
+            703,
+            704,
+            771,
+            780,
+            910
+          ],
+          "outsiders_that_may_enter_n": 15,
+          "potential_members_including_issued": 25,
+          "rank_bounds_for_original_selected": [
+            {
+              "best_possible_rank": 1,
+              "country_id": 516,
+              "guaranteed_member": true,
+              "original_rank": 1,
+              "worst_possible_rank": 1
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 433,
+              "guaranteed_member": true,
+              "original_rank": 2,
+              "worst_possible_rank": 5
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 483,
+              "guaranteed_member": true,
+              "original_rank": 3,
+              "worst_possible_rank": 6
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 702,
+              "guaranteed_member": true,
+              "original_rank": 4,
+              "worst_possible_rank": 6
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 373,
+              "guaranteed_member": true,
+              "original_rank": 5,
+              "worst_possible_rank": 7
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 615,
+              "guaranteed_member": false,
+              "original_rank": 6,
+              "worst_possible_rank": 13
+            },
+            {
+              "best_possible_rank": 5,
+              "country_id": 484,
+              "guaranteed_member": false,
+              "original_rank": 7,
+              "worst_possible_rank": 15
+            },
+            {
+              "best_possible_rank": 6,
+              "country_id": 640,
+              "guaranteed_member": false,
+              "original_rank": 8,
+              "worst_possible_rank": 25
+            },
+            {
+              "best_possible_rank": 6,
+              "country_id": 531,
+              "guaranteed_member": false,
+              "original_rank": 9,
+              "worst_possible_rank": 25
+            },
+            {
+              "best_possible_rank": 6,
+              "country_id": 517,
+              "guaranteed_member": false,
+              "original_rank": 10,
+              "worst_possible_rank": 25
+            }
+          ],
+          "risk_group_n": 162,
+          "scenario": "TWO_AND_HALF_PP",
+          "selection_invariant_for_all_allowed_score_perturbations": false,
+          "sharp_individual_possible_and_guaranteed_membership": true,
+          "total_replacements_not_assumed_jointly_independent": true
+        },
+        {
+          "budget_k": 10,
+          "epsilon_percentage_points": 5.46064173,
+          "epsilon_probability_absolute": 0.054606417304,
+          "guaranteed_issued_topk_country_ids": [
+            433,
+            516
+          ],
+          "guaranteed_issued_topk_n": 2,
+          "issued_selected_members_that_may_exit": [
+            373,
+            483,
+            484,
+            517,
+            531,
+            615,
+            640,
+            702
+          ],
+          "issued_selected_members_that_may_exit_n": 8,
+          "issued_topk_country_ids": [
+            516,
+            433,
+            483,
+            702,
+            373,
+            615,
+            484,
+            640,
+            531,
+            517
+          ],
+          "not_confidence_probability_or_real_future_revision": true,
+          "outsiders_that_may_enter": [
+            2,
+            52,
+            70,
+            90,
+            101,
+            130,
+            135,
+            200,
+            230,
+            339,
+            341,
+            343,
+            344,
+            345,
+            346,
+            347,
+            359,
+            371,
+            372,
+            404,
+            437,
+            438,
+            450,
+            451,
+            500,
+            510,
+            522,
+            565,
+            570,
+            581,
+            616,
+            620,
+            651,
+            663,
+            670,
+            690,
+            703,
+            704,
+            710,
+            771,
+            780,
+            790,
+            820,
+            860,
+            910
+          ],
+          "outsiders_that_may_enter_n": 45,
+          "potential_members_including_issued": 55,
+          "rank_bounds_for_original_selected": [
+            {
+              "best_possible_rank": 1,
+              "country_id": 516,
+              "guaranteed_member": true,
+              "original_rank": 1,
+              "worst_possible_rank": 5
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 433,
+              "guaranteed_member": true,
+              "original_rank": 2,
+              "worst_possible_rank": 9
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 483,
+              "guaranteed_member": false,
+              "original_rank": 3,
+              "worst_possible_rank": 15
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 702,
+              "guaranteed_member": false,
+              "original_rank": 4,
+              "worst_possible_rank": 15
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 373,
+              "guaranteed_member": false,
+              "original_rank": 5,
+              "worst_possible_rank": 18
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 615,
+              "guaranteed_member": false,
+              "original_rank": 6,
+              "worst_possible_rank": 28
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 484,
+              "guaranteed_member": false,
+              "original_rank": 7,
+              "worst_possible_rank": 50
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 640,
+              "guaranteed_member": false,
+              "original_rank": 8,
+              "worst_possible_rank": 53
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 531,
+              "guaranteed_member": false,
+              "original_rank": 9,
+              "worst_possible_rank": 53
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 517,
+              "guaranteed_member": false,
+              "original_rank": 10,
+              "worst_possible_rank": 55
+            }
+          ],
+          "risk_group_n": 162,
+          "scenario": "HISTORICAL_H2_MAX_SINGLE_COUNTRY",
+          "selection_invariant_for_all_allowed_score_perturbations": false,
+          "sharp_individual_possible_and_guaranteed_membership": true,
+          "total_replacements_not_assumed_jointly_independent": true
+        },
+        {
+          "budget_k": 10,
+          "epsilon_percentage_points": 10.0,
+          "epsilon_probability_absolute": 0.1,
+          "guaranteed_issued_topk_country_ids": [],
+          "guaranteed_issued_topk_n": 0,
+          "issued_selected_members_that_may_exit": [
+            373,
+            433,
+            483,
+            484,
+            516,
+            517,
+            531,
+            615,
+            640,
+            702
+          ],
+          "issued_selected_members_that_may_exit_n": 10,
+          "issued_topk_country_ids": [
+            516,
+            433,
+            483,
+            702,
+            373,
+            615,
+            484,
+            640,
+            531,
+            517
+          ],
+          "not_confidence_probability_or_real_future_revision": true,
+          "outsiders_that_may_enter": [
+            2,
+            20,
+            31,
+            40,
+            42,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            60,
+            70,
+            80,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            101,
+            110,
+            115,
+            130,
+            135,
+            140,
+            145,
+            150,
+            155,
+            160,
+            165,
+            200,
+            205,
+            210,
+            211,
+            212,
+            220,
+            221,
+            223,
+            225,
+            230,
+            232,
+            235,
+            260,
+            290,
+            305,
+            310,
+            316,
+            317,
+            325,
+            327,
+            331,
+            338,
+            339,
+            341,
+            343,
+            344,
+            345,
+            346,
+            347,
+            349,
+            350,
+            352,
+            355,
+            359,
+            360,
+            366,
+            367,
+            368,
+            370,
+            371,
+            372,
+            375,
+            380,
+            385,
+            390,
+            395,
+            402,
+            403,
+            404,
+            411,
+            420,
+            435,
+            437,
+            438,
+            450,
+            451,
+            452,
+            481,
+            500,
+            510,
+            522,
+            551,
+            552,
+            553,
+            560,
+            565,
+            570,
+            571,
+            572,
+            580,
+            581,
+            590,
+            591,
+            600,
+            616,
+            620,
+            651,
+            663,
+            670,
+            690,
+            692,
+            694,
+            696,
+            698,
+            701,
+            703,
+            704,
+            705,
+            710,
+            712,
+            713,
+            731,
+            732,
+            740,
+            760,
+            771,
+            780,
+            781,
+            790,
+            812,
+            816,
+            820,
+            830,
+            835,
+            860,
+            900,
+            910,
+            920,
+            935,
+            940,
+            950,
+            970,
+            971,
+            972,
+            973,
+            983,
+            986,
+            987,
+            990
+          ],
+          "outsiders_that_may_enter_n": 152,
+          "potential_members_including_issued": 162,
+          "rank_bounds_for_original_selected": [
+            {
+              "best_possible_rank": 1,
+              "country_id": 516,
+              "guaranteed_member": false,
+              "original_rank": 1,
+              "worst_possible_rank": 17
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 433,
+              "guaranteed_member": false,
+              "original_rank": 2,
+              "worst_possible_rank": 50
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 483,
+              "guaranteed_member": false,
+              "original_rank": 3,
+              "worst_possible_rank": 56
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 702,
+              "guaranteed_member": false,
+              "original_rank": 4,
+              "worst_possible_rank": 58
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 373,
+              "guaranteed_member": false,
+              "original_rank": 5,
+              "worst_possible_rank": 162
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 615,
+              "guaranteed_member": false,
+              "original_rank": 6,
+              "worst_possible_rank": 162
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 484,
+              "guaranteed_member": false,
+              "original_rank": 7,
+              "worst_possible_rank": 162
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 640,
+              "guaranteed_member": false,
+              "original_rank": 8,
+              "worst_possible_rank": 162
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 531,
+              "guaranteed_member": false,
+              "original_rank": 9,
+              "worst_possible_rank": 162
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 517,
+              "guaranteed_member": false,
+              "original_rank": 10,
+              "worst_possible_rank": 162
+            }
+          ],
+          "risk_group_n": 162,
+          "scenario": "TEN_PP",
+          "selection_invariant_for_all_allowed_score_perturbations": false,
+          "sharp_individual_possible_and_guaranteed_membership": true,
+          "total_replacements_not_assumed_jointly_independent": true
+        }
+      ],
+      "risk_group": "entry_0_to_1",
+      "strictly_less_than_half_boundary_gap_guarantees_full_selection_unchanged": true,
+      "symmetric_uniform_change_first_can_affect_membership_if_around_boundary": 0.003122589797
+    },
+    "1": {
+      "eligible_country_count": 34,
+      "first_excluded_transition_probability": 0.29660827749,
+      "issued_boundary_gap_percentage_points": 1.498841046,
+      "issued_boundary_gap_probability": 0.014988410464,
+      "issued_country_alert_budget": 5,
+      "issued_country_alert_ids": [
+        41,
+        436,
+        540,
+        660,
+        541
+      ],
+      "last_issued_cutoff_transition_probability": 0.311596687954,
+      "origin_state_2025": 1,
+      "perturbation_scenarios": [
+        {
+          "budget_k": 5,
+          "epsilon_percentage_points": 0.0,
+          "epsilon_probability_absolute": 0.0,
+          "guaranteed_issued_topk_country_ids": [
+            41,
+            436,
+            540,
+            541,
+            660
+          ],
+          "guaranteed_issued_topk_n": 5,
+          "issued_selected_members_that_may_exit": [],
+          "issued_selected_members_that_may_exit_n": 0,
+          "issued_topk_country_ids": [
+            41,
+            436,
+            540,
+            660,
+            541
+          ],
+          "not_confidence_probability_or_real_future_revision": true,
+          "outsiders_that_may_enter": [],
+          "outsiders_that_may_enter_n": 0,
+          "potential_members_including_issued": 5,
+          "rank_bounds_for_original_selected": [
+            {
+              "best_possible_rank": 1,
+              "country_id": 41,
+              "guaranteed_member": true,
+              "original_rank": 1,
+              "worst_possible_rank": 1
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 436,
+              "guaranteed_member": true,
+              "original_rank": 2,
+              "worst_possible_rank": 2
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 540,
+              "guaranteed_member": true,
+              "original_rank": 3,
+              "worst_possible_rank": 3
+            },
+            {
+              "best_possible_rank": 4,
+              "country_id": 660,
+              "guaranteed_member": true,
+              "original_rank": 4,
+              "worst_possible_rank": 4
+            },
+            {
+              "best_possible_rank": 5,
+              "country_id": 541,
+              "guaranteed_member": true,
+              "original_rank": 5,
+              "worst_possible_rank": 5
+            }
+          ],
+          "risk_group_n": 34,
+          "scenario": "NO_PERTURBATION",
+          "selection_invariant_for_all_allowed_score_perturbations": true,
+          "sharp_individual_possible_and_guaranteed_membership": true,
+          "total_replacements_not_assumed_jointly_independent": true
+        },
+        {
+          "budget_k": 5,
+          "epsilon_percentage_points": 0.2,
+          "epsilon_probability_absolute": 0.002,
+          "guaranteed_issued_topk_country_ids": [
+            41,
+            436,
+            540,
+            541,
+            660
+          ],
+          "guaranteed_issued_topk_n": 5,
+          "issued_selected_members_that_may_exit": [],
+          "issued_selected_members_that_may_exit_n": 0,
+          "issued_topk_country_ids": [
+            41,
+            436,
+            540,
+            660,
+            541
+          ],
+          "not_confidence_probability_or_real_future_revision": true,
+          "outsiders_that_may_enter": [],
+          "outsiders_that_may_enter_n": 0,
+          "potential_members_including_issued": 5,
+          "rank_bounds_for_original_selected": [
+            {
+              "best_possible_rank": 1,
+              "country_id": 41,
+              "guaranteed_member": true,
+              "original_rank": 1,
+              "worst_possible_rank": 1
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 436,
+              "guaranteed_member": true,
+              "original_rank": 2,
+              "worst_possible_rank": 2
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 540,
+              "guaranteed_member": true,
+              "original_rank": 3,
+              "worst_possible_rank": 4
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 660,
+              "guaranteed_member": true,
+              "original_rank": 4,
+              "worst_possible_rank": 4
+            },
+            {
+              "best_possible_rank": 5,
+              "country_id": 541,
+              "guaranteed_member": true,
+              "original_rank": 5,
+              "worst_possible_rank": 5
+            }
+          ],
+          "risk_group_n": 34,
+          "scenario": "TWO_TENTHS_PP",
+          "selection_invariant_for_all_allowed_score_perturbations": true,
+          "sharp_individual_possible_and_guaranteed_membership": true,
+          "total_replacements_not_assumed_jointly_independent": true
+        },
+        {
+          "budget_k": 5,
+          "epsilon_percentage_points": 0.256363188,
+          "epsilon_probability_absolute": 0.002563631883,
+          "guaranteed_issued_topk_country_ids": [
+            41,
+            436,
+            540,
+            541,
+            660
+          ],
+          "guaranteed_issued_topk_n": 5,
+          "issued_selected_members_that_may_exit": [],
+          "issued_selected_members_that_may_exit_n": 0,
+          "issued_topk_country_ids": [
+            41,
+            436,
+            540,
+            660,
+            541
+          ],
+          "not_confidence_probability_or_real_future_revision": true,
+          "outsiders_that_may_enter": [],
+          "outsiders_that_may_enter_n": 0,
+          "potential_members_including_issued": 5,
+          "rank_bounds_for_original_selected": [
+            {
+              "best_possible_rank": 1,
+              "country_id": 41,
+              "guaranteed_member": true,
+              "original_rank": 1,
+              "worst_possible_rank": 1
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 436,
+              "guaranteed_member": true,
+              "original_rank": 2,
+              "worst_possible_rank": 2
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 540,
+              "guaranteed_member": true,
+              "original_rank": 3,
+              "worst_possible_rank": 4
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 660,
+              "guaranteed_member": true,
+              "original_rank": 4,
+              "worst_possible_rank": 5
+            },
+            {
+              "best_possible_rank": 4,
+              "country_id": 541,
+              "guaranteed_member": true,
+              "original_rank": 5,
+              "worst_possible_rank": 5
+            }
+          ],
+          "risk_group_n": 34,
+          "scenario": "HISTORICAL_H2_LARGEST_WITHIN_PAIR_P95",
+          "selection_invariant_for_all_allowed_score_perturbations": true,
+          "sharp_individual_possible_and_guaranteed_membership": true,
+          "total_replacements_not_assumed_jointly_independent": true
+        },
+        {
+          "budget_k": 5,
+          "epsilon_percentage_points": 0.5,
+          "epsilon_probability_absolute": 0.005,
+          "guaranteed_issued_topk_country_ids": [
+            41,
+            436,
+            540,
+            541,
+            660
+          ],
+          "guaranteed_issued_topk_n": 5,
+          "issued_selected_members_that_may_exit": [],
+          "issued_selected_members_that_may_exit_n": 0,
+          "issued_topk_country_ids": [
+            41,
+            436,
+            540,
+            660,
+            541
+          ],
+          "not_confidence_probability_or_real_future_revision": true,
+          "outsiders_that_may_enter": [],
+          "outsiders_that_may_enter_n": 0,
+          "potential_members_including_issued": 5,
+          "rank_bounds_for_original_selected": [
+            {
+              "best_possible_rank": 1,
+              "country_id": 41,
+              "guaranteed_member": true,
+              "original_rank": 1,
+              "worst_possible_rank": 1
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 436,
+              "guaranteed_member": true,
+              "original_rank": 2,
+              "worst_possible_rank": 2
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 540,
+              "guaranteed_member": true,
+              "original_rank": 3,
+              "worst_possible_rank": 5
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 660,
+              "guaranteed_member": true,
+              "original_rank": 4,
+              "worst_possible_rank": 5
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 541,
+              "guaranteed_member": true,
+              "original_rank": 5,
+              "worst_possible_rank": 5
+            }
+          ],
+          "risk_group_n": 34,
+          "scenario": "HALF_PP",
+          "selection_invariant_for_all_allowed_score_perturbations": true,
+          "sharp_individual_possible_and_guaranteed_membership": true,
+          "total_replacements_not_assumed_jointly_independent": true
+        },
+        {
+          "budget_k": 5,
+          "epsilon_percentage_points": 1.0,
+          "epsilon_probability_absolute": 0.01,
+          "guaranteed_issued_topk_country_ids": [
+            41,
+            436,
+            540
+          ],
+          "guaranteed_issued_topk_n": 3,
+          "issued_selected_members_that_may_exit": [
+            541,
+            660
+          ],
+          "issued_selected_members_that_may_exit_n": 2,
+          "issued_topk_country_ids": [
+            41,
+            436,
+            540,
+            660,
+            541
+          ],
+          "not_confidence_probability_or_real_future_revision": true,
+          "outsiders_that_may_enter": [
+            630
+          ],
+          "outsiders_that_may_enter_n": 1,
+          "potential_members_including_issued": 6,
+          "rank_bounds_for_original_selected": [
+            {
+              "best_possible_rank": 1,
+              "country_id": 41,
+              "guaranteed_member": true,
+              "original_rank": 1,
+              "worst_possible_rank": 1
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 436,
+              "guaranteed_member": true,
+              "original_rank": 2,
+              "worst_possible_rank": 2
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 540,
+              "guaranteed_member": true,
+              "original_rank": 3,
+              "worst_possible_rank": 5
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 660,
+              "guaranteed_member": false,
+              "original_rank": 4,
+              "worst_possible_rank": 6
+            },
+            {
+              "best_possible_rank": 3,
+              "country_id": 541,
+              "guaranteed_member": false,
+              "original_rank": 5,
+              "worst_possible_rank": 6
+            }
+          ],
+          "risk_group_n": 34,
+          "scenario": "ONE_PP",
+          "selection_invariant_for_all_allowed_score_perturbations": false,
+          "sharp_individual_possible_and_guaranteed_membership": true,
+          "total_replacements_not_assumed_jointly_independent": true
+        },
+        {
+          "budget_k": 5,
+          "epsilon_percentage_points": 2.5,
+          "epsilon_probability_absolute": 0.025,
+          "guaranteed_issued_topk_country_ids": [
+            41
+          ],
+          "guaranteed_issued_topk_n": 1,
+          "issued_selected_members_that_may_exit": [
+            436,
+            540,
+            541,
+            660
+          ],
+          "issued_selected_members_that_may_exit_n": 4,
+          "issued_topk_country_ids": [
+            41,
+            436,
+            540,
+            660,
+            541
+          ],
+          "not_confidence_probability_or_real_future_revision": true,
+          "outsiders_that_may_enter": [
+            432,
+            482,
+            630,
+            850
+          ],
+          "outsiders_that_may_enter_n": 4,
+          "potential_members_including_issued": 9,
+          "rank_bounds_for_original_selected": [
+            {
+              "best_possible_rank": 1,
+              "country_id": 41,
+              "guaranteed_member": true,
+              "original_rank": 1,
+              "worst_possible_rank": 1
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 436,
+              "guaranteed_member": false,
+              "original_rank": 2,
+              "worst_possible_rank": 6
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 540,
+              "guaranteed_member": false,
+              "original_rank": 3,
+              "worst_possible_rank": 7
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 660,
+              "guaranteed_member": false,
+              "original_rank": 4,
+              "worst_possible_rank": 7
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 541,
+              "guaranteed_member": false,
+              "original_rank": 5,
+              "worst_possible_rank": 9
+            }
+          ],
+          "risk_group_n": 34,
+          "scenario": "TWO_AND_HALF_PP",
+          "selection_invariant_for_all_allowed_score_perturbations": false,
+          "sharp_individual_possible_and_guaranteed_membership": true,
+          "total_replacements_not_assumed_jointly_independent": true
+        },
+        {
+          "budget_k": 5,
+          "epsilon_percentage_points": 5.46064173,
+          "epsilon_probability_absolute": 0.054606417304,
+          "guaranteed_issued_topk_country_ids": [
+            41
+          ],
+          "guaranteed_issued_topk_n": 1,
+          "issued_selected_members_that_may_exit": [
+            436,
+            540,
+            541,
+            660
+          ],
+          "issued_selected_members_that_may_exit_n": 4,
+          "issued_topk_country_ids": [
+            41,
+            436,
+            540,
+            660,
+            541
+          ],
+          "not_confidence_probability_or_real_future_revision": true,
+          "outsiders_that_may_enter": [
+            365,
+            432,
+            434,
+            439,
+            461,
+            471,
+            475,
+            482,
+            626,
+            630,
+            666,
+            811,
+            850
+          ],
+          "outsiders_that_may_enter_n": 13,
+          "potential_members_including_issued": 18,
+          "rank_bounds_for_original_selected": [
+            {
+              "best_possible_rank": 1,
+              "country_id": 41,
+              "guaranteed_member": true,
+              "original_rank": 1,
+              "worst_possible_rank": 2
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 436,
+              "guaranteed_member": false,
+              "original_rank": 2,
+              "worst_possible_rank": 14
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 540,
+              "guaranteed_member": false,
+              "original_rank": 3,
+              "worst_possible_rank": 17
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 660,
+              "guaranteed_member": false,
+              "original_rank": 4,
+              "worst_possible_rank": 17
+            },
+            {
+              "best_possible_rank": 2,
+              "country_id": 541,
+              "guaranteed_member": false,
+              "original_rank": 5,
+              "worst_possible_rank": 18
+            }
+          ],
+          "risk_group_n": 34,
+          "scenario": "HISTORICAL_H2_MAX_SINGLE_COUNTRY",
+          "selection_invariant_for_all_allowed_score_perturbations": false,
+          "sharp_individual_possible_and_guaranteed_membership": true,
+          "total_replacements_not_assumed_jointly_independent": true
+        },
+        {
+          "budget_k": 5,
+          "epsilon_percentage_points": 10.0,
+          "epsilon_probability_absolute": 0.1,
+          "guaranteed_issued_topk_country_ids": [],
+          "guaranteed_issued_topk_n": 0,
+          "issued_selected_members_that_may_exit": [
+            41,
+            436,
+            540,
+            541,
+            660
+          ],
+          "issued_selected_members_that_may_exit_n": 5,
+          "issued_topk_country_ids": [
+            41,
+            436,
+            540,
+            660,
+            541
+          ],
+          "not_confidence_probability_or_real_future_revision": true,
+          "outsiders_that_may_enter": [
+            365,
+            369,
+            432,
+            434,
+            439,
+            461,
+            471,
+            475,
+            482,
+            490,
+            501,
+            520,
+            530,
+            625,
+            626,
+            630,
+            652,
+            666,
+            678,
+            770,
+            800,
+            811,
+            850
+          ],
+          "outsiders_that_may_enter_n": 23,
+          "potential_members_including_issued": 28,
+          "rank_bounds_for_original_selected": [
+            {
+              "best_possible_rank": 1,
+              "country_id": 41,
+              "guaranteed_member": false,
+              "original_rank": 1,
+              "worst_possible_rank": 16
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 436,
+              "guaranteed_member": false,
+              "original_rank": 2,
+              "worst_possible_rank": 26
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 540,
+              "guaranteed_member": false,
+              "original_rank": 3,
+              "worst_possible_rank": 28
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 660,
+              "guaranteed_member": false,
+              "original_rank": 4,
+              "worst_possible_rank": 28
+            },
+            {
+              "best_possible_rank": 1,
+              "country_id": 541,
+              "guaranteed_member": false,
+              "original_rank": 5,
+              "worst_possible_rank": 28
+            }
+          ],
+          "risk_group_n": 34,
+          "scenario": "TEN_PP",
+          "selection_invariant_for_all_allowed_score_perturbations": false,
+          "sharp_individual_possible_and_guaranteed_membership": true,
+          "total_replacements_not_assumed_jointly_independent": true
+        }
+      ],
+      "risk_group": "resolution_1_to_0",
+      "strictly_less_than_half_boundary_gap_guarantees_full_selection_unchanged": true,
+      "symmetric_uniform_change_first_can_affect_membership_if_around_boundary": 0.007494205232
+    }
+  },
+  "historical_H2_editional_scale": {
+    "P95_and_max_are_historical_descriptives_not_future_probabilistic_bounds": true,
+    "countrywise_rectangular_stress_does_not_assume_independent_real_revision_events": true,
+    "empirical_largest_H2_country_probability_change": 0.054606417304,
+    "empirical_largest_H2_within_pair_P95_country_change": 0.002563631883,
+    "which_H2_pair_attained_largest": {
+      "later_edition": "26.1",
+      "origin": 2022,
+      "original_edition": "23.1"
+    }
+  },
+  "historical_archive_forecast_sensitivity_is_not_a_future_bound": true,
+  "horizon_years": 2,
+  "issued_alert_first_public_commit": "5938db3c93661ce04ed35902b2bdaa68abfb8daa",
+  "issued_alert_source_sha256": "309b4f270e1d0d6382b7a90ae64c28d7621f96fbf3177a45aaebbffb0f958acb",
+  "issued_original_GEO2027_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "joint_country_dependence_estimated": false,
+  "limitations": "Per-country +/-epsilon independent coordinate control is a worst-case mathematical perturbation SET, NOT a fitted empirical joint distribution, UCDP first-complete-release revision or uncertainty interval. Historical 23.1..26.1 H2 country-max and within-fold P95 merely NOMINATE two stress magnitudes; neither predicts a future 27.1 revision rate nor guarantees a true 2027 alert selection. Top-k robustness is about RANKING membership only, not hit counts or prospective skill. Original risk groups are frozen by 2025 state, not redefined when later editions reclassify country-year origins. No 2027 outcome used.",
+  "n_certified_2027_outcome_labels": 0,
+  "n_new_alerts_or_reissued_frozen_probabilities": 0,
+  "n_origin_country_risk_set": 196,
+  "n_original_issued_alerts": 15,
+  "origin_year": 2025,
+  "original_forecasts_alert_budgets_and_rankings_modified": false,
+  "perturbation_set": "Every fixed 2025-state country transition score may independently vary by <=epsilon; clamp to [0,1], tie-break by numeric GWNO.",
+  "prospective_predictive_skill_demonstrated": false,
+  "real_source_revision_2027_observed": false,
+  "risk_group_budget_entry": 10,
+  "risk_group_budget_resolution": 5,
+  "scenario_order": [
+    "NO_PERTURBATION",
+    "TWO_TENTHS_PP",
+    "HISTORICAL_H2_LARGEST_WITHIN_PAIR_P95",
+    "HALF_PP",
+    "ONE_PP",
+    "TWO_AND_HALF_PP",
+    "HISTORICAL_H2_MAX_SINGLE_COUNTRY",
+    "TEN_PP"
+  ],
+  "schema": "idealab.psico.geo2027_issued_alert_adversarial_ranking_robustness.v1",
+  "status": "ISSUED_ORIGINAL_15_ALERTS_UNCHANGED_ZERO_OFFICIAL_2027_OUTCOMES",
+  "target_year": 2027,
+  "uncertainty_claim": "DETERMINISTIC_ADVERSARIAL_RECTANGLE_NOT_A_CONFIDENCE_INTERVAL"
+}

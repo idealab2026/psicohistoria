@@ -184,6 +184,29 @@ export function renderFutureEvaluationContracts(
   '<strong>componentes algebraicas, no efectos causales</strong>.</p>'+
   '<p><a href="'+base+'blob/main/docs/geo2028-2026-origin-update-attribution.md" '+
   'target="_blank" rel="noopener noreferrer">Cómo explicar el futuro cambio del pronóstico</a></p></section>'+
+  '<section class="panel"><div class="eyebrow">GEO2027 · ESTABILIDAD DE LAS 15 ALERTAS YA EMITIDAS</div>'+
+  '<h3>¿Qué alertas permanecen en el ranking si cambian las probabilidades?</h3>'+
+  '<p>Las 10 alertas de entrada (162 países elegibles) y las 5 de salida '+
+  '(34 elegibles) mantienen sus probabilidades originales. El margen que '+
+  'separa la última seleccionada de la primera excluida es de '+
+  '<strong>0,625 pp</strong> en entrada y <strong>1,499 pp</strong> en salida.</p>'+
+  '<div class="prospective-table-wrap"><table class="prospective-table">'+
+  '<thead><tr><th>Variación hipotética por país</th><th>Entrada: garantizadas de 10</th>'+
+  '<th>Salida: garantizadas de 5</th></tr></thead>'+
+  '<tbody><tr><td>±0,256 pp · referencia P95 histórica H2</td><td>10</td><td>5</td></tr>'+
+  '<tr><td>±0,5 pp</td><td>7</td><td>5</td></tr>'+
+  '<tr><td>±1 pp</td><td>7</td><td>3</td></tr>'+
+  '<tr><td>±2,5 pp</td><td>5</td><td>1</td></tr>'+
+  '<tr><td>±5,461 pp · máximo individual H2 histórico</td><td>2</td><td>1</td></tr>'+
+  '</tbody></table></div>'+
+  '<p class="tiny">Permanencia garantizada significa únicamente que cada país seguiría '+
+  'dentro del top-k bajo TODAS las combinaciones de puntuaciones permitidas por '+
+  'ese escenario. No son probabilidades de acierto, intervalos de confianza, '+
+  'predicciones alternativas ni una revisión real de UCDP. El máximo individual '+
+  'histórico aplicado simultáneamente a todos los países es un estrés extremo.</p>'+
+  '<p><a href="'+base+'blob/main/docs/geo2027-issued-alert-ranking-robustness.md" '+
+  'target="_blank" rel="noopener noreferrer">Análisis completo y pruebas de robustez</a></p>'+
+  '</section>'+
   '<section class="panel"><h3>Condiciones para poder puntuar cada emisión</h3>'+
   '<div class="prospective-table-wrap"><table class="prospective-table future-eval-table">'+
   '<thead><tr><th>Emisión</th><th>Modelo y referencia</th><th>Cobertura</th>'+

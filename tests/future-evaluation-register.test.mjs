@@ -58,6 +58,42 @@ test("readable unified status exposes 187 provisional distinct from certified 19
  assert.doesNotMatch(h,/5 emisiones con evaluación futura/);
  assert.doesNotMatch(h,/Aciertos certificados: [1-9]/);
 });
+test("issued GEO2027 alert ranking stress numbers on readiness page match frozen scientific report",()=>{
+ const artifact=read("data/geo2027-issued-alert-perturbation-robustness.json");
+ assert.equal(artifact.n_original_issued_alerts,15);
+ assert.equal(artifact.n_certified_2027_outcome_labels,0);
+ assert.equal(artifact.prospective_predictive_skill_demonstrated,false);
+ assert.equal(artifact.n_new_alerts_or_reissued_frozen_probabilities,0);
+ const display=renderFutureEvaluationContracts(report,old,newgeo,manifest);
+ assert.match(display,/15 ALERTAS YA EMITIDAS/);
+ assert.match(display,/0,625 pp/);
+ assert.match(display,/1,499 pp/);
+ assert.match(display,/geo2027-issued-alert-ranking-robustness\.md/);
+ for(const [name,displayLabel] of [
+   ["HISTORICAL_H2_LARGEST_WITHIN_PAIR_P95","±0,256 pp"],
+   ["HALF_PP","±0,5 pp"],["ONE_PP","±1 pp"],
+   ["TWO_AND_HALF_PP","±2,5 pp"],
+   ["HISTORICAL_H2_MAX_SINGLE_COUNTRY","±5,461 pp"],
+ ]){
+   const get=state=>artifact.group_results[state].perturbation_scenarios
+      .find(row=>row.scenario===name);
+   const entry=get("0"),exit=get("1");
+   assert.ok(entry&&exit);
+   const literal=displayLabel+"</td><td>"+
+      entry.guaranteed_issued_topk_n+"</td><td>"+
+      exit.guaranteed_issued_topk_n+"</td>";
+   if(name==="HISTORICAL_H2_LARGEST_WITHIN_PAIR_P95"||
+      name==="HISTORICAL_H2_MAX_SINGLE_COUNTRY"){
+      assert.ok(display.includes(displayLabel),name);
+      assert.ok(display.includes("<td>"+entry.guaranteed_issued_topk_n+
+                 "</td><td>"+exit.guaranteed_issued_topk_n+"</td>"),name);
+   }else{
+      assert.ok(display.includes(literal),name);
+   }
+ }
+ assert.match(display,/No son probabilidades de acierto/i);
+});
+
 test("reject every independently certified flag or false first-complete claim",()=>{
  const edits=[
   x=>x.n_future_outcomes_independently_certified=1,
