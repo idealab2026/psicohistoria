@@ -845,9 +845,40 @@ jobs:
         run: |
           set -e
           PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_geo2028_first_public_issue.py --no-git
+  geo2028_future_official_scoring_contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Strict GEO2028 first-complete future source and original 196 issued country tests
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_evaluate_geo2028_first_complete_official.py' -v
+          PYTHONDONTWRITEBYTECODE=1 python3 -m py_compile scripts/evaluate_geo2028_first_complete_official.py
+      - name: Refuse real future evaluations before official 2029 source availability
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 - <<'PY'
+          import sys
+          from datetime import date
+          sys.path.insert(0, 'scripts')
+          from evaluate_geo2028_first_complete_official import validate_candidate_source,load_immutable_issue
+          doc,manifest=load_immutable_issue()
+          assert len(doc['countries'])==196 and doc['2028_outcomes_resolved']==0
+          try:
+              validate_candidate_source(
+                  "https://ucdp.uu.se/downloads/organizedviolencecy/organizedviolencecy-291-csv.zip",
+                  "a"*64,"2028-12-31",as_of=date(2028,12,31))
+          except ValueError:
+              pass
+          else:
+              raise RuntimeError("Future labels were admitted before 2029")
+          print("GEO2028_OFFICIAL_SCORING_CONTRACT_ONLY_0_REAL_2028_OUTCOMES")
+          PY
   deploy:
     if: github.event_name != 'pull_request'
-    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic, new_entry_baseline_diagnostic, onset2_homogeneous_holdout, onset2_lagged_signal_ablation, probe_ucdp_prio_vintages, onset2_conflict_incidence, onset2_country_riskset_codebook, country_multiple_onset_probe, country_multiple_newconf_experiment, prospective_newconf_2027_source_audit, prospective_newconf_2027_candidate, prospective_newconf_2027_immutable, prospective_newconf_2027_resolution_contract, newconf_persistence_ablation, geo2027_transition_diagnostic, geo2027_transition_alert_ranking, geo2027_exact_alert_null, prospective_geo2027_transition_alert_issue, geo2027_alert_dependence_scenarios, prospective_geo2027_alert_resolution_contract, geo2027_historical_count_dispersion, geo2027_temporal_calibration_ablation, prospective_geo2027_calibrated_shadow_issue, prospective_geo2027_calibrated_shadow_future_contract, geo2027_shadow_break_even_frontier, geo2027_ucdp_vintage_revision_audit, geo2027_postcalibration_count_residuals, ucdp_prio_old_vintages_source_probe, ucdp_prio_retention_four_vintage, acd_retention_vintage_yearblock_robustness, prospective_acd2027_retention_issuance, acd2027_named_32_country_view, acd2027_future_official_scoring_contract, prospective2027_public_registry, acd_historical_country_cluster_influence, acd2027_historical_transferability, acd2027_exact_count_evidence, acd2027_dependence_variance, geo_newconf2027_sharp_dependence, geo_newconf2027_empirical_historical_count_residuals, geo2028_three_year_preregister, geo2028_first_public_issue_integrity, geo2028_public_explorer]
+    needs: [quality, independent_2027_reproducibility, historical_statebased_backtest, archived_country_holdout, origin_state_diagnostic, new_entry_baseline_diagnostic, onset2_homogeneous_holdout, onset2_lagged_signal_ablation, probe_ucdp_prio_vintages, onset2_conflict_incidence, onset2_country_riskset_codebook, country_multiple_onset_probe, country_multiple_newconf_experiment, prospective_newconf_2027_source_audit, prospective_newconf_2027_candidate, prospective_newconf_2027_immutable, prospective_newconf_2027_resolution_contract, newconf_persistence_ablation, geo2027_transition_diagnostic, geo2027_transition_alert_ranking, geo2027_exact_alert_null, prospective_geo2027_transition_alert_issue, geo2027_alert_dependence_scenarios, prospective_geo2027_alert_resolution_contract, geo2027_historical_count_dispersion, geo2027_temporal_calibration_ablation, prospective_geo2027_calibrated_shadow_issue, prospective_geo2027_calibrated_shadow_future_contract, geo2027_shadow_break_even_frontier, geo2027_ucdp_vintage_revision_audit, geo2027_postcalibration_count_residuals, ucdp_prio_old_vintages_source_probe, ucdp_prio_retention_four_vintage, acd_retention_vintage_yearblock_robustness, prospective_acd2027_retention_issuance, acd2027_named_32_country_view, acd2027_future_official_scoring_contract, prospective2027_public_registry, acd_historical_country_cluster_influence, acd2027_historical_transferability, acd2027_exact_count_evidence, acd2027_dependence_variance, geo_newconf2027_sharp_dependence, geo_newconf2027_empirical_historical_count_residuals, geo2028_three_year_preregister, geo2028_first_public_issue_integrity, geo2028_public_explorer, geo2028_future_official_scoring_contract]
     runs-on: ubuntu-latest
     environment: github-pages
     steps:
