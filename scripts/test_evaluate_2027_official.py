@@ -3,7 +3,7 @@ from pathlib import Path
 from evaluate_2027_official import (
     YEAR,COHORT,MIN_RESOLVED,FORECAST_SHA,load_frozen_issue,
     validate_future_source,parse_2027_outcomes,summary_scores,
-    bootstrap_interval,evaluate
+    evaluate
 )
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -70,6 +70,12 @@ class GenuineOnlyResolution(unittest.TestCase):
         self.assertIsNone(r["scores"])
         self.assertIsNone(r["interval_delta_brier_model_minus_baseline"])
         self.assertFalse(r["coverage_95pct_gate_passed"])
+        self.assertTrue(r["iid_country_bootstrap_disabled"])
+        b=r["sharp_full_cohort_brier_delta_bounds_not_confidence_interval"]
+        self.assertEqual(b["resolved_country_outcomes"],MIN_RESOLVED-1)
+        self.assertEqual(b["unresolved_country_outcomes"],COHORT-MIN_RESOLVED+1)
+        self.assertLessEqual(b["lower_full_cohort_delta_brier"],
+                             b["upper_full_cohort_delta_brier"])
         self.assertFalse(r["prospective_skill_independently_verified"])
         self.assertEqual(r["status"],"SELF_REPORTED_OFFICIAL_SOURCE_NEEDS_FIRST_RELEASE_ATTESTATION")
 
@@ -83,13 +89,21 @@ class GenuineOnlyResolution(unittest.TestCase):
         self.assertEqual(len(r["calibration_bins"]),5)
         self.assertEqual(sum(x["n"] for x in r["calibration_bins"]),196)
         self.assertIsNotNone(r["scores"]["model"]["logloss"])
-        self.assertLessEqual(r["interval_delta_brier_model_minus_baseline"][0],
-                             r["interval_delta_brier_model_minus_baseline"][1])
+        self.assertIsNone(r["interval_delta_brier_model_minus_baseline"])
+        self.assertTrue(r["iid_country_bootstrap_disabled"])
+        self.assertFalse(r["confidence_interval_justified_by_country_independence"])
+        bounds=r["sharp_full_cohort_brier_delta_bounds_not_confidence_interval"]
+        self.assertAlmostEqual(bounds["lower_full_cohort_delta_brier"],
+                               r["paired_brier_delta_on_resolved_only"])
+        self.assertAlmostEqual(bounds["upper_full_cohort_delta_brier"],
+                               r["paired_brier_delta_on_resolved_only"])
+        self.assertIsNone(bounds["confidence_level"])
+        self.assertFalse(bounds["bootstrap_resampling_used"])
         self.assertFalse(r["prospective_skill_independently_verified"])
         # A future country's outcome is never treated as missing/negative in the issue.
         self.assertEqual(f["countries"][0]["p_model"],0.1)
 
-    def test_metric_and_resampling_are_deterministic(self):
+    def test_descriptive_brier_is_deterministic_without_resampling(self):
         rows=[{"country_id":1,"p_model":0.2,"p_baseline_global_5y":0.3,
                "p_global_markov":0.4,"outcome":0},
               {"country_id":2,"p_model":0.8,"p_baseline_global_5y":0.3,
@@ -97,7 +111,11 @@ class GenuineOnlyResolution(unittest.TestCase):
               {"country_id":3,"p_model":0.6,"p_baseline_global_5y":0.3,
                "p_global_markov":0.4,"outcome":1}]
         self.assertAlmostEqual(summary_scores(rows,"p_model")["brier"],0.08,places=12)
-        self.assertEqual(bootstrap_interval(rows,replications=100,seed=12),
-                         bootstrap_interval(rows,replications=100,seed=12))
+        self.assertAlmostEqual(
+            summary_scores(rows,"p_model")["brier"]-
+            summary_scores(rows,"p_baseline_global_5y")["brier"],
+            ((.2**2-.3**2)+(.2**2-.7**2)+(.4**2-.7**2))/3)
+        self.assertNotIn("bootstrap_interval",evaluate.__globals__)
+        self.assertNotIn("REPLICATIONS",evaluate.__globals__)
 
 if __name__=="__main__":unittest.main()
