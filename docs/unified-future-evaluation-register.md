@@ -41,8 +41,10 @@ Se ha corregido adicionalmente scripts/evaluate_2027_official.py: la puerta de e
 
 El informe derivado de las fuentes data/future-evaluation-contracts.json se congela byte a byte y se reproduce en el job obligatorio unified_future_evaluation_contracts. La vista pública es src/future-evaluation-register.mjs, con pruebas de integridad sobre todos los archivos ya emitidos, ataque de inyección HTML, alteración de fecha, invento de resultados y cambio de denominador. No se guardan ni descargan etiquetas oficiales futuras.
 
-## Deuda científica identificada
+## Corrección estadística posterior (PR #80)
 
-Los evaluadores ya programados GEO2027 y NEWCONF2027 incluyen una opción de bootstrap de países **IID**, que no resulta adecuada para inferir incertidumbre confirmatoria cuando existen posibles shocks geopolíticos comunes. El registro público **no muestra ni interpreta esos intervalos** como cobertura inferencial válida. La corrección adecuada, antes de certificar habilidad, exigirá un diseño por bloques temporales o dependencias fundamentadas en evidencia, no simplemente incrementar el número de países.
+Los evaluadores GEO2027 y NEWCONF2027 **ya no calculan intervalos bootstrap IID por países**. Se han retirado las funciones de remuestreo y se han sustituido por **cotas algebraicas exactas del Brier de la cohorte original de 196 países** cuando faltan etiquetas. Las cotas recorren todas las asignaciones posibles de 0/1 a los países sin resultado; **no son intervalos de confianza** y no permiten afirmar superioridad estadística.
+
+Las métricas exploratorias basadas en 187–195 países resueltos siguen siendo descriptivas y deben diferenciarse de la puntuación completa de 196. No se han cambiado las predicciones emitidas ni las condiciones de procedencia independiente de futuras fuentes. Véase docs/non-iid-2027-evaluation-guards.md para la demostración y las nuevas pruebas.
 
 **Criterio de éxito futuro:** conjuntos de etiquetas verificados y completos, fuentes primarias trazables, cálculo con probabilidades emitidas sin reajuste, separación estricta de endpoints y un análisis de la dependencia temporal/geográfica con la incertidumbre correctamente expresada. Hoy: **cuatro emisiones reales, 620 preguntas emitidas, cero resultados futuros certificados y ninguna habilidad prospectiva demostrada.**
