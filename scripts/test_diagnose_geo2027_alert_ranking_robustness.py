@@ -127,7 +127,7 @@ class GEOAlertRobustnessTests(unittest.TestCase):
         with self.assertRaises(ValueError):build(*a)
         a=list(self.inputs);a[-1]=copy.deepcopy(a[-1])
         a[-1]["prospective_2027_2028_skill_demonstrated"]=True
-        with self.assertRaisesRegex(ValueError,"Historical"):build(*a)
+        with self.assertRaisesRegex(ValueError,"historical UCDP vintage"):build(*a)
 
     def test_reject_bad_country_ids_probs_and_eps(self):
         original=[{"country_id":1,"score":.45},{"country_id":2,"score":.33},
