@@ -167,6 +167,18 @@ export function renderFutureEvaluationContracts(
   'de la fuente. <strong>Ningún resultado futuro está certificado.</strong></p></header>'+
   '<div class="prospective-stats">'+totals+'</div>'+
   '<div class="prospective-cohorts future-eval-cohorts">'+cards+'</div>'+
+  '<section class="panel"><div class="eyebrow">PRÓXIMA COHORTE · PRE-REGISTRADA · NO EMITIDA</div>'+
+  '<h3>GEO2028 · Nuevo origen 2026, horizonte dos años</h3>'+
+  '<p>El modelo y los comparadores ya están definidos antes de recibir la edición anual '+
+  'UCDP OrganizedViolenceCY 27.1, pendiente en la comprobación del 15/11/2026. '+
+  '<strong>0 probabilidades emitidas con origen 2026.</strong> No sustituir por '+
+  'datos mensuales provisionales ni inventar resultados.</p>'+
+  '<p class="tiny">La futura emisión utilizaría 2026 → 2028, distinto del '+
+  'GEO2028 ya emitido con 2025 → 2028. Compartirán el mismo objetivo 2028 '+
+  'y no constituirán dos ensayos independientes. La cohorte 2026 puede '+
+  'tener países distintos y revisiones históricas.</p>'+
+  '<p><a href="'+base+'blob/main/docs/geo2028-origin2026-preregistration.md" '+
+  'target="_blank" rel="noopener noreferrer">Ver protocolo previo a los datos de 2026</a></p></section>'+
   '<section class="panel"><h3>Condiciones para poder puntuar cada emisión</h3>'+
   '<div class="prospective-table-wrap"><table class="prospective-table future-eval-table">'+
   '<thead><tr><th>Emisión</th><th>Modelo y referencia</th><th>Cobertura</th>'+
