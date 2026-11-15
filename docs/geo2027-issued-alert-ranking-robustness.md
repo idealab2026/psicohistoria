@@ -63,3 +63,33 @@ El generador scripts/diagnose_geo2027_alert_ranking_robustness.py verifica contr
 El informe data/geo2027-issued-alert-perturbation-robustness.json se genera desde fuentes institucionales, se incorpora a GitHub y pasa a requerir reconstrucción **exacta en CI** antes del despliegue. Los datos científicos y pruebas permanecen en el repositorio institucional y no se enlazan a proyectos personales.
 
 **Límites científicos:** este estudio mide la estabilidad de una **decisión basada en probabilidades emitidas** ante perturbaciones matemáticas hipotéticas. No estima su validez predictiva, su bondad de calibración en 2027, su utilidad económica ni su robustez frente a cambios reales de estado de origen causados por revisiones UCDP. Las 15 alertas originales siguen siendo las únicas emitidas y **no se sustituye ninguna por alertas calculadas en escenarios**.
+
+## 6. Resultados de la cohorte real de alertas emitidas
+
+Las seis pruebas sobre los certificados de pertenencia han pasado en GitHub Actions. El informe íntegro, construido con los **15 países y las 196 probabilidades inmutables**, es data/geo2027-issued-alert-perturbation-robustness.json. Los siguientes números representan **permanencia garantizada dentro de cada caja de perturbaciones**, no aciertos en resultados futuros:
+
+| Radio adversarial simétrico por país | Alertas entrada garantizadas (de 10) | Alertas resolución garantizadas (de 5) | Exclusiones que podrían entrar |
+|---|---:|---:|---|
+| 0 pp | 10 | 5 | 0 y 0 |
+| 0,2 pp | 10 | 5 | 0 y 0 |
+| 0,25636 pp (P95 H2 histórico más alto de las seis comparaciones) | **10** | **5** | 0 y 0 |
+| 0,5 pp | **7** | **5** | 4 y 0 |
+| 1 pp | **7** | **3** | 5 y 1 |
+| 2,5 pp | **5** | **1** | 15 y 4 |
+| 5,46064 pp (máximo individual H2 histórico) | **2** | **1** | 45 y 13 |
+| 10 pp | 0 | 0 | 152 y 23 |
+
+En el radio de **0,5 pp** pueden perder su plaza tres de las diez alertas de entrada (las de menor margen al límite), pero ninguna de las cinco alertas de resolución. Con radio de **1 pp**, siete entradas y tres resoluciones mantienen garantizada su inclusión. Los outsiders «podrían entrar» son **posibilidades individuales**; no se afirma que puedan hacerlo todos simultáneamente en una lista que sigue teniendo capacidad 10 o 5.
+
+Con radio **5,46064 pp**, que aplica a cada país una variación tan grande como la **mayor corrección individual jamás observada en las seis comparaciones oficiales H2** —una ampliación adversarial extrema, no una predicción de UCDP—, quedan garantizadas solo:
+
+- **Entrada:** Burundi (GWNO 516) y Senegal (GWNO 433).
+- **Resolución:** Haití (GWNO 41).
+
+Las restantes alertas originales pueden seguir siendo seleccionadas; únicamente dejan de tener **permanencia garantizada en esa caja**. La ausencia de garantía no implica error, fallo de predicción ni alta probabilidad de exclusión.
+
+### Consecuencia práctica
+
+Se deben comunicar las alertas GEO2027 con tres capas separadas: **probabilidad original emitida**, **posición y presupuesto congelados**, y **sensibilidad matemática de pertenencia bajo perturbaciones explícitas**. Esta tercera capa es información sobre robustez de una decisión de ranking, no una revisión de la predicción ni un porcentaje de acierto.
+
+El hallazgo explica por qué **estabilidad de la media de las probabilidades** (cambios retrospectivos medios pequeños) **no equivale a estabilidad de cada ranking operativo**, especialmente cerca de sus límites. La primera fuente real de resultados 2027 todavía no existe en el protocolo, así que **el estado prospectivo sigue sin resultados certificados**.
