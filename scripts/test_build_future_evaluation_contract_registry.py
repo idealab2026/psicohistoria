@@ -31,6 +31,13 @@ class UnifiedFutureEvaluationTests(unittest.TestCase):
                           for x in d["cohorts"]],[196,196,32,196])
         self.assertEqual([x["target_year"] for x in d["cohorts"]],[2027,2027,2027,2028])
         self.assertEqual([x["horizon_years"] for x in d["cohorts"]],[2,2,2,3])
+        self.assertTrue(all(
+            x["iid_country_bootstrap_disabled_in_official_candidate_evaluator"] is True
+            and x["statistical_confidence_interval_claimed"] is False
+            for x in d["cohorts"]))
+        self.assertEqual(
+            [x["sharp_missing_label_brier_region_available"] for x in d["cohorts"]],
+            [True,True,False,False])
         self.assertTrue(all(x["source_independently_verified_full_future_release"] is False
                             and x["future_country_labels_certified"]==0
                             and x["official_scores_certified"] is False
@@ -68,6 +75,17 @@ class UnifiedFutureEvaluationTests(unittest.TestCase):
             with self.subTest(tag=tag):
                 with self.assertRaises(ValueError):
                     index.build_index(orig,geo,man)
+
+    def test_iid_bootstrap_cannot_reappear_in_evaluator_or_index(self):
+        self.assertTrue(index.ensure_future_gates())
+        self.assertNotIn("bootstrap_interval",vars(index.geo27))
+        self.assertNotIn("bootstrap_delta",vars(index.new27))
+        self.assertNotIn("random",vars(index.geo27))
+        self.assertNotIn("random",vars(index.new27))
+        for c in self.report["cohorts"]:
+            self.assertTrue(c["iid_country_bootstrap_disabled_in_official_candidate_evaluator"])
+            self.assertFalse(c["statistical_confidence_interval_claimed"])
+            self.assertNotIn("genera un bootstrap",c["experimental_interval_warning"])
 
     def test_original_evaluators_reject_stale_2027_source_vintages(self):
         self.assertTrue(index.ensure_future_gates())
