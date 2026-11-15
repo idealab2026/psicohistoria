@@ -20,13 +20,13 @@ import hashlib
 import io
 import json
 import math
-import random
 import re
 from collections import defaultdict
 from datetime import date
 from pathlib import Path
 from urllib.parse import urlsplit
 
+from paired_brier_partial_identification import sharp_partial_paired_brier
 from audit_frozen_newconf_2027 import (
     FORECAST, MANIFEST, GENERATOR, audit as audit_issued,
     FROZEN_SHA, FIRST_COMMIT, PREREG_COMMIT
@@ -35,8 +35,6 @@ from audit_frozen_newconf_2027 import (
 YEAR=2027
 COHORT=196
 MIN_RESOLVED=187  # ceil(.95 * 196); a diagnostic score is not certification.
-REPLICATIONS=2000
-RANDOM_SEED=20261111
 FIELDS=("p_model","p_baseline_global_5y","p_country_eb","p_activity_global")
 CALIBRATION_EDGES=(0.0,0.01,0.025,0.05,0.1,1.0)
 ALERT_BUDGETS=(5,10,20)
@@ -142,20 +140,6 @@ def score(rows,field):
         logloss-=y*math.log(p)+(1-y)*math.log1p(-p)
     return {"brier":err/n,"logloss":logloss/n}
 
-def bootstrap_delta(rows,replications=REPLICATIONS,seed=RANDOM_SEED):
-    if not rows or replications<100:
-        raise ValueError("Too few resolved countries/replications for bootstrap")
-    if len({r["country_id"] for r in rows})!=len(rows):
-        raise ValueError("Bootstrap cannot use repeated country-year episodes")
-    values=[(r["p_model"]-r["outcome"])**2-
-            (r["p_baseline_global_5y"]-r["outcome"])**2 for r in rows]
-    n=len(values)
-    rng=random.Random(seed)
-    draws=sorted(sum(values[rng.randrange(n)] for _ in range(n))/n
-                 for _ in range(replications))
-    return [draws[int(.025*(replications-1))],
-            draws[int(.975*(replications-1))]]
-
 def calibration(rows):
     bins=[]
     for lower,upper in zip(CALIBRATION_EDGES[:-1],CALIBRATION_EDGES[1:]):
@@ -214,6 +198,8 @@ def evaluate(issued,outcomes,source_metadata,source_row_metadata):
     missing=[row["country_id"] for row in rows
              if row["country_id"] not in outcomes]
     n=len(resolved)
+    bounds=sharp_partial_paired_brier(
+        rows,outcomes,"p_model","p_baseline_global_5y",cohort_size=COHORT)
     report={
         "schema":"idealab.psico.newconf_2027_official_resolution_candidate.v1",
         "status":"CANDIDATE_NEEDS_INDEPENDENT_FIRST_COMPLETE_RELEASE_ATTESTATION",
@@ -240,10 +226,13 @@ def evaluate(issued,outcomes,source_metadata,source_row_metadata):
         "baseline_expected_events_issued":issued["training_summary"]["expected_positive_countries_baseline"],
         "scores":None,
         "delta_brier_model_minus_global_recent":None,
-        "bootstrap_country_delta_brier_95pct":None,
+        "bootstrap_country_delta_brier_95pct":None,  # legacy, permanently disabled
+        "iid_country_bootstrap_disabled":True,
+        "confidence_interval_justified_by_country_independence":False,
+        "sharp_full_cohort_brier_delta_bounds_not_confidence_interval":bounds,
         "calibration":None,
         "alert_budgets_tie_safe":None,
-        "limitations":"Operator supplies the official-looking URL, bytes, hash and claimed date. This tool cannot establish it is UCDP's FIRST COMPLETE RELEASE. A score passing the 95% coverage threshold is exploratory until its provenance and all exclusions are independently reviewed. No changes are permitted to the frozen model, comparator or cohort. Never score missing labels as zero.",
+        "limitations":"A claimed UCDP source URL, hash and date do not independently establish its first complete release. Scores at 187/196 are descriptive of observed countries, never certified. The sharp missing-label Brier extrema concern binary completions, NOT confidence intervals or probabilities. Country IID bootstraps are disabled; common shocks and differing source coverage prevent generalizable skill inference from one year. Original issues and missing outcomes stay unchanged.",
     }
     if n<MIN_RESOLVED:
         return report
@@ -255,7 +244,10 @@ def evaluate(issued,outcomes,source_metadata,source_row_metadata):
     report["delta_brier_model_minus_global_recent"]=(
         report["scores"]["p_model"]["brier"]-
         report["scores"]["p_baseline_global_5y"]["brier"])
-    report["bootstrap_country_delta_brier_95pct"]=bootstrap_delta(resolved)
+    if n==COHORT and abs(
+        report["delta_brier_model_minus_global_recent"]-
+        bounds["observed_full_cohort_delta_brier_if_complete"])>1e-12:
+        raise ValueError("Full-cohort NEWCONF Brier contradicts exact missing-label frontier")
     report["calibration"]=calibration(resolved)
     if n==COHORT:
         report["alert_budgets_tie_safe"]=[
