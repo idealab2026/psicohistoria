@@ -1,0 +1,2003 @@
+{
+  "all_six_pairs_statistically_independent": false,
+  "comparison_policy": "same original year and GWNO cohort, later edition truncated to origin, same target horizon",
+  "country_IID_uncertainty_or_confidence_intervals_estimated": false,
+  "country_probabilities_issued_in_2027_2028_changed": false,
+  "each_comparison_cohort_n": 196,
+  "first_2025_origin_newer_27_1_available": false,
+  "fixed_origins": [
+    2022,
+    2023,
+    2024
+  ],
+  "fully_reconstructed_original_2025_H2_H3": {
+    "2025_origin_H2_original_196_exact_model_and_reference_reproduced": true,
+    "2025_origin_H3_original_196_exact_model_and_reference_reproduced": true,
+    "2025_source_26_1_baseline": 0.17617107943,
+    "2025_source_26_1_global_transition_counts": [
+      [
+        5652,
+        169
+      ],
+      [
+        172,
+        940
+      ]
+    ],
+    "issued_GEO2027_first_original_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+    "issued_GEO2028_H3_first_original_sha256": "fd5832c6896548b053202f2f84bd0f7cd4a75df44462fbd4f259b9d8d4c39bde"
+  },
+  "historical_comparisons": [
+    {
+      "all_common_historical_country_years_including_later_pre_and_post_origin": {
+        "abs_label_churn_not_necessarily_change_in_n_active": 2,
+        "changed_active_to_inactive": 1,
+        "changed_inactive_to_active": 1,
+        "common_country_years": 6544,
+        "fixed_cohort_n": null,
+        "later_minus_earlier_active_count_on_common_pairs": 0,
+        "missing_in_earlier": 0,
+        "missing_in_later": 0,
+        "revised_binary_threshold_labels": 2,
+        "revision_fraction_of_common": 0.0003056234718826406,
+        "same_active": 1037,
+        "same_inactive": 5505,
+        "specified_year": null,
+        "unresolved_later_labels_never_imputed_inactive": true
+      },
+      "baseline_probability_revision": 0.0,
+      "first_edition_prediction_retrospectively_reconstructed": true,
+      "fixed_origin_binary_reclassification": {
+        "abs_label_churn_not_necessarily_change_in_n_active": 0,
+        "changed_active_to_inactive": 0,
+        "changed_inactive_to_active": 0,
+        "common_country_years": 196,
+        "fixed_cohort_n": 196,
+        "later_minus_earlier_active_count_on_common_pairs": 0,
+        "missing_in_earlier": 0,
+        "missing_in_later": 0,
+        "revised_binary_threshold_labels": 0,
+        "revision_fraction_of_common": 0.0,
+        "same_active": 37,
+        "same_inactive": 159,
+        "specified_year": 2022,
+        "unresolved_later_labels_never_imputed_inactive": true
+      },
+      "horizons": [
+        {
+          "country_count": 196,
+          "horizon_years": 2,
+          "largest_ten_named_probability_revisions": [
+            {
+              "country": "Thailand",
+              "country_id": 800,
+              "delta": 0.036372105987,
+              "kernel_revision_component": 0.036372105987,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.769131100836,
+              "revised_p": 0.805503206823
+            },
+            {
+              "country": "Albania",
+              "country_id": 339,
+              "delta": 0.033767934455,
+              "kernel_revision_component": 0.033767934455,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.021114176516,
+              "revised_p": 0.054882110971
+            },
+            {
+              "country": "South Sudan",
+              "country_id": 626,
+              "delta": 0.000336712941,
+              "kernel_revision_component": 0.000336712941,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.056167747698,
+              "revised_p": 0.056504460639
+            },
+            {
+              "country": "Algeria",
+              "country_id": 615,
+              "delta": 0.000260956331,
+              "kernel_revision_component": 0.000260956331,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.194179759065,
+              "revised_p": 0.194440715396
+            },
+            {
+              "country": "Kosovo",
+              "country_id": 347,
+              "delta": 0.000197981198,
+              "kernel_revision_component": 0.000197981198,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.032796537849,
+              "revised_p": 0.032994519047
+            },
+            {
+              "country": "Montenegro",
+              "country_id": 341,
+              "delta": 0.000187191242,
+              "kernel_revision_component": 0.000187191242,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.030991593789,
+              "revised_p": 0.031178785031
+            },
+            {
+              "country": "Sri Lanka",
+              "country_id": 780,
+              "delta": 0.000185390592,
+              "kernel_revision_component": 0.000185390592,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.135431154562,
+              "revised_p": 0.135616545154
+            },
+            {
+              "country": "Angola",
+              "country_id": 540,
+              "delta": 0.000176456507,
+              "kernel_revision_component": 0.000176456507,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.238408935434,
+              "revised_p": 0.238585391941
+            },
+            {
+              "country": "Peru",
+              "country_id": 135,
+              "delta": 0.000173649919,
+              "kernel_revision_component": 0.000173649919,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.076702382238,
+              "revised_p": 0.076876032157
+            },
+            {
+              "country": "East Timor",
+              "country_id": 860,
+              "delta": 0.000168791886,
+              "kernel_revision_component": 0.000168791886,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.027918575717,
+              "revised_p": 0.028087367603
+            }
+          ],
+          "max_absolute_probability_change": 0.036372105987,
+          "mean_absolute_probability_change": 0.000468629044,
+          "mean_signed_kernel_revision_component": 0.000468629044,
+          "mean_signed_origin_state_reclassification_component": 0.0,
+          "mean_signed_probability_change": 0.000468629044,
+          "median_absolute_probability_change": 0.00012792286,
+          "n_2025_or_historical_origin_state_reclassified": 0,
+          "n_changed_0_5_binary_decision": 0,
+          "n_probability_change_ge_10pp": 0,
+          "n_probability_change_ge_1pp": 2,
+          "n_probability_change_ge_5pp": 0,
+          "no_target_labels_observed": true,
+          "not_a_confidence_interval_or_skill_estimate": true,
+          "origin_state_reclassified_country_ids": [],
+          "p95_absolute_probability_change": 0.000168791886,
+          "sum_of_absolute_probability_changes": 0.09185129256,
+          "target_calendar_year_if_issued_then": 2024,
+          "top20_entered_GWNO": [],
+          "top20_exited_GWNO": [],
+          "top20_overlap_with_GWNO_tie_break": 20,
+          "top20_rank_ties_broken_by_GWNO_numeric_not_statistically_meaningful": true
+        },
+        {
+          "country_count": 196,
+          "horizon_years": 3,
+          "largest_ten_named_probability_revisions": [
+            {
+              "country": "Thailand",
+              "country_id": 800,
+              "delta": 0.045788433442,
+              "kernel_revision_component": 0.045788433442,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.688747803038,
+              "revised_p": 0.73453623648
+            },
+            {
+              "country": "Albania",
+              "country_id": 339,
+              "delta": 0.04409221923,
+              "kernel_revision_component": 0.04409221923,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.02897261395,
+              "revised_p": 0.07306483318
+            },
+            {
+              "country": "South Sudan",
+              "country_id": 626,
+              "delta": 0.000456271675,
+              "kernel_revision_component": 0.000456271675,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.077348697152,
+              "revised_p": 0.077804968827
+            },
+            {
+              "country": "Algeria",
+              "country_id": 615,
+              "delta": 0.000329935894,
+              "kernel_revision_component": 0.000329935894,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.260967662061,
+              "revised_p": 0.261297597955
+            },
+            {
+              "country": "Kosovo",
+              "country_id": 347,
+              "delta": 0.000268241674,
+              "kernel_revision_component": 0.000268241674,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.044854846448,
+              "revised_p": 0.045123088122
+            },
+            {
+              "country": "Montenegro",
+              "country_id": 341,
+              "delta": 0.000253886558,
+              "kernel_revision_component": 0.000253886558,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.04240794703,
+              "revised_p": 0.042661833588
+            },
+            {
+              "country": "Sri Lanka",
+              "country_id": 780,
+              "delta": 0.000236349552,
+              "kernel_revision_component": 0.000236349552,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.180046552178,
+              "revised_p": 0.18028290173
+            },
+            {
+              "country": "Peru",
+              "country_id": 135,
+              "delta": 0.000230911783,
+              "kernel_revision_component": 0.000230911783,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.104313824585,
+              "revised_p": 0.104544736368
+            },
+            {
+              "country": "East Timor",
+              "country_id": 860,
+              "delta": 0.000229336421,
+              "kernel_revision_component": 0.000229336421,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.038236128924,
+              "revised_p": 0.038465465345
+            },
+            {
+              "country": "Cambodia (Kampuchea)",
+              "country_id": 811,
+              "delta": 0.000218756628,
+              "kernel_revision_component": 0.000218756628,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.036426130124,
+              "revised_p": 0.036644886752
+            }
+          ],
+          "max_absolute_probability_change": 0.045788433442,
+          "mean_absolute_probability_change": 0.000609839998,
+          "mean_signed_kernel_revision_component": 0.000609839998,
+          "mean_signed_origin_state_reclassification_component": 0.0,
+          "mean_signed_probability_change": 0.000609839998,
+          "median_absolute_probability_change": 0.000174485505,
+          "n_2025_or_historical_origin_state_reclassified": 0,
+          "n_changed_0_5_binary_decision": 0,
+          "n_probability_change_ge_10pp": 0,
+          "n_probability_change_ge_1pp": 2,
+          "n_probability_change_ge_5pp": 0,
+          "no_target_labels_observed": true,
+          "not_a_confidence_interval_or_skill_estimate": true,
+          "origin_state_reclassified_country_ids": [],
+          "p95_absolute_probability_change": 0.000218756628,
+          "sum_of_absolute_probability_changes": 0.119528639696,
+          "target_calendar_year_if_issued_then": 2025,
+          "top20_entered_GWNO": [],
+          "top20_exited_GWNO": [],
+          "top20_overlap_with_GWNO_tie_break": 20,
+          "top20_rank_ties_broken_by_GWNO_numeric_not_statistically_meaningful": true
+        }
+      ],
+      "later_edition_label_revision_not_a_new_2026_origin": true,
+      "later_revision_edition": "24.1",
+      "later_vintage_global_transitions": [
+        [
+          5180,
+          164
+        ],
+        [
+          164,
+          837
+        ]
+      ],
+      "later_vintage_training_country_ids": 199,
+      "new_edition_last_year_unused_in_training": 2023,
+      "old_global_5y_baseline_probability": 0.170061099796,
+      "old_vintage_global_transitions": [
+        [
+          5181,
+          163
+        ],
+        [
+          164,
+          837
+        ]
+      ],
+      "old_vintage_training_country_ids": 199,
+      "origin_year_fixed": 2022,
+      "original_edition": "23.1",
+      "original_risk_set_n": 196,
+      "revised_global_5y_baseline_probability": 0.170061099796,
+      "revised_risk_set_n": 196,
+      "training_cutoff_exact": true
+    },
+    {
+      "all_common_historical_country_years_including_later_pre_and_post_origin": {
+        "abs_label_churn_not_necessarily_change_in_n_active": 6,
+        "changed_active_to_inactive": 1,
+        "changed_inactive_to_active": 5,
+        "common_country_years": 6544,
+        "fixed_cohort_n": null,
+        "later_minus_earlier_active_count_on_common_pairs": 4,
+        "missing_in_earlier": 0,
+        "missing_in_later": 0,
+        "revised_binary_threshold_labels": 6,
+        "revision_fraction_of_common": 0.0009168704156479218,
+        "same_active": 1037,
+        "same_inactive": 5501,
+        "specified_year": null,
+        "unresolved_later_labels_never_imputed_inactive": true
+      },
+      "baseline_probability_revision": 0.004073319756,
+      "first_edition_prediction_retrospectively_reconstructed": true,
+      "fixed_origin_binary_reclassification": {
+        "abs_label_churn_not_necessarily_change_in_n_active": 0,
+        "changed_active_to_inactive": 0,
+        "changed_inactive_to_active": 0,
+        "common_country_years": 196,
+        "fixed_cohort_n": 196,
+        "later_minus_earlier_active_count_on_common_pairs": 0,
+        "missing_in_earlier": 0,
+        "missing_in_later": 0,
+        "revised_binary_threshold_labels": 0,
+        "revision_fraction_of_common": 0.0,
+        "same_active": 37,
+        "same_inactive": 159,
+        "specified_year": 2022,
+        "unresolved_later_labels_never_imputed_inactive": true
+      },
+      "horizons": [
+        {
+          "country_count": 196,
+          "horizon_years": 2,
+          "largest_ten_named_probability_revisions": [
+            {
+              "country": "Indonesia",
+              "country_id": 850,
+              "delta": 0.053666651838,
+              "kernel_revision_component": 0.053666651838,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.657575161428,
+              "revised_p": 0.711241813266
+            },
+            {
+              "country": "Thailand",
+              "country_id": 800,
+              "delta": 0.036931164173,
+              "kernel_revision_component": 0.036931164173,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.769131100836,
+              "revised_p": 0.806062265009
+            },
+            {
+              "country": "Albania",
+              "country_id": 339,
+              "delta": 0.033802704119,
+              "kernel_revision_component": 0.033802704119,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.021114176516,
+              "revised_p": 0.054916880635
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702,
+              "delta": -0.018558135824,
+              "kernel_revision_component": -0.018558135824,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.648213267755,
+              "revised_p": 0.629655131931
+            },
+            {
+              "country": "Benin",
+              "country_id": 434,
+              "delta": 0.001085437466,
+              "kernel_revision_component": 0.001085437466,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.703057689956,
+              "revised_p": 0.704143127422
+            },
+            {
+              "country": "Togo",
+              "country_id": 461,
+              "delta": 0.001085437466,
+              "kernel_revision_component": 0.001085437466,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.703057689956,
+              "revised_p": 0.704143127422
+            },
+            {
+              "country": "Kyrgyzstan",
+              "country_id": 703,
+              "delta": 0.000941753672,
+              "kernel_revision_component": 0.000941753672,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.658416662822,
+              "revised_p": 0.659358416494
+            },
+            {
+              "country": "Burkina Faso",
+              "country_id": 439,
+              "delta": 0.000933862891,
+              "kernel_revision_component": 0.000933862891,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.749130109343,
+              "revised_p": 0.750063972234
+            },
+            {
+              "country": "Armenia",
+              "country_id": 371,
+              "delta": 0.00091012942,
+              "kernel_revision_component": 0.00091012942,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.671893905999,
+              "revised_p": 0.672804035419
+            },
+            {
+              "country": "Ukraine",
+              "country_id": 369,
+              "delta": 0.000817955674,
+              "kernel_revision_component": 0.000817955674,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.783207353197,
+              "revised_p": 0.784025308871
+            }
+          ],
+          "max_absolute_probability_change": 0.053666651838,
+          "mean_absolute_probability_change": 0.000968659569,
+          "mean_signed_kernel_revision_component": 0.000779290837,
+          "mean_signed_origin_state_reclassification_component": 0.0,
+          "mean_signed_probability_change": 0.000779290837,
+          "median_absolute_probability_change": 0.000157203249,
+          "n_2025_or_historical_origin_state_reclassified": 0,
+          "n_changed_0_5_binary_decision": 0,
+          "n_probability_change_ge_10pp": 0,
+          "n_probability_change_ge_1pp": 4,
+          "n_probability_change_ge_5pp": 1,
+          "no_target_labels_observed": true,
+          "not_a_confidence_interval_or_skill_estimate": true,
+          "origin_state_reclassified_country_ids": [],
+          "p95_absolute_probability_change": 0.000817955674,
+          "sum_of_absolute_probability_changes": 0.189857275603,
+          "target_calendar_year_if_issued_then": 2024,
+          "top20_entered_GWNO": [],
+          "top20_exited_GWNO": [],
+          "top20_overlap_with_GWNO_tie_break": 20,
+          "top20_rank_ties_broken_by_GWNO_numeric_not_statistically_meaningful": true
+        },
+        {
+          "country_count": 196,
+          "horizon_years": 3,
+          "largest_ten_named_probability_revisions": [
+            {
+              "country": "Indonesia",
+              "country_id": 850,
+              "delta": 0.056424799972,
+              "kernel_revision_component": 0.056424799972,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.571193858837,
+              "revised_p": 0.627618658809
+            },
+            {
+              "country": "Thailand",
+              "country_id": 800,
+              "delta": 0.046509268782,
+              "kernel_revision_component": 0.046509268782,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.688747803038,
+              "revised_p": 0.73525707182
+            },
+            {
+              "country": "Albania",
+              "country_id": 339,
+              "delta": 0.044161381589,
+              "kernel_revision_component": 0.044161381589,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.02897261395,
+              "revised_p": 0.073133995539
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702,
+              "delta": -0.012074036924,
+              "kernel_revision_component": -0.012074036924,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.551886707173,
+              "revised_p": 0.539812670249
+            },
+            {
+              "country": "Benin",
+              "country_id": 434,
+              "delta": 0.001357418087,
+              "kernel_revision_component": 0.001357418087,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.596440316148,
+              "revised_p": 0.597797734235
+            },
+            {
+              "country": "Togo",
+              "country_id": 461,
+              "delta": 0.001357418087,
+              "kernel_revision_component": 0.001357418087,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.596440316148,
+              "revised_p": 0.597797734235
+            },
+            {
+              "country": "Burkina Faso",
+              "country_id": 439,
+              "delta": 0.001204971465,
+              "kernel_revision_component": 0.001204971465,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.654693817627,
+              "revised_p": 0.655898789092
+            },
+            {
+              "country": "Kyrgyzstan",
+              "country_id": 703,
+              "delta": 0.001128786171,
+              "kernel_revision_component": 0.001128786171,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.548240773008,
+              "revised_p": 0.549369559179
+            },
+            {
+              "country": "Armenia",
+              "country_id": 371,
+              "delta": 0.001101762213,
+              "kernel_revision_component": 0.001101762213,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.564432285909,
+              "revised_p": 0.565534048122
+            },
+            {
+              "country": "Ukraine",
+              "country_id": 369,
+              "delta": 0.001078205631,
+              "kernel_revision_component": 0.001078205631,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.699311845662,
+              "revised_p": 0.700390051293
+            }
+          ],
+          "max_absolute_probability_change": 0.056424799972,
+          "mean_absolute_probability_change": 0.001138206378,
+          "mean_signed_kernel_revision_component": 0.00101500192,
+          "mean_signed_origin_state_reclassification_component": 0.0,
+          "mean_signed_probability_change": 0.00101500192,
+          "median_absolute_probability_change": 0.000224485646,
+          "n_2025_or_historical_origin_state_reclassified": 0,
+          "n_changed_0_5_binary_decision": 0,
+          "n_probability_change_ge_10pp": 0,
+          "n_probability_change_ge_1pp": 4,
+          "n_probability_change_ge_5pp": 1,
+          "no_target_labels_observed": true,
+          "not_a_confidence_interval_or_skill_estimate": true,
+          "origin_state_reclassified_country_ids": [],
+          "p95_absolute_probability_change": 0.001078205631,
+          "sum_of_absolute_probability_changes": 0.223088450155,
+          "target_calendar_year_if_issued_then": 2025,
+          "top20_entered_GWNO": [],
+          "top20_exited_GWNO": [],
+          "top20_overlap_with_GWNO_tie_break": 20,
+          "top20_rank_ties_broken_by_GWNO_numeric_not_statistically_meaningful": true
+        }
+      ],
+      "later_edition_label_revision_not_a_new_2026_origin": true,
+      "later_revision_edition": "25.1",
+      "later_vintage_global_transitions": [
+        [
+          5176,
+          164
+        ],
+        [
+          164,
+          841
+        ]
+      ],
+      "later_vintage_training_country_ids": 199,
+      "new_edition_last_year_unused_in_training": 2024,
+      "old_global_5y_baseline_probability": 0.170061099796,
+      "old_vintage_global_transitions": [
+        [
+          5181,
+          163
+        ],
+        [
+          164,
+          837
+        ]
+      ],
+      "old_vintage_training_country_ids": 199,
+      "origin_year_fixed": 2022,
+      "original_edition": "23.1",
+      "original_risk_set_n": 196,
+      "revised_global_5y_baseline_probability": 0.174134419552,
+      "revised_risk_set_n": 196,
+      "training_cutoff_exact": true
+    },
+    {
+      "all_common_historical_country_years_including_later_pre_and_post_origin": {
+        "abs_label_churn_not_necessarily_change_in_n_active": 9,
+        "changed_active_to_inactive": 2,
+        "changed_inactive_to_active": 7,
+        "common_country_years": 6544,
+        "fixed_cohort_n": null,
+        "later_minus_earlier_active_count_on_common_pairs": 5,
+        "missing_in_earlier": 0,
+        "missing_in_later": 0,
+        "revised_binary_threshold_labels": 9,
+        "revision_fraction_of_common": 0.0013753056234718827,
+        "same_active": 1036,
+        "same_inactive": 5499,
+        "specified_year": null,
+        "unresolved_later_labels_never_imputed_inactive": true
+      },
+      "baseline_probability_revision": 0.004073319756,
+      "first_edition_prediction_retrospectively_reconstructed": true,
+      "fixed_origin_binary_reclassification": {
+        "abs_label_churn_not_necessarily_change_in_n_active": 0,
+        "changed_active_to_inactive": 0,
+        "changed_inactive_to_active": 0,
+        "common_country_years": 196,
+        "fixed_cohort_n": 196,
+        "later_minus_earlier_active_count_on_common_pairs": 0,
+        "missing_in_earlier": 0,
+        "missing_in_later": 0,
+        "revised_binary_threshold_labels": 0,
+        "revision_fraction_of_common": 0.0,
+        "same_active": 37,
+        "same_inactive": 159,
+        "specified_year": 2022,
+        "unresolved_later_labels_never_imputed_inactive": true
+      },
+      "horizons": [
+        {
+          "country_count": 196,
+          "horizon_years": 2,
+          "largest_ten_named_probability_revisions": [
+            {
+              "country": "Indonesia",
+              "country_id": 850,
+              "delta": 0.054606417304,
+              "kernel_revision_component": 0.054606417304,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.657575161428,
+              "revised_p": 0.712181578732
+            },
+            {
+              "country": "Thailand",
+              "country_id": 800,
+              "delta": 0.037905164103,
+              "kernel_revision_component": 0.037905164103,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.769131100836,
+              "revised_p": 0.807036264939
+            },
+            {
+              "country": "Colombia",
+              "country_id": 100,
+              "delta": 0.034722587737,
+              "kernel_revision_component": 0.034722587737,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.848140786025,
+              "revised_p": 0.882863373762
+            },
+            {
+              "country": "Albania",
+              "country_id": 339,
+              "delta": 0.033715813324,
+              "kernel_revision_component": 0.033715813324,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.021114176516,
+              "revised_p": 0.05482998984
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702,
+              "delta": -0.017567597294,
+              "kernel_revision_component": -0.017567597294,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.648213267755,
+              "revised_p": 0.630645670461
+            },
+            {
+              "country": "Yemen (North Yemen)",
+              "country_id": 678,
+              "delta": 0.00803299347,
+              "kernel_revision_component": 0.00803299347,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.772016733601,
+              "revised_p": 0.780049727071
+            },
+            {
+              "country": "Senegal",
+              "country_id": 433,
+              "delta": -0.007072938313,
+              "kernel_revision_component": -0.007072938313,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.262036285379,
+              "revised_p": 0.254963347066
+            },
+            {
+              "country": "Benin",
+              "country_id": 434,
+              "delta": 0.002971245074,
+              "kernel_revision_component": 0.002971245074,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.703057689956,
+              "revised_p": 0.70602893503
+            },
+            {
+              "country": "Togo",
+              "country_id": 461,
+              "delta": 0.002971245074,
+              "kernel_revision_component": 0.002971245074,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.703057689956,
+              "revised_p": 0.70602893503
+            },
+            {
+              "country": "Kyrgyzstan",
+              "country_id": 703,
+              "delta": 0.002563631883,
+              "kernel_revision_component": 0.002563631883,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.658416662822,
+              "revised_p": 0.660980294705
+            }
+          ],
+          "max_absolute_probability_change": 0.054606417304,
+          "mean_absolute_probability_change": 0.001306668906,
+          "mean_signed_kernel_revision_component": 0.001055234869,
+          "mean_signed_origin_state_reclassification_component": 0.0,
+          "mean_signed_probability_change": 0.001055234869,
+          "median_absolute_probability_change": 4.0590849e-05,
+          "n_2025_or_historical_origin_state_reclassified": 0,
+          "n_changed_0_5_binary_decision": 0,
+          "n_probability_change_ge_10pp": 0,
+          "n_probability_change_ge_1pp": 5,
+          "n_probability_change_ge_5pp": 1,
+          "no_target_labels_observed": true,
+          "not_a_confidence_interval_or_skill_estimate": true,
+          "origin_state_reclassified_country_ids": [],
+          "p95_absolute_probability_change": 0.002563631883,
+          "sum_of_absolute_probability_changes": 0.256107105612,
+          "target_calendar_year_if_issued_then": 2024,
+          "top20_entered_GWNO": [],
+          "top20_exited_GWNO": [],
+          "top20_overlap_with_GWNO_tie_break": 20,
+          "top20_rank_ties_broken_by_GWNO_numeric_not_statistically_meaningful": true
+        },
+        {
+          "country_count": 196,
+          "horizon_years": 3,
+          "largest_ten_named_probability_revisions": [
+            {
+              "country": "Indonesia",
+              "country_id": 850,
+              "delta": 0.057500060711,
+              "kernel_revision_component": 0.057500060711,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.571193858837,
+              "revised_p": 0.628693919548
+            },
+            {
+              "country": "Thailand",
+              "country_id": 800,
+              "delta": 0.047746547752,
+              "kernel_revision_component": 0.047746547752,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.688747803038,
+              "revised_p": 0.73649435079
+            },
+            {
+              "country": "Albania",
+              "country_id": 339,
+              "delta": 0.044089222801,
+              "kernel_revision_component": 0.044089222801,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.02897261395,
+              "revised_p": 0.073061836751
+            },
+            {
+              "country": "Colombia",
+              "country_id": 100,
+              "delta": 0.042420987339,
+              "kernel_revision_component": 0.042420987339,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.789835216537,
+              "revised_p": 0.832256203876
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702,
+              "delta": -0.011030709269,
+              "kernel_revision_component": -0.011030709269,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.551886707173,
+              "revised_p": 0.540855997904
+            },
+            {
+              "country": "Yemen (North Yemen)",
+              "country_id": 678,
+              "delta": 0.010490407942,
+              "kernel_revision_component": 0.010490407942,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.689881496038,
+              "revised_p": 0.70037190398
+            },
+            {
+              "country": "Senegal",
+              "country_id": 433,
+              "delta": -0.009080630638,
+              "kernel_revision_component": -0.009080630638,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.3028199249,
+              "revised_p": 0.293739294262
+            },
+            {
+              "country": "Benin",
+              "country_id": 434,
+              "delta": 0.003671732856,
+              "kernel_revision_component": 0.003671732856,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.596440316148,
+              "revised_p": 0.600112049004
+            },
+            {
+              "country": "Togo",
+              "country_id": 461,
+              "delta": 0.003671732856,
+              "kernel_revision_component": 0.003671732856,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.596440316148,
+              "revised_p": 0.600112049004
+            },
+            {
+              "country": "Burkina Faso",
+              "country_id": 439,
+              "delta": 0.003255747116,
+              "kernel_revision_component": 0.003255747116,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.654693817627,
+              "revised_p": 0.657949564743
+            }
+          ],
+          "max_absolute_probability_change": 0.057500060711,
+          "mean_absolute_probability_change": 0.001569217382,
+          "mean_signed_kernel_revision_component": 0.001363999628,
+          "mean_signed_origin_state_reclassification_component": 0.0,
+          "mean_signed_probability_change": 0.001363999628,
+          "median_absolute_probability_change": 8.2300681e-05,
+          "n_2025_or_historical_origin_state_reclassified": 0,
+          "n_changed_0_5_binary_decision": 0,
+          "n_probability_change_ge_10pp": 0,
+          "n_probability_change_ge_1pp": 6,
+          "n_probability_change_ge_5pp": 1,
+          "no_target_labels_observed": true,
+          "not_a_confidence_interval_or_skill_estimate": true,
+          "origin_state_reclassified_country_ids": [],
+          "p95_absolute_probability_change": 0.003255747116,
+          "sum_of_absolute_probability_changes": 0.307566606877,
+          "target_calendar_year_if_issued_then": 2025,
+          "top20_entered_GWNO": [],
+          "top20_exited_GWNO": [],
+          "top20_overlap_with_GWNO_tie_break": 20,
+          "top20_rank_ties_broken_by_GWNO_numeric_not_statistically_meaningful": true
+        }
+      ],
+      "later_edition_label_revision_not_a_new_2026_origin": true,
+      "later_revision_edition": "26.1",
+      "later_vintage_global_transitions": [
+        [
+          5176,
+          163
+        ],
+        [
+          163,
+          843
+        ]
+      ],
+      "later_vintage_training_country_ids": 199,
+      "new_edition_last_year_unused_in_training": 2025,
+      "old_global_5y_baseline_probability": 0.170061099796,
+      "old_vintage_global_transitions": [
+        [
+          5181,
+          163
+        ],
+        [
+          164,
+          837
+        ]
+      ],
+      "old_vintage_training_country_ids": 199,
+      "origin_year_fixed": 2022,
+      "original_edition": "23.1",
+      "original_risk_set_n": 196,
+      "revised_global_5y_baseline_probability": 0.174134419552,
+      "revised_risk_set_n": 196,
+      "training_cutoff_exact": true
+    },
+    {
+      "all_common_historical_country_years_including_later_pre_and_post_origin": {
+        "abs_label_churn_not_necessarily_change_in_n_active": 4,
+        "changed_active_to_inactive": 0,
+        "changed_inactive_to_active": 4,
+        "common_country_years": 6740,
+        "fixed_cohort_n": null,
+        "later_minus_earlier_active_count_on_common_pairs": 4,
+        "missing_in_earlier": 0,
+        "missing_in_later": 0,
+        "revised_binary_threshold_labels": 4,
+        "revision_fraction_of_common": 0.0005934718100890207,
+        "same_active": 1072,
+        "same_inactive": 5664,
+        "specified_year": null,
+        "unresolved_later_labels_never_imputed_inactive": true
+      },
+      "baseline_probability_revision": 0.003054989817,
+      "first_edition_prediction_retrospectively_reconstructed": true,
+      "fixed_origin_binary_reclassification": {
+        "abs_label_churn_not_necessarily_change_in_n_active": 0,
+        "changed_active_to_inactive": 0,
+        "changed_inactive_to_active": 0,
+        "common_country_years": 196,
+        "fixed_cohort_n": 196,
+        "later_minus_earlier_active_count_on_common_pairs": 0,
+        "missing_in_earlier": 0,
+        "missing_in_later": 0,
+        "revised_binary_threshold_labels": 0,
+        "revision_fraction_of_common": 0.0,
+        "same_active": 34,
+        "same_inactive": 162,
+        "specified_year": 2023,
+        "unresolved_later_labels_never_imputed_inactive": true
+      },
+      "horizons": [
+        {
+          "country_count": 196,
+          "horizon_years": 2,
+          "largest_ten_named_probability_revisions": [
+            {
+              "country": "Indonesia",
+              "country_id": 850,
+              "delta": 0.052161214282,
+              "kernel_revision_component": 0.052161214282,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.666719574848,
+              "revised_p": 0.71888078913
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702,
+              "delta": 0.045157110714,
+              "kernel_revision_component": 0.045157110714,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.185746326712,
+              "revised_p": 0.230903437426
+            },
+            {
+              "country": "Benin",
+              "country_id": 434,
+              "delta": 0.000990783836,
+              "kernel_revision_component": 0.000990783836,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.717599666102,
+              "revised_p": 0.718590449938
+            },
+            {
+              "country": "Togo",
+              "country_id": 461,
+              "delta": 0.000990783836,
+              "kernel_revision_component": 0.000990783836,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.717599666102,
+              "revised_p": 0.718590449938
+            },
+            {
+              "country": "Burkina Faso",
+              "country_id": 439,
+              "delta": 0.000856019018,
+              "kernel_revision_component": 0.000856019018,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.759850083045,
+              "revised_p": 0.760706102063
+            },
+            {
+              "country": "Ukraine",
+              "country_id": 369,
+              "delta": 0.000751663782,
+              "kernel_revision_component": 0.000751663782,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.79145663771,
+              "revised_p": 0.792208301492
+            },
+            {
+              "country": "Kenya",
+              "country_id": 501,
+              "delta": 0.000709035538,
+              "kernel_revision_component": 0.000709035538,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.804144040407,
+              "revised_p": 0.804853075945
+            },
+            {
+              "country": "Cameroon",
+              "country_id": 471,
+              "delta": 0.000693079379,
+              "kernel_revision_component": 0.000693079379,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.744066923609,
+              "revised_p": 0.744760002988
+            },
+            {
+              "country": "Syria",
+              "country_id": 652,
+              "delta": 0.000689129853,
+              "kernel_revision_component": 0.000689129853,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.81001874017,
+              "revised_p": 0.810707870023
+            },
+            {
+              "country": "Yemen (North Yemen)",
+              "country_id": 678,
+              "delta": 0.000606035964,
+              "kernel_revision_component": 0.000606035964,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.779075483409,
+              "revised_p": 0.779681519373
+            }
+          ],
+          "max_absolute_probability_change": 0.052161214282,
+          "mean_absolute_probability_change": 0.000610486689,
+          "mean_signed_kernel_revision_component": 0.000610486689,
+          "mean_signed_origin_state_reclassification_component": 0.0,
+          "mean_signed_probability_change": 0.000610486689,
+          "median_absolute_probability_change": 2.2695946e-05,
+          "n_2025_or_historical_origin_state_reclassified": 0,
+          "n_changed_0_5_binary_decision": 0,
+          "n_probability_change_ge_10pp": 0,
+          "n_probability_change_ge_1pp": 2,
+          "n_probability_change_ge_5pp": 1,
+          "no_target_labels_observed": true,
+          "not_a_confidence_interval_or_skill_estimate": true,
+          "origin_state_reclassified_country_ids": [],
+          "p95_absolute_probability_change": 0.000606035964,
+          "sum_of_absolute_probability_changes": 0.119655390957,
+          "target_calendar_year_if_issued_then": 2025,
+          "top20_entered_GWNO": [],
+          "top20_exited_GWNO": [],
+          "top20_overlap_with_GWNO_tie_break": 20,
+          "top20_rank_ties_broken_by_GWNO_numeric_not_statistically_meaningful": true
+        },
+        {
+          "country_count": 196,
+          "horizon_years": 3,
+          "largest_ten_named_probability_revisions": [
+            {
+              "country": "Indonesia",
+              "country_id": 850,
+              "delta": 0.055226225661,
+              "kernel_revision_component": 0.055226225661,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.581267465081,
+              "revised_p": 0.636493690742
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702,
+              "delta": 0.050027087605,
+              "kernel_revision_component": 0.050027087605,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.233679197705,
+              "revised_p": 0.28370628531
+            },
+            {
+              "country": "Benin",
+              "country_id": 434,
+              "delta": 0.001237462134,
+              "kernel_revision_component": 0.001237462134,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.614446537892,
+              "revised_p": 0.615684000026
+            },
+            {
+              "country": "Togo",
+              "country_id": 461,
+              "delta": 0.001237462134,
+              "kernel_revision_component": 0.001237462134,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.614446537892,
+              "revised_p": 0.615684000026
+            },
+            {
+              "country": "Burkina Faso",
+              "country_id": 439,
+              "delta": 0.00109930124,
+              "kernel_revision_component": 0.00109930124,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.66835964267,
+              "revised_p": 0.66945894391
+            },
+            {
+              "country": "Ukraine",
+              "country_id": 369,
+              "delta": 0.000983146247,
+              "kernel_revision_component": 0.000983146247,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.710026422067,
+              "revised_p": 0.711009568314
+            },
+            {
+              "country": "Kenya",
+              "country_id": 501,
+              "delta": 0.000934977018,
+              "kernel_revision_component": 0.000934977018,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.726658045251,
+              "revised_p": 0.727593022269
+            },
+            {
+              "country": "Syria",
+              "country_id": 652,
+              "delta": 0.000911687557,
+              "kernel_revision_component": 0.000911687557,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.734532205351,
+              "revised_p": 0.735443892908
+            },
+            {
+              "country": "Cameroon",
+              "country_id": 471,
+              "delta": 0.000866904359,
+              "kernel_revision_component": 0.000866904359,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.653342889662,
+              "revised_p": 0.654209794021
+            },
+            {
+              "country": "Yemen (North Yemen)",
+              "country_id": 678,
+              "delta": 0.000773130481,
+              "kernel_revision_component": 0.000773130481,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.698811771657,
+              "revised_p": 0.699584902138
+            }
+          ],
+          "max_absolute_probability_change": 0.055226225661,
+          "mean_absolute_probability_change": 0.000693813748,
+          "mean_signed_kernel_revision_component": 0.000693813748,
+          "mean_signed_origin_state_reclassification_component": 0.0,
+          "mean_signed_probability_change": 0.000693813748,
+          "median_absolute_probability_change": 3.922787e-05,
+          "n_2025_or_historical_origin_state_reclassified": 0,
+          "n_changed_0_5_binary_decision": 0,
+          "n_probability_change_ge_10pp": 0,
+          "n_probability_change_ge_1pp": 2,
+          "n_probability_change_ge_5pp": 2,
+          "no_target_labels_observed": true,
+          "not_a_confidence_interval_or_skill_estimate": true,
+          "origin_state_reclassified_country_ids": [],
+          "p95_absolute_probability_change": 0.000773130481,
+          "sum_of_absolute_probability_changes": 0.135987494624,
+          "target_calendar_year_if_issued_then": 2026,
+          "top20_entered_GWNO": [],
+          "top20_exited_GWNO": [],
+          "top20_overlap_with_GWNO_tie_break": 20,
+          "top20_rank_ties_broken_by_GWNO_numeric_not_statistically_meaningful": true
+        }
+      ],
+      "later_edition_label_revision_not_a_new_2026_origin": true,
+      "later_revision_edition": "25.1",
+      "later_vintage_global_transitions": [
+        [
+          5333,
+          166
+        ],
+        [
+          169,
+          873
+        ]
+      ],
+      "later_vintage_training_country_ids": 199,
+      "new_edition_last_year_unused_in_training": 2024,
+      "old_global_5y_baseline_probability": 0.172097759674,
+      "old_vintage_global_transitions": [
+        [
+          5337,
+          166
+        ],
+        [
+          169,
+          869
+        ]
+      ],
+      "old_vintage_training_country_ids": 199,
+      "origin_year_fixed": 2023,
+      "original_edition": "24.1",
+      "original_risk_set_n": 196,
+      "revised_global_5y_baseline_probability": 0.175152749491,
+      "revised_risk_set_n": 196,
+      "training_cutoff_exact": true
+    },
+    {
+      "all_common_historical_country_years_including_later_pre_and_post_origin": {
+        "abs_label_churn_not_necessarily_change_in_n_active": 7,
+        "changed_active_to_inactive": 1,
+        "changed_inactive_to_active": 6,
+        "common_country_years": 6740,
+        "fixed_cohort_n": null,
+        "later_minus_earlier_active_count_on_common_pairs": 5,
+        "missing_in_earlier": 0,
+        "missing_in_later": 0,
+        "revised_binary_threshold_labels": 7,
+        "revision_fraction_of_common": 0.0010385756676557863,
+        "same_active": 1071,
+        "same_inactive": 5662,
+        "specified_year": null,
+        "unresolved_later_labels_never_imputed_inactive": true
+      },
+      "baseline_probability_revision": 0.003054989817,
+      "first_edition_prediction_retrospectively_reconstructed": true,
+      "fixed_origin_binary_reclassification": {
+        "abs_label_churn_not_necessarily_change_in_n_active": 0,
+        "changed_active_to_inactive": 0,
+        "changed_inactive_to_active": 0,
+        "common_country_years": 196,
+        "fixed_cohort_n": 196,
+        "later_minus_earlier_active_count_on_common_pairs": 0,
+        "missing_in_earlier": 0,
+        "missing_in_later": 0,
+        "revised_binary_threshold_labels": 0,
+        "revision_fraction_of_common": 0.0,
+        "same_active": 34,
+        "same_inactive": 162,
+        "specified_year": 2023,
+        "unresolved_later_labels_never_imputed_inactive": true
+      },
+      "horizons": [
+        {
+          "country_count": 196,
+          "horizon_years": 2,
+          "largest_ten_named_probability_revisions": [
+            {
+              "country": "Indonesia",
+              "country_id": 850,
+              "delta": 0.053049005058,
+              "kernel_revision_component": 0.053049005058,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.666719574848,
+              "revised_p": 0.719768579906
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702,
+              "delta": 0.045121801138,
+              "kernel_revision_component": 0.045121801138,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.185746326712,
+              "revised_p": 0.23086812785
+            },
+            {
+              "country": "Colombia",
+              "country_id": 100,
+              "delta": 0.034052508023,
+              "kernel_revision_component": 0.034052508023,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.851548540029,
+              "revised_p": 0.885601048052
+            },
+            {
+              "country": "Yemen (North Yemen)",
+              "country_id": 678,
+              "delta": 0.007571806666,
+              "kernel_revision_component": 0.007571806666,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.779075483409,
+              "revised_p": 0.786647290075
+            },
+            {
+              "country": "Senegal",
+              "country_id": 433,
+              "delta": -0.006937194929,
+              "kernel_revision_component": -0.006937194929,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.256694386418,
+              "revised_p": 0.249757191489
+            },
+            {
+              "country": "Benin",
+              "country_id": 434,
+              "delta": 0.002740367157,
+              "kernel_revision_component": 0.002740367157,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.717599666102,
+              "revised_p": 0.720340033259
+            },
+            {
+              "country": "Togo",
+              "country_id": 461,
+              "delta": 0.002740367157,
+              "kernel_revision_component": 0.002740367157,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.717599666102,
+              "revised_p": 0.720340033259
+            },
+            {
+              "country": "Burkina Faso",
+              "country_id": 439,
+              "delta": 0.002366789279,
+              "kernel_revision_component": 0.002366789279,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.759850083045,
+              "revised_p": 0.762216872324
+            },
+            {
+              "country": "Ukraine",
+              "country_id": 369,
+              "delta": 0.002076903726,
+              "kernel_revision_component": 0.002076903726,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.79145663771,
+              "revised_p": 0.793533541436
+            },
+            {
+              "country": "Kenya",
+              "country_id": 501,
+              "delta": 0.001959143355,
+              "kernel_revision_component": 0.001959143355,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.804144040407,
+              "revised_p": 0.806103183762
+            }
+          ],
+          "max_absolute_probability_change": 0.053049005058,
+          "mean_absolute_probability_change": 0.001047078877,
+          "mean_signed_kernel_revision_component": 0.000852067195,
+          "mean_signed_origin_state_reclassification_component": 0.0,
+          "mean_signed_probability_change": 0.000852067195,
+          "median_absolute_probability_change": 8.4193612e-05,
+          "n_2025_or_historical_origin_state_reclassified": 0,
+          "n_changed_0_5_binary_decision": 0,
+          "n_probability_change_ge_10pp": 0,
+          "n_probability_change_ge_1pp": 3,
+          "n_probability_change_ge_5pp": 1,
+          "no_target_labels_observed": true,
+          "not_a_confidence_interval_or_skill_estimate": true,
+          "origin_state_reclassified_country_ids": [],
+          "p95_absolute_probability_change": 0.001959143355,
+          "sum_of_absolute_probability_changes": 0.205227459802,
+          "target_calendar_year_if_issued_then": 2025,
+          "top20_entered_GWNO": [],
+          "top20_exited_GWNO": [],
+          "top20_overlap_with_GWNO_tie_break": 20,
+          "top20_rank_ties_broken_by_GWNO_numeric_not_statistically_meaningful": true
+        },
+        {
+          "country_count": 196,
+          "horizon_years": 3,
+          "largest_ten_named_probability_revisions": [
+            {
+              "country": "Indonesia",
+              "country_id": 850,
+              "delta": 0.056248320447,
+              "kernel_revision_component": 0.056248320447,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.581267465081,
+              "revised_p": 0.637515785528
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702,
+              "delta": 0.050091849953,
+              "kernel_revision_component": 0.050091849953,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.233679197705,
+              "revised_p": 0.283771047658
+            },
+            {
+              "country": "Colombia",
+              "country_id": 100,
+              "delta": 0.041695670042,
+              "kernel_revision_component": 0.041695670042,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.794313107526,
+              "revised_p": 0.836008777568
+            },
+            {
+              "country": "Yemen (North Yemen)",
+              "country_id": 678,
+              "delta": 0.009925462239,
+              "kernel_revision_component": 0.009925462239,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.698811771657,
+              "revised_p": 0.708737233896
+            },
+            {
+              "country": "Senegal",
+              "country_id": 433,
+              "delta": -0.008945451121,
+              "kernel_revision_component": -0.008945451121,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.297328617491,
+              "revised_p": 0.28838316637
+            },
+            {
+              "country": "Benin",
+              "country_id": 434,
+              "delta": 0.003407455275,
+              "kernel_revision_component": 0.003407455275,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.614446537892,
+              "revised_p": 0.617853993167
+            },
+            {
+              "country": "Togo",
+              "country_id": 461,
+              "delta": 0.003407455275,
+              "kernel_revision_component": 0.003407455275,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.614446537892,
+              "revised_p": 0.617853993167
+            },
+            {
+              "country": "Burkina Faso",
+              "country_id": 439,
+              "delta": 0.00302513571,
+              "kernel_revision_component": 0.00302513571,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.66835964267,
+              "revised_p": 0.67138477838
+            },
+            {
+              "country": "Ukraine",
+              "country_id": 369,
+              "delta": 0.002702074023,
+              "kernel_revision_component": 0.002702074023,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.710026422067,
+              "revised_p": 0.71272849609
+            },
+            {
+              "country": "Kenya",
+              "country_id": 501,
+              "delta": 0.002569841287,
+              "kernel_revision_component": 0.002569841287,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.726658045251,
+              "revised_p": 0.729227886538
+            }
+          ],
+          "max_absolute_probability_change": 0.056248320447,
+          "mean_absolute_probability_change": 0.001208076918,
+          "mean_signed_kernel_revision_component": 0.001001993143,
+          "mean_signed_origin_state_reclassification_component": 0.0,
+          "mean_signed_probability_change": 0.001001993143,
+          "median_absolute_probability_change": 8.9925785e-05,
+          "n_2025_or_historical_origin_state_reclassified": 0,
+          "n_changed_0_5_binary_decision": 0,
+          "n_probability_change_ge_10pp": 0,
+          "n_probability_change_ge_1pp": 3,
+          "n_probability_change_ge_5pp": 2,
+          "no_target_labels_observed": true,
+          "not_a_confidence_interval_or_skill_estimate": true,
+          "origin_state_reclassified_country_ids": [],
+          "p95_absolute_probability_change": 0.002569841287,
+          "sum_of_absolute_probability_changes": 0.236783075844,
+          "target_calendar_year_if_issued_then": 2026,
+          "top20_entered_GWNO": [],
+          "top20_exited_GWNO": [],
+          "top20_overlap_with_GWNO_tie_break": 20,
+          "top20_rank_ties_broken_by_GWNO_numeric_not_statistically_meaningful": true
+        }
+      ],
+      "later_edition_label_revision_not_a_new_2026_origin": true,
+      "later_revision_edition": "26.1",
+      "later_vintage_global_transitions": [
+        [
+          5333,
+          165
+        ],
+        [
+          168,
+          875
+        ]
+      ],
+      "later_vintage_training_country_ids": 199,
+      "new_edition_last_year_unused_in_training": 2025,
+      "old_global_5y_baseline_probability": 0.172097759674,
+      "old_vintage_global_transitions": [
+        [
+          5337,
+          166
+        ],
+        [
+          169,
+          869
+        ]
+      ],
+      "old_vintage_training_country_ids": 199,
+      "origin_year_fixed": 2023,
+      "original_edition": "24.1",
+      "original_risk_set_n": 196,
+      "revised_global_5y_baseline_probability": 0.175152749491,
+      "revised_risk_set_n": 196,
+      "training_cutoff_exact": true
+    },
+    {
+      "all_common_historical_country_years_including_later_pre_and_post_origin": {
+        "abs_label_churn_not_necessarily_change_in_n_active": 3,
+        "changed_active_to_inactive": 1,
+        "changed_inactive_to_active": 2,
+        "common_country_years": 6936,
+        "fixed_cohort_n": null,
+        "later_minus_earlier_active_count_on_common_pairs": 1,
+        "missing_in_earlier": 0,
+        "missing_in_later": 0,
+        "revised_binary_threshold_labels": 3,
+        "revision_fraction_of_common": 0.00043252595155709344,
+        "same_active": 1110,
+        "same_inactive": 5823,
+        "specified_year": null,
+        "unresolved_later_labels_never_imputed_inactive": true
+      },
+      "baseline_probability_revision": 0.0,
+      "first_edition_prediction_retrospectively_reconstructed": true,
+      "fixed_origin_binary_reclassification": {
+        "abs_label_churn_not_necessarily_change_in_n_active": 0,
+        "changed_active_to_inactive": 0,
+        "changed_inactive_to_active": 0,
+        "common_country_years": 196,
+        "fixed_cohort_n": 196,
+        "later_minus_earlier_active_count_on_common_pairs": 0,
+        "missing_in_earlier": 0,
+        "missing_in_later": 0,
+        "revised_binary_threshold_labels": 0,
+        "revision_fraction_of_common": 0.0,
+        "same_active": 35,
+        "same_inactive": 161,
+        "specified_year": 2024,
+        "unresolved_later_labels_never_imputed_inactive": true
+      },
+      "horizons": [
+        {
+          "country_count": 196,
+          "horizon_years": 2,
+          "largest_ten_named_probability_revisions": [
+            {
+              "country": "Colombia",
+              "country_id": 100,
+              "delta": 0.033070173044,
+              "kernel_revision_component": 0.033070173044,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.856712826704,
+              "revised_p": 0.889782999748
+            },
+            {
+              "country": "Senegal",
+              "country_id": 433,
+              "delta": -0.006780515938,
+              "kernel_revision_component": -0.006780515938,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.25189365004,
+              "revised_p": 0.245113134102
+            },
+            {
+              "country": "Yemen (North Yemen)",
+              "country_id": 678,
+              "delta": 0.00653979111,
+              "kernel_revision_component": 0.00653979111,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.788477308273,
+              "revised_p": 0.795017099383
+            },
+            {
+              "country": "Benin",
+              "country_id": 434,
+              "delta": 0.001632645974,
+              "kernel_revision_component": 0.001632645974,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.735319844421,
+              "revised_p": 0.736952490395
+            },
+            {
+              "country": "Togo",
+              "country_id": 461,
+              "delta": 0.001632645974,
+              "kernel_revision_component": 0.001632645974,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.735319844421,
+              "revised_p": 0.736952490395
+            },
+            {
+              "country": "Burkina Faso",
+              "country_id": 439,
+              "delta": 0.001415558751,
+              "kernel_revision_component": 0.001415558751,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.773603545348,
+              "revised_p": 0.775019104099
+            },
+            {
+              "country": "Haiti",
+              "country_id": 41,
+              "delta": 0.001284379826,
+              "kernel_revision_component": 0.001284379826,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.552738169171,
+              "revised_p": 0.554022548997
+            },
+            {
+              "country": "Ukraine",
+              "country_id": 369,
+              "delta": 0.001245891138,
+              "kernel_revision_component": 0.001245891138,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.802533805256,
+              "revised_p": 0.803779696394
+            },
+            {
+              "country": "Kenya",
+              "country_id": 501,
+              "delta": 0.001176923417,
+              "kernel_revision_component": 0.001176923417,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.814212481173,
+              "revised_p": 0.81538940459
+            },
+            {
+              "country": "Cameroon",
+              "country_id": 471,
+              "delta": 0.001148214564,
+              "kernel_revision_component": 0.001148214564,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.755875003275,
+              "revised_p": 0.757023217839
+            }
+          ],
+          "max_absolute_probability_change": 0.033070173044,
+          "mean_absolute_probability_change": 0.000470246612,
+          "mean_signed_kernel_revision_component": 0.000242410585,
+          "mean_signed_origin_state_reclassification_component": 0.0,
+          "mean_signed_probability_change": 0.000242410585,
+          "median_absolute_probability_change": 0.000101632103,
+          "n_2025_or_historical_origin_state_reclassified": 0,
+          "n_changed_0_5_binary_decision": 0,
+          "n_probability_change_ge_10pp": 0,
+          "n_probability_change_ge_1pp": 1,
+          "n_probability_change_ge_5pp": 0,
+          "no_target_labels_observed": true,
+          "not_a_confidence_interval_or_skill_estimate": true,
+          "origin_state_reclassified_country_ids": [],
+          "p95_absolute_probability_change": 0.001148214564,
+          "sum_of_absolute_probability_changes": 0.092168335994,
+          "target_calendar_year_if_issued_then": 2026,
+          "top20_entered_GWNO": [],
+          "top20_exited_GWNO": [],
+          "top20_overlap_with_GWNO_tie_break": 20,
+          "top20_rank_ties_broken_by_GWNO_numeric_not_statistically_meaningful": true
+        },
+        {
+          "country_count": 196,
+          "horizon_years": 3,
+          "largest_ten_named_probability_revisions": [
+            {
+              "country": "Colombia",
+              "country_id": 100,
+              "delta": 0.040654699686,
+              "kernel_revision_component": 0.040654699686,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.801140659861,
+              "revised_p": 0.841795359547
+            },
+            {
+              "country": "Senegal",
+              "country_id": 433,
+              "delta": -0.008849442624,
+              "kernel_revision_component": -0.008849442624,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.292677891297,
+              "revised_p": 0.283828448673
+            },
+            {
+              "country": "Yemen (North Yemen)",
+              "country_id": 678,
+              "delta": 0.008646889866,
+              "kernel_revision_component": 0.008646889866,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.710786955729,
+              "revised_p": 0.719433845595
+            },
+            {
+              "country": "Benin",
+              "country_id": 434,
+              "delta": 0.002049500159,
+              "kernel_revision_component": 0.002049500159,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.636654165227,
+              "revised_p": 0.638703665386
+            },
+            {
+              "country": "Togo",
+              "country_id": 461,
+              "delta": 0.002049500159,
+              "kernel_revision_component": 0.002049500159,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.636654165227,
+              "revised_p": 0.638703665386
+            },
+            {
+              "country": "Burkina Faso",
+              "country_id": 439,
+              "delta": 0.001820532442,
+              "kernel_revision_component": 0.001820532442,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.68605010407,
+              "revised_p": 0.687870636512
+            },
+            {
+              "country": "Ukraine",
+              "country_id": 369,
+              "delta": 0.00162721913,
+              "kernel_revision_component": 0.00162721913,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.724517791683,
+              "revised_p": 0.726145010813
+            },
+            {
+              "country": "Kenya",
+              "country_id": 501,
+              "delta": 0.001548710395,
+              "kernel_revision_component": 0.001548710395,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.739932525267,
+              "revised_p": 0.741481235662
+            },
+            {
+              "country": "Syria",
+              "country_id": 652,
+              "delta": 0.001510109321,
+              "kernel_revision_component": 0.001510109321,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.747249908438,
+              "revised_p": 0.748760017759
+            },
+            {
+              "country": "Cameroon",
+              "country_id": 471,
+              "delta": 0.001431064693,
+              "kernel_revision_component": 0.001431064693,
+              "origin_state_changed": false,
+              "origin_state_reclassification_component": 0.0,
+              "original_p": 0.668110995755,
+              "revised_p": 0.669542060448
+            }
+          ],
+          "max_absolute_probability_change": 0.040654699686,
+          "mean_absolute_probability_change": 0.000575165477,
+          "mean_signed_kernel_revision_component": 0.000310069958,
+          "mean_signed_origin_state_reclassification_component": 0.0,
+          "mean_signed_probability_change": 0.000310069958,
+          "median_absolute_probability_change": 0.000124011819,
+          "n_2025_or_historical_origin_state_reclassified": 0,
+          "n_changed_0_5_binary_decision": 0,
+          "n_probability_change_ge_10pp": 0,
+          "n_probability_change_ge_1pp": 1,
+          "n_probability_change_ge_5pp": 0,
+          "no_target_labels_observed": true,
+          "not_a_confidence_interval_or_skill_estimate": true,
+          "origin_state_reclassified_country_ids": [],
+          "p95_absolute_probability_change": 0.001431064693,
+          "sum_of_absolute_probability_changes": 0.112732433513,
+          "target_calendar_year_if_issued_then": 2027,
+          "top20_entered_GWNO": [],
+          "top20_exited_GWNO": [],
+          "top20_overlap_with_GWNO_tie_break": 20,
+          "top20_rank_ties_broken_by_GWNO_numeric_not_statistically_meaningful": true
+        }
+      ],
+      "later_edition_label_revision_not_a_new_2026_origin": true,
+      "later_revision_edition": "26.1",
+      "later_vintage_global_transitions": [
+        [
+          5492,
+          168
+        ],
+        [
+          170,
+          907
+        ]
+      ],
+      "later_vintage_training_country_ids": 199,
+      "new_edition_last_year_unused_in_training": 2025,
+      "old_global_5y_baseline_probability": 0.177189409369,
+      "old_vintage_global_transitions": [
+        [
+          5492,
+          169
+        ],
+        [
+          171,
+          905
+        ]
+      ],
+      "old_vintage_training_country_ids": 199,
+      "origin_year_fixed": 2024,
+      "original_edition": "25.1",
+      "original_risk_set_n": 196,
+      "revised_global_5y_baseline_probability": 0.177189409369,
+      "revised_risk_set_n": 196,
+      "training_cutoff_exact": true
+    }
+  ],
+  "horizon3_max_absolute_change_across_overlapping_pairs": 0.057500060711,
+  "horizon3_max_n_change_ge_5pp_in_any_one_pair": 2,
+  "horizons": [
+    2,
+    3
+  ],
+  "limitations": "This is a retrospective replay of the exact preregistered Markov formula using UCDP 23.1,24.1,25.1,26.1 original source bytes. Forecasts for historical origins were NOT issued at the time. Some historical country-year source labels may be revised, including global transition counts and cohort composition. The six pairs overlap source editions, historical years and countries and are NOT six independent trials. No future target label or first public 2025-origin forecast changes. The source timestamp is public metadata, not independent notarization. Deterministic top20 boundary ties are broken by GWNO numeric ID; these are NOT meaningful confidence differences. No inference that 27.1 will resemble these revisions or that GEO2028 will perform at a particular level.",
+  "model": "original_country_markov_laplace1_global_shrink20",
+  "n_comparisons_six_overlapping_source_pairs": 6,
+  "n_independent_prospective_tests_contributed": 0,
+  "no_historical_2027_or_2028_target_outcomes_used": true,
+  "notarized_source_release_dates": false,
+  "prospective_2027_2028_skill_demonstrated": false,
+  "schema": "idealab.psico.geo_historical_fixed_origin_vintage_probability_drift.v1",
+  "source_last_observation_year": {
+    "23.1": 2022,
+    "24.1": 2023,
+    "25.1": 2024,
+    "26.1": 2025
+  },
+  "source_versions_and_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "status": "OFFICIAL_SHA_PINNED_RETROSPECTIVE_VINTAGE_SENSITIVITY_NOT_2027_2028_OUTCOME"
+}

@@ -1,0 +1,93 @@
+# GEO2028 — Sensibilidad histórica de probabilidades a revisiones UCDP
+
+**Estudio retrospectivo de ediciones 23.1–26.1; protocolo de la PR #83, 15/11/2026.** Esta investigación cuantifica cuánto cambiarían las probabilidades GEO si una edición oficial anual revisara etiquetas históricas **sin mover la fecha de origen de la predicción**.
+
+## Hipótesis y problema
+
+La investigación anterior, reproducida desde los originales UCDP, detectó los siguientes cambios de umbral binario estatal ≥25 muertes entre archivos de ediciones consecutivas:
+
+| Primera edición → revisada | Países-año comunes | Etiquetas binarias reclasificadas |
+|---|---:|---:|
+| 23.1 → 24.1 | 6544 | **2** |
+| 24.1 → 25.1 | 6740 | **4** |
+| 25.1 → 26.1 | 6936 | **3** |
+
+Esos recuentos no cuantifican directamente cambios de probabilidad. **Una única corrección histórica puede modificar parámetros de transición globales y probabilidades de decenas o cientos de países**, aunque sus propias etiquetas y estados de origen permanezcan intactos.
+
+El nuevo estudio mide esa sensibilidad utilizando exactamente el algoritmo original publicado para GEO2027/GEO2028: Markov binario por país, transición global con Laplace(1), regularización nacional hacia el valor global con fuerza 20, referencia global Laplace para los cinco años previos, horizontes 2 y 3. **No se vuelve a optimizar el modelo ni se elige un algoritmo después de mirar los resultados.**
+
+## Diseño histórico sin fuga temporal
+
+Se descargan y autentican los mismos cuatro archivos anuales oficiales ya bloqueados por SHA-256 en scripts/backtest_archived_country_vintages.py: versiones 23.1 (hasta 2022), 24.1 (hasta 2023), 25.1 (hasta 2024) y 26.1 (hasta 2025). Cada comparación mantiene **el mismo origen, los mismos 196 países y el mismo horizonte**, y reconstruye el modelo con las observaciones **≤ año de origen**, aunque la edición posterior contenga años más recientes.
+
+| Origen inmutable | Edición original | Reediciones utilizadas | Horizontes probados |
+|---|---|---|---|
+| 2022 | 23.1 | 24.1, 25.1, 26.1 | 2 y 3 años |
+| 2023 | 24.1 | 25.1, 26.1 | 2 y 3 años |
+| 2024 | 25.1 | 26.1 | 2 y 3 años |
+
+Son **seis parejas solapadas** y doce comparaciones horizonte-pareja: no doce experimentos independientes, ni réplicas de habilidad prospectiva. No se utilizan resultados de los años objetivo. Las predicciones antiguas son **reconstrucciones ex post**, no pronósticos emitidos entonces.
+
+El programa scripts/diagnose_geo2028_historical_forecast_vintage_drift.py comprueba primero que la misma fuente oficial 26.1 reconstruye con precisión decimal **todas las 196 probabilidades originales de GEO2027 a H2 y de GEO2028 a H3**, sin alterar esos archivos. Si falla esa reproducción, se detiene el estudio histórico.
+
+## Atribución algebraica dentro de cada vintage
+
+Para cada país y horizonte, la comparación requiere tres valores:
+
+- **A:** modelo original ajustado con la edición inicial y estado de origen inicial.
+- **B:** modelo reajustado con la edición posterior, truncada al **mismo año de origen**, pero manteniendo el **estado inicial antiguo**.
+- **C:** el mismo modelo revisado de B, ahora usando el estado del origen según la edición revisada.
+
+Por tanto, exactamente:
+
+\[
+p_C-p_A=(p_B-p_A)+(p_C-p_B).
+\]
+
+La primera componente representa un **cambio del kernel** motivado por revisiones históricas y/o composición de la fuente; la segunda aísla la **reclasificación del estado de origen**. El desglose es secuencial, depende del orden y **no identifica causas geopolíticas**.
+
+El análisis calcula, separadamente por horizonte, la media, la mediana, el percentil 95 empírico y el máximo de cambios absolutos de probabilidad; el número de países que cambian **al menos 1, 5 o 10 puntos porcentuales**; reclasificaciones de una decisión basada en 50 %; composición del top 20 (desempate por ID GWNO declarado), diez mayores variaciones individuales, recuento de cambios de estado de origen y diferencias de la referencia global.
+
+La precisión de los percentiles es **descriptiva de los 196 países observados**, no un intervalo de confianza. Los rankings con probabilidades empatadas son sensibles al desempate por ID GWNO y no tienen interpretación de diferencias reales de riesgo entre países.
+
+## Límites y decisión predefinida
+
+Esta prueba mide un tipo de fragilidad de la predicción **ante revisiones del dataset**, no el error predictivo futuro ni la independencia entre países. Las comparaciones solapadas no permiten calcular intervalos IID fiables. Que las ediciones antiguas alteren poco las probabilidades tampoco demuestra que la futura UCDP 27.1 vaya a ser estable.
+
+El informe numérico oficial, derivado por CI de los archivos originales, se guardará en **data/geo2028-historical-forecast-vintage-drift.json** y su igualdad byte a byte será una condición obligatoria de despliegue. Su código y pruebas sintéticas quedan sujetos al allowlist institucional. No se modifican las 620 preguntas emitidas, las primeras versiones públicas ni los criterios de resolución.
+
+**Aplicación futura:** cuando UCDP publique la edición anual 27.1, el protocolo GEO2028 de origen 2026 ya incluye controles de revisiones de 2025. Este estudio histórico permitirá contextualizar la magnitud de esas revisiones, pero el desglose 2025→2026 preregistrado seguirá separando tres componentes (vintage, sorpresa del estado 2026 y refit): **no se atribuirá toda variación a noticias de 2026**.
+
+## Resultados empíricos, cuatro archivos oficiales reproducidos
+
+GitHub Actions ha reconstruido **todos los 196 países GEO2027 H2 y GEO2028 H3 originales** con la fuente 26.1 y ha generado el reporte fuente-pinneado data/geo2028-historical-forecast-vintage-drift.json. Las seis parejas comparten observaciones; **no** se suman sus n de países ni se estima un error estándar IID.
+
+### Sensibilidad del modelo Markov a tres años (H3)
+
+Los cambios son absolutos, expresados en **puntos porcentuales (pp)**. El objetivo histórico correspondiente es el año de origen + 3; **no es una evaluación del resultado 2028**.
+
+| Origen fijo | Edición inicial → revisada | Cambio medio abs. (pp) | P95 abs. (pp) | Máximo abs. (pp) | Países ≥1 pp | Países ≥5 pp |
+|---|---|---:|---:|---:|---:|---:|
+| 2022 | 23.1 → 24.1 | **0,061** | 0,022 | 4,579 | 2/196 | 0/196 |
+| 2022 | 23.1 → 25.1 | **0,114** | 0,108 | 5,642 | 4/196 | 1/196 |
+| 2022 | 23.1 → 26.1 | **0,157** | 0,326 | **5,750** | 6/196 | 1/196 |
+| 2023 | 24.1 → 25.1 | **0,069** | 0,077 | 5,523 | 2/196 | 2/196 |
+| 2023 | 24.1 → 26.1 | **0,121** | 0,257 | 5,625 | 3/196 | 2/196 |
+| 2024 | 25.1 → 26.1 | **0,058** | 0,143 | 4,065 | 1/196 | 0/196 |
+
+Los cambios medios están entre **0,058 y 0,157 pp**; el cambio máximo individual alcanzó **5,750 pp**. Así, un error editorial poco frecuente puede propagarse a estimaciones de transición sin afectar en la misma magnitud a todos los países.
+
+Los máximos identificados fueron Tailandia (2022: 23.1→24.1), Indonesia (comparaciones más largas y origen 2023) y Colombia (2024: 25.1→26.1). Ejemplo concreto: con **origen fijo 2022** e idéntico horizonte tres años, la probabilidad reconstruida de Indonesia cambia de **57,119 %** a **62,869 %** al sustituir la edición 23.1 por 26.1, siempre **sin usar observaciones posteriores a 2022**. No estamos comparando dos años de riesgo ni certificando un cambio real en Indonesia.
+
+### Resultados de clasificación y atribución
+
+- **0 de 6** comparaciones reclasificaron el estado binario del **año de origen** en los 196 países fijados. Por ello, las variaciones observadas aquí pasan por las matrices de transición estimadas con el histórico revisado; **no por un cambio de la etiqueta inicial**. El código conserva una prueba adversarial que simula una reclasificación del origen para verificar que la atribución también funciona en ese caso.
+- **0 países** cruzaron la regla arbitraria de decisión del **50 %** en las seis comparaciones históricas H3, y el conjunto top-20 permaneció idéntico (**20 de 20**) bajo el desempate fijo por código GWNO. Esto no garantiza estabilidad de otros umbrales, de otras clasificaciones ni de la edición futura 27.1.
+- La referencia global de cinco años cambió **0**, **0,305** o **0,407 pp** según la pareja. Una referencia con una probabilidad idéntica para todos los países puede desplazarse por revisiones de unos pocos registros; ese movimiento no implica que todos los países hayan sufrido un cambio geopolítico.
+- Para H2, el cambio medio absoluto estuvo entre **0,047 y 0,131 pp**, y el máximo individual entre **3,307 y 5,461 pp**. El tercer paso del Markov puede amplificar la sensibilidad en estas ediciones, aunque no existe un teorema general que garantice esa relación.
+
+### Conclusión metodológica accionable
+
+**Las probabilidades GEO pueden ser estables en promedio y sensibles a revisiones históricas en países concretos.** Cuando llegue la fuente oficial 27.1, deben mostrarse la huella original de fuente, las revisiones de 2025, la variación de los parámetros globales, la comparación por país y la descomposición de origen 2025→2026, antes de interpretar como nueva información los cambios de riesgo estimado.
+
+El resultado **no permite pronosticar cuánto cambiarán las probabilidades de GEO2028 en 2027**. No hay 27.1, no se han observado etiquetas 2028 y no se han editado las emisiones prospectivas. La principal conclusión científica sigue siendo **sensibilidad ex post, no habilidad de pronóstico probada**.
