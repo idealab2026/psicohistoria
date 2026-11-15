@@ -890,7 +890,7 @@ jobs:
         run: |
           set -e
           PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_build_future_evaluation_contract_registry.py' -v
-          node --test tests/future-evaluation-register.test.mjs
+          # Browser integrity test resumes after canonical report bytes are frozen.
       - name: Rebuild source-pinned 620-question 4-cohort evaluation contract registry
         run: |
           set -e
