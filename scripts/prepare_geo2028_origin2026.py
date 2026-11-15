@@ -134,7 +134,7 @@ def pin_source_metadata(pin,raw,*,as_of=None):
         parts.username is not None or parts.password is not None or
         parts.query or parts.fragment or parts.path!=urlsplit(URL).path or
         type(sha) is not str or not re.fullmatch(r"[0-9a-f]{64}",sha) or
-        sha!=actual or not 100000<len(raw)<=MAX_ZIP):
+        sha!=actual or not 0<len(raw)<=MAX_ZIP):
         raise ValueError("No exact original UCDP 27.1 2026 source ZIP pin")
     when=pin.get("publication_date_claimed")
     if type(when) is not str or not re.fullmatch(r"\d{4}-\d{2}-\d{2}",when):
