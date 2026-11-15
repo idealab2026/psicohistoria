@@ -328,3 +328,21 @@ fieldset{border:0;padding:0;margin:0}.field{display:grid;gap:6px;margin:12px 0;f
  .prospective-table td>small,.prospective-table td strong,.prospective-table td details{max-width:calc(100% - 90px)}
  .prospective-pager{justify-content:space-between}
 }
+
+/* Four first-issued cohorts, zero verified results; keep evaluation readiness compact. */
+.future-eval-cohorts{grid-template-columns:repeat(4,minmax(0,1fr))}
+.future-eval-card{display:flex;flex-direction:column;gap:5px;padding:13px}
+.future-eval-card strong{font-size:1.02rem;margin:2px 0}
+.future-eval-card p{font-size:.79rem;line-height:1.45;min-height:3.4rem;margin:0}
+.future-eval-card .tiny{font-size:.73rem;min-height:0}
+.future-eval-card a{margin-top:auto}
+.future-eval-progress{display:grid;gap:6px;margin:9px 0 5px;color:var(--muted);font-size:.72rem;font-variant-numeric:tabular-nums}
+.future-eval-progress i{display:block;width:100%;height:5px;border-radius:10px;border:1px solid #365061;background:#0d1c28}
+.future-eval-table th:nth-child(1){width:15%}
+.future-eval-table th:nth-child(2){width:18%}
+.future-eval-table th:nth-child(3){width:18%}
+.future-eval-table th:nth-child(4){width:15%}
+.future-eval-table th:nth-child(5){width:14%}
+.future-eval-table th:nth-child(6){width:20%}
+@media(max-width:1060px){.future-eval-cohorts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.future-eval-cohorts{grid-template-columns:1fr}.future-eval-card p{min-height:0}.future-eval-table td::before{flex-basis:90px}.future-eval-table td strong{overflow-wrap:anywhere}}

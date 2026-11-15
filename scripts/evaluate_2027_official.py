@@ -14,6 +14,7 @@ import io
 import json
 import math
 import random
+import re
 from collections import defaultdict
 from datetime import date
 from pathlib import Path
@@ -56,10 +57,13 @@ def load_frozen_issue(document_path,manifest_path):
 
 def validate_future_source(url,source_sha,release_date):
     parts=urlsplit(url)
-    if parts.scheme!="https" or parts.netloc!="ucdp.uu.se" or \
-       not parts.path.startswith("/downloads/organizedviolencecy/") or \
-       not parts.path.endswith("-csv.zip") or parts.query or parts.fragment:
-        raise ValueError("Only literal official future UCDP ZIP URLs admitted")
+    m=re.fullmatch(
+        r"/downloads/organizedviolencecy/organizedviolencecy-(\d{3})-csv\.zip",
+        parts.path)
+    if (parts.scheme!="https" or parts.netloc!="ucdp.uu.se" or
+        parts.username is not None or parts.password is not None or
+        parts.query or parts.fragment or not m or int(m.group(1))<281):
+        raise ValueError("Only 28.1 or later official future UCDP ZIP URLs admitted")
     if len(source_sha)!=64 or any(c not in "0123456789abcdef" for c in source_sha):
         raise ValueError("Future source SHA-256 required")
     parsed=date.fromisoformat(release_date)
