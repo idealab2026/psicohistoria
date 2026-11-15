@@ -10,13 +10,14 @@
       "depends_on_same_2025_origin_as_GEO2027": false,
       "evaluation_script": "scripts/evaluate_2027_official.py",
       "event_definition": "Estado binario UCDP OrganizedViolenceCY, violencia estatal >=25 muertes en 2027",
-      "experimental_interval_warning": "El evaluador histórico genera un bootstrap por países IID: no apto para inferencia confirmatoria con shocks comunes",
+      "experimental_interval_warning": "Bootstrap IID por países desactivado; solo diferencia Brier descriptiva y cotas exactas ante etiquetas faltantes, no intervalos de confianza",
       "first_eligible_source_date": "2028-01-01",
       "first_public_forecast_commit": "3bb3561c8d6182c30624591276c705fb76ce99dc",
       "first_public_forecast_utc": "2026-11-10T17:23:12Z",
       "forecast_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
       "future_country_labels_certified": 0,
       "horizon_years": 2,
+      "iid_country_bootstrap_disabled_in_official_candidate_evaluator": true,
       "independently_notarized": false,
       "issued_country_questions": 196,
       "official_first_candidate_version": "28.1",
@@ -31,8 +32,10 @@
       "secondary_model_fields": [
         "p_global_markov"
       ],
+      "sharp_missing_label_brier_region_available": true,
       "source_family": "UCDP OrganizedViolenceCY",
       "source_independently_verified_full_future_release": false,
+      "statistical_confidence_interval_claimed": false,
       "target_year": 2027
     },
     {
@@ -44,13 +47,14 @@
       "depends_on_same_2025_origin_as_GEO2027": false,
       "evaluation_script": "scripts/evaluate_2027_newconf_official.py",
       "event_definition": "ANY(newconf=1) nuevos episodios intraestatales por GWNO-año 2027",
-      "experimental_interval_warning": "El evaluador histórico genera un bootstrap por países IID: no apto para inferencia confirmatoria con shocks comunes",
+      "experimental_interval_warning": "Bootstrap IID por países desactivado; solo diferencia Brier descriptiva y cotas exactas ante etiquetas faltantes, no intervalos de confianza",
       "first_eligible_source_date": "2028-01-01",
       "first_public_forecast_commit": "f3f2c17c9d4f5dd56266e376cd2d765f33f3dd97",
       "first_public_forecast_utc": "2026-11-11T10:10:21Z",
       "forecast_sha256": "e4482da7396872645d5101115435143d98fd9fdb1db1b1fdf41a42c99fc04b74",
       "future_country_labels_certified": 0,
       "horizon_years": 2,
+      "iid_country_bootstrap_disabled_in_official_candidate_evaluator": true,
       "independently_notarized": false,
       "issued_country_questions": 196,
       "official_first_candidate_version": "28.1",
@@ -66,8 +70,10 @@
         "p_country_eb",
         "p_activity_global"
       ],
+      "sharp_missing_label_brier_region_available": true,
       "source_family": "UCDP Intrastate Country Level Multiple Onset",
       "source_independently_verified_full_future_release": false,
+      "statistical_confidence_interval_claimed": false,
       "target_year": 2027
     },
     {
@@ -86,6 +92,7 @@
       "forecast_sha256": "6cf7d0340a4c25062af7a040586fb6a73a98c9e6ab80473527171c0a5a963d9c",
       "future_country_labels_certified": 0,
       "horizon_years": 2,
+      "iid_country_bootstrap_disabled_in_official_candidate_evaluator": true,
       "independently_notarized": false,
       "issued_country_questions": 32,
       "official_first_candidate_version": "28.1",
@@ -100,8 +107,10 @@
       "secondary_model_fields": [
         "p_lag1_group"
       ],
+      "sharp_missing_label_brier_region_available": false,
       "source_family": "UCDP/PRIO Armed Conflict Dataset",
       "source_independently_verified_full_future_release": false,
+      "statistical_confidence_interval_claimed": false,
       "target_year": 2027
     },
     {
@@ -120,6 +129,7 @@
       "forecast_sha256": "fd5832c6896548b053202f2f84bd0f7cd4a75df44462fbd4f259b9d8d4c39bde",
       "future_country_labels_certified": 0,
       "horizon_years": 3,
+      "iid_country_bootstrap_disabled_in_official_candidate_evaluator": true,
       "independently_notarized": false,
       "issued_country_questions": 196,
       "official_first_candidate_version": "29.1",
@@ -134,8 +144,10 @@
       "secondary_model_fields": [
         "p_global_markov_3step"
       ],
+      "sharp_missing_label_brier_region_available": false,
       "source_family": "UCDP OrganizedViolenceCY",
       "source_independently_verified_full_future_release": false,
+      "statistical_confidence_interval_claimed": false,
       "target_year": 2028
     }
   ],

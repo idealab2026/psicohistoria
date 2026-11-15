@@ -24,6 +24,11 @@ test("four genuine first-issued cohorts, 620 questions, no certified observation
  assert.deepEqual(x.cohorts.map(c=>c.provisional_score_min_coverage),[187,187,32,196]);
  assert.deepEqual(x.cohorts.map(c=>c.complete_source_coverage_required_for_certification),[196,196,32,196]);
  assert.deepEqual(x.cohorts.map(c=>c.horizon_years),[2,2,2,3]);
+ assert.ok(x.cohorts.every(c=>
+   c.iid_country_bootstrap_disabled_in_official_candidate_evaluator===true &&
+   c.statistical_confidence_interval_claimed===false));
+ assert.deepEqual(x.cohorts.map(c=>c.sharp_missing_label_brier_region_available),
+                  [true,true,false,false]);
  assert.deepEqual(x.cohorts.map(c=>c.first_eligible_source_date),
                   ["2028-01-01","2028-01-01","2028-01-01","2029-01-01"]);
 });
@@ -39,6 +44,8 @@ test("readable unified status exposes 187 provisional distinct from certified 19
  assert.match(h,/Evaluador técnico/);
  assert.match(h,/geo2028_first_complete_official/);
  assert.match(h,/no son 620 ensayos independientes/);
+ assert.match(h,/desactivado los bootstrap IID por países/);
+ assert.match(h,/cotas de identificación/);
  assert.doesNotMatch(h,/Aciertos certificados: [1-9]/);
 });
 test("reject every independently certified flag or false first-complete claim",()=>{
@@ -51,6 +58,9 @@ test("reject every independently certified flag or false first-complete claim",(
   x=>x.cross_year_2027_2028_GEO_origin_overlap_present=false,
   x=>x.cohorts[0].future_country_labels_certified=1,
   x=>x.cohorts[0].official_scores_certified=true,
+  x=>x.cohorts[0].iid_country_bootstrap_disabled_in_official_candidate_evaluator=false,
+  x=>x.cohorts[1].sharp_missing_label_brier_region_available=false,
+  x=>x.cohorts[2].statistical_confidence_interval_claimed=true,
   x=>x.cohorts[0].candidate_scores_available_now=true,
   x=>x.cohorts[1].source_independently_verified_full_future_release=true,
   x=>x.cohorts[2].complete_source_coverage_required_for_certification=31,

@@ -13,21 +13,19 @@ import hashlib
 import io
 import json
 import math
-import random
 import re
 from collections import defaultdict
 from datetime import date
 from pathlib import Path
 from urllib.parse import urlsplit
 from build_official_countries import read_zip
+from paired_brier_partial_identification import sharp_partial_paired_brier
 
 FORECAST_SHA="5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5"
 FORECAST_ID="PSICO-GEO2027-STATEBASED25-V1"
 COHORT=196
 YEAR=2027
 MIN_RESOLVED=187  # ceil(0.95 * 196)
-REPLICATIONS=2000
-SEED=20261110
 
 def digest(content):
     return hashlib.sha256(content).hexdigest()
@@ -107,17 +105,6 @@ def summary_scores(rows,field):
         logloss-=row["outcome"]*math.log(p)+(1-row["outcome"])*math.log1p(-p)
     return {"brier":brier,"logloss":logloss/len(rows)}
 
-def bootstrap_interval(rows,replications=REPLICATIONS,seed=SEED):
-    if not rows or replications<100:
-        raise ValueError("Too few observations or replicates")
-    rng=random.Random(seed)
-    values=[(row["p_model"]-row["outcome"])**2-
-            (row["p_baseline_global_5y"]-row["outcome"])**2 for row in rows]
-    n=len(values)
-    draws=sorted(sum(values[rng.randrange(n)] for _ in range(n))/n
-                 for _ in range(replications))
-    return [draws[int(.025*(replications-1))],draws[int(.975*(replications-1))]]
-
 def evaluate(forecast,outcomes,metadata):
     if forecast.get("forecast_id")!=FORECAST_ID or forecast.get("target",{}).get("year")!=YEAR:
         raise ValueError("Wrong frozen forecast target")
@@ -129,6 +116,8 @@ def evaluate(forecast,outcomes,metadata):
     unresolved=[row["country_id"] for row in issued if row["country_id"] not in outcomes]
     total=len(issued)
     all_outcome_ids={row["country_id"] for row in issued}
+    bounds=sharp_partial_paired_brier(
+        issued,outcomes,"p_model","p_baseline_global_5y",cohort_size=COHORT)
     result={
         "schema":"idealab.psico.2027_resolution_candidate.v1",
         "status":"SELF_REPORTED_OFFICIAL_SOURCE_NEEDS_FIRST_RELEASE_ATTESTATION",
@@ -146,9 +135,13 @@ def evaluate(forecast,outcomes,metadata):
         "prospective_skill_independently_verified":False,
         "source":metadata,
         "scores":None,
-        "interval_delta_brier_model_minus_baseline":None,
+        "interval_delta_brier_model_minus_baseline":None,  # legacy, intentionally permanently disabled
+        "iid_country_bootstrap_disabled":True,
+        "confidence_interval_justified_by_country_independence":False,
+        "sharp_full_cohort_brier_delta_bounds_not_confidence_interval":bounds,
+        "paired_brier_delta_on_resolved_only":None,
         "calibration_bins":None,
-        "limitations":"Only a candidate evaluation. A release URL, hash, and date supplied by an operator do not independently establish this is UCDP's first complete 2027 release. No performance claim is certified until external source provenance and full cohort coverage are checked."
+        "limitations":"Only candidate evaluation. Operator-provided source URL, hash and date do not certify UCDP's first complete 2027 release. Partial-coverage Brier is descriptive on observed countries only. Sharp finite-cohort missing-label extrema are NOT confidence intervals and carry no IID, probability or coverage claim. No generalizable skill is certified from one shared-shock year."
     }
     if len(resolved)<MIN_RESOLVED:
         return result
@@ -157,7 +150,13 @@ def evaluate(forecast,outcomes,metadata):
         "baseline_global_5y":summary_scores(resolved,"p_baseline_global_5y"),
         "secondary_global_markov":summary_scores(resolved,"p_global_markov")
     }
-    result["interval_delta_brier_model_minus_baseline"]=bootstrap_interval(resolved)
+    result["paired_brier_delta_on_resolved_only"]=(
+        result["scores"]["model"]["brier"]-
+        result["scores"]["baseline_global_5y"]["brier"])
+    if not unresolved and abs(
+        result["paired_brier_delta_on_resolved_only"]-
+        bounds["observed_full_cohort_delta_brier_if_complete"])>1e-12:
+        raise ValueError("Full-cohort observed Brier contradicts exact missing-label frontier")
     bins=[]
     for i in range(5):
         part=[r for r in resolved if min(4,int(r["p_model"]*5))==i]

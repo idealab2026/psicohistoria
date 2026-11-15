@@ -81,6 +81,9 @@ export function verifyFutureEvaluationContracts(
       e.source_independently_verified_full_future_release!==false||
       e.official_scores_certified!==false||
       e.candidate_scores_available_now!==false||
+      e.iid_country_bootstrap_disabled_in_official_candidate_evaluator!==true||
+      e.statistical_confidence_interval_claimed!==false||
+      e.sharp_missing_label_brier_region_available!==(id==="GEO2027"||id==="NEWCONF2027")||
       e.prospective_skill_demonstrated!==false||
       e.independently_notarized!==false||
       e.provisional_scoring_is_never_certification!==true||
@@ -144,7 +147,10 @@ export function renderFutureEvaluationContracts(
   '<td data-label="Cobertura"><strong>'+e.provisional_score_min_coverage+
    ' / '+e.issued_country_questions+'</strong><small>Mínimo de cálculo exploratorio</small>'+
    '<small>Certificación: '+e.complete_source_coverage_required_for_certification+
-   '/'+e.issued_country_questions+' + auditoría de fuente</small></td>'+
+   '/'+e.issued_country_questions+' + auditoría de fuente</small>'+
+   '<small>'+esc(e.sharp_missing_label_brier_region_available?
+       'Cotas de Brier ante datos faltantes · no IC':
+       'Sin intervalos IID')+'</small></td>'+
   '<td data-label="Fuente"><strong>'+esc(e.official_first_candidate_version)+
    '</strong><small>Primera fecha posible '+esc(e.first_eligible_source_date)+'</small></td>'+
   '<td data-label="Estado"><span class="prospective-pending">Sin resultados</span>'+
@@ -171,6 +177,12 @@ export function renderFutureEvaluationContracts(
   'ACD2027 requiere revisar la codificación de sus 32 países y GEO2028 exige '+
   '196 etiquetas explícitas. Cada fuente oficial futura debe verificarse externamente '+
   'antes de reconocer cualquier desempeño.</p>'+
+  '<p class="notice info"><strong>Corrección metodológica:</strong> '+ 
+  'se han desactivado los bootstrap IID por países de GEO2027 y NEWCONF2027. '+
+  'En su lugar, sus evaluadores calculan límites matemáticos exactos del Brier '+
+  'de los 196 países cuando faltan resultados. Son <strong>cotas de identificación, '+
+  'no intervalos de confianza</strong>; no asignan probabilidades a los eventos ni '+
+  'sustituyen la certificación de los datos futuros.</p>'+
   '<p class="notice info">Las 620 preguntas comparten países, años y orígenes de '+
   'forma parcial; no son 620 ensayos independientes. Los Brier de variables '+
   'diferentes no se agregan ni se presentan como habilidad predictiva '+

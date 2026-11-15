@@ -57,6 +57,12 @@ def authenticated_sources():
 
 def ensure_future_gates():
     """Test existing evaluation software's immutable forward-only gate."""
+    if ("bootstrap_interval" in vars(geo27) or
+        "bootstrap_delta" in vars(new27) or
+        "random" in vars(geo27) or "random" in vars(new27) or
+        not callable(geo27.sharp_partial_paired_brier) or
+        not callable(new27.sharp_partial_paired_brier)):
+        raise ValueError("Country-IID bootstrap reintroduced into official 2027 candidates")
     if (geo27.YEAR!=2027 or geo27.COHORT!=196 or
         geo27.MIN_RESOLVED!=187 or
         new27.YEAR!=2027 or new27.COHORT!=196 or
@@ -156,7 +162,7 @@ def build_index(original:dict,d28:dict,m28:dict)->dict:
             "complete_source_coverage_required_for_certification":196,
             "coverage_basis":"GWNO explicit year-2027 official binary state-based records",
             "evaluation_script":"scripts/evaluate_2027_official.py",
-            "experimental_interval_warning":"El evaluador histórico genera un bootstrap por países IID: no apto para inferencia confirmatoria con shocks comunes",
+            "experimental_interval_warning":"Bootstrap IID por países desactivado; solo diferencia Brier descriptiva y cotas exactas ante etiquetas faltantes, no intervalos de confianza",
         },
         "NEWCONF2027":{
             "event_definition":"ANY(newconf=1) nuevos episodios intraestatales por GWNO-año 2027",
@@ -171,7 +177,7 @@ def build_index(original:dict,d28:dict,m28:dict)->dict:
             "complete_source_coverage_required_for_certification":196,
             "coverage_basis":"GWNO con filas de episodio 2027 explícitas y no ambiguas; ausencia no equivale a cero",
             "evaluation_script":"scripts/evaluate_2027_newconf_official.py",
-            "experimental_interval_warning":"El evaluador histórico genera un bootstrap por países IID: no apto para inferencia confirmatoria con shocks comunes",
+            "experimental_interval_warning":"Bootstrap IID por países desactivado; solo diferencia Brier descriptiva y cotas exactas ante etiquetas faltantes, no intervalos de confianza",
         },
         "ACD2027":{
             "event_definition":"Persistencia de cualquier conflicto intraestatal tipo 3/4 ACD en 2027 entre 32 países activos en 2025",
@@ -225,6 +231,9 @@ def build_index(original:dict,d28:dict,m28:dict)->dict:
             known["primary_model"]!=x["primary_field"]):
             raise ValueError("2027 original primary model or certification status drifted")
         out.append({
+            "iid_country_bootstrap_disabled_in_official_candidate_evaluator":True,
+            "sharp_missing_label_brier_region_available":c in ("GEO2027","NEWCONF2027"),
+            "statistical_confidence_interval_claimed":False,
             "cohort":c,"forecast_sha256":source_sha,
             "first_public_forecast_commit":first_commit,
             "first_public_forecast_utc":issued_utc,
