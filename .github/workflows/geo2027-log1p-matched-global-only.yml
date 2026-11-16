@@ -1,0 +1,32 @@
+name: GEO2027 LOG1P matched global-only country-block calibration
+on:
+  pull_request:
+    paths:
+      - 'scripts/experiment_geo2027_log1p_matched_global_only.py'
+      - 'scripts/test_experiment_geo2027_log1p_matched_global_only.py'
+      - 'data/geo2027-log1p-matched-global-only-calibration.json'
+      - '.github/workflows/geo2027-log1p-matched-global-only.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/experiment_geo2027_log1p_matched_global_only.py'
+      - 'scripts/test_experiment_geo2027_log1p_matched_global_only.py'
+      - 'data/geo2027-log1p-matched-global-only-calibration.json'
+      - '.github/workflows/geo2027-log1p-matched-global-only.yml'
+permissions:
+  contents: read
+jobs:
+  geo2027_log1p_matched_global_only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify target-country and source-country transition exclusion, time cutoffs and Brier
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_experiment_geo2027_log1p_matched_global_only.py' -v
+      - name: Refit 143 matched global-only country-block LOG1P calibrators on four SHA-pinned UCDP editions
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_geo2027_log1p_matched_global_only.py --check-report
