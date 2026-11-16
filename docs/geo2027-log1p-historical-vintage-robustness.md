@@ -35,6 +35,44 @@ Para atribuir la diferencia total \(f(P_1,D_1,B_1)-f(P_0,D_0,B_0)\) se calculan 
 
 El protocolo obliga a distinguir cualquier país cuyo **estado binario del origen** cambie al revisar la edición. Esta clase se aísla en vez de confundir una reclasificación 0↔1 con una simple perturbación dentro de un estado. Los listados históricos top-10 de entrada y top-5 de salida se comparan en **grupos de riesgo de origen fijos**, registrando empates del límite sin declarar «entradas seguras» que dependan arbitrariamente de ellos. Son **listas retrospectivas análogas**, nunca las 15 alertas prospectivas originalmente emitidas.
 
+## Resultados reproducidos desde fuentes oficiales
+
+El replay de las cuatro ediciones verificadas muestra **cero reclasificaciones del estado binario en el propio año de origen** para los cinco pares; por tanto, los swaps de listas se comparan en los mismos grupos de riesgo. La sensibilidad del LOG1P es sustancialmente mayor que la del Markov binario, pese a que el cambio mediano sea pequeño.
+
+| Origen | Ediciones | Media absoluta LOG1P (pp) | Media absoluta binario (pp) | Máxima LOG1P (pp) | P95 LOG1P (pp) | Top-10 entradas | Top-5 salidas |
+|---|---|---:|---:|---:|---:|---:|---:|
+| 2022 | 23.1→24.1 | 0,2125 | 0,0469 | **19,7673** | 0,3204 | 0 cambios | 0 cambios |
+| 2022 | 23.1→25.1 | 0,3061 | 0,0969 | **19,1521** | 1,0786 | 1 cambio | 1 cambio |
+| 2022 | 23.1→26.1 | **0,3657** | 0,1307 | **18,2437** | 1,2449 | 1 cambio | 1 cambio |
+| 2023 | 24.1→25.1 | 0,1756 | 0,0610 | 5,6727 | 0,5167 | 0 cambios | 0 cambios |
+| 2023 | 24.1→26.1 | 0,2194 | 0,1047 | 5,8717 | 0,7638 | 0 cambios | 0 cambios |
+
+Todas son modificaciones **entre versiones oficiales del mismo histórico hasta la fecha fija**, no diferencias entre resultados o hitos temporales. Los cambios medios no son intervalos de incertidumbre del pronóstico 2027; los casos extremos pueden dominar el promedio.
+
+### Caso estructuralmente revelador: Burundi
+
+En el origen fijo 2022, al pasar de UCDP 23.1 a **24.1**, las muertes de violencia estatal best atribuidas a Burundi para **2022** pasan de **0 a 10**, mientras que el estado binario se mantiene **inactivo** (por debajo de 25 muertes). La probabilidad LOG1P del experimento histórico pasa de **0,21181747 a 0,40949040**, un salto de **+19,7673 pp**. La atribución Shapley de tres factores es:
+
+| Factor aritmético | Contribución al salto (pp) |
+|---|---:|
+| Cambio de la probabilidad Markov binaria | +0,0167 |
+| **Cambio de la variable continua de muertes 2022** | **+19,9740** |
+| Cambio de los coeficientes de calibración | −0,2234 |
+| **Total exacto** | **+19,7673** |
+
+La sensibilidad a la corrección **0→10 muertes** se produce dentro del estado binario 0, por lo que la señal intensa que aporta LOG1P también amplifica el impacto de revisiones que jamás cruzan el umbral 25. Los factores no son independientes y esta separación es **algebraica**, no causal. **No se ha cambiado ninguna probabilidad de Burundi emitida para 2027**.
+
+### Comparación de las listas históricas
+
+En **2022, 23.1→25.1** y **2022, 23.1→26.1**, los mismos movimientos de una plaza se repiten en dos revisiones correlacionadas:
+
+- **Top-10 entrada:** sale Sudán del Sur y entra **Líbano**.
+- **Top-5 resolución del umbral:** sale Indonesia y entra **Tayikistán**.
+
+En 23.1→24.1 y en las dos revisiones con origen fijo 2023 **no hay cambios de pertenencia** en esas listas. Los límites de top-k se comprueban con conjuntos obligatorios/posibles bajo empates; los movimientos indicados no dependen del criterio arbitrario de desempate. Son **listas retrospectivas modelizadas**, no alteraciones de las 15 alertas emitidas para 2027.
+
+Esta prueba refuerza la interpretación: el modelo continuo mejora Brier en las dos evaluaciones retrospectivas estudiadas anteriormente, pero es **menos estable ante determinadas revisiones editoriales**. No existe justificación para seleccionar ahora un «ganador» sin una futura evaluación real de 2027, y la sensibilidad histórico-editorial no equivale a error predictivo o a cobertura de un intervalo de confianza.
+
 ## Métricas y controles
 
 Por cada pareja de ediciones y cohorte fija se reportarán: media, mediana, P95 y máximo del desplazamiento absoluto de \(p_{\mathrm{LOG1P}}\) en puntos porcentuales; contraste de esos valores con el Markov original; número de cambios ≥2,5pp y ≥5pp; muertes revisadas en el origen, coeficientes y lambda antiguos/nuevos; aportaciones Shapley firmadas y absolutas; y swaps top-10/top-5 con identificación de empates.
