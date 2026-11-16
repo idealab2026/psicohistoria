@@ -48,6 +48,52 @@ Para entrada, se ordena por \(p_{\rm activo}\) descendente; para salida, por \(1
 
 Este test es **exacto bajo el conjunto rectangular de perturbaciones independientes** (cada país puede adoptar cualquier conteo admisible simultáneamente con todos los demás). Las restricciones globales que pudieran correlacionar revisiones reales no se incluyen y no deben inferirse de aquí.
 
+## Resultados exactos en la emisión prospectiva registrada
+
+Los **196 países** de la emisión LOG1P han pasado los controles de coherencia con los originales. Distribución de 2025: **154 países con cero muertes**, **8 países entre 1 y 24**, **34 países con 25 o más**. Se comparan *extremos hipotéticos* de 2025, manteniendo fijo el estado y los parámetros del GEO y LOG1P. No son nuevas predicciones, y 2027 sigue sin resultados observados.
+
+| Perturbación admisible en muertes 2025 | Anchura media de \(p_{2027}\) (pp) | Mediana (pp) | P95 (pp) | Máximo (pp) | Países con posible cambio ≥5 pp |
+|---|---:|---:|---:|---:|---:|
+| **±1**, sin cruzar el estado binario | 0,6502 | 0,3865 | 2,0935 | **4,7143** | 0 |
+| **±5**, sin cruzar el estado binario | 2,1294 | 1,2280 | 8,2716 | **13,3181** | 21 |
+| **±10**, sin cruzar el estado binario | 3,1780 | 1,8487 | 11,9590 | **18,5354** | 31 |
+
+La métrica «anchura» es el máximo menos el mínimo de la **probabilidad modelo** dentro del intervalo de muertes hipotéticas. No es la magnitud de una revisión realmente ocurrida.
+
+### Burundi: fragilidad intrínseca, sin cruzar 25 muertes
+
+En la **emisión LOG1P real de 2027** para Burundi, las muertes 2025 UCDP son **0** y su probabilidad emitida de superar 25 muertes estatales en 2027 es **22,6212 %**. Si se recalculara solo la función LOG1P con la hipótesis de **10** muertes en 2025, sin modificar ni el estado binario ni los parámetros, sería **41,1566 %**, **+18,5354 pp**. Con **1** muerte sería **27,3355 %**, +4,7143 pp; con **5** muertes, **35,9393 %**, +13,3181 pp.
+
+Este contraste identifica una dependencia matemática de la salida publicada respecto a pequeños cambios dentro de un estado inactivo. **No se ha modificado ninguna de esas probabilidades emitidas.** El caso coincide cualitativamente con el deterioro editorial observado en la reconstrucción histórica Burundi 2022, sin tratarlo como una frecuencia o una probabilidad de revisión futura.
+
+### Certificación exacta de los conjuntos top-k de la sombra
+
+Los grupos de riesgo proceden del estado original 2025: **162 inactivos**, **34 activos**. Se preservan tamaños de referencia 10/5, pero estas listas son **diagnósticos de la sombra**, no una reedición de las 15 alertas GEO originalmente públicas.
+
+| Perturbación en 2025 | Top-10 entrada: puestos **obligatorios** | Países **posibles** en el top-10 | Top-5 salida: puestos **obligatorios** | Países **posibles** en el top-5 |
+|---|---:|---:|---:|---:|
+| **±1** muerte | 9/10 | 12 | 4/5 | 6 |
+| **±5** muertes | **2/10** | 25 | 3/5 | 6 |
+| **±10** muertes | **2/10** | **28** | 3/5 | 7 |
+
+Con el escenario ±10, solamente **Chad y Burundi** tienen pertenencia obligatoria al top-10 de entrada de esta sombra bajo cualquier combinación de conteos permitidos. En el top-5 de resolución, los miembros obligatorios son **Togo, Angola e Indonesia**. «Posible» significa que **existe** alguna combinación de perturbaciones para la cual ese país entra en los k primeros; no es una probabilidad de selección y no implica que los 28 posibles puedan ocupar simultáneamente las 10 posiciones.
+
+La certificación solo cubre el **conjunto rectangular hipotético** de revisiones enteras por país. Para **2 países** en ±10, el intervalo sin recortar podría cruzar el umbral de 25; esa porción se ha **excluido** porque invalidaría la suposición de que el modelo Markov binario no cambia.
+
+### Suma de probabilidades bajo perturbaciones simultáneas
+
+La emisión real LOG1P tiene **35,9840** países activos esperados en 2027 (suma de sus 196 probabilidades). La suma de los extremos de sus bandas sería, para los tres escenarios:
+
+| Perturbación | Suma mínima contrafactual | Suma máxima contrafactual |
+|---|---:|---:|
+| ±1 muerte | 35,9264 | 37,2009 |
+| ±5 muertes | 35,6389 | 39,8124 |
+| ±10 muertes | 35,4613 | 41,6901 |
+
+**No son intervalos de predicción del número de países activos** ni límites de confianza: sumar 196 bandas deterministas bajo una hipótesis rectangular de revisión produce otra banda determinista, nada más. Las revisiones reales podrían exceder ±10, cruzar el umbral binario o alterar años históricos y coeficientes. Ningún dato de 2027 ha sido puntuado.
+
+**Conclusión:** la fragilidad del predictor continua confirmado por los archivos históricos se manifiesta también en la **emisión 2027 congelada** bajo alteraciones hipotéticas de 2025. El programa debe conservar el archivo prospectivo y evaluar de forma separada (i) Brier/log-loss futuro, (ii) sensibilidad editorial, y (iii) dependencia de decisiones de rankings sin presentar cotas matemáticas condicionadas como calibración.
+
 ## Controles de publicación
 
 El script solo lee las emisiones congeladas y sus SHA, y genera un **nuevo informe de diagnóstico**, no un nuevo archivo de pronóstico. GitHub Actions ejecuta pruebas sintéticas de límites, ranking adversarial, empates, no reemisión y reproducción desde la emisión canónica. El despliegue institucional se bloquea si el resultado recalculado no coincide byte a byte con el informe publicado.
