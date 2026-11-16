@@ -4,6 +4,22 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Influencia del historial nacional Markov frente al prior mundial (16-11-2026)
+
+**Resultado del siguiente experimento sobre los 143 países-bloque subumbrales ya evaluados:** se mantienen fijos los coeficientes de calibración LOG1P aprendidos *sin ninguna etiqueta histórica del país evaluado*, pero se comparan tres probabilidades Markov H2 calculadas al origen: (1) original global + local; (2) prior global sin el país, con su propia historia local; (3) prior global sin el país **y sin sus transiciones locales**, aunque el estado del país en el origen sigue siendo conocido.
+
+| Año retrospectivo UCDP 26.1 | Diferencia Brier α1−α0 con Markov original | Excluir solo contribución al prior mundial | Excluir también transiciones locales |
+|---|---:|---:|---:|
+| **2017** | **+0,000121** | +0,000120 | **−0,000053** |
+| **2024** | −0,000821 | −0,000826 | **−0,001144** |
+| **2025** | +0,000635 | +0,000633 | **+0,000093** |
+
+**Hallazgo:** la auto-influencia del país sobre el prior de transiciones mundial es marginal (desplazamiento Markov absoluto medio **0,015–0,022 pp** en estos tres años), mientras su **historial de transiciones local** puede alterar notablemente el pronóstico (diferencias absolutas medias **4,40–6,89 pp**, con extremos por encima de 20 pp). Al retirar lo local, **2017 invierte el signo Brier**, también en las cuatro ediciones UCDP del año; 2025 reduce la desventaja relativa de LOG1P alrededor de **85 %** sin cambiar signo. El caso más relevante para 2017 es **Israel**; en 2024 las alteraciones de Angola y Burundi tienen sentidos distintos porque los resultados futuros de esos dos países también difieren.
+
+**No es un modelo cold-start validado:** el coeficiente logístico se entrenó con offsets Markov de otros países **que sí incluían historia local**. El tercer escenario lo reutiliza con otro tipo de offset, de modo que puede generar desajuste de calibración. Es una **ablación mecanística retrospectiva**, no 13 réplicas independientes, ni prueba prospectiva de utilidad, ni sustitución de la sombra de 2027. La penalización LOG1P y los α fueron investigados después de conocer parte del histórico. **Las 196 predicciones GEO, las 196 LOG1P y las 15 alertas originales se mantienen byte idénticas; no se ha puntuado ningún resultado oficial 2027.**
+
+[Metodología y resultados históricos](docs/geo2027-log1p-markov-country-history-ablation.md) · [Informe por año, país y escenario](data/geo2027-log1p-markov-country-history-ablation.json) · código `scripts/experiment_geo2027_log1p_markov_country_history_ablation.py` · auditoría reproducible GitHub Actions.
+
 ## GEO2027 · Transferencia del calibrador LOG1P entre países (16-11-2026)
 
 **Nueva investigación publicada:** reentrenamiento logístico **excluyendo todas las filas históricas del país evaluado** antes de puntuar el efecto de conservar (α=1) o desactivar (α=0) la señal de intensidad estatal subumbral (1–24 muertes en el origen). Se conserva el Markov H2 original —con la historia pre-origen del país—; por tanto esto es **transferencia internacional del calibrador**, no predicción de países sin historial ni reestimación cold-start del Markov.
