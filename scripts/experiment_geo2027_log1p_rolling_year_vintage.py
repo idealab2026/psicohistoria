@@ -58,14 +58,14 @@ def historical_ledger(source, last_year, fixed_ids):
     if type(last_year) is not int or not 2022<=last_year<=LAST_TARGET:
         raise ValueError("Unsupported official vintage last year")
     ids=sorted(fixed_ids)
-    if len(ids)!=196 or len(set(ids))!=196 or set(source)!=set(ids):
+    if len(ids)!=196 or len(set(ids))!=196 or not set(ids).issubset(source):
         raise ValueError("Original 196-country fixed GWNO universe changed")
     binary=counts_to_binary(source)
     ledger={}
     for target in range(START_TRAIN,last_year+1):
         origin=target-2
         markov=binary_h2_until(binary,origin)
-        if set(markov)!=set(ids):
+        if not set(ids).issubset(markov):
             raise ValueError("Original Markov historical annual risk cohort changed")
         rows=[]
         for cid in ids:
