@@ -29,6 +29,24 @@ Por construcción, \(\phi_L+\phi_O=p11-p00\), sin residuo. La aportación nacion
 
 Se repite la descomposición para Indonesia y Kirguistán en las comparaciones 23.1→24.1, 23.1→25.1 y 23.1→26.1. Los resultados se cotejan contra el estudio independiente de revisiones H2/H3 ya publicado, el listado exacto histórico de alertas y las 196 identidades GWNO congeladas. El análisis lista los años de cambios en etiquetas binarias históricas y los años ausentes; **no** trata valores ausentes como violencia inexistente.
 
+## Resultados numéricos reproducidos desde las fuentes originales
+
+El ejercicio recorre tres revisiones sobre el mismo origen 2022. Las contribuciones se expresan en **puntos porcentuales** sobre la probabilidad de estado binario activo dos años después:
+
+| Comparación UCDP | Cambio total de Indonesia | Historial nacional `φ_L` | Resto del mundo `φ_O` | Cambio total de Kirguistán |
+|---|---:|---:|---:|---:|
+| 23.1 → 24.1 | +0,002051 | 0,000000 | +0,002051 | +0,001489 |
+| 23.1 → 25.1 | +5,366665 | +5,417825 | −0,051160 | +0,094175 |
+| 23.1 → 26.1 | **+5,460642** | **+5,418306** | **+0,042336** | +0,256363 |
+
+El término nacional de Indonesia representa **aproximadamente el 99,2 %** de la variación total 23.1→26.1, con el resto aportando unos **0,8 %**. En 23.1→25.1, el componente de los demás países tiene signo contrario y compensa parcialmente la revisión nacional. Esto demuestra por qué no se debe interpretar un simple desplazamiento del prior global como la única causa.
+
+**Cambios originales de las etiquetas UCDP de Indonesia:** 2019 pasa de estado 0 a 1; 2020 pasa de estado 0 a 1. No se han encontrado otros cambios binarios de ese país hasta el origen 2022 en la comparación 23.1→26.1. El recuento de transiciones Indonesia (filas origen 0/1 y columnas destino 0/1) cambia de `[[13,5],[4,11]]` a `[[12,4],[3,14]]`. Las ediciones 23.1 y 24.1 coinciden para la historia binaria indonesia en este intervalo; las reclasificaciones aparecen en 25.1 y persisten en 26.1.
+
+**Kirguistán como control:** no se revisan sus etiquetas binarias hasta 2022 en estas comparaciones; su matriz de transiciones nacionales se mantiene constante. La variación en su puntuación refleja únicamente las modificaciones de la media global procedentes de otros países.
+
+El intercambio histórico de la lista top-5 no se repite dos veces en episodios independientes: aparece al pasar de 23.1 a 25.1 y sigue presente en 26.1. No hay resultados 2027 observados ni tasas prospectivas de acierto calculadas.
+
 ## Interpretación rigurosa
 
 Esta es una **atribución algebraica dependiente de la ecuación**, no una estimación causal de cómo el conflicto geopolítico de Indonesia afectó a otros países, ni una distribución de error futuro. Los factores son bloques de datos correlacionados y las combinaciones cruzadas `(L1,O0)` y `(L0,O1)` son contrafactuales artificiales; sus aportaciones cambian si se define otra agrupación de factores. No hay evidencia de que estas revisiones se repitan en UCDP 27.1.
