@@ -6,7 +6,7 @@ import json
 import unittest
 
 from audit_geo2027_log1p_shadow_issue import (
-    ORIGINAL, ID, SOURCE_SHA, SOURCE_SHA256, audit,
+    ORIGINAL, ID, SOURCE_SHA, SOURCE_SHA256, FIRST_PUBLIC_COMMIT, FIRST_PUBLIC_UTC, audit,
 )
 
 
@@ -44,7 +44,8 @@ def fixture():
         "outcomes_resolved":0,"demonstrated_predictive_skill":False,
         "original_forecast_sha256":SOURCE_SHA256,
         "source_26_1_sha256":SOURCE_SHA,
-        "first_complete_forecast_commit":"a"*40,
+        "first_complete_forecast_commit":FIRST_PUBLIC_COMMIT,
+        "first_complete_forecast_commit_utc":FIRST_PUBLIC_UTC,
         "shadow_file_sha256":sha,
     }
     return issue,manifest,original_raw,sha
