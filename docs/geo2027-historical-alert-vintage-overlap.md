@@ -20,6 +20,25 @@ Por tanto, realizamos **análogos retrospectivos sobre seis comparaciones reales
 - En el caso de empates en la frontera, la pertenencia a una única lista no es un hallazgo estadístico. Se publican los conjuntos `mandatory` (están en cualquier top-k admisible) y `possible` (podrían entrar con algún desempate), de los que se derivan entradas/salidas definitivamente nuevas.
 - Las seis parejas comparten observaciones, años e historial: **no son seis ensayos independientes**. El informe no estima intervalos de confianza, tasas de éxito, riesgo de guerra ni resultados de 2027.
 
+## Resultados oficiales reproducidos (16/11/2026)
+
+El reporte numérico se ha reconstruido mediante GitHub Actions desde las **cuatro fuentes UCDP originales verificados por SHA-256**. Las seis comparaciones usan el horizonte exacto H2 de dos pasos, 196 países en cada pareja, sin etiquetas posteriores al año de origen en el ajuste.
+
+| Año de origen | Par UCDP | Entradas top-10 sustituidas | Salidas top-5 sustituidas | Empates de frontera |
+|---|---|---:|---:|---|
+| 2022 | 23.1 → 24.1 | 0 | 0 | No |
+| 2022 | 23.1 → 25.1 | 0 | 1 | No |
+| 2022 | 23.1 → 26.1 | 0 | 1 | No |
+| 2023 | 24.1 → 25.1 | 0 | 0 | No |
+| 2023 | 24.1 → 26.1 | 0 | 0 | No |
+| 2024 | 25.1 → 26.1 | 0 | 0 | No |
+
+En los dos pares de origen **2022** que muestran un cambio de la lista top-5 de resolución, **Indonesia (GWNO 850)** sale y **Kirguistán (GWNO 703)** entra. Se trata del **mismo intercambio persistente en dos comparaciones correlacionadas**, no de dos sucesos independientes. Los límites de selección de ambos grupos son únicos en las seis parejas: el cambio es inequívoco incluso sin recurrir al desempate por identificador. **No hubo reclasificaciones del estado de origen** en los 196 países de ninguno de los seis pares.
+
+Los resultados revelan una diferencia importante entre métricas: en estas seis reconstrucciones históricas, la lista de entrada se mantiene íntegra, pero la lista de resolución no. **El top-20 agregado y el estado binario al 50 % podían seguir siendo estables sin garantizar la composición de la lista top-5**.
+
+Este análisis no constituye una frecuencia estimada para revisiones futuras, ni determina qué países acertará GEO2027. Solo permite afirmar que al menos una decisión histórica de ranking cambió al revisar los historiales UCDP reales, incluso manteniendo fijo el año de origen.
+
 ## Integridad
 
 La generación comprueba en cada ejecución las fuentes oficiales por sus hashes ya auditados, la primera emisión GEO2027 (`5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5`) y las 15 alertas originales (`309b4f270e1d0d6382b7a90ae64c28d7621f96fbf3177a45aaebbffb0f958acb`). El reporte `data/geo2027-historical-alert-vintage-overlap.json` es **solo investigación** y no altera ni vuelve a emitir las 15 alertas reales.
