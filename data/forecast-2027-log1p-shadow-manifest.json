@@ -1,1 +1,36 @@
-{"status":"PENDING_PROSPECTIVE_SHADOW_FIRST_ISSUE_SHA"}
+{
+  "schema": "idealab.psico.geo2027_log1p_shadow_manifest.v1",
+  "forecast_id": "PSICO-GEO2027-STATEBASED25-LOG1P-INTENSITY-SHADOW-V1",
+  "status": "ISSUED_PROSPECTIVE_UNRESOLVED",
+  "forecast_path": "data/forecast-2027-log1p-shadow.json",
+  "shadow_file_sha256": "52686923315854557a796f8f192d376dab77a4e03b14c1aeb6b4091e48104f90",
+  "first_complete_forecast_commit": "a2af84346bd223d2a105cf727b3462cd0955fdac",
+  "preparation_calendar_date": "2026-11-16",
+  "first_issue_time_provenance": "PUBLIC_GITHUB_COMMIT_NOT_INDEPENDENT_NOTARY",
+  "independently_notarized": false,
+  "original_forecast_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "original_forecast_first_commit": "3bb3561c8d6182c30624591276c705fb76ce99dc",
+  "source_26_1_sha256": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34",
+  "target_year": 2027,
+  "observed_data_through": 2025,
+  "issued_country_count": 196,
+  "outcomes_resolved": 0,
+  "demonstrated_predictive_skill": false,
+  "original_2027_issued_forecast_or_alerts_changed": false,
+  "separate_shadow_with_prior_model_family_selection_after_2024_2025_history": true,
+  "selected_lambda_from_internal_2018_2020": 5,
+  "coefficients_trained_only_through_2025": [
+    -0.337793886776,
+    1.185261838805,
+    1.934189190903
+  ],
+  "primary_future_scoring_rule": "Brier LOG1P shadow minus original GEO using exact same 196 GWNO on first complete official UCDP release covering 2027; no missing-as-zero",
+  "secondary_scoring_rules": [
+    "Logloss shadow minus GEO",
+    "Brier shadow minus intercept-only calibration control",
+    "Logloss shadow minus intercept-only calibration control"
+  ],
+  "other_shadows_already_exist_and_multiple_comparisons_not_confirmatory": true,
+  "institutional_repository": "idealab2026/psicohistoria",
+  "provenance_note": "The SHA-pinned first complete 196-country file appears in the linked public GitHub commit. Preparation date does not establish public issue time; GitHub commit date is not independent cryptographic notarization. All 2027 official outcomes unresolved."
+}
