@@ -28,6 +28,40 @@ Se comprueban **nueve años distintos, 2017–2025, de la edición oficial UCDP 
 
 El coeficiente λ=5, la familia LOG1P y los años seleccionados **fueron definidos en 2026 después de inspeccionar parte del histórico**. Los contrastes son exploratorios incluso si la formación del coeficiente respeta la cronología interna; tampoco reconstruyen fielmente las versiones UCDP disponibles en cada fecha histórica. No se escoge un nuevo modelo ganador ni se reclama rendimiento prospectivo o significación estadística IID.
 
+## Resultados reproducidos con fuentes oficiales UCDP
+
+Se han recalculado **143 calibraciones logísticas específicas con país excluido** en los **13 bloques año–edición**. En el análisis principal de **nueve años distintos** de UCDP 26.1 se han excluido sistemáticamente **todas las etiquetas históricas del país afectado** antes de ajustar los tres coeficientes. Se compara el efecto α=1 menos α=0 tanto con calibración completa como sin el país. Las diferencias se normalizan sobre el universo de países evaluados (196 en estos años), **pero no son un score cross-validated completo sobre 196 países**: solamente los países de origen 1–24 cambian α1 frente a α0, mientras que ambos α producen predicciones idénticas en los demás si usan el mismo calibrador.
+
+| Año objetivo | Países de origen 1–24 evaluados | ΔBrier original α1−α0 | ΔBrier con país excluido de la calibración | Cambia signo |
+|---|---:|---:|---:|---|
+| 2017 | 9 | +0,000111 | +0,000121 | No |
+| 2018 | 7 | −0,000962 | −0,001041 | No |
+| 2019 | 10 | −0,000936 | −0,001055 | No |
+| 2020 | 13 | −0,002072 | −0,001918 | No |
+| 2021 | 11 | −0,000324 | −0,000237 | No |
+| 2022 | 9 | −0,000336 | −0,000283 | No |
+| 2023 | 15 | −0,000676 | −0,000611 | No |
+| 2024 | 15 | −0,000788 | −0,000821 | No |
+| 2025 | 12 | +0,000620 | +0,000635 | No |
+
+**Resultado principal:** **0 de los 9 años** cambia la dirección de la diferencia agregada al excluir la historia de entrenamiento logístico del país evaluado. Las tres ediciones históricas adicionales de 2017 y la edición adicional de 2024 dan el mismo resultado (**0 inversiones en los 13 bloques**, aun siendo ediciones muy correlacionadas).
+
+### Países específicos y transferencia del calibrador
+
+- **2017, Israel:** efecto Brier individual de α1 frente a α0 **+0,049619** con calibración completa, **+0,052426** con calibración excluyente; sigue siendo perjudicial. En el grupo de 9 países solo 2 cruzan el umbral futuro. La diferencia anual de Brier de α1 empeora ligeramente tras excluir el historial de cada país.
+- **2024, Angola:** efecto individual **−0,309445** con calibración completa y **−0,321442** con calibración excluyente; sigue favoreciendo la señal continua incluso cuando el calibrador no ha utilizado su propio historial de etiquetas. En el grupo de 15 países solo 2 cruzan 25 muertes en el objetivo.
+- **2025, Uganda:** efecto **+0,055902** con calibración completa y **+0,057112** sin sus propias etiquetas de calibración, por lo que el perjuicio permanece. Entre 12 países de origen 1–24, solo Sudán del Sur pasa a activo.
+
+Los desplazamientos **medios absolutos del coeficiente de intensidad inactiva** al excluir un país de la calibración fueron **0,00865 en 2017**, **0,01692 en 2024** y **0,01819 en 2025**. Son variaciones de coeficientes, no puntos porcentuales de probabilidad ni medidas de incertidumbre. El análisis publica los cambios individuales y los mismos desgloses para todos los demás años.
+
+La suma de contribuciones para **los países que cruzan el umbral** sigue siendo beneficiosa para α1, y la de **los que permanecen subumbral** sigue siendo perjudicial. Por ejemplo, en 2025, la mejora de los que cruzan 25 es **−0,034409** de pérdida cuadrática acumulada antes de dividir entre 196, mientras que el perjuicio de los otros once es **+0,158813**. No hay inversión de este balance.
+
+### Interpretación y límites
+
+Este resultado permite **descartar la hipótesis estrecha** de que el signo anual favorable a LOG1P se deba únicamente a incluir las propias etiquetas históricas del país en el ajuste de los coeficientes continuos. **No descarta dependencia de unos pocos países en la puntuación**, demostrada en la investigación anterior: son problemas distintos. Tampoco prueba robustez al eliminar el país del entrenamiento del Markov o a alteraciones de los conteos de muertes subumbral, ni garantiza predicción prospectiva útil.
+
+Los **13 bloques** contienen **solo 9 años únicos**. Los resultados son ex post, la penalización y familia LOG1P se escogieron tras inspeccionar datos históricos y UCDP puede revisar etiquetas de años anteriores. No hay resultados 2027, ni modificación de las 196 probabilidades emitidas originales y sombra, ni de las 15 alertas.
+
 ## Seguridad y reproducibilidad
 
 Auditoría obligatoria de los tres archivos originales de 2027: GEO original (SHA-256 5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5), sombra LOG1P (SHA-256 52686923315854557a796f8f192d376dab77a4e03b14c1aeb6b4091e48104f90) y 15 alertas (SHA-256 309b4f270e1d0d6382b7a90ae64c28d7621f96fbf3177a45aaebbffb0f958acb).
