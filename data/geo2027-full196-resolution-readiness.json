@@ -1,0 +1,21 @@
+{
+  "all_prospective_model_probabilities_unchanged": true,
+  "evaluation_target_year": 2027,
+  "first_complete_source_priority_requires_external_release_review": true,
+  "first_complete_verified_official_source_available": false,
+  "first_possible_full_2027_calendar_source_release_date": "2028-01-01",
+  "manual_release_review_not_completed": true,
+  "n_fixed_first_issued_GWNO": 196,
+  "n_official_2027_labels_resolved": 0,
+  "new_global_only_first_commit": "52ab9ffe7d49e4574b61a9f6a35c57cf7b43082d",
+  "new_global_only_issue_sha256": "251595a12758e006cf21dabbb9771e10b5961c469a5317d6b2b1c5de227f3697",
+  "no_absent_country_is_automatically_zero": true,
+  "no_current_brier_or_logloss_reported": true,
+  "original_15_alerts_sha256": "309b4f270e1d0d6382b7a90ae64c28d7621f96fbf3177a45aaebbffb0f958acb",
+  "original_GEO_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "original_LOG1P_sha256": "52686923315854557a796f8f192d376dab77a4e03b14c1aeb6b4091e48104f90",
+  "primary_pair_predeclared": "full196_Brier_global_only_alpha1_minus_frozen_original_LOG1P_shadow",
+  "schema": "idealab.psico.geo2027_full196_official_resolution_readiness.v1",
+  "source_data_must_represent_UCDP_OrganizedViolenceCY_state_based_best": true,
+  "status": "NOT_READY_NO_VERIFIED_OFFICIAL_2027_RELEASE"
+}
