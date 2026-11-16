@@ -1000,3 +1000,18 @@ jobs:
         with:
           path: dist/
       - uses: actions/deploy-pages@v4
+
+  geo2027_historical_alert_vintage_overlap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test fixed-origin ranking, boundary ties and source revisions
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_diagnose_geo2027_historical_alert_vintage_overlap.py' -v
+      - name: Recompute historical H2 top10/top5 membership from four original UCDP releases
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_historical_alert_vintage_overlap.py --check-report
