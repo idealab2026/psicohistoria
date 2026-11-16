@@ -4,6 +4,24 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Transferencia del calibrador LOG1P entre países (16-11-2026)
+
+**Nueva investigación publicada:** reentrenamiento logístico **excluyendo todas las filas históricas del país evaluado** antes de puntuar el efecto de conservar (α=1) o desactivar (α=0) la señal de intensidad estatal subumbral (1–24 muertes en el origen). Se conserva el Markov H2 original —con la historia pre-origen del país—; por tanto esto es **transferencia internacional del calibrador**, no predicción de países sin historial ni reestimación cold-start del Markov.
+
+Se han reproducido **143 exclusiones del historial de calibración** en **13 bloques año–edición**, correspondientes a **9 años distintos**. En UCDP 26.1, **ninguno de los nueve años cambia de signo** respecto al modelo con todos los países presentes:
+
+| Objetivo | Países subumbrales comprobados | ΔBrier α1−α0 con calibración completa | ΔBrier con calibrador entrenado sin cada país |
+|---|---:|---:|---:|
+| 2017 | 9 | +0,000111 | +0,000121 |
+| 2024 | 15 | −0,000788 | −0,000821 |
+| 2025 | 12 | +0,000620 | +0,000635 |
+
+2018–2023 también mantienen la dirección de su contraste; repetir 2017 con UCDP 23.1/24.1/25.1 y 2024 con 25.1 no produce inversiones. En casos influyentes, **Israel (2017)** sigue perjudicando la señal completa, **Angola (2024)** la favorece, y **Uganda (2025)** vuelve a perjudicarla incluso sin sus propias etiquetas históricas dentro del calibrador.
+
+**Conclusión limitada:** el signo anual no depende únicamente de que el país evaluado aporte sus propias observaciones históricas al modelo logístico. Eso **no elimina la dependencia de pocos países en el Brier**, la fragilidad ante revisiones de muertes, ni convierte datos históricos ya estudiados en una prueba prospectiva. El Markov sí usa la historia del país, el ridge λ=5 se seleccionó a posteriori y los 13 bloques son correlacionados. **Ningún modelo nuevo emitido; las 196 GEO originales, las 196 LOG1P y las 15 alertas para 2027 permanecen idénticas.**
+
+[Metodología y resultados detallados](docs/geo2027-log1p-subthreshold-country-block-transfer.md) · [Informe fuente-auditado por país](data/geo2027-log1p-subthreshold-country-block-transfer.json) · [Script](scripts/experiment_geo2027_log1p_country_block_transfer.py) · GitHub Actions de pruebas de no-leakage y reproducción exacta.
+
 ## GEO2027 · Causas contables de las inversiones Brier en 2017 y 2025 (16-11-2026)
 
 **Hallazgo fundamental del estudio anual**: al contrastar las dos variantes LOG1P α=1 (pendiente continua completa entre países inactivos) y α=0 (sin esa pendiente), **todos los países de origen con 0 muertes y todos los países de origen con ≥25 tienen exactamente el mismo pronóstico en ambas**. Por tanto, **solo los países que tenían de 1 a 24 muertes estatales best al origen pueden cambiar el Brier comparativo**. Son una minoría y su influencia en el score agregado es considerable.
