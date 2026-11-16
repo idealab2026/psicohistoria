@@ -31,13 +31,13 @@ class HistoricalAlertVintageOverlapTests(unittest.TestCase):
         revised = {
             1: {"origin_state": 0, "q_local": [0.1, 0.8]},
             2: {"origin_state": 0, "q_local": [0.1, 0.8]},
-            3: {"origin_state": 0, "q_local": [0.9, 0.9]},
-            4: {"origin_state": 0, "q_local": [0.1, 0.8]},
+            3: {"origin_state": 0, "q_local": [0.1, 0.8]},
+            4: {"origin_state": 0, "q_local": [0.9, 0.9]},
         }
         res = group_comparison(old, revised, 0, {i: str(i) for i in old}, k=2)
         self.assertEqual(res["deterministic_swaps_n"], 1)
-        self.assertEqual(res["definite_exits_n"], 0)  # old #2 is tied with #3
-        self.assertEqual(res["definite_entries_n"], 1)
+        self.assertEqual(res["definite_exits_n"], 0)  # old #2 was not mandatory
+        self.assertEqual(res["definite_entries_n"], 1)  # old #4 was never eligible by ties
 
     def test_synthetic_all_six_edition_pairs_retain_scientific_limits(self):
         vintages, meta, original27, original28 = synthetic()
