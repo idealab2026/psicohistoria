@@ -1,0 +1,32 @@
+name: GEO2027 first complete official full196 outcome resolution readiness
+on:
+  pull_request:
+    paths:
+      - 'scripts/resolve_geo2027_first_complete_official.py'
+      - 'scripts/test_resolve_geo2027_first_complete_official.py'
+      - 'data/geo2027-full196-resolution-readiness.json'
+      - '.github/workflows/geo2027-full196-resolution-readiness.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/resolve_geo2027_first_complete_official.py'
+      - 'scripts/test_resolve_geo2027_first_complete_official.py'
+      - 'data/geo2027-full196-resolution-readiness.json'
+      - '.github/workflows/geo2027-full196-resolution-readiness.yml'
+permissions:
+  contents: read
+jobs:
+  geo2027_full196_outcome_readiness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify no premature 2027 outcome evaluation, complete exact 196 coverage and synthetic source tampering
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_resolve_geo2027_first_complete_official.py' -v
+      - name: Fail closed on byte-identical NOT_READY state of all first-issued 2027 predictions
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/resolve_geo2027_first_complete_official.py --check-readiness
