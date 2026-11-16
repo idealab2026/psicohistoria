@@ -1,1 +1,577 @@
-{"status":"PENDING_SHA_PINNED_SOURCE_REPLAY"}
+{
+  "comparisons": [
+    {
+      "comparison": "23.1->24.1",
+      "countries": {
+        "703": {
+          "all_other_countries_transitions_shapley_pp": 0.001488856,
+          "changed_historical_binary_years": [],
+          "counterfactual_p_local_revised_only": 0.658416662822,
+          "counterfactual_p_other_countries_revised_only": 0.658431551382,
+          "country": "Kyrgyzstan",
+          "country_id": 703,
+          "country_q_later": [
+            0.053413958176,
+            0.804994108583
+          ],
+          "country_q_original": [
+            0.053337608893,
+            0.804994108583
+          ],
+          "global_q_later": [
+            0.030864197531,
+            0.835493519442
+          ],
+          "global_q_original": [
+            0.030677141788,
+            0.835493519442
+          ],
+          "historical_missing_years_between_vintages": [],
+          "interaction_before_equal_shapley_split_pp": 0.0,
+          "later_probability": 0.658431551382,
+          "no_post_origin_training_labels_used": true,
+          "old_country_transition_counts": [
+            [
+              27,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "old_other_countries_transition_counts": [
+            [
+              5154,
+              161
+            ],
+            [
+              163,
+              836
+            ]
+          ],
+          "origin_state": 1,
+          "origin_year": 2022,
+          "original_probability": 0.658416662822,
+          "own_historical_transitions_shapley_pp": 0.0,
+          "probability_change_pp": 0.001488856,
+          "revised_country_transition_counts": [
+            [
+              27,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "revised_other_countries_transition_counts": [
+            [
+              5153,
+              162
+            ],
+            [
+              163,
+              836
+            ]
+          ],
+          "two_factor_split_is_algebraic_not_causal": true
+        },
+        "850": {
+          "all_other_countries_transitions_shapley_pp": 0.002050617,
+          "changed_historical_binary_years": [],
+          "counterfactual_p_local_revised_only": 0.657575161428,
+          "counterfactual_p_other_countries_revised_only": 0.657595667603,
+          "country": "Indonesia",
+          "country_id": 850,
+          "country_q_later": [
+            0.147823261858,
+            0.791710582538
+          ],
+          "country_q_original": [
+            0.147724811468,
+            0.791710582538
+          ],
+          "global_q_later": [
+            0.030864197531,
+            0.835493519442
+          ],
+          "global_q_original": [
+            0.030677141788,
+            0.835493519442
+          ],
+          "historical_missing_years_between_vintages": [],
+          "interaction_before_equal_shapley_split_pp": 0.0,
+          "later_probability": 0.657595667603,
+          "no_post_origin_training_labels_used": true,
+          "old_country_transition_counts": [
+            [
+              13,
+              5
+            ],
+            [
+              4,
+              11
+            ]
+          ],
+          "old_other_countries_transition_counts": [
+            [
+              5168,
+              158
+            ],
+            [
+              160,
+              826
+            ]
+          ],
+          "origin_state": 1,
+          "origin_year": 2022,
+          "original_probability": 0.657575161428,
+          "own_historical_transitions_shapley_pp": 0.0,
+          "probability_change_pp": 0.002050617,
+          "revised_country_transition_counts": [
+            [
+              13,
+              5
+            ],
+            [
+              4,
+              11
+            ]
+          ],
+          "revised_other_countries_transition_counts": [
+            [
+              5167,
+              159
+            ],
+            [
+              160,
+              826
+            ]
+          ],
+          "two_factor_split_is_algebraic_not_causal": true
+        }
+      },
+      "global_transition_original": [
+        [
+          5181,
+          163
+        ],
+        [
+          164,
+          837
+        ]
+      ],
+      "global_transition_revised": [
+        [
+          5180,
+          164
+        ],
+        [
+          164,
+          837
+        ]
+      ],
+      "indonesia_exits_historical_resolution_top5": false,
+      "kyrgyzstan_enters_historical_resolution_top5": false,
+      "origin_year": 2022
+    },
+    {
+      "comparison": "23.1->25.1",
+      "countries": {
+        "703": {
+          "all_other_countries_transitions_shapley_pp": 0.094175367,
+          "changed_historical_binary_years": [],
+          "counterfactual_p_local_revised_only": 0.658416662822,
+          "counterfactual_p_other_countries_revised_only": 0.659358416494,
+          "country": "Kyrgyzstan",
+          "country_id": 703,
+          "country_q_later": [
+            0.053423391071,
+            0.805588155638
+          ],
+          "country_q_original": [
+            0.053337608893,
+            0.804994108583
+          ],
+          "global_q_later": [
+            0.030887308124,
+            0.836146971202
+          ],
+          "global_q_original": [
+            0.030677141788,
+            0.835493519442
+          ],
+          "historical_missing_years_between_vintages": [],
+          "interaction_before_equal_shapley_split_pp": 0.0,
+          "later_probability": 0.659358416494,
+          "no_post_origin_training_labels_used": true,
+          "old_country_transition_counts": [
+            [
+              27,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "old_other_countries_transition_counts": [
+            [
+              5154,
+              161
+            ],
+            [
+              163,
+              836
+            ]
+          ],
+          "origin_state": 1,
+          "origin_year": 2022,
+          "original_probability": 0.658416662822,
+          "own_historical_transitions_shapley_pp": 0.0,
+          "probability_change_pp": 0.094175367,
+          "revised_country_transition_counts": [
+            [
+              27,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "revised_other_countries_transition_counts": [
+            [
+              5149,
+              162
+            ],
+            [
+              163,
+              840
+            ]
+          ],
+          "two_factor_split_is_algebraic_not_causal": true
+        },
+        "850": {
+          "all_other_countries_transitions_shapley_pp": -0.051159556,
+          "changed_historical_binary_years": [
+            {
+              "original_state": 0,
+              "revised_state": 1,
+              "year": 2019
+            },
+            {
+              "original_state": 0,
+              "revised_state": 1,
+              "year": 2020
+            }
+          ],
+          "counterfactual_p_local_revised_only": 0.71175977603,
+          "counterfactual_p_other_countries_revised_only": 0.657069933065,
+          "country": "Indonesia",
+          "country_id": 850,
+          "country_q_later": [
+            0.128270726736,
+            0.830349714163
+          ],
+          "country_q_original": [
+            0.147724811468,
+            0.791710582538
+          ],
+          "global_q_later": [
+            0.030887308124,
+            0.836146971202
+          ],
+          "global_q_original": [
+            0.030677141788,
+            0.835493519442
+          ],
+          "historical_missing_years_between_vintages": [],
+          "interaction_before_equal_shapley_split_pp": -0.00127344,
+          "later_probability": 0.711241813266,
+          "no_post_origin_training_labels_used": true,
+          "old_country_transition_counts": [
+            [
+              13,
+              5
+            ],
+            [
+              4,
+              11
+            ]
+          ],
+          "old_other_countries_transition_counts": [
+            [
+              5168,
+              158
+            ],
+            [
+              160,
+              826
+            ]
+          ],
+          "origin_state": 1,
+          "origin_year": 2022,
+          "original_probability": 0.657575161428,
+          "own_historical_transitions_shapley_pp": 5.41782474,
+          "probability_change_pp": 5.366665184,
+          "revised_country_transition_counts": [
+            [
+              12,
+              4
+            ],
+            [
+              3,
+              14
+            ]
+          ],
+          "revised_other_countries_transition_counts": [
+            [
+              5164,
+              160
+            ],
+            [
+              161,
+              827
+            ]
+          ],
+          "two_factor_split_is_algebraic_not_causal": true
+        }
+      },
+      "global_transition_original": [
+        [
+          5181,
+          163
+        ],
+        [
+          164,
+          837
+        ]
+      ],
+      "global_transition_revised": [
+        [
+          5176,
+          164
+        ],
+        [
+          164,
+          841
+        ]
+      ],
+      "indonesia_exits_historical_resolution_top5": true,
+      "kyrgyzstan_enters_historical_resolution_top5": true,
+      "origin_year": 2022
+    },
+    {
+      "comparison": "23.1->26.1",
+      "countries": {
+        "703": {
+          "all_other_countries_transitions_shapley_pp": 0.256363188,
+          "changed_historical_binary_years": [],
+          "counterfactual_p_local_revised_only": 0.658416662822,
+          "counterfactual_p_other_countries_revised_only": 0.660980294705,
+          "country": "Kyrgyzstan",
+          "country_id": 703,
+          "country_q_later": [
+            0.053349330745,
+            0.806637806638
+          ],
+          "country_q_original": [
+            0.053337608893,
+            0.804994108583
+          ],
+          "global_q_later": [
+            0.030705860326,
+            0.837301587302
+          ],
+          "global_q_original": [
+            0.030677141788,
+            0.835493519442
+          ],
+          "historical_missing_years_between_vintages": [],
+          "interaction_before_equal_shapley_split_pp": 0.0,
+          "later_probability": 0.660980294705,
+          "no_post_origin_training_labels_used": true,
+          "old_country_transition_counts": [
+            [
+              27,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "old_other_countries_transition_counts": [
+            [
+              5154,
+              161
+            ],
+            [
+              163,
+              836
+            ]
+          ],
+          "origin_state": 1,
+          "origin_year": 2022,
+          "original_probability": 0.658416662822,
+          "own_historical_transitions_shapley_pp": 0.0,
+          "probability_change_pp": 0.256363188,
+          "revised_country_transition_counts": [
+            [
+              27,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "revised_other_countries_transition_counts": [
+            [
+              5149,
+              161
+            ],
+            [
+              162,
+              842
+            ]
+          ],
+          "two_factor_split_is_algebraic_not_causal": true
+        },
+        "850": {
+          "all_other_countries_transitions_shapley_pp": 0.04233623,
+          "changed_historical_binary_years": [
+            {
+              "original_state": 0,
+              "revised_state": 1,
+              "year": 2019
+            },
+            {
+              "original_state": 0,
+              "revised_state": 1,
+              "year": 2020
+            }
+          ],
+          "counterfactual_p_local_revised_only": 0.71175977603,
+          "counterfactual_p_other_countries_revised_only": 0.658000083334,
+          "country": "Indonesia",
+          "country_id": 850,
+          "country_q_later": [
+            0.128169922403,
+            0.830973830974
+          ],
+          "country_q_original": [
+            0.147724811468,
+            0.791710582538
+          ],
+          "global_q_later": [
+            0.030705860326,
+            0.837301587302
+          ],
+          "global_q_original": [
+            0.030677141788,
+            0.835493519442
+          ],
+          "historical_missing_years_between_vintages": [],
+          "interaction_before_equal_shapley_split_pp": -0.00031192,
+          "later_probability": 0.712181578732,
+          "no_post_origin_training_labels_used": true,
+          "old_country_transition_counts": [
+            [
+              13,
+              5
+            ],
+            [
+              4,
+              11
+            ]
+          ],
+          "old_other_countries_transition_counts": [
+            [
+              5168,
+              158
+            ],
+            [
+              160,
+              826
+            ]
+          ],
+          "origin_state": 1,
+          "origin_year": 2022,
+          "original_probability": 0.657575161428,
+          "own_historical_transitions_shapley_pp": 5.4183055,
+          "probability_change_pp": 5.46064173,
+          "revised_country_transition_counts": [
+            [
+              12,
+              4
+            ],
+            [
+              3,
+              14
+            ]
+          ],
+          "revised_other_countries_transition_counts": [
+            [
+              5164,
+              159
+            ],
+            [
+              160,
+              829
+            ]
+          ],
+          "two_factor_split_is_algebraic_not_causal": true
+        }
+      },
+      "global_transition_original": [
+        [
+          5181,
+          163
+        ],
+        [
+          164,
+          837
+        ]
+      ],
+      "global_transition_revised": [
+        [
+          5176,
+          163
+        ],
+        [
+          163,
+          843
+        ]
+      ],
+      "indonesia_exits_historical_resolution_top5": true,
+      "kyrgyzstan_enters_historical_resolution_top5": true,
+      "origin_year": 2022
+    }
+  ],
+  "counterfactual_sources_are_hypothetical_hybrids_not_UCDP_releases": true,
+  "country_history_and_global_history_components_are_not_causal": true,
+  "historical_forecasts_actually_issued": false,
+  "horizon_years": 2,
+  "no_frozen_forecast_or_alert_modified": true,
+  "origin_year_fixed": 2022,
+  "original_2027_forecast_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "original_2027_transition_alerts_sha256": "309b4f270e1d0d6382b7a90ae64c28d7621f96fbf3177a45aaebbffb0f958acb",
+  "outcomes_2027_resolved": 0,
+  "prospective_prediction_skill_demonstrated": false,
+  "same_2022_origin_state_in_all_comparisons": true,
+  "schema": "idealab.psico.geo2027_indonesia_vintage_source_attribution.v1",
+  "shapley_factors": [
+    "Indonesia_or_Kyrgyzstan_country_historical_transition_counts",
+    "all_other_countries_historical_transition_counts"
+  ],
+  "source_shas": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "status": "EX_POST_FIXED_ORIGIN_REPLAY_NOT_ISSUED_FORECAST"
+}
