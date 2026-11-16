@@ -4,6 +4,27 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Auditoría de desacuerdo entre emisiones prospectivas congeladas (16-11-2026)
+
+**Nuevo control ex ante, sin resultados oficiales de 2027:** se han comparado las **196 probabilidades exactas** de la primera sombra LOG1P (SHA `52686923…`) con las 196 de la nueva emisión Markov global-only matched α=1 (SHA `251595a1…`), sin modificar ningún pronóstico ni las 15 alertas originales.
+
+El efecto central es la **pérdida de heterogeneidad del riesgo para los 154 países con cero muertes estatales en 2025**: la primera sombra LOG1P asigna un intervalo de **1,37 % a 22,62 %**, pero el global-only casi no discrimina (**3,50 % a 3,59 %**). Retirar el historial nacional evita dependencia de sus transiciones locales, pero también elimina una señal potencialmente útil. Es imposible saber todavía si esa heterogeneidad histórica representaba información o ruido.
+
+| Indicador sobre 196 países | Resultado del contraste entre sombras |
+|---|---:|
+| Cambio medio **absoluto** de probabilidad por país | **2,87 pp** |
+| Países cuyo riesgo cambia al menos 5 puntos porcentuales | **27** |
+| Países cuyo riesgo cambia al menos 10 puntos porcentuales | **9** |
+| Solapamiento de top 10 de riesgo entre países inicialmente inactivos | **6/10** |
+| Solapamiento de top 5 entre países inicialmente activos | **2/5** |
+| Países de 2025 con 1–24 muertes donde **α=0 y α=1 realmente difieren** | **8** |
+
+La suma de probabilidades de países activos pasa de **35,9840** (LOG1P original) a **36,2157** (global-only), apenas **+0,2317 países esperados**, a pesar de desacuerdos individuales grandes. **Burundi** presenta la mayor diferencia absoluta, desde 22,62 % (LOG1P original) hasta 3,50 % (global-only). Los rankings son diagnósticos de las probabilidades ya emitidas, **no listas nuevas de alertas ni predicciones emitidas nuevamente**.
+
+El informe añade para cada país la identidad exacta de la diferencia futura Brier según que en 2027 se observe o no el umbral de 25 muertes. Su evaluador se ha cotejado **solo con etiquetas sintéticas**, nunca con resultados 2027 supuestos; la evaluación real seguirá el contrato precomprometido del primer archivo oficial UCDP con 196 etiquetas completas. No se emiten p-valores IID ni se declara mejor modelo antes de observarlo.
+
+[Análisis y límites científicos](docs/geo2027-global-only-issued-disagreement.md) · [196 diferencias y sensibilidad a futuro Brier](data/geo2027-global-only-issued-disagreement.json) · [Código y tests de identidad](scripts/diagnose_geo2027_issued_disagreement.py) · GitHub Actions comprueba igualdad exacta del informe derivado de los cuatro artefactos SHA-fijados.
+
 ## GEO2027 · Nueva emisión prospectiva independiente sobre los 196 países (16-11-2026)
 
 **Primera emisión completa:** comparador Markov **global-only con calibración LOG1P emparejada y país excluido**, generado sobre UCDP OrganizedViolenceCY **26.1 hasta 2025**, con horizonte 2027 y **196 países originales**. Se han publicado dos brazos independientes pero predefinidos: **α=0**, sin pendiente de intensidad subumbral, y **α=1**, con pendiente continua completa. Para cada país se reajusta su calibrador logístico sin utilizar **ninguna de sus etiquetas históricas ni transiciones dentro de los priors de entrenamiento**; cada fila del resto excluye también las transiciones del propio país de la fila. El estado y muertes del país en 2025 sí son observables al emitir el pronóstico.
