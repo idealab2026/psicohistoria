@@ -1,0 +1,43 @@
+name: GEO2027 prospective full-196 global-only matched source issue
+on:
+  pull_request:
+    paths:
+      - 'scripts/prepare_geo2027_global_only_matched_shadow.py'
+      - 'scripts/test_prepare_geo2027_global_only_matched_shadow.py'
+      - 'scripts/audit_geo2027_global_only_matched_issue.py'
+      - 'scripts/test_audit_geo2027_global_only_matched_issue.py'
+      - 'data/forecast-2027-global-only-matched-shadow.json'
+      - 'data/forecast-2027-global-only-matched-manifest.json'
+      - '.github/workflows/geo2027-global-only-matched-prospective.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/prepare_geo2027_global_only_matched_shadow.py'
+      - 'scripts/test_prepare_geo2027_global_only_matched_shadow.py'
+      - 'scripts/audit_geo2027_global_only_matched_issue.py'
+      - 'scripts/test_audit_geo2027_global_only_matched_issue.py'
+      - 'data/forecast-2027-global-only-matched-shadow.json'
+      - 'data/forecast-2027-global-only-matched-manifest.json'
+      - '.github/workflows/geo2027-global-only-matched-prospective.yml'
+permissions:
+  contents: read
+jobs:
+  geo2027_global_only_matched_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check 196-country future-origin leakage, country training exclusion and no existing issue changes
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_prepare_geo2027_global_only_matched_shadow.py' -v
+      - name: Source-replay both fully prospective 2027 global-only arms on exact full 196 country list
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/prepare_geo2027_global_only_matched_shadow.py --check-report
+      - name: Fail closed on first public complete issue SHA and future scoring contract
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_geo2027_global_only_matched_issue.py
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_audit_geo2027_global_only_matched_issue.py' -v

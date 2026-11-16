@@ -1,0 +1,3824 @@
+{
+  "countries": [
+    {
+      "country": "United States of America",
+      "country_blocked_logistic_beta": [
+        -0.418147944573,
+        2.048927774069,
+        2.442880719529
+      ],
+      "country_id": 2,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035553368608,
+      "global_only_alpha1_p_active_2027": 0.035553368608,
+      "global_only_markov_H2_p_active": 0.053031907199,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.05113613046,
+      "original_LOG1P2027_p_active_frozen": 0.037020228461,
+      "original_intercept_control_p_active_frozen": 0.056312482299,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Canada",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 20,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Bahamas",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 31,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Cuba",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 40,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Haiti",
+      "country_blocked_logistic_beta": [
+        -0.43365236121,
+        2.067282951589,
+        2.443389607383
+      ],
+      "country_id": 41,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.927750002323,
+      "global_only_alpha1_p_active_2027": 0.927750002323,
+      "global_only_markov_H2_p_active": 0.721566189954,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 1211,
+      "original_GEO2027_p_active_frozen": 0.573433623875,
+      "original_LOG1P2027_p_active_frozen": 0.827530697374,
+      "original_intercept_control_p_active_frozen": 0.59815161103,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Dominican Republic",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 42,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Jamaica",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 51,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "country_blocked_logistic_beta": [
+        -0.418147944573,
+        2.048927774069,
+        2.442880719529
+      ],
+      "country_id": 52,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035553368608,
+      "global_only_alpha1_p_active_2027": 0.035553368608,
+      "global_only_markov_H2_p_active": 0.053031907199,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.05113613046,
+      "original_LOG1P2027_p_active_frozen": 0.037020228461,
+      "original_intercept_control_p_active_frozen": 0.056312482299,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Barbados",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 53,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Dominica",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 54,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Grenada",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 55,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Saint Lucia",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 56,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Saint Vincent and the Grenadines",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 57,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Antigua & Barbuda",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 58,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Saint Kitts and Nevis",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 60,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Mexico",
+      "country_blocked_logistic_beta": [
+        -0.414929547594,
+        2.052244664648,
+        2.430082893292
+      ],
+      "country_id": 70,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035461419124,
+      "global_only_alpha1_p_active_2027": 0.035461419124,
+      "global_only_markov_H2_p_active": 0.052736226322,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.082304727197,
+      "original_LOG1P2027_p_active_frozen": 0.060130110314,
+      "original_intercept_control_p_active_frozen": 0.090335800663,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Belize",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 80,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Guatemala",
+      "country_blocked_logistic_beta": [
+        -0.419433309794,
+        2.045569640424,
+        2.456270866213
+      ],
+      "country_id": 90,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035666053044,
+      "global_only_alpha1_p_active_2027": 0.035666053044,
+      "global_only_markov_H2_p_active": 0.053261710504,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.021878205447,
+      "original_LOG1P2027_p_active_frozen": 0.015705145135,
+      "original_intercept_control_p_active_frozen": 0.024168304843,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Honduras",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 91,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "El Salvador",
+      "country_blocked_logistic_beta": [
+        -0.422170036495,
+        2.04661671329,
+        2.451504064064
+      ],
+      "country_id": 92,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035607849937,
+      "global_only_alpha1_p_active_2027": 0.035607849937,
+      "global_only_markov_H2_p_active": 0.053314335702,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.019945564095,
+      "original_LOG1P2027_p_active_frozen": 0.014309831778,
+      "original_intercept_control_p_active_frozen": 0.022037922384,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Nicaragua",
+      "country_blocked_logistic_beta": [
+        -0.422852024444,
+        2.046877222933,
+        2.450318650132
+      ],
+      "country_id": 93,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035593378633,
+      "global_only_alpha1_p_active_2027": 0.035593378633,
+      "global_only_markov_H2_p_active": 0.05332748477,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.019490667533,
+      "original_LOG1P2027_p_active_frozen": 0.013981635137,
+      "original_intercept_control_p_active_frozen": 0.021536354243,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Costa Rica",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 94,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Panama",
+      "country_blocked_logistic_beta": [
+        -0.423533141238,
+        2.047137232172,
+        2.449135732818
+      ],
+      "country_id": 95,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035578938865,
+      "global_only_alpha1_p_active_2027": 0.035578938865,
+      "global_only_markov_H2_p_active": 0.053340630982,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.019044029623,
+      "original_LOG1P2027_p_active_frozen": 0.013659480644,
+      "original_intercept_control_p_active_frozen": 0.02104384455,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Colombia",
+      "country_blocked_logistic_beta": [
+        -0.424795410294,
+        2.056737926915,
+        2.45706297105
+      ],
+      "country_id": 100,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.856204913932,
+      "global_only_alpha1_p_active_2027": 0.856204913932,
+      "global_only_markov_H2_p_active": 0.70947505752,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 307,
+      "original_GEO2027_p_active_frozen": 0.893769476037,
+      "original_LOG1P2027_p_active_frozen": 0.944173163141,
+      "original_intercept_control_p_active_frozen": 0.903063046603,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Venezuela",
+      "country_blocked_logistic_beta": [
+        -0.418072018283,
+        2.04974178907,
+        2.442789336099
+      ],
+      "country_id": 101,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035555972161,
+      "global_only_alpha1_p_active_2027": 0.035555972161,
+      "global_only_markov_H2_p_active": 0.053031907199,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.05113613046,
+      "original_LOG1P2027_p_active_frozen": 0.037020228461,
+      "original_intercept_control_p_active_frozen": 0.056312482299,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Guyana",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 110,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Suriname",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 115,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Ecuador",
+      "country_blocked_logistic_beta": [
+        -0.418027517363,
+        2.050621708174,
+        2.442735776
+      ],
+      "country_id": 130,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035557498206,
+      "global_only_alpha1_p_active_2027": 0.035557498206,
+      "global_only_markov_H2_p_active": 0.053031907199,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.05113613046,
+      "original_LOG1P2027_p_active_frozen": 0.037020228461,
+      "original_intercept_control_p_active_frozen": 0.056312482299,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Peru",
+      "country_blocked_logistic_beta": [
+        -0.40533136271,
+        2.122478290949,
+        2.445912868685
+      ],
+      "country_id": 135,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035887163787,
+      "global_only_alpha1_p_active_2027": 0.035887163787,
+      "global_only_markov_H2_p_active": 0.052875157484,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.070134904942,
+      "original_LOG1P2027_p_active_frozen": 0.051056674192,
+      "original_intercept_control_p_active_frozen": 0.077078219232,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Brazil",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 140,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Bolivia",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 145,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Paraguay",
+      "country_blocked_logistic_beta": [
+        -0.423533141238,
+        2.047137232172,
+        2.449135732818
+      ],
+      "country_id": 150,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035578938865,
+      "global_only_alpha1_p_active_2027": 0.035578938865,
+      "global_only_markov_H2_p_active": 0.053340630982,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.019044029623,
+      "original_LOG1P2027_p_active_frozen": 0.013659480644,
+      "original_intercept_control_p_active_frozen": 0.02104384455,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Chile",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 155,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Argentina",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 160,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Uruguay",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 165,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "United Kingdom",
+      "country_blocked_logistic_beta": [
+        -0.418786789935,
+        2.052470969114,
+        2.438496556254
+      ],
+      "country_id": 200,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035522646879,
+      "global_only_alpha1_p_active_2027": 0.035522646879,
+      "global_only_markov_H2_p_active": 0.053018977978,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.053510971771,
+      "original_LOG1P2027_p_active_frozen": 0.03876628876,
+      "original_intercept_control_p_active_frozen": 0.058912795676,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Ireland",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 205,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Netherlands",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 210,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Belgium",
+      "country_blocked_logistic_beta": [
+        -0.421072089616,
+        2.050020988606,
+        2.455277712605
+      ],
+      "country_id": 211,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035654473306,
+      "global_only_alpha1_p_active_2027": 0.035654473306,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Luxembourg",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 212,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "France",
+      "country_blocked_logistic_beta": [
+        -0.420903206533,
+        2.053501005341,
+        2.455074219869
+      ],
+      "country_id": 220,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035660280508,
+      "global_only_alpha1_p_active_2027": 0.035660280508,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Monaco",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 221,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Liechtenstein",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 223,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Switzerland",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 225,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Spain",
+      "country_blocked_logistic_beta": [
+        -0.418147944573,
+        2.048927774069,
+        2.442880719529
+      ],
+      "country_id": 230,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035553368608,
+      "global_only_alpha1_p_active_2027": 0.035553368608,
+      "global_only_markov_H2_p_active": 0.053031907199,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.05113613046,
+      "original_LOG1P2027_p_active_frozen": 0.037020228461,
+      "original_intercept_control_p_active_frozen": 0.056312482299,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Andorra",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 232,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Portugal",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 235,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Germany",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 260,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Poland",
+      "country_blocked_logistic_beta": [
+        -0.421227227621,
+        2.047329945989,
+        2.455464646769
+      ],
+      "country_id": 290,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035649139544,
+      "global_only_alpha1_p_active_2027": 0.035649139544,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Austria",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 305,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Hungary",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 310,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Czech Republic",
+      "country_blocked_logistic_beta": [
+        -0.42065903434,
+        2.045849941762,
+        2.454809030017
+      ],
+      "country_id": 316,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035643987474,
+      "global_only_alpha1_p_active_2027": 0.035643987474,
+      "global_only_markov_H2_p_active": 0.053291165331,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.020587508751,
+      "original_LOG1P2027_p_active_frozen": 0.014773125488,
+      "original_intercept_control_p_active_frozen": 0.022745646328,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Slovakia",
+      "country_blocked_logistic_beta": [
+        -0.42065903434,
+        2.045849941762,
+        2.454809030017
+      ],
+      "country_id": 317,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035643987474,
+      "global_only_alpha1_p_active_2027": 0.035643987474,
+      "global_only_markov_H2_p_active": 0.053291165331,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.020587508751,
+      "original_LOG1P2027_p_active_frozen": 0.014773125488,
+      "original_intercept_control_p_active_frozen": 0.022745646328,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Italy",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 325,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Vatican City State",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 327,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "San Marino",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 331,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Malta",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 338,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Albania",
+      "country_blocked_logistic_beta": [
+        -0.418147944573,
+        2.048927774069,
+        2.442880719529
+      ],
+      "country_id": 339,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035553368608,
+      "global_only_alpha1_p_active_2027": 0.035553368608,
+      "global_only_markov_H2_p_active": 0.053031907199,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.05113613046,
+      "original_LOG1P2027_p_active_frozen": 0.037020228461,
+      "original_intercept_control_p_active_frozen": 0.056312482299,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Montenegro",
+      "country_blocked_logistic_beta": [
+        -0.418428532477,
+        2.0465418362,
+        2.45221573885
+      ],
+      "country_id": 341,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035640561771,
+      "global_only_alpha1_p_active_2027": 0.035640561771,
+      "global_only_markov_H2_p_active": 0.053173727831,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.027393974646,
+      "original_LOG1P2027_p_active_frozen": 0.019695947176,
+      "original_intercept_control_p_active_frozen": 0.03024358465,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "North Macedonia",
+      "country_blocked_logistic_beta": [
+        -0.417804354831,
+        2.049034491411,
+        2.442481523829
+      ],
+      "country_id": 343,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035552841471,
+      "global_only_alpha1_p_active_2027": 0.035552841471,
+      "global_only_markov_H2_p_active": 0.053013883137,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.053033319471,
+      "original_LOG1P2027_p_active_frozen": 0.03841490937,
+      "original_intercept_control_p_active_frozen": 0.058389899967,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Croatia",
+      "country_blocked_logistic_beta": [
+        -0.419154008615,
+        2.050339332039,
+        2.436956339889
+      ],
+      "country_id": 344,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035500541481,
+      "global_only_alpha1_p_active_2027": 0.035500541481,
+      "global_only_markov_H2_p_active": 0.053005012631,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.055319799476,
+      "original_LOG1P2027_p_active_frozen": 0.040097818146,
+      "original_intercept_control_p_active_frozen": 0.060892473435,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Serbia (Yugoslavia)",
+      "country_blocked_logistic_beta": [
+        -0.413567367122,
+        2.051723513477,
+        2.432446408813
+      ],
+      "country_id": 345,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035490243184,
+      "global_only_alpha1_p_active_2027": 0.035490243184,
+      "global_only_markov_H2_p_active": 0.052710265805,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.086339884657,
+      "original_LOG1P2027_p_active_frozen": 0.063152926541,
+      "original_intercept_control_p_active_frozen": 0.094724056285,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Bosnia-Herzegovina",
+      "country_blocked_logistic_beta": [
+        -0.420971800355,
+        2.046515563853,
+        2.452092851063
+      ],
+      "country_id": 346,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035621568061,
+      "global_only_alpha1_p_active_2027": 0.035621568061,
+      "global_only_markov_H2_p_active": 0.053274031605,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.021651692377,
+      "original_LOG1P2027_p_active_frozen": 0.015541528511,
+      "original_intercept_control_p_active_frozen": 0.023918661338,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Kosovo",
+      "country_blocked_logistic_beta": [
+        -0.418086052962,
+        2.046648112166,
+        2.451817586642
+      ],
+      "country_id": 347,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035640028119,
+      "global_only_alpha1_p_active_2027": 0.035640028119,
+      "global_only_markov_H2_p_active": 0.053155706435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.028861958994,
+      "original_LOG1P2027_p_active_frozen": 0.020760215973,
+      "original_intercept_control_p_active_frozen": 0.031859271406,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Slovenia",
+      "country_blocked_logistic_beta": [
+        -0.420830927108,
+        2.045796639887,
+        2.455008895658
+      ],
+      "country_id": 349,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035644247884,
+      "global_only_alpha1_p_active_2027": 0.035644247884,
+      "global_only_markov_H2_p_active": 0.053300220468,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.020201399235,
+      "original_LOG1P2027_p_active_frozen": 0.014494448341,
+      "original_intercept_control_p_active_frozen": 0.022319984296,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Greece",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 350,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Cyprus",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 352,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Bulgaria",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 355,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Moldova",
+      "country_blocked_logistic_beta": [
+        -0.417804354831,
+        2.049034491411,
+        2.442481523829
+      ],
+      "country_id": 359,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035552841471,
+      "global_only_alpha1_p_active_2027": 0.035552841471,
+      "global_only_markov_H2_p_active": 0.053013883137,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.053033319471,
+      "original_LOG1P2027_p_active_frozen": 0.03841490937,
+      "original_intercept_control_p_active_frozen": 0.058389899967,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Romania",
+      "country_blocked_logistic_beta": [
+        -0.423533141238,
+        2.047137232172,
+        2.449135732818
+      ],
+      "country_id": 360,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035578938865,
+      "global_only_alpha1_p_active_2027": 0.035578938865,
+      "global_only_markov_H2_p_active": 0.053340630982,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.019044029623,
+      "original_LOG1P2027_p_active_frozen": 0.013659480644,
+      "original_intercept_control_p_active_frozen": 0.02104384455,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Russia (Soviet Union)",
+      "country_blocked_logistic_beta": [
+        -0.416123214491,
+        2.043315970298,
+        2.428585928193
+      ],
+      "country_id": 365,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.961154379229,
+      "global_only_alpha1_p_active_2027": 0.961154379229,
+      "global_only_markov_H2_p_active": 0.715175990733,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 4431,
+      "original_GEO2027_p_active_frozen": 0.796837890613,
+      "original_LOG1P2027_p_active_frozen": 0.960166324443,
+      "original_intercept_control_p_active_frozen": 0.812835706433,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Estonia",
+      "country_blocked_logistic_beta": [
+        -0.421002865094,
+        2.045743326664,
+        2.455208815969
+      ],
+      "country_id": 366,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035644507849,
+      "global_only_alpha1_p_active_2027": 0.035644507849,
+      "global_only_markov_H2_p_active": 0.053309278683,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.019829505225,
+      "original_LOG1P2027_p_active_frozen": 0.014226089989,
+      "original_intercept_control_p_active_frozen": 0.021909960722,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Latvia",
+      "country_blocked_logistic_beta": [
+        -0.421002865094,
+        2.045743326664,
+        2.455208815969
+      ],
+      "country_id": 367,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035644507849,
+      "global_only_alpha1_p_active_2027": 0.035644507849,
+      "global_only_markov_H2_p_active": 0.053309278683,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.019829505225,
+      "original_LOG1P2027_p_active_frozen": 0.014226089989,
+      "original_intercept_control_p_active_frozen": 0.021909960722,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Lithuania",
+      "country_blocked_logistic_beta": [
+        -0.421002865094,
+        2.045743326664,
+        2.455208815969
+      ],
+      "country_id": 368,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035644507849,
+      "global_only_alpha1_p_active_2027": 0.035644507849,
+      "global_only_markov_H2_p_active": 0.053309278683,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.019829505225,
+      "original_LOG1P2027_p_active_frozen": 0.014226089989,
+      "original_intercept_control_p_active_frozen": 0.021909960722,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Ukraine",
+      "country_blocked_logistic_beta": [
+        -0.437513208708,
+        2.064366931515,
+        2.44710927739
+      ],
+      "country_id": 369,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.991899512313,
+      "global_only_alpha1_p_active_2027": 0.991899512313,
+      "global_only_markov_H2_p_active": 0.715480545403,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 90323,
+      "original_GEO2027_p_active_frozen": 0.813346535943,
+      "original_LOG1P2027_p_active_frozen": 0.98955409154,
+      "original_intercept_control_p_active_frozen": 0.82832446429,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Belarus",
+      "country_blocked_logistic_beta": [
+        -0.421002865094,
+        2.045743326664,
+        2.455208815969
+      ],
+      "country_id": 370,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035644507849,
+      "global_only_alpha1_p_active_2027": 0.035644507849,
+      "global_only_markov_H2_p_active": 0.053309278683,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.019829505225,
+      "original_LOG1P2027_p_active_frozen": 0.014226089989,
+      "original_intercept_control_p_active_frozen": 0.021909960722,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Armenia",
+      "country_blocked_logistic_beta": [
+        -0.41472317563,
+        2.046108635734,
+        2.458712225912
+      ],
+      "country_id": 371,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03543843714,
+      "global_only_alpha1_p_active_2027": 0.03543843714,
+      "global_only_markov_H2_p_active": 0.052692358349,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.089690764734,
+      "original_LOG1P2027_p_active_frozen": 0.065668592085,
+      "original_intercept_control_p_active_frozen": 0.098365296903,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Georgia",
+      "country_blocked_logistic_beta": [
+        -0.41529035996,
+        2.055976821576,
+        2.425320696799
+      ],
+      "country_id": 372,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03542806765,
+      "global_only_alpha1_p_active_2027": 0.03542806765,
+      "global_only_markov_H2_p_active": 0.052705526979,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.089805021831,
+      "original_LOG1P2027_p_active_frozen": 0.065754457794,
+      "original_intercept_control_p_active_frozen": 0.0984894089,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Azerbaijan",
+      "country_blocked_logistic_beta": [
+        -0.414762232943,
+        1.880477475608,
+        2.486315469225
+      ],
+      "country_id": 373,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03496241378,
+      "global_only_alpha1_p_active_2027": 0.03496241378,
+      "global_only_markov_H2_p_active": 0.051998992352,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.199544842021,
+      "original_LOG1P2027_p_active_frozen": 0.150979993389,
+      "original_intercept_control_p_active_frozen": 0.216319257558,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Finland",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 375,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Sweden",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 380,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Norway",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 385,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Denmark",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 390,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Iceland",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 395,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Cape Verde",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 402,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Sao Tome and Principe",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 403,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Guinea-Bissau",
+      "country_blocked_logistic_beta": [
+        -0.417466752557,
+        2.048667614974,
+        2.444062998401
+      ],
+      "country_id": 404,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035567803531,
+      "global_only_alpha1_p_active_2027": 0.035567803531,
+      "global_only_markov_H2_p_active": 0.053018836575,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.052328129301,
+      "original_LOG1P2027_p_active_frozen": 0.037896322955,
+      "original_intercept_control_p_active_frozen": 0.057617816511,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Equatorial Guinea",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 411,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Gambia",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 420,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Mali",
+      "country_blocked_logistic_beta": [
+        -0.415137724299,
+        2.009884844227,
+        2.388856400378
+      ],
+      "country_id": 432,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.92863894224,
+      "global_only_alpha1_p_active_2027": 0.92863894224,
+      "global_only_markov_H2_p_active": 0.717802990088,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 1357,
+      "original_GEO2027_p_active_frozen": 0.737441950264,
+      "original_LOG1P2027_p_active_frozen": 0.913151503464,
+      "original_intercept_control_p_active_frozen": 0.756688717874,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Senegal",
+      "country_blocked_logistic_beta": [
+        -0.392293867995,
+        2.093884618505,
+        2.362883353643
+      ],
+      "country_id": 433,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035191165475,
+      "global_only_alpha1_p_active_2027": 0.035191165475,
+      "global_only_markov_H2_p_active": 0.051230003228,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.240451385272,
+      "original_LOG1P2027_p_active_frozen": 0.184222063163,
+      "original_intercept_control_p_active_frozen": 0.259549522816,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Benin",
+      "country_blocked_logistic_beta": [
+        -0.436830023881,
+        1.995860179512,
+        2.473208250352
+      ],
+      "country_id": 434,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.807485293667,
+      "global_only_alpha1_p_active_2027": 0.807485293667,
+      "global_only_markov_H2_p_active": 0.717361262017,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 149,
+      "original_GEO2027_p_active_frozen": 0.752191097798,
+      "original_LOG1P2027_p_active_frozen": 0.818619842179,
+      "original_intercept_control_p_active_frozen": 0.7706928753,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Mauritania",
+      "country_blocked_logistic_beta": [
+        -0.420909433104,
+        2.061301066281,
+        2.4550817224
+      ],
+      "country_id": 435,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035660066385,
+      "global_only_alpha1_p_active_2027": 0.035660066385,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Niger",
+      "country_blocked_logistic_beta": [
+        -0.426635037691,
+        2.084965441647,
+        2.392633548817
+      ],
+      "country_id": 436,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.904603780398,
+      "global_only_alpha1_p_active_2027": 0.904603780398,
+      "global_only_markov_H2_p_active": 0.721257370481,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 724,
+      "original_GEO2027_p_active_frozen": 0.655833983393,
+      "original_LOG1P2027_p_active_frozen": 0.845767108355,
+      "original_intercept_control_p_active_frozen": 0.678454575413,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Ivory Coast",
+      "country_blocked_logistic_beta": [
+        -0.410047718746,
+        2.05377912559,
+        2.440641504206
+      ],
+      "country_id": 437,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035610920334,
+      "global_only_alpha1_p_active_2027": 0.035610920334,
+      "global_only_markov_H2_p_active": 0.052710265805,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.086339884657,
+      "original_LOG1P2027_p_active_frozen": 0.063152926541,
+      "original_intercept_control_p_active_frozen": 0.094724056285,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Guinea",
+      "country_blocked_logistic_beta": [
+        -0.417466752557,
+        2.048667614974,
+        2.444062998401
+      ],
+      "country_id": 438,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035567803531,
+      "global_only_alpha1_p_active_2027": 0.035567803531,
+      "global_only_markov_H2_p_active": 0.053018836575,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.052328129301,
+      "original_LOG1P2027_p_active_frozen": 0.037896322955,
+      "original_intercept_control_p_active_frozen": 0.057617816511,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Burkina Faso",
+      "country_blocked_logistic_beta": [
+        -0.433383443309,
+        2.009696523494,
+        2.450737206984
+      ],
+      "country_id": 439,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.953491252487,
+      "global_only_alpha1_p_active_2027": 0.953491252487,
+      "global_only_markov_H2_p_active": 0.716424765898,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 3031,
+      "original_GEO2027_p_active_frozen": 0.786882791984,
+      "original_LOG1P2027_p_active_frozen": 0.950868817048,
+      "original_intercept_control_p_active_frozen": 0.803471173845,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Liberia",
+      "country_blocked_logistic_beta": [
+        -0.417622002622,
+        2.049395741795,
+        2.441112882233
+      ],
+      "country_id": 450,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035544730181,
+      "global_only_alpha1_p_active_2027": 0.035544730181,
+      "global_only_markov_H2_p_active": 0.052992855062,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.056131227274,
+      "original_LOG1P2027_p_active_frozen": 0.040695589157,
+      "original_intercept_control_p_active_frozen": 0.06178029529,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Sierra Leone",
+      "country_blocked_logistic_beta": [
+        -0.411296411615,
+        2.046303456826,
+        2.454816891028
+      ],
+      "country_id": 451,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035699152485,
+      "global_only_alpha1_p_active_2027": 0.035699152485,
+      "global_only_markov_H2_p_active": 0.05290107104,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.064494414307,
+      "original_LOG1P2027_p_active_frozen": 0.046873176842,
+      "original_intercept_control_p_active_frozen": 0.070921913576,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Ghana",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 452,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Togo",
+      "country_blocked_logistic_beta": [
+        -0.443361979132,
+        2.064546976577,
+        2.480488956425
+      ],
+      "country_id": 461,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.73504226313,
+      "global_only_alpha1_p_active_2027": 0.73504226313,
+      "global_only_markov_H2_p_active": 0.717361262017,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 69,
+      "original_GEO2027_p_active_frozen": 0.752191097798,
+      "original_LOG1P2027_p_active_frozen": 0.766313888339,
+      "original_intercept_control_p_active_frozen": 0.7706928753,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Cameroon",
+      "country_blocked_logistic_beta": [
+        -0.435544412433,
+        2.06829448706,
+        2.428497474105
+      ],
+      "country_id": 471,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.840830355472,
+      "global_only_alpha1_p_active_2027": 0.840830355472,
+      "global_only_markov_H2_p_active": 0.71672292479,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 240,
+      "original_GEO2027_p_active_frozen": 0.767378193999,
+      "original_LOG1P2027_p_active_frozen": 0.856801961842,
+      "original_intercept_control_p_active_frozen": 0.785070076792,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Nigeria",
+      "country_blocked_logistic_beta": [
+        -0.412259730537,
+        2.003555843267,
+        2.392625521311
+      ],
+      "country_id": 475,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.938996013459,
+      "global_only_alpha1_p_active_2027": 0.938996013459,
+      "global_only_markov_H2_p_active": 0.717260676545,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 1864,
+      "original_GEO2027_p_active_frozen": 0.749161316888,
+      "original_LOG1P2027_p_active_frozen": 0.927380055341,
+      "original_intercept_control_p_active_frozen": 0.767819478191,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Gabon",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 481,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Central African Republic",
+      "country_blocked_logistic_beta": [
+        -0.429636847806,
+        2.07596354183,
+        2.433136197295
+      ],
+      "country_id": 482,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.828724187811,
+      "global_only_alpha1_p_active_2027": 0.828724187811,
+      "global_only_markov_H2_p_active": 0.718275492319,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 197,
+      "original_GEO2027_p_active_frozen": 0.723837217115,
+      "original_LOG1P2027_p_active_frozen": 0.814061988846,
+      "original_intercept_control_p_active_frozen": 0.743734712297,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Chad",
+      "country_blocked_logistic_beta": [
+        -0.419316067197,
+        2.011744114009,
+        2.447700674783
+      ],
+      "country_id": 483,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.034907760035,
+      "global_only_alpha1_p_active_2027": 0.186977600002,
+      "global_only_markov_H2_p_active": 0.052143753366,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 19,
+      "original_GEO2027_p_active_frozen": 0.220660681382,
+      "original_LOG1P2027_p_active_frozen": 0.375240916534,
+      "original_intercept_control_p_active_frozen": 0.238680873287,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Congo",
+      "country_blocked_logistic_beta": [
+        -0.41249061711,
+        2.080193956373,
+        2.42653048271
+      ],
+      "country_id": 484,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035121261755,
+      "global_only_alpha1_p_active_2027": 0.035121261755,
+      "global_only_markov_H2_p_active": 0.052118717417,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.149894844129,
+      "original_LOG1P2027_p_active_frozen": 0.111727079409,
+      "original_intercept_control_p_active_frozen": 0.163347240606,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "DR Congo (Zaire)",
+      "country_blocked_logistic_beta": [
+        -0.407022408866,
+        2.051272723372,
+        2.407397905178
+      ],
+      "country_id": 490,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.960647104393,
+      "global_only_alpha1_p_active_2027": 0.960647104393,
+      "global_only_markov_H2_p_active": 0.713142836791,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 4525,
+      "original_GEO2027_p_active_frozen": 0.840695350111,
+      "original_LOG1P2027_p_active_frozen": 0.970343063196,
+      "original_intercept_control_p_active_frozen": 0.853872968405,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Uganda",
+      "country_blocked_logistic_beta": [
+        -0.41220302829,
+        2.080249352319,
+        2.45846171477
+      ],
+      "country_id": 500,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035421218578,
+      "global_only_alpha1_p_active_2027": 0.093064651442,
+      "global_only_markov_H2_p_active": 0.052541617314,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 4,
+      "original_GEO2027_p_active_frozen": 0.123859390909,
+      "original_LOG1P2027_p_active_frozen": 0.153335442355,
+      "original_intercept_control_p_active_frozen": 0.135347231287,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Kenya",
+      "country_blocked_logistic_beta": [
+        -0.456696692792,
+        2.057920767406,
+        2.473682364032
+      ],
+      "country_id": 501,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.68073833664,
+      "global_only_alpha1_p_active_2027": 0.68073833664,
+      "global_only_markov_H2_p_active": 0.715008475606,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 44,
+      "original_GEO2027_p_active_frozen": 0.824087359198,
+      "original_LOG1P2027_p_active_frozen": 0.807896273005,
+      "original_intercept_control_p_active_frozen": 0.838374667,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Tanzania",
+      "country_blocked_logistic_beta": [
+        -0.423801101121,
+        2.061968113638,
+        2.456872579526
+      ],
+      "country_id": 510,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035360033809,
+      "global_only_alpha1_p_active_2027": 0.035360033809,
+      "global_only_markov_H2_p_active": 0.053031907199,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.05113613046,
+      "original_LOG1P2027_p_active_frozen": 0.037020228461,
+      "original_intercept_control_p_active_frozen": 0.056312482299,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Burundi",
+      "country_blocked_logistic_beta": [
+        -0.400196613235,
+        1.937560072726,
+        2.46733322764
+      ],
+      "country_id": 516,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03502425713,
+      "global_only_alpha1_p_active_2027": 0.03502425713,
+      "global_only_markov_H2_p_active": 0.051374825836,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.290690880667,
+      "original_LOG1P2027_p_active_frozen": 0.22621207819,
+      "original_intercept_control_p_active_frozen": 0.312139507337,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Rwanda",
+      "country_blocked_logistic_beta": [
+        -0.406656087954,
+        2.096944643186,
+        2.423193204877
+      ],
+      "country_id": 517,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035488007337,
+      "global_only_alpha1_p_active_2027": 0.114050406655,
+      "global_only_markov_H2_p_active": 0.05236299613,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 6,
+      "original_GEO2027_p_active_frozen": 0.13063649383,
+      "original_LOG1P2027_p_active_frozen": 0.178691987521,
+      "original_intercept_control_p_active_frozen": 0.142650562202,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Somalia",
+      "country_blocked_logistic_beta": [
+        -0.405865465866,
+        2.050322105229,
+        2.40766087267
+      ],
+      "country_id": 520,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.952731268963,
+      "global_only_alpha1_p_active_2027": 0.952731268963,
+      "global_only_markov_H2_p_active": 0.714184062414,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 3095,
+      "original_GEO2027_p_active_frozen": 0.812425234772,
+      "original_LOG1P2027_p_active_frozen": 0.958163363975,
+      "original_intercept_control_p_active_frozen": 0.827461409585,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Djibouti",
+      "country_blocked_logistic_beta": [
+        -0.408965670771,
+        2.05454271402,
+        2.421944357013
+      ],
+      "country_id": 522,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035426796848,
+      "global_only_alpha1_p_active_2027": 0.035426796848,
+      "global_only_markov_H2_p_active": 0.052388795741,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.124391314236,
+      "original_LOG1P2027_p_active_frozen": 0.092014618675,
+      "original_intercept_control_p_active_frozen": 0.135920836308,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Ethiopia",
+      "country_blocked_logistic_beta": [
+        -0.418741307994,
+        2.004695293901,
+        2.473581008026
+      ],
+      "country_id": 530,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.962100588582,
+      "global_only_alpha1_p_active_2027": 0.962100588582,
+      "global_only_markov_H2_p_active": 0.713215574672,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 4331,
+      "original_GEO2027_p_active_frozen": 0.827427581633,
+      "original_LOG1P2027_p_active_frozen": 0.966871989406,
+      "original_intercept_control_p_active_frozen": 0.841495781653,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Eritrea",
+      "country_blocked_logistic_beta": [
+        -0.414084416265,
+        2.060230398402,
+        2.430857912499
+      ],
+      "country_id": 531,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035236752282,
+      "global_only_alpha1_p_active_2027": 0.035236752282,
+      "global_only_markov_H2_p_active": 0.052366106542,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.131454494821,
+      "original_LOG1P2027_p_active_frozen": 0.097443979124,
+      "original_intercept_control_p_active_frozen": 0.143531371083,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Angola",
+      "country_blocked_logistic_beta": [
+        -0.422863033137,
+        2.021864545814,
+        2.455713857951
+      ],
+      "country_id": 540,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.627922953992,
+      "global_only_alpha1_p_active_2027": 0.627922953992,
+      "global_only_markov_H2_p_active": 0.720346208342,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 25,
+      "original_GEO2027_p_active_frozen": 0.682948398486,
+      "original_LOG1P2027_p_active_frozen": 0.605768805099,
+      "original_intercept_control_p_active_frozen": 0.704589600864,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Mozambique",
+      "country_blocked_logistic_beta": [
+        -0.444205257698,
+        2.053175564266,
+        2.451117378248
+      ],
+      "country_id": 541,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.856937339919,
+      "global_only_alpha1_p_active_2027": 0.856937339919,
+      "global_only_markov_H2_p_active": 0.719242464608,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 296,
+      "original_GEO2027_p_active_frozen": 0.688403312046,
+      "original_LOG1P2027_p_active_frozen": 0.813913436819,
+      "original_intercept_control_p_active_frozen": 0.709830373622,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Zambia",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 551,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Zimbabwe (Rhodesia)",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 552,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Malawi",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 553,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "South Africa",
+      "country_blocked_logistic_beta": [
+        -0.423533141238,
+        2.047137232172,
+        2.449135732818
+      ],
+      "country_id": 560,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035578938865,
+      "global_only_alpha1_p_active_2027": 0.035578938865,
+      "global_only_markov_H2_p_active": 0.053340630982,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.019044029623,
+      "original_LOG1P2027_p_active_frozen": 0.013659480644,
+      "original_intercept_control_p_active_frozen": 0.02104384455,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Namibia",
+      "country_blocked_logistic_beta": [
+        -0.417976127116,
+        2.048981138425,
+        2.442681094376
+      ],
+      "country_id": 565,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035553105261,
+      "global_only_alpha1_p_active_2027": 0.035553105261,
+      "global_only_markov_H2_p_active": 0.053022893637,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.052067453538,
+      "original_LOG1P2027_p_active_frozen": 0.037704679736,
+      "original_intercept_control_p_active_frozen": 0.057332384029,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Lesotho",
+      "country_blocked_logistic_beta": [
+        -0.418147944573,
+        2.048927774069,
+        2.442880719529
+      ],
+      "country_id": 570,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035553368608,
+      "global_only_alpha1_p_active_2027": 0.035553368608,
+      "global_only_markov_H2_p_active": 0.053031907199,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.05113613046,
+      "original_LOG1P2027_p_active_frozen": 0.037020228461,
+      "original_intercept_control_p_active_frozen": 0.056312482299,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Botswana",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 571,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Kingdom of eSwatini (Swaziland)",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 572,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Madagascar (Malagasy)",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 580,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Comoros",
+      "country_blocked_logistic_beta": [
+        -0.420349561834,
+        2.050439461175,
+        2.436373261635
+      ],
+      "country_id": 581,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035486936185,
+      "global_only_alpha1_p_active_2027": 0.035486936185,
+      "global_only_markov_H2_p_active": 0.05304508954,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.050994887327,
+      "original_LOG1P2027_p_active_frozen": 0.036916457943,
+      "original_intercept_control_p_active_frozen": 0.056157787755,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Mauritius",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 590,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Seychelles",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 591,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Morocco",
+      "country_blocked_logistic_beta": [
+        -0.422893635023,
+        2.068764998548,
+        2.448365618622
+      ],
+      "country_id": 600,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03560088881,
+      "global_only_alpha1_p_active_2027": 0.121450033364,
+      "global_only_markov_H2_p_active": 0.053340630982,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 7,
+      "original_GEO2027_p_active_frozen": 0.019044029623,
+      "original_LOG1P2027_p_active_frozen": 0.02866238472,
+      "original_intercept_control_p_active_frozen": 0.02104384455,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Algeria",
+      "country_blocked_logistic_beta": [
+        -0.402920874346,
+        2.081540928113,
+        2.453522344195
+      ],
+      "country_id": 615,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035631145163,
+      "global_only_alpha1_p_active_2027": 0.035631145163,
+      "global_only_markov_H2_p_active": 0.052384759429,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.17226878787,
+      "original_LOG1P2027_p_active_frozen": 0.129270260211,
+      "original_intercept_control_p_active_frozen": 0.187286772047,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Tunisia",
+      "country_blocked_logistic_beta": [
+        -0.423601469872,
+        2.051649639129,
+        2.473731369108
+      ],
+      "country_id": 616,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035340200259,
+      "global_only_alpha1_p_active_2027": 0.035340200259,
+      "global_only_markov_H2_p_active": 0.052992686793,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.054780115573,
+      "original_LOG1P2027_p_active_frozen": 0.039700394676,
+      "original_intercept_control_p_active_frozen": 0.060301894455,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Libya",
+      "country_blocked_logistic_beta": [
+        -0.427898753695,
+        2.058655530212,
+        2.516455680099
+      ],
+      "country_id": 620,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.034958985709,
+      "global_only_alpha1_p_active_2027": 0.034958985709,
+      "global_only_markov_H2_p_active": 0.052645314827,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.09725092476,
+      "original_LOG1P2027_p_active_frozen": 0.071362626301,
+      "original_intercept_control_p_active_frozen": 0.106571044231,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Sudan",
+      "country_blocked_logistic_beta": [
+        -0.412694249046,
+        1.991483159432,
+        2.471023703013
+      ],
+      "country_id": 625,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.977797964924,
+      "global_only_alpha1_p_active_2027": 0.977797964924,
+      "global_only_markov_H2_p_active": 0.711224064499,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 12269,
+      "original_GEO2027_p_active_frozen": 0.861897343982,
+      "original_LOG1P2027_p_active_frozen": 0.98326960376,
+      "original_intercept_control_p_active_frozen": 0.873584863184,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "South Sudan",
+      "country_blocked_logistic_beta": [
+        -0.42064725997,
+        1.969800437202,
+        2.455531003935
+      ],
+      "country_id": 626,
+      "country_supervised_training_rows_withheld": 12,
+      "global_only_alpha0_p_active_2027": 0.855435296471,
+      "global_only_alpha1_p_active_2027": 0.855435296471,
+      "global_only_markov_H2_p_active": 0.716732648576,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 282,
+      "original_GEO2027_p_active_frozen": 0.769080903038,
+      "original_LOG1P2027_p_active_frozen": 0.865979603517,
+      "original_intercept_control_p_active_frozen": 0.786679286298,
+      "training_rows_after_country_withheld": 2730
+    },
+    {
+      "country": "Iran",
+      "country_blocked_logistic_beta": [
+        -0.415422215049,
+        2.004183418624,
+        2.435193667841
+      ],
+      "country_id": 630,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.929024061335,
+      "global_only_alpha1_p_active_2027": 0.929024061335,
+      "global_only_markov_H2_p_active": 0.719848560173,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 1249,
+      "original_GEO2027_p_active_frozen": 0.70339172251,
+      "original_LOG1P2027_p_active_frozen": 0.895555896803,
+      "original_intercept_control_p_active_frozen": 0.724201029178,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Turkey",
+      "country_blocked_logistic_beta": [
+        -0.409461912885,
+        1.942451624402,
+        2.520960355165
+      ],
+      "country_id": 640,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035572959271,
+      "global_only_alpha1_p_active_2027": 0.133502151111,
+      "global_only_markov_H2_p_active": 0.05262585834,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 10,
+      "original_GEO2027_p_active_frozen": 0.131999410572,
+      "original_LOG1P2027_p_active_frozen": 0.206056922876,
+      "original_intercept_control_p_active_frozen": 0.144118042063,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Iraq",
+      "country_blocked_logistic_beta": [
+        -0.406884213439,
+        2.042047582478,
+        2.44410102651
+      ],
+      "country_id": 645,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.794189955333,
+      "global_only_alpha1_p_active_2027": 0.794189955333,
+      "global_only_markov_H2_p_active": 0.70947505752,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 132,
+      "original_GEO2027_p_active_frozen": 0.893769476037,
+      "original_LOG1P2027_p_active_frozen": 0.922450466598,
+      "original_intercept_control_p_active_frozen": 0.903063046603,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Egypt",
+      "country_blocked_logistic_beta": [
+        -0.423527931903,
+        2.061702474406,
+        2.468571713516
+      ],
+      "country_id": 651,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035053742007,
+      "global_only_alpha1_p_active_2027": 0.08032407903,
+      "global_only_markov_H2_p_active": 0.052567277342,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 3,
+      "original_GEO2027_p_active_frozen": 0.112877909769,
+      "original_LOG1P2027_p_active_frozen": 0.130658366317,
+      "original_intercept_control_p_active_frozen": 0.123490787475,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Syria",
+      "country_blocked_logistic_beta": [
+        -0.423992291907,
+        2.055151102937,
+        2.441781106731
+      ],
+      "country_id": 652,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.905806328799,
+      "global_only_alpha1_p_active_2027": 0.905806328799,
+      "global_only_markov_H2_p_active": 0.714771068112,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 735,
+      "original_GEO2027_p_active_frozen": 0.829088499059,
+      "original_LOG1P2027_p_active_frozen": 0.933546526911,
+      "original_intercept_control_p_active_frozen": 0.843046983701,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Lebanon",
+      "country_blocked_logistic_beta": [
+        -0.434879620759,
+        2.079128415067,
+        2.484804030789
+      ],
+      "country_id": 660,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.870482330709,
+      "global_only_alpha1_p_active_2027": 0.870482330709,
+      "global_only_markov_H2_p_active": 0.719792004538,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 347,
+      "original_GEO2027_p_active_frozen": 0.68352955829,
+      "original_LOG1P2027_p_active_frozen": 0.820454761692,
+      "original_intercept_control_p_active_frozen": 0.70514821833,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Jordan",
+      "country_blocked_logistic_beta": [
+        -0.42346932513,
+        2.051820336907,
+        2.45608771275
+      ],
+      "country_id": 663,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035371352334,
+      "global_only_alpha1_p_active_2027": 0.035371352334,
+      "global_only_markov_H2_p_active": 0.053031907199,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.05113613046,
+      "original_LOG1P2027_p_active_frozen": 0.037020228461,
+      "original_intercept_control_p_active_frozen": 0.056312482299,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Israel",
+      "country_blocked_logistic_beta": [
+        -0.409111199495,
+        1.933764287505,
+        2.499332570357
+      ],
+      "country_id": 666,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.981081244487,
+      "global_only_alpha1_p_active_2027": 0.981081244487,
+      "global_only_markov_H2_p_active": 0.717874931826,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 14472,
+      "original_GEO2027_p_active_frozen": 0.74366247297,
+      "original_LOG1P2027_p_active_frozen": 0.966972010653,
+      "original_intercept_control_p_active_frozen": 0.762600041651,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Saudi Arabia",
+      "country_blocked_logistic_beta": [
+        -0.42118597327,
+        2.087264074237,
+        2.452206898768
+      ],
+      "country_id": 670,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035020346581,
+      "global_only_alpha1_p_active_2027": 0.102632889887,
+      "global_only_markov_H2_p_active": 0.052401691305,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 5,
+      "original_GEO2027_p_active_frozen": 0.121384892732,
+      "original_LOG1P2027_p_active_frozen": 0.159045021086,
+      "original_intercept_control_p_active_frozen": 0.132677981111,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Yemen (North Yemen)",
+      "country_blocked_logistic_beta": [
+        -0.410681688444,
+        2.051563986629,
+        2.406403138015
+      ],
+      "country_id": 678,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.930416825679,
+      "global_only_alpha1_p_active_2027": 0.930416825679,
+      "global_only_markov_H2_p_active": 0.715301531485,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 1410,
+      "original_GEO2027_p_active_frozen": 0.802920783246,
+      "original_LOG1P2027_p_active_frozen": 0.939386945975,
+      "original_intercept_control_p_active_frozen": 0.818548680467,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Kuwait",
+      "country_blocked_logistic_beta": [
+        -0.417466752557,
+        2.048667614974,
+        2.444062998401
+      ],
+      "country_id": 690,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035567803531,
+      "global_only_alpha1_p_active_2027": 0.035567803531,
+      "global_only_markov_H2_p_active": 0.053018836575,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.052328129301,
+      "original_LOG1P2027_p_active_frozen": 0.037896322955,
+      "original_intercept_control_p_active_frozen": 0.057617816511,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Bahrain",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 692,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Qatar",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 694,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.111442974932,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 6,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.027456211363,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "United Arab Emirates",
+      "country_blocked_logistic_beta": [
+        -0.421119309314,
+        2.049063512597,
+        2.455334609834
+      ],
+      "country_id": 696,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035652849776,
+      "global_only_alpha1_p_active_2027": 0.035652849776,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Oman",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 698,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Afghanistan",
+      "country_blocked_logistic_beta": [
+        -0.405795810329,
+        2.04115388127,
+        2.461633855333
+      ],
+      "country_id": 700,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.85861497859,
+      "global_only_alpha1_p_active_2027": 0.85861497859,
+      "global_only_markov_H2_p_active": 0.70947505752,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 306,
+      "original_GEO2027_p_active_frozen": 0.893769476037,
+      "original_LOG1P2027_p_active_frozen": 0.944101279716,
+      "original_intercept_control_p_active_frozen": 0.903063046603,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Turkmenistan",
+      "country_blocked_logistic_beta": [
+        -0.421002865094,
+        2.045743326664,
+        2.455208815969
+      ],
+      "country_id": 701,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035644507849,
+      "global_only_alpha1_p_active_2027": 0.035644507849,
+      "global_only_markov_H2_p_active": 0.053309278683,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.019829505225,
+      "original_LOG1P2027_p_active_frozen": 0.014226089989,
+      "original_intercept_control_p_active_frozen": 0.021909960722,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Tajikistan",
+      "country_blocked_logistic_beta": [
+        -0.408011693049,
+        2.07599729432,
+        2.45972346349
+      ],
+      "country_id": 702,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035004818247,
+      "global_only_alpha1_p_active_2027": 0.035004818247,
+      "global_only_markov_H2_p_active": 0.051728807449,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.220383046269,
+      "original_LOG1P2027_p_active_frozen": 0.167809852531,
+      "original_intercept_control_p_active_frozen": 0.23838750049,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Kyrgyzstan",
+      "country_blocked_logistic_beta": [
+        -0.424532908208,
+        2.057097815257,
+        2.461149705219
+      ],
+      "country_id": 703,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035113443457,
+      "global_only_alpha1_p_active_2027": 0.035113443457,
+      "global_only_markov_H2_p_active": 0.052705332535,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.087514820137,
+      "original_LOG1P2027_p_active_frozen": 0.064034442306,
+      "original_intercept_control_p_active_frozen": 0.096001097534,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Uzbekistan",
+      "country_blocked_logistic_beta": [
+        -0.413905802335,
+        2.052091079575,
+        2.43086507796
+      ],
+      "country_id": 704,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035475279214,
+      "global_only_alpha1_p_active_2027": 0.035475279214,
+      "global_only_markov_H2_p_active": 0.052705332535,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.087514820137,
+      "original_LOG1P2027_p_active_frozen": 0.064034442306,
+      "original_intercept_control_p_active_frozen": 0.096001097534,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Kazakhstan",
+      "country_blocked_logistic_beta": [
+        -0.421002865094,
+        2.045743326664,
+        2.455208815969
+      ],
+      "country_id": 705,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035644507849,
+      "global_only_alpha1_p_active_2027": 0.035644507849,
+      "global_only_markov_H2_p_active": 0.053309278683,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.019829505225,
+      "original_LOG1P2027_p_active_frozen": 0.014226089989,
+      "original_intercept_control_p_active_frozen": 0.021909960722,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "China",
+      "country_blocked_logistic_beta": [
+        -0.417704584047,
+        2.059158128057,
+        2.442347110097
+      ],
+      "country_id": 710,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035568574272,
+      "global_only_alpha1_p_active_2027": 0.035568574272,
+      "global_only_markov_H2_p_active": 0.053031907199,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.05113613046,
+      "original_LOG1P2027_p_active_frozen": 0.037020228461,
+      "original_intercept_control_p_active_frozen": 0.056312482299,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Mongolia",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 712,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Taiwan",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 713,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "North Korea",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 731,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "South Korea",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 732,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Japan",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 740,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "India",
+      "country_blocked_logistic_beta": [
+        -0.410370382379,
+        2.04490933381,
+        2.434120842039
+      ],
+      "country_id": 750,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.88927576459,
+      "global_only_alpha1_p_active_2027": 0.88927576459,
+      "global_only_markov_H2_p_active": 0.70947505752,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 540,
+      "original_GEO2027_p_active_frozen": 0.893769476037,
+      "original_LOG1P2027_p_active_frozen": 0.955389128216,
+      "original_intercept_control_p_active_frozen": 0.903063046603,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Bhutan",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 760,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Pakistan",
+      "country_blocked_logistic_beta": [
+        -0.402478985765,
+        2.04936399625,
+        2.417350856681
+      ],
+      "country_id": 770,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.952793540531,
+      "global_only_alpha1_p_active_2027": 0.952793540531,
+      "global_only_markov_H2_p_active": 0.711685662347,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 3096,
+      "original_GEO2027_p_active_frozen": 0.859764344227,
+      "original_LOG1P2027_p_active_frozen": 0.970080508609,
+      "original_intercept_control_p_active_frozen": 0.871605486826,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Bangladesh",
+      "country_blocked_logistic_beta": [
+        -0.421793222684,
+        2.054516818508,
+        2.449679839414
+      ],
+      "country_id": 771,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035201052763,
+      "global_only_alpha1_p_active_2027": 0.035201052763,
+      "global_only_markov_H2_p_active": 0.052697496702,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.090759038245,
+      "original_LOG1P2027_p_active_frozen": 0.066471639081,
+      "original_intercept_control_p_active_frozen": 0.099525593507,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Myanmar (Burma)",
+      "country_blocked_logistic_beta": [
+        -0.413113031543,
+        2.047159898192,
+        2.439907577833
+      ],
+      "country_id": 775,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.942889967261,
+      "global_only_alpha1_p_active_2027": 0.942889967261,
+      "global_only_markov_H2_p_active": 0.70947505752,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 2109,
+      "original_GEO2027_p_active_frozen": 0.893769476037,
+      "original_LOG1P2027_p_active_frozen": 0.974282859618,
+      "original_intercept_control_p_active_frozen": 0.903063046603,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Sri Lanka",
+      "country_blocked_logistic_beta": [
+        -0.406159850779,
+        2.04954108252,
+        2.442714425658
+      ],
+      "country_id": 780,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035628273824,
+      "global_only_alpha1_p_active_2027": 0.035628273824,
+      "global_only_markov_H2_p_active": 0.052541617314,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.123859390909,
+      "original_LOG1P2027_p_active_frozen": 0.091606660216,
+      "original_intercept_control_p_active_frozen": 0.135347231287,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Maldives",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 781,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Nepal",
+      "country_blocked_logistic_beta": [
+        -0.411296411615,
+        2.046303456826,
+        2.454816891028
+      ],
+      "country_id": 790,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035699152485,
+      "global_only_alpha1_p_active_2027": 0.035699152485,
+      "global_only_markov_H2_p_active": 0.05290107104,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.064494414307,
+      "original_LOG1P2027_p_active_frozen": 0.046873176842,
+      "original_intercept_control_p_active_frozen": 0.070921913576,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Thailand",
+      "country_blocked_logistic_beta": [
+        -0.437542627921,
+        2.075049690529,
+        2.453805831301
+      ],
+      "country_id": 800,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.779672414543,
+      "global_only_alpha1_p_active_2027": 0.779672414543,
+      "global_only_markov_H2_p_active": 0.714106233677,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 113,
+      "original_GEO2027_p_active_frozen": 0.825621034822,
+      "original_LOG1P2027_p_active_frozen": 0.862543858294,
+      "original_intercept_control_p_active_frozen": 0.839807993579,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Cambodia (Kampuchea)",
+      "country_blocked_logistic_beta": [
+        -0.425351802732,
+        2.059800542719,
+        2.469496483964
+      ],
+      "country_id": 811,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.821810166603,
+      "global_only_alpha1_p_active_2027": 0.821810166603,
+      "global_only_markov_H2_p_active": 0.717220488406,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 175,
+      "original_GEO2027_p_active_frozen": 0.749716054465,
+      "original_LOG1P2027_p_active_frozen": 0.8264656714,
+      "original_intercept_control_p_active_frozen": 0.768345711963,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Laos",
+      "country_blocked_logistic_beta": [
+        -0.422852024444,
+        2.046877222933,
+        2.450318650132
+      ],
+      "country_id": 812,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035593378633,
+      "global_only_alpha1_p_active_2027": 0.035593378633,
+      "global_only_markov_H2_p_active": 0.05332748477,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.019490667533,
+      "original_LOG1P2027_p_active_frozen": 0.013981635137,
+      "original_intercept_control_p_active_frozen": 0.021536354243,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Vietnam (North Vietnam)",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 816,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Malaysia",
+      "country_blocked_logistic_beta": [
+        -0.423318234689,
+        2.05261641218,
+        2.459579435525
+      ],
+      "country_id": 820,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035376507935,
+      "global_only_alpha1_p_active_2027": 0.035376507935,
+      "global_only_markov_H2_p_active": 0.053031907199,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.05113613046,
+      "original_LOG1P2027_p_active_frozen": 0.037020228461,
+      "original_intercept_control_p_active_frozen": 0.056312482299,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Singapore",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 830,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Brunei",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 835,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Philippines",
+      "country_blocked_logistic_beta": [
+        -0.412115778677,
+        2.046341657669,
+        2.434764824773
+      ],
+      "country_id": 840,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.810855111428,
+      "global_only_alpha1_p_active_2027": 0.810855111428,
+      "global_only_markov_H2_p_active": 0.70947505752,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 164,
+      "original_GEO2027_p_active_frozen": 0.893769476037,
+      "original_LOG1P2027_p_active_frozen": 0.928672411926,
+      "original_intercept_control_p_active_frozen": 0.903063046603,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Indonesia",
+      "country_blocked_logistic_beta": [
+        -0.432989227906,
+        2.079837172917,
+        2.454835194113
+      ],
+      "country_id": 850,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.776099041935,
+      "global_only_alpha1_p_active_2027": 0.776099041935,
+      "global_only_markov_H2_p_active": 0.717802990088,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 104,
+      "original_GEO2027_p_active_frozen": 0.737441950264,
+      "original_LOG1P2027_p_active_frozen": 0.782437085512,
+      "original_intercept_control_p_active_frozen": 0.756688717874,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "East Timor",
+      "country_blocked_logistic_beta": [
+        -0.419114030356,
+        2.046329149001,
+        2.45301269478
+      ],
+      "country_id": 860,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035641623792,
+      "global_only_alpha1_p_active_2027": 0.035641623792,
+      "global_only_markov_H2_p_active": 0.053209807295,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.024864609293,
+      "original_LOG1P2027_p_active_frozen": 0.017864307838,
+      "original_intercept_control_p_active_frozen": 0.027458534696,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Australia",
+      "country_blocked_logistic_beta": [
+        -0.421268355211,
+        2.046486803809,
+        2.455514204157
+      ],
+      "country_id": 900,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035647725676,
+      "global_only_alpha1_p_active_2027": 0.035647725676,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Papua New Guinea",
+      "country_blocked_logistic_beta": [
+        -0.412201688324,
+        2.051200349326,
+        2.43481992434
+      ],
+      "country_id": 910,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035519193626,
+      "global_only_alpha1_p_active_2027": 0.035519193626,
+      "global_only_markov_H2_p_active": 0.052684294004,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.090536479797,
+      "original_LOG1P2027_p_active_frozen": 0.066304294881,
+      "original_intercept_control_p_active_frozen": 0.099283885173,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "New Zealand",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 920,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Vanuatu",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 935,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Solomon Islands",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 940,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Fiji",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 950,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Kiribati",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 970,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Nauru",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 971,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Tonga",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 972,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Tuvalu",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 973,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Marshall Islands",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 983,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Palau",
+      "country_blocked_logistic_beta": [
+        -0.420487186768,
+        2.045903232298,
+        2.454609219022
+      ],
+      "country_id": 986,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.035643726618,
+      "global_only_alpha1_p_active_2027": 0.035643726618,
+      "global_only_markov_H2_p_active": 0.053282113268,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.020988664697,
+      "original_LOG1P2027_p_active_frozen": 0.015062728234,
+      "original_intercept_control_p_active_frozen": 0.023187858862,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Federated States of Micronesia",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 987,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    },
+    {
+      "country": "Samoa (Western Samoa)",
+      "country_blocked_logistic_beta": [
+        -0.421346876816,
+        2.045636666161,
+        2.45560882072
+      ],
+      "country_id": 990,
+      "country_supervised_training_rows_withheld": 14,
+      "global_only_alpha0_p_active_2027": 0.03564502644,
+      "global_only_alpha1_p_active_2027": 0.03564502644,
+      "global_only_markov_H2_p_active": 0.05332740435,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_GEO2027_p_active_frozen": 0.01912533508,
+      "original_LOG1P2027_p_active_frozen": 0.013718119106,
+      "original_intercept_control_p_active_frozen": 0.021133503961,
+      "training_rows_after_country_withheld": 2728
+    }
+  ],
+  "demonstrated_prospective_predictive_skill": false,
+  "expected_active_countries_sum_probabilities": {
+    "global_only_alpha0": 35.5549567595,
+    "global_only_alpha1": 36.2156915969,
+    "original_GEO": 33.6254396639,
+    "original_LOG1P": 35.9839934635
+  },
+  "forecast_id": "PSICO-GEO2027-STATEBASED25-GLOBALONLY-COUNTRYBLOCK-LOG1P-SHADOW-V1",
+  "issue_class": "DISTINCT_PROSPECTIVE_2027_FULL196_COUNTRYBLOCKED_GLOBALONLY_RESEARCH_COMPARATOR",
+  "limitations": "The historical model architecture, alpha grid and fixed ridge 5 were already explored on 2017–2025 historical results; retrospective advantage does NOT constitute an untouched confirmation. This is a separate prospective 2027 full-country evaluation candidate whose probabilities are frozen before official outcome labels. Its training excludes each target country's historical labels and transitions for transfer analysis, but retains its observed 2025 state and deaths. Correlated outcomes mean no country-IID p-values. Only first complete official 2027 UCDP coverage resolves primary score, without missing-as-zero.",
+  "method": {
+    "LOG1P": "Logistic logit offset + intercept + inactive and active log1p fatality features",
+    "Markov": "Two-state globally pooled country-LOO transition prior, Laplace 1, two annual steps, no national transition shrinkage",
+    "alpha0_inactive_intensity_slope_multiplier": 0.0,
+    "alpha1_inactive_intensity_slope_multiplier": 1.0,
+    "alpha_variants_identical_for_zero_and_active_origin_counts": true,
+    "country_models_fitted": 196,
+    "each_evaluation_prior_excludes_its_own_country": true,
+    "each_evaluation_uses_2025_country_state_and_deaths": true,
+    "each_forecast_country_all_supervised_historical_rows_excluded": true,
+    "each_training_row_prior_excludes_forecast_country": true,
+    "each_training_row_prior_excludes_its_own_source_country": true,
+    "historical_model_and_lambda_selection_already_explored": true,
+    "no_2026_or_2027_label_or_transition_used": true,
+    "ridge_lambda_fixed_from_prior_exploratory_work": 5.0,
+    "training_feature_origin_years": [
+      2010,
+      2023
+    ],
+    "training_target_years": [
+      2012,
+      2025
+    ],
+    "two_published_alpha_variants": [
+      0.0,
+      1.0
+    ]
+  },
+  "n_countries": 196,
+  "new_transition_alerts_issued": false,
+  "official_2027_outcomes_resolved": 0,
+  "original_GEO_or_LOG1P_or_15_alerts_modified": false,
+  "preparation_calendar_date": "2026-11-16",
+  "prior_frozen_15_alerts_sha256": "309b4f270e1d0d6382b7a90ae64c28d7621f96fbf3177a45aaebbffb0f958acb",
+  "prior_frozen_log1p_shadow_sha256": "52686923315854557a796f8f192d376dab77a4e03b14c1aeb6b4091e48104f90",
+  "prior_frozen_original_geo_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "prospective_scoring_precommitment": {
+    "do_not_treat_missing_country_label_as_zero": true,
+    "fixed_country_universe": 196,
+    "multiple_comparisons_exploratory_not_familywise_confirmatory": true,
+    "no_2027_retraining_of_issued_probabilities": true,
+    "no_IID_country_significance_claims": true,
+    "no_ex_post_threshold_or_model_selection": true,
+    "no_new_transition_alert_list": true,
+    "primary_2027_official_UCDP_edition": "first_complete_edition_with_2027_country_year_labels_for_all_original_196_ids",
+    "primary_metric": "mean_squared_error_of_196_country_probabilities",
+    "primary_pair": "full196_Brier_global_only_alpha1_minus_frozen_original_LOG1P_shadow",
+    "report_all_candidates_and_pairs_even_if_unfavourable": true,
+    "revisions_in_later_editions_sensitivity_only": true,
+    "secondary_pairs": [
+      "Brier_global_only_alpha0_minus_global_only_alpha1",
+      "Brier_global_only_alpha1_minus_original_GEO",
+      "Brier_global_only_alpha0_minus_original_GEO",
+      "Brier_global_only_alpha0_minus_original_LOG1P",
+      "logloss_global_only_alpha1_minus_original_LOG1P",
+      "logloss_global_only_alpha0_minus_global_only_alpha1"
+    ]
+  },
+  "publication_time_authority": "FIRST_COMPLETE_PUBLIC_GITHUB_COMMIT_ONLY_NOT_INDEPENDENT_NOTARY",
+  "replaces_any_existing_2027_issue": false,
+  "schema": "idealab.psico.geo2027_global_only_country_block_shadow.v1",
+  "source": {
+    "dataset": "UCDP OrganizedViolenceCY",
+    "edition": "26.1",
+    "last_observed_year": 2025,
+    "source_archive_sha256": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "status": "ISSUED_PROSPECTIVE_UNRESOLVED",
+  "target": {
+    "all_196_GWNO_fixed_identical_to_original_issue": true,
+    "binary_outcome": "UCDP OrganizedViolenceCY country-year sb_total_deaths_best >=25",
+    "final_scoring_requires_all_196_2027_labels": true,
+    "forecast_origin_year": 2025,
+    "horizon_years": 2,
+    "official_2027_labels_missing_are_not_zero": true,
+    "year": 2027
+  },
+  "training": {
+    "country_block_models": 196,
+    "historical_supervised_positives": 454,
+    "historical_supervised_rows_before_country_exclusion": 2742,
+    "latest_training_feature_origin_year": 2023,
+    "latest_training_outcome_year": 2025,
+    "max_country_training_rows": 2730,
+    "min_country_training_rows": 2728
+  }
+}

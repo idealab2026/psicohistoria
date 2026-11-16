@@ -4,6 +4,25 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Nueva emisión prospectiva independiente sobre los 196 países (16-11-2026)
+
+**Primera emisión completa:** comparador Markov **global-only con calibración LOG1P emparejada y país excluido**, generado sobre UCDP OrganizedViolenceCY **26.1 hasta 2025**, con horizonte 2027 y **196 países originales**. Se han publicado dos brazos independientes pero predefinidos: **α=0**, sin pendiente de intensidad subumbral, y **α=1**, con pendiente continua completa. Para cada país se reajusta su calibrador logístico sin utilizar **ninguna de sus etiquetas históricas ni transiciones dentro de los priors de entrenamiento**; cada fila del resto excluye también las transiciones del propio país de la fila. El estado y muertes del país en 2025 sí son observables al emitir el pronóstico.
+
+| Emisión congelada para 2027 | Suma de probabilidades de superar 25 muertes estatales |
+|---|---:|
+| Original GEO2027, sin modificar | **33,6254** |
+| Sombra LOG1P original, sin modificar | **35,9840** |
+| **Nueva sombra global-only α=0** | **35,5550** |
+| **Nueva sombra global-only α=1** | **36,2157** |
+
+Las sumas **no son resultados ni aciertos**: el primer informe oficial completo de los hechos de 2027 todavía no existe. Se mantiene un **contrato de evaluación prospectiva principal**: Brier sobre los mismos **196 GWNO**, global-only α1 **menos** la sombra LOG1P original, usando exclusivamente la **primera edición completa** de UCDP con etiquetas 2027 oficiales; las faltantes nunca se imputan como cero. Los dos nuevos brazos, el GEO original, la sombra LOG1P original y el control solo-intercepto tendrán Brier/logloss publicados juntos, sin seleccionar a posteriori un campeón ni invocar independencia IID de países.
+
+**Anclaje de integridad:** el primer archivo completo de 196 países apareció en el commit institucional público `52ab9ffe7d49e4574b61a9f6a35c57cf7b43082d`, registrado por GitHub el **2026-11-16 19:49:19 UTC**, con SHA-256 **`251595a12758e006cf21dabbb9771e10b5961c469a5317d6b2b1c5de227f3697`** (metadatos GitHub, no notarización independiente). El modelo anterior GEO de 196, la primera sombra LOG1P de 196 y las **15 alertas originales** conservan exactamente sus SHA. No se reemiten esas predicciones.
+
+**Advertencia científica:** las formas funcionales y λ=5 fueron estudiadas después de conocer resultados históricos 2017–2025; por tanto la supuesta mejora retrospectiva es exploratoria. Esto sí constituye **una nueva predicción anterior al resultado de 2027**, aunque **su capacidad de predicción prospectiva está pendiente de comprobar**.
+
+[Protocolo y limitaciones](docs/geo2027-global-only-matched-prospective.md) · [Emisión nueva de 196 países](data/forecast-2027-global-only-matched-shadow.json) · [Manifiesto SHA y primer commit](data/forecast-2027-global-only-matched-manifest.json) · [Código reproducible](scripts/prepare_geo2027_global_only_matched_shadow.py) · auditoría de integridad y función de evaluación futura `scripts/audit_geo2027_global_only_matched_issue.py`.
+
 ## GEO2027 · Calibrador LOG1P reentrenado con Markov global-only emparejado (16-11-2026)
 
 **Corregido el desajuste de distribución de la PR #98:** las probabilidades del Markov H2 global-only del país evaluado ya no se pasan a una regresión LOG1P aprendida sobre offsets locales. En la nueva PR se **excluyen todas las etiquetas históricas del país y sus transiciones del prior global**, y para cada fila de aprendizaje de otro país se excluyen además las transiciones de ese país de su propio prior. Los coeficientes de LOG1P se reentrenan con esos offsets global-only, respetando el corte H2 de etiquetas **t−2** y features **t−4**.
