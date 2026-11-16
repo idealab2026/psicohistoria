@@ -30,6 +30,36 @@ Además de `sb_total_deaths_best`, extrae el campo `sb_exist` con un lector prop
 
 Se publica por cada origen 2022–2025 y edición disponible el número de filas **explícitas** de los 196 países que fueron congelados para 2027; el desglose de recuentos exactamente 0, de 1–24 y de ≥25, la existencia estatal `sb_exist`, los ceros con bandera de existencia 1 y los recuentos positivos con bandera 0. Se calcula la cobertura anual desde 1989 (algunos estados no existían aún, por lo que **no deben imputarse países antiguos que no estuvieran presentes**). Entre versiones históricas se documenta cuántos países cambian el indicador de «cero fatalidades codificadas» o su bandera de existencia, sin interpretar revisiones retrospectivas como resultados prospectivos.
 
+## Resultados reconstruidos y auditados contra los originales oficiales
+
+**Todas las cuatro ediciones superaron la comprobación SHA, la igualdad de recuentos país–año y la verificación de la bandera `sb_exist`.** En las cuatro, desde el año **2011** están presentes los **196 GWNO del primer pronóstico de 2027** sin ninguna fila ausente. Antes de 2011 algunas entidades del conjunto actual no existían o no estaban registradas como estados en los años anteriores: **no deben fabricarse filas históricas para completar 196**.
+
+| Edición | Año objetivo observado | Filas explícitas sobre los 196 | Muertes codificadas = 0 | Muertes 1–24 | Muertes ≥25 | Ceros con `sb_exist=1` |
+|---|---:|---:|---:|---:|---:|---:|
+| 23.1 | 2022 | 196 | 145 | 14 | 37 | 0 |
+| 24.1 | 2023 | 196 | 150 | 12 | 34 | **1** |
+| 25.1 | 2024 | 196 | 153 | 8 | 35 | 0 |
+| **26.1** | **2025** | **196** | **154** | **8** | **34** | **0** |
+
+El caso **2023** demuestra que puede coexistir un **cero oficial de `sb_total_deaths_best` con bandera `sb_exist=1`**. Ese caso existe en las ediciones 24.1, 25.1 y 26.1 y no cambia el objetivo del proyecto: para la variable binaria **≥25 fallecidos codificados** su etiqueta es 0, no 1.
+
+En el origen 2022, las ediciones 23.1 y 24.1 no registran ningún cero con bandera de existencia 1; **25.1 y 26.1 sí registran uno**. En 2025 no aparece esa combinación. **Eso no significa que en todos los países con cero muertes no hubiera violencia**, porque el manual documenta también exclusiones por el umbral de inclusión de díadas/actores.
+
+### Revisión de fuentes y construcción del panel
+
+- 2022: UCDP 23.1 registra **145 ceros**, mientras 26.1 registra **144**; entre ellas cambia **un país de la condición «cero codificado»** y **dos países de la bandera de existencia estatal**. Para la comparación 24.1→26.1, la bandera de existencia cambia en un país aunque el indicador de cero no.
+- 2023: el indicador de cero y la bandera de existencia coinciden exactamente entre las ediciones 24.1, 25.1 y 26.1 para los 196 países.
+- 2024: ambos indicadores coinciden entre 25.1 y 26.1 para los 196 países.
+- No hay edición anterior a 26.1 que observe oficialmente el **año 2025**; no pueden tratarse ediciones 23.1–25.1 como fuente alternativa de sus etiquetas de 2025.
+
+Estas comparaciones son ediciones **retrospectivas del mismo fenómeno y los mismos países**, no seis observaciones experimentales independientes. Las discrepancias entre variables no equivalen a errores de uno de los archivos por defecto: cada columna representa una definición específica y las ediciones pueden corregir la codificación.
+
+### Consecuencia operativa verificada
+
+El requisito de la puerta futura **196 filas explícitas en la primera edición oficial completa 2027** es consistente con la cobertura histórica de todas las ediciones desde 2011. Pero **no queda garantizado** que una futura edición mantenga el mismo universo, nombres, clave de país o convención de ceros. Por eso el validador deberá comprobar cobertura, umbral, columna y procedencia **con la edición realmente publicada**, y detener el cálculo si no puede reconciliar todos los 196 GWNO. El manual no autoriza a convertir una ausencia de fila en cero.
+
+**Resultado final:** no hay necesidad de reemitir los 196 pronósticos de ninguno de los tres modelos, ni modificar las 15 alertas. Sí hay obligación de explicitar en la web que el modelo predice **la etiqueta UCDP codificada**, no «violencia real ausente/presente» en sentido amplio.
+
 ## Reglas futuras inalteradas
 
 - En 2027 la evaluación principal será Brier del global-only α1 menos Brier de la primera sombra LOG1P, **solo cuando exista la primera edición oficial completa y autenticada** con filas explícitas para los 196 GWNO fijos.
