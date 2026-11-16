@@ -369,7 +369,7 @@ def main():
     payload=json.dumps(report,sort_keys=True,ensure_ascii=False,indent=2)+"\n"
     print("GEO2027_MARKOV_HISTORY_ABLATION_BEGIN")
     print(payload,end="")
-    print("GEO2027_MARKOV_HISTORY_ABLATION_END")
+    print("GEO2027_MARKOV_HISTORY_ABLATION_END",flush=True)
     if args.check_report and REPORT.read_bytes()!=payload.encode():
         raise ValueError("Published global/local Markov source ablation differs from SHA-pinned UCDP replay")
 
