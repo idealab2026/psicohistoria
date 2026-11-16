@@ -80,7 +80,6 @@ class UCDPZeroCodingSemanticsTests(unittest.TestCase):
             with self.subTest(val=val):
                 with self.assertRaises(ValueError):
                     strict_int(val,"death count")
-        self.assertEqual(strict_int("000", "n"),0) if False else None
         self.assertEqual(strict_int("0", "n"),0)
         self.assertEqual(strict_int("25","n"),25)
 
