@@ -4,6 +4,21 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · ¿Aporta señal predictiva conservar intensidad de muertes? (16-11-2026)
+
+**Resultado negativo de una ablación retrospectiva ex ante con dos ediciones de origen y resultado distintas:** se ha comparado el GEO H2 binario original con una alternativa de **cuatro estados de intensidad de violencia estatal**: 0, 1–24, 25–99 y ≥100 muertes anuales, con el mismo shrinkage local 20, Dirichlet global 1 y horizonte dos años. Las ediciones SHA-fijadas UCDP 23.1→25.1 (2022→2024) y 24.1→26.1 (2023→2025) aportan 196 países por periodo, **392 resultados históricos, 69 positivos**; el código reproduce primero el Brier/logloss exacto del modelo original, bloqueando comparaciones inconsistentes.
+
+| Métrica | Markov binario original | Markov cuatro estados |
+|---|---:|---:|
+| Brier conjunto (menor es mejor) | **0,04008406** | 0,04244933 |
+| Log-loss conjunto | **0,15439774** | 0,15491694 |
+| Brier 2024 | **0,04143146** | 0,04627834 |
+| Brier 2025 | 0,03873665 | **0,03862031** |
+
+**No hay mejora agregada:** la variante de intensidad empeora el Brier en **aprox. 5,90 %**. A pesar de mejorar el Brier promedio de 163/196 países, los errores mayores en los otros 33 explican el empeoramiento conjunto; los estratos con 1–24 y 25–99 muertes de origen empeoran, mientras que ≥100 mejora. **No se ha reemitido ni cambiado GEO2027, GEO2028 ni sus alertas; cero resultados prospectivos certificados.** Las dos cohortes con años solapados no constituyen una prueba independiente de capacidad predictiva.
+
+Método preregistrado, segmentos y limitaciones: [comparación GEO de intensidad](docs/geo2027-intensity-markov-cross-release.md); [reporte completo de fuentes verificadas](data/geo2027-intensity-markov-cross-release.json). Reproducción: scripts/experiment_geo2027_intensity_markov_cross_release.py; tests: scripts/test_experiment_geo2027_intensity_markov_cross_release.py; GitHub Actions exige coincidencia byte a byte desde las ediciones originales antes de cualquier despliegue.
+
 ## GEO2027 · Causa de la revisión histórica de Indonesia (16-11-2026)
 
 **Nuevo resultado reproducido en tres pares oficiales de ediciones UCDP:** para un **origen retrospectivo fijo 2022**, la probabilidad modelizada de Indonesia de estar por encima del umbral de 25 muertes estatales dos pasos después pasó de **65,7575 % (23.1)** a **71,2182 % (26.1)**, +**5,4606 pp**. La atribución Shapley de los conteos de Markov da **+5,4183 pp por revisar la historia de Indonesia** y **+0,0423 pp por revisar las transiciones de los demás países**. En Indonesia, UCDP cambió las etiquetas binarias de **2019 y 2020**, ambas de 0→1; el estado de origen 2022 permanece idéntico. Kirguistán no presenta revisiones nacionales en ese horizonte y cambia +0,2564 pp solo por el ajuste global.
