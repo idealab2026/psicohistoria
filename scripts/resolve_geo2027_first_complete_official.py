@@ -35,6 +35,7 @@ from prepare_geo2027_transition_alerts import SOURCE_SHA256
 
 ROOT=Path(__file__).resolve().parents[1]
 PRECOMMIT_REPORT=ROOT/"data/geo2027-global-only-issued-disagreement.json"
+READINESS_PATH=ROOT/"data/geo2027-full196-resolution-readiness.json"
 META_SCHEMA="idealab.psico.geo2027_first_complete_ucdp_release_review.v1"
 READINESS_SCHEMA="idealab.psico.geo2027_full196_official_resolution_readiness.v1"
 SCORING_SCHEMA="idealab.psico.geo2027_full196_operator_attested_future_scoring.v1"
@@ -145,6 +146,7 @@ def extract_complete_2027_labels(raw,expected_ids):
     deaths={}
     rows_total=0
     rows_2027=0
+    rows_after_2027_ignored=0
     for row in reader:
         rows_total+=1
         if rows_total>100_000:
@@ -153,13 +155,15 @@ def extract_complete_2027_labels(raw,expected_ids):
             raise ValueError("Malformed row has unexpected extra CSV columns")
         cid=_strict_nonnegative_int(row.get(idkey),"country_id")
         year=_strict_nonnegative_int(row.get(yearkey),"year")
-        if not 1<=cid<=2000 or not 1989<=year<=TARGET_YEAR:
+        if not 1<=cid<=2000 or not 1989<=year<=2100:
             raise ValueError("Official UCDP country-year range or cutoff invalid")
         key=(cid,year)
         if key in all_seen:
             raise ValueError("Duplicate official country-year record")
         all_seen.add(key)
         if year!=TARGET_YEAR:
+            if year>TARGET_YEAR:
+                rows_after_2027_ignored+=1
             continue
         rows_2027+=1
         count=_strict_nonnegative_int(row.get(countkey),
@@ -179,6 +183,7 @@ def extract_complete_2027_labels(raw,expected_ids):
     return labels,{
         "country_year_rows_read":rows_total,
         "year_2027_rows_present_in_source":rows_2027,
+        "later_year_rows_explicitly_ignored":rows_after_2027_ignored,
         "countries_2027_matched_to_first_issued_GWNO":N_COUNTRIES,
         "other_2027_country_ids_not_in_original_cohort":
             rows_2027-N_COUNTRIES,
@@ -326,13 +331,19 @@ def evaluate_release(source_bytes,metadata,as_of_date=None):
 
 def main():
     parser=argparse.ArgumentParser()
+    parser.add_argument("--check-readiness",action="store_true")
     parser.add_argument("--source",type=Path)
     parser.add_argument("--provenance",type=Path)
     args=parser.parse_args()
     if (args.source is None)!=(args.provenance is None):
         parser.error("--source and --provenance are both required to score")
+    if args.check_readiness and args.source is not None:
+        parser.error("--check-readiness is only available without future source")
     if args.source is None:
-        print(json.dumps(preflight(),sort_keys=True,ensure_ascii=False,indent=2))
+        content=json.dumps(preflight(),sort_keys=True,ensure_ascii=False,indent=2)+"\n"
+        print(content,end="")
+        if args.check_readiness and READINESS_PATH.read_bytes()!=content.encode():
+            raise ValueError("Pre-outcome 2027 readiness file is not byte-identical")
         return
     if date.today()<FIRST_POSSIBLE_RELEASE_DATE:
         raise ValueError("Cannot score 2027 before calendar year 2028")
