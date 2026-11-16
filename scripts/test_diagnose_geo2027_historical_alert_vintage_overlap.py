@@ -42,6 +42,13 @@ class HistoricalAlertVintageOverlapTests(unittest.TestCase):
     def test_synthetic_all_six_edition_pairs_retain_scientific_limits(self):
         vintages, meta, original27, original28 = synthetic()
         names = {r["country_id"]: r["country"] for r in original28["countries"]}
+        # The shared toy fixture has fewer than six active historical
+        # countries; force a comparable >5 active risk set at each origin.
+        for history in vintages.values():
+            for cid in range(1, 15):
+                for year in (2022, 2023, 2024):
+                    if year in history[cid]:
+                        history[cid][year] = 1
         report = study(vintages, meta, names)
         self.assertEqual(len(report["paired_comparisons"]), 6)
         self.assertEqual(report["horizon_years"], 2)
