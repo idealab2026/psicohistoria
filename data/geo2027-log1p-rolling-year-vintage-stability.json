@@ -1,1 +1,2201 @@
-{"status":"PENDING_OFFICIAL_SHA_PINNED_ROLLING_H2_SOURCE_REPLAY"}
+{
+  "alpha_grid_fixed_from_previous_pr": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "demonstrated_prospective_predictive_skill": false,
+  "future_2027_original_15_alerts_sha256": "309b4f270e1d0d6382b7a90ae64c28d7621f96fbf3177a45aaebbffb0f958acb",
+  "future_2027_original_forecast_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "future_2027_outcomes_resolved": 0,
+  "future_2027_shadow_sha256": "52686923315854557a796f8f192d376dab77a4e03b14c1aeb6b4091e48104f90",
+  "historic_country_risk_eligible_only_if_origin_and_target_observed": true,
+  "horizon": 2,
+  "issued_forecasts_probabilities_modified": false,
+  "limitations": "This checks chronological parameter fitting inside each retrospectively revised edition, NOT historical real-time information availability or predictions actually published in those years. The fixed lambda=5 and alpha family arose after inspecting 2018-20, 2024 and 2025 data, so no retrospective year is a pristine confirmation of this specification. 30 year-vintage rows contain only 9 distinct target years with historical eligible subsets of the frozen 196 GWNO, repeated countries and highly correlated UCDP editions. Report per-year sign reversals and release disagreements, but no IID uncertainty, hypothesis-test p-values, or 2027 outcome scores. Cross-release earlier backtests are distinct and remain immutable.",
+  "model_family": "original GEO Markov H2 logit offset + ridge5 historical log1p intercept and active/inactive coefficients",
+  "new_forecast_issued": false,
+  "no_annual_historical_forecast_actually_issued": true,
+  "no_missing_historical_country_imputed_negative": true,
+  "not_independent_holdout_or_prospective_test": true,
+  "ridge_fixed_5_from_2026_exploratory_study_not_historiographically_issued": true,
+  "rolling_result": {
+    "by_version": {
+      "23.1": {
+        "annual": [
+          {
+            "alpha1_minus_alpha0_delta_Brier": 0.000110299112,
+            "alpha1_vs_alpha0_brier_winner": "inactive_removed_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.031250611573322075,
+                "logloss": 0.12686709391995846
+              },
+              "0.25": {
+                "brier": 0.03126101311168,
+                "logloss": 0.12683915656157288
+              },
+              "0.5": {
+                "brier": 0.031281885126445357,
+                "logloss": 0.12683885439044953
+              },
+              "0.75": {
+                "brier": 0.03131468440103014,
+                "logloss": 0.1268682144873588
+              },
+              "1.0": {
+                "brier": 0.031360910685076016,
+                "logloss": 0.12692931561889031
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.091061857274,
+                0.641000526036,
+                0.985020914597
+              ],
+              "fit_target_years": [
+                2012,
+                2015
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2015,
+              "last_label_year_not_in_model": 2016,
+              "max_supervised_training_label_year": 2015,
+              "max_training_feature_year": 2013,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2017,
+              "training_n": 782,
+              "training_positives": 112
+            },
+            "forecast_origin_year": 2015,
+            "frozen_original_GEO_Brier": 0.03561678707102426,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 162,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 32,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2022,
+            "source_version": "23.1",
+            "target_year": 2017
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.000942346939,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.04832954099362422,
+                "logloss": 0.1696019828233793
+              },
+              "0.25": {
+                "brier": 0.04808589676736074,
+                "logloss": 0.16886478226845453
+              },
+              "0.5": {
+                "brier": 0.04784367870163569,
+                "logloss": 0.16820056927974156
+              },
+              "0.75": {
+                "brier": 0.04760856907826554,
+                "logloss": 0.16761560293723912
+              },
+              "1.0": {
+                "brier": 0.047387194054881704,
+                "logloss": 0.1671161843993123
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.051750367396,
+                0.705622741389,
+                1.030560824268
+              ],
+              "fit_target_years": [
+                2012,
+                2016
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2016,
+              "last_label_year_not_in_model": 2017,
+              "max_supervised_training_label_year": 2016,
+              "max_training_feature_year": 2014,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2018,
+              "training_n": 978,
+              "training_positives": 148
+            },
+            "forecast_origin_year": 2016,
+            "frozen_original_GEO_Brier": 0.05135552115747366,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 160,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 32,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2022,
+            "source_version": "23.1",
+            "target_year": 2018
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.001025379007,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.04527314779692737,
+                "logloss": 0.16867257046135498
+              },
+              "0.25": {
+                "brier": 0.04502410502396939,
+                "logloss": 0.16684663719328605
+              },
+              "0.5": {
+                "brier": 0.04476593925361666,
+                "logloss": 0.16511451660324522
+              },
+              "0.75": {
+                "brier": 0.04450471583398468,
+                "logloss": 0.16348603243382154
+              },
+              "1.0": {
+                "brier": 0.04424776878974517,
+                "logloss": 0.16197126094583955
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.125469806381,
+                0.731270799609,
+                1.221090457775
+              ],
+              "fit_target_years": [
+                2012,
+                2017
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2017,
+              "last_label_year_not_in_model": 2018,
+              "max_supervised_training_label_year": 2017,
+              "max_training_feature_year": 2015,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2019,
+              "training_n": 1174,
+              "training_positives": 180
+            },
+            "forecast_origin_year": 2017,
+            "frozen_original_GEO_Brier": 0.04892328502934742,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 164,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 31,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2022,
+            "source_version": "23.1",
+            "target_year": 2019
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.00191983654,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.028975024301945967,
+                "logloss": 0.12257163517478799
+              },
+              "0.25": {
+                "brier": 0.028529909906659157,
+                "logloss": 0.12094638427026573
+              },
+              "0.5": {
+                "brier": 0.028056456135617577,
+                "logloss": 0.11942414909362481
+              },
+              "0.75": {
+                "brier": 0.02756155656371291,
+                "logloss": 0.11801731166302318
+              },
+              "1.0": {
+                "brier": 0.027055187761569042,
+                "logloss": 0.11673899682353495
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.203539621727,
+                0.839220137606,
+                1.366809736317
+              ],
+              "fit_target_years": [
+                2012,
+                2018
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2018,
+              "last_label_year_not_in_model": 2019,
+              "max_supervised_training_label_year": 2018,
+              "max_training_feature_year": 2016,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2020,
+              "training_n": 1370,
+              "training_positives": 212
+            },
+            "forecast_origin_year": 2018,
+            "frozen_original_GEO_Brier": 0.03330070446730656,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 164,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 34,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2022,
+            "source_version": "23.1",
+            "target_year": 2020
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.001489934039,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.03216723688078933,
+                "logloss": 0.12845451655718687
+              },
+              "0.25": {
+                "brier": 0.03177264620029782,
+                "logloss": 0.1264062709350924
+              },
+              "0.5": {
+                "brier": 0.03137696142467139,
+                "logloss": 0.12459835741234403
+              },
+              "0.75": {
+                "brier": 0.031002595063064155,
+                "logloss": 0.12306645890833165
+              },
+              "1.0": {
+                "brier": 0.030677302841731115,
+                "logloss": 0.12184776732302127
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.255322013652,
+                1.031955772231,
+                1.486543227299
+              ],
+              "fit_target_years": [
+                2012,
+                2019
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2019,
+              "last_label_year_not_in_model": 2020,
+              "max_supervised_training_label_year": 2019,
+              "max_training_feature_year": 2017,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2021,
+              "training_n": 1566,
+              "training_positives": 243
+            },
+            "forecast_origin_year": 2019,
+            "frozen_original_GEO_Brier": 0.036142772437683164,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 165,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 32,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2022,
+            "source_version": "23.1",
+            "target_year": 2021
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.001810027134,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.05404624357340109,
+                "logloss": 0.19974332205638418
+              },
+              "0.25": {
+                "brier": 0.053543565317624574,
+                "logloss": 0.19732329656493994
+              },
+              "0.5": {
+                "brier": 0.05305177169018874,
+                "logloss": 0.1951584363722532
+              },
+              "0.75": {
+                "brier": 0.05260396039631041,
+                "logloss": 0.19328655424859684
+              },
+              "1.0": {
+                "brier": 0.052236216439131976,
+                "logloss": 0.19174392434529877
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.274855413347,
+                1.144858651553,
+                1.63317726472
+              ],
+              "fit_target_years": [
+                2012,
+                2020
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2020,
+              "last_label_year_not_in_model": 2021,
+              "max_supervised_training_label_year": 2020,
+              "max_training_feature_year": 2018,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2022,
+              "training_n": 1762,
+              "training_positives": 277
+            },
+            "forecast_origin_year": 2020,
+            "frozen_original_GEO_Brier": 0.05839258424115055,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 162,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 37,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2022,
+            "source_version": "23.1",
+            "target_year": 2022
+          }
+        ],
+        "annual_years": [
+          2017,
+          2022
+        ],
+        "edition_year_through": 2022,
+        "mean_annual_Brier_by_alpha_endpoints": {
+          "0.0": 0.04000696752000168,
+          "1.0": 0.03882743009535584
+        },
+        "n_unique_annual_years": 6,
+        "source_SHA256": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+        "year_block_brier_sign_flips": 1,
+        "years_full_intensity_better": [
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "years_inactive_removed_better": [
+          2017
+        ]
+      },
+      "24.1": {
+        "annual": [
+          {
+            "alpha1_minus_alpha0_delta_Brier": 0.000105305695,
+            "alpha1_vs_alpha0_brier_winner": "inactive_removed_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.03117644053815978,
+                "logloss": 0.12674595826036314
+              },
+              "0.25": {
+                "brier": 0.031186185103819264,
+                "logloss": 0.12671626058724492
+              },
+              "0.5": {
+                "brier": 0.031206042994292728,
+                "logloss": 0.12671338668194715
+              },
+              "0.75": {
+                "brier": 0.03123741519329977,
+                "logloss": 0.12673928745815652
+              },
+              "1.0": {
+                "brier": 0.03128174623291341,
+                "logloss": 0.12679596434280815
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.100857598864,
+                0.633340786159,
+                0.986489517168
+              ],
+              "fit_target_years": [
+                2012,
+                2015
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2015,
+              "last_label_year_not_in_model": 2016,
+              "max_supervised_training_label_year": 2015,
+              "max_training_feature_year": 2013,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2017,
+              "training_n": 782,
+              "training_positives": 112
+            },
+            "forecast_origin_year": 2015,
+            "frozen_original_GEO_Brier": 0.03553280211515481,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 162,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 32,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2023,
+            "source_version": "24.1",
+            "target_year": 2017
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.000936063207,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.04819698809821472,
+                "logloss": 0.16938937969851128
+              },
+              "0.25": {
+                "brier": 0.04795573132211625,
+                "logloss": 0.16865494649074
+              },
+              "0.5": {
+                "brier": 0.047715516983704284,
+                "logloss": 0.16799163658447835
+              },
+              "0.75": {
+                "brier": 0.0474817935632115,
+                "logloss": 0.16740551830252065
+              },
+              "1.0": {
+                "brier": 0.04726092489140385,
+                "logloss": 0.16690270877321003
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.061814599394,
+                0.698582405015,
+                1.033840420479
+              ],
+              "fit_target_years": [
+                2012,
+                2016
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2016,
+              "last_label_year_not_in_model": 2017,
+              "max_supervised_training_label_year": 2016,
+              "max_training_feature_year": 2014,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2018,
+              "training_n": 978,
+              "training_positives": 148
+            },
+            "forecast_origin_year": 2016,
+            "frozen_original_GEO_Brier": 0.05127041907224743,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 160,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 32,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2023,
+            "source_version": "24.1",
+            "target_year": 2018
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.001021348303,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.04511766873118367,
+                "logloss": 0.16837471193451822
+              },
+              "0.25": {
+                "brier": 0.044870267152798834,
+                "logloss": 0.16655833629951552
+              },
+              "0.5": {
+                "brier": 0.04461347676215596,
+                "logloss": 0.1648337077813126
+              },
+              "0.75": {
+                "brier": 0.044353133309769005,
+                "logloss": 0.16321039887596872
+              },
+              "1.0": {
+                "brier": 0.04409632042812021,
+                "logloss": 0.16169823874425454
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.135801896538,
+                0.725322888468,
+                1.22539775108
+              ],
+              "fit_target_years": [
+                2012,
+                2017
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2017,
+              "last_label_year_not_in_model": 2018,
+              "max_supervised_training_label_year": 2017,
+              "max_training_feature_year": 2015,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2019,
+              "training_n": 1174,
+              "training_positives": 180
+            },
+            "forecast_origin_year": 2017,
+            "frozen_original_GEO_Brier": 0.048838306053497774,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 164,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 31,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2023,
+            "source_version": "24.1",
+            "target_year": 2019
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.002057264468,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.02893539019191414,
+                "logloss": 0.12255673504878158
+              },
+              "0.25": {
+                "brier": 0.028456101105890957,
+                "logloss": 0.12083259665106266
+              },
+              "0.5": {
+                "brier": 0.02794753540995624,
+                "logloss": 0.11922039885399216
+              },
+              "0.75": {
+                "brier": 0.027417768740083552,
+                "logloss": 0.11773347846791644
+              },
+              "1.0": {
+                "brier": 0.026878125723441965,
+                "logloss": 0.1163859023128113
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.213933567544,
+                0.834674944642,
+                1.371667094436
+              ],
+              "fit_target_years": [
+                2012,
+                2018
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2018,
+              "last_label_year_not_in_model": 2019,
+              "max_supervised_training_label_year": 2018,
+              "max_training_feature_year": 2016,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2020,
+              "training_n": 1370,
+              "training_positives": 212
+            },
+            "forecast_origin_year": 2018,
+            "frozen_original_GEO_Brier": 0.03322299104627489,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 164,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 34,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2023,
+            "source_version": "24.1",
+            "target_year": 2020
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.001494724191,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.03206443557674839,
+                "logloss": 0.12827830465476645
+              },
+              "0.25": {
+                "brier": 0.03167068034267498,
+                "logloss": 0.12622507921271078
+              },
+              "0.5": {
+                "brier": 0.03127478243185522,
+                "logloss": 0.12440931013539731
+              },
+              "0.75": {
+                "brier": 0.030898691896637867,
+                "logloss": 0.12286631439677637
+              },
+              "1.0": {
+                "brier": 0.03056971138562983,
+                "logloss": 0.12163295717605493
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.266378637535,
+                1.02912931429,
+                1.493535146796
+              ],
+              "fit_target_years": [
+                2012,
+                2019
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2019,
+              "last_label_year_not_in_model": 2020,
+              "max_supervised_training_label_year": 2019,
+              "max_training_feature_year": 2017,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2021,
+              "training_n": 1566,
+              "training_positives": 243
+            },
+            "forecast_origin_year": 2019,
+            "frozen_original_GEO_Brier": 0.036068414927035844,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 165,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 32,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2023,
+            "source_version": "24.1",
+            "target_year": 2021
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.001819869272,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.05393974526970598,
+                "logloss": 0.1994840997166242
+              },
+              "0.25": {
+                "brier": 0.0534363632997281,
+                "logloss": 0.19704782785056207
+              },
+              "0.5": {
+                "brier": 0.05294265882657653,
+                "logloss": 0.19486633212550555
+              },
+              "0.75": {
+                "brier": 0.05249172931003994,
+                "logloss": 0.19297769723491925
+              },
+              "1.0": {
+                "brier": 0.05211987599783838,
+                "logloss": 0.19141854849358586
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.28703026788,
+                1.147552674834,
+                1.641340190928
+              ],
+              "fit_target_years": [
+                2012,
+                2020
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2020,
+              "last_label_year_not_in_model": 2021,
+              "max_supervised_training_label_year": 2020,
+              "max_training_feature_year": 2018,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2022,
+              "training_n": 1762,
+              "training_positives": 277
+            },
+            "forecast_origin_year": 2020,
+            "frozen_original_GEO_Brier": 0.05831693718691104,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 162,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 37,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2023,
+            "source_version": "24.1",
+            "target_year": 2022
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.000869701443,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.035054133508103956,
+                "logloss": 0.14148435648988664
+              },
+              "0.25": {
+                "brier": 0.03466218055302595,
+                "logloss": 0.13987885293990007
+              },
+              "0.5": {
+                "brier": 0.03433961643304011,
+                "logloss": 0.13867315878231173
+              },
+              "0.75": {
+                "brier": 0.03415412034961226,
+                "logloss": 0.13794206152605082
+              },
+              "1.0": {
+                "brier": 0.03418443206503092,
+                "logloss": 0.1377637568164769
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.319276902282,
+                1.232561415123,
+                1.751847042042
+              ],
+              "fit_target_years": [
+                2012,
+                2021
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2021,
+              "last_label_year_not_in_model": 2022,
+              "max_supervised_training_label_year": 2021,
+              "max_training_feature_year": 2019,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2023,
+              "training_n": 1958,
+              "training_positives": 309
+            },
+            "forecast_origin_year": 2021,
+            "frozen_original_GEO_Brier": 0.038813633992709,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 164,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 34,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2023,
+            "source_version": "24.1",
+            "target_year": 2023
+          }
+        ],
+        "annual_years": [
+          2017,
+          2023
+        ],
+        "edition_year_through": 2023,
+        "mean_annual_Brier_by_alpha_endpoints": {
+          "0.0": 0.039212114559147235,
+          "1.0": 0.03805587667491122
+        },
+        "n_unique_annual_years": 7,
+        "source_SHA256": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+        "year_block_brier_sign_flips": 1,
+        "years_full_intensity_better": [
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023
+        ],
+        "years_inactive_removed_better": [
+          2017
+        ]
+      },
+      "25.1": {
+        "annual": [
+          {
+            "alpha1_minus_alpha0_delta_Brier": 0.000105303515,
+            "alpha1_vs_alpha0_brier_winner": "inactive_removed_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.031181562239646406,
+                "logloss": 0.12675531994214484
+              },
+              "0.25": {
+                "brier": 0.031191306139722923,
+                "logloss": 0.12672561844446878
+              },
+              "0.5": {
+                "brier": 0.031211163420263185,
+                "logloss": 0.126722741034398
+              },
+              "0.75": {
+                "brier": 0.0312425351010535,
+                "logloss": 0.12674863867879252
+              },
+              "1.0": {
+                "brier": 0.031286865754422646,
+                "logloss": 0.1268053128609611
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.100871234428,
+                0.633347293883,
+                0.98651216246
+              ],
+              "fit_target_years": [
+                2012,
+                2015
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2015,
+              "last_label_year_not_in_model": 2016,
+              "max_supervised_training_label_year": 2015,
+              "max_training_feature_year": 2013,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2017,
+              "training_n": 782,
+              "training_positives": 112
+            },
+            "forecast_origin_year": 2015,
+            "frozen_original_GEO_Brier": 0.03553280211515481,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 162,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 32,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2024,
+            "source_version": "25.1",
+            "target_year": 2017
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.000936073474,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.05153874929875931,
+                "logloss": 0.17740729107904976
+              },
+              "0.25": {
+                "brier": 0.05129749040002386,
+                "logloss": 0.17667284593761368
+              },
+              "0.5": {
+                "brier": 0.05105727358320506,
+                "logloss": 0.1760095248770638
+              },
+              "0.75": {
+                "brier": 0.050823547408613653,
+                "logloss": 0.17542339637085386
+              },
+              "1.0": {
+                "brier": 0.05060267582486585,
+                "logloss": 0.17492057770616715
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.061825948178,
+                0.69858842931,
+                1.033857194855
+              ],
+              "fit_target_years": [
+                2012,
+                2016
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2016,
+              "last_label_year_not_in_model": 2017,
+              "max_supervised_training_label_year": 2016,
+              "max_training_feature_year": 2014,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2018,
+              "training_n": 978,
+              "training_positives": 148
+            },
+            "forecast_origin_year": 2016,
+            "frozen_original_GEO_Brier": 0.05458850381370661,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 160,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 33,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2024,
+            "source_version": "25.1",
+            "target_year": 2018
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.001380885393,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.05216377064475281,
+                "logloss": 0.1857028648803687
+              },
+              "0.25": {
+                "brier": 0.051831821912699284,
+                "logloss": 0.18357452568686325
+              },
+              "0.5": {
+                "brier": 0.051486958160908036,
+                "logloss": 0.18153793383716915
+              },
+              "0.75": {
+                "brier": 0.051134964894143764,
+                "logloss": 0.17960266187902152
+              },
+              "1.0": {
+                "brier": 0.05078288525137819,
+                "logloss": 0.1777785390302138
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.135804512326,
+                0.725324342013,
+                1.22503960262
+              ],
+              "fit_target_years": [
+                2012,
+                2017
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2017,
+              "last_label_year_not_in_model": 2018,
+              "max_supervised_training_label_year": 2017,
+              "max_training_feature_year": 2015,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2019,
+              "training_n": 1174,
+              "training_positives": 180
+            },
+            "forecast_origin_year": 2017,
+            "frozen_original_GEO_Brier": 0.05550980047957941,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 164,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 33,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2024,
+            "source_version": "25.1",
+            "target_year": 2019
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.002038734529,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.02959705576502488,
+                "logloss": 0.12444908975675414
+              },
+              "0.25": {
+                "brier": 0.029120593549068957,
+                "logloss": 0.12275415374368742
+              },
+              "0.5": {
+                "brier": 0.028616088644657825,
+                "logloss": 0.12116997113515494
+              },
+              "0.75": {
+                "brier": 0.028091600769422517,
+                "logloss": 0.11970952664330003
+              },
+              "1.0": {
+                "brier": 0.027558321235867198,
+                "logloss": 0.11838649028870742
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.199456820612,
+                0.825946442321,
+                1.359191389407
+              ],
+              "fit_target_years": [
+                2012,
+                2018
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2018,
+              "last_label_year_not_in_model": 2019,
+              "max_supervised_training_label_year": 2018,
+              "max_training_feature_year": 2016,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2020,
+              "training_n": 1370,
+              "training_positives": 213
+            },
+            "forecast_origin_year": 2018,
+            "frozen_original_GEO_Brier": 0.03344736040858666,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 163,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 35,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2024,
+            "source_version": "25.1",
+            "target_year": 2020
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.000326103767,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.0312601055467264,
+                "logloss": 0.12646894802914596
+              },
+              "0.25": {
+                "brier": 0.03112956627045468,
+                "logloss": 0.12528165035313849
+              },
+              "0.5": {
+                "brier": 0.031020686619067157,
+                "logloss": 0.12428898766755649
+              },
+              "0.75": {
+                "brier": 0.030949291071364043,
+                "logloss": 0.12352106045114629
+              },
+              "1.0": {
+                "brier": 0.030934001779350448,
+                "logloss": 0.12300964474228743
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.228382922911,
+                1.037785748494,
+                1.45775028485
+              ],
+              "fit_target_years": [
+                2012,
+                2019
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2019,
+              "last_label_year_not_in_model": 2020,
+              "max_supervised_training_label_year": 2019,
+              "max_training_feature_year": 2017,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2021,
+              "training_n": 1566,
+              "training_positives": 246
+            },
+            "forecast_origin_year": 2019,
+            "frozen_original_GEO_Brier": 0.03541349583688239,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 163,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 32,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2024,
+            "source_version": "25.1",
+            "target_year": 2021
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.000251424812,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.050673291415606586,
+                "logloss": 0.19086342035432197
+              },
+              "0.25": {
+                "brier": 0.050513511583781985,
+                "logloss": 0.18959533715944507
+              },
+              "0.5": {
+                "brier": 0.050404534076778335,
+                "logloss": 0.18852604969780856
+              },
+              "0.75": {
+                "brier": 0.0503677067919173,
+                "logloss": 0.18768399260464466
+              },
+              "1.0": {
+                "brier": 0.050421866603463934,
+                "logloss": 0.18709658707809962
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.245312451768,
+                1.148253476072,
+                1.593809583809
+              ],
+              "fit_target_years": [
+                2012,
+                2020
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2020,
+              "last_label_year_not_in_model": 2021,
+              "max_supervised_training_label_year": 2020,
+              "max_training_feature_year": 2018,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2022,
+              "training_n": 1762,
+              "training_positives": 281
+            },
+            "forecast_origin_year": 2020,
+            "frozen_original_GEO_Brier": 0.05517861073398192,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 161,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 37,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2024,
+            "source_version": "25.1",
+            "target_year": 2022
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.00064219144,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.034840529859048626,
+                "logloss": 0.14130835081256382
+              },
+              "0.25": {
+                "brier": 0.03449313341606051,
+                "logloss": 0.13986609028755537
+              },
+              "0.5": {
+                "brier": 0.03422643450355923,
+                "logloss": 0.13881831736744732
+              },
+              "0.75": {
+                "brier": 0.03410427602061927,
+                "logloss": 0.13823406174386058
+              },
+              "1.0": {
+                "brier": 0.034198338418705815,
+                "logloss": 0.13818447776354637
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.284126848931,
+                1.195418184438,
+                1.703448818999
+              ],
+              "fit_target_years": [
+                2012,
+                2021
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2021,
+              "last_label_year_not_in_model": 2022,
+              "max_supervised_training_label_year": 2021,
+              "max_training_feature_year": 2019,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2023,
+              "training_n": 1958,
+              "training_positives": 313
+            },
+            "forecast_origin_year": 2021,
+            "frozen_original_GEO_Brier": 0.03869296790293525,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 164,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 34,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2024,
+            "source_version": "25.1",
+            "target_year": 2023
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.000803710207,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.039019022011113166,
+                "logloss": 0.14025923579746633
+              },
+              "0.25": {
+                "brier": 0.03875501472988028,
+                "logloss": 0.13875038930696262
+              },
+              "0.5": {
+                "brier": 0.03850991554883695,
+                "logloss": 0.13753877456988722
+              },
+              "0.75": {
+                "brier": 0.038316986598181446,
+                "logloss": 0.13667097532537234
+              },
+              "1.0": {
+                "brier": 0.03821531180369779,
+                "logloss": 0.136194361395944
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.287030208893,
+                1.222582537319,
+                1.768180756381
+              ],
+              "fit_target_years": [
+                2012,
+                2022
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2022,
+              "last_label_year_not_in_model": 2023,
+              "max_supervised_training_label_year": 2022,
+              "max_training_feature_year": 2020,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2024,
+              "training_n": 2154,
+              "training_positives": 350
+            },
+            "forecast_origin_year": 2022,
+            "frozen_original_GEO_Brier": 0.041058122249592086,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 159,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 35,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2024,
+            "source_version": "25.1",
+            "target_year": 2024
+          }
+        ],
+        "annual_years": [
+          2017,
+          2024
+        ],
+        "edition_year_through": 2024,
+        "mean_annual_Brier_by_alpha_endpoints": {
+          "0.0": 0.040034260847584775,
+          "1.0": 0.03925003333396898
+        },
+        "n_unique_annual_years": 8,
+        "source_SHA256": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+        "year_block_brier_sign_flips": 1,
+        "years_full_intensity_better": [
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "years_inactive_removed_better": [
+          2017
+        ]
+      },
+      "26.1": {
+        "annual": [
+          {
+            "alpha1_minus_alpha0_delta_Brier": 0.000111462831,
+            "alpha1_vs_alpha0_brier_winner": "inactive_removed_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.027238906007209428,
+                "logloss": 0.11629618021813938
+              },
+              "0.25": {
+                "brier": 0.027248986669083985,
+                "logloss": 0.11626524119876715
+              },
+              "0.5": {
+                "brier": 0.027269884349221517,
+                "logloss": 0.11626296813910682
+              },
+              "0.75": {
+                "brier": 0.027303146510565285,
+                "logloss": 0.11629151560263024
+              },
+              "1.0": {
+                "brier": 0.027350368838034468,
+                "logloss": 0.11635309506168265
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.103389468911,
+                0.654509195809,
+                0.991084474135
+              ],
+              "fit_target_years": [
+                2012,
+                2015
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2015,
+              "last_label_year_not_in_model": 2016,
+              "max_supervised_training_label_year": 2015,
+              "max_training_feature_year": 2013,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2017,
+              "training_n": 782,
+              "training_positives": 112
+            },
+            "forecast_origin_year": 2015,
+            "frozen_original_GEO_Brier": 0.03187065276630349,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 162,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 33,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2025,
+            "source_version": "26.1",
+            "target_year": 2017
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.000961795223,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.05149535433333189,
+                "logloss": 0.17726159813992537
+              },
+              "0.25": {
+                "brier": 0.05124688112563876,
+                "logloss": 0.1765052406217798
+              },
+              "0.5": {
+                "brier": 0.050999598107700155,
+                "logloss": 0.17582441282822797
+              },
+              "0.75": {
+                "brier": 0.05075948843157117,
+                "logloss": 0.1752257453897435
+              },
+              "1.0": {
+                "brier": 0.050533559110456976,
+                "logloss": 0.17471591810523124
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.063810736509,
+                0.719430810562,
+                1.036924722052
+              ],
+              "fit_target_years": [
+                2012,
+                2016
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2016,
+              "last_label_year_not_in_model": 2017,
+              "max_supervised_training_label_year": 2016,
+              "max_training_feature_year": 2014,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2018,
+              "training_n": 978,
+              "training_positives": 148
+            },
+            "forecast_origin_year": 2016,
+            "frozen_original_GEO_Brier": 0.05453436826703179,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 160,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 33,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2025,
+            "source_version": "26.1",
+            "target_year": 2018
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.000935522916,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.04759689762062399,
+                "logloss": 0.17119108686560564
+              },
+              "0.25": {
+                "brier": 0.04735211256100874,
+                "logloss": 0.16989723758796568
+              },
+              "0.5": {
+                "brier": 0.04710921066198128,
+                "logloss": 0.16868961458992524
+              },
+              "0.75": {
+                "brier": 0.04687597289179389,
+                "logloss": 0.16757671909455132
+              },
+              "1.0": {
+                "brier": 0.04666137470417832,
+                "logloss": 0.1665670944639692
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.125765268061,
+                0.738546827629,
+                1.246400045845
+              ],
+              "fit_target_years": [
+                2012,
+                2017
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2017,
+              "last_label_year_not_in_model": 2018,
+              "max_supervised_training_label_year": 2017,
+              "max_training_feature_year": 2015,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2019,
+              "training_n": 1174,
+              "training_positives": 181
+            },
+            "forecast_origin_year": 2017,
+            "frozen_original_GEO_Brier": 0.05101587569183387,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 163,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 33,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2025,
+            "source_version": "26.1",
+            "target_year": 2019
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.002071531023,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.029392924500555497,
+                "logloss": 0.12373040932075544
+              },
+              "0.25": {
+                "brier": 0.028908184585399465,
+                "logloss": 0.12201661322582506
+              },
+              "0.5": {
+                "brier": 0.028395039249647785,
+                "logloss": 0.12041768470182579
+              },
+              "0.75": {
+                "brier": 0.027862119953245983,
+                "logloss": 0.11894724529762504
+              },
+              "1.0": {
+                "brier": 0.02732139347753099,
+                "logloss": 0.11761962675876464
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.190711002371,
+                0.838240109251,
+                1.378081538467
+              ],
+              "fit_target_years": [
+                2012,
+                2018
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2018,
+              "last_label_year_not_in_model": 2019,
+              "max_supervised_training_label_year": 2018,
+              "max_training_feature_year": 2016,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2020,
+              "training_n": 1370,
+              "training_positives": 214
+            },
+            "forecast_origin_year": 2018,
+            "frozen_original_GEO_Brier": 0.033256995749912664,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 163,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 35,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2025,
+            "source_version": "26.1",
+            "target_year": 2020
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.000323694611,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.031142406155739818,
+                "logloss": 0.12599330886304114
+              },
+              "0.25": {
+                "brier": 0.031021379016827354,
+                "logloss": 0.12488719041451526
+              },
+              "0.5": {
+                "brier": 0.030918429980289625,
+                "logloss": 0.12394749495145185
+              },
+              "0.75": {
+                "brier": 0.030846008700989965,
+                "logloss": 0.12319817484444978
+              },
+              "1.0": {
+                "brier": 0.030818711544730457,
+                "logloss": 0.1226645086805976
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.223718240237,
+                0.963831981096,
+                1.47915248522
+              ],
+              "fit_target_years": [
+                2012,
+                2019
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2019,
+              "last_label_year_not_in_model": 2020,
+              "max_supervised_training_label_year": 2019,
+              "max_training_feature_year": 2017,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2021,
+              "training_n": 1566,
+              "training_positives": 247
+            },
+            "forecast_origin_year": 2019,
+            "frozen_original_GEO_Brier": 0.03526214924348863,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 163,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 32,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2025,
+            "source_version": "26.1",
+            "target_year": 2021
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.000335871015,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.05059470073342853,
+                "logloss": 0.19047973685036165
+              },
+              "0.25": {
+                "brier": 0.050427563950170444,
+                "logloss": 0.1892402542977009
+              },
+              "0.5": {
+                "brier": 0.05030364001049883,
+                "logloss": 0.18817981096181371
+              },
+              "0.75": {
+                "brier": 0.05024165837995001,
+                "logloss": 0.18732261962665162
+              },
+              "1.0": {
+                "brier": 0.050258829718002426,
+                "logloss": 0.18669217374772115
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.240900409916,
+                1.081754342746,
+                1.612586949056
+              ],
+              "fit_target_years": [
+                2012,
+                2020
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2020,
+              "last_label_year_not_in_model": 2021,
+              "max_supervised_training_label_year": 2020,
+              "max_training_feature_year": 2018,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2022,
+              "training_n": 1762,
+              "training_positives": 282
+            },
+            "forecast_origin_year": 2020,
+            "frozen_original_GEO_Brier": 0.055060596237483855,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 161,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 37,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2025,
+            "source_version": "26.1",
+            "target_year": 2022
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.00067583066,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.03475813916292902,
+                "logloss": 0.14094392876545445
+              },
+              "0.25": {
+                "brier": 0.034427802584597086,
+                "logloss": 0.13957100229706418
+              },
+              "0.5": {
+                "brier": 0.03416796691281187,
+                "logloss": 0.13855052043037933
+              },
+              "0.75": {
+                "brier": 0.034032524661227095,
+                "logloss": 0.13794119480323982
+              },
+              "1.0": {
+                "brier": 0.03408230850262941,
+                "logloss": 0.13780368334161044
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.280033785158,
+                1.133878108422,
+                1.71968586658
+              ],
+              "fit_target_years": [
+                2012,
+                2021
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2021,
+              "last_label_year_not_in_model": 2022,
+              "max_supervised_training_label_year": 2021,
+              "max_training_feature_year": 2019,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2023,
+              "training_n": 1958,
+              "training_positives": 314
+            },
+            "forecast_origin_year": 2021,
+            "frozen_original_GEO_Brier": 0.038567353660066576,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 164,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 34,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2025,
+            "source_version": "26.1",
+            "target_year": 2023
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": -0.000787886825,
+            "alpha1_vs_alpha0_brier_winner": "full_intensity_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.03899593005094206,
+                "logloss": 0.1400164604910176
+              },
+              "0.25": {
+                "brier": 0.038744583926053865,
+                "logloss": 0.13857282233291318
+              },
+              "0.5": {
+                "brier": 0.038509608005874524,
+                "logloss": 0.13739836270423067
+              },
+              "0.75": {
+                "brier": 0.03831955027632723,
+                "logloss": 0.13653347652131378
+              },
+              "1.0": {
+                "brier": 0.03820804322603636,
+                "logloss": 0.1360193473797284
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.2836271096,
+                1.166880242907,
+                1.782845119901
+              ],
+              "fit_target_years": [
+                2012,
+                2022
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2022,
+              "last_label_year_not_in_model": 2023,
+              "max_supervised_training_label_year": 2022,
+              "max_training_feature_year": 2020,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2024,
+              "training_n": 2154,
+              "training_positives": 351
+            },
+            "forecast_origin_year": 2022,
+            "frozen_original_GEO_Brier": 0.04095535264240852,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 159,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 35,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2025,
+            "source_version": "26.1",
+            "target_year": 2024
+          },
+          {
+            "alpha1_minus_alpha0_delta_Brier": 0.000619652368,
+            "alpha1_vs_alpha0_brier_winner": "inactive_removed_better",
+            "by_alpha": {
+              "0.0": {
+                "brier": 0.035967814954848965,
+                "logloss": 0.14009697045807115
+              },
+              "0.25": {
+                "brier": 0.03603755122842811,
+                "logloss": 0.1402663614934318
+              },
+              "0.5": {
+                "brier": 0.03615044899878578,
+                "logloss": 0.14057341465519682
+              },
+              "0.75": {
+                "brier": 0.03632568760526059,
+                "logloss": 0.1410455161779533
+              },
+              "1.0": {
+                "brier": 0.03658746732307051,
+                "logloss": 0.1417130173857492
+              }
+            },
+            "fit": {
+              "alpha_grid_not_fitted_or_selected": true,
+              "coefficients": [
+                -0.300671002367,
+                1.172083522769,
+                1.859598948533
+              ],
+              "fit_target_years": [
+                2012,
+                2023
+              ],
+              "fixed_ridge": 5.0,
+              "forecast_origin_year": 2023,
+              "last_label_year_not_in_model": 2024,
+              "max_supervised_training_label_year": 2023,
+              "max_training_feature_year": 2021,
+              "new_beta_for_each_year": true,
+              "score_target_year": 2025,
+              "training_n": 2350,
+              "training_positives": 385
+            },
+            "forecast_origin_year": 2023,
+            "frozen_original_GEO_Brier": 0.038527237002733354,
+            "historical_fixed_196_countries_not_imputed_as_inactive": true,
+            "historical_missing_origin_or_label_n": 0,
+            "not_contemporaneous_originally_issued": true,
+            "origin_inactive_n": 162,
+            "outcome_from_same_retrospectively_revised_edition": true,
+            "positive_outcomes": 34,
+            "risk_n": 196,
+            "risk_n_of_original_196": 196,
+            "source_release_last_year": 2025,
+            "source_version": "26.1",
+            "target_year": 2025
+          }
+        ],
+        "annual_years": [
+          2017,
+          2025
+        ],
+        "edition_year_through": 2025,
+        "mean_annual_Brier_by_alpha_endpoints": {
+          "0.0": 0.03857589705773436,
+          "1.0": 0.037980228493852214
+        },
+        "n_unique_annual_years": 9,
+        "source_SHA256": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34",
+        "year_block_brier_sign_flips": 2,
+        "years_full_intensity_better": [
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "years_inactive_removed_better": [
+          2017,
+          2025
+        ]
+      }
+    },
+    "n_common_four_edition_years": 6,
+    "n_distinct_target_years": 9,
+    "n_target_years_with_multi_edition_sign_reversal": 0,
+    "n_total_replayed_annual_year_edition_blocks": 30,
+    "same_year_different_edition": [
+      {
+        "delta_Brier_alpha1_minus_alpha0_max": 0.000111462831,
+        "delta_Brier_alpha1_minus_alpha0_min": 0.000105303515,
+        "editions": [
+          {
+            "delta_brier_alpha1_minus_alpha0": 0.000110299112,
+            "version": "23.1",
+            "winner_sign": "inactive_removed_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": 0.000105305695,
+            "version": "24.1",
+            "winner_sign": "inactive_removed_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": 0.000105303515,
+            "version": "25.1",
+            "winner_sign": "inactive_removed_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": 0.000111462831,
+            "version": "26.1",
+            "winner_sign": "inactive_removed_better"
+          }
+        ],
+        "release_count": 4,
+        "revised_edition_sign_disagreement": false,
+        "revisions_span_releases": true,
+        "target_year": 2017
+      },
+      {
+        "delta_Brier_alpha1_minus_alpha0_max": -0.000936063207,
+        "delta_Brier_alpha1_minus_alpha0_min": -0.000961795223,
+        "editions": [
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.000942346939,
+            "version": "23.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.000936063207,
+            "version": "24.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.000936073474,
+            "version": "25.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.000961795223,
+            "version": "26.1",
+            "winner_sign": "full_intensity_better"
+          }
+        ],
+        "release_count": 4,
+        "revised_edition_sign_disagreement": false,
+        "revisions_span_releases": true,
+        "target_year": 2018
+      },
+      {
+        "delta_Brier_alpha1_minus_alpha0_max": -0.000935522916,
+        "delta_Brier_alpha1_minus_alpha0_min": -0.001380885393,
+        "editions": [
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.001025379007,
+            "version": "23.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.001021348303,
+            "version": "24.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.001380885393,
+            "version": "25.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.000935522916,
+            "version": "26.1",
+            "winner_sign": "full_intensity_better"
+          }
+        ],
+        "release_count": 4,
+        "revised_edition_sign_disagreement": false,
+        "revisions_span_releases": true,
+        "target_year": 2019
+      },
+      {
+        "delta_Brier_alpha1_minus_alpha0_max": -0.00191983654,
+        "delta_Brier_alpha1_minus_alpha0_min": -0.002071531023,
+        "editions": [
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.00191983654,
+            "version": "23.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.002057264468,
+            "version": "24.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.002038734529,
+            "version": "25.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.002071531023,
+            "version": "26.1",
+            "winner_sign": "full_intensity_better"
+          }
+        ],
+        "release_count": 4,
+        "revised_edition_sign_disagreement": false,
+        "revisions_span_releases": true,
+        "target_year": 2020
+      },
+      {
+        "delta_Brier_alpha1_minus_alpha0_max": -0.000323694611,
+        "delta_Brier_alpha1_minus_alpha0_min": -0.001494724191,
+        "editions": [
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.001489934039,
+            "version": "23.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.001494724191,
+            "version": "24.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.000326103767,
+            "version": "25.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.000323694611,
+            "version": "26.1",
+            "winner_sign": "full_intensity_better"
+          }
+        ],
+        "release_count": 4,
+        "revised_edition_sign_disagreement": false,
+        "revisions_span_releases": true,
+        "target_year": 2021
+      },
+      {
+        "delta_Brier_alpha1_minus_alpha0_max": -0.000251424812,
+        "delta_Brier_alpha1_minus_alpha0_min": -0.001819869272,
+        "editions": [
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.001810027134,
+            "version": "23.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.001819869272,
+            "version": "24.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.000251424812,
+            "version": "25.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.000335871015,
+            "version": "26.1",
+            "winner_sign": "full_intensity_better"
+          }
+        ],
+        "release_count": 4,
+        "revised_edition_sign_disagreement": false,
+        "revisions_span_releases": true,
+        "target_year": 2022
+      },
+      {
+        "delta_Brier_alpha1_minus_alpha0_max": -0.00064219144,
+        "delta_Brier_alpha1_minus_alpha0_min": -0.000869701443,
+        "editions": [
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.000869701443,
+            "version": "24.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.00064219144,
+            "version": "25.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.00067583066,
+            "version": "26.1",
+            "winner_sign": "full_intensity_better"
+          }
+        ],
+        "release_count": 3,
+        "revised_edition_sign_disagreement": false,
+        "revisions_span_releases": true,
+        "target_year": 2023
+      },
+      {
+        "delta_Brier_alpha1_minus_alpha0_max": -0.000787886825,
+        "delta_Brier_alpha1_minus_alpha0_min": -0.000803710207,
+        "editions": [
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.000803710207,
+            "version": "25.1",
+            "winner_sign": "full_intensity_better"
+          },
+          {
+            "delta_brier_alpha1_minus_alpha0": -0.000787886825,
+            "version": "26.1",
+            "winner_sign": "full_intensity_better"
+          }
+        ],
+        "release_count": 2,
+        "revised_edition_sign_disagreement": false,
+        "revisions_span_releases": true,
+        "target_year": 2024
+      },
+      {
+        "delta_Brier_alpha1_minus_alpha0_max": 0.000619652368,
+        "delta_Brier_alpha1_minus_alpha0_min": 0.000619652368,
+        "editions": [
+          {
+            "delta_brier_alpha1_minus_alpha0": 0.000619652368,
+            "version": "26.1",
+            "winner_sign": "inactive_removed_better"
+          }
+        ],
+        "release_count": 1,
+        "revised_edition_sign_disagreement": false,
+        "revisions_span_releases": false,
+        "target_year": 2025
+      }
+    ],
+    "shared_target_years_across_four_editions": [
+      2017,
+      2022
+    ]
+  },
+  "same_country_year_overlaps_across_vintages": true,
+  "same_edition_retrospective_revisions_make_historical_asof_unverified": true,
+  "schema": "idealab.psico.geo2027_log1p_annual_rolling_h2_vintage_stability.v1",
+  "source_releases_published_after_many_scored_target_years": true,
+  "status": "HISTORICAL_WITHIN_EDITION_POST_HOC_ROLLING_TIME_FORWARD_NONCONFIRMATORY",
+  "training_feature_max_cutoff_is_target_minus_four": true,
+  "training_label_max_cutoff_is_target_minus_two": true,
+  "versions_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  }
+}
