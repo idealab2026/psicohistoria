@@ -128,7 +128,7 @@ def build(raw,original_raw,manifest_raw,prior_raw):
         "issue_class":"SEPARATE_PROSPECTIVE_RESEARCH_SHADOW_NOT_ORIGINAL_2027_ISSUE",
         "publication_date_claim":"NONE_GENERATION_DATE_IS_NOT_PUBLIC_GIT_COMMIT_TIMESTAMP",
         "preparation_calendar_date":PREPARATION_DATE,
-        "status":"PREPARED_PROSPECTIVE_UNRESOLVED_FIRST_COMMIT_PROVES_ISSUANCE",
+        "status":"ISSUED_PROSPECTIVE_UNRESOLVED",
         "source":{"dataset":"UCDP OrganizedViolenceCY","version":"26.1",
                   "sha256":SOURCES["26.1"]["sha256"],
                   "last_observed_year":2025},
