@@ -29,6 +29,47 @@ Esta prueba no es un pipeline completo de Markov global-only más calibrador ree
 
 El resto de las salvaguardas permanece fijo: la familia α=0/1 y λ=5 se definieron después de estudiar históricos; el ajuste de la logística termina en \`t−2\`, las variables de sus filas históricas como máximo en \`t−4\`, y las tres probabilidades Markov del país solo ven información hasta \`t−2\`. Las ediciones UCDP se publicaron después de varios años evaluados y pueden haber revisado retroactivamente los historiales. **Ningún país o año de edición se trata como observación independiente IID**.
 
+## Resultados verificables: influencia local frente a prior global
+
+El informe fuente-auditado reconstruye las **143 comparaciones por país** ya utilizadas en la prueba del calibrador LOG1P excluyente, distribuidas en **13 bloques año–edición** y nueve años objetivos distintos. Las siete pruebas matemáticas pasan, y el escenario Markov original reproduce exactamente el offset original de H2 y el Brier ya publicado en el estudio precedente.
+
+En la versión UCDP **26.1**, la diferencia de Brier **α1−α0** (signo negativo favorece conservar LOG1P continuo) queda así:
+
+| Año | GEO original con historia local | Excluir del prior global, conservar la historia local | Excluir también las transiciones locales | Cambio de signo |
+|---|---:|---:|---:|---|
+| **2017** | +0,000121285 | +0,000119929 | **−0,000052598** | **Sí** |
+| 2018 | −0,001040765 | −0,001041119 | −0,000610676 | No |
+| 2019 | −0,001055160 | −0,001056395 | −0,000868172 | No |
+| 2020 | −0,001918235 | −0,001916797 | −0,000964031 | No |
+| 2021 | −0,000237424 | −0,000240199 | −0,000715833 | No |
+| 2022 | −0,000282796 | −0,000286319 | −0,000749138 | No |
+| 2023 | −0,000610833 | −0,000617021 | −0,000910361 | No |
+| **2024** | −0,000821282 | −0,000825549 | **−0,001144147** | No |
+| **2025** | +0,000634712 | +0,000632571 | **+0,000092863** | No |
+
+La señal LOG1P no se elimina en estos escenarios; la intervención recae exclusivamente sobre el Markov. Los resultados se refieren a **pérdida Brier emparejada de las dos variantes**, no a una nueva emisión. Al quitar las transiciones propias del prior global pero mantener las locales, las diferencias son minúsculas: en los países subumbrales, el desplazamiento Markov absoluto medio es **0,0216 pp (2017)**, **0,0205 pp (2024)** y **0,0154 pp (2025)**. Por tanto, la influencia de esos países sobre el prior global no explica la variación importante.
+
+En cambio, **su historial local sí importa**: respecto al prior global sin el país, conservar las transiciones locales desplaza las probabilidades Markov una media de **4,78 pp en 2017**, **6,89 pp en 2024** y **4,40 pp en 2025**. Los desplazamientos absolutos máximos de los tres años son **18,04 pp**, **21,35 pp** y **13,19 pp**. Estos valores son diferencias de probabilidades Markov, no Brier ni errores de estimación.
+
+### 2017: cambia la conclusión al suprimir el historial local
+
+**Israel** es el principal contribuyente a la inversión de signo. En el origen 2015 registra **10 muertes** (por debajo del umbral 25) y el resultado estatal de 2017 queda por debajo de 25. Su Markov original reconstruido estima **23,75 %**, pero el contrafactual de prior global sin transición local (con estado 2015 aún conocido) estima **5,62 %**. Con los mismos coeficientes LOG1P entrenados sin sus etiquetas, la probabilidad α=1 pasa de **31,84 %** a **8,20 %**. Esto cambia considerablemente la penalización Brier por elevar el riesgo.
+
+El signo del contraste de 2017 pasa de **+0,000121** a **−0,000053** al retirar toda historia local. El resultado aparece también en las cuatro ediciones oficiales 23.1, 24.1, 25.1 y 26.1. No equivale a una demostración de que un modelo global-only reentrenado hubiese acertado mejor: se preservan los coeficientes logísticos anteriores y se impone un offset distinto.
+
+### 2024 y 2025: efectos heterogéneos pero sin inversión
+
+En **2024**, la ventaja Brier de α1 aumenta con el offset global-only, pero la aportación de **Angola** se reduce notablemente: su Markov H2 pasa de **23,86 %** a **5,43 %**, y su LOG1P α1 de **42,33 %** a **11,86 %**; como sí cruza el umbral en el resultado, el decremento de esa probabilidad puede ser perjudicial individualmente. Sin embargo, también se reducen riesgos excesivos para países que no se activaron, como **Burundi**, cuyo Markov pasa de **26,80 %** a **5,40 %** y α1 de **39,37 %** a **9,19 %**. **El balance neto favorece aún más a α1, pero no todos los países mejoran.**
+
+En **2025**, la desventaja de α1 se reduce de **+0,000635** a **+0,000093**; una disminución relativa aproximada de **85,4 %** del perjuicio Brier. Destaca **Uganda**, que pasa de Markov H2 **13,14 %** y α1 **25,93 %** a **5,41 %** y **11,69 %** en el escenario global-only. Tampoco se invierte el signo, por lo que sigue sin justificarse declarar superioridad universal de la intensidad LOG1P.
+
+### Alcance científico
+
+- En el conjunto de **13 bloques**, solo **las cuatro versiones de 2017** invierten signo; en los nueve años únicos, solo **2017**.
+- El efecto de quitar el país **solo del prior global** es muy pequeño. Su historia **local** tiene una influencia grande en varios casos, que puede resultar beneficiosa o perjudicial para el Brier según el resultado.
+- En el escenario global-only se conoce el estado actual del país, pero se **desajusta potencialmente la distribución de offsets** frente a la usada para entrenar la logística. **No es un modelo alternativo de producción ni una validación prospectiva de cold-start.**
+- No se emite ni optimiza ningún algoritmo con estas comparaciones históricas, y 2027 sigue sin resultados oficiales resueltos.
+
 ## Cobertura y auditoría
 
 Se replican los **13 bloques año-edición de la prueba previa**, con nueve años distintos (2017–2025) en UCDP 26.1, además de 2017 en las ediciones 23.1,24.1,25.1 y 2024 en 25.1. Cada país elegible se selecciona solo porque tiene **1–24 muertes en el año de origen**; no se selecciona basándose en su resultado futuro.
