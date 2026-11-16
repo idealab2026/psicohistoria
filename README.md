@@ -4,6 +4,23 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Estabilidad anual LOG1P con validación temporal de horizonte 2 (16-11-2026)
+
+**Nuevo resultado** de un estudio anual exhaustivo en las cuatro ediciones oficiales UCDP, con cortes temporales estrictos: para cada objetivo histórico `t` se ajusta el coeficiente logístico **solo hasta etiquetas `t−2`**, y los predictores de esas etiquetas se forman con corte `u−2`, **sin utilizar el año `t−1` ni el resultado `t` durante el ajuste**.
+
+La comparación entre conservar toda la pendiente de intensidad continua LOG1P en países inactivos (α=1) y eliminarla (α=0) muestra la siguiente dirección de Brier, tomando la edición más reciente UCDP 26.1:
+
+- **7 años favorecen α=1:** 2018, 2019, 2020, 2021, 2022, 2023 y 2024.
+- **2 años favorecen α=0:** 2017 y 2025.
+- **0 de 8 años con ediciones revisadas sufren inversión de signo de Brier** al compararse con las otras versiones oficiales, aunque las magnitudes cambian: en 2022 el beneficio α=1 se reduce aproximadamente 5,4 veces al pasar de la edición 23.1 a la 26.1.
+- **9 años objetivo diferentes** (2017–2025), presentados en 30 bloques año-edición (6+7+8+9); las cuatro versiones de un año **no son cuatro experimentos independientes**.
+
+El Brier anual medio UCDP 26.1 es **0,037980** con α=1 frente a **0,038576** con α=0. **No es una prueba de habilidad predictiva prospectiva:** las ediciones son fuentes retrospectivamente revisadas, λ=5 fue escogido en 2026 con parte del histórico ya conocido y los resultados 2024/25 se habían examinado. La cobertura histórica faltante se excluye y no se rellena como ausencia de conflicto; cada año informa número de países directamente observados del universo de 196.
+
+**Estado:** la evidencia histórica favorece la señal continua en la mayoría de años, pero la ventaja varía y **se invierte en 2025**. No se modifica ni se reemite la primera sombra de 2027 ni las 15 alertas originales. Ningún outcome oficial 2027 se ha resuelto.
+
+[Protocolo y resultados detallados](docs/geo2027-log1p-rolling-year-vintage-stability.md) · [Informe por año y versión, con 30 bloques](data/geo2027-log1p-rolling-year-vintage-stability.json) · reproductor `scripts/experiment_geo2027_log1p_rolling_year_vintage.py` · pruebas de no-leakage y gate institucional de GitHub Actions.
+
 ## GEO2027 · Frontera de robustez editorial vs Brier histórico del LOG1P (16-11-2026)
 
 **Investigación de compromiso, no sustitución de la sombra prospectiva**: se han medido cinco variantes fijas que atenúan exclusivamente la pendiente LOG1P del grupo de países con menos de 25 muertes de violencia estatal en el origen (**α=0, 0,25, 0,5, 0,75, 1**). Se conservan intactos el intercepto, pendiente del grupo activo y offset Markov originales; α=1 reproduce exactamente el archivo LOG1P 2027 y los Brier históricos previamente publicados.
