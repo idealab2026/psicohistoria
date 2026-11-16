@@ -89,6 +89,25 @@ class RollingH2YearVintageTests(unittest.TestCase):
              ("23.1","24.1","25.1","26.1")],[6,7,8,9])
         self.assertEqual(report["by_version"]["26.1"]["annual"][-1]["target_year"],2025)
 
+    def test_archival_extra_countries_contribute_global_transition_prior(self):
+        # Archive may include additional GWNOs not in original issued 196.
+        # Keep full global training population, but only score the 196 fixed IDs.
+        original=copy.deepcopy(self.original)
+        base=historical_ledger(original,2022,self.ids)
+        original[max(self.ids)+100]={
+            year:(35 if year%3 else 0) for year in
+            range(1989,2023)
+        }
+        changed=historical_ledger(original,2022,self.ids)
+        self.assertEqual(len(changed[2019]),196)
+        self.assertEqual(
+            [r["country_id"] for r in changed[2019]],self.ids)
+        self.assertTrue(any(
+            a["p_original_binary"]!=b["p_original_binary"]
+            for a,b in zip(base[2019],changed[2019])))
+        self.assertEqual([r["outcome"] for r in base[2019]],
+                         [r["outcome"] for r in changed[2019]])
+
     def test_empty_risk_cohort_fail_closed(self):
         bad=copy.deepcopy(self.original)
         bad.pop(self.ids[0])
