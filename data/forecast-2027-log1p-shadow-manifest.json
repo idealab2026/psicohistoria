@@ -32,5 +32,6 @@
   ],
   "other_shadows_already_exist_and_multiple_comparisons_not_confirmatory": true,
   "institutional_repository": "idealab2026/psicohistoria",
-  "provenance_note": "The SHA-pinned first complete 196-country file appears in the linked public GitHub commit. Preparation date does not establish public issue time; GitHub commit date is not independent cryptographic notarization. All 2027 official outcomes unresolved."
+  "provenance_note": "First complete 196-country shadow file publicly appeared in GitHub institutional commit a2af84346bd223d2a105cf727b3462cd0955fdac, recorded by GitHub at 2026-11-16T11:34:38Z. This is GitHub metadata, not independent cryptographic timestamp notarization. Original GEO forecast remains separately immutable; 2027 outcomes unresolved.",
+  "first_complete_forecast_commit_utc": "2026-11-16T11:34:38Z"
 }
