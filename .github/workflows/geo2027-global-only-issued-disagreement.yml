@@ -1,0 +1,34 @@
+name: GEO2027 source-free issued full196 probability disagreement audit
+on:
+  pull_request:
+    paths:
+      - 'scripts/diagnose_geo2027_issued_disagreement.py'
+      - 'scripts/test_diagnose_geo2027_issued_disagreement.py'
+      - 'docs/geo2027-global-only-issued-disagreement.md'
+      - 'data/geo2027-global-only-issued-disagreement.json'
+      - '.github/workflows/geo2027-global-only-issued-disagreement.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/diagnose_geo2027_issued_disagreement.py'
+      - 'scripts/test_diagnose_geo2027_issued_disagreement.py'
+      - 'docs/geo2027-global-only-issued-disagreement.md'
+      - 'data/geo2027-global-only-issued-disagreement.json'
+      - '.github/workflows/geo2027-global-only-issued-disagreement.yml'
+permissions:
+  contents: read
+jobs:
+  geo2027_issued_disagreement:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test immutable issued files, ex ante zero-state discrimination and synthetic future paired-Brier identity
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_diagnose_geo2027_issued_disagreement.py' -v
+      - name: Deterministic source-free full 196 risk-disagreement replay without 2027 labels
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_issued_disagreement.py --check-report
