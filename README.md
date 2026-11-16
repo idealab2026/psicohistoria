@@ -4,6 +4,18 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Diagnóstico de regularización local Markov y revisiones UCDP (16-11-2026)
+
+**Estudio nuevo, sin reemitir pronósticos:** se han reproducido **8 combinaciones origen–edición** de UCDP 23.1–26.1 y **5 comparaciones solapadas de revisiones** con los **196 identificadores originales**, cortando todos los historiales en el año de origen. Se ha verificado la reproducción matemática exacta del primer GEO2027 (2025→2027), manteniendo sus SHA y los de las dos sombras y las 15 alertas.
+
+En los **154 países con 0 muertes estatales en el origen de 2025**, la amplitud de probabilidades del Markov bruto H2 pasa de **0,21 puntos porcentuales** sin usar las transiciones locales (`w=0`) a **11,20 pp** dando un cuarto de peso local (`w=0,25`), **18,45 pp** con medio peso y **27,10 pp** con peso completo. La información histórica propia bajo shrinkage 20 representa en promedio **62,25 %** del cálculo de transición desde estado inactivo cuando `w=1`.
+
+**Pero esa diferenciación también es sensible a revisiones de fuentes:** al comparar el mismo origen de 2022 desde UCDP 23.1 a 26.1, el mayor cambio individual crece de **0,41 pp con `w=0`** a **5,36 pp con `w=1`**; la revisión media absoluta pasa de **0,064** a **0,130 pp**. Los cinco pares muestran un aumento de la media y los máximos, pero **el percentil 95 no es monótono**: la sensibilidad se concentra en pocos casos.
+
+**No equivale a mejora demostrada del Brier:** son probabilidades del componente Markov sin calibrar, con pesos preenumerados para sensibilidad y ediciones históricas retrospectivamente revisadas. No se ha seleccionado `w`, no se ha entrenado ni publicado ningún nuevo candidato GEO2027 y **no hay resultados oficiales 2027**. La comparación prospectiva principal sigue siendo la ya registrada entre las dos sombras de 196 países.
+
+[Informe y límites metodológicos](docs/geo2027-markov-partial-pooling-vintage-stability.md) · [Ocho snapshots y cinco pares de revisiones](data/geo2027-markov-partial-pooling-vintage-stability.json) · [Código científico](scripts/diagnose_geo2027_markov_partial_pooling.py) · tests de no-leakage y GitHub Actions con fuentes SHA-fijadas.
+
 ## GEO2027 · Auditoría de desacuerdo entre emisiones prospectivas congeladas (16-11-2026)
 
 **Nuevo control ex ante, sin resultados oficiales de 2027:** se han comparado las **196 probabilidades exactas** de la primera sombra LOG1P (SHA `52686923…`) con las 196 de la nueva emisión Markov global-only matched α=1 (SHA `251595a1…`), sin modificar ningún pronóstico ni las 15 alertas originales.
