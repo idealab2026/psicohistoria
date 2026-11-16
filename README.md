@@ -4,6 +4,22 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Causas contables de las inversiones Brier en 2017 y 2025 (16-11-2026)
+
+**Hallazgo fundamental del estudio anual**: al contrastar las dos variantes LOG1P α=1 (pendiente continua completa entre países inactivos) y α=0 (sin esa pendiente), **todos los países de origen con 0 muertes y todos los países de origen con ≥25 tienen exactamente el mismo pronóstico en ambas**. Por tanto, **solo los países que tenían de 1 a 24 muertes estatales best al origen pueden cambiar el Brier comparativo**. Son una minoría y su influencia en el score agregado es considerable.
+
+| Objetivo retrospectivo, UCDP 26.1 | Países que determinan la comparación α1−α0 | Países de estos que cruzan 25 en el objetivo | Signo del Brier |
+|---|---:|---:|---|
+| **2017** | **9 de 196** | 2 | α0 mejor; `+0,000111` |
+| **2024** | **15 de 196** | 2 | α1 mejor; `−0,000788` |
+| **2025** | **12 de 196** | 1 | α0 mejor; `+0,000620` |
+
+**2017**: Israel, origen 10 muertes, permanece inactivo y provoca un perjuicio en la pérdida cuadrática de **+0,049619** (antes de dividir entre 196). Sin Israel en el cálculo de la métrica, sin reentrenar, **el signo cambia**. **2024**: Angola y Sudán del Sur, con 20 y 23 muertes de origen, cruzan el umbral; su mejora de puntuación supera los errores de 13 países que no se activan. Sin Angola, **el signo cambia**. **2025**: Uganda, Armenia y Arabia Saudí concentran buena parte de los errores; Sudán del Sur es el único caso del grupo de 1–24 con ganancia por cruzar 25. **Omitir un solo país no invierte** el signo de ese año. Ninguna de las cuatro ediciones de UCDP disponibles cambia el signo de las contribuciones individuales del conjunto de 2017, ni las dos ediciones de 2024; **2025 solo dispone de una edición**.
+
+El script certifica la identidad matemática de Brier por país, los 30 bloques año-edición y cortes de entrenamiento H2 `t−2`, con las cuatro fuentes SHA-verificadas. **Estos análisis no constituyen causalidad política, evidencia confirmatoria nueva, años originalmente emitidos ni 30 réplicas independientes**; la especificación λ=5 y el diseño α surgieron tras examinar parte del histórico. No se modifican las **196 predicciones originales, las 196 de la sombra 2027 ni las 15 alertas**; cero resultados 2027 resueltos.
+
+[Documento con países y descomposición exacta](docs/geo2027-log1p-annual-country-reversals.md) · [Informe completo por año y versión](data/geo2027-log1p-country-year-reversal-attribution.json) · código `scripts/diagnose_geo2027_log1p_annual_country_reversals.py` y pruebas reproducibles con GitHub Actions.
+
 ## GEO2027 · Estabilidad anual LOG1P con validación temporal de horizonte 2 (16-11-2026)
 
 **Nuevo resultado** de un estudio anual exhaustivo en las cuatro ediciones oficiales UCDP, con cortes temporales estrictos: para cada objetivo histórico `t` se ajusta el coeficiente logístico **solo hasta etiquetas `t−2`**, y los predictores de esas etiquetas se forman con corte `u−2`, **sin utilizar el año `t−1` ni el resultado `t` durante el ajuste**.
