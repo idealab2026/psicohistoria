@@ -94,7 +94,7 @@ class Log1pVintageSensitivityTests(unittest.TestCase):
         self.assertTrue(a["old_boundary_unique"])
         # Deliberate boundary tie, should retain uncertainty instead of
         # claiming any tie-independent entry.
-        rows[143]["old_shadow_p"]=rows[144]["old_shadow_p"]
+        rows[144]["old_shadow_p"]=rows[145]["old_shadow_p"]
         tie=topk_shadow_comparison(rows,0,10,names)
         self.assertFalse(tie["old_boundary_unique"])
         self.assertEqual(tie["definite_entries_not_dependent_on_ties"],[])
