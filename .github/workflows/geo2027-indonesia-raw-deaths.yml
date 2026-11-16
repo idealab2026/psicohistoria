@@ -1,0 +1,28 @@
+name: GEO2027 Indonesia original annual fatalities vintages
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_geo2027_indonesia_original_fatalities.py'
+      - 'scripts/test_audit_geo2027_indonesia_original_fatalities.py'
+      - 'data/geo2027-indonesia-raw-death-revisions.json'
+      - '.github/workflows/geo2027-indonesia-raw-deaths.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_geo2027_indonesia_original_fatalities.py'
+      - 'scripts/test_audit_geo2027_indonesia_original_fatalities.py'
+      - 'data/geo2027-indonesia-raw-death-revisions.json'
+      - '.github/workflows/geo2027-indonesia-raw-deaths.yml'
+permissions:
+  contents: read
+jobs:
+  indonesia_raw_deaths:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test official rows, binary threshold, missingness and tamper resistance
+        run: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_audit_geo2027_indonesia_original_fatalities.py' -v
+      - name: Reconstruct source-pinned historical deaths, reject any report mismatch
+        run: PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_geo2027_indonesia_original_fatalities.py --check-report
