@@ -1,1 +1,945 @@
-{"status":"PENDING_OFFICIAL_SOURCE_REPLAY_NOT_VALIDATED"}
+{
+  "binary_original_protocol": "Markov two-state Laplace1 global shrink20 H2",
+  "by_origin_binary_state": {
+    "0": {
+      "absolute_probability_difference_mean": 0.02739258635226168,
+      "intensity_brier_better_on_this_sample": false,
+      "intensity_four_state": {
+        "brier": 0.025222452081692222,
+        "logloss": 0.1018419850845113
+      },
+      "intensity_minus_binary_delta_brier": 0.002574922402132574,
+      "intensity_minus_binary_delta_logloss": 0.0015826388745205783,
+      "n": 321,
+      "original_binary": {
+        "brier": 0.022647529679559648,
+        "logloss": 0.10025934620999072
+      },
+      "positives": 8
+    },
+    "1": {
+      "absolute_probability_difference_mean": 0.10004392057578873,
+      "intensity_brier_better_on_this_sample": false,
+      "intensity_four_state": {
+        "brier": 0.12033422315966387,
+        "logloss": 0.39487556475241775
+      },
+      "intensity_minus_binary_delta_brier": 0.0014174163610012752,
+      "intensity_minus_binary_delta_logloss": -0.004288708696661092,
+      "n": 71,
+      "original_binary": {
+        "brier": 0.1189168067986626,
+        "logloss": 0.39916427344907884
+      },
+      "positives": 61
+    }
+  },
+  "by_origin_death_intensity": {
+    "active_25_to_99": {
+      "absolute_probability_difference_mean": 0.1526331326784167,
+      "intensity_brier_better_on_this_sample": false,
+      "intensity_four_state": {
+        "brier": 0.20171583134072624,
+        "logloss": 0.5949307775663941
+      },
+      "intensity_minus_binary_delta_brier": 0.021214463184160287,
+      "intensity_minus_binary_delta_logloss": 0.04947374688724382,
+      "n": 24,
+      "original_binary": {
+        "brier": 0.18050136815656595,
+        "logloss": 0.5454570306791503
+      },
+      "positives": 18
+    },
+    "high_100_plus": {
+      "absolute_probability_difference_mean": 0.07318985482125531,
+      "intensity_brier_better_on_this_sample": true,
+      "intensity_four_state": {
+        "brier": 0.07877765727997244,
+        "logloss": 0.29271971140060005
+      },
+      "intensity_minus_binary_delta_brier": -0.008691713931675685,
+      "intensity_minus_binary_delta_logloss": -0.031741877505463645,
+      "n": 47,
+      "original_binary": {
+        "brier": 0.08746937121164812,
+        "logloss": 0.3244615889060637
+      },
+      "positives": 43
+    },
+    "low_1_to_24": {
+      "absolute_probability_difference_mean": 0.1966503771056923,
+      "intensity_brier_better_on_this_sample": false,
+      "intensity_four_state": {
+        "brier": 0.12875195800991193,
+        "logloss": 0.43516132018160064
+      },
+      "intensity_minus_binary_delta_brier": 0.028056743805341372,
+      "intensity_minus_binary_delta_logloss": 0.0711504975273719,
+      "n": 26,
+      "original_binary": {
+        "brier": 0.10069521420457056,
+        "logloss": 0.36401082265422874
+      },
+      "positives": 3
+    },
+    "zero": {
+      "absolute_probability_difference_mean": 0.01247495055704407,
+      "intensity_brier_better_on_this_sample": false,
+      "intensity_four_state": {
+        "brier": 0.016097817660899974,
+        "logloss": 0.07246468775392037
+      },
+      "intensity_minus_binary_delta_brier": 0.000329066956426035,
+      "intensity_minus_binary_delta_logloss": -0.0045487656169171525,
+      "n": 295,
+      "original_binary": {
+        "brier": 0.01576875070447394,
+        "logloss": 0.07701345337083752
+      },
+      "positives": 5
+    }
+  },
+  "cohorts": [
+    {
+      "by_origin_binary_state": {
+        "0": {
+          "absolute_probability_difference_mean": 0.028540944027138363,
+          "intensity_brier_better_on_this_sample": false,
+          "intensity_four_state": {
+            "brier": 0.02428752187169607,
+            "logloss": 0.09582060155681732
+          },
+          "intensity_minus_binary_delta_brier": 0.0022635981575226047,
+          "intensity_minus_binary_delta_logloss": 0.0014836729817849365,
+          "n": 159,
+          "original_binary": {
+            "brier": 0.022023923714173464,
+            "logloss": 0.09433692857503238
+          },
+          "positives": 4
+        },
+        "1": {
+          "absolute_probability_difference_mean": 0.10909740325754054,
+          "intensity_brier_better_on_this_sample": false,
+          "intensity_four_state": {
+            "brier": 0.14077944095199127,
+            "logloss": 0.4474418796723247
+          },
+          "intensity_minus_binary_delta_brier": 0.01594801778153744,
+          "intensity_minus_binary_delta_logloss": 0.037364523949895145,
+          "n": 37,
+          "original_binary": {
+            "brier": 0.12483142317045383,
+            "logloss": 0.41007735572242954
+          },
+          "positives": 31
+        }
+      },
+      "by_origin_death_intensity": {
+        "active_25_to_99": {
+          "absolute_probability_difference_mean": 0.1560365329401333,
+          "intensity_brier_better_on_this_sample": false,
+          "intensity_four_state": {
+            "brier": 0.18278559056650887,
+            "logloss": 0.5559934850868172
+          },
+          "intensity_minus_binary_delta_brier": 0.03845458156706327,
+          "intensity_minus_binary_delta_logloss": 0.09845193728918228,
+          "n": 15,
+          "original_binary": {
+            "brier": 0.1443310089994456,
+            "logloss": 0.45754154779763495
+          },
+          "positives": 12
+        },
+        "high_100_plus": {
+          "absolute_probability_difference_mean": 0.07709345120122726,
+          "intensity_brier_better_on_this_sample": false,
+          "intensity_four_state": {
+            "brier": 0.11213888439663836,
+            "logloss": 0.37342942143517066
+          },
+          "intensity_minus_binary_delta_brier": 0.0006026333823153096,
+          "intensity_minus_binary_delta_logloss": -0.004285985145073334,
+          "n": 22,
+          "original_binary": {
+            "brier": 0.11153625101432305,
+            "logloss": 0.377715406580244
+          },
+          "positives": 19
+        },
+        "low_1_to_24": {
+          "absolute_probability_difference_mean": 0.1980528392972143,
+          "intensity_brier_better_on_this_sample": false,
+          "intensity_four_state": {
+            "brier": 0.14102629438694828,
+            "logloss": 0.4619249839225622
+          },
+          "intensity_minus_binary_delta_brier": 0.02622516317615145,
+          "intensity_minus_binary_delta_logloss": 0.07065401586670889,
+          "n": 14,
+          "original_binary": {
+            "brier": 0.11480113121079683,
+            "logloss": 0.3912709680558533
+          },
+          "positives": 2
+        },
+        "zero": {
+          "absolute_probability_difference_mean": 0.012174278276924138,
+          "intensity_brier_better_on_this_sample": true,
+          "intensity_four_state": {
+            "brier": 0.013016192111602749,
+            "logloss": 0.0604725922249523
+          },
+          "intensity_minus_binary_delta_brier": -4.9932258069148444e-05,
+          "intensity_minus_binary_delta_logloss": -0.005194842882966358,
+          "n": 145,
+          "original_binary": {
+            "brier": 0.013066124369671897,
+            "logloss": 0.06566743510791866
+          },
+          "positives": 2
+        }
+      },
+      "metrics": {
+        "absolute_probability_difference_mean": 0.04374803071859184,
+        "intensity_brier_better_on_this_sample": false,
+        "intensity_four_state": {
+          "brier": 0.046278343330731386,
+          "logloss": 0.1621980877316835
+        },
+        "intensity_minus_binary_delta_brier": 0.004846881453892754,
+        "intensity_minus_binary_delta_logloss": 0.008257098929846551,
+        "n": 196,
+        "original_binary": {
+          "brier": 0.04143146187683863,
+          "logloss": 0.15394098880183696
+        },
+        "positives": 35
+      },
+      "origin_release": "23.1",
+      "origin_year": 2022,
+      "original_binary_exact_reference_reproduced": true,
+      "resolved": 196,
+      "target_release": "25.1",
+      "target_year": 2024,
+      "transition_summary": {
+        "country_shrinkage": 20,
+        "cutoff_max": 2022,
+        "dirichlet_global_pseudocount_per_category": 1,
+        "eligible_countries": 196,
+        "global_4x4_dirichlet_rows": [
+          [
+            0.9599603567888999,
+            0.023984142715559962,
+            0.008523290386521309,
+            0.0075322101090188305
+          ],
+          [
+            0.36482084690553745,
+            0.3550488599348534,
+            0.20521172638436483,
+            0.0749185667752443
+          ],
+          [
+            0.13541666666666666,
+            0.19791666666666666,
+            0.4444444444444444,
+            0.2222222222222222
+          ],
+          [
+            0.06241331484049931,
+            0.03744798890429958,
+            0.08044382801664356,
+            0.8196948682385575
+          ]
+        ],
+        "global_4x4_transitions": [
+          [
+            4842,
+            120,
+            42,
+            37
+          ],
+          [
+            111,
+            108,
+            62,
+            22
+          ],
+          [
+            38,
+            56,
+            127,
+            63
+          ],
+          [
+            44,
+            26,
+            57,
+            590
+          ]
+        ],
+        "origin_year": 2022,
+        "training_countries": 199
+      },
+      "unresolved": []
+    },
+    {
+      "by_origin_binary_state": {
+        "0": {
+          "absolute_probability_difference_mean": 0.026265494560253084,
+          "intensity_brier_better_on_this_sample": false,
+          "intensity_four_state": {
+            "brier": 0.026140068769281034,
+            "logloss": 0.10775186150984056
+          },
+          "intensity_minus_binary_delta_brier": 0.002880481382953465,
+          "intensity_minus_binary_delta_logloss": 0.0016797720655388898,
+          "n": 162,
+          "original_binary": {
+            "brier": 0.02325958738632757,
+            "logloss": 0.10607208944430167
+          },
+          "positives": 4
+        },
+        "1": {
+          "absolute_probability_difference_mean": 0.09019160118682353,
+          "intensity_brier_better_on_this_sample": true,
+          "intensity_four_state": {
+            "brier": 0.09808501556213109,
+            "logloss": 0.337671045574872
+          },
+          "intensity_minus_binary_delta_brier": -0.014395296949582234,
+          "intensity_minus_binary_delta_logloss": -0.04961722657673706,
+          "n": 34,
+          "original_binary": {
+            "brier": 0.11248031251171332,
+            "logloss": 0.38728827215160905
+          },
+          "positives": 30
+        }
+      },
+      "by_origin_death_intensity": {
+        "active_25_to_99": {
+          "absolute_probability_difference_mean": 0.1469607989088889,
+          "intensity_brier_better_on_this_sample": true,
+          "intensity_four_state": {
+            "brier": 0.23326623263108848,
+            "logloss": 0.6598262650323558
+          },
+          "intensity_minus_binary_delta_brier": -0.007519067454011402,
+          "intensity_minus_binary_delta_logloss": -0.032156570449319966,
+          "n": 9,
+          "original_binary": {
+            "brier": 0.24078530008509988,
+            "logloss": 0.6919828354816757
+          },
+          "positives": 6
+        },
+        "high_100_plus": {
+          "absolute_probability_difference_mean": 0.06975469000687999,
+          "intensity_brier_better_on_this_sample": true,
+          "intensity_four_state": {
+            "brier": 0.04941977741730642,
+            "logloss": 0.22169516657017785
+          },
+          "intensity_minus_binary_delta_brier": -0.016870739567987757,
+          "intensity_minus_binary_delta_logloss": -0.055903062782607205,
+          "n": 25,
+          "original_binary": {
+            "brier": 0.06629051698529417,
+            "logloss": 0.27759822935278505
+          },
+          "positives": 24
+        },
+        "low_1_to_24": {
+          "absolute_probability_difference_mean": 0.19501417121558332,
+          "intensity_brier_better_on_this_sample": false,
+          "intensity_four_state": {
+            "brier": 0.11443189890336954,
+            "logloss": 0.40393704581714557
+          },
+          "intensity_minus_binary_delta_brier": 0.030193587872729633,
+          "intensity_minus_binary_delta_logloss": 0.07172972613147882,
+          "n": 12,
+          "original_binary": {
+            "brier": 0.0842383110306399,
+            "logloss": 0.33220731968566675
+          },
+          "positives": 1
+        },
+        "zero": {
+          "absolute_probability_difference_mean": 0.012765600427826667,
+          "intensity_brier_better_on_this_sample": false,
+          "intensity_four_state": {
+            "brier": 0.019076722358553958,
+            "logloss": 0.08405704676525617
+          },
+          "intensity_minus_binary_delta_brier": 0.0006954328637713766,
+          "intensity_minus_binary_delta_logloss": -0.003924224259736278,
+          "n": 150,
+          "original_binary": {
+            "brier": 0.01838128949478258,
+            "logloss": 0.08798127102499245
+          },
+          "positives": 3
+        }
+      },
+      "metrics": {
+        "absolute_probability_difference_mean": 0.03735471713833163,
+        "intensity_brier_better_on_this_sample": true,
+        "intensity_four_state": {
+          "brier": 0.038620314641510126,
+          "logloss": 0.1476358016027542
+        },
+        "intensity_minus_binary_delta_brier": -0.00011633730738435516,
+        "intensity_minus_binary_delta_logloss": -0.007218686882610986,
+        "n": 196,
+        "original_binary": {
+          "brier": 0.03873665194889448,
+          "logloss": 0.15485448848536518
+        },
+        "positives": 34
+      },
+      "origin_release": "24.1",
+      "origin_year": 2023,
+      "original_binary_exact_reference_reproduced": true,
+      "resolved": 196,
+      "target_release": "26.1",
+      "target_year": 2025,
+      "transition_summary": {
+        "country_shrinkage": 20,
+        "cutoff_max": 2023,
+        "dirichlet_global_pseudocount_per_category": 1,
+        "eligible_countries": 196,
+        "global_4x4_dirichlet_rows": [
+          [
+            0.9600694444444444,
+            0.024112654320987654,
+            0.008101851851851851,
+            0.007716049382716049
+          ],
+          [
+            0.3669724770642202,
+            0.363914373088685,
+            0.19877675840978593,
+            0.07033639143730887
+          ],
+          [
+            0.1362126245847176,
+            0.19601328903654486,
+            0.4485049833887043,
+            0.21926910299003322
+          ],
+          [
+            0.06040268456375839,
+            0.03758389261744966,
+            0.07651006711409396,
+            0.825503355704698
+          ]
+        ],
+        "global_4x4_transitions": [
+          [
+            4976,
+            124,
+            41,
+            39
+          ],
+          [
+            119,
+            118,
+            64,
+            22
+          ],
+          [
+            40,
+            58,
+            134,
+            65
+          ],
+          [
+            44,
+            27,
+            56,
+            614
+          ]
+        ],
+        "origin_year": 2023,
+        "training_countries": 199
+      },
+      "unresolved": []
+    }
+  ],
+  "four_state_bins": [
+    "zero",
+    "low_1_to_24",
+    "active_25_to_99",
+    "high_100_plus"
+  ],
+  "four_state_global_dirichlet_pseudocount_per_category": 1,
+  "four_state_local_shrinkage": 20,
+  "historical_predictions_issued_at_origin": false,
+  "horizon_years": 2,
+  "hyperparameter_grid_searched": false,
+  "largest_10_country_mean_brier_improvements": [
+    {
+      "country_id": 626,
+      "mean_country_paired_delta_brier": -0.41017236677623986,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": -0.418597616956,
+          "intensity_p": 0.312816106468,
+          "observed_state": 1,
+          "original_p": 0.056167747698,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": -0.401747116597,
+          "intensity_p": 0.296352471404,
+          "observed_state": 1,
+          "original_p": 0.052969398015,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 500,
+      "mean_country_paired_delta_brier": -0.1144831087840566,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": -0.313952519018,
+          "intensity_p": 0.500571152142,
+          "observed_state": 0,
+          "original_p": 0.751348119965,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": 0.08498630145,
+          "intensity_p": 0.319783992924,
+          "observed_state": 0,
+          "original_p": 0.131436298945,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 436,
+      "mean_country_paired_delta_brier": -0.11213020144588948,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": -0.114324003998,
+          "intensity_p": 0.834623570491,
+          "observed_state": 1,
+          "original_p": 0.6236047723,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": -0.109936398894,
+          "intensity_p": 0.84336402486,
+          "observed_state": 1,
+          "original_p": 0.633296812665,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 640,
+      "mean_country_paired_delta_brier": -0.10832543020695173,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": 0.143041504311,
+          "intensity_p": 0.591264368233,
+          "observed_state": 1,
+          "original_p": 0.84500544408,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": -0.359692364725,
+          "intensity_p": 0.600266515286,
+          "observed_state": 0,
+          "original_p": 0.84853535819,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 516,
+      "mean_country_paired_delta_brier": -0.08666529479274387,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": -0.046019706127,
+          "intensity_p": 0.1603921651,
+          "observed_state": 0,
+          "original_p": 0.267853229871,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": -0.127310883459,
+          "intensity_p": 0.556328877576,
+          "observed_state": 0,
+          "original_p": 0.660918076227,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 702,
+      "mean_country_paired_delta_brier": -0.08419126161382406,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": -0.147202260242,
+          "intensity_p": 0.522473138306,
+          "observed_state": 0,
+          "original_p": 0.648213267755,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": -0.021180262985,
+          "intensity_p": 0.115418520618,
+          "observed_state": 0,
+          "original_p": 0.185746326712,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 541,
+      "mean_country_paired_delta_brier": -0.0741179496387624,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": -0.075730437234,
+          "intensity_p": 0.788321902487,
+          "observed_state": 1,
+          "original_p": 0.652814092739,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": -0.072505462044,
+          "intensity_p": 0.797989674972,
+          "observed_state": 1,
+          "original_p": 0.663379095329,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 703,
+      "mean_country_paired_delta_brier": -0.06158566741440257,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": -0.119177631889,
+          "intensity_p": 0.560655749986,
+          "observed_state": 0,
+          "original_p": 0.658416662822,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": -0.00399370294,
+          "intensity_p": 0.066003340902,
+          "observed_state": 0,
+          "original_p": 0.091379122067,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 471,
+      "mean_country_paired_delta_brier": -0.04791270287129286,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": -0.049254888408,
+          "intensity_p": 0.854825699557,
+          "observed_state": 1,
+          "original_p": 0.73480108236,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": -0.046570517334,
+          "intensity_p": 0.86240922176,
+          "observed_state": 1,
+          "original_p": 0.744066923609,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 432,
+      "mean_country_paired_delta_brier": -0.04773473541119978,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": -0.04659403096,
+          "intensity_p": 0.807356381786,
+          "observed_state": 1,
+          "original_p": 0.710680808451,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": -0.048875439862,
+          "intensity_p": 0.82552989529,
+          "observed_state": 1,
+          "original_p": 0.718370354366,
+          "target_year": 2025
+        }
+      ]
+    }
+  ],
+  "largest_10_country_mean_brier_worsenings": [
+    {
+      "country_id": 373,
+      "mean_country_paired_delta_brier": 0.2311891478966732,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": 0.229381123324,
+          "intensity_p": 0.802471536603,
+          "observed_state": 0,
+          "original_p": 0.643878438631,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": 0.232997172469,
+          "intensity_p": 0.81252922687,
+          "observed_state": 0,
+          "original_p": 0.653610413051,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 100,
+      "mean_country_paired_delta_brier": 0.16019401755632218,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": 0.158699661727,
+          "intensity_p": 0.573665761877,
+          "observed_state": 1,
+          "original_p": 0.848140786025,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": 0.161688373386,
+          "intensity_p": 0.571367045885,
+          "observed_state": 1,
+          "original_p": 0.851548540029,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 371,
+      "mean_country_paired_delta_brier": 0.12335928047534402,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": 0.191237767257,
+          "intensity_p": 0.801672743815,
+          "observed_state": 0,
+          "original_p": 0.671893905999,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": 0.055480793693,
+          "intensity_p": 0.25351169658,
+          "observed_state": 0,
+          "original_p": 0.093741061491,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 651,
+      "mean_country_paired_delta_brier": 0.11283327403168286,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": 0.145024583313,
+          "intensity_p": 0.860833561307,
+          "observed_state": 0,
+          "original_p": 0.772016733601,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": 0.080641964751,
+          "intensity_p": 0.307958123792,
+          "observed_state": 0,
+          "original_p": 0.119147980506,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 461,
+      "mean_country_paired_delta_brier": 0.10900177526394252,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": 0.109721191792,
+          "intensity_p": 0.555145049161,
+          "observed_state": 1,
+          "original_p": 0.703057689956,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": 0.108282358736,
+          "intensity_p": 0.566373078186,
+          "observed_state": 1,
+          "original_p": 0.717599666102,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 434,
+      "mean_country_paired_delta_brier": 0.10771549915880241,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": 0.108448173967,
+          "intensity_p": 0.556578181117,
+          "observed_state": 1,
+          "original_p": 0.703057689956,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": 0.10698282435,
+          "intensity_p": 0.567874123737,
+          "observed_state": 1,
+          "original_p": 0.717599666102,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 620,
+      "mean_country_paired_delta_brier": 0.10022982283368376,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": 0.105151572505,
+          "intensity_p": 0.340672846903,
+          "observed_state": 0,
+          "original_p": 0.104433788173,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": 0.095308073163,
+          "intensity_p": 0.325125618028,
+          "observed_state": 0,
+          "original_p": 0.101973498202,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 615,
+      "mean_country_paired_delta_brier": 0.08606253695237567,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": 0.089643576704,
+          "intensity_p": 0.356860414636,
+          "observed_state": 0,
+          "original_p": 0.194179759065,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": 0.082481497201,
+          "intensity_p": 0.342412414969,
+          "observed_state": 0,
+          "original_p": 0.186453116691,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 616,
+      "mean_country_paired_delta_brier": 0.08191690124886139,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": 0.086131895768,
+          "intensity_p": 0.299332121569,
+          "observed_state": 0,
+          "original_p": 0.058888226626,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": 0.07770190673,
+          "intensity_p": 0.284623361304,
+          "observed_state": 0,
+          "original_p": 0.057520005825,
+          "target_year": 2025
+        }
+      ]
+    },
+    {
+      "country_id": 800,
+      "mean_country_paired_delta_brier": 0.07853865330994474,
+      "outcomes_by_target_year": [
+        {
+          "delta_brier": 0.073904359288,
+          "intensity_p": 0.643342169735,
+          "observed_state": 1,
+          "original_p": 0.769131100836,
+          "target_year": 2024
+        },
+        {
+          "delta_brier": 0.083172947332,
+          "intensity_p": 0.655087224728,
+          "observed_state": 1,
+          "original_p": 0.810812592348,
+          "target_year": 2025
+        }
+      ]
+    }
+  ],
+  "limitations": "Only two ex-post source-separated target years, with overlapping GWNO and macro shocks. No 2022/2023 forecast issued then; archive release times not independently notarized. Four-state categories and common shrinkage are one fixed exploratory alternative, not optimized model selection. Contrasts have no causal or prospective interpretation.",
+  "model_selection_using_holdout_outcomes": false,
+  "n_countries_with_higher_country_mean_brier_using_intensity": 33,
+  "n_countries_with_lower_country_mean_brier_using_intensity": 163,
+  "official_origin_target_editions": [
+    {
+      "origin": "23.1",
+      "origin_year": 2022,
+      "outcome_year": 2024,
+      "target": "25.1"
+    },
+    {
+      "origin": "24.1",
+      "origin_year": 2023,
+      "outcome_year": 2025,
+      "target": "26.1"
+    }
+  ],
+  "original_2027_2028_issued_forecasts_or_alerts_changed": false,
+  "original_forecast_2027_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "outcomes_2027_resolved": 0,
+  "pooled": {
+    "absolute_probability_difference_mean": 0.04055137392846173,
+    "intensity_brier_better_on_this_sample": false,
+    "intensity_four_state": {
+      "brier": 0.042449328986120756,
+      "logloss": 0.15491694466721884
+    },
+    "intensity_minus_binary_delta_brier": 0.002365272073254196,
+    "intensity_minus_binary_delta_logloss": 0.0005192060236177687,
+    "n": 392,
+    "original_binary": {
+      "brier": 0.04008405691286656,
+      "logloss": 0.15439773864360107
+    },
+    "positives": 69
+  },
+  "prospective_skill_demonstrated": false,
+  "retrospective_archive_sources_do_not_independently_prove_original_release_times": true,
+  "schema": "idealab.psico.geo2027_four_state_intensity_cross_release.v1",
+  "sources_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "state_based_25_death_binary_target_unchanged": true,
+  "state_cutoffs_deaths": [
+    0,
+    1,
+    25,
+    100
+  ],
+  "status": "EX_POST_SOURCE_SEPARATED_INTENSITY_ABLATION_NOT_PROSPECTIVE_ISSUE",
+  "two_annual_blocks_are_not_a_basis_for_country_iid_confidence_intervals": true
+}
