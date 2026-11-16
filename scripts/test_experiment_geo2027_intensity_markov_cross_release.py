@@ -69,8 +69,8 @@ class FourStateIntensityMarkovTests(unittest.TestCase):
         # Change an exposure from high state to active-low state but preserve
         # every binary >=25 label. The 4-state alternative must respond.
         for year in range(1989,2023):
-            if altered[2][year]>=100:
-                altered[2][year]=30
+            if altered[1][year]>=100:
+                altered[1][year]=30
         changed,_=four_state_forecast(altered,2023)
         self.assertEqual(counts_to_binary(counts),
                          counts_to_binary(altered))
