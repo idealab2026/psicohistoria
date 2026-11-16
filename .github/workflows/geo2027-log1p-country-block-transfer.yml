@@ -1,0 +1,32 @@
+name: GEO2027 LOG1P country-block subthreshold calibration transfer
+on:
+  pull_request:
+    paths:
+      - 'scripts/experiment_geo2027_log1p_country_block_transfer.py'
+      - 'scripts/test_experiment_geo2027_log1p_country_block_transfer.py'
+      - 'data/geo2027-log1p-subthreshold-country-block-transfer.json'
+      - '.github/workflows/geo2027-log1p-country-block-transfer.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/experiment_geo2027_log1p_country_block_transfer.py'
+      - 'scripts/test_experiment_geo2027_log1p_country_block_transfer.py'
+      - 'data/geo2027-log1p-subthreshold-country-block-transfer.json'
+      - '.github/workflows/geo2027-log1p-country-block-transfer.yml'
+permissions:
+  contents: read
+jobs:
+  geo2027_log1p_country_block_transfer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test strict temporal cutoff and actual historical country-label exclusion from ridge calibration
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_experiment_geo2027_log1p_country_block_transfer.py' -v
+      - name: Reproduce nine years plus four vintage replication country-block transfer cases from official UCDP
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_geo2027_log1p_country_block_transfer.py --check-report
