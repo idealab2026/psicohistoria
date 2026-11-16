@@ -4,6 +4,16 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Nueva emisión sombra prospectiva LOG1P (16-11-2026)
+
+**Se ha emitido una variante nueva y estrictamente separada** del GEO2027 original (196 países) y de la sombra de recalibración existente, para que la señal continua `log(1+muertes)` pueda probarse con resultados de **2027 genuinamente futuros**. El primer commit público del documento íntegro es [`a2af8434`](https://github.com/idealab2026/psicohistoria/commit/a2af84346bd223d2a105cf727b3462cd0955fdac), GitHub **16/11/2026 11:34:38 UTC**; SHA-256 fijo `52686923315854557a796f8f192d376dab77a4e03b14c1aeb6b4091e48104f90`. GitHub no es una notarización temporal independiente.
+
+La fuente sigue siendo UCDP 26.1 **hasta 2025**, sin usar resultados 2026/2027. Se seleccionó ridge **λ=5** con validación interna 2018–2020; el ajuste definitivo utiliza 2012–2025 (2.742 casos históricos). Para el objetivo 2027, las **sumas de probabilidades** de países por encima de 25 muertes estatales son: original **33,6254**, control de intercepto **34,8377**, nueva sombra **35,9840**. Son valores esperados, no resultados observados.
+
+**Contrato ya fijado:** evaluar los tres conjuntos de probabilidades sobre los **mismos 196 países** cuando se publique la **primera edición oficial UCDP completa de 2027**, con diferencia pareada de Brier como métrica principal y log-loss como secundaria. No se imputarán países ausentes como negativos ni se escogerán subgrupos favorablemente después. Los años 2024/2025 habían sido inspeccionados antes de elegir la arquitectura, por lo que **la selección del método no está independientemente validada**, aunque la nueva evaluación de 2027 sea prospectiva. **Cero resultados de 2027 resueltos, cero demostración de habilidad predictiva prospectiva**. Los pronósticos y las 15 alertas originales siguen byte idénticos.
+
+[Protocolo de sombra LOG1P](docs/geo2027-log1p-prospective-shadow-protocol.md) · Archivo [196 probabilidades](data/forecast-2027-log1p-shadow.json) · [Manifiesto inmutable](data/forecast-2027-log1p-shadow-manifest.json) · Generador `scripts/prepare_geo2027_log1p_shadow.py` · auditor SHA `scripts/audit_geo2027_log1p_shadow_issue.py`.
+
 ## GEO2027 · Señal continua log1p de intensidad con entrenamiento temporal anidado (16-11-2026)
 
 **Resultado retrospectivo exploratorio (dos años objetivo ya observados en análisis anteriores):** una corrección logística penalizada del **logit de la probabilidad Markov binaria original GEO H2**, utilizando dos pendientes continuas sobre log(1+muertes estatales en el origen), **reduce el Brier agregado de 0,04008406 a 0,03739343** (**−6,7 % relativo**) y el log-loss de **0,15439774 a 0,13868762** (**−10,2 %**). Un control que ajusta *solo* el intercepto alcanza Brier **0,03973310**, de modo que la intensidad aporta mejora incremental frente a la mera recalibración.
