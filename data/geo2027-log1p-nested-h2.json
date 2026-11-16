@@ -1,1 +1,874 @@
-{"status":"PENDING_OFFICIAL_SOURCE_REPLAY_NESTED_H2"}
+{
+  "baseline_intercept_only_calibration_control": true,
+  "continuous_features": [
+    "log1p(origin_deaths) inactive / log(26)",
+    "(log1p(origin_deaths)-log(26)) active / log(101)"
+  ],
+  "evaluation_target_years": [
+    2024,
+    2025
+  ],
+  "evaluation_target_years_previously_inspected_in_prior_research": true,
+  "folds": [
+    {
+      "by_binary_origin_state": {
+        "0": {
+          "log1p_minus_binary_delta_brier": -0.0018399968842376067,
+          "log1p_minus_binary_delta_logloss": -0.010872291240591941,
+          "log1p_minus_intercept_delta_brier": -0.001946153000807145,
+          "log1p_minus_intercept_delta_logloss": -0.012903815764502682,
+          "n": 159,
+          "positives": 4,
+          "scores": {
+            "p_calibrated_intercept": {
+              "brier": 0.022130079830743003,
+              "logloss": 0.09636845309894312
+            },
+            "p_offset_log1p": {
+              "brier": 0.020183926829935857,
+              "logloss": 0.08346463733444044
+            },
+            "p_original_binary": {
+              "brier": 0.022023923714173464,
+              "logloss": 0.09433692857503238
+            }
+          }
+        },
+        "1": {
+          "log1p_minus_binary_delta_brier": -0.010482515988219115,
+          "log1p_minus_binary_delta_logloss": -0.052217812721755796,
+          "log1p_minus_intercept_delta_brier": -0.008623479992223043,
+          "log1p_minus_intercept_delta_logloss": -0.04512458680087178,
+          "n": 37,
+          "positives": 31,
+          "scores": {
+            "p_calibrated_intercept": {
+              "brier": 0.12297238717445776,
+              "logloss": 0.4029841298015455
+            },
+            "p_offset_log1p": {
+              "brier": 0.11434890718223471,
+              "logloss": 0.35785954300067374
+            },
+            "p_original_binary": {
+              "brier": 0.12483142317045383,
+              "logloss": 0.41007735572242954
+            }
+          }
+        }
+      },
+      "by_origin_intensity": {
+        "0": {
+          "log1p_minus_binary_delta_brier": -0.0003177287066480194,
+          "log1p_minus_binary_delta_logloss": -0.005618314274050511,
+          "log1p_minus_intercept_delta_brier": -0.0005300148373903087,
+          "log1p_minus_intercept_delta_logloss": -0.008248488919575157,
+          "n": 145,
+          "positives": 2,
+          "scores": {
+            "p_calibrated_intercept": {
+              "brier": 0.013278410500414187,
+              "logloss": 0.0682976097534433
+            },
+            "p_offset_log1p": {
+              "brier": 0.012748395663023878,
+              "logloss": 0.060049120833868146
+            },
+            "p_original_binary": {
+              "brier": 0.013066124369671897,
+              "logloss": 0.06566743510791866
+            }
+          }
+        },
+        "1": {
+          "log1p_minus_binary_delta_brier": -0.017606345866415476,
+          "log1p_minus_binary_delta_logloss": -0.06528848125119974,
+          "log1p_minus_intercept_delta_brier": -0.016613298264767234,
+          "log1p_minus_intercept_delta_logloss": -0.061119700944109234,
+          "n": 14,
+          "positives": 2,
+          "scores": {
+            "p_calibrated_intercept": {
+              "brier": 0.11380808360914858,
+              "logloss": 0.3871021877487628
+            },
+            "p_offset_log1p": {
+              "brier": 0.09719478534438135,
+              "logloss": 0.3259824868046536
+            },
+            "p_original_binary": {
+              "brier": 0.11480113121079683,
+              "logloss": 0.3912709680558533
+            }
+          }
+        },
+        "2": {
+          "log1p_minus_binary_delta_brier": 0.0038806060019556943,
+          "log1p_minus_binary_delta_logloss": 0.0060775464761844145,
+          "log1p_minus_intercept_delta_brier": 0.0049385964216228095,
+          "log1p_minus_intercept_delta_logloss": 0.010935752553338507,
+          "n": 15,
+          "positives": 12,
+          "scores": {
+            "p_calibrated_intercept": {
+              "brier": 0.14327301857977848,
+              "logloss": 0.45268334172048086
+            },
+            "p_offset_log1p": {
+              "brier": 0.1482116150014013,
+              "logloss": 0.46361909427381937
+            },
+            "p_original_binary": {
+              "brier": 0.1443310089994456,
+              "logloss": 0.45754154779763495
+            }
+          }
+        },
+        "3": {
+          "log1p_minus_binary_delta_brier": -0.020275553708792818,
+          "log1p_minus_binary_delta_logloss": -0.09196464853853326,
+          "log1p_minus_intercept_delta_brier": -0.01787035027439067,
+          "log1p_minus_intercept_delta_logloss": -0.08334754545146972,
+          "n": 22,
+          "positives": 19,
+          "scores": {
+            "p_calibrated_intercept": {
+              "brier": 0.1091310475799209,
+              "logloss": 0.36909830349318046
+            },
+            "p_offset_log1p": {
+              "brier": 0.09126069730553023,
+              "logloss": 0.28575075804171074
+            },
+            "p_original_binary": {
+              "brier": 0.11153625101432305,
+              "logloss": 0.377715406580244
+            }
+          }
+        }
+      },
+      "inner_years": [
+        {
+          "max_training_cutoff": 2010,
+          "n": 195,
+          "positives": 22,
+          "target_year": 2012
+        },
+        {
+          "max_training_cutoff": 2011,
+          "n": 195,
+          "positives": 25,
+          "target_year": 2013
+        },
+        {
+          "max_training_cutoff": 2012,
+          "n": 196,
+          "positives": 31,
+          "target_year": 2014
+        },
+        {
+          "max_training_cutoff": 2013,
+          "n": 196,
+          "positives": 34,
+          "target_year": 2015
+        },
+        {
+          "max_training_cutoff": 2014,
+          "n": 196,
+          "positives": 36,
+          "target_year": 2016
+        },
+        {
+          "max_training_cutoff": 2015,
+          "n": 196,
+          "positives": 32,
+          "target_year": 2017
+        },
+        {
+          "max_training_cutoff": 2016,
+          "n": 196,
+          "positives": 32,
+          "target_year": 2018
+        },
+        {
+          "max_training_cutoff": 2017,
+          "n": 196,
+          "positives": 31,
+          "target_year": 2019
+        },
+        {
+          "max_training_cutoff": 2018,
+          "n": 196,
+          "positives": 34,
+          "target_year": 2020
+        },
+        {
+          "max_training_cutoff": 2019,
+          "n": 196,
+          "positives": 32,
+          "target_year": 2021
+        },
+        {
+          "max_training_cutoff": 2020,
+          "n": 196,
+          "positives": 37,
+          "target_year": 2022
+        }
+      ],
+      "metrics": {
+        "log1p_minus_binary_delta_brier": -0.003471492837540238,
+        "log1p_minus_binary_delta_logloss": -0.01867731315285248,
+        "log1p_minus_intercept_delta_brier": -0.0032066688104111715,
+        "log1p_minus_intercept_delta_logloss": -0.01898630825606215,
+        "n": 196,
+        "positives": 35,
+        "scores": {
+          "p_calibrated_intercept": {
+            "brier": 0.041166637849709566,
+            "logloss": 0.15424998390504663
+          },
+          "p_offset_log1p": {
+            "brier": 0.037959969039298394,
+            "logloss": 0.13526367564898448
+          },
+          "p_original_binary": {
+            "brier": 0.04143146187683863,
+            "logloss": 0.15394098880183696
+          }
+        }
+      },
+      "nested_training_and_selection": {
+        "candidate_lambda_validation_scores": [
+          {
+            "development_beta": [
+              -0.125469806381,
+              0.731270799609,
+              1.221090457775
+            ],
+            "lambda": 5.0,
+            "validation_brier": 0.03944016757413524,
+            "validation_logloss": 0.1483084986304485
+          },
+          {
+            "development_beta": [
+              0.012190934561,
+              0.231681713139,
+              0.531155031592
+            ],
+            "lambda": 20.0,
+            "validation_brier": 0.04176336558958284,
+            "validation_logloss": 0.15847006634730576
+          },
+          {
+            "development_beta": [
+              0.045187095275,
+              0.062359218682,
+              0.178399228043
+            ],
+            "lambda": 80.0,
+            "validation_brier": 0.043314386649283936,
+            "validation_logloss": 0.16407201582655848
+          }
+        ],
+        "final_beta_intercept_only": [
+          0.105708121366,
+          0.0,
+          0.0
+        ],
+        "final_beta_log1p": [
+          -0.308462942233,
+          1.300074663014,
+          1.806741633591
+        ],
+        "final_train_n": 2154,
+        "final_train_positives": 346,
+        "final_train_targets": [
+          2012,
+          2022
+        ],
+        "inner_fit_n": 1174,
+        "inner_fit_targets": [
+          2012,
+          2017
+        ],
+        "inner_select_targets": [
+          2018,
+          2020
+        ],
+        "inner_validation_n": 588,
+        "no_post_origin_supervised_label_used": true,
+        "selected_ridge_lambda": 5.0
+      },
+      "origin_cutoff": 2022,
+      "origin_vintage": "23.1",
+      "outcome_vintage": "25.1",
+      "outcome_year": 2024
+    },
+    {
+      "by_binary_origin_state": {
+        "0": {
+          "log1p_minus_binary_delta_brier": 0.0005000704503850123,
+          "log1p_minus_binary_delta_logloss": -0.001687183773858486,
+          "log1p_minus_intercept_delta_brier": 0.00026936061046133747,
+          "log1p_minus_intercept_delta_logloss": -0.003655658192492847,
+          "n": 162,
+          "positives": 4,
+          "scores": {
+            "p_calibrated_intercept": {
+              "brier": 0.023490297226251244,
+              "logloss": 0.10804056386293603
+            },
+            "p_offset_log1p": {
+              "brier": 0.02375965783671258,
+              "logloss": 0.10438490567044319
+            },
+            "p_original_binary": {
+              "brier": 0.02325958738632757,
+              "logloss": 0.10607208944430167
+            }
+          }
+        },
+        "1": {
+          "log1p_minus_binary_delta_brier": -0.01339185322405198,
+          "log1p_minus_binary_delta_logloss": -0.06542023316926121,
+          "log1p_minus_intercept_delta_brier": -0.00977288280555573,
+          "log1p_minus_intercept_delta_logloss": -0.05497744063399107,
+          "n": 34,
+          "positives": 30,
+          "scores": {
+            "p_calibrated_intercept": {
+              "brier": 0.10886134209321707,
+              "logloss": 0.3768454796163389
+            },
+            "p_offset_log1p": {
+              "brier": 0.09908845928766134,
+              "logloss": 0.32186803898234784
+            },
+            "p_original_binary": {
+              "brier": 0.11248031251171332,
+              "logloss": 0.38728827215160905
+            }
+          }
+        }
+      },
+      "by_origin_intensity": {
+        "0": {
+          "log1p_minus_binary_delta_brier": -0.00018971023415264784,
+          "log1p_minus_binary_delta_logloss": -0.00431960201488403,
+          "log1p_minus_intercept_delta_brier": -0.00035972655546210805,
+          "log1p_minus_intercept_delta_logloss": -0.006385769568852728,
+          "n": 150,
+          "positives": 3,
+          "scores": {
+            "p_calibrated_intercept": {
+              "brier": 0.018551305816092042,
+              "logloss": 0.09004743857896115
+            },
+            "p_offset_log1p": {
+              "brier": 0.018191579260629934,
+              "logloss": 0.08366166901010842
+            },
+            "p_original_binary": {
+              "brier": 0.01838128949478258,
+              "logloss": 0.08798127102499245
+            }
+          }
+        },
+        "1": {
+          "log1p_minus_binary_delta_brier": 0.009122329007105787,
+          "log1p_minus_binary_delta_logloss": 0.031218044238960907,
+          "log1p_minus_intercept_delta_brier": 0.008132950184504398,
+          "log1p_minus_intercept_delta_logloss": 0.030470734012005618,
+          "n": 12,
+          "positives": 1,
+          "scores": {
+            "p_calibrated_intercept": {
+              "brier": 0.08522768985324129,
+              "logloss": 0.33295462991262204
+            },
+            "p_offset_log1p": {
+              "brier": 0.09336064003774569,
+              "logloss": 0.36342536392462765
+            },
+            "p_original_binary": {
+              "brier": 0.0842383110306399,
+              "logloss": 0.33220731968566675
+            }
+          }
+        },
+        "2": {
+          "log1p_minus_binary_delta_brier": 0.023373849452321765,
+          "log1p_minus_binary_delta_logloss": 0.06360014543981407,
+          "log1p_minus_intercept_delta_brier": 0.02102005973247828,
+          "log1p_minus_intercept_delta_logloss": 0.05439977035134902,
+          "n": 9,
+          "positives": 6,
+          "scores": {
+            "p_calibrated_intercept": {
+              "brier": 0.24313908980494336,
+              "logloss": 0.7011832105701408
+            },
+            "p_offset_log1p": {
+              "brier": 0.26415914953742164,
+              "logloss": 0.7555829809214898
+            },
+            "p_original_binary": {
+              "brier": 0.24078530008509988,
+              "logloss": 0.6919828354816757
+            }
+          }
+        },
+        "3": {
+          "log1p_minus_binary_delta_brier": -0.02662750618754655,
+          "log1p_minus_binary_delta_logloss": -0.11186756946852833,
+          "log1p_minus_intercept_delta_brier": -0.02085834211924798,
+          "log1p_minus_intercept_delta_logloss": -0.09435323658871358,
+          "n": 25,
+          "positives": 24,
+          "scores": {
+            "p_calibrated_intercept": {
+              "brier": 0.060521352916995605,
+              "logloss": 0.2600838964729703
+            },
+            "p_offset_log1p": {
+              "brier": 0.03966301079774762,
+              "logloss": 0.16573065988425673
+            },
+            "p_original_binary": {
+              "brier": 0.06629051698529417,
+              "logloss": 0.27759822935278505
+            }
+          }
+        }
+      },
+      "inner_years": [
+        {
+          "max_training_cutoff": 2010,
+          "n": 195,
+          "positives": 22,
+          "target_year": 2012
+        },
+        {
+          "max_training_cutoff": 2011,
+          "n": 195,
+          "positives": 25,
+          "target_year": 2013
+        },
+        {
+          "max_training_cutoff": 2012,
+          "n": 196,
+          "positives": 31,
+          "target_year": 2014
+        },
+        {
+          "max_training_cutoff": 2013,
+          "n": 196,
+          "positives": 34,
+          "target_year": 2015
+        },
+        {
+          "max_training_cutoff": 2014,
+          "n": 196,
+          "positives": 36,
+          "target_year": 2016
+        },
+        {
+          "max_training_cutoff": 2015,
+          "n": 196,
+          "positives": 32,
+          "target_year": 2017
+        },
+        {
+          "max_training_cutoff": 2016,
+          "n": 196,
+          "positives": 32,
+          "target_year": 2018
+        },
+        {
+          "max_training_cutoff": 2017,
+          "n": 196,
+          "positives": 31,
+          "target_year": 2019
+        },
+        {
+          "max_training_cutoff": 2018,
+          "n": 196,
+          "positives": 34,
+          "target_year": 2020
+        },
+        {
+          "max_training_cutoff": 2019,
+          "n": 196,
+          "positives": 32,
+          "target_year": 2021
+        },
+        {
+          "max_training_cutoff": 2020,
+          "n": 196,
+          "positives": 37,
+          "target_year": 2022
+        },
+        {
+          "max_training_cutoff": 2021,
+          "n": 196,
+          "positives": 34,
+          "target_year": 2023
+        }
+      ],
+      "metrics": {
+        "log1p_minus_binary_delta_brier": -0.0019097530441601757,
+        "log1p_minus_binary_delta_logloss": -0.012742916832244655,
+        "log1p_minus_intercept_delta_brier": -0.001472661206602846,
+        "log1p_minus_intercept_delta_logloss": -0.012558416371120096,
+        "n": 196,
+        "positives": 34,
+        "scores": {
+          "p_calibrated_intercept": {
+            "brier": 0.03829956011133715,
+            "logloss": 0.15466998802424062
+          },
+          "p_offset_log1p": {
+            "brier": 0.036826898904734305,
+            "logloss": 0.14211157165312052
+          },
+          "p_original_binary": {
+            "brier": 0.03873665194889448,
+            "logloss": 0.15485448848536518
+          }
+        }
+      },
+      "nested_training_and_selection": {
+        "candidate_lambda_validation_scores": [
+          {
+            "development_beta": [
+              -0.135801896538,
+              0.725322888468,
+              1.22539775108
+            ],
+            "lambda": 5.0,
+            "validation_brier": 0.03929445780947975,
+            "validation_logloss": 0.14804352152437977
+          },
+          {
+            "development_beta": [
+              0.004073992524,
+              0.229041212059,
+              0.533038903258
+            ],
+            "lambda": 20.0,
+            "validation_brier": 0.04167378792723514,
+            "validation_logloss": 0.1583657805222623
+          },
+          {
+            "development_beta": [
+              0.040396640832,
+              0.061472273249,
+              0.178662107617
+            ],
+            "lambda": 80.0,
+            "validation_brier": 0.04324737087121282,
+            "validation_logloss": 0.16406115333954244
+          }
+        ],
+        "final_beta_intercept_only": [
+          0.10266142323,
+          0.0,
+          0.0
+        ],
+        "final_beta_log1p": [
+          -0.335727532,
+          1.304542073218,
+          1.892413175728
+        ],
+        "final_train_n": 2350,
+        "final_train_positives": 380,
+        "final_train_targets": [
+          2012,
+          2023
+        ],
+        "inner_fit_n": 1174,
+        "inner_fit_targets": [
+          2012,
+          2017
+        ],
+        "inner_select_targets": [
+          2018,
+          2020
+        ],
+        "inner_validation_n": 588,
+        "no_post_origin_supervised_label_used": true,
+        "selected_ridge_lambda": 5.0
+      },
+      "origin_cutoff": 2023,
+      "origin_vintage": "24.1",
+      "outcome_vintage": "26.1",
+      "outcome_year": 2025
+    }
+  ],
+  "historical_predictions_actually_issued": false,
+  "inner_lambda_selected_only_on_pre_2021_labels": true,
+  "inner_temporal_validation_not_independent_source_vintage": true,
+  "inner_training_target_years": [
+    2012,
+    2017
+  ],
+  "inner_validation_target_years": [
+    2018,
+    2020
+  ],
+  "largest_country_brier_deteriorations": [
+    {
+      "country_id": 373,
+      "delta_brier_mean": 0.173367511619,
+      "origin_2022_deaths": 154,
+      "origin_2023_deaths": 442,
+      "outcomes": [
+        0,
+        0
+      ]
+    },
+    {
+      "country_id": 371,
+      "delta_brier_mean": 0.072371426106,
+      "origin_2022_deaths": 154,
+      "origin_2023_deaths": 20,
+      "outcomes": [
+        0,
+        0
+      ]
+    },
+    {
+      "country_id": 651,
+      "delta_brier_mean": 0.066146786741,
+      "origin_2022_deaths": 231,
+      "origin_2023_deaths": 1,
+      "outcomes": [
+        0,
+        0
+      ]
+    },
+    {
+      "country_id": 41,
+      "delta_brier_mean": 0.041236616783,
+      "origin_2022_deaths": 0,
+      "origin_2023_deaths": 0,
+      "outcomes": [
+        1,
+        1
+      ]
+    },
+    {
+      "country_id": 615,
+      "delta_brier_mean": 0.038316382761,
+      "origin_2022_deaths": 14,
+      "origin_2023_deaths": 1,
+      "outcomes": [
+        0,
+        0
+      ]
+    },
+    {
+      "country_id": 434,
+      "delta_brier_mean": 0.036498764398,
+      "origin_2022_deaths": 30,
+      "origin_2023_deaths": 28,
+      "outcomes": [
+        1,
+        1
+      ]
+    },
+    {
+      "country_id": 461,
+      "delta_brier_mean": 0.035127948621,
+      "origin_2022_deaths": 34,
+      "origin_2023_deaths": 26,
+      "outcomes": [
+        1,
+        1
+      ]
+    },
+    {
+      "country_id": 800,
+      "delta_brier_mean": 0.020708294154,
+      "origin_2022_deaths": 30,
+      "origin_2023_deaths": 30,
+      "outcomes": [
+        1,
+        1
+      ]
+    },
+    {
+      "country_id": 630,
+      "delta_brier_mean": 0.020667371807,
+      "origin_2022_deaths": 39,
+      "origin_2023_deaths": 41,
+      "outcomes": [
+        1,
+        1
+      ]
+    },
+    {
+      "country_id": 640,
+      "delta_brier_mean": 0.018950490218,
+      "origin_2022_deaths": 85,
+      "origin_2023_deaths": 98,
+      "outcomes": [
+        1,
+        0
+      ]
+    }
+  ],
+  "largest_country_brier_improvements": [
+    {
+      "country_id": 436,
+      "delta_brier_mean": -0.094331447867,
+      "origin_2022_deaths": 516,
+      "origin_2023_deaths": 365,
+      "outcomes": [
+        1,
+        1
+      ]
+    },
+    {
+      "country_id": 540,
+      "delta_brier_mean": -0.088065091846,
+      "origin_2022_deaths": 20,
+      "origin_2023_deaths": 0,
+      "outcomes": [
+        1,
+        1
+      ]
+    },
+    {
+      "country_id": 626,
+      "delta_brier_mean": -0.076015243555,
+      "origin_2022_deaths": 23,
+      "origin_2023_deaths": 2,
+      "outcomes": [
+        1,
+        1
+      ]
+    },
+    {
+      "country_id": 432,
+      "delta_brier_mean": -0.071126058981,
+      "origin_2022_deaths": 1436,
+      "origin_2023_deaths": 1259,
+      "outcomes": [
+        1,
+        1
+      ]
+    },
+    {
+      "country_id": 475,
+      "delta_brier_mean": -0.068393406242,
+      "origin_2022_deaths": 1522,
+      "origin_2023_deaths": 2084,
+      "outcomes": [
+        1,
+        1
+      ]
+    },
+    {
+      "country_id": 541,
+      "delta_brier_mean": -0.066445460665,
+      "origin_2022_deaths": 373,
+      "origin_2023_deaths": 176,
+      "outcomes": [
+        1,
+        1
+      ]
+    },
+    {
+      "country_id": 482,
+      "delta_brier_mean": -0.064028361007,
+      "origin_2022_deaths": 677,
+      "origin_2023_deaths": 284,
+      "outcomes": [
+        1,
+        1
+      ]
+    },
+    {
+      "country_id": 439,
+      "delta_brier_mean": -0.056136445514,
+      "origin_2022_deaths": 2047,
+      "origin_2023_deaths": 4605,
+      "outcomes": [
+        1,
+        1
+      ]
+    },
+    {
+      "country_id": 471,
+      "delta_brier_mean": -0.047862899308,
+      "origin_2022_deaths": 415,
+      "origin_2023_deaths": 358,
+      "outcomes": [
+        1,
+        1
+      ]
+    },
+    {
+      "country_id": 666,
+      "delta_brier_mean": -0.046820938475,
+      "origin_2022_deaths": 96,
+      "origin_2023_deaths": 22709,
+      "outcomes": [
+        1,
+        1
+      ]
+    }
+  ],
+  "limitations": "Strict inner chronological fitting and tuning within each ORIGINAL archived edition; 2018-2020 tuning labels and 2012..origin final fit never use later origin-release target years. BUT all 2024/25 holdouts were already examined by prior project iterations; choosing to explore log1p now makes them reused exploratory data, not untouched confirmatory validation. Archives release timestamps not independently notarized. Two outcome years with repeated countries and common shocks. No independent 2026+ official outcome; no causal estimates or IID uncertainty intervals.",
+  "n_2027_outcomes_resolved": 0,
+  "n_country_pairs_higher_brier_log1p_than_original": 28,
+  "n_country_pairs_lower_brier_log1p_than_original": 168,
+  "no_external_2026_2027_outcome_available": true,
+  "original_2027_2028_issue_changed": false,
+  "original_binary_p_as_fixed_logit_offset": true,
+  "original_forecast_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "outcome_release_only_used_after_fitting": true,
+  "pooled": {
+    "log1p_minus_binary_delta_brier": -0.002690622940850207,
+    "log1p_minus_binary_delta_logloss": -0.01571011499254857,
+    "log1p_minus_intercept_delta_brier": -0.0023396650085070053,
+    "log1p_minus_intercept_delta_logloss": -0.01577236231359111,
+    "n": 392,
+    "positives": 69,
+    "scores": {
+      "p_calibrated_intercept": {
+        "brier": 0.03973309898052336,
+        "logloss": 0.1544599859646436
+      },
+      "p_offset_log1p": {
+        "brier": 0.03739343397201635,
+        "logloss": 0.1386876236510525
+      },
+      "p_original_binary": {
+        "brier": 0.04008405691286656,
+        "logloss": 0.15439773864360107
+      }
+    }
+  },
+  "prospective_predictive_skill_demonstrated": false,
+  "report_original_markov_binary_comparator": {
+    "brier": 0.04008405691286656,
+    "logloss": 0.15439773864360035
+  },
+  "report_previously_explored_four_state_brier": 0.042449328986120756,
+  "ridge_candidates": [
+    5.0,
+    20.0,
+    80.0
+  ],
+  "schema": "idealab.psico.geo2027_log1p_nested_h2_research.v1",
+  "source_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "status": "EX_POST_AFTER_SEEING_2024_2025_RESULTS_NOT_FRESH_HOLDOUT",
+  "target_definition": "UCDP state-based annual deaths best >=25 at horizon H2"
+}
