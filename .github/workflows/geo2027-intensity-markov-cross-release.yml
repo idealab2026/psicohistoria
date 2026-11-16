@@ -1,0 +1,32 @@
+name: GEO2027 four-state intensity H2 cross-release audit
+on:
+  pull_request:
+    paths:
+      - 'scripts/experiment_geo2027_intensity_markov_cross_release.py'
+      - 'scripts/test_experiment_geo2027_intensity_markov_cross_release.py'
+      - 'data/geo2027-intensity-markov-cross-release.json'
+      - '.github/workflows/geo2027-intensity-markov-cross-release.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/experiment_geo2027_intensity_markov_cross_release.py'
+      - 'scripts/test_experiment_geo2027_intensity_markov_cross_release.py'
+      - 'data/geo2027-intensity-markov-cross-release.json'
+      - '.github/workflows/geo2027-intensity-markov-cross-release.yml'
+permissions:
+  contents: read
+jobs:
+  geo2027_intensity_h2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test preregistered intensity categorization, source cutoff and Brier
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_experiment_geo2027_intensity_markov_cross_release.py' -v
+      - name: Reproduce exact original binary H2 and intensity alternatives from official ZIP/XLSX
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_geo2027_intensity_markov_cross_release.py --check-report
