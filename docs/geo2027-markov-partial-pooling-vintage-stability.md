@@ -36,6 +36,49 @@ Para cada peso y edición se calcula la distribución de probabilidades Markov *
 
 Esta es una comparación de **probabilidades Markov brutas**, no del modelo LOG1P recalibrado. **No se compara directamente su Brier con el de modelos calibrados**, ni se pretende que la regularización intermedia gane un forecast prospectivo. Recalibrar las variantes y seleccionar \(w\) usando los mismos objetivos históricos ya inspeccionados sería una elección retrospectiva adicional.
 
+## Resultados reproducidos: 196 GWNO, cuatro versiones SHA-verificadas
+
+El script reconstruye **8 bloques origen–edición** y **5 comparaciones de revisión**. En el origen real de emisión **2025**, se certifica que los 196 pronósticos GEO Markov originales se reproducen exactamente con la ley original (historia local y contribución propia al prior global). Todos los grupos muestran datos directamente observados: **154 países con 0 muertes**, **8 con 1–24** y **34 con ≥25**.
+
+### ¿Cuánto riesgo geográfico diferencia la historia local?
+
+Para los **154 países con cero muertes en 2025**, las siguientes probabilidades son **brutas del componente Markov H2**, sin recalibración LOG1P, derivadas solo de información hasta 2025. No son cuatro nuevas emisiones para 2027.
+
+| Multiplicador local \(w\) | Media del riesgo Markov H2 | Desviación típica poblacional | Rango máximo − mínimo |
+|---|---:|---:|---:|
+| **0: sin historial local** | 5,315 % | 0,035 pp | **0,211 pp** |
+| **0,25** | 4,622 % | 1,922 pp | **11,204 pp** |
+| **0,5** | 4,274 % | 3,055 pp | **18,445 pp** |
+| **1: historia local plena** | 3,924 % | 4,321 pp | **27,102 pp** |
+
+**Lectura correcta:** al aumentar \(w\), aumenta rápidamente la variación entre países con el mismo estado de origen. No se puede inferir que 27 pp de rango sea *mejor pronóstico* que 0,21 pp. El nivel medio también cambia porque parte del historial nacional reduce el riesgo bruto frente al prior mundial.
+
+**Información nacional efectiva:** entre estos 154 países, el peso algebraico medio de las transiciones locales **desde el estado inactivo** con \(w=1\) es **62,25 %** (mediana **64,29 %**). La fórmula es \(n^c_0/(n^c_0+20)\). Es una propiedad del estimador, no una certeza epistemológica de que los datos sean verdaderos ni un posterior estadístico formal. El componente local aumenta mucho más la heterogeneidad en el grupo de 0 muertes de 2025 que el prior global-only.
+
+La diferencia de probabilidad H2 entre usar \(w=1\) y \(w=0\) alcanza **23,88 pp para Burundi** y **18,92 pp para Senegal**. Se publican sus exposiciones de transición y la diferencia absoluta, **no un nuevo listado nacional de emisiones futuras**. Estas diferencias son del Markov bruto; no deben confundirse con las de la comparación de sombras LOG1P calibradas.
+
+### Coste de la revisión histórica
+
+En todas las parejas de revisiones, los 196 países conservan el mismo **estado binario de origen**: ninguna corrección cruza el umbral de 25 en el origen. No obstante, revisiones de **otros años anteriores al origen** sí cambian sus transiciones históricas y pueden alterar la probabilidad.
+
+| Origen y versiones comparadas | Muertes del año de origen revisadas (países) | Cambio medio absoluto con \(w=0\) | Cambio medio absoluto con \(w=1\) | Cambio máximo \(w=0\) | Cambio máximo \(w=1\) |
+|---|---:|---:|---:|---:|---:|
+| 2022 · 23.1 → 24.1 | 22 | 0,028 pp | 0,046 pp | 0,136 pp | **3,559 pp** |
+| 2022 · 23.1 → 25.1 | 24 | 0,053 pp | 0,096 pp | 0,219 pp | **5,260 pp** |
+| 2022 · 23.1 → 26.1 | 25 | 0,064 pp | 0,130 pp | 0,409 pp | **5,356 pp** |
+| 2023 · 24.1 → 25.1 | 20 | 0,023 pp | 0,061 pp | 0,110 pp | **5,115 pp** |
+| 2023 · 24.1 → 26.1 | 20 | 0,067 pp | 0,104 pp | 0,296 pp | **5,206 pp** |
+
+La media del cambio absoluto aumenta con el peso local en **estas cinco parejas**, y el mayor cambio individual también. Pero **el percentil 95 no aumenta siempre**: en la pareja 2022 (23.1→26.1), cae de **0,307 pp con \(w=0\)** a **0,257 pp con \(w=1\)**, mientras el máximo salta de **0,409 a 5,356 pp**. Es decir, la **cola extrema** puede ser más sensible a la historia nacional aunque una medida robusta de centro de distribución mejore. Este matiz impide declarar una «relación universal» entre todo indicador de sensibilidad y \(w\).
+
+Las cinco comparaciones se solapan tanto por países como por archivos fuente; no se agregan sus 980 casos de forma IID ni se estima un intervalo de confianza convencional. El uso de ediciones publicadas después del año de origen impide tratarlo como un historial de pronósticos realmente emitidos.
+
+### Consecuencia metodológica
+
+Hay evidencia estructural de que una regularización intermedia (\(w=0,25\)) **recupera parte sustancial de la discriminación** con sensibilidad media editorial menor que \(w=1\), pero las fuentes examinadas no permiten saber si esa diferenciación es información útil o ruido. Tampoco ofrecen una razón científica para declarar \(w=0,25\) óptimo: elegirlo después de observar estas cinco comparaciones y los Brier retrospectivos previos sería otra selección post hoc.
+
+**Decisión:** no emitir un cuarto nuevo modelo 2027 ni modificar ningún pronóstico ya congelado. Antes de entrenar y emitir otro candidato hay que justificar qué parte de la persistencia nacional tiene señal fuera de las fuentes revisadas y especificar por adelantado cómo se comprobaría su calibración. El primer contraste prospectivo permanece fijado entre la sombra global-only α1 ya emitida y la sombra LOG1P original, usando las 196 etiquetas oficiales completas de 2027 cuando estén disponibles.
+
 ## Criterio de interpretación
 
 **Mayor dispersión no significa mayor capacidad predictiva.** Puede indicar extracción de información de persistencia nacional o, por el contrario, sobreajuste a historias locales revisables. Del mismo modo, menos variación al revisar fuentes no equivale a menor Brier futuro. Por eso se publican ambas dimensiones **sin optimizarlas mediante un score compuesto**.
