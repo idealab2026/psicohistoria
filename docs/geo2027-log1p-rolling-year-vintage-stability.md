@@ -14,7 +14,7 @@ Para un año objetivo retrospectivo \(t\), el **origen de pronóstico es \(o=t-2
 
 - La **etiqueta más reciente usada para ajustar \(\beta_t\)** es la del año \(o=t-2\), **no** la del año \(t-1\). Esto es más conservador que entrenar hasta \(t-1\) cuando el forecast de horizonte dos ya debía estar fijado.
 - El **predictor histórico más reciente** del ajuste de \(\beta_t\) utiliza datos hasta \(o-2=t-4\), porque las observaciones de entrenamiento también son forecasts H2 anidados.
-- La evaluación en \(t\) usa 196 países, exige la observación oficial de \(t\) (nunca la imputa como cero) y se desglosa por año, no solo sobre sumas de países-año.
+- La evaluación en \(t\) parte de los **196 identificadores de referencia** emitidos en 2027, pero incluye únicamente los países con estado de origen y etiqueta de año objetivo **observados** en esa edición. Se registra cuántos faltan en cada año histórico y **nunca se les imputa cero**; el universo efectivo puede ser menor que 196. El score se desglosa por año, no solo sobre sumas de países-año.
 - La penalización ridge se mantiene en **λ=5**, fijada en la investigación anterior. **No es una elección legítimamente ex ante para años como 2017–2020:** se adoptó en 2026 tras inspeccionar resultados históricos. Por ello esto mide exclusivamente estabilidad interna bajo un método fijado *ahora*, no demuestra cómo habría funcionado un sistema publicado en cada año anterior.
 
 Se utilizan **cuatro ediciones originales UCDP OrganizedViolenceCY**, verificadas contra SHA-256: 23.1 (hasta 2022), 24.1 (hasta 2023), 25.1 (hasta 2024), 26.1 (hasta 2025). Se recalculan las series 2017–último año de cada edición: **6+7+8+9 = 30 observaciones año-edición, pero solamente 9 años objetivo distintos (2017–2025)**. Los años 2017–2022 están presentes en las cuatro ediciones y constituyen **el mismo histórico revisado**, no cuatro réplicas independientes.
@@ -27,7 +27,7 @@ Además, los años 2018–2020 sirvieron anteriormente para escoger regularizaci
 
 ## Métricas y diagnóstico
 
-Para cada versión y cada año objetivo \(t\) se publica **Brier y log-loss por α**, Brier del Markov original, número de países positivos (≥25 muertes estatales), estados activos al origen, tamaño exacto del conjunto de entrenamiento, coeficientes y trazas de los cortes temporales. Se reporta la diferencia \(\Delta_t = Brier_{\alpha=1,t} - Brier_{\alpha=0,t}\): negativa si favorece la intensidad completa; positiva si favorece la supresión entre inactivos.
+Para cada versión y cada año objetivo \(t\) se publica **Brier y log-loss por α**, Brier del Markov original, **número exacto de países observados de los 196 de referencia**, cobertura histórica faltante, número de países positivos (≥25 muertes estatales), estados activos al origen, tamaño exacto del conjunto de entrenamiento, coeficientes y trazas de los cortes temporales. Se reporta la diferencia \(\Delta_t = Brier_{\alpha=1,t} - Brier_{\alpha=0,t}\): negativa si favorece la intensidad completa; positiva si favorece la supresión entre inactivos.
 
 Se cuantifican los **cambios de signo de \(\Delta_t\)** entre años contiguos de una misma edición y se compara el signo para el mismo año entre ediciones que revisaron el histórico. Esas discrepancias ayudan a separar **inestabilidad temporal del método** de **inestabilidad editorial de UCDP**. La comparación de medias por versión es puramente descriptiva; no se calcula un valor-p asumiendo independencia de países-año o versiones.
 
