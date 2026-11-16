@@ -4,6 +4,24 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Robustez a ediciones UCDP del modelo LOG1P (16-11-2026)
+
+**Resultado científico adversarial:** cinco pares de ediciones oficiales UCDP (origen **2022** o **2023** congelado, universo de **196 países**) muestran que la alternativa continua **LOG1P es significativamente más sensible en algunos países** a los cambios de muertes históricas que el modelo Markov binario inicial; esta comparación cuantifica *sensibilidad retrospectiva*, no rendimiento predictivo ni intervalos probabilísticos. Las cinco parejas solapan fuentes y no son réplicas independientes.
+
+| Origen y edición inicial→revisada | Desplazamiento absoluto medio LOG1P | Máximo LOG1P | Markov binario medio |
+|---|---:|---:|---:|
+| 2022 · 23.1→24.1 | 0,2125 pp | **19,7673 pp** | 0,0469 pp |
+| 2022 · 23.1→25.1 | 0,3061 pp | 19,1521 pp | 0,0969 pp |
+| 2022 · 23.1→26.1 | 0,3657 pp | 18,2437 pp | 0,1307 pp |
+| 2023 · 24.1→25.1 | 0,1756 pp | 5,6727 pp | 0,0610 pp |
+| 2023 · 24.1→26.1 | 0,2194 pp | 5,8717 pp | 0,1047 pp |
+
+**Burundi** ilustra el riesgo: en el origen histórico 2022 UCDP cambia **0→10 muertes** (sin alcanzar el umbral binario 25), y LOG1P pasa de **21,18 % a 40,95 %**, diferencia **+19,77 pp**. La descomposición Shapley exacta de tres factores asigna **+19,97 pp** al cambio del conteo del origen, **+0,02 pp** al Markov y **−0,22 pp** al reajuste de coeficientes. En dos parejas 2022 coinciden cambios de pertenencia del **top-10 retrospectivo de entrada (Sudán del Sur→Líbano)** y **top-5 retrospectivo de salida (Indonesia→Tayikistán)**; los demás pares no cambian esas listas.
+
+**Regla no negociable:** ninguna edición anterior a UCDP 26.1 contiene 2025, de modo que estos son **análogos históricos**, no revisiones de la emisión LOG1P real origen 2025→2027. El programa mantiene la primera emisión de la sombra prospectiva, SHA-256 `52686923315854557a796f8f192d376dab77a4e03b14c1aeb6b4091e48104f90`, y las 196 probabilidades GEO originales completamente intactas. Cero resultados oficiales de 2027 resueltos. La mejora retrospectiva de Brier de LOG1P **no prueba robustez editorial ni capacidad predictiva prospectiva**.
+
+Informe con desglose y limitaciones: [robustez vintage LOG1P](docs/geo2027-log1p-historical-vintage-robustness.md), [reporte exacto UCDP](data/geo2027-log1p-historical-vintage-robustness.json); reproducibilidad en `scripts/diagnose_geo2027_log1p_historical_vintage_robustness.py`, pruebas unitarias y GitHub Actions como requisito de despliegue.
+
 ## GEO2027 · Nueva emisión sombra prospectiva LOG1P (16-11-2026)
 
 **Se ha emitido una variante nueva y estrictamente separada** del GEO2027 original (196 países) y de la sombra de recalibración existente, para que la señal continua `log(1+muertes)` pueda probarse con resultados de **2027 genuinamente futuros**. El primer commit público del documento íntegro es [`a2af8434`](https://github.com/idealab2026/psicohistoria/commit/a2af84346bd223d2a105cf727b3462cd0955fdac), GitHub **16/11/2026 11:34:38 UTC**; SHA-256 fijo `52686923315854557a796f8f192d376dab77a4e03b14c1aeb6b4091e48104f90`. GitHub no es una notarización temporal independiente.

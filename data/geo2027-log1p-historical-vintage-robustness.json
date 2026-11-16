@@ -1,0 +1,3173 @@
+{
+  "actual_2027_forecast_shadow_probabilities_replaced": false,
+  "actual_2027_frozen_alerts_reissued": false,
+  "all_source_editions_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "comparison_count": 5,
+  "comparisons": [
+    {
+      "all_origin_states_unchanged": true,
+      "countries_with_changed_origin_best_deaths": [
+        {
+          "country": "Colombia",
+          "country_id": 100,
+          "old_deaths": 75,
+          "revised_deaths": 107
+        },
+        {
+          "country": "Russia (Soviet Union)",
+          "country_id": 365,
+          "old_deaths": 57,
+          "revised_deaths": 67
+        },
+        {
+          "country": "Ukraine",
+          "country_id": 369,
+          "old_deaths": 81497,
+          "revised_deaths": 91692
+        },
+        {
+          "country": "Mali",
+          "country_id": 432,
+          "old_deaths": 1436,
+          "revised_deaths": 1440
+        },
+        {
+          "country": "Burkina Faso",
+          "country_id": 439,
+          "old_deaths": 2047,
+          "revised_deaths": 2003
+        },
+        {
+          "country": "Nigeria",
+          "country_id": 475,
+          "old_deaths": 1522,
+          "revised_deaths": 1535
+        },
+        {
+          "country": "Chad",
+          "country_id": 483,
+          "old_deaths": 55,
+          "revised_deaths": 45
+        },
+        {
+          "country": "DR Congo (Zaire)",
+          "country_id": 490,
+          "old_deaths": 1407,
+          "revised_deaths": 1755
+        },
+        {
+          "country": "Burundi",
+          "country_id": 516,
+          "old_deaths": 0,
+          "revised_deaths": 10
+        },
+        {
+          "country": "Rwanda",
+          "country_id": 517,
+          "old_deaths": 4,
+          "revised_deaths": 6
+        },
+        {
+          "country": "Ethiopia",
+          "country_id": 530,
+          "old_deaths": 101076,
+          "revised_deaths": 163208
+        },
+        {
+          "country": "Mozambique",
+          "country_id": 541,
+          "old_deaths": 373,
+          "revised_deaths": 378
+        },
+        {
+          "country": "Turkey",
+          "country_id": 640,
+          "old_deaths": 85,
+          "revised_deaths": 82
+        },
+        {
+          "country": "Iraq",
+          "country_id": 645,
+          "old_deaths": 842,
+          "revised_deaths": 979
+        },
+        {
+          "country": "Syria",
+          "country_id": 652,
+          "old_deaths": 939,
+          "revised_deaths": 973
+        },
+        {
+          "country": "Yemen (North Yemen)",
+          "country_id": 678,
+          "old_deaths": 2919,
+          "revised_deaths": 2940
+        },
+        {
+          "country": "Afghanistan",
+          "country_id": 700,
+          "old_deaths": 908,
+          "revised_deaths": 926
+        },
+        {
+          "country": "Tajikistan",
+          "country_id": 702,
+          "old_deaths": 88,
+          "revised_deaths": 87
+        },
+        {
+          "country": "Kyrgyzstan",
+          "country_id": 703,
+          "old_deaths": 64,
+          "revised_deaths": 63
+        },
+        {
+          "country": "Myanmar (Burma)",
+          "country_id": 775,
+          "old_deaths": 2043,
+          "revised_deaths": 2054
+        },
+        {
+          "country": "Thailand",
+          "country_id": 800,
+          "old_deaths": 30,
+          "revised_deaths": 31
+        },
+        {
+          "country": "Philippines",
+          "country_id": 840,
+          "old_deaths": 226,
+          "revised_deaths": 240
+        }
+      ],
+      "forecast_horizon": 2,
+      "largest_12_absolute_shadow_probability_revisions": [
+        {
+          "country": "Burundi",
+          "country_id": 516,
+          "old_binary_markov_p": 0.267853229871,
+          "old_origin_deaths": 0,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.21181747432,
+          "revised_binary_markov_p": 0.268013560205,
+          "revised_origin_deaths": 10,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.409490401469,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.016696036,
+            "delta_probability_pp": 19.767292715,
+            "origin_annual_deaths_pp": 19.973999027,
+            "trained_logistic_coefficients_pp": -0.223402348
+          }
+        },
+        {
+          "country": "Thailand",
+          "country_id": 800,
+          "old_binary_markov_p": 0.769131100836,
+          "old_origin_deaths": 30,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.723883322762,
+          "revised_binary_markov_p": 0.805503206823,
+          "revised_origin_deaths": 31,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.765222418926,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 4.132374285,
+            "delta_probability_pp": 4.133909616,
+            "origin_annual_deaths_pp": 0.236410362,
+            "trained_logistic_coefficients_pp": -0.23487503
+          }
+        },
+        {
+          "country": "Albania",
+          "country_id": 339,
+          "old_binary_markov_p": 0.021114176516,
+          "old_origin_deaths": 0,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.015597361022,
+          "revised_binary_markov_p": 0.054882110971,
+          "revised_origin_deaths": 0,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.040414588138,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 2.516252111,
+            "delta_probability_pp": 2.481722712,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": -0.034529399
+          }
+        },
+        {
+          "country": "Rwanda",
+          "country_id": 517,
+          "old_binary_markov_p": 0.139694064033,
+          "old_origin_deaths": 4,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.184811347467,
+          "revised_binary_markov_p": 0.139831699819,
+          "revised_origin_deaths": 6,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.20440951794,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.017931387,
+            "delta_probability_pp": 1.959817047,
+            "origin_annual_deaths_pp": 2.106110589,
+            "trained_logistic_coefficients_pp": -0.164224928
+          }
+        },
+        {
+          "country": "Chad",
+          "country_id": 483,
+          "old_binary_markov_p": 0.758016723284,
+          "old_origin_deaths": 55,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.756528682281,
+          "revised_binary_markov_p": 0.758035399552,
+          "revised_origin_deaths": 45,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.739841724146,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.00191762,
+            "delta_probability_pp": -1.668695814,
+            "origin_annual_deaths_pp": -1.453788142,
+            "trained_logistic_coefficients_pp": -0.216825292
+          }
+        },
+        {
+          "country": "Colombia",
+          "country_id": 100,
+          "old_binary_markov_p": 0.848140786025,
+          "old_origin_deaths": 75,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.861946153585,
+          "revised_binary_markov_p": 0.848155483706,
+          "revised_origin_deaths": 107,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.87643470828,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.001297113,
+            "delta_probability_pp": 1.44885547,
+            "origin_annual_deaths_pp": 1.566601831,
+            "trained_logistic_coefficients_pp": -0.119043474
+          }
+        },
+        {
+          "country": "Russia (Soviet Union)",
+          "country_id": 365,
+          "old_binary_markov_p": 0.7792670443,
+          "old_origin_deaths": 57,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.780236017764,
+          "revised_binary_markov_p": 0.779286654382,
+          "revised_origin_deaths": 67,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.788923647496,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.001926753,
+            "delta_probability_pp": 0.868762973,
+            "origin_annual_deaths_pp": 1.0548503,
+            "trained_logistic_coefficients_pp": -0.18801408
+          }
+        },
+        {
+          "country": "DR Congo (Zaire)",
+          "country_id": 490,
+          "old_binary_markov_p": 0.823288109737,
+          "old_origin_deaths": 1407,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.942299435922,
+          "revised_binary_markov_p": 0.823300688003,
+          "revised_origin_deaths": 1755,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.946573447483,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.00045372,
+            "delta_probability_pp": 0.427401156,
+            "origin_annual_deaths_pp": 0.454638918,
+            "trained_logistic_coefficients_pp": -0.027691482
+          }
+        },
+        {
+          "country": "Kyrgyzstan",
+          "country_id": 703,
+          "old_binary_markov_p": 0.658416662822,
+          "old_origin_deaths": 64,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.669626366578,
+          "revised_binary_markov_p": 0.658431551382,
+          "revised_origin_deaths": 63,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.665834376759,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.001468742,
+            "delta_probability_pp": -0.379198982,
+            "origin_annual_deaths_pp": -0.13497628,
+            "trained_logistic_coefficients_pp": -0.245691444
+          }
+        },
+        {
+          "country": "Tajikistan",
+          "country_id": 702,
+          "old_binary_markov_p": 0.648213267755,
+          "old_origin_deaths": 88,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.68664210538,
+          "revised_binary_markov_p": 0.648232399542,
+          "revised_origin_deaths": 87,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.683438333006,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.001810214,
+            "delta_probability_pp": -0.320377237,
+            "origin_annual_deaths_pp": -0.095664367,
+            "trained_logistic_coefficients_pp": -0.226523084
+          }
+        },
+        {
+          "country": "Turkey",
+          "country_id": 640,
+          "old_binary_markov_p": 0.84500544408,
+          "old_origin_deaths": 85,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.864806895066,
+          "revised_binary_markov_p": 0.845019748775,
+          "revised_origin_deaths": 82,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.861927889513,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.001288413,
+            "delta_probability_pp": -0.287900555,
+            "origin_annual_deaths_pp": -0.164348105,
+            "trained_logistic_coefficients_pp": -0.124840863
+          }
+        },
+        {
+          "country": "Benin",
+          "country_id": 434,
+          "old_binary_markov_p": 0.703057689956,
+          "old_origin_deaths": 30,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.650740637753,
+          "revised_binary_markov_p": 0.703069301987,
+          "revised_origin_deaths": 30,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.64792855987,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.001266507,
+            "delta_probability_pp": -0.281207788,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": -0.282474296
+          }
+        }
+      ],
+      "old_edition": "23.1",
+      "old_training": {
+        "final_beta_intercept_only": [
+          0.105708121366,
+          0.0,
+          0.0
+        ],
+        "final_beta_log1p": [
+          -0.308462942233,
+          1.300074663014,
+          1.806741633591
+        ],
+        "inner_target_years": [
+          2012,
+          2022
+        ],
+        "inner_validation_max_year": 2020,
+        "inner_validation_min_year": 2018,
+        "origin": 2022,
+        "post_origin_training_observations": 0,
+        "selected_ridge_lambda": 5.0,
+        "training_countries": 199,
+        "training_cutoff": 2022,
+        "training_n": 2154
+      },
+      "origin": 2022,
+      "post_origin_years_from_later_source_removed": true,
+      "revised_edition": "24.1",
+      "revised_training": {
+        "final_beta_intercept_only": [
+          0.097014794449,
+          0.0,
+          0.0
+        ],
+        "final_beta_log1p": [
+          -0.321188294113,
+          1.30416550108,
+          1.815130375377
+        ],
+        "inner_target_years": [
+          2012,
+          2022
+        ],
+        "inner_validation_max_year": 2020,
+        "inner_validation_min_year": 2018,
+        "origin": 2022,
+        "post_origin_training_observations": 0,
+        "selected_ridge_lambda": 5.0,
+        "training_countries": 199,
+        "training_cutoff": 2022,
+        "training_n": 2154
+      },
+      "same_old_origin_riskset": true,
+      "summary": {
+        "max_absolute_log1p_revision_pp": 19.767292715,
+        "max_absolute_original_binary_revision_pp": 3.637210599,
+        "mean_absolute_log1p_revision_pp": 0.212479149,
+        "mean_absolute_original_binary_revision_pp": 0.046862904,
+        "n": 196,
+        "n_revised_origin_binary_states": 0,
+        "n_revised_origin_death_counts": 22,
+        "n_shadow_change_at_least_2_5pp": 2,
+        "n_shadow_change_at_least_5pp": 1,
+        "old_sum_expected_active": 36.946344606,
+        "p50_absolute_log1p_revision_pp": 0.010412555,
+        "p95_absolute_log1p_revision_pp": 0.320377237,
+        "revised_sum_expected_active": 37.164965057,
+        "sum_absolute_shapley_factor_pp": {
+          "binary_markov_kernel": 8.436717946,
+          "origin_annual_deaths": 28.259366538,
+          "trained_logistic_coefficients": 11.027924841
+        },
+        "sum_probability_revision": 0.218620451,
+        "sum_signed_shapley_factor_pp": {
+          "binary_markov_kernel": 8.436717946,
+          "origin_annual_deaths": 24.441134694,
+          "trained_logistic_coefficients": -11.015807493
+        }
+      },
+      "top10_entry": {
+        "budget": 10,
+        "definite_entries_not_dependent_on_ties": [],
+        "definite_exits_not_dependent_on_ties": [],
+        "deterministic_entered": [],
+        "deterministic_exited": [],
+        "deterministic_swaps_n": 0,
+        "never_a_new_issued_2027_alert": true,
+        "new_boundary_unique": true,
+        "old_boundary_unique": true,
+        "old_topk": [
+          {
+            "country": "Peru",
+            "country_id": 135
+          },
+          {
+            "country": "Senegal",
+            "country_id": 433
+          },
+          {
+            "country": "Congo",
+            "country_id": 484
+          },
+          {
+            "country": "Burundi",
+            "country_id": 516
+          },
+          {
+            "country": "Rwanda",
+            "country_id": 517
+          },
+          {
+            "country": "Eritrea",
+            "country_id": 531
+          },
+          {
+            "country": "Angola",
+            "country_id": 540
+          },
+          {
+            "country": "Algeria",
+            "country_id": 615
+          },
+          {
+            "country": "South Sudan",
+            "country_id": 626
+          },
+          {
+            "country": "Bangladesh",
+            "country_id": 771
+          }
+        ],
+        "origin_state": 0,
+        "rank_deterministic_tiebreak": "ascending_GWNO",
+        "ranking_question": "entry_2024_2025_if_origin_inactive",
+        "revised_topk": [
+          {
+            "country": "Peru",
+            "country_id": 135
+          },
+          {
+            "country": "Senegal",
+            "country_id": 433
+          },
+          {
+            "country": "Congo",
+            "country_id": 484
+          },
+          {
+            "country": "Burundi",
+            "country_id": 516
+          },
+          {
+            "country": "Rwanda",
+            "country_id": 517
+          },
+          {
+            "country": "Eritrea",
+            "country_id": 531
+          },
+          {
+            "country": "Angola",
+            "country_id": 540
+          },
+          {
+            "country": "Algeria",
+            "country_id": 615
+          },
+          {
+            "country": "South Sudan",
+            "country_id": 626
+          },
+          {
+            "country": "Bangladesh",
+            "country_id": 771
+          }
+        ],
+        "risk_n": 159
+      },
+      "top5_resolution": {
+        "budget": 5,
+        "definite_entries_not_dependent_on_ties": [],
+        "definite_exits_not_dependent_on_ties": [],
+        "deterministic_entered": [],
+        "deterministic_exited": [],
+        "deterministic_swaps_n": 0,
+        "never_a_new_issued_2027_alert": true,
+        "new_boundary_unique": true,
+        "old_boundary_unique": true,
+        "old_topk": [
+          {
+            "country": "Benin",
+            "country_id": 434
+          },
+          {
+            "country": "Togo",
+            "country_id": 461
+          },
+          {
+            "country": "Iran",
+            "country_id": 630
+          },
+          {
+            "country": "Kyrgyzstan",
+            "country_id": 703
+          },
+          {
+            "country": "Indonesia",
+            "country_id": 850
+          }
+        ],
+        "origin_state": 1,
+        "rank_deterministic_tiebreak": "ascending_GWNO",
+        "ranking_question": "exit_2024_2025_if_origin_active",
+        "revised_topk": [
+          {
+            "country": "Benin",
+            "country_id": 434
+          },
+          {
+            "country": "Togo",
+            "country_id": 461
+          },
+          {
+            "country": "Iran",
+            "country_id": 630
+          },
+          {
+            "country": "Kyrgyzstan",
+            "country_id": 703
+          },
+          {
+            "country": "Indonesia",
+            "country_id": 850
+          }
+        ],
+        "risk_n": 37
+      }
+    },
+    {
+      "all_origin_states_unchanged": true,
+      "countries_with_changed_origin_best_deaths": [
+        {
+          "country": "Colombia",
+          "country_id": 100,
+          "old_deaths": 75,
+          "revised_deaths": 133
+        },
+        {
+          "country": "Russia (Soviet Union)",
+          "country_id": 365,
+          "old_deaths": 57,
+          "revised_deaths": 67
+        },
+        {
+          "country": "Ukraine",
+          "country_id": 369,
+          "old_deaths": 81497,
+          "revised_deaths": 91485
+        },
+        {
+          "country": "Mali",
+          "country_id": 432,
+          "old_deaths": 1436,
+          "revised_deaths": 1440
+        },
+        {
+          "country": "Burkina Faso",
+          "country_id": 439,
+          "old_deaths": 2047,
+          "revised_deaths": 2093
+        },
+        {
+          "country": "Nigeria",
+          "country_id": 475,
+          "old_deaths": 1522,
+          "revised_deaths": 1535
+        },
+        {
+          "country": "Chad",
+          "country_id": 483,
+          "old_deaths": 55,
+          "revised_deaths": 45
+        },
+        {
+          "country": "DR Congo (Zaire)",
+          "country_id": 490,
+          "old_deaths": 1407,
+          "revised_deaths": 1755
+        },
+        {
+          "country": "Burundi",
+          "country_id": 516,
+          "old_deaths": 0,
+          "revised_deaths": 10
+        },
+        {
+          "country": "Rwanda",
+          "country_id": 517,
+          "old_deaths": 4,
+          "revised_deaths": 6
+        },
+        {
+          "country": "Ethiopia",
+          "country_id": 530,
+          "old_deaths": 101076,
+          "revised_deaths": 163210
+        },
+        {
+          "country": "Mozambique",
+          "country_id": 541,
+          "old_deaths": 373,
+          "revised_deaths": 378
+        },
+        {
+          "country": "Iran",
+          "country_id": 630,
+          "old_deaths": 39,
+          "revised_deaths": 40
+        },
+        {
+          "country": "Turkey",
+          "country_id": 640,
+          "old_deaths": 85,
+          "revised_deaths": 96
+        },
+        {
+          "country": "Iraq",
+          "country_id": 645,
+          "old_deaths": 842,
+          "revised_deaths": 1013
+        },
+        {
+          "country": "Syria",
+          "country_id": 652,
+          "old_deaths": 939,
+          "revised_deaths": 973
+        },
+        {
+          "country": "Yemen (North Yemen)",
+          "country_id": 678,
+          "old_deaths": 2919,
+          "revised_deaths": 2940
+        },
+        {
+          "country": "Afghanistan",
+          "country_id": 700,
+          "old_deaths": 908,
+          "revised_deaths": 932
+        },
+        {
+          "country": "Tajikistan",
+          "country_id": 702,
+          "old_deaths": 88,
+          "revised_deaths": 87
+        },
+        {
+          "country": "Kyrgyzstan",
+          "country_id": 703,
+          "old_deaths": 64,
+          "revised_deaths": 63
+        },
+        {
+          "country": "Pakistan",
+          "country_id": 770,
+          "old_deaths": 631,
+          "revised_deaths": 640
+        },
+        {
+          "country": "Myanmar (Burma)",
+          "country_id": 775,
+          "old_deaths": 2043,
+          "revised_deaths": 2054
+        },
+        {
+          "country": "Thailand",
+          "country_id": 800,
+          "old_deaths": 30,
+          "revised_deaths": 29
+        },
+        {
+          "country": "Philippines",
+          "country_id": 840,
+          "old_deaths": 226,
+          "revised_deaths": 240
+        }
+      ],
+      "forecast_horizon": 2,
+      "largest_12_absolute_shadow_probability_revisions": [
+        {
+          "country": "Burundi",
+          "country_id": 516,
+          "old_binary_markov_p": 0.267853229871,
+          "old_origin_deaths": 0,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.21181747432,
+          "revised_binary_markov_p": 0.268088735632,
+          "revised_origin_deaths": 10,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.403338293681,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.024542816,
+            "delta_probability_pp": 19.152081936,
+            "origin_annual_deaths_pp": 19.37725209,
+            "trained_logistic_coefficients_pp": -0.249712969
+          }
+        },
+        {
+          "country": "Indonesia",
+          "country_id": 850,
+          "old_binary_markov_p": 0.657575161428,
+          "old_origin_deaths": 46,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.640105465541,
+          "revised_binary_markov_p": 0.711241813266,
+          "revised_origin_deaths": 46,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.698722909585,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 5.49820392,
+            "delta_probability_pp": 5.861744404,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": 0.363540484
+          }
+        },
+        {
+          "country": "Thailand",
+          "country_id": 800,
+          "old_binary_markov_p": 0.769131100836,
+          "old_origin_deaths": 30,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.723883322762,
+          "revised_binary_markov_p": 0.806062265009,
+          "revised_origin_deaths": 29,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.767173516538,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 4.189029989,
+            "delta_probability_pp": 4.329019378,
+            "origin_annual_deaths_pp": -0.240405265,
+            "trained_logistic_coefficients_pp": 0.380394654
+          }
+        },
+        {
+          "country": "Albania",
+          "country_id": 339,
+          "old_binary_markov_p": 0.021114176516,
+          "old_origin_deaths": 0,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.015597361022,
+          "revised_binary_markov_p": 0.054916880635,
+          "revised_origin_deaths": 0,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.041787099963,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 2.559857497,
+            "delta_probability_pp": 2.618973894,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": 0.059116397
+          }
+        },
+        {
+          "country": "Colombia",
+          "country_id": 100,
+          "old_binary_markov_p": 0.848140786025,
+          "old_origin_deaths": 75,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.861946153585,
+          "revised_binary_markov_p": 0.848599186496,
+          "revised_origin_deaths": 133,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.887440269992,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.038968976,
+            "delta_probability_pp": 2.549411641,
+            "origin_annual_deaths_pp": 2.397874669,
+            "trained_logistic_coefficients_pp": 0.112567996
+          }
+        },
+        {
+          "country": "Rwanda",
+          "country_id": 517,
+          "old_binary_markov_p": 0.139694064033,
+          "old_origin_deaths": 4,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.184811347467,
+          "revised_binary_markov_p": 0.139885757257,
+          "revised_origin_deaths": 6,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.202123094772,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.024883582,
+            "delta_probability_pp": 1.731174731,
+            "origin_annual_deaths_pp": 2.034360095,
+            "trained_logistic_coefficients_pp": -0.328068947
+          }
+        },
+        {
+          "country": "Tajikistan",
+          "country_id": 702,
+          "old_binary_markov_p": 0.648213267755,
+          "old_origin_deaths": 88,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.68664210538,
+          "revised_binary_markov_p": 0.629655131931,
+          "revised_origin_deaths": 87,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.670585017704,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": -1.754449757,
+            "delta_probability_pp": -1.605708768,
+            "origin_annual_deaths_pp": -0.095415178,
+            "trained_logistic_coefficients_pp": 0.244156167
+          }
+        },
+        {
+          "country": "Russia (Soviet Union)",
+          "country_id": 365,
+          "old_binary_markov_p": 0.7792670443,
+          "old_origin_deaths": 57,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.780236017764,
+          "revised_binary_markov_p": 0.779712043908,
+          "revised_origin_deaths": 67,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.793360531989,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.043411843,
+            "delta_probability_pp": 1.312451422,
+            "origin_annual_deaths_pp": 1.033020265,
+            "trained_logistic_coefficients_pp": 0.236019314
+          }
+        },
+        {
+          "country": "Angola",
+          "country_id": 540,
+          "old_binary_markov_p": 0.238408935434,
+          "old_origin_deaths": 20,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.436585132786,
+          "revised_binary_markov_p": 0.238653189194,
+          "revised_origin_deaths": 20,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.424416814269,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.032964176,
+            "delta_probability_pp": -1.216831852,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": -1.249796028
+          }
+        },
+        {
+          "country": "Chad",
+          "country_id": 483,
+          "old_binary_markov_p": 0.758016723284,
+          "old_origin_deaths": 55,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.756528682281,
+          "revised_binary_markov_p": 0.75849992214,
+          "revised_origin_deaths": 45,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.745742770838,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.049273984,
+            "delta_probability_pp": -1.078591144,
+            "origin_annual_deaths_pp": -1.424330022,
+            "trained_logistic_coefficients_pp": 0.296464894
+          }
+        },
+        {
+          "country": "Algeria",
+          "country_id": 615,
+          "old_binary_markov_p": 0.194179759065,
+          "old_origin_deaths": 14,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.342775707496,
+          "revised_binary_markov_p": 0.194502044319,
+          "revised_origin_deaths": 14,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.333617771896,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.046065881,
+            "delta_probability_pp": -0.91579356,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": -0.961859441
+          }
+        },
+        {
+          "country": "Turkey",
+          "country_id": 640,
+          "old_binary_markov_p": 0.84500544408,
+          "old_origin_deaths": 85,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.864806895066,
+          "revised_binary_markov_p": 0.845472136945,
+          "revised_origin_deaths": 96,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.871794816101,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.040787246,
+            "delta_probability_pp": 0.698792103,
+            "origin_annual_deaths_pp": 0.532902458,
+            "trained_logistic_coefficients_pp": 0.125102399
+          }
+        }
+      ],
+      "old_edition": "23.1",
+      "old_training": {
+        "final_beta_intercept_only": [
+          0.105708121366,
+          0.0,
+          0.0
+        ],
+        "final_beta_log1p": [
+          -0.308462942233,
+          1.300074663014,
+          1.806741633591
+        ],
+        "inner_target_years": [
+          2012,
+          2022
+        ],
+        "inner_validation_max_year": 2020,
+        "inner_validation_min_year": 2018,
+        "origin": 2022,
+        "post_origin_training_observations": 0,
+        "selected_ridge_lambda": 5.0,
+        "training_countries": 199,
+        "training_cutoff": 2022,
+        "training_n": 2154
+      },
+      "origin": 2022,
+      "post_origin_years_from_later_source_removed": true,
+      "revised_edition": "25.1",
+      "revised_training": {
+        "final_beta_intercept_only": [
+          0.109389873002,
+          0.0,
+          0.0
+        ],
+        "final_beta_log1p": [
+          -0.287030208893,
+          1.222582537319,
+          1.768180756381
+        ],
+        "inner_target_years": [
+          2012,
+          2022
+        ],
+        "inner_validation_max_year": 2020,
+        "inner_validation_min_year": 2018,
+        "origin": 2022,
+        "post_origin_training_observations": 0,
+        "selected_ridge_lambda": 5.0,
+        "training_countries": 199,
+        "training_cutoff": 2022,
+        "training_n": 2154
+      },
+      "same_old_origin_riskset": true,
+      "summary": {
+        "max_absolute_log1p_revision_pp": 19.152081936,
+        "max_absolute_original_binary_revision_pp": 5.366665184,
+        "mean_absolute_log1p_revision_pp": 0.306083173,
+        "mean_absolute_original_binary_revision_pp": 0.096865957,
+        "n": 196,
+        "n_revised_origin_binary_states": 0,
+        "n_revised_origin_death_counts": 24,
+        "n_shadow_change_at_least_2_5pp": 5,
+        "n_shadow_change_at_least_5pp": 2,
+        "old_sum_expected_active": 36.946344606,
+        "p50_absolute_log1p_revision_pp": 0.044731161,
+        "p95_absolute_log1p_revision_pp": 1.078591144,
+        "revised_sum_expected_active": 37.403752476,
+        "sum_absolute_shapley_factor_pp": {
+          "binary_markov_kernel": 17.601510916,
+          "origin_annual_deaths": 29.042154414,
+          "trained_logistic_coefficients": 18.664393937
+        },
+        "sum_probability_revision": 0.45740787,
+        "sum_signed_shapley_factor_pp": {
+          "binary_markov_kernel": 14.092611402,
+          "origin_annual_deaths": 25.256702374,
+          "trained_logistic_coefficients": 6.391473119
+        }
+      },
+      "top10_entry": {
+        "budget": 10,
+        "definite_entries_not_dependent_on_ties": [
+          {
+            "country": "Lebanon",
+            "country_id": 660
+          }
+        ],
+        "definite_exits_not_dependent_on_ties": [
+          {
+            "country": "South Sudan",
+            "country_id": 626
+          }
+        ],
+        "deterministic_entered": [
+          {
+            "country": "Lebanon",
+            "country_id": 660
+          }
+        ],
+        "deterministic_exited": [
+          {
+            "country": "South Sudan",
+            "country_id": 626
+          }
+        ],
+        "deterministic_swaps_n": 1,
+        "never_a_new_issued_2027_alert": true,
+        "new_boundary_unique": true,
+        "old_boundary_unique": true,
+        "old_topk": [
+          {
+            "country": "Peru",
+            "country_id": 135
+          },
+          {
+            "country": "Senegal",
+            "country_id": 433
+          },
+          {
+            "country": "Congo",
+            "country_id": 484
+          },
+          {
+            "country": "Burundi",
+            "country_id": 516
+          },
+          {
+            "country": "Rwanda",
+            "country_id": 517
+          },
+          {
+            "country": "Eritrea",
+            "country_id": 531
+          },
+          {
+            "country": "Angola",
+            "country_id": 540
+          },
+          {
+            "country": "Algeria",
+            "country_id": 615
+          },
+          {
+            "country": "South Sudan",
+            "country_id": 626
+          },
+          {
+            "country": "Bangladesh",
+            "country_id": 771
+          }
+        ],
+        "origin_state": 0,
+        "rank_deterministic_tiebreak": "ascending_GWNO",
+        "ranking_question": "entry_2024_2025_if_origin_inactive",
+        "revised_topk": [
+          {
+            "country": "Peru",
+            "country_id": 135
+          },
+          {
+            "country": "Senegal",
+            "country_id": 433
+          },
+          {
+            "country": "Congo",
+            "country_id": 484
+          },
+          {
+            "country": "Burundi",
+            "country_id": 516
+          },
+          {
+            "country": "Rwanda",
+            "country_id": 517
+          },
+          {
+            "country": "Eritrea",
+            "country_id": 531
+          },
+          {
+            "country": "Angola",
+            "country_id": 540
+          },
+          {
+            "country": "Algeria",
+            "country_id": 615
+          },
+          {
+            "country": "Lebanon",
+            "country_id": 660
+          },
+          {
+            "country": "Bangladesh",
+            "country_id": 771
+          }
+        ],
+        "risk_n": 159
+      },
+      "top5_resolution": {
+        "budget": 5,
+        "definite_entries_not_dependent_on_ties": [
+          {
+            "country": "Tajikistan",
+            "country_id": 702
+          }
+        ],
+        "definite_exits_not_dependent_on_ties": [
+          {
+            "country": "Indonesia",
+            "country_id": 850
+          }
+        ],
+        "deterministic_entered": [
+          {
+            "country": "Tajikistan",
+            "country_id": 702
+          }
+        ],
+        "deterministic_exited": [
+          {
+            "country": "Indonesia",
+            "country_id": 850
+          }
+        ],
+        "deterministic_swaps_n": 1,
+        "never_a_new_issued_2027_alert": true,
+        "new_boundary_unique": true,
+        "old_boundary_unique": true,
+        "old_topk": [
+          {
+            "country": "Benin",
+            "country_id": 434
+          },
+          {
+            "country": "Togo",
+            "country_id": 461
+          },
+          {
+            "country": "Iran",
+            "country_id": 630
+          },
+          {
+            "country": "Kyrgyzstan",
+            "country_id": 703
+          },
+          {
+            "country": "Indonesia",
+            "country_id": 850
+          }
+        ],
+        "origin_state": 1,
+        "rank_deterministic_tiebreak": "ascending_GWNO",
+        "ranking_question": "exit_2024_2025_if_origin_active",
+        "revised_topk": [
+          {
+            "country": "Benin",
+            "country_id": 434
+          },
+          {
+            "country": "Togo",
+            "country_id": 461
+          },
+          {
+            "country": "Iran",
+            "country_id": 630
+          },
+          {
+            "country": "Tajikistan",
+            "country_id": 702
+          },
+          {
+            "country": "Kyrgyzstan",
+            "country_id": 703
+          }
+        ],
+        "risk_n": 37
+      }
+    },
+    {
+      "all_origin_states_unchanged": true,
+      "countries_with_changed_origin_best_deaths": [
+        {
+          "country": "Colombia",
+          "country_id": 100,
+          "old_deaths": 75,
+          "revised_deaths": 133
+        },
+        {
+          "country": "Russia (Soviet Union)",
+          "country_id": 365,
+          "old_deaths": 57,
+          "revised_deaths": 67
+        },
+        {
+          "country": "Ukraine",
+          "country_id": 369,
+          "old_deaths": 81497,
+          "revised_deaths": 99472
+        },
+        {
+          "country": "Mali",
+          "country_id": 432,
+          "old_deaths": 1436,
+          "revised_deaths": 1440
+        },
+        {
+          "country": "Burkina Faso",
+          "country_id": 439,
+          "old_deaths": 2047,
+          "revised_deaths": 2105
+        },
+        {
+          "country": "Nigeria",
+          "country_id": 475,
+          "old_deaths": 1522,
+          "revised_deaths": 1536
+        },
+        {
+          "country": "Chad",
+          "country_id": 483,
+          "old_deaths": 55,
+          "revised_deaths": 45
+        },
+        {
+          "country": "DR Congo (Zaire)",
+          "country_id": 490,
+          "old_deaths": 1407,
+          "revised_deaths": 1755
+        },
+        {
+          "country": "Burundi",
+          "country_id": 516,
+          "old_deaths": 0,
+          "revised_deaths": 10
+        },
+        {
+          "country": "Rwanda",
+          "country_id": 517,
+          "old_deaths": 4,
+          "revised_deaths": 6
+        },
+        {
+          "country": "Ethiopia",
+          "country_id": 530,
+          "old_deaths": 101076,
+          "revised_deaths": 163210
+        },
+        {
+          "country": "Mozambique",
+          "country_id": 541,
+          "old_deaths": 373,
+          "revised_deaths": 378
+        },
+        {
+          "country": "Iran",
+          "country_id": 630,
+          "old_deaths": 39,
+          "revised_deaths": 40
+        },
+        {
+          "country": "Turkey",
+          "country_id": 640,
+          "old_deaths": 85,
+          "revised_deaths": 96
+        },
+        {
+          "country": "Iraq",
+          "country_id": 645,
+          "old_deaths": 842,
+          "revised_deaths": 1025
+        },
+        {
+          "country": "Syria",
+          "country_id": 652,
+          "old_deaths": 939,
+          "revised_deaths": 973
+        },
+        {
+          "country": "Israel",
+          "country_id": 666,
+          "old_deaths": 96,
+          "revised_deaths": 97
+        },
+        {
+          "country": "Yemen (North Yemen)",
+          "country_id": 678,
+          "old_deaths": 2919,
+          "revised_deaths": 2940
+        },
+        {
+          "country": "Afghanistan",
+          "country_id": 700,
+          "old_deaths": 908,
+          "revised_deaths": 1010
+        },
+        {
+          "country": "Tajikistan",
+          "country_id": 702,
+          "old_deaths": 88,
+          "revised_deaths": 87
+        },
+        {
+          "country": "Kyrgyzstan",
+          "country_id": 703,
+          "old_deaths": 64,
+          "revised_deaths": 63
+        },
+        {
+          "country": "Pakistan",
+          "country_id": 770,
+          "old_deaths": 631,
+          "revised_deaths": 640
+        },
+        {
+          "country": "Myanmar (Burma)",
+          "country_id": 775,
+          "old_deaths": 2043,
+          "revised_deaths": 2054
+        },
+        {
+          "country": "Thailand",
+          "country_id": 800,
+          "old_deaths": 30,
+          "revised_deaths": 29
+        },
+        {
+          "country": "Philippines",
+          "country_id": 840,
+          "old_deaths": 226,
+          "revised_deaths": 241
+        }
+      ],
+      "forecast_horizon": 2,
+      "largest_12_absolute_shadow_probability_revisions": [
+        {
+          "country": "Burundi",
+          "country_id": 516,
+          "old_binary_markov_p": 0.267853229871,
+          "old_origin_deaths": 0,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.21181747432,
+          "revised_binary_markov_p": 0.268030949487,
+          "revised_origin_deaths": 10,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.39425483971,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.018470833,
+            "delta_probability_pp": 18.243736539,
+            "origin_annual_deaths_pp": 18.896783309,
+            "trained_logistic_coefficients_pp": -0.671517603
+          }
+        },
+        {
+          "country": "Indonesia",
+          "country_id": 850,
+          "old_binary_markov_p": 0.657575161428,
+          "old_origin_deaths": 46,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.640105465541,
+          "revised_binary_markov_p": 0.712181578732,
+          "revised_origin_deaths": 46,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.700795411248,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 5.589771831,
+            "delta_probability_pp": 6.068994571,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": 0.47922274
+          }
+        },
+        {
+          "country": "Colombia",
+          "country_id": 100,
+          "old_binary_markov_p": 0.848140786025,
+          "old_origin_deaths": 75,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.861946153585,
+          "revised_binary_markov_p": 0.882863373762,
+          "revised_origin_deaths": 133,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.914483002399,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 2.923108025,
+            "delta_probability_pp": 5.253684881,
+            "origin_annual_deaths_pp": 2.154203764,
+            "trained_logistic_coefficients_pp": 0.176373093
+          }
+        },
+        {
+          "country": "Thailand",
+          "country_id": 800,
+          "old_binary_markov_p": 0.769131100836,
+          "old_origin_deaths": 30,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.723883322762,
+          "revised_binary_markov_p": 0.807036264939,
+          "revised_origin_deaths": 29,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.768972743491,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 4.296438254,
+            "delta_probability_pp": 4.508942073,
+            "origin_annual_deaths_pp": -0.240757082,
+            "trained_logistic_coefficients_pp": 0.453260901
+          }
+        },
+        {
+          "country": "Albania",
+          "country_id": 339,
+          "old_binary_markov_p": 0.021114176516,
+          "old_origin_deaths": 0,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.015597361022,
+          "revised_binary_markov_p": 0.05482998984,
+          "revised_origin_deaths": 0,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.041856332956,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 2.557360952,
+            "delta_probability_pp": 2.625897193,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": 0.068536241
+          }
+        },
+        {
+          "country": "Angola",
+          "country_id": 540,
+          "old_binary_markov_p": 0.238408935434,
+          "old_origin_deaths": 20,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.436585132786,
+          "revised_binary_markov_p": 0.238563202799,
+          "revised_origin_deaths": 20,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.412458602454,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.020739537,
+            "delta_probability_pp": -2.412653033,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": -2.43339257
+          }
+        },
+        {
+          "country": "Algeria",
+          "country_id": 615,
+          "old_binary_markov_p": 0.194179759065,
+          "old_origin_deaths": 14,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.342775707496,
+          "revised_binary_markov_p": 0.194300209342,
+          "revised_origin_deaths": 14,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.323868164598,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.017094895,
+            "delta_probability_pp": -1.89075429,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": -1.907849185
+          }
+        },
+        {
+          "country": "Russia (Soviet Union)",
+          "country_id": 365,
+          "old_binary_markov_p": 0.7792670443,
+          "old_origin_deaths": 57,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.780236017764,
+          "revised_binary_markov_p": 0.780440854252,
+          "revised_origin_deaths": 67,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.795110182789,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.114300469,
+            "delta_probability_pp": 1.487416502,
+            "origin_annual_deaths_pp": 1.03414387,
+            "trained_logistic_coefficients_pp": 0.338972163
+          }
+        },
+        {
+          "country": "Tajikistan",
+          "country_id": 702,
+          "old_binary_markov_p": 0.648213267755,
+          "old_origin_deaths": 88,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.68664210538,
+          "revised_binary_markov_p": 0.630645670461,
+          "revised_origin_deaths": 87,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.673126385258,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": -1.65833971,
+            "delta_probability_pp": -1.351572012,
+            "origin_annual_deaths_pp": -0.095613623,
+            "trained_logistic_coefficients_pp": 0.402381321
+          }
+        },
+        {
+          "country": "Rwanda",
+          "country_id": 517,
+          "old_binary_markov_p": 0.139694064033,
+          "old_origin_deaths": 4,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.184811347467,
+          "revised_binary_markov_p": 0.139817618812,
+          "revised_origin_deaths": 6,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.197259848479,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.01590183,
+            "delta_probability_pp": 1.244850101,
+            "origin_annual_deaths_pp": 1.973878206,
+            "trained_logistic_coefficients_pp": -0.744929934
+          }
+        },
+        {
+          "country": "South Sudan",
+          "country_id": 626,
+          "old_binary_markov_p": 0.056167747698,
+          "old_origin_deaths": 23,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.134477860333,
+          "revised_binary_markov_p": 0.056255265792,
+          "revised_origin_deaths": 23,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.122887058064,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.018491402,
+            "delta_probability_pp": -1.159080227,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": -1.177571629
+          }
+        },
+        {
+          "country": "Peru",
+          "country_id": 135,
+          "old_binary_markov_p": 0.076702382238,
+          "old_origin_deaths": 13,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.148878839863,
+          "revised_binary_markov_p": 0.076772930066,
+          "revised_origin_deaths": 13,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.138777909348,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.01225936,
+            "delta_probability_pp": -1.010093051,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": -1.022352411
+          }
+        }
+      ],
+      "old_edition": "23.1",
+      "old_training": {
+        "final_beta_intercept_only": [
+          0.105708121366,
+          0.0,
+          0.0
+        ],
+        "final_beta_log1p": [
+          -0.308462942233,
+          1.300074663014,
+          1.806741633591
+        ],
+        "inner_target_years": [
+          2012,
+          2022
+        ],
+        "inner_validation_max_year": 2020,
+        "inner_validation_min_year": 2018,
+        "origin": 2022,
+        "post_origin_training_observations": 0,
+        "selected_ridge_lambda": 5.0,
+        "training_countries": 199,
+        "training_cutoff": 2022,
+        "training_n": 2154
+      },
+      "origin": 2022,
+      "post_origin_years_from_later_source_removed": true,
+      "revised_edition": "26.1",
+      "revised_training": {
+        "final_beta_intercept_only": [
+          0.109472131294,
+          0.0,
+          0.0
+        ],
+        "final_beta_log1p": [
+          -0.2836271096,
+          1.166880242907,
+          1.782845119901
+        ],
+        "inner_target_years": [
+          2012,
+          2022
+        ],
+        "inner_validation_max_year": 2020,
+        "inner_validation_min_year": 2018,
+        "origin": 2022,
+        "post_origin_training_observations": 0,
+        "selected_ridge_lambda": 5.0,
+        "training_countries": 199,
+        "training_cutoff": 2022,
+        "training_n": 2154
+      },
+      "same_old_origin_riskset": true,
+      "summary": {
+        "max_absolute_log1p_revision_pp": 18.243736539,
+        "max_absolute_original_binary_revision_pp": 5.46064173,
+        "mean_absolute_log1p_revision_pp": 0.365731938,
+        "mean_absolute_original_binary_revision_pp": 0.130666891,
+        "n": 196,
+        "n_revised_origin_binary_states": 0,
+        "n_revised_origin_death_counts": 25,
+        "n_shadow_change_at_least_2_5pp": 5,
+        "n_shadow_change_at_least_5pp": 3,
+        "old_sum_expected_active": 36.946344606,
+        "p50_absolute_log1p_revision_pp": 0.043292845,
+        "p95_absolute_log1p_revision_pp": 1.244850101,
+        "revised_sum_expected_active": 37.430755099,
+        "sum_absolute_shapley_factor_pp": {
+          "binary_markov_kernel": 22.315202542,
+          "origin_annual_deaths": 28.543231524,
+          "trained_logistic_coefficients": 27.499324434
+        },
+        "sum_probability_revision": 0.484410492,
+        "sum_signed_shapley_factor_pp": {
+          "binary_markov_kernel": 17.791851088,
+          "origin_annual_deaths": 24.7516677,
+          "trained_logistic_coefficients": 5.89753046
+        }
+      },
+      "top10_entry": {
+        "budget": 10,
+        "definite_entries_not_dependent_on_ties": [
+          {
+            "country": "Lebanon",
+            "country_id": 660
+          }
+        ],
+        "definite_exits_not_dependent_on_ties": [
+          {
+            "country": "South Sudan",
+            "country_id": 626
+          }
+        ],
+        "deterministic_entered": [
+          {
+            "country": "Lebanon",
+            "country_id": 660
+          }
+        ],
+        "deterministic_exited": [
+          {
+            "country": "South Sudan",
+            "country_id": 626
+          }
+        ],
+        "deterministic_swaps_n": 1,
+        "never_a_new_issued_2027_alert": true,
+        "new_boundary_unique": true,
+        "old_boundary_unique": true,
+        "old_topk": [
+          {
+            "country": "Peru",
+            "country_id": 135
+          },
+          {
+            "country": "Senegal",
+            "country_id": 433
+          },
+          {
+            "country": "Congo",
+            "country_id": 484
+          },
+          {
+            "country": "Burundi",
+            "country_id": 516
+          },
+          {
+            "country": "Rwanda",
+            "country_id": 517
+          },
+          {
+            "country": "Eritrea",
+            "country_id": 531
+          },
+          {
+            "country": "Angola",
+            "country_id": 540
+          },
+          {
+            "country": "Algeria",
+            "country_id": 615
+          },
+          {
+            "country": "South Sudan",
+            "country_id": 626
+          },
+          {
+            "country": "Bangladesh",
+            "country_id": 771
+          }
+        ],
+        "origin_state": 0,
+        "rank_deterministic_tiebreak": "ascending_GWNO",
+        "ranking_question": "entry_2024_2025_if_origin_inactive",
+        "revised_topk": [
+          {
+            "country": "Peru",
+            "country_id": 135
+          },
+          {
+            "country": "Senegal",
+            "country_id": 433
+          },
+          {
+            "country": "Congo",
+            "country_id": 484
+          },
+          {
+            "country": "Burundi",
+            "country_id": 516
+          },
+          {
+            "country": "Rwanda",
+            "country_id": 517
+          },
+          {
+            "country": "Eritrea",
+            "country_id": 531
+          },
+          {
+            "country": "Angola",
+            "country_id": 540
+          },
+          {
+            "country": "Algeria",
+            "country_id": 615
+          },
+          {
+            "country": "Lebanon",
+            "country_id": 660
+          },
+          {
+            "country": "Bangladesh",
+            "country_id": 771
+          }
+        ],
+        "risk_n": 159
+      },
+      "top5_resolution": {
+        "budget": 5,
+        "definite_entries_not_dependent_on_ties": [
+          {
+            "country": "Tajikistan",
+            "country_id": 702
+          }
+        ],
+        "definite_exits_not_dependent_on_ties": [
+          {
+            "country": "Indonesia",
+            "country_id": 850
+          }
+        ],
+        "deterministic_entered": [
+          {
+            "country": "Tajikistan",
+            "country_id": 702
+          }
+        ],
+        "deterministic_exited": [
+          {
+            "country": "Indonesia",
+            "country_id": 850
+          }
+        ],
+        "deterministic_swaps_n": 1,
+        "never_a_new_issued_2027_alert": true,
+        "new_boundary_unique": true,
+        "old_boundary_unique": true,
+        "old_topk": [
+          {
+            "country": "Benin",
+            "country_id": 434
+          },
+          {
+            "country": "Togo",
+            "country_id": 461
+          },
+          {
+            "country": "Iran",
+            "country_id": 630
+          },
+          {
+            "country": "Kyrgyzstan",
+            "country_id": 703
+          },
+          {
+            "country": "Indonesia",
+            "country_id": 850
+          }
+        ],
+        "origin_state": 1,
+        "rank_deterministic_tiebreak": "ascending_GWNO",
+        "ranking_question": "exit_2024_2025_if_origin_active",
+        "revised_topk": [
+          {
+            "country": "Benin",
+            "country_id": 434
+          },
+          {
+            "country": "Togo",
+            "country_id": 461
+          },
+          {
+            "country": "Iran",
+            "country_id": 630
+          },
+          {
+            "country": "Tajikistan",
+            "country_id": 702
+          },
+          {
+            "country": "Kyrgyzstan",
+            "country_id": 703
+          }
+        ],
+        "risk_n": 37
+      }
+    },
+    {
+      "all_origin_states_unchanged": true,
+      "countries_with_changed_origin_best_deaths": [
+        {
+          "country": "Colombia",
+          "country_id": 100,
+          "old_deaths": 87,
+          "revised_deaths": 92
+        },
+        {
+          "country": "Ukraine",
+          "country_id": 369,
+          "old_deaths": 70605,
+          "revised_deaths": 75080
+        },
+        {
+          "country": "Mali",
+          "country_id": 432,
+          "old_deaths": 1259,
+          "revised_deaths": 1238
+        },
+        {
+          "country": "Niger",
+          "country_id": 436,
+          "old_deaths": 365,
+          "revised_deaths": 337
+        },
+        {
+          "country": "Burkina Faso",
+          "country_id": 439,
+          "old_deaths": 4605,
+          "revised_deaths": 4608
+        },
+        {
+          "country": "Togo",
+          "country_id": 461,
+          "old_deaths": 26,
+          "revised_deaths": 29
+        },
+        {
+          "country": "DR Congo (Zaire)",
+          "country_id": 490,
+          "old_deaths": 697,
+          "revised_deaths": 729
+        },
+        {
+          "country": "Uganda",
+          "country_id": 500,
+          "old_deaths": 17,
+          "revised_deaths": 22
+        },
+        {
+          "country": "Burundi",
+          "country_id": 516,
+          "old_deaths": 85,
+          "revised_deaths": 86
+        },
+        {
+          "country": "Ethiopia",
+          "country_id": 530,
+          "old_deaths": 1683,
+          "revised_deaths": 1688
+        },
+        {
+          "country": "Sudan",
+          "country_id": 625,
+          "old_deaths": 5315,
+          "revised_deaths": 5353
+        },
+        {
+          "country": "Iran",
+          "country_id": 630,
+          "old_deaths": 41,
+          "revised_deaths": 40
+        },
+        {
+          "country": "Turkey",
+          "country_id": 640,
+          "old_deaths": 98,
+          "revised_deaths": 106
+        },
+        {
+          "country": "Iraq",
+          "country_id": 645,
+          "old_deaths": 454,
+          "revised_deaths": 469
+        },
+        {
+          "country": "Syria",
+          "country_id": 652,
+          "old_deaths": 1664,
+          "revised_deaths": 1660
+        },
+        {
+          "country": "Israel",
+          "country_id": 666,
+          "old_deaths": 22709,
+          "revised_deaths": 26722
+        },
+        {
+          "country": "Yemen (North Yemen)",
+          "country_id": 678,
+          "old_deaths": 791,
+          "revised_deaths": 812
+        },
+        {
+          "country": "Afghanistan",
+          "country_id": 700,
+          "old_deaths": 230,
+          "revised_deaths": 252
+        },
+        {
+          "country": "Pakistan",
+          "country_id": 770,
+          "old_deaths": 1034,
+          "revised_deaths": 1056
+        },
+        {
+          "country": "Myanmar (Burma)",
+          "country_id": 775,
+          "old_deaths": 2513,
+          "revised_deaths": 2453
+        }
+      ],
+      "forecast_horizon": 2,
+      "largest_12_absolute_shadow_probability_revisions": [
+        {
+          "country": "Indonesia",
+          "country_id": 850,
+          "old_binary_markov_p": 0.666719574848,
+          "old_origin_deaths": 59,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.668311513625,
+          "revised_binary_markov_p": 0.71888078913,
+          "revised_origin_deaths": 59,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.72503844345,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 5.177708172,
+            "delta_probability_pp": 5.672692982,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": 0.49498481
+          }
+        },
+        {
+          "country": "Tajikistan",
+          "country_id": 702,
+          "old_binary_markov_p": 0.185746326712,
+          "old_origin_deaths": 0,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.140201476673,
+          "revised_binary_markov_p": 0.230903437426,
+          "revised_origin_deaths": 0,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.181359228491,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 3.688514389,
+            "delta_probability_pp": 4.115775182,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": 0.427260793
+          }
+        },
+        {
+          "country": "Togo",
+          "country_id": 461,
+          "old_binary_markov_p": 0.717599666102,
+          "old_origin_deaths": 26,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.648473014045,
+          "revised_binary_markov_p": 0.718590449938,
+          "revised_origin_deaths": 29,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.666143474026,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.110214985,
+            "delta_probability_pp": 1.767045998,
+            "origin_annual_deaths_pp": 0.961252777,
+            "trained_logistic_coefficients_pp": 0.695578236
+          }
+        },
+        {
+          "country": "Uganda",
+          "country_id": 500,
+          "old_binary_markov_p": 0.131436298945,
+          "old_origin_deaths": 17,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.256023330894,
+          "revised_binary_markov_p": 0.131481529157,
+          "revised_origin_deaths": 22,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.266008349134,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.007642911,
+            "delta_probability_pp": 0.998501824,
+            "origin_annual_deaths_pp": 1.835542357,
+            "trained_logistic_coefficients_pp": -0.844683444
+          }
+        },
+        {
+          "country": "Benin",
+          "country_id": 434,
+          "old_binary_markov_p": 0.717599666102,
+          "old_origin_deaths": 28,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.655123049829,
+          "revised_binary_markov_p": 0.718590449938,
+          "revised_origin_deaths": 28,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.663119735561,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.109960032,
+            "delta_probability_pp": 0.799668573,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": 0.689708541
+          }
+        },
+        {
+          "country": "Armenia",
+          "country_id": 371,
+          "old_binary_markov_p": 0.093741061491,
+          "old_origin_deaths": 20,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.200128841527,
+          "revised_binary_markov_p": 0.093784775253,
+          "revised_origin_deaths": 20,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.193181612691,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.008126802,
+            "delta_probability_pp": -0.694722884,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": -0.702849685
+          }
+        },
+        {
+          "country": "Thailand",
+          "country_id": 800,
+          "old_binary_markov_p": 0.810812592348,
+          "old_origin_deaths": 30,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.767044011293,
+          "revised_binary_markov_p": 0.81133733184,
+          "revised_origin_deaths": 30,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.772969886798,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.060643188,
+            "delta_probability_pp": 0.59258755,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": 0.531944363
+          }
+        },
+        {
+          "country": "Turkey",
+          "country_id": 640,
+          "old_binary_markov_p": 0.84853535819,
+          "old_origin_deaths": 98,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.873876061737,
+          "revised_binary_markov_p": 0.848961673812,
+          "revised_origin_deaths": 106,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.879598975216,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.035880418,
+            "delta_probability_pp": 0.572291348,
+            "origin_annual_deaths_pp": 0.340122357,
+            "trained_logistic_coefficients_pp": 0.196288573
+          }
+        },
+        {
+          "country": "Burundi",
+          "country_id": 516,
+          "old_binary_markov_p": 0.660918076227,
+          "old_origin_deaths": 85,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.69469865127,
+          "revised_binary_markov_p": 0.66136637209,
+          "revised_origin_deaths": 86,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.700304295168,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.042218678,
+            "delta_probability_pp": 0.56056439,
+            "origin_annual_deaths_pp": 0.098814854,
+            "trained_logistic_coefficients_pp": 0.419530858
+          }
+        },
+        {
+          "country": "Senegal",
+          "country_id": 433,
+          "old_binary_markov_p": 0.256694386418,
+          "old_origin_deaths": 0,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.197983006298,
+          "revised_binary_markov_p": 0.256779726712,
+          "revised_origin_deaths": 0,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.203149886768,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.007170437,
+            "delta_probability_pp": 0.516688047,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": 0.50951761
+          }
+        },
+        {
+          "country": "Colombia",
+          "country_id": 100,
+          "old_binary_markov_p": 0.851548540029,
+          "old_origin_deaths": 87,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.871133238404,
+          "revised_binary_markov_p": 0.851966797864,
+          "revised_origin_deaths": 92,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.876116309236,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.036565632,
+            "delta_probability_pp": 0.498307083,
+            "origin_annual_deaths_pp": 0.24712979,
+            "trained_logistic_coefficients_pp": 0.214611661
+          }
+        },
+        {
+          "country": "Angola",
+          "country_id": 540,
+          "old_binary_markov_p": 0.231552488491,
+          "old_origin_deaths": 0,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.177220545176,
+          "revised_binary_markov_p": 0.231615449262,
+          "revised_origin_deaths": 0,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.181954609875,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.005212631,
+            "delta_probability_pp": 0.47340647,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": 0.468193839
+          }
+        }
+      ],
+      "old_edition": "24.1",
+      "old_training": {
+        "final_beta_intercept_only": [
+          0.10266142323,
+          0.0,
+          0.0
+        ],
+        "final_beta_log1p": [
+          -0.335727532,
+          1.304542073218,
+          1.892413175728
+        ],
+        "inner_target_years": [
+          2012,
+          2023
+        ],
+        "inner_validation_max_year": 2020,
+        "inner_validation_min_year": 2018,
+        "origin": 2023,
+        "post_origin_training_observations": 0,
+        "selected_ridge_lambda": 5.0,
+        "training_countries": 199,
+        "training_cutoff": 2023,
+        "training_n": 2350
+      },
+      "origin": 2023,
+      "post_origin_years_from_later_source_removed": true,
+      "revised_edition": "25.1",
+      "revised_training": {
+        "final_beta_intercept_only": [
+          0.113274938458,
+          0.0,
+          0.0
+        ],
+        "final_beta_log1p": [
+          -0.303948689725,
+          1.222919731497,
+          1.846744351831
+        ],
+        "inner_target_years": [
+          2012,
+          2023
+        ],
+        "inner_validation_max_year": 2020,
+        "inner_validation_min_year": 2018,
+        "origin": 2023,
+        "post_origin_training_observations": 0,
+        "selected_ridge_lambda": 5.0,
+        "training_countries": 199,
+        "training_cutoff": 2023,
+        "training_n": 2350
+      },
+      "same_old_origin_riskset": true,
+      "summary": {
+        "max_absolute_log1p_revision_pp": 5.672692983,
+        "max_absolute_original_binary_revision_pp": 5.216121428,
+        "mean_absolute_log1p_revision_pp": 0.175613005,
+        "mean_absolute_original_binary_revision_pp": 0.061048669,
+        "n": 196,
+        "n_revised_origin_binary_states": 0,
+        "n_revised_origin_death_counts": 20,
+        "n_shadow_change_at_least_2_5pp": 2,
+        "n_shadow_change_at_least_5pp": 1,
+        "old_sum_expected_active": 34.772613014,
+        "p50_absolute_log1p_revision_pp": 0.048519798,
+        "p95_absolute_log1p_revision_pp": 0.516688047,
+        "revised_sum_expected_active": 35.067588677,
+        "sum_absolute_shapley_factor_pp": {
+          "binary_markov_kernel": 10.352716908,
+          "origin_annual_deaths": 5.136316994,
+          "trained_logistic_coefficients": 22.097348643
+        },
+        "sum_probability_revision": 0.294975664,
+        "sum_signed_shapley_factor_pp": {
+          "binary_markov_kernel": 10.352716908,
+          "origin_annual_deaths": 3.414075132,
+          "trained_logistic_coefficients": 15.730774335
+        }
+      },
+      "top10_entry": {
+        "budget": 10,
+        "definite_entries_not_dependent_on_ties": [],
+        "definite_exits_not_dependent_on_ties": [],
+        "deterministic_entered": [],
+        "deterministic_exited": [],
+        "deterministic_swaps_n": 0,
+        "never_a_new_issued_2027_alert": true,
+        "new_boundary_unique": true,
+        "old_boundary_unique": true,
+        "old_topk": [
+          {
+            "country": "Peru",
+            "country_id": 135
+          },
+          {
+            "country": "Armenia",
+            "country_id": 371
+          },
+          {
+            "country": "Senegal",
+            "country_id": 433
+          },
+          {
+            "country": "Congo",
+            "country_id": 484
+          },
+          {
+            "country": "Uganda",
+            "country_id": 500
+          },
+          {
+            "country": "Angola",
+            "country_id": 540
+          },
+          {
+            "country": "Algeria",
+            "country_id": 615
+          },
+          {
+            "country": "Egypt",
+            "country_id": 651
+          },
+          {
+            "country": "Saudi Arabia",
+            "country_id": 670
+          },
+          {
+            "country": "Tajikistan",
+            "country_id": 702
+          }
+        ],
+        "origin_state": 0,
+        "rank_deterministic_tiebreak": "ascending_GWNO",
+        "ranking_question": "entry_2024_2025_if_origin_inactive",
+        "revised_topk": [
+          {
+            "country": "Peru",
+            "country_id": 135
+          },
+          {
+            "country": "Armenia",
+            "country_id": 371
+          },
+          {
+            "country": "Senegal",
+            "country_id": 433
+          },
+          {
+            "country": "Congo",
+            "country_id": 484
+          },
+          {
+            "country": "Uganda",
+            "country_id": 500
+          },
+          {
+            "country": "Angola",
+            "country_id": 540
+          },
+          {
+            "country": "Algeria",
+            "country_id": 615
+          },
+          {
+            "country": "Egypt",
+            "country_id": 651
+          },
+          {
+            "country": "Saudi Arabia",
+            "country_id": 670
+          },
+          {
+            "country": "Tajikistan",
+            "country_id": 702
+          }
+        ],
+        "risk_n": 162
+      },
+      "top5_resolution": {
+        "budget": 5,
+        "definite_entries_not_dependent_on_ties": [],
+        "definite_exits_not_dependent_on_ties": [],
+        "deterministic_entered": [],
+        "deterministic_exited": [],
+        "deterministic_swaps_n": 0,
+        "never_a_new_issued_2027_alert": true,
+        "new_boundary_unique": true,
+        "old_boundary_unique": true,
+        "old_topk": [
+          {
+            "country": "Benin",
+            "country_id": 434
+          },
+          {
+            "country": "Togo",
+            "country_id": 461
+          },
+          {
+            "country": "Burundi",
+            "country_id": 516
+          },
+          {
+            "country": "Iran",
+            "country_id": 630
+          },
+          {
+            "country": "Indonesia",
+            "country_id": 850
+          }
+        ],
+        "origin_state": 1,
+        "rank_deterministic_tiebreak": "ascending_GWNO",
+        "ranking_question": "exit_2024_2025_if_origin_active",
+        "revised_topk": [
+          {
+            "country": "Benin",
+            "country_id": 434
+          },
+          {
+            "country": "Togo",
+            "country_id": 461
+          },
+          {
+            "country": "Burundi",
+            "country_id": 516
+          },
+          {
+            "country": "Iran",
+            "country_id": 630
+          },
+          {
+            "country": "Indonesia",
+            "country_id": 850
+          }
+        ],
+        "risk_n": 34
+      }
+    },
+    {
+      "all_origin_states_unchanged": true,
+      "countries_with_changed_origin_best_deaths": [
+        {
+          "country": "Colombia",
+          "country_id": 100,
+          "old_deaths": 87,
+          "revised_deaths": 92
+        },
+        {
+          "country": "Ukraine",
+          "country_id": 369,
+          "old_deaths": 70605,
+          "revised_deaths": 76154
+        },
+        {
+          "country": "Mali",
+          "country_id": 432,
+          "old_deaths": 1259,
+          "revised_deaths": 1238
+        },
+        {
+          "country": "Niger",
+          "country_id": 436,
+          "old_deaths": 365,
+          "revised_deaths": 337
+        },
+        {
+          "country": "Burkina Faso",
+          "country_id": 439,
+          "old_deaths": 4605,
+          "revised_deaths": 4806
+        },
+        {
+          "country": "Togo",
+          "country_id": 461,
+          "old_deaths": 26,
+          "revised_deaths": 29
+        },
+        {
+          "country": "DR Congo (Zaire)",
+          "country_id": 490,
+          "old_deaths": 697,
+          "revised_deaths": 729
+        },
+        {
+          "country": "Uganda",
+          "country_id": 500,
+          "old_deaths": 17,
+          "revised_deaths": 22
+        },
+        {
+          "country": "Burundi",
+          "country_id": 516,
+          "old_deaths": 85,
+          "revised_deaths": 86
+        },
+        {
+          "country": "Ethiopia",
+          "country_id": 530,
+          "old_deaths": 1683,
+          "revised_deaths": 1725
+        },
+        {
+          "country": "Sudan",
+          "country_id": 625,
+          "old_deaths": 5315,
+          "revised_deaths": 11760
+        },
+        {
+          "country": "Iran",
+          "country_id": 630,
+          "old_deaths": 41,
+          "revised_deaths": 40
+        },
+        {
+          "country": "Turkey",
+          "country_id": 640,
+          "old_deaths": 98,
+          "revised_deaths": 106
+        },
+        {
+          "country": "Iraq",
+          "country_id": 645,
+          "old_deaths": 454,
+          "revised_deaths": 483
+        },
+        {
+          "country": "Syria",
+          "country_id": 652,
+          "old_deaths": 1664,
+          "revised_deaths": 1677
+        },
+        {
+          "country": "Israel",
+          "country_id": 666,
+          "old_deaths": 22709,
+          "revised_deaths": 26816
+        },
+        {
+          "country": "Yemen (North Yemen)",
+          "country_id": 678,
+          "old_deaths": 791,
+          "revised_deaths": 816
+        },
+        {
+          "country": "Afghanistan",
+          "country_id": 700,
+          "old_deaths": 230,
+          "revised_deaths": 270
+        },
+        {
+          "country": "Pakistan",
+          "country_id": 770,
+          "old_deaths": 1034,
+          "revised_deaths": 1056
+        },
+        {
+          "country": "Myanmar (Burma)",
+          "country_id": 775,
+          "old_deaths": 2513,
+          "revised_deaths": 2464
+        }
+      ],
+      "forecast_horizon": 2,
+      "largest_12_absolute_shadow_probability_revisions": [
+        {
+          "country": "Indonesia",
+          "country_id": 850,
+          "old_binary_markov_p": 0.666719574848,
+          "old_origin_deaths": 59,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.668311513625,
+          "revised_binary_markov_p": 0.719768579906,
+          "revised_origin_deaths": 59,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.727028353858,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 5.259866166,
+            "delta_probability_pp": 5.871684023,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": 0.611817857
+          }
+        },
+        {
+          "country": "Tajikistan",
+          "country_id": 702,
+          "old_binary_markov_p": 0.185746326712,
+          "old_origin_deaths": 0,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.140201476673,
+          "revised_binary_markov_p": 0.23086812785,
+          "revised_origin_deaths": 0,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.181816787457,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 3.689712643,
+            "delta_probability_pp": 4.161531078,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": 0.471818436
+          }
+        },
+        {
+          "country": "Colombia",
+          "country_id": 100,
+          "old_binary_markov_p": 0.851548540029,
+          "old_origin_deaths": 87,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.871133238404,
+          "revised_binary_markov_p": 0.885601048052,
+          "revised_origin_deaths": 92,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.905462302472,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 2.952042669,
+            "delta_probability_pp": 3.432906407,
+            "origin_annual_deaths_pp": 0.222026987,
+            "trained_logistic_coefficients_pp": 0.25883675
+          }
+        },
+        {
+          "country": "Togo",
+          "country_id": 461,
+          "old_binary_markov_p": 0.717599666102,
+          "old_origin_deaths": 26,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.648473014045,
+          "revised_binary_markov_p": 0.720340033259,
+          "revised_origin_deaths": 29,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.66888323054,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.304821719,
+            "delta_probability_pp": 2.041021649,
+            "origin_annual_deaths_pp": 0.962665977,
+            "trained_logistic_coefficients_pp": 0.773533953
+          }
+        },
+        {
+          "country": "Armenia",
+          "country_id": 371,
+          "old_binary_markov_p": 0.093741061491,
+          "old_origin_deaths": 20,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.200128841527,
+          "revised_binary_markov_p": 0.093712222706,
+          "revised_origin_deaths": 20,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.18625233473,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": -0.005290263,
+            "delta_probability_pp": -1.38765068,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": -1.382360417
+          }
+        },
+        {
+          "country": "Benin",
+          "country_id": 434,
+          "old_binary_markov_p": 0.717599666102,
+          "old_origin_deaths": 28,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.655123049829,
+          "revised_binary_markov_p": 0.720340033259,
+          "revised_origin_deaths": 28,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.665850850705,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.304111264,
+            "delta_probability_pp": 1.072780088,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": 0.768668824
+          }
+        },
+        {
+          "country": "Saudi Arabia",
+          "country_id": 670,
+          "old_binary_markov_p": 0.126515942438,
+          "old_origin_deaths": 9,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.206542486806,
+          "revised_binary_markov_p": 0.126512990435,
+          "revised_origin_deaths": 9,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.197106784817,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": -0.000430262,
+            "delta_probability_pp": -0.943570199,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": -0.943139937
+          }
+        },
+        {
+          "country": "Peru",
+          "country_id": 135,
+          "old_binary_markov_p": 0.07449635059,
+          "old_origin_deaths": 12,
+          "old_origin_state": 0,
+          "old_shadow_p": 0.138439774312,
+          "revised_binary_markov_p": 0.074397436498,
+          "revised_origin_deaths": 12,
+          "revised_origin_state": 0,
+          "revised_shadow_p": 0.130225424809,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": -0.016690775,
+            "delta_probability_pp": -0.82143495,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": -0.804744175
+          }
+        },
+        {
+          "country": "Burundi",
+          "country_id": 516,
+          "old_binary_markov_p": 0.660918076227,
+          "old_origin_deaths": 85,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.69469865127,
+          "revised_binary_markov_p": 0.662137372338,
+          "revised_origin_deaths": 86,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.702416906566,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.114661929,
+            "delta_probability_pp": 0.77182553,
+            "origin_annual_deaths_pp": 0.098955673,
+            "trained_logistic_coefficients_pp": 0.558207928
+          }
+        },
+        {
+          "country": "Thailand",
+          "country_id": 800,
+          "old_binary_markov_p": 0.810812592348,
+          "old_origin_deaths": 30,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.767044011293,
+          "revised_binary_markov_p": 0.812256615785,
+          "revised_origin_deaths": 30,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.774682364736,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.16675386,
+            "delta_probability_pp": 0.763835344,
+            "origin_annual_deaths_pp": 0.0,
+            "trained_logistic_coefficients_pp": 0.597081484
+          }
+        },
+        {
+          "country": "Sudan",
+          "country_id": 625,
+          "old_binary_markov_p": 0.851548540029,
+          "old_origin_deaths": 5315,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.973212657026,
+          "revised_binary_markov_p": 0.852693792512,
+          "revised_origin_deaths": 11760,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.980524839278,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.020498684,
+            "delta_probability_pp": 0.731218225,
+            "origin_annual_deaths_pp": 0.722356065,
+            "trained_logistic_coefficients_pp": -0.011636524
+          }
+        },
+        {
+          "country": "Turkey",
+          "country_id": 640,
+          "old_binary_markov_p": 0.84853535819,
+          "old_origin_deaths": 98,
+          "old_origin_state": 1,
+          "old_shadow_p": 0.873876061737,
+          "revised_binary_markov_p": 0.849703440837,
+          "revised_origin_deaths": 106,
+          "revised_origin_state": 1,
+          "revised_shadow_p": 0.880970501307,
+          "shapley": {
+            "algebraic_not_causal": true,
+            "binary_markov_kernel_pp": 0.098032001,
+            "delta_probability_pp": 0.709443957,
+            "origin_annual_deaths_pp": 0.339643642,
+            "trained_logistic_coefficients_pp": 0.271768314
+          }
+        }
+      ],
+      "old_edition": "24.1",
+      "old_training": {
+        "final_beta_intercept_only": [
+          0.10266142323,
+          0.0,
+          0.0
+        ],
+        "final_beta_log1p": [
+          -0.335727532,
+          1.304542073218,
+          1.892413175728
+        ],
+        "inner_target_years": [
+          2012,
+          2023
+        ],
+        "inner_validation_max_year": 2020,
+        "inner_validation_min_year": 2018,
+        "origin": 2023,
+        "post_origin_training_observations": 0,
+        "selected_ridge_lambda": 5.0,
+        "training_countries": 199,
+        "training_cutoff": 2023,
+        "training_n": 2350
+      },
+      "origin": 2023,
+      "post_origin_years_from_later_source_removed": true,
+      "revised_edition": "26.1",
+      "revised_training": {
+        "final_beta_intercept_only": [
+          0.113103658636,
+          0.0,
+          0.0
+        ],
+        "final_beta_log1p": [
+          -0.300671002367,
+          1.172083522769,
+          1.859598948533
+        ],
+        "inner_target_years": [
+          2012,
+          2023
+        ],
+        "inner_validation_max_year": 2020,
+        "inner_validation_min_year": 2018,
+        "origin": 2023,
+        "post_origin_training_observations": 0,
+        "selected_ridge_lambda": 5.0,
+        "training_countries": 199,
+        "training_cutoff": 2023,
+        "training_n": 2350
+      },
+      "same_old_origin_riskset": true,
+      "summary": {
+        "max_absolute_log1p_revision_pp": 5.871684023,
+        "max_absolute_original_binary_revision_pp": 5.304900506,
+        "mean_absolute_log1p_revision_pp": 0.219355572,
+        "mean_absolute_original_binary_revision_pp": 0.104707888,
+        "n": 196,
+        "n_revised_origin_binary_states": 0,
+        "n_revised_origin_death_counts": 20,
+        "n_shadow_change_at_least_2_5pp": 3,
+        "n_shadow_change_at_least_5pp": 1,
+        "old_sum_expected_active": 34.772613014,
+        "p50_absolute_log1p_revision_pp": 0.04633414,
+        "p95_absolute_log1p_revision_pp": 0.763835344,
+        "revised_sum_expected_active": 35.123785998,
+        "sum_absolute_shapley_factor_pp": {
+          "binary_markov_kernel": 16.688961502,
+          "origin_annual_deaths": 6.154740138,
+          "trained_logistic_coefficients": 27.878548991
+        },
+        "sum_probability_revision": 0.351172984,
+        "sum_signed_shapley_factor_pp": {
+          "binary_markov_kernel": 13.623733032,
+          "origin_annual_deaths": 4.453048514,
+          "trained_logistic_coefficients": 17.040516815
+        }
+      },
+      "top10_entry": {
+        "budget": 10,
+        "definite_entries_not_dependent_on_ties": [],
+        "definite_exits_not_dependent_on_ties": [],
+        "deterministic_entered": [],
+        "deterministic_exited": [],
+        "deterministic_swaps_n": 0,
+        "never_a_new_issued_2027_alert": true,
+        "new_boundary_unique": true,
+        "old_boundary_unique": true,
+        "old_topk": [
+          {
+            "country": "Peru",
+            "country_id": 135
+          },
+          {
+            "country": "Armenia",
+            "country_id": 371
+          },
+          {
+            "country": "Senegal",
+            "country_id": 433
+          },
+          {
+            "country": "Congo",
+            "country_id": 484
+          },
+          {
+            "country": "Uganda",
+            "country_id": 500
+          },
+          {
+            "country": "Angola",
+            "country_id": 540
+          },
+          {
+            "country": "Algeria",
+            "country_id": 615
+          },
+          {
+            "country": "Egypt",
+            "country_id": 651
+          },
+          {
+            "country": "Saudi Arabia",
+            "country_id": 670
+          },
+          {
+            "country": "Tajikistan",
+            "country_id": 702
+          }
+        ],
+        "origin_state": 0,
+        "rank_deterministic_tiebreak": "ascending_GWNO",
+        "ranking_question": "entry_2024_2025_if_origin_inactive",
+        "revised_topk": [
+          {
+            "country": "Peru",
+            "country_id": 135
+          },
+          {
+            "country": "Armenia",
+            "country_id": 371
+          },
+          {
+            "country": "Senegal",
+            "country_id": 433
+          },
+          {
+            "country": "Congo",
+            "country_id": 484
+          },
+          {
+            "country": "Uganda",
+            "country_id": 500
+          },
+          {
+            "country": "Angola",
+            "country_id": 540
+          },
+          {
+            "country": "Algeria",
+            "country_id": 615
+          },
+          {
+            "country": "Egypt",
+            "country_id": 651
+          },
+          {
+            "country": "Saudi Arabia",
+            "country_id": 670
+          },
+          {
+            "country": "Tajikistan",
+            "country_id": 702
+          }
+        ],
+        "risk_n": 162
+      },
+      "top5_resolution": {
+        "budget": 5,
+        "definite_entries_not_dependent_on_ties": [],
+        "definite_exits_not_dependent_on_ties": [],
+        "deterministic_entered": [],
+        "deterministic_exited": [],
+        "deterministic_swaps_n": 0,
+        "never_a_new_issued_2027_alert": true,
+        "new_boundary_unique": true,
+        "old_boundary_unique": true,
+        "old_topk": [
+          {
+            "country": "Benin",
+            "country_id": 434
+          },
+          {
+            "country": "Togo",
+            "country_id": 461
+          },
+          {
+            "country": "Burundi",
+            "country_id": 516
+          },
+          {
+            "country": "Iran",
+            "country_id": 630
+          },
+          {
+            "country": "Indonesia",
+            "country_id": 850
+          }
+        ],
+        "origin_state": 1,
+        "rank_deterministic_tiebreak": "ascending_GWNO",
+        "ranking_question": "exit_2024_2025_if_origin_active",
+        "revised_topk": [
+          {
+            "country": "Benin",
+            "country_id": 434
+          },
+          {
+            "country": "Togo",
+            "country_id": 461
+          },
+          {
+            "country": "Burundi",
+            "country_id": 516
+          },
+          {
+            "country": "Iran",
+            "country_id": 630
+          },
+          {
+            "country": "Indonesia",
+            "country_id": 850
+          }
+        ],
+        "risk_n": 34
+      }
+    }
+  ],
+  "fixed_old_country_ids_n": 196,
+  "full_three_factor_counterfactual_shapley_not_causal": true,
+  "historical_simulations_not_2022_2023_issued_predictions": true,
+  "horizon_years": 2,
+  "later_editions_never_have_2025_origin_for_2027_original_issuance": true,
+  "limitations": "The five matched vintage comparisons share origins, country-years and model fits: they are not five independent replication samples. Newer UCDP editions may change past deaths even after historical origin; only old-year values at or below origin enter any fit. Shapley mathematically attributes changes to p_GEO, origin deaths and refitted coefficients, not distinct causal mechanisms or forecast uncertainty. Zero 2027 labels observed; 2025-origin 2027 shadow cannot be restated using editions ending 2022-2024. No future predictive performance is measured.",
+  "log1p_shadow2027_first_issued_sha256": "52686923315854557a796f8f192d376dab77a4e03b14c1aeb6b4091e48104f90",
+  "origin_years": [
+    2022,
+    2023
+  ],
+  "original_geo2027_immutable_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "outcomes_2027_observed": 0,
+  "paired_comparisons": [
+    {
+      "old": "23.1",
+      "origin": 2022,
+      "revised": "24.1"
+    },
+    {
+      "old": "23.1",
+      "origin": 2022,
+      "revised": "25.1"
+    },
+    {
+      "old": "23.1",
+      "origin": 2022,
+      "revised": "26.1"
+    },
+    {
+      "old": "24.1",
+      "origin": 2023,
+      "revised": "25.1"
+    },
+    {
+      "old": "24.1",
+      "origin": 2023,
+      "revised": "26.1"
+    }
+  ],
+  "prospective_predictive_skill_demonstrated": false,
+  "repeated_old_edition_snapshots_and_correlated_versions_not_independent": true,
+  "schema": "idealab.psico.geo2027_log1p_historical_vintage_robustness.v1",
+  "status": "RETROSPECTIVE_UCDP_VINTAGE_STRESS_EX_POST_NOT_2027_FORECAST_REVISION",
+  "three_shapley_factors": [
+    "binary_markov_kernel",
+    "origin_annual_deaths",
+    "trained_logistic_coefficients"
+  ]
+}
