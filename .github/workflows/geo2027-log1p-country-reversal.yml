@@ -1,0 +1,32 @@
+name: GEO2027 LOG1P exact annual country Brier reversal attribution
+on:
+  pull_request:
+    paths:
+      - 'scripts/diagnose_geo2027_log1p_annual_country_reversals.py'
+      - 'scripts/test_diagnose_geo2027_log1p_annual_country_reversals.py'
+      - 'data/geo2027-log1p-country-year-reversal-attribution.json'
+      - '.github/workflows/geo2027-log1p-country-reversal.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/diagnose_geo2027_log1p_annual_country_reversals.py'
+      - 'scripts/test_diagnose_geo2027_log1p_annual_country_reversals.py'
+      - 'data/geo2027-log1p-country-year-reversal-attribution.json'
+      - '.github/workflows/geo2027-log1p-country-reversal.yml'
+permissions:
+  contents: read
+jobs:
+  geo2027_log1p_country_reversal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify Brier identity, 1-to-24-only effects, historical H2 cutoffs and issued SHA
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_diagnose_geo2027_log1p_annual_country_reversals.py' -v
+      - name: Reproduce 30 official year-vintage country attribution blocks with exact published Brier
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_log1p_annual_country_reversals.py --check-report
