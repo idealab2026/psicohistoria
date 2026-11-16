@@ -341,7 +341,11 @@ def main():
         parser.error("--check-readiness is only available without future source")
     if args.source is None:
         content=json.dumps(preflight(),sort_keys=True,ensure_ascii=False,indent=2)+"\n"
+        if args.check_readiness:
+            print("GEO2027_FUTURE_RESOLUTION_READINESS_BEGIN")
         print(content,end="")
+        if args.check_readiness:
+            print("GEO2027_FUTURE_RESOLUTION_READINESS_END",flush=True)
         if args.check_readiness and READINESS_PATH.read_bytes()!=content.encode():
             raise ValueError("Pre-outcome 2027 readiness file is not byte-identical")
         return
