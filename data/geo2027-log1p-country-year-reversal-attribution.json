@@ -1,0 +1,5132 @@
+{
+  "Brier_identity": "(p_alpha1-y)^2-(p_alpha0-y)^2=(p_alpha1-p_alpha0)*(p_alpha1+p_alpha0-2*y)",
+  "all_training_features_cutoff_max_t_minus_four": true,
+  "alpha_candidates_from_previous_research": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "by_version_annual_diagnostics": {
+    "23.1": [
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 34,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 30
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": 0.002402069545,
+            "brier_sum_delta": 0.021618625904,
+            "gain_alpha1_sum": -0.046897949751,
+            "harm_alpha1_sum": 0.068516575655,
+            "n": 9,
+            "nonzero_delta_n": 9,
+            "positive_outcomes": 2
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 153,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 30,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 30
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 4,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.023448974876,
+            "brier_sum_delta": -0.046897949751,
+            "gain_alpha1_sum": -0.046897949751,
+            "harm_alpha1_sum": 0,
+            "n": 2,
+            "nonzero_delta_n": 2,
+            "positive_outcomes": 2
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000428228598,
+            "brier_sum_delta": 0.068516575655,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.068516575655,
+            "n": 160,
+            "nonzero_delta_n": 7,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": true,
+        "focus_country_contributions": [
+          {
+            "alpha0_p_active": 0.086926960038,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.009409206432,
+            "alpha1_p_active": 0.130251690251,
+            "country": "Peru",
+            "country_id": 135,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.094431707416,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.022911968531,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000367949204,
+            "alpha1_p_active": 0.029881557951,
+            "country": "France",
+            "country_id": 220,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.025041621587,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.064605365597,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.005429946391,
+            "alpha1_p_active": 0.097998977825,
+            "country": "Armenia",
+            "country_id": 371,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.07033144162,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.151153048761,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.030801386226,
+            "alpha1_p_active": 0.169494274311,
+            "country": "Angola",
+            "country_id": 540,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.163211539984,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.022911968531,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000160012023,
+            "alpha1_p_active": 0.026171937744,
+            "country": "Jordan",
+            "country_id": 663,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.025041621587,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.221145892454,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.048914680032,
+            "alpha1_p_active": 0.312762187262,
+            "country": "Israel",
+            "country_id": 666,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 10,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.237227674904,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.060981853239,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.001080164352,
+            "alpha1_p_active": 0.069274459772,
+            "country": "Kyrgyzstan",
+            "country_id": 703,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.066409572625,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.058313338774,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.003154617221,
+            "alpha1_p_active": 0.080963341707,
+            "country": "China",
+            "country_id": 710,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 5,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.063519612196,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.063716416054,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.016096563526,
+            "alpha1_p_active": 0.072352229539,
+            "country": "Bangladesh",
+            "country_id": 771,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.06936954612,
+            "target_outcome_state": 1
+          }
+        ],
+        "focus_leave_one_out_sign_flips": [
+          {
+            "country": "Israel",
+            "country_id": 666,
+            "delta_without_country": -0.000139979765,
+            "origin_deaths": 10,
+            "outcome": 0
+          }
+        ],
+        "focus_top8_absolute": [
+          {
+            "alpha0_p_active": 0.221145892454,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.048914680032,
+            "alpha1_p_active": 0.312762187262,
+            "country": "Israel",
+            "country_id": 666,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 10,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.237227674904,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.151153048761,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.030801386226,
+            "alpha1_p_active": 0.169494274311,
+            "country": "Angola",
+            "country_id": 540,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.163211539984,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.063716416054,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.016096563526,
+            "alpha1_p_active": 0.072352229539,
+            "country": "Bangladesh",
+            "country_id": 771,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.06936954612,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.086926960038,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.009409206432,
+            "alpha1_p_active": 0.130251690251,
+            "country": "Peru",
+            "country_id": 135,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.094431707416,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.064605365597,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.005429946391,
+            "alpha1_p_active": 0.097998977825,
+            "country": "Armenia",
+            "country_id": 371,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.07033144162,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.058313338774,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.003154617221,
+            "alpha1_p_active": 0.080963341707,
+            "country": "China",
+            "country_id": 710,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 5,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.063519612196,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.060981853239,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.001080164352,
+            "alpha1_p_active": 0.069274459772,
+            "country": "Kyrgyzstan",
+            "country_id": 703,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.066409572625,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.022911968531,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000367949204,
+            "alpha1_p_active": 0.029881557951,
+            "country": "France",
+            "country_id": 220,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.025041621587,
+            "target_outcome_state": 0
+          }
+        ],
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.221145892454,
+          "alpha1_minus_alpha0_delta_Brier_sum": 0.048914680032,
+          "alpha1_p_active": 0.312762187262,
+          "country": "Israel",
+          "country_id": 666,
+          "event_class": "inactive_to_inactive",
+          "origin_deaths_best": 10,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.237227674904,
+          "target_outcome_state": 0
+        },
+        "logistic_coefficients": [
+          -0.091061857274,
+          0.641000526036,
+          0.985020914597
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 1,
+        "origin_1_to_24_n": 9,
+        "origin_active_25_plus_n": 34,
+        "origin_year": 2015,
+        "origin_zero_n": 153,
+        "positive_outcomes": 32,
+        "ridge_fixed": 5.0,
+        "sign": "inactive_removed_better",
+        "source_version": "23.1",
+        "source_year_through": 2022,
+        "sum_alpha1_benefits_negative": -0.046897949751,
+        "sum_alpha1_harms_positive": 0.068516575655,
+        "target_year": 2017,
+        "top1_share_of_absolute_country_effects": 0.423817365,
+        "top3_share_of_absolute_country_effects": 0.83016093,
+        "trained_label_year_max": 2015,
+        "training_feature_year_max": 2013,
+        "year_brier_delta_alpha1_minus_alpha0": 0.000110299112
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 36,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 27
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.026385714285,
+            "brier_sum_delta": -0.184699999994,
+            "gain_alpha1_sum": -0.294459590366,
+            "harm_alpha1_sum": 0.109759590372,
+            "n": 7,
+            "nonzero_delta_n": 7,
+            "positive_outcomes": 2
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 153,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 3
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 27,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 27
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 9,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.058891918073,
+            "brier_sum_delta": -0.294459590366,
+            "gain_alpha1_sum": -0.294459590366,
+            "harm_alpha1_sum": 0,
+            "n": 5,
+            "nonzero_delta_n": 2,
+            "positive_outcomes": 5
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000708126389,
+            "brier_sum_delta": 0.109759590372,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.109759590372,
+            "n": 155,
+            "nonzero_delta_n": 5,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.162937959373,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.166560760276,
+          "alpha1_p_active": 0.269170266353,
+          "country": "Chad",
+          "country_id": 483,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 18,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.170119820659,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.051750367396,
+          0.705622741389,
+          1.030560824268
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 0,
+        "origin_1_to_24_n": 7,
+        "origin_active_25_plus_n": 36,
+        "origin_year": 2016,
+        "origin_zero_n": 153,
+        "positive_outcomes": 32,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "23.1",
+        "source_year_through": 2022,
+        "sum_alpha1_benefits_negative": -0.294459590366,
+        "sum_alpha1_harms_positive": 0.109759590372,
+        "target_year": 2018,
+        "top1_share_of_absolute_country_effects": 0.412055559,
+        "top3_share_of_absolute_country_effects": 0.877908886,
+        "trained_label_year_max": 2016,
+        "training_feature_year_max": 2014,
+        "year_brier_delta_alpha1_minus_alpha0": -0.000942346939
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 32,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 26
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.018270389583,
+            "brier_sum_delta": -0.200974285408,
+            "gain_alpha1_sum": -0.325770341211,
+            "harm_alpha1_sum": 0.124796055803,
+            "n": 11,
+            "nonzero_delta_n": 11,
+            "positive_outcomes": 3
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 153,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 2
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 26,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 26
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 6,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.065154068242,
+            "brier_sum_delta": -0.325770341211,
+            "gain_alpha1_sum": -0.325770341211,
+            "harm_alpha1_sum": 0,
+            "n": 5,
+            "nonzero_delta_n": 3,
+            "positive_outcomes": 5
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000784880854,
+            "brier_sum_delta": 0.124796055803,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.124796055803,
+            "n": 159,
+            "nonzero_delta_n": 8,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.200513223942,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.20437062319,
+          "alpha1_p_active": 0.340599907566,
+          "country": "Israel",
+          "country_id": 666,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 24,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.221383870427,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.125469806381,
+          0.731270799609,
+          1.221090457775
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 1,
+        "origin_1_to_24_n": 11,
+        "origin_active_25_plus_n": 32,
+        "origin_year": 2017,
+        "origin_zero_n": 153,
+        "positive_outcomes": 31,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "23.1",
+        "source_year_through": 2022,
+        "sum_alpha1_benefits_negative": -0.325770341211,
+        "sum_alpha1_harms_positive": 0.124796055803,
+        "target_year": 2019,
+        "top1_share_of_absolute_country_effects": 0.45358603,
+        "top3_share_of_absolute_country_effects": 0.763460023,
+        "trained_label_year_max": 2017,
+        "training_feature_year_max": 2015,
+        "year_brier_delta_alpha1_minus_alpha0": -0.001025379007
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 32,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 30
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.02894522784,
+            "brier_sum_delta": -0.376287961914,
+            "gain_alpha1_sum": -0.467691029003,
+            "harm_alpha1_sum": 0.091403067089,
+            "n": 13,
+            "nonzero_delta_n": 13,
+            "positive_outcomes": 3
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 151,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 1
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 30,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 30
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 2,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.116922757251,
+            "brier_sum_delta": -0.467691029003,
+            "gain_alpha1_sum": -0.467691029003,
+            "harm_alpha1_sum": 0,
+            "n": 4,
+            "nonzero_delta_n": 3,
+            "positive_outcomes": 4
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000571269169,
+            "brier_sum_delta": 0.091403067089,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.091403067089,
+            "n": 160,
+            "nonzero_delta_n": 10,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.145201820356,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.183936338081,
+          "alpha1_p_active": 0.260578881934,
+          "country": "Azerbaijan",
+          "country_id": 373,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 16,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.172330306371,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.203539621727,
+          0.839220137606,
+          1.366809736317
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 0,
+        "origin_1_to_24_n": 13,
+        "origin_active_25_plus_n": 32,
+        "origin_year": 2018,
+        "origin_zero_n": 151,
+        "positive_outcomes": 34,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "23.1",
+        "source_year_through": 2022,
+        "sum_alpha1_benefits_negative": -0.467691029003,
+        "sum_alpha1_harms_positive": 0.091403067089,
+        "target_year": 2020,
+        "top1_share_of_absolute_country_effects": 0.328989949,
+        "top3_share_of_absolute_country_effects": 0.836515771,
+        "trained_label_year_max": 2018,
+        "training_feature_year_max": 2016,
+        "year_brier_delta_alpha1_minus_alpha0": -0.00191983654
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 31,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 28
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.022463620897,
+            "brier_sum_delta": -0.292027071655,
+            "gain_alpha1_sum": -0.552989462468,
+            "harm_alpha1_sum": 0.260962390813,
+            "n": 13,
+            "nonzero_delta_n": 13,
+            "positive_outcomes": 3
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 152,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 1
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 28,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 28
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 3,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.138247365617,
+            "brier_sum_delta": -0.552989462468,
+            "gain_alpha1_sum": -0.552989462468,
+            "harm_alpha1_sum": 0,
+            "n": 4,
+            "nonzero_delta_n": 3,
+            "positive_outcomes": 4
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.001620884415,
+            "brier_sum_delta": 0.260962390813,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.260962390813,
+            "n": 161,
+            "nonzero_delta_n": 10,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.172408082497,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.246943977479,
+          "alpha1_p_active": 0.338211208589,
+          "country": "Indonesia",
+          "country_id": 850,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 16,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.211929492325,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.255322013652,
+          1.031955772231,
+          1.486543227299
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 0,
+        "origin_1_to_24_n": 13,
+        "origin_active_25_plus_n": 31,
+        "origin_year": 2019,
+        "origin_zero_n": 152,
+        "positive_outcomes": 32,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "23.1",
+        "source_year_through": 2022,
+        "sum_alpha1_benefits_negative": -0.552989462468,
+        "sum_alpha1_harms_positive": 0.260962390813,
+        "target_year": 2021,
+        "top1_share_of_absolute_country_effects": 0.303388925,
+        "top3_share_of_absolute_country_effects": 0.679388419,
+        "trained_label_year_max": 2019,
+        "training_feature_year_max": 2017,
+        "year_brier_delta_alpha1_minus_alpha0": -0.001489934039
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 34,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 29
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.035476531832,
+            "brier_sum_delta": -0.354765318317,
+            "gain_alpha1_sum": -0.609669686622,
+            "harm_alpha1_sum": 0.254904368305,
+            "n": 10,
+            "nonzero_delta_n": 10,
+            "positive_outcomes": 4
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 152,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 4
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 29,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 29
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 5,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.076208710828,
+            "brier_sum_delta": -0.609669686622,
+            "gain_alpha1_sum": -0.609669686622,
+            "harm_alpha1_sum": 0,
+            "n": 8,
+            "nonzero_delta_n": 4,
+            "positive_outcomes": 8
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.001655223171,
+            "brier_sum_delta": 0.254904368305,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.254904368305,
+            "n": 154,
+            "nonzero_delta_n": 6,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.165387510082,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.299589384924,
+          "alpha1_p_active": 0.369929667892,
+          "country": "Indonesia",
+          "country_id": 850,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 21,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.20688242278,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.274855413347,
+          1.144858651553,
+          1.63317726472
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 0,
+        "origin_1_to_24_n": 10,
+        "origin_active_25_plus_n": 34,
+        "origin_year": 2020,
+        "origin_zero_n": 152,
+        "positive_outcomes": 37,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "23.1",
+        "source_year_through": 2022,
+        "sum_alpha1_benefits_negative": -0.609669686622,
+        "sum_alpha1_harms_positive": 0.254904368305,
+        "target_year": 2022,
+        "top1_share_of_absolute_country_effects": 0.346516742,
+        "top3_share_of_absolute_country_effects": 0.740917753,
+        "trained_label_year_max": 2020,
+        "training_feature_year_max": 2018,
+        "year_brier_delta_alpha1_minus_alpha0": -0.001810027134
+      }
+    ],
+    "24.1": [
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 34,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 30
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": 0.002293324019,
+            "brier_sum_delta": 0.020639916172,
+            "gain_alpha1_sum": -0.046106307422,
+            "harm_alpha1_sum": 0.066746223594,
+            "n": 9,
+            "nonzero_delta_n": 9,
+            "positive_outcomes": 2
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 153,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 30,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 30
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 4,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.023053153711,
+            "brier_sum_delta": -0.046106307422,
+            "gain_alpha1_sum": -0.046106307422,
+            "harm_alpha1_sum": 0,
+            "n": 2,
+            "nonzero_delta_n": 2,
+            "positive_outcomes": 2
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000417163897,
+            "brier_sum_delta": 0.066746223594,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.066746223594,
+            "n": 160,
+            "nonzero_delta_n": 7,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": true,
+        "focus_country_contributions": [
+          {
+            "alpha0_p_active": 0.08639767869,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.009147304918,
+            "alpha1_p_active": 0.128887019521,
+            "country": "Peru",
+            "country_id": 135,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.094697891689,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.022862148682,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000360773495,
+            "alpha1_p_active": 0.029722909297,
+            "country": "France",
+            "country_id": 220,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.025227056095,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.064198879601,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.005273807881,
+            "alpha1_p_active": 0.096929376469,
+            "country": "Armenia",
+            "country_id": 371,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.070531098851,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.150160174845,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.030297782975,
+            "alpha1_p_active": 0.168176734249,
+            "country": "Angola",
+            "country_id": 540,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.163489851387,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.022862148682,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000157165486,
+            "alpha1_p_active": 0.026073805415,
+            "country": "Jordan",
+            "country_id": 663,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.025227056095,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.219732686144,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.047687767599,
+            "alpha1_p_active": 0.309790608248,
+            "country": "Israel",
+            "country_id": 666,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 10,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.237512252552,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.060596107807,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.001052710899,
+            "alpha1_p_active": 0.068735719826,
+            "country": "Kyrgyzstan",
+            "country_id": 703,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.066598259503,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.057943086645,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.003066693317,
+            "alpha1_p_active": 0.080150449823,
+            "country": "China",
+            "country_id": 710,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 5,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.063700271251,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.063314899149,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.015808524447,
+            "alpha1_p_active": 0.071791804761,
+            "country": "Bangladesh",
+            "country_id": 771,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.069566409174,
+            "target_outcome_state": 1
+          }
+        ],
+        "focus_leave_one_out_sign_flips": [
+          {
+            "country": "Israel",
+            "country_id": 666,
+            "delta_without_country": -0.00013870693,
+            "origin_deaths": 10,
+            "outcome": 0
+          }
+        ],
+        "focus_top8_absolute": [
+          {
+            "alpha0_p_active": 0.219732686144,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.047687767599,
+            "alpha1_p_active": 0.309790608248,
+            "country": "Israel",
+            "country_id": 666,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 10,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.237512252552,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.150160174845,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.030297782975,
+            "alpha1_p_active": 0.168176734249,
+            "country": "Angola",
+            "country_id": 540,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.163489851387,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.063314899149,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.015808524447,
+            "alpha1_p_active": 0.071791804761,
+            "country": "Bangladesh",
+            "country_id": 771,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.069566409174,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.08639767869,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.009147304918,
+            "alpha1_p_active": 0.128887019521,
+            "country": "Peru",
+            "country_id": 135,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.094697891689,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.064198879601,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.005273807881,
+            "alpha1_p_active": 0.096929376469,
+            "country": "Armenia",
+            "country_id": 371,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.070531098851,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.057943086645,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.003066693317,
+            "alpha1_p_active": 0.080150449823,
+            "country": "China",
+            "country_id": 710,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 5,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.063700271251,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.060596107807,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.001052710899,
+            "alpha1_p_active": 0.068735719826,
+            "country": "Kyrgyzstan",
+            "country_id": 703,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.066598259503,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.022862148682,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000360773495,
+            "alpha1_p_active": 0.029722909297,
+            "country": "France",
+            "country_id": 220,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.025227056095,
+            "target_outcome_state": 0
+          }
+        ],
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.219732686144,
+          "alpha1_minus_alpha0_delta_Brier_sum": 0.047687767599,
+          "alpha1_p_active": 0.309790608248,
+          "country": "Israel",
+          "country_id": 666,
+          "event_class": "inactive_to_inactive",
+          "origin_deaths_best": 10,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.237512252552,
+          "target_outcome_state": 0
+        },
+        "logistic_coefficients": [
+          -0.100857598864,
+          0.633340786159,
+          0.986489517168
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 1,
+        "origin_1_to_24_n": 9,
+        "origin_active_25_plus_n": 34,
+        "origin_year": 2015,
+        "origin_zero_n": 153,
+        "positive_outcomes": 32,
+        "ridge_fixed": 5.0,
+        "sign": "inactive_removed_better",
+        "source_version": "24.1",
+        "source_year_through": 2023,
+        "sum_alpha1_benefits_negative": -0.046106307422,
+        "sum_alpha1_harms_positive": 0.066746223594,
+        "target_year": 2017,
+        "top1_share_of_absolute_country_effects": 0.422567107,
+        "top3_share_of_absolute_country_effects": 0.831120704,
+        "trained_label_year_max": 2015,
+        "training_feature_year_max": 2013,
+        "year_brier_delta_alpha1_minus_alpha0": 0.000105305695
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 36,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 27
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.026209769791,
+            "brier_sum_delta": -0.183468388535,
+            "gain_alpha1_sum": -0.290595786793,
+            "harm_alpha1_sum": 0.107127398258,
+            "n": 7,
+            "nonzero_delta_n": 7,
+            "positive_outcomes": 2
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 153,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 3
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 27,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 27
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 9,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.058119157359,
+            "brier_sum_delta": -0.290595786793,
+            "gain_alpha1_sum": -0.290595786793,
+            "harm_alpha1_sum": 0,
+            "n": 5,
+            "nonzero_delta_n": 2,
+            "positive_outcomes": 5
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000691144505,
+            "brier_sum_delta": 0.107127398258,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.107127398258,
+            "n": 155,
+            "nonzero_delta_n": 5,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.161837064292,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.164254176881,
+          "alpha1_p_active": 0.26633595569,
+          "country": "Chad",
+          "country_id": 483,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 18,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.170398187644,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.061814599394,
+          0.698582405015,
+          1.033840420479
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 0,
+        "origin_1_to_24_n": 7,
+        "origin_active_25_plus_n": 36,
+        "origin_year": 2016,
+        "origin_zero_n": 153,
+        "positive_outcomes": 32,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "24.1",
+        "source_year_through": 2023,
+        "sum_alpha1_benefits_negative": -0.290595786793,
+        "sum_alpha1_harms_positive": 0.107127398258,
+        "target_year": 2018,
+        "top1_share_of_absolute_country_effects": 0.412986175,
+        "top3_share_of_absolute_country_effects": 0.879176951,
+        "trained_label_year_max": 2016,
+        "training_feature_year_max": 2014,
+        "year_brier_delta_alpha1_minus_alpha0": -0.000936063207
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 32,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 26
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.018198569764,
+            "brier_sum_delta": -0.2001842674,
+            "gain_alpha1_sum": -0.322100212791,
+            "harm_alpha1_sum": 0.121915945391,
+            "n": 11,
+            "nonzero_delta_n": 11,
+            "positive_outcomes": 3
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 153,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 2
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 26,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 26
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 6,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.064420042558,
+            "brier_sum_delta": -0.322100212791,
+            "gain_alpha1_sum": -0.322100212791,
+            "harm_alpha1_sum": 0,
+            "n": 5,
+            "nonzero_delta_n": 3,
+            "positive_outcomes": 5
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000766766952,
+            "brier_sum_delta": 0.121915945391,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.121915945391,
+            "n": 159,
+            "nonzero_delta_n": 8,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.19909201116,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.202271111925,
+          "alpha1_p_active": 0.337291546257,
+          "country": "Israel",
+          "country_id": 666,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 24,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.221632687149,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.135801896538,
+          0.725322888468,
+          1.22539775108
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 1,
+        "origin_1_to_24_n": 11,
+        "origin_active_25_plus_n": 32,
+        "origin_year": 2017,
+        "origin_zero_n": 153,
+        "positive_outcomes": 31,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "24.1",
+        "source_year_through": 2023,
+        "sum_alpha1_benefits_negative": -0.322100212791,
+        "sum_alpha1_harms_positive": 0.121915945391,
+        "target_year": 2019,
+        "top1_share_of_absolute_country_effects": 0.455548989,
+        "top3_share_of_absolute_country_effects": 0.764689705,
+        "trained_label_year_max": 2017,
+        "training_feature_year_max": 2015,
+        "year_brier_delta_alpha1_minus_alpha0": -0.001021348303
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 32,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 30
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.03101721814,
+            "brier_sum_delta": -0.403223835821,
+            "gain_alpha1_sum": -0.498603238852,
+            "harm_alpha1_sum": 0.095379403031,
+            "n": 13,
+            "nonzero_delta_n": 13,
+            "positive_outcomes": 3
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 151,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 1
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 30,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 30
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 2,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.124650809713,
+            "brier_sum_delta": -0.498603238852,
+            "gain_alpha1_sum": -0.498603238852,
+            "harm_alpha1_sum": 0,
+            "n": 4,
+            "nonzero_delta_n": 3,
+            "positive_outcomes": 4
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000596121269,
+            "brier_sum_delta": 0.095379403031,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.095379403031,
+            "n": 160,
+            "nonzero_delta_n": 10,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.144080357665,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.182151103393,
+          "alpha1_p_active": 0.258078622264,
+          "country": "Azerbaijan",
+          "country_id": 373,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 16,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.172520002977,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.213933567544,
+          0.834674944642,
+          1.371667094436
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 0,
+        "origin_1_to_24_n": 13,
+        "origin_active_25_plus_n": 32,
+        "origin_year": 2018,
+        "origin_zero_n": 151,
+        "positive_outcomes": 34,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "24.1",
+        "source_year_through": 2023,
+        "sum_alpha1_benefits_negative": -0.498603238852,
+        "sum_alpha1_harms_positive": 0.095379403031,
+        "target_year": 2020,
+        "top1_share_of_absolute_country_effects": 0.306660651,
+        "top3_share_of_absolute_country_effects": 0.839423922,
+        "trained_label_year_max": 2018,
+        "training_feature_year_max": 2016,
+        "year_brier_delta_alpha1_minus_alpha0": -0.002057264468
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 31,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 28
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.022535841651,
+            "brier_sum_delta": -0.292965941459,
+            "gain_alpha1_sum": -0.549442875635,
+            "harm_alpha1_sum": 0.256476934176,
+            "n": 13,
+            "nonzero_delta_n": 13,
+            "positive_outcomes": 3
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 152,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 1
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 28,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 28
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 3,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.137360718909,
+            "brier_sum_delta": -0.549442875635,
+            "gain_alpha1_sum": -0.549442875635,
+            "harm_alpha1_sum": 0,
+            "n": 4,
+            "nonzero_delta_n": 3,
+            "positive_outcomes": 4
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.001593024436,
+            "brier_sum_delta": 0.256476934176,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.256476934176,
+            "n": 161,
+            "nonzero_delta_n": 10,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.170984082538,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.245608249254,
+          "alpha1_p_active": 0.335425593217,
+          "country": "Indonesia",
+          "country_id": 850,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 16,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.212103854678,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.266378637535,
+          1.02912931429,
+          1.493535146796
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 0,
+        "origin_1_to_24_n": 13,
+        "origin_active_25_plus_n": 31,
+        "origin_year": 2019,
+        "origin_zero_n": 152,
+        "positive_outcomes": 32,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "24.1",
+        "source_year_through": 2023,
+        "sum_alpha1_benefits_negative": -0.549442875635,
+        "sum_alpha1_harms_positive": 0.256476934176,
+        "target_year": 2021,
+        "top1_share_of_absolute_country_effects": 0.304755196,
+        "top3_share_of_absolute_country_effects": 0.681758742,
+        "trained_label_year_max": 2019,
+        "training_feature_year_max": 2017,
+        "year_brier_delta_alpha1_minus_alpha0": -0.001494724191
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 34,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 29
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.035669437729,
+            "brier_sum_delta": -0.356694377286,
+            "gain_alpha1_sum": -0.609364804237,
+            "harm_alpha1_sum": 0.252670426951,
+            "n": 10,
+            "nonzero_delta_n": 10,
+            "positive_outcomes": 4
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 152,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 4
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 29,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 29
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 5,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.07617060053,
+            "brier_sum_delta": -0.609364804237,
+            "gain_alpha1_sum": -0.609364804237,
+            "harm_alpha1_sum": 0,
+            "n": 8,
+            "nonzero_delta_n": 4,
+            "positive_outcomes": 8
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.001640717058,
+            "brier_sum_delta": 0.252670426951,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.252670426951,
+            "n": 154,
+            "nonzero_delta_n": 6,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.163851525747,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.299624595543,
+          "alpha1_p_active": 0.367924311927,
+          "country": "Indonesia",
+          "country_id": 850,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 21,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.207047474046,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.28703026788,
+          1.147552674834,
+          1.641340190928
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 0,
+        "origin_1_to_24_n": 10,
+        "origin_active_25_plus_n": 34,
+        "origin_year": 2020,
+        "origin_zero_n": 152,
+        "positive_outcomes": 37,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "24.1",
+        "source_year_through": 2023,
+        "sum_alpha1_benefits_negative": -0.609364804237,
+        "sum_alpha1_harms_positive": 0.252670426951,
+        "target_year": 2022,
+        "top1_share_of_absolute_country_effects": 0.347578132,
+        "top3_share_of_absolute_country_effects": 0.742038791,
+        "trained_label_year_max": 2020,
+        "training_feature_year_max": 2018,
+        "year_brier_delta_alpha1_minus_alpha0": -0.001819869272
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 32,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 29
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.012175820203,
+            "brier_sum_delta": -0.170461482842,
+            "gain_alpha1_sum": -0.5066864999,
+            "harm_alpha1_sum": 0.336225017058,
+            "n": 14,
+            "nonzero_delta_n": 14,
+            "positive_outcomes": 3
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 150,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 2
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 29,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 29
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 3,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.10133729998,
+            "brier_sum_delta": -0.5066864999,
+            "gain_alpha1_sum": -0.5066864999,
+            "harm_alpha1_sum": 0,
+            "n": 5,
+            "nonzero_delta_n": 3,
+            "positive_outcomes": 5
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.002114622749,
+            "brier_sum_delta": 0.336225017058,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.336225017058,
+            "n": 159,
+            "nonzero_delta_n": 11,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.215856782127,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.346499296207,
+          "alpha1_p_active": 0.481944703792,
+          "country": "Burundi",
+          "country_id": 516,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 24,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.274741072045,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.319276902282,
+          1.232561415123,
+          1.751847042042
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 1,
+        "origin_1_to_24_n": 14,
+        "origin_active_25_plus_n": 32,
+        "origin_year": 2021,
+        "origin_zero_n": 150,
+        "positive_outcomes": 34,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "24.1",
+        "source_year_through": 2023,
+        "sum_alpha1_benefits_negative": -0.5066864999,
+        "sum_alpha1_harms_positive": 0.336225017058,
+        "target_year": 2023,
+        "top1_share_of_absolute_country_effects": 0.411074341,
+        "top3_share_of_absolute_country_effects": 0.671088473,
+        "trained_label_year_max": 2021,
+        "training_feature_year_max": 2019,
+        "year_brier_delta_alpha1_minus_alpha0": -0.000869701443
+      }
+    ],
+    "25.1": [
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 34,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 30
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": 0.002293276544,
+            "brier_sum_delta": 0.020639488896,
+            "gain_alpha1_sum": -0.046106413134,
+            "harm_alpha1_sum": 0.066745902031,
+            "n": 9,
+            "nonzero_delta_n": 9,
+            "positive_outcomes": 2
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 153,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 30,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 30
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 4,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.023053206567,
+            "brier_sum_delta": -0.046106413134,
+            "gain_alpha1_sum": -0.046106413134,
+            "harm_alpha1_sum": 0,
+            "n": 2,
+            "nonzero_delta_n": 2,
+            "positive_outcomes": 2
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000417161888,
+            "brier_sum_delta": 0.066745902031,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.066745902031,
+            "n": 160,
+            "nonzero_delta_n": 7,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": true,
+        "focus_country_contributions": [
+          {
+            "alpha0_p_active": 0.086396602398,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.00914722937,
+            "alpha1_p_active": 0.128886004964,
+            "country": "Peru",
+            "country_id": 135,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.094697891689,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.022861844073,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000360768793,
+            "alpha1_p_active": 0.029722595913,
+            "country": "France",
+            "country_id": 220,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.025227056095,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.064198060417,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.005273759722,
+            "alpha1_p_active": 0.096928585481,
+            "country": "Armenia",
+            "country_id": 371,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.070531098851,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.15015843479,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.030297889294,
+            "alpha1_p_active": 0.168175020413,
+            "country": "Angola",
+            "country_id": 540,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.163489851387,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.022861844073,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000157163191,
+            "alpha1_p_active": 0.026073494314,
+            "country": "Jordan",
+            "country_id": 663,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.025227056095,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.219730348333,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.047687623075,
+            "alpha1_p_active": 0.309788716795,
+            "country": "Israel",
+            "country_id": 666,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 10,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.237512252552,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.060595331618,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.001052697162,
+            "alpha1_p_active": 0.068734935626,
+            "country": "Kyrgyzstan",
+            "country_id": 703,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.066598259503,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.057942342343,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.003066660718,
+            "alpha1_p_active": 0.080149708382,
+            "country": "China",
+            "country_id": 710,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 5,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.063700271251,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.063314090482,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.015808523841,
+            "alpha1_p_active": 0.071790988382,
+            "country": "Bangladesh",
+            "country_id": 771,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.069566409174,
+            "target_outcome_state": 1
+          }
+        ],
+        "focus_leave_one_out_sign_flips": [
+          {
+            "country": "Israel",
+            "country_id": 666,
+            "delta_without_country": -0.00013870838,
+            "origin_deaths": 10,
+            "outcome": 0
+          }
+        ],
+        "focus_top8_absolute": [
+          {
+            "alpha0_p_active": 0.219730348333,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.047687623075,
+            "alpha1_p_active": 0.309788716795,
+            "country": "Israel",
+            "country_id": 666,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 10,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.237512252552,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.15015843479,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.030297889294,
+            "alpha1_p_active": 0.168175020413,
+            "country": "Angola",
+            "country_id": 540,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.163489851387,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.063314090482,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.015808523841,
+            "alpha1_p_active": 0.071790988382,
+            "country": "Bangladesh",
+            "country_id": 771,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.069566409174,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.086396602398,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.00914722937,
+            "alpha1_p_active": 0.128886004964,
+            "country": "Peru",
+            "country_id": 135,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.094697891689,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.064198060417,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.005273759722,
+            "alpha1_p_active": 0.096928585481,
+            "country": "Armenia",
+            "country_id": 371,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.070531098851,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.057942342343,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.003066660718,
+            "alpha1_p_active": 0.080149708382,
+            "country": "China",
+            "country_id": 710,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 5,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.063700271251,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.060595331618,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.001052697162,
+            "alpha1_p_active": 0.068734935626,
+            "country": "Kyrgyzstan",
+            "country_id": 703,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.066598259503,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.022861844073,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000360768793,
+            "alpha1_p_active": 0.029722595913,
+            "country": "France",
+            "country_id": 220,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.025227056095,
+            "target_outcome_state": 0
+          }
+        ],
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.219730348333,
+          "alpha1_minus_alpha0_delta_Brier_sum": 0.047687623075,
+          "alpha1_p_active": 0.309788716795,
+          "country": "Israel",
+          "country_id": 666,
+          "event_class": "inactive_to_inactive",
+          "origin_deaths_best": 10,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.237512252552,
+          "target_outcome_state": 0
+        },
+        "logistic_coefficients": [
+          -0.100871234428,
+          0.633347293883,
+          0.98651216246
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 1,
+        "origin_1_to_24_n": 9,
+        "origin_active_25_plus_n": 34,
+        "origin_year": 2015,
+        "origin_zero_n": 153,
+        "positive_outcomes": 32,
+        "ridge_fixed": 5.0,
+        "sign": "inactive_removed_better",
+        "source_version": "25.1",
+        "source_year_through": 2024,
+        "sum_alpha1_benefits_negative": -0.046106413134,
+        "sum_alpha1_harms_positive": 0.066745902031,
+        "target_year": 2017,
+        "top1_share_of_absolute_country_effects": 0.422566635,
+        "top3_share_of_absolute_country_effects": 0.83112195,
+        "trained_label_year_max": 2015,
+        "training_feature_year_max": 2013,
+        "year_brier_delta_alpha1_minus_alpha0": 0.000105303515
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 36,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 27
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.026210057269,
+            "brier_sum_delta": -0.183470400883,
+            "gain_alpha1_sum": -0.290597496038,
+            "harm_alpha1_sum": 0.107127095155,
+            "n": 7,
+            "nonzero_delta_n": 7,
+            "positive_outcomes": 2
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 153,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 4
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 27,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 27
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 9,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.048432916006,
+            "brier_sum_delta": -0.290597496038,
+            "gain_alpha1_sum": -0.290597496038,
+            "harm_alpha1_sum": 0,
+            "n": 6,
+            "nonzero_delta_n": 2,
+            "positive_outcomes": 6
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000695630488,
+            "brier_sum_delta": 0.107127095155,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.107127095155,
+            "n": 154,
+            "nonzero_delta_n": 5,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.161835524883,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.164255064527,
+          "alpha1_p_active": 0.266334801956,
+          "country": "Chad",
+          "country_id": 483,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 18,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.170398187644,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.061825948178,
+          0.69858842931,
+          1.033857194855
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 0,
+        "origin_1_to_24_n": 7,
+        "origin_active_25_plus_n": 36,
+        "origin_year": 2016,
+        "origin_zero_n": 153,
+        "positive_outcomes": 33,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "25.1",
+        "source_year_through": 2024,
+        "sum_alpha1_benefits_negative": -0.290597496038,
+        "sum_alpha1_harms_positive": 0.107127095155,
+        "target_year": 2018,
+        "top1_share_of_absolute_country_effects": 0.412986947,
+        "top3_share_of_absolute_country_effects": 0.879177925,
+        "trained_label_year_max": 2016,
+        "training_feature_year_max": 2014,
+        "year_brier_delta_alpha1_minus_alpha0": -0.000936073474
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 32,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 26
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.024604867009,
+            "brier_sum_delta": -0.270653537101,
+            "gain_alpha1_sum": -0.380226978998,
+            "harm_alpha1_sum": 0.109573441897,
+            "n": 11,
+            "nonzero_delta_n": 11,
+            "positive_outcomes": 4
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 153,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 3
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 26,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 26
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 6,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.054318139857,
+            "brier_sum_delta": -0.380226978998,
+            "gain_alpha1_sum": -0.380226978998,
+            "harm_alpha1_sum": 0,
+            "n": 7,
+            "nonzero_delta_n": 4,
+            "positive_outcomes": 7
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000697920012,
+            "brier_sum_delta": 0.109573441897,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.109573441897,
+            "n": 157,
+            "nonzero_delta_n": 7,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.199091594061,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.202271430526,
+          "alpha1_p_active": 0.337291282555,
+          "country": "Israel",
+          "country_id": 666,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 24,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.221632687149,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.135804512326,
+          0.725324342013,
+          1.22503960262
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 0,
+        "origin_1_to_24_n": 11,
+        "origin_active_25_plus_n": 32,
+        "origin_year": 2017,
+        "origin_zero_n": 153,
+        "positive_outcomes": 33,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "25.1",
+        "source_year_through": 2024,
+        "sum_alpha1_benefits_negative": -0.380226978998,
+        "sum_alpha1_harms_positive": 0.109573441897,
+        "target_year": 2019,
+        "top1_share_of_absolute_country_effects": 0.412967041,
+        "top3_share_of_absolute_country_effects": 0.714491828,
+        "trained_label_year_max": 2017,
+        "training_feature_year_max": 2015,
+        "year_brier_delta_alpha1_minus_alpha0": -0.001380885393
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 33,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 31
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.03073784367,
+            "brier_sum_delta": -0.399591967715,
+            "gain_alpha1_sum": -0.49587179987,
+            "harm_alpha1_sum": 0.096279832155,
+            "n": 13,
+            "nonzero_delta_n": 13,
+            "positive_outcomes": 3
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 150,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 1
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 31,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 31
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 2,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.123967949968,
+            "brier_sum_delta": -0.49587179987,
+            "gain_alpha1_sum": -0.49587179987,
+            "harm_alpha1_sum": 0,
+            "n": 4,
+            "nonzero_delta_n": 3,
+            "positive_outcomes": 4
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000605533536,
+            "brier_sum_delta": 0.096279832155,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.096279832155,
+            "n": 159,
+            "nonzero_delta_n": 10,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.146040405985,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.181135700948,
+          "alpha1_p_active": 0.259654616235,
+          "country": "Azerbaijan",
+          "country_id": 373,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 16,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.172709669907,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.199456820612,
+          0.825946442321,
+          1.359191389407
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 0,
+        "origin_1_to_24_n": 13,
+        "origin_active_25_plus_n": 33,
+        "origin_year": 2018,
+        "origin_zero_n": 150,
+        "positive_outcomes": 35,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "25.1",
+        "source_year_through": 2024,
+        "sum_alpha1_benefits_negative": -0.49587179987,
+        "sum_alpha1_harms_positive": 0.096279832155,
+        "target_year": 2020,
+        "top1_share_of_absolute_country_effects": 0.305894118,
+        "top3_share_of_absolute_country_effects": 0.837406794,
+        "trained_label_year_max": 2018,
+        "training_feature_year_max": 2016,
+        "year_brier_delta_alpha1_minus_alpha0": -0.002038734529
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 33,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 29
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.005810576219,
+            "brier_sum_delta": -0.063916338406,
+            "gain_alpha1_sum": -0.314641934269,
+            "harm_alpha1_sum": 0.250725595863,
+            "n": 11,
+            "nonzero_delta_n": 11,
+            "positive_outcomes": 2
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 152,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 1
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 29,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 29
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 4,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.104880644756,
+            "brier_sum_delta": -0.314641934269,
+            "gain_alpha1_sum": -0.314641934269,
+            "harm_alpha1_sum": 0,
+            "n": 3,
+            "nonzero_delta_n": 2,
+            "positive_outcomes": 3
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.001567034974,
+            "brier_sum_delta": 0.250725595863,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.250725595863,
+            "n": 160,
+            "nonzero_delta_n": 9,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.138356559628,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.18078366423,
+          "alpha1_p_active": 0.250569713645,
+          "country": "Azerbaijan",
+          "country_id": 373,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 9,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.167894350262,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.228382922911,
+          1.037785748494,
+          1.45775028485
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 2,
+        "origin_1_to_24_n": 11,
+        "origin_active_25_plus_n": 33,
+        "origin_year": 2019,
+        "origin_zero_n": 152,
+        "positive_outcomes": 32,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "25.1",
+        "source_year_through": 2024,
+        "sum_alpha1_benefits_negative": -0.314641934269,
+        "sum_alpha1_harms_positive": 0.250725595863,
+        "target_year": 2021,
+        "top1_share_of_absolute_country_effects": 0.319763083,
+        "top3_share_of_absolute_country_effects": 0.743998993,
+        "trained_label_year_max": 2019,
+        "training_feature_year_max": 2017,
+        "year_brier_delta_alpha1_minus_alpha0": -0.000326103767
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 35,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 30
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.005475473687,
+            "brier_sum_delta": -0.04927926318,
+            "gain_alpha1_sum": -0.31531335974,
+            "harm_alpha1_sum": 0.26603409656,
+            "n": 9,
+            "nonzero_delta_n": 9,
+            "positive_outcomes": 3
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 152,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 4
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 30,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 30
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 5,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.045044765677,
+            "brier_sum_delta": -0.31531335974,
+            "gain_alpha1_sum": -0.31531335974,
+            "harm_alpha1_sum": 0,
+            "n": 7,
+            "nonzero_delta_n": 3,
+            "positive_outcomes": 7
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.001727494134,
+            "brier_sum_delta": 0.26603409656,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.26603409656,
+            "n": 154,
+            "nonzero_delta_n": 6,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.220513623429,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.197552790117,
+          "alpha1_p_active": 0.359651484625,
+          "country": "Israel",
+          "country_id": 666,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 6,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.265541319301,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.245312451768,
+          1.148253476072,
+          1.593809583809
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 2,
+        "origin_1_to_24_n": 9,
+        "origin_active_25_plus_n": 35,
+        "origin_year": 2020,
+        "origin_zero_n": 152,
+        "positive_outcomes": 37,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "25.1",
+        "source_year_through": 2024,
+        "sum_alpha1_benefits_negative": -0.31531335974,
+        "sum_alpha1_harms_positive": 0.26603409656,
+        "target_year": 2022,
+        "top1_share_of_absolute_country_effects": 0.339818792,
+        "top3_share_of_absolute_country_effects": 0.78497512,
+        "trained_label_year_max": 2020,
+        "training_feature_year_max": 2018,
+        "year_brier_delta_alpha1_minus_alpha0": -0.000251424812
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 32,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 29
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.008391301487,
+            "brier_sum_delta": -0.125869522307,
+            "gain_alpha1_sum": -0.493822459744,
+            "harm_alpha1_sum": 0.367952937437,
+            "n": 15,
+            "nonzero_delta_n": 15,
+            "positive_outcomes": 3
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 149,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 2
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 29,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 29
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 3,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.098764491949,
+            "brier_sum_delta": -0.493822459744,
+            "gain_alpha1_sum": -0.493822459744,
+            "harm_alpha1_sum": 0,
+            "n": 5,
+            "nonzero_delta_n": 3,
+            "positive_outcomes": 5
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.002314169418,
+            "brier_sum_delta": 0.367952937437,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.367952937437,
+            "n": 159,
+            "nonzero_delta_n": 12,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.221936132675,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.336707491174,
+          "alpha1_p_active": 0.48166044868,
+          "country": "Burundi",
+          "country_id": 516,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 24,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.274822281577,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.284126848931,
+          1.195418184438,
+          1.703448818999
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 1,
+        "origin_1_to_24_n": 15,
+        "origin_active_25_plus_n": 32,
+        "origin_year": 2021,
+        "origin_zero_n": 149,
+        "positive_outcomes": 34,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "25.1",
+        "source_year_through": 2024,
+        "sum_alpha1_benefits_negative": -0.493822459744,
+        "sum_alpha1_harms_positive": 0.367952937437,
+        "target_year": 2023,
+        "top1_share_of_absolute_country_effects": 0.390713743,
+        "top3_share_of_absolute_country_effects": 0.64075666,
+        "trained_label_year_max": 2021,
+        "training_feature_year_max": 2019,
+        "year_brier_delta_alpha1_minus_alpha0": -0.00064219144
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 37,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 31
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.010501813377,
+            "brier_sum_delta": -0.157527200653,
+            "gain_alpha1_sum": -0.481398543605,
+            "harm_alpha1_sum": 0.323871342952,
+            "n": 15,
+            "nonzero_delta_n": 15,
+            "positive_outcomes": 2
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 144,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 2
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 31,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 31
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 6,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.120349635901,
+            "brier_sum_delta": -0.481398543605,
+            "gain_alpha1_sum": -0.481398543605,
+            "harm_alpha1_sum": 0,
+            "n": 4,
+            "nonzero_delta_n": 2,
+            "positive_outcomes": 4
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.002089492535,
+            "brier_sum_delta": 0.323871342952,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.323871342952,
+            "n": 155,
+            "nonzero_delta_n": 13,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": true,
+        "focus_country_contributions": [
+          {
+            "alpha0_p_active": 0.058852065391,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.017296416659,
+            "alpha1_p_active": 0.144083247672,
+            "country": "Peru",
+            "country_id": 135,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 13,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.076913381653,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.016044672628,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000320204745,
+            "alpha1_p_active": 0.02403406468,
+            "country": "Poland",
+            "country_id": 290,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 2,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.02126551982,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.124540482017,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.02178165226,
+            "alpha1_p_active": 0.193111325201,
+            "country": "Congo",
+            "country_id": 484,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.159347920729,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.041787099963,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.002071828658,
+            "alpha1_p_active": 0.061789888991,
+            "country": "Tanzania",
+            "country_id": 510,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 2,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.054916880635,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.215620766918,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.116189464023,
+            "alpha1_p_active": 0.403338293681,
+            "country": "Burundi",
+            "country_id": 516,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 10,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.268088735632,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.1087794626,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.029020773957,
+            "alpha1_p_active": 0.202123094772,
+            "country": "Rwanda",
+            "country_id": 517,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 6,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.139885757257,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.109578203189,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.021757800686,
+            "alpha1_p_active": 0.183753049772,
+            "country": "Eritrea",
+            "country_id": 531,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 4,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.140876799138,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.190447079615,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.324079927208,
+            "alpha1_p_active": 0.424416814269,
+            "country": "Angola",
+            "country_id": 540,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 20,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.238653189194,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.01599406508,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.001590960886,
+            "alpha1_p_active": 0.042974073627,
+            "country": "Morocco",
+            "country_id": 600,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 14,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.02119879964,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.15341704461,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.087764028148,
+            "alpha1_p_active": 0.333617771896,
+            "country": "Algeria",
+            "country_id": 615,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 14,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.194502044319,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.044984323921,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.003367801598,
+            "alpha1_p_active": 0.073426092069,
+            "country": "Tunisia",
+            "country_id": 616,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.059056778292,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.080622949277,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.007176529422,
+            "alpha1_p_active": 0.116946951104,
+            "country": "Libya",
+            "country_id": 620,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 2,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.104622875629,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.043054559699,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.157318616398,
+            "alpha1_p_active": 0.129123453459,
+            "country": "South Sudan",
+            "country_id": 626,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 23,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.056559077933,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.016044672628,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000455492324,
+            "alpha1_p_active": 0.026700633779,
+            "country": "United Arab Emirates",
+            "country_id": 696,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.02126551982,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.074876159498,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.015078389584,
+            "alpha1_p_active": 0.143822212629,
+            "country": "Bangladesh",
+            "country_id": 771,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 6,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.097346510653,
+            "target_outcome_state": 0
+          }
+        ],
+        "focus_leave_one_out_sign_flips": [
+          {
+            "country": "Angola",
+            "country_id": 540,
+            "delta_without_country": 0.000854116546,
+            "origin_deaths": 20,
+            "outcome": 1
+          }
+        ],
+        "focus_top8_absolute": [
+          {
+            "alpha0_p_active": 0.190447079615,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.324079927208,
+            "alpha1_p_active": 0.424416814269,
+            "country": "Angola",
+            "country_id": 540,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 20,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.238653189194,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.043054559699,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.157318616398,
+            "alpha1_p_active": 0.129123453459,
+            "country": "South Sudan",
+            "country_id": 626,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 23,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.056559077933,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.215620766918,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.116189464023,
+            "alpha1_p_active": 0.403338293681,
+            "country": "Burundi",
+            "country_id": 516,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 10,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.268088735632,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.15341704461,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.087764028148,
+            "alpha1_p_active": 0.333617771896,
+            "country": "Algeria",
+            "country_id": 615,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 14,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.194502044319,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.1087794626,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.029020773957,
+            "alpha1_p_active": 0.202123094772,
+            "country": "Rwanda",
+            "country_id": 517,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 6,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.139885757257,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.124540482017,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.02178165226,
+            "alpha1_p_active": 0.193111325201,
+            "country": "Congo",
+            "country_id": 484,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.159347920729,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.109578203189,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.021757800686,
+            "alpha1_p_active": 0.183753049772,
+            "country": "Eritrea",
+            "country_id": 531,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 4,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.140876799138,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.058852065391,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.017296416659,
+            "alpha1_p_active": 0.144083247672,
+            "country": "Peru",
+            "country_id": 135,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 13,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.076913381653,
+            "target_outcome_state": 0
+          }
+        ],
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.190447079615,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.324079927208,
+          "alpha1_p_active": 0.424416814269,
+          "country": "Angola",
+          "country_id": 540,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 20,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.238653189194,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.287030208893,
+          1.222582537319,
+          1.768180756381
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 1,
+        "origin_1_to_24_n": 15,
+        "origin_active_25_plus_n": 37,
+        "origin_year": 2022,
+        "origin_zero_n": 144,
+        "positive_outcomes": 35,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "25.1",
+        "source_year_through": 2024,
+        "sum_alpha1_benefits_negative": -0.481398543605,
+        "sum_alpha1_harms_positive": 0.323871342952,
+        "target_year": 2024,
+        "top1_share_of_absolute_country_effects": 0.402448834,
+        "top3_share_of_absolute_country_effects": 0.742096554,
+        "trained_label_year_max": 2022,
+        "training_feature_year_max": 2020,
+        "year_brier_delta_alpha1_minus_alpha0": -0.000803710207
+      }
+    ],
+    "26.1": [
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 34,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 31
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": 0.00242741276,
+            "brier_sum_delta": 0.021846714842,
+            "gain_alpha1_sum": -0.047639275355,
+            "harm_alpha1_sum": 0.069485990197,
+            "n": 9,
+            "nonzero_delta_n": 9,
+            "positive_outcomes": 2
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 153,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 31,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 31
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 3,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.023819637677,
+            "brier_sum_delta": -0.047639275355,
+            "gain_alpha1_sum": -0.047639275355,
+            "harm_alpha1_sum": 0,
+            "n": 2,
+            "nonzero_delta_n": 2,
+            "positive_outcomes": 2
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000434287439,
+            "brier_sum_delta": 0.069485990197,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.069485990197,
+            "n": 160,
+            "nonzero_delta_n": 7,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": true,
+        "focus_country_contributions": [
+          {
+            "alpha0_p_active": 0.086198039454,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.009545087621,
+            "alpha1_p_active": 0.130288869926,
+            "country": "Peru",
+            "country_id": 135,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.094697891689,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.022805656321,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000374523181,
+            "alpha1_p_active": 0.029910218002,
+            "country": "France",
+            "country_id": 220,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.025227056095,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.064046939204,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.005506449051,
+            "alpha1_p_active": 0.098022749772,
+            "country": "Armenia",
+            "country_id": 371,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.070531098851,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.149837363701,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.031305649196,
+            "alpha1_p_active": 0.168452731973,
+            "country": "Angola",
+            "country_id": 540,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.163489851387,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.022805656321,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000162361216,
+            "alpha1_p_active": 0.026123919611,
+            "country": "Jordan",
+            "country_id": 663,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.025227056095,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.219298904479,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.049618852085,
+            "alpha1_p_active": 0.312587366332,
+            "country": "Israel",
+            "country_id": 666,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 10,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.237512252552,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.06045214332,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.001087517978,
+            "alpha1_p_active": 0.068862033151,
+            "country": "Kyrgyzstan",
+            "country_id": 703,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.066598259503,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.057805037366,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.003191199066,
+            "alpha1_p_active": 0.080824633686,
+            "country": "China",
+            "country_id": 710,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 5,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.063700271251,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.063164909667,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.016333626159,
+            "alpha1_p_active": 0.071923300411,
+            "country": "Bangladesh",
+            "country_id": 771,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.069566409174,
+            "target_outcome_state": 1
+          }
+        ],
+        "focus_leave_one_out_sign_flips": [
+          {
+            "country": "Israel",
+            "country_id": 666,
+            "delta_without_country": -0.000142421217,
+            "origin_deaths": 10,
+            "outcome": 0
+          }
+        ],
+        "focus_top8_absolute": [
+          {
+            "alpha0_p_active": 0.219298904479,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.049618852085,
+            "alpha1_p_active": 0.312587366332,
+            "country": "Israel",
+            "country_id": 666,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 10,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.237512252552,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.149837363701,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.031305649196,
+            "alpha1_p_active": 0.168452731973,
+            "country": "Angola",
+            "country_id": 540,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.163489851387,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.063164909667,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.016333626159,
+            "alpha1_p_active": 0.071923300411,
+            "country": "Bangladesh",
+            "country_id": 771,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.069566409174,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.086198039454,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.009545087621,
+            "alpha1_p_active": 0.130288869926,
+            "country": "Peru",
+            "country_id": 135,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.094697891689,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.064046939204,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.005506449051,
+            "alpha1_p_active": 0.098022749772,
+            "country": "Armenia",
+            "country_id": 371,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.070531098851,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.057805037366,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.003191199066,
+            "alpha1_p_active": 0.080824633686,
+            "country": "China",
+            "country_id": 710,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 5,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.063700271251,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.06045214332,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.001087517978,
+            "alpha1_p_active": 0.068862033151,
+            "country": "Kyrgyzstan",
+            "country_id": 703,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.066598259503,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.022805656321,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000374523181,
+            "alpha1_p_active": 0.029910218002,
+            "country": "France",
+            "country_id": 220,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.025227056095,
+            "target_outcome_state": 0
+          }
+        ],
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.219298904479,
+          "alpha1_minus_alpha0_delta_Brier_sum": 0.049618852085,
+          "alpha1_p_active": 0.312587366332,
+          "country": "Israel",
+          "country_id": 666,
+          "event_class": "inactive_to_inactive",
+          "origin_deaths_best": 10,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.237512252552,
+          "target_outcome_state": 0
+        },
+        "logistic_coefficients": [
+          -0.103389468911,
+          0.654509195809,
+          0.991084474135
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 1,
+        "origin_1_to_24_n": 9,
+        "origin_active_25_plus_n": 34,
+        "origin_year": 2015,
+        "origin_zero_n": 153,
+        "positive_outcomes": 33,
+        "ridge_fixed": 5.0,
+        "sign": "inactive_removed_better",
+        "source_version": "26.1",
+        "source_year_through": 2025,
+        "sum_alpha1_benefits_negative": -0.047639275355,
+        "sum_alpha1_harms_positive": 0.069485990197,
+        "target_year": 2017,
+        "top1_share_of_absolute_country_effects": 0.423639185,
+        "top3_share_of_absolute_country_effects": 0.830377007,
+        "trained_label_year_max": 2015,
+        "training_feature_year_max": 2013,
+        "year_brier_delta_alpha1_minus_alpha0": 0.000111462831
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 36,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 27
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.02693026624,
+            "brier_sum_delta": -0.188511863683,
+            "gain_alpha1_sum": -0.299754008728,
+            "harm_alpha1_sum": 0.111242145045,
+            "n": 7,
+            "nonzero_delta_n": 7,
+            "positive_outcomes": 2
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 153,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 4
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 27,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 27
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 9,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.049959001455,
+            "brier_sum_delta": -0.299754008728,
+            "gain_alpha1_sum": -0.299754008728,
+            "harm_alpha1_sum": 0,
+            "n": 6,
+            "nonzero_delta_n": 2,
+            "positive_outcomes": 6
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000722351591,
+            "brier_sum_delta": 0.111242145045,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.111242145045,
+            "n": 154,
+            "nonzero_delta_n": 5,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.161566479359,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.169545700711,
+          "alpha1_p_active": 0.269640453048,
+          "country": "Chad",
+          "country_id": 483,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 18,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.170398187644,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.063810736509,
+          0.719430810562,
+          1.036924722052
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 0,
+        "origin_1_to_24_n": 7,
+        "origin_active_25_plus_n": 36,
+        "origin_year": 2016,
+        "origin_zero_n": 153,
+        "positive_outcomes": 33,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "26.1",
+        "source_year_through": 2025,
+        "sum_alpha1_benefits_negative": -0.299754008728,
+        "sum_alpha1_harms_positive": 0.111242145045,
+        "target_year": 2018,
+        "top1_share_of_absolute_country_effects": 0.412523814,
+        "top3_share_of_absolute_country_effects": 0.878217943,
+        "trained_label_year_max": 2016,
+        "training_feature_year_max": 2014,
+        "year_brier_delta_alpha1_minus_alpha0": -0.000961795223
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 33,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 27
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.018336249162,
+            "brier_sum_delta": -0.183362491623,
+            "gain_alpha1_sum": -0.297389292917,
+            "harm_alpha1_sum": 0.114026801293,
+            "n": 10,
+            "nonzero_delta_n": 10,
+            "positive_outcomes": 3
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 153,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 3
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 27,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 27
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 6,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.049564882153,
+            "brier_sum_delta": -0.297389292917,
+            "gain_alpha1_sum": -0.297389292917,
+            "harm_alpha1_sum": 0,
+            "n": 6,
+            "nonzero_delta_n": 3,
+            "positive_outcomes": 6
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000726285359,
+            "brier_sum_delta": 0.114026801293,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.114026801293,
+            "n": 157,
+            "nonzero_delta_n": 7,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.200768940703,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.206562935078,
+          "alpha1_p_active": 0.342575212616,
+          "country": "Israel",
+          "country_id": 666,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 24,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.221709803346,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.125765268061,
+          0.738546827629,
+          1.246400045845
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 1,
+        "origin_1_to_24_n": 10,
+        "origin_active_25_plus_n": 33,
+        "origin_year": 2017,
+        "origin_zero_n": 153,
+        "positive_outcomes": 33,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "26.1",
+        "source_year_through": 2025,
+        "sum_alpha1_benefits_negative": -0.297389292917,
+        "sum_alpha1_harms_positive": 0.114026801293,
+        "target_year": 2019,
+        "top1_share_of_absolute_country_effects": 0.502077916,
+        "top3_share_of_absolute_country_effects": 0.767684814,
+        "trained_label_year_max": 2017,
+        "training_feature_year_max": 2015,
+        "year_brier_delta_alpha1_minus_alpha0": -0.000935522916
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 33,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 31
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.031232313886,
+            "brier_sum_delta": -0.406020080513,
+            "gain_alpha1_sum": -0.505558640421,
+            "harm_alpha1_sum": 0.099538559909,
+            "n": 13,
+            "nonzero_delta_n": 13,
+            "positive_outcomes": 3
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 150,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 1
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 31,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 31
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 2,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.126389660105,
+            "brier_sum_delta": -0.505558640421,
+            "gain_alpha1_sum": -0.505558640421,
+            "harm_alpha1_sum": 0,
+            "n": 4,
+            "nonzero_delta_n": 3,
+            "positive_outcomes": 4
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000626028679,
+            "brier_sum_delta": 0.099538559909,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.099538559909,
+            "n": 159,
+            "nonzero_delta_n": 10,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.147049858181,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.18476385646,
+          "alpha1_p_active": 0.263277468806,
+          "country": "Azerbaijan",
+          "country_id": 373,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 16,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.172613293507,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.190711002371,
+          0.838240109251,
+          1.378081538467
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 0,
+        "origin_1_to_24_n": 13,
+        "origin_active_25_plus_n": 33,
+        "origin_year": 2018,
+        "origin_zero_n": 150,
+        "positive_outcomes": 35,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "26.1",
+        "source_year_through": 2025,
+        "sum_alpha1_benefits_negative": -0.505558640421,
+        "sum_alpha1_harms_positive": 0.099538559909,
+        "target_year": 2020,
+        "top1_share_of_absolute_country_effects": 0.305345747,
+        "top3_share_of_absolute_country_effects": 0.835499884,
+        "trained_label_year_max": 2018,
+        "training_feature_year_max": 2016,
+        "year_brier_delta_alpha1_minus_alpha0": -0.002071531023
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 33,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 29
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.005767649433,
+            "brier_sum_delta": -0.063444143758,
+            "gain_alpha1_sum": -0.287022770282,
+            "harm_alpha1_sum": 0.223578626524,
+            "n": 11,
+            "nonzero_delta_n": 11,
+            "positive_outcomes": 2
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 152,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 1
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 29,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 29
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 4,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.095674256761,
+            "brier_sum_delta": -0.287022770282,
+            "gain_alpha1_sum": -0.287022770282,
+            "harm_alpha1_sum": 0,
+            "n": 3,
+            "nonzero_delta_n": 2,
+            "positive_outcomes": 3
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.001397366416,
+            "brier_sum_delta": 0.223578626524,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.223578626524,
+            "n": 160,
+            "nonzero_delta_n": 9,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.138834394303,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.166460277536,
+          "alpha1_p_active": 0.241616242988,
+          "country": "Azerbaijan",
+          "country_id": 373,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 9,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.167801847579,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.223718240237,
+          0.963831981096,
+          1.47915248522
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 2,
+        "origin_1_to_24_n": 11,
+        "origin_active_25_plus_n": 33,
+        "origin_year": 2019,
+        "origin_zero_n": 152,
+        "positive_outcomes": 32,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "26.1",
+        "source_year_through": 2025,
+        "sum_alpha1_benefits_negative": -0.287022770282,
+        "sum_alpha1_harms_positive": 0.223578626524,
+        "target_year": 2021,
+        "top1_share_of_absolute_country_effects": 0.326008269,
+        "top3_share_of_absolute_country_effects": 0.748442297,
+        "trained_label_year_max": 2019,
+        "training_feature_year_max": 2017,
+        "year_brier_delta_alpha1_minus_alpha0": -0.000323694611
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 35,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 30
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.007314524336,
+            "brier_sum_delta": -0.065830719024,
+            "gain_alpha1_sum": -0.308058420181,
+            "harm_alpha1_sum": 0.242227701158,
+            "n": 9,
+            "nonzero_delta_n": 9,
+            "positive_outcomes": 3
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 152,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 4
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 30,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 30
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 5,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.04400834574,
+            "brier_sum_delta": -0.308058420181,
+            "gain_alpha1_sum": -0.308058420181,
+            "harm_alpha1_sum": 0,
+            "n": 7,
+            "nonzero_delta_n": 3,
+            "positive_outcomes": 7
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.00157290715,
+            "brier_sum_delta": 0.242227701158,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.242227701158,
+            "n": 154,
+            "nonzero_delta_n": 6,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.221179109689,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.19901774908,
+          "alpha1_p_active": 0.361608090508,
+          "country": "Israel",
+          "country_id": 666,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 7,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.265435123827,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.240900409916,
+          1.081754342746,
+          1.612586949056
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 2,
+        "origin_1_to_24_n": 9,
+        "origin_active_25_plus_n": 35,
+        "origin_year": 2020,
+        "origin_zero_n": 152,
+        "positive_outcomes": 37,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "26.1",
+        "source_year_through": 2025,
+        "sum_alpha1_benefits_negative": -0.308058420181,
+        "sum_alpha1_harms_positive": 0.242227701158,
+        "target_year": 2022,
+        "top1_share_of_absolute_country_effects": 0.361662309,
+        "top3_share_of_absolute_country_effects": 0.793812516,
+        "trained_label_year_max": 2020,
+        "training_feature_year_max": 2018,
+        "year_brier_delta_alpha1_minus_alpha0": -0.000335871015
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 32,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 29
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.008830853961,
+            "brier_sum_delta": -0.132462809419,
+            "gain_alpha1_sum": -0.468526590704,
+            "harm_alpha1_sum": 0.336063781285,
+            "n": 15,
+            "nonzero_delta_n": 15,
+            "positive_outcomes": 3
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 149,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 2
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 29,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 29
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 3,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.093705318141,
+            "brier_sum_delta": -0.468526590704,
+            "gain_alpha1_sum": -0.468526590704,
+            "harm_alpha1_sum": 0,
+            "n": 5,
+            "nonzero_delta_n": 3,
+            "positive_outcomes": 5
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.002113608687,
+            "brier_sum_delta": 0.336063781285,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.336063781285,
+            "n": 159,
+            "nonzero_delta_n": 12,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": false,
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.222591920713,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.320750558611,
+          "alpha1_p_active": 0.467446938672,
+          "country": "Burundi",
+          "country_id": 516,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 24,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.274762622838,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.280033785158,
+          1.133878108422,
+          1.71968586658
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 1,
+        "origin_1_to_24_n": 15,
+        "origin_active_25_plus_n": 32,
+        "origin_year": 2021,
+        "origin_zero_n": 149,
+        "positive_outcomes": 34,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "26.1",
+        "source_year_through": 2025,
+        "sum_alpha1_benefits_negative": -0.468526590704,
+        "sum_alpha1_harms_positive": 0.336063781285,
+        "target_year": 2023,
+        "top1_share_of_absolute_country_effects": 0.398650754,
+        "top3_share_of_absolute_country_effects": 0.648337147,
+        "trained_label_year_max": 2021,
+        "training_feature_year_max": 2019,
+        "year_brier_delta_alpha1_minus_alpha0": -0.00067583066
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 37,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 31
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": -0.010295054512,
+            "brier_sum_delta": -0.154425817682,
+            "gain_alpha1_sum": -0.456043752959,
+            "harm_alpha1_sum": 0.301617935277,
+            "n": 15,
+            "nonzero_delta_n": 15,
+            "positive_outcomes": 2
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 144,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 2
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 31,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 31
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 6,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.11401093824,
+            "brier_sum_delta": -0.456043752959,
+            "gain_alpha1_sum": -0.456043752959,
+            "harm_alpha1_sum": 0,
+            "n": 4,
+            "nonzero_delta_n": 2,
+            "positive_outcomes": 4
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.001945922163,
+            "brier_sum_delta": 0.301617935277,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.301617935277,
+            "n": 155,
+            "nonzero_delta_n": 13,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": true,
+        "focus_country_contributions": [
+          {
+            "alpha0_p_active": 0.058930943061,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.015786452073,
+            "alpha1_p_active": 0.138777909348,
+            "country": "Peru",
+            "country_id": 135,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 13,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.076772930066,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.016014204292,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000298286391,
+            "alpha1_p_active": 0.023552943136,
+            "country": "Poland",
+            "country_id": 290,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 2,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.021154767365,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.124887146956,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.020477836622,
+            "alpha1_p_active": 0.189933241159,
+            "country": "Congo",
+            "country_id": 484,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.159317467487,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.041856332956,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.001945726726,
+            "alpha1_p_active": 0.060808546556,
+            "country": "Tanzania",
+            "country_id": 510,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 2,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.05482998984,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.216146980695,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.108717361371,
+            "alpha1_p_active": 0.39425483971,
+            "country": "Burundi",
+            "country_id": 516,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 10,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.268030949487,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.109054772456,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.027018504427,
+            "alpha1_p_active": 0.197259848479,
+            "country": "Rwanda",
+            "country_id": 517,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 6,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.139817618812,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.109862537173,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.02036308764,
+            "alpha1_p_active": 0.180091267735,
+            "country": "Eritrea",
+            "country_id": 531,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 4,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.140817228797,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.190895796303,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.30944471861,
+            "alpha1_p_active": 0.412458602454,
+            "country": "Angola",
+            "country_id": 540,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 20,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.238563202799,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.015963455932,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.00142887984,
+            "alpha1_p_active": 0.041033056979,
+            "country": "Morocco",
+            "country_id": 600,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 14,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.021088077891,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.153691854196,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.081269401994,
+            "alpha1_p_active": 0.323868164598,
+            "country": "Algeria",
+            "country_id": 615,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 14,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.194300209342,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.045054487395,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.003145270268,
+            "alpha1_p_active": 0.071938703789,
+            "country": "Tunisia",
+            "country_id": 616,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.058958436082,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.080801897139,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.006757514259,
+            "alpha1_p_active": 0.115266911297,
+            "country": "Libya",
+            "country_id": 620,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 2,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.104530046823,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.042959694025,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.146599034349,
+            "alpha1_p_active": 0.122887058064,
+            "country": "South Sudan",
+            "country_id": 626,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 23,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.056255265792,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.016014204292,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000421758147,
+            "alpha1_p_active": 0.026042520738,
+            "country": "United Arab Emirates",
+            "country_id": 696,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.021154767365,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.075047512468,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.013987855519,
+            "alpha1_p_active": 0.140071355554,
+            "country": "Bangladesh",
+            "country_id": 771,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 6,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.097264647259,
+            "target_outcome_state": 0
+          }
+        ],
+        "focus_leave_one_out_sign_flips": [
+          {
+            "country": "Angola",
+            "country_id": 540,
+            "delta_without_country": 0.000794968723,
+            "origin_deaths": 20,
+            "outcome": 1
+          }
+        ],
+        "focus_top8_absolute": [
+          {
+            "alpha0_p_active": 0.190895796303,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.30944471861,
+            "alpha1_p_active": 0.412458602454,
+            "country": "Angola",
+            "country_id": 540,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 20,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.238563202799,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.042959694025,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.146599034349,
+            "alpha1_p_active": 0.122887058064,
+            "country": "South Sudan",
+            "country_id": 626,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 23,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.056255265792,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.216146980695,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.108717361371,
+            "alpha1_p_active": 0.39425483971,
+            "country": "Burundi",
+            "country_id": 516,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 10,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.268030949487,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.153691854196,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.081269401994,
+            "alpha1_p_active": 0.323868164598,
+            "country": "Algeria",
+            "country_id": 615,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 14,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.194300209342,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.109054772456,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.027018504427,
+            "alpha1_p_active": 0.197259848479,
+            "country": "Rwanda",
+            "country_id": 517,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 6,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.139817618812,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.124887146956,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.020477836622,
+            "alpha1_p_active": 0.189933241159,
+            "country": "Congo",
+            "country_id": 484,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.159317467487,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.109862537173,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.02036308764,
+            "alpha1_p_active": 0.180091267735,
+            "country": "Eritrea",
+            "country_id": 531,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 4,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.140817228797,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.058930943061,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.015786452073,
+            "alpha1_p_active": 0.138777909348,
+            "country": "Peru",
+            "country_id": 135,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 13,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.076772930066,
+            "target_outcome_state": 0
+          }
+        ],
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.190895796303,
+          "alpha1_minus_alpha0_delta_Brier_sum": -0.30944471861,
+          "alpha1_p_active": 0.412458602454,
+          "country": "Angola",
+          "country_id": 540,
+          "event_class": "inactive_to_active",
+          "origin_deaths_best": 20,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.238563202799,
+          "target_outcome_state": 1
+        },
+        "logistic_coefficients": [
+          -0.2836271096,
+          1.166880242907,
+          1.782845119901
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 1,
+        "origin_1_to_24_n": 15,
+        "origin_active_25_plus_n": 37,
+        "origin_year": 2022,
+        "origin_zero_n": 144,
+        "positive_outcomes": 35,
+        "ridge_fixed": 5.0,
+        "sign": "full_intensity_better",
+        "source_version": "26.1",
+        "source_year_through": 2025,
+        "sum_alpha1_benefits_negative": -0.456043752959,
+        "sum_alpha1_harms_positive": 0.301617935277,
+        "target_year": 2024,
+        "top1_share_of_absolute_country_effects": 0.408420702,
+        "top3_share_of_absolute_country_effects": 0.745400121,
+        "trained_label_year_max": 2022,
+        "training_feature_year_max": 2020,
+        "year_brier_delta_alpha1_minus_alpha0": -0.000787886825
+      },
+      {
+        "by_origin_deaths_bucket": {
+          "active_25_plus": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 34,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 30
+          },
+          "inactive_1_to_24": {
+            "brier_delta_mean": 0.010120988681,
+            "brier_sum_delta": 0.121451864171,
+            "gain_alpha1_sum": -0.034402581429,
+            "harm_alpha1_sum": 0.155854445601,
+            "n": 12,
+            "nonzero_delta_n": 12,
+            "positive_outcomes": 1
+          },
+          "zero": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 150,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 3
+          }
+        },
+        "by_origin_outcome_transition": {
+          "active_to_active": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 30,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 30
+          },
+          "active_to_inactive": {
+            "brier_delta_mean": 0.0,
+            "brier_sum_delta": 0.0,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0,
+            "n": 4,
+            "nonzero_delta_n": 0,
+            "positive_outcomes": 0
+          },
+          "inactive_to_active": {
+            "brier_delta_mean": -0.008600645357,
+            "brier_sum_delta": -0.034402581429,
+            "gain_alpha1_sum": -0.034402581429,
+            "harm_alpha1_sum": 0,
+            "n": 4,
+            "nonzero_delta_n": 1,
+            "positive_outcomes": 4
+          },
+          "inactive_to_inactive": {
+            "brier_delta_mean": 0.000986420542,
+            "brier_sum_delta": 0.155854445601,
+            "gain_alpha1_sum": 0,
+            "harm_alpha1_sum": 0.155854445601,
+            "n": 158,
+            "nonzero_delta_n": 11,
+            "positive_outcomes": 0
+          }
+        },
+        "country_n": 196,
+        "detailed_focus_year": true,
+        "focus_country_contributions": [
+          {
+            "alpha0_p_active": 0.056163044656,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.013804373682,
+            "alpha1_p_active": 0.130225424809,
+            "country": "Peru",
+            "country_id": 135,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 12,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.074397436498,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.071107561606,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.029633646875,
+            "alpha1_p_active": 0.18625233473,
+            "country": "Armenia",
+            "country_id": 371,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 20,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.093712222706,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.015201046062,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000677799827,
+            "alpha1_p_active": 0.030147497885,
+            "country": "Mauritania",
+            "country_id": 435,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 6,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.020424137649,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.100678010123,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.055901573136,
+            "alpha1_p_active": 0.256977887878,
+            "country": "Uganda",
+            "country_id": 500,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 22,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.131353655653,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.015147412297,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000580994858,
+            "alpha1_p_active": 0.028468209589,
+            "country": "Morocco",
+            "country_id": 600,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 5,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.020352456137,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.144949200624,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.010910760657,
+            "alpha1_p_active": 0.178664577962,
+            "country": "Algeria",
+            "country_id": 615,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.18631924258,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.043181701342,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.002920052466,
+            "alpha1_p_active": 0.069171611203,
+            "country": "Tunisia",
+            "country_id": 616,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 3,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.05745803003,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.07750965269,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.00629383111,
+            "alpha1_p_active": 0.110912476168,
+            "country": "Libya",
+            "country_id": 620,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 2,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.101926181246,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.039584081054,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.034402581429,
+            "alpha1_p_active": 0.057664520494,
+            "country": "South Sudan",
+            "country_id": 626,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 2,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.052736554593,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.090969397834,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.004675024359,
+            "alpha1_p_active": 0.113800068985,
+            "country": "Egypt",
+            "country_id": 651,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.119078603284,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.096841777834,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.029472754687,
+            "alpha1_p_active": 0.197106784817,
+            "country": "Saudi Arabia",
+            "country_id": 670,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.126512990435,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.040163660617,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.000983633945,
+            "alpha1_p_active": 0.05095835142,
+            "country": "China",
+            "country_id": 710,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.053497982174,
+            "target_outcome_state": 0
+          }
+        ],
+        "focus_leave_one_out_sign_flips": [],
+        "focus_top8_absolute": [
+          {
+            "alpha0_p_active": 0.100678010123,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.055901573136,
+            "alpha1_p_active": 0.256977887878,
+            "country": "Uganda",
+            "country_id": 500,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 22,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.131353655653,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.039584081054,
+            "alpha1_minus_alpha0_delta_Brier_sum": -0.034402581429,
+            "alpha1_p_active": 0.057664520494,
+            "country": "South Sudan",
+            "country_id": 626,
+            "event_class": "inactive_to_active",
+            "origin_deaths_best": 2,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.052736554593,
+            "target_outcome_state": 1
+          },
+          {
+            "alpha0_p_active": 0.071107561606,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.029633646875,
+            "alpha1_p_active": 0.18625233473,
+            "country": "Armenia",
+            "country_id": 371,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 20,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.093712222706,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.096841777834,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.029472754687,
+            "alpha1_p_active": 0.197106784817,
+            "country": "Saudi Arabia",
+            "country_id": 670,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 9,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.126512990435,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.056163044656,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.013804373682,
+            "alpha1_p_active": 0.130225424809,
+            "country": "Peru",
+            "country_id": 135,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 12,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.074397436498,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.144949200624,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.010910760657,
+            "alpha1_p_active": 0.178664577962,
+            "country": "Algeria",
+            "country_id": 615,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.18631924258,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.07750965269,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.00629383111,
+            "alpha1_p_active": 0.110912476168,
+            "country": "Libya",
+            "country_id": 620,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 2,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.101926181246,
+            "target_outcome_state": 0
+          },
+          {
+            "alpha0_p_active": 0.090969397834,
+            "alpha1_minus_alpha0_delta_Brier_sum": 0.004675024359,
+            "alpha1_p_active": 0.113800068985,
+            "country": "Egypt",
+            "country_id": 651,
+            "event_class": "inactive_to_inactive",
+            "origin_deaths_best": 1,
+            "origin_deaths_bucket": "inactive_1_to_24",
+            "origin_state": 0,
+            "original_markov_h2_p_active": 0.119078603284,
+            "target_outcome_state": 0
+          }
+        ],
+        "largest_abs_country_effect": {
+          "alpha0_p_active": 0.100678010123,
+          "alpha1_minus_alpha0_delta_Brier_sum": 0.055901573136,
+          "alpha1_p_active": 0.256977887878,
+          "country": "Uganda",
+          "country_id": 500,
+          "event_class": "inactive_to_inactive",
+          "origin_deaths_best": 22,
+          "origin_deaths_bucket": "inactive_1_to_24",
+          "origin_state": 0,
+          "original_markov_h2_p_active": 0.131353655653,
+          "target_outcome_state": 0
+        },
+        "logistic_coefficients": [
+          -0.300671002367,
+          1.172083522769,
+          1.859598948533
+        ],
+        "n_leave_one_country_out_sign_changes_no_refit": 0,
+        "origin_1_to_24_n": 12,
+        "origin_active_25_plus_n": 34,
+        "origin_year": 2023,
+        "origin_zero_n": 150,
+        "positive_outcomes": 34,
+        "ridge_fixed": 5.0,
+        "sign": "inactive_removed_better",
+        "source_version": "26.1",
+        "source_year_through": 2025,
+        "sum_alpha1_benefits_negative": -0.034402581429,
+        "sum_alpha1_harms_positive": 0.155854445601,
+        "target_year": 2025,
+        "top1_share_of_absolute_country_effects": 0.293821332,
+        "top3_share_of_absolute_country_effects": 0.6303988,
+        "trained_label_year_max": 2023,
+        "training_feature_year_max": 2021,
+        "year_brier_delta_alpha1_minus_alpha0": 0.000619652368
+      }
+    ]
+  },
+  "distinct_target_years": 9,
+  "focus_year_vintage_sign_diagnostics": {
+    "2017": {
+      "all_editions_same_aggregate_Brier_sign": true,
+      "country_effect_sign_changes_across_editions": [],
+      "max_affected_country_n": 9,
+      "min_affected_country_n": 9,
+      "n_country_ids_with_nonzero_1_to_24_in_any_version": 9,
+      "n_country_ids_with_vintage_effect_sign_change": 0,
+      "n_vintages": 4,
+      "versions": [
+        "23.1",
+        "24.1",
+        "25.1",
+        "26.1"
+      ],
+      "year": 2017
+    },
+    "2024": {
+      "all_editions_same_aggregate_Brier_sign": true,
+      "country_effect_sign_changes_across_editions": [],
+      "max_affected_country_n": 15,
+      "min_affected_country_n": 15,
+      "n_country_ids_with_nonzero_1_to_24_in_any_version": 15,
+      "n_country_ids_with_vintage_effect_sign_change": 0,
+      "n_vintages": 2,
+      "versions": [
+        "25.1",
+        "26.1"
+      ],
+      "year": 2024
+    },
+    "2025": {
+      "all_editions_same_aggregate_Brier_sign": true,
+      "country_effect_sign_changes_across_editions": [],
+      "max_affected_country_n": 12,
+      "min_affected_country_n": 12,
+      "n_country_ids_with_nonzero_1_to_24_in_any_version": 12,
+      "n_country_ids_with_vintage_effect_sign_change": 0,
+      "n_vintages": 1,
+      "versions": [
+        "26.1"
+      ],
+      "year": 2025
+    }
+  },
+  "focus_years": [
+    2017,
+    2024,
+    2025
+  ],
+  "historical_UCDP_vintages_not_original_asof_issuances": true,
+  "issued_2027_15_alerts_changed": false,
+  "issued_2027_original_probabilities_changed": false,
+  "issued_2027_shadow_probabilities_changed": false,
+  "issued_log1p_shadow_sha256": "52686923315854557a796f8f192d376dab77a4e03b14c1aeb6b4091e48104f90",
+  "limitations": "All paired country Brier effects are algebraic score attributions, NOT causal accounts of geopolitical events. Only countries with 1–24 origin-year state-based best deaths can differ between these two coefficient attenuations; countries with zero or >=25 deaths contribute identically to both. Removing one country from an annual score is a descriptive influence analysis with fitted parameters kept fixed, not leave-one-country-out training or independent validation. Data editions are ex-post revised and multi-edition country-years correlated; lambda and alpha family were chosen after past outcomes were inspected. No new issued 2027 probabilities or 2027 official outcomes.",
+  "no_multiple_testing_significance_claims": true,
+  "only_alpha0_vs_alpha1_country_contributions_audited": true,
+  "only_countries_with_origin_deaths_1_to_24_can_contribute": true,
+  "original_15_alerts_sha256": "309b4f270e1d0d6382b7a90ae64c28d7621f96fbf3177a45aaebbffb0f958acb",
+  "original_forecast_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "prior_historical_outcomes_and_lambda_already_explored": true,
+  "prospective_skill_demonstrated": false,
+  "resolved_official_2027_labels": 0,
+  "schema": "idealab.psico.geo2027_log1p_annual_country_reversal_attribution.v1",
+  "source_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "status": "EX_POST_ANNUAL_COUNTRY_BRIER_CONTRIBUTION_AUDIT_NOT_NEW_ISSUE",
+  "trained_label_cutoff_max_t_minus_two": true,
+  "year_country_leave_one_out_does_not_refit_model": true,
+  "year_vintage_blocks": 30
+}
