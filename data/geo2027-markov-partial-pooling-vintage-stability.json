@@ -1,1 +1,4117 @@
-{"status":"PENDING_FOUR_PINNED_UCDP_SOURCES_MARKOV_PARTIAL_POOLING_ANALYSIS"}
+{
+  "2025_risk_by_origin_deaths": {
+    "active_25_plus": {
+      "Markov_partial_pooling": {
+        "0.0": {
+          "max": 0.721566189954,
+          "mean": 0.71538351828,
+          "median": 0.715952655651,
+          "min": 0.70947505752,
+          "n": 34,
+          "p10": 0.70947505752,
+          "p90": 0.719831593483,
+          "p95": 0.720665115091,
+          "range": 0.012091132434,
+          "std_population": 0.00364254633
+        },
+        "0.25": {
+          "max": 0.794125691666,
+          "mean": 0.74514851018,
+          "median": 0.742668870526,
+          "min": 0.678424166581,
+          "n": 34,
+          "p10": 0.706066166312,
+          "p90": 0.794125691666,
+          "p95": 0.794125691666,
+          "range": 0.115701525085,
+          "std_population": 0.03184020451
+        },
+        "0.5": {
+          "max": 0.840671322974,
+          "mean": 0.763155552067,
+          "median": 0.76324757995,
+          "min": 0.640160923089,
+          "n": 34,
+          "p10": 0.697033607097,
+          "p90": 0.840671322974,
+          "p95": 0.840671322974,
+          "range": 0.200510399885,
+          "std_population": 0.052478279597
+        },
+        "1.0": {
+          "max": 0.890328047749,
+          "mean": 0.78449724896,
+          "median": 0.790678278818,
+          "min": 0.575942148462,
+          "n": 34,
+          "p10": 0.685756156672,
+          "p90": 0.890328047749,
+          "p95": 0.890328047749,
+          "range": 0.314385899287,
+          "std_population": 0.076658203154
+        }
+      },
+      "local_transition_exposures_state0": {
+        "max": 33,
+        "mean": 13.823529411765,
+        "median": 15.0,
+        "min": 0,
+        "n": 34,
+        "p10": 0.0,
+        "p90": 28.1,
+        "p95": 32.35,
+        "range": 33,
+        "std_population": 10.598197927382
+      },
+      "local_transition_exposures_state1": {
+        "max": 36,
+        "mean": 21.470588235294,
+        "median": 20.0,
+        "min": 3,
+        "n": 34,
+        "p10": 7.9,
+        "p90": 36.0,
+        "p95": 36.0,
+        "range": 33,
+        "std_population": 10.580879798062
+      },
+      "n": 34,
+      "n_ever_visited_state1": 34,
+      "n_no_local_active_transitions": 0,
+      "n_no_local_inactive_transitions": 6,
+      "national_fraction_state0": {
+        "max": 0.622641509434,
+        "mean": 0.342565522057,
+        "median": 0.428104575163,
+        "min": 0.0,
+        "n": 34,
+        "p10": 0.0,
+        "p90": 0.583850931677,
+        "p95": 0.617924528302,
+        "range": 0.622641509434,
+        "std_population": 0.218246456411
+      },
+      "national_fraction_state1": {
+        "max": 0.642857142857,
+        "mean": 0.481291772863,
+        "median": 0.5,
+        "min": 0.130434782609,
+        "n": 34,
+        "p10": 0.281481481481,
+        "p90": 0.642857142857,
+        "p95": 0.642857142857,
+        "range": 0.512422360248,
+        "std_population": 0.148317899253
+      },
+      "original_markov_from_frozen_law": {
+        "max": 0.893769476037,
+        "mean": 0.785683954677,
+        "median": 0.791860341299,
+        "min": 0.573433623875,
+        "n": 34,
+        "p10": 0.684991684417,
+        "p90": 0.893769476037,
+        "p95": 0.893769476037,
+        "range": 0.320335852162,
+        "std_population": 0.078193056131
+      }
+    },
+    "subthreshold_1_to_24": {
+      "Markov_partial_pooling": {
+        "0.0": {
+          "max": 0.053340630982,
+          "mean": 0.052663903641,
+          "median": 0.052554447328,
+          "min": 0.052143753366,
+          "n": 8,
+          "p10": 0.052297223301,
+          "p90": 0.05333137234,
+          "p95": 0.053336001661,
+          "range": 0.001196877616,
+          "std_population": 0.00041136785
+        },
+        "0.25": {
+          "max": 0.107605131183,
+          "mean": 0.073348873664,
+          "median": 0.078603373823,
+          "min": 0.03696222045,
+          "n": 8,
+          "p10": 0.037041798075,
+          "p90": 0.094003254553,
+          "p95": 0.100804192868,
+          "range": 0.070642910733,
+          "std_population": 0.023029333543
+        },
+        "0.5": {
+          "max": 0.152397944243,
+          "mean": 0.088448220188,
+          "median": 0.096773907729,
+          "min": 0.028282197408,
+          "n": 8,
+          "p10": 0.02832267556,
+          "p90": 0.121694753231,
+          "p95": 0.137046348737,
+          "range": 0.124115746835,
+          "std_population": 0.038921937372
+        },
+        "1.0": {
+          "max": 0.220101171525,
+          "mean": 0.10976938841,
+          "median": 0.122436087163,
+          "min": 0.01916622294,
+          "n": 8,
+          "p10": 0.019220408037,
+          "p90": 0.158192028613,
+          "p95": 0.189146600069,
+          "range": 0.200934948585,
+          "std_population": 0.061048929667
+        }
+      },
+      "local_transition_exposures_state0": {
+        "max": 36,
+        "mean": 22.0,
+        "median": 24.0,
+        "min": 2,
+        "n": 8,
+        "p10": 6.2,
+        "p90": 35.3,
+        "p95": 35.65,
+        "range": 34,
+        "std_population": 11.597413504743
+      },
+      "local_transition_exposures_state1": {
+        "max": 34,
+        "mean": 14.0,
+        "median": 12.0,
+        "min": 0,
+        "n": 8,
+        "p10": 0.7,
+        "p90": 29.8,
+        "p95": 31.9,
+        "range": 34,
+        "std_population": 11.597413504743
+      },
+      "n": 8,
+      "n_ever_visited_state1": 7,
+      "n_no_local_active_transitions": 1,
+      "n_no_local_inactive_transitions": 0,
+      "national_fraction_state0": {
+        "max": 0.642857142857,
+        "mean": 0.475245852795,
+        "median": 0.543331603529,
+        "min": 0.090909090909,
+        "n": 8,
+        "p10": 0.227272727273,
+        "p90": 0.638311688312,
+        "p95": 0.640584415584,
+        "range": 0.551948051948,
+        "std_population": 0.181904010927
+      },
+      "national_fraction_state1": {
+        "max": 0.62962962963,
+        "mean": 0.339680873086,
+        "median": 0.369458128079,
+        "min": 0.0,
+        "n": 8,
+        "p10": 0.033333333333,
+        "p90": 0.597222222222,
+        "p95": 0.613425925926,
+        "range": 0.62962962963,
+        "std_population": 0.219800969531
+      },
+      "original_markov_from_frozen_law": {
+        "max": 0.220660681382,
+        "mean": 0.109948517987,
+        "median": 0.12262214182,
+        "min": 0.019044029623,
+        "n": 8,
+        "p10": 0.019100943443,
+        "p90": 0.158597791815,
+        "p95": 0.189629236598,
+        "range": 0.201616651759,
+        "std_population": 0.061254365435
+      }
+    },
+    "zero": {
+      "Markov_partial_pooling": {
+        "0.0": {
+          "max": 0.053340630982,
+          "mean": 0.053152947024,
+          "median": 0.05332740435,
+          "min": 0.051230003228,
+          "n": 154,
+          "p10": 0.052706948627,
+          "p90": 0.05332740435,
+          "p95": 0.05332740435,
+          "range": 0.002110627754,
+          "std_population": 0.000353610524
+        },
+        "0.25": {
+          "max": 0.148998922333,
+          "mean": 0.046217843088,
+          "median": 0.03696222045,
+          "min": 0.03696222045,
+          "n": 154,
+          "p10": 0.03696222045,
+          "p90": 0.069460264754,
+          "p95": 0.08228958931,
+          "range": 0.112036701883,
+          "std_population": 0.019217419566
+        },
+        "0.5": {
+          "max": 0.212733754665,
+          "mean": 0.042735647846,
+          "median": 0.028282197408,
+          "min": 0.028282197408,
+          "n": 154,
+          "p10": 0.028282197408,
+          "p90": 0.078333285738,
+          "p95": 0.101161723638,
+          "range": 0.184451557257,
+          "std_population": 0.030549206879
+        },
+        "1.0": {
+          "max": 0.290187257438,
+          "mean": 0.039238193565,
+          "median": 0.019243630222,
+          "min": 0.01916622294,
+          "n": 154,
+          "p10": 0.019243630222,
+          "p90": 0.087097410279,
+          "p95": 0.123837840585,
+          "range": 0.271021034498,
+          "std_population": 0.043210214458
+        }
+      },
+      "local_transition_exposures_state0": {
+        "max": 36,
+        "mean": 33.571428571429,
+        "median": 36.0,
+        "min": 7,
+        "n": 154,
+        "p10": 29.0,
+        "p90": 36.0,
+        "p95": 36.0,
+        "range": 29,
+        "std_population": 4.763030170043
+      },
+      "local_transition_exposures_state1": {
+        "max": 29,
+        "mean": 1.753246753247,
+        "median": 0.0,
+        "min": 0,
+        "n": 154,
+        "p10": 0.0,
+        "p90": 6.0,
+        "p95": 9.7,
+        "range": 29,
+        "std_population": 4.169013225786
+      },
+      "n": 154,
+      "n_ever_visited_state1": 53,
+      "n_no_local_active_transitions": 101,
+      "n_no_local_inactive_transitions": 0,
+      "national_fraction_state0": {
+        "max": 0.642857142857,
+        "mean": 0.62250201107,
+        "median": 0.642857142857,
+        "min": 0.259259259259,
+        "n": 154,
+        "p10": 0.591836734694,
+        "p90": 0.642857142857,
+        "p95": 0.642857142857,
+        "range": 0.383597883598,
+        "std_population": 0.047970708696
+      },
+      "national_fraction_state1": {
+        "max": 0.591836734694,
+        "mean": 0.059041810962,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 154,
+        "p10": 0.0,
+        "p90": 0.230769230769,
+        "p95": 0.325917686318,
+        "range": 0.591836734694,
+        "std_population": 0.115928575852
+      },
+      "original_markov_from_frozen_law": {
+        "max": 0.290690880667,
+        "mean": 0.039172708188,
+        "median": 0.01912533508,
+        "min": 0.019044029623,
+        "n": 154,
+        "p10": 0.01912533508,
+        "p90": 0.087162339493,
+        "p95": 0.124045564073,
+        "range": 0.271646851044,
+        "std_population": 0.043309771977
+      }
+    }
+  },
+  "2025_top12_most_history_sensitive_countries_without_new_country_forecast_probabilities": [
+    {
+      "absolute_local_Markov_H2_sensitivity_pp": 23.88124316,
+      "country": "Burundi",
+      "country_id": 516,
+      "local_history_exposures_state0": 16,
+      "local_history_exposures_state1": 20,
+      "national_weight_given_state0": 0.444444,
+      "national_weight_given_state1": 0.5,
+      "origin_deaths_bucket": "zero"
+    },
+    {
+      "absolute_local_Markov_H2_sensitivity_pp": 18.917777255,
+      "country": "Senegal",
+      "country_id": 433,
+      "local_history_exposures_state0": 27,
+      "local_history_exposures_state1": 9,
+      "national_weight_given_state0": 0.574468,
+      "national_weight_given_state1": 0.310345,
+      "origin_deaths_bucket": "zero"
+    },
+    {
+      "absolute_local_Markov_H2_sensitivity_pp": 18.085299023,
+      "country": "Colombia",
+      "country_id": 100,
+      "local_history_exposures_state0": 0,
+      "local_history_exposures_state1": 36,
+      "national_weight_given_state0": 0.0,
+      "national_weight_given_state1": 0.642857,
+      "origin_deaths_bucket": "active_25_plus"
+    },
+    {
+      "absolute_local_Markov_H2_sensitivity_pp": 18.085299023,
+      "country": "Iraq",
+      "country_id": 645,
+      "local_history_exposures_state0": 0,
+      "local_history_exposures_state1": 36,
+      "national_weight_given_state0": 0.0,
+      "national_weight_given_state1": 0.642857,
+      "origin_deaths_bucket": "active_25_plus"
+    },
+    {
+      "absolute_local_Markov_H2_sensitivity_pp": 18.085299023,
+      "country": "Afghanistan",
+      "country_id": 700,
+      "local_history_exposures_state0": 0,
+      "local_history_exposures_state1": 36,
+      "national_weight_given_state0": 0.0,
+      "national_weight_given_state1": 0.642857,
+      "origin_deaths_bucket": "active_25_plus"
+    },
+    {
+      "absolute_local_Markov_H2_sensitivity_pp": 18.085299023,
+      "country": "India",
+      "country_id": 750,
+      "local_history_exposures_state0": 0,
+      "local_history_exposures_state1": 36,
+      "national_weight_given_state0": 0.0,
+      "national_weight_given_state1": 0.642857,
+      "origin_deaths_bucket": "active_25_plus"
+    },
+    {
+      "absolute_local_Markov_H2_sensitivity_pp": 18.085299023,
+      "country": "Myanmar (Burma)",
+      "country_id": 775,
+      "local_history_exposures_state0": 0,
+      "local_history_exposures_state1": 36,
+      "national_weight_given_state0": 0.0,
+      "national_weight_given_state1": 0.642857,
+      "origin_deaths_bucket": "active_25_plus"
+    },
+    {
+      "absolute_local_Markov_H2_sensitivity_pp": 18.085299023,
+      "country": "Philippines",
+      "country_id": 840,
+      "local_history_exposures_state0": 0,
+      "local_history_exposures_state1": 36,
+      "national_weight_given_state0": 0.0,
+      "national_weight_given_state1": 0.642857,
+      "origin_deaths_bucket": "active_25_plus"
+    },
+    {
+      "absolute_local_Markov_H2_sensitivity_pp": 16.833039068,
+      "country": "Tajikistan",
+      "country_id": 702,
+      "local_history_exposures_state0": 21,
+      "local_history_exposures_state1": 13,
+      "national_weight_given_state0": 0.512195,
+      "national_weight_given_state1": 0.393939,
+      "origin_deaths_bucket": "zero"
+    },
+    {
+      "absolute_local_Markov_H2_sensitivity_pp": 16.795741816,
+      "country": "Chad",
+      "country_id": 483,
+      "local_history_exposures_state0": 8,
+      "local_history_exposures_state1": 28,
+      "national_weight_given_state0": 0.285714,
+      "national_weight_given_state1": 0.583333,
+      "origin_deaths_bucket": "subthreshold_1_to_24"
+    },
+    {
+      "absolute_local_Markov_H2_sensitivity_pp": 14.800979323,
+      "country": "Sudan",
+      "country_id": 625,
+      "local_history_exposures_state0": 1,
+      "local_history_exposures_state1": 35,
+      "national_weight_given_state0": 0.047619,
+      "national_weight_given_state1": 0.636364,
+      "origin_deaths_bucket": "active_25_plus"
+    },
+    {
+      "absolute_local_Markov_H2_sensitivity_pp": 14.721576176,
+      "country": "Azerbaijan",
+      "country_id": 373,
+      "local_history_exposures_state0": 18,
+      "local_history_exposures_state1": 16,
+      "national_weight_given_state0": 0.473684,
+      "national_weight_given_state1": 0.444444,
+      "origin_deaths_bucket": "zero"
+    }
+  ],
+  "archive_snapshot_n": 8,
+  "archive_snapshots_aggregate_only": [
+    {
+      "by_origin_deaths_group": {
+        "active_25_plus": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.707141372387,
+              "mean": 0.700599855843,
+              "median": 0.700919005991,
+              "min": 0.693947153303,
+              "n": 37,
+              "p10": 0.693947153303,
+              "p90": 0.705342554959,
+              "p95": 0.705567657062,
+              "range": 0.013194219084,
+              "std_population": 0.003851859433
+            },
+            "0.25": {
+              "max": 0.777343073202,
+              "mean": 0.726321466176,
+              "median": 0.726268309374,
+              "min": 0.673860187581,
+              "n": 37,
+              "p10": 0.687292484045,
+              "p90": 0.777343073202,
+              "p95": 0.777343073202,
+              "range": 0.103482885621,
+              "std_population": 0.030814805611
+            },
+            "0.5": {
+              "max": 0.825132558749,
+              "mean": 0.742002103333,
+              "median": 0.744983733123,
+              "min": 0.652033918203,
+              "n": 37,
+              "p10": 0.674232848407,
+              "p90": 0.825132558749,
+              "p95": 0.825132558749,
+              "range": 0.173098640546,
+              "std_population": 0.051660687357
+            },
+            "1.0": {
+              "max": 0.877709804723,
+              "mean": 0.760502884918,
+              "median": 0.767907125661,
+              "min": 0.625460811718,
+              "n": 37,
+              "p10": 0.656830475246,
+              "p90": 0.877709804723,
+              "p95": 0.877709804723,
+              "range": 0.252248993005,
+              "std_population": 0.07622927751
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 33,
+            "mean": 14.054054054054,
+            "median": 16.0,
+            "min": 0,
+            "n": 37,
+            "p10": 0.0,
+            "p90": 28.4,
+            "p95": 29.8,
+            "range": 33,
+            "std_population": 10.232291085673
+          },
+          "local_transition_exposures_state1": {
+            "max": 33,
+            "mean": 18.675675675676,
+            "median": 17.0,
+            "min": 0,
+            "n": 37,
+            "p10": 3.6,
+            "p90": 33.0,
+            "p95": 33.0,
+            "range": 33,
+            "std_population": 10.503677744728
+          },
+          "n": 37,
+          "n_ever_visited_state1": 35,
+          "n_no_local_active_transitions": 2,
+          "n_no_local_inactive_transitions": 5,
+          "national_fraction_state0": {
+            "max": 0.622641509434,
+            "mean": 0.351375172274,
+            "median": 0.444444444444,
+            "min": 0.0,
+            "n": 37,
+            "p10": 0.0,
+            "p90": 0.586734693878,
+            "p95": 0.597997689642,
+            "range": 0.622641509434,
+            "std_population": 0.21074450113
+          },
+          "national_fraction_state1": {
+            "max": 0.622641509434,
+            "mean": 0.437004321959,
+            "median": 0.459459459459,
+            "min": 0.0,
+            "n": 37,
+            "p10": 0.152173913043,
+            "p90": 0.622641509434,
+            "p95": 0.622641509434,
+            "range": 0.622641509434,
+            "std_population": 0.176403467631
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.881602206487,
+            "mean": 0.76162097729,
+            "median": 0.769131100836,
+            "min": 0.6236047723,
+            "n": 37,
+            "p10": 0.655670733952,
+            "p90": 0.881602206487,
+            "p95": 0.881602206487,
+            "range": 0.257997434187,
+            "std_population": 0.077932704242
+          }
+        },
+        "subthreshold_1_to_24": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.055720048409,
+              "mean": 0.05506897183,
+              "median": 0.055112548972,
+              "min": 0.05420535311,
+              "n": 14,
+              "p10": 0.054476491899,
+              "p90": 0.055704618327,
+              "p95": 0.055710018856,
+              "range": 0.001514695299,
+              "std_population": 0.000478869823
+            },
+            "0.25": {
+              "max": 0.121864021437,
+              "mean": 0.071943801232,
+              "median": 0.068868380342,
+              "min": 0.039633892885,
+              "n": 14,
+              "p10": 0.039673766893,
+              "p90": 0.101618503809,
+              "p95": 0.11050156043,
+              "range": 0.082230128552,
+              "std_population": 0.025218590121
+            },
+            "0.5": {
+              "max": 0.171114514201,
+              "mean": 0.083512406031,
+              "median": 0.07724662445,
+              "min": 0.030759091725,
+              "n": 14,
+              "p10": 0.030783669928,
+              "p90": 0.131595774194,
+              "p95": 0.145450292402,
+              "range": 0.140355422476,
+              "std_population": 0.042315463814
+            },
+            "1.0": {
+              "max": 0.237876743395,
+              "mean": 0.098703986243,
+              "median": 0.086848128961,
+              "min": 0.021183498903,
+              "n": 14,
+              "p10": 0.021244482938,
+              "p90": 0.183195285031,
+              "p95": 0.209072986208,
+              "range": 0.216693244492,
+              "std_population": 0.065064755819
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 33,
+            "mean": 22.642857142857,
+            "median": 25.0,
+            "min": 0,
+            "n": 14,
+            "p10": 6.4,
+            "p90": 32.7,
+            "p95": 33.0,
+            "range": 33,
+            "std_population": 10.209289487361
+          },
+          "local_transition_exposures_state1": {
+            "max": 29,
+            "mean": 8.5,
+            "median": 6.5,
+            "min": 0,
+            "n": 14,
+            "p10": 0.3,
+            "p90": 19.2,
+            "p95": 23.8,
+            "range": 29,
+            "std_population": 8.095413163373
+          },
+          "n": 14,
+          "n_ever_visited_state1": 12,
+          "n_no_local_active_transitions": 2,
+          "n_no_local_inactive_transitions": 1,
+          "national_fraction_state0": {
+            "max": 0.622641509434,
+            "mean": 0.489194153555,
+            "median": 0.555335968379,
+            "min": 0.0,
+            "n": 14,
+            "p10": 0.229166666667,
+            "p90": 0.620464441219,
+            "p95": 0.622641509434,
+            "range": 0.622641509434,
+            "std_population": 0.180492361751
+          },
+          "national_fraction_state1": {
+            "max": 0.591836734694,
+            "mean": 0.249345295198,
+            "median": 0.245014245014,
+            "min": 0.0,
+            "n": 14,
+            "p10": 0.014285714286,
+            "p90": 0.487108013937,
+            "p95": 0.540069686411,
+            "range": 0.591836734694,
+            "std_population": 0.179372012444
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.238408935434,
+            "mean": 0.098822722103,
+            "median": 0.086935136819,
+            "min": 0.021048167641,
+            "n": 14,
+            "p10": 0.021114176516,
+            "p90": 0.183674524747,
+            "p95": 0.209659970794,
+            "range": 0.217360767793,
+            "std_population": 0.065272055693
+          }
+        },
+        "zero": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.055720048409,
+              "mean": 0.055560499603,
+              "median": 0.055704618327,
+              "min": 0.053426352533,
+              "n": 145,
+              "p10": 0.05527615639,
+              "p90": 0.055704618327,
+              "p95": 0.055704618327,
+              "range": 0.002293695876,
+              "std_population": 0.000323303609
+            },
+            "0.25": {
+              "max": 0.153562229643,
+              "mean": 0.04679792962,
+              "median": 0.039633892885,
+              "min": 0.039633892885,
+              "n": 145,
+              "p10": 0.039633892885,
+              "p90": 0.059849437967,
+              "p95": 0.073756338956,
+              "range": 0.113928336758,
+              "std_population": 0.016449503341
+            },
+            "0.5": {
+              "max": 0.208113369152,
+              "mean": 0.042023214031,
+              "median": 0.030759091725,
+              "min": 0.030759091725,
+              "n": 145,
+              "p10": 0.030759091725,
+              "p90": 0.062739769158,
+              "p95": 0.084483435984,
+              "range": 0.177354277427,
+              "std_population": 0.026359941315
+            },
+            "1.0": {
+              "max": 0.267278992317,
+              "mean": 0.03690480127,
+              "median": 0.021244482938,
+              "min": 0.021183498903,
+              "n": 145,
+              "p10": 0.021244482938,
+              "p90": 0.066182696899,
+              "p95": 0.095504287176,
+              "range": 0.246095493414,
+              "std_population": 0.037515277632
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 33,
+            "mean": 31.048275862069,
+            "median": 33.0,
+            "min": 14,
+            "n": 145,
+            "p10": 27.0,
+            "p90": 33.0,
+            "p95": 33.0,
+            "range": 19,
+            "std_population": 3.95723873511
+          },
+          "local_transition_exposures_state1": {
+            "max": 19,
+            "mean": 1.31724137931,
+            "median": 0.0,
+            "min": 0,
+            "n": 145,
+            "p10": 0.0,
+            "p90": 4.0,
+            "p95": 7.0,
+            "range": 19,
+            "std_population": 3.262542795652
+          },
+          "n": 145,
+          "n_ever_visited_state1": 44,
+          "n_no_local_active_transitions": 101,
+          "n_no_local_inactive_transitions": 0,
+          "national_fraction_state0": {
+            "max": 0.622641509434,
+            "mean": 0.605127127645,
+            "median": 0.622641509434,
+            "min": 0.411764705882,
+            "n": 145,
+            "p10": 0.574468085106,
+            "p90": 0.622641509434,
+            "p95": 0.622641509434,
+            "range": 0.210876803552,
+            "std_population": 0.04016441767
+          },
+          "national_fraction_state1": {
+            "max": 0.487179487179,
+            "mean": 0.046845847662,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 145,
+            "p10": 0.0,
+            "p90": 0.166666666667,
+            "p95": 0.259259259259,
+            "range": 0.487179487179,
+            "std_population": 0.099500301957
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.267853229871,
+            "mean": 0.03681923225,
+            "median": 0.021114176516,
+            "min": 0.021048167641,
+            "n": 145,
+            "p10": 0.021114176516,
+            "p90": 0.066224730053,
+            "p95": 0.095569070418,
+            "range": 0.24680506223,
+            "std_population": 0.037606775241
+          }
+        }
+      },
+      "cutoff_provenance": {
+        "global_transition_counts": [
+          [
+            5181,
+            163
+          ],
+          [
+            164,
+            837
+          ]
+        ],
+        "maximum_observed_transition_year": 2022,
+        "origin": 2022,
+        "source_country_transition_count": 199
+      },
+      "edition_last_year": 2022,
+      "edition_published_after_origin_and_revised_retrospectively": false,
+      "n_country": 196,
+      "origin": 2022,
+      "post_origin_information_used_for_Markov_transition_fit": false,
+      "source_edition": "23.1"
+    },
+    {
+      "by_origin_deaths_group": {
+        "active_25_plus": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.707171767155,
+              "mean": 0.700593485374,
+              "median": 0.700950159316,
+              "min": 0.693978972064,
+              "n": 37,
+              "p10": 0.693978972064,
+              "p90": 0.70537317105,
+              "p95": 0.705598203541,
+              "range": 0.013192795091,
+              "std_population": 0.003857855182
+            },
+            "0.25": {
+              "max": 0.777365599758,
+              "mean": 0.726693512419,
+              "median": 0.726290306426,
+              "min": 0.673889145861,
+              "n": 37,
+              "p10": 0.687319078239,
+              "p90": 0.777365599758,
+              "p95": 0.777365599758,
+              "range": 0.103476453897,
+              "std_population": 0.03089871218
+            },
+            "0.5": {
+              "max": 0.825149993687,
+              "mean": 0.74263787931,
+              "median": 0.745001722854,
+              "min": 0.65206093048,
+              "n": 37,
+              "p10": 0.674256760615,
+              "p90": 0.825149993687,
+              "p95": 0.825149993687,
+              "range": 0.173089063207,
+              "std_population": 0.051832926084
+            },
+            "1.0": {
+              "max": 0.877721811802,
+              "mean": 0.761479558193,
+              "median": 0.770709668219,
+              "min": 0.625484064858,
+              "n": 37,
+              "p10": 0.656849999685,
+              "p90": 0.877721811802,
+              "p95": 0.877721811802,
+              "range": 0.252237746944,
+              "std_population": 0.076538117867
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 33,
+            "mean": 14.081081081081,
+            "median": 16.0,
+            "min": 0,
+            "n": 37,
+            "p10": 0.0,
+            "p90": 28.4,
+            "p95": 29.8,
+            "range": 33,
+            "std_population": 10.228149758383
+          },
+          "local_transition_exposures_state1": {
+            "max": 33,
+            "mean": 18.648648648649,
+            "median": 17.0,
+            "min": 0,
+            "n": 37,
+            "p10": 3.6,
+            "p90": 33.0,
+            "p95": 33.0,
+            "range": 33,
+            "std_population": 10.498947736762
+          },
+          "n": 37,
+          "n_ever_visited_state1": 35,
+          "n_no_local_active_transitions": 2,
+          "n_no_local_inactive_transitions": 5,
+          "national_fraction_state0": {
+            "max": 0.622641509434,
+            "mean": 0.351887047786,
+            "median": 0.444444444444,
+            "min": 0.0,
+            "n": 37,
+            "p10": 0.0,
+            "p90": 0.586734693878,
+            "p95": 0.597997689642,
+            "range": 0.622641509434,
+            "std_population": 0.210824247404
+          },
+          "national_fraction_state1": {
+            "max": 0.622641509434,
+            "mean": 0.436674724068,
+            "median": 0.459459459459,
+            "min": 0.0,
+            "n": 37,
+            "p10": 0.152173913043,
+            "p90": 0.622641509434,
+            "p95": 0.622641509434,
+            "range": 0.622641509434,
+            "std_population": 0.176274016196
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.881613818518,
+            "mean": 0.762618644285,
+            "median": 0.772028837573,
+            "min": 0.623628091343,
+            "n": 37,
+            "p10": 0.655690267181,
+            "p90": 0.881613818518,
+            "p95": 0.881613818518,
+            "range": 0.257985727175,
+            "std_population": 0.078247422374
+          }
+        },
+        "subthreshold_1_to_24": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.056053961735,
+              "mean": 0.055324584837,
+              "median": 0.055355973473,
+              "min": 0.054235284984,
+              "n": 15,
+              "p10": 0.054616504147,
+              "p90": 0.056038435367,
+              "p95": 0.056043093277,
+              "range": 0.001818676751,
+              "std_population": 0.0005466834
+            },
+            "0.25": {
+              "max": 0.136940225501,
+              "mean": 0.076518312804,
+              "median": 0.074491794916,
+              "min": 0.039872633235,
+              "n": 15,
+              "p10": 0.039926102187,
+              "p90": 0.115130925224,
+              "p95": 0.12657884345,
+              "range": 0.097067592266,
+              "std_population": 0.02923385408
+            },
+            "0.5": {
+              "max": 0.194068872787,
+              "mean": 0.091082538803,
+              "median": 0.085471187369,
+              "min": 0.030944892157,
+              "n": 15,
+              "p10": 0.030977843553,
+              "p90": 0.155533154181,
+              "p95": 0.178163455854,
+              "range": 0.16312398063,
+              "std_population": 0.04928979721
+            },
+            "1.0": {
+              "max": 0.267439962613,
+              "mean": 0.11010471123,
+              "median": 0.097218626239,
+              "min": 0.02131180222,
+              "n": 15,
+              "p10": 0.021373190105,
+              "p90": 0.220362005017,
+              "p95": 0.246869639351,
+              "range": 0.246128160393,
+              "std_population": 0.075635200739
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 33,
+            "mean": 22.066666666667,
+            "median": 24.0,
+            "min": 0,
+            "n": 15,
+            "p10": 7.2,
+            "p90": 32.6,
+            "p95": 33.0,
+            "range": 33,
+            "std_population": 10.095983799952
+          },
+          "local_transition_exposures_state1": {
+            "max": 29,
+            "mean": 9.2,
+            "median": 7.0,
+            "min": 0,
+            "n": 15,
+            "p10": 0.4,
+            "p90": 20.2,
+            "p95": 23.4,
+            "range": 29,
+            "std_population": 8.247827996913
+          },
+          "n": 15,
+          "n_ever_visited_state1": 13,
+          "n_no_local_active_transitions": 2,
+          "n_no_local_inactive_transitions": 1,
+          "national_fraction_state0": {
+            "max": 0.622641509434,
+            "mean": 0.484032190377,
+            "median": 0.545454545455,
+            "min": 0.0,
+            "n": 15,
+            "p10": 0.25,
+            "p90": 0.619738751814,
+            "p95": 0.622641509434,
+            "range": 0.622641509434,
+            "std_population": 0.175438598664
+          },
+          "national_fraction_state1": {
+            "max": 0.591836734694,
+            "mean": 0.265200907997,
+            "median": 0.259259259259,
+            "min": 0.0,
+            "n": 15,
+            "p10": 0.019047619048,
+            "p90": 0.502188868043,
+            "p95": 0.536087605774,
+            "range": 0.591836734694,
+            "std_population": 0.183163780971
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.268013560205,
+            "mean": 0.110253174615,
+            "median": 0.097302353462,
+            "min": 0.021175656084,
+            "n": 15,
+            "p10": 0.021242099376,
+            "p90": 0.220927521323,
+            "p95": 0.24741384242,
+            "range": 0.246837904121,
+            "std_population": 0.075864913697
+          }
+        },
+        "zero": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.056053961735,
+              "mean": 0.05590359448,
+              "median": 0.056038435367,
+              "min": 0.053761071498,
+              "n": 144,
+              "p10": 0.055678718612,
+              "p90": 0.056038435367,
+              "p95": 0.056038435367,
+              "range": 0.002292890237,
+              "std_population": 0.000293436224
+            },
+            "0.25": {
+              "max": 0.153795531554,
+              "mean": 0.046524345333,
+              "median": 0.039872633235,
+              "min": 0.039872633235,
+              "n": 144,
+              "p10": 0.039872633235,
+              "p90": 0.058009409961,
+              "p95": 0.073191151847,
+              "range": 0.113922898319,
+              "std_population": 0.014707137794
+            },
+            "0.5": {
+              "max": 0.208289056444,
+              "mean": 0.041327689948,
+              "median": 0.030944892157,
+              "min": 0.030944892157,
+              "n": 144,
+              "p10": 0.030944892157,
+              "p90": 0.059241980124,
+              "p95": 0.083087619665,
+              "range": 0.177344164287,
+              "std_population": 0.023221008297
+            },
+            "1.0": {
+              "max": 0.262068221003,
+              "mean": 0.035669668734,
+              "median": 0.021373190105,
+              "min": 0.02131180222,
+              "n": 144,
+              "p10": 0.021373190105,
+              "p90": 0.060370620986,
+              "p95": 0.093260872006,
+              "range": 0.240756418783,
+              "std_population": 0.032362821375
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 33,
+            "mean": 31.159722222222,
+            "median": 33.0,
+            "min": 14,
+            "n": 144,
+            "p10": 27.0,
+            "p90": 33.0,
+            "p95": 33.0,
+            "range": 19,
+            "std_population": 3.703720341398
+          },
+          "local_transition_exposures_state1": {
+            "max": 19,
+            "mean": 1.201388888889,
+            "median": 0.0,
+            "min": 0,
+            "n": 144,
+            "p10": 0.0,
+            "p90": 4.0,
+            "p95": 6.85,
+            "range": 19,
+            "std_population": 2.919236632312
+          },
+          "n": 144,
+          "n_ever_visited_state1": 44,
+          "n_no_local_active_transitions": 100,
+          "n_no_local_inactive_transitions": 0,
+          "national_fraction_state0": {
+            "max": 0.622641509434,
+            "mean": 0.606419527143,
+            "median": 0.622641509434,
+            "min": 0.411764705882,
+            "n": 144,
+            "p10": 0.574468085106,
+            "p90": 0.622641509434,
+            "p95": 0.622641509434,
+            "range": 0.210876803552,
+            "std_population": 0.036900775213
+          },
+          "national_fraction_state1": {
+            "max": 0.487179487179,
+            "mean": 0.044118662996,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 144,
+            "p10": 0.0,
+            "p90": 0.166666666667,
+            "p95": 0.254985754986,
+            "range": 0.487179487179,
+            "std_population": 0.092735672302
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.262149631624,
+            "mean": 0.035579491529,
+            "median": 0.021242099376,
+            "min": 0.021175656084,
+            "n": 144,
+            "p10": 0.021242099376,
+            "p90": 0.060361216035,
+            "p95": 0.093338228797,
+            "range": 0.24097397554,
+            "std_population": 0.032436944761
+          }
+        }
+      },
+      "cutoff_provenance": {
+        "global_transition_counts": [
+          [
+            5180,
+            164
+          ],
+          [
+            164,
+            837
+          ]
+        ],
+        "maximum_observed_transition_year": 2022,
+        "origin": 2022,
+        "source_country_transition_count": 199
+      },
+      "edition_last_year": 2023,
+      "edition_published_after_origin_and_revised_retrospectively": true,
+      "n_country": 196,
+      "origin": 2022,
+      "post_origin_information_used_for_Markov_transition_fit": false,
+      "source_edition": "24.1"
+    },
+    {
+      "by_origin_deaths_group": {
+        "active_25_plus": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.708250820309,
+              "mean": 0.701668747584,
+              "median": 0.702041716416,
+              "min": 0.695121305154,
+              "n": 37,
+              "p10": 0.695121305154,
+              "p90": 0.706315857519,
+              "p95": 0.707021521665,
+              "range": 0.013129515155,
+              "std_population": 0.003817081149
+            },
+            "0.25": {
+              "max": 0.778223366559,
+              "mean": 0.72789550789,
+              "median": 0.727262912048,
+              "min": 0.674737754769,
+              "n": 37,
+              "p10": 0.690481551926,
+              "p90": 0.778223366559,
+              "p95": 0.778223366559,
+              "range": 0.10348561179,
+              "std_population": 0.030679543893
+            },
+            "0.5": {
+              "max": 0.82583467734,
+              "mean": 0.743957394319,
+              "median": 0.745826835099,
+              "min": 0.652757074406,
+              "n": 37,
+              "p10": 0.679089546258,
+              "p90": 0.82583467734,
+              "p95": 0.82583467734,
+              "range": 0.173077602934,
+              "std_population": 0.051424401984
+            },
+            "1.0": {
+              "max": 0.878208606519,
+              "mean": 0.762994103851,
+              "median": 0.771371081042,
+              "min": 0.625992810209,
+              "n": 37,
+              "p10": 0.658013636078,
+              "p90": 0.878208606519,
+              "p95": 0.878208606519,
+              "range": 0.25221579631,
+              "std_population": 0.075855488364
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 33,
+            "mean": 13.972972972973,
+            "median": 16.0,
+            "min": 0,
+            "n": 37,
+            "p10": 0.0,
+            "p90": 28.4,
+            "p95": 29.8,
+            "range": 33,
+            "std_population": 10.180762161472
+          },
+          "local_transition_exposures_state1": {
+            "max": 33,
+            "mean": 18.756756756757,
+            "median": 17.0,
+            "min": 0,
+            "n": 37,
+            "p10": 3.6,
+            "p90": 33.0,
+            "p95": 33.0,
+            "range": 33,
+            "std_population": 10.445237904748
+          },
+          "n": 37,
+          "n_ever_visited_state1": 35,
+          "n_no_local_active_transitions": 2,
+          "n_no_local_inactive_transitions": 5,
+          "national_fraction_state0": {
+            "max": 0.622641509434,
+            "mean": 0.350420685601,
+            "median": 0.444444444444,
+            "min": 0.0,
+            "n": 37,
+            "p10": 0.0,
+            "p90": 0.586734693878,
+            "p95": 0.597997689642,
+            "range": 0.622641509434,
+            "std_population": 0.209941566654
+          },
+          "national_fraction_state1": {
+            "max": 0.622641509434,
+            "mean": 0.43863566184,
+            "median": 0.459459459459,
+            "min": 0.0,
+            "n": 37,
+            "p10": 0.152173913043,
+            "p90": 0.622641509434,
+            "p95": 0.622641509434,
+            "range": 0.622641509434,
+            "std_population": 0.175770050884
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.882070253718,
+            "mean": 0.764136765949,
+            "median": 0.772676443863,
+            "min": 0.624135997437,
+            "n": 37,
+            "p10": 0.657003187097,
+            "p90": 0.882070253718,
+            "p95": 0.882070253718,
+            "range": 0.257934256281,
+            "std_population": 0.077542311166
+          }
+        },
+        "subthreshold_1_to_24": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.056115682299,
+              "mean": 0.055385616637,
+              "median": 0.0554168678,
+              "min": 0.054295094599,
+              "n": 15,
+              "p10": 0.054676650316,
+              "p90": 0.056100238437,
+              "p95": 0.056104871596,
+              "range": 0.0018205877,
+              "std_population": 0.000547280597
+            },
+            "0.25": {
+              "max": 0.137013956075,
+              "mean": 0.076575059531,
+              "median": 0.074547062109,
+              "min": 0.039916688212,
+              "n": 15,
+              "p10": 0.039970147907,
+              "p90": 0.115198593728,
+              "p95": 0.126649714362,
+              "range": 0.097097267863,
+              "std_population": 0.029242579292
+            },
+            "0.5": {
+              "max": 0.194146414459,
+              "mean": 0.091135572264,
+              "median": 0.085522008502,
+              "min": 0.030979116981,
+              "n": 15,
+              "p10": 0.03101202201,
+              "p90": 0.155602298745,
+              "p95": 0.178236755189,
+              "range": 0.163167297478,
+              "std_population": 0.049302606133
+            },
+            "1.0": {
+              "max": 0.267514906249,
+              "mean": 0.110151534766,
+              "median": 0.097262591383,
+              "min": 0.021335156178,
+              "n": 15,
+              "p10": 0.021396853621,
+              "p90": 0.220427582857,
+              "p95": 0.246939568871,
+              "range": 0.246179750071,
+              "std_population": 0.075650356487
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 33,
+            "mean": 22.066666666667,
+            "median": 24.0,
+            "min": 0,
+            "n": 15,
+            "p10": 7.2,
+            "p90": 32.6,
+            "p95": 33.0,
+            "range": 33,
+            "std_population": 10.095983799952
+          },
+          "local_transition_exposures_state1": {
+            "max": 29,
+            "mean": 9.2,
+            "median": 7.0,
+            "min": 0,
+            "n": 15,
+            "p10": 0.4,
+            "p90": 20.2,
+            "p95": 23.4,
+            "range": 29,
+            "std_population": 8.247827996913
+          },
+          "n": 15,
+          "n_ever_visited_state1": 13,
+          "n_no_local_active_transitions": 2,
+          "n_no_local_inactive_transitions": 1,
+          "national_fraction_state0": {
+            "max": 0.622641509434,
+            "mean": 0.484032190377,
+            "median": 0.545454545455,
+            "min": 0.0,
+            "n": 15,
+            "p10": 0.25,
+            "p90": 0.619738751814,
+            "p95": 0.622641509434,
+            "range": 0.622641509434,
+            "std_population": 0.175438598664
+          },
+          "national_fraction_state1": {
+            "max": 0.591836734694,
+            "mean": 0.265200907997,
+            "median": 0.259259259259,
+            "min": 0.0,
+            "n": 15,
+            "p10": 0.019047619048,
+            "p90": 0.502188868043,
+            "p95": 0.536087605774,
+            "range": 0.591836734694,
+            "std_population": 0.183163780971
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.268088735632,
+            "mean": 0.110299986023,
+            "median": 0.097346510653,
+            "min": 0.02119879964,
+            "n": 15,
+            "p10": 0.02126551982,
+            "p90": 0.220992731244,
+            "p95": 0.247483853125,
+            "range": 0.246889935992,
+            "std_population": 0.075880169244
+          }
+        },
+        "zero": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.056115682299,
+              "mean": 0.05596521952,
+              "median": 0.056100238437,
+              "min": 0.05381980057,
+              "n": 144,
+              "p10": 0.055740028071,
+              "p90": 0.056100238437,
+              "p95": 0.056100238437,
+              "range": 0.002295881729,
+              "std_population": 0.000293808503
+            },
+            "0.25": {
+              "max": 0.15387490522,
+              "mean": 0.046570775995,
+              "median": 0.039916688212,
+              "min": 0.039916688212,
+              "n": 144,
+              "p10": 0.039916688212,
+              "p90": 0.058059788157,
+              "p95": 0.073246533701,
+              "range": 0.113958217008,
+              "std_population": 0.014711853274
+            },
+            "0.5": {
+              "max": 0.208376305463,
+              "mean": 0.041365439612,
+              "median": 0.030979116981,
+              "min": 0.030979116981,
+              "n": 144,
+              "p10": 0.030979116981,
+              "p90": 0.059285443761,
+              "p95": 0.083139265539,
+              "range": 0.177397188482,
+              "std_population": 0.023228074604
+            },
+            "1.0": {
+              "max": 0.262156955046,
+              "mean": 0.035697721132,
+              "median": 0.021396853621,
+              "min": 0.021335156178,
+              "n": 144,
+              "p10": 0.021396853621,
+              "p90": 0.060405544162,
+              "p95": 0.093307294278,
+              "range": 0.240821798868,
+              "std_population": 0.032371575018
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 33,
+            "mean": 31.159722222222,
+            "median": 33.0,
+            "min": 14,
+            "n": 144,
+            "p10": 27.0,
+            "p90": 33.0,
+            "p95": 33.0,
+            "range": 19,
+            "std_population": 3.703720341398
+          },
+          "local_transition_exposures_state1": {
+            "max": 19,
+            "mean": 1.201388888889,
+            "median": 0.0,
+            "min": 0,
+            "n": 144,
+            "p10": 0.0,
+            "p90": 4.0,
+            "p95": 6.85,
+            "range": 19,
+            "std_population": 2.919236632312
+          },
+          "n": 144,
+          "n_ever_visited_state1": 44,
+          "n_no_local_active_transitions": 100,
+          "n_no_local_inactive_transitions": 0,
+          "national_fraction_state0": {
+            "max": 0.622641509434,
+            "mean": 0.606419527143,
+            "median": 0.622641509434,
+            "min": 0.411764705882,
+            "n": 144,
+            "p10": 0.574468085106,
+            "p90": 0.622641509434,
+            "p95": 0.622641509434,
+            "range": 0.210876803552,
+            "std_population": 0.036900775213
+          },
+          "national_fraction_state1": {
+            "max": 0.487179487179,
+            "mean": 0.044118662996,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 144,
+            "p10": 0.0,
+            "p90": 0.166666666667,
+            "p95": 0.254985754986,
+            "range": 0.487179487179,
+            "std_population": 0.092735672302
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.262240810068,
+            "mean": 0.035607387631,
+            "median": 0.02126551982,
+            "min": 0.02119879964,
+            "n": 144,
+            "p10": 0.02126551982,
+            "p90": 0.06039610695,
+            "p95": 0.093384894353,
+            "range": 0.241042010428,
+            "std_population": 0.032445921267
+          }
+        }
+      },
+      "cutoff_provenance": {
+        "global_transition_counts": [
+          [
+            5176,
+            164
+          ],
+          [
+            164,
+            841
+          ]
+        ],
+        "maximum_observed_transition_year": 2022,
+        "origin": 2022,
+        "source_country_transition_count": 199
+      },
+      "edition_last_year": 2024,
+      "edition_published_after_origin_and_revised_retrospectively": true,
+      "n_country": 196,
+      "origin": 2022,
+      "post_origin_information_used_for_Markov_transition_fit": false,
+      "source_edition": "25.1"
+    },
+    {
+      "by_origin_deaths_group": {
+        "active_25_plus": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.710149782044,
+              "mean": 0.703511520013,
+              "median": 0.703922701768,
+              "min": 0.697047591917,
+              "n": 37,
+              "p10": 0.697047591917,
+              "p90": 0.708213440797,
+              "p95": 0.708916719544,
+              "range": 0.013102190127,
+              "std_population": 0.003878257513
+            },
+            "0.25": {
+              "max": 0.779670828015,
+              "mean": 0.729909728933,
+              "median": 0.728890506044,
+              "min": 0.676224983962,
+              "n": 37,
+              "p10": 0.691978646352,
+              "p90": 0.779670828015,
+              "p95": 0.779670828015,
+              "range": 0.103445844053,
+              "std_population": 0.031149469688
+            },
+            "0.5": {
+              "max": 0.826990477462,
+              "mean": 0.746037136951,
+              "median": 0.747254811219,
+              "min": 0.653973108648,
+              "n": 37,
+              "p10": 0.680694698883,
+              "p90": 0.826990477462,
+              "p95": 0.826990477462,
+              "range": 0.173017368814,
+              "std_population": 0.052175844315
+            },
+            "1.0": {
+              "max": 0.879030648071,
+              "mean": 0.7651020876,
+              "median": 0.772518121623,
+              "min": 0.626877181958,
+              "n": 37,
+              "p10": 0.659436816288,
+              "p90": 0.879030648071,
+              "p95": 0.879030648071,
+              "range": 0.252153466113,
+              "std_population": 0.076884111795
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 33,
+            "mean": 13.918918918919,
+            "median": 16.0,
+            "min": 0,
+            "n": 37,
+            "p10": 0.0,
+            "p90": 28.4,
+            "p95": 29.8,
+            "range": 33,
+            "std_population": 10.204340301726
+          },
+          "local_transition_exposures_state1": {
+            "max": 33,
+            "mean": 18.810810810811,
+            "median": 17.0,
+            "min": 0,
+            "n": 37,
+            "p10": 3.6,
+            "p90": 33.0,
+            "p95": 33.0,
+            "range": 33,
+            "std_population": 10.46961585252
+          },
+          "n": 37,
+          "n_ever_visited_state1": 35,
+          "n_no_local_active_transitions": 2,
+          "n_no_local_inactive_transitions": 6,
+          "national_fraction_state0": {
+            "max": 0.622641509434,
+            "mean": 0.348768947107,
+            "median": 0.444444444444,
+            "min": 0.0,
+            "n": 37,
+            "p10": 0.0,
+            "p90": 0.586734693878,
+            "p95": 0.597997689642,
+            "range": 0.622641509434,
+            "std_population": 0.211704018202
+          },
+          "national_fraction_state1": {
+            "max": 0.622641509434,
+            "mean": 0.43928602986,
+            "median": 0.459459459459,
+            "min": 0.0,
+            "n": 37,
+            "p10": 0.152173913043,
+            "p90": 0.622641509434,
+            "p95": 0.622641509434,
+            "range": 0.622641509434,
+            "std_population": 0.175922329977
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.882863373762,
+            "mean": 0.766254977133,
+            "median": 0.773807169184,
+            "min": 0.625006511468,
+            "n": 37,
+            "p10": 0.658419161055,
+            "p90": 0.882863373762,
+            "p95": 0.882863373762,
+            "range": 0.257856862294,
+            "std_population": 0.078597570437
+          }
+        },
+        "subthreshold_1_to_24": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.055827408004,
+              "mean": 0.055097509023,
+              "median": 0.055128190502,
+              "min": 0.05400638123,
+              "n": 15,
+              "p10": 0.054387894465,
+              "p90": 0.055812055716,
+              "p95": 0.055816661402,
+              "range": 0.001821026774,
+              "std_population": 0.000547499465
+            },
+            "0.25": {
+              "max": 0.136831128183,
+              "mean": 0.076367798758,
+              "median": 0.074353266305,
+              "min": 0.039710326057,
+              "n": 15,
+              "p10": 0.039763456323,
+              "p90": 0.115011693944,
+              "p95": 0.126453909952,
+              "range": 0.097120802126,
+              "std_population": 0.029252229037
+            },
+            "0.5": {
+              "max": 0.194025219353,
+              "mean": 0.090975016612,
+              "median": 0.085382221611,
+              "min": 0.030818406374,
+              "n": 15,
+              "p10": 0.030851052326,
+              "p90": 0.155474093144,
+              "p95": 0.178096551551,
+              "range": 0.163206812979,
+              "std_population": 0.049316963513
+            },
+            "1.0": {
+              "max": 0.267457771083,
+              "mean": 0.11004168965,
+              "median": 0.097180112346,
+              "min": 0.02122374905,
+              "n": 15,
+              "p10": 0.021285447311,
+              "p90": 0.220293788682,
+              "p95": 0.246859913795,
+              "range": 0.246234022033,
+              "std_population": 0.075667573202
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 33,
+            "mean": 22.066666666667,
+            "median": 24.0,
+            "min": 0,
+            "n": 15,
+            "p10": 7.2,
+            "p90": 32.6,
+            "p95": 33.0,
+            "range": 33,
+            "std_population": 10.095983799952
+          },
+          "local_transition_exposures_state1": {
+            "max": 29,
+            "mean": 9.2,
+            "median": 7.0,
+            "min": 0,
+            "n": 15,
+            "p10": 0.4,
+            "p90": 20.2,
+            "p95": 23.4,
+            "range": 29,
+            "std_population": 8.247827996913
+          },
+          "n": 15,
+          "n_ever_visited_state1": 13,
+          "n_no_local_active_transitions": 2,
+          "n_no_local_inactive_transitions": 1,
+          "national_fraction_state0": {
+            "max": 0.622641509434,
+            "mean": 0.484032190377,
+            "median": 0.545454545455,
+            "min": 0.0,
+            "n": 15,
+            "p10": 0.25,
+            "p90": 0.619738751814,
+            "p95": 0.622641509434,
+            "range": 0.622641509434,
+            "std_population": 0.175438598664
+          },
+          "national_fraction_state1": {
+            "max": 0.591836734694,
+            "mean": 0.265200907997,
+            "median": 0.259259259259,
+            "min": 0.0,
+            "n": 15,
+            "p10": 0.019047619048,
+            "p90": 0.502188868043,
+            "p95": 0.536087605774,
+            "range": 0.591836734694,
+            "std_population": 0.183163780971
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.268030949487,
+            "mean": 0.11019037368,
+            "median": 0.097264647259,
+            "min": 0.021088077891,
+            "n": 15,
+            "p10": 0.021154767365,
+            "p90": 0.220858005416,
+            "p95": 0.247403526805,
+            "range": 0.246942871596,
+            "std_population": 0.075896930315
+          }
+        },
+        "zero": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.055827408004,
+              "mean": 0.055677077363,
+              "median": 0.055812055716,
+              "min": 0.053543434536,
+              "n": 144,
+              "p10": 0.055451730285,
+              "p90": 0.055812055716,
+              "p95": 0.055812055716,
+              "range": 0.002283973468,
+              "std_population": 0.000293314757
+            },
+            "0.25": {
+              "max": 0.152141886716,
+              "mean": 0.046354583666,
+              "median": 0.039710326057,
+              "min": 0.039710326057,
+              "n": 144,
+              "p10": 0.039710326057,
+              "p90": 0.057855151637,
+              "p95": 0.073057726167,
+              "range": 0.112431560659,
+              "std_population": 0.014638199732
+            },
+            "0.5": {
+              "max": 0.204658487703,
+              "mean": 0.041181818671,
+              "median": 0.030818406374,
+              "min": 0.030818406374,
+              "n": 144,
+              "p10": 0.030818406374,
+              "p90": 0.059129697284,
+              "p95": 0.083006969305,
+              "range": 0.173840081329,
+              "std_population": 0.02305713192
+            },
+            "1.0": {
+              "max": 0.25492610646,
+              "mean": 0.035540145612,
+              "median": 0.021285447311,
+              "min": 0.02122374905,
+              "n": 144,
+              "p10": 0.021285447311,
+              "p90": 0.060303769786,
+              "p95": 0.093235314738,
+              "range": 0.23370235741,
+              "std_population": 0.032036910571
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 33,
+            "mean": 31.166666666667,
+            "median": 33.0,
+            "min": 14,
+            "n": 144,
+            "p10": 27.0,
+            "p90": 33.0,
+            "p95": 33.0,
+            "range": 19,
+            "std_population": 3.689323936863
+          },
+          "local_transition_exposures_state1": {
+            "max": 19,
+            "mean": 1.194444444444,
+            "median": 0.0,
+            "min": 0,
+            "n": 144,
+            "p10": 0.0,
+            "p90": 4.0,
+            "p95": 6.85,
+            "range": 19,
+            "std_population": 2.899419907925
+          },
+          "n": 144,
+          "n_ever_visited_state1": 44,
+          "n_no_local_active_transitions": 100,
+          "n_no_local_inactive_transitions": 0,
+          "national_fraction_state0": {
+            "max": 0.622641509434,
+            "mean": 0.606492935647,
+            "median": 0.622641509434,
+            "min": 0.411764705882,
+            "n": 144,
+            "p10": 0.574468085106,
+            "p90": 0.622641509434,
+            "p95": 0.622641509434,
+            "range": 0.210876803552,
+            "std_population": 0.036768670603
+          },
+          "national_fraction_state1": {
+            "max": 0.487179487179,
+            "mean": 0.043959020595,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 144,
+            "p10": 0.0,
+            "p90": 0.166666666667,
+            "p95": 0.254985754986,
+            "range": 0.487179487179,
+            "std_population": 0.092256205878
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.254963347066,
+            "mean": 0.035450133477,
+            "median": 0.021154767365,
+            "min": 0.021088077891,
+            "n": 144,
+            "p10": 0.021154767365,
+            "p90": 0.060294972832,
+            "p95": 0.093313705468,
+            "range": 0.233875269175,
+            "std_population": 0.032109515566
+          }
+        }
+      },
+      "cutoff_provenance": {
+        "global_transition_counts": [
+          [
+            5176,
+            163
+          ],
+          [
+            163,
+            843
+          ]
+        ],
+        "maximum_observed_transition_year": 2022,
+        "origin": 2022,
+        "source_country_transition_count": 199
+      },
+      "edition_last_year": 2025,
+      "edition_published_after_origin_and_revised_retrospectively": true,
+      "n_country": 196,
+      "origin": 2022,
+      "post_origin_information_used_for_Markov_transition_fit": false,
+      "source_edition": "26.1"
+    },
+    {
+      "by_origin_deaths_group": {
+        "active_25_plus": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.708426130346,
+              "mean": 0.702019755919,
+              "median": 0.702395949845,
+              "min": 0.69571050107,
+              "n": 34,
+              "p10": 0.69571050107,
+              "p90": 0.706870396804,
+              "p95": 0.707313496878,
+              "range": 0.012715629276,
+              "std_population": 0.003915049763
+            },
+            "0.25": {
+              "max": 0.780486814674,
+              "mean": 0.731181579786,
+              "median": 0.730340660794,
+              "min": 0.677882630177,
+              "n": 34,
+              "p10": 0.689761934543,
+              "p90": 0.780486814674,
+              "p95": 0.780486814674,
+              "range": 0.102604184497,
+              "std_population": 0.031812568252
+            },
+            "0.5": {
+              "max": 0.828427048948,
+              "mean": 0.749137858618,
+              "median": 0.752008560768,
+              "min": 0.658288908261,
+              "n": 34,
+              "p10": 0.67827478906,
+              "p90": 0.828427048948,
+              "p95": 0.828427048948,
+              "range": 0.170138140687,
+              "std_population": 0.052563642277
+            },
+            "1.0": {
+              "max": 0.880640966939,
+              "mean": 0.770817110265,
+              "median": 0.780291774019,
+              "min": 0.634947194225,
+              "n": 34,
+              "p10": 0.663003699188,
+              "p90": 0.880640966939,
+              "p95": 0.880640966939,
+              "range": 0.245693772714,
+              "std_population": 0.075902084939
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 33,
+            "mean": 13.0,
+            "median": 14.0,
+            "min": 0,
+            "n": 34,
+            "p10": 0.0,
+            "p90": 23.7,
+            "p95": 30.4,
+            "range": 33,
+            "std_population": 9.938043362873
+          },
+          "local_transition_exposures_state1": {
+            "max": 34,
+            "mean": 20.882352941176,
+            "median": 20.0,
+            "min": 1,
+            "n": 34,
+            "p10": 9.3,
+            "p90": 34.0,
+            "p95": 34.0,
+            "range": 33,
+            "std_population": 10.031610937087
+          },
+          "n": 34,
+          "n_ever_visited_state1": 34,
+          "n_no_local_active_transitions": 0,
+          "n_no_local_inactive_transitions": 5,
+          "national_fraction_state0": {
+            "max": 0.622641509434,
+            "mean": 0.332910597102,
+            "median": 0.411255411255,
+            "min": 0.0,
+            "n": 34,
+            "p10": 0.0,
+            "p90": 0.542283298097,
+            "p95": 0.602618405853,
+            "range": 0.622641509434,
+            "std_population": 0.209479673269
+          },
+          "national_fraction_state1": {
+            "max": 0.62962962963,
+            "mean": 0.47483361821,
+            "median": 0.499687304565,
+            "min": 0.047619047619,
+            "n": 34,
+            "p10": 0.31724137931,
+            "p90": 0.62962962963,
+            "p95": 0.62962962963,
+            "range": 0.582010582011,
+            "std_population": 0.153373818226
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.884419213915,
+            "mean": 0.772059367459,
+            "median": 0.781567023513,
+            "min": 0.633296812665,
+            "n": 34,
+            "p10": 0.661997795365,
+            "p90": 0.884419213915,
+            "p95": 0.884419213915,
+            "range": 0.25112240125,
+            "std_population": 0.077565587604
+          }
+        },
+        "subthreshold_1_to_24": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.055142490343,
+              "mean": 0.054585599512,
+              "median": 0.054550839932,
+              "min": 0.054114836795,
+              "n": 12,
+              "p10": 0.054167676834,
+              "p90": 0.055096824322,
+              "p95": 0.055134423092,
+              "range": 0.001027653548,
+              "std_population": 0.000335266771
+            },
+            "0.25": {
+              "max": 0.093586731296,
+              "mean": 0.066489118622,
+              "median": 0.067568438429,
+              "min": 0.03888120213,
+              "n": 12,
+              "p10": 0.040545316593,
+              "p90": 0.087658840543,
+              "p95": 0.090608563789,
+              "range": 0.054705529166,
+              "std_population": 0.017572499169
+            },
+            "0.5": {
+              "max": 0.12825398937,
+              "mean": 0.074944553278,
+              "median": 0.075324636538,
+              "min": 0.03003022923,
+              "n": 12,
+              "p10": 0.032487152694,
+              "p90": 0.106624417634,
+              "p95": 0.116540309579,
+              "range": 0.09822376014,
+              "std_population": 0.029848012893
+            },
+            "1.0": {
+              "max": 0.185885265669,
+              "mean": 0.086455261487,
+              "median": 0.084034715208,
+              "min": 0.020568122631,
+              "n": 12,
+              "p10": 0.023867934476,
+              "p90": 0.130680997941,
+              "p95": 0.155786651534,
+              "range": 0.165317143038,
+              "std_population": 0.047149765638
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 34,
+            "mean": 22.5,
+            "median": 26.5,
+            "min": 1,
+            "n": 12,
+            "p10": 6.0,
+            "p90": 33.0,
+            "p95": 33.45,
+            "range": 33,
+            "std_population": 10.507933510765
+          },
+          "local_transition_exposures_state1": {
+            "max": 29,
+            "mean": 9.5,
+            "median": 7.5,
+            "min": 0,
+            "n": 12,
+            "p10": 1.0,
+            "p90": 18.6,
+            "p95": 23.5,
+            "range": 29,
+            "std_population": 8.37157890325
+          },
+          "n": 12,
+          "n_ever_visited_state1": 11,
+          "n_no_local_active_transitions": 1,
+          "n_no_local_inactive_transitions": 0,
+          "national_fraction_state0": {
+            "max": 0.62962962963,
+            "mean": 0.487307026772,
+            "median": 0.569444444444,
+            "min": 0.047619047619,
+            "n": 12,
+            "p10": 0.222857142857,
+            "p90": 0.622641509434,
+            "p95": 0.625786163522,
+            "range": 0.582010582011,
+            "std_population": 0.176069822408
+          },
+          "national_fraction_state1": {
+            "max": 0.591836734694,
+            "mean": 0.271723606302,
+            "median": 0.270557029178,
+            "min": 0.0,
+            "n": 12,
+            "p10": 0.047619047619,
+            "p90": 0.481318681319,
+            "p95": 0.534275248561,
+            "range": 0.591836734694,
+            "std_population": 0.183604297356
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.186453116691,
+            "mean": 0.086562311706,
+            "median": 0.084118706041,
+            "min": 0.020436838312,
+            "n": 12,
+            "p10": 0.023754437936,
+            "p90": 0.130944263294,
+            "p95": 0.156193866931,
+            "range": 0.166016278379,
+            "std_population": 0.04733050699
+          }
+        },
+        "zero": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.055142490343,
+              "mean": 0.054966280126,
+              "median": 0.055127822614,
+              "min": 0.052911682379,
+              "n": 150,
+              "p10": 0.054504752119,
+              "p90": 0.055127822614,
+              "p95": 0.055127822614,
+              "range": 0.002230807964,
+              "std_population": 0.000333195612
+            },
+            "0.25": {
+              "max": 0.151860000755,
+              "mean": 0.047079460141,
+              "median": 0.03888120213,
+              "min": 0.03888120213,
+              "n": 150,
+              "p10": 0.03888120213,
+              "p90": 0.070414277723,
+              "p95": 0.078602576383,
+              "range": 0.112978798625,
+              "std_population": 0.017230473663
+            },
+            "0.5": {
+              "max": 0.204929167908,
+              "mean": 0.042848122899,
+              "median": 0.03003022923,
+              "min": 0.03003022923,
+              "n": 150,
+              "p10": 0.03003022923,
+              "p90": 0.078579620674,
+              "p95": 0.094684892096,
+              "range": 0.174898938678,
+              "std_population": 0.027343581702
+            },
+            "1.0": {
+              "max": 0.256610290563,
+              "mean": 0.038337541817,
+              "median": 0.020634992656,
+              "min": 0.020568122631,
+              "n": 150,
+              "p10": 0.020634992656,
+              "p90": 0.086125861873,
+              "p95": 0.113980715026,
+              "range": 0.236042167932,
+              "std_population": 0.0384608639
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 34,
+            "mean": 31.906666666667,
+            "median": 34.0,
+            "min": 13,
+            "n": 150,
+            "p10": 27.0,
+            "p90": 34.0,
+            "p95": 34.0,
+            "range": 21,
+            "std_population": 4.012225760791
+          },
+          "local_transition_exposures_state1": {
+            "max": 21,
+            "mean": 1.426666666667,
+            "median": 0.0,
+            "min": 0,
+            "n": 150,
+            "p10": 0.0,
+            "p90": 5.1,
+            "p95": 8.1,
+            "range": 21,
+            "std_population": 3.276881986822
+          },
+          "n": 150,
+          "n_ever_visited_state1": 49,
+          "n_no_local_active_transitions": 101,
+          "n_no_local_inactive_transitions": 0,
+          "national_fraction_state0": {
+            "max": 0.62962962963,
+            "mean": 0.611711942615,
+            "median": 0.62962962963,
+            "min": 0.393939393939,
+            "n": 150,
+            "p10": 0.574468085106,
+            "p90": 0.62962962963,
+            "p95": 0.62962962963,
+            "range": 0.23569023569,
+            "std_population": 0.038973351595
+          },
+          "national_fraction_state1": {
+            "max": 0.512195121951,
+            "mean": 0.051376566392,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 150,
+            "p10": 0.0,
+            "p90": 0.203076923077,
+            "p95": 0.287356321839,
+            "range": 0.512195121951,
+            "std_population": 0.101563239138
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.256694386418,
+            "mean": 0.038259491507,
+            "median": 0.020508331261,
+            "min": 0.020436838312,
+            "n": 150,
+            "p10": 0.020508331261,
+            "p90": 0.086175640946,
+            "p95": 0.11411035309,
+            "range": 0.236257548106,
+            "std_population": 0.038552273686
+          }
+        }
+      },
+      "cutoff_provenance": {
+        "global_transition_counts": [
+          [
+            5337,
+            166
+          ],
+          [
+            169,
+            869
+          ]
+        ],
+        "maximum_observed_transition_year": 2023,
+        "origin": 2023,
+        "source_country_transition_count": 199
+      },
+      "edition_last_year": 2023,
+      "edition_published_after_origin_and_revised_retrospectively": false,
+      "n_country": 196,
+      "origin": 2023,
+      "post_origin_information_used_for_Markov_transition_fit": false,
+      "source_edition": "24.1"
+    },
+    {
+      "by_origin_deaths_group": {
+        "active_25_plus": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.709463461492,
+              "mean": 0.703020747806,
+              "median": 0.703448115361,
+              "min": 0.696806674481,
+              "n": 34,
+              "p10": 0.696806674481,
+              "p90": 0.707914446758,
+              "p95": 0.708354730673,
+              "range": 0.012656787011,
+              "std_population": 0.003834723777
+            },
+            "0.25": {
+              "max": 0.781303305588,
+              "mean": 0.732587698431,
+              "median": 0.731269048364,
+              "min": 0.678691867592,
+              "n": 34,
+              "p10": 0.69081274745,
+              "p90": 0.781303305588,
+              "p95": 0.781303305588,
+              "range": 0.102611437996,
+              "std_population": 0.031252165637
+            },
+            "0.5": {
+              "max": 0.829075639251,
+              "mean": 0.750824053843,
+              "median": 0.75284092928,
+              "min": 0.658949349005,
+              "n": 34,
+              "p10": 0.678989888807,
+              "p90": 0.829075639251,
+              "p95": 0.829075639251,
+              "range": 0.170126290246,
+              "std_population": 0.051556059325
+            },
+            "1.0": {
+              "max": 0.881099598929,
+              "mean": 0.772861514423,
+              "median": 0.780809844363,
+              "min": 0.635427030255,
+              "n": 34,
+              "p10": 0.663548190715,
+              "p90": 0.881099598929,
+              "p95": 0.881099598929,
+              "range": 0.245672568674,
+              "std_population": 0.074307826797
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 33,
+            "mean": 12.941176470588,
+            "median": 14.0,
+            "min": 0,
+            "n": 34,
+            "p10": 0.0,
+            "p90": 23.7,
+            "p95": 30.4,
+            "range": 33,
+            "std_population": 9.914164485192
+          },
+          "local_transition_exposures_state1": {
+            "max": 34,
+            "mean": 20.941176470588,
+            "median": 20.0,
+            "min": 1,
+            "n": 34,
+            "p10": 9.3,
+            "p90": 34.0,
+            "p95": 34.0,
+            "range": 33,
+            "std_population": 10.00864678069
+          },
+          "n": 34,
+          "n_ever_visited_state1": 34,
+          "n_no_local_active_transitions": 0,
+          "n_no_local_inactive_transitions": 5,
+          "national_fraction_state0": {
+            "max": 0.622641509434,
+            "mean": 0.332050603982,
+            "median": 0.411255411255,
+            "min": 0.0,
+            "n": 34,
+            "p10": 0.0,
+            "p90": 0.542283298097,
+            "p95": 0.602618405853,
+            "range": 0.622641509434,
+            "std_population": 0.208959353091
+          },
+          "national_fraction_state1": {
+            "max": 0.62962962963,
+            "mean": 0.47569361133,
+            "median": 0.499687304565,
+            "min": 0.047619047619,
+            "n": 34,
+            "p10": 0.31724137931,
+            "p90": 0.62962962963,
+            "p95": 0.62962962963,
+            "range": 0.582010582011,
+            "std_population": 0.15328295915
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.884849393215,
+            "mean": 0.7741193628,
+            "median": 0.782070570999,
+            "min": 0.633775137047,
+            "n": 34,
+            "p10": 0.662538170946,
+            "p90": 0.884849393215,
+            "p95": 0.884849393215,
+            "range": 0.251074256168,
+            "std_population": 0.075931099098
+          }
+        },
+        "subthreshold_1_to_24": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.055201198564,
+              "mean": 0.054643889102,
+              "median": 0.054609058177,
+              "min": 0.054173226447,
+              "n": 12,
+              "p10": 0.054225305069,
+              "p90": 0.055155566362,
+              "p95": 0.055193172968,
+              "range": 0.001027972117,
+              "std_population": 0.000335521494
+            },
+            "0.25": {
+              "max": 0.093647709275,
+              "mean": 0.066540532493,
+              "median": 0.067619840612,
+              "min": 0.038922739499,
+              "n": 12,
+              "p10": 0.040588246517,
+              "p90": 0.087715512883,
+              "p95": 0.090667207389,
+              "range": 0.054724969776,
+              "std_population": 0.01757783016
+            },
+            "0.5": {
+              "max": 0.128314616114,
+              "mean": 0.074991085392,
+              "median": 0.075371021176,
+              "min": 0.030062343088,
+              "n": 12,
+              "p10": 0.032521290811,
+              "p90": 0.106679114981,
+              "p95": 0.116597800704,
+              "range": 0.098252273026,
+              "std_population": 0.029855738579
+            },
+            "1.0": {
+              "max": 0.185942472042,
+              "mean": 0.086494911432,
+              "median": 0.084073979409,
+              "min": 0.020589918701,
+              "n": 12,
+              "p10": 0.023892793064,
+              "p90": 0.130727006297,
+              "p95": 0.155837419347,
+              "range": 0.165352553341,
+              "std_population": 0.047158822934
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 34,
+            "mean": 22.5,
+            "median": 26.5,
+            "min": 1,
+            "n": 12,
+            "p10": 6.0,
+            "p90": 33.0,
+            "p95": 33.45,
+            "range": 33,
+            "std_population": 10.507933510765
+          },
+          "local_transition_exposures_state1": {
+            "max": 29,
+            "mean": 9.5,
+            "median": 7.5,
+            "min": 0,
+            "n": 12,
+            "p10": 1.0,
+            "p90": 18.6,
+            "p95": 23.5,
+            "range": 29,
+            "std_population": 8.37157890325
+          },
+          "n": 12,
+          "n_ever_visited_state1": 11,
+          "n_no_local_active_transitions": 1,
+          "n_no_local_inactive_transitions": 0,
+          "national_fraction_state0": {
+            "max": 0.62962962963,
+            "mean": 0.487307026772,
+            "median": 0.569444444444,
+            "min": 0.047619047619,
+            "n": 12,
+            "p10": 0.222857142857,
+            "p90": 0.622641509434,
+            "p95": 0.625786163522,
+            "range": 0.582010582011,
+            "std_population": 0.176069822408
+          },
+          "national_fraction_state1": {
+            "max": 0.591836734694,
+            "mean": 0.271723606302,
+            "median": 0.270557029178,
+            "min": 0.0,
+            "n": 12,
+            "p10": 0.047619047619,
+            "p90": 0.481318681319,
+            "p95": 0.534275248561,
+            "range": 0.591836734694,
+            "std_population": 0.183604297356
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.186509490988,
+            "mean": 0.086601808998,
+            "median": 0.084157931382,
+            "min": 0.020458436459,
+            "n": 12,
+            "p10": 0.023779073225,
+            "p90": 0.130990069346,
+            "p95": 0.156244111981,
+            "range": 0.166051054529,
+            "std_population": 0.047339482602
+          }
+        },
+        "zero": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.055201198564,
+              "mean": 0.055022696431,
+              "median": 0.055186606571,
+              "min": 0.05296758649,
+              "n": 150,
+              "p10": 0.05456270131,
+              "p90": 0.055186606571,
+              "p95": 0.055186606571,
+              "range": 0.002233612074,
+              "std_population": 0.000342317386
+            },
+            "0.25": {
+              "max": 0.151935128648,
+              "mean": 0.047246133779,
+              "median": 0.038922739499,
+              "min": 0.038922739499,
+              "n": 150,
+              "p10": 0.038922739499,
+              "p90": 0.070465515389,
+              "p95": 0.078656924696,
+              "range": 0.113012389149,
+              "std_population": 0.017744019586
+            },
+            "0.5": {
+              "max": 0.205011372867,
+              "mean": 0.043087752659,
+              "median": 0.030062343088,
+              "min": 0.030062343088,
+              "n": 150,
+              "p10": 0.030062343088,
+              "p90": 0.078626664196,
+              "p95": 0.094735341808,
+              "range": 0.174949029779,
+              "std_population": 0.028214068666
+            },
+            "1.0": {
+              "max": 0.256693396939,
+              "mean": 0.038664912426,
+              "median": 0.020657082561,
+              "min": 0.020589918701,
+              "n": 150,
+              "p10": 0.020657082561,
+              "p90": 0.086168180831,
+              "p95": 0.114026944952,
+              "range": 0.236103478238,
+              "std_population": 0.03977147182
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 34,
+            "mean": 31.893333333333,
+            "median": 34.0,
+            "min": 13,
+            "n": 150,
+            "p10": 27.0,
+            "p90": 34.0,
+            "p95": 34.0,
+            "range": 21,
+            "std_population": 4.051578567533
+          },
+          "local_transition_exposures_state1": {
+            "max": 21,
+            "mean": 1.44,
+            "median": 0.0,
+            "min": 0,
+            "n": 150,
+            "p10": 0.0,
+            "p90": 5.1,
+            "p95": 8.1,
+            "range": 21,
+            "std_population": 3.319598369281
+          },
+          "n": 150,
+          "n_ever_visited_state1": 49,
+          "n_no_local_active_transitions": 101,
+          "n_no_local_inactive_transitions": 0,
+          "national_fraction_state0": {
+            "max": 0.62962962963,
+            "mean": 0.611545171717,
+            "median": 0.62962962963,
+            "min": 0.393939393939,
+            "n": 150,
+            "p10": 0.574468085106,
+            "p90": 0.62962962963,
+            "p95": 0.62962962963,
+            "range": 0.23569023569,
+            "std_population": 0.039449451467
+          },
+          "national_fraction_state1": {
+            "max": 0.512195121951,
+            "mean": 0.051637237621,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 150,
+            "p10": 0.0,
+            "p90": 0.203076923077,
+            "p95": 0.287356321839,
+            "range": 0.512195121951,
+            "std_population": 0.102388591735
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.256779726712,
+            "mean": 0.038587102053,
+            "median": 0.02053019368,
+            "min": 0.020458436459,
+            "n": 150,
+            "p10": 0.02053019368,
+            "p90": 0.086218209708,
+            "p95": 0.11415684893,
+            "range": 0.236321290253,
+            "std_population": 0.039864790272
+          }
+        }
+      },
+      "cutoff_provenance": {
+        "global_transition_counts": [
+          [
+            5333,
+            166
+          ],
+          [
+            169,
+            873
+          ]
+        ],
+        "maximum_observed_transition_year": 2023,
+        "origin": 2023,
+        "source_country_transition_count": 199
+      },
+      "edition_last_year": 2024,
+      "edition_published_after_origin_and_revised_retrospectively": true,
+      "n_country": 196,
+      "origin": 2023,
+      "post_origin_information_used_for_Markov_transition_fit": false,
+      "source_edition": "25.1"
+    },
+    {
+      "by_origin_deaths_group": {
+        "active_25_plus": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.711296960446,
+              "mean": 0.704797024461,
+              "median": 0.70513965372,
+              "min": 0.698665652377,
+              "n": 34,
+              "p10": 0.698665652377,
+              "p90": 0.709750163333,
+              "p95": 0.710188143447,
+              "range": 0.012631308069,
+              "std_population": 0.003897110326
+            },
+            "0.25": {
+              "max": 0.782688991067,
+              "mean": 0.734553448424,
+              "median": 0.73408521349,
+              "min": 0.680116309616,
+              "n": 34,
+              "p10": 0.692300263845,
+              "p90": 0.782688991067,
+              "p95": 0.782688991067,
+              "range": 0.102572681451,
+              "std_population": 0.031752689609
+            },
+            "0.5": {
+              "max": 0.830176775046,
+              "mean": 0.752863151829,
+              "median": 0.756304031577,
+              "min": 0.660108123548,
+              "n": 34,
+              "p10": 0.680242860734,
+              "p90": 0.830176775046,
+              "p95": 0.830176775046,
+              "range": 0.170068651498,
+              "std_population": 0.052355624744
+            },
+            "1.0": {
+              "max": 0.881878514789,
+              "mean": 0.77493663895,
+              "median": 0.784598439928,
+              "min": 0.636264943597,
+              "n": 34,
+              "p10": 0.664500681447,
+              "p90": 0.881878514789,
+              "p95": 0.881878514789,
+              "range": 0.245613571192,
+              "std_population": 0.075404992701
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 33,
+            "mean": 12.882352941176,
+            "median": 14.0,
+            "min": 0,
+            "n": 34,
+            "p10": 0.0,
+            "p90": 23.7,
+            "p95": 30.4,
+            "range": 33,
+            "std_population": 9.934386821666
+          },
+          "local_transition_exposures_state1": {
+            "max": 34,
+            "mean": 21.0,
+            "median": 20.0,
+            "min": 1,
+            "n": 34,
+            "p10": 9.3,
+            "p90": 34.0,
+            "p95": 34.0,
+            "range": 33,
+            "std_population": 10.029368638858
+          },
+          "n": 34,
+          "n_ever_visited_state1": 34,
+          "n_no_local_active_transitions": 0,
+          "n_no_local_inactive_transitions": 6,
+          "national_fraction_state0": {
+            "max": 0.622641509434,
+            "mean": 0.330253123856,
+            "median": 0.411255411255,
+            "min": 0.0,
+            "n": 34,
+            "p10": 0.0,
+            "p90": 0.542283298097,
+            "p95": 0.602618405853,
+            "range": 0.622641509434,
+            "std_population": 0.210728284205
+          },
+          "national_fraction_state1": {
+            "max": 0.62962962963,
+            "mean": 0.476365997685,
+            "median": 0.499687304565,
+            "min": 0.047619047619,
+            "n": 34,
+            "p10": 0.31724137931,
+            "p90": 0.62962962963,
+            "p95": 0.62962962963,
+            "range": 0.582010582011,
+            "std_population": 0.153363838922
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.885601048052,
+            "mean": 0.776205380602,
+            "median": 0.785898930529,
+            "min": 0.634599635941,
+            "n": 34,
+            "p10": 0.663476957294,
+            "p90": 0.885601048052,
+            "p95": 0.885601048052,
+            "range": 0.251001412111,
+            "std_population": 0.077055224278
+          }
+        },
+        "subthreshold_1_to_24": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.054919870488,
+              "mean": 0.05436304252,
+              "median": 0.054328043099,
+              "min": 0.053894208481,
+              "n": 12,
+              "p10": 0.053943335169,
+              "p90": 0.05487428259,
+              "p95": 0.054911892006,
+              "range": 0.001025662007,
+              "std_population": 0.000335345531
+            },
+            "0.25": {
+              "max": 0.093399307001,
+              "mean": 0.066331122822,
+              "median": 0.067416872216,
+              "min": 0.038723115138,
+              "n": 12,
+              "p10": 0.040379743277,
+              "p90": 0.087537623451,
+              "p95": 0.090460012049,
+              "range": 0.054676191863,
+              "std_population": 0.017577340056
+            },
+            "0.5": {
+              "max": 0.128089902184,
+              "mean": 0.074823337405,
+              "median": 0.075214740871,
+              "min": 0.029907636873,
+              "n": 12,
+              "p10": 0.032353281339,
+              "p90": 0.106558458979,
+              "p95": 0.116433752656,
+              "range": 0.098182265311,
+              "std_population": 0.029854287262
+            },
+            "1.0": {
+              "max": 0.185753339911,
+              "mean": 0.086373637995,
+              "median": 0.083970437749,
+              "min": 0.020483282414,
+              "n": 12,
+              "p10": 0.023768561436,
+              "p90": 0.130606596843,
+              "p95": 0.155682063413,
+              "range": 0.165270057497,
+              "std_population": 0.047155972597
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 34,
+            "mean": 22.5,
+            "median": 26.5,
+            "min": 1,
+            "n": 12,
+            "p10": 6.0,
+            "p90": 33.0,
+            "p95": 33.45,
+            "range": 33,
+            "std_population": 10.507933510765
+          },
+          "local_transition_exposures_state1": {
+            "max": 29,
+            "mean": 9.5,
+            "median": 7.5,
+            "min": 0,
+            "n": 12,
+            "p10": 1.0,
+            "p90": 18.6,
+            "p95": 23.5,
+            "range": 29,
+            "std_population": 8.37157890325
+          },
+          "n": 12,
+          "n_ever_visited_state1": 11,
+          "n_no_local_active_transitions": 1,
+          "n_no_local_inactive_transitions": 0,
+          "national_fraction_state0": {
+            "max": 0.62962962963,
+            "mean": 0.487307026772,
+            "median": 0.569444444444,
+            "min": 0.047619047619,
+            "n": 12,
+            "p10": 0.222857142857,
+            "p90": 0.622641509434,
+            "p95": 0.625786163522,
+            "range": 0.582010582011,
+            "std_population": 0.176069822408
+          },
+          "national_fraction_state1": {
+            "max": 0.591836734694,
+            "mean": 0.271723606302,
+            "median": 0.270557029178,
+            "min": 0.0,
+            "n": 12,
+            "p10": 0.047619047619,
+            "p90": 0.481318681319,
+            "p95": 0.534275248561,
+            "range": 0.591836734694,
+            "std_population": 0.183604297356
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.18631924258,
+            "mean": 0.086480791082,
+            "median": 0.084054829602,
+            "min": 0.020352456137,
+            "n": 12,
+            "p10": 0.023655379343,
+            "p90": 0.130869589131,
+            "p95": 0.15608816977,
+            "range": 0.165966786443,
+            "std_population": 0.047336247422
+          }
+        },
+        "zero": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.054919870488,
+              "mean": 0.054741465501,
+              "median": 0.054905364157,
+              "min": 0.052697631304,
+              "n": 150,
+              "p10": 0.054280653807,
+              "p90": 0.054905364157,
+              "p95": 0.054905364157,
+              "range": 0.002222239184,
+              "std_population": 0.000342022114
+            },
+            "0.25": {
+              "max": 0.150237873182,
+              "mean": 0.047038003055,
+              "median": 0.038723115138,
+              "min": 0.038723115138,
+              "n": 150,
+              "p10": 0.038723115138,
+              "p90": 0.070286605678,
+              "p95": 0.078452833015,
+              "range": 0.111514758044,
+              "std_population": 0.017690336021
+            },
+            "0.5": {
+              "max": 0.201395416222,
+              "mean": 0.042912871697,
+              "median": 0.029907636873,
+              "min": 0.029907636873,
+              "n": 150,
+              "p10": 0.029907636873,
+              "p90": 0.078503900793,
+              "p95": 0.094577424113,
+              "range": 0.171487779349,
+              "std_population": 0.02809063709
+            },
+            "1.0": {
+              "max": 0.249714994374,
+              "mean": 0.038517109663,
+              "median": 0.020550399209,
+              "min": 0.020483282414,
+              "n": 150,
+              "p10": 0.020550399209,
+              "p90": 0.086104591215,
+              "p95": 0.113959078631,
+              "range": 0.22923171196,
+              "std_population": 0.039534139839
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 34,
+            "mean": 31.9,
+            "median": 34.0,
+            "min": 13,
+            "n": 150,
+            "p10": 27.0,
+            "p90": 34.0,
+            "p95": 34.0,
+            "range": 21,
+            "std_population": 4.0393893928
+          },
+          "local_transition_exposures_state1": {
+            "max": 21,
+            "mean": 1.433333333333,
+            "median": 0.0,
+            "min": 0,
+            "n": 150,
+            "p10": 0.0,
+            "p90": 5.1,
+            "p95": 8.1,
+            "range": 21,
+            "std_population": 3.303365287434
+          },
+          "n": 150,
+          "n_ever_visited_state1": 49,
+          "n_no_local_active_transitions": 101,
+          "n_no_local_inactive_transitions": 0,
+          "national_fraction_state0": {
+            "max": 0.62962962963,
+            "mean": 0.611612511784,
+            "median": 0.62962962963,
+            "min": 0.393939393939,
+            "n": 150,
+            "p10": 0.574468085106,
+            "p90": 0.62962962963,
+            "p95": 0.62962962963,
+            "range": 0.23569023569,
+            "std_population": 0.039345060613
+          },
+          "national_fraction_state1": {
+            "max": 0.512195121951,
+            "mean": 0.051483980916,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 150,
+            "p10": 0.0,
+            "p90": 0.203076923077,
+            "p95": 0.287356321839,
+            "range": 0.512195121951,
+            "std_population": 0.101983232649
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.249757191489,
+            "mean": 0.038439617979,
+            "median": 0.020424137649,
+            "min": 0.020352456137,
+            "n": 150,
+            "p10": 0.020424137649,
+            "p90": 0.08615544396,
+            "p95": 0.114089572577,
+            "range": 0.229404735352,
+            "std_population": 0.039626204922
+          }
+        }
+      },
+      "cutoff_provenance": {
+        "global_transition_counts": [
+          [
+            5333,
+            165
+          ],
+          [
+            168,
+            875
+          ]
+        ],
+        "maximum_observed_transition_year": 2023,
+        "origin": 2023,
+        "source_country_transition_count": 199
+      },
+      "edition_last_year": 2025,
+      "edition_published_after_origin_and_revised_retrospectively": true,
+      "n_country": 196,
+      "origin": 2023,
+      "post_origin_information_used_for_Markov_transition_fit": false,
+      "source_edition": "26.1"
+    },
+    {
+      "by_origin_deaths_group": {
+        "active_25_plus": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.721566189954,
+              "mean": 0.71538351828,
+              "median": 0.715952655651,
+              "min": 0.70947505752,
+              "n": 34,
+              "p10": 0.70947505752,
+              "p90": 0.719831593483,
+              "p95": 0.720665115091,
+              "range": 0.012091132434,
+              "std_population": 0.00364254633
+            },
+            "0.25": {
+              "max": 0.794125691666,
+              "mean": 0.74514851018,
+              "median": 0.742668870526,
+              "min": 0.678424166581,
+              "n": 34,
+              "p10": 0.706066166312,
+              "p90": 0.794125691666,
+              "p95": 0.794125691666,
+              "range": 0.115701525085,
+              "std_population": 0.03184020451
+            },
+            "0.5": {
+              "max": 0.840671322974,
+              "mean": 0.763155552067,
+              "median": 0.76324757995,
+              "min": 0.640160923089,
+              "n": 34,
+              "p10": 0.697033607097,
+              "p90": 0.840671322974,
+              "p95": 0.840671322974,
+              "range": 0.200510399885,
+              "std_population": 0.052478279597
+            },
+            "1.0": {
+              "max": 0.890328047749,
+              "mean": 0.78449724896,
+              "median": 0.790678278818,
+              "min": 0.575942148462,
+              "n": 34,
+              "p10": 0.685756156672,
+              "p90": 0.890328047749,
+              "p95": 0.890328047749,
+              "range": 0.314385899287,
+              "std_population": 0.076658203154
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 33,
+            "mean": 13.823529411765,
+            "median": 15.0,
+            "min": 0,
+            "n": 34,
+            "p10": 0.0,
+            "p90": 28.1,
+            "p95": 32.35,
+            "range": 33,
+            "std_population": 10.598197927382
+          },
+          "local_transition_exposures_state1": {
+            "max": 36,
+            "mean": 21.470588235294,
+            "median": 20.0,
+            "min": 3,
+            "n": 34,
+            "p10": 7.9,
+            "p90": 36.0,
+            "p95": 36.0,
+            "range": 33,
+            "std_population": 10.580879798062
+          },
+          "n": 34,
+          "n_ever_visited_state1": 34,
+          "n_no_local_active_transitions": 0,
+          "n_no_local_inactive_transitions": 6,
+          "national_fraction_state0": {
+            "max": 0.622641509434,
+            "mean": 0.342565522057,
+            "median": 0.428104575163,
+            "min": 0.0,
+            "n": 34,
+            "p10": 0.0,
+            "p90": 0.583850931677,
+            "p95": 0.617924528302,
+            "range": 0.622641509434,
+            "std_population": 0.218246456411
+          },
+          "national_fraction_state1": {
+            "max": 0.642857142857,
+            "mean": 0.481291772863,
+            "median": 0.5,
+            "min": 0.130434782609,
+            "n": 34,
+            "p10": 0.281481481481,
+            "p90": 0.642857142857,
+            "p95": 0.642857142857,
+            "range": 0.512422360248,
+            "std_population": 0.148317899253
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.893769476037,
+            "mean": 0.785683954677,
+            "median": 0.791860341299,
+            "min": 0.573433623875,
+            "n": 34,
+            "p10": 0.684991684417,
+            "p90": 0.893769476037,
+            "p95": 0.893769476037,
+            "range": 0.320335852162,
+            "std_population": 0.078193056131
+          }
+        },
+        "subthreshold_1_to_24": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.053340630982,
+              "mean": 0.052663903641,
+              "median": 0.052554447328,
+              "min": 0.052143753366,
+              "n": 8,
+              "p10": 0.052297223301,
+              "p90": 0.05333137234,
+              "p95": 0.053336001661,
+              "range": 0.001196877616,
+              "std_population": 0.00041136785
+            },
+            "0.25": {
+              "max": 0.107605131183,
+              "mean": 0.073348873664,
+              "median": 0.078603373823,
+              "min": 0.03696222045,
+              "n": 8,
+              "p10": 0.037041798075,
+              "p90": 0.094003254553,
+              "p95": 0.100804192868,
+              "range": 0.070642910733,
+              "std_population": 0.023029333543
+            },
+            "0.5": {
+              "max": 0.152397944243,
+              "mean": 0.088448220188,
+              "median": 0.096773907729,
+              "min": 0.028282197408,
+              "n": 8,
+              "p10": 0.02832267556,
+              "p90": 0.121694753231,
+              "p95": 0.137046348737,
+              "range": 0.124115746835,
+              "std_population": 0.038921937372
+            },
+            "1.0": {
+              "max": 0.220101171525,
+              "mean": 0.10976938841,
+              "median": 0.122436087163,
+              "min": 0.01916622294,
+              "n": 8,
+              "p10": 0.019220408037,
+              "p90": 0.158192028613,
+              "p95": 0.189146600069,
+              "range": 0.200934948585,
+              "std_population": 0.061048929667
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 36,
+            "mean": 22.0,
+            "median": 24.0,
+            "min": 2,
+            "n": 8,
+            "p10": 6.2,
+            "p90": 35.3,
+            "p95": 35.65,
+            "range": 34,
+            "std_population": 11.597413504743
+          },
+          "local_transition_exposures_state1": {
+            "max": 34,
+            "mean": 14.0,
+            "median": 12.0,
+            "min": 0,
+            "n": 8,
+            "p10": 0.7,
+            "p90": 29.8,
+            "p95": 31.9,
+            "range": 34,
+            "std_population": 11.597413504743
+          },
+          "n": 8,
+          "n_ever_visited_state1": 7,
+          "n_no_local_active_transitions": 1,
+          "n_no_local_inactive_transitions": 0,
+          "national_fraction_state0": {
+            "max": 0.642857142857,
+            "mean": 0.475245852795,
+            "median": 0.543331603529,
+            "min": 0.090909090909,
+            "n": 8,
+            "p10": 0.227272727273,
+            "p90": 0.638311688312,
+            "p95": 0.640584415584,
+            "range": 0.551948051948,
+            "std_population": 0.181904010927
+          },
+          "national_fraction_state1": {
+            "max": 0.62962962963,
+            "mean": 0.339680873086,
+            "median": 0.369458128079,
+            "min": 0.0,
+            "n": 8,
+            "p10": 0.033333333333,
+            "p90": 0.597222222222,
+            "p95": 0.613425925926,
+            "range": 0.62962962963,
+            "std_population": 0.219800969531
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.220660681382,
+            "mean": 0.109948517987,
+            "median": 0.12262214182,
+            "min": 0.019044029623,
+            "n": 8,
+            "p10": 0.019100943443,
+            "p90": 0.158597791815,
+            "p95": 0.189629236598,
+            "range": 0.201616651759,
+            "std_population": 0.061254365435
+          }
+        },
+        "zero": {
+          "Markov_partial_pooling": {
+            "0.0": {
+              "max": 0.053340630982,
+              "mean": 0.053152947024,
+              "median": 0.05332740435,
+              "min": 0.051230003228,
+              "n": 154,
+              "p10": 0.052706948627,
+              "p90": 0.05332740435,
+              "p95": 0.05332740435,
+              "range": 0.002110627754,
+              "std_population": 0.000353610524
+            },
+            "0.25": {
+              "max": 0.148998922333,
+              "mean": 0.046217843088,
+              "median": 0.03696222045,
+              "min": 0.03696222045,
+              "n": 154,
+              "p10": 0.03696222045,
+              "p90": 0.069460264754,
+              "p95": 0.08228958931,
+              "range": 0.112036701883,
+              "std_population": 0.019217419566
+            },
+            "0.5": {
+              "max": 0.212733754665,
+              "mean": 0.042735647846,
+              "median": 0.028282197408,
+              "min": 0.028282197408,
+              "n": 154,
+              "p10": 0.028282197408,
+              "p90": 0.078333285738,
+              "p95": 0.101161723638,
+              "range": 0.184451557257,
+              "std_population": 0.030549206879
+            },
+            "1.0": {
+              "max": 0.290187257438,
+              "mean": 0.039238193565,
+              "median": 0.019243630222,
+              "min": 0.01916622294,
+              "n": 154,
+              "p10": 0.019243630222,
+              "p90": 0.087097410279,
+              "p95": 0.123837840585,
+              "range": 0.271021034498,
+              "std_population": 0.043210214458
+            }
+          },
+          "local_transition_exposures_state0": {
+            "max": 36,
+            "mean": 33.571428571429,
+            "median": 36.0,
+            "min": 7,
+            "n": 154,
+            "p10": 29.0,
+            "p90": 36.0,
+            "p95": 36.0,
+            "range": 29,
+            "std_population": 4.763030170043
+          },
+          "local_transition_exposures_state1": {
+            "max": 29,
+            "mean": 1.753246753247,
+            "median": 0.0,
+            "min": 0,
+            "n": 154,
+            "p10": 0.0,
+            "p90": 6.0,
+            "p95": 9.7,
+            "range": 29,
+            "std_population": 4.169013225786
+          },
+          "n": 154,
+          "n_ever_visited_state1": 53,
+          "n_no_local_active_transitions": 101,
+          "n_no_local_inactive_transitions": 0,
+          "national_fraction_state0": {
+            "max": 0.642857142857,
+            "mean": 0.62250201107,
+            "median": 0.642857142857,
+            "min": 0.259259259259,
+            "n": 154,
+            "p10": 0.591836734694,
+            "p90": 0.642857142857,
+            "p95": 0.642857142857,
+            "range": 0.383597883598,
+            "std_population": 0.047970708696
+          },
+          "national_fraction_state1": {
+            "max": 0.591836734694,
+            "mean": 0.059041810962,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 154,
+            "p10": 0.0,
+            "p90": 0.230769230769,
+            "p95": 0.325917686318,
+            "range": 0.591836734694,
+            "std_population": 0.115928575852
+          },
+          "original_markov_from_frozen_law": {
+            "max": 0.290690880667,
+            "mean": 0.039172708188,
+            "median": 0.01912533508,
+            "min": 0.019044029623,
+            "n": 154,
+            "p10": 0.01912533508,
+            "p90": 0.087162339493,
+            "p95": 0.124045564073,
+            "range": 0.271646851044,
+            "std_population": 0.043309771977
+          }
+        }
+      },
+      "cutoff_provenance": {
+        "global_transition_counts": [
+          [
+            5652,
+            169
+          ],
+          [
+            172,
+            940
+          ]
+        ],
+        "maximum_observed_transition_year": 2025,
+        "origin": 2025,
+        "source_country_transition_count": 199
+      },
+      "edition_last_year": 2025,
+      "edition_published_after_origin_and_revised_retrospectively": false,
+      "n_country": 196,
+      "origin": 2025,
+      "post_origin_information_used_for_Markov_transition_fit": false,
+      "source_edition": "26.1"
+    }
+  ],
+  "five_overlapping_source_revision_pairs": [
+    {
+      "countries_with_revised_origin_best_deaths": 22,
+      "countries_with_revised_origin_binary_state": 0,
+      "edition_pairs_share_histories_and_are_not_independent": true,
+      "later_edition": "24.1",
+      "n_fixed_country_ids": 196,
+      "older_edition": "23.1",
+      "origin": 2022,
+      "risk_revision_by_prespecified_local_history_weight": {
+        "0.0": {
+          "absolute_risk_revision_pp": {
+            "max": 0.1356489634,
+            "mean": 0.028176327303,
+            "median": 0.033381704,
+            "min": 0.0015430082,
+            "n": 196,
+            "p10": 0.0031119052,
+            "p90": 0.03339492705,
+            "p95": 0.0333984151,
+            "range": 0.1341059552,
+            "std_population": 0.014132052767
+          },
+          "countries_revision_at_least_1_pp": 0,
+          "countries_revision_at_least_5_pp": 0,
+          "signed_risk_revision_pp": {
+            "max": 0.0334718965,
+            "mean": 0.026792154207,
+            "median": 0.033381704,
+            "min": -0.1356489634,
+            "n": 196,
+            "p10": 0.0031086364,
+            "p90": 0.03339417105,
+            "p95": 0.0333984151,
+            "range": 0.1691208599,
+            "std_population": 0.016607251689
+          }
+        },
+        "0.25": {
+          "absolute_risk_revision_pp": {
+            "max": 1.5963139728,
+            "mean": 0.034761795307,
+            "median": 0.023874035,
+            "min": 0.0021541336,
+            "n": 196,
+            "p10": 0.0023942077,
+            "p90": 0.02486122005,
+            "p95": 0.026588568475,
+            "range": 1.5941598392,
+            "std_population": 0.144038937085
+          },
+          "countries_revision_at_least_1_pp": 2,
+          "countries_revision_at_least_5_pp": 0,
+          "signed_risk_revision_pp": {
+            "max": 1.5963139728,
+            "mean": 0.034761795307,
+            "median": 0.023874035,
+            "min": 0.0021541336,
+            "n": 196,
+            "p10": 0.0023942077,
+            "p90": 0.02486122005,
+            "p95": 0.026588568475,
+            "range": 1.5941598392,
+            "std_population": 0.144038937085
+          }
+        },
+        "0.5": {
+          "absolute_risk_revision_pp": {
+            "max": 2.4634000358,
+            "mean": 0.040004809616,
+            "median": 0.0185800432,
+            "min": 0.0015808561,
+            "n": 196,
+            "p10": 0.0019662075,
+            "p90": 0.01972826415,
+            "p95": 0.022051909,
+            "range": 2.4618191797,
+            "std_population": 0.237015609109
+          },
+          "countries_revision_at_least_1_pp": 2,
+          "countries_revision_at_least_5_pp": 0,
+          "signed_risk_revision_pp": {
+            "max": 2.4634000358,
+            "mean": 0.040004809616,
+            "median": 0.0185800432,
+            "min": 0.0015808561,
+            "n": 196,
+            "p10": 0.0019662075,
+            "p90": 0.01972826415,
+            "p95": 0.022051909,
+            "range": 2.4618191797,
+            "std_population": 0.237015609109
+          }
+        },
+        "1.0": {
+          "absolute_risk_revision_pp": {
+            "max": 3.5590263756,
+            "mean": 0.046473411148,
+            "median": 0.0128707167,
+            "min": 0.0009598055,
+            "n": 196,
+            "p10": 0.00149893725,
+            "p90": 0.01390296325,
+            "p95": 0.016432841375,
+            "range": 3.5580665701,
+            "std_population": 0.347023867654
+          },
+          "countries_revision_at_least_1_pp": 2,
+          "countries_revision_at_least_5_pp": 0,
+          "signed_risk_revision_pp": {
+            "max": 3.5590263756,
+            "mean": 0.046473411148,
+            "median": 0.0128707167,
+            "min": 0.0009598055,
+            "n": 196,
+            "p10": 0.00149893725,
+            "p90": 0.01390296325,
+            "p95": 0.016432841375,
+            "range": 3.5580665701,
+            "std_population": 0.347023867654
+          }
+        }
+      }
+    },
+    {
+      "countries_with_revised_origin_best_deaths": 24,
+      "countries_with_revised_origin_binary_state": 0,
+      "edition_pairs_share_histories_and_are_not_independent": true,
+      "later_edition": "25.1",
+      "n_fixed_country_ids": 196,
+      "older_edition": "23.1",
+      "origin": 2022,
+      "risk_revision_by_prespecified_local_history_weight": {
+        "0.0": {
+          "absolute_risk_revision_pp": {
+            "max": 0.2194530086,
+            "mean": 0.053413721028,
+            "median": 0.039562011,
+            "min": 0.0076785335,
+            "n": 196,
+            "p10": 0.0394601382,
+            "p90": 0.11277178105,
+            "p95": 0.115807122475,
+            "range": 0.2117744751,
+            "std_population": 0.030920991775
+          },
+          "countries_revision_at_least_1_pp": 0,
+          "countries_revision_at_least_5_pp": 0,
+          "signed_risk_revision_pp": {
+            "max": 0.2194530086,
+            "mean": 0.052085105483,
+            "median": 0.039562011,
+            "min": -0.1055818883,
+            "n": 196,
+            "p10": 0.03945933025,
+            "p90": 0.11277178105,
+            "p95": 0.115807122475,
+            "range": 0.3250348969,
+            "std_population": 0.033110045503
+          }
+        },
+        "0.25": {
+          "absolute_risk_revision_pp": {
+            "max": 1.9821464671,
+            "mean": 0.068526662811,
+            "median": 0.0286346982,
+            "min": 0.0282795327,
+            "n": 196,
+            "p10": 0.0282795327,
+            "p90": 0.0907224512,
+            "p95": 0.101854586325,
+            "range": 1.9538669344,
+            "std_population": 0.207120059405
+          },
+          "countries_revision_at_least_1_pp": 3,
+          "countries_revision_at_least_5_pp": 0,
+          "signed_risk_revision_pp": {
+            "max": 1.9821464671,
+            "mean": 0.061298044626,
+            "median": 0.0286346982,
+            "min": -0.7084045821,
+            "n": 196,
+            "p10": 0.0282795327,
+            "p90": 0.0904679842,
+            "p95": 0.100918850825,
+            "range": 2.6905510492,
+            "std_population": 0.209373284469
+          }
+        },
+        "0.5": {
+          "absolute_risk_revision_pp": {
+            "max": 3.417931025,
+            "mean": 0.080917880232,
+            "median": 0.0225733751,
+            "min": 0.0220025256,
+            "n": 196,
+            "p10": 0.0220025256,
+            "p90": 0.07621527355,
+            "p95": 0.093126193625,
+            "range": 3.3959284994,
+            "std_population": 0.349384155466
+          },
+          "countries_revision_at_least_1_pp": 4,
+          "countries_revision_at_least_5_pp": 0,
+          "signed_risk_revision_pp": {
+            "max": 3.417931025,
+            "mean": 0.068093334546,
+            "median": 0.0225733751,
+            "min": -1.2568054772,
+            "n": 196,
+            "p10": 0.0220025256,
+            "p90": 0.0749859315,
+            "p95": 0.091373690425,
+            "range": 4.6747365022,
+            "std_population": 0.352108348697
+          }
+        },
+        "1.0": {
+          "absolute_risk_revision_pp": {
+            "max": 5.2602032599,
+            "mean": 0.095988614955,
+            "median": 0.0158204873,
+            "min": 0.0151657275,
+            "n": 196,
+            "p10": 0.0152370683,
+            "p90": 0.0576532467,
+            "p95": 0.079612725625,
+            "range": 5.2450375324,
+            "std_population": 0.52381724479
+          },
+          "countries_revision_at_least_1_pp": 4,
+          "countries_revision_at_least_5_pp": 1,
+          "signed_risk_revision_pp": {
+            "max": 5.2602032599,
+            "mean": 0.077483659928,
+            "median": 0.0158204873,
+            "min": -1.8134855927,
+            "n": 196,
+            "p10": 0.0152370683,
+            "p90": 0.0557387798,
+            "p95": 0.07693534725,
+            "range": 7.0736888526,
+            "std_population": 0.526872472791
+          }
+        }
+      }
+    },
+    {
+      "countries_with_revised_origin_best_deaths": 25,
+      "countries_with_revised_origin_binary_state": 0,
+      "edition_pairs_share_histories_and_are_not_independent": true,
+      "later_edition": "26.1",
+      "n_fixed_country_ids": 196,
+      "older_edition": "23.1",
+      "origin": 2022,
+      "risk_revision_by_prespecified_local_history_weight": {
+        "0.0": {
+          "absolute_risk_revision_pp": {
+            "max": 0.4087008737,
+            "mean": 0.063713764436,
+            "median": 0.0107437389,
+            "min": 0.0104474137,
+            "n": 196,
+            "p10": 0.0106657037,
+            "p90": 0.30161364685,
+            "p95": 0.30706138655,
+            "range": 0.39825346,
+            "std_population": 0.112223086147
+          },
+          "countries_revision_at_least_1_pp": 0,
+          "countries_revision_at_least_5_pp": 0,
+          "signed_risk_revision_pp": {
+            "max": 0.4087008737,
+            "mean": 0.063497602979,
+            "median": 0.0107437389,
+            "min": -0.0211838228,
+            "n": 196,
+            "p10": 0.01066476125,
+            "p90": 0.30161364685,
+            "p95": 0.30706138655,
+            "range": 0.4298846965,
+            "std_population": 0.112345535109
+          }
+        },
+        "0.25": {
+          "absolute_risk_revision_pp": {
+            "max": 2.1348167182,
+            "mean": 0.088944959115,
+            "median": 0.0077750768,
+            "min": 0.0076345477,
+            "n": 196,
+            "p10": 0.0076433172,
+            "p90": 0.24580659425,
+            "p95": 0.283807913025,
+            "range": 2.1271821705,
+            "std_population": 0.259542269334
+          },
+          "countries_revision_at_least_1_pp": 4,
+          "countries_revision_at_least_5_pp": 0,
+          "signed_risk_revision_pp": {
+            "max": 2.1348167182,
+            "mean": 0.08185190771,
+            "median": 0.00767602905,
+            "min": -0.553084745,
+            "n": 196,
+            "p10": 0.0076433172,
+            "p90": 0.24400424485,
+            "p95": 0.2789070986,
+            "range": 2.6879014632,
+            "std_population": 0.26186572996
+          }
+        },
+        "0.5": {
+          "absolute_risk_revision_pp": {
+            "max": 3.5453686804,
+            "mean": 0.107642753237,
+            "median": 0.00607915795,
+            "min": 0.0059002186,
+            "n": 196,
+            "p10": 0.0059314649,
+            "p90": 0.20929691575,
+            "p95": 0.2753392291,
+            "range": 3.5394684618,
+            "std_population": 0.404578579585
+          },
+          "countries_revision_at_least_1_pp": 5,
+          "countries_revision_at_least_5_pp": 0,
+          "signed_risk_revision_pp": {
+            "max": 3.5453686804,
+            "mean": 0.092634521823,
+            "median": 0.00593647495,
+            "min": -1.1253185336,
+            "n": 196,
+            "p10": 0.0059314649,
+            "p90": 0.2045661554,
+            "p95": 0.260943316975,
+            "range": 4.670687214,
+            "std_population": 0.408276419537
+          }
+        },
+        "1.0": {
+          "absolute_risk_revision_pp": {
+            "max": 5.355836789,
+            "mean": 0.12951224586,
+            "median": 0.0041548335,
+            "min": 0.0040208215,
+            "n": 196,
+            "p10": 0.0040964373,
+            "p90": 0.1599005876,
+            "p95": 0.2566543724,
+            "range": 5.3518159675,
+            "std_population": 0.584948323756
+          },
+          "countries_revision_at_least_1_pp": 5,
+          "countries_revision_at_least_5_pp": 1,
+          "signed_risk_revision_pp": {
+            "max": 5.355836789,
+            "mean": 0.104859602292,
+            "median": 0.0040964373,
+            "min": -1.7131722374,
+            "n": 196,
+            "p10": 0.0040964373,
+            "p90": 0.1542922257,
+            "p95": 0.231399319975,
+            "range": 7.0690090264,
+            "std_population": 0.589866448529
+          }
+        }
+      }
+    },
+    {
+      "countries_with_revised_origin_best_deaths": 20,
+      "countries_with_revised_origin_binary_state": 0,
+      "edition_pairs_share_histories_and_are_not_independent": true,
+      "later_edition": "25.1",
+      "n_fixed_country_ids": 196,
+      "older_edition": "24.1",
+      "origin": 2023,
+      "risk_revision_by_prespecified_local_history_weight": {
+        "0.0": {
+          "absolute_risk_revision_pp": {
+            "max": 0.1096173411,
+            "mean": 0.023385370293,
+            "median": 0.0058783957,
+            "min": 0.0055904111,
+            "n": 196,
+            "p10": 0.00581369635,
+            "p90": 0.10516930105,
+            "p95": 0.107555325,
+            "range": 0.10402693,
+            "std_population": 0.038019640018
+          },
+          "countries_revision_at_least_1_pp": 0,
+          "countries_revision_at_least_5_pp": 0,
+          "signed_risk_revision_pp": {
+            "max": 0.1096173411,
+            "mean": 0.022038594385,
+            "median": 0.0058783957,
+            "min": -0.1052456086,
+            "n": 196,
+            "p10": 0.0058088762,
+            "p90": 0.10500105215,
+            "p95": 0.107555325,
+            "range": 0.2148629497,
+            "std_population": 0.038815833475
+          }
+        },
+        "0.25": {
+          "absolute_risk_revision_pp": {
+            "max": 1.9613198178,
+            "mean": 0.037462268456,
+            "median": 0.0042241248,
+            "min": 0.0041515275,
+            "n": 196,
+            "p10": 0.0041537369,
+            "p90": 0.0816490914,
+            "p95": 0.08860927355,
+            "range": 1.9571682903,
+            "std_population": 0.191812215695
+          },
+          "countries_revision_at_least_1_pp": 2,
+          "countries_revision_at_least_5_pp": 0,
+          "signed_risk_revision_pp": {
+            "max": 1.9613198178,
+            "mean": 0.037462268456,
+            "median": 0.0042241248,
+            "min": 0.0041515275,
+            "n": 196,
+            "p10": 0.0041537369,
+            "p90": 0.0816490914,
+            "p95": 0.08860927355,
+            "range": 1.9571682903,
+            "std_population": 0.191812215695
+          }
+        },
+        "0.5": {
+          "absolute_risk_revision_pp": {
+            "max": 3.3564697399,
+            "mean": 0.047874228116,
+            "median": 0.003297445,
+            "min": 0.0032002099,
+            "n": 196,
+            "p10": 0.0032113858,
+            "p90": 0.06515497185,
+            "p95": 0.076698457725,
+            "range": 3.35326953,
+            "std_population": 0.322204307382
+          },
+          "countries_revision_at_least_1_pp": 2,
+          "countries_revision_at_least_5_pp": 0,
+          "signed_risk_revision_pp": {
+            "max": 3.3564697399,
+            "mean": 0.047874228116,
+            "median": 0.003297445,
+            "min": 0.0032002099,
+            "n": 196,
+            "p10": 0.0032113858,
+            "p90": 0.06515497185,
+            "p95": 0.076698457725,
+            "range": 3.35326953,
+            "std_population": 0.322204307382
+          }
+        },
+        "1.0": {
+          "absolute_risk_revision_pp": {
+            "max": 5.115438335,
+            "mean": 0.060760781693,
+            "median": 0.0022918042,
+            "min": 0.002179607,
+            "n": 196,
+            "p10": 0.0022089905,
+            "p90": 0.0463071191,
+            "p95": 0.060628405875,
+            "range": 5.113258728,
+            "std_population": 0.483908296687
+          },
+          "countries_revision_at_least_1_pp": 2,
+          "countries_revision_at_least_5_pp": 1,
+          "signed_risk_revision_pp": {
+            "max": 5.115438335,
+            "mean": 0.060760781693,
+            "median": 0.0022918042,
+            "min": 0.002179607,
+            "n": 196,
+            "p10": 0.0022089905,
+            "p90": 0.0463071191,
+            "p95": 0.060628405875,
+            "range": 5.113258728,
+            "std_population": 0.483908296687
+          }
+        }
+      }
+    },
+    {
+      "countries_with_revised_origin_best_deaths": 20,
+      "countries_with_revised_origin_binary_state": 0,
+      "edition_pairs_share_histories_and_are_not_independent": true,
+      "later_edition": "26.1",
+      "n_fixed_country_ids": 196,
+      "older_edition": "24.1",
+      "origin": 2023,
+      "risk_revision_by_prespecified_local_history_weight": {
+        "0.0": {
+          "absolute_risk_revision_pp": {
+            "max": 0.2955151307,
+            "mean": 0.06674490205,
+            "median": 0.0222458457,
+            "min": 0.0214051075,
+            "n": 196,
+            "p10": 0.0222398652,
+            "p90": 0.28759507655,
+            "p95": 0.2922562562,
+            "range": 0.2741100232,
+            "std_population": 0.098609545711
+          },
+          "countries_revision_at_least_1_pp": 0,
+          "countries_revision_at_least_5_pp": 0,
+          "signed_risk_revision_pp": {
+            "max": 0.2955151307,
+            "mean": 0.029609312692,
+            "median": -0.0222458457,
+            "min": -0.0549710312,
+            "n": 196,
+            "p10": -0.0223291209,
+            "p90": 0.28759507655,
+            "p95": 0.2922562562,
+            "range": 0.3504861619,
+            "std_population": 0.115334353325
+          }
+        },
+        "0.25": {
+          "absolute_risk_revision_pp": {
+            "max": 2.1074975014,
+            "mean": 0.081260713399,
+            "median": 0.0158086992,
+            "min": 0.0099109972,
+            "n": 196,
+            "p10": 0.0142221271,
+            "p90": 0.22254721815,
+            "p95": 0.255695781775,
+            "range": 2.0975865042,
+            "std_population": 0.238546600097
+          },
+          "countries_revision_at_least_1_pp": 3,
+          "countries_revision_at_least_5_pp": 0,
+          "signed_risk_revision_pp": {
+            "max": 2.1074975014,
+            "mean": 0.05435154141,
+            "median": -0.0158086992,
+            "min": -0.1622127573,
+            "n": 196,
+            "p10": -0.0160857836,
+            "p90": 0.22254721815,
+            "p95": 0.255695781775,
+            "range": 2.2697102587,
+            "std_population": 0.246076601704
+          }
+        },
+        "0.5": {
+          "absolute_risk_revision_pp": {
+            "max": 3.4777911395,
+            "mean": 0.091514598016,
+            "median": 0.0122592357,
+            "min": 0.0033291271,
+            "n": 196,
+            "p10": 0.0098099743,
+            "p90": 0.1842030069,
+            "p95": 0.2324543125,
+            "range": 3.4744620124,
+            "std_population": 0.37513281259
+          },
+          "countries_revision_at_least_1_pp": 3,
+          "countries_revision_at_least_5_pp": 0,
+          "signed_risk_revision_pp": {
+            "max": 3.4777911395,
+            "mean": 0.068835560389,
+            "median": -0.0122592357,
+            "min": -0.3533751686,
+            "n": 196,
+            "p10": -0.0125884177,
+            "p90": 0.1799768039,
+            "p95": 0.230794931575,
+            "range": 3.8311663081,
+            "std_population": 0.379948962833
+          }
+        },
+        "1.0": {
+          "absolute_risk_revision_pp": {
+            "max": 5.205817003,
+            "mean": 0.104232989141,
+            "median": 0.0084593447,
+            "min": 0.0003372274,
+            "n": 196,
+            "p10": 0.0051654345,
+            "p90": 0.1339948385,
+            "p95": 0.19469145975,
+            "range": 5.2054797756,
+            "std_population": 0.544735810277
+          },
+          "countries_revision_at_least_1_pp": 3,
+          "countries_revision_at_least_5_pp": 1,
+          "signed_risk_revision_pp": {
+            "max": 5.205817003,
+            "mean": 0.084703913399,
+            "median": -0.0084593447,
+            "min": -0.6895296189,
+            "n": 196,
+            "p10": -0.008777083,
+            "p90": 0.12940388785,
+            "p95": 0.193273984125,
+            "range": 5.8953466219,
+            "std_population": 0.548112092622
+          }
+        }
+      }
+    }
+  ],
+  "frozen_2027_country_universe": 196,
+  "global_laplace_one": true,
+  "historical_edition_comparison_n": 5,
+  "issued_GEO_and_LOG1P_and_globalonly_all_frozen_unchanged": true,
+  "limitations": "Only a mechanistic Markov two-state H2 sensitivity audit, not a refit of country-blocked LOG1P. w grid fixed but considered after examining historical data; using its results to select a w would remain exploratory. Revisions are overlapping releases, so five comparisons are not independent. Later editions can retroactively revise historical origin transitions, though every replay clips all transitions to that origin. History-sensitive risk is not necessarily more accurate. No 2027 labels; the 196 originally issued probabilities of three distinct models and original 15 alerts remain SHA-frozen. No new per-country candidate forecast list is published.",
+  "new_global_only_matched_2027_sha256": "251595a12758e006cf21dabbb9771e10b5961c469a5317d6b2b1c5de227f3697",
+  "new_grid_uses_global_leave_target_country_out_in_every_weight": true,
+  "no_new_forecasts_or_alerts_issued": true,
+  "not_a_multimodel_prospective_2027_forecast": true,
+  "not_using_LOG1P_or_intercept_recalibration_for_weight_comparisons": true,
+  "official_2027_outcomes_resolved": 0,
+  "origin_year_for_issued_model": 2025,
+  "original_15_transition_alerts_sha256": "309b4f270e1d0d6382b7a90ae64c28d7621f96fbf3177a45aaebbffb0f958acb",
+  "original_GEO2027_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "original_LOG1P2027_shadow_sha256": "52686923315854557a796f8f192d376dab77a4e03b14c1aeb6b4091e48104f90",
+  "original_frozen_GEO_markov_reproduced_on_all_196": true,
+  "origins_studied": [
+    2022,
+    2023,
+    2025
+  ],
+  "prior_strength_original": 20,
+  "revised_edition_not_available_asof_older_historical_origin": true,
+  "schema": "idealab.psico.geo2027_markov_local_partial_pooling_vintage_stability.v1",
+  "source_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "status": "EX_ANTE_2025_SOURCE_ONLY_MARKOV_COMPONENT_DIAGNOSTIC_NOT_NEW_FORECAST",
+  "target_year": 2027,
+  "w_equal_1_differs_slightly_from_original_which_includes_target_country_in_global": true,
+  "weights_are_fixed_mechanistic_stress_not_candidate_selection": [
+    0.0,
+    0.25,
+    0.5,
+    1.0
+  ]
+}
