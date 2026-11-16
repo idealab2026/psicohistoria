@@ -4,6 +4,18 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Puerta de resolución oficial y evaluación prospectiva verificable (16-11-2026)
+
+**Estado certificado: `NOT_READY`.** Las tres emisiones ya registradas sobre los **196 países** para 2027 (GEO original, primera sombra LOG1P y global-only matched α0/α1) permanecen **inmutables y sin resultados oficiales**. El nuevo programa **no emite otro modelo**: prepara y prueba cómo se puntuará exactamente la primera edición **oficial y completa** de UCDP OrganizedViolenceCY correspondiente a 2027.
+
+**Condiciones obligatorias antes de puntuar:** solo a partir de 2028; archivo ZIP/CSV de país-año con SHA-256 verificado; **196 filas explícitas de 2027** coincidentes con los GWNO congelados; ausencia/duplicado/valor inválido implica **bloqueo, nunca imputación a cero**; revisión humana documentada del archivo y la secuencia de ediciones para justificar que sea la **primera edición completa**. El programa valida la ficha y la cobertura, pero no puede demostrar por sí solo la autenticidad oficial ni la prioridad cronológica de la edición. La evidencia editorial debe comprobarse externamente antes de presentar una evaluación como oficial.
+
+Una vez superados los requisitos, se publicarán juntos **Brier y log-loss de cinco brazos** sobre los mismos 196 países, con la **comparación principal previamente registrada**: Brier(global-only α1) − Brier(LOG1P original), cuyo signo se desconocerá hasta que haya resultados. También se reproducirá exactamente la atribución de Brier país a país fijada antes del desenlace, sin escoger modelos, penalizaciones o umbrales a posteriori.
+
+Se han añadido **12 pruebas con etiquetas exclusivamente sintéticas** para errores de fuente, fecha, cobertura, 24/25 muertes, duplicados, columnas CY, ZIP y reconstitución matemática de la diferencia primaria. Ningún Brier sintético se conserva como resultado real. GitHub Actions y Pages requieren que el [estado `NOT_READY` auditable](data/geo2027-full196-resolution-readiness.json) sea byte idéntico al verificado desde las tres emisiones y las 15 alertas SHA-fijadas.
+
+[Protocolo íntegro y límites](docs/geo2027-full196-official-resolution-readiness.md) · [Validador futuro de edición oficial](scripts/resolve_geo2027_first_complete_official.py) · [Pruebas sintéticas](scripts/test_resolve_geo2027_first_complete_official.py).
+
 ## GEO2027 · Diagnóstico de regularización local Markov y revisiones UCDP (16-11-2026)
 
 **Estudio nuevo, sin reemitir pronósticos:** se han reproducido **8 combinaciones origen–edición** de UCDP 23.1–26.1 y **5 comparaciones solapadas de revisiones** con los **196 identificadores originales**, cortando todos los historiales en el año de origen. Se ha verificado la reproducción matemática exacta del primer GEO2027 (2025→2027), manteniendo sus SHA y los de las dos sombras y las 15 alertas.
