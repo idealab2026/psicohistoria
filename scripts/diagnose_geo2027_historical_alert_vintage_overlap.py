@@ -180,12 +180,12 @@ def main():
     vintages, metadata = fetch_archives()
     report = study(vintages, metadata, names)
     payload = json.dumps(report, ensure_ascii=False, sort_keys=True, indent=2) + "\n"
-    if args.check_report:
-        if not REPORT.exists() or REPORT.read_bytes() != payload.encode():
-            raise ValueError("Historical vintage alert overlap report differs from SHA-pinned calculation")
     print("GEO2027_HISTORICAL_ALERT_VINTAGE_OVERLAP_BEGIN")
     print(payload, end="")
     print("GEO2027_HISTORICAL_ALERT_VINTAGE_OVERLAP_END")
+    if args.check_report:
+        if not REPORT.exists() or REPORT.read_bytes() != payload.encode():
+            raise ValueError("Historical vintage alert overlap report differs from SHA-pinned calculation")
 
 
 if __name__ == "__main__":
