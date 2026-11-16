@@ -1,1 +1,345 @@
-{"status":"PENDING_OFFICIAL_SOURCE_REPLAY"}
+{
+  "2027_outcomes_observed": 0,
+  "compared_to_23_1": [
+    {
+      "binary_threshold_changes": [],
+      "comparison": "23.1->24.1"
+    },
+    {
+      "binary_threshold_changes": [
+        {
+          "country": "Indonesia",
+          "country_id": 850,
+          "old_deaths": 16,
+          "old_state": 0,
+          "revised_deaths": 34,
+          "revised_state": 1,
+          "year": 2019
+        },
+        {
+          "country": "Indonesia",
+          "country_id": 850,
+          "old_deaths": 21,
+          "old_state": 0,
+          "revised_deaths": 31,
+          "revised_state": 1,
+          "year": 2020
+        }
+      ],
+      "comparison": "23.1->25.1"
+    },
+    {
+      "binary_threshold_changes": [
+        {
+          "country": "Indonesia",
+          "country_id": 850,
+          "old_deaths": 16,
+          "old_state": 0,
+          "revised_deaths": 34,
+          "revised_state": 1,
+          "year": 2019
+        },
+        {
+          "country": "Indonesia",
+          "country_id": 850,
+          "old_deaths": 21,
+          "old_state": 0,
+          "revised_deaths": 31,
+          "revised_state": 1,
+          "year": 2020
+        }
+      ],
+      "comparison": "23.1->26.1"
+    }
+  ],
+  "countries": {
+    "703": "Kyrgyzstan",
+    "850": "Indonesia"
+  },
+  "death_metric": "UCDP OrganizedViolenceCY sb_total_deaths_best country-year",
+  "no_issued_forecast_replaced": true,
+  "not_a_causal_analysis_or_historical_issue": true,
+  "schema": "idealab.psico.geo2027_indonesia_annual_deaths_vintage_audit.v1",
+  "source_original_annual_deaths": {
+    "23.1": {
+      "703": [
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 0,
+          "year": 2017
+        },
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 0,
+          "year": 2018
+        },
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 0,
+          "year": 2019
+        },
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 0,
+          "year": 2020
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 40,
+          "year": 2021
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 64,
+          "year": 2022
+        }
+      ],
+      "850": [
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 2,
+          "year": 2017
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 25,
+          "year": 2018
+        },
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 16,
+          "year": 2019
+        },
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 21,
+          "year": 2020
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 51,
+          "year": 2021
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 46,
+          "year": 2022
+        }
+      ]
+    },
+    "24.1": {
+      "703": [
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 0,
+          "year": 2017
+        },
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 0,
+          "year": 2018
+        },
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 0,
+          "year": 2019
+        },
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 0,
+          "year": 2020
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 40,
+          "year": 2021
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 63,
+          "year": 2022
+        }
+      ],
+      "850": [
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 2,
+          "year": 2017
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 25,
+          "year": 2018
+        },
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 16,
+          "year": 2019
+        },
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 21,
+          "year": 2020
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 51,
+          "year": 2021
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 46,
+          "year": 2022
+        }
+      ]
+    },
+    "25.1": {
+      "703": [
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 0,
+          "year": 2017
+        },
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 0,
+          "year": 2018
+        },
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 0,
+          "year": 2019
+        },
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 0,
+          "year": 2020
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 40,
+          "year": 2021
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 63,
+          "year": 2022
+        }
+      ],
+      "850": [
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 2,
+          "year": 2017
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 28,
+          "year": 2018
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 34,
+          "year": 2019
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 31,
+          "year": 2020
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 51,
+          "year": 2021
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 46,
+          "year": 2022
+        }
+      ]
+    },
+    "26.1": {
+      "703": [
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 0,
+          "year": 2017
+        },
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 0,
+          "year": 2018
+        },
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 0,
+          "year": 2019
+        },
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 0,
+          "year": 2020
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 40,
+          "year": 2021
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 63,
+          "year": 2022
+        }
+      ],
+      "850": [
+        {
+          "binary_state_at_25": 0,
+          "sb_total_deaths_best": 2,
+          "year": 2017
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 28,
+          "year": 2018
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 34,
+          "year": 2019
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 31,
+          "year": 2020
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 52,
+          "year": 2021
+        },
+        {
+          "binary_state_at_25": 1,
+          "sb_total_deaths_best": 46,
+          "year": 2022
+        }
+      ]
+    }
+  },
+  "sources_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "status": "OFFICIAL_SOURCE_SHA_PINNED_HISTORICAL_REVISION_NOT_PREDICTION",
+  "threshold_state_1": ">=25 state-based deaths; NOT violence against civilians or all-organized-violence deaths",
+  "years": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ]
+}
