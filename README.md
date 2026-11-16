@@ -4,6 +4,24 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Frontera de robustez editorial vs Brier histórico del LOG1P (16-11-2026)
+
+**Investigación de compromiso, no sustitución de la sombra prospectiva**: se han medido cinco variantes fijas que atenúan exclusivamente la pendiente LOG1P del grupo de países con menos de 25 muertes de violencia estatal en el origen (**α=0, 0,25, 0,5, 0,75, 1**). Se conservan intactos el intercepto, pendiente del grupo activo y offset Markov originales; α=1 reproduce exactamente el archivo LOG1P 2027 y los Brier históricos previamente publicados.
+
+| Pendiente inactiva | Brier histórico conjunto 2024/25 | Banda media hipotética ±10 muertes en la emisión 2027 | Países garantizados del top-10 de entrada contrafactual |
+|---|---:|---:|---:|
+| **0 %** | 0,037815 | **0,082 pp** | **10/10** |
+| 25 % | 0,037655 | 0,658 pp | 6/10 |
+| 50 % | 0,037512 | 1,353 pp | 5/10 |
+| 75 % | 0,037412 | 2,187 pp | 3/10 |
+| **100 % · sombra LOG1P emitida** | **0,037393** | 3,178 pp | 2/10 |
+
+**Atenuar por completo la señal en los inactivos reduce aproximadamente un 97,4 % la sensibilidad media a esta perturbación ±10**, con un empeoramiento de **1,1 % del Brier** en dos años reutilizados de forma exploratoria. El balance **se invierte por año**: 2024 favorece α=1 y 2025 α=0. El top-5 de resolución para el grupo activo mantiene 3/5 puestos garantizados en todas las variantes, porque su pendiente no cambia.
+
+**No se ha elegido ni emitido ningún modelo nuevo:** los datos históricos 2024/25 se habían inspeccionado, el periodo 2018–20 ya sirvió para selección de hiperparámetros, y ninguna banda hipotética es un intervalo de confianza. Los cinco puntos son no dominados sobre estos dos ejes exploratorios; la capacidad predictiva prospectiva de 2027 sigue sin resolver. Las **196 probabilidades originales, las 196 de la sombra emitida y las 15 alertas** siguen idénticas.
+
+[Protocolo y resultados detallados](docs/geo2027-log1p-inactive-attenuation-frontier.md) · [Reporte fuente-auditado con 196 países y cinco variantes](data/geo2027-log1p-inactive-attenuation-frontier.json) · [Código reproducible](scripts/experiment_geo2027_log1p_inactive_attenuation_frontier.py) · auditoría independiente con GitHub Actions.
+
 ## GEO2027 · Auditoría matemática de sensibilidad de la sombra 2027 ya emitida (16-11-2026)
 
 **Nuevo diagnóstico publicado sobre las 196 probabilidades inmutables de la sombra LOG1P**. Se altera *solo hipotéticamente* el número de muertes UCDP del **origen 2025**, en ±1, ±5 o ±10, **sin cruzar el umbral binario de 25**, sin reentrenar ni el GEO original ni la logística. Se certifican exactamente los extremos de probabilidad mediante monotonicidad de `log1p`/logit, con una segunda prueba de cota analítica basada en el máximo de la derivada logística, y los conjuntos **obligatorios/posibles** de los top-k bajo perturbaciones independientes de todos los países.
