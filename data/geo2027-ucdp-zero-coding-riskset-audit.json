@@ -1,0 +1,1015 @@
+{
+  "2027_source_release_not_yet_available": true,
+  "UCDP_source_versions": [
+    "23.1",
+    "24.1",
+    "25.1",
+    "26.1"
+  ],
+  "archived_edition_comparisons_correlated": true,
+  "codebook_official_url": "https://ucdp.uu.se/downloads/organizedviolencecy/UCDP_OrganizedViolenceCY_Codebook_261.pdf",
+  "codebook_official_version": "26.1",
+  "country_zero_coding_is_not_missing_row_imputation": true,
+  "historical_cross_edition_semantic_indicator_revisions": [
+    {
+      "countries_changed_sb_exist_indicator": 2,
+      "countries_changed_zero_fatality_indicator": 1,
+      "country_n": 196,
+      "later_edition": "26.1",
+      "not_independent_edition_comparisons": true,
+      "older_edition": "23.1",
+      "origin_year": 2022
+    },
+    {
+      "countries_changed_sb_exist_indicator": 1,
+      "countries_changed_zero_fatality_indicator": 0,
+      "country_n": 196,
+      "later_edition": "26.1",
+      "not_independent_edition_comparisons": true,
+      "older_edition": "24.1",
+      "origin_year": 2022
+    },
+    {
+      "countries_changed_sb_exist_indicator": 0,
+      "countries_changed_zero_fatality_indicator": 0,
+      "country_n": 196,
+      "later_edition": "26.1",
+      "not_independent_edition_comparisons": true,
+      "older_edition": "24.1",
+      "origin_year": 2023
+    },
+    {
+      "countries_changed_sb_exist_indicator": 0,
+      "countries_changed_zero_fatality_indicator": 0,
+      "country_n": 196,
+      "later_edition": "26.1",
+      "not_independent_edition_comparisons": true,
+      "older_edition": "25.1",
+      "origin_year": 2022
+    },
+    {
+      "countries_changed_sb_exist_indicator": 0,
+      "countries_changed_zero_fatality_indicator": 0,
+      "country_n": 196,
+      "later_edition": "26.1",
+      "not_independent_edition_comparisons": true,
+      "older_edition": "25.1",
+      "origin_year": 2023
+    },
+    {
+      "countries_changed_sb_exist_indicator": 0,
+      "countries_changed_zero_fatality_indicator": 0,
+      "country_n": 196,
+      "later_edition": "26.1",
+      "not_independent_edition_comparisons": true,
+      "older_edition": "25.1",
+      "origin_year": 2024
+    }
+  ],
+  "limitations": "An actual coded zero can coincide with omitted below-eligibility violence and/or zero documented included state-based deaths. sb_exist is an event existence variable, not a threshold event. Exact probability outcome remains UCDP OrganizedViolenceCY state-based best >=25 as coded, not a claim of no real-world violence. Annual 196-country cohort can only be resolved when actual future edition supplies 196 explicit target rows, and the first-complete edition must be independently authenticated. Cross-edition comparisons share GWNO country-years and are not independent.",
+  "new_global_only_issued_sha256": "251595a12758e006cf21dabbb9771e10b5961c469a5317d6b2b1c5de227f3697",
+  "no_2027_forecasts_or_alerts_reissued": true,
+  "not_a_history_release_available_asof_original_year": true,
+  "official_2027_labels_observed": 0,
+  "official_codebook_existence_semantics": "sb_exist is a recorded state-based event flag, not a UCDP active-state indicator, and is a different measurement from best deaths >= 25.",
+  "official_codebook_zero_semantics": "A literal zero is an official coded zero of included event fatalities, not proof of absence of all fatal violence, because UCDP GED inclusion depends on a dyad/actor qualifying 25 deaths within a year.",
+  "original_15_alerts_sha256": "309b4f270e1d0d6382b7a90ae64c28d7621f96fbf3177a45aaebbffb0f958acb",
+  "original_196_GWNO_cohort_immutable": true,
+  "original_issued_GEO2027_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "original_issued_LOG1P_sha256": "52686923315854557a796f8f192d376dab77a4e03b14c1aeb6b4091e48104f90",
+  "recent_year_coverage_and_flag_by_edition": {
+    "23.1": {
+      "earliest_year_complete_fixed_196_cohort": 2011,
+      "first_issued_cohort_2022_through_edition_cutoff": [
+        {
+          "best_deaths_1_to_24_n": 14,
+          "best_deaths_25_plus_n": 37,
+          "best_positive_but_existence_flag_0_n": 0,
+          "explicit_country_year_missing_is_not_implicit_zero": true,
+          "explicit_rows_n": 196,
+          "first_issued_GWNO_missing_ids": [],
+          "first_issued_country_universe_n": 196,
+          "literal_zero_best_fatalities_n": 145,
+          "positive_best_fatalities_n": 51,
+          "state_based_existence_flag_1_n": 51,
+          "state_based_existence_flag_does_not_prove_UCDP_threshold_activeness": true,
+          "year": 2022,
+          "zero_best_and_existence_flag_0_n": 145,
+          "zero_best_but_existence_flag_1_n": 0,
+          "zero_best_does_not_prove_no_fatal_organized_violence": true
+        }
+      ],
+      "historical_country_coverage_by_year": [
+        {
+          "all_GWNO_source_rows": 172,
+          "fixed_196_GWNO_rows": 169,
+          "year": 1989
+        },
+        {
+          "all_GWNO_source_rows": 173,
+          "fixed_196_GWNO_rows": 170,
+          "year": 1990
+        },
+        {
+          "all_GWNO_source_rows": 186,
+          "fixed_196_GWNO_rows": 185,
+          "year": 1991
+        },
+        {
+          "all_GWNO_source_rows": 189,
+          "fixed_196_GWNO_rows": 188,
+          "year": 1992
+        },
+        {
+          "all_GWNO_source_rows": 191,
+          "fixed_196_GWNO_rows": 191,
+          "year": 1993
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1994
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1995
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1996
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1997
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1998
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1999
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 2000
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 2001
+        },
+        {
+          "all_GWNO_source_rows": 193,
+          "fixed_196_GWNO_rows": 193,
+          "year": 2002
+        },
+        {
+          "all_GWNO_source_rows": 193,
+          "fixed_196_GWNO_rows": 193,
+          "year": 2003
+        },
+        {
+          "all_GWNO_source_rows": 193,
+          "fixed_196_GWNO_rows": 193,
+          "year": 2004
+        },
+        {
+          "all_GWNO_source_rows": 193,
+          "fixed_196_GWNO_rows": 193,
+          "year": 2005
+        },
+        {
+          "all_GWNO_source_rows": 194,
+          "fixed_196_GWNO_rows": 194,
+          "year": 2006
+        },
+        {
+          "all_GWNO_source_rows": 194,
+          "fixed_196_GWNO_rows": 194,
+          "year": 2007
+        },
+        {
+          "all_GWNO_source_rows": 195,
+          "fixed_196_GWNO_rows": 195,
+          "year": 2008
+        },
+        {
+          "all_GWNO_source_rows": 195,
+          "fixed_196_GWNO_rows": 195,
+          "year": 2009
+        },
+        {
+          "all_GWNO_source_rows": 195,
+          "fixed_196_GWNO_rows": 195,
+          "year": 2010
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2011
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2012
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2013
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2014
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2015
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2016
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2017
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2018
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2019
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2020
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2021
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2022
+        }
+      ],
+      "source_archive_sha256": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+      "source_last_year": 2022,
+      "source_years_with_incomplete_original_196": 22,
+      "total_annotated_flags": 6544,
+      "total_verified_country_year_rows": 6544
+    },
+    "24.1": {
+      "earliest_year_complete_fixed_196_cohort": 2011,
+      "first_issued_cohort_2022_through_edition_cutoff": [
+        {
+          "best_deaths_1_to_24_n": 15,
+          "best_deaths_25_plus_n": 37,
+          "best_positive_but_existence_flag_0_n": 0,
+          "explicit_country_year_missing_is_not_implicit_zero": true,
+          "explicit_rows_n": 196,
+          "first_issued_GWNO_missing_ids": [],
+          "first_issued_country_universe_n": 196,
+          "literal_zero_best_fatalities_n": 144,
+          "positive_best_fatalities_n": 52,
+          "state_based_existence_flag_1_n": 52,
+          "state_based_existence_flag_does_not_prove_UCDP_threshold_activeness": true,
+          "year": 2022,
+          "zero_best_and_existence_flag_0_n": 144,
+          "zero_best_but_existence_flag_1_n": 0,
+          "zero_best_does_not_prove_no_fatal_organized_violence": true
+        },
+        {
+          "best_deaths_1_to_24_n": 12,
+          "best_deaths_25_plus_n": 34,
+          "best_positive_but_existence_flag_0_n": 0,
+          "explicit_country_year_missing_is_not_implicit_zero": true,
+          "explicit_rows_n": 196,
+          "first_issued_GWNO_missing_ids": [],
+          "first_issued_country_universe_n": 196,
+          "literal_zero_best_fatalities_n": 150,
+          "positive_best_fatalities_n": 46,
+          "state_based_existence_flag_1_n": 47,
+          "state_based_existence_flag_does_not_prove_UCDP_threshold_activeness": true,
+          "year": 2023,
+          "zero_best_and_existence_flag_0_n": 149,
+          "zero_best_but_existence_flag_1_n": 1,
+          "zero_best_does_not_prove_no_fatal_organized_violence": true
+        }
+      ],
+      "historical_country_coverage_by_year": [
+        {
+          "all_GWNO_source_rows": 172,
+          "fixed_196_GWNO_rows": 169,
+          "year": 1989
+        },
+        {
+          "all_GWNO_source_rows": 173,
+          "fixed_196_GWNO_rows": 170,
+          "year": 1990
+        },
+        {
+          "all_GWNO_source_rows": 186,
+          "fixed_196_GWNO_rows": 185,
+          "year": 1991
+        },
+        {
+          "all_GWNO_source_rows": 189,
+          "fixed_196_GWNO_rows": 188,
+          "year": 1992
+        },
+        {
+          "all_GWNO_source_rows": 191,
+          "fixed_196_GWNO_rows": 191,
+          "year": 1993
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1994
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1995
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1996
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1997
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1998
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1999
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 2000
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 2001
+        },
+        {
+          "all_GWNO_source_rows": 193,
+          "fixed_196_GWNO_rows": 193,
+          "year": 2002
+        },
+        {
+          "all_GWNO_source_rows": 193,
+          "fixed_196_GWNO_rows": 193,
+          "year": 2003
+        },
+        {
+          "all_GWNO_source_rows": 193,
+          "fixed_196_GWNO_rows": 193,
+          "year": 2004
+        },
+        {
+          "all_GWNO_source_rows": 193,
+          "fixed_196_GWNO_rows": 193,
+          "year": 2005
+        },
+        {
+          "all_GWNO_source_rows": 194,
+          "fixed_196_GWNO_rows": 194,
+          "year": 2006
+        },
+        {
+          "all_GWNO_source_rows": 194,
+          "fixed_196_GWNO_rows": 194,
+          "year": 2007
+        },
+        {
+          "all_GWNO_source_rows": 195,
+          "fixed_196_GWNO_rows": 195,
+          "year": 2008
+        },
+        {
+          "all_GWNO_source_rows": 195,
+          "fixed_196_GWNO_rows": 195,
+          "year": 2009
+        },
+        {
+          "all_GWNO_source_rows": 195,
+          "fixed_196_GWNO_rows": 195,
+          "year": 2010
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2011
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2012
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2013
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2014
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2015
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2016
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2017
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2018
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2019
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2020
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2021
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2022
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2023
+        }
+      ],
+      "source_archive_sha256": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+      "source_last_year": 2023,
+      "source_years_with_incomplete_original_196": 22,
+      "total_annotated_flags": 6740,
+      "total_verified_country_year_rows": 6740
+    },
+    "25.1": {
+      "earliest_year_complete_fixed_196_cohort": 2011,
+      "first_issued_cohort_2022_through_edition_cutoff": [
+        {
+          "best_deaths_1_to_24_n": 15,
+          "best_deaths_25_plus_n": 37,
+          "best_positive_but_existence_flag_0_n": 0,
+          "explicit_country_year_missing_is_not_implicit_zero": true,
+          "explicit_rows_n": 196,
+          "first_issued_GWNO_missing_ids": [],
+          "first_issued_country_universe_n": 196,
+          "literal_zero_best_fatalities_n": 144,
+          "positive_best_fatalities_n": 52,
+          "state_based_existence_flag_1_n": 53,
+          "state_based_existence_flag_does_not_prove_UCDP_threshold_activeness": true,
+          "year": 2022,
+          "zero_best_and_existence_flag_0_n": 143,
+          "zero_best_but_existence_flag_1_n": 1,
+          "zero_best_does_not_prove_no_fatal_organized_violence": true
+        },
+        {
+          "best_deaths_1_to_24_n": 12,
+          "best_deaths_25_plus_n": 34,
+          "best_positive_but_existence_flag_0_n": 0,
+          "explicit_country_year_missing_is_not_implicit_zero": true,
+          "explicit_rows_n": 196,
+          "first_issued_GWNO_missing_ids": [],
+          "first_issued_country_universe_n": 196,
+          "literal_zero_best_fatalities_n": 150,
+          "positive_best_fatalities_n": 46,
+          "state_based_existence_flag_1_n": 47,
+          "state_based_existence_flag_does_not_prove_UCDP_threshold_activeness": true,
+          "year": 2023,
+          "zero_best_and_existence_flag_0_n": 149,
+          "zero_best_but_existence_flag_1_n": 1,
+          "zero_best_does_not_prove_no_fatal_organized_violence": true
+        },
+        {
+          "best_deaths_1_to_24_n": 8,
+          "best_deaths_25_plus_n": 35,
+          "best_positive_but_existence_flag_0_n": 0,
+          "explicit_country_year_missing_is_not_implicit_zero": true,
+          "explicit_rows_n": 196,
+          "first_issued_GWNO_missing_ids": [],
+          "first_issued_country_universe_n": 196,
+          "literal_zero_best_fatalities_n": 153,
+          "positive_best_fatalities_n": 43,
+          "state_based_existence_flag_1_n": 43,
+          "state_based_existence_flag_does_not_prove_UCDP_threshold_activeness": true,
+          "year": 2024,
+          "zero_best_and_existence_flag_0_n": 153,
+          "zero_best_but_existence_flag_1_n": 0,
+          "zero_best_does_not_prove_no_fatal_organized_violence": true
+        }
+      ],
+      "historical_country_coverage_by_year": [
+        {
+          "all_GWNO_source_rows": 172,
+          "fixed_196_GWNO_rows": 169,
+          "year": 1989
+        },
+        {
+          "all_GWNO_source_rows": 173,
+          "fixed_196_GWNO_rows": 170,
+          "year": 1990
+        },
+        {
+          "all_GWNO_source_rows": 186,
+          "fixed_196_GWNO_rows": 185,
+          "year": 1991
+        },
+        {
+          "all_GWNO_source_rows": 189,
+          "fixed_196_GWNO_rows": 188,
+          "year": 1992
+        },
+        {
+          "all_GWNO_source_rows": 191,
+          "fixed_196_GWNO_rows": 191,
+          "year": 1993
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1994
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1995
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1996
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1997
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1998
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1999
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 2000
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 2001
+        },
+        {
+          "all_GWNO_source_rows": 193,
+          "fixed_196_GWNO_rows": 193,
+          "year": 2002
+        },
+        {
+          "all_GWNO_source_rows": 193,
+          "fixed_196_GWNO_rows": 193,
+          "year": 2003
+        },
+        {
+          "all_GWNO_source_rows": 193,
+          "fixed_196_GWNO_rows": 193,
+          "year": 2004
+        },
+        {
+          "all_GWNO_source_rows": 193,
+          "fixed_196_GWNO_rows": 193,
+          "year": 2005
+        },
+        {
+          "all_GWNO_source_rows": 194,
+          "fixed_196_GWNO_rows": 194,
+          "year": 2006
+        },
+        {
+          "all_GWNO_source_rows": 194,
+          "fixed_196_GWNO_rows": 194,
+          "year": 2007
+        },
+        {
+          "all_GWNO_source_rows": 195,
+          "fixed_196_GWNO_rows": 195,
+          "year": 2008
+        },
+        {
+          "all_GWNO_source_rows": 195,
+          "fixed_196_GWNO_rows": 195,
+          "year": 2009
+        },
+        {
+          "all_GWNO_source_rows": 195,
+          "fixed_196_GWNO_rows": 195,
+          "year": 2010
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2011
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2012
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2013
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2014
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2015
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2016
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2017
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2018
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2019
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2020
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2021
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2022
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2023
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2024
+        }
+      ],
+      "source_archive_sha256": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+      "source_last_year": 2024,
+      "source_years_with_incomplete_original_196": 22,
+      "total_annotated_flags": 6936,
+      "total_verified_country_year_rows": 6936
+    },
+    "26.1": {
+      "earliest_year_complete_fixed_196_cohort": 2011,
+      "first_issued_cohort_2022_through_edition_cutoff": [
+        {
+          "best_deaths_1_to_24_n": 15,
+          "best_deaths_25_plus_n": 37,
+          "best_positive_but_existence_flag_0_n": 0,
+          "explicit_country_year_missing_is_not_implicit_zero": true,
+          "explicit_rows_n": 196,
+          "first_issued_GWNO_missing_ids": [],
+          "first_issued_country_universe_n": 196,
+          "literal_zero_best_fatalities_n": 144,
+          "positive_best_fatalities_n": 52,
+          "state_based_existence_flag_1_n": 53,
+          "state_based_existence_flag_does_not_prove_UCDP_threshold_activeness": true,
+          "year": 2022,
+          "zero_best_and_existence_flag_0_n": 143,
+          "zero_best_but_existence_flag_1_n": 1,
+          "zero_best_does_not_prove_no_fatal_organized_violence": true
+        },
+        {
+          "best_deaths_1_to_24_n": 12,
+          "best_deaths_25_plus_n": 34,
+          "best_positive_but_existence_flag_0_n": 0,
+          "explicit_country_year_missing_is_not_implicit_zero": true,
+          "explicit_rows_n": 196,
+          "first_issued_GWNO_missing_ids": [],
+          "first_issued_country_universe_n": 196,
+          "literal_zero_best_fatalities_n": 150,
+          "positive_best_fatalities_n": 46,
+          "state_based_existence_flag_1_n": 47,
+          "state_based_existence_flag_does_not_prove_UCDP_threshold_activeness": true,
+          "year": 2023,
+          "zero_best_and_existence_flag_0_n": 149,
+          "zero_best_but_existence_flag_1_n": 1,
+          "zero_best_does_not_prove_no_fatal_organized_violence": true
+        },
+        {
+          "best_deaths_1_to_24_n": 8,
+          "best_deaths_25_plus_n": 35,
+          "best_positive_but_existence_flag_0_n": 0,
+          "explicit_country_year_missing_is_not_implicit_zero": true,
+          "explicit_rows_n": 196,
+          "first_issued_GWNO_missing_ids": [],
+          "first_issued_country_universe_n": 196,
+          "literal_zero_best_fatalities_n": 153,
+          "positive_best_fatalities_n": 43,
+          "state_based_existence_flag_1_n": 43,
+          "state_based_existence_flag_does_not_prove_UCDP_threshold_activeness": true,
+          "year": 2024,
+          "zero_best_and_existence_flag_0_n": 153,
+          "zero_best_but_existence_flag_1_n": 0,
+          "zero_best_does_not_prove_no_fatal_organized_violence": true
+        },
+        {
+          "best_deaths_1_to_24_n": 8,
+          "best_deaths_25_plus_n": 34,
+          "best_positive_but_existence_flag_0_n": 0,
+          "explicit_country_year_missing_is_not_implicit_zero": true,
+          "explicit_rows_n": 196,
+          "first_issued_GWNO_missing_ids": [],
+          "first_issued_country_universe_n": 196,
+          "literal_zero_best_fatalities_n": 154,
+          "positive_best_fatalities_n": 42,
+          "state_based_existence_flag_1_n": 42,
+          "state_based_existence_flag_does_not_prove_UCDP_threshold_activeness": true,
+          "year": 2025,
+          "zero_best_and_existence_flag_0_n": 154,
+          "zero_best_but_existence_flag_1_n": 0,
+          "zero_best_does_not_prove_no_fatal_organized_violence": true
+        }
+      ],
+      "historical_country_coverage_by_year": [
+        {
+          "all_GWNO_source_rows": 172,
+          "fixed_196_GWNO_rows": 169,
+          "year": 1989
+        },
+        {
+          "all_GWNO_source_rows": 173,
+          "fixed_196_GWNO_rows": 170,
+          "year": 1990
+        },
+        {
+          "all_GWNO_source_rows": 186,
+          "fixed_196_GWNO_rows": 185,
+          "year": 1991
+        },
+        {
+          "all_GWNO_source_rows": 189,
+          "fixed_196_GWNO_rows": 188,
+          "year": 1992
+        },
+        {
+          "all_GWNO_source_rows": 191,
+          "fixed_196_GWNO_rows": 191,
+          "year": 1993
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1994
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1995
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1996
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1997
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1998
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 1999
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 2000
+        },
+        {
+          "all_GWNO_source_rows": 192,
+          "fixed_196_GWNO_rows": 192,
+          "year": 2001
+        },
+        {
+          "all_GWNO_source_rows": 193,
+          "fixed_196_GWNO_rows": 193,
+          "year": 2002
+        },
+        {
+          "all_GWNO_source_rows": 193,
+          "fixed_196_GWNO_rows": 193,
+          "year": 2003
+        },
+        {
+          "all_GWNO_source_rows": 193,
+          "fixed_196_GWNO_rows": 193,
+          "year": 2004
+        },
+        {
+          "all_GWNO_source_rows": 193,
+          "fixed_196_GWNO_rows": 193,
+          "year": 2005
+        },
+        {
+          "all_GWNO_source_rows": 194,
+          "fixed_196_GWNO_rows": 194,
+          "year": 2006
+        },
+        {
+          "all_GWNO_source_rows": 194,
+          "fixed_196_GWNO_rows": 194,
+          "year": 2007
+        },
+        {
+          "all_GWNO_source_rows": 195,
+          "fixed_196_GWNO_rows": 195,
+          "year": 2008
+        },
+        {
+          "all_GWNO_source_rows": 195,
+          "fixed_196_GWNO_rows": 195,
+          "year": 2009
+        },
+        {
+          "all_GWNO_source_rows": 195,
+          "fixed_196_GWNO_rows": 195,
+          "year": 2010
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2011
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2012
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2013
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2014
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2015
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2016
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2017
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2018
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2019
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2020
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2021
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2022
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2023
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2024
+        },
+        {
+          "all_GWNO_source_rows": 196,
+          "fixed_196_GWNO_rows": 196,
+          "year": 2025
+        }
+      ],
+      "source_archive_sha256": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34",
+      "source_last_year": 2025,
+      "source_years_with_incomplete_original_196": 22,
+      "total_annotated_flags": 7132,
+      "total_verified_country_year_rows": 7132
+    }
+  },
+  "schema": "idealab.psico.geo2027_ucdp_zero_coding_country_coverage_v1",
+  "status": "OFFICIAL_SOURCE_SEMANTICS_AND_FIRST_ISSUED_COUNTRY_COVERAGE_NOT_2027_OUTCOME",
+  "year_2025_coded_zero_country_n": 154,
+  "year_2025_coded_zero_with_sb_exist_1_n": 0,
+  "year_2025_explicit_country_year_rows_n": 196
+}

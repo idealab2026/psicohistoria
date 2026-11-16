@@ -1,0 +1,34 @@
+name: GEO2027 official UCDP coded-zero vs state-based existence audit
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_geo2027_ucdp_zero_coding.py'
+      - 'scripts/test_audit_geo2027_ucdp_zero_coding.py'
+      - 'docs/geo2027-ucdp-zero-coding-riskset-audit.md'
+      - 'data/geo2027-ucdp-zero-coding-riskset-audit.json'
+      - '.github/workflows/geo2027-ucdp-zero-coding-riskset.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_geo2027_ucdp_zero_coding.py'
+      - 'scripts/test_audit_geo2027_ucdp_zero_coding.py'
+      - 'docs/geo2027-ucdp-zero-coding-riskset-audit.md'
+      - 'data/geo2027-ucdp-zero-coding-riskset-audit.json'
+      - '.github/workflows/geo2027-ucdp-zero-coding-riskset.yml'
+permissions:
+  contents: read
+jobs:
+  geo2027_ucdp_zero_coding_riskset:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test official source zero coding, existence flag meaning, missing explicit country rows and old XLSX parsing
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_audit_geo2027_ucdp_zero_coding.py' -v
+      - name: Replay four official SHA pinned UCDP XLSX ZIP releases for 196 GWNO presence and explicit coded zero
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_geo2027_ucdp_zero_coding.py --check-report

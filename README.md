@@ -4,6 +4,25 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Auditoría de interpretación oficial: «cero codificado» no significa «sin violencia» (16-11-2026)
+
+**Resultado científico relevante del manual oficial UCDP OrganizedViolenceCY 26.1:** la etiqueta del laboratorio se refiere a **`sb_total_deaths_best >=25` según UCDP**, no a la existencia de cualquier guerra, ataque ni víctimas reales. **Un cero codificado de fallecidos no prueba ausencia de violencia**: el conjunto omite incidentes de díadas/actores aún no incluidos bajo sus reglas de umbral. El campo `sb_exist` indica existencia de algún evento estatal recogido, y **no es equivalente** al recuento de muertes ni al estado «≥25» del modelo.
+
+He contrastado las **cuatro fuentes oficiales 23.1/24.1/25.1/26.1 por SHA** (6.544 / 6.740 / 6.936 / 7.132 filas) con la columna de existencia estatal y las 196 claves GWNO congeladas. **Desde 2011 las cuatro series contienen filas explícitas de los 196 estados de la cohorte 2027**; antes de ese año no deben fabricarse países que aún no existían.
+
+| Último año de cada edición | Filas expresas de la cohorte | Cero muertes codificadas | 1–24 | ≥25 | Ceros con `sb_exist=1` |
+|---|---:|---:|---:|---:|---:|
+| 2022 · 23.1 | 196 | 145 | 14 | 37 | 0 |
+| 2023 · 24.1 | 196 | 150 | 12 | 34 | **1** |
+| 2024 · 25.1 | 196 | 153 | 8 | 35 | 0 |
+| **2025 · 26.1** | **196** | **154** | **8** | **34** | **0** |
+
+En 2023 hay un caso real **`sb_total_deaths_best=0` y `sb_exist=1`** (persistente en las ediciones posteriores). Para 2022, una revisión de UCDP 23.1→26.1 cambia la clasificación de cero codificado de **un país** y la bandera `sb_exist` de **dos**. Las ediciones se solapan y **no son muestras independientes**.
+
+**Implicación práctica:** el requisito 196/196 de la evaluación futura tiene precedente histórico desde 2011, pero **la primera edición oficial completa de 2027 aún debe verificarse**. Si falta una fila, el programa no puede convertirla a cero. Se mantiene el mismo objetivo, las tres emisiones de 196 países y las 15 alertas SHA-congeladas. **Ningún resultado oficial 2027 está disponible ni se ha reemitido ningún pronóstico.**
+
+[Informe de auditoría y referencia oficial](docs/geo2027-ucdp-zero-coding-riskset-audit.md) · [Verificación de los cuatro datasets por edición y año](data/geo2027-ucdp-zero-coding-riskset-audit.json) · [Script y pruebas](scripts/audit_geo2027_ucdp_zero_coding.py).
+
 ## GEO2027 · Puerta de resolución oficial y evaluación prospectiva verificable (16-11-2026)
 
 **Estado certificado: `NOT_READY`.** Las tres emisiones ya registradas sobre los **196 países** para 2027 (GEO original, primera sombra LOG1P y global-only matched α0/α1) permanecen **inmutables y sin resultados oficiales**. El nuevo programa **no emite otro modelo**: prepara y prueba cómo se puntuará exactamente la primera edición **oficial y completa** de UCDP OrganizedViolenceCY correspondiente a 2027.
