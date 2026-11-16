@@ -4,6 +4,14 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Causa de la revisión histórica de Indonesia (16-11-2026)
+
+**Nuevo resultado reproducido en tres pares oficiales de ediciones UCDP:** para un **origen retrospectivo fijo 2022**, la probabilidad modelizada de Indonesia de estar por encima del umbral de 25 muertes estatales dos pasos después pasó de **65,7575 % (23.1)** a **71,2182 % (26.1)**, +**5,4606 pp**. La atribución Shapley de los conteos de Markov da **+5,4183 pp por revisar la historia de Indonesia** y **+0,0423 pp por revisar las transiciones de los demás países**. En Indonesia, UCDP cambió las etiquetas binarias de **2019 y 2020**, ambas de 0→1; el estado de origen 2022 permanece idéntico. Kirguistán no presenta revisiones nacionales en ese horizonte y cambia +0,2564 pp solo por el ajuste global.
+
+La separación evita contar dos veces el peso de Indonesia en el prior mundial (`global = Indonesia + demás países`). Es **atribución algebraica de datos revisados**, no causalidad, no una nueva predicción 2027 y no una evaluación prospectiva. Ninguna de las 196 probabilidades ni las 15 alertas originales cambia. Cero resultados certificados de 2027.
+
+Fuentes SHA-pinned, tabla de resultados y límites: [informe de atribución](docs/geo2027-indonesia-vintage-revision-attribution.md). Archivo reproducible `data/geo2027-indonesia-vintage-revision-attribution.json`; código `scripts/diagnose_geo2027_indonesia_vintage_attribution.py`; pruebas `scripts/test_diagnose_geo2027_indonesia_vintage_attribution.py`. GitHub Actions exige el resultado byte a byte antes de desplegar.
+
 ## GEO2027 · Cambios reales de listas históricas entre ediciones UCDP (16-11-2026)
 
 Estudio retrospectivo reproducible de **seis comparaciones de ediciones oficiales UCDP 23.1–26.1** al **mismo año de origen**, idéntico modelo Markov H2 y presupuestos top-10 de entrada/top-5 de resolución. Entre las seis comparaciones no cambia ningún top-10 de entradas. **Dos pares correlacionados**, ambos con origen 2022 (23.1→25.1 y 23.1→26.1), muestran el **mismo intercambio inequívoco** en el top-5 de resolución: sale Indonesia (GWNO 850) y entra Kirguistán (GWNO 703). Los otros cuatro pares no cambian su top-5; no hubo empates de frontera ni revisión de estado en el origen.

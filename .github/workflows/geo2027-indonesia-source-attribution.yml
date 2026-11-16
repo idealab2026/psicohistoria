@@ -1,0 +1,28 @@
+name: GEO2027 Indonesia UCDP vintage source attribution
+on:
+  pull_request:
+    paths:
+      - 'scripts/diagnose_geo2027_indonesia_vintage_attribution.py'
+      - 'scripts/test_diagnose_geo2027_indonesia_vintage_attribution.py'
+      - 'data/geo2027-indonesia-vintage-revision-attribution.json'
+      - '.github/workflows/geo2027-indonesia-source-attribution.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/diagnose_geo2027_indonesia_vintage_attribution.py'
+      - 'scripts/test_diagnose_geo2027_indonesia_vintage_attribution.py'
+      - 'data/geo2027-indonesia-vintage-revision-attribution.json'
+      - '.github/workflows/geo2027-indonesia-source-attribution.yml'
+permissions:
+  contents: read
+jobs:
+  geo2027_indonesia_source_attribution:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Run no-leakage tests and exact two-factor Shapley identity
+        run: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_diagnose_geo2027_indonesia_vintage_attribution.py' -v
+      - name: Reconstruct local/global H2 effects from four official SHA-pinned UCDP archives
+        run: PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_indonesia_vintage_attribution.py --check-report
