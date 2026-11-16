@@ -108,6 +108,19 @@ class RollingH2YearVintageTests(unittest.TestCase):
         self.assertEqual([r["outcome"] for r in base[2019]],
                          [r["outcome"] for r in changed[2019]])
 
+    def test_historical_missing_country_year_excluded_not_scored_as_negative(self):
+        source=copy.deepcopy(self.original)
+        missing=self.ids[0]
+        source[missing].pop(2015)
+        ledger=historical_ledger(source,2022,self.ids)
+        self.assertEqual(len(ledger[2017]),195)
+        self.assertNotIn(missing,[r["country_id"] for r in ledger[2017]])
+        beta,meta=fit_target(ledger,2017)
+        scores_by_alpha,base=year_scores(ledger[2017],beta)
+        self.assertEqual(len(scores_by_alpha),5)
+        self.assertEqual(meta["max_supervised_training_label_year"],2015)
+        self.assertTrue(0<base["brier"]<1)
+
     def test_empty_risk_cohort_fail_closed(self):
         bad=copy.deepcopy(self.original)
         bad.pop(self.ids[0])
