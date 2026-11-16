@@ -2,6 +2,16 @@
 
 **Protocolo de emisión, 16 de noviembre de 2026.** Variante adicional **separada** del pronóstico GEO2027 emitido el 10/11/2026, de la cohorte original de 15 alertas de transición y de la sombra de calibración anteriormente emitida. Nada se sustituye. Los resultados oficiales de 2027 todavía no están disponibles.
 
+## Primera emisión efectiva registrada en GitHub
+
+- **Primer commit público del archivo completo de 196 probabilidades:** [`a2af84346bd223d2a105cf727b3462cd0955fdac`](https://github.com/idealab2026/psicohistoria/commit/a2af84346bd223d2a105cf727b3462cd0955fdac), fechado por GitHub el **16/11/2026 a las 11:34:38 UTC**. Esta marca temporal es metadato público de GitHub, **no una notarización criptográfica independiente**.
+- **SHA-256 íntegro del archivo canónico:** `52686923315854557a796f8f192d376dab77a4e03b14c1aeb6b4091e48104f90`. Está fijado en el manifiesto y como constante de auditoría independiente; la reproducción desde el ZIP UCDP oficial debe coincidir **byte a byte**.
+- **196 países originales**, mismos estados de origen 2025, mismo objetivo binario 2027. El archivo incluye, por país, probabilidad GEO original, control intercepto y sombra LOG1P, además de muertes oficiales 2025.
+- **Modelo final:** ridge λ=**5**, seleccionado por validación interna 2018–2020, refit en **2.742 observaciones país-año** con objetivos 2012–2025. Coeficientes `[β₀, β_inactivo, β_activo] = [-0,337793886776; 1,185261838805; 1,934189190903]`. No se utilizaron resultados oficiales 2026/2027.
+- **Suma de probabilidades para 2027:** GEO original **33,6254** países activos esperados, control intercepto **34,8377**, sombra LOG1P **35,9840**. Son sumas de probabilidades, **no** una observación de 36 países, una predicción del número exacto, ni un intervalo de riesgo agregado.
+
+Ninguna de esas 196 probabilidades se modificará ante nuevas cifras históricas o una evaluación posterior; cualquier revisión exige nuevo identificador y nuevo registro. La fórmula fue seleccionada tras haber visto retrospectivamente 2024/2025, pero los **resultados oficiales de 2027 seguían sin conocerse al emitir** este archivo.
+
 ## Qué se fija, y qué significa «prospectivo»
 
 Este estudio tiene **dos niveles de evidencia distintos**:
