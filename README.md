@@ -4,6 +4,24 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Calibrador LOG1P reentrenado con Markov global-only emparejado (16-11-2026)
+
+**Corregido el desajuste de distribución de la PR #98:** las probabilidades del Markov H2 global-only del país evaluado ya no se pasan a una regresión LOG1P aprendida sobre offsets locales. En la nueva PR se **excluyen todas las etiquetas históricas del país y sus transiciones del prior global**, y para cada fila de aprendizaje de otro país se excluyen además las transiciones de ese país de su propio prior. Los coeficientes de LOG1P se reentrenan con esos offsets global-only, respetando el corte H2 de etiquetas **t−2** y features **t−4**.
+
+Las cuatro fuentes oficiales SHA-verificadas reconstruyen **143 pronósticos por país excluido**, en 13 bloques año–edición y 9 años distintos.
+
+| Año UCDP 26.1 | Brier α1 subumbral, global-only **sin recalibrar** | Brier α1 subumbral, global-only **matched** | ΔBrier anual α1−α0 matched |
+|---|---:|---:|---:|
+| 2017 | **0,20059** | 0,20087 | −0,000044 |
+| 2024 | 0,10896 | **0,09508** | **−0,002242** |
+| 2025 | **0,07964** | 0,08705 | +0,000531 |
+
+La calibración emparejada baja el Brier de α1 en **7 de 9 años (2018–2024)** y lo eleva en **2017 y 2025**. Ninguno de los 13 bloques revisados invierte el signo de α1−α0 respecto al **global-only no emparejado**. En 2017 el global-only sigue favoreciendo α1; al conservar el Markov original con historia nacional el signo era el contrario. La mejora **no es uniforme ni demuestra superioridad prospectiva**.
+
+**Limitación:** las cifras de Brier absoluto se refieren **solo a los países con 1–24 muertes al origen**, no a un backtest cruzado de todos los 196 países. La familia λ=5 y los alfas se fijaron en investigaciones que ya habían examinado históricos; las cuatro ediciones UCDP no son réplicas independientes. **No hay un modelo ganador ni emisión nueva**; permanecen SHA idénticas las 196 GEO originales, las 196 LOG1P y las 15 alertas de 2027, sin outcomes oficiales resueltos.
+
+[Documento metodológico y resultados anuales](docs/geo2027-log1p-matched-global-only-calibration.md) · [Informe completo de los 143 casos](data/geo2027-log1p-matched-global-only-calibration.json) · [Código y reproducción](scripts/experiment_geo2027_log1p_matched_global_only.py) · tests y CI institucional.
+
 ## GEO2027 · Influencia del historial nacional Markov frente al prior mundial (16-11-2026)
 
 **Resultado del siguiente experimento sobre los 143 países-bloque subumbrales ya evaluados:** se mantienen fijos los coeficientes de calibración LOG1P aprendidos *sin ninguna etiqueta histórica del país evaluado*, pero se comparan tres probabilidades Markov H2 calculadas al origen: (1) original global + local; (2) prior global sin el país, con su propia historia local; (3) prior global sin el país **y sin sus transiciones locales**, aunque el estado del país en el origen sigue siendo conocido.
