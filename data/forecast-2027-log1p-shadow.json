@@ -1,0 +1,1899 @@
+{
+  "countries": [
+    {
+      "country": "United States of America",
+      "country_id": 2,
+      "intercept_only_control_p_active_2027": 0.056312482299,
+      "log1p_shadow_p_active_2027": 0.037020228461,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.05113613046
+    },
+    {
+      "country": "Canada",
+      "country_id": 20,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Bahamas",
+      "country_id": 31,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Cuba",
+      "country_id": 40,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Haiti",
+      "country_id": 41,
+      "intercept_only_control_p_active_2027": 0.59815161103,
+      "log1p_shadow_p_active_2027": 0.827530697374,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 1211,
+      "original_2027_p_active": 0.573433623875
+    },
+    {
+      "country": "Dominican Republic",
+      "country_id": 42,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Jamaica",
+      "country_id": 51,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "country_id": 52,
+      "intercept_only_control_p_active_2027": 0.056312482299,
+      "log1p_shadow_p_active_2027": 0.037020228461,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.05113613046
+    },
+    {
+      "country": "Barbados",
+      "country_id": 53,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Dominica",
+      "country_id": 54,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Grenada",
+      "country_id": 55,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Saint Lucia",
+      "country_id": 56,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Saint Vincent and the Grenadines",
+      "country_id": 57,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Antigua & Barbuda",
+      "country_id": 58,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Saint Kitts and Nevis",
+      "country_id": 60,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Mexico",
+      "country_id": 70,
+      "intercept_only_control_p_active_2027": 0.090335800663,
+      "log1p_shadow_p_active_2027": 0.060130110314,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.082304727197
+    },
+    {
+      "country": "Belize",
+      "country_id": 80,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Guatemala",
+      "country_id": 90,
+      "intercept_only_control_p_active_2027": 0.024168304843,
+      "log1p_shadow_p_active_2027": 0.015705145135,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.021878205447
+    },
+    {
+      "country": "Honduras",
+      "country_id": 91,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "El Salvador",
+      "country_id": 92,
+      "intercept_only_control_p_active_2027": 0.022037922384,
+      "log1p_shadow_p_active_2027": 0.014309831778,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.019945564095
+    },
+    {
+      "country": "Nicaragua",
+      "country_id": 93,
+      "intercept_only_control_p_active_2027": 0.021536354243,
+      "log1p_shadow_p_active_2027": 0.013981635137,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.019490667533
+    },
+    {
+      "country": "Costa Rica",
+      "country_id": 94,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Panama",
+      "country_id": 95,
+      "intercept_only_control_p_active_2027": 0.02104384455,
+      "log1p_shadow_p_active_2027": 0.013659480644,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.019044029623
+    },
+    {
+      "country": "Colombia",
+      "country_id": 100,
+      "intercept_only_control_p_active_2027": 0.903063046603,
+      "log1p_shadow_p_active_2027": 0.944173163141,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 307,
+      "original_2027_p_active": 0.893769476037
+    },
+    {
+      "country": "Venezuela",
+      "country_id": 101,
+      "intercept_only_control_p_active_2027": 0.056312482299,
+      "log1p_shadow_p_active_2027": 0.037020228461,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.05113613046
+    },
+    {
+      "country": "Guyana",
+      "country_id": 110,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Suriname",
+      "country_id": 115,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Ecuador",
+      "country_id": 130,
+      "intercept_only_control_p_active_2027": 0.056312482299,
+      "log1p_shadow_p_active_2027": 0.037020228461,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.05113613046
+    },
+    {
+      "country": "Peru",
+      "country_id": 135,
+      "intercept_only_control_p_active_2027": 0.077078219232,
+      "log1p_shadow_p_active_2027": 0.051056674192,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.070134904942
+    },
+    {
+      "country": "Brazil",
+      "country_id": 140,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Bolivia",
+      "country_id": 145,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Paraguay",
+      "country_id": 150,
+      "intercept_only_control_p_active_2027": 0.02104384455,
+      "log1p_shadow_p_active_2027": 0.013659480644,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.019044029623
+    },
+    {
+      "country": "Chile",
+      "country_id": 155,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Argentina",
+      "country_id": 160,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Uruguay",
+      "country_id": 165,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "United Kingdom",
+      "country_id": 200,
+      "intercept_only_control_p_active_2027": 0.058912795676,
+      "log1p_shadow_p_active_2027": 0.03876628876,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.053510971771
+    },
+    {
+      "country": "Ireland",
+      "country_id": 205,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Netherlands",
+      "country_id": 210,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Belgium",
+      "country_id": 211,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Luxembourg",
+      "country_id": 212,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "France",
+      "country_id": 220,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Monaco",
+      "country_id": 221,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Liechtenstein",
+      "country_id": 223,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Switzerland",
+      "country_id": 225,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Spain",
+      "country_id": 230,
+      "intercept_only_control_p_active_2027": 0.056312482299,
+      "log1p_shadow_p_active_2027": 0.037020228461,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.05113613046
+    },
+    {
+      "country": "Andorra",
+      "country_id": 232,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Portugal",
+      "country_id": 235,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Germany",
+      "country_id": 260,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Poland",
+      "country_id": 290,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Austria",
+      "country_id": 305,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Hungary",
+      "country_id": 310,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Czech Republic",
+      "country_id": 316,
+      "intercept_only_control_p_active_2027": 0.022745646328,
+      "log1p_shadow_p_active_2027": 0.014773125488,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.020587508751
+    },
+    {
+      "country": "Slovakia",
+      "country_id": 317,
+      "intercept_only_control_p_active_2027": 0.022745646328,
+      "log1p_shadow_p_active_2027": 0.014773125488,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.020587508751
+    },
+    {
+      "country": "Italy",
+      "country_id": 325,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Vatican City State",
+      "country_id": 327,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "San Marino",
+      "country_id": 331,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Malta",
+      "country_id": 338,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Albania",
+      "country_id": 339,
+      "intercept_only_control_p_active_2027": 0.056312482299,
+      "log1p_shadow_p_active_2027": 0.037020228461,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.05113613046
+    },
+    {
+      "country": "Montenegro",
+      "country_id": 341,
+      "intercept_only_control_p_active_2027": 0.03024358465,
+      "log1p_shadow_p_active_2027": 0.019695947176,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.027393974646
+    },
+    {
+      "country": "North Macedonia",
+      "country_id": 343,
+      "intercept_only_control_p_active_2027": 0.058389899967,
+      "log1p_shadow_p_active_2027": 0.03841490937,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.053033319471
+    },
+    {
+      "country": "Croatia",
+      "country_id": 344,
+      "intercept_only_control_p_active_2027": 0.060892473435,
+      "log1p_shadow_p_active_2027": 0.040097818146,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.055319799476
+    },
+    {
+      "country": "Serbia (Yugoslavia)",
+      "country_id": 345,
+      "intercept_only_control_p_active_2027": 0.094724056285,
+      "log1p_shadow_p_active_2027": 0.063152926541,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.086339884657
+    },
+    {
+      "country": "Bosnia-Herzegovina",
+      "country_id": 346,
+      "intercept_only_control_p_active_2027": 0.023918661338,
+      "log1p_shadow_p_active_2027": 0.015541528511,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.021651692377
+    },
+    {
+      "country": "Kosovo",
+      "country_id": 347,
+      "intercept_only_control_p_active_2027": 0.031859271406,
+      "log1p_shadow_p_active_2027": 0.020760215973,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.028861958994
+    },
+    {
+      "country": "Slovenia",
+      "country_id": 349,
+      "intercept_only_control_p_active_2027": 0.022319984296,
+      "log1p_shadow_p_active_2027": 0.014494448341,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.020201399235
+    },
+    {
+      "country": "Greece",
+      "country_id": 350,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Cyprus",
+      "country_id": 352,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Bulgaria",
+      "country_id": 355,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Moldova",
+      "country_id": 359,
+      "intercept_only_control_p_active_2027": 0.058389899967,
+      "log1p_shadow_p_active_2027": 0.03841490937,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.053033319471
+    },
+    {
+      "country": "Romania",
+      "country_id": 360,
+      "intercept_only_control_p_active_2027": 0.02104384455,
+      "log1p_shadow_p_active_2027": 0.013659480644,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.019044029623
+    },
+    {
+      "country": "Russia (Soviet Union)",
+      "country_id": 365,
+      "intercept_only_control_p_active_2027": 0.812835706433,
+      "log1p_shadow_p_active_2027": 0.960166324443,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 4431,
+      "original_2027_p_active": 0.796837890613
+    },
+    {
+      "country": "Estonia",
+      "country_id": 366,
+      "intercept_only_control_p_active_2027": 0.021909960722,
+      "log1p_shadow_p_active_2027": 0.014226089989,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.019829505225
+    },
+    {
+      "country": "Latvia",
+      "country_id": 367,
+      "intercept_only_control_p_active_2027": 0.021909960722,
+      "log1p_shadow_p_active_2027": 0.014226089989,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.019829505225
+    },
+    {
+      "country": "Lithuania",
+      "country_id": 368,
+      "intercept_only_control_p_active_2027": 0.021909960722,
+      "log1p_shadow_p_active_2027": 0.014226089989,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.019829505225
+    },
+    {
+      "country": "Ukraine",
+      "country_id": 369,
+      "intercept_only_control_p_active_2027": 0.82832446429,
+      "log1p_shadow_p_active_2027": 0.98955409154,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 90323,
+      "original_2027_p_active": 0.813346535943
+    },
+    {
+      "country": "Belarus",
+      "country_id": 370,
+      "intercept_only_control_p_active_2027": 0.021909960722,
+      "log1p_shadow_p_active_2027": 0.014226089989,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.019829505225
+    },
+    {
+      "country": "Armenia",
+      "country_id": 371,
+      "intercept_only_control_p_active_2027": 0.098365296903,
+      "log1p_shadow_p_active_2027": 0.065668592085,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.089690764734
+    },
+    {
+      "country": "Georgia",
+      "country_id": 372,
+      "intercept_only_control_p_active_2027": 0.0984894089,
+      "log1p_shadow_p_active_2027": 0.065754457794,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.089805021831
+    },
+    {
+      "country": "Azerbaijan",
+      "country_id": 373,
+      "intercept_only_control_p_active_2027": 0.216319257558,
+      "log1p_shadow_p_active_2027": 0.150979993389,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.199544842021
+    },
+    {
+      "country": "Finland",
+      "country_id": 375,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Sweden",
+      "country_id": 380,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Norway",
+      "country_id": 385,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Denmark",
+      "country_id": 390,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Iceland",
+      "country_id": 395,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Cape Verde",
+      "country_id": 402,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Sao Tome and Principe",
+      "country_id": 403,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Guinea-Bissau",
+      "country_id": 404,
+      "intercept_only_control_p_active_2027": 0.057617816511,
+      "log1p_shadow_p_active_2027": 0.037896322955,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.052328129301
+    },
+    {
+      "country": "Equatorial Guinea",
+      "country_id": 411,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Gambia",
+      "country_id": 420,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Mali",
+      "country_id": 432,
+      "intercept_only_control_p_active_2027": 0.756688717874,
+      "log1p_shadow_p_active_2027": 0.913151503464,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 1357,
+      "original_2027_p_active": 0.737441950264
+    },
+    {
+      "country": "Senegal",
+      "country_id": 433,
+      "intercept_only_control_p_active_2027": 0.259549522816,
+      "log1p_shadow_p_active_2027": 0.184222063163,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.240451385272
+    },
+    {
+      "country": "Benin",
+      "country_id": 434,
+      "intercept_only_control_p_active_2027": 0.7706928753,
+      "log1p_shadow_p_active_2027": 0.818619842179,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 149,
+      "original_2027_p_active": 0.752191097798
+    },
+    {
+      "country": "Mauritania",
+      "country_id": 435,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Niger",
+      "country_id": 436,
+      "intercept_only_control_p_active_2027": 0.678454575413,
+      "log1p_shadow_p_active_2027": 0.845767108355,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 724,
+      "original_2027_p_active": 0.655833983393
+    },
+    {
+      "country": "Ivory Coast",
+      "country_id": 437,
+      "intercept_only_control_p_active_2027": 0.094724056285,
+      "log1p_shadow_p_active_2027": 0.063152926541,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.086339884657
+    },
+    {
+      "country": "Guinea",
+      "country_id": 438,
+      "intercept_only_control_p_active_2027": 0.057617816511,
+      "log1p_shadow_p_active_2027": 0.037896322955,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.052328129301
+    },
+    {
+      "country": "Burkina Faso",
+      "country_id": 439,
+      "intercept_only_control_p_active_2027": 0.803471173845,
+      "log1p_shadow_p_active_2027": 0.950868817048,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 3031,
+      "original_2027_p_active": 0.786882791984
+    },
+    {
+      "country": "Liberia",
+      "country_id": 450,
+      "intercept_only_control_p_active_2027": 0.06178029529,
+      "log1p_shadow_p_active_2027": 0.040695589157,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.056131227274
+    },
+    {
+      "country": "Sierra Leone",
+      "country_id": 451,
+      "intercept_only_control_p_active_2027": 0.070921913576,
+      "log1p_shadow_p_active_2027": 0.046873176842,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.064494414307
+    },
+    {
+      "country": "Ghana",
+      "country_id": 452,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Togo",
+      "country_id": 461,
+      "intercept_only_control_p_active_2027": 0.7706928753,
+      "log1p_shadow_p_active_2027": 0.766313888339,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 69,
+      "original_2027_p_active": 0.752191097798
+    },
+    {
+      "country": "Cameroon",
+      "country_id": 471,
+      "intercept_only_control_p_active_2027": 0.785070076792,
+      "log1p_shadow_p_active_2027": 0.856801961842,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 240,
+      "original_2027_p_active": 0.767378193999
+    },
+    {
+      "country": "Nigeria",
+      "country_id": 475,
+      "intercept_only_control_p_active_2027": 0.767819478191,
+      "log1p_shadow_p_active_2027": 0.927380055341,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 1864,
+      "original_2027_p_active": 0.749161316888
+    },
+    {
+      "country": "Gabon",
+      "country_id": 481,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Central African Republic",
+      "country_id": 482,
+      "intercept_only_control_p_active_2027": 0.743734712297,
+      "log1p_shadow_p_active_2027": 0.814061988846,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 197,
+      "original_2027_p_active": 0.723837217115
+    },
+    {
+      "country": "Chad",
+      "country_id": 483,
+      "intercept_only_control_p_active_2027": 0.238680873287,
+      "log1p_shadow_p_active_2027": 0.375240916534,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 19,
+      "original_2027_p_active": 0.220660681382
+    },
+    {
+      "country": "Congo",
+      "country_id": 484,
+      "intercept_only_control_p_active_2027": 0.163347240606,
+      "log1p_shadow_p_active_2027": 0.111727079409,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.149894844129
+    },
+    {
+      "country": "DR Congo (Zaire)",
+      "country_id": 490,
+      "intercept_only_control_p_active_2027": 0.853872968405,
+      "log1p_shadow_p_active_2027": 0.970343063196,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 4525,
+      "original_2027_p_active": 0.840695350111
+    },
+    {
+      "country": "Uganda",
+      "country_id": 500,
+      "intercept_only_control_p_active_2027": 0.135347231287,
+      "log1p_shadow_p_active_2027": 0.153335442355,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 4,
+      "original_2027_p_active": 0.123859390909
+    },
+    {
+      "country": "Kenya",
+      "country_id": 501,
+      "intercept_only_control_p_active_2027": 0.838374667,
+      "log1p_shadow_p_active_2027": 0.807896273005,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 44,
+      "original_2027_p_active": 0.824087359198
+    },
+    {
+      "country": "Tanzania",
+      "country_id": 510,
+      "intercept_only_control_p_active_2027": 0.056312482299,
+      "log1p_shadow_p_active_2027": 0.037020228461,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.05113613046
+    },
+    {
+      "country": "Burundi",
+      "country_id": 516,
+      "intercept_only_control_p_active_2027": 0.312139507337,
+      "log1p_shadow_p_active_2027": 0.22621207819,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.290690880667
+    },
+    {
+      "country": "Rwanda",
+      "country_id": 517,
+      "intercept_only_control_p_active_2027": 0.142650562202,
+      "log1p_shadow_p_active_2027": 0.178691987521,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 6,
+      "original_2027_p_active": 0.13063649383
+    },
+    {
+      "country": "Somalia",
+      "country_id": 520,
+      "intercept_only_control_p_active_2027": 0.827461409585,
+      "log1p_shadow_p_active_2027": 0.958163363975,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 3095,
+      "original_2027_p_active": 0.812425234772
+    },
+    {
+      "country": "Djibouti",
+      "country_id": 522,
+      "intercept_only_control_p_active_2027": 0.135920836308,
+      "log1p_shadow_p_active_2027": 0.092014618675,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.124391314236
+    },
+    {
+      "country": "Ethiopia",
+      "country_id": 530,
+      "intercept_only_control_p_active_2027": 0.841495781653,
+      "log1p_shadow_p_active_2027": 0.966871989406,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 4331,
+      "original_2027_p_active": 0.827427581633
+    },
+    {
+      "country": "Eritrea",
+      "country_id": 531,
+      "intercept_only_control_p_active_2027": 0.143531371083,
+      "log1p_shadow_p_active_2027": 0.097443979124,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.131454494821
+    },
+    {
+      "country": "Angola",
+      "country_id": 540,
+      "intercept_only_control_p_active_2027": 0.704589600864,
+      "log1p_shadow_p_active_2027": 0.605768805099,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 25,
+      "original_2027_p_active": 0.682948398486
+    },
+    {
+      "country": "Mozambique",
+      "country_id": 541,
+      "intercept_only_control_p_active_2027": 0.709830373622,
+      "log1p_shadow_p_active_2027": 0.813913436819,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 296,
+      "original_2027_p_active": 0.688403312046
+    },
+    {
+      "country": "Zambia",
+      "country_id": 551,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Zimbabwe (Rhodesia)",
+      "country_id": 552,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Malawi",
+      "country_id": 553,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "South Africa",
+      "country_id": 560,
+      "intercept_only_control_p_active_2027": 0.02104384455,
+      "log1p_shadow_p_active_2027": 0.013659480644,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.019044029623
+    },
+    {
+      "country": "Namibia",
+      "country_id": 565,
+      "intercept_only_control_p_active_2027": 0.057332384029,
+      "log1p_shadow_p_active_2027": 0.037704679736,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.052067453538
+    },
+    {
+      "country": "Lesotho",
+      "country_id": 570,
+      "intercept_only_control_p_active_2027": 0.056312482299,
+      "log1p_shadow_p_active_2027": 0.037020228461,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.05113613046
+    },
+    {
+      "country": "Botswana",
+      "country_id": 571,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Kingdom of eSwatini (Swaziland)",
+      "country_id": 572,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Madagascar (Malagasy)",
+      "country_id": 580,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Comoros",
+      "country_id": 581,
+      "intercept_only_control_p_active_2027": 0.056157787755,
+      "log1p_shadow_p_active_2027": 0.036916457943,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.050994887327
+    },
+    {
+      "country": "Mauritius",
+      "country_id": 590,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Seychelles",
+      "country_id": 591,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Morocco",
+      "country_id": 600,
+      "intercept_only_control_p_active_2027": 0.02104384455,
+      "log1p_shadow_p_active_2027": 0.02866238472,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 7,
+      "original_2027_p_active": 0.019044029623
+    },
+    {
+      "country": "Algeria",
+      "country_id": 615,
+      "intercept_only_control_p_active_2027": 0.187286772047,
+      "log1p_shadow_p_active_2027": 0.129270260211,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.17226878787
+    },
+    {
+      "country": "Tunisia",
+      "country_id": 616,
+      "intercept_only_control_p_active_2027": 0.060301894455,
+      "log1p_shadow_p_active_2027": 0.039700394676,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.054780115573
+    },
+    {
+      "country": "Libya",
+      "country_id": 620,
+      "intercept_only_control_p_active_2027": 0.106571044231,
+      "log1p_shadow_p_active_2027": 0.071362626301,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.09725092476
+    },
+    {
+      "country": "Sudan",
+      "country_id": 625,
+      "intercept_only_control_p_active_2027": 0.873584863184,
+      "log1p_shadow_p_active_2027": 0.98326960376,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 12269,
+      "original_2027_p_active": 0.861897343982
+    },
+    {
+      "country": "South Sudan",
+      "country_id": 626,
+      "intercept_only_control_p_active_2027": 0.786679286298,
+      "log1p_shadow_p_active_2027": 0.865979603517,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 282,
+      "original_2027_p_active": 0.769080903038
+    },
+    {
+      "country": "Iran",
+      "country_id": 630,
+      "intercept_only_control_p_active_2027": 0.724201029178,
+      "log1p_shadow_p_active_2027": 0.895555896803,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 1249,
+      "original_2027_p_active": 0.70339172251
+    },
+    {
+      "country": "Turkey",
+      "country_id": 640,
+      "intercept_only_control_p_active_2027": 0.144118042063,
+      "log1p_shadow_p_active_2027": 0.206056922876,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 10,
+      "original_2027_p_active": 0.131999410572
+    },
+    {
+      "country": "Iraq",
+      "country_id": 645,
+      "intercept_only_control_p_active_2027": 0.903063046603,
+      "log1p_shadow_p_active_2027": 0.922450466598,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 132,
+      "original_2027_p_active": 0.893769476037
+    },
+    {
+      "country": "Egypt",
+      "country_id": 651,
+      "intercept_only_control_p_active_2027": 0.123490787475,
+      "log1p_shadow_p_active_2027": 0.130658366317,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 3,
+      "original_2027_p_active": 0.112877909769
+    },
+    {
+      "country": "Syria",
+      "country_id": 652,
+      "intercept_only_control_p_active_2027": 0.843046983701,
+      "log1p_shadow_p_active_2027": 0.933546526911,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 735,
+      "original_2027_p_active": 0.829088499059
+    },
+    {
+      "country": "Lebanon",
+      "country_id": 660,
+      "intercept_only_control_p_active_2027": 0.70514821833,
+      "log1p_shadow_p_active_2027": 0.820454761692,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 347,
+      "original_2027_p_active": 0.68352955829
+    },
+    {
+      "country": "Jordan",
+      "country_id": 663,
+      "intercept_only_control_p_active_2027": 0.056312482299,
+      "log1p_shadow_p_active_2027": 0.037020228461,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.05113613046
+    },
+    {
+      "country": "Israel",
+      "country_id": 666,
+      "intercept_only_control_p_active_2027": 0.762600041651,
+      "log1p_shadow_p_active_2027": 0.966972010653,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 14472,
+      "original_2027_p_active": 0.74366247297
+    },
+    {
+      "country": "Saudi Arabia",
+      "country_id": 670,
+      "intercept_only_control_p_active_2027": 0.132677981111,
+      "log1p_shadow_p_active_2027": 0.159045021086,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 5,
+      "original_2027_p_active": 0.121384892732
+    },
+    {
+      "country": "Yemen (North Yemen)",
+      "country_id": 678,
+      "intercept_only_control_p_active_2027": 0.818548680467,
+      "log1p_shadow_p_active_2027": 0.939386945975,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 1410,
+      "original_2027_p_active": 0.802920783246
+    },
+    {
+      "country": "Kuwait",
+      "country_id": 690,
+      "intercept_only_control_p_active_2027": 0.057617816511,
+      "log1p_shadow_p_active_2027": 0.037896322955,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.052328129301
+    },
+    {
+      "country": "Bahrain",
+      "country_id": 692,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Qatar",
+      "country_id": 694,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.027456211363,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 6,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "United Arab Emirates",
+      "country_id": 696,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Oman",
+      "country_id": 698,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Afghanistan",
+      "country_id": 700,
+      "intercept_only_control_p_active_2027": 0.903063046603,
+      "log1p_shadow_p_active_2027": 0.944101279716,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 306,
+      "original_2027_p_active": 0.893769476037
+    },
+    {
+      "country": "Turkmenistan",
+      "country_id": 701,
+      "intercept_only_control_p_active_2027": 0.021909960722,
+      "log1p_shadow_p_active_2027": 0.014226089989,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.019829505225
+    },
+    {
+      "country": "Tajikistan",
+      "country_id": 702,
+      "intercept_only_control_p_active_2027": 0.23838750049,
+      "log1p_shadow_p_active_2027": 0.167809852531,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.220383046269
+    },
+    {
+      "country": "Kyrgyzstan",
+      "country_id": 703,
+      "intercept_only_control_p_active_2027": 0.096001097534,
+      "log1p_shadow_p_active_2027": 0.064034442306,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.087514820137
+    },
+    {
+      "country": "Uzbekistan",
+      "country_id": 704,
+      "intercept_only_control_p_active_2027": 0.096001097534,
+      "log1p_shadow_p_active_2027": 0.064034442306,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.087514820137
+    },
+    {
+      "country": "Kazakhstan",
+      "country_id": 705,
+      "intercept_only_control_p_active_2027": 0.021909960722,
+      "log1p_shadow_p_active_2027": 0.014226089989,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.019829505225
+    },
+    {
+      "country": "China",
+      "country_id": 710,
+      "intercept_only_control_p_active_2027": 0.056312482299,
+      "log1p_shadow_p_active_2027": 0.037020228461,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.05113613046
+    },
+    {
+      "country": "Mongolia",
+      "country_id": 712,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Taiwan",
+      "country_id": 713,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "North Korea",
+      "country_id": 731,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "South Korea",
+      "country_id": 732,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Japan",
+      "country_id": 740,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "India",
+      "country_id": 750,
+      "intercept_only_control_p_active_2027": 0.903063046603,
+      "log1p_shadow_p_active_2027": 0.955389128216,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 540,
+      "original_2027_p_active": 0.893769476037
+    },
+    {
+      "country": "Bhutan",
+      "country_id": 760,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Pakistan",
+      "country_id": 770,
+      "intercept_only_control_p_active_2027": 0.871605486826,
+      "log1p_shadow_p_active_2027": 0.970080508609,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 3096,
+      "original_2027_p_active": 0.859764344227
+    },
+    {
+      "country": "Bangladesh",
+      "country_id": 771,
+      "intercept_only_control_p_active_2027": 0.099525593507,
+      "log1p_shadow_p_active_2027": 0.066471639081,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.090759038245
+    },
+    {
+      "country": "Myanmar (Burma)",
+      "country_id": 775,
+      "intercept_only_control_p_active_2027": 0.903063046603,
+      "log1p_shadow_p_active_2027": 0.974282859618,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 2109,
+      "original_2027_p_active": 0.893769476037
+    },
+    {
+      "country": "Sri Lanka",
+      "country_id": 780,
+      "intercept_only_control_p_active_2027": 0.135347231287,
+      "log1p_shadow_p_active_2027": 0.091606660216,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.123859390909
+    },
+    {
+      "country": "Maldives",
+      "country_id": 781,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Nepal",
+      "country_id": 790,
+      "intercept_only_control_p_active_2027": 0.070921913576,
+      "log1p_shadow_p_active_2027": 0.046873176842,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.064494414307
+    },
+    {
+      "country": "Thailand",
+      "country_id": 800,
+      "intercept_only_control_p_active_2027": 0.839807993579,
+      "log1p_shadow_p_active_2027": 0.862543858294,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 113,
+      "original_2027_p_active": 0.825621034822
+    },
+    {
+      "country": "Cambodia (Kampuchea)",
+      "country_id": 811,
+      "intercept_only_control_p_active_2027": 0.768345711963,
+      "log1p_shadow_p_active_2027": 0.8264656714,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 175,
+      "original_2027_p_active": 0.749716054465
+    },
+    {
+      "country": "Laos",
+      "country_id": 812,
+      "intercept_only_control_p_active_2027": 0.021536354243,
+      "log1p_shadow_p_active_2027": 0.013981635137,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.019490667533
+    },
+    {
+      "country": "Vietnam (North Vietnam)",
+      "country_id": 816,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Malaysia",
+      "country_id": 820,
+      "intercept_only_control_p_active_2027": 0.056312482299,
+      "log1p_shadow_p_active_2027": 0.037020228461,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.05113613046
+    },
+    {
+      "country": "Singapore",
+      "country_id": 830,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Brunei",
+      "country_id": 835,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Philippines",
+      "country_id": 840,
+      "intercept_only_control_p_active_2027": 0.903063046603,
+      "log1p_shadow_p_active_2027": 0.928672411926,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 164,
+      "original_2027_p_active": 0.893769476037
+    },
+    {
+      "country": "Indonesia",
+      "country_id": 850,
+      "intercept_only_control_p_active_2027": 0.756688717874,
+      "log1p_shadow_p_active_2027": 0.782437085512,
+      "origin_binary_state_2025": 1,
+      "origin_deaths_best_2025": 104,
+      "original_2027_p_active": 0.737441950264
+    },
+    {
+      "country": "East Timor",
+      "country_id": 860,
+      "intercept_only_control_p_active_2027": 0.027458534696,
+      "log1p_shadow_p_active_2027": 0.017864307838,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.024864609293
+    },
+    {
+      "country": "Australia",
+      "country_id": 900,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Papua New Guinea",
+      "country_id": 910,
+      "intercept_only_control_p_active_2027": 0.099283885173,
+      "log1p_shadow_p_active_2027": 0.066304294881,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.090536479797
+    },
+    {
+      "country": "New Zealand",
+      "country_id": 920,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Vanuatu",
+      "country_id": 935,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Solomon Islands",
+      "country_id": 940,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Fiji",
+      "country_id": 950,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Kiribati",
+      "country_id": 970,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Nauru",
+      "country_id": 971,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Tonga",
+      "country_id": 972,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Tuvalu",
+      "country_id": 973,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Marshall Islands",
+      "country_id": 983,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Palau",
+      "country_id": 986,
+      "intercept_only_control_p_active_2027": 0.023187858862,
+      "log1p_shadow_p_active_2027": 0.015062728234,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.020988664697
+    },
+    {
+      "country": "Federated States of Micronesia",
+      "country_id": 987,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    },
+    {
+      "country": "Samoa (Western Samoa)",
+      "country_id": 990,
+      "intercept_only_control_p_active_2027": 0.021133503961,
+      "log1p_shadow_p_active_2027": 0.013718119106,
+      "origin_binary_state_2025": 0,
+      "origin_deaths_best_2025": 0,
+      "original_2027_p_active": 0.01912533508
+    }
+  ],
+  "demonstrated_prospective_skill": false,
+  "expected_active_countries_intercept_only_sum_p": 34.8377016095,
+  "expected_active_countries_log1p_sum_p": 35.9839934635,
+  "expected_active_countries_original_sum_p": 33.6254396639,
+  "forecast_id": "PSICO-GEO2027-STATEBASED25-LOG1P-INTENSITY-SHADOW-V1",
+  "future_scoring_contract": {
+    "first_complete_2027_official_UCDP_edition_primary": true,
+    "later_editions_revisions_only": true,
+    "multiple_shadow_models_exist_exploratory_comparison_not_one_preselected_winner": true,
+    "no_IID_country_significance_from_correlated_country_outcomes": true,
+    "no_post_outcome_retraining_of_issued_shadow": true,
+    "no_subgroup_selected_after_outcomes": true,
+    "primary_metric": "paired_Brier_shadow_minus_original_on_full_196_country_cohort",
+    "secondary_metrics": [
+      "paired_logloss_shadow_minus_original",
+      "Brier_shadow_minus_intercept_control",
+      "logloss_shadow_minus_intercept_control"
+    ]
+  },
+  "issue_class": "SEPARATE_PROSPECTIVE_RESEARCH_SHADOW_NOT_ORIGINAL_2027_ISSUE",
+  "limitations": "Prepared after inspecting earlier 2024/25 historical outcomes, so historical model selection is not independently validated. Forecast 2027 is new and future-facing relative to official year-2027 outcome labels, but genuine prospective skill remains unobserved; first public GitHub commit, not preparation date, establishes issue time. Predicts >=25 state-based deaths country-year, not onsets, political changes or causal effects.",
+  "method": {
+    "active_feature": "(log1p(d)-log(26))/log(101), if d>=25, else 0",
+    "historical_holdouts_2024_2025_were_explored_before_method_selection": true,
+    "inactive_feature": "log1p(d)/log(26), if d<25, else 0",
+    "inner_fit_target_years": [
+      2012,
+      2017
+    ],
+    "inner_select_target_years": [
+      2018,
+      2020
+    ],
+    "no_2026_or_2027_label_used": true,
+    "original_GEO_H2_logit_offset_fixed": true,
+    "ridge_candidates": [
+      5.0,
+      20.0,
+      80.0
+    ],
+    "type": "logistic offset with two continuous log1p origin-death features"
+  },
+  "n_countries": 196,
+  "new_transition_alert_list_issued": false,
+  "original_2027_forecast_id": "PSICO-GEO2027-STATEBASED25-V1",
+  "original_2027_immutable_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "original_2027_issued_first_commit": "3bb3561c8d6182c30624591276c705fb76ce99dc",
+  "original_2027_probabilities_or_15_alerts_modified": false,
+  "outcomes_2027_resolved": 0,
+  "preparation_calendar_date": "2026-11-16",
+  "publication_date_claim": "NONE_GENERATION_DATE_IS_NOT_PUBLIC_GIT_COMMIT_TIMESTAMP",
+  "reissuance_of_existing_forecast": false,
+  "schema": "idealab.psico.geo2027_log1p_intensity_shadow.v1",
+  "source": {
+    "dataset": "UCDP OrganizedViolenceCY",
+    "last_observed_year": 2025,
+    "sha256": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34",
+    "version": "26.1"
+  },
+  "status": "ISSUED_PROSPECTIVE_UNRESOLVED",
+  "target": {
+    "binary_rule": "UCDP official year-2027 country-year sb_total_deaths_best >=25",
+    "evaluation_same_original_196_country_ids": true,
+    "final_metrics_require_all_196_resolved": true,
+    "horizon_years": 2,
+    "primary_first_complete_official_edition_only": true,
+    "unresolved_missing_labels_not_zero": true,
+    "year": 2027
+  },
+  "training": {
+    "candidate_lambda_validation_scores": [
+      {
+        "development_beta": [
+          -0.125765268061,
+          0.738546827629,
+          1.246400045845
+        ],
+        "lambda": 5.0,
+        "validation_brier": 0.04141226791428498,
+        "validation_logloss": 0.15272350314423225
+      },
+      {
+        "development_beta": [
+          0.013055326589,
+          0.233541567061,
+          0.542297694348
+        ],
+        "lambda": 20.0,
+        "validation_brier": 0.04349082526436683,
+        "validation_logloss": 0.16191735269685584
+      },
+      {
+        "development_beta": [
+          0.046303552375,
+          0.06280881357,
+          0.182349392987
+        ],
+        "lambda": 80.0,
+        "validation_brier": 0.04498298831220574,
+        "validation_logloss": 0.1672724554148702
+      }
+    ],
+    "final_beta_intercept_only": [
+      0.101895169806,
+      0.0,
+      0.0
+    ],
+    "final_beta_log1p": [
+      -0.337793886776,
+      1.185261838805,
+      1.934189190903
+    ],
+    "final_train_n": 2742,
+    "final_train_positives": 454,
+    "final_train_targets": [
+      2012,
+      2025
+    ],
+    "inner_fit_n": 1174,
+    "inner_fit_targets": [
+      2012,
+      2017
+    ],
+    "inner_select_targets": [
+      2018,
+      2020
+    ],
+    "inner_validation_n": 588,
+    "no_post_origin_supervised_label_used": true,
+    "selected_ridge_lambda": 5.0
+  }
+}
