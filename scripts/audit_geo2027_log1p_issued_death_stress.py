@@ -304,7 +304,7 @@ def study(issue,original,alerts):
         "perturbations_are_hypothetical_not_observed_ucdp_revision_probabilities":True,
         "ranking_mandatory_possible_assumes_independently_feasible_country_ranges":True,
         "baseline_active_count_original":round(sum(r["original_2027_p_active"] for r in rows),10),
-        "baseline_active_count_shadow":round(sum(r["log1p_shadow_issued_p_active_2027"] for r in rows),10),
+        "baseline_active_count_shadow":round(sum(r["log1p_shadow_p_active_2027"] for r in rows),10),
         "scenario_summaries":stats,
         "country_envelopes":[country_bands[r["country_id"]] for r in rows],
         "limitations":"These are hypothetical absolute best-fatality perturbations ±1,±5,±10 in 2025, clipped to preserve each country's state-based >=25 threshold and nonnegative counts. They are not estimates of source-revision distribution, probabilistic uncertainty, or achieved future skill. Original binary GEO probabilities and learned logistic coefficients stay fixed, even though real historical UCDP revisions may also affect older transition counts/coefficient fits. If 25-death threshold is crossed, these envelopes are NOT valid. TopK possible and mandatory membership only holds under independent simultaneous endpoint feasibility; actual data revisions can be correlated. No 2027 official outcomes were measured."
