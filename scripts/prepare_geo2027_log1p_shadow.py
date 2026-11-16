@@ -75,7 +75,7 @@ def build(raw,original_raw,manifest_raw,prior_raw):
     manifest=json.loads(manifest_raw)
     prior=json.loads(prior_raw)
     if (original.get("forecast_id")!="PSICO-GEO2027-STATEBASED25-V1"
-        or original.get("state")!="ISSUED_PROSPECTIVE_UNRESOLVED"
+        or original.get("state")!="PREPARED_FOR_PUBLIC_GIT_COMMIT"
         or original.get("target",{}).get("year")!=TARGET
         or original.get("source",{}).get("data_last_year")!=ORIGIN
         or manifest.get("forecast_sha256")!=SOURCE_SHA256
