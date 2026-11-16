@@ -20,6 +20,8 @@ ORIGINAL=ROOT/"data/forecast-2027-ucdp261.json"
 FROZEN_ISSUE_SHA256="52686923315854557a796f8f192d376dab77a4e03b14c1aeb6b4091e48104f90"
 ID="PSICO-GEO2027-STATEBASED25-LOG1P-INTENSITY-SHADOW-V1"
 SOURCE_SHA="66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+FIRST_PUBLIC_COMMIT="a2af84346bd223d2a105cf727b3462cd0955fdac"
+FIRST_PUBLIC_UTC="2026-11-16T11:34:38Z"
 
 
 def sha(raw):
@@ -47,8 +49,8 @@ def audit(issue_raw,manifest_raw,original_raw,*,frozen_sha=FROZEN_ISSUE_SHA256):
         or manifest.get("demonstrated_predictive_skill") is not False
         or manifest.get("original_forecast_sha256")!=SOURCE_SHA256
         or manifest.get("source_26_1_sha256")!=SOURCE_SHA
-        or not re.fullmatch("[a-f0-9]{40}",
-                            str(manifest.get("first_complete_forecast_commit","")))):
+        or manifest.get("first_complete_forecast_commit")!=FIRST_PUBLIC_COMMIT
+        or manifest.get("first_complete_forecast_commit_utc")!=FIRST_PUBLIC_UTC):
         raise ValueError("Prospective shadow provenance manifest changed")
     if (issue.get("schema")!="idealab.psico.geo2027_log1p_intensity_shadow.v1"
         or issue.get("forecast_id")!=ID
