@@ -1,0 +1,1188 @@
+{
+  "comparisons_with_any_deterministic_topk_change": 2,
+  "comparisons_with_any_tie_independent_definite_entry": 2,
+  "current_2027_alert_change_directly_measured": false,
+  "horizon_years": 2,
+  "k_initially_active": 5,
+  "k_initially_inactive": 10,
+  "matched_origins": [
+    2022,
+    2023,
+    2024
+  ],
+  "n_2027_outcomes_resolved": 0,
+  "n_historical_predictions_actually_issued": 0,
+  "no_first_complete_post_2025_2027_origin_vintage": true,
+  "not_confidence_interval_or_future_revision_probability": true,
+  "original_2025_to_2027_alerts_reissued": false,
+  "original_2027_alert_sha256": "309b4f270e1d0d6382b7a90ae64c28d7621f96fbf3177a45aaebbffb0f958acb",
+  "original_2027_forecast_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "paired_comparisons": [
+    {
+      "fixed_origin_year": 2022,
+      "groups": {
+        "0": {
+          "budget": 10,
+          "changed_origin_state": [],
+          "changed_origin_state_n": 0,
+          "definite_entries_independent_of_boundary_tiebreak": [],
+          "definite_entries_n": 0,
+          "definite_exits_independent_of_boundary_tiebreak": [],
+          "definite_exits_n": 0,
+          "deterministic_entered": [],
+          "deterministic_exited": [],
+          "deterministic_swaps_n": 0,
+          "deterministic_tie_break": "numeric GWNO ascending",
+          "deterministic_topk_retained_n": 10,
+          "fixed_original_origin_risk_set": true,
+          "historical_original_eligible_n": 159,
+          "new_boundary_unique": true,
+          "new_cutoff_tie_n": 1,
+          "old_boundary_unique": true,
+          "old_cutoff": 0.132638778553,
+          "old_cutoff_tie_n": 1,
+          "old_topk": [
+            {
+              "country": "Senegal",
+              "country_id": 433
+            },
+            {
+              "country": "Congo",
+              "country_id": 484
+            },
+            {
+              "country": "Burundi",
+              "country_id": 516
+            },
+            {
+              "country": "Rwanda",
+              "country_id": 517
+            },
+            {
+              "country": "Djibouti",
+              "country_id": 522
+            },
+            {
+              "country": "Eritrea",
+              "country_id": 531
+            },
+            {
+              "country": "Angola",
+              "country_id": 540
+            },
+            {
+              "country": "Algeria",
+              "country_id": 615
+            },
+            {
+              "country": "Lebanon",
+              "country_id": 660
+            },
+            {
+              "country": "Sri Lanka",
+              "country_id": 780
+            }
+          ],
+          "origin_state": 0,
+          "outcomes_observed_2027": 0,
+          "revised_cutoff": 0.132769704589,
+          "revised_topk": [
+            {
+              "country": "Senegal",
+              "country_id": 433
+            },
+            {
+              "country": "Congo",
+              "country_id": 484
+            },
+            {
+              "country": "Burundi",
+              "country_id": 516
+            },
+            {
+              "country": "Rwanda",
+              "country_id": 517
+            },
+            {
+              "country": "Djibouti",
+              "country_id": 522
+            },
+            {
+              "country": "Eritrea",
+              "country_id": 531
+            },
+            {
+              "country": "Angola",
+              "country_id": 540
+            },
+            {
+              "country": "Algeria",
+              "country_id": 615
+            },
+            {
+              "country": "Lebanon",
+              "country_id": 660
+            },
+            {
+              "country": "Sri Lanka",
+              "country_id": 780
+            }
+          ]
+        },
+        "1": {
+          "budget": 5,
+          "changed_origin_state": [],
+          "changed_origin_state_n": 0,
+          "definite_entries_independent_of_boundary_tiebreak": [],
+          "definite_entries_n": 0,
+          "definite_exits_independent_of_boundary_tiebreak": [],
+          "definite_exits_n": 0,
+          "deterministic_entered": [],
+          "deterministic_exited": [],
+          "deterministic_swaps_n": 0,
+          "deterministic_tie_break": "numeric GWNO ascending",
+          "deterministic_topk_retained_n": 5,
+          "fixed_original_origin_risk_set": true,
+          "historical_original_eligible_n": 37,
+          "new_boundary_unique": true,
+          "new_cutoff_tie_n": 1,
+          "old_boundary_unique": true,
+          "old_cutoff": 0.342424838572,
+          "old_cutoff_tie_n": 1,
+          "old_topk": [
+            {
+              "country": "Azerbaijan",
+              "country_id": 373
+            },
+            {
+              "country": "Niger",
+              "country_id": 436
+            },
+            {
+              "country": "Mozambique",
+              "country_id": 541
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702
+            },
+            {
+              "country": "Indonesia",
+              "country_id": 850
+            }
+          ],
+          "origin_state": 1,
+          "outcomes_observed_2027": 0,
+          "revised_cutoff": 0.342404332397,
+          "revised_topk": [
+            {
+              "country": "Azerbaijan",
+              "country_id": 373
+            },
+            {
+              "country": "Niger",
+              "country_id": 436
+            },
+            {
+              "country": "Mozambique",
+              "country_id": 541
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702
+            },
+            {
+              "country": "Indonesia",
+              "country_id": 850
+            }
+          ]
+        }
+      },
+      "later_edition_future_years_removed_before_fit": true,
+      "original_UCDP_version": "23.1",
+      "original_source_cutoff": 2022,
+      "revised_UCDP_version": "24.1",
+      "target_year_if_simulated": 2024
+    },
+    {
+      "fixed_origin_year": 2022,
+      "groups": {
+        "0": {
+          "budget": 10,
+          "changed_origin_state": [],
+          "changed_origin_state_n": 0,
+          "definite_entries_independent_of_boundary_tiebreak": [],
+          "definite_entries_n": 0,
+          "definite_exits_independent_of_boundary_tiebreak": [],
+          "definite_exits_n": 0,
+          "deterministic_entered": [],
+          "deterministic_exited": [],
+          "deterministic_swaps_n": 0,
+          "deterministic_tie_break": "numeric GWNO ascending",
+          "deterministic_topk_retained_n": 10,
+          "fixed_original_origin_risk_set": true,
+          "historical_original_eligible_n": 159,
+          "new_boundary_unique": true,
+          "new_cutoff_tie_n": 1,
+          "old_boundary_unique": true,
+          "old_cutoff": 0.132638778553,
+          "old_cutoff_tie_n": 1,
+          "old_topk": [
+            {
+              "country": "Senegal",
+              "country_id": 433
+            },
+            {
+              "country": "Congo",
+              "country_id": 484
+            },
+            {
+              "country": "Burundi",
+              "country_id": 516
+            },
+            {
+              "country": "Rwanda",
+              "country_id": 517
+            },
+            {
+              "country": "Djibouti",
+              "country_id": 522
+            },
+            {
+              "country": "Eritrea",
+              "country_id": 531
+            },
+            {
+              "country": "Angola",
+              "country_id": 540
+            },
+            {
+              "country": "Algeria",
+              "country_id": 615
+            },
+            {
+              "country": "Lebanon",
+              "country_id": 660
+            },
+            {
+              "country": "Sri Lanka",
+              "country_id": 780
+            }
+          ],
+          "origin_state": 0,
+          "outcomes_observed_2027": 0,
+          "revised_cutoff": 0.132823947478,
+          "revised_topk": [
+            {
+              "country": "Senegal",
+              "country_id": 433
+            },
+            {
+              "country": "Congo",
+              "country_id": 484
+            },
+            {
+              "country": "Burundi",
+              "country_id": 516
+            },
+            {
+              "country": "Rwanda",
+              "country_id": 517
+            },
+            {
+              "country": "Djibouti",
+              "country_id": 522
+            },
+            {
+              "country": "Eritrea",
+              "country_id": 531
+            },
+            {
+              "country": "Angola",
+              "country_id": 540
+            },
+            {
+              "country": "Algeria",
+              "country_id": 615
+            },
+            {
+              "country": "Lebanon",
+              "country_id": 660
+            },
+            {
+              "country": "Sri Lanka",
+              "country_id": 780
+            }
+          ]
+        },
+        "1": {
+          "budget": 5,
+          "changed_origin_state": [],
+          "changed_origin_state_n": 0,
+          "definite_entries_independent_of_boundary_tiebreak": [
+            {
+              "country": "Kyrgyzstan",
+              "country_id": 703
+            }
+          ],
+          "definite_entries_n": 1,
+          "definite_exits_independent_of_boundary_tiebreak": [
+            {
+              "country": "Indonesia",
+              "country_id": 850
+            }
+          ],
+          "definite_exits_n": 1,
+          "deterministic_entered": [
+            {
+              "country": "Kyrgyzstan",
+              "country_id": 703
+            }
+          ],
+          "deterministic_exited": [
+            {
+              "country": "Indonesia",
+              "country_id": 850
+            }
+          ],
+          "deterministic_swaps_n": 1,
+          "deterministic_tie_break": "numeric GWNO ascending",
+          "deterministic_topk_retained_n": 4,
+          "fixed_original_origin_risk_set": true,
+          "historical_original_eligible_n": 37,
+          "new_boundary_unique": true,
+          "new_cutoff_tie_n": 1,
+          "old_boundary_unique": true,
+          "old_cutoff": 0.342424838572,
+          "old_cutoff_tie_n": 1,
+          "old_topk": [
+            {
+              "country": "Azerbaijan",
+              "country_id": 373
+            },
+            {
+              "country": "Niger",
+              "country_id": 436
+            },
+            {
+              "country": "Mozambique",
+              "country_id": 541
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702
+            },
+            {
+              "country": "Indonesia",
+              "country_id": 850
+            }
+          ],
+          "origin_state": 1,
+          "outcomes_observed_2027": 0,
+          "revised_cutoff": 0.340641583506,
+          "revised_topk": [
+            {
+              "country": "Azerbaijan",
+              "country_id": 373
+            },
+            {
+              "country": "Niger",
+              "country_id": 436
+            },
+            {
+              "country": "Mozambique",
+              "country_id": 541
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702
+            },
+            {
+              "country": "Kyrgyzstan",
+              "country_id": 703
+            }
+          ]
+        }
+      },
+      "later_edition_future_years_removed_before_fit": true,
+      "original_UCDP_version": "23.1",
+      "original_source_cutoff": 2022,
+      "revised_UCDP_version": "25.1",
+      "target_year_if_simulated": 2024
+    },
+    {
+      "fixed_origin_year": 2022,
+      "groups": {
+        "0": {
+          "budget": 10,
+          "changed_origin_state": [],
+          "changed_origin_state_n": 0,
+          "definite_entries_independent_of_boundary_tiebreak": [],
+          "definite_entries_n": 0,
+          "definite_exits_independent_of_boundary_tiebreak": [],
+          "definite_exits_n": 0,
+          "deterministic_entered": [],
+          "deterministic_exited": [],
+          "deterministic_swaps_n": 0,
+          "deterministic_tie_break": "numeric GWNO ascending",
+          "deterministic_topk_retained_n": 10,
+          "fixed_original_origin_risk_set": true,
+          "historical_original_eligible_n": 159,
+          "new_boundary_unique": true,
+          "new_cutoff_tie_n": 1,
+          "old_boundary_unique": true,
+          "old_cutoff": 0.132638778553,
+          "old_cutoff_tie_n": 1,
+          "old_topk": [
+            {
+              "country": "Senegal",
+              "country_id": 433
+            },
+            {
+              "country": "Congo",
+              "country_id": 484
+            },
+            {
+              "country": "Burundi",
+              "country_id": 516
+            },
+            {
+              "country": "Rwanda",
+              "country_id": 517
+            },
+            {
+              "country": "Djibouti",
+              "country_id": 522
+            },
+            {
+              "country": "Eritrea",
+              "country_id": 531
+            },
+            {
+              "country": "Angola",
+              "country_id": 540
+            },
+            {
+              "country": "Algeria",
+              "country_id": 615
+            },
+            {
+              "country": "Lebanon",
+              "country_id": 660
+            },
+            {
+              "country": "Sri Lanka",
+              "country_id": 780
+            }
+          ],
+          "origin_state": 0,
+          "outcomes_observed_2027": 0,
+          "revised_cutoff": 0.132764106952,
+          "revised_topk": [
+            {
+              "country": "Senegal",
+              "country_id": 433
+            },
+            {
+              "country": "Congo",
+              "country_id": 484
+            },
+            {
+              "country": "Burundi",
+              "country_id": 516
+            },
+            {
+              "country": "Rwanda",
+              "country_id": 517
+            },
+            {
+              "country": "Djibouti",
+              "country_id": 522
+            },
+            {
+              "country": "Eritrea",
+              "country_id": 531
+            },
+            {
+              "country": "Angola",
+              "country_id": 540
+            },
+            {
+              "country": "Algeria",
+              "country_id": 615
+            },
+            {
+              "country": "Lebanon",
+              "country_id": 660
+            },
+            {
+              "country": "Sri Lanka",
+              "country_id": 780
+            }
+          ]
+        },
+        "1": {
+          "budget": 5,
+          "changed_origin_state": [],
+          "changed_origin_state_n": 0,
+          "definite_entries_independent_of_boundary_tiebreak": [
+            {
+              "country": "Kyrgyzstan",
+              "country_id": 703
+            }
+          ],
+          "definite_entries_n": 1,
+          "definite_exits_independent_of_boundary_tiebreak": [
+            {
+              "country": "Indonesia",
+              "country_id": 850
+            }
+          ],
+          "definite_exits_n": 1,
+          "deterministic_entered": [
+            {
+              "country": "Kyrgyzstan",
+              "country_id": 703
+            }
+          ],
+          "deterministic_exited": [
+            {
+              "country": "Indonesia",
+              "country_id": 850
+            }
+          ],
+          "deterministic_swaps_n": 1,
+          "deterministic_tie_break": "numeric GWNO ascending",
+          "deterministic_topk_retained_n": 4,
+          "fixed_original_origin_risk_set": true,
+          "historical_original_eligible_n": 37,
+          "new_boundary_unique": true,
+          "new_cutoff_tie_n": 1,
+          "old_boundary_unique": true,
+          "old_cutoff": 0.342424838572,
+          "old_cutoff_tie_n": 1,
+          "old_topk": [
+            {
+              "country": "Azerbaijan",
+              "country_id": 373
+            },
+            {
+              "country": "Niger",
+              "country_id": 436
+            },
+            {
+              "country": "Mozambique",
+              "country_id": 541
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702
+            },
+            {
+              "country": "Indonesia",
+              "country_id": 850
+            }
+          ],
+          "origin_state": 1,
+          "outcomes_observed_2027": 0,
+          "revised_cutoff": 0.339019705295,
+          "revised_topk": [
+            {
+              "country": "Azerbaijan",
+              "country_id": 373
+            },
+            {
+              "country": "Niger",
+              "country_id": 436
+            },
+            {
+              "country": "Mozambique",
+              "country_id": 541
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702
+            },
+            {
+              "country": "Kyrgyzstan",
+              "country_id": 703
+            }
+          ]
+        }
+      },
+      "later_edition_future_years_removed_before_fit": true,
+      "original_UCDP_version": "23.1",
+      "original_source_cutoff": 2022,
+      "revised_UCDP_version": "26.1",
+      "target_year_if_simulated": 2024
+    },
+    {
+      "fixed_origin_year": 2023,
+      "groups": {
+        "0": {
+          "budget": 10,
+          "changed_origin_state": [],
+          "changed_origin_state_n": 0,
+          "definite_entries_independent_of_boundary_tiebreak": [],
+          "definite_entries_n": 0,
+          "definite_exits_independent_of_boundary_tiebreak": [],
+          "definite_exits_n": 0,
+          "deterministic_entered": [],
+          "deterministic_exited": [],
+          "deterministic_swaps_n": 0,
+          "deterministic_tie_break": "numeric GWNO ascending",
+          "deterministic_topk_retained_n": 10,
+          "fixed_original_origin_risk_set": true,
+          "historical_original_eligible_n": 162,
+          "new_boundary_unique": true,
+          "new_cutoff_tie_n": 1,
+          "old_boundary_unique": true,
+          "old_cutoff": 0.129770404479,
+          "old_cutoff_tie_n": 1,
+          "old_topk": [
+            {
+              "country": "Senegal",
+              "country_id": 433
+            },
+            {
+              "country": "Congo",
+              "country_id": 484
+            },
+            {
+              "country": "Uganda",
+              "country_id": 500
+            },
+            {
+              "country": "Rwanda",
+              "country_id": 517
+            },
+            {
+              "country": "Djibouti",
+              "country_id": 522
+            },
+            {
+              "country": "Eritrea",
+              "country_id": 531
+            },
+            {
+              "country": "Angola",
+              "country_id": 540
+            },
+            {
+              "country": "Algeria",
+              "country_id": 615
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702
+            },
+            {
+              "country": "Sri Lanka",
+              "country_id": 780
+            }
+          ],
+          "origin_state": 0,
+          "outcomes_observed_2027": 0,
+          "revised_cutoff": 0.129821162344,
+          "revised_topk": [
+            {
+              "country": "Senegal",
+              "country_id": 433
+            },
+            {
+              "country": "Congo",
+              "country_id": 484
+            },
+            {
+              "country": "Uganda",
+              "country_id": 500
+            },
+            {
+              "country": "Rwanda",
+              "country_id": 517
+            },
+            {
+              "country": "Djibouti",
+              "country_id": 522
+            },
+            {
+              "country": "Eritrea",
+              "country_id": 531
+            },
+            {
+              "country": "Angola",
+              "country_id": 540
+            },
+            {
+              "country": "Algeria",
+              "country_id": 615
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702
+            },
+            {
+              "country": "Sri Lanka",
+              "country_id": 780
+            }
+          ]
+        },
+        "1": {
+          "budget": 5,
+          "changed_origin_state": [],
+          "changed_origin_state_n": 0,
+          "definite_entries_independent_of_boundary_tiebreak": [],
+          "definite_entries_n": 0,
+          "definite_exits_independent_of_boundary_tiebreak": [],
+          "definite_exits_n": 0,
+          "deterministic_entered": [],
+          "deterministic_exited": [],
+          "deterministic_swaps_n": 0,
+          "deterministic_tie_break": "numeric GWNO ascending",
+          "deterministic_topk_retained_n": 5,
+          "fixed_original_origin_risk_set": true,
+          "historical_original_eligible_n": 34,
+          "new_boundary_unique": true,
+          "new_cutoff_tie_n": 1,
+          "old_boundary_unique": true,
+          "old_cutoff": 0.336620904671,
+          "old_cutoff_tie_n": 1,
+          "old_topk": [
+            {
+              "country": "Azerbaijan",
+              "country_id": 373
+            },
+            {
+              "country": "Niger",
+              "country_id": 436
+            },
+            {
+              "country": "Burundi",
+              "country_id": 516
+            },
+            {
+              "country": "Mozambique",
+              "country_id": 541
+            },
+            {
+              "country": "Lebanon",
+              "country_id": 660
+            }
+          ],
+          "origin_state": 1,
+          "outcomes_observed_2027": 0,
+          "revised_cutoff": 0.336022822917,
+          "revised_topk": [
+            {
+              "country": "Azerbaijan",
+              "country_id": 373
+            },
+            {
+              "country": "Niger",
+              "country_id": 436
+            },
+            {
+              "country": "Burundi",
+              "country_id": 516
+            },
+            {
+              "country": "Mozambique",
+              "country_id": 541
+            },
+            {
+              "country": "Lebanon",
+              "country_id": 660
+            }
+          ]
+        }
+      },
+      "later_edition_future_years_removed_before_fit": true,
+      "original_UCDP_version": "24.1",
+      "original_source_cutoff": 2023,
+      "revised_UCDP_version": "25.1",
+      "target_year_if_simulated": 2025
+    },
+    {
+      "fixed_origin_year": 2023,
+      "groups": {
+        "0": {
+          "budget": 10,
+          "changed_origin_state": [],
+          "changed_origin_state_n": 0,
+          "definite_entries_independent_of_boundary_tiebreak": [],
+          "definite_entries_n": 0,
+          "definite_exits_independent_of_boundary_tiebreak": [],
+          "definite_exits_n": 0,
+          "deterministic_entered": [],
+          "deterministic_exited": [],
+          "deterministic_swaps_n": 0,
+          "deterministic_tie_break": "numeric GWNO ascending",
+          "deterministic_topk_retained_n": 10,
+          "fixed_original_origin_risk_set": true,
+          "historical_original_eligible_n": 162,
+          "new_boundary_unique": true,
+          "new_cutoff_tie_n": 1,
+          "old_boundary_unique": true,
+          "old_cutoff": 0.129770404479,
+          "old_cutoff_tie_n": 1,
+          "old_topk": [
+            {
+              "country": "Senegal",
+              "country_id": 433
+            },
+            {
+              "country": "Congo",
+              "country_id": 484
+            },
+            {
+              "country": "Uganda",
+              "country_id": 500
+            },
+            {
+              "country": "Rwanda",
+              "country_id": 517
+            },
+            {
+              "country": "Djibouti",
+              "country_id": 522
+            },
+            {
+              "country": "Eritrea",
+              "country_id": 531
+            },
+            {
+              "country": "Angola",
+              "country_id": 540
+            },
+            {
+              "country": "Algeria",
+              "country_id": 615
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702
+            },
+            {
+              "country": "Sri Lanka",
+              "country_id": 780
+            }
+          ],
+          "origin_state": 0,
+          "outcomes_observed_2027": 0,
+          "revised_cutoff": 0.129763214478,
+          "revised_topk": [
+            {
+              "country": "Senegal",
+              "country_id": 433
+            },
+            {
+              "country": "Congo",
+              "country_id": 484
+            },
+            {
+              "country": "Uganda",
+              "country_id": 500
+            },
+            {
+              "country": "Rwanda",
+              "country_id": 517
+            },
+            {
+              "country": "Djibouti",
+              "country_id": 522
+            },
+            {
+              "country": "Eritrea",
+              "country_id": 531
+            },
+            {
+              "country": "Angola",
+              "country_id": 540
+            },
+            {
+              "country": "Algeria",
+              "country_id": 615
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702
+            },
+            {
+              "country": "Sri Lanka",
+              "country_id": 780
+            }
+          ]
+        },
+        "1": {
+          "budget": 5,
+          "changed_origin_state": [],
+          "changed_origin_state_n": 0,
+          "definite_entries_independent_of_boundary_tiebreak": [],
+          "definite_entries_n": 0,
+          "definite_exits_independent_of_boundary_tiebreak": [],
+          "definite_exits_n": 0,
+          "deterministic_entered": [],
+          "deterministic_exited": [],
+          "deterministic_swaps_n": 0,
+          "deterministic_tie_break": "numeric GWNO ascending",
+          "deterministic_topk_retained_n": 5,
+          "fixed_original_origin_risk_set": true,
+          "historical_original_eligible_n": 34,
+          "new_boundary_unique": true,
+          "new_cutoff_tie_n": 1,
+          "old_boundary_unique": true,
+          "old_cutoff": 0.336620904671,
+          "old_cutoff_tie_n": 1,
+          "old_topk": [
+            {
+              "country": "Azerbaijan",
+              "country_id": 373
+            },
+            {
+              "country": "Niger",
+              "country_id": 436
+            },
+            {
+              "country": "Burundi",
+              "country_id": 516
+            },
+            {
+              "country": "Mozambique",
+              "country_id": 541
+            },
+            {
+              "country": "Lebanon",
+              "country_id": 660
+            }
+          ],
+          "origin_state": 1,
+          "outcomes_observed_2027": 0,
+          "revised_cutoff": 0.334979436403,
+          "revised_topk": [
+            {
+              "country": "Azerbaijan",
+              "country_id": 373
+            },
+            {
+              "country": "Niger",
+              "country_id": 436
+            },
+            {
+              "country": "Burundi",
+              "country_id": 516
+            },
+            {
+              "country": "Mozambique",
+              "country_id": 541
+            },
+            {
+              "country": "Lebanon",
+              "country_id": 660
+            }
+          ]
+        }
+      },
+      "later_edition_future_years_removed_before_fit": true,
+      "original_UCDP_version": "24.1",
+      "original_source_cutoff": 2023,
+      "revised_UCDP_version": "26.1",
+      "target_year_if_simulated": 2025
+    },
+    {
+      "fixed_origin_year": 2024,
+      "groups": {
+        "0": {
+          "budget": 10,
+          "changed_origin_state": [],
+          "changed_origin_state_n": 0,
+          "definite_entries_independent_of_boundary_tiebreak": [],
+          "definite_entries_n": 0,
+          "definite_exits_independent_of_boundary_tiebreak": [],
+          "definite_exits_n": 0,
+          "deterministic_entered": [],
+          "deterministic_exited": [],
+          "deterministic_swaps_n": 0,
+          "deterministic_tie_break": "numeric GWNO ascending",
+          "deterministic_topk_retained_n": 10,
+          "fixed_original_origin_risk_set": true,
+          "historical_original_eligible_n": 161,
+          "new_boundary_unique": true,
+          "new_cutoff_tie_n": 2,
+          "old_boundary_unique": true,
+          "old_cutoff": 0.127781715683,
+          "old_cutoff_tie_n": 2,
+          "old_topk": [
+            {
+              "country": "Azerbaijan",
+              "country_id": 373
+            },
+            {
+              "country": "Senegal",
+              "country_id": 433
+            },
+            {
+              "country": "Congo",
+              "country_id": 484
+            },
+            {
+              "country": "Uganda",
+              "country_id": 500
+            },
+            {
+              "country": "Burundi",
+              "country_id": 516
+            },
+            {
+              "country": "Rwanda",
+              "country_id": 517
+            },
+            {
+              "country": "Eritrea",
+              "country_id": 531
+            },
+            {
+              "country": "Algeria",
+              "country_id": 615
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702
+            },
+            {
+              "country": "Sri Lanka",
+              "country_id": 780
+            }
+          ],
+          "origin_state": 0,
+          "outcomes_observed_2027": 0,
+          "revised_cutoff": 0.127659971257,
+          "revised_topk": [
+            {
+              "country": "Azerbaijan",
+              "country_id": 373
+            },
+            {
+              "country": "Senegal",
+              "country_id": 433
+            },
+            {
+              "country": "Congo",
+              "country_id": 484
+            },
+            {
+              "country": "Uganda",
+              "country_id": 500
+            },
+            {
+              "country": "Burundi",
+              "country_id": 516
+            },
+            {
+              "country": "Rwanda",
+              "country_id": 517
+            },
+            {
+              "country": "Eritrea",
+              "country_id": 531
+            },
+            {
+              "country": "Algeria",
+              "country_id": 615
+            },
+            {
+              "country": "Tajikistan",
+              "country_id": 702
+            },
+            {
+              "country": "Sri Lanka",
+              "country_id": 780
+            }
+          ]
+        },
+        "1": {
+          "budget": 5,
+          "changed_origin_state": [],
+          "changed_origin_state_n": 0,
+          "definite_entries_independent_of_boundary_tiebreak": [],
+          "definite_entries_n": 0,
+          "definite_exits_independent_of_boundary_tiebreak": [],
+          "definite_exits_n": 0,
+          "deterministic_entered": [],
+          "deterministic_exited": [],
+          "deterministic_swaps_n": 0,
+          "deterministic_tie_break": "numeric GWNO ascending",
+          "deterministic_topk_retained_n": 5,
+          "fixed_original_origin_risk_set": true,
+          "historical_original_eligible_n": 35,
+          "new_boundary_unique": true,
+          "new_cutoff_tie_n": 1,
+          "old_boundary_unique": true,
+          "old_cutoff": 0.323938245352,
+          "old_cutoff_tie_n": 1,
+          "old_topk": [
+            {
+              "country": "Haiti",
+              "country_id": 41
+            },
+            {
+              "country": "Niger",
+              "country_id": 436
+            },
+            {
+              "country": "Angola",
+              "country_id": 540
+            },
+            {
+              "country": "Mozambique",
+              "country_id": 541
+            },
+            {
+              "country": "Lebanon",
+              "country_id": 660
+            }
+          ],
+          "origin_state": 1,
+          "outcomes_observed_2027": 0,
+          "revised_cutoff": 0.322950672893,
+          "revised_topk": [
+            {
+              "country": "Haiti",
+              "country_id": 41
+            },
+            {
+              "country": "Niger",
+              "country_id": 436
+            },
+            {
+              "country": "Angola",
+              "country_id": 540
+            },
+            {
+              "country": "Mozambique",
+              "country_id": 541
+            },
+            {
+              "country": "Lebanon",
+              "country_id": 660
+            }
+          ]
+        }
+      },
+      "later_edition_future_years_removed_before_fit": true,
+      "original_UCDP_version": "25.1",
+      "original_source_cutoff": 2024,
+      "revised_UCDP_version": "26.1",
+      "target_year_if_simulated": 2026
+    }
+  ],
+  "prospective_skill_demonstrated": false,
+  "schema": "idealab.psico.geo2027_historical_topk_vintage_overlap.v1",
+  "six_overlapping_edition_pairs_not_independent": true,
+  "sources_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "status": "RETROSPECTIVE_RECONSTRUCTION_NOT_PROSPECTIVELY_ISSUED"
+}

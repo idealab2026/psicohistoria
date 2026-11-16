@@ -4,6 +4,14 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Cambios reales de listas históricas entre ediciones UCDP (16-11-2026)
+
+Estudio retrospectivo reproducible de **seis comparaciones de ediciones oficiales UCDP 23.1–26.1** al **mismo año de origen**, idéntico modelo Markov H2 y presupuestos top-10 de entrada/top-5 de resolución. Entre las seis comparaciones no cambia ningún top-10 de entradas. **Dos pares correlacionados**, ambos con origen 2022 (23.1→25.1 y 23.1→26.1), muestran el **mismo intercambio inequívoco** en el top-5 de resolución: sale Indonesia (GWNO 850) y entra Kirguistán (GWNO 703). Los otros cuatro pares no cambian su top-5; no hubo empates de frontera ni revisión de estado en el origen.
+
+No son seis ensayos independientes ni una actualización de la emisión GEO2027: ninguna de las ediciones antiguas incluye el origen 2025 de las alertas de 2027. Los **196 pronósticos originales**, las **15 alertas emitidas**, el estado sin resultados 2027 y las huellas SHA-256 permanecen intactos. No existe todavía evidencia de habilidad predictiva prospectiva.
+
+Método, resultados país a país y limitaciones: [informe de solapamiento de alertas por edición](docs/geo2027-historical-alert-vintage-overlap.md), reporte numérico `data/geo2027-historical-alert-vintage-overlap.json`, código `scripts/diagnose_geo2027_historical_alert_vintage_overlap.py` y tests `scripts/test_diagnose_geo2027_historical_alert_vintage_overlap.py`. La auditoría de privacidad y los workflows obligan a reconstruir el informe **byte a byte** desde las fuentes oficiales fijadas por SHA-256 antes de desplegar.
+
 ## Q-GEO-01 · Evaluador oficial FUTURO de NEWCONF-2027 (11-11-2026)
 
 **Implementado antes de que exista el outcome, sin evaluar ni modificar la emisión original.** Se añade un [contrato de evaluación explícito](docs/newconf-2027-evaluation-contract.md) y el ejecutable `scripts/evaluate_2027_newconf_official.py`. El evaluador toma un CSV **futuro** original de UCDP Intrastate Country Level Multiple Onset con **2027**, URL UCDP HTTPS literal, SHA-256 y fecha posterior a 2027, pero **nunca certifica automáticamente** que el operador haya identificado la primera edición completa.

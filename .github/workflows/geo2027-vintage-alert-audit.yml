@@ -1,0 +1,28 @@
+name: GEO2027 historical vintage alert audit
+on:
+  pull_request:
+    paths:
+      - 'scripts/diagnose_geo2027_historical_alert_vintage_overlap.py'
+      - 'scripts/test_diagnose_geo2027_historical_alert_vintage_overlap.py'
+      - 'data/geo2027-historical-alert-vintage-overlap.json'
+      - '.github/workflows/geo2027-vintage-alert-audit.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/diagnose_geo2027_historical_alert_vintage_overlap.py'
+      - 'scripts/test_diagnose_geo2027_historical_alert_vintage_overlap.py'
+      - 'data/geo2027-historical-alert-vintage-overlap.json'
+      - '.github/workflows/geo2027-vintage-alert-audit.yml'
+permissions:
+  contents: read
+jobs:
+  geo2027_vintage_replay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate six historical comparisons and unambiguous tie handling
+        run: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_diagnose_geo2027_historical_alert_vintage_overlap.py' -v
+      - name: Reconstruct exact report from original SHA-pinned UCDP archives
+        run: PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_historical_alert_vintage_overlap.py --check-report
