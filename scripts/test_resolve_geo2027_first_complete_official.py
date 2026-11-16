@@ -112,15 +112,16 @@ class Geo2027Full196ResolutionReadinessTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     extract_complete_2027_labels(raw,self.ids)
 
-    def test_country_id_mismatch_and_2028_source_row_rejected(self):
+    def test_country_id_mismatch_and_2028_rows_in_later_editions_ignored(self):
         raw=self.raw.replace(
             f"{self.ids[1]},2027,0".encode(),
             b"1999,2027,0",1)
         with self.assertRaisesRegex(ValueError,"INCOMPLETE"):
             extract_complete_2027_labels(raw,self.ids)
         raw=self.raw+b"2,2028,0\n"
-        with self.assertRaises(ValueError):
-            extract_complete_2027_labels(raw,self.ids)
+        labels,stats=extract_complete_2027_labels(raw,self.ids)
+        self.assertEqual(len(labels),196)
+        self.assertEqual(stats["later_year_rows_explicitly_ignored"],1)
 
     def test_cy_suffix_and_bounded_zip_single_csv_accepted(self):
         raw=self.make_csv(field_format="cy")
