@@ -1,0 +1,32 @@
+name: GEO2027 Markov national partial pooling UCDP vintage stability
+on:
+  pull_request:
+    paths:
+      - 'scripts/diagnose_geo2027_markov_partial_pooling.py'
+      - 'scripts/test_diagnose_geo2027_markov_partial_pooling.py'
+      - 'data/geo2027-markov-partial-pooling-vintage-stability.json'
+      - '.github/workflows/geo2027-markov-partial-pooling-vintage.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/diagnose_geo2027_markov_partial_pooling.py'
+      - 'scripts/test_diagnose_geo2027_markov_partial_pooling.py'
+      - 'data/geo2027-markov-partial-pooling-vintage-stability.json'
+      - '.github/workflows/geo2027-markov-partial-pooling-vintage.yml'
+permissions:
+  contents: read
+jobs:
+  geo2027_markov_partial_pooling_vintage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test original GEO H2 law, 196-country frozen issues, source revision state and cutoff adversarial cases
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_diagnose_geo2027_markov_partial_pooling.py' -v
+      - name: Replay four SHA-pinned editions for origins 2022, 2023 and 2025, no issued 2027 changes
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/diagnose_geo2027_markov_partial_pooling.py --check-report
