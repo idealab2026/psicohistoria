@@ -1,0 +1,32 @@
+name: GEO2027 issued LOG1P death-count perturbation certification
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_geo2027_log1p_issued_death_stress.py'
+      - 'scripts/test_audit_geo2027_log1p_issued_death_stress.py'
+      - 'data/geo2027-log1p-issued-death-count-stress.json'
+      - '.github/workflows/geo2027-log1p-issued-death-stress.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_geo2027_log1p_issued_death_stress.py'
+      - 'scripts/test_audit_geo2027_log1p_issued_death_stress.py'
+      - 'data/geo2027-log1p-issued-death-count-stress.json'
+      - '.github/workflows/geo2027-log1p-issued-death-stress.yml'
+permissions:
+  contents: read
+jobs:
+  geo2027_log1p_issued_death_stress:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test frozen 196-country LOG1P stress bands, 25-death threshold and exact possible/mandatory ranking
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_audit_geo2027_log1p_issued_death_stress.py' -v
+      - name: Recompute death-count perturbation envelopes and fail on changed frozen issue or mismatched report
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_geo2027_log1p_issued_death_stress.py --check-report

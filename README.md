@@ -4,6 +4,22 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Auditoría matemática de sensibilidad de la sombra 2027 ya emitida (16-11-2026)
+
+**Nuevo diagnóstico publicado sobre las 196 probabilidades inmutables de la sombra LOG1P**. Se altera *solo hipotéticamente* el número de muertes UCDP del **origen 2025**, en ±1, ±5 o ±10, **sin cruzar el umbral binario de 25**, sin reentrenar ni el GEO original ni la logística. Se certifican exactamente los extremos de probabilidad mediante monotonicidad de `log1p`/logit, con una segunda prueba de cota analítica basada en el máximo de la derivada logística, y los conjuntos **obligatorios/posibles** de los top-k bajo perturbaciones independientes de todos los países.
+
+| Conteo hipotético 2025 | Anchura media de probabilidad | P95 | Anchura máxima | Top-10 entrada obligatorios | Top-5 salida obligatorios |
+|---|---:|---:|---:|---:|---:|
+| ±1 muerte | 0,65 pp | 2,09 pp | 4,71 pp | 9/10 | 4/5 |
+| ±5 muertes | 2,13 pp | 8,27 pp | 13,32 pp | 2/10 | 3/5 |
+| ±10 muertes | 3,18 pp | 11,96 pp | **18,54 pp** | **2/10** | 3/5 |
+
+De los 196 países, **154 registran cero muertes en 2025** y 8 registran entre 1 y 24. El caso de **Burundi**: su probabilidad LOG1P emitida para 2027 es **22,62 %** con cero muertes 2025; con un conteo hipotético 2025 de **10** sin modificar el estado binario subiría a **41,16 %**, +18,54 pp. En ±10, **Chad y Burundi** son los únicos dos miembros garantizados del *top-10 hipotético de entrada* de la sombra. Estos rankings **no** sustituyen las 15 alertas originales.
+
+**Límites:** bandas hipotéticas no probabilísticas, sin estimación de frecuencia de revisiones oficiales, sin reentrenamiento ante una verdadera revisión de años anteriores, sin cruces del umbral ni eventos 2027 observados. **No son intervalos de confianza, de predicción, ni resultados de backtesting.** Las 196 probabilidades originales y sombra, sus SHA, y las 15 alertas previas siguen intactos.
+
+[Protocolo, resultados y certificación](docs/geo2027-log1p-issued-death-count-stress.md) · [Informe completo de los 196 países](data/geo2027-log1p-issued-death-count-stress.json) · Reproductor `scripts/audit_geo2027_log1p_issued_death_stress.py` · Tests `scripts/test_audit_geo2027_log1p_issued_death_stress.py` · Auditoría independiente y gate de publicación GitHub Actions.
+
 ## GEO2027 · Robustez a ediciones UCDP del modelo LOG1P (16-11-2026)
 
 **Resultado científico adversarial:** cinco pares de ediciones oficiales UCDP (origen **2022** o **2023** congelado, universo de **196 países**) muestran que la alternativa continua **LOG1P es significativamente más sensible en algunos países** a los cambios de muertes históricas que el modelo Markov binario inicial; esta comparación cuantifica *sensibilidad retrospectiva*, no rendimiento predictivo ni intervalos probabilísticos. Las cinco parejas solapan fuentes y no son réplicas independientes.
