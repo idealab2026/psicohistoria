@@ -65,13 +65,14 @@ def historical_ledger(source, last_year, fixed_ids):
     for target in range(START_TRAIN,last_year+1):
         origin=target-2
         markov=binary_h2_until(binary,origin)
-        if not set(ids).issubset(markov):
-            raise ValueError("Original Markov historical annual risk cohort changed")
         rows=[]
         for cid in ids:
             h=source[cid]
-            if not {origin-1,origin,target}.issubset(h):
-                raise ValueError("Missing vintage history: cannot impute as event-free")
+            if cid not in markov or not {origin-1,origin,target}.issubset(h):
+                # Countries absent in earlier historical periods are not
+                # imputed as inactive; the fixed 196 reference risk set
+                # becomes an explicitly observed subset for that old year.
+                continue
             deaths=h[origin]
             outcome=int(h[target]>=25)
             rows.append({
@@ -83,8 +84,8 @@ def historical_ledger(source, last_year, fixed_ids):
                 "p_original_binary":markov[cid],
                 "outcome":outcome,
             })
-        if len(rows)!=196:
-            raise AssertionError("Short H2 historical risk cohort")
+        if not 175<=len(rows)<=196:
+            raise ValueError("Historical source coverage below minimum 175 observed countries")
         ledger[target]=rows
     return ledger
 
@@ -94,7 +95,7 @@ def fit_target(ledger,target):
     if (type(target) is not int or not
         FIRST_OUTER_TARGET<=target<=LAST_TARGET or
         target not in ledger or
-        any(len(rows)!=196 for rows in ledger.values())):
+        any(not 175<=len(rows)<=196 for rows in ledger.values())):
         raise ValueError("Invalid rolling-target cohort")
     origin=target-2
     fitrows=[r for y in range(START_TRAIN,origin+1)
@@ -124,8 +125,8 @@ def fit_target(ledger,target):
 
 
 def year_scores(rows,beta):
-    if len(rows)!=196:
-        raise ValueError("Year needs 196 official outcomes")
+    if not 175<=len(rows)<=196:
+        raise ValueError("Year requires at least 175 directly observed labels")
     scores_by_alpha={}
     for alpha in ALPHAS:
         predictions=[{"outcome":r["outcome"],"p":round(p_scaled(
@@ -164,6 +165,9 @@ def year_ledger(sources,names):
                 "source_version":version,
                 "source_release_last_year":cutoff,
                 "risk_n":len(rows),
+                "risk_n_of_original_196":196,
+                "historical_missing_origin_or_label_n":196-len(rows),
+                "historical_fixed_196_countries_not_imputed_as_inactive":True,
                 "positive_outcomes":sum(r["outcome"] for r in rows),
                 "origin_inactive_n":sum(r["origin_state"]==0 for r in rows),
                 "fit":train,
@@ -246,6 +250,8 @@ def study(sources,names,first_issue,frontier):
         "ridge_fixed_5_from_2026_exploratory_study_not_historiographically_issued":True,
         "horizon":2,
         "training_label_max_cutoff_is_target_minus_two":True,
+        "historic_country_risk_eligible_only_if_origin_and_target_observed":True,
+        "no_missing_historical_country_imputed_negative":True,
         "training_feature_max_cutoff_is_target_minus_four":True,
         "source_releases_published_after_many_scored_target_years":True,
         "same_edition_retrospective_revisions_make_historical_asof_unverified":True,
@@ -261,7 +267,7 @@ def study(sources,names,first_issue,frontier):
         "demonstrated_prospective_predictive_skill":False,
         "versions_sha256":{v:SOURCES[v]["sha256"] for v in VERSION_ORDER},
         "rolling_result":report,
-        "limitations":"This checks chronological parameter fitting inside each retrospectively revised edition, NOT historical real-time information availability or predictions actually published in those years. The fixed lambda=5 and alpha family arose after inspecting 2018-20, 2024 and 2025 data, so no retrospective year is a pristine confirmation of this specification. 30 year-vintage rows contain only 9 distinct target years with repeated GWNO countries and highly correlated UCDP editions. Report per-year sign reversals and release disagreements, but no IID uncertainty, hypothesis-test p-values, or 2027 outcome scores. Cross-release earlier backtests are distinct and remain immutable.",
+        "limitations":"This checks chronological parameter fitting inside each retrospectively revised edition, NOT historical real-time information availability or predictions actually published in those years. The fixed lambda=5 and alpha family arose after inspecting 2018-20, 2024 and 2025 data, so no retrospective year is a pristine confirmation of this specification. 30 year-vintage rows contain only 9 distinct target years with historical eligible subsets of the frozen 196 GWNO, repeated countries and highly correlated UCDP editions. Report per-year sign reversals and release disagreements, but no IID uncertainty, hypothesis-test p-values, or 2027 outcome scores. Cross-release earlier backtests are distinct and remain immutable.",
     }
 
 
