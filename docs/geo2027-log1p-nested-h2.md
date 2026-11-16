@@ -53,4 +53,43 @@ Se prueban exactamente las penalizaciones L2 **λ = 5, 20 y 80**, sin elegir otr
 
 Los expedientes futuros y sus métricas **siguen sin resultados oficiales certificados**; el experimento no reemplaza ninguna emisión 2027/28. Incluso si una alternativa supera las métricas históricas, no debe pasar automáticamente a producción: requeriría un protocolo y emisión nuevos, con evaluación posterior genuinamente fuera de muestra.
 
+## Resultados obtenidos de los cuatro archivos UCDP verificados
+
+La fuente oficial reproduce **exactamente** la referencia GEO binaria de los dos estudios anteriores (misma cohorte de 196 países, 35 positivos en 2024 y 34 en 2025). El experimento utiliza dos ajustes logísticos, ambos **entrenados sobre la edición de origen antes de consultar resultados en la edición posterior**. Es una comparación **retrospectiva exploratoria con holdouts previamente vistos**.
+
+| Brier (menor es mejor) | GEO binario original | Control intercepto | GEO + log(1+muertes) |
+|---|---:|---:|---:|
+| 2024 · 196 países | 0,04143146 | 0,04116664 | **0,03795997** |
+| 2025 · 196 países | 0,03873665 | 0,03829956 | **0,03682690** |
+| **Total · 392 observaciones** | 0,04008406 | 0,03973310 | **0,03739343** |
+
+| Log-loss (menor es mejor) | GEO original | Control intercepto | GEO + log(1+muertes) |
+|---|---:|---:|---:|
+| **Total** | 0,15439774 | 0,15445999 | **0,13868762** |
+
+La mejora del Brier de la alternativa continua sobre el binario es **−0,00269062** (un **6,7 % relativo**), y sobre el intercepto de control es **−0,00233967**. En log-loss: **−0,01571011** respecto al original y **−0,01577236** respecto al control. Esto apoya, dentro de los datos examinados, una señal de intensidad continua adicional a una simple recalibración.
+
+### ¿Qué aprendió la selección temporal interna?
+
+Para cada una de las dos ediciones originales, el entrenamiento interior (2012–2017) produjo aproximadamente **1.174 observaciones**, y la evaluación temporal interior (2018–2020), **588 observaciones**. Las tres penalizaciones predefinidas ofrecen los siguientes Brier de validación de intensidad:
+
+| λ | Orig. 2022 · validación 2018–2020 | Orig. 2023 · validación 2018–2020 |
+|---|---:|---:|
+| **5** | **0,03944017** | **0,03929446** |
+| 20 | 0,04176337 | 0,04167379 |
+| 80 | 0,04331439 | 0,04324737 |
+
+**λ=5** resulta seleccionado en ambas ediciones **sin consultar las etiquetas 2024/25**. Es la penalización más débil de la rejilla original; no queda probado que sea óptima y **no se ampliará la rejilla retroactivamente usando el mismo holdout ya explorado**.
+
+Los coeficientes finales \`[intercepto, pendiente inactivo, pendiente activo]\` para la primera edición son \`[-0,308463; 1,300075; 1,806742]\` y para la segunda \`[-0,335728; 1,304542; 1,892413]\`. Las pendientes positivas son compatibles con un mayor riesgo condicional cuanto mayor es la intensidad dentro de cada estado, pero no prueban causalidad ni estabilidad fuera del intervalo histórico.
+
+### Heterogeneidad y fallos
+
+- En la cohorte 2024 se reduce el Brier en el grupo activo al origen en **−0,01048** (37 países) y en el inactivo **−0,00184** (159 países).
+- En 2025 se reduce en los activos **−0,01339** (34 países), pero **empeora +0,00050** entre inactivos (162 países). No es una mejora uniforme.
+- **168 de los 196 países** presentan una reducción en el Brier medio de ambos años; **28 países** empeoran. La mejora agregada oculta errores locales importantes, por lo que no debe presentarse un mapa de países como predicciones certificadas.
+- Las dos ediciones de origen comparten gran parte de sus años de entrenamiento y validación: no equivalen a dos replicaciones estadísticas independientes.
+
+**Dictamen limitado:** se obtiene una mejora retrospectiva consistente en dos años evaluados y por encima de una calibración de intercepto. **No corresponde sustituir el modelo original ni emitir ahora la variante como sistema validado**, porque los dos años de evaluación ya se conocían al escoger esta nueva familia de modelos. La prueba necesaria sería un outcome ulterior, publicado en una edición futura, que no hubiese formado parte de ninguna decisión de investigación sobre esta arquitectura. Ningún resultado oficial 2027 se ha resuelto.
+
 Archivos verificables: script `scripts/experiment_geo2027_log1p_nested_h2.py`, tests `scripts/test_experiment_geo2027_log1p_nested_h2.py` y reporte JSON `data/geo2027-log1p-nested-h2.json`. GitHub Actions repite todo el estudio desde fuentes con SHA oficial y compara el resultado byte a byte antes de permitir el despliegue.
