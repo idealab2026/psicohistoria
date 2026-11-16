@@ -47,6 +47,23 @@ El término nacional de Indonesia representa **aproximadamente el 99,2 %** de la
 
 El intercambio histórico de la lista top-5 no se repite dos veces en episodios independientes: aparece al pasar de 23.1 a 25.1 y sigue presente en 26.1. No hay resultados 2027 observados ni tasas prospectivas de acierto calculadas.
 
+## Auditoría directa de las muertes originales (23.1, 24.1, 25.1 y 26.1)
+
+Para confirmar el origen del cambio de etiqueta, se han extraído de forma independiente las **muertes anuales de violencia estatal** (`sb_total_deaths_best`) de los archivos oficiales originales: XLSX para 23.1 y CSV ZIP para 24.1, 25.1 y 26.1. Cada archivo ha pasado su verificación de SHA-256. No se infieren muertes a partir de las probabilidades del modelo.
+
+| Indonesia · muertes state-based | UCDP 23.1 | UCDP 24.1 | UCDP 25.1 | UCDP 26.1 |
+|---|---:|---:|---:|---:|
+| 2019 | **16** | **16** | **34** | **34** |
+| 2020 | **21** | **21** | **31** | **31** |
+
+Ambos años pasan del lado **inferior a 25** al lado **igual o superior a 25** exclusivamente al introducir la edición **25.1**, manteniéndose las nuevas cifras en **26.1**. La revisión respecto a 23.1 es de **+18 muertes (2019)** y **+10 muertes (2020)** en el estimador `best` de UCDP.
+
+Esta información ayuda a explicar el cambio de la matriz Markov nacional `[[13,5],[4,11]] → [[12,4],[3,14]]`. Al sustituir los estados binarios de dos años adyacentes, también se alteran las transiciones anuales que **entran o salen** de esos años: no son dos cambios de un único contador.
+
+El contraste íntegro de los **seis años 2017–2022** para Indonesia y Kirguistán, en las cuatro ediciones, figura en `data/geo2027-indonesia-raw-death-revisions.json`. Se genera con `scripts/audit_geo2027_indonesia_original_fatalities.py --check-report`, que rechaza cifras fraccionarias, fuentes con SHA incorrecto, duplicados, años ausentes e inconsistencias con la atribución binaria publicada. El CI obliga a la reconstrucción byte-a-byte antes del despliegue.
+
+El campo es *muertes de violencia organizada estatal con la estimación best*, **no todas las muertes violentas** ni un inventario explicativo de incidentes concretos. La investigación **no identifica todavía qué episodios o correcciones editoriales específicas** justifican el aumento de 16 a 34 o de 21 a 31. Tampoco demuestra acierto prospectivo.
+
 ## Interpretación rigurosa
 
 Esta es una **atribución algebraica dependiente de la ecuación**, no una estimación causal de cómo el conflicto geopolítico de Indonesia afectó a otros países, ni una distribución de error futuro. Los factores son bloques de datos correlacionados y las combinaciones cruzadas `(L1,O0)` y `(L0,O1)` son contrafactuales artificiales; sus aportaciones cambian si se define otra agrupación de factores. No hay evidencia de que estas revisiones se repitan en UCDP 27.1.
