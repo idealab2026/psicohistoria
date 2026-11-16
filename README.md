@@ -10,6 +10,8 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 La separación evita contar dos veces el peso de Indonesia en el prior mundial (`global = Indonesia + demás países`). Es **atribución algebraica de datos revisados**, no causalidad, no una nueva predicción 2027 y no una evaluación prospectiva. Ninguna de las 196 probabilidades ni las 15 alertas originales cambia. Cero resultados certificados de 2027.
 
+**Verificación del dato original de mortalidad:** la edición UCDP 23.1 (y 24.1) registra **16 muertes estatales en 2019** y **21 en 2020** para Indonesia; las ediciones 25.1 (y 26.1) registran **34 y 31**, respectivamente. Ambos años cruzan así el umbral binario de 25 muertes, lo que altera varias transiciones anuales del Markov. El desglose de los seis años 2017–2022 y cuatro ediciones, junto a controles SHA-256, está en `data/geo2027-indonesia-raw-death-revisions.json`, con reproductor `scripts/audit_geo2027_indonesia_original_fatalities.py` y pruebas `scripts/test_audit_geo2027_indonesia_original_fatalities.py`. No se atribuye la revisión a incidentes concretos sin sus fuentes de evento.
+
 Fuentes SHA-pinned, tabla de resultados y límites: [informe de atribución](docs/geo2027-indonesia-vintage-revision-attribution.md). Archivo reproducible `data/geo2027-indonesia-vintage-revision-attribution.json`; código `scripts/diagnose_geo2027_indonesia_vintage_attribution.py`; pruebas `scripts/test_diagnose_geo2027_indonesia_vintage_attribution.py`. GitHub Actions exige el resultado byte a byte antes de desplegar.
 
 ## GEO2027 · Cambios reales de listas históricas entre ediciones UCDP (16-11-2026)
