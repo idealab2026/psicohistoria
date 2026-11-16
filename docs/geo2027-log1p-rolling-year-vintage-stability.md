@@ -25,6 +25,39 @@ Una regresión cuyo ajuste solo utiliza \(u\leq t-2\) evita *fuga de etiquetas p
 
 Además, los años 2018–2020 sirvieron anteriormente para escoger regularización, y 2024–2025 ya se examinaron para la familia LOG1P; por tanto no constituyen conjuntos de confirmación vírgenes para ninguna variante. No deben elegirse nuevas pendientes basándose en los recuentos de años favorables que surjan ahora.
 
+## Resultados reproducidos desde las cuatro ediciones oficiales
+
+Las cuatro reconstrucciones contienen **30 bloques año–edición** en conjunto (6 en 23.1, 7 en 24.1, 8 en 25.1 y 9 en 26.1). Solo existen **9 años objetivo diferentes (2017–2025)**. En el intervalo de evaluación 2017–2025 los 196 países de referencia tienen etiquetas observadas en las fuentes recuperadas, aunque el código continúa **excluyendo explícitamente** cualquier país-año faltante en periodos más antiguos en lugar de imputarlo como negativo.
+
+La comparación principal es la diferencia \(\Delta Brier=Brier_{\alpha=1}-Brier_{\alpha=0}\), **negativa si conserva mejor puntuación la señal continua completa**. Ambos modelos se reentrenan para cada año objetivo con etiquetas disponibles *solamente hasta dos años antes* y con la misma penalización ridge 5, **no optimizada individualmente por año**.
+
+| Año objetivo | Ediciones donde aparece | \(\Delta Brier\) UCDP 26.1 | Interpretación retrospectiva |
+|---|---:|---:|---|
+| **2017** | 4 | +0,000111 | Favorece **α=0**, desactivar intensidad inactiva |
+| **2018** | 4 | −0,000962 | Favorece α=1, señal completa |
+| **2019** | 4 | −0,000936 | Favorece α=1 |
+| **2020** | 4 | **−0,002072** | Mayor ventaja observada para α=1 |
+| **2021** | 4 | −0,000324 | Favorece α=1, ventaja limitada |
+| **2022** | 4 | −0,000336 | Favorece α=1, ventaja limitada |
+| **2023** | 3 | −0,000676 | Favorece α=1 |
+| **2024** | 2 | −0,000788 | Favorece α=1 |
+| **2025** | 1 | **+0,000620** | Favorece **α=0** |
+
+**Balance: α=1 alcanza menor Brier en 7 de los 9 años distintos; α=0 lo alcanza en 2017 y 2025.** En la edición UCDP 26.1, el promedio anual (cada año pesa una vez; la cohorte evaluable tiene 196 observaciones por año) es **0,037980** para α=1 y **0,038576** para α=0. La diferencia de −0,000596 es descriptiva, no un estimador prospectivo validado.
+
+### Estabilidad temporal frente a estabilidad de edición
+
+- **Variación entre años:** en UCDP 26.1 la dirección del efecto cambia dos veces: de 2017 a 2018 y de 2024 a 2025. En los archivos que terminan en 2022–2024, solo se observa el primer cambio. Esto es coherente con una señal que puede ser históricamente útil **sin ser uniformemente estable año a año**.
+- **Variación de edición para el mismo año:** **0 de los 8 años** con dos o más ediciones disponibles cambian de signo en \(\Delta Brier\). La dirección es estable frente a estas revisiones oficiales concretas, pero la *magnitud* puede variar bastante.
+- **Ejemplo concreto de sensibilidad editorial:** para objetivo **2022**, la ventaja de α=1 disminuye de **−0,001810** usando edición **23.1** a **−0,000336** usando edición **26.1**; aproximadamente **5,4 veces menor en valor absoluto**, sin cambiar el signo.
+- **Relación con los estudios de emisiones anteriores:** la reconstrucción anual por edición utiliza **las etiquetas objetivo incluidas en esa misma edición retrospectiva**; no reproduce las comparaciones estrictas entre ediciones de origen y objetivo de los estudios anteriores. Son diseños distintos y no deben mezclar sus Brier en una sola tabla como si fueran una replicación exacta.
+
+### Regla de interpretación
+
+No inferimos que 7/9 equivalga a «probabilidad 77,8 % de superioridad»: los años tienen dependencias, las fuentes han sido revisadas y la familia de parámetros λ=5 / α se decidió tras observar parte de este histórico. Tampoco se realiza un test binomial o IID de significación porque violaría esas hipótesis.
+
+**Conclusión provisional:** la señal continua no es simplemente una mejora de 2024: su ventaja de Brier reaparece desde 2018 hasta 2024 en el mismo protocolo retrospectivo, con diferencias de tamaño variables. El fallo de 2025 no se oculta. Esta combinación refuerza mantener **la sombra prospectiva LOG1P original congelada** para evaluar 2027 sin retocarla y mantener por separado el diagnóstico de fragilidad editorial ya comprobado.
+
 ## Métricas y diagnóstico
 
 Para cada versión y cada año objetivo \(t\) se publica **Brier y log-loss por α**, Brier del Markov original, **número exacto de países observados de los 196 de referencia**, cobertura histórica faltante, número de países positivos (≥25 muertes estatales), estados activos al origen, tamaño exacto del conjunto de entrenamiento, coeficientes y trazas de los cortes temporales. Se reporta la diferencia \(\Delta_t = Brier_{\alpha=1,t} - Brier_{\alpha=0,t}\): negativa si favorece la intensidad completa; positiva si favorece la supresión entre inactivos.
