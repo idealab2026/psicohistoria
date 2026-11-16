@@ -27,6 +27,8 @@ def sha(raw):
 
 
 def audit(issue_raw,manifest_raw,original_raw,*,frozen_sha=FROZEN_ISSUE_SHA256):
+    if sha(original_raw)!=SOURCE_SHA256:
+        raise ValueError("Original 2027 forecast SHA changed")
     original=json.loads(original_raw)
     manifest=json.loads(manifest_raw)
     issue=json.loads(issue_raw)
