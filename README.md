@@ -4,6 +4,16 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## GEO2027 · Señal continua log1p de intensidad con entrenamiento temporal anidado (16-11-2026)
+
+**Resultado retrospectivo exploratorio (dos años objetivo ya observados en análisis anteriores):** una corrección logística penalizada del **logit de la probabilidad Markov binaria original GEO H2**, utilizando dos pendientes continuas sobre log(1+muertes estatales en el origen), **reduce el Brier agregado de 0,04008406 a 0,03739343** (**−6,7 % relativo**) y el log-loss de **0,15439774 a 0,13868762** (**−10,2 %**). Un control que ajusta *solo* el intercepto alcanza Brier **0,03973310**, de modo que la intensidad aporta mejora incremental frente a la mera recalibración.
+
+Se reconstruyeron dos cohortes de **196 países** y 69 positivos en archivos UCDP originales con SHA-256: 2022→2024 (ediciones 23.1→25.1) y 2023→2025 (24.1→26.1). Cada etiqueta para entrenamiento interno 2012–2017 y selección temporal 2018–2020 se ajusta con un **corte H2 anterior a esa etiqueta**; se eligió λ=5 entre {5,20,80} por validación interna, y los parámetros finales se recalcularon hasta la fecha del origen. La mejora aparece en ambos años, pero en **2025 el grupo originalmente inactivo empeora ligeramente**; 28/196 países muestran deterioro medio.
+
+**Restricción epistémica fundamental:** los resultados 2024/2025 ya habían sido inspeccionados por el laboratorio; aunque no haya fuga de etiquetas posteriores dentro del algoritmo, **no es una validación confirmatoria intocada**. No se adoptará esta variante ni se alterarán pronósticos GEO2027/28 basándose en estos resultados. Ningún resultado futuro certificado de 2027. El resultado negativo del experimento anterior de cuatro estados se conserva íntegro.
+
+Documentación y limitaciones: [protocolo y resultados de intensidad continua](docs/geo2027-log1p-nested-h2.md); [informe completo](data/geo2027-log1p-nested-h2.json); código reproductor `scripts/experiment_geo2027_log1p_nested_h2.py` y pruebas `scripts/test_experiment_geo2027_log1p_nested_h2.py`.
+
 ## GEO2027 · ¿Aporta señal predictiva conservar intensidad de muertes? (16-11-2026)
 
 **Resultado negativo de una ablación retrospectiva ex ante con dos ediciones de origen y resultado distintas:** se ha comparado el GEO H2 binario original con una alternativa de **cuatro estados de intensidad de violencia estatal**: 0, 1–24, 25–99 y ≥100 muertes anuales, con el mismo shrinkage local 20, Dirichlet global 1 y horizonte dos años. Las ediciones SHA-fijadas UCDP 23.1→25.1 (2022→2024) y 24.1→26.1 (2023→2025) aportan 196 países por periodo, **392 resultados históricos, 69 positivos**; el código reproduce primero el Brier/logloss exacto del modelo original, bloqueando comparaciones inconsistentes.
