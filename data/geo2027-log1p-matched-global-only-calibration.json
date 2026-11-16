@@ -1,1 +1,4200 @@
-{"status":"PENDING_SOURCE_PINNED_MATCHED_MARKOV_LOGISTIC_PIPELINE_REPLAY"}
+{
+  "2027_resolved_official_outcomes": 0,
+  "absolute_Brier_scored_ONLY_on_subthreshold_affected_countries": true,
+  "all_training_country_local_markov_shrinkage_removed": true,
+  "all_training_global_markov_offsets_exclude_target_country": true,
+  "all_training_global_markov_offsets_exclude_training_row_country": true,
+  "all_training_labels_heldout_country_removed": true,
+  "alpha0_and_alpha1_previously_examined": true,
+  "archive_source_SHA256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "blocks": [
+    {
+      "all_country_pairs": [
+        {
+          "absolute_matched_beta_inactive_shift": 0.461755590748,
+          "beta_country_excluded_global_only_offsets": [
+            -0.084690186632,
+            1.1282033349,
+            1.323939205487
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.08020027506,
+            0.666447744152,
+            0.977031524791
+          ],
+          "country": "Peru",
+          "country_id": 135,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0027820011727290404,
+            "alpha0_p": 0.052744679094,
+            "alpha1_loss": 0.012099293343257734,
+            "alpha1_p": 0.109996787877,
+            "delta_alpha1_minus_alpha0": 0.009317292170528693
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0028057634924670448,
+            "alpha0_p": 0.05296945811,
+            "alpha1_loss": 0.00675938326363425,
+            "alpha1_p": 0.082215468518,
+            "delta_alpha1_minus_alpha0": 0.003953619771167205
+          },
+          "heldout_global_only_markov_probability": 0.057139883038,
+          "matched_training_rows": 778,
+          "origin_deaths": 9,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.094697891689,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.007751432155994227,
+            "alpha0_p": 0.088042218032,
+            "alpha1_loss": 0.017933140707175957,
+            "alpha1_p": 0.133914676967,
+            "delta_alpha1_minus_alpha0": 0.01018170855118173
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.45942999754,
+          "beta_country_excluded_global_only_offsets": [
+            -0.109569047778,
+            1.112861303796,
+            1.332062461105
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.101102580983,
+            0.653431306257,
+            0.989523653814
+          ],
+          "country": "France",
+          "country_id": 220,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.002714991662219695,
+            "alpha0_p": 0.052105581872,
+            "alpha1_loss": 0.006577657259991928,
+            "alpha1_p": 0.081102757413,
+            "delta_alpha1_minus_alpha0": 0.003862665597772233
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0027589108058319045,
+            "alpha0_p": 0.052525334895,
+            "alpha1_loss": 0.00465296457909752,
+            "alpha1_p": 0.06821264237,
+            "delta_alpha1_minus_alpha0": 0.0018940537732656153
+          },
+          "heldout_global_only_markov_probability": 0.057790568193,
+          "matched_training_rows": 778,
+          "origin_deaths": 3,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.025227056095,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0005224276629570331,
+            "alpha0_p": 0.022856676551,
+            "alpha1_loss": 0.000897800036705225,
+            "alpha1_p": 0.029963311511,
+            "delta_alpha1_minus_alpha0": 0.0003753723737481919
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.463981881736,
+          "beta_country_excluded_global_only_offsets": [
+            -0.102646927724,
+            1.127195769059,
+            1.323767664267
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.096850775881,
+            0.663213887324,
+            0.986623448948
+          ],
+          "country": "Armenia",
+          "country_id": 371,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.002706186188489714,
+            "alpha0_p": 0.052021016796,
+            "alpha1_loss": 0.011774150286439267,
+            "alpha1_p": 0.108508756727,
+            "delta_alpha1_minus_alpha0": 0.009067964097949553
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0027360846369606853,
+            "alpha0_p": 0.05230759636,
+            "alpha1_loss": 0.006568961405837729,
+            "alpha1_p": 0.081049129581,
+            "delta_alpha1_minus_alpha0": 0.0038328767688770434
+          },
+          "heldout_global_only_markov_probability": 0.057322144176,
+          "matched_training_rows": 778,
+          "origin_deaths": 9,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.070531098851,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0041525161509222315,
+            "alpha0_p": 0.064440019793,
+            "alpha1_loss": 0.009830824086774539,
+            "alpha1_p": 0.099150512287,
+            "delta_alpha1_minus_alpha0": 0.005678307935852308
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.447646944417,
+          "beta_country_excluded_global_only_offsets": [
+            -0.090967623567,
+            1.129944192379,
+            1.322602362668
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.087528717832,
+            0.682297247962,
+            0.98027246443
+          ],
+          "country": "Angola",
+          "country_id": 540,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.8986531609920095,
+            "alpha0_p": 0.052026814202,
+            "alpha1_loss": 0.8737715570665772,
+            "alpha1_p": 0.065242514303,
+            "delta_alpha1_minus_alpha0": -0.024881603925432372
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.898331128398621,
+            "alpha0_p": 0.05219668264,
+            "alpha1_loss": 0.8838581110050795,
+            "alpha1_p": 0.059862716937,
+            "delta_alpha1_minus_alpha0": -0.014473017393541454
+          },
+          "heldout_global_only_markov_probability": 0.056700577913,
+          "matched_training_rows": 778,
+          "origin_deaths": 1,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.163489851387,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.7193261178232214,
+            "alpha0_p": 0.151869044414,
+            "alpha1_loss": 0.6863714786390921,
+            "alpha1_p": 0.171524605894,
+            "delta_alpha1_minus_alpha0": -0.03295463918412933
+          },
+          "target_outcome": 1,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.45942999754,
+          "beta_country_excluded_global_only_offsets": [
+            -0.109569047778,
+            1.112861303796,
+            1.332062461105
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.101102580983,
+            0.653431306257,
+            0.989523653814
+          ],
+          "country": "Jordan",
+          "country_id": 663,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.002714991662219695,
+            "alpha0_p": 0.052105581872,
+            "alpha1_loss": 0.004240394500946176,
+            "alpha1_p": 0.065118311564,
+            "delta_alpha1_minus_alpha0": 0.001525402838726481
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0027589108058319045,
+            "alpha0_p": 0.052525334895,
+            "alpha1_loss": 0.003586796587428753,
+            "alpha1_p": 0.059889870491,
+            "delta_alpha1_minus_alpha0": 0.0008278857815968484
+          },
+          "heldout_global_only_markov_probability": 0.057790568193,
+          "matched_training_rows": 778,
+          "origin_deaths": 1,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.025227056095,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0005224276629570331,
+            "alpha0_p": 0.022856676551,
+            "alpha1_loss": 0.0006851996396905622,
+            "alpha1_p": 0.026176318299,
+            "delta_alpha1_minus_alpha0": 0.00016277197673352905
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.451715307111,
+          "beta_country_excluded_global_only_offsets": [
+            -0.087078015082,
+            1.127155815027,
+            1.336168173148
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.091715853431,
+            0.675440507915,
+            0.994617899334
+          ],
+          "country": "Israel",
+          "country_id": 666,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0026825380644337903,
+            "alpha0_p": 0.051793224117,
+            "alpha1_loss": 0.012382886862965787,
+            "alpha1_p": 0.111278420473,
+            "delta_alpha1_minus_alpha0": 0.009700348798531997
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.002659045093552651,
+            "alpha0_p": 0.051565929581,
+            "alpha1_loss": 0.006731881086745772,
+            "alpha1_p": 0.082048041334,
+            "delta_alpha1_minus_alpha0": 0.004072835993193122
+          },
+          "heldout_global_only_markov_probability": 0.056240445837,
+          "matched_training_rows": 778,
+          "origin_deaths": 10,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.237512252552,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.048975485042712215,
+            "alpha0_p": 0.22130405564,
+            "alpha1_loss": 0.10140100991245964,
+            "alpha1_p": 0.318435252308,
+            "delta_alpha1_minus_alpha0": 0.05242552486974742
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.462810222897,
+          "beta_country_excluded_global_only_offsets": [
+            -0.104862965832,
+            1.114457347283,
+            1.322345426203
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.097319801002,
+            0.651647124385,
+            0.986943268539
+          ],
+          "country": "Kyrgyzstan",
+          "country_id": 703,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.002698786997103264,
+            "alpha0_p": 0.05194985079,
+            "alpha1_loss": 0.0042181089159478245,
+            "alpha1_p": 0.064946970029,
+            "delta_alpha1_minus_alpha0": 0.0015193219188445605
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0027376563294683577,
+            "alpha0_p": 0.052322617762,
+            "alpha1_loss": 0.0035568376469266158,
+            "alpha1_p": 0.059639229094,
+            "delta_alpha1_minus_alpha0": 0.000819181317458258
+          },
+          "heldout_global_only_markov_probability": 0.057363874953,
+          "matched_training_rows": 778,
+          "origin_deaths": 1,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.066598259503,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0036963733999685424,
+            "alpha0_p": 0.060797807526,
+            "alpha1_loss": 0.004790439877577138,
+            "alpha1_p": 0.069213003674,
+            "delta_alpha1_minus_alpha0": 0.0010940664776085958
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.462613639676,
+          "beta_country_excluded_global_only_offsets": [
+            -0.10527275141,
+            1.114397241277,
+            1.32264060084
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.097609042367,
+            0.651783601601,
+            0.98714051023
+          ],
+          "country": "China",
+          "country_id": 710,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0026992404225998933,
+            "alpha0_p": 0.051954214676,
+            "alpha1_loss": 0.008437419355084177,
+            "alpha1_p": 0.091855426378,
+            "delta_alpha1_minus_alpha0": 0.005738178932484284
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0027387417595493104,
+            "alpha0_p": 0.052332989209,
+            "alpha1_loss": 0.0053642856475452525,
+            "alpha1_p": 0.073241283765,
+            "delta_alpha1_minus_alpha0": 0.002625543887995942
+          },
+          "heldout_global_only_markov_probability": 0.057390830307,
+          "matched_training_rows": 778,
+          "origin_deaths": 5,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.063700271251,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0033780118376719607,
+            "alpha0_p": 0.058120666184,
+            "alpha1_loss": 0.006584233059082264,
+            "alpha1_p": 0.081143287209,
+            "delta_alpha1_minus_alpha0": 0.0032062212214103037
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.462931283088,
+          "beta_country_excluded_global_only_offsets": [
+            -0.104935346322,
+            1.116690031691,
+            1.32058659706
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.096974344412,
+            0.653758748604,
+            0.986707705458
+          ],
+          "country": "Bangladesh",
+          "country_id": 771,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.8988314939370742,
+            "alpha0_p": 0.051932758747,
+            "alpha1_loss": 0.8743096423813678,
+            "alpha1_p": 0.06495473779,
+            "delta_alpha1_minus_alpha0": -0.02452185155570641
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.8980857720061327,
+            "alpha0_p": 0.052326125713,
+            "alpha1_loss": 0.884223522274682,
+            "alpha1_p": 0.059668397705,
+            "delta_alpha1_minus_alpha0": -0.013862249731450671
+          },
+          "heldout_global_only_markov_probability": 0.057349022156,
+          "matched_training_rows": 778,
+          "origin_deaths": 1,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.069566409174,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.8769468604689171,
+            "alpha0_p": 0.063545590822,
+            "alpha1_loss": 0.8605494115083131,
+            "alpha1_p": 0.072341974913,
+            "delta_alpha1_minus_alpha0": -0.016397448960604022
+          },
+          "target_outcome": 1,
+          "target_year": 2017
+        }
+      ],
+      "by_design": {
+        "global_only_markov_matched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -4.4246332e-05,
+          "delta_alpha1_minus_alpha0_within_affected": -0.000963586792,
+          "mean_Brier_alpha0_only_affected": 0.2018314879,
+          "mean_Brier_alpha1_only_affected": 0.200867901108,
+          "n_affected": 9,
+          "sum_loss_alpha0": 1.816483391099,
+          "sum_loss_alpha1": 1.807811109973,
+          "winner": "alpha1_full_better"
+        },
+        "global_only_markov_unmatched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -5.2598315e-05,
+          "delta_alpha1_minus_alpha0_within_affected": -0.001145474426,
+          "mean_Brier_alpha0_only_affected": 0.201734668148,
+          "mean_Brier_alpha1_only_affected": 0.200589193722,
+          "n_affected": 9,
+          "sum_loss_alpha0": 1.815612013328,
+          "sum_loss_alpha1": 1.805302743497,
+          "winner": "alpha1_full_better"
+        },
+        "original_markov_country_blocked_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": 0.000121285129,
+          "delta_alpha1_minus_alpha0_within_affected": 0.002641320585,
+          "mean_Brier_alpha0_only_affected": 0.185030183578,
+          "mean_Brier_alpha1_only_affected": 0.187671504163,
+          "n_affected": 9,
+          "sum_loss_alpha0": 1.665271652205,
+          "sum_loss_alpha1": 1.689043537467,
+          "winner": "alpha0_no_subthreshold_better"
+        }
+      },
+      "country_pairs_published": true,
+      "forecast_origin_year": 2015,
+      "last_training_feature_year": 2013,
+      "last_training_label_year": 2015,
+      "matched_retraining_changes_alpha_winner_from_original": true,
+      "matched_retraining_changes_alpha_winner_from_unmatched": false,
+      "max_abs_beta_inactive_shift": 0.463981881736,
+      "mean_abs_beta_inactive_shift": 0.459146096084,
+      "n_full_reference": 196,
+      "n_future_binary_positive_affected": 2,
+      "n_subthreshold_affected": 9,
+      "not_an_independent_validation": true,
+      "source_version": "26.1",
+      "target_year": 2017
+    },
+    {
+      "all_country_pairs": [],
+      "by_design": {
+        "global_only_markov_matched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.001173786256,
+          "delta_alpha1_minus_alpha0_within_affected": -0.032866015159,
+          "mean_Brier_alpha0_only_affected": 0.258242517235,
+          "mean_Brier_alpha1_only_affected": 0.225376502076,
+          "n_affected": 7,
+          "sum_loss_alpha0": 1.807697620647,
+          "sum_loss_alpha1": 1.577635514535,
+          "winner": "alpha1_full_better"
+        },
+        "global_only_markov_unmatched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.000610675918,
+          "delta_alpha1_minus_alpha0_within_affected": -0.017098925708,
+          "mean_Brier_alpha0_only_affected": 0.257929238425,
+          "mean_Brier_alpha1_only_affected": 0.240830312716,
+          "n_affected": 7,
+          "sum_loss_alpha0": 1.805504668972,
+          "sum_loss_alpha1": 1.685812189015,
+          "winner": "alpha1_full_better"
+        },
+        "original_markov_country_blocked_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.001040764833,
+          "delta_alpha1_minus_alpha0_within_affected": -0.029141415319,
+          "mean_Brier_alpha0_only_affected": 0.200645784068,
+          "mean_Brier_alpha1_only_affected": 0.17150436875,
+          "n_affected": 7,
+          "sum_loss_alpha0": 1.404520488479,
+          "sum_loss_alpha1": 1.20053058125,
+          "winner": "alpha1_full_better"
+        }
+      },
+      "country_pairs_published": false,
+      "forecast_origin_year": 2016,
+      "last_training_feature_year": 2014,
+      "last_training_label_year": 2016,
+      "matched_retraining_changes_alpha_winner_from_original": false,
+      "matched_retraining_changes_alpha_winner_from_unmatched": false,
+      "max_abs_beta_inactive_shift": 0.532777657513,
+      "mean_abs_beta_inactive_shift": 0.523330670001,
+      "n_full_reference": 196,
+      "n_future_binary_positive_affected": 2,
+      "n_subthreshold_affected": 7,
+      "not_an_independent_validation": true,
+      "source_version": "26.1",
+      "target_year": 2018
+    },
+    {
+      "all_country_pairs": [],
+      "by_design": {
+        "global_only_markov_matched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.001645916785,
+          "delta_alpha1_minus_alpha0_within_affected": -0.032259968986,
+          "mean_Brier_alpha0_only_affected": 0.272925240338,
+          "mean_Brier_alpha1_only_affected": 0.240665271352,
+          "n_affected": 10,
+          "sum_loss_alpha0": 2.729252403384,
+          "sum_loss_alpha1": 2.406652713519,
+          "winner": "alpha1_full_better"
+        },
+        "global_only_markov_unmatched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.000868171723,
+          "delta_alpha1_minus_alpha0_within_affected": -0.017016165775,
+          "mean_Brier_alpha0_only_affected": 0.272142507551,
+          "mean_Brier_alpha1_only_affected": 0.255126341776,
+          "n_affected": 10,
+          "sum_loss_alpha0": 2.721425075508,
+          "sum_loss_alpha1": 2.551263417757,
+          "winner": "alpha1_full_better"
+        },
+        "original_markov_country_blocked_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.001055160289,
+          "delta_alpha1_minus_alpha0_within_affected": -0.020681141656,
+          "mean_Brier_alpha0_only_affected": 0.239161788842,
+          "mean_Brier_alpha1_only_affected": 0.218480647185,
+          "n_affected": 10,
+          "sum_loss_alpha0": 2.391617888417,
+          "sum_loss_alpha1": 2.184806471855,
+          "winner": "alpha1_full_better"
+        }
+      },
+      "country_pairs_published": false,
+      "forecast_origin_year": 2017,
+      "last_training_feature_year": 2015,
+      "last_training_label_year": 2017,
+      "matched_retraining_changes_alpha_winner_from_original": false,
+      "matched_retraining_changes_alpha_winner_from_unmatched": false,
+      "max_abs_beta_inactive_shift": 0.549387816298,
+      "mean_abs_beta_inactive_shift": 0.538093025208,
+      "n_full_reference": 196,
+      "n_future_binary_positive_affected": 3,
+      "n_subthreshold_affected": 10,
+      "not_an_independent_validation": true,
+      "source_version": "26.1",
+      "target_year": 2019
+    },
+    {
+      "all_country_pairs": [],
+      "by_design": {
+        "global_only_markov_matched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.001933010216,
+          "delta_alpha1_minus_alpha0_within_affected": -0.029143846337,
+          "mean_Brier_alpha0_only_affected": 0.211946202622,
+          "mean_Brier_alpha1_only_affected": 0.182802356285,
+          "n_affected": 13,
+          "sum_loss_alpha0": 2.755300634086,
+          "sum_loss_alpha1": 2.376430631711,
+          "winner": "alpha1_full_better"
+        },
+        "global_only_markov_unmatched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.000964031393,
+          "delta_alpha1_minus_alpha0_within_affected": -0.014534627151,
+          "mean_Brier_alpha0_only_affected": 0.211356982869,
+          "mean_Brier_alpha1_only_affected": 0.196822355718,
+          "n_affected": 13,
+          "sum_loss_alpha0": 2.747640777299,
+          "sum_loss_alpha1": 2.55869062433,
+          "winner": "alpha1_full_better"
+        },
+        "original_markov_country_blocked_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.001918235167,
+          "delta_alpha1_minus_alpha0_within_affected": -0.028921084053,
+          "mean_Brier_alpha0_only_affected": 0.171824412239,
+          "mean_Brier_alpha1_only_affected": 0.142903328186,
+          "n_affected": 13,
+          "sum_loss_alpha0": 2.233717359112,
+          "sum_loss_alpha1": 1.857743266421,
+          "winner": "alpha1_full_better"
+        }
+      },
+      "country_pairs_published": false,
+      "forecast_origin_year": 2018,
+      "last_training_feature_year": 2016,
+      "last_training_label_year": 2018,
+      "matched_retraining_changes_alpha_winner_from_original": false,
+      "matched_retraining_changes_alpha_winner_from_unmatched": false,
+      "max_abs_beta_inactive_shift": 0.617978610656,
+      "mean_abs_beta_inactive_shift": 0.600941903197,
+      "n_full_reference": 196,
+      "n_future_binary_positive_affected": 3,
+      "n_subthreshold_affected": 13,
+      "not_an_independent_validation": true,
+      "source_version": "26.1",
+      "target_year": 2020
+    },
+    {
+      "all_country_pairs": [],
+      "by_design": {
+        "global_only_markov_matched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.001343627287,
+          "delta_alpha1_minus_alpha0_within_affected": -0.023940995304,
+          "mean_Brier_alpha0_only_affected": 0.167972259434,
+          "mean_Brier_alpha1_only_affected": 0.14403126413,
+          "n_affected": 11,
+          "sum_loss_alpha0": 1.847694853775,
+          "sum_loss_alpha1": 1.584343905435,
+          "winner": "alpha1_full_better"
+        },
+        "global_only_markov_unmatched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.000715833139,
+          "delta_alpha1_minus_alpha0_within_affected": -0.012754845013,
+          "mean_Brier_alpha0_only_affected": 0.167508742583,
+          "mean_Brier_alpha1_only_affected": 0.15475389757,
+          "n_affected": 11,
+          "sum_loss_alpha0": 1.842596168413,
+          "sum_loss_alpha1": 1.702292873265,
+          "winner": "alpha1_full_better"
+        },
+        "original_markov_country_blocked_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.000237423749,
+          "delta_alpha1_minus_alpha0_within_affected": -0.004230459535,
+          "mean_Brier_alpha0_only_affected": 0.15890603521,
+          "mean_Brier_alpha1_only_affected": 0.154675575675,
+          "n_affected": 11,
+          "sum_loss_alpha0": 1.747966387313,
+          "sum_loss_alpha1": 1.70143133243,
+          "winner": "alpha1_full_better"
+        }
+      },
+      "country_pairs_published": false,
+      "forecast_origin_year": 2019,
+      "last_training_feature_year": 2017,
+      "last_training_label_year": 2019,
+      "matched_retraining_changes_alpha_winner_from_original": false,
+      "matched_retraining_changes_alpha_winner_from_unmatched": false,
+      "max_abs_beta_inactive_shift": 0.675167038397,
+      "mean_abs_beta_inactive_shift": 0.660580737102,
+      "n_full_reference": 196,
+      "n_future_binary_positive_affected": 2,
+      "n_subthreshold_affected": 11,
+      "not_an_independent_validation": true,
+      "source_version": "26.1",
+      "target_year": 2021
+    },
+    {
+      "all_country_pairs": [],
+      "by_design": {
+        "global_only_markov_matched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.001253818953,
+          "delta_alpha1_minus_alpha0_within_affected": -0.027305390536,
+          "mean_Brier_alpha0_only_affected": 0.306956761915,
+          "mean_Brier_alpha1_only_affected": 0.279651371378,
+          "n_affected": 9,
+          "sum_loss_alpha0": 2.762610857233,
+          "sum_loss_alpha1": 2.516862342405,
+          "winner": "alpha1_full_better"
+        },
+        "global_only_markov_unmatched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.000749138428,
+          "delta_alpha1_minus_alpha0_within_affected": -0.016314570221,
+          "mean_Brier_alpha0_only_affected": 0.305608966765,
+          "mean_Brier_alpha1_only_affected": 0.289294396545,
+          "n_affected": 9,
+          "sum_loss_alpha0": 2.750480700889,
+          "sum_loss_alpha1": 2.603649568904,
+          "winner": "alpha1_full_better"
+        },
+        "original_markov_country_blocked_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.00028279625,
+          "delta_alpha1_minus_alpha0_within_affected": -0.00615867388,
+          "mean_Brier_alpha0_only_affected": 0.28324876952,
+          "mean_Brier_alpha1_only_affected": 0.27709009564,
+          "n_affected": 9,
+          "sum_loss_alpha0": 2.549238925677,
+          "sum_loss_alpha1": 2.493810860759,
+          "winner": "alpha1_full_better"
+        }
+      },
+      "country_pairs_published": false,
+      "forecast_origin_year": 2020,
+      "last_training_feature_year": 2018,
+      "last_training_label_year": 2020,
+      "matched_retraining_changes_alpha_winner_from_original": false,
+      "matched_retraining_changes_alpha_winner_from_unmatched": false,
+      "max_abs_beta_inactive_shift": 0.7353571853,
+      "mean_abs_beta_inactive_shift": 0.718822845684,
+      "n_full_reference": 196,
+      "n_future_binary_positive_affected": 3,
+      "n_subthreshold_affected": 9,
+      "not_an_independent_validation": true,
+      "source_version": "26.1",
+      "target_year": 2022
+    },
+    {
+      "all_country_pairs": [],
+      "by_design": {
+        "global_only_markov_matched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.001332861103,
+          "delta_alpha1_minus_alpha0_within_affected": -0.017416051741,
+          "mean_Brier_alpha0_only_affected": 0.185799828446,
+          "mean_Brier_alpha1_only_affected": 0.168383776706,
+          "n_affected": 15,
+          "sum_loss_alpha0": 2.786997426696,
+          "sum_loss_alpha1": 2.525756650586,
+          "winner": "alpha1_full_better"
+        },
+        "global_only_markov_unmatched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.00091036056,
+          "delta_alpha1_minus_alpha0_within_affected": -0.01189537798,
+          "mean_Brier_alpha0_only_affected": 0.185110370062,
+          "mean_Brier_alpha1_only_affected": 0.173214992082,
+          "n_affected": 15,
+          "sum_loss_alpha0": 2.776655550927,
+          "sum_loss_alpha1": 2.598224881227,
+          "winner": "alpha1_full_better"
+        },
+        "original_markov_country_blocked_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.000610833294,
+          "delta_alpha1_minus_alpha0_within_affected": -0.007981555041,
+          "mean_Brier_alpha0_only_affected": 0.153072281978,
+          "mean_Brier_alpha1_only_affected": 0.145090726936,
+          "n_affected": 15,
+          "sum_loss_alpha0": 2.296084229665,
+          "sum_loss_alpha1": 2.176360904044,
+          "winner": "alpha1_full_better"
+        }
+      },
+      "country_pairs_published": false,
+      "forecast_origin_year": 2021,
+      "last_training_feature_year": 2019,
+      "last_training_label_year": 2021,
+      "matched_retraining_changes_alpha_winner_from_original": false,
+      "matched_retraining_changes_alpha_winner_from_unmatched": false,
+      "max_abs_beta_inactive_shift": 0.779500745063,
+      "mean_abs_beta_inactive_shift": 0.759088407325,
+      "n_full_reference": 196,
+      "n_future_binary_positive_affected": 3,
+      "n_subthreshold_affected": 15,
+      "not_an_independent_validation": true,
+      "source_version": "26.1",
+      "target_year": 2023
+    },
+    {
+      "all_country_pairs": [
+        {
+          "absolute_matched_beta_inactive_shift": 0.811002687942,
+          "beta_country_excluded_global_only_offsets": [
+            -0.333770735357,
+            2.020628499841,
+            2.24363945785
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.268124291696,
+            1.209625811899,
+            1.767399712266
+          ],
+          "country": "Peru",
+          "country_id": 135,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0016197325966432758,
+            "alpha0_p": 0.040245901613,
+            "alpha1_loss": 0.031424327333497495,
+            "alpha1_p": 0.177269081719,
+            "delta_alpha1_minus_alpha0": 0.02980459473685422
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0018369380922103166,
+            "alpha0_p": 0.042859515772,
+            "alpha1_loss": 0.01135797753998638,
+            "alpha1_p": 0.106573812637,
+            "delta_alpha1_minus_alpha0": 0.009521039447776063
+          },
+          "heldout_global_only_markov_probability": 0.055310256759,
+          "matched_training_rows": 2143,
+          "origin_deaths": 13,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.076772930066,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.003575633558005801,
+            "alpha0_p": 0.059796601559,
+            "alpha1_loss": 0.020989682339105475,
+            "alpha1_p": 0.144878163776,
+            "delta_alpha1_minus_alpha0": 0.017414048781099676
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.80269877096,
+          "beta_country_excluded_global_only_offsets": [
+            -0.351473019562,
+            1.967738442536,
+            2.253328636575
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.281281125921,
+            1.165039671576,
+            1.780347921588
+          ],
+          "country": "Poland",
+          "country_id": 290,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015946189614527181,
+            "alpha0_p": 0.039932680369,
+            "alpha1_loss": 0.0055836038301014706,
+            "alpha1_p": 0.074723515911,
+            "delta_alpha1_minus_alpha0": 0.003988984868648753
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.001824342565015284,
+            "alpha0_p": 0.042712323339,
+            "alpha1_loss": 0.00384287580880143,
+            "alpha1_p": 0.061990933279,
+            "delta_alpha1_minus_alpha0": 0.002018533243786146
+          },
+          "heldout_global_only_markov_probability": 0.055812055716,
+          "matched_training_rows": 2143,
+          "origin_deaths": 2,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.021154767365,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0002576414618851162,
+            "alpha0_p": 0.01605121372,
+            "alpha1_loss": 0.0005566134072726058,
+            "alpha1_p": 0.023592655791,
+            "delta_alpha1_minus_alpha0": 0.0002989719453874896
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.808631334646,
+          "beta_country_excluded_global_only_offsets": [
+            -0.342549420615,
+            2.002302835331,
+            2.228430715355
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.275937599458,
+            1.193671500684,
+            1.78336993745
+          ],
+          "country": "Congo",
+          "country_id": 484,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015458272028395345,
+            "alpha0_p": 0.039317009078,
+            "alpha1_loss": 0.007663604240738465,
+            "alpha1_p": 0.087542014146,
+            "delta_alpha1_minus_alpha0": 0.00611777703789893
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017565888723916148,
+            "alpha0_p": 0.041911679427,
+            "alpha1_loss": 0.004592621466879105,
+            "alpha1_p": 0.067768882733,
+            "delta_alpha1_minus_alpha0": 0.00283603259448749
+          },
+          "heldout_global_only_markov_probability": 0.054503883045,
+          "matched_training_rows": 2143,
+          "origin_deaths": 3,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.159317467487,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.015808023617606925,
+            "alpha0_p": 0.125729963086,
+            "alpha1_loss": 0.03720564235337848,
+            "alpha1_p": 0.192887641785,
+            "delta_alpha1_minus_alpha0": 0.02139761873577156
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.802395492919,
+          "beta_country_excluded_global_only_offsets": [
+            -0.355109447295,
+            1.970780205779,
+            2.257415334057
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.285545125307,
+            1.16838471286,
+            1.784887288709
+          ],
+          "country": "Tanzania",
+          "country_id": 510,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.00156515339063721,
+            "alpha0_p": 0.039562019547,
+            "alpha1_loss": 0.005494544157973293,
+            "alpha1_p": 0.074125192465,
+            "delta_alpha1_minus_alpha0": 0.003929390767336083
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.001788577136410602,
+            "alpha0_p": 0.042291572877,
+            "alpha1_loss": 0.0037770218080030384,
+            "alpha1_p": 0.061457479675,
+            "delta_alpha1_minus_alpha0": 0.0019884446715924364
+          },
+          "heldout_global_only_markov_probability": 0.055492780099,
+          "matched_training_rows": 2143,
+          "origin_deaths": 2,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.05482998984,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0017455249224150918,
+            "alpha0_p": 0.041779479681,
+            "alpha1_loss": 0.003687893530880421,
+            "alpha1_p": 0.060728029203,
+            "delta_alpha1_minus_alpha0": 0.0019423686084653292
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.749329244333,
+          "beta_country_excluded_global_only_offsets": [
+            -0.333721732627,
+            1.898099547253,
+            2.267776300048
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.272744982388,
+            1.14877030292,
+            1.810189051614
+          ],
+          "country": "Burundi",
+          "country_id": 516,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015432509895829784,
+            "alpha0_p": 0.039284233346,
+            "alpha1_loss": 0.020125481109739746,
+            "alpha1_p": 0.14186430527,
+            "delta_alpha1_minus_alpha0": 0.018582230120156768
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017348325313819343,
+            "alpha0_p": 0.041651320884,
+            "alpha1_loss": 0.008449404660089803,
+            "alpha1_p": 0.091920643275,
+            "delta_alpha1_minus_alpha0": 0.006714572128707868
+          },
+          "heldout_global_only_markov_probability": 0.05400638123,
+          "matched_training_rows": 2143,
+          "origin_deaths": 10,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.268030949487,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.047522433199390035,
+            "alpha0_p": 0.217996406391,
+            "alpha1_loss": 0.15497665051017834,
+            "alpha1_p": 0.393670738702,
+            "delta_alpha1_minus_alpha0": 0.1074542173107883
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.80151237427,
+          "beta_country_excluded_global_only_offsets": [
+            -0.335834899551,
+            2.015429949943,
+            2.221974721952
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.268406398224,
+            1.213917575673,
+            1.766655906291
+          ],
+          "country": "Rwanda",
+          "country_id": 517,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015810919964325848,
+            "alpha0_p": 0.039762947532,
+            "alpha1_loss": 0.014704771837679756,
+            "alpha1_p": 0.12126323366,
+            "delta_alpha1_minus_alpha0": 0.01312367984124717
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017993638677287073,
+            "alpha0_p": 0.042418909318,
+            "alpha1_loss": 0.007022468873152077,
+            "alpha1_p": 0.083800172274,
+            "delta_alpha1_minus_alpha0": 0.00522310500542337
+          },
+          "heldout_global_only_markov_probability": 0.05476357636,
+          "matched_training_rows": 2143,
+          "origin_deaths": 6,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.139817618812,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.012219637313995705,
+            "alpha0_p": 0.110542468373,
+            "alpha1_loss": 0.04170114071287024,
+            "alpha1_p": 0.204208571595,
+            "delta_alpha1_minus_alpha0": 0.029481503398874537
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.816616042852,
+          "beta_country_excluded_global_only_offsets": [
+            -0.344504753075,
+            1.977794136802,
+            2.231392045409
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.276361034847,
+            1.16117809395,
+            1.775112989513
+          ],
+          "country": "Eritrea",
+          "country_id": 531,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.001555238656190453,
+            "alpha0_p": 0.03943651425,
+            "alpha1_loss": 0.009670258889268075,
+            "alpha1_p": 0.098337474491,
+            "delta_alpha1_minus_alpha0": 0.008115020233077622
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017724488258430242,
+            "alpha0_p": 0.042100461112,
+            "alpha1_loss": 0.005235054730836029,
+            "alpha1_p": 0.072353678074,
+            "delta_alpha1_minus_alpha0": 0.0034626059049930047
+          },
+          "heldout_global_only_markov_probability": 0.054768058988,
+          "matched_training_rows": 2143,
+          "origin_deaths": 4,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.140817228797,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.012226857950309268,
+            "alpha0_p": 0.11057512356,
+            "alpha1_loss": 0.03267026707780684,
+            "alpha1_p": 0.180749182786,
+            "delta_alpha1_minus_alpha0": 0.02044340912749757
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.781014290361,
+          "beta_country_excluded_global_only_offsets": [
+            -0.343574626983,
+            1.992905873993,
+            2.246111653504
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.281040625333,
+            1.211891583632,
+            1.780091958967
+          ],
+          "country": "Angola",
+          "country_id": 540,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.9232581725748193,
+            "alpha0_p": 0.03913675657,
+            "alpha1_loss": 0.6276499265324493,
+            "alpha1_p": 0.207756396976,
+            "delta_alpha1_minus_alpha0": -0.29560824604237
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.9186123647115492,
+            "alpha0_p": 0.0415573232,
+            "alpha1_loss": 0.7768716774813281,
+            "alpha1_p": 0.118596756597,
+            "delta_alpha1_minus_alpha0": -0.14174068723022104
+          },
+          "heldout_global_only_markov_probability": 0.054310568745,
+          "matched_training_rows": 2143,
+          "origin_deaths": 20,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.238563202799,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.654002790246766,
+            "alpha0_p": 0.191295610098,
+            "alpha1_loss": 0.3325610860893113,
+            "alpha1_p": 0.423318904342,
+            "delta_alpha1_minus_alpha0": -0.3214417041574547
+          },
+          "target_outcome": 1,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.805536806922,
+          "beta_country_excluded_global_only_offsets": [
+            -0.353502613344,
+            1.971246259074,
+            2.246845820283
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.281265541392,
+            1.165709452151,
+            1.780331334889
+          ],
+          "country": "Morocco",
+          "country_id": 600,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015893051771759786,
+            "alpha0_p": 0.039866090568,
+            "alpha1_loss": 0.031006212311848524,
+            "alpha1_p": 0.176085809513,
+            "delta_alpha1_minus_alpha0": 0.029416907134672547
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0018254147484275019,
+            "alpha0_p": 0.042724872714,
+            "alpha1_loss": 0.011073707288010983,
+            "alpha1_p": 0.10523168386,
+            "delta_alpha1_minus_alpha0": 0.009248292539583482
+          },
+          "heldout_global_only_markov_probability": 0.055827408004,
+          "matched_training_rows": 2143,
+          "origin_deaths": 14,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.021088077891,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0002560190517464488,
+            "alpha0_p": 0.016000595356,
+            "alpha1_loss": 0.0016882012144564776,
+            "alpha1_p": 0.041087725837,
+            "delta_alpha1_minus_alpha0": 0.0014321821627100288
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.806242720021,
+          "beta_country_excluded_global_only_offsets": [
+            -0.334056992837,
+            1.981493352408,
+            2.251596912114
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.273514184053,
+            1.175250632387,
+            1.766349725046
+          ],
+          "country": "Algeria",
+          "country_id": 615,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015865268746296918,
+            "alpha0_p": 0.039831229891,
+            "alpha1_loss": 0.03139700656220815,
+            "alpha1_p": 0.177192004792,
+            "delta_alpha1_minus_alpha0": 0.02981047968757846
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017818766018783507,
+            "alpha0_p": 0.042212280226,
+            "alpha1_loss": 0.010981427573477465,
+            "alpha1_p": 0.104792306843,
+            "delta_alpha1_minus_alpha0": 0.009199550971599114
+          },
+          "heldout_global_only_markov_probability": 0.054764040627,
+          "matched_training_rows": 2143,
+          "origin_deaths": 14,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.194300209342,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.024028677001389546,
+            "alpha0_p": 0.155011860841,
+            "alpha1_loss": 0.10733311778232531,
+            "alpha1_p": 0.327617334374,
+            "delta_alpha1_minus_alpha0": 0.08330444078093577
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.829751932179,
+          "beta_country_excluded_global_only_offsets": [
+            -0.355363747062,
+            1.949725079387,
+            2.276154427113
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.288934448526,
+            1.119973147208,
+            1.808713085789
+          ],
+          "country": "Tunisia",
+          "country_id": 616,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015617729322044839,
+            "alpha0_p": 0.039519272921,
+            "alpha1_loss": 0.00742892927991063,
+            "alpha1_p": 0.086191236677,
+            "delta_alpha1_minus_alpha0": 0.005867156347706146
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017740389296572025,
+            "alpha0_p": 0.042119341515,
+            "alpha1_loss": 0.004373490003776256,
+            "alpha1_p": 0.066132367293,
+            "delta_alpha1_minus_alpha0": 0.002599451074119054
+          },
+          "heldout_global_only_markov_probability": 0.055447130706,
+          "matched_training_rows": 2143,
+          "origin_deaths": 3,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.058958436082,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0020094323086698998,
+            "alpha0_p": 0.044826691922,
+            "alpha1_loss": 0.004937872495104269,
+            "alpha1_p": 0.070269997119,
+            "delta_alpha1_minus_alpha0": 0.002928440186434369
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.802096015661,
+          "beta_country_excluded_global_only_offsets": [
+            -0.36061088937,
+            1.96534015769,
+            2.322797927742
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.299859944385,
+            1.163244142028,
+            1.854290053666
+          ],
+          "country": "Libya",
+          "country_id": 620,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015246525291708055,
+            "alpha0_p": 0.039046799218,
+            "alpha1_loss": 0.00533919804812402,
+            "alpha1_p": 0.073069816259,
+            "delta_alpha1_minus_alpha0": 0.0038145455189532145
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017132344305217618,
+            "alpha0_p": 0.041391236156,
+            "alpha1_loss": 0.0036092226792384424,
+            "alpha1_p": 0.0600768065,
+            "delta_alpha1_minus_alpha0": 0.0018959882487166806
+          },
+          "heldout_global_only_markov_probability": 0.055067493632,
+          "matched_training_rows": 2143,
+          "origin_deaths": 2,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.104530046823,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.006336862333127091,
+            "alpha0_p": 0.079604411518,
+            "alpha1_loss": 0.012881879595185611,
+            "alpha1_p": 0.113498368249,
+            "delta_alpha1_minus_alpha0": 0.00654501726205852
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.805085791054,
+          "beta_country_excluded_global_only_offsets": [
+            -0.347418822752,
+            1.969864027909,
+            2.224176571331
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.280947948842,
+            1.164778236854,
+            1.747022999178
+          ],
+          "country": "South Sudan",
+          "country_id": 626,
+          "country_training_rows_excluded": 9,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.9219396137288918,
+            "alpha0_p": 0.039823134142,
+            "alpha1_loss": 0.6072033980771155,
+            "alpha1_p": 0.220767430046,
+            "delta_alpha1_minus_alpha0": -0.31473621565177623
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.9169134916268917,
+            "alpha0_p": 0.042444000788,
+            "alpha1_loss": 0.7720873045023191,
+            "alpha1_p": 0.121315014068,
+            "delta_alpha1_minus_alpha0": -0.14482618712457263
+          },
+          "heldout_global_only_markov_probability": 0.055448755213,
+          "matched_training_rows": 2145,
+          "origin_deaths": 23,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.056255265792,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.9157150623274465,
+            "alpha0_p": 0.043069980444,
+            "alpha1_loss": 0.7692081962506158,
+            "alpha1_p": 0.122954849366,
+            "delta_alpha1_minus_alpha0": -0.14650686607683072
+          },
+          "target_outcome": 1,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.803372077552,
+          "beta_country_excluded_global_only_offsets": [
+            -0.351366857939,
+            1.968887413148,
+            2.253209862268
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.281266218351,
+            1.165515335596,
+            1.780332055379
+          ],
+          "country": "United Arab Emirates",
+          "country_id": 696,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.001594944048406727,
+            "alpha0_p": 0.039936750599,
+            "alpha1_loss": 0.007692564886160589,
+            "alpha1_p": 0.087707268149,
+            "delta_alpha1_minus_alpha0": 0.006097620837753863
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0018243946355530887,
+            "alpha0_p": 0.042712932884,
+            "alpha1_loss": 0.004659825967458011,
+            "alpha1_p": 0.068262917953,
+            "delta_alpha1_minus_alpha0": 0.002835431331904922
+          },
+          "heldout_global_only_markov_probability": 0.055812055716,
+          "matched_training_rows": 2143,
+          "origin_deaths": 3,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.021154767365,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.00025764902029657913,
+            "alpha0_p": 0.016051449165,
+            "alpha1_loss": 0.0006805686505582274,
+            "alpha1_p": 0.026087710719,
+            "delta_alpha1_minus_alpha0": 0.00042291963026164827
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.804117782633,
+          "beta_country_excluded_global_only_offsets": [
+            -0.35290325247,
+            1.96942194333,
+            2.251462480684
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.285521556071,
+            1.165304160697,
+            1.794039941775
+          ],
+          "country": "Bangladesh",
+          "country_id": 771,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.001550872374119871,
+            "alpha0_p": 0.039381116974,
+            "alpha1_loss": 0.013764242016775095,
+            "alpha1_p": 0.117321106442,
+            "delta_alpha1_minus_alpha0": 0.012213369642655224
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017649078677377172,
+            "alpha0_p": 0.042010806559,
+            "alpha1_loss": 0.006535837299277924,
+            "alpha1_p": 0.080844525475,
+            "delta_alpha1_minus_alpha0": 0.0047709294315402065
+          },
+          "heldout_global_only_markov_probability": 0.055128190502,
+          "matched_training_rows": 2143,
+          "origin_deaths": 6,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.097264647259,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.005612424220916876,
+            "alpha0_p": 0.074916114561,
+            "alpha1_loss": 0.0195245097867812,
+            "alpha1_p": 0.139730131993,
+            "delta_alpha1_minus_alpha0": 0.013912085565864325
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        }
+      ],
+      "by_design": {
+        "global_only_markov_matched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.002242156658,
+          "delta_alpha1_minus_alpha0_within_affected": -0.029297513661,
+          "mean_Brier_alpha0_only_affected": 0.124374051602,
+          "mean_Brier_alpha1_only_affected": 0.095076537941,
+          "n_affected": 15,
+          "sum_loss_alpha0": 1.865610774033,
+          "sum_loss_alpha1": 1.426148069114,
+          "winner": "alpha1_full_better"
+        },
+        "global_only_markov_unmatched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.001144147438,
+          "delta_alpha1_minus_alpha0_within_affected": -0.014950193184,
+          "mean_Brier_alpha0_only_affected": 0.123914854363,
+          "mean_Brier_alpha1_only_affected": 0.108964661179,
+          "n_affected": 15,
+          "sum_loss_alpha0": 1.858722815443,
+          "sum_loss_alpha1": 1.634469917683,
+          "winner": "alpha1_full_better"
+        },
+        "original_markov_country_blocked_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.000821282381,
+          "delta_alpha1_minus_alpha0_within_affected": -0.010731423116,
+          "mean_Brier_alpha0_only_affected": 0.113438311236,
+          "mean_Brier_alpha1_only_affected": 0.10270688812,
+          "n_affected": 15,
+          "sum_loss_alpha0": 1.701574668534,
+          "sum_loss_alpha1": 1.540603321796,
+          "winner": "alpha1_full_better"
+        }
+      },
+      "country_pairs_published": true,
+      "forecast_origin_year": 2022,
+      "last_training_feature_year": 2020,
+      "last_training_label_year": 2022,
+      "matched_retraining_changes_alpha_winner_from_original": false,
+      "matched_retraining_changes_alpha_winner_from_unmatched": false,
+      "max_abs_beta_inactive_shift": 0.829751932179,
+      "mean_abs_beta_inactive_shift": 0.801960224287,
+      "n_full_reference": 196,
+      "n_future_binary_positive_affected": 2,
+      "n_subthreshold_affected": 15,
+      "not_an_independent_validation": true,
+      "source_version": "26.1",
+      "target_year": 2024
+    },
+    {
+      "all_country_pairs": [
+        {
+          "absolute_matched_beta_inactive_shift": 0.845868165043,
+          "beta_country_excluded_global_only_offsets": [
+            -0.35704603526,
+            2.066600197431,
+            2.337086297267
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.285977093391,
+            1.220732032388,
+            1.844576183824
+          ],
+          "country": "Peru",
+          "country_id": 135,
+          "country_training_rows_excluded": 12,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.001498697320797969,
+            "alpha0_p": 0.038713012293,
+            "alpha1_loss": 0.028922517488507816,
+            "alpha1_p": 0.170066215012,
+            "delta_alpha1_minus_alpha0": 0.027423820167709848
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.001717791482975926,
+            "alpha0_p": 0.041446248117,
+            "alpha1_loss": 0.010314581885445272,
+            "alpha1_p": 0.101560730036,
+            "delta_alpha1_minus_alpha0": 0.008596790402469346
+          },
+          "heldout_global_only_markov_probability": 0.054420801594,
+          "matched_training_rows": 2338,
+          "origin_deaths": 12,
+          "origin_year": 2023,
+          "original_local_markov_probability": 0.074397436498,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.003242966440491275,
+            "alpha0_p": 0.056947049445,
+            "alpha1_loss": 0.018590296254344343,
+            "alpha1_p": 0.136346236671,
+            "delta_alpha1_minus_alpha0": 0.015347329813853068
+          },
+          "target_outcome": 0,
+          "target_year": 2025
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.844688630005,
+          "beta_country_excluded_global_only_offsets": [
+            -0.371475226587,
+            1.990545223216,
+            2.339022651243
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.298351608851,
+            1.145856593211,
+            1.857067942261
+          ],
+          "country": "Armenia",
+          "country_id": 371,
+          "country_training_rows_excluded": 12,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0014475909468368113,
+            "alpha0_p": 0.038047219962,
+            "alpha1_loss": 0.041049829841654964,
+            "alpha1_p": 0.202607575973,
+            "delta_alpha1_minus_alpha0": 0.039602238894818155
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0016659299851443593,
+            "alpha0_p": 0.04081580558,
+            "alpha1_loss": 0.01219665664922452,
+            "alpha1_p": 0.110438474497,
+            "delta_alpha1_minus_alpha0": 0.01053072666408016
+          },
+          "heldout_global_only_markov_probability": 0.054235284605,
+          "matched_training_rows": 2338,
+          "origin_deaths": 20,
+          "origin_year": 2023,
+          "original_local_markov_probability": 0.093712222706,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.005078117719883307,
+            "alpha0_p": 0.071260912988,
+            "alpha1_loss": 0.03345709455013884,
+            "alpha1_p": 0.182912805867,
+            "delta_alpha1_minus_alpha0": 0.02837897683025553
+          },
+          "target_outcome": 0,
+          "target_year": 2025
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.841582479023,
+          "beta_country_excluded_global_only_offsets": [
+            -0.373790803725,
+            2.015171487549,
+            2.346334459288
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.298335774317,
+            1.173589008526,
+            1.857050665457
+          ],
+          "country": "Mauritania",
+          "country_id": 435,
+          "country_training_rows_excluded": 12,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0014776153084594878,
+            "alpha0_p": 0.038439762076,
+            "alpha1_loss": 0.013816591135290284,
+            "alpha1_p": 0.117543996594,
+            "delta_alpha1_minus_alpha0": 0.012338975826830797
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017080002046111116,
+            "alpha0_p": 0.041327959115,
+            "alpha1_loss": 0.006391380828073741,
+            "alpha1_p": 0.079946112026,
+            "delta_alpha1_minus_alpha0": 0.00468338062346263
+          },
+          "heldout_global_only_markov_probability": 0.054905364157,
+          "matched_training_rows": 2338,
+          "origin_deaths": 6,
+          "origin_year": 2023,
+          "original_local_markov_probability": 0.020424137649,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.00023213703588624546,
+            "alpha0_p": 0.015236043971,
+            "alpha1_loss": 0.0009145913085675543,
+            "alpha1_p": 0.030242210709,
+            "delta_alpha1_minus_alpha0": 0.0006824542726813088
+          },
+          "target_outcome": 0,
+          "target_year": 2025
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.842261080821,
+          "beta_country_excluded_global_only_offsets": [
+            -0.370629845597,
+            2.027711501257,
+            2.357266490305
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.301435408781,
+            1.185450420436,
+            1.860433250278
+          ],
+          "country": "Uganda",
+          "country_id": 500,
+          "country_training_rows_excluded": 12,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.001440858267672014,
+            "alpha0_p": 0.037958638907,
+            "alpha1_loss": 0.047242866523219317,
+            "alpha1_p": 0.217354242018,
+            "delta_alpha1_minus_alpha0": 0.045802008255547304
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0016457499083906413,
+            "alpha0_p": 0.04056784328,
+            "alpha1_loss": 0.013655851418782908,
+            "alpha1_p": 0.116858253533,
+            "delta_alpha1_minus_alpha0": 0.012010101510392267
+          },
+          "heldout_global_only_markov_probability": 0.054067881821,
+          "matched_training_rows": 2338,
+          "origin_deaths": 22,
+          "origin_year": 2023,
+          "original_local_markov_probability": 0.131353655653,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.010122134742279458,
+            "alpha0_p": 0.1006088204,
+            "alpha1_loss": 0.06723387281307225,
+            "alpha1_p": 0.259294953312,
+            "delta_alpha1_minus_alpha0": 0.05711173807079279
+          },
+          "target_outcome": 0,
+          "target_year": 2025
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.839982066895,
+          "beta_country_excluded_global_only_offsets": [
+            -0.375932533863,
+            2.012122476283,
+            2.339925379574
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.298303950779,
+            1.172140409388,
+            1.857015943406
+          ],
+          "country": "Morocco",
+          "country_id": 600,
+          "country_training_rows_excluded": 12,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0014723328686686134,
+            "alpha0_p": 0.038370989936,
+            "alpha1_loss": 0.011592534703281815,
+            "alpha1_p": 0.107668633795,
+            "delta_alpha1_minus_alpha0": 0.0101202018346132
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017090200989159188,
+            "alpha0_p": 0.041340296309,
+            "alpha1_loss": 0.005764140567181227,
+            "alpha1_p": 0.075921937325,
+            "delta_alpha1_minus_alpha0": 0.004055120468265309
+          },
+          "heldout_global_only_markov_probability": 0.054919870488,
+          "matched_training_rows": 2338,
+          "origin_deaths": 5,
+          "origin_year": 2023,
+          "original_local_markov_probability": 0.020352456137,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.00023051633646564593,
+            "alpha0_p": 0.015182764454,
+            "alpha1_loss": 0.0008142243833160746,
+            "alpha1_p": 0.02853461728,
+            "delta_alpha1_minus_alpha0": 0.0005837080468504288
+          },
+          "target_outcome": 0,
+          "target_year": 2025
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.828035041184,
+          "beta_country_excluded_global_only_offsets": [
+            -0.356165757092,
+            2.030238716337,
+            2.344795754507
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.29017291916,
+            1.202203675153,
+            1.842867749246
+          ],
+          "country": "Algeria",
+          "country_id": 615,
+          "country_training_rows_excluded": 12,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.001471851279918149,
+            "alpha0_p": 0.038364713995,
+            "alpha1_loss": 0.003351287017602253,
+            "alpha1_p": 0.057890301585,
+            "delta_alpha1_minus_alpha0": 0.0018794357376841042
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0016707607912077463,
+            "alpha0_p": 0.040874940871,
+            "alpha1_loss": 0.0027213340519458198,
+            "alpha1_p": 0.052166407313,
+            "delta_alpha1_minus_alpha0": 0.0010505732607380735
+          },
+          "heldout_global_only_markov_probability": 0.053894208481,
+          "matched_training_rows": 2338,
+          "origin_deaths": 1,
+          "origin_year": 2023,
+          "original_local_markov_probability": 0.18631924258,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.021390576994113224,
+            "alpha0_p": 0.146255177666,
+            "alpha1_loss": 0.0328185540781757,
+            "alpha1_p": 0.1811589194,
+            "delta_alpha1_minus_alpha0": 0.011427977084062478
+          },
+          "target_outcome": 0,
+          "target_year": 2025
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.86631033757,
+          "beta_country_excluded_global_only_offsets": [
+            -0.377212118209,
+            2.003723567302,
+            2.367839743566
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.305258075131,
+            1.137413229732,
+            1.884072309108
+          ],
+          "country": "Tunisia",
+          "country_id": 616,
+          "country_training_rows_excluded": 12,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0014487153903009955,
+            "alpha0_p": 0.03806199404,
+            "alpha1_loss": 0.0072132103341858815,
+            "alpha1_p": 0.08493062071,
+            "delta_alpha1_minus_alpha0": 0.005764494943884886
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.001663483766135014,
+            "alpha0_p": 0.040785828006,
+            "alpha1_loss": 0.004164896050942162,
+            "alpha1_p": 0.064536005849,
+            "delta_alpha1_minus_alpha0": 0.002501412284807148
+          },
+          "heldout_global_only_markov_probability": 0.054551116973,
+          "matched_training_rows": 2338,
+          "origin_deaths": 3,
+          "origin_year": 2023,
+          "original_local_markov_probability": 0.05745803003,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0018483613936938726,
+            "alpha0_p": 0.042992573704,
+            "alpha1_loss": 0.004615403278452857,
+            "alpha1_p": 0.067936759405,
+            "delta_alpha1_minus_alpha0": 0.0027670418847589844
+          },
+          "target_outcome": 0,
+          "target_year": 2025
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.833160922714,
+          "beta_country_excluded_global_only_offsets": [
+            -0.382076000704,
+            2.012015134153,
+            2.413954129217
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.315491104443,
+            1.178854211438,
+            1.929345566841
+          ],
+          "country": "Libya",
+          "country_id": 620,
+          "country_training_rows_excluded": 12,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.001415572410869012,
+            "alpha0_p": 0.037624093489,
+            "alpha1_loss": 0.00511750154277245,
+            "alpha1_p": 0.071536714649,
+            "delta_alpha1_minus_alpha0": 0.0037019291319034383
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0016088658757659263,
+            "alpha0_p": 0.040110670348,
+            "alpha1_loss": 0.0034272487822104396,
+            "alpha1_p": 0.058542709044,
+            "delta_alpha1_minus_alpha0": 0.0018183829064445133
+          },
+          "heldout_global_only_markov_probability": 0.054182866694,
+          "matched_training_rows": 2338,
+          "origin_deaths": 2,
+          "origin_year": 2023,
+          "original_local_markov_probability": 0.101926181246,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.005845611674996861,
+            "alpha0_p": 0.076456599944,
+            "alpha1_loss": 0.01203018555095448,
+            "alpha1_p": 0.109682202526,
+            "delta_alpha1_minus_alpha0": 0.0061845738759576194
+          },
+          "target_outcome": 0,
+          "target_year": 2025
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.836676949548,
+          "beta_country_excluded_global_only_offsets": [
+            -0.366082584141,
+            2.002468831587,
+            2.336578025416
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.293032852585,
+            1.165791882039,
+            1.843736848574
+          ],
+          "country": "South Sudan",
+          "country_id": 626,
+          "country_training_rows_excluded": 10,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.924526528037836,
+            "alpha0_p": 0.038476974775,
+            "alpha1_loss": 0.8595475155319108,
+            "alpha1_p": 0.072882145824,
+            "delta_alpha1_minus_alpha0": -0.0649790125059252
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.9191582910360385,
+            "alpha0_p": 0.04127256687,
+            "alpha1_loss": 0.8836821309003546,
+            "alpha1_p": 0.059956314366,
+            "delta_alpha1_minus_alpha0": -0.03547616013568389
+          },
+          "heldout_global_only_markov_probability": 0.05455863259,
+          "matched_training_rows": 2340,
+          "origin_deaths": 2,
+          "origin_year": 2023,
+          "original_local_markov_probability": 0.052736554593,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.9218390836242171,
+            "alpha0_p": 0.039875485354,
+            "alpha1_loss": 0.8874298966252956,
+            "alpha1_p": 0.057965023672,
+            "delta_alpha1_minus_alpha0": -0.03440918699892148
+          },
+          "target_outcome": 1,
+          "target_year": 2025
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.834517166387,
+          "beta_country_excluded_global_only_offsets": [
+            -0.381438578144,
+            2.021393414326,
+            2.341282181862
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.31713154338,
+            1.186876247939,
+            1.856102363328
+          ],
+          "country": "Egypt",
+          "country_id": 651,
+          "country_training_rows_excluded": 12,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0014127134013471182,
+            "alpha0_p": 0.037586079888,
+            "alpha1_loss": 0.003207878546179157,
+            "alpha1_p": 0.056638136853,
+            "delta_alpha1_minus_alpha0": 0.0017951651448320388
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0015986181928712327,
+            "alpha0_p": 0.03998272368,
+            "alpha1_loss": 0.002589092512854837,
+            "alpha1_p": 0.050883126013,
+            "delta_alpha1_minus_alpha0": 0.0009904743199836044
+          },
+          "heldout_global_only_markov_probability": 0.054096437694,
+          "matched_training_rows": 2338,
+          "origin_deaths": 1,
+          "origin_year": 2023,
+          "original_local_markov_probability": 0.119078603284,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.008031268368914846,
+            "alpha0_p": 0.08961734413,
+            "alpha1_loss": 0.012648218949484452,
+            "alpha1_p": 0.112464300778,
+            "delta_alpha1_minus_alpha0": 0.004616950580569606
+          },
+          "target_outcome": 0,
+          "target_year": 2025
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.834044128866,
+          "beta_country_excluded_global_only_offsets": [
+            -0.374644451738,
+            2.039372955171,
+            2.346677610967
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.305917222464,
+            1.205328826305,
+            1.878275662607
+          ],
+          "country": "Saudi Arabia",
+          "country_id": 670,
+          "country_training_rows_excluded": 12,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0014223358196839295,
+            "alpha0_p": 0.037713867737,
+            "alpha1_loss": 0.020190769789493142,
+            "alpha1_p": 0.142094228558,
+            "delta_alpha1_minus_alpha0": 0.018768433969809213
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0016231941056355096,
+            "alpha0_p": 0.040288883152,
+            "alpha1_loss": 0.008025390982719146,
+            "alpha1_p": 0.089584546562,
+            "delta_alpha1_minus_alpha0": 0.006402196877083636
+          },
+          "heldout_global_only_markov_probability": 0.053929496652,
+          "matched_training_rows": 2338,
+          "origin_deaths": 9,
+          "origin_year": 2023,
+          "original_local_markov_probability": 0.126512990435,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.009289855183564339,
+            "alpha0_p": 0.096383894835,
+            "alpha1_loss": 0.040004314555539905,
+            "alpha1_p": 0.200010786098,
+            "delta_alpha1_minus_alpha0": 0.030714459371975568
+          },
+          "target_outcome": 0,
+          "target_year": 2025
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.842274970249,
+          "beta_country_excluded_global_only_offsets": [
+            -0.370280118696,
+            2.016915562957,
+            2.333675207444
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.294639479482,
+            1.174640592708,
+            1.853018593625
+          ],
+          "country": "China",
+          "country_id": 710,
+          "country_training_rows_excluded": 12,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.001470541650794928,
+            "alpha0_p": 0.03834764205,
+            "alpha1_loss": 0.003330528647187035,
+            "alpha1_p": 0.057710732513,
+            "delta_alpha1_minus_alpha0": 0.001859986996392107
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017004532231579509,
+            "alpha0_p": 0.041236552028,
+            "alpha1_loss": 0.002738518897768766,
+            "alpha1_p": 0.052330859899,
+            "delta_alpha1_minus_alpha0": 0.0010380656746108153
+          },
+          "heldout_global_only_markov_probability": 0.054594548488,
+          "matched_training_rows": 2338,
+          "origin_deaths": 1,
+          "origin_year": 2023,
+          "original_local_markov_probability": 0.053497982174,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0016319034753322125,
+            "alpha0_p": 0.040396825065,
+            "alpha1_loss": 0.002629360995028685,
+            "alpha1_p": 0.051277295122,
+            "delta_alpha1_minus_alpha0": 0.0009974575196964727
+          },
+          "target_outcome": 0,
+          "target_year": 2025
+        }
+      ],
+      "by_design": {
+        "global_only_markov_matched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": 0.000531008563,
+          "delta_alpha1_minus_alpha0_within_affected": 0.008673139867,
+          "mean_Brier_alpha0_only_affected": 0.078375446059,
+          "mean_Brier_alpha1_only_affected": 0.087048585925,
+          "n_affected": 12,
+          "sum_loss_alpha0": 0.940505352703,
+          "sum_loss_alpha1": 1.044583031101,
+          "winner": "alpha0_no_subthreshold_better"
+        },
+        "global_only_markov_unmatched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": 9.2862576e-05,
+          "delta_alpha1_minus_alpha0_within_affected": 0.001516755405,
+          "mean_Brier_alpha0_only_affected": 0.078122513223,
+          "mean_Brier_alpha1_only_affected": 0.079639268627,
+          "n_affected": 12,
+          "sum_loss_alpha0": 0.937470158671,
+          "sum_loss_alpha1": 0.955671223528,
+          "winner": "alpha0_no_subthreshold_better"
+        },
+        "original_markov_country_blocked_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": 0.000634711634,
+          "delta_alpha1_minus_alpha0_within_affected": 0.010366956696,
+          "mean_Brier_alpha0_only_affected": 0.082398544416,
+          "mean_Brier_alpha1_only_affected": 0.092765501112,
+          "n_affected": 12,
+          "sum_loss_alpha0": 0.98878253299,
+          "sum_loss_alpha1": 1.113186013342,
+          "winner": "alpha0_no_subthreshold_better"
+        }
+      },
+      "country_pairs_published": true,
+      "forecast_origin_year": 2023,
+      "last_training_feature_year": 2021,
+      "last_training_label_year": 2023,
+      "matched_retraining_changes_alpha_winner_from_original": false,
+      "matched_retraining_changes_alpha_winner_from_unmatched": false,
+      "max_abs_beta_inactive_shift": 0.86631033757,
+      "mean_abs_beta_inactive_shift": 0.840783494859,
+      "n_full_reference": 196,
+      "n_future_binary_positive_affected": 1,
+      "n_subthreshold_affected": 12,
+      "not_an_independent_validation": true,
+      "source_version": "26.1",
+      "target_year": 2025
+    },
+    {
+      "all_country_pairs": [
+        {
+          "absolute_matched_beta_inactive_shift": 0.473247578979,
+          "beta_country_excluded_global_only_offsets": [
+            -0.076039925949,
+            1.126048615874,
+            1.31426556461
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.067854192768,
+            0.652801036896,
+            0.9709510624
+          ],
+          "country": "Peru",
+          "country_id": 135,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0027864781037746584,
+            "alpha0_p": 0.05278710168,
+            "alpha1_loss": 0.012084784938747917,
+            "alpha1_p": 0.109930818876,
+            "delta_alpha1_minus_alpha0": 0.00929830683497326
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0028300160289199644,
+            "alpha0_p": 0.053197894967,
+            "alpha1_loss": 0.006696389165509453,
+            "alpha1_p": 0.081831468064,
+            "delta_alpha1_minus_alpha0": 0.0038663731365894886
+          },
+          "heldout_global_only_markov_probability": 0.056721027271,
+          "matched_training_rows": 778,
+          "origin_deaths": 9,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.094431707416,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.007883080360418291,
+            "alpha0_p": 0.088786712747,
+            "alpha1_loss": 0.017920494719429986,
+            "alpha1_p": 0.133867452054,
+            "delta_alpha1_minus_alpha0": 0.010037414359011695
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.470867116491,
+          "beta_country_excluded_global_only_offsets": [
+            -0.100996993586,
+            1.110786284764,
+            1.322466155486
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.088772052241,
+            0.639919168273,
+            0.983455622012
+          ],
+          "country": "France",
+          "country_id": 220,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.002719239854699899,
+            "alpha0_p": 0.052146331172,
+            "alpha1_loss": 0.006576954149019175,
+            "alpha1_p": 0.081098422605,
+            "delta_alpha1_minus_alpha0": 0.003857714294319276
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.002782973257358215,
+            "alpha0_p": 0.052753893291,
+            "alpha1_loss": 0.0046428637625264375,
+            "alpha1_p": 0.068138562962,
+            "delta_alpha1_minus_alpha0": 0.0018598905051682227
+          },
+          "heldout_global_only_markov_probability": 0.057370162819,
+          "matched_training_rows": 778,
+          "origin_deaths": 3,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.025041621587,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0005273125249980928,
+            "alpha0_p": 0.022963286459,
+            "alpha1_loss": 0.0008960829121850368,
+            "alpha1_p": 0.029934644013,
+            "delta_alpha1_minus_alpha0": 0.000368770387186944
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.47544493159,
+          "beta_country_excluded_global_only_offsets": [
+            -0.094042162788,
+            1.125090190349,
+            1.314139711163
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.084504693598,
+            0.649645258759,
+            0.980540196674
+          ],
+          "country": "Armenia",
+          "country_id": 371,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.002710304094474046,
+            "alpha0_p": 0.052060581004,
+            "alpha1_loss": 0.01175975561578336,
+            "alpha1_p": 0.108442406907,
+            "delta_alpha1_minus_alpha0": 0.009049451521309315
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0027597448358679224,
+            "alpha0_p": 0.052533273607,
+            "alpha1_loss": 0.00650830968845413,
+            "alpha1_p": 0.080674095523,
+            "delta_alpha1_minus_alpha0": 0.0037485648525862076
+          },
+          "heldout_global_only_markov_probability": 0.056901964439,
+          "matched_training_rows": 778,
+          "origin_deaths": 9,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.07033144162,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.004225358551116712,
+            "alpha0_p": 0.065002758027,
+            "alpha1_loss": 0.009825639200192169,
+            "alpha1_p": 0.099124362294,
+            "delta_alpha1_minus_alpha0": 0.005600280649075457
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.459148109233,
+          "beta_country_excluded_global_only_offsets": [
+            -0.082316311651,
+            1.127839957569,
+            1.312932617551
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.075165824175,
+            0.668691848336,
+            0.974167723815
+          ],
+          "country": "Angola",
+          "country_id": 540,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.8985789507181955,
+            "alpha0_p": 0.052065956557,
+            "alpha1_loss": 0.8737321379897177,
+            "alpha1_p": 0.06526359973,
+            "delta_alpha1_minus_alpha0": -0.024846812728477774
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.8979078525926236,
+            "alpha0_p": 0.052420002009,
+            "alpha1_loss": 0.8836875806390564,
+            "alpha1_p": 0.059953415708,
+            "delta_alpha1_minus_alpha0": -0.014220271953567232
+          },
+          "heldout_global_only_markov_probability": 0.056281751473,
+          "matched_training_rows": 778,
+          "origin_deaths": 1,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.163211539984,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.7170635814289065,
+            "alpha0_p": 0.153203931617,
+            "alpha1_loss": 0.6846183966717408,
+            "alpha1_p": 0.172583299255,
+            "delta_alpha1_minus_alpha0": -0.032445184757165624
+          },
+          "target_outcome": 1,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.470867116491,
+          "beta_country_excluded_global_only_offsets": [
+            -0.100996993586,
+            1.110786284764,
+            1.322466155486
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.088772052241,
+            0.639919168273,
+            0.983455622012
+          ],
+          "country": "Jordan",
+          "country_id": 663,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.002719239854699899,
+            "alpha0_p": 0.052146331172,
+            "alpha1_loss": 0.0042434344400413835,
+            "alpha1_p": 0.065141649043,
+            "delta_alpha1_minus_alpha0": 0.0015241945853414845
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.002782973257358215,
+            "alpha0_p": 0.052753893291,
+            "alpha1_loss": 0.003598336980222344,
+            "alpha1_p": 0.059986139901,
+            "delta_alpha1_minus_alpha0": 0.0008153637228641292
+          },
+          "heldout_global_only_markov_probability": 0.057370162819,
+          "matched_training_rows": 778,
+          "origin_deaths": 1,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.025041621587,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0005273125249980928,
+            "alpha0_p": 0.022963286459,
+            "alpha1_loss": 0.0006877236556317484,
+            "alpha1_p": 0.026224485803,
+            "delta_alpha1_minus_alpha0": 0.00016041113063365565
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.463264566871,
+          "beta_country_excluded_global_only_offsets": [
+            -0.078353588503,
+            1.125035012652,
+            1.32656142394
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.079335994187,
+            0.661770445782,
+            0.988756770733
+          ],
+          "country": "Israel",
+          "country_id": 666,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0026866589871058755,
+            "alpha0_p": 0.0518329913,
+            "alpha1_loss": 0.012366358622023552,
+            "alpha1_p": 0.111204130418,
+            "delta_alpha1_minus_alpha0": 0.009679699634917676
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.002681658356042526,
+            "alpha0_p": 0.051784730916,
+            "alpha1_loss": 0.006663057844005928,
+            "alpha1_p": 0.081627555666,
+            "delta_alpha1_minus_alpha0": 0.0039813994879634015
+          },
+          "heldout_global_only_markov_probability": 0.055821811695,
+          "matched_training_rows": 778,
+          "origin_deaths": 10,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.237227674904,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.04980581386274186,
+            "alpha0_p": 0.223172161935,
+            "alpha1_loss": 0.10150429287436002,
+            "alpha1_p": 0.318597383659,
+            "delta_alpha1_minus_alpha0": 0.05169847901161816
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.47428495361,
+          "beta_country_excluded_global_only_offsets": [
+            -0.096256917159,
+            1.112400518766,
+            1.31271622275
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.084955471589,
+            0.638115565157,
+            0.980848059548
+          ],
+          "country": "Kyrgyzstan",
+          "country_id": 703,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.002702898933799102,
+            "alpha0_p": 0.051989411747,
+            "alpha1_loss": 0.0042209920955720934,
+            "alpha1_p": 0.064969162651,
+            "delta_alpha1_minus_alpha0": 0.0015180931617729916
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.002761423589486829,
+            "alpha0_p": 0.052549249181,
+            "alpha1_loss": 0.003568109567255974,
+            "alpha1_p": 0.059733655231,
+            "delta_alpha1_minus_alpha0": 0.0008066859777691449
+          },
+          "heldout_global_only_markov_probability": 0.05694339106,
+          "matched_training_rows": 778,
+          "origin_deaths": 1,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.066409572625,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.003761670948954011,
+            "alpha0_p": 0.06133246244,
+            "alpha1_loss": 0.004848258673517222,
+            "alpha1_p": 0.069629438268,
+            "delta_alpha1_minus_alpha0": 0.0010865877245632115
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.474087147714,
+          "beta_country_excluded_global_only_offsets": [
+            -0.096666007803,
+            1.112340184973,
+            1.313011163546
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.085246260291,
+            0.638253037259,
+            0.981046669475
+          ],
+          "country": "China",
+          "country_id": 710,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0027033558073561894,
+            "alpha0_p": 0.051993805471,
+            "alpha1_loss": 0.008432397993304272,
+            "alpha1_p": 0.091828089348,
+            "delta_alpha1_minus_alpha0": 0.005729042185948082
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0027625092787475296,
+            "alpha0_p": 0.052559578373,
+            "alpha1_loss": 0.0053357091994245985,
+            "alpha1_p": 0.073045938966,
+            "delta_alpha1_minus_alpha0": 0.002573199920677069
+          },
+          "heldout_global_only_markov_probability": 0.056970152533,
+          "matched_training_rows": 778,
+          "origin_deaths": 5,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.063519612196,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0034378886762149153,
+            "alpha0_p": 0.058633511546,
+            "alpha1_loss": 0.00660712457951263,
+            "alpha1_p": 0.081284220975,
+            "delta_alpha1_minus_alpha0": 0.003169235903297715
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.47439737041,
+          "beta_country_excluded_global_only_offsets": [
+            -0.096334074931,
+            1.114627759211,
+            1.310957964408
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.08461322989,
+            0.640230388801,
+            0.980614320239
+          ],
+          "country": "Bangladesh",
+          "country_id": 771,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.8987569500116668,
+            "alpha0_p": 0.05197207319,
+            "alpha1_loss": 0.8742688076980006,
+            "alpha1_p": 0.064976573717,
+            "delta_alpha1_minus_alpha0": -0.02448814231366614
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.8976565519005602,
+            "alpha0_p": 0.052552612595,
+            "alpha1_loss": 0.8840461313757001,
+            "alpha1_p": 0.059762726023,
+            "delta_alpha1_minus_alpha0": -0.013610420524860056
+          },
+          "heldout_global_only_markov_probability": 0.056928641836,
+          "matched_training_rows": 778,
+          "origin_deaths": 1,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.06936954612,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.8759046854748376,
+            "alpha0_p": 0.06410220351,
+            "alpha1_loss": 0.8597458609750982,
+            "alpha1_p": 0.072775183154,
+            "delta_alpha1_minus_alpha0": -0.016158824499739377
+          },
+          "target_outcome": 1,
+          "target_year": 2017
+        }
+      ],
+      "by_design": {
+        "global_only_markov_matched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -4.4277821e-05,
+          "delta_alpha1_minus_alpha0_within_affected": -0.000964272536,
+          "mean_Brier_alpha0_only_affected": 0.201818230707,
+          "mean_Brier_alpha1_only_affected": 0.200853958171,
+          "n_affected": 9,
+          "sum_loss_alpha0": 1.816364076366,
+          "sum_loss_alpha1": 1.807685623542,
+          "winner": "alpha1_full_better"
+        },
+        "global_only_markov_unmatched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -5.193477e-05,
+          "delta_alpha1_minus_alpha0_within_affected": -0.001131023875,
+          "mean_Brier_alpha0_only_affected": 0.201658411455,
+          "mean_Brier_alpha1_only_affected": 0.20052738758,
+          "n_affected": 9,
+          "sum_loss_alpha0": 1.814925703097,
+          "sum_loss_alpha1": 1.804746488222,
+          "winner": "alpha1_full_better"
+        },
+        "original_markov_country_blocked_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": 0.000119985561,
+          "delta_alpha1_minus_alpha0_within_affected": 0.002613018879,
+          "mean_Brier_alpha0_only_affected": 0.18479296715,
+          "mean_Brier_alpha1_only_affected": 0.187405986029,
+          "n_affected": 9,
+          "sum_loss_alpha0": 1.663136704353,
+          "sum_loss_alpha1": 1.686653874262,
+          "winner": "alpha0_no_subthreshold_better"
+        }
+      },
+      "country_pairs_published": true,
+      "forecast_origin_year": 2015,
+      "last_training_feature_year": 2013,
+      "last_training_label_year": 2015,
+      "matched_retraining_changes_alpha_winner_from_original": true,
+      "matched_retraining_changes_alpha_winner_from_unmatched": false,
+      "max_abs_beta_inactive_shift": 0.47544493159,
+      "mean_abs_beta_inactive_shift": 0.470623210154,
+      "n_full_reference": 196,
+      "n_future_binary_positive_affected": 2,
+      "n_subthreshold_affected": 9,
+      "not_an_independent_validation": true,
+      "source_version": "23.1",
+      "target_year": 2017
+    },
+    {
+      "all_country_pairs": [
+        {
+          "absolute_matched_beta_inactive_shift": 0.476627013096,
+          "beta_country_excluded_global_only_offsets": [
+            -0.082779999886,
+            1.121460008628,
+            1.319653124557
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.077759554013,
+            0.644832995533,
+            0.972487921072
+          ],
+          "country": "Peru",
+          "country_id": 135,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0027920866004520484,
+            "alpha0_p": 0.052840198717,
+            "alpha1_loss": 0.012037941280728319,
+            "alpha1_p": 0.109717552291,
+            "delta_alpha1_minus_alpha0": 0.00924585468027627
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.002818763369832093,
+            "alpha0_p": 0.053092027366,
+            "alpha1_loss": 0.006601914773336886,
+            "alpha1_p": 0.081252167807,
+            "delta_alpha1_minus_alpha0": 0.003783151403504793
+          },
+          "heldout_global_only_markov_probability": 0.057139883038,
+          "matched_training_rows": 778,
+          "origin_deaths": 9,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.094697891689,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.007786012161040356,
+            "alpha0_p": 0.088238382584,
+            "alpha1_loss": 0.017538508821025024,
+            "alpha1_p": 0.132433035233,
+            "delta_alpha1_minus_alpha0": 0.009752496659984667
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.473997689141,
+          "beta_country_excluded_global_only_offsets": [
+            -0.10762510291,
+            1.106246026902,
+            1.327781223803
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.098569195812,
+            0.632248337761,
+            0.984925378445
+          ],
+          "country": "France",
+          "country_id": 220,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.002725015195934003,
+            "alpha0_p": 0.052201678095,
+            "alpha1_loss": 0.006567138705272475,
+            "alpha1_p": 0.081037884383,
+            "delta_alpha1_minus_alpha0": 0.0038421235093384722
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0027721862897248776,
+            "alpha0_p": 0.052651555435,
+            "alpha1_loss": 0.004597102913988802,
+            "alpha1_p": 0.067801938866,
+            "delta_alpha1_minus_alpha0": 0.0018249166242639242
+          },
+          "heldout_global_only_markov_probability": 0.057790568193,
+          "matched_training_rows": 778,
+          "origin_deaths": 3,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.025227056095,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0005250205199764191,
+            "alpha0_p": 0.022913326253,
+            "alpha1_loss": 0.000886583099937089,
+            "alpha1_p": 0.029775545334,
+            "delta_alpha1_minus_alpha0": 0.00036156257996066993
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.478680797573,
+          "beta_country_excluded_global_only_offsets": [
+            -0.100728335681,
+            1.120534005703,
+            1.319492042081
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.094356516628,
+            0.641853208131,
+            0.982047658915
+          ],
+          "country": "Armenia",
+          "country_id": 371,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0027160475622404227,
+            "alpha0_p": 0.052115713199,
+            "alpha1_loss": 0.011715727505354014,
+            "alpha1_p": 0.108239214268,
+            "delta_alpha1_minus_alpha0": 0.00899967994311359
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0027490494744800685,
+            "alpha0_p": 0.05243137872,
+            "alpha1_loss": 0.006418489933739392,
+            "alpha1_p": 0.08011547874,
+            "delta_alpha1_minus_alpha0": 0.0036694404592593232
+          },
+          "heldout_global_only_markov_probability": 0.057322144176,
+          "matched_training_rows": 778,
+          "origin_deaths": 9,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.070531098851,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.004171939914183829,
+            "alpha0_p": 0.064590555921,
+            "alpha1_loss": 0.009609995709745887,
+            "alpha1_p": 0.098030585583,
+            "delta_alpha1_minus_alpha0": 0.005438055795562058
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.462599619333,
+          "beta_country_excluded_global_only_offsets": [
+            -0.089051380208,
+            1.123291790712,
+            1.318323954485
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.085110948908,
+            0.660692171379,
+            0.975739551162
+          ],
+          "country": "Angola",
+          "country_id": 540,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.8984738317274309,
+            "alpha0_p": 0.052121404542,
+            "alpha1_loss": 0.8737144277784453,
+            "alpha1_p": 0.06527307315,
+            "delta_alpha1_minus_alpha0": -0.02475940394898557
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.8981041591871728,
+            "alpha0_p": 0.052316424545,
+            "alpha1_loss": 0.8840884478980742,
+            "alpha1_p": 0.059740223184,
+            "delta_alpha1_minus_alpha0": -0.01401571128909862
+          },
+          "heldout_global_only_markov_probability": 0.056700577913,
+          "matched_training_rows": 778,
+          "origin_deaths": 1,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.163489851387,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.7187975197736826,
+            "alpha0_p": 0.152180726939,
+            "alpha1_loss": 0.6868841847981881,
+            "alpha1_p": 0.171215236145,
+            "delta_alpha1_minus_alpha0": -0.03191333497549442
+          },
+          "target_outcome": 1,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.473997689141,
+          "beta_country_excluded_global_only_offsets": [
+            -0.10762510291,
+            1.106246026902,
+            1.327781223803
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.098569195812,
+            0.632248337761,
+            0.984925378445
+          ],
+          "country": "Jordan",
+          "country_id": 663,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.002725015195934003,
+            "alpha0_p": 0.052201678095,
+            "alpha1_loss": 0.004244650781449542,
+            "alpha1_p": 0.065150984501,
+            "delta_alpha1_minus_alpha0": 0.0015196355855155393
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0027721862897248776,
+            "alpha0_p": 0.052651555435,
+            "alpha1_loss": 0.0035735132101237304,
+            "alpha1_p": 0.059778869261,
+            "delta_alpha1_minus_alpha0": 0.0008013269203988528
+          },
+          "heldout_global_only_markov_probability": 0.057790568193,
+          "matched_training_rows": 778,
+          "origin_deaths": 1,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.025227056095,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0005250205199764191,
+            "alpha0_p": 0.022913326253,
+            "alpha1_loss": 0.0006825713259426592,
+            "alpha1_p": 0.026126066025,
+            "delta_alpha1_minus_alpha0": 0.00015755080596624015
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.466648884885,
+          "beta_country_excluded_global_only_offsets": [
+            -0.085142642727,
+            1.120476055703,
+            1.331914722488
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.089266333786,
+            0.653827170819,
+            0.990153482246
+          ],
+          "country": "Israel",
+          "country_id": 666,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0026924012881974625,
+            "alpha0_p": 0.051888354071,
+            "alpha1_loss": 0.012317442503699953,
+            "alpha1_p": 0.110983974085,
+            "delta_alpha1_minus_alpha0": 0.00962504121550249
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.002671428085898807,
+            "alpha0_p": 0.051685859632,
+            "alpha1_loss": 0.006567507569941993,
+            "alpha1_p": 0.081040160229,
+            "delta_alpha1_minus_alpha0": 0.003896079484043186
+          },
+          "heldout_global_only_markov_probability": 0.056240445837,
+          "matched_training_rows": 778,
+          "origin_deaths": 10,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.237512252552,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.04916262573150096,
+            "alpha0_p": 0.221726466015,
+            "alpha1_loss": 0.09955393229611938,
+            "alpha1_p": 0.315521682767,
+            "delta_alpha1_minus_alpha0": 0.05039130656461842
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.477422815033,
+          "beta_country_excluded_global_only_offsets": [
+            -0.102932414484,
+            1.107863170705,
+            1.318059206488
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.094784512473,
+            0.630440355672,
+            0.982339927648
+          ],
+          "country": "Kyrgyzstan",
+          "country_id": 703,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0027086835638667783,
+            "alpha0_p": 0.052045014784,
+            "alpha1_loss": 0.004222273294878161,
+            "alpha1_p": 0.06497902196,
+            "delta_alpha1_minus_alpha0": 0.001513589731011383
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.002750842290870378,
+            "alpha0_p": 0.052448472722,
+            "alpha1_loss": 0.003543640654619583,
+            "alpha1_p": 0.059528486077,
+            "delta_alpha1_minus_alpha0": 0.0007927983637492052
+          },
+          "heldout_global_only_markov_probability": 0.057363874953,
+          "matched_training_rows": 778,
+          "origin_deaths": 1,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.066598259503,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0037140172465588922,
+            "alpha0_p": 0.060942737439,
+            "alpha1_loss": 0.0047728462891453724,
+            "alpha1_p": 0.069085789343,
+            "delta_alpha1_minus_alpha0": 0.0010588290425864802
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.477223708242,
+          "beta_country_excluded_global_only_offsets": [
+            -0.103341850846,
+            1.107802348408,
+            1.318354608192
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.09507387257,
+            0.630578640165,
+            0.982537537855
+          ],
+          "country": "China",
+          "country_id": 710,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0027091404000213655,
+            "alpha0_p": 0.052049403455,
+            "alpha1_loss": 0.008411468028534092,
+            "alpha1_p": 0.091714055785,
+            "delta_alpha1_minus_alpha0": 0.005702327628512726
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.002751932184918702,
+            "alpha0_p": 0.052458861834,
+            "alpha1_loss": 0.005274278137608763,
+            "alpha1_p": 0.072624225556,
+            "delta_alpha1_minus_alpha0": 0.002522345952690061
+          },
+          "heldout_global_only_markov_probability": 0.057390830307,
+          "matched_training_rows": 778,
+          "origin_deaths": 5,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.063700271251,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0033941814206011117,
+            "alpha0_p": 0.058259603677,
+            "alpha1_loss": 0.006474686209461935,
+            "alpha1_p": 0.080465434874,
+            "delta_alpha1_minus_alpha0": 0.0030805047888608234
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.477554870578,
+          "beta_country_excluded_global_only_offsets": [
+            -0.103010060544,
+            1.110093775387,
+            1.316301441052
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.094448488183,
+            0.63253890481,
+            0.982110462328
+          ],
+          "country": "Bangladesh",
+          "country_id": 771,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.8986516077499913,
+            "alpha0_p": 0.052027633446,
+            "alpha1_loss": 0.8742503453240688,
+            "alpha1_p": 0.064986446449,
+            "delta_alpha1_minus_alpha0": -0.024401262425922554
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.8978481222269946,
+            "alpha0_p": 0.052451519854,
+            "alpha1_loss": 0.8844331870039002,
+            "alpha1_p": 0.059556919849,
+            "delta_alpha1_minus_alpha0": -0.013414935223094449
+          },
+          "heldout_global_only_markov_probability": 0.057349022156,
+          "matched_training_rows": 778,
+          "origin_deaths": 1,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.069566409174,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.876665060306927,
+            "alpha0_p": 0.06369606414,
+            "alpha1_loss": 0.8607968125429986,
+            "alpha1_p": 0.072208637385,
+            "delta_alpha1_minus_alpha0": -0.015868247763928478
+          },
+          "target_outcome": 1,
+          "target_year": 2017
+        }
+      ],
+      "by_design": {
+        "global_only_markov_matched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -4.4451092e-05,
+          "delta_alpha1_minus_alpha0_within_affected": -0.000968046009,
+          "mean_Brier_alpha0_only_affected": 0.201799314365,
+          "mean_Brier_alpha1_only_affected": 0.200831268356,
+          "n_affected": 9,
+          "sum_loss_alpha0": 1.816193829284,
+          "sum_loss_alpha1": 1.807481415202,
+          "winner": "alpha1_full_better"
+        },
+        "global_only_markov_unmatched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -5.173769e-05,
+          "delta_alpha1_minus_alpha0_within_affected": -0.001126731923,
+          "mean_Brier_alpha0_only_affected": 0.201693185489,
+          "mean_Brier_alpha1_only_affected": 0.200566453566,
+          "n_affected": 9,
+          "sum_loss_alpha0": 1.8152386694,
+          "sum_loss_alpha1": 1.805098082095,
+          "winner": "alpha1_full_better"
+        },
+        "original_markov_country_blocked_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": 0.000114585324,
+          "delta_alpha1_minus_alpha0_within_affected": 0.002495413722,
+          "mean_Brier_alpha0_only_affected": 0.184971266399,
+          "mean_Brier_alpha1_only_affected": 0.187466680121,
+          "n_affected": 9,
+          "sum_loss_alpha0": 1.664741397594,
+          "sum_loss_alpha1": 1.687200121093,
+          "winner": "alpha0_no_subthreshold_better"
+        }
+      },
+      "country_pairs_published": true,
+      "forecast_origin_year": 2015,
+      "last_training_feature_year": 2013,
+      "last_training_label_year": 2015,
+      "matched_retraining_changes_alpha_winner_from_original": true,
+      "matched_retraining_changes_alpha_winner_from_unmatched": false,
+      "max_abs_beta_inactive_shift": 0.478680797573,
+      "mean_abs_beta_inactive_shift": 0.473861454114,
+      "n_full_reference": 196,
+      "n_future_binary_positive_affected": 2,
+      "n_subthreshold_affected": 9,
+      "not_an_independent_validation": true,
+      "source_version": "24.1",
+      "target_year": 2017
+    },
+    {
+      "all_country_pairs": [
+        {
+          "absolute_matched_beta_inactive_shift": 0.476624238528,
+          "beta_country_excluded_global_only_offsets": [
+            -0.082790224384,
+            1.121463535746,
+            1.319656192006
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.077772991791,
+            0.644839297218,
+            0.972510943888
+          ],
+          "country": "Peru",
+          "country_id": 135,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0027920325224693276,
+            "alpha0_p": 0.052839687002,
+            "alpha1_loss": 0.01203777555622749,
+            "alpha1_p": 0.109716797056,
+            "delta_alpha1_minus_alpha0": 0.009245743033758162
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0028186916370131904,
+            "alpha0_p": 0.05309135181,
+            "alpha1_loss": 0.0066018057868414155,
+            "alpha1_p": 0.081251497136,
+            "delta_alpha1_minus_alpha0": 0.003783114149828225
+          },
+          "heldout_global_only_markov_probability": 0.057139883038,
+          "matched_training_rows": 778,
+          "origin_deaths": 9,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.094697891689,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.007785821374060681,
+            "alpha0_p": 0.088237301489,
+            "alpha1_loss": 0.017538235418592008,
+            "alpha1_p": 0.132432003,
+            "delta_alpha1_minus_alpha0": 0.009752414044531327
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.473994829697,
+          "beta_country_excluded_global_only_offsets": [
+            -0.107635433918,
+            1.106249678724,
+            1.327784116651
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.09858283178,
+            0.632254849026,
+            0.984948087309
+          ],
+          "country": "France",
+          "country_id": 220,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.002724961831359381,
+            "alpha0_p": 0.052201166954,
+            "alpha1_loss": 0.006567032766332151,
+            "alpha1_p": 0.081037230742,
+            "delta_alpha1_minus_alpha0": 0.0038420709349727697
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0027721146683819258,
+            "alpha0_p": 0.052650875286,
+            "alpha1_loss": 0.0045970097887686,
+            "alpha1_p": 0.067801252118,
+            "delta_alpha1_minus_alpha0": 0.0018248951203866741
+          },
+          "heldout_global_only_markov_probability": 0.057790568193,
+          "matched_training_rows": 778,
+          "origin_deaths": 3,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.025227056095,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0005250065299258337,
+            "alpha0_p": 0.022913020969,
+            "alpha1_loss": 0.0008865644074842159,
+            "alpha1_p": 0.029775231443,
+            "delta_alpha1_minus_alpha0": 0.00036155787755838217
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.478677935992,
+          "beta_country_excluded_global_only_offsets": [
+            -0.100738646296,
+            1.120537569308,
+            1.319495203478
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.094370136816,
+            0.641859633316,
+            0.98207047335
+          ],
+          "country": "Armenia",
+          "country_id": 371,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.002715994473473589,
+            "alpha0_p": 0.052115203861,
+            "alpha1_loss": 0.011715564688164027,
+            "alpha1_p": 0.108238462148,
+            "delta_alpha1_minus_alpha0": 0.008999570214690437
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.002748978516616983,
+            "alpha0_p": 0.052430702042,
+            "alpha1_loss": 0.006418382720769304,
+            "alpha1_p": 0.080114809622,
+            "delta_alpha1_minus_alpha0": 0.0036694042041523207
+          },
+          "heldout_global_only_markov_probability": 0.057322144176,
+          "matched_training_rows": 778,
+          "origin_deaths": 9,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.070531098851,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.004171833610690622,
+            "alpha0_p": 0.064589733013,
+            "alpha1_loss": 0.009609838313070341,
+            "alpha1_p": 0.098029782786,
+            "delta_alpha1_minus_alpha0": 0.005438004702379719
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.462596894383,
+          "beta_country_excluded_global_only_offsets": [
+            -0.089061691724,
+            1.123295332252,
+            1.318327155474
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.085124516255,
+            0.660698437869,
+            0.975762584142
+          ],
+          "country": "Angola",
+          "country_id": 540,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.8984747974946505,
+            "alpha0_p": 0.052120895106,
+            "alpha1_loss": 0.8737155179676253,
+            "alpha1_p": 0.065272489991,
+            "delta_alpha1_minus_alpha0": -0.02475927952702528
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.8981054341196069,
+            "alpha0_p": 0.052315751888,
+            "alpha1_loss": 0.8840897402028668,
+            "alpha1_p": 0.059739535978,
+            "delta_alpha1_minus_alpha0": -0.014015693916740068
+          },
+          "heldout_global_only_markov_probability": 0.056700577913,
+          "matched_training_rows": 778,
+          "origin_deaths": 1,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.163489851387,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.718800487947935,
+            "alpha0_p": 0.152178976465,
+            "alpha1_loss": 0.6868870623916291,
+            "alpha1_p": 0.171213500115,
+            "delta_alpha1_minus_alpha0": -0.03191342555630594
+          },
+          "target_outcome": 1,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.473994829697,
+          "beta_country_excluded_global_only_offsets": [
+            -0.107635433918,
+            1.106249678724,
+            1.327784116651
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.09858283178,
+            0.632254849026,
+            0.984948087309
+          ],
+          "country": "Jordan",
+          "country_id": 663,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.002724961831359381,
+            "alpha0_p": 0.052201166954,
+            "alpha1_loss": 0.004244574958811786,
+            "alpha1_p": 0.065150402599,
+            "delta_alpha1_minus_alpha0": 0.001519613127452405
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0027721146683819258,
+            "alpha0_p": 0.052650875286,
+            "alpha1_loss": 0.0035734308887583033,
+            "alpha1_p": 0.059778180708,
+            "delta_alpha1_minus_alpha0": 0.0008013162203763776
+          },
+          "heldout_global_only_markov_probability": 0.057790568193,
+          "matched_training_rows": 778,
+          "origin_deaths": 1,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.025227056095,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0005250065299258337,
+            "alpha0_p": 0.022913020969,
+            "alpha1_loss": 0.0006825550391025076,
+            "alpha1_p": 0.026125754326,
+            "delta_alpha1_minus_alpha0": 0.0001575485091766739
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.466646166603,
+          "beta_country_excluded_global_only_offsets": [
+            -0.085153051659,
+            1.120479661712,
+            1.331917341786
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.089279818409,
+            0.653833495109,
+            0.99017548964
+          ],
+          "country": "Israel",
+          "country_id": 666,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0026923481470018614,
+            "alpha0_p": 0.051887841996,
+            "alpha1_loss": 0.01231727266440003,
+            "alpha1_p": 0.11098320893,
+            "delta_alpha1_minus_alpha0": 0.00962492451739817
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.002671359764141629,
+            "alpha0_p": 0.051685198695,
+            "alpha1_loss": 0.006567400987004013,
+            "alpha1_p": 0.081039502633,
+            "delta_alpha1_minus_alpha0": 0.003896041222862384
+          },
+          "heldout_global_only_markov_probability": 0.056240445837,
+          "matched_training_rows": 778,
+          "origin_deaths": 10,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.237512252552,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.049161593844558905,
+            "alpha0_p": 0.221724139066,
+            "alpha1_loss": 0.0995527288956407,
+            "alpha1_p": 0.31551977576,
+            "delta_alpha1_minus_alpha0": 0.05039113505108179
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.47741993824,
+          "beta_country_excluded_global_only_offsets": [
+            -0.102942728782,
+            1.107866809398,
+            1.318062419868
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.094798145695,
+            0.630446871157,
+            0.982362739172
+          ],
+          "country": "Kyrgyzstan",
+          "country_id": 703,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0027086305960405594,
+            "alpha0_p": 0.052044505916,
+            "alpha1_loss": 0.004222197967893049,
+            "alpha1_p": 0.064978442332,
+            "delta_alpha1_minus_alpha0": 0.0015135673718524897
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0027507712200823963,
+            "alpha0_p": 0.052447795188,
+            "alpha1_loss": 0.003543559024033908,
+            "alpha1_p": 0.05952780043,
+            "delta_alpha1_minus_alpha0": 0.0007927878039515118
+          },
+          "heldout_global_only_markov_probability": 0.057363874953,
+          "matched_training_rows": 778,
+          "origin_deaths": 1,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.066598259503,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.003713922151266917,
+            "alpha0_p": 0.060941957232,
+            "alpha1_loss": 0.004772737460165344,
+            "alpha1_p": 0.069085001702,
+            "delta_alpha1_minus_alpha0": 0.001058815308898427
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.477220832082,
+          "beta_country_excluded_global_only_offsets": [
+            -0.103352165455,
+            1.107805987483,
+            1.318357811703
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.095087506154,
+            0.630585155401,
+            0.982560341641
+          ],
+          "country": "China",
+          "country_id": 710,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0027090874220032594,
+            "alpha0_p": 0.052048894532,
+            "alpha1_loss": 0.008411341001377852,
+            "alpha1_p": 0.091713363265,
+            "delta_alpha1_minus_alpha0": 0.005702253579374593
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.002751861084839893,
+            "alpha0_p": 0.052458184155,
+            "alpha1_loss": 0.005274179818809412,
+            "alpha1_p": 0.072623548652,
+            "delta_alpha1_minus_alpha0": 0.0025223187339695192
+          },
+          "heldout_global_only_markov_probability": 0.057390830307,
+          "matched_training_rows": 778,
+          "origin_deaths": 5,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.063700271251,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0033940942638613736,
+            "alpha0_p": 0.058258855669,
+            "alpha1_loss": 0.0064745665340955215,
+            "alpha1_p": 0.080464691226,
+            "delta_alpha1_minus_alpha0": 0.003080472270234148
+          },
+          "target_outcome": 0,
+          "target_year": 2017
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.477551998899,
+          "beta_country_excluded_global_only_offsets": [
+            -0.103020368865,
+            1.11009739586,
+            1.316304709931
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.094462118005,
+            0.632545396961,
+            0.982133280803
+          ],
+          "country": "Bangladesh",
+          "country_id": 771,
+          "country_training_rows_excluded": 4,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.8986525716694076,
+            "alpha0_p": 0.052027125035,
+            "alpha1_loss": 0.8742514291210548,
+            "alpha1_p": 0.064985866887,
+            "delta_alpha1_minus_alpha0": -0.024401142548352794
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.8978494059718197,
+            "alpha0_p": 0.052450842451,
+            "alpha1_loss": 0.8844344773693932,
+            "alpha1_p": 0.059556233808,
+            "delta_alpha1_minus_alpha0": -0.013414928602426546
+          },
+          "heldout_global_only_markov_probability": 0.057349022156,
+          "matched_training_rows": 778,
+          "origin_deaths": 1,
+          "origin_year": 2015,
+          "original_local_markov_probability": 0.069566409174,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.8766665824812401,
+            "alpha0_p": 0.063695251277,
+            "alpha1_loss": 0.8607983352125892,
+            "alpha1_p": 0.072207816797,
+            "delta_alpha1_minus_alpha0": -0.01586824726865088
+          },
+          "target_outcome": 1,
+          "target_year": 2017
+        }
+      ],
+      "by_design": {
+        "global_only_markov_matched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -4.4452445e-05,
+          "delta_alpha1_minus_alpha0_within_affected": -0.000968075477,
+          "mean_Brier_alpha0_only_affected": 0.201799487332,
+          "mean_Brier_alpha1_only_affected": 0.200831411855,
+          "n_affected": 9,
+          "sum_loss_alpha0": 1.816195385988,
+          "sum_loss_alpha1": 1.807482706692,
+          "winner": "alpha1_full_better"
+        },
+        "global_only_markov_unmatched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -5.1738495e-05,
+          "delta_alpha1_minus_alpha0_within_affected": -0.001126749452,
+          "mean_Brier_alpha0_only_affected": 0.201693414628,
+          "mean_Brier_alpha1_only_affected": 0.200566665176,
+          "n_affected": 9,
+          "sum_loss_alpha0": 1.815240731651,
+          "sum_loss_alpha1": 1.805099986587,
+          "winner": "alpha1_full_better"
+        },
+        "original_markov_country_blocked_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": 0.000114583035,
+          "delta_alpha1_minus_alpha0_within_affected": 0.002495363882,
+          "mean_Brier_alpha0_only_affected": 0.184971594304,
+          "mean_Brier_alpha1_only_affected": 0.187466958186,
+          "n_affected": 9,
+          "sum_loss_alpha0": 1.664744348733,
+          "sum_loss_alpha1": 1.687202623672,
+          "winner": "alpha0_no_subthreshold_better"
+        }
+      },
+      "country_pairs_published": true,
+      "forecast_origin_year": 2015,
+      "last_training_feature_year": 2013,
+      "last_training_label_year": 2015,
+      "matched_retraining_changes_alpha_winner_from_original": true,
+      "matched_retraining_changes_alpha_winner_from_unmatched": false,
+      "max_abs_beta_inactive_shift": 0.478677935992,
+      "mean_abs_beta_inactive_shift": 0.473858629347,
+      "n_full_reference": 196,
+      "n_future_binary_positive_affected": 2,
+      "n_subthreshold_affected": 9,
+      "not_an_independent_validation": true,
+      "source_version": "25.1",
+      "target_year": 2017
+    },
+    {
+      "all_country_pairs": [
+        {
+          "absolute_matched_beta_inactive_shift": 0.815766246215,
+          "beta_country_excluded_global_only_offsets": [
+            -0.337729371432,
+            2.081245079013,
+            2.227083441926
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.271471355531,
+            1.265478832798,
+            1.752609233915
+          ],
+          "country": "Peru",
+          "country_id": 135,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0016244761191923443,
+            "alpha0_p": 0.040304790276,
+            "alpha1_loss": 0.034141122829687544,
+            "alpha1_p": 0.184773165881,
+            "delta_alpha1_minus_alpha0": 0.0325166467104952
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0018444609538433576,
+            "alpha0_p": 0.042947187962,
+            "alpha1_loss": 0.012358671069926582,
+            "alpha1_p": 0.111169559997,
+            "delta_alpha1_minus_alpha0": 0.010514210116083224
+          },
+          "heldout_global_only_markov_probability": 0.055597403951,
+          "matched_training_rows": 2143,
+          "origin_deaths": 13,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.076913381653,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.003566452750306117,
+            "alpha0_p": 0.05971978525,
+            "alpha1_loss": 0.022619783411999404,
+            "alpha1_p": 0.15039874804,
+            "delta_alpha1_minus_alpha0": 0.019053330661693287
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.807905130079,
+          "beta_country_excluded_global_only_offsets": [
+            -0.355505250327,
+            2.028627426495,
+            2.236832371504
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.284689859999,
+            1.220722296416,
+            1.765680962497
+          ],
+          "country": "Poland",
+          "country_id": 290,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015989824620701249,
+            "alpha0_p": 0.039987278753,
+            "alpha1_loss": 0.005814931965198659,
+            "alpha1_p": 0.076255701198,
+            "delta_alpha1_minus_alpha0": 0.004215949503128534
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0018315050548938657,
+            "alpha0_p": 0.042796086911,
+            "alpha1_loss": 0.003995861292395946,
+            "alpha1_p": 0.063212825379,
+            "delta_alpha1_minus_alpha0": 0.00216435623750208
+          },
+          "heldout_global_only_markov_probability": 0.056100238437,
+          "matched_training_rows": 2143,
+          "origin_deaths": 2,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.02126551982,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.00025861985779621256,
+            "alpha0_p": 0.016081662159,
+            "alpha1_loss": 0.0005795709737444649,
+            "alpha1_p": 0.024074280337,
+            "delta_alpha1_minus_alpha0": 0.00032095111594825234
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.81404700989,
+          "beta_country_excluded_global_only_offsets": [
+            -0.346622155325,
+            2.063527080014,
+            2.21189330375
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.279378343985,
+            1.249480070124,
+            1.768625753417
+          ],
+          "country": "Congo",
+          "country_id": 484,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015503929949821557,
+            "alpha0_p": 0.039375030095,
+            "alpha1_loss": 0.008058781045927648,
+            "alpha1_p": 0.089770713743,
+            "delta_alpha1_minus_alpha0": 0.006508388050945492
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017638977615534348,
+            "alpha0_p": 0.041998782858,
+            "alpha1_loss": 0.004819751139812105,
+            "alpha1_p": 0.069424427544,
+            "delta_alpha1_minus_alpha0": 0.0030558533782586703
+          },
+          "heldout_global_only_markov_probability": 0.054793592301,
+          "matched_training_rows": 2143,
+          "origin_deaths": 3,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.159347920729,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.015719433673950175,
+            "alpha0_p": 0.12537716568,
+            "alpha1_loss": 0.03845693076223579,
+            "alpha1_p": 0.196104387412,
+            "delta_alpha1_minus_alpha0": 0.022737497088285614
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.807600923403,
+          "beta_country_excluded_global_only_offsets": [
+            -0.359175207084,
+            2.031737848932,
+            2.240964822654
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.288986186007,
+            1.224136925529,
+            1.770270527844
+          ],
+          "country": "Tanzania",
+          "country_id": 510,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015694508584469203,
+            "alpha0_p": 0.039616295365,
+            "alpha1_loss": 0.00572262464032226,
+            "alpha1_p": 0.075648031305,
+            "delta_alpha1_minus_alpha0": 0.00415317378187534
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017956212011152784,
+            "alpha0_p": 0.042374770809,
+            "alpha1_loss": 0.003927686909204073,
+            "alpha1_p": 0.062671260632,
+            "delta_alpha1_minus_alpha0": 0.0021320657080887945
+          },
+          "heldout_global_only_markov_probability": 0.055781403662,
+          "matched_training_rows": 2143,
+          "origin_deaths": 2,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.054916880635,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.001739628248403493,
+            "alpha0_p": 0.04170885096,
+            "alpha1_loss": 0.003807745731818718,
+            "alpha1_p": 0.061706934228,
+            "delta_alpha1_minus_alpha0": 0.002068117483415225
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.751524966407,
+          "beta_country_excluded_global_only_offsets": [
+            -0.337415968351,
+            1.965710501523,
+            2.250560363943
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.275974993248,
+            1.214185535115,
+            1.794905996801
+          ],
+          "country": "Burundi",
+          "country_id": 516,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015490220681856047,
+            "alpha0_p": 0.039357617664,
+            "alpha1_loss": 0.021985731446974077,
+            "alpha1_p": 0.148275862658,
+            "delta_alpha1_minus_alpha0": 0.020436709378788474
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017428539352632845,
+            "alpha0_p": 0.041747502144,
+            "alpha1_loss": 0.009259858708856062,
+            "alpha1_p": 0.096228159646,
+            "delta_alpha1_minus_alpha0": 0.007517004773592777
+          },
+          "heldout_global_only_markov_probability": 0.054295094599,
+          "matched_training_rows": 2143,
+          "origin_deaths": 10,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.268088735632,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.047304682300393364,
+            "alpha0_p": 0.217496396063,
+            "alpha1_loss": 0.16363003084856786,
+            "alpha1_p": 0.404512089867,
+            "delta_alpha1_minus_alpha0": 0.1163253485481745
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.806784743215,
+          "beta_country_excluded_global_only_offsets": [
+            -0.339875079073,
+            2.076684274699,
+            2.205491530467
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.271818185955,
+            1.269899531484,
+            1.75194487237
+          ],
+          "country": "Rwanda",
+          "country_id": 517,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015857288359494303,
+            "alpha0_p": 0.03982121088,
+            "alpha1_loss": 0.01572091184479916,
+            "alpha1_p": 0.125383060438,
+            "delta_alpha1_minus_alpha0": 0.014135183008849727
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0018067991564388352,
+            "alpha0_p": 0.042506460173,
+            "alpha1_loss": 0.007494949161582153,
+            "alpha1_p": 0.086573374438,
+            "delta_alpha1_minus_alpha0": 0.0056881500051433175
+          },
+          "heldout_global_only_markov_probability": 0.055052363458,
+          "matched_training_rows": 2143,
+          "origin_deaths": 6,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.139885757257,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.012157932529816472,
+            "alpha0_p": 0.11026301524,
+            "alpha1_loss": 0.04377496780907074,
+            "alpha1_p": 0.2092246826,
+            "delta_alpha1_minus_alpha0": 0.03161703527925427
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.82206282113,
+          "beta_country_excluded_global_only_offsets": [
+            -0.348567092622,
+            2.038906922144,
+            2.214949829665
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.279812495153,
+            1.216844101015,
+            1.760473557076
+          ],
+          "country": "Eritrea",
+          "country_id": 531,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015597426800988475,
+            "alpha0_p": 0.039493577707,
+            "alpha1_loss": 0.010238136702916581,
+            "alpha1_p": 0.101183678046,
+            "delta_alpha1_minus_alpha0": 0.008678394022817733
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017796490164160115,
+            "alpha0_p": 0.04218588646,
+            "alpha1_loss": 0.005530404040315342,
+            "alpha1_p": 0.074366686361,
+            "delta_alpha1_minus_alpha0": 0.003750755023899331
+          },
+          "heldout_global_only_markov_probability": 0.055057004631,
+          "matched_training_rows": 2143,
+          "origin_deaths": 4,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.140876799138,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.01216265516626308,
+            "alpha0_p": 0.110284428485,
+            "alpha1_loss": 0.03400755091084518,
+            "alpha1_p": 0.184411363291,
+            "delta_alpha1_minus_alpha0": 0.0218448957445821
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.786854785502,
+          "beta_country_excluded_global_only_offsets": [
+            -0.347633473499,
+            2.054796958971,
+            2.229712079943
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.284441462157,
+            1.267942173469,
+            1.765415682669
+          ],
+          "country": "Angola",
+          "country_id": 540,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.9231470310235927,
+            "alpha0_p": 0.03919459253,
+            "alpha1_loss": 0.6119963441624653,
+            "alpha1_p": 0.217698047962,
+            "delta_alpha1_minus_alpha0": -0.31115068686112746
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.9184446224374309,
+            "alpha0_p": 0.041644834919,
+            "alpha1_loss": 0.7666386637839406,
+            "alpha1_p": 0.124420955148,
+            "delta_alpha1_minus_alpha0": -0.15180595865349022
+          },
+          "heldout_global_only_markov_probability": 0.054598688993,
+          "matched_training_rows": 2143,
+          "origin_deaths": 20,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.238653189194,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.6547293466418536,
+            "alpha0_p": 0.190846524668,
+            "alpha1_loss": 0.3187288564210192,
+            "alpha1_p": 0.435439235847,
+            "delta_alpha1_minus_alpha0": -0.33600049022083434
+          },
+          "target_outcome": 1,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.810735200392,
+          "beta_country_excluded_global_only_offsets": [
+            -0.35752851687,
+            2.032123600365,
+            2.230348436544
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.284671476347,
+            1.221388399973,
+            1.765661329158
+          ],
+          "country": "Morocco",
+          "country_id": 600,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015936747844121676,
+            "alpha0_p": 0.039920856509,
+            "alpha1_loss": 0.033768427705752904,
+            "alpha1_p": 0.183761877727,
+            "delta_alpha1_minus_alpha0": 0.032174752921340734
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0018325923005764978,
+            "alpha0_p": 0.042808787656,
+            "alpha1_loss": 0.012071375600341805,
+            "alpha1_p": 0.109869812052,
+            "delta_alpha1_minus_alpha0": 0.010238783299765308
+          },
+          "heldout_global_only_markov_probability": 0.056115682299,
+          "matched_training_rows": 2143,
+          "origin_deaths": 14,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.02119879964,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0002570003297340319,
+            "alpha0_p": 0.016031229826,
+            "alpha1_loss": 0.001851606427979729,
+            "alpha1_p": 0.043030296629,
+            "delta_alpha1_minus_alpha0": 0.0015946060982456969
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.811463329689,
+          "beta_country_excluded_global_only_offsets": [
+            -0.338200164224,
+            2.042572556336,
+            2.235160344977
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.276997978121,
+            1.231109226647,
+            1.751581469845
+          ],
+          "country": "Algeria",
+          "country_id": 615,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015906885998184072,
+            "alpha0_p": 0.039883437663,
+            "alpha1_loss": 0.03419572938832196,
+            "alpha1_p": 0.184920873317,
+            "delta_alpha1_minus_alpha0": 0.03260504078850355
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017887969666407367,
+            "alpha0_p": 0.042294171781,
+            "alpha1_loss": 0.01197392586673974,
+            "alpha1_p": 0.109425435191,
+            "delta_alpha1_minus_alpha0": 0.010185128900099004
+          },
+          "heldout_global_only_markov_probability": 0.055049831585,
+          "matched_training_rows": 2143,
+          "origin_deaths": 14,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.194502044319,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.02393969212721831,
+            "alpha0_p": 0.154724568596,
+            "alpha1_loss": 0.11386203125217081,
+            "alpha1_p": 0.337434484385,
+            "delta_alpha1_minus_alpha0": 0.08992233912495251
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.836331078327,
+          "beta_country_excluded_global_only_offsets": [
+            -0.359241318214,
+            2.014833721295,
+            2.259311271237
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.29223621081,
+            1.178502642968,
+            1.79374526489
+          ],
+          "country": "Tunisia",
+          "country_id": 616,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015666196706588323,
+            "alpha0_p": 0.039580546619,
+            "alpha1_loss": 0.007837284866952824,
+            "alpha1_p": 0.088528441006,
+            "delta_alpha1_minus_alpha0": 0.006270665196293991
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017814934136607273,
+            "alpha0_p": 0.042207741158,
+            "alpha1_loss": 0.004600282237256765,
+            "alpha1_p": 0.06782538048,
+            "delta_alpha1_minus_alpha0": 0.0028187888235960377
+          },
+          "heldout_global_only_markov_probability": 0.055735393684,
+          "matched_training_rows": 2143,
+          "origin_deaths": 3,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.059056778292,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.002003564962684798,
+            "alpha0_p": 0.044761199299,
+            "alpha1_loss": 0.005157026461052539,
+            "alpha1_p": 0.071812439459,
+            "delta_alpha1_minus_alpha0": 0.0031534614983677414
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.807681269827,
+          "beta_country_excluded_global_only_offsets": [
+            -0.364704644668,
+            2.027229364599,
+            2.305301724308
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.30334096648,
+            1.219548094772,
+            1.838632716875
+          ],
+          "country": "Libya",
+          "country_id": 620,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.001528853319353263,
+            "alpha0_p": 0.039100553952,
+            "alpha1_loss": 0.005564367587769914,
+            "alpha1_p": 0.074594688737,
+            "delta_alpha1_minus_alpha0": 0.004035514268416651
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017199624517637972,
+            "alpha0_p": 0.04147243002,
+            "alpha1_loss": 0.003754668743728545,
+            "alpha1_p": 0.061275351845,
+            "delta_alpha1_minus_alpha0": 0.002034706291964748
+          },
+          "heldout_global_only_markov_probability": 0.055355717255,
+          "matched_training_rows": 2143,
+          "origin_deaths": 2,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.104622875629,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.006307884113017408,
+            "alpha0_p": 0.079422189047,
+            "alpha1_loss": 0.0132638338308032,
+            "alpha1_p": 0.115168718977,
+            "delta_alpha1_minus_alpha0": 0.006955949717785792
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.810344963078,
+          "beta_country_excluded_global_only_offsets": [
+            -0.351510545422,
+            2.030844368793,
+            2.207344367058
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.284409480182,
+            1.220499405715,
+            1.732047129469
+          ],
+          "country": "South Sudan",
+          "country_id": 626,
+          "country_training_rows_excluded": 9,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.9218400386295952,
+            "alpha0_p": 0.03987498802,
+            "alpha1_loss": 0.5907293952781285,
+            "alpha1_p": 0.231410775981,
+            "delta_alpha1_minus_alpha0": -0.33111064335146667
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.9167588199087734,
+            "alpha0_p": 0.042524767992,
+            "alpha1_loss": 0.7613439564651463,
+            "alpha1_p": 0.127449739863,
+            "delta_alpha1_minus_alpha0": -0.1554148634436271
+          },
+          "heldout_global_only_markov_probability": 0.055734728465,
+          "matched_training_rows": 2145,
+          "origin_deaths": 23,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.056559077933,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.9155376849112238,
+            "alpha0_p": 0.043162665386,
+            "alpha1_loss": 0.758310620545214,
+            "alpha1_p": 0.129189675908,
+            "delta_alpha1_minus_alpha0": -0.15722706436600975
+          },
+          "target_outcome": 1,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.808551807663,
+          "beta_country_excluded_global_only_offsets": [
+            -0.355395097536,
+            2.029740974966,
+            2.23670889177
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.284672695683,
+            1.221189167303,
+            1.76566263138
+          ],
+          "country": "United Arab Emirates",
+          "country_id": 696,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015993206757217919,
+            "alpha0_p": 0.039991507545,
+            "alpha1_loss": 0.008085251363050121,
+            "alpha1_p": 0.089918025796,
+            "delta_alpha1_minus_alpha0": 0.006485930687328329
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0018315652382414043,
+            "alpha0_p": 0.042796790046,
+            "alpha1_loss": 0.004888557376239085,
+            "alpha1_p": 0.069918219201,
+            "delta_alpha1_minus_alpha0": 0.0030569921379976807
+          },
+          "heldout_global_only_markov_probability": 0.056100238437,
+          "matched_training_rows": 2143,
+          "origin_deaths": 3,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.02126551982,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.0002586285932358806,
+            "alpha0_p": 0.016081933753,
+            "alpha1_loss": 0.0007153769306976427,
+            "alpha1_p": 0.02674653119,
+            "delta_alpha1_minus_alpha0": 0.00045674833746176213
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        },
+        {
+          "absolute_matched_beta_inactive_shift": 0.809722178676,
+          "beta_country_excluded_global_only_offsets": [
+            -0.356930085787,
+            2.031031305598,
+            2.234873773073
+          ],
+          "beta_country_excluded_original_offsets": [
+            -0.288911601477,
+            1.221309126921,
+            1.779266512868
+          ],
+          "country": "Bangladesh",
+          "country_id": 771,
+          "country_training_rows_excluded": 11,
+          "global_only_markov_matched_calibration": {
+            "alpha0_loss": 0.0015553526936152792,
+            "alpha0_p": 0.039437960059,
+            "alpha1_loss": 0.014724758017379007,
+            "alpha1_p": 0.121345613919,
+            "delta_alpha1_minus_alpha0": 0.013169405323763728
+          },
+          "global_only_markov_unmatched_calibration": {
+            "alpha0_loss": 0.0017721531977870095,
+            "alpha0_p": 0.042096949982,
+            "alpha1_loss": 0.00697705084000294,
+            "alpha1_p": 0.083528742598,
+            "delta_alpha1_minus_alpha0": 0.005204897642215931
+          },
+          "heldout_global_only_markov_probability": 0.0554168678,
+          "matched_training_rows": 2143,
+          "origin_deaths": 6,
+          "origin_year": 2022,
+          "original_local_markov_probability": 0.097346510653,
+          "original_markov_country_blocked_calibration": {
+            "alpha0_loss": 0.005586955569056874,
+            "alpha0_p": 0.074745940151,
+            "alpha1_loss": 0.0205914455115565,
+            "alpha1_p": 0.143497196877,
+            "delta_alpha1_minus_alpha0": 0.015004489942499625
+          },
+          "target_outcome": 0,
+          "target_year": 2024
+        }
+      ],
+      "by_design": {
+        "global_only_markov_matched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.00233099784,
+          "delta_alpha1_minus_alpha0_within_affected": -0.030458371771,
+          "mean_Brier_alpha0_only_affected": 0.124363958361,
+          "mean_Brier_alpha1_only_affected": 0.09390558659,
+          "n_affected": 15,
+          "sum_loss_alpha0": 1.865459375416,
+          "sum_loss_alpha1": 1.408583798846,
+          "winner": "alpha1_full_better"
+        },
+        "global_only_markov_unmatched_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.001218669029,
+          "delta_alpha1_minus_alpha0_within_affected": -0.015923941984,
+          "mean_Brier_alpha0_only_affected": 0.123899652866,
+          "mean_Brier_alpha1_only_affected": 0.107975710882,
+          "n_affected": 15,
+          "sum_loss_alpha0": 1.858494792994,
+          "sum_loss_alpha1": 1.619635663235,
+          "winner": "alpha1_full_better"
+        },
+        "original_markov_country_blocked_calibration": {
+          "delta_alpha1_minus_alpha0_on_full_reference_risk_n": -0.000827412163,
+          "delta_alpha1_minus_alpha0_within_affected": -0.01081151893,
+          "mean_Brier_alpha0_only_affected": 0.113435344118,
+          "mean_Brier_alpha1_only_affected": 0.102623825189,
+          "n_affected": 15,
+          "sum_loss_alpha0": 1.701530161775,
+          "sum_loss_alpha1": 1.539357377829,
+          "winner": "alpha1_full_better"
+        }
+      },
+      "country_pairs_published": true,
+      "forecast_origin_year": 2022,
+      "last_training_feature_year": 2020,
+      "last_training_label_year": 2022,
+      "matched_retraining_changes_alpha_winner_from_original": false,
+      "matched_retraining_changes_alpha_winner_from_unmatched": false,
+      "max_abs_beta_inactive_shift": 0.836331078327,
+      "mean_abs_beta_inactive_shift": 0.807158430233,
+      "n_full_reference": 196,
+      "n_future_binary_positive_affected": 2,
+      "n_subthreshold_affected": 15,
+      "not_an_independent_validation": true,
+      "source_version": "25.1",
+      "target_year": 2024
+    }
+  ],
+  "evaluation_does_observe_target_state_and_origin_deaths": true,
+  "evaluation_markov_excludes_target_country_transitions": true,
+  "historical_source_versions_not_available_asof_forecast": true,
+  "issued_15_alerts_SHA256": "309b4f270e1d0d6382b7a90ae64c28d7621f96fbf3177a45aaebbffb0f958acb",
+  "issued_LOG1P_shadow_SHA256": "52686923315854557a796f8f192d376dab77a4e03b14c1aeb6b4091e48104f90",
+  "issued_original_geo_SHA256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "latest_26_1_summary": [
+    {
+      "global_only_matched_delta": -4.4246332e-05,
+      "global_only_unmatched_delta": -5.2598315e-05,
+      "matched_minus_unmatched_alpha1_mean_subthreshold_Brier": 0.000278707386,
+      "matched_retraining_changed_sign": false,
+      "original_country_block_delta": 0.000121285129,
+      "subthreshold_n": 9,
+      "target_year": 2017
+    },
+    {
+      "global_only_matched_delta": -0.001173786256,
+      "global_only_unmatched_delta": -0.000610675918,
+      "matched_minus_unmatched_alpha1_mean_subthreshold_Brier": -0.01545381064,
+      "matched_retraining_changed_sign": false,
+      "original_country_block_delta": -0.001040764833,
+      "subthreshold_n": 7,
+      "target_year": 2018
+    },
+    {
+      "global_only_matched_delta": -0.001645916785,
+      "global_only_unmatched_delta": -0.000868171723,
+      "matched_minus_unmatched_alpha1_mean_subthreshold_Brier": -0.014461070424,
+      "matched_retraining_changed_sign": false,
+      "original_country_block_delta": -0.001055160289,
+      "subthreshold_n": 10,
+      "target_year": 2019
+    },
+    {
+      "global_only_matched_delta": -0.001933010216,
+      "global_only_unmatched_delta": -0.000964031393,
+      "matched_minus_unmatched_alpha1_mean_subthreshold_Brier": -0.014019999433,
+      "matched_retraining_changed_sign": false,
+      "original_country_block_delta": -0.001918235167,
+      "subthreshold_n": 13,
+      "target_year": 2020
+    },
+    {
+      "global_only_matched_delta": -0.001343627287,
+      "global_only_unmatched_delta": -0.000715833139,
+      "matched_minus_unmatched_alpha1_mean_subthreshold_Brier": -0.01072263344,
+      "matched_retraining_changed_sign": false,
+      "original_country_block_delta": -0.000237423749,
+      "subthreshold_n": 11,
+      "target_year": 2021
+    },
+    {
+      "global_only_matched_delta": -0.001253818953,
+      "global_only_unmatched_delta": -0.000749138428,
+      "matched_minus_unmatched_alpha1_mean_subthreshold_Brier": -0.009643025167,
+      "matched_retraining_changed_sign": false,
+      "original_country_block_delta": -0.00028279625,
+      "subthreshold_n": 9,
+      "target_year": 2022
+    },
+    {
+      "global_only_matched_delta": -0.001332861103,
+      "global_only_unmatched_delta": -0.00091036056,
+      "matched_minus_unmatched_alpha1_mean_subthreshold_Brier": -0.004831215376,
+      "matched_retraining_changed_sign": false,
+      "original_country_block_delta": -0.000610833294,
+      "subthreshold_n": 15,
+      "target_year": 2023
+    },
+    {
+      "global_only_matched_delta": -0.002242156658,
+      "global_only_unmatched_delta": -0.001144147438,
+      "matched_minus_unmatched_alpha1_mean_subthreshold_Brier": -0.013888123238,
+      "matched_retraining_changed_sign": false,
+      "original_country_block_delta": -0.000821282381,
+      "subthreshold_n": 15,
+      "target_year": 2024
+    },
+    {
+      "global_only_matched_delta": 0.000531008563,
+      "global_only_unmatched_delta": 9.2862576e-05,
+      "matched_minus_unmatched_alpha1_mean_subthreshold_Brier": 0.007409317298,
+      "matched_retraining_changed_sign": false,
+      "original_country_block_delta": 0.000634711634,
+      "subthreshold_n": 12,
+      "target_year": 2025
+    }
+  ],
+  "limitations": "COUNTRY-BLOCKED global-only matching: for every historical training row (source country i), Markov global transitions exclude heldout evaluation country c AND country i, at that row's origin u-2, while using origin-state from i; logistic is fit excluding all c labels through t-2. Evaluation c uses global excluding c with only c origin state and best deaths. Fixed lambda5 and alpha family chosen AFTER some outcomes examined and 4 revised UCDP vintages not as-of real-time sources, hence no valid independent prospective confirmation. Full riskset 196 Brier isn't crossfitted for active/zero counts; only subthreshold alpha contrast is compared. No 2027 outcomes or forecast changes.",
+  "matched_beta_refitted_for_each_target_country": true,
+  "n_distinct_target_years": 9,
+  "n_heldout_country_cases": 143,
+  "n_vintage_year_blocks": 13,
+  "nested_logistic_ridge_lambda_already_chosen_post_hoc": 5.0,
+  "no_alert_reissue": true,
+  "no_alpha_or_model_selected": true,
+  "no_new_forecast_issue": true,
+  "no_original_2027_forecast_mutation": true,
+  "no_shadow_2027_forecast_mutation": true,
+  "paired_alpha_Brier_196_denominator_is_descriptive_not_full_crossfit_score": true,
+  "prospective_skill_demonstrated": false,
+  "schema": "idealab.psico.geo2027_LOG1P_matched_global_only_country_block.v1",
+  "source_revisions_and_country_year_dependence_preclude_IID_inference": true,
+  "status": "HISTORICAL_POST_HOC_MATCHED_OFFSET_RETRAINING_NOT_PROSPECTIVE",
+  "strict_H2_training_features_last_t_minus_4": true,
+  "strict_H2_training_labels_last_t_minus_2": true
+}
