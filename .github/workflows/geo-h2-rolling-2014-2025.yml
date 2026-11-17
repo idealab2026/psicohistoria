@@ -33,10 +33,10 @@ jobs:
           set -e
           PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_experiment_geo_h2_rolling_2014_2025.py' -v
           PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_experiment_geo2027_intensity_markov_cross_release.py' -v
-      - name: Replay four original SHA-verifiable sources and print reproducible rolling report
+      - name: Replay four official UCDP SHA-pinned sources and require byte-identical rolling report
         run: |
           set -e
-          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_geo_h2_rolling_2014_2025.py --print-report
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_geo_h2_rolling_2014_2025.py --check-report
       - name: Validate institutional repository publication allowlist
         run: |
           set -e
