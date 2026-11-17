@@ -1,0 +1,403 @@
+{
+  "absence_from_archive_not_proof_no_older_data_ever_existed": true,
+  "all_12_pseudo_origins_precede_edition_codebook_year": true,
+  "audit_design_date": "2026-11-17",
+  "first_issued_2027_and_2028_probabilities_unchanged": true,
+  "genuine_contemporaneously_notarized_historical_issue_count": 0,
+  "historical_PDF_year_is_compilation_not_independent_file_release_timestamp": true,
+  "interpretation": "The 12-year four-state Brier lead originates in years for which the chosen origin-edition codebook postdates the evaluated outcome year, or comes from the same year without precise release dates. The two later 2024/25 years have codebooks dated before their outcomes, yet the archived data bytes are not contemporaneously notarized and neither historical forecast was issued then. Year-level plausibility does not confer actual out-of-sample skill.",
+  "limitations": "Archived present-day download SHA authenticates current official bytes, NOT their historical availability. Codebook compilation years 2023/2024 are not exact public release dates. The UCDP archive's lack of earlier OrganizedViolenceCY editions is NOT evidence that no underlying GED or other UCDP dataset existed. The main 2014-2025 rolling score is a source-revised ex-post diagnostic, never a pre-registered real-world prospective test.",
+  "n_pseudo_origins_with_source_verified_available_at_pseudo_origin": 0,
+  "n_target_years_before_own_source_codebook_year": 9,
+  "n_target_years_same_as_source_codebook_year_unresolved": 1,
+  "n_target_years_with_hash_timestamp_confirmed_source_available_before_target": 0,
+  "n_target_years_with_prior_year_codebook_but_no_file_time_hash": 2,
+  "no_22_1_organized_violence_cy_version_listed_on_official_archive": true,
+  "no_tuning_or_original_model_reissue": true,
+  "not_independent_confidence_or_predictive_intervals": true,
+  "official_archival_catalog": "https://ucdp.uu.se/downloads/olddw.html",
+  "official_archive_observed_country_year_versions": [
+    "23.1",
+    "24.1",
+    "25.1"
+  ],
+  "official_codebooks_compilation_years": {
+    "23.1": {
+      "compiled_year": 2023,
+      "exact_publication_date_verified": false,
+      "past_original_dataset_checksum_timestamp_notarized": false,
+      "pdf_sha256_as_of_audit": "2ff7cf22e203bd9c2056db164d968bf2deb91c820cf3f9f5393a5d1599bc397c",
+      "source_last_data_year": 2022,
+      "url": "https://ucdp.uu.se/downloads/organizedviolencecy/UCDP_OrganizedViolenceCY_Codebook_231.pdf"
+    },
+    "24.1": {
+      "compiled_year": 2024,
+      "exact_publication_date_verified": false,
+      "past_original_dataset_checksum_timestamp_notarized": false,
+      "pdf_sha256_as_of_audit": "afdf989c3f48a50d861c42e16d69c95e087582940161c58877e8401deb6e2212",
+      "source_last_data_year": 2023,
+      "url": "https://ucdp.uu.se/downloads/organizedviolencecy/UCDP_OrganizedViolenceCY_Codebook_241.pdf"
+    }
+  },
+  "official_listed_archive_23_24_25_present": true,
+  "official_original_archive_data_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "original_GEO2027_issue_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "outcomes_2027_observed": 0,
+  "schema": "idealab.psico.geo_h2_rolling_asof_source_eligibility.v1",
+  "score_decomposition_by_source_timing": {
+    "after_target": {
+      "best_label": {
+        "country_year_n": 1764,
+        "four_state_intensity": {
+          "brier": 0.04517001333121587,
+          "logloss": 0.16556371601237366
+        },
+        "four_state_minus_original_delta_brier": -0.003929058651668982,
+        "lower_brier_in_this_retro_sample": "four_state",
+        "original_binary": {
+          "brier": 0.04909907198288485,
+          "logloss": 0.1830297707644201
+        },
+        "positives": 303,
+        "year_n": 9
+      },
+      "target_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ]
+    },
+    "complete_rolling_retrospective_not_asof": {
+      "best_label": {
+        "country_year_n": 2352,
+        "four_state_intensity": {
+          "brier": 0.04416942865551041,
+          "logloss": 0.1624620470980699
+        },
+        "four_state_minus_original_delta_brier": -0.002575681802295858,
+        "lower_brier_in_this_retro_sample": "four_state",
+        "original_binary": {
+          "brier": 0.046745110457806265,
+          "logloss": 0.1761666380817798
+        },
+        "positives": 406,
+        "year_n": 12
+      },
+      "target_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    "not_pre_target_year_based": {
+      "best_label": {
+        "country_year_n": 1960,
+        "four_state_intensity": {
+          "brier": 0.04451344858938834,
+          "logloss": 0.16397106758424013
+        },
+        "four_state_minus_original_delta_brier": -0.003563872577405855,
+        "lower_brier_in_this_retro_sample": "four_state",
+        "original_binary": {
+          "brier": 0.048077321166794196,
+          "logloss": 0.18052041796941556
+        },
+        "positives": 337,
+        "year_n": 10
+      },
+      "target_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ]
+    },
+    "pre_target_year_only_nonnotarized": {
+      "best_label": {
+        "country_year_n": 392,
+        "four_state_intensity": {
+          "brier": 0.042449328986120784,
+          "logloss": 0.15491694466721873
+        },
+        "four_state_minus_original_delta_brier": 0.002365272073254175,
+        "lower_brier_in_this_retro_sample": "binary_original",
+        "original_binary": {
+          "brier": 0.04008405691286661,
+          "logloss": 0.15439773864360107
+        },
+        "positives": 69,
+        "year_n": 2
+      },
+      "target_years": [
+        2024,
+        2025
+      ]
+    },
+    "same_target_year_unknown_date": {
+      "best_label": {
+        "country_year_n": 196,
+        "four_state_intensity": {
+          "brier": 0.038604365912940496,
+          "logloss": 0.14963723173103852
+        },
+        "four_state_minus_original_delta_brier": -0.0002771979090378171,
+        "lower_brier_in_this_retro_sample": "four_state",
+        "original_binary": {
+          "brier": 0.03888156382197831,
+          "logloss": 0.15793624281437457
+        },
+        "positives": 34,
+        "year_n": 1
+      },
+      "target_years": [
+        2023
+      ]
+    }
+  },
+  "status": "TEMPORAL_PROVENANCE_EXCLUSION_NO_NEW_PREDICTIONS",
+  "strict_asof_rolling_forecast_skill_estimate": null,
+  "year_level_only_eligibility": [
+    {
+      "actual_origin_issue_timestamp_notarized": false,
+      "codebook_compiled_year": 2023,
+      "codebook_year_cannot_certify_actual_release_date": true,
+      "codebook_year_relative_to_target": "CODEBOOK_YEAR_AFTER_TARGET",
+      "delta_four_state_minus_original": -0.008196958469512905,
+      "exact_original_file_bytes_notarized_before_target": false,
+      "four_state_fold_brier": 0.04650105574447274,
+      "n_GWNO": 196,
+      "origin_edition": "23.1",
+      "origin_year": 2012,
+      "origin_year_contemporaneous_file_proven": false,
+      "original_fold_brier": 0.054698014213985645,
+      "reason": "Official codebook compilation-year evidence only: no original file checksum independently notarized before simulation date; past historical values in the modern archive may have been revised.",
+      "source_last_observation_year": 2022,
+      "source_year_after_simulated_origin": true,
+      "target_year": 2014
+    },
+    {
+      "actual_origin_issue_timestamp_notarized": false,
+      "codebook_compiled_year": 2023,
+      "codebook_year_cannot_certify_actual_release_date": true,
+      "codebook_year_relative_to_target": "CODEBOOK_YEAR_AFTER_TARGET",
+      "delta_four_state_minus_original": -0.004191195364773061,
+      "exact_original_file_bytes_notarized_before_target": false,
+      "four_state_fold_brier": 0.05320154158637085,
+      "n_GWNO": 196,
+      "origin_edition": "23.1",
+      "origin_year": 2013,
+      "origin_year_contemporaneous_file_proven": false,
+      "original_fold_brier": 0.05739273695114391,
+      "reason": "Official codebook compilation-year evidence only: no original file checksum independently notarized before simulation date; past historical values in the modern archive may have been revised.",
+      "source_last_observation_year": 2022,
+      "source_year_after_simulated_origin": true,
+      "target_year": 2015
+    },
+    {
+      "actual_origin_issue_timestamp_notarized": false,
+      "codebook_compiled_year": 2023,
+      "codebook_year_cannot_certify_actual_release_date": true,
+      "codebook_year_relative_to_target": "CODEBOOK_YEAR_AFTER_TARGET",
+      "delta_four_state_minus_original": 0.0003756090755568306,
+      "exact_original_file_bytes_notarized_before_target": false,
+      "four_state_fold_brier": 0.05817485654828274,
+      "n_GWNO": 196,
+      "origin_edition": "23.1",
+      "origin_year": 2014,
+      "origin_year_contemporaneous_file_proven": false,
+      "original_fold_brier": 0.05779924747272591,
+      "reason": "Official codebook compilation-year evidence only: no original file checksum independently notarized before simulation date; past historical values in the modern archive may have been revised.",
+      "source_last_observation_year": 2022,
+      "source_year_after_simulated_origin": true,
+      "target_year": 2016
+    },
+    {
+      "actual_origin_issue_timestamp_notarized": false,
+      "codebook_compiled_year": 2023,
+      "codebook_year_cannot_certify_actual_release_date": true,
+      "codebook_year_relative_to_target": "CODEBOOK_YEAR_AFTER_TARGET",
+      "delta_four_state_minus_original": -0.0023691240886525577,
+      "exact_original_file_bytes_notarized_before_target": false,
+      "four_state_fold_brier": 0.033247662982371716,
+      "n_GWNO": 196,
+      "origin_edition": "23.1",
+      "origin_year": 2015,
+      "origin_year_contemporaneous_file_proven": false,
+      "original_fold_brier": 0.035616787071024274,
+      "reason": "Official codebook compilation-year evidence only: no original file checksum independently notarized before simulation date; past historical values in the modern archive may have been revised.",
+      "source_last_observation_year": 2022,
+      "source_year_after_simulated_origin": true,
+      "target_year": 2017
+    },
+    {
+      "actual_origin_issue_timestamp_notarized": false,
+      "codebook_compiled_year": 2023,
+      "codebook_year_cannot_certify_actual_release_date": true,
+      "codebook_year_relative_to_target": "CODEBOOK_YEAR_AFTER_TARGET",
+      "delta_four_state_minus_original": -0.0012241795055928165,
+      "exact_original_file_bytes_notarized_before_target": false,
+      "four_state_fold_brier": 0.05345152849586056,
+      "n_GWNO": 196,
+      "origin_edition": "23.1",
+      "origin_year": 2016,
+      "origin_year_contemporaneous_file_proven": false,
+      "original_fold_brier": 0.054675708001453376,
+      "reason": "Official codebook compilation-year evidence only: no original file checksum independently notarized before simulation date; past historical values in the modern archive may have been revised.",
+      "source_last_observation_year": 2022,
+      "source_year_after_simulated_origin": true,
+      "target_year": 2018
+    },
+    {
+      "actual_origin_issue_timestamp_notarized": false,
+      "codebook_compiled_year": 2023,
+      "codebook_year_cannot_certify_actual_release_date": true,
+      "codebook_year_relative_to_target": "CODEBOOK_YEAR_AFTER_TARGET",
+      "delta_four_state_minus_original": -0.007506180968247601,
+      "exact_original_file_bytes_notarized_before_target": false,
+      "four_state_fold_brier": 0.04809263057417117,
+      "n_GWNO": 196,
+      "origin_edition": "23.1",
+      "origin_year": 2017,
+      "origin_year_contemporaneous_file_proven": false,
+      "original_fold_brier": 0.055598811542418775,
+      "reason": "Official codebook compilation-year evidence only: no original file checksum independently notarized before simulation date; past historical values in the modern archive may have been revised.",
+      "source_last_observation_year": 2022,
+      "source_year_after_simulated_origin": true,
+      "target_year": 2019
+    },
+    {
+      "actual_origin_issue_timestamp_notarized": false,
+      "codebook_compiled_year": 2023,
+      "codebook_year_cannot_certify_actual_release_date": true,
+      "codebook_year_relative_to_target": "CODEBOOK_YEAR_AFTER_TARGET",
+      "delta_four_state_minus_original": 0.00048152901279955446,
+      "exact_original_file_bytes_notarized_before_target": false,
+      "four_state_fold_brier": 0.03205651492717752,
+      "n_GWNO": 196,
+      "origin_edition": "23.1",
+      "origin_year": 2018,
+      "origin_year_contemporaneous_file_proven": false,
+      "original_fold_brier": 0.03157498591437796,
+      "reason": "Official codebook compilation-year evidence only: no original file checksum independently notarized before simulation date; past historical values in the modern archive may have been revised.",
+      "source_last_observation_year": 2022,
+      "source_year_after_simulated_origin": true,
+      "target_year": 2020
+    },
+    {
+      "actual_origin_issue_timestamp_notarized": false,
+      "codebook_compiled_year": 2023,
+      "codebook_year_cannot_certify_actual_release_date": true,
+      "codebook_year_relative_to_target": "CODEBOOK_YEAR_AFTER_TARGET",
+      "delta_four_state_minus_original": -0.004379125342169332,
+      "exact_original_file_bytes_notarized_before_target": false,
+      "four_state_fold_brier": 0.03176364709551388,
+      "n_GWNO": 196,
+      "origin_edition": "23.1",
+      "origin_year": 2019,
+      "origin_year_contemporaneous_file_proven": false,
+      "original_fold_brier": 0.03614277243768321,
+      "reason": "Official codebook compilation-year evidence only: no original file checksum independently notarized before simulation date; past historical values in the modern archive may have been revised.",
+      "source_last_observation_year": 2022,
+      "source_year_after_simulated_origin": true,
+      "target_year": 2021
+    },
+    {
+      "actual_origin_issue_timestamp_notarized": false,
+      "codebook_compiled_year": 2023,
+      "codebook_year_cannot_certify_actual_release_date": true,
+      "codebook_year_relative_to_target": "CODEBOOK_YEAR_AFTER_TARGET",
+      "delta_four_state_minus_original": -0.00835190221442892,
+      "exact_original_file_bytes_notarized_before_target": false,
+      "four_state_fold_brier": 0.050040682026721676,
+      "n_GWNO": 196,
+      "origin_edition": "23.1",
+      "origin_year": 2020,
+      "origin_year_contemporaneous_file_proven": false,
+      "original_fold_brier": 0.0583925842411506,
+      "reason": "Official codebook compilation-year evidence only: no original file checksum independently notarized before simulation date; past historical values in the modern archive may have been revised.",
+      "source_last_observation_year": 2022,
+      "source_year_after_simulated_origin": true,
+      "target_year": 2022
+    },
+    {
+      "actual_origin_issue_timestamp_notarized": false,
+      "codebook_compiled_year": 2023,
+      "codebook_year_cannot_certify_actual_release_date": true,
+      "codebook_year_relative_to_target": "CODEBOOK_YEAR_EQUALS_TARGET_EXACT_DATE_UNKNOWN",
+      "delta_four_state_minus_original": -0.0002771979090378171,
+      "exact_original_file_bytes_notarized_before_target": false,
+      "four_state_fold_brier": 0.038604365912940496,
+      "n_GWNO": 196,
+      "origin_edition": "23.1",
+      "origin_year": 2021,
+      "origin_year_contemporaneous_file_proven": false,
+      "original_fold_brier": 0.03888156382197831,
+      "reason": "Official codebook compilation-year evidence only: no original file checksum independently notarized before simulation date; past historical values in the modern archive may have been revised.",
+      "source_last_observation_year": 2022,
+      "source_year_after_simulated_origin": true,
+      "target_year": 2023
+    },
+    {
+      "actual_origin_issue_timestamp_notarized": false,
+      "codebook_compiled_year": 2023,
+      "codebook_year_cannot_certify_actual_release_date": true,
+      "codebook_year_relative_to_target": "CODEBOOK_YEAR_BEFORE_TARGET_NOT_BYTE_NOTARIZED",
+      "delta_four_state_minus_original": 0.00484688145389274,
+      "exact_original_file_bytes_notarized_before_target": false,
+      "four_state_fold_brier": 0.04627834333073142,
+      "n_GWNO": 196,
+      "origin_edition": "23.1",
+      "origin_year": 2022,
+      "origin_year_contemporaneous_file_proven": false,
+      "original_fold_brier": 0.04143146187683868,
+      "reason": "Official codebook compilation-year evidence only: no original file checksum independently notarized before simulation date; past historical values in the modern archive may have been revised.",
+      "source_last_observation_year": 2022,
+      "source_year_after_simulated_origin": true,
+      "target_year": 2024
+    },
+    {
+      "actual_origin_issue_timestamp_notarized": false,
+      "codebook_compiled_year": 2024,
+      "codebook_year_cannot_certify_actual_release_date": true,
+      "codebook_year_relative_to_target": "CODEBOOK_YEAR_BEFORE_TARGET_NOT_BYTE_NOTARIZED",
+      "delta_four_state_minus_original": -0.00011633730738438985,
+      "exact_original_file_bytes_notarized_before_target": false,
+      "four_state_fold_brier": 0.038620314641510146,
+      "n_GWNO": 196,
+      "origin_edition": "24.1",
+      "origin_year": 2023,
+      "origin_year_contemporaneous_file_proven": false,
+      "original_fold_brier": 0.038736651948894536,
+      "reason": "Official codebook compilation-year evidence only: no original file checksum independently notarized before simulation date; past historical values in the modern archive may have been revised.",
+      "source_last_observation_year": 2023,
+      "source_year_after_simulated_origin": true,
+      "target_year": 2025
+    }
+  ]
+}
