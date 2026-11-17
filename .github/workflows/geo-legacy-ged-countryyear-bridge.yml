@@ -1,0 +1,41 @@
+name: GEO historical GED-to-countryyear measurement bridge
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_geo_legacy_ged_countryyear_bridge.py'
+      - 'scripts/test_audit_geo_legacy_ged_countryyear_bridge.py'
+      - 'data/geo-ged-old-vintage-countryyear-feasibility.json'
+      - 'docs/geo-ged-legacy-countryyear-bridge.md'
+      - '.github/workflows/geo-legacy-ged-countryyear-bridge.yml'
+      - 'scripts/audit_public.py'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_geo_legacy_ged_countryyear_bridge.py'
+      - 'scripts/test_audit_geo_legacy_ged_countryyear_bridge.py'
+      - 'data/geo-ged-old-vintage-countryyear-feasibility.json'
+      - 'docs/geo-ged-legacy-countryyear-bridge.md'
+      - '.github/workflows/geo-legacy-ged-countryyear-bridge.yml'
+      - 'scripts/audit_public.py'
+permissions:
+  contents: read
+jobs:
+  ged_countryyear_equivalence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test violent event types, no double counting, official archive paths and missing GWNO labels
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_audit_geo_legacy_ged_countryyear_bridge.py' -v
+      - name: Source replay UCDP historical GED 19.1 22.1 and same-version 23.1 vs country-year
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_geo_legacy_ged_countryyear_bridge.py --print-report
+      - name: Check public source and institutional privacy boundary
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_public.py
