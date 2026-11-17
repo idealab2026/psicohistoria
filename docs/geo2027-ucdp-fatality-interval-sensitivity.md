@@ -1,4 +1,4 @@
-# GEO2027 — Sensibilidad del resultado al intervalo bajo/central/alto de UCDP
+# GEO2027 — Sensibilidad del resultado a tres estimaciones de fallecidos UCDP
 
 **Extensión metodológica, 17/11/2026. No hay resultados observados de 2027.**
 
@@ -16,21 +16,21 @@ Se compara exclusivamente la pareja registrada antes de los resultados:
 
 `D = Brier(global-only matched α1) − Brier(LOG1P original)`
 
-usando las 196 probabilidades originales publicadas, inalteradas. Para cada país y cada año objetivo se requieren tres recuentos numéricos **explícitos** `low <= best <= high`; nunca se rellena una fila ausente con cero.
+usando las 196 probabilidades originales publicadas, inalteradas. Para cada país y año objetivo se requieren tres recuentos enteros **explícitos** (`low`, `best`, `high`), sin presumir que estén ordenados numéricamente. La edición histórica contiene casos `best > high`; nunca se rellena una fila ausente con cero.
 
-- **Inactivo bajo ambas estimaciones:** `high < 25`. Su etiqueta no cambia dentro del escenario bajo/alto.
-- **Activo bajo ambas estimaciones:** `low >= 25`.
-- **Umbral ambiguo entre estimaciones:** `low < 25 <= high`. Puede cambiar el indicador según el estimador seleccionado; esto **no** supone que cada estimación sea una realización aleatoria equiprobable.
+- **Inactivo bajo las tres estimaciones:** `max(low, best, high) < 25`.
+- **Activo bajo las tres estimaciones:** `min(low, best, high) >= 25`.
+- **Umbral sensible a la estimación:** `min(low, best, high) < 25 <= max(low, best, high)`. Se informa cualquier inversión del orden `low/best/high` sin alterarla. Los extremos algebraicos no asignan probabilidades a los estimadores.
 
 Se calculan los Brier emparejados usando coherentemente `low`, `best` y `high` en los 196 países, siempre en el mismo denominador 196. Además, los extremos matemáticos agudos se obtienen sumando, para cada país ambiguo, el mínimo y máximo de `(p−y)^2−(q−y)^2`, con `y∈{0,1}`; los no ambiguos conservan etiqueta fija. Son **cotas algebraicas de sensibilidad**, no bandas de predicción, intervalos estadísticos de confianza, efectos causales ni conjuntos de escenarios necesariamente alcanzables por la misma configuración real de conflictos.
 
-Si `low` y `high` atraviesan 25 para cero países, las cotas colapsan a la puntuación con `best`. Si divergen, se podrá comprobar si la conclusión de mejor Brier es sensible a la forma de estimar fallecidos. El resultado no autoriza a seleccionar retrospectivamente la definición de etiqueta favorable.
+Si ninguno de los tres estimadores cambia la clasificación respecto de los otros, las cotas colapsan a la puntuación con `best`. Si divergen, se podrá comprobar si la conclusión de mejor Brier es sensible a la forma de estimar fallecidos. El resultado no autoriza a seleccionar retrospectivamente la definición de etiqueta favorable.
 
 ## Puerta de integridad, fuente y tiempo
 
-`scripts/audit_geo2027_fatality_intervals.py` **sin fuente** devuelve únicamente el estado `NOT_READY_NO_VERIFIED_OFFICIAL_2027_RELEASE`, sin Brier. Las pruebas automatizadas usan **exclusivamente fuentes sintéticas** y verifican ausencia de fila, duplicidad, números negativos/decimales, relaciones `low>best` o `best>high`, las dos variantes de nombres, ZIP y filas posteriores a 2027.
+`scripts/audit_geo2027_fatality_intervals.py` **sin fuente** devuelve únicamente el estado `NOT_READY_NO_VERIFIED_OFFICIAL_2027_RELEASE`, sin Brier. Las pruebas automatizadas usan **exclusivamente fuentes sintéticas** y verifican ausencia de fila, duplicidad, números negativos/decimales, casos con `low>best` o `best>high` (válidos, pero señalados), las dos variantes de nombres, ZIP y filas posteriores a 2027.
 
-Cuando exista la primera edición oficial completa de 2027, a partir de 2028, el script aceptará `--source archivo.csv/zip --provenance revision.json`. Reutiliza íntegramente `resolve_geo2027_first_complete_official.py`: revisión humana de procedencia y prioridad de edición, hash SHA-256, 196 países, fecha posterior a 2027, puntuación principal de cinco modelos e identidad Brier preemitida. **Una ficha humana no demuestra criptográficamente la autenticidad ni que sea la primera edición completa.** Además exige `low <= best <= high` en las 196 filas y comprueba que la nueva puntuación `best` es **idéntica** a la primaria.
+Cuando exista la primera edición oficial completa de 2027, a partir de 2028, el script aceptará `--source archivo.csv/zip --provenance revision.json`. Reutiliza íntegramente `resolve_geo2027_first_complete_official.py`: revisión humana de procedencia y prioridad de edición, hash SHA-256, 196 países, fecha posterior a 2027, puntuación principal de cinco modelos e identidad Brier preemitida. **Una ficha humana no demuestra criptográficamente la autenticidad ni que sea la primera edición completa.** Además exige tres valores enteros explícitos para las 196 filas, señala cualquier inversión numérica de orden y comprueba que la nueva puntuación `best` es **idéntica** a la primaria.
 
 No publica una evaluación nueva por defecto ni altera una sola predicción del GEO original, LOG1P, global-only o las 15 alertas congeladas.
 
