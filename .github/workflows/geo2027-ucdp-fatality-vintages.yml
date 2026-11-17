@@ -30,10 +30,10 @@ jobs:
         run: |
           set -e
           PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_audit_geo2027_ucdp_fatality_vintages.py' -v
-      - name: Reconstruct four official SHA-verified archives and print report
+      - name: Reconstruct four SHA-verified official archives and check byte-identical pinned report
         run: |
           set -e
-          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_geo2027_ucdp_fatality_vintages.py --print-report
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_geo2027_ucdp_fatality_vintages.py --check-report
       - name: Validate public repository privacy boundary
         run: |
           set -e
