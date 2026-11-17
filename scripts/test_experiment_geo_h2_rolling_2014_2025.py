@@ -51,7 +51,7 @@ class RollingHistoricalTests(unittest.TestCase):
             data,2012,historical_rolling_diagnostic=True)
         self.assertEqual(meta["cutoff_max"],2012)
         self.assertEqual(meta["eligible_countries"],196)
-        self.assertEqual(set(early),set(self.ids))
+        self.assertEqual(set(early),set(data))
         at2022,_=four_state_forecast(data,2022)
         diagnostic,_=four_state_forecast(
             data,2022,historical_rolling_diagnostic=True)
@@ -62,7 +62,7 @@ class RollingHistoricalTests(unittest.TestCase):
         original,_=four_state_forecast(
             data,2015,historical_rolling_diagnostic=True)
         binary,_=_fit_at_origin(counts_to_binary(data),2015,
-                                fixed_cohort=self.ids)
+                                fixed_cohort=list(data))
         touched=copy.deepcopy(data)
         for hist in touched.values():
             for year in range(2016,2026):
@@ -70,7 +70,7 @@ class RollingHistoricalTests(unittest.TestCase):
         after,_=four_state_forecast(
             touched,2015,historical_rolling_diagnostic=True)
         second,_=_fit_at_origin(counts_to_binary(touched),2015,
-                                fixed_cohort=self.ids)
+                                fixed_cohort=list(data))
         self.assertEqual(original,after)
         self.assertEqual(binary,second)
 
