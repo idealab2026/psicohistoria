@@ -32,10 +32,10 @@ jobs:
           set -e
           PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_experiment_geo_ged_tunisia_2013_15_attribution.py' -v
           PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_experiment_geo2027_intensity_markov_cross_release.py' -v
-      - name: Replay official GED source vintages and official CY original/target archived source reports
+      - name: Require exact byte-identical UCDP GED 2013–2015 Tunisian H2 attribution report from official sources
         run: |
           set -e
-          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_geo_ged_tunisia_2013_15_attribution.py --print-report
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_geo_ged_tunisia_2013_15_attribution.py --check-report
       - name: Institutional public privacy boundary audit
         run: |
           set -e
