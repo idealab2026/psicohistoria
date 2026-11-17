@@ -49,8 +49,10 @@ class UCDPFatalityVintageIntervalsTests(unittest.TestCase):
         self.assertEqual(classify((24, 25, 26)), (0, 1, 1))
         self.assertEqual(classify((24, 24, 25)), (0, 0, 1))
         self.assertEqual(classify((25, 25, 25)), (1, 1, 1))
-        for bad in ((26, 25, 27), (0, 26, 25), (-1, 0, 0),
-                    ("24", 25, 26), (0, None, 5), (0.0, 0, 0)):
+        self.assertEqual(classify((24, 26, 25)), (0, 1, 1))
+        self.assertEqual(classify((0, 26, 24)), (0, 1, 0))
+        for bad in ((-1, 0, 0), ("24", 25, 26),
+                    (0, None, 5), (0.0, 0, 0)):
             with self.subTest(bad=bad), self.assertRaises(ValueError):
                 classify(bad)
         panel = {(cid, 2025): (0, 0, 0) for cid in self.ids}
@@ -109,6 +111,7 @@ class UCDPFatalityVintageIntervalsTests(unittest.TestCase):
         panels["24.1"][(self.ids[0], 2022)] = (24, 25, 28)
         panels["25.1"][(self.ids[0], 2022)] = (24, 25, 28)
         panels["26.1"][(self.ids[0], 2022)] = (24, 25, 28)
+        panels["26.1"][(self.ids[3], 2025)] = (0, 26, 24)
         output = study(panels, self.issue)
         self.assertEqual(output["2027_official_outcomes_observed"], 0)
         self.assertEqual(
@@ -124,6 +127,11 @@ class UCDPFatalityVintageIntervalsTests(unittest.TestCase):
         self.assertEqual(pair["changed_ambiguous_indicator_n"], 0)
         self.assertTrue(output["low_best_high_are_not_confidence_limits"])
         self.assertTrue(output["retrospective_revisions_are_not_independent"])
+        self.assertTrue(output["named_low_best_high_values_may_be_nonmonotonic"])
+        self.assertEqual(output["all_historical_estimate_order_diagnostics"]["26.1"][
+            "country_years_best_exceeds_high_n"], 1)
+        final = output["recent_2022_2025_countrywise_snapshots"]["26.1"][-1]
+        self.assertIn(self.ids[3], final["best_exceeds_high_GWNO"])
         broken = {v:dict(p) for v,p in panels.items()}
         del broken["23.1"][(self.ids[1], 2011)]
         with self.assertRaisesRegex(ValueError, "panel incomplete"):
