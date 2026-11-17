@@ -102,10 +102,19 @@ def discover_ged(raw):
     observed={}
     for item in parser.links:
         p=urlsplit(item["url"])
-        if (p.scheme!="https" or p.netloc!="ucdp.uu.se" or
-            not p.path.startswith("/downloads/ged/") or p.query or p.fragment):
-            raise ValueError("Official archive GED link left allowlisted UCDP host/path")
+        valid=(p.scheme=="https" and p.netloc=="ucdp.uu.se" and
+               p.path.startswith("/downloads/ged/") and
+               not p.query and not p.fragment)
         version=item["version"]
+        if not valid:
+            # Some historical entries link outside the GED folder and are
+            # irrelevant to the three exact official downloads. Never ingest
+            # them; selected releases must remain strictly allowlisted.
+            if (version in SELECTED and item["format"]=="CSV") or (
+                version=="22.1" and item["format"]=="CODEBOOK"):
+                raise ValueError("Selected official GED link left allowlisted "
+                                 "UCDP host/path: "+repr(item))
+            continue
         observed.setdefault(version, {})
         if item["format"] in observed[version]:
             raise ValueError("Ambiguous multiple archived GED links for one version/format")
