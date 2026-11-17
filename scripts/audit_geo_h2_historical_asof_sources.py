@@ -62,7 +62,7 @@ class CatalogSectionParser(HTMLParser):
             self.heading_parts=[]
     def handle_endtag(self,tag):
         if self.heading==tag:
-            title=" ".join(self.heading_parts).lower()
+            title=" ".join(" ".join(self.heading_parts).split()).lower()
             self.in_section=("country-year dataset on organized violence "
                              "within country borders" in title)
             self.heading=None
