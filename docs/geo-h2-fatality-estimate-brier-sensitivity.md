@@ -40,6 +40,35 @@ sumados sobre las filas y divididos por 196 (bloque) o 392 (conjunto) constituye
 
 **Fuente del cálculo:** `scripts/experiment_geo_h2_fatality_estimate_brier_sensitivity.py`. **Resultados científicos reproducibles:** `data/geo2027-h2-fatality-estimate-brier-sensitivity.json`.
 
+## Resultados empíricos reproducidos (UCDP, dos cohortes)
+
+El informe `data/geo2027-h2-fatality-estimate-brier-sensitivity.json` ha sido calculado sobre las fuentes oficiales archivadas y cotejado numéricamente con los **dos informes previos de Brier**. Los 392 pares no son 392 pruebas independientes: son los mismos 196 países repetidos en 2024 y 2025.
+
+| Etiqueta objetivo | Brier binario original (392) | Brier cuatro estados (392) | Δ cuatro estados − original |
+|---|---:|---:|---:|
+| `low>=25` | **0,03848998** | 0,03969457 | **+0,00120459** |
+| `best>=25` (primaria) | **0,04008406** | 0,04244933 | **+0,00236527** |
+| `high>=25` | **0,03873939** | 0,04160563 | **+0,00286624** |
+
+Hay **cuatro observaciones país-año ambiguas** en los dos grupos de evaluación. El conjunto identificado es 2024: **GWNO 540 (Angola)**; 2025: **GWNO 461 (Togo), 483 (Chad) y 540 (Angola)**.
+
+Las cotas algebraicas agudas de la diferencia conjunta de Brier, dejando cada una de esas cuatro etiquetas ser 0 o 1, son **[+0,00076613, +0,00330470]**. Por tanto, aun en el escenario extremo de sensibilidad a estas etiquetas, el signo favorable al binario original **no cambia para el conjunto estudiado**. Eso no constituye una prueba estadística de habilidad ni un intervalo de confianza.
+
+### Diferencia entre los dos años
+
+| Año | Δ con low | Δ con best | Δ con high | Cotas de sensibilidad agudas |
+|---|---:|---:|---:|---:|
+| **2024** | +0,00572380 | +0,00484688 | +0,00484688 | [+0,00484688, +0,00572380] |
+| **2025** | −0,00331462 | −0,00011634 | +0,00088560 | [−0,00331462, +0,00088560] |
+
+En **2024** el original mantiene su mejor Brier en todos los casos. En **2025** el ganador es **sensible a la etiqueta**: cuatro estados presenta menor Brier en `low` y `best`, mientras que el original obtiene menor Brier en `high`. No es defendible decir que cuatro estados gana robustamente en 2025.
+
+La aparente estabilidad conjunta tampoco prueba que el Markov binario sea el mejor modelo de forecasting: el resultado enfrenta **solo dos modelos concretos** y dos años de evaluación con países repetidos. El estudio usa configuraciones históricas *ex post*, no emisiones de predicción hechas antes de cada desenlace.
+
+### Fallos evitados
+
+El estudio comprueba que los valores de `best` extraídos de los tres estimadores coinciden con el parser original y que los indicadores binarios de `low`, `best`, `high` y el conjunto de GWNO ambiguos coinciden exactamente con la auditoría previa. No reentrena al cambiar las etiquetas, no presupone `low<=best<=high`, no rellena ausencias y no permite que la conclusión dependa de un archivo UCDP distinto del fijado por SHA-256.
+
 ## Interpretación previa a los resultados
 
 El informe archivado de cuatro estados registra la ventaja conjunta del modelo binario de **0,00236527** puntos Brier con `best>=25`; para 2024 la ventaja binaria es **0,00484688**, mientras que para 2025 la alternativa de cuatro estados aventaja en **0,00011634**. El objetivo de esta prueba es determinar si las pocas filas cuya clasificación depende de la estimación de fallecidos alteran el signo de estas diferencias; no estimar capacidad predictiva ex ante.
