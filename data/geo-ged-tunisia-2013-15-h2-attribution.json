@@ -1,0 +1,677 @@
+{
+  "CY23_GED23_1989_to_2019_count_mismatches_first_10": [],
+  "CY23_GED23_1989_to_2019_country_years_missing_first_10": [
+    {
+      "GWNO": 316,
+      "year": 1989
+    },
+    {
+      "GWNO": 316,
+      "year": 1990
+    },
+    {
+      "GWNO": 316,
+      "year": 1991
+    },
+    {
+      "GWNO": 316,
+      "year": 1992
+    },
+    {
+      "GWNO": 317,
+      "year": 1989
+    },
+    {
+      "GWNO": 317,
+      "year": 1990
+    },
+    {
+      "GWNO": 317,
+      "year": 1991
+    },
+    {
+      "GWNO": 317,
+      "year": 1992
+    },
+    {
+      "GWNO": 341,
+      "year": 1989
+    },
+    {
+      "GWNO": 341,
+      "year": 1990
+    }
+  ],
+  "CY23_GED23_1989_to_2019_country_years_missing_from_CY23_n": 128,
+  "CY23_GED23_1989_to_2019_source_count_mismatch_n": 0,
+  "CY23_GED23_2011_to_2022_original_2352_exact": true,
+  "GED_sources_released_after_2019_pseudo_origin": true,
+  "all_models_same_predeclared_original_parameters": true,
+  "binary_country_markov_laplace1_global_shrink20": true,
+  "early_origin_source_editions": {
+    "20.1": {
+      "country_binary_transition_q_local": [
+        0.033165820926647556,
+        0.7849410760944915
+      ],
+      "global_binary_transition_counts": [
+        [
+          4834,
+          155
+        ],
+        [
+          156,
+          735
+        ]
+      ],
+      "global_four_state_transition_counts": [
+        [
+          4525,
+          111,
+          40,
+          40
+        ],
+        [
+          105,
+          93,
+          56,
+          19
+        ],
+        [
+          38,
+          52,
+          109,
+          55
+        ],
+        [
+          42,
+          24,
+          48,
+          523
+        ]
+      ],
+      "last_source_recorded_year": 2019,
+      "last_training_year": 2019,
+      "origin_binary_state": 0,
+      "origin_intensity_state": 1,
+      "p": {
+        "binary": 0.058099064417,
+        "four_state": 0.303884965853
+      }
+    },
+    "21.1": {
+      "country_binary_transition_q_local": [
+        0.03309929789368104,
+        0.7871179617564491
+      ],
+      "global_binary_transition_counts": [
+        [
+          4829,
+          154
+        ],
+        [
+          155,
+          742
+        ]
+      ],
+      "global_four_state_transition_counts": [
+        [
+          4527,
+          109,
+          40,
+          40
+        ],
+        [
+          103,
+          90,
+          55,
+          19
+        ],
+        [
+          39,
+          49,
+          113,
+          56
+        ],
+        [
+          42,
+          25,
+          48,
+          525
+        ]
+      ],
+      "last_source_recorded_year": 2020,
+      "last_training_year": 2019,
+      "origin_binary_state": 0,
+      "origin_intensity_state": 1,
+      "p": {
+        "binary": 0.058056786266,
+        "four_state": 0.31855813334
+      }
+    },
+    "22.1": {
+      "country_binary_transition_q_local": [
+        0.03527423875931084,
+        0.8146869244935543
+      ],
+      "global_binary_transition_counts": [
+        [
+          4823,
+          154
+        ],
+        [
+          155,
+          748
+        ]
+      ],
+      "global_four_state_transition_counts": [
+        [
+          4518,
+          109,
+          41,
+          40
+        ],
+        [
+          103,
+          93,
+          54,
+          19
+        ],
+        [
+          38,
+          50,
+          114,
+          57
+        ],
+        [
+          43,
+          24,
+          49,
+          528
+        ]
+      ],
+      "last_source_recorded_year": 2021,
+      "last_training_year": 2019,
+      "origin_binary_state": 0,
+      "origin_intensity_state": 1,
+      "p": {
+        "binary": 0.062767427928,
+        "four_state": 0.309747749812
+      }
+    },
+    "23.1": {
+      "country_binary_transition_q_local": [
+        0.03527695774451063,
+        0.813925680647535
+      ],
+      "global_binary_transition_counts": [
+        [
+          4822,
+          154
+        ],
+        [
+          156,
+          748
+        ]
+      ],
+      "global_four_state_transition_counts": [
+        [
+          4521,
+          107,
+          41,
+          40
+        ],
+        [
+          101,
+          93,
+          54,
+          19
+        ],
+        [
+          38,
+          50,
+          114,
+          57
+        ],
+        [
+          44,
+          24,
+          49,
+          528
+        ]
+      ],
+      "last_source_recorded_year": 2022,
+      "last_training_year": 2019,
+      "origin_binary_state": 0,
+      "origin_intensity_state": 1,
+      "p": {
+        "binary": 0.06274531584,
+        "four_state": 0.312139834876
+      }
+    }
+  },
+  "early_pseudo_origin": 2019,
+  "early_target_H2": 2021,
+  "exact_shapley_GED21_1_to_GED22_1_2019_H2": {
+    "coalition_n": 16,
+    "exact_four_factor_telescope_up_to_1e_10": true,
+    "intervention_bits": {
+      "0": "all_other_source_edits",
+      "1": "tunisia_2013",
+      "2": "tunisia_2014",
+      "3": "tunisia_2015"
+    },
+    "model_shapley_H2_probability_changes": {
+      "binary": {
+        "all_other_source_edits": 3.463713e-05,
+        "tunisia_2013": 0.018482136196,
+        "tunisia_2014": 0.00139629758,
+        "tunisia_2015": -0.015202429243
+      },
+      "four_state": {
+        "all_other_source_edits": -0.018088246921,
+        "tunisia_2013": 0.021054354685,
+        "tunisia_2014": 0.003414271621,
+        "tunisia_2015": -0.015190762912
+      }
+    },
+    "not_world_causal_or_real_asof_issued_predictions": true,
+    "old_full": {
+      "country_binary_transition_q_local": [
+        0.03309929789368104,
+        0.7871179617564491
+      ],
+      "global_binary_transition_counts": [
+        [
+          4829,
+          154
+        ],
+        [
+          155,
+          742
+        ]
+      ],
+      "global_four_state_transition_counts": [
+        [
+          4527,
+          109,
+          40,
+          40
+        ],
+        [
+          103,
+          90,
+          55,
+          19
+        ],
+        [
+          39,
+          49,
+          113,
+          56
+        ],
+        [
+          42,
+          25,
+          48,
+          525
+        ]
+      ],
+      "last_training_year": 2019,
+      "origin_binary_state": 0,
+      "origin_intensity_state": 1,
+      "p": {
+        "binary": 0.058056786266,
+        "four_state": 0.31855813334
+      }
+    },
+    "old_only_Tunisia_three_year_edits": {
+      "country_binary_transition_q_local": [
+        0.03526608835285288,
+        0.8142091648189208
+      ],
+      "global_binary_transition_counts": [
+        [
+          4826,
+          154
+        ],
+        [
+          155,
+          745
+        ]
+      ],
+      "global_four_state_transition_counts": [
+        [
+          4525,
+          108,
+          41,
+          40
+        ],
+        [
+          103,
+          90,
+          54,
+          19
+        ],
+        [
+          39,
+          49,
+          116,
+          56
+        ],
+        [
+          42,
+          25,
+          48,
+          525
+        ]
+      ],
+      "last_training_year": 2019,
+      "origin_binary_state": 0,
+      "origin_intensity_state": 1,
+      "p": {
+        "binary": 0.062736363709,
+        "four_state": 0.308424433069
+      }
+    },
+    "revised_all_except_Tunisia_three_year_edits": {
+      "country_binary_transition_q_local": [
+        0.033106940086351684,
+        0.7876676169359096
+      ],
+      "global_binary_transition_counts": [
+        [
+          4826,
+          154
+        ],
+        [
+          155,
+          745
+        ]
+      ],
+      "global_four_state_transition_counts": [
+        [
+          4519,
+          110,
+          41,
+          40
+        ],
+        [
+          104,
+          93,
+          54,
+          19
+        ],
+        [
+          38,
+          50,
+          111,
+          57
+        ],
+        [
+          43,
+          24,
+          49,
+          528
+        ]
+      ],
+      "last_training_year": 2019,
+      "origin_binary_state": 0,
+      "origin_intensity_state": 1,
+      "p": {
+        "binary": 0.058088135206,
+        "four_state": 0.282010266653
+      }
+    },
+    "revised_full": {
+      "country_binary_transition_q_local": [
+        0.03527423875931084,
+        0.8146869244935543
+      ],
+      "global_binary_transition_counts": [
+        [
+          4823,
+          154
+        ],
+        [
+          155,
+          748
+        ]
+      ],
+      "global_four_state_transition_counts": [
+        [
+          4518,
+          109,
+          41,
+          40
+        ],
+        [
+          103,
+          93,
+          54,
+          19
+        ],
+        [
+          38,
+          50,
+          114,
+          57
+        ],
+        [
+          43,
+          24,
+          49,
+          528
+        ]
+      ],
+      "last_training_year": 2019,
+      "origin_binary_state": 0,
+      "origin_intensity_state": 1,
+      "p": {
+        "binary": 0.062767427928,
+        "four_state": 0.309747749812
+      }
+    }
+  },
+  "explanation": "The Shapley source-edit factors isolate three Tunisian pre-2019 historical source rows from all other observed GED21->22 changes. Their contribution is an exact deterministic counterfactual under fixed model rules, NOT a causal real-world violence effect. The 2022->2024 retrospective diagnostic replaces only three rows in the official 23.1 training panel with archived GED21 values. That hybrid is a hypothetical dataset never issued by UCDP. No actual registered historical forecast existed. One Tunisia squared error is not evidence of general forecasting skill.",
+  "fixed_GWNO_196": true,
+  "focus": {
+    "GWNO": 616,
+    "country": "Tunisia",
+    "historically_revised_annual_best_deaths_by_GED_vintage": {
+      "2013": {
+        "20.1": {
+          "GED_recorded_best_deaths": 0,
+          "GED_recorded_state_ge25": 0
+        },
+        "21.1": {
+          "GED_recorded_best_deaths": 0,
+          "GED_recorded_state_ge25": 0
+        },
+        "22.1": {
+          "GED_recorded_best_deaths": 29,
+          "GED_recorded_state_ge25": 1
+        },
+        "23.1": {
+          "GED_recorded_best_deaths": 29,
+          "GED_recorded_state_ge25": 1
+        }
+      },
+      "2014": {
+        "20.1": {
+          "GED_recorded_best_deaths": 0,
+          "GED_recorded_state_ge25": 0
+        },
+        "21.1": {
+          "GED_recorded_best_deaths": 0,
+          "GED_recorded_state_ge25": 0
+        },
+        "22.1": {
+          "GED_recorded_best_deaths": 51,
+          "GED_recorded_state_ge25": 1
+        },
+        "23.1": {
+          "GED_recorded_best_deaths": 51,
+          "GED_recorded_state_ge25": 1
+        }
+      },
+      "2015": {
+        "20.1": {
+          "GED_recorded_best_deaths": 4,
+          "GED_recorded_state_ge25": 0
+        },
+        "21.1": {
+          "GED_recorded_best_deaths": 17,
+          "GED_recorded_state_ge25": 0
+        },
+        "22.1": {
+          "GED_recorded_best_deaths": 75,
+          "GED_recorded_state_ge25": 1
+        },
+        "23.1": {
+          "GED_recorded_best_deaths": 75,
+          "GED_recorded_state_ge25": 1
+        }
+      }
+    }
+  },
+  "four_state_dirichlet1_global_shrink20": true,
+  "historical_forecasts_actually_issued_at_2019_or_2022": false,
+  "new_prospective_probabilities_issued": 0,
+  "no_2027_or_2028_realized_outcomes": true,
+  "no_probabilistic_inference_one_country_one_target": true,
+  "original_2025_origin_future_2027_2028_forecasts_changed": false,
+  "original_GEO2027_first_issue_SHA256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "schema": "idealab.psico.ged_tunisia_2013_15_h2_source_revision_attribution.v1",
+  "source_2022_origin_H2_2024_Tunisia_historical_diagnostic": {
+    "2022_counterfactual_CY23_replaced_Tunisia_2013_15_from_GED21_1": {
+      "country_binary_transition_q_local": [
+        0.031023052475660437,
+        0.7952380952380952
+      ],
+      "global_binary_transition_counts": [
+        [
+          5184,
+          163
+        ],
+        [
+          164,
+          834
+        ]
+      ],
+      "global_four_state_transition_counts": [
+        [
+          4843,
+          121,
+          42,
+          37
+        ],
+        [
+          112,
+          108,
+          62,
+          22
+        ],
+        [
+          38,
+          56,
+          124,
+          63
+        ],
+        [
+          44,
+          26,
+          57,
+          590
+        ]
+      ],
+      "last_training_year": 2022,
+      "origin_binary_state": 0,
+      "origin_intensity_state": 1,
+      "p": {
+        "binary": 0.05473133585,
+        "four_state": 0.274852565435
+      }
+    },
+    "2022_original_UCDP23_1": {
+      "country_binary_transition_q_local": [
+        0.03292944562785832,
+        0.8212445995347291
+      ],
+      "global_binary_transition_counts": [
+        [
+          5181,
+          163
+        ],
+        [
+          164,
+          837
+        ]
+      ],
+      "global_four_state_transition_counts": [
+        [
+          4842,
+          120,
+          42,
+          37
+        ],
+        [
+          111,
+          108,
+          62,
+          22
+        ],
+        [
+          38,
+          56,
+          127,
+          63
+        ],
+        [
+          44,
+          26,
+          57,
+          590
+        ]
+      ],
+      "last_training_year": 2022,
+      "origin_binary_state": 0,
+      "origin_intensity_state": 1,
+      "p": {
+        "binary": 0.058888226626,
+        "four_state": 0.299332121569
+      }
+    },
+    "2024_UCDP25_1_Tunisia_best_ge25_label": 0,
+    "2024_UCDP25_1_Tunisia_best_state_based_deaths": 0,
+    "counterfactual_not_a_registered_or_contemporaneously_issued_2022_forecast": true,
+    "per_model": {
+      "binary": {
+        "hypothetical_H2_probability": 0.05473133585,
+        "hypothetical_single_country_squared_error": 0.002995519123925495,
+        "original_H2_probability": 0.058888226626,
+        "original_minus_hypothetical_probability": 0.004156890776,
+        "original_single_country_squared_error": 0.003467823235155135,
+        "squared_error_original_minus_hypothetical": 0.00047230411122963986
+      },
+      "four_state": {
+        "hypothetical_H2_probability": 0.274852565435,
+        "hypothetical_single_country_squared_error": 0.07554393272620094,
+        "original_H2_probability": 0.299332121569,
+        "original_minus_hypothetical_probability": 0.024479556134,
+        "original_single_country_squared_error": 0.08959971900299861,
+        "squared_error_original_minus_hypothetical": 0.014055786276797669
+      }
+    }
+  },
+  "source_clip_at_pseudo_origin_2019_verified": true,
+  "source_organizedCY23_1_SHA256": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+  "source_organizedCY25_1_SHA256": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+  "sources_GED_SHA256": {
+    "20.1": "5e35b74f52dc67a18aabfab86f69655c847e87320684662a6112dec46d65111f",
+    "21.1": "2cd62e39db0f49b784ecd1d48c364191c78afc9d5fb1bd9f6b6dda55dcd59afd",
+    "22.1": "1741045a14a59e2ddbe9de4a190a7ef5b68d60d57be7e94178aff2e926a59f0d",
+    "23.1": "9aa082f9e1f62da5ea3245c39b1cee45daab6dc8b3a17fb0f0cdae9ba13ce6f7"
+  },
+  "status": "SHA_VERIFIED_MECHANICAL_SOURCE_REVISION_COUNTERFACTUAL_NOT_ISSUED_FORECAST"
+}

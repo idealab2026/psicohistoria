@@ -1,0 +1,42 @@
+name: GEO GED Tunisia 2013-2015 H2 model probability source attribution
+on:
+  pull_request:
+    paths:
+      - 'scripts/experiment_geo_ged_tunisia_2013_15_attribution.py'
+      - 'scripts/test_experiment_geo_ged_tunisia_2013_15_attribution.py'
+      - 'data/geo-ged-tunisia-2013-15-h2-attribution.json'
+      - 'docs/geo-ged-tunisia-h2-attribution.md'
+      - '.github/workflows/geo-ged-tunisia-h2-attribution.yml'
+      - 'scripts/audit_public.py'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/experiment_geo_ged_tunisia_2013_15_attribution.py'
+      - 'scripts/test_experiment_geo_ged_tunisia_2013_15_attribution.py'
+      - 'data/geo-ged-tunisia-2013-15-h2-attribution.json'
+      - 'docs/geo-ged-tunisia-h2-attribution.md'
+      - '.github/workflows/geo-ged-tunisia-h2-attribution.yml'
+      - 'scripts/audit_public.py'
+permissions:
+  contents: read
+jobs:
+  tunisia_h2_mechanical_source_attribution:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Synthetic four-factor Shapley exactness, no post-origin data and immutable issue tests
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_experiment_geo_ged_tunisia_2013_15_attribution.py' -v
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_experiment_geo2027_intensity_markov_cross_release.py' -v
+      - name: Require exact byte-identical UCDP GED 2013–2015 Tunisian H2 attribution report from official sources
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_geo_ged_tunisia_2013_15_attribution.py --check-report
+      - name: Institutional public privacy boundary audit
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_public.py
