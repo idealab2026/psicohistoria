@@ -77,7 +77,7 @@ def official_catalog_year_versions(raw_html):
     p=CatalogSectionParser()
     p.feed(raw_html)
     text=" ".join(p.section)
-    found=sorted(set(re.findall(r"\\bversion\\s+(\\d{2}\\.\\d)\\s*:",text,
+    found=sorted(set(re.findall(r"\bversion\s+(\d{2}\.\d)\s*:",text,
                              flags=re.IGNORECASE)))
     if not found:
         raise ValueError("Official archived OrganizedViolenceCY section absent")
