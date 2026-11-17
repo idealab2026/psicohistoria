@@ -1,0 +1,318 @@
+{
+  "independence_warning": "Overlapping edition pairs and country-years are not independent experiments",
+  "method": "Union of adjacent transition pairs touched by country-year binary source flips",
+  "new_predictions_issued": 0,
+  "pairs": [
+    {
+      "cohort_country_n": 195,
+      "consecutive_release": true,
+      "eligible_country_transitions": 1365,
+      "new_version": "20.1",
+      "old_version": "19.1",
+      "revised_single_year_binary_labels": 2,
+      "revised_transition_country_start_year": [
+        {
+          "GWNO": 540,
+          "start_year": 2015
+        },
+        {
+          "GWNO": 540,
+          "start_year": 2016
+        },
+        {
+          "GWNO": 541,
+          "start_year": 2013
+        },
+        {
+          "GWNO": 541,
+          "start_year": 2014
+        }
+      ],
+      "revised_two_year_transition_labels": 4,
+      "source_coverage_exclusions": [
+        652
+      ],
+      "transition_revision_fraction": 0.0029304029304029304,
+      "years_compared": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ]
+    },
+    {
+      "cohort_country_n": 196,
+      "consecutive_release": true,
+      "eligible_country_transitions": 1568,
+      "new_version": "21.1",
+      "old_version": "20.1",
+      "revised_single_year_binary_labels": 1,
+      "revised_transition_country_start_year": [
+        {
+          "GWNO": 630,
+          "start_year": 2014
+        },
+        {
+          "GWNO": 630,
+          "start_year": 2015
+        }
+      ],
+      "revised_two_year_transition_labels": 2,
+      "source_coverage_exclusions": [],
+      "transition_revision_fraction": 0.0012755102040816326,
+      "years_compared": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ]
+    },
+    {
+      "cohort_country_n": 196,
+      "consecutive_release": true,
+      "eligible_country_transitions": 1764,
+      "new_version": "22.1",
+      "old_version": "21.1",
+      "revised_single_year_binary_labels": 6,
+      "revised_transition_country_start_year": [
+        {
+          "GWNO": 482,
+          "start_year": 2014
+        },
+        {
+          "GWNO": 482,
+          "start_year": 2015
+        },
+        {
+          "GWNO": 482,
+          "start_year": 2016
+        },
+        {
+          "GWNO": 482,
+          "start_year": 2017
+        },
+        {
+          "GWNO": 616,
+          "start_year": 2012
+        },
+        {
+          "GWNO": 616,
+          "start_year": 2013
+        },
+        {
+          "GWNO": 616,
+          "start_year": 2014
+        },
+        {
+          "GWNO": 616,
+          "start_year": 2015
+        },
+        {
+          "GWNO": 670,
+          "start_year": 2016
+        },
+        {
+          "GWNO": 670,
+          "start_year": 2017
+        }
+      ],
+      "revised_two_year_transition_labels": 10,
+      "source_coverage_exclusions": [],
+      "transition_revision_fraction": 0.005668934240362812,
+      "years_compared": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ]
+    },
+    {
+      "cohort_country_n": 196,
+      "consecutive_release": true,
+      "eligible_country_transitions": 1960,
+      "new_version": "23.1",
+      "old_version": "22.1",
+      "revised_single_year_binary_labels": 0,
+      "revised_transition_country_start_year": [],
+      "revised_two_year_transition_labels": 0,
+      "source_coverage_exclusions": [],
+      "transition_revision_fraction": 0,
+      "years_compared": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ]
+    },
+    {
+      "cohort_country_n": 196,
+      "consecutive_release": false,
+      "eligible_country_transitions": 1568,
+      "new_version": "23.1",
+      "old_version": "20.1",
+      "revised_single_year_binary_labels": 7,
+      "revised_transition_country_start_year": [
+        {
+          "GWNO": 482,
+          "start_year": 2014
+        },
+        {
+          "GWNO": 482,
+          "start_year": 2015
+        },
+        {
+          "GWNO": 482,
+          "start_year": 2016
+        },
+        {
+          "GWNO": 482,
+          "start_year": 2017
+        },
+        {
+          "GWNO": 616,
+          "start_year": 2012
+        },
+        {
+          "GWNO": 616,
+          "start_year": 2013
+        },
+        {
+          "GWNO": 616,
+          "start_year": 2014
+        },
+        {
+          "GWNO": 616,
+          "start_year": 2015
+        },
+        {
+          "GWNO": 630,
+          "start_year": 2014
+        },
+        {
+          "GWNO": 630,
+          "start_year": 2015
+        },
+        {
+          "GWNO": 670,
+          "start_year": 2016
+        },
+        {
+          "GWNO": 670,
+          "start_year": 2017
+        }
+      ],
+      "revised_two_year_transition_labels": 12,
+      "source_coverage_exclusions": [],
+      "transition_revision_fraction": 0.007653061224489796,
+      "years_compared": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ]
+    },
+    {
+      "cohort_country_n": 196,
+      "consecutive_release": false,
+      "eligible_country_transitions": 1764,
+      "new_version": "23.1",
+      "old_version": "21.1",
+      "revised_single_year_binary_labels": 6,
+      "revised_transition_country_start_year": [
+        {
+          "GWNO": 482,
+          "start_year": 2014
+        },
+        {
+          "GWNO": 482,
+          "start_year": 2015
+        },
+        {
+          "GWNO": 482,
+          "start_year": 2016
+        },
+        {
+          "GWNO": 482,
+          "start_year": 2017
+        },
+        {
+          "GWNO": 616,
+          "start_year": 2012
+        },
+        {
+          "GWNO": 616,
+          "start_year": 2013
+        },
+        {
+          "GWNO": 616,
+          "start_year": 2014
+        },
+        {
+          "GWNO": 616,
+          "start_year": 2015
+        },
+        {
+          "GWNO": 670,
+          "start_year": 2016
+        },
+        {
+          "GWNO": 670,
+          "start_year": 2017
+        }
+      ],
+      "revised_two_year_transition_labels": 10,
+      "source_coverage_exclusions": [],
+      "transition_revision_fraction": 0.005668934240362812,
+      "years_compared": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ]
+    }
+  ],
+  "prospective_skill_claimed": false,
+  "schema": "idealab.psico.ged_transition_revision_impact.v1",
+  "source_hashes": {
+    "19.1": "58a640f82abe9b67090ded37f3163ca6839b36d737fddaacde95763b459a018f",
+    "20.1": "5e35b74f52dc67a18aabfab86f69655c847e87320684662a6112dec46d65111f",
+    "21.1": "2cd62e39db0f49b784ecd1d48c364191c78afc9d5fb1bd9f6b6dda55dcd59afd",
+    "22.1": "1741045a14a59e2ddbe9de4a190a7ef5b68d60d57be7e94178aff2e926a59f0d",
+    "23.1": "9aa082f9e1f62da5ea3245c39b1cee45daab6dc8b3a17fb0f0cdae9ba13ce6f7"
+  },
+  "source_input": "data/geo-ged-20-21-coverage-revisions.json",
+  "status": "RETROSPECTIVE_OFFICIAL_SOURCE_SUMMARY_DERIVED_NOT_FORECAST_VALIDATION"
+}
