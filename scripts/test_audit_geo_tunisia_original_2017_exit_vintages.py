@@ -11,6 +11,7 @@ from audit_geo_tunisia_original_2017_exit_vintages import (
     EARLY_ORIGIN,FROZEN_ORIGIN,GED_PATHS,GED_VERSIONS,
     ORIGINAL_ISSUED_COUNTRY_N,OBSERVED_TARGET,SYRIA,TUNISIA,
     _frozen_original_ids,historical_eligible_model,source_annual_counts,analyze,
+    REPORT,GED_EARLY_SHA256,
 )
 
 
@@ -110,6 +111,28 @@ class TunisiaFirstExit2017Tests(unittest.TestCase):
             historical_eligible_model(ged,support,[*cohort,SYRIA],2016)
         with self.assertRaisesRegex(ValueError,"Invalid fixed-source"):
             historical_eligible_model(ged,support,cohort,2015)
+
+    def test_frozen_official_replay_certifies_2016_origin_revision_not_an_ex_ante_issue(self):
+        report=json.loads(REPORT.read_text(encoding="utf8"))
+        self.assertEqual(report["source_edition_GED_zip_sha256"]["17.1"],
+                         GED_EARLY_SHA256["17.1"])
+        self.assertEqual(report["source_edition_GED_zip_sha256"]["18.1"],
+                         GED_EARLY_SHA256["18.1"])
+        t=report["2016_to_2017_transition_observations_across_versions"]
+        self.assertEqual(t["17.1"]["2016"]["best_state_based_deaths"],0)
+        self.assertIsNone(t["17.1"]["2017"])
+        self.assertEqual(t["18.1"]["2016"]["best_state_based_deaths"],72)
+        self.assertEqual(t["18.1"]["2017"]["best_state_based_deaths"],3)
+        self.assertTrue(all(t[v]["transition_2016_2017"]=="10"
+                            for v in GED_VERSIONS[1:]))
+        origins=report["2014_three_step_first_exit_model_per_source_edition"]
+        self.assertTrue(all(origins[v]["origin_binary_state"]==0
+                            for v in GED_VERSIONS[:5]))
+        self.assertTrue(all(origins[v]["origin_binary_state"]==1
+                            for v in GED_VERSIONS[-2:]))
+        self.assertFalse(report["origin2016_historically_issued_forecast_verified"])
+        self.assertFalse(report["reconstructed_models_match_original_private_historical_model_asserted"])
+        self.assertEqual(report["new_forecast_probabilities_issued"],0)
 
     def test_fail_closed_impossible_official_archive_substitution(self):
         issue=json.loads(ISSUE.read_text(encoding="utf8"))
