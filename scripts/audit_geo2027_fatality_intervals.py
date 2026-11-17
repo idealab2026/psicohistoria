@@ -60,8 +60,8 @@ def extract_official_intervals(raw, ids):
         lo = _strict_nonnegative_int(record.get(lowkey), lowkey)
         mid = _strict_nonnegative_int(record.get(bestkey), bestkey)
         hi = _strict_nonnegative_int(record.get(highkey), highkey)
-        if not (lo <= mid <= hi):
-            raise ValueError("UCDP low <= best <= high is violated")
+        # Official UCDP low/best/high names are not a guaranteed numeric
+        # order: best can exceed high in aggregation/double-count adjustments.
         if int(mid >= THRESHOLD) != best_labels[cid]:
             raise AssertionError("Interval and primary best labels disagree")
         intervals[cid] = (lo, mid, hi)
@@ -77,8 +77,8 @@ def _delta_brier(p, q, y):
 def sensitivity(issue, intervals):
     """Sharp finite-cohort extrema under low/high thresholds, fixed p/q.
 
-    Independently choosing the binary outcome for each interval crossing 25
-    constructs algebraic extrema only. The country outcomes are correlated,
+    Independently choosing the binary outcome where any of the THREE named
+    estimates straddles 25 constructs algebraic extrema only. The country outcomes are correlated,
     and the upper/lower fatality values are NOT statistical confidence bounds.
     """
     rows = issue.get("countries")
@@ -92,6 +92,9 @@ def sensitivity(issue, intervals):
     n_low = n_best = n_high = 0
     certain_0 = certain_1 = 0
     ambiguous = []
+    unordered = []
+    best_above_high = []
+    low_above_best = []
     for row in rows:
         cid = row["country_id"]
         p = row[PAIR_P]
@@ -102,9 +105,14 @@ def sensitivity(issue, intervals):
             raise ValueError("Invalid frozen probability")
         triple = intervals[cid]
         if (not isinstance(triple, tuple) or len(triple) != 3 or
-            any(type(x) is not int or x < 0 for x in triple) or
-            not triple[0] <= triple[1] <= triple[2]):
+            any(type(x) is not int or x < 0 for x in triple)):
             raise ValueError("Malformed official fatality estimate interval")
+        if not triple[0] <= triple[1] <= triple[2]:
+            unordered.append(cid)
+        if triple[1] > triple[2]:
+            best_above_high.append(cid)
+        if triple[0] > triple[1]:
+            low_above_best.append(cid)
         low, best, high = (int(x >= THRESHOLD) for x in triple)
         n_low += low
         n_best += best
@@ -113,11 +121,11 @@ def sensitivity(issue, intervals):
         sums["low"] += d1 if low else d0
         sums["best"] += d1 if best else d0
         sums["high"] += d1 if high else d0
-        if low == high == 0:
+        if low == best == high == 0:
             certain_0 += 1
             sums["sharp_lower"] += d0
             sums["sharp_upper"] += d0
-        elif low == high == 1:
+        elif low == best == high == 1:
             certain_1 += 1
             sums["sharp_lower"] += d1
             sums["sharp_upper"] += d1
@@ -131,8 +139,12 @@ def sensitivity(issue, intervals):
         "threshold_state_based_deaths": THRESHOLD,
         "paired_difference_order": "global_only_alpha1_MINUS_original_LOG1P",
         "best_remains_original_primary_outcome": True,
-        "certain_inactive_across_low_high_n": certain_0,
-        "certain_active_across_low_high_n": certain_1,
+        "certain_inactive_across_all_estimates_n": certain_0,
+        "certain_active_across_all_estimates_n": certain_1,
+        "nonmonotonic_official_triples_n": len(unordered),
+        "nonmonotonic_official_GWNO": sorted(unordered),
+        "best_exceeds_high_GWNO": sorted(best_above_high),
+        "low_exceeds_best_GWNO": sorted(low_above_best),
         "threshold_ambiguous_countries_n": len(ambiguous),
         "threshold_ambiguous_GWNO": sorted(ambiguous),
         "low_scenario_active_n": n_low,
@@ -147,17 +159,17 @@ def sensitivity(issue, intervals):
         "no_independence_or_probability_assigned_to_ambiguous_labels": True,
         "not_a_model_selection_or_forecast_reissue": True,
         "interpretation": (
-            "UCDP low/high are alternative fatality estimates, NOT confidence "
-            "limits; low and high scenarios do not replace the preregistered "
-            "best-deaths outcome. Algebraic extrema let each threshold-crossing "
-            "country vary independently and do not assert physically feasible "
-            "joint configurations, a confidence level, or prospective skill."
+            "UCDP named low/best/high are alternative estimates and can be "
+            "numerically nonmonotonic (including best > high), NOT confidence "
+            "limits. The algebraic envelope covers the binary labels of ALL "
+            "THREE estimates. Only best is the preregistered primary outcome. "
+            "No independence, feasible joint configuration, confidence "
+            "level, or prospective skill is claimed."
         ),
     }
     if certain_0 + certain_1 + len(ambiguous) != N:
         raise AssertionError("Threshold partition is not disjoint")
-    if not (n_low <= n_best <= n_high):
-        raise AssertionError("Fatality estimate monotonicity failed")
+    # Named estimates need not be ordered; never impose low <= best <= high.
     for scenario in ("low", "best", "high"):
         val = result["delta_brier_" + scenario]
         if not (result["sharp_algebraic_lower_delta_brier"] - 1e-12 <=

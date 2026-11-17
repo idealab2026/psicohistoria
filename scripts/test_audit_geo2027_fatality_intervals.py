@@ -92,8 +92,8 @@ class Geo2027FatalityIntervalTests(unittest.TestCase):
         self.assertEqual(result["threshold_ambiguous_countries_n"], 3)
         self.assertEqual(result["threshold_ambiguous_GWNO"],
                          sorted([self.ids[0], self.ids[1], self.ids[4]]))
-        self.assertEqual(result["certain_active_across_low_high_n"], 1)
-        self.assertEqual(result["certain_inactive_across_low_high_n"], 192)
+        self.assertEqual(result["certain_active_across_all_estimates_n"], 1)
+        self.assertEqual(result["certain_inactive_across_all_estimates_n"], 192)
         self.assertEqual([result[f"{x}_scenario_active_n"] for x in
                           ("low", "best", "high")], [1, 2, 4])
 
@@ -129,19 +129,34 @@ class Geo2027FatalityIntervalTests(unittest.TestCase):
         self.assertEqual(plain, extract_official_intervals(
             raw.getvalue(), self.ids))
 
-    def test_missing_duplicate_negative_fractional_and_reversed_bounds_fail(self):
+    def test_missing_duplicate_negative_and_fractional_fail(self):
         invalid = [
             self.make_csv(missing=self.ids[1]),
             self.make_csv(duplicate=True),
             self.make_csv(override={self.ids[0]: (-1, 25, 26)}),
             self.make_csv(override={self.ids[0]: ("24.0", 25, 26)}),
-            self.make_csv(override={self.ids[0]: (26, 25, 27)}),
-            self.make_csv(override={self.ids[0]: (0, 26, 25)}),
+
         ]
         for raw in invalid:
             with self.subTest(raw=raw[-80:]):
                 with self.assertRaises((ValueError, AssertionError)):
                     extract_official_intervals(raw, self.ids)
+
+    def test_nonmonotonic_official_estimates_are_valid_and_flagged(self):
+        raw = self.make_csv(override={
+            self.ids[0]: (0, 26, 24),  # best active, high inactive
+            self.ids[1]: (26, 25, 27), # low larger than best
+        })
+        triples = extract_official_intervals(raw, self.ids)
+        output = sensitivity(self.issue, triples)
+        self.assertEqual(output["nonmonotonic_official_triples_n"], 2)
+        self.assertEqual(output["best_exceeds_high_GWNO"], [self.ids[0]])
+        self.assertEqual(output["low_exceeds_best_GWNO"], [self.ids[1]])
+        self.assertIn(self.ids[0], output["threshold_ambiguous_GWNO"])
+        self.assertLessEqual(output["sharp_algebraic_lower_delta_brier"],
+                             output["delta_brier_best"])
+        self.assertGreaterEqual(output["sharp_algebraic_upper_delta_brier"],
+                                output["delta_brier_best"])
 
     def test_missing_low_high_columns_fail_closed(self):
         lines = ["country_id,year,sb_total_deaths_best"]
