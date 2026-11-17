@@ -75,7 +75,7 @@ class RollingHistoricalTests(unittest.TestCase):
         self.assertEqual(binary,second)
 
     def test_binary_score_math_and_absence_fails(self):
-        self.assertEqual(_proper_score(.2,0)[0],.04)
+        self.assertAlmostEqual(_proper_score(.2,0)[0],.04)
         self.assertAlmostEqual(_proper_score(.2,1)[0],.64)
         with self.assertRaises(ValueError):
             _proper_score(1.,0)
