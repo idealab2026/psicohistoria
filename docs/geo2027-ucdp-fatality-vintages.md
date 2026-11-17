@@ -26,6 +26,27 @@ Los resultados exactos, solo después de reconstrucción y comprobación contra 
 
 **Control adicional:** la anterior versión del futuro validador (PR #105) suponía que `low<=best<=high`; esta revisión elimina esa suposición y añade pruebas sintéticas adversariales con `best>high`. La etiqueta prospectiva primaria con `best` es intocable.
 
+## Resultados empíricos: cuatro archivos oficiales SHA-verificados
+
+Se han reproducido **54** paneles año×edición de 196 países entre 2011 y el último año de cada edición. La siguiente tabla usa exclusivamente los mismos 196 GWNO del primer GEO2027 y la **edición 26.1**, sin mezclar revisiones anteriores:
+
+| Año observado | Activos low | Activos best | Activos high | Umbral sensible a alguna estimación | Triples numéricamente no ordenados |
+|---|---:|---:|---:|---:|---:|
+| 2022 | 35 | 37 | 40 | 5 | 1 |
+| 2023 | 33 | 34 | 34 | 1 | 0 |
+| 2024 | 34 | 35 | 35 | 1 | 1 |
+| 2025 | **32** | **34** | **35** | **3** | **1** |
+
+**En 2025 los tres países sensibles al estimador son GWNO 461 (Togo), 483 (Chad) y 540 (Angola).** Dos figuran activos con `best` pero no con `low`, y uno figura inactivo con `best` pero activo con `high`. En 2025 existe también un caso numéricamente desordenado, GWNO 365 (Rusia), que **no cambia su clasificación binaria** según el estimador.
+
+**Anomalías de orden numérico en toda la fuente oficial país–año** (no necesariamente solo los 196 países de un año reciente): edición 23.1 **12** filas; 24.1 **10**; 25.1 **8**; 26.1 **4**. Son incompatibles con imponer `low <= best <= high` como requisito universal. No las corregimos, no las eliminamos ni convertimos las tres estimaciones en supuestos límites de confianza.
+
+En las **10 comparaciones retrospectivas** entre pares de ediciones para un mismo 2022, 2023 o 2024 no cambia **ninguna etiqueta binaria `best>=25`** entre los 196 países. Sí se detecta una revisión del umbral de `low` en el año 2022 para **GWNO 800 (Tailandia)** al comparar 23.1/24.1 frente a 25.1/26.1, con cambio en la pertenencia al grupo de medición ambigua. Este dato **no equivale** a diez experimentos ni valida empíricamente una capacidad predictiva.
+
+El detalle reproducible (10 fotografías recientes con los GWNO implicados, 54 series anuales resumidas, diez pares cruzados, diagnósticos de inversión y cuatro SHA oficiales) se encuentra en [el informe JSON inmutable](../data/geo2027-ucdp-fatality-vintage-intervals.json).
+
+**Conclusión científica limitada:** el umbral del resultado `best>=25` ha sido estable en las comparaciones recientes de ediciones revisadas, aunque determinadas estimaciones alternativas y recuentos de víctimas cambian. Esta propiedad de la medición **no demuestra** que las probabilidades de GEO2027 estén bien calibradas, discriminan adecuadamente o anticipen conflictos futuros.
+
 ## Fuentes
 
 UCDP, [Dataset Download Center](https://ucdp.uu.se/downloads/) y [Historical Versions](https://ucdp.uu.se/downloads/olddw.html). UCDP OrganizedViolenceCY Codebooks de las cuatro ediciones. Los derechos y condiciones de cita de UCDP se mantienen; no se redistribuyen archivos de origen en este repositorio.
