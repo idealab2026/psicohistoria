@@ -142,8 +142,20 @@ def parse_ged(raw, version, *, expected_sha256=None):
                  if x.lower().endswith(".csv") and not x.endswith("/")]
         required={"id","year","country_id","type_of_violence","best"}
         eligible=[]
+        encodings={}
         for member in members:
-            with io.TextIOWrapper(z.open(member),encoding="utf-8-sig",
+            with z.open(member) as reader:
+                prefix=reader.read(32768)
+            try:
+                prefix.decode("utf-8-sig")
+                enc="utf-8-sig"
+            except UnicodeDecodeError:
+                # Some pre-2020 source exports use a legacy 8-bit encoding.
+                # This affects event actors/descriptions, not numeric fields,
+                # and must be explicitly recorded instead of silently ignored.
+                enc="cp1252"
+            encodings[member]=enc
+            with io.TextIOWrapper(z.open(member),encoding=enc,
                                   newline="") as probe:
                 header=next(csv.reader(probe), [])
             if required.issubset(header):
@@ -161,7 +173,7 @@ def parse_ged(raw, version, *, expected_sha256=None):
         seen_ids=set()
         bad_estimate_order=0
         omitted_country=0
-        with io.TextIOWrapper(z.open(selected_member),encoding="utf-8-sig",
+        with io.TextIOWrapper(z.open(selected_member),encoding=encodings[selected_member],
                               newline="") as source:
             reader=csv.DictReader(source)
             fields=set(reader.fieldnames or ())
@@ -201,6 +213,7 @@ def parse_ged(raw, version, *, expected_sha256=None):
             "sha256":actual,
             "zip_bytes":len(raw),
             "csv_member":selected_member,
+            "csv_detected_encoding":encodings[selected_member],
             "header":list(reader.fieldnames or []),
             "event_ids_unique":True,
             "event_count":len(seen_ids),
