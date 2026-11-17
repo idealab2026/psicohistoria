@@ -68,8 +68,8 @@ def read_verified_intervals(raw, version):
         )
         if not (1 <= cid <= 2000 and 1989 <= year <= cutoff):
             raise ValueError("Unexpected original UCDP country or year")
-        if not lo <= mid <= hi:
-            raise ValueError("Official UCDP estimate order low <= best <= high failed")
+        # UCDP named estimates can be numerically non-monotonic (best > high).
+        # Record the original values; NEVER silently sort or reject them.
         if mid != verified.get(cid, {}).get(year):
             raise ValueError("Low/best/high row cannot reconcile to verified best deaths")
         if (cid, year) in out:
@@ -83,16 +83,13 @@ def read_verified_intervals(raw, version):
 
 def classify(triple):
     if (not isinstance(triple, tuple) or len(triple) != 3
-        or any(type(x) is not int or x < 0 for x in triple)
-        or not triple[0] <= triple[1] <= triple[2]):
-        raise ValueError("Invalid country-year official estimate interval")
-    lo, best, hi = triple
-    return (int(lo >= THRESHOLD), int(best >= THRESHOLD),
-            int(hi >= THRESHOLD))
+        or any(type(x) is not int or x < 0 for x in triple)):
+        raise ValueError("Invalid country-year official estimate triple")
+    return tuple(int(value >= THRESHOLD) for value in triple)
 
 
 def snapshot(panel, ids, year, *, show_ids=False):
-    """Fail closed: never assume that an absent historical country is 0."""
+    """Keep three named estimates distinct; do not presume low <= best <= high."""
     missing = sorted(cid for cid in ids if (cid, year) not in panel)
     if missing:
         raise ValueError(f"Incomplete {year} fixed196 country-year data: {missing}")
@@ -100,11 +97,21 @@ def snapshot(panel, ids, year, *, show_ids=False):
     low_n = sum(x[0] for x in labels.values())
     best_n = sum(x[1] for x in labels.values())
     high_n = sum(x[2] for x in labels.values())
-    best_not_low = [cid for cid, (lo, b, hi) in labels.items() if lo == 0 and b == 1]
-    high_not_best = [cid for cid, (lo, b, hi) in labels.items() if b == 0 and hi == 1]
-    ambiguous = sorted(best_not_low + high_not_best)
-    sure_no = sum(hi == 0 for lo, b, hi in labels.values())
-    sure_yes = sum(lo == 1 for lo, b, hi in labels.values())
+    low_vs_best = [cid for cid, (lo, best, hi) in labels.items() if lo != best]
+    high_vs_best = [cid for cid, (lo, best, hi) in labels.items() if hi != best]
+    low_vs_high = [cid for cid, (lo, best, hi) in labels.items() if lo != hi]
+    ambiguous = sorted(cid for cid, statuses in labels.items()
+                       if min(statuses) != max(statuses))
+    sure_no = sum(max(statuses) == 0 for statuses in labels.values())
+    sure_yes = sum(min(statuses) == 1 for statuses in labels.values())
+    bad_order = sorted(cid for cid in ids
+                       if not (panel[(cid, year)][0] <=
+                               panel[(cid, year)][1] <=
+                               panel[(cid, year)][2]))
+    mid_above_high = sorted(cid for cid in ids
+                            if panel[(cid, year)][1] > panel[(cid, year)][2])
+    low_above_mid = sorted(cid for cid in ids
+                           if panel[(cid, year)][0] > panel[(cid, year)][1])
     obj = {
         "year": year,
         "explicit_first_issued_GWNO_n": N,
@@ -112,23 +119,41 @@ def snapshot(panel, ids, year, *, show_ids=False):
         "active_best_n": best_n,
         "active_high_n": high_n,
         "ambiguous_threshold_n": len(ambiguous),
-        "best_active_but_low_inactive_n": len(best_not_low),
-        "best_inactive_but_high_active_n": len(high_not_best),
-        "certain_inactive_across_low_high_n": sure_no,
-        "certain_active_across_low_high_n": sure_yes,
+        "low_vs_best_threshold_disagreement_n": len(low_vs_best),
+        "high_vs_best_threshold_disagreement_n": len(high_vs_best),
+        "low_vs_high_threshold_disagreement_n": len(low_vs_high),
+        "best_active_but_low_inactive_n": sum(
+            lo == 0 and best == 1 for lo, best, hi in labels.values()),
+        "best_inactive_but_low_active_n": sum(
+            lo == 1 and best == 0 for lo, best, hi in labels.values()),
+        "best_inactive_but_high_active_n": sum(
+            best == 0 and hi == 1 for lo, best, hi in labels.values()),
+        "best_active_but_high_inactive_n": sum(
+            best == 1 and hi == 0 for lo, best, hi in labels.values()),
+        "certain_inactive_across_all_estimates_n": sure_no,
+        "certain_active_across_all_estimates_n": sure_yes,
+        "nonmonotonic_fatality_estimate_n": len(bad_order),
+        "best_exceeds_high_n": len(mid_above_high),
+        "low_exceeds_best_n": len(low_above_mid),
     }
     if show_ids:
         obj.update({
             "ambiguous_GWNO": ambiguous,
-            "best_active_but_low_inactive_GWNO": sorted(best_not_low),
-            "best_inactive_but_high_active_GWNO": sorted(high_not_best),
+            "nonmonotonic_GWNO": bad_order,
+            "best_exceeds_high_GWNO": mid_above_high,
+            "low_exceeds_best_GWNO": low_above_mid,
+            "best_active_but_low_inactive_GWNO": sorted(
+                cid for cid, (lo, best, hi) in labels.items()
+                if lo == 0 and best == 1),
+            "best_inactive_but_high_active_GWNO": sorted(
+                cid for cid, (lo, best, hi) in labels.items()
+                if best == 0 and hi == 1),
         })
-    if (not low_n <= best_n <= high_n or
-        len(ambiguous) != high_n - low_n or
-        sure_no + sure_yes + len(ambiguous) != N or
-        len(best_not_low) != best_n - low_n or
-        len(high_not_best) != high_n - best_n):
-        raise AssertionError("Inconsistent source death-estimate threshold partition")
+    if sure_no + sure_yes + len(ambiguous) != N:
+        raise AssertionError("Three-estimate threshold partition incomplete")
+    if len(ambiguous) < max(len(low_vs_best), len(high_vs_best),
+                            len(low_vs_high)):
+        raise AssertionError("Pairwise threshold disagreement exceeds union")
     return obj
 
 
@@ -146,7 +171,7 @@ def compare_editions(old, new, ids, year, oldv, newv):
         for i, name in enumerate(("active_low", "active_best", "active_high")):
             if before[i] != after[i]:
                 diffs[name].append(cid)
-        if (before[0] != before[2]) != (after[0] != after[2]):
+        if (min(before) != max(before)) != (min(after) != max(after)):
             diffs["threshold_ambiguous"].append(cid)
     return {
         "year": year, "older_edition": oldv, "later_edition": newv,
@@ -158,13 +183,13 @@ def compare_editions(old, new, ids, year, oldv, newv):
         "changed_best_indicator_GWNO": sorted(diffs["active_best"]),
         "changed_ambiguous_indicator_GWNO": sorted(diffs["threshold_ambiguous"]),
         "best_classification_differences_within_old_ambiguous_n": sum(
-            cid in diffs["active_best"] and state_before[cid][0] != state_before[cid][2]
+            cid in diffs["active_best"] and min(state_before[cid]) != max(state_before[cid])
             for cid in ids),
         "best_classification_differences_within_new_ambiguous_n": sum(
-            cid in diffs["active_best"] and state_after[cid][0] != state_after[cid][2]
+            cid in diffs["active_best"] and min(state_after[cid]) != max(state_after[cid])
             for cid in ids),
         "unambiguous_opposite_classification_n": sum(
-            (b[0] == 1 and a[2] == 0) or (b[2] == 0 and a[0] == 1)
+            min(b) == max(b) and min(a) == max(a) and b[0] != a[0]
             for cid in ids
             for b, a in [(state_before[cid], state_after[cid])]),
     }
@@ -218,6 +243,19 @@ def study(panels, issue):
         "threshold_deaths": THRESHOLD,
         "low_best_high_are_not_confidence_limits": True,
         "retrospective_revisions_are_not_independent": True,
+        "named_low_best_high_values_may_be_nonmonotonic": True,
+        "all_historical_estimate_order_diagnostics": {
+            v: {
+                "country_years_with_nonmonotonic_order_n": sum(
+                    not lo <= best <= hi for lo, best, hi in panels[v].values()),
+                "country_years_best_exceeds_high_n": sum(
+                    best > hi for lo, best, hi in panels[v].values()),
+                "country_years_low_exceeds_best_n": sum(
+                    lo > best for lo, best, hi in panels[v].values()),
+                "country_years_low_exceeds_high_n": sum(
+                    lo > hi for lo, best, hi in panels[v].values()),
+            } for v in VERSION_ORDER
+        },
         "2027_official_outcomes_observed": 0,
         "no_2027_forecast_or_alert_changed": True,
         "no_historical_model_selection_or_future_Brier_scoring": True,
@@ -226,7 +264,7 @@ def study(panels, issue):
         "recent_all_edition_pair_comparisons": cross,
         "limitations": (
             "Threshold disagreement in low/best/high estimates measures "
-            "operational sensitivity of the >=25 UCDP-coded target; it is not "
+            "operational sensitivity of the >=25 UCDP-coded target. Named estimates may be nonmonotonic; the threshold envelope is the union of their three indicator values. It is not "
             "a statistical confidence level, an estimate of all real violence, "
             "or model performance. Revised country-year observations are not "
             "independent. Historic 2011+ risksets preserve the 196 first-issued "
