@@ -48,7 +48,7 @@ class GEDCountryYearBridgeTests(unittest.TestCase):
         self.assertEqual(set(got),{"23.1","22.1","19.1"})
         self.assertEqual(got["22.1"]["CODEBOOK"],GED_221_CODEBOOK)
         self.assertEqual(got["19.1"]["CSV"],GED_URLS["19.1"])
-        bad=html.replace("ged221-csv.zip","https://example.net/fake.csv")
+        bad=html.replace("/downloads/ged/ged221-csv.zip","https://example.net/fake.csv")
         with self.assertRaisesRegex(ValueError,"allowlisted"):
             discover_ged(bad.encode())
 
