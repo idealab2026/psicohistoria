@@ -1,0 +1,1467 @@
+{
+  "2013_to_2018_Tunisia_source_fatality_timeline": {
+    "2013": {
+      "17.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 0
+      },
+      "18.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 0
+      },
+      "19.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 0
+      },
+      "20.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 0
+      },
+      "21.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 0
+      },
+      "22.1": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 29
+      },
+      "23.1": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 29
+      }
+    },
+    "2014": {
+      "17.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 0
+      },
+      "18.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 0
+      },
+      "19.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 0
+      },
+      "20.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 0
+      },
+      "21.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 0
+      },
+      "22.1": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 51
+      },
+      "23.1": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 51
+      }
+    },
+    "2015": {
+      "17.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 0
+      },
+      "18.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 4
+      },
+      "19.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 4
+      },
+      "20.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 4
+      },
+      "21.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 17
+      },
+      "22.1": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 75
+      },
+      "23.1": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 75
+      }
+    },
+    "2016": {
+      "17.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 0
+      },
+      "18.1": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 72
+      },
+      "19.1": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 72
+      },
+      "20.1": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 72
+      },
+      "21.1": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 69
+      },
+      "22.1": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 88
+      },
+      "23.1": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 88
+      }
+    },
+    "2017": {
+      "17.1": null,
+      "18.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 3
+      },
+      "19.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 3
+      },
+      "20.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 3
+      },
+      "21.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 0
+      },
+      "22.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 15
+      },
+      "23.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 15
+      }
+    },
+    "2018": {
+      "17.1": null,
+      "18.1": null,
+      "19.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 7
+      },
+      "20.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 7
+      },
+      "21.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 0
+      },
+      "22.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 24
+      },
+      "23.1": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 24
+      }
+    }
+  },
+  "2014_three_step_first_exit_model_per_source_edition": {
+    "17.1": {
+      "GED_source_event_zeros_on_CY23_support_are_not_proven_peace": true,
+      "Tunisia_2x2_transition_counts": [
+        [
+          25,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "Tunisia_p_active_next_given_active": 0.806896551724,
+      "Tunisia_p_at_least_one_exit_within_3_if_initially_active": null,
+      "Tunisia_p_exit_next_if_origin_active": null,
+      "Tunisia_p_first_exit_exactly_origin_plus_3_if_initially_active": null,
+      "Tunisia_q_active": [
+        0.01444361751977728,
+        0.8068965517241379
+      ],
+      "frozen_original_GWNO_minus_Syria_195": true,
+      "global_2x2_transition_counts": [
+        [
+          3899,
+          130
+        ],
+        [
+          139,
+          584
+        ]
+      ],
+      "global_q_active": [
+        0.03249813941949888,
+        0.8068965517241379
+      ],
+      "later_2023_CY_country_year_support_not_historical_asof": true,
+      "n_global_hist_country_ids": 198,
+      "origin": 2014,
+      "origin_binary_state": 0,
+      "training_year_max": 2014
+    },
+    "18.1": {
+      "GED_source_event_zeros_on_CY23_support_are_not_proven_peace": true,
+      "Tunisia_2x2_transition_counts": [
+        [
+          25,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "Tunisia_p_active_next_given_active": 0.809655172414,
+      "Tunisia_p_at_least_one_exit_within_3_if_initially_active": null,
+      "Tunisia_p_exit_next_if_origin_active": null,
+      "Tunisia_p_first_exit_exactly_origin_plus_3_if_initially_active": null,
+      "Tunisia_q_active": [
+        0.014223104275200526,
+        0.8096551724137931
+      ],
+      "frozen_original_GWNO_minus_Syria_195": true,
+      "global_2x2_transition_counts": [
+        [
+          3901,
+          128
+        ],
+        [
+          137,
+          586
+        ]
+      ],
+      "global_q_active": [
+        0.03200198461920119,
+        0.8096551724137931
+      ],
+      "later_2023_CY_country_year_support_not_historical_asof": true,
+      "n_global_hist_country_ids": 198,
+      "origin": 2014,
+      "origin_binary_state": 0,
+      "training_year_max": 2014
+    },
+    "19.1": {
+      "GED_source_event_zeros_on_CY23_support_are_not_proven_peace": true,
+      "Tunisia_2x2_transition_counts": [
+        [
+          25,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "Tunisia_p_active_next_given_active": 0.809065934066,
+      "Tunisia_p_at_least_one_exit_within_3_if_initially_active": null,
+      "Tunisia_p_exit_next_if_origin_active": null,
+      "Tunisia_p_first_exit_exactly_origin_plus_3_if_initially_active": null,
+      "Tunisia_q_active": [
+        0.014344036191106696,
+        0.8090659340659341
+      ],
+      "frozen_original_GWNO_minus_Syria_195": true,
+      "global_2x2_transition_counts": [
+        [
+          3897,
+          129
+        ],
+        [
+          138,
+          588
+        ]
+      ],
+      "global_q_active": [
+        0.03227408142999007,
+        0.8090659340659341
+      ],
+      "later_2023_CY_country_year_support_not_historical_asof": true,
+      "n_global_hist_country_ids": 198,
+      "origin": 2014,
+      "origin_binary_state": 0,
+      "training_year_max": 2014
+    },
+    "20.1": {
+      "GED_source_event_zeros_on_CY23_support_are_not_proven_peace": true,
+      "Tunisia_2x2_transition_counts": [
+        [
+          25,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "Tunisia_p_active_next_given_active": 0.813953488372,
+      "Tunisia_p_at_least_one_exit_within_3_if_initially_active": null,
+      "Tunisia_p_exit_next_if_origin_active": null,
+      "Tunisia_p_first_exit_exactly_origin_plus_3_if_initially_active": null,
+      "Tunisia_q_active": [
+        0.014133885438233264,
+        0.813953488372093
+      ],
+      "frozen_original_GWNO_minus_Syria_195": true,
+      "global_2x2_transition_counts": [
+        [
+          3896,
+          127
+        ],
+        [
+          135,
+          594
+        ]
+      ],
+      "global_q_active": [
+        0.031801242236024846,
+        0.813953488372093
+      ],
+      "later_2023_CY_country_year_support_not_historical_asof": true,
+      "n_global_hist_country_ids": 198,
+      "origin": 2014,
+      "origin_binary_state": 0,
+      "training_year_max": 2014
+    },
+    "21.1": {
+      "GED_source_event_zeros_on_CY23_support_are_not_proven_peace": true,
+      "Tunisia_2x2_transition_counts": [
+        [
+          25,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "Tunisia_p_active_next_given_active": 0.816576086957,
+      "Tunisia_p_at_least_one_exit_within_3_if_initially_active": null,
+      "Tunisia_p_exit_next_if_origin_active": null,
+      "Tunisia_p_first_exit_exactly_origin_plus_3_if_initially_active": null,
+      "Tunisia_q_active": [
+        0.014040906578220009,
+        0.8165760869565217
+      ],
+      "frozen_original_GWNO_minus_Syria_195": true,
+      "global_2x2_transition_counts": [
+        [
+          3892,
+          126
+        ],
+        [
+          134,
+          600
+        ]
+      ],
+      "global_q_active": [
+        0.03159203980099502,
+        0.8165760869565217
+      ],
+      "later_2023_CY_country_year_support_not_historical_asof": true,
+      "n_global_hist_country_ids": 198,
+      "origin": 2014,
+      "origin_binary_state": 0,
+      "training_year_max": 2014
+    },
+    "22.1": {
+      "GED_source_event_zeros_on_CY23_support_are_not_proven_peace": true,
+      "Tunisia_2x2_transition_counts": [
+        [
+          23,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "Tunisia_p_active_next_given_active": 0.825547586742,
+      "Tunisia_p_at_least_one_exit_within_3_if_initially_active": 0.437365529026,
+      "Tunisia_p_exit_next_if_origin_active": 0.174452413258,
+      "Tunisia_p_first_exit_exactly_origin_plus_3_if_initially_active": 0.118894347001,
+      "Tunisia_q_active": [
+        0.03720396299396051,
+        0.8255475867416164
+      ],
+      "frozen_original_GWNO_minus_Syria_195": true,
+      "global_2x2_transition_counts": [
+        [
+          3890,
+          127
+        ],
+        [
+          134,
+          601
+        ]
+      ],
+      "global_q_active": [
+        0.031848718586713114,
+        0.8168249660786974
+      ],
+      "later_2023_CY_country_year_support_not_historical_asof": true,
+      "n_global_hist_country_ids": 198,
+      "origin": 2014,
+      "origin_binary_state": 1,
+      "training_year_max": 2014
+    },
+    "23.1": {
+      "GED_source_event_zeros_on_CY23_support_are_not_proven_peace": true,
+      "Tunisia_2x2_transition_counts": [
+        [
+          23,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "Tunisia_p_active_next_given_active": 0.82449348303,
+      "Tunisia_p_at_least_one_exit_within_3_if_initially_active": 0.439517984483,
+      "Tunisia_p_exit_next_if_origin_active": 0.17550651697,
+      "Tunisia_p_first_exit_exactly_origin_plus_3_if_initially_active": 0.119307488042,
+      "Tunisia_q_active": [
+        0.03720756595321055,
+        0.8244934830300684
+      ],
+      "frozen_original_GWNO_minus_Syria_195": true,
+      "global_2x2_transition_counts": [
+        [
+          3889,
+          127
+        ],
+        [
+          135,
+          601
+        ]
+      ],
+      "global_q_active": [
+        0.031856645097063215,
+        0.8157181571815718
+      ],
+      "later_2023_CY_country_year_support_not_historical_asof": true,
+      "n_global_hist_country_ids": 198,
+      "origin": 2014,
+      "origin_binary_state": 1,
+      "training_year_max": 2014
+    }
+  },
+  "2016_one_step_exit_model_per_source_edition": {
+    "17.1": {
+      "GED_source_event_zeros_on_CY23_support_are_not_proven_peace": true,
+      "Tunisia_2x2_transition_counts": [
+        [
+          27,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "Tunisia_p_active_next_given_active": 0.814814814815,
+      "Tunisia_p_at_least_one_exit_within_3_if_initially_active": null,
+      "Tunisia_p_exit_next_if_origin_active": null,
+      "Tunisia_p_first_exit_exactly_origin_plus_3_if_initially_active": null,
+      "Tunisia_q_active": [
+        0.013654473546895802,
+        0.8148148148148147
+      ],
+      "frozen_original_GWNO_minus_Syria_195": true,
+      "global_2x2_transition_counts": [
+        [
+          4222,
+          139
+        ],
+        [
+          144,
+          637
+        ]
+      ],
+      "global_q_active": [
+        0.03208801283520513,
+        0.8148148148148148
+      ],
+      "later_2023_CY_country_year_support_not_historical_asof": true,
+      "n_global_hist_country_ids": 198,
+      "origin": 2016,
+      "origin_binary_state": 0,
+      "training_year_max": 2016
+    },
+    "18.1": {
+      "GED_source_event_zeros_on_CY23_support_are_not_proven_peace": true,
+      "Tunisia_2x2_transition_counts": [
+        [
+          26,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "Tunisia_p_active_next_given_active": 0.817369093231,
+      "Tunisia_p_at_least_one_exit_within_3_if_initially_active": 0.453922056035,
+      "Tunisia_p_exit_next_if_origin_active": 0.182630906769,
+      "Tunisia_p_first_exit_exactly_origin_plus_3_if_initially_active": 0.122014290605,
+      "Tunisia_q_active": [
+        0.03493106929157665,
+        0.8173690932311622
+      ],
+      "frozen_original_GWNO_minus_Syria_195": true,
+      "global_2x2_transition_counts": [
+        [
+          4222,
+          139
+        ],
+        [
+          142,
+          639
+        ]
+      ],
+      "global_q_active": [
+        0.03208801283520513,
+        0.8173690932311622
+      ],
+      "later_2023_CY_country_year_support_not_historical_asof": true,
+      "n_global_hist_country_ids": 198,
+      "origin": 2016,
+      "origin_binary_state": 1,
+      "training_year_max": 2016
+    },
+    "19.1": {
+      "GED_source_event_zeros_on_CY23_support_are_not_proven_peace": true,
+      "Tunisia_2x2_transition_counts": [
+        [
+          26,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "Tunisia_p_active_next_given_active": 0.81679389313,
+      "Tunisia_p_at_least_one_exit_within_3_if_initially_active": 0.455074105096,
+      "Tunisia_p_exit_next_if_origin_active": 0.18320610687,
+      "Tunisia_p_first_exit_exactly_origin_plus_3_if_initially_active": 0.12222636895,
+      "Tunisia_q_active": [
+        0.035038063634589105,
+        0.816793893129771
+      ],
+      "frozen_original_GWNO_minus_Syria_195": true,
+      "global_2x2_transition_counts": [
+        [
+          4218,
+          140
+        ],
+        [
+          143,
+          641
+        ]
+      ],
+      "global_q_active": [
+        0.032339449541284405,
+        0.816793893129771
+      ],
+      "later_2023_CY_country_year_support_not_historical_asof": true,
+      "n_global_hist_country_ids": 198,
+      "origin": 2016,
+      "origin_binary_state": 1,
+      "training_year_max": 2016
+    },
+    "20.1": {
+      "GED_source_event_zeros_on_CY23_support_are_not_proven_peace": true,
+      "Tunisia_2x2_transition_counts": [
+        [
+          26,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "Tunisia_p_active_next_given_active": 0.820253164557,
+      "Tunisia_p_at_least_one_exit_within_3_if_initially_active": 0.448121158772,
+      "Tunisia_p_exit_next_if_origin_active": 0.179746835443,
+      "Tunisia_p_first_exit_exactly_origin_plus_3_if_initially_active": 0.120936412738,
+      "Tunisia_q_active": [
+        0.03495301174218002,
+        0.8202531645569622
+      ],
+      "frozen_original_GWNO_minus_Syria_195": true,
+      "global_2x2_transition_counts": [
+        [
+          4215,
+          139
+        ],
+        [
+          141,
+          647
+        ]
+      ],
+      "global_q_active": [
+        0.03213957759412305,
+        0.8202531645569621
+      ],
+      "later_2023_CY_country_year_support_not_historical_asof": true,
+      "n_global_hist_country_ids": 198,
+      "origin": 2016,
+      "origin_binary_state": 1,
+      "training_year_max": 2016
+    },
+    "21.1": {
+      "GED_source_event_zeros_on_CY23_support_are_not_proven_peace": true,
+      "Tunisia_2x2_transition_counts": [
+        [
+          26,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "Tunisia_p_active_next_given_active": 0.822864321608,
+      "Tunisia_p_at_least_one_exit_within_3_if_initially_active": 0.44283388428,
+      "Tunisia_p_exit_next_if_origin_active": 0.177135678392,
+      "Tunisia_p_first_exit_exactly_origin_plus_3_if_initially_active": 0.119939576056,
+      "Tunisia_q_active": [
+        0.03487405233553436,
+        0.8228643216080403
+      ],
+      "frozen_original_GWNO_minus_Syria_195": true,
+      "global_2x2_transition_counts": [
+        [
+          4210,
+          138
+        ],
+        [
+          140,
+          654
+        ]
+      ],
+      "global_q_active": [
+        0.03195402298850575,
+        0.8228643216080402
+      ],
+      "later_2023_CY_country_year_support_not_historical_asof": true,
+      "n_global_hist_country_ids": 198,
+      "origin": 2016,
+      "origin_binary_state": 1,
+      "training_year_max": 2016
+    },
+    "22.1": {
+      "GED_source_event_zeros_on_CY23_support_are_not_proven_peace": true,
+      "Tunisia_2x2_transition_counts": [
+        [
+          23,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "Tunisia_p_active_next_given_active": 0.846739130435,
+      "Tunisia_p_at_least_one_exit_within_3_if_initially_active": 0.392915854617,
+      "Tunisia_p_exit_next_if_origin_active": 0.153260869565,
+      "Tunisia_p_first_exit_exactly_origin_plus_3_if_initially_active": 0.109883009626,
+      "Tunisia_q_active": [
+        0.03726519683721708,
+        0.8467391304347827
+      ],
+      "frozen_original_GWNO_minus_Syria_195": true,
+      "global_2x2_transition_counts": [
+        [
+          4206,
+          138
+        ],
+        [
+          140,
+          658
+        ]
+      ],
+      "global_q_active": [
+        0.03198343304187759,
+        0.82375
+      ],
+      "later_2023_CY_country_year_support_not_historical_asof": true,
+      "n_global_hist_country_ids": 198,
+      "origin": 2016,
+      "origin_binary_state": 1,
+      "training_year_max": 2016
+    },
+    "23.1": {
+      "GED_source_event_zeros_on_CY23_support_are_not_proven_peace": true,
+      "Tunisia_2x2_transition_counts": [
+        [
+          23,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "Tunisia_p_active_next_given_active": 0.845844867828,
+      "Tunisia_p_at_least_one_exit_within_3_if_initially_active": 0.394837294657,
+      "Tunisia_p_exit_next_if_origin_active": 0.154155132172,
+      "Tunisia_p_first_exit_exactly_origin_plus_3_if_initially_active": 0.110290835088,
+      "Tunisia_q_active": [
+        0.03726854273459567,
+        0.8458448678282582
+      ],
+      "frozen_original_GWNO_minus_Syria_195": true,
+      "global_2x2_transition_counts": [
+        [
+          4205,
+          138
+        ],
+        [
+          141,
+          658
+        ]
+      ],
+      "global_q_active": [
+        0.03199079401611047,
+        0.8227215980024969
+      ],
+      "later_2023_CY_country_year_support_not_historical_asof": true,
+      "n_global_hist_country_ids": 198,
+      "origin": 2016,
+      "origin_binary_state": 1,
+      "training_year_max": 2016
+    }
+  },
+  "2016_to_2017_transition_observations_across_versions": {
+    "17.1": {
+      "2016": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 0
+      },
+      "2016_origin_source_available_in_2016": false,
+      "2017": null,
+      "real_source_has_2017_observed": false,
+      "transition_2016_2017": null
+    },
+    "18.1": {
+      "2016": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 72
+      },
+      "2016_origin_source_available_in_2016": false,
+      "2017": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 3
+      },
+      "real_source_has_2017_observed": true,
+      "transition_2016_2017": "10"
+    },
+    "19.1": {
+      "2016": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 72
+      },
+      "2016_origin_source_available_in_2016": false,
+      "2017": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 3
+      },
+      "real_source_has_2017_observed": true,
+      "transition_2016_2017": "10"
+    },
+    "20.1": {
+      "2016": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 72
+      },
+      "2016_origin_source_available_in_2016": false,
+      "2017": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 3
+      },
+      "real_source_has_2017_observed": true,
+      "transition_2016_2017": "10"
+    },
+    "21.1": {
+      "2016": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 69
+      },
+      "2016_origin_source_available_in_2016": false,
+      "2017": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 0
+      },
+      "real_source_has_2017_observed": true,
+      "transition_2016_2017": "10"
+    },
+    "22.1": {
+      "2016": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 88
+      },
+      "2016_origin_source_available_in_2016": false,
+      "2017": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 15
+      },
+      "real_source_has_2017_observed": true,
+      "transition_2016_2017": "10"
+    },
+    "23.1": {
+      "2016": {
+        "active_ge25": 1,
+        "best_state_based_deaths": 88
+      },
+      "2016_origin_source_available_in_2016": false,
+      "2017": {
+        "active_ge25": 0,
+        "best_state_based_deaths": 15
+      },
+      "real_source_has_2017_observed": true,
+      "transition_2016_2017": "10"
+    }
+  },
+  "2017_official_event_label_first_release_GED18_1_published_in_2018": true,
+  "2017_outcome_state_stable_across_GED18_to_GED23": true,
+  "CY23_original_zip_sha256": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+  "GED22_model_with_only_Tunisia_2013_2015_reverted_to_GED21": {
+    "2014_origin": {
+      "GED_source_event_zeros_on_CY23_support_are_not_proven_peace": true,
+      "Tunisia_2x2_transition_counts": [
+        [
+          25,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "Tunisia_p_active_next_given_active": 0.816576086957,
+      "Tunisia_p_at_least_one_exit_within_3_if_initially_active": null,
+      "Tunisia_p_exit_next_if_origin_active": null,
+      "Tunisia_p_first_exit_exactly_origin_plus_3_if_initially_active": null,
+      "Tunisia_q_active": [
+        0.014040906578220009,
+        0.8165760869565217
+      ],
+      "frozen_original_GWNO_minus_Syria_195": true,
+      "global_2x2_transition_counts": [
+        [
+          3892,
+          126
+        ],
+        [
+          134,
+          600
+        ]
+      ],
+      "global_q_active": [
+        0.03159203980099502,
+        0.8165760869565217
+      ],
+      "later_2023_CY_country_year_support_not_historical_asof": true,
+      "n_global_hist_country_ids": 198,
+      "origin": 2014,
+      "origin_binary_state": 0,
+      "training_year_max": 2014
+    },
+    "2016_origin": {
+      "GED_source_event_zeros_on_CY23_support_are_not_proven_peace": true,
+      "Tunisia_2x2_transition_counts": [
+        [
+          26,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "Tunisia_p_active_next_given_active": 0.823086574655,
+      "Tunisia_p_at_least_one_exit_within_3_if_initially_active": 0.44238229592,
+      "Tunisia_p_exit_next_if_origin_active": 0.176913425345,
+      "Tunisia_p_first_exit_exactly_origin_plus_3_if_initially_active": 0.119853805298,
+      "Tunisia_q_active": [
+        0.03487717890637613,
+        0.8230865746549562
+      ],
+      "frozen_original_GWNO_minus_Syria_195": true,
+      "global_2x2_transition_counts": [
+        [
+          4209,
+          138
+        ],
+        [
+          140,
+          655
+        ]
+      ],
+      "global_q_active": [
+        0.031961370429983905,
+        0.823086574654956
+      ],
+      "later_2023_CY_country_year_support_not_historical_asof": true,
+      "n_global_hist_country_ids": 198,
+      "origin": 2016,
+      "origin_binary_state": 1,
+      "training_year_max": 2016
+    },
+    "delta_2014_first_exit_exactly_three_GED22_minus_counterfactual": null,
+    "delta_2016_one_step_exit_prob_GED22_minus_counterfactual": -0.02365255578,
+    "synthetic_hybrid_never_issued_by_UCDP": true
+  },
+  "GED23_equals_CY23_original_2011_to_2022_2352_reconfirmed": true,
+  "GWNO": 616,
+  "country": "Tunisia",
+  "current_2027_2028_GEO_issued_predictions_modified": false,
+  "first_exit_from_active_state_requires_active_state_at_origin": true,
+  "fixed_195_country_exposure_support_mask_excludes_Syria_GWNO652": true,
+  "fixed_195_is_NOT_original_196_issued_cohort": true,
+  "interpretation": "A transition exit 10 means >=25 deaths in 2016 and <25 in 2017. A probability of exact first exit in 2017 from 2014 is only defined as active-state first exit if 2014 was itself active in that source vintage. GED21 vs GED22 reclassifies 2013–15, including 2014. Any comparison must use the same vintage-defined event and horizon. This is a source-vintage stress test, not the original 2016-issued forecast, not calibrated skill and not an inference of actual causal mechanisms. The 2023 CY support mask used to align exposure is retrospective and not as-of.",
+  "new_2027_2028_outcomes_observed": false,
+  "new_forecast_probabilities_issued": 0,
+  "observed_one_transition_cannot_validate_probabilistic_skill": true,
+  "origin2016_edition17_1_last_available_data_2016_but_published_2017": true,
+  "origin2016_historically_issued_forecast_verified": false,
+  "original_2027_forecast_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "precise_historic_source_availability_not_notarized": true,
+  "reconstructed_models_match_original_private_historical_model_asserted": false,
+  "schema": "idealab.psico.tunisia_2017_first_exit_GED17_23.v1",
+  "scientific_question": "Did the 2017 Tunisia state-based >=25 1-to-0 exit depend on UCDP source vintage, and how did 2013–15 label revisions affect recreated Markov exit probabilities?",
+  "source_edition_GED_zip_sha256": {
+    "17.1": "6dcf0a3fa90c03295255d6f64540e679b034444eab1e00ec12462ac0e7e23baa",
+    "18.1": "9194d3c2849631e3b9dbcf1dd5842d3cfb35168491c071c7c74208be8106e882",
+    "19.1": "58a640f82abe9b67090ded37f3163ca6839b36d737fddaacde95763b459a018f",
+    "20.1": "5e35b74f52dc67a18aabfab86f69655c847e87320684662a6112dec46d65111f",
+    "21.1": "2cd62e39db0f49b784ecd1d48c364191c78afc9d5fb1bd9f6b6dda55dcd59afd",
+    "22.1": "1741045a14a59e2ddbe9de4a190a7ef5b68d60d57be7e94178aff2e926a59f0d",
+    "23.1": "9aa082f9e1f62da5ea3245c39b1cee45daab6dc8b3a17fb0f0cdae9ba13ce6f7"
+  },
+  "source_edition_metadata": {
+    "17.1": {
+      "csv_detected_encoding": "utf-8-sig",
+      "csv_member": "ged171.csv",
+      "distinct_state_based_country_year_n": 1080,
+      "event_count": 135181,
+      "event_ids_unique": true,
+      "events_by_violence_type": {
+        "1": 95300,
+        "2": 11526,
+        "3": 28355
+      },
+      "events_without_country_GWNO": 0,
+      "first_recorded_event_year": 1989,
+      "header": [
+        "id",
+        "year",
+        "active_year",
+        "type_of_violence",
+        "conflict_new_id",
+        "conflict_name",
+        "dyad_new_id",
+        "dyad_name",
+        "side_a_new_id",
+        "gwnoa",
+        "side_a",
+        "side_b_new_id",
+        "gwnob",
+        "side_b",
+        "number_of_sources",
+        "source_article",
+        "source_office",
+        "source_date",
+        "source_headline",
+        "source_original",
+        "where_prec",
+        "where_coordinates",
+        "adm_1",
+        "adm_2",
+        "latitude",
+        "longitude",
+        "geom_wkt",
+        "priogrid_gid",
+        "country",
+        "country_id",
+        "region",
+        "event_clarity",
+        "date_prec",
+        "date_start",
+        "date_end",
+        "deaths_a",
+        "deaths_b",
+        "deaths_civilians",
+        "deaths_unknown",
+        "best",
+        "low",
+        "high"
+      ],
+      "last_recorded_event_year": 2016,
+      "nonmonotonic_low_best_high_event_n": 1755,
+      "sha256": "6dcf0a3fa90c03295255d6f64540e679b034444eab1e00ec12462ac0e7e23baa",
+      "total_best_deaths_by_violence_type": {
+        "1": 1034220,
+        "2": 145804,
+        "3": 778871
+      },
+      "version": "17.1",
+      "zip_bytes": 8340299
+    },
+    "18.1": {
+      "csv_detected_encoding": "utf-8-sig",
+      "csv_member": "ged181.csv",
+      "distinct_state_based_country_year_n": 1117,
+      "event_count": 142902,
+      "event_ids_unique": true,
+      "events_by_violence_type": {
+        "1": 100626,
+        "2": 12491,
+        "3": 29785
+      },
+      "events_without_country_GWNO": 0,
+      "first_recorded_event_year": 1989,
+      "header": [
+        "id",
+        "year",
+        "active_year",
+        "type_of_violence",
+        "conflict_new_id",
+        "conflict_name",
+        "dyad_new_id",
+        "dyad_name",
+        "side_a_new_id",
+        "gwnoa",
+        "side_a",
+        "side_b_new_id",
+        "gwnob",
+        "side_b",
+        "number_of_sources",
+        "source_article",
+        "source_office",
+        "source_date",
+        "source_headline",
+        "source_original",
+        "where_prec",
+        "where_coordinates",
+        "adm_1",
+        "adm_2",
+        "latitude",
+        "longitude",
+        "geom_wkt",
+        "priogrid_gid",
+        "country",
+        "country_id",
+        "region",
+        "event_clarity",
+        "date_prec",
+        "date_start",
+        "date_end",
+        "deaths_a",
+        "deaths_b",
+        "deaths_civilians",
+        "deaths_unknown",
+        "low",
+        "best",
+        "high"
+      ],
+      "last_recorded_event_year": 2017,
+      "nonmonotonic_low_best_high_event_n": 2048,
+      "sha256": "9194d3c2849631e3b9dbcf1dd5842d3cfb35168491c071c7c74208be8106e882",
+      "total_best_deaths_by_violence_type": {
+        "1": 1080717,
+        "2": 153017,
+        "3": 788495
+      },
+      "version": "18.1",
+      "zip_bytes": 11288147
+    },
+    "19.1": {
+      "csv_detected_encoding": "utf-8-sig",
+      "csv_member": "ged191.csv",
+      "distinct_state_based_country_year_n": 1172,
+      "event_count": 152616,
+      "event_ids_unique": true,
+      "events_by_violence_type": {
+        "1": 107247,
+        "2": 14228,
+        "3": 31141
+      },
+      "events_without_country_GWNO": 0,
+      "first_recorded_event_year": 1989,
+      "header": [
+        "id",
+        "year",
+        "active_year",
+        "type_of_violence",
+        "conflict_new_id",
+        "conflict_name",
+        "dyad_new_id",
+        "dyad_name",
+        "side_a_new_id",
+        "gwnoa",
+        "side_a",
+        "side_b_new_id",
+        "gwnob",
+        "side_b",
+        "number_of_sources",
+        "source_article",
+        "source_office",
+        "source_date",
+        "source_headline",
+        "source_original",
+        "where_prec",
+        "where_coordinates",
+        "adm_1",
+        "adm_2",
+        "latitude",
+        "longitude",
+        "geom_wkt",
+        "priogrid_gid",
+        "country",
+        "country_id",
+        "region",
+        "event_clarity",
+        "date_prec",
+        "date_start",
+        "date_end",
+        "deaths_a",
+        "deaths_b",
+        "deaths_civilians",
+        "deaths_unknown",
+        "low",
+        "best",
+        "high"
+      ],
+      "last_recorded_event_year": 2018,
+      "nonmonotonic_low_best_high_event_n": 2506,
+      "sha256": "58a640f82abe9b67090ded37f3163ca6839b36d737fddaacde95763b459a018f",
+      "total_best_deaths_by_violence_type": {
+        "1": 1127259,
+        "2": 167098,
+        "3": 794738
+      },
+      "version": "19.1",
+      "zip_bytes": 13316667
+    },
+    "20.1": {
+      "csv_detected_encoding": "utf-8-sig",
+      "csv_member": "ged201.csv",
+      "distinct_state_based_country_year_n": 1231,
+      "event_count": 225385,
+      "event_ids_unique": true,
+      "events_by_violence_type": {
+        "1": 166379,
+        "2": 22923,
+        "3": 36083
+      },
+      "events_without_country_GWNO": 0,
+      "first_recorded_event_year": 1989,
+      "header": [
+        "id",
+        "relid",
+        "year",
+        "active_year",
+        "code_status",
+        "type_of_violence",
+        "conflict_dset_id",
+        "conflict_new_id",
+        "conflict_name",
+        "dyad_dset_id",
+        "dyad_new_id",
+        "dyad_name",
+        "side_a_dset_id",
+        "side_a_new_id",
+        "side_a",
+        "side_b_dset_id",
+        "side_b_new_id",
+        "side_b",
+        "number_of_sources",
+        "source_article",
+        "source_office",
+        "source_date",
+        "source_headline",
+        "source_original",
+        "where_prec",
+        "where_coordinates",
+        "where_description",
+        "adm_1",
+        "adm_2",
+        "latitude",
+        "longitude",
+        "geom_wkt",
+        "priogrid_gid",
+        "country",
+        "country_id",
+        "region",
+        "event_clarity",
+        "date_prec",
+        "date_start",
+        "date_end",
+        "deaths_a",
+        "deaths_b",
+        "deaths_civilians",
+        "deaths_unknown",
+        "best",
+        "high",
+        "low",
+        "gwnoa",
+        "gwnob"
+      ],
+      "last_recorded_event_year": 2019,
+      "nonmonotonic_low_best_high_event_n": 3877,
+      "sha256": "5e35b74f52dc67a18aabfab86f69655c847e87320684662a6112dec46d65111f",
+      "total_best_deaths_by_violence_type": {
+        "1": 1474454,
+        "2": 238564,
+        "3": 833733
+      },
+      "version": "20.1",
+      "zip_bytes": 17657250
+    },
+    "21.1": {
+      "csv_detected_encoding": "utf-8-sig",
+      "csv_member": "ged211.csv",
+      "distinct_state_based_country_year_n": 1275,
+      "event_count": 261864,
+      "event_ids_unique": true,
+      "events_by_violence_type": {
+        "1": 192769,
+        "2": 29005,
+        "3": 40090
+      },
+      "events_without_country_GWNO": 0,
+      "first_recorded_event_year": 1989,
+      "header": [
+        "id",
+        "relid",
+        "year",
+        "active_year",
+        "code_status",
+        "type_of_violence",
+        "conflict_dset_id",
+        "conflict_new_id",
+        "conflict_name",
+        "dyad_dset_id",
+        "dyad_new_id",
+        "dyad_name",
+        "side_a_dset_id",
+        "side_a_new_id",
+        "side_a",
+        "side_b_dset_id",
+        "side_b_new_id",
+        "side_b",
+        "number_of_sources",
+        "source_article",
+        "source_office",
+        "source_date",
+        "source_headline",
+        "source_original",
+        "where_prec",
+        "where_coordinates",
+        "where_description",
+        "adm_1",
+        "adm_2",
+        "latitude",
+        "longitude",
+        "geom_wkt",
+        "priogrid_gid",
+        "country",
+        "country_id",
+        "region",
+        "event_clarity",
+        "date_prec",
+        "date_start",
+        "date_end",
+        "deaths_a",
+        "deaths_b",
+        "deaths_civilians",
+        "deaths_unknown",
+        "best",
+        "high",
+        "low",
+        "gwnoa",
+        "gwnob"
+      ],
+      "last_recorded_event_year": 2020,
+      "nonmonotonic_low_best_high_event_n": 3981,
+      "sha256": "2cd62e39db0f49b784ecd1d48c364191c78afc9d5fb1bd9f6b6dda55dcd59afd",
+      "total_best_deaths_by_violence_type": {
+        "1": 1562261,
+        "2": 267531,
+        "3": 860894
+      },
+      "version": "21.1",
+      "zip_bytes": 21177279
+    },
+    "22.1": {
+      "csv_detected_encoding": "utf-8-sig",
+      "csv_member": "GEDEvent_v22_1.csv",
+      "distinct_state_based_country_year_n": 1332,
+      "event_count": 293634,
+      "event_ids_unique": true,
+      "events_by_violence_type": {
+        "1": 213689,
+        "2": 35665,
+        "3": 44280
+      },
+      "events_without_country_GWNO": 0,
+      "first_recorded_event_year": 1989,
+      "header": [
+        "id",
+        "relid",
+        "year",
+        "active_year",
+        "code_status",
+        "type_of_violence",
+        "conflict_dset_id",
+        "conflict_new_id",
+        "conflict_name",
+        "dyad_dset_id",
+        "dyad_new_id",
+        "dyad_name",
+        "side_a_dset_id",
+        "side_a_new_id",
+        "side_a",
+        "side_b_dset_id",
+        "side_b_new_id",
+        "side_b",
+        "number_of_sources",
+        "source_article",
+        "source_office",
+        "source_date",
+        "source_headline",
+        "source_original",
+        "where_prec",
+        "where_coordinates",
+        "where_description",
+        "adm_1",
+        "adm_2",
+        "latitude",
+        "longitude",
+        "geom_wkt",
+        "priogrid_gid",
+        "country",
+        "country_id",
+        "region",
+        "event_clarity",
+        "date_prec",
+        "date_start",
+        "date_end",
+        "deaths_a",
+        "deaths_b",
+        "deaths_civilians",
+        "deaths_unknown",
+        "best",
+        "high",
+        "low",
+        "gwnoa",
+        "gwnob"
+      ],
+      "last_recorded_event_year": 2021,
+      "nonmonotonic_low_best_high_event_n": 4503,
+      "sha256": "1741045a14a59e2ddbe9de4a190a7ef5b68d60d57be7e94178aff2e926a59f0d",
+      "total_best_deaths_by_violence_type": {
+        "1": 1674355,
+        "2": 299355,
+        "3": 887454
+      },
+      "version": "22.1",
+      "zip_bytes": 24139312
+    },
+    "23.1": {
+      "csv_detected_encoding": "utf-8-sig",
+      "csv_member": "GEDEvent_v23_1.csv",
+      "distinct_state_based_country_year_n": 1383,
+      "event_count": 316818,
+      "event_ids_unique": true,
+      "events_by_violence_type": {
+        "1": 227509,
+        "2": 40642,
+        "3": 48667
+      },
+      "events_without_country_GWNO": 0,
+      "first_recorded_event_year": 1989,
+      "header": [
+        "id",
+        "relid",
+        "year",
+        "active_year",
+        "code_status",
+        "type_of_violence",
+        "conflict_dset_id",
+        "conflict_new_id",
+        "conflict_name",
+        "dyad_dset_id",
+        "dyad_new_id",
+        "dyad_name",
+        "side_a_dset_id",
+        "side_a_new_id",
+        "side_a",
+        "side_b_dset_id",
+        "side_b_new_id",
+        "side_b",
+        "number_of_sources",
+        "source_article",
+        "source_office",
+        "source_date",
+        "source_headline",
+        "source_original",
+        "where_prec",
+        "where_coordinates",
+        "where_description",
+        "adm_1",
+        "adm_2",
+        "latitude",
+        "longitude",
+        "geom_wkt",
+        "priogrid_gid",
+        "country",
+        "country_id",
+        "region",
+        "event_clarity",
+        "date_prec",
+        "date_start",
+        "date_end",
+        "deaths_a",
+        "deaths_b",
+        "deaths_civilians",
+        "deaths_unknown",
+        "best",
+        "high",
+        "low",
+        "gwnoa",
+        "gwnob"
+      ],
+      "last_recorded_event_year": 2022,
+      "nonmonotonic_low_best_high_event_n": 4513,
+      "sha256": "9aa082f9e1f62da5ea3245c39b1cee45daab6dc8b3a17fb0f0cdae9ba13ce6f7",
+      "total_best_deaths_by_violence_type": {
+        "1": 1898765,
+        "2": 323067,
+        "3": 1135514
+      },
+      "version": "23.1",
+      "zip_bytes": 26587114
+    }
+  },
+  "status": "RETROSPECTIVE_OFFICIAL_GED_VINTAGE_TRANSITION_DIAGNOSTIC_NOT_AN_ISSUED_PREDICTION"
+}
