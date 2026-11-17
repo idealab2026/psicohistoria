@@ -150,10 +150,10 @@ def parse_ged(raw, version, *, expected_sha256=None):
                 prefix.decode("utf-8-sig")
                 enc="utf-8-sig"
             except UnicodeDecodeError:
-                # Some pre-2020 source exports use a legacy 8-bit encoding.
-                # This affects event actors/descriptions, not numeric fields,
+                # Some pre-2020 source ZIP members use a legacy 8-bit encoding.
+                # Use byte-total latin-1 for numeric-header inspection only,
                 # and must be explicitly recorded instead of silently ignored.
-                enc="cp1252"
+                enc="latin-1"
             encodings[member]=enc
             with io.TextIOWrapper(z.open(member),encoding=enc,
                                   newline="") as probe:
