@@ -82,7 +82,7 @@ class GEDCountryYearBridgeTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"Duplicate"):
             parse_ged(fake_zip(rows),"19.1")
         headers=("id","year","country_id","type_of_violence")
-        with self.assertRaisesRegex(ValueError,"schema"):
+        with self.assertRaisesRegex(ValueError,"GED event-table CSV member"):
             parse_ged(fake_zip([{
                 "id":"1","year":"2018","country_id":"230",
                 "type_of_violence":"1"}],headers),"19.1")
