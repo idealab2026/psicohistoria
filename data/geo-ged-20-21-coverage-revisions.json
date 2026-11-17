@@ -1,0 +1,1323 @@
+{
+  "GED19_1_vs_20_1_naive_incorrect_Syria_zero_comparison": {
+    "coverage_status": "GED19.1 excluded Syria, GED20.1 includes Syria",
+    "false_classification_flips_due_to_structural_missingness": 8,
+    "naive_label_flips": 10,
+    "naive_total_country_years": 1568,
+    "no_real_world_zero_labels_imputed": true,
+    "proper_territorial_coverage_censored_country_years": 1560,
+    "proper_territorial_coverage_censored_flips": 2,
+    "unobserved_Syria_country_years": 8
+  },
+  "GED22_1_2022_documented_extraction_not_evidence_of_original_ZIP_bytes": true,
+  "GEO2027_GEO2028_forecasts_modified": false,
+  "Syria_GWNO652_19_1_to_20_1": {
+    "GWNO": 652,
+    "new_best_ge25_year_n": 8,
+    "new_best_state_based_deaths": [
+      1145,
+      44648,
+      62998,
+      64202,
+      47571,
+      40864,
+      21239,
+      11965
+    ],
+    "old_best_ge25_year_n": 0,
+    "old_best_state_based_deaths": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "old_event_record_absence_is_not_proof_of_no_real_violence": true,
+    "years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018
+    ]
+  },
+  "Syria_GWNO652_20_1_to_23_1": {
+    "GWNO": 652,
+    "new_best_ge25_year_n": 9,
+    "new_best_state_based_deaths": [
+      1206,
+      50481,
+      72003,
+      66026,
+      51091,
+      44939,
+      25041,
+      13246,
+      7550
+    ],
+    "old_best_ge25_year_n": 9,
+    "old_best_state_based_deaths": [
+      1145,
+      44648,
+      62998,
+      64202,
+      47571,
+      40864,
+      21239,
+      11965,
+      7427
+    ],
+    "old_event_record_absence_is_not_proof_of_no_real_violence": true,
+    "years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  "archived_catalog": "https://ucdp.uu.se/downloads/olddw.html",
+  "comparison_primary_variable": "sum GED event best where type_of_violence=1 by GWNO and event year, >=25",
+  "current_official_source_checksums_are_not_historical_timestamp_proofs": true,
+  "historical_model_fitting_authorized": false,
+  "interpretation": "Cohort-paired event-sum label drift measures source revisions and coverage. GED19 omitted Syria; its zero-event record must never be coded as observed inactive. GED20.1 and 21.1 codebook extraction dates document historical source systems, not the cryptographic availability of today's exact GED ZIP at historical origin. These comparisons cannot establish prospective skill.",
+  "new_forecast_probabilities_issued": 0,
+  "no_2027_outcomes_scored": true,
+  "no_historical_contemporaneous_issue_sha_proof": true,
+  "official_20_21_codebooks": {
+    "20.1": {
+      "compiled_year": 2020,
+      "data_extracted_on": "2020-04-07",
+      "dataset_ZIP_digest_not_independently_timestamped_at_origin": true,
+      "last_event_year": 2019,
+      "notarized_original_release_timestamp": false,
+      "sha256_of_current_official_PDF": "964becfa74e56e9217c123d059a6e4156037750dbaadd4b4e5a25de2c990e03a",
+      "url": "https://ucdp.uu.se/downloads/ged/ged201.pdf"
+    },
+    "21.1": {
+      "compiled_year": 2021,
+      "data_extracted_on": "2021-04-08",
+      "dataset_ZIP_digest_not_independently_timestamped_at_origin": true,
+      "last_event_year": 2020,
+      "notarized_original_release_timestamp": false,
+      "sha256_of_current_official_PDF": "4d1c6ab95462e8bee2c6a4e501fef7b5a5cde6c0e0cd1064bb5c8d3d3c7ab80c",
+      "url": "https://ucdp.uu.se/downloads/ged/ged211.pdf"
+    }
+  },
+  "older_GED20_21_as_identical_to_OrganizedViolenceCY23_1": false,
+  "original_23_1_same_vintage_GED_CY_bridge_validated_in_prior_report": true,
+  "original_GEO2027_forecast_SHA256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "original_frozen_196_GWNO": true,
+  "pairs": [
+    {
+      "comparison": {
+        "absolute_best_death_count_revision_sum": 1259,
+        "annual": [
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 195,
+            "exact_count_matches": 195,
+            "numerical_best_death_count_mismatches": 0,
+            "target_year": 2011
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 195,
+            "exact_count_matches": 194,
+            "numerical_best_death_count_mismatches": 1,
+            "target_year": 2012
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 195,
+            "exact_count_matches": 192,
+            "numerical_best_death_count_mismatches": 3,
+            "target_year": 2013
+          },
+          {
+            "binary_best_ge25_label_flips": 1,
+            "eligible_country_n": 195,
+            "exact_count_matches": 189,
+            "numerical_best_death_count_mismatches": 6,
+            "target_year": 2014
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 195,
+            "exact_count_matches": 191,
+            "numerical_best_death_count_mismatches": 4,
+            "target_year": 2015
+          },
+          {
+            "binary_best_ge25_label_flips": 1,
+            "eligible_country_n": 195,
+            "exact_count_matches": 184,
+            "numerical_best_death_count_mismatches": 11,
+            "target_year": 2016
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 195,
+            "exact_count_matches": 187,
+            "numerical_best_death_count_mismatches": 8,
+            "target_year": 2017
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 195,
+            "exact_count_matches": 183,
+            "numerical_best_death_count_mismatches": 12,
+            "target_year": 2018
+          }
+        ],
+        "best_death_count_mismatch_n": 45,
+        "best_ge25_binary_label_change_n": 2,
+        "binary_flip_details": [
+          {
+            "GWNO": 541,
+            "new_active": true,
+            "new_best_statebased_deaths": 30,
+            "old_active": false,
+            "old_best_statebased_deaths": 21,
+            "target_year": 2014
+          },
+          {
+            "GWNO": 540,
+            "new_active": true,
+            "new_best_statebased_deaths": 25,
+            "old_active": false,
+            "old_best_statebased_deaths": 18,
+            "target_year": 2016
+          }
+        ],
+        "eligible_countries_per_year": 195,
+        "exact_best_death_count_match_fraction": 0.9711538461538461,
+        "exact_best_death_count_match_n": 1515,
+        "excluded_GWNO_due_official_GED_coverage": [
+          652
+        ],
+        "excluded_unobserved_country_years": 8,
+        "new_active_country_year_n": 225,
+        "not_inference_from_iid_samples": true,
+        "observed_country_years": 1560,
+        "old_active_country_year_n": 223,
+        "signed_new_minus_old_best_deaths": 1069,
+        "target_years": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ]
+      },
+      "is_consecutive_release": true,
+      "new_release_last_event_year": 2019,
+      "new_version": "20.1",
+      "old_release_last_event_year": 2018,
+      "old_version": "19.1",
+      "same_country_years_not_independent_across_pairs": true
+    },
+    {
+      "comparison": {
+        "absolute_best_death_count_revision_sum": 23214,
+        "annual": [
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 188,
+            "numerical_best_death_count_mismatches": 8,
+            "target_year": 2011
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 190,
+            "numerical_best_death_count_mismatches": 6,
+            "target_year": 2012
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 191,
+            "numerical_best_death_count_mismatches": 5,
+            "target_year": 2013
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 189,
+            "numerical_best_death_count_mismatches": 7,
+            "target_year": 2014
+          },
+          {
+            "binary_best_ge25_label_flips": 1,
+            "eligible_country_n": 196,
+            "exact_count_matches": 186,
+            "numerical_best_death_count_mismatches": 10,
+            "target_year": 2015
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 188,
+            "numerical_best_death_count_mismatches": 8,
+            "target_year": 2016
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 186,
+            "numerical_best_death_count_mismatches": 10,
+            "target_year": 2017
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 182,
+            "numerical_best_death_count_mismatches": 14,
+            "target_year": 2018
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 173,
+            "numerical_best_death_count_mismatches": 23,
+            "target_year": 2019
+          }
+        ],
+        "best_death_count_mismatch_n": 91,
+        "best_ge25_binary_label_change_n": 1,
+        "binary_flip_details": [
+          {
+            "GWNO": 630,
+            "new_active": true,
+            "new_best_statebased_deaths": 25,
+            "old_active": false,
+            "old_best_statebased_deaths": 24,
+            "target_year": 2015
+          }
+        ],
+        "eligible_countries_per_year": 196,
+        "exact_best_death_count_match_fraction": 0.9484126984126984,
+        "exact_best_death_count_match_n": 1673,
+        "excluded_GWNO_due_official_GED_coverage": [],
+        "excluded_unobserved_country_years": 0,
+        "new_active_country_year_n": 265,
+        "not_inference_from_iid_samples": true,
+        "observed_country_years": 1764,
+        "old_active_country_year_n": 264,
+        "signed_new_minus_old_best_deaths": 22834,
+        "target_years": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ]
+      },
+      "is_consecutive_release": true,
+      "new_release_last_event_year": 2020,
+      "new_version": "21.1",
+      "old_release_last_event_year": 2019,
+      "old_version": "20.1",
+      "same_country_years_not_independent_across_pairs": true
+    },
+    {
+      "comparison": {
+        "absolute_best_death_count_revision_sum": 12303,
+        "annual": [
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 192,
+            "numerical_best_death_count_mismatches": 4,
+            "target_year": 2011
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 192,
+            "numerical_best_death_count_mismatches": 4,
+            "target_year": 2012
+          },
+          {
+            "binary_best_ge25_label_flips": 1,
+            "eligible_country_n": 196,
+            "exact_count_matches": 192,
+            "numerical_best_death_count_mismatches": 4,
+            "target_year": 2013
+          },
+          {
+            "binary_best_ge25_label_flips": 1,
+            "eligible_country_n": 196,
+            "exact_count_matches": 187,
+            "numerical_best_death_count_mismatches": 9,
+            "target_year": 2014
+          },
+          {
+            "binary_best_ge25_label_flips": 2,
+            "eligible_country_n": 196,
+            "exact_count_matches": 188,
+            "numerical_best_death_count_mismatches": 8,
+            "target_year": 2015
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 187,
+            "numerical_best_death_count_mismatches": 9,
+            "target_year": 2016
+          },
+          {
+            "binary_best_ge25_label_flips": 2,
+            "eligible_country_n": 196,
+            "exact_count_matches": 186,
+            "numerical_best_death_count_mismatches": 10,
+            "target_year": 2017
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 185,
+            "numerical_best_death_count_mismatches": 11,
+            "target_year": 2018
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 185,
+            "numerical_best_death_count_mismatches": 11,
+            "target_year": 2019
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 173,
+            "numerical_best_death_count_mismatches": 23,
+            "target_year": 2020
+          }
+        ],
+        "best_death_count_mismatch_n": 93,
+        "best_ge25_binary_label_change_n": 6,
+        "binary_flip_details": [
+          {
+            "GWNO": 616,
+            "new_active": true,
+            "new_best_statebased_deaths": 29,
+            "old_active": false,
+            "old_best_statebased_deaths": 0,
+            "target_year": 2013
+          },
+          {
+            "GWNO": 616,
+            "new_active": true,
+            "new_best_statebased_deaths": 51,
+            "old_active": false,
+            "old_best_statebased_deaths": 0,
+            "target_year": 2014
+          },
+          {
+            "GWNO": 482,
+            "new_active": true,
+            "new_best_statebased_deaths": 34,
+            "old_active": false,
+            "old_best_statebased_deaths": 15,
+            "target_year": 2015
+          },
+          {
+            "GWNO": 616,
+            "new_active": true,
+            "new_best_statebased_deaths": 75,
+            "old_active": false,
+            "old_best_statebased_deaths": 17,
+            "target_year": 2015
+          },
+          {
+            "GWNO": 482,
+            "new_active": true,
+            "new_best_statebased_deaths": 56,
+            "old_active": false,
+            "old_best_statebased_deaths": 4,
+            "target_year": 2017
+          },
+          {
+            "GWNO": 670,
+            "new_active": true,
+            "new_best_statebased_deaths": 45,
+            "old_active": false,
+            "old_best_statebased_deaths": 4,
+            "target_year": 2017
+          }
+        ],
+        "eligible_countries_per_year": 196,
+        "exact_best_death_count_match_fraction": 0.9525510204081633,
+        "exact_best_death_count_match_n": 1867,
+        "excluded_GWNO_due_official_GED_coverage": [],
+        "excluded_unobserved_country_years": 0,
+        "new_active_country_year_n": 305,
+        "not_inference_from_iid_samples": true,
+        "observed_country_years": 1960,
+        "old_active_country_year_n": 299,
+        "signed_new_minus_old_best_deaths": 11829,
+        "target_years": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ]
+      },
+      "is_consecutive_release": true,
+      "new_release_last_event_year": 2021,
+      "new_version": "22.1",
+      "old_release_last_event_year": 2020,
+      "old_version": "21.1",
+      "same_country_years_not_independent_across_pairs": true
+    },
+    {
+      "comparison": {
+        "absolute_best_death_count_revision_sum": 6368,
+        "annual": [
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 195,
+            "numerical_best_death_count_mismatches": 1,
+            "target_year": 2011
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 192,
+            "numerical_best_death_count_mismatches": 4,
+            "target_year": 2012
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 195,
+            "numerical_best_death_count_mismatches": 1,
+            "target_year": 2013
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 191,
+            "numerical_best_death_count_mismatches": 5,
+            "target_year": 2014
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 190,
+            "numerical_best_death_count_mismatches": 6,
+            "target_year": 2015
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 190,
+            "numerical_best_death_count_mismatches": 6,
+            "target_year": 2016
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 192,
+            "numerical_best_death_count_mismatches": 4,
+            "target_year": 2017
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 192,
+            "numerical_best_death_count_mismatches": 4,
+            "target_year": 2018
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 187,
+            "numerical_best_death_count_mismatches": 9,
+            "target_year": 2019
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 187,
+            "numerical_best_death_count_mismatches": 9,
+            "target_year": 2020
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 181,
+            "numerical_best_death_count_mismatches": 15,
+            "target_year": 2021
+          }
+        ],
+        "best_death_count_mismatch_n": 64,
+        "best_ge25_binary_label_change_n": 0,
+        "binary_flip_details": [],
+        "eligible_countries_per_year": 196,
+        "exact_best_death_count_match_fraction": 0.9703153988868275,
+        "exact_best_death_count_match_n": 2092,
+        "excluded_GWNO_due_official_GED_coverage": [],
+        "excluded_unobserved_country_years": 0,
+        "new_active_country_year_n": 337,
+        "not_inference_from_iid_samples": true,
+        "observed_country_years": 2156,
+        "old_active_country_year_n": 337,
+        "signed_new_minus_old_best_deaths": 5936,
+        "target_years": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ]
+      },
+      "is_consecutive_release": true,
+      "new_release_last_event_year": 2022,
+      "new_version": "23.1",
+      "old_release_last_event_year": 2021,
+      "old_version": "22.1",
+      "same_country_years_not_independent_across_pairs": true
+    },
+    {
+      "comparison": {
+        "absolute_best_death_count_revision_sum": 36195,
+        "annual": [
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 184,
+            "numerical_best_death_count_mismatches": 12,
+            "target_year": 2011
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 187,
+            "numerical_best_death_count_mismatches": 9,
+            "target_year": 2012
+          },
+          {
+            "binary_best_ge25_label_flips": 1,
+            "eligible_country_n": 196,
+            "exact_count_matches": 187,
+            "numerical_best_death_count_mismatches": 9,
+            "target_year": 2013
+          },
+          {
+            "binary_best_ge25_label_flips": 1,
+            "eligible_country_n": 196,
+            "exact_count_matches": 182,
+            "numerical_best_death_count_mismatches": 14,
+            "target_year": 2014
+          },
+          {
+            "binary_best_ge25_label_flips": 3,
+            "eligible_country_n": 196,
+            "exact_count_matches": 180,
+            "numerical_best_death_count_mismatches": 16,
+            "target_year": 2015
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 182,
+            "numerical_best_death_count_mismatches": 14,
+            "target_year": 2016
+          },
+          {
+            "binary_best_ge25_label_flips": 2,
+            "eligible_country_n": 196,
+            "exact_count_matches": 181,
+            "numerical_best_death_count_mismatches": 15,
+            "target_year": 2017
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 176,
+            "numerical_best_death_count_mismatches": 20,
+            "target_year": 2018
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 168,
+            "numerical_best_death_count_mismatches": 28,
+            "target_year": 2019
+          }
+        ],
+        "best_death_count_mismatch_n": 137,
+        "best_ge25_binary_label_change_n": 7,
+        "binary_flip_details": [
+          {
+            "GWNO": 616,
+            "new_active": true,
+            "new_best_statebased_deaths": 29,
+            "old_active": false,
+            "old_best_statebased_deaths": 0,
+            "target_year": 2013
+          },
+          {
+            "GWNO": 616,
+            "new_active": true,
+            "new_best_statebased_deaths": 51,
+            "old_active": false,
+            "old_best_statebased_deaths": 0,
+            "target_year": 2014
+          },
+          {
+            "GWNO": 482,
+            "new_active": true,
+            "new_best_statebased_deaths": 34,
+            "old_active": false,
+            "old_best_statebased_deaths": 6,
+            "target_year": 2015
+          },
+          {
+            "GWNO": 616,
+            "new_active": true,
+            "new_best_statebased_deaths": 75,
+            "old_active": false,
+            "old_best_statebased_deaths": 4,
+            "target_year": 2015
+          },
+          {
+            "GWNO": 630,
+            "new_active": true,
+            "new_best_statebased_deaths": 25,
+            "old_active": false,
+            "old_best_statebased_deaths": 24,
+            "target_year": 2015
+          },
+          {
+            "GWNO": 482,
+            "new_active": true,
+            "new_best_statebased_deaths": 56,
+            "old_active": false,
+            "old_best_statebased_deaths": 2,
+            "target_year": 2017
+          },
+          {
+            "GWNO": 670,
+            "new_active": true,
+            "new_best_statebased_deaths": 45,
+            "old_active": false,
+            "old_best_statebased_deaths": 4,
+            "target_year": 2017
+          }
+        ],
+        "eligible_countries_per_year": 196,
+        "exact_best_death_count_match_fraction": 0.9223356009070295,
+        "exact_best_death_count_match_n": 1627,
+        "excluded_GWNO_due_official_GED_coverage": [],
+        "excluded_unobserved_country_years": 0,
+        "new_active_country_year_n": 271,
+        "not_inference_from_iid_samples": true,
+        "observed_country_years": 1764,
+        "old_active_country_year_n": 264,
+        "signed_new_minus_old_best_deaths": 35751,
+        "target_years": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ]
+      },
+      "is_consecutive_release": false,
+      "new_release_last_event_year": 2022,
+      "new_version": "23.1",
+      "old_release_last_event_year": 2019,
+      "old_version": "20.1",
+      "same_country_years_not_independent_across_pairs": true
+    },
+    {
+      "comparison": {
+        "absolute_best_death_count_revision_sum": 18138,
+        "annual": [
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 191,
+            "numerical_best_death_count_mismatches": 5,
+            "target_year": 2011
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 189,
+            "numerical_best_death_count_mismatches": 7,
+            "target_year": 2012
+          },
+          {
+            "binary_best_ge25_label_flips": 1,
+            "eligible_country_n": 196,
+            "exact_count_matches": 191,
+            "numerical_best_death_count_mismatches": 5,
+            "target_year": 2013
+          },
+          {
+            "binary_best_ge25_label_flips": 1,
+            "eligible_country_n": 196,
+            "exact_count_matches": 184,
+            "numerical_best_death_count_mismatches": 12,
+            "target_year": 2014
+          },
+          {
+            "binary_best_ge25_label_flips": 2,
+            "eligible_country_n": 196,
+            "exact_count_matches": 185,
+            "numerical_best_death_count_mismatches": 11,
+            "target_year": 2015
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 185,
+            "numerical_best_death_count_mismatches": 11,
+            "target_year": 2016
+          },
+          {
+            "binary_best_ge25_label_flips": 2,
+            "eligible_country_n": 196,
+            "exact_count_matches": 185,
+            "numerical_best_death_count_mismatches": 11,
+            "target_year": 2017
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 183,
+            "numerical_best_death_count_mismatches": 13,
+            "target_year": 2018
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 179,
+            "numerical_best_death_count_mismatches": 17,
+            "target_year": 2019
+          },
+          {
+            "binary_best_ge25_label_flips": 0,
+            "eligible_country_n": 196,
+            "exact_count_matches": 171,
+            "numerical_best_death_count_mismatches": 25,
+            "target_year": 2020
+          }
+        ],
+        "best_death_count_mismatch_n": 117,
+        "best_ge25_binary_label_change_n": 6,
+        "binary_flip_details": [
+          {
+            "GWNO": 616,
+            "new_active": true,
+            "new_best_statebased_deaths": 29,
+            "old_active": false,
+            "old_best_statebased_deaths": 0,
+            "target_year": 2013
+          },
+          {
+            "GWNO": 616,
+            "new_active": true,
+            "new_best_statebased_deaths": 51,
+            "old_active": false,
+            "old_best_statebased_deaths": 0,
+            "target_year": 2014
+          },
+          {
+            "GWNO": 482,
+            "new_active": true,
+            "new_best_statebased_deaths": 34,
+            "old_active": false,
+            "old_best_statebased_deaths": 15,
+            "target_year": 2015
+          },
+          {
+            "GWNO": 616,
+            "new_active": true,
+            "new_best_statebased_deaths": 75,
+            "old_active": false,
+            "old_best_statebased_deaths": 17,
+            "target_year": 2015
+          },
+          {
+            "GWNO": 482,
+            "new_active": true,
+            "new_best_statebased_deaths": 56,
+            "old_active": false,
+            "old_best_statebased_deaths": 4,
+            "target_year": 2017
+          },
+          {
+            "GWNO": 670,
+            "new_active": true,
+            "new_best_statebased_deaths": 45,
+            "old_active": false,
+            "old_best_statebased_deaths": 4,
+            "target_year": 2017
+          }
+        ],
+        "eligible_countries_per_year": 196,
+        "exact_best_death_count_match_fraction": 0.9403061224489796,
+        "exact_best_death_count_match_n": 1843,
+        "excluded_GWNO_due_official_GED_coverage": [],
+        "excluded_unobserved_country_years": 0,
+        "new_active_country_year_n": 305,
+        "not_inference_from_iid_samples": true,
+        "observed_country_years": 1960,
+        "old_active_country_year_n": 299,
+        "signed_new_minus_old_best_deaths": 17472,
+        "target_years": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ]
+      },
+      "is_consecutive_release": false,
+      "new_release_last_event_year": 2022,
+      "new_version": "23.1",
+      "old_release_last_event_year": 2020,
+      "old_version": "21.1",
+      "same_country_years_not_independent_across_pairs": true
+    }
+  ],
+  "schema": "idealab.psico.ged_20_21_intervintage_coverage_2011_2022.v1",
+  "selected_years_in_analysis": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "source_zip_metadata": {
+    "19.1": {
+      "csv_detected_encoding": "utf-8-sig",
+      "csv_member": "ged191.csv",
+      "distinct_state_based_country_year_n": 1172,
+      "event_count": 152616,
+      "event_ids_unique": true,
+      "events_by_violence_type": {
+        "1": 107247,
+        "2": 14228,
+        "3": 31141
+      },
+      "events_without_country_GWNO": 0,
+      "first_recorded_event_year": 1989,
+      "header": [
+        "id",
+        "year",
+        "active_year",
+        "type_of_violence",
+        "conflict_new_id",
+        "conflict_name",
+        "dyad_new_id",
+        "dyad_name",
+        "side_a_new_id",
+        "gwnoa",
+        "side_a",
+        "side_b_new_id",
+        "gwnob",
+        "side_b",
+        "number_of_sources",
+        "source_article",
+        "source_office",
+        "source_date",
+        "source_headline",
+        "source_original",
+        "where_prec",
+        "where_coordinates",
+        "adm_1",
+        "adm_2",
+        "latitude",
+        "longitude",
+        "geom_wkt",
+        "priogrid_gid",
+        "country",
+        "country_id",
+        "region",
+        "event_clarity",
+        "date_prec",
+        "date_start",
+        "date_end",
+        "deaths_a",
+        "deaths_b",
+        "deaths_civilians",
+        "deaths_unknown",
+        "low",
+        "best",
+        "high"
+      ],
+      "last_recorded_event_year": 2018,
+      "nonmonotonic_low_best_high_event_n": 2506,
+      "sha256": "58a640f82abe9b67090ded37f3163ca6839b36d737fddaacde95763b459a018f",
+      "total_best_deaths_by_violence_type": {
+        "1": 1127259,
+        "2": 167098,
+        "3": 794738
+      },
+      "version": "19.1",
+      "zip_bytes": 13316667
+    },
+    "20.1": {
+      "csv_detected_encoding": "utf-8-sig",
+      "csv_member": "ged201.csv",
+      "distinct_state_based_country_year_n": 1231,
+      "event_count": 225385,
+      "event_ids_unique": true,
+      "events_by_violence_type": {
+        "1": 166379,
+        "2": 22923,
+        "3": 36083
+      },
+      "events_without_country_GWNO": 0,
+      "first_recorded_event_year": 1989,
+      "header": [
+        "id",
+        "relid",
+        "year",
+        "active_year",
+        "code_status",
+        "type_of_violence",
+        "conflict_dset_id",
+        "conflict_new_id",
+        "conflict_name",
+        "dyad_dset_id",
+        "dyad_new_id",
+        "dyad_name",
+        "side_a_dset_id",
+        "side_a_new_id",
+        "side_a",
+        "side_b_dset_id",
+        "side_b_new_id",
+        "side_b",
+        "number_of_sources",
+        "source_article",
+        "source_office",
+        "source_date",
+        "source_headline",
+        "source_original",
+        "where_prec",
+        "where_coordinates",
+        "where_description",
+        "adm_1",
+        "adm_2",
+        "latitude",
+        "longitude",
+        "geom_wkt",
+        "priogrid_gid",
+        "country",
+        "country_id",
+        "region",
+        "event_clarity",
+        "date_prec",
+        "date_start",
+        "date_end",
+        "deaths_a",
+        "deaths_b",
+        "deaths_civilians",
+        "deaths_unknown",
+        "best",
+        "high",
+        "low",
+        "gwnoa",
+        "gwnob"
+      ],
+      "last_recorded_event_year": 2019,
+      "nonmonotonic_low_best_high_event_n": 3877,
+      "sha256": "5e35b74f52dc67a18aabfab86f69655c847e87320684662a6112dec46d65111f",
+      "total_best_deaths_by_violence_type": {
+        "1": 1474454,
+        "2": 238564,
+        "3": 833733
+      },
+      "version": "20.1",
+      "zip_bytes": 17657250
+    },
+    "21.1": {
+      "csv_detected_encoding": "utf-8-sig",
+      "csv_member": "ged211.csv",
+      "distinct_state_based_country_year_n": 1275,
+      "event_count": 261864,
+      "event_ids_unique": true,
+      "events_by_violence_type": {
+        "1": 192769,
+        "2": 29005,
+        "3": 40090
+      },
+      "events_without_country_GWNO": 0,
+      "first_recorded_event_year": 1989,
+      "header": [
+        "id",
+        "relid",
+        "year",
+        "active_year",
+        "code_status",
+        "type_of_violence",
+        "conflict_dset_id",
+        "conflict_new_id",
+        "conflict_name",
+        "dyad_dset_id",
+        "dyad_new_id",
+        "dyad_name",
+        "side_a_dset_id",
+        "side_a_new_id",
+        "side_a",
+        "side_b_dset_id",
+        "side_b_new_id",
+        "side_b",
+        "number_of_sources",
+        "source_article",
+        "source_office",
+        "source_date",
+        "source_headline",
+        "source_original",
+        "where_prec",
+        "where_coordinates",
+        "where_description",
+        "adm_1",
+        "adm_2",
+        "latitude",
+        "longitude",
+        "geom_wkt",
+        "priogrid_gid",
+        "country",
+        "country_id",
+        "region",
+        "event_clarity",
+        "date_prec",
+        "date_start",
+        "date_end",
+        "deaths_a",
+        "deaths_b",
+        "deaths_civilians",
+        "deaths_unknown",
+        "best",
+        "high",
+        "low",
+        "gwnoa",
+        "gwnob"
+      ],
+      "last_recorded_event_year": 2020,
+      "nonmonotonic_low_best_high_event_n": 3981,
+      "sha256": "2cd62e39db0f49b784ecd1d48c364191c78afc9d5fb1bd9f6b6dda55dcd59afd",
+      "total_best_deaths_by_violence_type": {
+        "1": 1562261,
+        "2": 267531,
+        "3": 860894
+      },
+      "version": "21.1",
+      "zip_bytes": 21177279
+    },
+    "22.1": {
+      "csv_detected_encoding": "utf-8-sig",
+      "csv_member": "GEDEvent_v22_1.csv",
+      "distinct_state_based_country_year_n": 1332,
+      "event_count": 293634,
+      "event_ids_unique": true,
+      "events_by_violence_type": {
+        "1": 213689,
+        "2": 35665,
+        "3": 44280
+      },
+      "events_without_country_GWNO": 0,
+      "first_recorded_event_year": 1989,
+      "header": [
+        "id",
+        "relid",
+        "year",
+        "active_year",
+        "code_status",
+        "type_of_violence",
+        "conflict_dset_id",
+        "conflict_new_id",
+        "conflict_name",
+        "dyad_dset_id",
+        "dyad_new_id",
+        "dyad_name",
+        "side_a_dset_id",
+        "side_a_new_id",
+        "side_a",
+        "side_b_dset_id",
+        "side_b_new_id",
+        "side_b",
+        "number_of_sources",
+        "source_article",
+        "source_office",
+        "source_date",
+        "source_headline",
+        "source_original",
+        "where_prec",
+        "where_coordinates",
+        "where_description",
+        "adm_1",
+        "adm_2",
+        "latitude",
+        "longitude",
+        "geom_wkt",
+        "priogrid_gid",
+        "country",
+        "country_id",
+        "region",
+        "event_clarity",
+        "date_prec",
+        "date_start",
+        "date_end",
+        "deaths_a",
+        "deaths_b",
+        "deaths_civilians",
+        "deaths_unknown",
+        "best",
+        "high",
+        "low",
+        "gwnoa",
+        "gwnob"
+      ],
+      "last_recorded_event_year": 2021,
+      "nonmonotonic_low_best_high_event_n": 4503,
+      "sha256": "1741045a14a59e2ddbe9de4a190a7ef5b68d60d57be7e94178aff2e926a59f0d",
+      "total_best_deaths_by_violence_type": {
+        "1": 1674355,
+        "2": 299355,
+        "3": 887454
+      },
+      "version": "22.1",
+      "zip_bytes": 24139312
+    },
+    "23.1": {
+      "csv_detected_encoding": "utf-8-sig",
+      "csv_member": "GEDEvent_v23_1.csv",
+      "distinct_state_based_country_year_n": 1383,
+      "event_count": 316818,
+      "event_ids_unique": true,
+      "events_by_violence_type": {
+        "1": 227509,
+        "2": 40642,
+        "3": 48667
+      },
+      "events_without_country_GWNO": 0,
+      "first_recorded_event_year": 1989,
+      "header": [
+        "id",
+        "relid",
+        "year",
+        "active_year",
+        "code_status",
+        "type_of_violence",
+        "conflict_dset_id",
+        "conflict_new_id",
+        "conflict_name",
+        "dyad_dset_id",
+        "dyad_new_id",
+        "dyad_name",
+        "side_a_dset_id",
+        "side_a_new_id",
+        "side_a",
+        "side_b_dset_id",
+        "side_b_new_id",
+        "side_b",
+        "number_of_sources",
+        "source_article",
+        "source_office",
+        "source_date",
+        "source_headline",
+        "source_original",
+        "where_prec",
+        "where_coordinates",
+        "where_description",
+        "adm_1",
+        "adm_2",
+        "latitude",
+        "longitude",
+        "geom_wkt",
+        "priogrid_gid",
+        "country",
+        "country_id",
+        "region",
+        "event_clarity",
+        "date_prec",
+        "date_start",
+        "date_end",
+        "deaths_a",
+        "deaths_b",
+        "deaths_civilians",
+        "deaths_unknown",
+        "best",
+        "high",
+        "low",
+        "gwnoa",
+        "gwnob"
+      ],
+      "last_recorded_event_year": 2022,
+      "nonmonotonic_low_best_high_event_n": 4513,
+      "sha256": "9aa082f9e1f62da5ea3245c39b1cee45daab6dc8b3a17fb0f0cdae9ba13ce6f7",
+      "total_best_deaths_by_violence_type": {
+        "1": 1898765,
+        "2": 323067,
+        "3": 1135514
+      },
+      "version": "23.1",
+      "zip_bytes": 26587114
+    }
+  },
+  "source_zip_sha256": {
+    "19.1": "58a640f82abe9b67090ded37f3163ca6839b36d737fddaacde95763b459a018f",
+    "20.1": "5e35b74f52dc67a18aabfab86f69655c847e87320684662a6112dec46d65111f",
+    "21.1": "2cd62e39db0f49b784ecd1d48c364191c78afc9d5fb1bd9f6b6dda55dcd59afd",
+    "22.1": "1741045a14a59e2ddbe9de4a190a7ef5b68d60d57be7e94178aff2e926a59f0d",
+    "23.1": "9aa082f9e1f62da5ea3245c39b1cee45daab6dc8b3a17fb0f0cdae9ba13ce6f7"
+  },
+  "status": "OFFICIAL_GED_VINTAGE_MEASUREMENT_STRESS_NO_MODEL_FORECASTS"
+}
