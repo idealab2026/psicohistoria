@@ -33,7 +33,7 @@ jobs:
       - name: Replay four SHA-pinned official UCDP archives and require frozen Brier references
         run: |
           set -e
-          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_geo_h2_fatality_estimate_brier_sensitivity.py --print-report
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_geo_h2_fatality_estimate_brier_sensitivity.py --check-report
       - name: Audit public repository allowlist
         run: |
           set -e
