@@ -54,8 +54,12 @@ SHRINK=20
 LAPLACE=1
 MAX_ZIP=95_000_000
 CY_MAX=8_000_000
-# Populate after exact source replay, not from guesswork.
-GED_EARLY_SHA256={}
+# SHA-256 of official archived GED 17.1/18.1 ZIPs reproduced on 2026-11-17.
+# These authenticate today's archived bytes, not a pre-2017 notarized ZIP.
+GED_EARLY_SHA256={
+    "17.1":"6dcf0a3fa90c03295255d6f64540e679b034444eab1e00ec12462ac0e7e23baa",
+    "18.1":"9194d3c2849631e3b9dbcf1dd5842d3cfb35168491c071c7c74208be8106e882",
+}
 
 
 def _frozen_original_ids(issue):
