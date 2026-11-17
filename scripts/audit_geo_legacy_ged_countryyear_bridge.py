@@ -140,8 +140,20 @@ def parse_ged(raw, version, *, expected_sha256=None):
     with ZipFile(io.BytesIO(raw)) as z:
         members=[x for x in z.namelist()
                  if x.lower().endswith(".csv") and not x.endswith("/")]
-        if len(members)!=1:
-            raise ValueError("Unexpected GED CSV ZIP members; refuse arbitrary choice")
+        required={"id","year","country_id","type_of_violence","best"}
+        eligible=[]
+        for member in members:
+            with io.TextIOWrapper(z.open(member),encoding="utf-8-sig",
+                                  newline="") as probe:
+                header=next(csv.reader(probe), [])
+            if required.issubset(header):
+                eligible.append(member)
+        if len(eligible)!=1:
+            raise ValueError("Expected exactly one GED event-table CSV member with "
+                             "id/year/country/type/best, discovered " +
+                             repr({"all_csv":members[:12], "matched":eligible[:12],
+                                   "first_zip_members":z.namelist()[:8]}))
+        selected_member=eligible[0]
         counts=defaultdict(int)
         deaths_by_type={1:0,2:0,3:0}
         events_by_type={1:0,2:0,3:0}
@@ -149,11 +161,10 @@ def parse_ged(raw, version, *, expected_sha256=None):
         seen_ids=set()
         bad_estimate_order=0
         omitted_country=0
-        with io.TextIOWrapper(z.open(members[0]),encoding="utf-8-sig",
+        with io.TextIOWrapper(z.open(selected_member),encoding="utf-8-sig",
                               newline="") as source:
             reader=csv.DictReader(source)
             fields=set(reader.fieldnames or ())
-            required={"id","year","country_id","type_of_violence","best"}
             if not required.issubset(fields):
                 raise ValueError("GED event schema lacks immutable required fields: "+
                                  repr(sorted(required-fields)))
@@ -189,7 +200,7 @@ def parse_ged(raw, version, *, expected_sha256=None):
             "version":version,
             "sha256":actual,
             "zip_bytes":len(raw),
-            "csv_member":members[0],
+            "csv_member":selected_member,
             "header":list(reader.fieldnames or []),
             "event_ids_unique":True,
             "event_count":len(seen_ids),
