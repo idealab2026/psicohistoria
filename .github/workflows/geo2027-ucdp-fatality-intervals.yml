@@ -1,0 +1,47 @@
+name: GEO2027 UCDP fatality-estimate interval sensitivity
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_geo2027_fatality_intervals.py'
+      - 'scripts/test_audit_geo2027_fatality_intervals.py'
+      - 'docs/geo2027-ucdp-fatality-interval-sensitivity.md'
+      - '.github/workflows/geo2027-ucdp-fatality-intervals.yml'
+      - 'scripts/audit_public.py'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_geo2027_fatality_intervals.py'
+      - 'scripts/test_audit_geo2027_fatality_intervals.py'
+      - 'docs/geo2027-ucdp-fatality-interval-sensitivity.md'
+      - '.github/workflows/geo2027-ucdp-fatality-intervals.yml'
+      - 'scripts/audit_public.py'
+permissions:
+  contents: read
+jobs:
+  geo2027_fatality_interval_sensitivity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check frozen primary forecast and synthetic low best high sensitivity
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_audit_geo2027_fatality_intervals.py' -v
+      - name: Ensure no 2027 mortality results or Brier are fabricated
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_geo2027_fatality_intervals.py > /tmp/geo2027-interval-not-ready.json
+          python3 - <<'PY'
+          import json
+          state=json.load(open('/tmp/geo2027-interval-not-ready.json'))
+          assert state['status']=='NOT_READY_NO_VERIFIED_OFFICIAL_2027_RELEASE'
+          assert state['low_best_high_outcomes_resolved']==0
+          assert state['fixed_country_n']==196
+          assert state['new_probabilities_or_alerts_issued'] is False
+          assert 'score' not in state and 'brier' not in state
+          PY
+      - name: Check institutional repository allowlist and privacy gate
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_public.py
