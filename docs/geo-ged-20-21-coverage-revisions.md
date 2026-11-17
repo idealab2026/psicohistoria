@@ -25,6 +25,40 @@ Para cada comparación se publica el número exacto de país-años comparables, 
 
 **Precaución:** que GED23.1 reproduzca OrganizedViolenceCY23.1 no demuestra equivalencia automática de GED20.1/21.1 con el mismo resultado de otra edición, ni convierte una ausencia de evento en certeza de paz. Los cambios entre versiones son una mezcla de revisión editorial, disponibilidad/cobertura y posible definición revisada. Donde falta una fuente no se imputan ceros.
 
+## Resultados reales reconstruidos desde las fuentes oficiales
+
+Se han recuperado y verificado las cinco ediciones GED por SHA-256, además de ambos codebooks de 2020 y 2021. GED20.1 contiene **225.385 eventos** (hasta 2019), y GED21.1 contiene **261.864 eventos** (hasta 2020). Se utiliza exclusivamente type_of_violence=1 para la variable original de violencia estatal.
+
+| Ediciones comparadas y años comunes | País-años comparables | Recuentos best distintos | Etiquetas >=25 distintas |
+|---|---:|---:|---:|
+| GED19.1 → GED20.1, 2011–2018, **sin Siria** | **1.560** | 45 | **2** |
+| GED20.1 → GED21.1, 2011–2019 | 1.764 | 91 | **1** |
+| GED21.1 → GED22.1, 2011–2020 | 1.960 | 93 | **6** |
+| GED22.1 → GED23.1, 2011–2021 | 2.156 | 64 | **0** |
+| GED20.1 → GED23.1, 2011–2019 (control) | 1.764 | 137 | **7** |
+| GED21.1 → GED23.1, 2011–2020 (control) | 1.960 | 117 | **6** |
+
+**Corrección Siria, GWNO 652.** GED19.1 no cubre Siria: hay ocho observaciones país-año no registradas entre 2011–2018. Tomarlas equivocadamente como cero observado daría **10 cambios** de etiqueta 19.1→20.1 sobre 1.568 filas. La comparación válida separa esas ocho filas estructuralmente ausentes, emplea **1.560 filas comparables** y arroja **solo 2 cambios**. Una fuente sin cobertura no aporta una etiqueta negativa de violencia.
+
+Los dos cambios restantes de GED19.1→20.1 son GWNO **541 (2014, 21→30 fallecidos)** y GWNO **540 (2016, 18→25)**. El cambio 20.1→21.1 es GWNO **630 (2015, 24→25)**. Los seis cambios 21.1→22.1 corresponden a GWNO **616** (2013, 2014, 2015), GWNO **482** (2015, 2017) y GWNO **670** (2017). Todos son cambios de inactivo a activo bajo la etiqueta central >=25. Las diferencias se deben estudiar como **revisiones entre ediciones**, no como predicciones acertadas o fallidas.
+
+La ausencia de cambios de etiqueta 22.1→23.1 coexiste con **64 recuentos absolutos diferentes**. Los contrastes adicionales con 23.1 contienen años y países solapados; no se pueden sumar como evaluaciones independientes.
+
+### SHA-256 oficiales fijados para la reproducción
+
+- GED20.1 ZIP: 5e35b74f52dc67a18aabfab86f69655c847e87320684662a6112dec46d65111f
+- GED21.1 ZIP: 2cd62e39db0f49b784ecd1d48c364191c78afc9d5fb1bd9f6b6dda55dcd59afd
+- GED20.1 PDF: 964becfa74e56e9217c123d059a6e4156037750dbaadd4b4e5a25de2c990e03a
+- GED21.1 PDF: 4d1c6ab95462e8bee2c6a4e501fef7b5a5cde6c0e0cd1064bb5c8d3d3c7ab80c
+
+Se verifica también el SHA de GED19.1/22.1/23.1 contra el informe original de la PR #110. Estas huellas prueban reproducibilidad de los bytes descargados en la auditoría, **no un sello de tiempo de publicación original**.
+
+### Próxima frontera metodológica
+
+Para entrenar retrospectivamente con GED anterior a OrganizedViolenceCY será necesario definir un conjunto GWNO con cobertura acreditada por edición, etiquetar explícitamente la exclusión territorial de Siria en 19.1, confirmar cobertura de los demás países y registrar el desfase entre origen histórico, extracción, publicación de la edición y obtención del ZIP original. La prueba GED23.1→OrganizedViolenceCY23.1 sigue siendo el único puente exacto a igual edición de GED/CY ya demostrado.
+
+No se autorizan nuevos resultados prospectivos, reentrenamiento de modelos registrados ni sustitución del indicador original por este experimento de revisión.
+
 ## Reproducibilidad
 
 - Código: `scripts/audit_geo_ged20_21_coverage_revisions.py`.
