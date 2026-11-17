@@ -1,0 +1,42 @@
+name: GEO GED 20.1 and 21.1 coverage and historical revision audit
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_geo_ged20_21_coverage_revisions.py'
+      - 'scripts/test_audit_geo_ged20_21_coverage_revisions.py'
+      - 'data/geo-ged-20-21-coverage-revisions.json'
+      - 'docs/geo-ged-20-21-coverage-revisions.md'
+      - '.github/workflows/geo-ged-20-21-coverage-revisions.yml'
+      - 'scripts/audit_public.py'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_geo_ged20_21_coverage_revisions.py'
+      - 'scripts/test_audit_geo_ged20_21_coverage_revisions.py'
+      - 'data/geo-ged-20-21-coverage-revisions.json'
+      - 'docs/geo-ged-20-21-coverage-revisions.md'
+      - '.github/workflows/geo-ged-20-21-coverage-revisions.yml'
+      - 'scripts/audit_public.py'
+permissions:
+  contents: read
+jobs:
+  ged_20_21_countryyear_source_revisions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Synthetic GED 2020 2021 event aggregation and Syria coverage censorship test
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_audit_geo_ged20_21_coverage_revisions.py' -v
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_audit_geo_legacy_ged_countryyear_bridge.py' -v
+      - name: Require exact byte-identical historical GED 19-23 report from five SHA-pinned ZIPs and two PDF codebooks
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_geo_ged20_21_coverage_revisions.py --check-report
+      - name: Institutional privacy and release allowlist
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_public.py
