@@ -31,10 +31,10 @@ jobs:
         run: |
           set -e
           PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_audit_geo_tunisia_original_2017_exit_vintages.py' -v
-      - name: Reproduce seven official original GED archives including earliest 2017 and 2018 editions
+      - name: Require byte-identical official seven-archive 2016 origin, 2017 exit and 2014 first-exit vintage report
         run: |
           set -e
-          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_geo_tunisia_original_2017_exit_vintages.py --print-report
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_geo_tunisia_original_2017_exit_vintages.py --check-report
       - name: Check public institutional privacy
         run: |
           set -e
