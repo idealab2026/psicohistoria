@@ -1,0 +1,43 @@
+name: GEO H2 twelve-year rolling ex-post vintage diagnostic
+on:
+  pull_request:
+    paths:
+      - 'scripts/experiment_geo_h2_rolling_2014_2025.py'
+      - 'scripts/test_experiment_geo_h2_rolling_2014_2025.py'
+      - 'scripts/experiment_geo2027_intensity_markov_cross_release.py'
+      - 'data/geo-h2-rolling-historical-2014-2025.json'
+      - 'docs/geo-h2-rolling-historical-2014-2025.md'
+      - '.github/workflows/geo-h2-rolling-2014-2025.yml'
+      - 'scripts/audit_public.py'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/experiment_geo_h2_rolling_2014_2025.py'
+      - 'scripts/test_experiment_geo_h2_rolling_2014_2025.py'
+      - 'scripts/experiment_geo2027_intensity_markov_cross_release.py'
+      - 'data/geo-h2-rolling-historical-2014-2025.json'
+      - 'docs/geo-h2-rolling-historical-2014-2025.md'
+      - '.github/workflows/geo-h2-rolling-2014-2025.yml'
+      - 'scripts/audit_public.py'
+permissions:
+  contents: read
+jobs:
+  geo_h2_rolling_2014_2025:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test old-rolling opt-in, chronological clipping, real fixed contract and correct scoring
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_experiment_geo_h2_rolling_2014_2025.py' -v
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_experiment_geo2027_intensity_markov_cross_release.py' -v
+      - name: Replay four original SHA-verifiable sources and print reproducible rolling report
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/experiment_geo_h2_rolling_2014_2025.py --print-report
+      - name: Validate institutional repository publication allowlist
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_public.py
