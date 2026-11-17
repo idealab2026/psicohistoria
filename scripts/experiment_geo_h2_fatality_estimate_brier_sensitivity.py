@@ -159,8 +159,13 @@ def summarize(rows):
         "low_vs_best_changed_country_years": sorted(changed["low"]),
         "high_vs_best_changed_country_years": sorted(changed["high"]),
         "nonmonotonic_named_death_estimate_country_years": sorted(nonmonotonic),
-        "per_country_year_contributions": sorted(
-            by_case, key=lambda x: (x["target_year"], x["country_id"])),
+        "ambiguous_country_year_contributions": sorted(
+            (r for r in by_case
+             if min(r["active_low_best_high"]) != max(r["active_low_best_high"])),
+            key=lambda x: (x["target_year"], x["country_id"])),
+        "top_ten_absolute_best_brier_difference_contributions": sorted(
+            by_case, key=lambda x: (-abs(x["delta_brier_best"]),
+                                    x["target_year"], x["country_id"]))[:10],
     }
 
 
