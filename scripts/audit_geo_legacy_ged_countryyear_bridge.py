@@ -88,6 +88,10 @@ class ArchivedGEDLinks(HTMLParser):
             match=re.search(r"\bGED\s+(\d{1,2}\.\d)\s*:", content,re.I)
             if match:
                 self.version=match.group(1)
+            elif re.search(r"\bGED\s+[^\d\s]", content, re.I):
+                # UCDP lists special GED Syria (652...) directly after 19.1.
+                # Never attribute its CSV to the preceding general GED edition.
+                self.version=None
         if self.href is not None:
             self.label.append(content)
 
