@@ -92,7 +92,7 @@ def main() -> None:
     args = parser.parse_args()
     result = summarize(json.loads(SOURCE.read_text(encoding="utf-8")))
     data = (json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True) + "\n").encode()
-    if args.check_report and REPORT.read_bytes() != data:
+    if args.check_report and json.loads(REPORT.read_text(encoding="utf-8")) != result:
         raise ValueError("Frozen GED transition revision impact report differs")
     if args.print_report:
         print(data.decode(), end="")
