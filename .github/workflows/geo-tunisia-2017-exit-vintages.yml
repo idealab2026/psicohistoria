@@ -1,0 +1,41 @@
+name: GEO Tunisia original 2017 exit and 2014 first-exit source-vintage audit
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_geo_tunisia_original_2017_exit_vintages.py'
+      - 'scripts/test_audit_geo_tunisia_original_2017_exit_vintages.py'
+      - 'data/geo-tunisia-original-2017-exit-vintage-diagnostic.json'
+      - 'docs/geo-tunisia-original-2017-exit-audit.md'
+      - '.github/workflows/geo-tunisia-2017-exit-vintages.yml'
+      - 'scripts/audit_public.py'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_geo_tunisia_original_2017_exit_vintages.py'
+      - 'scripts/test_audit_geo_tunisia_original_2017_exit_vintages.py'
+      - 'data/geo-tunisia-original-2017-exit-vintage-diagnostic.json'
+      - 'docs/geo-tunisia-original-2017-exit-audit.md'
+      - '.github/workflows/geo-tunisia-2017-exit-vintages.yml'
+      - 'scripts/audit_public.py'
+permissions:
+  contents: read
+jobs:
+  tunisia_2017_exit_vintage_source_audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Synthetic 2016 to 2017 exit, 2014 origin eligibility and territorial missingness tests
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_audit_geo_tunisia_original_2017_exit_vintages.py' -v
+      - name: Reproduce seven official original GED archives including earliest 2017 and 2018 editions
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_geo_tunisia_original_2017_exit_vintages.py --print-report
+      - name: Check public institutional privacy
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_public.py
