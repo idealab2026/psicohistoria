@@ -1,0 +1,40 @@
+name: GEO H2 historical source as-of and temporal eligibility gate
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_geo_h2_historical_asof_sources.py'
+      - 'scripts/test_audit_geo_h2_historical_asof_sources.py'
+      - 'data/geo-h2-2014-2025-temporal-source-eligibility.json'
+      - 'docs/geo-h2-historical-asof-source-eligibility.md'
+      - '.github/workflows/geo-h2-historical-asof.yml'
+      - 'scripts/audit_public.py'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_geo_h2_historical_asof_sources.py'
+      - 'scripts/test_audit_geo_h2_historical_asof_sources.py'
+      - 'data/geo-h2-2014-2025-temporal-source-eligibility.json'
+      - 'docs/geo-h2-historical-asof-source-eligibility.md'
+      - '.github/workflows/geo-h2-historical-asof.yml'
+      - 'scripts/audit_public.py'
+permissions:
+  contents: read
+jobs:
+  asof_temporal_eligibility:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Synthetic unit test old official catalog completeness, chronological status and historical score anchors
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p 'test_audit_geo_h2_historical_asof_sources.py' -v
+      - name: Fetch two official UCDP codebook PDFs plus archive listing and reconstruct date-eligibility audit
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_geo_h2_historical_asof_sources.py --print-report
+      - name: Institutional privacy allowlist
+        run: |
+          set -e
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/audit_public.py
