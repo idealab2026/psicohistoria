@@ -94,6 +94,7 @@ class UCDPFatalityVintageIntervalsTests(unittest.TestCase):
         newer[(self.ids[0], 2022)] = (24, 25, 28) # ambiguous best=1
         old[(self.ids[1], 2022)] = (0, 0, 0)
         newer[(self.ids[1], 2022)] = (25, 25, 28) # definitely active after
+        newer[(self.ids[2], 2022)] = (24, 24, 30) # ambiguity changes without best change
         x = compare_editions(old, newer, self.ids, 2022, "23.1", "26.1")
         self.assertEqual(x["changed_best_indicator_n"], 2)
         self.assertEqual(x["changed_ambiguous_indicator_n"], 1)
