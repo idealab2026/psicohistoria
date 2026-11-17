@@ -238,6 +238,7 @@ def compare_state_based(ged, target, ids, years):
     if len(ids)!=196 or len(set(ids))!=196 or not years:
         raise ValueError("Fixed issued riskset and comparison years required")
     extra=[]
+    binary_disagreements=[]
     annual=[]
     exact=0
     binary_match=0
@@ -267,12 +268,15 @@ def compare_state_based(ged, target, ids, years):
             binary_match+=int(s==t)
             threshold_disagree+=int(s!=t)
             if x!=y:
-                changed.append({
+                item={
                     "year":year,"GWNO":cid,"ged_deaths":x,
                     "comparison_deaths":y,
                     "absolute_difference":abs(dx),
                     "ged_active":bool(s),"comparison_active":bool(t),
-                })
+                }
+                changed.append(item)
+                if s!=t:
+                    binary_disagreements.append(item)
         annual.append({
             "year":year,"total_absolute_death_difference":absolute,
             "mismatched_GWNO_n":len(changed),
@@ -295,6 +299,9 @@ def compare_state_based(ged, target, ids, years):
         "ged_active_country_year_n":positives_ged,
         "comparison_active_country_year_n":positives_target,
         "annual":annual,
+        "threshold_mismatch_details":sorted(
+            binary_disagreements,
+            key=lambda r:(r["year"],r["GWNO"])),
         "largest_ten_discrepancies":sorted(
             extra,key=lambda r:(-r["absolute_difference"],r["year"],r["GWNO"]))[:10],
     }
