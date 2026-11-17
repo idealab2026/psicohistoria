@@ -138,10 +138,14 @@ class FutureOrigin2026Safety(unittest.TestCase):
             with self.subTest(future_year=yr):
                 with self.assertRaisesRegex(ValueError,"Post-origin"):
                     future.parse_annual_2026_csv(csv_rows(modified,self.names))
+                # The archive and its pinned SHA must refer to the *same*
+                # bytes. Creating two ZIPs can cross the ZIP entry timestamp
+                # second, causing a spurious checksum failure BEFORE the
+                # intended post-origin parsing/chronology rejection.
+                raw_future=archive(csv_rows(modified,self.names))
                 with self.assertRaisesRegex(ValueError,"Post-origin"):
-                    future.build_candidate(archive(csv_rows(modified,self.names)),
-                        pin(archive(csv_rows(modified,self.names))),
-                        self.issued,as_of=self.as_of)
+                    future.build_candidate(raw_future,pin(raw_future),
+                                           self.issued,as_of=self.as_of)
         old=copy.deepcopy(self.records)
         for h in old.values():
             del h[2026]
