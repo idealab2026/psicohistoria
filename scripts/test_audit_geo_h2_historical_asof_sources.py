@@ -93,7 +93,7 @@ class TemporalProvenanceGateTests(unittest.TestCase):
 
     def test_malformed_claim_about_earlier_official_version_fails_closed(self):
         older=self.catalog+["22.1"]
-        with self.assertRaisesRegex(ValueError,"Four official archives"):
+        with self.assertRaisesRegex(ValueError,"Prior published source audit"):
             audit(self.rolling,self.twofold,self.issue,
                   self.hashes,self.links,older)
         corrupted=copy.deepcopy(self.rolling)
