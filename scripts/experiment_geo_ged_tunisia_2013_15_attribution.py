@@ -113,8 +113,8 @@ def _probabilities(panel, year, ids):
     # transition fitting rather than silently discarding training countries.
     # GED-derived early pseudo-origin panels contain exactly the 196 GWNOs.
     if not set(ids).issubset(panel) or len(ids)!=N or (
-        any(cid not in panel or year not in panel[cid] for cid in ids
-            for year in (year-1,year))
+        any(cid not in panel or check_year not in panel[cid] for cid in ids
+            for check_year in (year-1,year))
     ):
         raise ValueError("Fixed 196-country model riskset changed")
     binary, bmeta=_fit_at_origin(
