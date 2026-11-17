@@ -112,10 +112,17 @@ def counts_to_binary(records):
             for cid,h in records.items()}
 
 
-def four_state_forecast(records,origin):
-    """Deterministic categorical H2 probabilities; no observations after origin."""
-    if type(origin) is not int or origin not in (2022,2023):
-        raise ValueError("Historical origin must be 2022 or 2023")
+def four_state_forecast(records,origin,*,historical_rolling_diagnostic=False):
+    """H2 categorical forecasts, with origin-only data; historical opt-in.
+
+    The original 2022/2023 fixed comparison keeps its exact default contract.
+    Historical rolling diagnostics may start in 2012 after 2011 full GWNO.
+    These are explicitly ex-post pseudo-origins, never issued forecasts.
+    """
+    if (type(origin) is not int or
+        (not historical_rolling_diagnostic and origin not in (2022,2023)) or
+        (historical_rolling_diagnostic and not 2012<=origin<=2023)):
+        raise ValueError("Unsupported historical four-state origin year")
     if not records:
         raise ValueError("Empty original official source")
     clipped={}
