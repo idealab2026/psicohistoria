@@ -92,8 +92,8 @@ class Geo2027FatalityIntervalTests(unittest.TestCase):
         self.assertEqual(result["threshold_ambiguous_countries_n"], 3)
         self.assertEqual(result["threshold_ambiguous_GWNO"],
                          sorted([self.ids[0], self.ids[1], self.ids[4]]))
-        self.assertEqual(result["certain_active_across_low_high_n"], 1)
-        self.assertEqual(result["certain_inactive_across_low_high_n"], 192)
+        self.assertEqual(result["certain_active_across_all_estimates_n"], 1)
+        self.assertEqual(result["certain_inactive_across_all_estimates_n"], 192)
         self.assertEqual([result[f"{x}_scenario_active_n"] for x in
                           ("low", "best", "high")], [1, 2, 4])
 
