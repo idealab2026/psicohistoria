@@ -45,6 +45,12 @@ GED_URLS = {
     for version in SELECTED
 }
 GED_221_CODEBOOK = "https://ucdp.uu.se/downloads/ged/ged221.pdf"
+PINNED_GED_SHA256 = {
+    "19.1":"58a640f82abe9b67090ded37f3163ca6839b36d737fddaacde95763b459a018f",
+    "22.1":"1741045a14a59e2ddbe9de4a190a7ef5b68d60d57be7e94178aff2e926a59f0d",
+    "23.1":"9aa082f9e1f62da5ea3245c39b1cee45daab6dc8b3a17fb0f0cdae9ba13ce6f7",
+}
+PINNED_GED_221_CODEBOOK_SHA256 = "2e5020a58e8287c18bc033922cb32b6820c8a3a95f4fe98583b5c86774f58a8c"
 CY_VERSION = "23.1"
 THRESHOLD = 25
 MIN_YEAR = 1989
@@ -308,7 +314,8 @@ def replay(sources, originals, fixed_ids, catalogue):
     metadata={}
     sums={}
     for v in SELECTED:
-        metadata[v],sums[v]=parse_ged(sources[v],v)
+        metadata[v],sums[v]=parse_ged(
+            sources[v],v,expected_sha256=PINNED_GED_SHA256[v])
     if (metadata["19.1"]["last_recorded_event_year"]!=2018 or
         metadata["22.1"]["last_recorded_event_year"]!=2021 or
         metadata["23.1"]["last_recorded_event_year"]!=2022):
@@ -327,6 +334,18 @@ def replay(sources, originals, fixed_ids, catalogue):
         }
     is_compatible=(same["threshold_disagreement_n"]==0 and
                    same["total_absolute_death_difference"]==0)
+    if not is_compatible or same["exact_death_count_match_n"]!=2352:
+        raise AssertionError("GED23.1 no longer reproduces exact official CY23.1 GWNO-year deaths")
+    # GED 19.1 deliberately omitted Syria before full GED20.1 coverage.
+    # This is a COVERAGE GAP, not a 2019 failure to predict Syrian deaths.
+    syria_years=tuple(range(2011,2019))
+    if (any(sums["19.1"].get((652,year),0)!=0 for year in syria_years)
+        or any(sums["23.1"].get((652,year),0)<25 for year in syria_years)):
+        raise AssertionError("Expected official GED19.1 Syria exclusion no longer holds")
+    syria_missing=len(syria_years)
+    old19_mismatch=compare_old["19.1"]["same_years_vs_GED23_1"]["threshold_disagreement_n"]
+    if old19_mismatch < syria_missing:
+        raise AssertionError("Historical Syria coverage gap exceeds recorded label disagreements")
     return {
         "schema":"idealab.psico.legacy_ged_to_countryyear_equivalence_feasibility.v1",
         "status":"OFFICIAL_SHA_PINNED_EVENT_AGGREGATION_DIAGNOSTIC_NOT_BACKTEST",
@@ -336,6 +355,16 @@ def replay(sources, originals, fixed_ids, catalogue):
         "original_forecast_2027_sha256":SOURCE_SHA256,
         "reference_organizedviolencecy23_1_sha256":SOURCES[CY_VERSION]["sha256"],
         "GED_metadata":metadata,
+        "pinned_original_GED_zip_SHA256":PINNED_GED_SHA256,
+        "GED19_1_syria_exclusion": {
+            "GWNO":652,
+            "years":[*syria_years],
+            "missing_GED19_state_based_25_country_years":syria_missing,
+            "GED19_vs_GED23_all_25_label_disagreements":old19_mismatch,
+            "other_GWNO_25_label_disagreements":old19_mismatch-syria_missing,
+            "source":"Official UCDP June 2020 announcement: GED 20.1 first includes Syria",
+            "missingness_is_coverage_not_real_world_zero":True,
+        },
         "official_ged_archive_17_1_through_23_1_listed":True,
         "documented_ged221_extraction_day_from_official_codebook":
             "2022-04-27",
@@ -388,6 +417,8 @@ def main():
     codebook=request(GED_221_CODEBOOK,8_000_000)
     if not codebook.startswith(b"%PDF-"):
         raise ValueError("GED 22.1 official codebook not PDF")
+    if hashlib.sha256(codebook).hexdigest()!=PINNED_GED_221_CODEBOOK_SHA256:
+        raise ValueError("Official GED22.1 codebook PDF SHA changed")
     report["ged221_codebook_current_sha256"]=hashlib.sha256(codebook).hexdigest()
     payload=json.dumps(report,ensure_ascii=False,sort_keys=True,indent=2)+"\n"
     if args.check_report and REPORT.read_bytes()!=payload.encode("utf-8"):
