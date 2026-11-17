@@ -52,4 +52,35 @@ Código: `scripts/audit_geo_legacy_ged_countryyear_bridge.py`.
 Pruebas: `scripts/test_audit_geo_legacy_ged_countryyear_bridge.py`.
 Informe determinista: `data/geo-ged-old-vintage-countryyear-feasibility.json`.
 
+## Resultados de las primeras tres descargas oficiales
+
+Se han descargado las ediciones GED 19.1, 22.1 y 23.1 del catálogo histórico oficial y verificado su SHA-256. Se han procesado **152.616, 293.634 y 316.818 eventos**, respectivamente, sin reutilizar IDs de evento ni mezclar violencia estatal (tipo 1) con violencia no estatal (tipo 2) o unilateral (tipo 3).
+
+**Prueba de identidad entre fuentes de la MISMA edición:** GED23.1, filtrado por `type_of_violence == 1` y agregado como `SUM(best)`, reproduce **exactamente 2.352 de 2.352 valores** `sb_total_deaths_best` de OrganizedViolenceCY23.1 en los 196 GWNO originales entre 2011 y 2022. El desacuerdo numérico total es **cero** y hay **cero cambios** de etiqueta en `>=25`. La coincidencia es un resultado comprobado; no se presupuso en el protocolo.
+
+| Fuente GED antigua vs. GED23.1 | Países × años | Diferencias en etiqueta ≥25 |
+|---|---:|---:|
+| GED22.1, años comunes 2011–2021 | 2.156 | **0** |
+| GED19.1, años comunes 2011–2018 | 1.568 | **17** |
+
+En GED22.1 hay cambios en los **recuentos absolutos** frente a GED23.1, pero ninguno cruza el umbral binario `>=25` en la cohorte y años comparados. La serie histórica GED19.1 muestra 17 discrepancias binarias, **de las que ocho corresponden al GWNO 652 (Siria)**.
+
+### Advertencia esencial: exclusión territorial de Siria en GED19.1
+
+La [comunicación oficial de la Universidad de Uppsala del 16/06/2020](https://www.uu.se/en/department/peace-and-conflict-research/news/archive/2020-06-16-major-data-releases-from-ucdp) afirma expresamente que **GED20.1 fue la primera edición que incluyó Siria** en la serie GED global. GED19.1, por tanto, no puede interpretarse como una medición global homogénea de 2011–2018 para Siria: en su recuento estatal aparecen **cero eventos en la cohorte desde 2011 a 2018**, mientras que GED23.1 registra una etiqueta activa en esos ocho años. Son **ausencias por cobertura**, no ocho resultados negativos de violencia estatal.
+
+La comparación pública distingue las **ocho discrepancias causadas por la exclusión territorial** de las **nueve restantes** (que podrían responder a revisiones, mejoras de cobertura o cambios de codificación). No se imputan ceros de GED19.1 como observaciones negativas válidas para entrenar y puntuar GEO.
+
+### Hashes de los archivos oficiales
+
+- GED19.1 ZIP: `58a640f82abe9b67090ded37f3163ca6839b36d737fddaacde95763b459a018f`
+- GED22.1 ZIP: `1741045a14a59e2ddbe9de4a190a7ef5b68d60d57be7e94178aff2e926a59f0d`
+- GED23.1 ZIP: `9aa082f9e1f62da5ea3245c39b1cee45daab6dc8b3a17fb0f0cdae9ba13ce6f7`
+- GED22.1 PDF: `2e5020a58e8287c18bc033922cb32b6820c8a3a95f4fe98583b5c86774f58a8c`
+- OrganizedViolenceCY23.1 ya fijado en el proyecto: `6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff`
+
+Estas huellas autentican los **bytes oficiales descargables ahora**; no demuestran que el archivo fuera descargable con exactamente esos bytes en la fecha que su codebook cita.
+
+**Conclusión intermedia:** existe un puente aritmético exacto GED23.1→OrganizedViolenceCY23.1 para el indicador de GEO en esta cohorte. La viabilidad retrospectiva de versiones anteriores depende también de cobertura, conservación de las reglas de inclusión y trazabilidad temporal. No se ha autorizado una nueva serie histórica de entrenamiento ni una sustitución de las predicciones prospectivas.
+
 **Criterio para avanzar:** identificar la causa de cualquier desigualdad de etiqueta `>=25` dentro de GED23.1 y OrganizedViolenceCY23.1 antes de plantear un backtest con GED22.1/19.1. Una coincidencia parcial no equivale a identidad de variable ni a demostración de habilidad predictiva prospectiva.
