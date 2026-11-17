@@ -108,7 +108,14 @@ def _event_panel(sums, ids, *,max_year):
 
 
 def _probabilities(panel, year, ids):
-    if sorted(panel)!=sorted(ids) or len(panel)!=N:
+    # Official country-year archives can carry additional historical GWNO
+    # discontinued before the target origin; keep them for original global
+    # transition fitting rather than silently discarding training countries.
+    # GED-derived early pseudo-origin panels contain exactly the 196 GWNOs.
+    if not set(ids).issubset(panel) or len(ids)!=N or (
+        any(cid not in panel or year not in panel[cid] for cid in ids
+            for year in (year-1,year))
+    ):
         raise ValueError("Fixed 196-country model riskset changed")
     binary, bmeta=_fit_at_origin(
         counts_to_binary(panel),year,fixed_cohort=ids)
@@ -184,7 +191,7 @@ def _revised2022(vintage21, cy23, ids, target2024, frozen_h2):
     Counterfactual: replace just Tunisia 2013-15 source deaths in an
     otherwise official UCDP23.1 panel, never retrain/change original issue.
     """
-    if (set(cy23)!=set(ids) or not all(
+    if (not set(ids).issubset(cy23) or not all(
         year in cy23[cid] for cid in ids for year in (2011,2022))
     ):
         raise ValueError("Official CY23 risk cohort missing")
@@ -239,7 +246,7 @@ def evaluate(sources, cy23, cy25, archive, issue, bridge, revisions, frozen_h2):
     if [meta[v]["last_recorded_event_year"] for v in GED_VINTAGES] != [
         2019,2020,2021,2022]:
         raise ValueError("Historical source years not the original five-vintage audit")
-    if not set(cy23)==set(ids) or cy23[TUNISIA][2022] is None:
+    if not set(ids).issubset(cy23) or cy23[TUNISIA][2022] is None:
         raise ValueError("Official 23.1 country-year original cohort changed")
     if 2024 not in cy25[TUNISIA]:
         raise ValueError("Missing historic 2024 Tunisia outcome from UCDP25.1")
@@ -269,7 +276,10 @@ def evaluate(sources, cy23, cy25, archive, issue, bridge, revisions, frozen_h2):
     # GED23 and CY23 historical 1989..2019 source counts may differ despite
     # exact previous 2011..2022 anchor; audit rather than silently elide.
     full=range(MIN_YEAR,EARLY_ORIGIN+1)
+    missing=[(cid,y) for cid in ids for y in full if
+             y not in cy23[cid]]
     mismatch=[(cid,y) for cid in ids for y in full if
+              y in cy23[cid] and
               event_sums["23.1"].get((cid,y),0)!=cy23[cid][y]]
     cy2022=_revised2022(panel["21.1"],cy23,ids,cy25[TUNISIA][HIST_TARGET],frozen_h2)
     report={
@@ -293,6 +303,9 @@ def evaluate(sources, cy23, cy25, archive, issue, bridge, revisions, frozen_h2):
             v:{"last_source_recorded_year":meta[v]["last_recorded_event_year"],
                **observed[v]} for v in GED_VINTAGES},
         "exact_shapley_GED21_1_to_GED22_1_2019_H2":attribution,
+        "CY23_GED23_1989_to_2019_country_years_missing_from_CY23_n":len(missing),
+        "CY23_GED23_1989_to_2019_country_years_missing_first_10":[
+            {"GWNO":cid,"year":y} for cid,y in missing[:10]],
         "CY23_GED23_1989_to_2019_source_count_mismatch_n":len(mismatch),
         "CY23_GED23_1989_to_2019_count_mismatches_first_10":[
             {"GWNO":cid,"year":y,
