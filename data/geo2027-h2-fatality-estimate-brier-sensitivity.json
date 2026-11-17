@@ -1,0 +1,1136 @@
+{
+  "best_is_the_only_preregistered_primary_label": true,
+  "folds": [
+    {
+      "evaluation": {
+        "ambiguous_country_year_contributions": [
+          {
+            "active_low_best_high": [
+              0,
+              1,
+              1
+            ],
+            "country_id": 540,
+            "deaths_low_best_high": [
+              10,
+              25,
+              91
+            ],
+            "delta_brier_best": -0.12351428962331573,
+            "delta_brier_high": -0.12351428962331573,
+            "delta_brier_low": 0.048362307804684354,
+            "p_intensity_four_state": 0.324347234148,
+            "p_original_binary": 0.238408935434,
+            "sharp_case_max_delta": 0.048362307804684354,
+            "sharp_case_min_delta": -0.12351428962331573,
+            "target_year": 2024
+          }
+        ],
+        "ambiguous_country_year_n": 1,
+        "ambiguous_country_years": [
+          [
+            2024,
+            540
+          ]
+        ],
+        "high_vs_best_changed_country_years": [],
+        "low_vs_best_changed_country_years": [
+          [
+            2024,
+            540
+          ]
+        ],
+        "n": 196,
+        "nonmonotonic_named_death_estimate_country_years": [
+          [
+            2024,
+            365
+          ]
+        ],
+        "scenarios": {
+          "best": {
+            "four_state_intensity": {
+              "brier": 0.04627834333073142,
+              "logloss": 0.1621980877316834
+            },
+            "four_state_minus_original_delta_brier": 0.00484688145389274,
+            "four_state_minus_original_delta_logloss": 0.008257098929846801,
+            "lower_brier_in_this_scenario": "original_binary_lower_brier",
+            "original_binary": {
+              "brier": 0.04143146187683868,
+              "logloss": 0.1539409888018366
+            },
+            "positives": 35
+          },
+          "high": {
+            "four_state_intensity": {
+              "brier": 0.04627834333073142,
+              "logloss": 0.1621980877316834
+            },
+            "four_state_minus_original_delta_brier": 0.00484688145389274,
+            "four_state_minus_original_delta_logloss": 0.008257098929846801,
+            "lower_brier_in_this_scenario": "original_binary_lower_brier",
+            "original_binary": {
+              "brier": 0.04143146187683868,
+              "logloss": 0.1539409888018366
+            },
+            "positives": 35
+          },
+          "low": {
+            "four_state_intensity": {
+              "brier": 0.04448596816897632,
+              "logloss": 0.15845388042638692
+            },
+            "four_state_minus_original_delta_brier": 0.005723802869341779,
+            "four_state_minus_original_delta_logloss": 0.010438515785887476,
+            "lower_brier_in_this_scenario": "original_binary_lower_brier",
+            "original_binary": {
+              "brier": 0.03876216529963454,
+              "logloss": 0.14801536464049944
+            },
+            "positives": 34
+          }
+        },
+        "sharp_label_ambiguity_envelope": {
+          "country_year_envelope_extremes_not_asserted_jointly_feasible": true,
+          "country_year_label_independence_not_assumed": true,
+          "not_a_statistical_confidence_or_prediction_interval": true,
+          "same_model_lower_brier_for_every_consistent_binary_label_assignment": "original_binary_lower_brier",
+          "sharp_finite_cohort_lower_delta_brier": 0.004846881453892747,
+          "sharp_finite_cohort_upper_delta_brier": 0.005723802869341737,
+          "zero_excluded_by_algebraic_envelope": true
+        },
+        "top_ten_absolute_best_brier_difference_contributions": [
+          {
+            "active_low_best_high": [
+              1,
+              1,
+              1
+            ],
+            "country_id": 626,
+            "deaths_low_best_high": [
+              25,
+              25,
+              25
+            ],
+            "delta_brier_best": -0.4185976169556669,
+            "delta_brier_high": -0.4185976169556669,
+            "delta_brier_low": -0.4185976169556669,
+            "p_intensity_four_state": 0.312816106468,
+            "p_original_binary": 0.056167747698,
+            "sharp_case_max_delta": -0.4185976169556669,
+            "sharp_case_min_delta": -0.4185976169556669,
+            "target_year": 2024
+          },
+          {
+            "active_low_best_high": [
+              0,
+              0,
+              0
+            ],
+            "country_id": 500,
+            "deaths_low_best_high": [
+              0,
+              0,
+              0
+            ],
+            "delta_brier_best": -0.3139525190181707,
+            "delta_brier_high": -0.3139525190181707,
+            "delta_brier_low": -0.3139525190181707,
+            "p_intensity_four_state": 0.500571152142,
+            "p_original_binary": 0.751348119965,
+            "sharp_case_max_delta": -0.3139525190181707,
+            "sharp_case_min_delta": -0.3139525190181707,
+            "target_year": 2024
+          },
+          {
+            "active_low_best_high": [
+              0,
+              0,
+              0
+            ],
+            "country_id": 373,
+            "deaths_low_best_high": [
+              0,
+              0,
+              0
+            ],
+            "delta_brier_best": 0.2293811233240854,
+            "delta_brier_high": 0.2293811233240854,
+            "delta_brier_low": 0.2293811233240854,
+            "p_intensity_four_state": 0.802471536603,
+            "p_original_binary": 0.643878438631,
+            "sharp_case_max_delta": 0.2293811233240854,
+            "sharp_case_min_delta": 0.2293811233240854,
+            "target_year": 2024
+          },
+          {
+            "active_low_best_high": [
+              0,
+              0,
+              0
+            ],
+            "country_id": 371,
+            "deaths_low_best_high": [
+              0,
+              0,
+              0
+            ],
+            "delta_brier_best": 0.19123776725727748,
+            "delta_brier_high": 0.19123776725727748,
+            "delta_brier_low": 0.19123776725727748,
+            "p_intensity_four_state": 0.801672743815,
+            "p_original_binary": 0.671893905999,
+            "sharp_case_max_delta": 0.19123776725727748,
+            "sharp_case_min_delta": 0.19123776725727748,
+            "target_year": 2024
+          },
+          {
+            "active_low_best_high": [
+              1,
+              1,
+              1
+            ],
+            "country_id": 660,
+            "deaths_low_best_high": [
+              3985,
+              4339,
+              5160
+            ],
+            "delta_brier_best": 0.1789475927398253,
+            "delta_brier_high": 0.1789475927398253,
+            "delta_brier_low": 0.1789475927398253,
+            "p_intensity_four_state": 0.064861146832,
+            "p_original_binary": 0.166011341825,
+            "sharp_case_max_delta": 0.1789475927398253,
+            "sharp_case_min_delta": 0.1789475927398253,
+            "target_year": 2024
+          },
+          {
+            "active_low_best_high": [
+              1,
+              1,
+              1
+            ],
+            "country_id": 100,
+            "deaths_low_best_high": [
+              219,
+              225,
+              229
+            ],
+            "delta_brier_best": 0.15869966172681402,
+            "delta_brier_high": 0.15869966172681402,
+            "delta_brier_low": 0.15869966172681402,
+            "p_intensity_four_state": 0.573665761877,
+            "p_original_binary": 0.848140786025,
+            "sharp_case_max_delta": 0.15869966172681402,
+            "sharp_case_min_delta": 0.15869966172681402,
+            "target_year": 2024
+          },
+          {
+            "active_low_best_high": [
+              0,
+              0,
+              0
+            ],
+            "country_id": 702,
+            "deaths_low_best_high": [
+              0,
+              0,
+              0
+            ],
+            "delta_brier_best": -0.14720226024229477,
+            "delta_brier_high": -0.14720226024229477,
+            "delta_brier_low": -0.14720226024229477,
+            "p_intensity_four_state": 0.522473138306,
+            "p_original_binary": 0.648213267755,
+            "sharp_case_max_delta": -0.14720226024229477,
+            "sharp_case_min_delta": -0.14720226024229477,
+            "target_year": 2024
+          },
+          {
+            "active_low_best_high": [
+              0,
+              0,
+              0
+            ],
+            "country_id": 651,
+            "deaths_low_best_high": [
+              0,
+              0,
+              0
+            ],
+            "delta_brier_best": 0.1450245833125351,
+            "delta_brier_high": 0.1450245833125351,
+            "delta_brier_low": 0.1450245833125351,
+            "p_intensity_four_state": 0.860833561307,
+            "p_original_binary": 0.772016733601,
+            "sharp_case_max_delta": 0.1450245833125351,
+            "sharp_case_min_delta": 0.1450245833125351,
+            "target_year": 2024
+          },
+          {
+            "active_low_best_high": [
+              1,
+              1,
+              1
+            ],
+            "country_id": 640,
+            "deaths_low_best_high": [
+              37,
+              37,
+              46
+            ],
+            "delta_brier_best": 0.1430415043111306,
+            "delta_brier_high": 0.1430415043111306,
+            "delta_brier_low": 0.1430415043111306,
+            "p_intensity_four_state": 0.591264368233,
+            "p_original_binary": 0.84500544408,
+            "sharp_case_max_delta": 0.1430415043111306,
+            "sharp_case_min_delta": 0.1430415043111306,
+            "target_year": 2024
+          },
+          {
+            "active_low_best_high": [
+              1,
+              1,
+              1
+            ],
+            "country_id": 625,
+            "deaths_low_best_high": [
+              4356,
+              4680,
+              4969
+            ],
+            "delta_brier_best": 0.14224487838102104,
+            "delta_brier_high": 0.14224487838102104,
+            "delta_brier_low": 0.14224487838102104,
+            "p_intensity_four_state": 0.593421472222,
+            "p_original_binary": 0.848140786025,
+            "sharp_case_max_delta": 0.14224487838102104,
+            "sharp_case_min_delta": 0.14224487838102104,
+            "target_year": 2024
+          }
+        ]
+      },
+      "forecast_origin_training_data_only": true,
+      "n": 196,
+      "origin_binary_last_training_year": 2022,
+      "origin_edition": "23.1",
+      "origin_intensity_last_training_year": 2022,
+      "origin_year": 2022,
+      "prior_best_brier_scores_reproduced_exactly": true,
+      "target_edition": "25.1",
+      "target_year": 2024
+    },
+    {
+      "evaluation": {
+        "ambiguous_country_year_contributions": [
+          {
+            "active_low_best_high": [
+              0,
+              1,
+              1
+            ],
+            "country_id": 461,
+            "deaths_low_best_high": [
+              18,
+              69,
+              69
+            ],
+            "delta_brier_best": 0.10828235873618297,
+            "delta_brier_high": 0.10828235873618297,
+            "delta_brier_low": -0.19417081709581702,
+            "p_intensity_four_state": 0.566373078186,
+            "p_original_binary": 0.717599666102,
+            "sharp_case_max_delta": 0.10828235873618297,
+            "sharp_case_min_delta": -0.19417081709581702,
+            "target_year": 2025
+          },
+          {
+            "active_low_best_high": [
+              0,
+              0,
+              1
+            ],
+            "country_id": 483,
+            "deaths_low_best_high": [
+              6,
+              19,
+              34
+            ],
+            "delta_brier_best": -0.1403057757163163,
+            "delta_brier_high": 0.056074560849683715,
+            "delta_brier_low": -0.1403057757163163,
+            "p_intensity_four_state": 0.665364307108,
+            "p_original_binary": 0.763554475391,
+            "sharp_case_max_delta": 0.056074560849683715,
+            "sharp_case_min_delta": -0.1403057757163163,
+            "target_year": 2025
+          },
+          {
+            "active_low_best_high": [
+              0,
+              1,
+              1
+            ],
+            "country_id": 540,
+            "deaths_low_best_high": [
+              5,
+              25,
+              78
+            ],
+            "delta_brier_best": 0.27560188905356897,
+            "delta_brier_high": 0.27560188905356897,
+            "delta_brier_low": -0.048807433808431014,
+            "p_intensity_four_state": 0.06934782706,
+            "p_original_binary": 0.231552488491,
+            "sharp_case_max_delta": 0.27560188905356897,
+            "sharp_case_min_delta": -0.048807433808431014,
+            "target_year": 2025
+          }
+        ],
+        "ambiguous_country_year_n": 3,
+        "ambiguous_country_years": [
+          [
+            2025,
+            461
+          ],
+          [
+            2025,
+            483
+          ],
+          [
+            2025,
+            540
+          ]
+        ],
+        "high_vs_best_changed_country_years": [
+          [
+            2025,
+            483
+          ]
+        ],
+        "low_vs_best_changed_country_years": [
+          [
+            2025,
+            461
+          ],
+          [
+            2025,
+            540
+          ]
+        ],
+        "n": 196,
+        "nonmonotonic_named_death_estimate_country_years": [
+          [
+            2025,
+            365
+          ]
+        ],
+        "scenarios": {
+          "best": {
+            "four_state_intensity": {
+              "brier": 0.038620314641510146,
+              "logloss": 0.14763580160275408
+            },
+            "four_state_minus_original_delta_brier": -0.00011633730738438985,
+            "four_state_minus_original_delta_logloss": -0.007218686882611458,
+            "lower_brier_in_this_scenario": "four_state_lower_brier",
+            "original_binary": {
+              "brier": 0.038736651948894536,
+              "logloss": 0.15485448848536554
+            },
+            "positives": 34
+          },
+          "high": {
+            "four_state_intensity": {
+              "brier": 0.036932923752653,
+              "logloss": 0.14412920841546675
+            },
+            "four_state_minus_original_delta_brier": 0.0008856031852992954,
+            "four_state_minus_original_delta_logloss": -0.004744327875021409,
+            "lower_brier_in_this_scenario": "original_binary_lower_brier",
+            "original_binary": {
+              "brier": 0.036047320567353706,
+              "logloss": 0.14887353629048816
+            },
+            "positives": 35
+          },
+          "low": {
+            "four_state_intensity": {
+              "brier": 0.03490318102157137,
+              "logloss": 0.13574966733878963
+            },
+            "four_state_minus_original_delta_brier": -0.0033146153619456192,
+            "four_state_minus_original_delta_logloss": -0.017742680721655607,
+            "lower_brier_in_this_scenario": "four_state_lower_brier",
+            "original_binary": {
+              "brier": 0.03821779638351699,
+              "logloss": 0.15349234806044523
+            },
+            "positives": 32
+          }
+        },
+        "sharp_label_ambiguity_envelope": {
+          "country_year_envelope_extremes_not_asserted_jointly_feasible": true,
+          "country_year_label_independence_not_assumed": true,
+          "not_a_statistical_confidence_or_prediction_interval": true,
+          "same_model_lower_brier_for_every_consistent_binary_label_assignment": "not_identified",
+          "sharp_finite_cohort_lower_delta_brier": -0.003314615361945582,
+          "sharp_finite_cohort_upper_delta_brier": 0.0008856031852993147,
+          "zero_excluded_by_algebraic_envelope": false
+        },
+        "top_ten_absolute_best_brier_difference_contributions": [
+          {
+            "active_low_best_high": [
+              1,
+              1,
+              1
+            ],
+            "country_id": 626,
+            "deaths_low_best_high": [
+              277,
+              282,
+              446
+            ],
+            "delta_brier_best": -0.40174711659681284,
+            "delta_brier_high": -0.40174711659681284,
+            "delta_brier_low": -0.40174711659681284,
+            "p_intensity_four_state": 0.296352471404,
+            "p_original_binary": 0.052969398015,
+            "sharp_case_max_delta": -0.40174711659681284,
+            "sharp_case_min_delta": -0.40174711659681284,
+            "target_year": 2025
+          },
+          {
+            "active_low_best_high": [
+              0,
+              0,
+              0
+            ],
+            "country_id": 640,
+            "deaths_low_best_high": [
+              9,
+              10,
+              10
+            ],
+            "delta_brier_best": -0.3596923647250341,
+            "delta_brier_high": -0.3596923647250341,
+            "delta_brier_low": -0.3596923647250341,
+            "p_intensity_four_state": 0.600266515286,
+            "p_original_binary": 0.84853535819,
+            "sharp_case_max_delta": -0.3596923647250341,
+            "sharp_case_min_delta": -0.3596923647250341,
+            "target_year": 2025
+          },
+          {
+            "active_low_best_high": [
+              0,
+              1,
+              1
+            ],
+            "country_id": 540,
+            "deaths_low_best_high": [
+              5,
+              25,
+              78
+            ],
+            "delta_brier_best": 0.27560188905356897,
+            "delta_brier_high": 0.27560188905356897,
+            "delta_brier_low": -0.048807433808431014,
+            "p_intensity_four_state": 0.06934782706,
+            "p_original_binary": 0.231552488491,
+            "sharp_case_max_delta": 0.27560188905356897,
+            "sharp_case_min_delta": -0.048807433808431014,
+            "target_year": 2025
+          },
+          {
+            "active_low_best_high": [
+              0,
+              0,
+              0
+            ],
+            "country_id": 373,
+            "deaths_low_best_high": [
+              0,
+              0,
+              0
+            ],
+            "delta_brier_best": 0.232997172469261,
+            "delta_brier_high": 0.232997172469261,
+            "delta_brier_low": 0.232997172469261,
+            "p_intensity_four_state": 0.81252922687,
+            "p_original_binary": 0.653610413051,
+            "sharp_case_max_delta": 0.232997172469261,
+            "sharp_case_min_delta": 0.232997172469261,
+            "target_year": 2025
+          },
+          {
+            "active_low_best_high": [
+              1,
+              1,
+              1
+            ],
+            "country_id": 100,
+            "deaths_low_best_high": [
+              288,
+              307,
+              340
+            ],
+            "delta_brier_best": 0.1616883733858303,
+            "delta_brier_high": 0.1616883733858303,
+            "delta_brier_low": 0.1616883733858303,
+            "p_intensity_four_state": 0.571367045885,
+            "p_original_binary": 0.851548540029,
+            "sharp_case_max_delta": 0.1616883733858303,
+            "sharp_case_min_delta": 0.1616883733858303,
+            "target_year": 2025
+          },
+          {
+            "active_low_best_high": [
+              0,
+              0,
+              1
+            ],
+            "country_id": 483,
+            "deaths_low_best_high": [
+              6,
+              19,
+              34
+            ],
+            "delta_brier_best": -0.1403057757163163,
+            "delta_brier_high": 0.056074560849683715,
+            "delta_brier_low": -0.1403057757163163,
+            "p_intensity_four_state": 0.665364307108,
+            "p_original_binary": 0.763554475391,
+            "sharp_case_max_delta": 0.056074560849683715,
+            "sharp_case_min_delta": -0.1403057757163163,
+            "target_year": 2025
+          },
+          {
+            "active_low_best_high": [
+              0,
+              0,
+              0
+            ],
+            "country_id": 516,
+            "deaths_low_best_high": [
+              0,
+              0,
+              0
+            ],
+            "delta_brier_best": -0.12731088345862662,
+            "delta_brier_high": -0.12731088345862662,
+            "delta_brier_low": -0.12731088345862662,
+            "p_intensity_four_state": 0.556328877576,
+            "p_original_binary": 0.660918076227,
+            "sharp_case_max_delta": -0.12731088345862662,
+            "sharp_case_min_delta": -0.12731088345862662,
+            "target_year": 2025
+          },
+          {
+            "active_low_best_high": [
+              1,
+              1,
+              1
+            ],
+            "country_id": 436,
+            "deaths_low_best_high": [
+              696,
+              724,
+              862
+            ],
+            "delta_brier_best": -0.10993639889358935,
+            "delta_brier_high": -0.10993639889358935,
+            "delta_brier_low": -0.10993639889358935,
+            "p_intensity_four_state": 0.84336402486,
+            "p_original_binary": 0.633296812665,
+            "sharp_case_max_delta": -0.10993639889358935,
+            "sharp_case_min_delta": -0.10993639889358935,
+            "target_year": 2025
+          },
+          {
+            "active_low_best_high": [
+              0,
+              1,
+              1
+            ],
+            "country_id": 461,
+            "deaths_low_best_high": [
+              18,
+              69,
+              69
+            ],
+            "delta_brier_best": 0.10828235873618297,
+            "delta_brier_high": 0.10828235873618297,
+            "delta_brier_low": -0.19417081709581702,
+            "p_intensity_four_state": 0.566373078186,
+            "p_original_binary": 0.717599666102,
+            "sharp_case_max_delta": 0.10828235873618297,
+            "sharp_case_min_delta": -0.19417081709581702,
+            "target_year": 2025
+          },
+          {
+            "active_low_best_high": [
+              1,
+              1,
+              1
+            ],
+            "country_id": 434,
+            "deaths_low_best_high": [
+              140,
+              149,
+              193
+            ],
+            "delta_brier_best": 0.10698282435036371,
+            "delta_brier_high": 0.10698282435036371,
+            "delta_brier_low": 0.10698282435036371,
+            "p_intensity_four_state": 0.567874123737,
+            "p_original_binary": 0.717599666102,
+            "sharp_case_max_delta": 0.10698282435036371,
+            "sharp_case_min_delta": 0.10698282435036371,
+            "target_year": 2025
+          }
+        ]
+      },
+      "forecast_origin_training_data_only": true,
+      "n": 196,
+      "origin_binary_last_training_year": 2023,
+      "origin_edition": "24.1",
+      "origin_intensity_last_training_year": 2023,
+      "origin_year": 2023,
+      "prior_best_brier_scores_reproduced_exactly": true,
+      "target_edition": "26.1",
+      "target_year": 2025
+    }
+  ],
+  "frozen_fourstate_reference": "data/geo2027-intensity-markov-cross-release.json",
+  "frozen_historical_reference": "data/forecast-2027-archival-cross-release.json",
+  "historical_origin_target_pairs_n": 2,
+  "historical_predictions_issued_at_origin": false,
+  "horizon_years": 2,
+  "limitations": "Ex-post four-source backtest; 2022/2023 forecast origins were not independently timestamp-notarized before their 2024/2025 outcomes. Only two overlapping annual blocks, not an IID confidence sample. Best is the preregistered GEO target; low/high are measurement perturbations. Algebraic extrema across ambiguous GWNOs are not confidence intervals, feasible simultaneous political configurations, or proof of prospective predictive skill.",
+  "low_best_high_are_named_estimates_not_confidence_limits": true,
+  "no_2027_outcomes_observed": true,
+  "no_2027_probabilities_or_alerts_reissued": true,
+  "no_outcome_based_hyperparameter_selection": true,
+  "original_GEO2027_issued_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "original_frozen_196_GWNO": true,
+  "pooled": {
+    "ambiguous_country_year_contributions": [
+      {
+        "active_low_best_high": [
+          0,
+          1,
+          1
+        ],
+        "country_id": 540,
+        "deaths_low_best_high": [
+          10,
+          25,
+          91
+        ],
+        "delta_brier_best": -0.12351428962331573,
+        "delta_brier_high": -0.12351428962331573,
+        "delta_brier_low": 0.048362307804684354,
+        "p_intensity_four_state": 0.324347234148,
+        "p_original_binary": 0.238408935434,
+        "sharp_case_max_delta": 0.048362307804684354,
+        "sharp_case_min_delta": -0.12351428962331573,
+        "target_year": 2024
+      },
+      {
+        "active_low_best_high": [
+          0,
+          1,
+          1
+        ],
+        "country_id": 461,
+        "deaths_low_best_high": [
+          18,
+          69,
+          69
+        ],
+        "delta_brier_best": 0.10828235873618297,
+        "delta_brier_high": 0.10828235873618297,
+        "delta_brier_low": -0.19417081709581702,
+        "p_intensity_four_state": 0.566373078186,
+        "p_original_binary": 0.717599666102,
+        "sharp_case_max_delta": 0.10828235873618297,
+        "sharp_case_min_delta": -0.19417081709581702,
+        "target_year": 2025
+      },
+      {
+        "active_low_best_high": [
+          0,
+          0,
+          1
+        ],
+        "country_id": 483,
+        "deaths_low_best_high": [
+          6,
+          19,
+          34
+        ],
+        "delta_brier_best": -0.1403057757163163,
+        "delta_brier_high": 0.056074560849683715,
+        "delta_brier_low": -0.1403057757163163,
+        "p_intensity_four_state": 0.665364307108,
+        "p_original_binary": 0.763554475391,
+        "sharp_case_max_delta": 0.056074560849683715,
+        "sharp_case_min_delta": -0.1403057757163163,
+        "target_year": 2025
+      },
+      {
+        "active_low_best_high": [
+          0,
+          1,
+          1
+        ],
+        "country_id": 540,
+        "deaths_low_best_high": [
+          5,
+          25,
+          78
+        ],
+        "delta_brier_best": 0.27560188905356897,
+        "delta_brier_high": 0.27560188905356897,
+        "delta_brier_low": -0.048807433808431014,
+        "p_intensity_four_state": 0.06934782706,
+        "p_original_binary": 0.231552488491,
+        "sharp_case_max_delta": 0.27560188905356897,
+        "sharp_case_min_delta": -0.048807433808431014,
+        "target_year": 2025
+      }
+    ],
+    "ambiguous_country_year_n": 4,
+    "ambiguous_country_years": [
+      [
+        2024,
+        540
+      ],
+      [
+        2025,
+        461
+      ],
+      [
+        2025,
+        483
+      ],
+      [
+        2025,
+        540
+      ]
+    ],
+    "high_vs_best_changed_country_years": [
+      [
+        2025,
+        483
+      ]
+    ],
+    "low_vs_best_changed_country_years": [
+      [
+        2024,
+        540
+      ],
+      [
+        2025,
+        461
+      ],
+      [
+        2025,
+        540
+      ]
+    ],
+    "n": 392,
+    "nonmonotonic_named_death_estimate_country_years": [
+      [
+        2024,
+        365
+      ],
+      [
+        2025,
+        365
+      ]
+    ],
+    "scenarios": {
+      "best": {
+        "four_state_intensity": {
+          "brier": 0.04244932898612074,
+          "logloss": 0.1549169446672187
+        },
+        "four_state_minus_original_delta_brier": 0.0023652720732543,
+        "four_state_minus_original_delta_logloss": 0.0005192060236183516,
+        "lower_brier_in_this_scenario": "original_binary_lower_brier",
+        "original_binary": {
+          "brier": 0.04008405691286644,
+          "logloss": 0.15439773864360035
+        },
+        "positives": 69
+      },
+      "high": {
+        "four_state_intensity": {
+          "brier": 0.04160563354169217,
+          "logloss": 0.15316364807357502
+        },
+        "four_state_minus_original_delta_brier": 0.0028662423195961392,
+        "four_state_minus_original_delta_logloss": 0.0017563855274133344,
+        "lower_brier_in_this_scenario": "original_binary_lower_brier",
+        "original_binary": {
+          "brier": 0.038739391222096034,
+          "logloss": 0.15140726254616169
+        },
+        "positives": 70
+      },
+      "low": {
+        "four_state_intensity": {
+          "brier": 0.039694574595273854,
+          "logloss": 0.14710177388258822
+        },
+        "four_state_minus_original_delta_brier": 0.0012045937536982465,
+        "four_state_minus_original_delta_logloss": -0.0036520824678835107,
+        "lower_brier_in_this_scenario": "original_binary_lower_brier",
+        "original_binary": {
+          "brier": 0.03848998084157561,
+          "logloss": 0.15075385635047173
+        },
+        "positives": 66
+      }
+    },
+    "sharp_label_ambiguity_envelope": {
+      "country_year_envelope_extremes_not_asserted_jointly_feasible": true,
+      "country_year_label_independence_not_assumed": true,
+      "not_a_statistical_confidence_or_prediction_interval": true,
+      "same_model_lower_brier_for_every_consistent_binary_label_assignment": "original_binary_lower_brier",
+      "sharp_finite_cohort_lower_delta_brier": 0.0007661330459735878,
+      "sharp_finite_cohort_upper_delta_brier": 0.00330470302732054,
+      "zero_excluded_by_algebraic_envelope": true
+    },
+    "top_ten_absolute_best_brier_difference_contributions": [
+      {
+        "active_low_best_high": [
+          1,
+          1,
+          1
+        ],
+        "country_id": 626,
+        "deaths_low_best_high": [
+          25,
+          25,
+          25
+        ],
+        "delta_brier_best": -0.4185976169556669,
+        "delta_brier_high": -0.4185976169556669,
+        "delta_brier_low": -0.4185976169556669,
+        "p_intensity_four_state": 0.312816106468,
+        "p_original_binary": 0.056167747698,
+        "sharp_case_max_delta": -0.4185976169556669,
+        "sharp_case_min_delta": -0.4185976169556669,
+        "target_year": 2024
+      },
+      {
+        "active_low_best_high": [
+          1,
+          1,
+          1
+        ],
+        "country_id": 626,
+        "deaths_low_best_high": [
+          277,
+          282,
+          446
+        ],
+        "delta_brier_best": -0.40174711659681284,
+        "delta_brier_high": -0.40174711659681284,
+        "delta_brier_low": -0.40174711659681284,
+        "p_intensity_four_state": 0.296352471404,
+        "p_original_binary": 0.052969398015,
+        "sharp_case_max_delta": -0.40174711659681284,
+        "sharp_case_min_delta": -0.40174711659681284,
+        "target_year": 2025
+      },
+      {
+        "active_low_best_high": [
+          0,
+          0,
+          0
+        ],
+        "country_id": 640,
+        "deaths_low_best_high": [
+          9,
+          10,
+          10
+        ],
+        "delta_brier_best": -0.3596923647250341,
+        "delta_brier_high": -0.3596923647250341,
+        "delta_brier_low": -0.3596923647250341,
+        "p_intensity_four_state": 0.600266515286,
+        "p_original_binary": 0.84853535819,
+        "sharp_case_max_delta": -0.3596923647250341,
+        "sharp_case_min_delta": -0.3596923647250341,
+        "target_year": 2025
+      },
+      {
+        "active_low_best_high": [
+          0,
+          0,
+          0
+        ],
+        "country_id": 500,
+        "deaths_low_best_high": [
+          0,
+          0,
+          0
+        ],
+        "delta_brier_best": -0.3139525190181707,
+        "delta_brier_high": -0.3139525190181707,
+        "delta_brier_low": -0.3139525190181707,
+        "p_intensity_four_state": 0.500571152142,
+        "p_original_binary": 0.751348119965,
+        "sharp_case_max_delta": -0.3139525190181707,
+        "sharp_case_min_delta": -0.3139525190181707,
+        "target_year": 2024
+      },
+      {
+        "active_low_best_high": [
+          0,
+          1,
+          1
+        ],
+        "country_id": 540,
+        "deaths_low_best_high": [
+          5,
+          25,
+          78
+        ],
+        "delta_brier_best": 0.27560188905356897,
+        "delta_brier_high": 0.27560188905356897,
+        "delta_brier_low": -0.048807433808431014,
+        "p_intensity_four_state": 0.06934782706,
+        "p_original_binary": 0.231552488491,
+        "sharp_case_max_delta": 0.27560188905356897,
+        "sharp_case_min_delta": -0.048807433808431014,
+        "target_year": 2025
+      },
+      {
+        "active_low_best_high": [
+          0,
+          0,
+          0
+        ],
+        "country_id": 373,
+        "deaths_low_best_high": [
+          0,
+          0,
+          0
+        ],
+        "delta_brier_best": 0.232997172469261,
+        "delta_brier_high": 0.232997172469261,
+        "delta_brier_low": 0.232997172469261,
+        "p_intensity_four_state": 0.81252922687,
+        "p_original_binary": 0.653610413051,
+        "sharp_case_max_delta": 0.232997172469261,
+        "sharp_case_min_delta": 0.232997172469261,
+        "target_year": 2025
+      },
+      {
+        "active_low_best_high": [
+          0,
+          0,
+          0
+        ],
+        "country_id": 373,
+        "deaths_low_best_high": [
+          0,
+          0,
+          0
+        ],
+        "delta_brier_best": 0.2293811233240854,
+        "delta_brier_high": 0.2293811233240854,
+        "delta_brier_low": 0.2293811233240854,
+        "p_intensity_four_state": 0.802471536603,
+        "p_original_binary": 0.643878438631,
+        "sharp_case_max_delta": 0.2293811233240854,
+        "sharp_case_min_delta": 0.2293811233240854,
+        "target_year": 2024
+      },
+      {
+        "active_low_best_high": [
+          0,
+          0,
+          0
+        ],
+        "country_id": 371,
+        "deaths_low_best_high": [
+          0,
+          0,
+          0
+        ],
+        "delta_brier_best": 0.19123776725727748,
+        "delta_brier_high": 0.19123776725727748,
+        "delta_brier_low": 0.19123776725727748,
+        "p_intensity_four_state": 0.801672743815,
+        "p_original_binary": 0.671893905999,
+        "sharp_case_max_delta": 0.19123776725727748,
+        "sharp_case_min_delta": 0.19123776725727748,
+        "target_year": 2024
+      },
+      {
+        "active_low_best_high": [
+          1,
+          1,
+          1
+        ],
+        "country_id": 660,
+        "deaths_low_best_high": [
+          3985,
+          4339,
+          5160
+        ],
+        "delta_brier_best": 0.1789475927398253,
+        "delta_brier_high": 0.1789475927398253,
+        "delta_brier_low": 0.1789475927398253,
+        "p_intensity_four_state": 0.064861146832,
+        "p_original_binary": 0.166011341825,
+        "sharp_case_max_delta": 0.1789475927398253,
+        "sharp_case_min_delta": 0.1789475927398253,
+        "target_year": 2024
+      },
+      {
+        "active_low_best_high": [
+          1,
+          1,
+          1
+        ],
+        "country_id": 100,
+        "deaths_low_best_high": [
+          288,
+          307,
+          340
+        ],
+        "delta_brier_best": 0.1616883733858303,
+        "delta_brier_high": 0.1616883733858303,
+        "delta_brier_low": 0.1616883733858303,
+        "p_intensity_four_state": 0.571367045885,
+        "p_original_binary": 0.851548540029,
+        "sharp_case_max_delta": 0.1616883733858303,
+        "sharp_case_min_delta": 0.1616883733858303,
+        "target_year": 2025
+      }
+    ]
+  },
+  "previous_54_panel_source_audit": "data/geo2027-ucdp-fatality-vintage-intervals.json",
+  "prospective_skill_demonstrated": false,
+  "same_origin_issued_model_replayed_for_all_outcome_estimates": true,
+  "schema": "idealab.psico.geo_h2_crossrelease_fatality_label_sensitivity.v1",
+  "shared_countries_not_independent": true,
+  "source_archives_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "status": "EX_POST_SOURCE_SEPARATED_REPLAY_MEASUREMENT_ONLY_NOT_ISSUED_PREDICTIONS",
+  "two_target_years_not_independent": true
+}
