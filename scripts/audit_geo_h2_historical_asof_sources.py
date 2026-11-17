@@ -13,6 +13,7 @@ import hashlib
 import json
 import math
 import re
+from html.parser import HTMLParser
 from pathlib import Path
 
 from audit_geo2027_global_only_matched_issue import (
@@ -44,6 +45,43 @@ CODEBOOKS = {
         "last_data_year": 2023,
     },
 }
+
+
+
+class CatalogSectionParser(HTMLParser):
+    """Inspect the entire named official catalog section, NOT only known links."""
+    def __init__(self):
+        super().__init__()
+        self.heading=None
+        self.heading_parts=[]
+        self.in_section=False
+        self.section=[]
+    def handle_starttag(self,tag,attrs):
+        if tag in ("h2","h3"):
+            self.heading=tag
+            self.heading_parts=[]
+    def handle_endtag(self,tag):
+        if self.heading==tag:
+            title=" ".join(self.heading_parts).lower()
+            self.in_section=("country-year dataset on organized violence "
+                             "within country borders" in title)
+            self.heading=None
+    def handle_data(self,data):
+        if self.heading:
+            self.heading_parts.append(data)
+        elif self.in_section:
+            self.section.append(data)
+
+
+def official_catalog_year_versions(raw_html):
+    p=CatalogSectionParser()
+    p.feed(raw_html)
+    text=" ".join(p.section)
+    found=sorted(set(re.findall(r"\\bversion\\s+(\\d{2}\\.\\d)\\s*:",text,
+                             flags=re.IGNORECASE)))
+    if not found:
+        raise ValueError("Official archived OrganizedViolenceCY section absent")
+    return found
 
 
 def _delta(fold, label="best"):
@@ -116,7 +154,7 @@ def _avg_folds(folds, scenario):
     }
 
 
-def audit(rolling, twofold, issue, codebook_sha, listed_archive_links):
+def audit(rolling, twofold, issue, codebook_sha, listed_archive_links, catalog_versions):
     if (rolling.get("schema") != "idealab.psico.geo_h2_rolling_historical_2014_2025.v1" or
         rolling.get("not_prospective_or_independently_timestamped_skill") is not True or
         rolling.get("unique_country_years_primary_n") != 2352 or
@@ -129,7 +167,8 @@ def audit(rolling, twofold, issue, codebook_sha, listed_archive_links):
         len(issue.get("countries",[])) != N or
         issue.get("official_2027_outcomes_resolved") != 0 or
         set(codebook_sha) != set(CODEBOOKS) or
-        set(listed_archive_links) != {"23.1","24.1","25.1"}):
+        set(listed_archive_links) != {"23.1","24.1","25.1"} or
+        catalog_versions != ["23.1","24.1","25.1"]):
         raise ValueError("Prior published source audit, frozen issue or original sources changed")
     for version, digest in codebook_sha.items():
         if not isinstance(digest,str) or not re.fullmatch(r"[0-9a-f]{64}",digest):
@@ -238,13 +277,14 @@ def audit(rolling, twofold, issue, codebook_sha, listed_archive_links):
             } for version,spec in CODEBOOKS.items()},
         "official_archival_catalog":ARCHIVE,
         "official_listed_archive_23_24_25_present":True,
-        "no_22_1_organized_violence_cy_version_listed_on_official_archive":True,
+        "official_archive_observed_country_year_versions":catalog_versions,
+        "no_22_1_organized_violence_cy_version_listed_on_official_archive": "22.1" not in catalog_versions,
         "absence_from_archive_not_proof_no_older_data_ever_existed":True,
         "historical_PDF_year_is_compilation_not_independent_file_release_timestamp":True,
         "all_12_pseudo_origins_precede_edition_codebook_year":True,
         "n_pseudo_origins_with_source_verified_available_at_pseudo_origin":0,
         "n_target_years_with_prior_year_codebook_but_no_file_time_hash":2,
-        "n_target_years_after_own_source_codebook_year":9,
+        "n_target_years_before_own_source_codebook_year":9,
         "n_target_years_same_as_source_codebook_year_unresolved":1,
         "n_target_years_with_hash_timestamp_confirmed_source_available_before_target":0,
         "first_issued_2027_and_2028_probabilities_unchanged":True,
@@ -298,7 +338,8 @@ def main():
         digests[version]=hashlib.sha256(data).hexdigest()
     files=[json.loads(p.read_text(encoding="utf-8"))
            for p in (ROLLING,TWO_FOLD,ISSUE)]
-    report=audit(*files,digests,listed)
+    report=audit(*files,digests,listed,
+                 official_catalog_year_versions(raw.decode("utf-8")))
     encoded=json.dumps(report,sort_keys=True,ensure_ascii=False,indent=2)+"\n"
     if args.check_report and REPORT.read_bytes()!=encoded.encode("utf-8"):
         raise ValueError("Official UCDP release-eligibility report is not byte-identical")
