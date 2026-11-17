@@ -15,6 +15,8 @@ on:
       - 'data/geo-ged-20-21-coverage-revisions.json'
       - '.github/workflows/geo-ged-transition-revision-impact.yml'
   workflow_dispatch:
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
 permissions:
   contents: read
 jobs:
@@ -28,6 +30,6 @@ jobs:
       - name: Verify transition revision counts against the pinned source report
         run: python3 scripts/audit_geo_ged_transition_revision_impact.py --check-report
       - name: Test source-revision impact arithmetic and fail-closed controls
-        run: python3 -m unittest discover -s scripts -p 'test_audit_geo_ged_transition_revision_impact.py' -v
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_ged_transition_revision_impact.py' -v
       - name: Institutional public privacy allowlist
         run: python3 scripts/audit_public.py
