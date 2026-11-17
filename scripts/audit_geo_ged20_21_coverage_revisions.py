@@ -52,9 +52,15 @@ MAX_PDF=8_000_000
 MIN_YEAR=2011
 SYRIA=652
 N=196
-# Values set to verified original SHA-256 *after* first official ZIP/PDF replay.
-PINNED_NEW_SHA256 = {}
-PINNED_CODEBOOK_SHA256 = {}
+# SHA-256 computed from officially retrieved ZIP/PDF bytes on 2026-11-17.
+PINNED_NEW_SHA256 = {
+    "20.1":"5e35b74f52dc67a18aabfab86f69655c847e87320684662a6112dec46d65111f",
+    "21.1":"2cd62e39db0f49b784ecd1d48c364191c78afc9d5fb1bd9f6b6dda55dcd59afd",
+}
+PINNED_CODEBOOK_SHA256 = {
+    "20.1":"964becfa74e56e9217c123d059a6e4156037750dbaadd4b4e5a25de2c990e03a",
+    "21.1":"4d1c6ab95462e8bee2c6a4e501fef7b5a5cde6c0e0cd1064bb5c8d3d3c7ab80c",
+}
 
 
 def _valid_ids(ids):
