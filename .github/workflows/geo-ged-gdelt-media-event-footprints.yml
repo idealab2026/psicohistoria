@@ -1,0 +1,39 @@
+name: GEO GED versus independent GDELT historical media event footprints
+on:
+  push:
+    paths:
+      - 'scripts/audit_geo_ged_gdelt_independent_media_events.py'
+      - 'scripts/test_audit_geo_ged_gdelt_independent_media_events.py'
+      - 'data/geo-ged-gdelt-external-event-footprint-3case.json'
+      - '.github/workflows/geo-ged-gdelt-media-event-footprints.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_geo_ged_gdelt_independent_media_events.py'
+      - 'scripts/test_audit_geo_ged_gdelt_independent_media_events.py'
+      - 'data/geo-ged-gdelt-external-event-footprint-3case.json'
+      - '.github/workflows/geo-ged-gdelt-media-event-footprints.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests on controlled GED selection and GDELT geographic news footprints
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_ged_gdelt_independent_media_events.py' -v
+      - name: Replay official GED25.1 and GDELT daily archives with provenance
+        run: |
+          if [ -f data/geo-ged-gdelt-external-event-footprint-3case.json ]; then
+            python3 -B scripts/audit_geo_ged_gdelt_independent_media_events.py --check-report
+          else
+            python3 -B scripts/audit_geo_ged_gdelt_independent_media_events.py --print-report
+          fi
+      - name: Institutional public privacy and release audit
+        run: python3 -B scripts/audit_public.py
