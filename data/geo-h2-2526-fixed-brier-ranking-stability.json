@@ -1,0 +1,903 @@
+{
+  "annual": [
+    {
+      "adjacent_margins_new": [
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.008196958469512905,
+          "worse": "p_original_binary"
+        },
+        {
+          "better": "p_original_binary",
+          "margin": 0.003981387739941916,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.07539739461421566,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "adjacent_margins_old": [
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.008196958469512905,
+          "worse": "p_original_binary"
+        },
+        {
+          "better": "p_original_binary",
+          "margin": 0.003981387739941916,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.07539739461421566,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "binary_label_revisions_n": 0,
+      "official_country_n": 196,
+      "origin_year": 2012,
+      "pairwise_order_or_tie_reversed": [],
+      "ranking_changed": false,
+      "ranking_new": [
+        "p_intensity_markov",
+        "p_original_binary",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "ranking_old": [
+        "p_intensity_markov",
+        "p_original_binary",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "score_25_1": {
+        "p_baseline_global_5y": 0.13407679656814322,
+        "p_global_markov": 0.05867940195392756,
+        "p_intensity_markov": 0.04650105574447274,
+        "p_original_binary": 0.054698014213985645
+      },
+      "score_26_1_same_probabilities": {
+        "p_baseline_global_5y": 0.13407679656814322,
+        "p_global_markov": 0.05867940195392756,
+        "p_intensity_markov": 0.04650105574447274,
+        "p_original_binary": 0.054698014213985645
+      },
+      "score_revision_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "target_year": 2014
+    },
+    {
+      "adjacent_margins_new": [
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.004191195364773061,
+          "worse": "p_original_binary"
+        },
+        {
+          "better": "p_original_binary",
+          "margin": 0.008804611622562727,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.07948049399185582,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "adjacent_margins_old": [
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.004191195364773061,
+          "worse": "p_original_binary"
+        },
+        {
+          "better": "p_original_binary",
+          "margin": 0.008804611622562727,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.07948049399185582,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "binary_label_revisions_n": 0,
+      "official_country_n": 196,
+      "origin_year": 2013,
+      "pairwise_order_or_tie_reversed": [],
+      "ranking_changed": false,
+      "ranking_new": [
+        "p_intensity_markov",
+        "p_original_binary",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "ranking_old": [
+        "p_intensity_markov",
+        "p_original_binary",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "score_25_1": {
+        "p_baseline_global_5y": 0.14567784256556246,
+        "p_global_markov": 0.06619734857370664,
+        "p_intensity_markov": 0.05320154158637085,
+        "p_original_binary": 0.05739273695114391
+      },
+      "score_26_1_same_probabilities": {
+        "p_baseline_global_5y": 0.14567784256556246,
+        "p_global_markov": 0.06619734857370664,
+        "p_intensity_markov": 0.05320154158637085,
+        "p_original_binary": 0.05739273695114391
+      },
+      "score_revision_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "target_year": 2015
+    },
+    {
+      "adjacent_margins_new": [
+        {
+          "better": "p_original_binary",
+          "margin": 0.0003756090755568306,
+          "worse": "p_intensity_markov"
+        },
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.009250298038500172,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.085234601906226,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "adjacent_margins_old": [
+        {
+          "better": "p_original_binary",
+          "margin": 0.0003756090755568306,
+          "worse": "p_intensity_markov"
+        },
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.009250298038500172,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.085234601906226,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "binary_label_revisions_n": 0,
+      "official_country_n": 196,
+      "origin_year": 2014,
+      "pairwise_order_or_tie_reversed": [],
+      "ranking_changed": false,
+      "ranking_new": [
+        "p_original_binary",
+        "p_intensity_markov",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "ranking_old": [
+        "p_original_binary",
+        "p_intensity_markov",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "score_25_1": {
+        "p_baseline_global_5y": 0.15265975649300892,
+        "p_global_markov": 0.06742515458678291,
+        "p_intensity_markov": 0.05817485654828274,
+        "p_original_binary": 0.05779924747272591
+      },
+      "score_26_1_same_probabilities": {
+        "p_baseline_global_5y": 0.15265975649300892,
+        "p_global_markov": 0.06742515458678291,
+        "p_intensity_markov": 0.05817485654828274,
+        "p_original_binary": 0.05779924747272591
+      },
+      "score_revision_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "target_year": 2016
+    },
+    {
+      "adjacent_margins_new": [
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.0027974574082750073,
+          "worse": "p_original_binary"
+        },
+        {
+          "better": "p_original_binary",
+          "margin": 0.00297628756531617,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.10564372082525378,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "adjacent_margins_old": [
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.0023691240886525577,
+          "worse": "p_original_binary"
+        },
+        {
+          "better": "p_original_binary",
+          "margin": 0.00121159994917331,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.10016869220687621,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "binary_label_revisions_n": 1,
+      "official_country_n": 196,
+      "origin_year": 2015,
+      "pairwise_order_or_tie_reversed": [],
+      "ranking_changed": false,
+      "ranking_new": [
+        "p_intensity_markov",
+        "p_original_binary",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "ranking_old": [
+        "p_intensity_markov",
+        "p_original_binary",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "score_25_1": {
+        "p_baseline_global_5y": 0.1369970792270738,
+        "p_global_markov": 0.036828387020197584,
+        "p_intensity_markov": 0.033247662982371716,
+        "p_original_binary": 0.035616787071024274
+      },
+      "score_26_1_same_probabilities": {
+        "p_baseline_global_5y": 0.14063397186600238,
+        "p_global_markov": 0.034990251040748606,
+        "p_intensity_markov": 0.02921650606715743,
+        "p_original_binary": 0.032013963475432436
+      },
+      "score_revision_new_minus_old": {
+        "p_baseline_global_5y": 0.0036368926389285716,
+        "p_global_markov": -0.0018381359794489792,
+        "p_intensity_markov": -0.004031156915214286,
+        "p_original_binary": -0.0036028235955918365
+      },
+      "target_year": 2017
+    },
+    {
+      "adjacent_margins_new": [
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.0012241795055928165,
+          "worse": "p_original_binary"
+        },
+        {
+          "better": "p_original_binary",
+          "margin": 0.010344083940758413,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.07521313764559771,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "adjacent_margins_old": [
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.0012241795055928165,
+          "worse": "p_original_binary"
+        },
+        {
+          "better": "p_original_binary",
+          "margin": 0.010344083940758413,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.07521313764559771,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "binary_label_revisions_n": 0,
+      "official_country_n": 196,
+      "origin_year": 2016,
+      "pairwise_order_or_tie_reversed": [],
+      "ranking_changed": false,
+      "ranking_new": [
+        "p_intensity_markov",
+        "p_original_binary",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "ranking_old": [
+        "p_intensity_markov",
+        "p_original_binary",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "score_25_1": {
+        "p_baseline_global_5y": 0.1402329295878095,
+        "p_global_markov": 0.06501979194221179,
+        "p_intensity_markov": 0.05345152849586056,
+        "p_original_binary": 0.054675708001453376
+      },
+      "score_26_1_same_probabilities": {
+        "p_baseline_global_5y": 0.1402329295878095,
+        "p_global_markov": 0.06501979194221179,
+        "p_intensity_markov": 0.05345152849586056,
+        "p_original_binary": 0.054675708001453376
+      },
+      "score_revision_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "target_year": 2018
+    },
+    {
+      "adjacent_margins_new": [
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.007506180968247601,
+          "worse": "p_original_binary"
+        },
+        {
+          "better": "p_original_binary",
+          "margin": 0.006363957016731245,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.07808654927110963,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "adjacent_margins_old": [
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.007506180968247601,
+          "worse": "p_original_binary"
+        },
+        {
+          "better": "p_original_binary",
+          "margin": 0.006363957016731245,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.07808654927110963,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "binary_label_revisions_n": 0,
+      "official_country_n": 196,
+      "origin_year": 2017,
+      "pairwise_order_or_tie_reversed": [],
+      "ranking_changed": false,
+      "ranking_new": [
+        "p_intensity_markov",
+        "p_original_binary",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "ranking_old": [
+        "p_intensity_markov",
+        "p_original_binary",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "score_25_1": {
+        "p_baseline_global_5y": 0.14004931783025965,
+        "p_global_markov": 0.06196276855915002,
+        "p_intensity_markov": 0.04809263057417117,
+        "p_original_binary": 0.055598811542418775
+      },
+      "score_26_1_same_probabilities": {
+        "p_baseline_global_5y": 0.14004931783025965,
+        "p_global_markov": 0.06196276855915002,
+        "p_intensity_markov": 0.04809263057417117,
+        "p_original_binary": 0.055598811542418775
+      },
+      "score_revision_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "target_year": 2019
+    },
+    {
+      "adjacent_margins_new": [
+        {
+          "better": "p_original_binary",
+          "margin": 0.00048152901279955446,
+          "worse": "p_intensity_markov"
+        },
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.006880690860035357,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.1078372630190709,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "adjacent_margins_old": [
+        {
+          "better": "p_original_binary",
+          "margin": 0.00048152901279955446,
+          "worse": "p_intensity_markov"
+        },
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.006880690860035357,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.1078372630190709,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "binary_label_revisions_n": 0,
+      "official_country_n": 196,
+      "origin_year": 2018,
+      "pairwise_order_or_tie_reversed": [],
+      "ranking_changed": false,
+      "ranking_new": [
+        "p_original_binary",
+        "p_intensity_markov",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "ranking_old": [
+        "p_original_binary",
+        "p_intensity_markov",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "score_25_1": {
+        "p_baseline_global_5y": 0.14677446880628378,
+        "p_global_markov": 0.038937205787212874,
+        "p_intensity_markov": 0.03205651492717752,
+        "p_original_binary": 0.03157498591437796
+      },
+      "score_26_1_same_probabilities": {
+        "p_baseline_global_5y": 0.14677446880628378,
+        "p_global_markov": 0.038937205787212874,
+        "p_intensity_markov": 0.03205651492717752,
+        "p_original_binary": 0.03157498591437796
+      },
+      "score_revision_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "target_year": 2020
+    },
+    {
+      "adjacent_margins_new": [
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.004379125342169332,
+          "worse": "p_original_binary"
+        },
+        {
+          "better": "p_original_binary",
+          "margin": 0.005688945461624274,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.09481140712708855,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "adjacent_margins_old": [
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.004379125342169332,
+          "worse": "p_original_binary"
+        },
+        {
+          "better": "p_original_binary",
+          "margin": 0.005688945461624274,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.09481140712708855,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "binary_label_revisions_n": 0,
+      "official_country_n": 196,
+      "origin_year": 2019,
+      "pairwise_order_or_tie_reversed": [],
+      "ranking_changed": false,
+      "ranking_new": [
+        "p_intensity_markov",
+        "p_original_binary",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "ranking_old": [
+        "p_intensity_markov",
+        "p_original_binary",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "score_25_1": {
+        "p_baseline_global_5y": 0.13664312502639603,
+        "p_global_markov": 0.04183171789930749,
+        "p_intensity_markov": 0.03176364709551388,
+        "p_original_binary": 0.03614277243768321
+      },
+      "score_26_1_same_probabilities": {
+        "p_baseline_global_5y": 0.13664312502639603,
+        "p_global_markov": 0.04183171789930749,
+        "p_intensity_markov": 0.03176364709551388,
+        "p_original_binary": 0.03614277243768321
+      },
+      "score_revision_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "target_year": 2021
+    },
+    {
+      "adjacent_margins_new": [
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.00835190221442892,
+          "worse": "p_original_binary"
+        },
+        {
+          "better": "p_original_binary",
+          "margin": 0.006544649921578882,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.08859146383014616,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "adjacent_margins_old": [
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.00835190221442892,
+          "worse": "p_original_binary"
+        },
+        {
+          "better": "p_original_binary",
+          "margin": 0.006544649921578882,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.08859146383014616,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "binary_label_revisions_n": 0,
+      "official_country_n": 196,
+      "origin_year": 2020,
+      "pairwise_order_or_tie_reversed": [],
+      "ranking_changed": false,
+      "ranking_new": [
+        "p_intensity_markov",
+        "p_original_binary",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "ranking_old": [
+        "p_intensity_markov",
+        "p_original_binary",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "score_25_1": {
+        "p_baseline_global_5y": 0.15352869799287563,
+        "p_global_markov": 0.06493723416272948,
+        "p_intensity_markov": 0.050040682026721676,
+        "p_original_binary": 0.0583925842411506
+      },
+      "score_26_1_same_probabilities": {
+        "p_baseline_global_5y": 0.15352869799287563,
+        "p_global_markov": 0.06493723416272948,
+        "p_intensity_markov": 0.050040682026721676,
+        "p_original_binary": 0.0583925842411506
+      },
+      "score_revision_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "target_year": 2022
+    },
+    {
+      "adjacent_margins_new": [
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.0002771979090378171,
+          "worse": "p_original_binary"
+        },
+        {
+          "better": "p_original_binary",
+          "margin": 0.007446139092427938,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.09712230529267246,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "adjacent_margins_old": [
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.0002771979090378171,
+          "worse": "p_original_binary"
+        },
+        {
+          "better": "p_original_binary",
+          "margin": 0.007446139092427938,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.09712230529267246,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "binary_label_revisions_n": 0,
+      "official_country_n": 196,
+      "origin_year": 2021,
+      "pairwise_order_or_tie_reversed": [],
+      "ranking_changed": false,
+      "ranking_new": [
+        "p_intensity_markov",
+        "p_original_binary",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "ranking_old": [
+        "p_intensity_markov",
+        "p_original_binary",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "score_25_1": {
+        "p_baseline_global_5y": 0.1434500082070787,
+        "p_global_markov": 0.04632770291440625,
+        "p_intensity_markov": 0.038604365912940496,
+        "p_original_binary": 0.03888156382197831
+      },
+      "score_26_1_same_probabilities": {
+        "p_baseline_global_5y": 0.1434500082070787,
+        "p_global_markov": 0.04632770291440625,
+        "p_intensity_markov": 0.038604365912940496,
+        "p_original_binary": 0.03888156382197831
+      },
+      "score_revision_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "target_year": 2023
+    },
+    {
+      "adjacent_margins_new": [
+        {
+          "better": "p_original_binary",
+          "margin": 0.00484688145389274,
+          "worse": "p_intensity_markov"
+        },
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.0034321201165218307,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.0970456357180004,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "adjacent_margins_old": [
+        {
+          "better": "p_original_binary",
+          "margin": 0.00484688145389274,
+          "worse": "p_intensity_markov"
+        },
+        {
+          "better": "p_intensity_markov",
+          "margin": 0.0034321201165218307,
+          "worse": "p_global_markov"
+        },
+        {
+          "better": "p_global_markov",
+          "margin": 0.0970456357180004,
+          "worse": "p_baseline_global_5y"
+        }
+      ],
+      "binary_label_revisions_n": 0,
+      "official_country_n": 196,
+      "origin_year": 2022,
+      "pairwise_order_or_tie_reversed": [],
+      "ranking_changed": false,
+      "ranking_new": [
+        "p_original_binary",
+        "p_intensity_markov",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "ranking_old": [
+        "p_original_binary",
+        "p_intensity_markov",
+        "p_global_markov",
+        "p_baseline_global_5y"
+      ],
+      "score_25_1": {
+        "p_baseline_global_5y": 0.14675609916525365,
+        "p_global_markov": 0.04971046344725325,
+        "p_intensity_markov": 0.04627834333073142,
+        "p_original_binary": 0.04143146187683868
+      },
+      "score_26_1_same_probabilities": {
+        "p_baseline_global_5y": 0.14675609916525365,
+        "p_global_markov": 0.04971046344725325,
+        "p_intensity_markov": 0.04627834333073142,
+        "p_original_binary": 0.04143146187683868
+      },
+      "score_revision_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "target_year": 2024
+    }
+  ],
+  "annual_pairwise_order_reversals_n": 0,
+  "annual_rank_changes_n": 0,
+  "countries_per_year": 196,
+  "excluded_2025_from_pooled_baseline": true,
+  "historical_forecasts_issued_at_actual_origins": false,
+  "limitations": "Only 25.1 versus 26.1 outcome labels at fixed pseudo-origin model vectors. The older origin editions were published after many simulated origins. Country-year observations share time and geography. No causal inference, IID interpretation, significance test or evidence of prospective predictive skill.",
+  "models": [
+    "p_original_binary",
+    "p_intensity_markov",
+    "p_global_markov",
+    "p_baseline_global_5y"
+  ],
+  "new_2027_2028_forecasts_issued": 0,
+  "observed_future_outcomes_scored": false,
+  "official_UCDP_zip_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "original_GEO2027_issue_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "pooled_country_year_n": 2156,
+  "pooled_measured_score_revision_new_minus_old": {
+    "p_baseline_global_5y": 0.00033062660353896104,
+    "p_global_markov": -0.00016710327085899812,
+    "p_intensity_markov": -0.00036646881047402595,
+    "p_original_binary": -0.000327529417781076
+  },
+  "pooled_ranking": {
+    "adjacent_margins_new": [
+      {
+        "better": "p_intensity_markov",
+        "margin": 0.002838197967253493,
+        "worse": "p_original_binary"
+      },
+      {
+        "better": "p_original_binary",
+        "margin": 0.007037926447113443,
+        "worse": "p_global_markov"
+      },
+      {
+        "better": "p_global_markov",
+        "margin": 0.08949672484011248,
+        "worse": "p_baseline_global_5y"
+      }
+    ],
+    "adjacent_margins_old": [
+      {
+        "better": "p_intensity_markov",
+        "margin": 0.002799258574560537,
+        "worse": "p_original_binary"
+      },
+      {
+        "better": "p_original_binary",
+        "margin": 0.006877500300191373,
+        "worse": "p_global_markov"
+      },
+      {
+        "better": "p_global_markov",
+        "margin": 0.0889989949657145,
+        "worse": "p_baseline_global_5y"
+      }
+    ],
+    "pairwise_order_or_tie_reversed": [],
+    "ranking_changed": false,
+    "ranking_new": [
+      "p_intensity_markov",
+      "p_original_binary",
+      "p_global_markov",
+      "p_baseline_global_5y"
+    ],
+    "ranking_old": [
+      "p_intensity_markov",
+      "p_original_binary",
+      "p_global_markov",
+      "p_baseline_global_5y"
+    ]
+  },
+  "pooled_scores_25_1": {
+    "p_baseline_global_5y": 0.14334964740634049,
+    "p_global_markov": 0.054350652440625986,
+    "p_intensity_markov": 0.044673893565874076,
+    "p_original_binary": 0.04747315214043461
+  },
+  "pooled_scores_26_1_same_probabilities": {
+    "p_baseline_global_5y": 0.14368027400987946,
+    "p_global_markov": 0.05418354916976698,
+    "p_intensity_markov": 0.044307424755400046,
+    "p_original_binary": 0.04714562272265354
+  },
+  "schema": "idealab.psico.geo_h2_2526_fixed_brier_rank_robustness.v1",
+  "source_fixed_vector_measurement_report": "data/geo-h2-fixed-vector-2526-outcome-revision.json",
+  "source_rolling_historical_report": "data/geo-h2-rolling-historical-2014-2025.json",
+  "status": "RETROSPECTIVE_FIXED_FORECAST_SOURCE_VINTAGE_RANKING_NOT_PROSPECTIVE_SKILL",
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ]
+}
