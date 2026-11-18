@@ -1,0 +1,37 @@
+name: GEO GED fixed-Brier source-revision ceilings
+on:
+  push:
+    paths:
+      - 'scripts/audit_geo_ged_revision_fixed_brier_bounds.py'
+      - 'scripts/test_audit_geo_ged_revision_fixed_brier_bounds.py'
+      - 'data/geo-ged-revision-fixed-brier-bounds.json'
+      - 'data/geo-ged-20-21-coverage-revisions.json'
+      - 'data/geo-ged-transition-revision-impact.json'
+      - '.github/workflows/geo-ged-revision-fixed-brier-bounds.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_geo_ged_revision_fixed_brier_bounds.py'
+      - 'scripts/test_audit_geo_ged_revision_fixed_brier_bounds.py'
+      - 'data/geo-ged-revision-fixed-brier-bounds.json'
+      - 'data/geo-ged-20-21-coverage-revisions.json'
+      - 'data/geo-ged-transition-revision-impact.json'
+      - '.github/workflows/geo-ged-revision-fixed-brier-bounds.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check exact source-derived Brier ceilings
+        run: python3 -B scripts/audit_geo_ged_revision_fixed_brier_bounds.py --check-report
+      - name: Check algebra and bad-provenance controls
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_ged_revision_fixed_brier_bounds.py' -v
+      - name: Public institutional allowlist and privacy gate
+        run: python3 -B scripts/audit_public.py

@@ -1,0 +1,129 @@
+{
+  "schema": "idealab.psico.ged_fixed_forecasts_brier_revision_ceiling.v1",
+  "status": "EX_POST_SOURCE_REVISION_ALGEBRA_NOT_MEASURED_BRIER",
+  "source_annual": "data/geo-ged-20-21-coverage-revisions.json",
+  "source_transition": "data/geo-ged-transition-revision-impact.json",
+  "official_ged_sha256": {
+    "19.1": "58a640f82abe9b67090ded37f3163ca6839b36d737fddaacde95763b459a018f",
+    "20.1": "5e35b74f52dc67a18aabfab86f69655c847e87320684662a6112dec46d65111f",
+    "21.1": "2cd62e39db0f49b784ecd1d48c364191c78afc9d5fb1bd9f6b6dda55dcd59afd",
+    "22.1": "1741045a14a59e2ddbe9de4a190a7ef5b68d60d57be7e94178aff2e926a59f0d",
+    "23.1": "9aa082f9e1f62da5ea3245c39b1cee45daab6dc8b3a17fb0f0cdae9ba13ce6f7"
+  },
+  "bounds": "finite sample, fixed probabilities in [0,1], no independence assumption",
+  "same_model_probability_vector_assumed_across_vintages": true,
+  "actual_historical_predictions_available_or_certified": false,
+  "prospective_skill_demonstrated": false,
+  "new_forecasts_emitted": 0,
+  "overlapping_pairs_cannot_be_pooled_as_independent": true,
+  "pairs": [
+    {
+      "old_version": "19.1",
+      "new_version": "20.1",
+      "is_consecutive_release": true,
+      "annual": {
+        "country_years": 1560,
+        "revised_binary_labels": 2,
+        "max_absolute_single_fixed_model_brier_shift": 0.001282051282051282,
+        "max_absolute_two_fixed_model_delta_brier_shift": 0.002564102564102564
+      },
+      "transition_fourstate": {
+        "country_year_transitions": 1365,
+        "revised_fourstate_labels": 4,
+        "max_absolute_single_fixed_binary_event_brier_shift": 0.0029304029304029304,
+        "max_absolute_two_fixed_binary_event_delta_brier_shift": 0.005860805860805861,
+        "event_specific_caution": "Individual transition event indicators may change on a subset of the changed four-state labels"
+      }
+    },
+    {
+      "old_version": "20.1",
+      "new_version": "21.1",
+      "is_consecutive_release": true,
+      "annual": {
+        "country_years": 1764,
+        "revised_binary_labels": 1,
+        "max_absolute_single_fixed_model_brier_shift": 0.0005668934240362812,
+        "max_absolute_two_fixed_model_delta_brier_shift": 0.0011337868480725624
+      },
+      "transition_fourstate": {
+        "country_year_transitions": 1568,
+        "revised_fourstate_labels": 2,
+        "max_absolute_single_fixed_binary_event_brier_shift": 0.0012755102040816326,
+        "max_absolute_two_fixed_binary_event_delta_brier_shift": 0.002551020408163265,
+        "event_specific_caution": "Individual transition event indicators may change on a subset of the changed four-state labels"
+      }
+    },
+    {
+      "old_version": "20.1",
+      "new_version": "23.1",
+      "is_consecutive_release": false,
+      "annual": {
+        "country_years": 1764,
+        "revised_binary_labels": 7,
+        "max_absolute_single_fixed_model_brier_shift": 0.003968253968253968,
+        "max_absolute_two_fixed_model_delta_brier_shift": 0.007936507936507936
+      },
+      "transition_fourstate": {
+        "country_year_transitions": 1568,
+        "revised_fourstate_labels": 12,
+        "max_absolute_single_fixed_binary_event_brier_shift": 0.007653061224489796,
+        "max_absolute_two_fixed_binary_event_delta_brier_shift": 0.015306122448979591,
+        "event_specific_caution": "Individual transition event indicators may change on a subset of the changed four-state labels"
+      }
+    },
+    {
+      "old_version": "21.1",
+      "new_version": "22.1",
+      "is_consecutive_release": true,
+      "annual": {
+        "country_years": 1960,
+        "revised_binary_labels": 6,
+        "max_absolute_single_fixed_model_brier_shift": 0.003061224489795918,
+        "max_absolute_two_fixed_model_delta_brier_shift": 0.006122448979591836
+      },
+      "transition_fourstate": {
+        "country_year_transitions": 1764,
+        "revised_fourstate_labels": 10,
+        "max_absolute_single_fixed_binary_event_brier_shift": 0.005668934240362812,
+        "max_absolute_two_fixed_binary_event_delta_brier_shift": 0.011337868480725623,
+        "event_specific_caution": "Individual transition event indicators may change on a subset of the changed four-state labels"
+      }
+    },
+    {
+      "old_version": "21.1",
+      "new_version": "23.1",
+      "is_consecutive_release": false,
+      "annual": {
+        "country_years": 1960,
+        "revised_binary_labels": 6,
+        "max_absolute_single_fixed_model_brier_shift": 0.003061224489795918,
+        "max_absolute_two_fixed_model_delta_brier_shift": 0.006122448979591836
+      },
+      "transition_fourstate": {
+        "country_year_transitions": 1764,
+        "revised_fourstate_labels": 10,
+        "max_absolute_single_fixed_binary_event_brier_shift": 0.005668934240362812,
+        "max_absolute_two_fixed_binary_event_delta_brier_shift": 0.011337868480725623,
+        "event_specific_caution": "Individual transition event indicators may change on a subset of the changed four-state labels"
+      }
+    },
+    {
+      "old_version": "22.1",
+      "new_version": "23.1",
+      "is_consecutive_release": true,
+      "annual": {
+        "country_years": 2156,
+        "revised_binary_labels": 0,
+        "max_absolute_single_fixed_model_brier_shift": 0,
+        "max_absolute_two_fixed_model_delta_brier_shift": 0
+      },
+      "transition_fourstate": {
+        "country_year_transitions": 1960,
+        "revised_fourstate_labels": 0,
+        "max_absolute_single_fixed_binary_event_brier_shift": 0,
+        "max_absolute_two_fixed_binary_event_delta_brier_shift": 0,
+        "event_specific_caution": "Individual transition event indicators may change on a subset of the changed four-state labels"
+      }
+    }
+  ]
+}
