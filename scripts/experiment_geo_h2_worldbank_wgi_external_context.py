@@ -50,13 +50,14 @@ MIN_SPEARMAN_N=30
 # A named country can only be joined if the World Bank returns that ISO3
 # with a real observation; never infer a missing indicator as zero.
 GWNO_TO_ISO3={
-    2:"USA",31:"BHS",58:"ATG",316:"CZE",343:"MKD",
+    2:"USA",31:"BHS",56:"LCA",57:"VCT",58:"ATG",60:"KNA",101:"VEN",
+    316:"CZE",317:"SVK",343:"MKD",
     345:"SRB",346:"BIH",347:"XKX",365:"RUS",402:"CPV",
-    403:"STP",420:"GMB",437:"CIV",484:"COG",490:"COD",
+    403:"STP",420:"GMB",437:"CIV",484:"COG",490:"COD",520:"SOM",
     510:"TZA",552:"ZWE",572:"SWZ",580:"MDG",630:"IRN",
-    640:"TUR",651:"EGY",652:"SYR",678:"YEM",731:"PRK",
-    732:"KOR",775:"MMR",811:"KHM",812:"LAO",816:"VNM",
-    860:"TLS",987:"FSM",990:"WSM",
+    640:"TUR",651:"EGY",652:"SYR",678:"YEM",703:"KGZ",731:"PRK",
+    732:"KOR",775:"MMR",811:"KHM",812:"LAO",816:"VNM",835:"BRN",
+    860:"TLS",971:"NRU",987:"FSM",990:"WSM",
 }
 # Deliberate exclusions: no comparable World Bank record or territories
 # whose 196-country GEO definition is not safely aligned.
