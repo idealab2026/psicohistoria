@@ -1,0 +1,39 @@
+name: GEO H2 eleven-origin zero-low UCDP vintage robustness
+on:
+  push:
+    paths:
+      - 'scripts/experiment_geo_h2_11origin_zero_low_source_stress.py'
+      - 'scripts/test_experiment_geo_h2_11origin_zero_low_source_stress.py'
+      - 'data/geo-h2-11-origin-zero-low-sensitivity.json'
+      - '.github/workflows/geo-h2-11-origin-zero-low-source.yml'
+  pull_request:
+    paths:
+      - 'scripts/experiment_geo_h2_11origin_zero_low_source_stress.py'
+      - 'scripts/test_experiment_geo_h2_11origin_zero_low_source_stress.py'
+      - 'data/geo-h2-11-origin-zero-low-sensitivity.json'
+      - '.github/workflows/geo-h2-11-origin-zero-low-source.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Source edit, year cutoff, zero-low and Shapley tests
+        run: python3 -B -m unittest discover -s scripts -p 'test_experiment_geo_h2_11origin_zero_low_source_stress.py' -v
+      - name: Reproduce eleven historical origin-year stress panels from official SHA archives
+        run: |
+          if [ -f data/geo-h2-11-origin-zero-low-sensitivity.json ]; then
+            python3 -B scripts/experiment_geo_h2_11origin_zero_low_source_stress.py --check-report
+          else
+            python3 -B scripts/experiment_geo_h2_11origin_zero_low_source_stress.py --print-report
+          fi
+      - name: Institutional privacy and release contract
+        run: python3 -B scripts/audit_public.py
