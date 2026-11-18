@@ -1,0 +1,39 @@
+name: GEO H2 2023 country-level origin-vintage rank reversal
+on:
+  push:
+    paths:
+      - 'scripts/experiment_geo_h2_2023_country_origin_vintage_influence.py'
+      - 'scripts/test_experiment_geo_h2_2023_country_origin_vintage_influence.py'
+      - 'data/geo-h2-2023-country-origin-vintage-rank-influence.json'
+      - '.github/workflows/geo-h2-2023-country-vintage-influence.yml'
+  pull_request:
+    paths:
+      - 'scripts/experiment_geo_h2_2023_country_origin_vintage_influence.py'
+      - 'scripts/test_experiment_geo_h2_2023_country_origin_vintage_influence.py'
+      - 'data/geo-h2-2023-country-origin-vintage-rank-influence.json'
+      - '.github/workflows/geo-h2-2023-country-vintage-influence.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test original GWNO cohort, exact Brier factorization and provenance controls
+        run: python3 -B -m unittest discover -s scripts -p 'test_experiment_geo_h2_2023_country_origin_vintage_influence.py' -v
+      - name: Reconstruct SHA-pinned 2021 historical model country vectors and 2023 target labels
+        run: |
+          if [ -f data/geo-h2-2023-country-origin-vintage-rank-influence.json ]; then
+            python3 -B scripts/experiment_geo_h2_2023_country_origin_vintage_influence.py --check-report
+          else
+            python3 -B scripts/experiment_geo_h2_2023_country_origin_vintage_influence.py --print-report
+          fi
+      - name: Institutional public allowlist and privacy gate
+        run: python3 -B scripts/audit_public.py
