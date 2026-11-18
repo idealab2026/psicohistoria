@@ -1,0 +1,941 @@
+{
+  "GWNO": 517,
+  "caveat": "Exact algebraic two-block source intervention under fixed estimator and 2021 clipping. Other countries' revisions can change the global transition prior; this does not causally attribute historical violence or isolate any single global row. Model reconstructed with archives not available at simulated origin.",
+  "counterfactual_source_combinations": {
+    "10": {
+      "global_4x4_transition_counts": [
+        [
+          4698,
+          114,
+          40,
+          38
+        ],
+        [
+          109,
+          102,
+          58,
+          21
+        ],
+        [
+          38,
+          56,
+          121,
+          61
+        ],
+        [
+          44,
+          25,
+          53,
+          571
+        ]
+      ],
+      "origin_four_state": 1,
+      "other_source_countries": "23.1",
+      "rwanda_H2_probability": 0.273334515466,
+      "rwanda_source": "24.1"
+    },
+    "11": {
+      "global_4x4_transition_counts": [
+        [
+          4693,
+          115,
+          40,
+          38
+        ],
+        [
+          110,
+          104,
+          59,
+          21
+        ],
+        [
+          38,
+          57,
+          121,
+          60
+        ],
+        [
+          44,
+          24,
+          52,
+          573
+        ]
+      ],
+      "origin_four_state": 1,
+      "other_source_countries": "24.1",
+      "rwanda_H2_probability": 0.272686169101,
+      "rwanda_source": "24.1"
+    },
+    "00": {
+      "global_4x4_transition_counts": [
+        [
+          4699,
+          113,
+          41,
+          37
+        ],
+        [
+          109,
+          102,
+          58,
+          21
+        ],
+        [
+          38,
+          56,
+          121,
+          62
+        ],
+        [
+          44,
+          25,
+          53,
+          570
+        ]
+      ],
+      "origin_four_state": 0,
+      "other_source_countries": "23.1",
+      "rwanda_H2_probability": 0.159390196535,
+      "rwanda_source": "23.1"
+    },
+    "01": {
+      "global_4x4_transition_counts": [
+        [
+          4694,
+          114,
+          41,
+          37
+        ],
+        [
+          110,
+          104,
+          59,
+          21
+        ],
+        [
+          38,
+          57,
+          121,
+          61
+        ],
+        [
+          44,
+          24,
+          52,
+          572
+        ]
+      ],
+      "origin_four_state": 0,
+      "other_source_countries": "24.1",
+      "rwanda_H2_probability": 0.159351846185,
+      "rwanda_source": "23.1"
+    }
+  },
+  "countries": 196,
+  "historical_source_country_year_death_count_edit_n": 93,
+  "historical_source_four_state_label_edit_n": 9,
+  "local_other_interaction": -0.0006099960150000028,
+  "new_prospective_forecasts_emitted": 0,
+  "no_historical_probabilities_actually_issued_in_2021": true,
+  "observed_probability_shift": 0.11329597256600002,
+  "origin_year": 2021,
+  "original_GEO2027_issue_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "other_source_countries_shapley": -0.00034334835749999515,
+  "p_fourstate_original": 0.159390196535,
+  "p_fourstate_revised": 0.272686169101,
+  "rest_of_source_training_countries": 198,
+  "rwanda_annual_fatality_revisions": [
+    {
+      "GWNO": 517,
+      "new_best_deaths": 113,
+      "new_four_state": 3,
+      "old_best_deaths": 90,
+      "old_four_state": 2,
+      "year": 1996
+    },
+    {
+      "GWNO": 517,
+      "new_best_deaths": 985,
+      "new_four_state": 3,
+      "old_best_deaths": 980,
+      "old_four_state": 3,
+      "year": 1997
+    },
+    {
+      "GWNO": 517,
+      "new_best_deaths": 9,
+      "new_four_state": 1,
+      "old_best_deaths": 6,
+      "old_four_state": 1,
+      "year": 2018
+    },
+    {
+      "GWNO": 517,
+      "new_best_deaths": 7,
+      "new_four_state": 1,
+      "old_best_deaths": 0,
+      "old_four_state": 0,
+      "year": 2021
+    }
+  ],
+  "rwanda_local_source_shapley": 0.11363932092350001,
+  "rwanda_revised_count_n": 4,
+  "schema": "idealab.psico.geo_h2_rwanda_origin_vintage_twofactor_shapley.v1",
+  "source_SHA256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260"
+  },
+  "source_revised_country_years": [
+    {
+      "GWNO": 100,
+      "new_best_deaths": 3392,
+      "new_four_state": 3,
+      "old_best_deaths": 3391,
+      "old_four_state": 3,
+      "year": 2002
+    },
+    {
+      "GWNO": 100,
+      "new_best_deaths": 2090,
+      "new_four_state": 3,
+      "old_best_deaths": 1604,
+      "old_four_state": 3,
+      "year": 2003
+    },
+    {
+      "GWNO": 100,
+      "new_best_deaths": 1355,
+      "new_four_state": 3,
+      "old_best_deaths": 1234,
+      "old_four_state": 3,
+      "year": 2004
+    },
+    {
+      "GWNO": 135,
+      "new_best_deaths": 1042,
+      "new_four_state": 3,
+      "old_best_deaths": 1036,
+      "old_four_state": 3,
+      "year": 1992
+    },
+    {
+      "GWNO": 339,
+      "new_best_deaths": 26,
+      "new_four_state": 2,
+      "old_best_deaths": 6,
+      "old_four_state": 1,
+      "year": 1999
+    },
+    {
+      "GWNO": 345,
+      "new_best_deaths": 1378,
+      "new_four_state": 3,
+      "old_best_deaths": 1398,
+      "old_four_state": 3,
+      "year": 1999
+    },
+    {
+      "GWNO": 365,
+      "new_best_deaths": 697,
+      "new_four_state": 3,
+      "old_best_deaths": 696,
+      "old_four_state": 3,
+      "year": 2009
+    },
+    {
+      "GWNO": 369,
+      "new_best_deaths": 257,
+      "new_four_state": 3,
+      "old_best_deaths": 256,
+      "old_four_state": 3,
+      "year": 2016
+    },
+    {
+      "GWNO": 369,
+      "new_best_deaths": 417,
+      "new_four_state": 3,
+      "old_best_deaths": 415,
+      "old_four_state": 3,
+      "year": 2017
+    },
+    {
+      "GWNO": 432,
+      "new_best_deaths": 100,
+      "new_four_state": 3,
+      "old_best_deaths": 99,
+      "old_four_state": 2,
+      "year": 2016
+    },
+    {
+      "GWNO": 437,
+      "new_best_deaths": 677,
+      "new_four_state": 3,
+      "old_best_deaths": 640,
+      "old_four_state": 3,
+      "year": 2002
+    },
+    {
+      "GWNO": 437,
+      "new_best_deaths": 140,
+      "new_four_state": 3,
+      "old_best_deaths": 139,
+      "old_four_state": 3,
+      "year": 2003
+    },
+    {
+      "GWNO": 471,
+      "new_best_deaths": 800,
+      "new_four_state": 3,
+      "old_best_deaths": 797,
+      "old_four_state": 3,
+      "year": 2018
+    },
+    {
+      "GWNO": 475,
+      "new_best_deaths": 3819,
+      "new_four_state": 3,
+      "old_best_deaths": 3811,
+      "old_four_state": 3,
+      "year": 2014
+    },
+    {
+      "GWNO": 482,
+      "new_best_deaths": 35,
+      "new_four_state": 2,
+      "old_best_deaths": 34,
+      "old_four_state": 2,
+      "year": 2015
+    },
+    {
+      "GWNO": 482,
+      "new_best_deaths": 73,
+      "new_four_state": 2,
+      "old_best_deaths": 56,
+      "old_four_state": 2,
+      "year": 2017
+    },
+    {
+      "GWNO": 482,
+      "new_best_deaths": 68,
+      "new_four_state": 2,
+      "old_best_deaths": 58,
+      "old_four_state": 2,
+      "year": 2019
+    },
+    {
+      "GWNO": 483,
+      "new_best_deaths": 52,
+      "new_four_state": 2,
+      "old_best_deaths": 50,
+      "old_four_state": 2,
+      "year": 2004
+    },
+    {
+      "GWNO": 490,
+      "new_best_deaths": 3439,
+      "new_four_state": 3,
+      "old_best_deaths": 3364,
+      "old_four_state": 3,
+      "year": 1998
+    },
+    {
+      "GWNO": 490,
+      "new_best_deaths": 509,
+      "new_four_state": 3,
+      "old_best_deaths": 494,
+      "old_four_state": 3,
+      "year": 2001
+    },
+    {
+      "GWNO": 490,
+      "new_best_deaths": 330,
+      "new_four_state": 3,
+      "old_best_deaths": 289,
+      "old_four_state": 3,
+      "year": 2011
+    },
+    {
+      "GWNO": 500,
+      "new_best_deaths": 1186,
+      "new_four_state": 3,
+      "old_best_deaths": 1156,
+      "old_four_state": 3,
+      "year": 1996
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 6,
+      "new_four_state": 1,
+      "old_best_deaths": 0,
+      "old_four_state": 0,
+      "year": 1993
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 386,
+      "new_four_state": 3,
+      "old_best_deaths": 271,
+      "old_four_state": 3,
+      "year": 1995
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 988,
+      "new_four_state": 3,
+      "old_best_deaths": 531,
+      "old_four_state": 3,
+      "year": 1996
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 1159,
+      "new_four_state": 3,
+      "old_best_deaths": 639,
+      "old_four_state": 3,
+      "year": 1997
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 843,
+      "new_four_state": 3,
+      "old_best_deaths": 621,
+      "old_four_state": 3,
+      "year": 1998
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 781,
+      "new_four_state": 3,
+      "old_best_deaths": 524,
+      "old_four_state": 3,
+      "year": 1999
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 1530,
+      "new_four_state": 3,
+      "old_best_deaths": 1347,
+      "old_four_state": 3,
+      "year": 2000
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 1231,
+      "new_four_state": 3,
+      "old_best_deaths": 1182,
+      "old_four_state": 3,
+      "year": 2001
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 1349,
+      "new_four_state": 3,
+      "old_best_deaths": 1183,
+      "old_four_state": 3,
+      "year": 2002
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 913,
+      "new_four_state": 3,
+      "old_best_deaths": 985,
+      "old_four_state": 3,
+      "year": 2003
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 437,
+      "new_four_state": 3,
+      "old_best_deaths": 389,
+      "old_four_state": 3,
+      "year": 2004
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 298,
+      "new_four_state": 3,
+      "old_best_deaths": 286,
+      "old_four_state": 3,
+      "year": 2005
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 226,
+      "new_four_state": 3,
+      "old_best_deaths": 201,
+      "old_four_state": 3,
+      "year": 2008
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 2,
+      "new_four_state": 1,
+      "old_best_deaths": 0,
+      "old_four_state": 0,
+      "year": 2011
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 61,
+      "new_four_state": 2,
+      "old_best_deaths": 66,
+      "old_four_state": 2,
+      "year": 2014
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 7,
+      "new_four_state": 1,
+      "old_best_deaths": 4,
+      "old_four_state": 1,
+      "year": 2018
+    },
+    {
+      "GWNO": 517,
+      "new_best_deaths": 113,
+      "new_four_state": 3,
+      "old_best_deaths": 90,
+      "old_four_state": 2,
+      "year": 1996
+    },
+    {
+      "GWNO": 517,
+      "new_best_deaths": 985,
+      "new_four_state": 3,
+      "old_best_deaths": 980,
+      "old_four_state": 3,
+      "year": 1997
+    },
+    {
+      "GWNO": 517,
+      "new_best_deaths": 9,
+      "new_four_state": 1,
+      "old_best_deaths": 6,
+      "old_four_state": 1,
+      "year": 2018
+    },
+    {
+      "GWNO": 517,
+      "new_best_deaths": 7,
+      "new_four_state": 1,
+      "old_best_deaths": 0,
+      "old_four_state": 0,
+      "year": 2021
+    },
+    {
+      "GWNO": 530,
+      "new_best_deaths": 20916,
+      "new_four_state": 3,
+      "old_best_deaths": 1624,
+      "old_four_state": 3,
+      "year": 2020
+    },
+    {
+      "GWNO": 530,
+      "new_best_deaths": 124550,
+      "new_four_state": 3,
+      "old_best_deaths": 9073,
+      "old_four_state": 3,
+      "year": 2021
+    },
+    {
+      "GWNO": 541,
+      "new_best_deaths": 51,
+      "new_four_state": 2,
+      "old_best_deaths": 53,
+      "old_four_state": 2,
+      "year": 2018
+    },
+    {
+      "GWNO": 541,
+      "new_best_deaths": 939,
+      "new_four_state": 3,
+      "old_best_deaths": 937,
+      "old_four_state": 3,
+      "year": 2020
+    },
+    {
+      "GWNO": 541,
+      "new_best_deaths": 877,
+      "new_four_state": 3,
+      "old_best_deaths": 715,
+      "old_four_state": 3,
+      "year": 2021
+    },
+    {
+      "GWNO": 560,
+      "new_best_deaths": 361,
+      "new_four_state": 3,
+      "old_best_deaths": 327,
+      "old_four_state": 3,
+      "year": 1989
+    },
+    {
+      "GWNO": 625,
+      "new_best_deaths": 3671,
+      "new_four_state": 3,
+      "old_best_deaths": 3673,
+      "old_four_state": 3,
+      "year": 2004
+    },
+    {
+      "GWNO": 640,
+      "new_best_deaths": 2346,
+      "new_four_state": 3,
+      "old_best_deaths": 2345,
+      "old_four_state": 3,
+      "year": 1993
+    },
+    {
+      "GWNO": 640,
+      "new_best_deaths": 3972,
+      "new_four_state": 3,
+      "old_best_deaths": 3943,
+      "old_four_state": 3,
+      "year": 1994
+    },
+    {
+      "GWNO": 640,
+      "new_best_deaths": 3586,
+      "new_four_state": 3,
+      "old_best_deaths": 3178,
+      "old_four_state": 3,
+      "year": 1995
+    },
+    {
+      "GWNO": 640,
+      "new_best_deaths": 3760,
+      "new_four_state": 3,
+      "old_best_deaths": 3756,
+      "old_four_state": 3,
+      "year": 1996
+    },
+    {
+      "GWNO": 640,
+      "new_best_deaths": 2618,
+      "new_four_state": 3,
+      "old_best_deaths": 2608,
+      "old_four_state": 3,
+      "year": 1997
+    },
+    {
+      "GWNO": 640,
+      "new_best_deaths": 2033,
+      "new_four_state": 3,
+      "old_best_deaths": 2028,
+      "old_four_state": 3,
+      "year": 1998
+    },
+    {
+      "GWNO": 645,
+      "new_best_deaths": 762,
+      "new_four_state": 3,
+      "old_best_deaths": 666,
+      "old_four_state": 3,
+      "year": 1995
+    },
+    {
+      "GWNO": 645,
+      "new_best_deaths": 1042,
+      "new_four_state": 3,
+      "old_best_deaths": 1077,
+      "old_four_state": 3,
+      "year": 2011
+    },
+    {
+      "GWNO": 645,
+      "new_best_deaths": 743,
+      "new_four_state": 3,
+      "old_best_deaths": 741,
+      "old_four_state": 3,
+      "year": 2019
+    },
+    {
+      "GWNO": 645,
+      "new_best_deaths": 872,
+      "new_four_state": 3,
+      "old_best_deaths": 860,
+      "old_four_state": 3,
+      "year": 2020
+    },
+    {
+      "GWNO": 645,
+      "new_best_deaths": 853,
+      "new_four_state": 3,
+      "old_best_deaths": 811,
+      "old_four_state": 3,
+      "year": 2021
+    },
+    {
+      "GWNO": 652,
+      "new_best_deaths": 72010,
+      "new_four_state": 3,
+      "old_best_deaths": 72003,
+      "old_four_state": 3,
+      "year": 2013
+    },
+    {
+      "GWNO": 652,
+      "new_best_deaths": 66062,
+      "new_four_state": 3,
+      "old_best_deaths": 66026,
+      "old_four_state": 3,
+      "year": 2014
+    },
+    {
+      "GWNO": 652,
+      "new_best_deaths": 1542,
+      "new_four_state": 3,
+      "old_best_deaths": 1536,
+      "old_four_state": 3,
+      "year": 2021
+    },
+    {
+      "GWNO": 660,
+      "new_best_deaths": 140,
+      "new_four_state": 3,
+      "old_best_deaths": 137,
+      "old_four_state": 3,
+      "year": 2014
+    },
+    {
+      "GWNO": 670,
+      "new_best_deaths": 81,
+      "new_four_state": 2,
+      "old_best_deaths": 78,
+      "old_four_state": 2,
+      "year": 2015
+    },
+    {
+      "GWNO": 678,
+      "new_best_deaths": 19,
+      "new_four_state": 1,
+      "old_best_deaths": 0,
+      "old_four_state": 0,
+      "year": 2000
+    },
+    {
+      "GWNO": 678,
+      "new_best_deaths": 2,
+      "new_four_state": 1,
+      "old_best_deaths": 0,
+      "old_four_state": 0,
+      "year": 2002
+    },
+    {
+      "GWNO": 678,
+      "new_best_deaths": 1143,
+      "new_four_state": 3,
+      "old_best_deaths": 1140,
+      "old_four_state": 3,
+      "year": 2011
+    },
+    {
+      "GWNO": 678,
+      "new_best_deaths": 578,
+      "new_four_state": 3,
+      "old_best_deaths": 582,
+      "old_four_state": 3,
+      "year": 2013
+    },
+    {
+      "GWNO": 678,
+      "new_best_deaths": 1826,
+      "new_four_state": 3,
+      "old_best_deaths": 1780,
+      "old_four_state": 3,
+      "year": 2014
+    },
+    {
+      "GWNO": 678,
+      "new_best_deaths": 7685,
+      "new_four_state": 3,
+      "old_best_deaths": 7035,
+      "old_four_state": 3,
+      "year": 2015
+    },
+    {
+      "GWNO": 678,
+      "new_best_deaths": 3018,
+      "new_four_state": 3,
+      "old_best_deaths": 2952,
+      "old_four_state": 3,
+      "year": 2016
+    },
+    {
+      "GWNO": 678,
+      "new_best_deaths": 3145,
+      "new_four_state": 3,
+      "old_best_deaths": 3039,
+      "old_four_state": 3,
+      "year": 2017
+    },
+    {
+      "GWNO": 678,
+      "new_best_deaths": 4649,
+      "new_four_state": 3,
+      "old_best_deaths": 4526,
+      "old_four_state": 3,
+      "year": 2018
+    },
+    {
+      "GWNO": 678,
+      "new_best_deaths": 2638,
+      "new_four_state": 3,
+      "old_best_deaths": 2592,
+      "old_four_state": 3,
+      "year": 2019
+    },
+    {
+      "GWNO": 678,
+      "new_best_deaths": 6301,
+      "new_four_state": 3,
+      "old_best_deaths": 6296,
+      "old_four_state": 3,
+      "year": 2020
+    },
+    {
+      "GWNO": 678,
+      "new_best_deaths": 23366,
+      "new_four_state": 3,
+      "old_best_deaths": 23365,
+      "old_four_state": 3,
+      "year": 2021
+    },
+    {
+      "GWNO": 750,
+      "new_best_deaths": 2400,
+      "new_four_state": 3,
+      "old_best_deaths": 2333,
+      "old_four_state": 3,
+      "year": 1990
+    },
+    {
+      "GWNO": 750,
+      "new_best_deaths": 2989,
+      "new_four_state": 3,
+      "old_best_deaths": 2921,
+      "old_four_state": 3,
+      "year": 2000
+    },
+    {
+      "GWNO": 750,
+      "new_best_deaths": 1381,
+      "new_four_state": 3,
+      "old_best_deaths": 1292,
+      "old_four_state": 3,
+      "year": 2001
+    },
+    {
+      "GWNO": 750,
+      "new_best_deaths": 1933,
+      "new_four_state": 3,
+      "old_best_deaths": 1932,
+      "old_four_state": 3,
+      "year": 2002
+    },
+    {
+      "GWNO": 750,
+      "new_best_deaths": 1705,
+      "new_four_state": 3,
+      "old_best_deaths": 1653,
+      "old_four_state": 3,
+      "year": 2004
+    },
+    {
+      "GWNO": 775,
+      "new_best_deaths": 1516,
+      "new_four_state": 3,
+      "old_best_deaths": 1015,
+      "old_four_state": 3,
+      "year": 1989
+    },
+    {
+      "GWNO": 775,
+      "new_best_deaths": 227,
+      "new_four_state": 3,
+      "old_best_deaths": 225,
+      "old_four_state": 3,
+      "year": 2001
+    },
+    {
+      "GWNO": 775,
+      "new_best_deaths": 141,
+      "new_four_state": 3,
+      "old_best_deaths": 139,
+      "old_four_state": 3,
+      "year": 2005
+    },
+    {
+      "GWNO": 775,
+      "new_best_deaths": 366,
+      "new_four_state": 3,
+      "old_best_deaths": 362,
+      "old_four_state": 3,
+      "year": 2007
+    },
+    {
+      "GWNO": 775,
+      "new_best_deaths": 720,
+      "new_four_state": 3,
+      "old_best_deaths": 719,
+      "old_four_state": 3,
+      "year": 2011
+    },
+    {
+      "GWNO": 775,
+      "new_best_deaths": 197,
+      "new_four_state": 3,
+      "old_best_deaths": 188,
+      "old_four_state": 3,
+      "year": 2020
+    },
+    {
+      "GWNO": 775,
+      "new_best_deaths": 1073,
+      "new_four_state": 3,
+      "old_best_deaths": 1059,
+      "old_four_state": 3,
+      "year": 2021
+    },
+    {
+      "GWNO": 800,
+      "new_best_deaths": 4,
+      "new_four_state": 1,
+      "old_best_deaths": 201,
+      "old_four_state": 3,
+      "year": 1989
+    },
+    {
+      "GWNO": 800,
+      "new_best_deaths": 83,
+      "new_four_state": 2,
+      "old_best_deaths": 82,
+      "old_four_state": 2,
+      "year": 2010
+    },
+    {
+      "GWNO": 840,
+      "new_best_deaths": 1008,
+      "new_four_state": 3,
+      "old_best_deaths": 824,
+      "old_four_state": 3,
+      "year": 2001
+    },
+    {
+      "GWNO": 840,
+      "new_best_deaths": 1627,
+      "new_four_state": 3,
+      "old_best_deaths": 1624,
+      "old_four_state": 3,
+      "year": 2017
+    }
+  ],
+  "source_training_countries": 199,
+  "source_versions": [
+    "23.1",
+    "24.1"
+  ],
+  "status": "SHA_REPLAYED_RETROSPECTIVE_SOURCE_EDIT_NOT_PROSPECTIVE",
+  "target_year": 2023
+}
