@@ -7,7 +7,7 @@
 Los cambios de estado inicial entre cero muertes y 1–24 observados para Ruanda (2021), Burundi (2022) y Venezuela (2021) originaron variaciones grandes de las probabilidades del modelo H2. Las revisiones internas de UCDP no identifican la verdad latente; el indicador de estabilidad política del Banco Mundial muestra concordancia contextual pero no cuenta fallecidos.
 
 La primera prueba externa por acontecimiento usa:
-- **UCDP GED 25.1** (misma institución que OrganizedViolenceCY, no fuente independiente) para seleccionar eventos históricos, con identificadores, intervalos de fecha, país, coordenadas y estimación puntual de muertes.
+- **UCDP GED 25.1** (misma institución que OrganizedViolenceCY, no fuente independiente) para seleccionar **únicamente eventos de violencia estatal (type_of_violence=1)** con identificadores, intervalos de fecha, país, coordenadas y estimación puntual de muertes. El modelo original usa la variable country-year **sb_total_deaths_best**, por lo que otras categorías (2: no estatal y 3: unilateral) NO son elegibles para esta auditoría del umbral.
 - **GDELT Events 1.0**, archivos diarios originales de eventos codificados desde noticias. Es independiente institucionalmente de UCDP, pero **puede compartir los mismos medios originales**. GDELT no es un censo independiente de víctimas.
 
 No se mide si el recuento de muertes es verdadero; se comprueba si, en una muestra de episodios geolocalizados de UCDP GED, hay **huellas mediáticas cercanas de acciones violentas** codificadas por GDELT.
@@ -22,7 +22,7 @@ Se fijaron los tres casos a partir del informe de revisiones 23.1→24.1→25.1,
 | 516 | Burundi | 2022 | 23.1→24.1 |
 | 101 | Venezuela | 2021 | 24.1→25.1 |
 
-Se descarga exclusivamente el archivo oficial GED 25.1 y se retienen los eventos de estos GWNO y años con fecha puntual exacta, coordenadas válidas y al menos 1 fallecido estimado. Para evitar selección retrospectiva basada en la coincidencia con GDELT, se escogen **como máximo dos fechas distintas por país-año**, dando prioridad al evento con mayor estimación `best` de muertes; los empates se resuelven por fecha e identificador. Si no hay ningún evento GED elegible, se registra expresamente como ausencia de evidencia GED seleccionable, **no** como ausencia de episodios reales.
+Se descarga exclusivamente el archivo oficial GED 25.1 y se retienen los eventos **state-based (tipo 1)** de estos GWNO y años con fecha puntual exacta, coordenadas válidas y al menos 1 fallecido estimado. Los registros GED de tipos 2/3 se contabilizan como excluidos, incluso si muestran más muertes. El experimento original no predice todas las modalidades de violencia. Para evitar selección retrospectiva basada en la coincidencia con GDELT, se escogen **como máximo dos fechas distintas por país-año**, dando prioridad al evento con mayor estimación `best` de muertes; los empates se resuelven por fecha e identificador. Si no hay ningún evento GED elegible, se registra expresamente como ausencia de evidencia GED seleccionable, **no** como ausencia de episodios reales.
 
 ## Comparación y falsos positivos
 
@@ -32,7 +32,7 @@ Ni una coincidencia acredita el número de víctimas, ni la falta de coincidenci
 
 ## Limitaciones de interpretación
 
-1. **Muestra dirigida**, no representativa del universo GED: tres casos problemáticos y un máximo de dos eventos principales por caso.
+1. **Muestra dirigida**, no representativa del universo GED: tres casos problemáticos y un máximo de dos eventos principales de violencia estatal por caso. Los registros de violencia no estatal o unilateral no se usan como validación sustitutiva.
 2. **Selección por mayor estimación de fallecidos:** introduce sesgo hacia episodios destacados; es una prueba de factibilidad, no una estimación de recall de GDELT.
 3. **Independencia institucional incompleta:** pueden existir fuentes periodísticas compartidas.
 4. **Diferencia ontológica:** GDELT codifica noticias/acciones mediante CAMEO; UCDP GED codifica episodios con muertes. La correspondencia individual debe verificarse antes de declarar "confirmación".
