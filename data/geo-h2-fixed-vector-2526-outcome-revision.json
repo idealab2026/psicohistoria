@@ -1,0 +1,273 @@
+{
+  "caveat": "Backfilled origin source revisions; same fixed vintage prediction is compared against two later historical outcome vintages. No prospective skill claim, IID claim or new prediction.",
+  "comparison": "UCDP OrganizedViolenceCY 25.1 to 26.1 target year best >=25",
+  "country_n": 196,
+  "historical_model_issued_at_real_origin": false,
+  "observed_brier_shift_new_minus_old": {
+    "p_baseline_global_5y": 0.00033062660353896104,
+    "p_global_markov": -0.00016710327085899812,
+    "p_intensity_markov": -0.00036646881047402595,
+    "p_original_binary": -0.000327529417781076
+  },
+  "observed_fourstate_minus_binary_delta_brier_shift": -0.00003893939269294992,
+  "original_2027_2028_predictions_modified": false,
+  "original_GEO2027_SHA256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "revised_binary_labels_n": 1,
+  "same_source_origin_fixed_in_each_pair": true,
+  "schema": "idealab.psico.geo_h2_fixed_origin_outcome_revision_brier.v1",
+  "single_fixed_model_ceiling": 0.00046382189239332097,
+  "source_archives_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "status": "OBSERVED_EX_POST_BRIER_LABEL_REVISION_FIXED_MODEL_NOT_PROSPECTIVE",
+  "two_fixed_model_comparison_ceiling": 0.0009276437847866419,
+  "unique_country_year_n": 2156,
+  "yearly": [
+    {
+      "country_n": 196,
+      "frozen_origin_release": "23.1",
+      "label_revisions_n": 0,
+      "new_target_release": "26.1",
+      "observed_brier_shift_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "observed_fourstate_minus_binary_delta_brier_shift": 0,
+      "old_target_release": "25.1",
+      "origin_year": 2012,
+      "revised_countries": [],
+      "strict_single_model_ceiling": 0,
+      "strict_two_model_comparison_ceiling": 0,
+      "target_year": 2014
+    },
+    {
+      "country_n": 196,
+      "frozen_origin_release": "23.1",
+      "label_revisions_n": 0,
+      "new_target_release": "26.1",
+      "observed_brier_shift_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "observed_fourstate_minus_binary_delta_brier_shift": 0,
+      "old_target_release": "25.1",
+      "origin_year": 2013,
+      "revised_countries": [],
+      "strict_single_model_ceiling": 0,
+      "strict_two_model_comparison_ceiling": 0,
+      "target_year": 2015
+    },
+    {
+      "country_n": 196,
+      "frozen_origin_release": "23.1",
+      "label_revisions_n": 0,
+      "new_target_release": "26.1",
+      "observed_brier_shift_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "observed_fourstate_minus_binary_delta_brier_shift": 0,
+      "old_target_release": "25.1",
+      "origin_year": 2014,
+      "revised_countries": [],
+      "strict_single_model_ceiling": 0,
+      "strict_two_model_comparison_ceiling": 0,
+      "target_year": 2016
+    },
+    {
+      "country_n": 196,
+      "frozen_origin_release": "23.1",
+      "label_revisions_n": 1,
+      "new_target_release": "26.1",
+      "observed_brier_shift_new_minus_old": {
+        "p_baseline_global_5y": 0.0036368926389285716,
+        "p_global_markov": -0.0018381359794489792,
+        "p_intensity_markov": -0.004031156915214286,
+        "p_original_binary": -0.0036028235955918365
+      },
+      "observed_fourstate_minus_binary_delta_brier_shift": -0.0004283333196224491,
+      "old_target_release": "25.1",
+      "origin_year": 2015,
+      "revised_countries": [
+        {
+          "country_id": 100,
+          "fixed_probabilities": {
+            "p_baseline_global_5y": 0.143584521385,
+            "p_global_markov": 0.680137325986,
+            "p_intensity_markov": 0.895053377691,
+            "p_original_binary": 0.853076712368
+          },
+          "individual_brier_shifts": {
+            "p_baseline_global_5y": 0.71283095723,
+            "p_global_markov": -0.3602746519719999,
+            "p_intensity_markov": -0.790106755382,
+            "p_original_binary": -0.706153424736
+          },
+          "new_best_deaths": 65,
+          "new_label": 1,
+          "old_best_deaths": 23,
+          "old_label": 0,
+          "year": 2017
+        }
+      ],
+      "strict_single_model_ceiling": 0.00510204081632653,
+      "strict_two_model_comparison_ceiling": 0.01020408163265306,
+      "target_year": 2017
+    },
+    {
+      "country_n": 196,
+      "frozen_origin_release": "23.1",
+      "label_revisions_n": 0,
+      "new_target_release": "26.1",
+      "observed_brier_shift_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "observed_fourstate_minus_binary_delta_brier_shift": 0,
+      "old_target_release": "25.1",
+      "origin_year": 2016,
+      "revised_countries": [],
+      "strict_single_model_ceiling": 0,
+      "strict_two_model_comparison_ceiling": 0,
+      "target_year": 2018
+    },
+    {
+      "country_n": 196,
+      "frozen_origin_release": "23.1",
+      "label_revisions_n": 0,
+      "new_target_release": "26.1",
+      "observed_brier_shift_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "observed_fourstate_minus_binary_delta_brier_shift": 0,
+      "old_target_release": "25.1",
+      "origin_year": 2017,
+      "revised_countries": [],
+      "strict_single_model_ceiling": 0,
+      "strict_two_model_comparison_ceiling": 0,
+      "target_year": 2019
+    },
+    {
+      "country_n": 196,
+      "frozen_origin_release": "23.1",
+      "label_revisions_n": 0,
+      "new_target_release": "26.1",
+      "observed_brier_shift_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "observed_fourstate_minus_binary_delta_brier_shift": 0,
+      "old_target_release": "25.1",
+      "origin_year": 2018,
+      "revised_countries": [],
+      "strict_single_model_ceiling": 0,
+      "strict_two_model_comparison_ceiling": 0,
+      "target_year": 2020
+    },
+    {
+      "country_n": 196,
+      "frozen_origin_release": "23.1",
+      "label_revisions_n": 0,
+      "new_target_release": "26.1",
+      "observed_brier_shift_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "observed_fourstate_minus_binary_delta_brier_shift": 0,
+      "old_target_release": "25.1",
+      "origin_year": 2019,
+      "revised_countries": [],
+      "strict_single_model_ceiling": 0,
+      "strict_two_model_comparison_ceiling": 0,
+      "target_year": 2021
+    },
+    {
+      "country_n": 196,
+      "frozen_origin_release": "23.1",
+      "label_revisions_n": 0,
+      "new_target_release": "26.1",
+      "observed_brier_shift_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "observed_fourstate_minus_binary_delta_brier_shift": 0,
+      "old_target_release": "25.1",
+      "origin_year": 2020,
+      "revised_countries": [],
+      "strict_single_model_ceiling": 0,
+      "strict_two_model_comparison_ceiling": 0,
+      "target_year": 2022
+    },
+    {
+      "country_n": 196,
+      "frozen_origin_release": "23.1",
+      "label_revisions_n": 0,
+      "new_target_release": "26.1",
+      "observed_brier_shift_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "observed_fourstate_minus_binary_delta_brier_shift": 0,
+      "old_target_release": "25.1",
+      "origin_year": 2021,
+      "revised_countries": [],
+      "strict_single_model_ceiling": 0,
+      "strict_two_model_comparison_ceiling": 0,
+      "target_year": 2023
+    },
+    {
+      "country_n": 196,
+      "frozen_origin_release": "23.1",
+      "label_revisions_n": 0,
+      "new_target_release": "26.1",
+      "observed_brier_shift_new_minus_old": {
+        "p_baseline_global_5y": 0,
+        "p_global_markov": 0,
+        "p_intensity_markov": 0,
+        "p_original_binary": 0
+      },
+      "observed_fourstate_minus_binary_delta_brier_shift": 0,
+      "old_target_release": "25.1",
+      "origin_year": 2022,
+      "revised_countries": [],
+      "strict_single_model_ceiling": 0,
+      "strict_two_model_comparison_ceiling": 0,
+      "target_year": 2024
+    }
+  ],
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ]
+}
