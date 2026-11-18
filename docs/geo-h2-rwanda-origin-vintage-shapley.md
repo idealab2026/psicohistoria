@@ -11,7 +11,7 @@ El presente experimento separa **dos bloques de ediciones de la fuente**, no dos
 
 Se reconstruye cuatro veces el mismo estimador `4 estados, prior Dirichlet 1, shrinkage 20, H2`, con el mismo corte temporal 2021 y la misma cohorte de 196 países. Se usa UCDP 23.1 como base y se sustituyen por 24.1 solo los registros del bloque indicado.
 
-| Ruanda | Otros 195 | Interpretación |
+| Ruanda | Otros 198 países de entrenamiento | Interpretación |
 |---|---|---|
 | 23.1 | 23.1 | Probabilidad histórica de referencia |
 | 24.1 | 23.1 | Edición local solamente |
