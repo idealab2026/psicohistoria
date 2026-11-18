@@ -1,0 +1,38 @@
+name: GEO H2 fixed-vector measured UCDP outcome-vintage Brier
+on:
+  push:
+    paths:
+      - 'scripts/experiment_geo_h2_fixed_vector_outcome_revision.py'
+      - 'scripts/test_experiment_geo_h2_fixed_vector_outcome_revision.py'
+      - 'data/geo-h2-fixed-vector-2526-outcome-revision.json'
+      - '.github/workflows/geo-h2-fixed-vector-outcome-revision.yml'
+  pull_request:
+    paths:
+      - 'scripts/experiment_geo_h2_fixed_vector_outcome_revision.py'
+      - 'scripts/test_experiment_geo_h2_fixed_vector_outcome_revision.py'
+      - 'data/geo-h2-fixed-vector-2526-outcome-revision.json'
+      - '.github/workflows/geo-h2-fixed-vector-outcome-revision.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify exact frozen-country Brier identity on synthetic vectors
+        run: python3 -B -m unittest discover -s scripts -p 'test_experiment_geo_h2_fixed_vector_outcome_revision.py' -v
+      - name: Replay four SHA-pinned official UCDP sources and verify published report
+        run: |
+          if [ -f data/geo-h2-fixed-vector-2526-outcome-revision.json ]; then
+            python3 -B scripts/experiment_geo_h2_fixed_vector_outcome_revision.py --check-report
+          else
+            python3 -B scripts/experiment_geo_h2_fixed_vector_outcome_revision.py --print-report
+          fi
+      - name: Institutional public privacy allowlist
+        run: python3 -B scripts/audit_public.py
