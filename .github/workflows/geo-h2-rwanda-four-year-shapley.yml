@@ -1,0 +1,39 @@
+name: GEO H2 Rwanda four-year exact source Shapley
+on:
+  push:
+    paths:
+      - 'scripts/experiment_geo_h2_rwanda_four_year_shapley.py'
+      - 'scripts/test_experiment_geo_h2_rwanda_four_year_shapley.py'
+      - 'data/geo-h2-rwanda-1996-2021-four-year-shapley.json'
+      - '.github/workflows/geo-h2-rwanda-four-year-shapley.yml'
+  pull_request:
+    paths:
+      - 'scripts/experiment_geo_h2_rwanda_four_year_shapley.py'
+      - 'scripts/test_experiment_geo_h2_rwanda_four_year_shapley.py'
+      - 'data/geo-h2-rwanda-1996-2021-four-year-shapley.json'
+      - '.github/workflows/geo-h2-rwanda-four-year-shapley.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test 5-factor Shapley exact additive and non-additive interactions
+        run: python3 -B -m unittest discover -s scripts -p 'test_experiment_geo_h2_rwanda_four_year_shapley.py' -v
+      - name: SHA-replay 32 historical source interventions with fixed four-state estimator
+        run: |
+          if [ -f data/geo-h2-rwanda-1996-2021-four-year-shapley.json ]; then
+            python3 -B scripts/experiment_geo_h2_rwanda_four_year_shapley.py --check-report
+          else
+            python3 -B scripts/experiment_geo_h2_rwanda_four_year_shapley.py --print-report
+          fi
+      - name: Public institutional release privacy allowlist
+        run: python3 -B scripts/audit_public.py

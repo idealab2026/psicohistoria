@@ -1,0 +1,377 @@
+{
+  "GWNO": 517,
+  "counterfactuals": [
+    {
+      "mask": 0,
+      "p_four_state_H2": 0.159390196535,
+      "revised_factors": [],
+      "rwanda_origin_four_state": 0
+    },
+    {
+      "mask": 1,
+      "p_four_state_H2": 0.163156810555,
+      "revised_factors": [
+        "rwanda_1996"
+      ],
+      "rwanda_origin_four_state": 0
+    },
+    {
+      "mask": 2,
+      "p_four_state_H2": 0.159390196535,
+      "revised_factors": [
+        "rwanda_1997"
+      ],
+      "rwanda_origin_four_state": 0
+    },
+    {
+      "mask": 3,
+      "p_four_state_H2": 0.163156810555,
+      "revised_factors": [
+        "rwanda_1996",
+        "rwanda_1997"
+      ],
+      "rwanda_origin_four_state": 0
+    },
+    {
+      "mask": 4,
+      "p_four_state_H2": 0.159390196535,
+      "revised_factors": [
+        "rwanda_2018"
+      ],
+      "rwanda_origin_four_state": 0
+    },
+    {
+      "mask": 5,
+      "p_four_state_H2": 0.163156810555,
+      "revised_factors": [
+        "rwanda_1996",
+        "rwanda_2018"
+      ],
+      "rwanda_origin_four_state": 0
+    },
+    {
+      "mask": 6,
+      "p_four_state_H2": 0.159390196535,
+      "revised_factors": [
+        "rwanda_1997",
+        "rwanda_2018"
+      ],
+      "rwanda_origin_four_state": 0
+    },
+    {
+      "mask": 7,
+      "p_four_state_H2": 0.163156810555,
+      "revised_factors": [
+        "rwanda_1996",
+        "rwanda_1997",
+        "rwanda_2018"
+      ],
+      "rwanda_origin_four_state": 0
+    },
+    {
+      "mask": 8,
+      "p_four_state_H2": 0.275490068987,
+      "revised_factors": [
+        "rwanda_2021"
+      ],
+      "rwanda_origin_four_state": 1
+    },
+    {
+      "mask": 9,
+      "p_four_state_H2": 0.273334515466,
+      "revised_factors": [
+        "rwanda_1996",
+        "rwanda_2021"
+      ],
+      "rwanda_origin_four_state": 1
+    },
+    {
+      "mask": 10,
+      "p_four_state_H2": 0.275490068987,
+      "revised_factors": [
+        "rwanda_1997",
+        "rwanda_2021"
+      ],
+      "rwanda_origin_four_state": 1
+    },
+    {
+      "mask": 11,
+      "p_four_state_H2": 0.273334515466,
+      "revised_factors": [
+        "rwanda_1996",
+        "rwanda_1997",
+        "rwanda_2021"
+      ],
+      "rwanda_origin_four_state": 1
+    },
+    {
+      "mask": 12,
+      "p_four_state_H2": 0.275490068987,
+      "revised_factors": [
+        "rwanda_2018",
+        "rwanda_2021"
+      ],
+      "rwanda_origin_four_state": 1
+    },
+    {
+      "mask": 13,
+      "p_four_state_H2": 0.273334515466,
+      "revised_factors": [
+        "rwanda_1996",
+        "rwanda_2018",
+        "rwanda_2021"
+      ],
+      "rwanda_origin_four_state": 1
+    },
+    {
+      "mask": 14,
+      "p_four_state_H2": 0.275490068987,
+      "revised_factors": [
+        "rwanda_1997",
+        "rwanda_2018",
+        "rwanda_2021"
+      ],
+      "rwanda_origin_four_state": 1
+    },
+    {
+      "mask": 15,
+      "p_four_state_H2": 0.273334515466,
+      "revised_factors": [
+        "rwanda_1996",
+        "rwanda_1997",
+        "rwanda_2018",
+        "rwanda_2021"
+      ],
+      "rwanda_origin_four_state": 1
+    },
+    {
+      "mask": 16,
+      "p_four_state_H2": 0.159351846185,
+      "revised_factors": [
+        "other_198_source_countries"
+      ],
+      "rwanda_origin_four_state": 0
+    },
+    {
+      "mask": 17,
+      "p_four_state_H2": 0.163228027793,
+      "revised_factors": [
+        "rwanda_1996",
+        "other_198_source_countries"
+      ],
+      "rwanda_origin_four_state": 0
+    },
+    {
+      "mask": 18,
+      "p_four_state_H2": 0.159351846185,
+      "revised_factors": [
+        "rwanda_1997",
+        "other_198_source_countries"
+      ],
+      "rwanda_origin_four_state": 0
+    },
+    {
+      "mask": 19,
+      "p_four_state_H2": 0.163228027793,
+      "revised_factors": [
+        "rwanda_1996",
+        "rwanda_1997",
+        "other_198_source_countries"
+      ],
+      "rwanda_origin_four_state": 0
+    },
+    {
+      "mask": 20,
+      "p_four_state_H2": 0.159351846185,
+      "revised_factors": [
+        "rwanda_2018",
+        "other_198_source_countries"
+      ],
+      "rwanda_origin_four_state": 0
+    },
+    {
+      "mask": 21,
+      "p_four_state_H2": 0.163228027793,
+      "revised_factors": [
+        "rwanda_1996",
+        "rwanda_2018",
+        "other_198_source_countries"
+      ],
+      "rwanda_origin_four_state": 0
+    },
+    {
+      "mask": 22,
+      "p_four_state_H2": 0.159351846185,
+      "revised_factors": [
+        "rwanda_1997",
+        "rwanda_2018",
+        "other_198_source_countries"
+      ],
+      "rwanda_origin_four_state": 0
+    },
+    {
+      "mask": 23,
+      "p_four_state_H2": 0.163228027793,
+      "revised_factors": [
+        "rwanda_1996",
+        "rwanda_1997",
+        "rwanda_2018",
+        "other_198_source_countries"
+      ],
+      "rwanda_origin_four_state": 0
+    },
+    {
+      "mask": 24,
+      "p_four_state_H2": 0.274884708002,
+      "revised_factors": [
+        "rwanda_2021",
+        "other_198_source_countries"
+      ],
+      "rwanda_origin_four_state": 1
+    },
+    {
+      "mask": 25,
+      "p_four_state_H2": 0.272686169101,
+      "revised_factors": [
+        "rwanda_1996",
+        "rwanda_2021",
+        "other_198_source_countries"
+      ],
+      "rwanda_origin_four_state": 1
+    },
+    {
+      "mask": 26,
+      "p_four_state_H2": 0.274884708002,
+      "revised_factors": [
+        "rwanda_1997",
+        "rwanda_2021",
+        "other_198_source_countries"
+      ],
+      "rwanda_origin_four_state": 1
+    },
+    {
+      "mask": 27,
+      "p_four_state_H2": 0.272686169101,
+      "revised_factors": [
+        "rwanda_1996",
+        "rwanda_1997",
+        "rwanda_2021",
+        "other_198_source_countries"
+      ],
+      "rwanda_origin_four_state": 1
+    },
+    {
+      "mask": 28,
+      "p_four_state_H2": 0.274884708002,
+      "revised_factors": [
+        "rwanda_2018",
+        "rwanda_2021",
+        "other_198_source_countries"
+      ],
+      "rwanda_origin_four_state": 1
+    },
+    {
+      "mask": 29,
+      "p_four_state_H2": 0.272686169101,
+      "revised_factors": [
+        "rwanda_1996",
+        "rwanda_2018",
+        "rwanda_2021",
+        "other_198_source_countries"
+      ],
+      "rwanda_origin_four_state": 1
+    },
+    {
+      "mask": 30,
+      "p_four_state_H2": 0.274884708002,
+      "revised_factors": [
+        "rwanda_1997",
+        "rwanda_2018",
+        "rwanda_2021",
+        "other_198_source_countries"
+      ],
+      "rwanda_origin_four_state": 1
+    },
+    {
+      "mask": 31,
+      "p_four_state_H2": 0.272686169101,
+      "revised_factors": [
+        "rwanda_1996",
+        "rwanda_1997",
+        "rwanda_2018",
+        "rwanda_2021",
+        "other_198_source_countries"
+      ],
+      "rwanda_origin_four_state": 1
+    }
+  ],
+  "difference_between_grouped_and_ungrouped_shapley_is_interaction_dependent": true,
+  "factor_order": [
+    "rwanda_1996",
+    "rwanda_1997",
+    "rwanda_2018",
+    "rwanda_2021",
+    "other_198_source_countries"
+  ],
+  "fivefactor_shapley": {
+    "other_198_source_countries": -0.0003179228628333355,
+    "rwanda_1996": 0.0008094630541666765,
+    "rwanda_1997": 0,
+    "rwanda_2018": 0,
+    "rwanda_2021": 0.11280443237466668
+  },
+  "frozen_original_GEO2027_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "full_revision_probability_shift": 0.11329597256600002,
+  "limitations": "Exact mechanical attribution across 4 Rwanda yearly edits and all other source countries, with 32 source combinations and fixed estimator. Not historical causal attribution, not IID skill, and official source vintages were released after simulated 2021 origin. Four within-1997/2018 counts did not change categorical states.",
+  "new_probability": 0.272686169101,
+  "not_actual_2021_issued_probabilities": true,
+  "old_probability": 0.159390196535,
+  "origin_year": 2021,
+  "original_evaluation_GWNO_n": 196,
+  "original_forecasts_2027_2028_unchanged": true,
+  "rwanda_source_fatality_edits": [
+    {
+      "crosses_four_state_boundary": true,
+      "new_best_deaths": 113,
+      "new_state": 3,
+      "old_best_deaths": 90,
+      "old_state": 2,
+      "year": 1996
+    },
+    {
+      "crosses_four_state_boundary": false,
+      "new_best_deaths": 985,
+      "new_state": 3,
+      "old_best_deaths": 980,
+      "old_state": 3,
+      "year": 1997
+    },
+    {
+      "crosses_four_state_boundary": false,
+      "new_best_deaths": 9,
+      "new_state": 1,
+      "old_best_deaths": 6,
+      "old_state": 1,
+      "year": 2018
+    },
+    {
+      "crosses_four_state_boundary": true,
+      "new_best_deaths": 7,
+      "new_state": 1,
+      "old_best_deaths": 0,
+      "old_state": 0,
+      "year": 2021
+    }
+  ],
+  "schema": "idealab.psico.geo_h2_rwanda_year_specific_fivefactor_shapley.v1",
+  "source_SHA256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260"
+  },
+  "source_training_countries": 199,
+  "status": "SHA_REPLAYED_RETROSPECTIVE_32_INTERVENTIONS_NOT_PROSPECTIVE",
+  "target_year": 2023,
+  "two_group_reference_local_shapley": 0.11363932092350001,
+  "two_group_reference_other_shapley": -0.00034334835749999515,
+  "within_bin_count_edits_neutral": true
+}
