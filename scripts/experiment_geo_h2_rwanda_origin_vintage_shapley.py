@@ -37,11 +37,11 @@ EPS=1e-11
 
 
 def _clipped(records,cohort):
-    if set(records)!=cohort:
-        raise ValueError("Change of original GWNO risk cohort")
+    if not cohort.issubset(set(records)):
+        raise ValueError("Original GWNO risk cohort incomplete in source")
     panel={cid:{yr:deaths for yr,deaths in h.items() if yr<=ORIGIN}
            for cid,h in records.items()}
-    if any(not h or ORIGIN not in h or ORIGIN-1 not in h for h in panel.values()):
+    if any(not panel[cid] or ORIGIN not in panel[cid] or ORIGIN-1 not in panel[cid] for cid in cohort):
         raise ValueError("Missing state transitions in fixed 196-country source")
     return panel
 
@@ -63,12 +63,14 @@ def evaluate(old_source,new_source,reference):
         raise ValueError("Frozen GWNO origin country IDs invalid")
     old=_clipped(old_source,ids)
     new=_clipped(new_source,ids)
+    if set(old)!=set(new):
+        raise ValueError("Source countries differ: source coverage must be comparable")
     own_old=old[RWANDA]
     own_new=new[RWANDA]
     edits=[]
     annual_diff_n=0
     state_diff_n=0
-    for cid in sorted(ids):
+    for cid in sorted(old):
         if set(old[cid])!=set(new[cid]):
             raise ValueError("Country-year coverage changed: no common panel")
         for year in sorted(old[cid]):
@@ -89,7 +91,7 @@ def evaluate(old_source,new_source,reference):
         for use_other in (0,1):
             mix={cid:(new[cid] if (use_own if cid==RWANDA else use_other)
                       else old[cid])
-                 for cid in sorted(ids)}
+                 for cid in sorted(old)}
             f,meta=four_state_forecast(
                 mix,ORIGIN,historical_rolling_diagnostic=True)
             if (meta["cutoff_max"]!=ORIGIN or meta["eligible_countries"]!=N
@@ -127,6 +129,8 @@ def evaluate(old_source,new_source,reference):
         "original_GEO2027_issue_sha256":SOURCE_SHA256,
         "GWNO":RWANDA,"origin_year":ORIGIN,"target_year":TARGET,
         "countries":N,
+        "source_training_countries":len(old),
+        "rest_of_source_training_countries":len(old)-1,
         "historical_source_country_year_death_count_edit_n":annual_diff_n,
         "historical_source_four_state_label_edit_n":state_diff_n,
         "rwanda_annual_fatality_revisions":own_changes,
@@ -137,7 +141,7 @@ def evaluate(old_source,new_source,reference):
         "p_fourstate_revised":predicted["11"],
         "observed_probability_shift":total,
         "rwanda_local_source_shapley":own,
-        "other_195_countries_source_shapley":others,
+        "other_source_countries_shapley":others,
         "local_other_interaction":interaction,
         "no_historical_probabilities_actually_issued_in_2021":True,
         "new_prospective_forecasts_emitted":0,
@@ -172,7 +176,7 @@ def main():
         print(json.dumps({k:result[k] for k in (
             "rwanda_revised_count_n","historical_source_four_state_label_edit_n",
             "observed_probability_shift","rwanda_local_source_shapley",
-            "other_195_countries_source_shapley")},sort_keys=True))
+            "other_source_countries_shapley")},sort_keys=True))
 
 
 if __name__=="__main__":
