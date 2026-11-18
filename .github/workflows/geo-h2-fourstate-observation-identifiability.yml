@@ -1,0 +1,39 @@
+name: GEO H2 full four-state observation error and latent-state bounds
+on:
+  push:
+    paths:
+      - 'scripts/experiment_geo_h2_fourstate_observation_identifiability.py'
+      - 'scripts/test_experiment_geo_h2_fourstate_observation_identifiability.py'
+      - 'data/geo-h2-fourstate-observation-kernel-latent-bounds-2027.json'
+      - '.github/workflows/geo-h2-fourstate-observation-identifiability.yml'
+  pull_request:
+    paths:
+      - 'scripts/experiment_geo_h2_fourstate_observation_identifiability.py'
+      - 'scripts/test_experiment_geo_h2_fourstate_observation_identifiability.py'
+      - 'data/geo-h2-fourstate-observation-kernel-latent-bounds-2027.json'
+      - '.github/workflows/geo-h2-fourstate-observation-identifiability.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tests for source discordance and partial identification
+        run: python3 -B -m unittest discover -s scripts -p 'test_experiment_geo_h2_fourstate_observation_identifiability.py' -v
+      - name: SHA replay of four-state edition errors and uns cored GEO2027 shadow
+        run: |
+          if [ -f data/geo-h2-fourstate-observation-kernel-latent-bounds-2027.json ]; then
+            python3 -B scripts/experiment_geo_h2_fourstate_observation_identifiability.py --check-report
+          else
+            python3 -B scripts/experiment_geo_h2_fourstate_observation_identifiability.py --print-report
+          fi
+      - name: Institutional public privacy allowlist
+        run: python3 -B scripts/audit_public.py
