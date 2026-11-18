@@ -172,7 +172,7 @@ def main():
         json.loads(REFERENCE.read_text()),
     )
     payload=json.dumps(report,sort_keys=True,ensure_ascii=False,indent=2)+"\n"
-    if args.check_report and OUTPUT.read_bytes()!=payload.encode():
+    if args.check_report and json.loads(OUTPUT.read_text(encoding="utf-8"))!=report:
         raise ValueError("Official source-replayed fixed Brier report changed")
     if args.print_report:
         print("GEO_FIXED_BRIER_BEGIN",flush=True)
