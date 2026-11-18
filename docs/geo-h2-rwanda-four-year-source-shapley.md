@@ -19,3 +19,24 @@ Los dos cambios de recuentos **1997 y 2018 no cruzan los umbrales de intensidad*
 Se reproducen los cuatro resultados extremos del experimento de dos bloques ya publicado en la PR #121 y las dos probabilidades previamente conservadas. No se publican cifras de contribuciones individuales hasta que GitHub Actions verifique el replay. La auditoría también comprueba la integridad de GEO2027 y la cohorte institucional.
 
 Este experimento usa ediciones publicadas después del pseudo-origen 2021; no acredita habilidad predictiva prospectiva ni atribuye causalidad sobre el conflicto histórico. Las predicciones y alertas futuras no se modifican.
+
+## Resultado certificado por reconstrucción de las fuentes
+
+El primer replay SHA ha recuperado las 32 probabilidades y los cuatro extremos de la PR #121. El cambio total es **+0,113295972566** (de 0,159390196535 a 0,272686169101). La atribución Shapley de cinco factores, en puntos porcentuales, es:
+
+| Factor revisado | Contribución en pp |
+|---|---:|
+| Ruanda 2021, 0→7 muertes, estado 0→1 | **+11,28044324** |
+| Ruanda 1996, 90→113 muertes, estado 2→3 | +0,08094631 |
+| Ruanda 1997, 980→985 muertes, estado 3→3 | **0** |
+| Ruanda 2018, 6→9 muertes, estado 1→1 | **0** |
+| Otros 198 países de la fuente | −0,03179229 |
+| **Total** | **+11,32959726** |
+
+La reclasificación del **estado inicial de 2021** aporta el **99,6 % del incremento neto**. Sin embargo, esta proporción es una relación entre efectos mecánicos firmados y puede superar el 100 % si existen compensaciones; no es una fracción causal de acontecimientos históricos. Los cambios locales de 1997 y 2018 tienen aportación exactamente nula por no cruzar ningún umbral categórico, incluso en todas las combinaciones de las demás intervenciones.
+
+La influencia asociada al cambio de 1996 es más de cien veces menor que la del estado inicial de 2021. La revisión del resto del mundo compensa parcialmente el aumento.
+
+[Informe JSON con las 32 reconstrucciones](../data/geo-h2-rwanda-1996-2021-four-year-shapley.json) · [Código reproducible](../scripts/experiment_geo_h2_rwanda_four_year_shapley.py) · [Pruebas de Shapley e interacción](../scripts/test_experiment_geo_h2_rwanda_four_year_shapley.py).
+
+**Interpretación científica:** el problema dominante aquí es la sensibilidad a la clasificación del estado inicial, no la actualización de los recuentos dentro de las categorías. No deben confundirse la incertidumbre de una fuente histórica y la varianza estadística del pronóstico: este resultado mide la primera.
