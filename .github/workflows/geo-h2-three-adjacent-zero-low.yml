@@ -1,0 +1,39 @@
+name: GEO H2 three adjacent UCDP zero-low source vintage stress
+on:
+  push:
+    paths:
+      - 'scripts/experiment_geo_h2_three_adjacent_vintage_zero_low.py'
+      - 'scripts/test_experiment_geo_h2_three_adjacent_vintage_zero_low.py'
+      - 'data/geo-h2-three-adjacent-vintage-zero-low-11-origin.json'
+      - '.github/workflows/geo-h2-three-adjacent-zero-low.yml'
+  pull_request:
+    paths:
+      - 'scripts/experiment_geo_h2_three_adjacent_vintage_zero_low.py'
+      - 'scripts/test_experiment_geo_h2_three_adjacent_vintage_zero_low.py'
+      - 'data/geo-h2-three-adjacent-vintage-zero-low-11-origin.json'
+      - '.github/workflows/geo-h2-three-adjacent-zero-low.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check fixed horizon, strict source comparison and Shapley
+        run: python3 -B -m unittest discover -s scripts -p 'test_experiment_geo_h2_three_adjacent_vintage_zero_low.py' -v
+      - name: SHA-replay 33 consecutive-edition fixed-label H2 source stress folds
+        run: |
+          if [ -f data/geo-h2-three-adjacent-vintage-zero-low-11-origin.json ]; then
+            python3 -B scripts/experiment_geo_h2_three_adjacent_vintage_zero_low.py --check-report
+          else
+            python3 -B scripts/experiment_geo_h2_three_adjacent_vintage_zero_low.py --print-report
+          fi
+      - name: Verify institutional public file allowlist and privacy
+        run: python3 -B scripts/audit_public.py
