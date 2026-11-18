@@ -27,3 +27,25 @@ La probabilidad experimental a dos años es la mezcla convexa de las probabilida
 Se exige SHA-256 de los archivos UCDP, mismo entrenamiento global de 199 países y cohorte de 196, exactitud a 12 decimales frente al modelo Markov original, cálculo con idéntica matriz 4×4, no introducir información del target y auditoría institucional de privacidad. Ninguna alerta ni probabilidad GEO2027/GEO2028 ya emitida puede cambiar.
 
 El informe completo se fija en `data/geo-h2-origin-state-10pct-uncertainty-shadow.json` después de la ejecución reproducible.
+
+## Resultados reproducidos desde archivos oficiales
+
+El experimento compara **11 pseudo-orígenes 2012–2022** y 196 GWNO por año bajo UCDP23.1 y 24.1, con resultados 26.1 fijos. El scoring de este diagnóstico es retrospectivo; no demuestra rendimiento *as-of* genuino.
+
+| Métrica agrupada (11×196) | Origen 23.1, modelo original | Origen 23.1, mezcla 10% | Origen 24.1, original | Origen 24.1, mezcla 10% |
+|---|---:|---:|---:|---:|
+| Brier promedio | 0,044307425 | 0,045265383 | 0,044259672 | 0,045205755 |
+
+La mezcla empeora el Brier medio **+0,000957958** para edición 23.1 y **+0,000946083** para 24.1. A cambio, la diferencia absoluta media entre predicciones de ambas ediciones cambia de **0,001125570** (original) a **0,001076202** (mezcla), una disminución relativa aproximada del 4,4%. El ajuste de pesos **no** se ha optimizado con estas etiquetas. Este resultado constituye una compensación empírica, no una mejora inequívoca.
+
+Para origen 2021 y objetivo 2023, la máxima variación de probabilidad entre ediciones desciende de **0,113295973** a **0,091090483** bajo la mezcla, pero el Brier anual del modelo con mezcla sigue siendo peor que el original en ambas ediciones. Por tanto, **no hay justificación para sustituir el modelo emitido**.
+
+## Emisión sombra nueva para 2027
+
+El informe registra **196 probabilidades adicionales** del comparador de estado inicial incierto, con origen 2025 y fuente UCDP 26.1; estas probabilidades son distintas de todas las emisiones GEO2027 originales, que permanecen inmutables. La evaluación de la cohorte 2027 solo podrá realizarse cuando los resultados oficiales del target sean públicos y después de preservar un identificador de primera publicación verificable con Git commit y fecha.
+
+Como controles reproducibles, para GWNO 2 (Estados Unidos), la probabilidad original calculada con el mismo Markov cuatro estados desde origen 2025 es **0,045387672383**, mientras que la mezcla asume **0,069253010653**. Para GWNO 517 (Ruanda), respectivamente **0,239089456600** y **0,231254307683**.
+
+[Informe JSON completo (incluye las 196 probabilidades sombra)](../data/geo-h2-origin-state-10pct-uncertainty-shadow.json) · [Script reproductor](../scripts/experiment_geo_h2_fixed_origin_uncertainty_shadow.py) · [Pruebas](../scripts/test_experiment_geo_h2_fixed_origin_uncertainty_shadow.py).
+
+**Conclusión metodológica:** 10% es un estrés arbitrario declarado; no representa una probabilidad estimada del error de medición. Para mejorar la precisión y robustez de manera simultánea haría falta modelar la incertidumbre de las fuentes y validarla con emisiones verdaderamente fechadas. La comparación retrospectiva no es suficiente.
