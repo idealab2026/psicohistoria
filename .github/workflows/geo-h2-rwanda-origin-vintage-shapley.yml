@@ -1,0 +1,39 @@
+name: GEO H2 Rwanda original source-vintage Shapley
+on:
+  push:
+    paths:
+      - 'scripts/experiment_geo_h2_rwanda_origin_vintage_shapley.py'
+      - 'scripts/test_experiment_geo_h2_rwanda_origin_vintage_shapley.py'
+      - 'data/geo-h2-rwanda-2021-23-24-source-shapley.json'
+      - '.github/workflows/geo-h2-rwanda-origin-vintage-shapley.yml'
+  pull_request:
+    paths:
+      - 'scripts/experiment_geo_h2_rwanda_origin_vintage_shapley.py'
+      - 'scripts/test_experiment_geo_h2_rwanda_origin_vintage_shapley.py'
+      - 'data/geo-h2-rwanda-2021-23-24-source-shapley.json'
+      - '.github/workflows/geo-h2-rwanda-origin-vintage-shapley.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test Shapley order-symmetry and exact source guards
+        run: python3 -B -m unittest discover -s scripts -p 'test_experiment_geo_h2_rwanda_origin_vintage_shapley.py' -v
+      - name: Replay official UCDP source editions and Rwanda own/rest source swaps
+        run: |
+          if [ -f data/geo-h2-rwanda-2021-23-24-source-shapley.json ]; then
+            python3 -B scripts/experiment_geo_h2_rwanda_origin_vintage_shapley.py --check-report
+          else
+            python3 -B scripts/experiment_geo_h2_rwanda_origin_vintage_shapley.py --print-report
+          fi
+      - name: Verify public institutional release allowlist
+        run: python3 -B scripts/audit_public.py
