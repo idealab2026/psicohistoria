@@ -34,7 +34,7 @@ class CountryInfluenceTest(unittest.TestCase):
         # do not assert that this occurs in real data without official replay.
         old=[-.00001]*N
         new=[-.00001]*N
-        new[0]=.00099
+        new[0]=.003
         self.assertLess(sum(old),0)
         self.assertGreater(sum(new),0)
         self.assertLess(sum(new[1:]),0)
