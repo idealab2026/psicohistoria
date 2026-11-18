@@ -10,6 +10,19 @@ Para cada modelo, el cambio medido de Brier es la suma de `(y_nueva−y_antigua)
 
 Los datos reales deben proceder de la descarga y verificación SHA de los archivos UCDP oficiales, nunca de completar países ausentes con cero. El programa comprueba el universo de países, el estado inicial, los parámetros y las etiquetas contra el informe histórico publicado con anterioridad.
 
-**Estado:** el script y las pruebas científicas se encuentran en la PR de investigación. El JSON de resultados no debe publicarse hasta ejecutar la reproducción de las fuentes y verificar los valores.
+**Resultado SHA-reproducido:** el primer replay de CI identificó **1 etiqueta binaria revisada de 2.156 país-años** (11 objetivos 2014–2024 × 196 GWNO). El GWNO **100** en **2017** pasó de **23 fallecidos en 25.1 (estado 0)** a **65 fallecidos en 26.1 (estado 1)**. El origen modelado es 2015 y se utiliza la edición de entrenamiento 23.1 **en ambas evaluaciones**: los cuatro pronósticos están fijos.
 
-Informe esperado: `data/geo-h2-fixed-vector-2526-outcome-revision.json` después de completar la ejecución y bloquear su reemisión en CI.
+| Modelo fijo | Cambio de Brier al sustituir etiquetas 25.1→26.1 |
+|---|---:|
+| Markov binario | −0,0003275294 |
+| Markov cuatro estados | −0,0003664688 |
+| Markov global | −0,0001671033 |
+| Prevalencia global 5 años | +0,0003306266 |
+
+La diferencia de Brier **cuatro estados menos binario** se desplaza **−0,0000389394**. Es un beneficio relativo de la revisión de la etiqueta a favor de cuatro estados, no prueba de superioridad predictiva global: aquí solo se examina el *desplazamiento* del score, no su nivel absoluto. No se puede sumar como dato independiente a otros backtests solapados.
+
+Las probabilidades originales fijas del país revisado fueron **0,853076712368** (binario), **0,895053377691** (cuatro estados), **0,680137325986** (global) y **0,143584521385** (prevalencia). El cambio puntual de contribución del país es −0,7061534 para el binario y −0,7901068 para cuatro estados, dividido entre 2.156 casos para obtener el efecto global.
+
+**Cota versus medición real:** la cota de desplazamiento absoluto de un modelo fijo era 1/2156 = **0,0004638219**; la variación medida no la alcanza. Los once años son años objetivo diferentes de un mismo panel, no 2.156 países estadísticamente independientes.
+
+**Verificación:** el reporte oficial congelado [JSON](../data/geo-h2-fixed-vector-2526-outcome-revision.json) se reproduce y coteja byte a byte por [script](../scripts/experiment_geo_h2_fixed_vector_outcome_revision.py) en CI; las [pruebas sintéticas](../scripts/test_experiment_geo_h2_fixed_vector_outcome_revision.py) verifican la identidad y rechazan pronósticos no idénticos. Las fechas de las fuentes de origen siguen impidiendo una validación prospectiva histórica.
