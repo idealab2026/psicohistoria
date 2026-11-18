@@ -54,6 +54,8 @@ class GedGdeltMediaTests(unittest.TestCase):
         self.assertIsNone(eligible_ged_event(official_event(date_end="2021-06-07")))
         self.assertIsNone(eligible_ged_event(official_event(date_start="2020-01-01")))
         self.assertIsNone(eligible_ged_event(official_event(best="0")))
+        self.assertIsNone(eligible_ged_event(official_event(type_of_violence="2")))
+        self.assertIsNone(eligible_ged_event(official_event(type_of_violence="3")))
         self.assertIsNone(eligible_ged_event(official_event(latitude="999")))
 
     def test_date_window_includes_report_lag_only(self):
