@@ -47,8 +47,13 @@ MAX_GED_BYTES=90_000_000
 MAX_GDELT_BYTES=15_000_000
 MIN_GDELT_ROWS=500
 VIOLENT_CAMEO_ROOTS=("18","19","20")
-EXPECTED_GED_SHA256=None
-EXPECTED_GDELT_SHA256={} # Official first observations frozen by report check.
+EXPECTED_GED_SHA256="e256f1fb20a579d8b2f910e5bae212f486d3002adaa2e4359ace740c737da05d"
+EXPECTED_GDELT_SHA256={
+    "20210518":"8dde445688c1d8d0a0b0166de7e8b575b61b48dc23d41ff76b857be1e08c80b1",
+    "20210519":"61146c9efcee67b42a0ebb6ecdc3b71f17798f01fcb0faa8b5106557c134f5af",
+    "20210523":"28909323d4b931df5160e92e700d5c9ad3590bf0452deaddfd5441605f2076be",
+    "20210524":"d8cfdb7c00e175731e6cd0e7f18ea17fafa6d60c02760f8b02265aad81f7a417",
+} # SHA-pinned official daily GDELT archives used for the prespecified GED sample.
 
 
 def fetch(url,cap):
