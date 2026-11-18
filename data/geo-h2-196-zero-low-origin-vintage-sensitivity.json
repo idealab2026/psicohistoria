@@ -1,0 +1,5672 @@
+{
+  "aggregate": {
+    "brier_other_source_shapley": {
+      "max_abs": 0.00625193089644191,
+      "mean": 0.00002583572459535939,
+      "nonzero_abs_gt_1e_10_n": 196
+    },
+    "brier_revision_total": {
+      "max_abs": 0.04895251206751325,
+      "mean": 0.0002442261535549717,
+      "nonzero_abs_gt_1e_10_n": 196
+    },
+    "brier_zero_low_shapley": {
+      "max_abs": 0.04892889632410334,
+      "mean": 0.0002183904289596123,
+      "nonzero_abs_gt_1e_10_n": 196
+    },
+    "p_other_source_shapley": {
+      "max_abs": 0.026114146955500003,
+      "mean": 0.00031097441169898035,
+      "nonzero_abs_gt_1e_10_n": 196
+    },
+    "p_revision_total": {
+      "max_abs": 0.11329597256600002,
+      "mean": 0.0008107434456632642,
+      "nonzero_abs_gt_1e_10_n": 196
+    },
+    "p_zero_low_shapley": {
+      "max_abs": 0.11243702463300001,
+      "mean": 0.0004997690339642839,
+      "nonzero_abs_gt_1e_10_n": 196
+    }
+  },
+  "all_zero_low_source_revisions": [
+    {
+      "GWNO": 516,
+      "new_best_deaths": 6,
+      "new_state": 1,
+      "old_best_deaths": 0,
+      "old_state": 0,
+      "year": 1993,
+      "zero_low_reclassification": true
+    },
+    {
+      "GWNO": 516,
+      "new_best_deaths": 2,
+      "new_state": 1,
+      "old_best_deaths": 0,
+      "old_state": 0,
+      "year": 2011,
+      "zero_low_reclassification": true
+    },
+    {
+      "GWNO": 517,
+      "new_best_deaths": 7,
+      "new_state": 1,
+      "old_best_deaths": 0,
+      "old_state": 0,
+      "year": 2021,
+      "zero_low_reclassification": true
+    },
+    {
+      "GWNO": 678,
+      "new_best_deaths": 19,
+      "new_state": 1,
+      "old_best_deaths": 0,
+      "old_state": 0,
+      "year": 2000,
+      "zero_low_reclassification": true
+    },
+    {
+      "GWNO": 678,
+      "new_best_deaths": 2,
+      "new_state": 1,
+      "old_best_deaths": 0,
+      "old_state": 0,
+      "year": 2002,
+      "zero_low_reclassification": true
+    }
+  ],
+  "country_rows": [
+    {
+      "GWNO": 2,
+      "brier_fourstate": {
+        "10": 0.0024156060932644602,
+        "11": 0.00242962010746997,
+        "00": 0.002421560053116382,
+        "01": 0.002435542963852596
+      },
+      "brier_other_source_shapley": 0.000013998462470861828,
+      "brier_revision_total": 0.000008060054353587875,
+      "brier_zero_low_shapley": -0.000005938408117273954,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.049148815787,
+        "11": 0.049291176771,
+        "00": 0.049209349245,
+        "01": 0.04935122049
+      },
+      "p_other_source_shapley": 0.00014211611450000092,
+      "p_revision_total": 0.0000818275260000001,
+      "p_zero_low_shapley": -0.00006028858850000082,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 20,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 31,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 40,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 41,
+      "brier_fourstate": {
+        "10": 0.0073004249339777595,
+        "11": 0.007329777881036492,
+        "00": 0.007311150506206292,
+        "01": 0.007340441635819593
+      },
+      "brier_other_source_shapley": 0.00002932203833601668,
+      "brier_revision_total": 0.00001862737483020009,
+      "brier_zero_low_shapley": -0.00001069466350581659,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.085442524155,
+        "11": 0.085614121972,
+        "00": 0.085505265956,
+        "01": 0.08567637735
+      },
+      "p_other_source_shapley": 0.00017135460549999593,
+      "p_revision_total": 0.00010885601599999739,
+      "p_zero_low_shapley": -0.00006249858949999854,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 42,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 51,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 52,
+      "brier_fourstate": {
+        "10": 0.0019982014984640307,
+        "11": 0.0020006851948244746,
+        "00": 0.002003390124062473,
+        "01": 0.0020058344887991515
+      },
+      "brier_other_source_shapley": 0.0000024640305485612753,
+      "brier_revision_total": -0.000002704929237998255,
+      "brier_zero_low_shapley": -0.00000516895978655953,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.044701247169,
+        "11": 0.044729019605,
+        "00": 0.044759246241,
+        "01": 0.044786543613
+      },
+      "p_other_source_shapley": 0.000027534904000002525,
+      "p_revision_total": -0.000030226635999996976,
+      "p_zero_low_shapley": -0.0000577615399999995,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 53,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 54,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 55,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 56,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 57,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 58,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 60,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 70,
+      "brier_fourstate": {
+        "10": 0.002831564584478291,
+        "11": 0.002848017124264464,
+        "00": 0.002838032233331804,
+        "01": 0.002854449421663911
+      },
+      "brier_other_source_shapley": 0.000016434864059140276,
+      "brier_revision_total": 0.00000998489093266032,
+      "brier_zero_low_shapley": -0.000006449973126479956,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.053212447646,
+        "11": 0.053366816696,
+        "00": 0.053273184937,
+        "01": 0.05342704766
+      },
+      "p_other_source_shapley": 0.00015411588649999822,
+      "p_revision_total": 0.00009363175899999854,
+      "p_zero_low_shapley": -0.00006048412749999968,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 80,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 90,
+      "brier_fourstate": {
+        "10": 0.0002539921418018487,
+        "11": 0.0002585570130635969,
+        "00": 0.0002564209296869968,
+        "01": 0.000260992684571861
+      },
+      "brier_other_source_shapley": 0.000004568313073306172,
+      "brier_revision_total": 0.0000021360833766000792,
+      "brier_zero_low_shapley": -0.000002432229696706093,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.015937130915,
+        "11": 0.016079708115,
+        "00": 0.01601314865,
+        "01": 0.016155268013
+      },
+      "p_other_source_shapley": 0.00014234828150000087,
+      "p_revision_total": 0.00006655946500000107,
+      "p_zero_low_shapley": -0.0000757888164999998,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 91,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 92,
+      "brier_fourstate": {
+        "10": 0.0002062015433432554,
+        "11": 0.00020988227921983843,
+        "00": 0.00020801037442946463,
+        "01": 0.00021169245494465956
+      },
+      "brier_other_source_shapley": 0.0000036814081958889765,
+      "brier_revision_total": 0.0000018719047903738046,
+      "brier_zero_low_shapley": -0.000001809503405515172,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.014359719473,
+        "11": 0.014487314424,
+        "00": 0.014422564766,
+        "01": 0.014549654805
+      },
+      "p_other_source_shapley": 0.00012734249499999923,
+      "p_revision_total": 0.00006474965799999934,
+      "p_zero_low_shapley": -0.0000625928369999999,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 93,
+      "brier_fourstate": {
+        "10": 0.00019324686069370739,
+        "11": 0.00019663490760083954,
+        "00": 0.00019483994756817216,
+        "01": 0.0001982281934855508
+      },
+      "brier_other_source_shapley": 0.0000033881464122553957,
+      "brier_revision_total": 0.0000017949600326673803,
+      "brier_zero_low_shapley": -0.0000015931863795880154,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013901325861,
+        "11": 0.014022656938,
+        "00": 0.013958508071,
+        "01": 0.014079353447
+      },
+      "p_other_source_shapley": 0.00012108822650000028,
+      "p_revision_total": 0.00006414886699999955,
+      "p_zero_low_shapley": -0.00005693935950000072,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 94,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 95,
+      "brier_fourstate": {
+        "10": 0.0001846529868486186,
+        "11": 0.00018777539474176418,
+        "00": 0.00018624925878738268,
+        "01": 0.000189371562909149
+      },
+      "brier_other_source_shapley": 0.000003122356007455952,
+      "brier_revision_total": 0.0000015261359543814997,
+      "brier_zero_low_shapley": -0.0000015962200530744524,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013588708064,
+        "11": 0.013703116242,
+        "00": 0.013647316908,
+        "01": 0.013761234062
+      },
+      "p_other_source_shapley": 0.00011416266600000006,
+      "p_revision_total": 0.000055799334000000006,
+      "p_zero_low_shapley": -0.00005836333200000005,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 100,
+      "brier_fourstate": {
+        "10": 0.009836978085449572,
+        "11": 0.009660629469715024,
+        "00": 0.009834991334528843,
+        "01": 0.009658701835866946
+      },
+      "brier_other_source_shapley": -0.00017631905719822302,
+      "brier_revision_total": -0.00017436186481381913,
+      "brier_zero_low_shapley": 0.000001957192384403894,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.900818458948,
+        "11": 0.901711498792,
+        "00": 0.900828475183,
+        "01": 0.90172130528
+      },
+      "p_other_source_shapley": 0.0008929349705000256,
+      "p_revision_total": 0.0008830236089999444,
+      "p_zero_low_shapley": -0.000009911361500081206,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 101,
+      "brier_fourstate": {
+        "10": 0.0029920614046587213,
+        "11": 0.0030078999707751665,
+        "00": 0.0029997175525319896,
+        "01": 0.003015521713435851
+      },
+      "brier_other_source_shapley": 0.00001582136351015325,
+      "brier_revision_total": 0.000008182418243176878,
+      "brier_zero_low_shapley": -0.000007638945266976371,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.054699738616,
+        "11": 0.054844324873,
+        "00": 0.054769677309,
+        "01": 0.054913766156
+      },
+      "p_other_source_shapley": 0.00014433755199999912,
+      "p_revision_total": 0.00007464756399999661,
+      "p_zero_low_shapley": -0.0000696899880000025,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 110,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 115,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 130,
+      "brier_fourstate": {
+        "10": 0.0030637037988407462,
+        "11": 0.0030667451630528872,
+        "00": 0.003072137229706067,
+        "01": 0.0030751284207649636
+      },
+      "brier_other_source_shapley": 0.0000030162776355187413,
+      "brier_revision_total": -0.000005392066653179834,
+      "brier_zero_low_shapley": -0.000008408344288698575,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.055350734402,
+        "11": 0.055378201154,
+        "00": 0.055426863791,
+        "01": 0.055453840451
+      },
+      "p_other_source_shapley": 0.00002722170599999893,
+      "p_revision_total": -0.00004866263699999929,
+      "p_zero_low_shapley": -0.00007588434299999822,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 135,
+      "brier_fourstate": {
+        "10": 0.05938901779590631,
+        "11": 0.059358436642919746,
+        "00": 0.0596782796912814,
+        "01": 0.0596510767754362
+      },
+      "brier_other_source_shapley": -0.00002889203441588245,
+      "brier_revision_total": -0.00031984304836165517,
+      "brier_zero_low_shapley": -0.0002909510139457727,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 1,
+      "origin_four_state_24_1": 1,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.243698620833,
+        "11": 0.243635868958,
+        "00": 0.244291382761,
+        "01": 0.244235699224
+      },
+      "p_other_source_shapley": -0.000059217705999994874,
+      "p_revision_total": -0.0006555138029999963,
+      "p_zero_low_shapley": -0.0005962960970000014,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 140,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 145,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 150,
+      "brier_fourstate": {
+        "10": 0.0001846529868486186,
+        "11": 0.00018777539474176418,
+        "00": 0.00018624925878738268,
+        "01": 0.000189371562909149
+      },
+      "brier_other_source_shapley": 0.000003122356007455952,
+      "brier_revision_total": 0.0000015261359543814997,
+      "brier_zero_low_shapley": -0.0000015962200530744524,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013588708064,
+        "11": 0.013703116242,
+        "00": 0.013647316908,
+        "01": 0.013761234062
+      },
+      "p_other_source_shapley": 0.00011416266600000006,
+      "p_revision_total": 0.000055799334000000006,
+      "p_zero_low_shapley": -0.00005836333200000005,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 155,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 160,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 165,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 200,
+      "brier_fourstate": {
+        "10": 0.0015406726924988763,
+        "11": 0.0015522823571244714,
+        "00": 0.0015484773188914806,
+        "01": 0.001560074347575001
+      },
+      "brier_other_source_shapley": 0.00001160334665455771,
+      "brier_revision_total": 0.0000038050382329907293,
+      "brier_zero_low_shapley": -0.000007798308421566981,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.039251403701,
+        "11": 0.039399014672,
+        "00": 0.039350696549,
+        "01": 0.039497776489
+      },
+      "p_other_source_shapley": 0.00014734545549999895,
+      "p_revision_total": 0.00004831812299999766,
+      "p_zero_low_shapley": -0.00009902733250000129,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 205,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 210,
+      "brier_fourstate": {
+        "10": 0.0003463458866857414,
+        "11": 0.0003507350510889634,
+        "00": 0.0003488265525208212,
+        "01": 0.0003532128536973241
+      },
+      "brier_other_source_shapley": 0.000004387732789862438,
+      "brier_revision_total": 0.000001908498568142184,
+      "brier_zero_low_shapley": -0.0000024792342217202536,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.018610370407,
+        "11": 0.018727921697,
+        "00": 0.0186768989,
+        "01": 0.018793957904
+      },
+      "p_other_source_shapley": 0.00011730514700000055,
+      "p_revision_total": 0.00005102279700000198,
+      "p_zero_low_shapley": -0.00006628234999999857,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 211,
+      "brier_fourstate": {
+        "10": 0.0005522299904012545,
+        "11": 0.0005578456911529392,
+        "00": 0.0005557654487445029,
+        "01": 0.0005613753557132546
+      },
+      "brier_other_source_shapley": 0.0000056128038602181905,
+      "brier_revision_total": 0.0000020802424084363216,
+      "brier_zero_low_shapley": -0.000003532561451781869,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.02349957426,
+        "11": 0.023618757189,
+        "00": 0.023574678126,
+        "01": 0.023693361005
+      },
+      "p_other_source_shapley": 0.00011893290400000027,
+      "p_revision_total": 0.000044079063,
+      "p_zero_low_shapley": -0.00007485384100000027,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 212,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 220,
+      "brier_fourstate": {
+        "10": 0.0007853211288865468,
+        "11": 0.0007922835965909137,
+        "00": 0.0007901792013890351,
+        "01": 0.0007971338797248883
+      },
+      "brier_other_source_shapley": 0.000006958573020110037,
+      "brier_revision_total": 0.0000021043952018785523,
+      "brier_zero_low_shapley": -0.000004854177818231485,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.028023581657,
+        "11": 0.028147532691,
+        "00": 0.028110126314,
+        "01": 0.028233559459
+      },
+      "p_other_source_shapley": 0.00012369208950000106,
+      "p_revision_total": 0.000037406377000000907,
+      "p_zero_low_shapley": -0.00008628571250000015,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 221,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 223,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 225,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 230,
+      "brier_fourstate": {
+        "10": 0.0007765612083147778,
+        "11": 0.0007861449684368633,
+        "00": 0.0007829207146066292,
+        "01": 0.0007925067779922246
+      },
+      "brier_other_source_shapley": 0.000009584911753840431,
+      "brier_revision_total": 0.0000032242538302340888,
+      "brier_zero_low_shapley": -0.0000063606579236063425,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.027866847836,
+        "11": 0.028038276845,
+        "00": 0.027980720409,
+        "01": 0.028151496905
+      },
+      "p_other_source_shapley": 0.0001711027525000009,
+      "p_revision_total": 0.000057556436000000266,
+      "p_zero_low_shapley": -0.00011354631650000065,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 232,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 235,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 260,
+      "brier_fourstate": {
+        "10": 0.0003486755858909033,
+        "11": 0.00035332675742101626,
+        "00": 0.0003514526615180349,
+        "01": 0.00035610297583591187
+      },
+      "brier_other_source_shapley": 0.0000046507429239949784,
+      "brier_revision_total": 0.0000018740959029813734,
+      "brier_zero_low_shapley": -0.000002776647021013605,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.018672856929,
+        "11": 0.018796987988,
+        "00": 0.018747070745,
+        "01": 0.018870690921
+      },
+      "p_other_source_shapley": 0.00012387561749999977,
+      "p_revision_total": 0.00004991724299999861,
+      "p_zero_low_shapley": -0.00007395837450000116,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 290,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 305,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 310,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 316,
+      "brier_fourstate": {
+        "10": 0.00021228042429443113,
+        "11": 0.00021594934942162589,
+        "00": 0.00021409544135355237,
+        "01": 0.0002177644881959458
+      },
+      "brier_other_source_shapley": 0.0000036689859847941018,
+      "brier_revision_total": 0.0000018539080680735184,
+      "brier_zero_low_shapley": -0.0000018150779167205834,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.014569846406,
+        "11": 0.014695215188,
+        "00": 0.014632000593,
+        "01": 0.014756845469
+      },
+      "p_other_source_shapley": 0.00012510682899999955,
+      "p_revision_total": 0.0000632145949999996,
+      "p_zero_low_shapley": -0.00006189223399999996,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 317,
+      "brier_fourstate": {
+        "10": 0.00021228042429443113,
+        "11": 0.00021594934942162589,
+        "00": 0.00021409544135355237,
+        "01": 0.0002177644881959458
+      },
+      "brier_other_source_shapley": 0.0000036689859847941018,
+      "brier_revision_total": 0.0000018539080680735184,
+      "brier_zero_low_shapley": -0.0000018150779167205834,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.014569846406,
+        "11": 0.014695215188,
+        "00": 0.014632000593,
+        "01": 0.014756845469
+      },
+      "p_other_source_shapley": 0.00012510682899999955,
+      "p_revision_total": 0.0000632145949999996,
+      "p_zero_low_shapley": -0.00006189223399999996,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 325,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 327,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 331,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 338,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 339,
+      "brier_fourstate": {
+        "10": 0.0003463458866857414,
+        "11": 0.0020006851948244746,
+        "00": 0.0003488265525208212,
+        "01": 0.0020058344887991515
+      },
+      "brier_other_source_shapley": 0.0016556736222085317,
+      "brier_revision_total": 0.0016518586423036534,
+      "brier_zero_low_shapley": -0.0000038149799048783645,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.018610370407,
+        "11": 0.044729019605,
+        "00": 0.0186768989,
+        "01": 0.044786543613
+      },
+      "p_other_source_shapley": 0.026114146955500003,
+      "p_revision_total": 0.026052120705000004,
+      "p_zero_low_shapley": -0.00006202625049999896,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 341,
+      "brier_fourstate": {
+        "10": 0.00039697527390730763,
+        "11": 0.0004038270224834793,
+        "00": 0.0004003776502552685,
+        "01": 0.000407229919922136
+      },
+      "brier_other_source_shapley": 0.0000068520091215196015,
+      "brier_revision_total": 0.000003449372228210806,
+      "brier_zero_low_shapley": -0.0000034026368933087953,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.019924238352,
+        "11": 0.020095447805,
+        "00": 0.020009439029,
+        "01": 0.020179938551
+      },
+      "p_other_source_shapley": 0.00017085448750000023,
+      "p_revision_total": 0.0000860087759999989,
+      "p_zero_low_shapley": -0.00008484571150000134,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 343,
+      "brier_fourstate": {
+        "10": 0.00044588230752549393,
+        "11": 0.00045102610368658497,
+        "00": 0.00044822731395558244,
+        "01": 0.00045336329204462826
+      },
+      "brier_other_source_shapley": 0.000005139887125068425,
+      "brier_revision_total": 0.000002798789731002526,
+      "brier_zero_low_shapley": -0.000002341097394065899,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.021115925448,
+        "11": 0.02123737516,
+        "00": 0.021171379595,
+        "01": 0.021292329418
+      },
+      "p_other_source_shapley": 0.00012119976749999997,
+      "p_revision_total": 0.00006599556499999742,
+      "p_zero_low_shapley": -0.00005520420250000255,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 344,
+      "brier_fourstate": {
+        "10": 0.0028734704286695017,
+        "11": 0.0028897298851002125,
+        "00": 0.002880703273177467,
+        "01": 0.002896925193795484
+      },
+      "brier_other_source_shapley": 0.000016240688524363873,
+      "brier_revision_total": 0.000009026611922745634,
+      "brier_zero_low_shapley": -0.000007214076601618239,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.05360476125,
+        "11": 0.053756207875,
+        "00": 0.053672183421,
+        "01": 0.053823091641
+      },
+      "p_other_source_shapley": 0.0001511774225000026,
+      "p_revision_total": 0.00008402445400000624,
+      "p_zero_low_shapley": -0.00006715296849999636,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 345,
+      "brier_fourstate": {
+        "10": 0.0035763011620124612,
+        "11": 0.0035938930103121013,
+        "00": 0.0035842504266925105,
+        "01": 0.0036017978217597413
+      },
+      "brier_other_source_shapley": 0.000017569621683435465,
+      "brier_revision_total": 0.000009642583619590833,
+      "brier_zero_low_shapley": -0.000007927038063844632,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.059802183589,
+        "11": 0.059949086818,
+        "00": 0.059868609694,
+        "01": 0.060014979978
+      },
+      "p_other_source_shapley": 0.00014663675650000013,
+      "p_revision_total": 0.00008047712400000018,
+      "p_zero_low_shapley": -0.00006615963249999995,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 346,
+      "brier_fourstate": {
+        "10": 0.00023864036590519176,
+        "11": 0.00024268775426138407,
+        "00": 0.00024069508657885655,
+        "01": 0.0002447424220514094
+      },
+      "brier_other_source_shapley": 0.000004047361914372573,
+      "brier_revision_total": 0.000001992667682527516,
+      "brier_zero_low_shapley": -0.0000020546942318450567,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.015447989057,
+        "11": 0.015578438762,
+        "00": 0.015514350988,
+        "01": 0.015644245653
+      },
+      "p_other_source_shapley": 0.00013017218499999927,
+      "p_revision_total": 0.00006408777400000037,
+      "p_zero_low_shapley": -0.0000660844109999989,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 347,
+      "brier_fourstate": {
+        "10": 0.00044597738696347744,
+        "11": 0.00045367255282654107,
+        "00": 0.00044980181729407546,
+        "01": 0.00045749764259940355
+      },
+      "brier_other_source_shapley": 0.00000769549558419586,
+      "brier_revision_total": 0.000003870735532465611,
+      "brier_zero_low_shapley": -0.0000038247600517302485,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.021118176696,
+        "11": 0.021299590438,
+        "00": 0.02120853171,
+        "01": 0.021389194529
+      },
+      "p_other_source_shapley": 0.00018103828050000138,
+      "p_revision_total": 0.00009105872800000206,
+      "p_zero_low_shapley": -0.00008997955249999932,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 349,
+      "brier_fourstate": {
+        "10": 0.000203768489332569,
+        "11": 0.00020729056169894588,
+        "00": 0.00020551049797267357,
+        "01": 0.00020903267892850814
+      },
+      "brier_other_source_shapley": 0.000003522126661105728,
+      "brier_revision_total": 0.0000017800637262723059,
+      "brier_zero_low_shapley": -0.0000017420629348334222,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.014274750062,
+        "11": 0.014397588746,
+        "00": 0.014335637341,
+        "01": 0.014457962475
+      },
+      "p_other_source_shapley": 0.00012258190900000035,
+      "p_revision_total": 0.00006195140499999988,
+      "p_zero_low_shapley": -0.000060630504000000474,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 350,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 352,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 355,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 359,
+      "brier_fourstate": {
+        "10": 0.0026128409375520173,
+        "11": 0.0026279984224109303,
+        "00": 0.002619294019452255,
+        "01": 0.0026344179285440615
+      },
+      "brier_other_source_shapley": 0.00001514069697535988,
+      "brier_revision_total": 0.000008704402958675545,
+      "brier_zero_low_shapley": -0.000006436294016684335,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.051115955802,
+        "11": 0.051264007085,
+        "00": 0.051179038868,
+        "01": 0.051326581111
+      },
+      "p_other_source_shapley": 0.00014779676299999864,
+      "p_revision_total": 0.00008496821699999907,
+      "p_zero_low_shapley": -0.00006282854599999957,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 360,
+      "brier_fourstate": {
+        "10": 0.0001846529868486186,
+        "11": 0.00018777539474176418,
+        "00": 0.00018624925878738268,
+        "01": 0.000189371562909149
+      },
+      "brier_other_source_shapley": 0.000003122356007455952,
+      "brier_revision_total": 0.0000015261359543814997,
+      "brier_zero_low_shapley": -0.0000015962200530744524,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013588708064,
+        "11": 0.013703116242,
+        "00": 0.013647316908,
+        "01": 0.013761234062
+      },
+      "p_other_source_shapley": 0.00011416266600000006,
+      "p_revision_total": 0.000055799334000000006,
+      "p_zero_low_shapley": -0.00005836333200000005,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 365,
+      "brier_fourstate": {
+        "10": 0.39320616332395897,
+        "11": 0.3931400553304357,
+        "00": 0.3922324013432609,
+        "01": 0.3921527572905734
+      },
+      "brier_other_source_shapley": -0.00007287602310535046,
+      "brier_revision_total": 0.0009076539871748501,
+      "brier_zero_low_shapley": 0.0009805300102802006,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 1,
+      "origin_four_state_24_1": 1,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.372938469268,
+        "11": 0.372991184009,
+        "00": 0.373715399085,
+        "01": 0.373778986866
+      },
+      "p_other_source_shapley": 0.000058151260999977916,
+      "p_revision_total": -0.0007242150760000121,
+      "p_zero_low_shapley": -0.00078236633699999,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 366,
+      "brier_fourstate": {
+        "10": 0.0001957584196740308,
+        "11": 0.00019914228247014672,
+        "00": 0.00019743173795235284,
+        "01": 0.0002008156974409621
+      },
+      "brier_other_source_shapley": 0.000003383911142362586,
+      "brier_revision_total": 0.0000017105445177938736,
+      "brier_zero_low_shapley": -0.0000016733666245687123,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013991369471,
+        "11": 0.014111778147,
+        "00": 0.014051040458,
+        "01": 0.014170945538
+      },
+      "p_other_source_shapley": 0.0001201568779999997,
+      "p_revision_total": 0.00006073768899999936,
+      "p_zero_low_shapley": -0.00005941918900000034,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 367,
+      "brier_fourstate": {
+        "10": 0.0001957584196740308,
+        "11": 0.00019914228247014672,
+        "00": 0.00019743173795235284,
+        "01": 0.0002008156974409621
+      },
+      "brier_other_source_shapley": 0.000003383911142362586,
+      "brier_revision_total": 0.0000017105445177938736,
+      "brier_zero_low_shapley": -0.0000016733666245687123,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013991369471,
+        "11": 0.014111778147,
+        "00": 0.014051040458,
+        "01": 0.014170945538
+      },
+      "p_other_source_shapley": 0.0001201568779999997,
+      "p_revision_total": 0.00006073768899999936,
+      "p_zero_low_shapley": -0.00005941918900000034,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 368,
+      "brier_fourstate": {
+        "10": 0.0001957584196740308,
+        "11": 0.00019914228247014672,
+        "00": 0.00019743173795235284,
+        "01": 0.0002008156974409621
+      },
+      "brier_other_source_shapley": 0.000003383911142362586,
+      "brier_revision_total": 0.0000017105445177938736,
+      "brier_zero_low_shapley": -0.0000016733666245687123,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013991369471,
+        "11": 0.014111778147,
+        "00": 0.014051040458,
+        "01": 0.014170945538
+      },
+      "p_other_source_shapley": 0.0001201568779999997,
+      "p_revision_total": 0.00006073768899999936,
+      "p_zero_low_shapley": -0.00005941918900000034,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 369,
+      "brier_fourstate": {
+        "10": 0.022989181803378313,
+        "11": 0.022436204805419694,
+        "00": 0.022985017640867283,
+        "01": 0.022432207055046605
+      },
+      "brier_other_source_shapley": -0.0005528937918896481,
+      "brier_revision_total": -0.0005488128354475888,
+      "brier_zero_low_shapley": 0.000004080956442059289,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.848378161852,
+        "11": 0.850212801597,
+        "00": 0.848391894541,
+        "01": 0.850226146958
+      },
+      "p_other_source_shapley": 0.0018344460810000296,
+      "p_revision_total": 0.0018209070560000207,
+      "p_zero_low_shapley": -0.00001353902500000892,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 370,
+      "brier_fourstate": {
+        "10": 0.0001957584196740308,
+        "11": 0.00019914228247014672,
+        "00": 0.00019743173795235284,
+        "01": 0.0002008156974409621
+      },
+      "brier_other_source_shapley": 0.000003383911142362586,
+      "brier_revision_total": 0.0000017105445177938736,
+      "brier_zero_low_shapley": -0.0000016733666245687123,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013991369471,
+        "11": 0.014111778147,
+        "00": 0.014051040458,
+        "01": 0.014170945538
+      },
+      "p_other_source_shapley": 0.0001201568779999997,
+      "p_revision_total": 0.00006073768899999936,
+      "p_zero_low_shapley": -0.00005941918900000034,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 371,
+      "brier_fourstate": {
+        "10": 0.050990260863700065,
+        "11": 0.05094110253674516,
+        "00": 0.05124947229949786,
+        "01": 0.05120358960633967
+      },
+      "brier_other_source_shapley": -0.00004752051005655136,
+      "brier_revision_total": -0.00030836976275270406,
+      "brier_zero_low_shapley": -0.0002608492526961527,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 1,
+      "origin_four_state_24_1": 1,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.225810231973,
+        "11": 0.225701356967,
+        "00": 0.226383462955,
+        "01": 0.226282101825
+      },
+      "p_other_source_shapley": -0.00010511806799999579,
+      "p_revision_total": -0.0006821059880000035,
+      "p_zero_low_shapley": -0.0005769879200000078,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 372,
+      "brier_fourstate": {
+        "10": 0.00917358162405329,
+        "11": 0.009184660601989681,
+        "00": 0.009189089149334686,
+        "01": 0.009200077949451723
+      },
+      "brier_other_source_shapley": 0.000011033889026713928,
+      "brier_revision_total": -0.000004428547345005154,
+      "brier_zero_low_shapley": -0.000015462436371719082,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.095778816155,
+        "11": 0.095836634968,
+        "00": 0.095859736852,
+        "01": 0.095917036805
+      },
+      "p_other_source_shapley": 0.000057559382999998465,
+      "p_revision_total": -0.000023101883999995798,
+      "p_zero_low_shapley": -0.00008066126699999426,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 373,
+      "brier_fourstate": {
+        "10": 0.22387675470601057,
+        "11": 0.22796421092698155,
+        "00": 0.22442532547715105,
+        "01": 0.22851897504197505
+      },
+      "brier_other_source_shapley": 0.004090552892897489,
+      "brier_revision_total": 0.003538885449830498,
+      "brier_zero_low_shapley": -0.0005516674430669916,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 2,
+      "origin_four_state_24_1": 2,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.526843836872,
+        "11": 0.522544022001,
+        "00": 0.526264498399,
+        "01": 0.521963416628
+      },
+      "p_other_source_shapley": -0.004300448320999961,
+      "p_revision_total": -0.0037204763979999944,
+      "p_zero_low_shapley": 0.0005799719229999667,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 375,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 380,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 385,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 390,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 395,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 402,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 403,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 404,
+      "brier_fourstate": {
+        "10": 0.0031293230021343112,
+        "11": 0.00314572053726117,
+        "00": 0.0031373116022326243,
+        "01": 0.0031536730320936494
+      },
+      "brier_other_source_shapley": 0.000016379482493941895,
+      "brier_revision_total": 0.000008408935028545589,
+      "brier_zero_low_shapley": -0.000007970547465396306,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.055940352181,
+        "11": 0.05608672336,
+        "00": 0.05601170951,
+        "01": 0.056157573239
+      },
+      "p_other_source_shapley": 0.00014611745400000195,
+      "p_revision_total": 0.00007501384999999972,
+      "p_zero_low_shapley": -0.00007110360400000224,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 411,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 420,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 432,
+      "brier_fourstate": {
+        "10": 0.04033363046562067,
+        "11": 0.03517427587353621,
+        "00": 0.040325434309575095,
+        "01": 0.03516695440219714
+      },
+      "brier_other_source_shapley": -0.00515891724973121,
+      "brier_revision_total": -0.0051511584360388885,
+      "brier_zero_low_shapley": 0.000007758813692321925,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.799167655828,
+        "11": 0.812451937164,
+        "00": 0.799188062333,
+        "01": 0.8124714571
+      },
+      "p_other_source_shapley": 0.013283838051500019,
+      "p_revision_total": 0.013263874831,
+      "p_zero_low_shapley": -0.000019963220500018863,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 433,
+      "brier_fourstate": {
+        "10": 0.030782694894944767,
+        "11": 0.03077105656714973,
+        "00": 0.030814704659994197,
+        "01": 0.03080284617109889
+      },
+      "brier_other_source_shapley": -0.000011748408345170838,
+      "brier_revision_total": -0.00004364809284446505,
+      "brier_zero_low_shapley": -0.000031899684499294215,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.175449978327,
+        "11": 0.175416808109,
+        "00": 0.175541176537,
+        "01": 0.175507396343
+      },
+      "p_other_source_shapley": -0.00003347520599998599,
+      "p_revision_total": -0.00012436842799998238,
+      "p_zero_low_shapley": -0.00009089322199999639,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 434,
+      "brier_fourstate": {
+        "10": 0.5023517112719379,
+        "11": 0.5022977073219118,
+        "00": 0.5010471026501055,
+        "01": 0.5009700790374737
+      },
+      "brier_other_source_shapley": -0.00006551378132896302,
+      "brier_revision_total": 0.0012506046718062658,
+      "brier_zero_low_shapley": 0.0013161184531352288,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 1,
+      "origin_four_state_24_1": 1,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.291232258584,
+        "11": 0.291270356679,
+        "00": 0.292153192668,
+        "01": 0.292207601738
+      },
+      "p_other_source_shapley": 0.00004625358249998879,
+      "p_revision_total": -0.0008828359890000193,
+      "p_zero_low_shapley": -0.000929089571500008,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 435,
+      "brier_fourstate": {
+        "10": 0.0005485654920187982,
+        "11": 0.0005543153509567453,
+        "00": 0.0005522581503000709,
+        "01": 0.0005580032082516977
+      },
+      "brier_other_source_shapley": 0.0000057474584447869724,
+      "brier_revision_total": 0.000002057200656674406,
+      "brier_zero_low_shapley": -0.0000036902577881125663,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.023421475018,
+        "11": 0.023543902628,
+        "00": 0.02350017341,
+        "01": 0.02362209153
+      },
+      "p_other_source_shapley": 0.0001221728650000007,
+      "p_revision_total": 0.00004372921800000276,
+      "p_zero_low_shapley": -0.00007844364699999794,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 436,
+      "brier_fourstate": {
+        "10": 0.030356580262990582,
+        "11": 0.029717084280422294,
+        "00": 0.030351582497125332,
+        "01": 0.029712261193563322
+      },
+      "brier_other_source_shapley": -0.000639408643065149,
+      "brier_revision_total": -0.0006344982167030382,
+      "brier_zero_low_shapley": 0.0000049104263621108785,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.825768601386,
+        "11": 0.827613561205,
+        "00": 0.825782944299,
+        "01": 0.827627550944
+      },
+      "p_other_source_shapley": 0.0018447832319999913,
+      "p_revision_total": 0.0018306169059999489,
+      "p_zero_low_shapley": -0.000014166326000042417,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 437,
+      "brier_fourstate": {
+        "10": 0.0045271354630547584,
+        "11": 0.0045481928355975785,
+        "00": 0.004536026578716917,
+        "01": 0.004557037116391697
+      },
+      "brier_other_source_shapley": 0.00002103395510880037,
+      "brier_revision_total": 0.000012166256880661794,
+      "brier_zero_low_shapley": -0.000008867698228138578,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.067283991135,
+        "11": 0.067440290892,
+        "00": 0.06735003028,
+        "01": 0.06750583024
+      },
+      "p_other_source_shapley": 0.00015604985849999864,
+      "p_revision_total": 0.00009026061200000102,
+      "p_zero_low_shapley": -0.00006578924649999762,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 438,
+      "brier_fourstate": {
+        "10": 0.0025265865729134545,
+        "11": 0.002541093903675719,
+        "00": 0.0025327996710465678,
+        "01": 0.002547274385863268
+      },
+      "brier_other_source_shapley": 0.000014491022789482264,
+      "brier_revision_total": 0.000008294232629151022,
+      "brier_zero_low_shapley": -0.000006196790160331242,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.050265162617,
+        "11": 0.050409264066,
+        "00": 0.050326927892,
+        "01": 0.050470529875
+      },
+      "p_other_source_shapley": 0.00014385171599999927,
+      "p_revision_total": 0.00008233617399999726,
+      "p_zero_low_shapley": -0.000061515542000002,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 439,
+      "brier_fourstate": {
+        "10": 0.033259068592960565,
+        "11": 0.03249473381275735,
+        "00": 0.033253322075592735,
+        "01": 0.03248921667048355
+      },
+      "brier_other_source_shapley": -0.0007642200926561982,
+      "brier_revision_total": -0.0007585882628353829,
+      "brier_zero_low_shapley": 0.000005631829820815226,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.81762930994,
+        "11": 0.819737042594,
+        "00": 0.817645065667,
+        "01": 0.819752346283
+      },
+      "p_other_source_shapley": 0.0021075066349999783,
+      "p_revision_total": 0.0020919769270000277,
+      "p_zero_low_shapley": -0.00001552970799995057,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 450,
+      "brier_fourstate": {
+        "10": 0.00324263946310376,
+        "11": 0.003245901834413768,
+        "00": 0.0032518198576902265,
+        "01": 0.0032550286593696393
+      },
+      "brier_other_source_shapley": 0.000003235586494710306,
+      "brier_revision_total": -0.0000059180232764586074,
+      "brier_zero_low_shapley": -0.000009153609771168914,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.056944178483,
+        "11": 0.056972816627,
+        "00": 0.057024730229,
+        "01": 0.057052858468
+      },
+      "p_other_source_shapley": 0.000028383191499999766,
+      "p_revision_total": -0.000051913601999999115,
+      "p_zero_low_shapley": -0.00008029679349999888,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 451,
+      "brier_fourstate": {
+        "10": 0.003955576471342768,
+        "11": 0.00397724632001384,
+        "00": 0.003964714235637459,
+        "01": 0.003986334926713531
+      },
+      "brier_other_source_shapley": 0.0000216452698735721,
+      "brier_revision_total": 0.000012532084376381744,
+      "brier_zero_low_shapley": -0.000009113185497190354,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.062893373827,
+        "11": 0.063065413025,
+        "00": 0.06296597681,
+        "01": 0.063137428889
+      },
+      "p_other_source_shapley": 0.00017174563849999686,
+      "p_revision_total": 0.00009943621499999833,
+      "p_zero_low_shapley": -0.00007230942349999853,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 452,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 461,
+      "brier_fourstate": {
+        "10": 0.9732669498443872,
+        "11": 0.9730384284735499,
+        "00": 0.9731537402680457,
+        "01": 0.9729261885733995
+      },
+      "brier_other_source_shapley": -0.00022803653274172664,
+      "brier_revision_total": -0.0001153117944957538,
+      "brier_zero_low_shapley": 0.00011272473824597284,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 471,
+      "brier_fourstate": {
+        "10": 0.023390770145174208,
+        "11": 0.022810368647921624,
+        "00": 0.023386802220289975,
+        "01": 0.02280655695522366
+      },
+      "brier_other_source_shapley": -0.0005803233811594501,
+      "brier_revision_total": -0.0005764335723683518,
+      "brier_zero_low_shapley": 0.0000038898087910983065,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.847059586292,
+        "11": 0.848968981173,
+        "00": 0.847072558969,
+        "01": 0.848981600607
+      },
+      "p_other_source_shapley": 0.0019092182595000229,
+      "p_revision_total": 0.0018964222039999923,
+      "p_zero_low_shapley": -0.000012796055500030601,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 475,
+      "brier_fourstate": {
+        "10": 0.05103139272697835,
+        "11": 0.050423433433557506,
+        "00": 0.05102045779914972,
+        "01": 0.05041269931702652
+      },
+      "brier_other_source_shapley": -0.0006078588877720184,
+      "brier_revision_total": -0.0005970243655922108,
+      "brier_zero_low_shapley": 0.00001083452217980757,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.774098710214,
+        "11": 0.775448372454,
+        "00": 0.7741229144,
+        "01": 0.775472274948
+      },
+      "p_other_source_shapley": 0.0013495113939999692,
+      "p_revision_total": 0.0013254580539999727,
+      "p_zero_low_shapley": -0.00002405333999999648,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 481,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 482,
+      "brier_fourstate": {
+        "10": 0.053236512758801535,
+        "11": 0.05254401243851192,
+        "00": 0.053223940226529536,
+        "01": 0.0525316976594276
+      },
+      "brier_other_source_shapley": -0.0006923714436957752,
+      "brier_revision_total": -0.0006799277880176133,
+      "brier_zero_low_shapley": 0.000012443655678161941,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.76926961024,
+        "11": 0.770775192358,
+        "00": 0.769296856921,
+        "01": 0.770802055726
+      },
+      "p_other_source_shapley": 0.0015053904615000002,
+      "p_revision_total": 0.0014783354369999335,
+      "p_zero_low_shapley": -0.000027055024500066693,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 483,
+      "brier_fourstate": {
+        "10": 0.05439207322218676,
+        "11": 0.053959464194134034,
+        "00": 0.05437551646976103,
+        "01": 0.05394309041965029
+      },
+      "brier_other_source_shapley": -0.00043251753908173096,
+      "brier_revision_total": -0.00041605227562699354,
+      "brier_zero_low_shapley": 0.000016465263454737422,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.766778917715,
+        "11": 0.767708234769,
+        "00": 0.766814416248,
+        "01": 0.767743481427
+      },
+      "p_other_source_shapley": 0.0009291911165000277,
+      "p_revision_total": 0.0008938185210000116,
+      "p_zero_low_shapley": -0.000035372595500016146,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 484,
+      "brier_fourstate": {
+        "10": 0.026244893713656507,
+        "11": 0.026225131519205438,
+        "00": 0.026284016306041623,
+        "01": 0.02626404148358177
+      },
+      "brier_other_source_shapley": -0.000019868508455461037,
+      "brier_revision_total": -0.000058884786836185116,
+      "brier_zero_low_shapley": -0.00003901627838072408,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.162002758352,
+        "11": 0.161941753477,
+        "00": 0.162123460073,
+        "01": 0.162061844626
+      },
+      "p_other_source_shapley": -0.00006131016099999997,
+      "p_revision_total": -0.00018170659600000305,
+      "p_zero_low_shapley": -0.00012039643500000308,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 490,
+      "brier_fourstate": {
+        "10": 0.019512743913806557,
+        "11": 0.019176252612501547,
+        "00": 0.019509041016147446,
+        "01": 0.01917264926168486
+      },
+      "brier_other_source_shapley": -0.00033644152788379726,
+      "brier_revision_total": -0.0003327884036458985,
+      "brier_zero_low_shapley": 0.0000036531242378987777,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.860311976484,
+        "11": 0.861521652911,
+        "00": 0.860325231283,
+        "01": 0.861534664043
+      },
+      "p_other_source_shapley": 0.0012095545935000285,
+      "p_revision_total": 0.001196421628000044,
+      "p_zero_low_shapley": -0.00001313296549998455,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 500,
+      "brier_fourstate": {
+        "10": 0.09048351821325042,
+        "11": 0.09049880507697332,
+        "00": 0.0910971036585925,
+        "01": 0.09112155192018898
+      },
+      "brier_other_source_shapley": 0.000019867562659689475,
+      "brier_revision_total": -0.0005982985816191805,
+      "brier_zero_low_shapley": -0.00061816614427887,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 1,
+      "origin_four_state_24_1": 1,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.300804784226,
+        "11": 0.300830193094,
+        "00": 0.301822967414,
+        "01": 0.301863465693
+      },
+      "p_other_source_shapley": 0.00003295357349999972,
+      "p_revision_total": -0.0009927743200000005,
+      "p_zero_low_shapley": -0.0010257278935000003,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 501,
+      "brier_fourstate": {
+        "10": 0.12652812490634216,
+        "11": 0.12990848094610585,
+        "00": 0.12695206540192805,
+        "01": 0.13033922315385024
+      },
+      "brier_other_source_shapley": 0.003383756895842943,
+      "brier_revision_total": 0.002956415544177804,
+      "brier_zero_low_shapley": -0.0004273413516651392,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 2,
+      "origin_four_state_24_1": 2,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.644292079219,
+        "11": 0.639571808891,
+        "00": 0.643696666586,
+        "01": 0.638974761057
+      },
+      "p_other_source_shapley": -0.004721087928500012,
+      "p_revision_total": -0.004124857695000039,
+      "p_zero_low_shapley": 0.0005962302334999725,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 510,
+      "brier_fourstate": {
+        "10": 0.08899528053896659,
+        "11": 0.08903353868638932,
+        "00": 0.08956997596896275,
+        "01": 0.08961837621918853
+      },
+      "brier_other_source_shapley": 0.0000433291988242504,
+      "brier_revision_total": -0.0005364372825734376,
+      "brier_zero_low_shapley": -0.000579766481397688,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 1,
+      "origin_four_state_24_1": 1,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.298320767864,
+        "11": 0.298384883475,
+        "00": 0.299282435116,
+        "01": 0.299363284688
+      },
+      "p_other_source_shapley": 0.00007248259149997271,
+      "p_revision_total": -0.0008975516410000273,
+      "p_zero_low_shapley": -0.0009700342325,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 516,
+      "brier_fourstate": {
+        "10": 0.3916040900323902,
+        "11": 0.39165547742815515,
+        "00": 0.3929531604938079,
+        "01": 0.39296170442065076
+      },
+      "brier_other_source_shapley": 0.000029965661303893443,
+      "brier_revision_total": -0.001297683065652755,
+      "brier_zero_low_shapley": -0.0013276487269566484,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 1,
+      "origin_four_state_24_1": 1,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [
+        {
+          "new_best_deaths": 6,
+          "old_best_deaths": 0,
+          "year": 1993
+        },
+        {
+          "new_best_deaths": 2,
+          "old_best_deaths": 0,
+          "year": 2011
+        }
+      ],
+      "p_fourstate": {
+        "10": 0.374217218172,
+        "11": 0.374176161026,
+        "00": 0.373140238575,
+        "01": 0.373133423749
+      },
+      "p_other_source_shapley": -0.00002393598600000657,
+      "p_revision_total": 0.001035922450999982,
+      "p_zero_low_shapley": 0.0010598584369999886,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 517,
+      "brier_fourstate": {
+        "10": 0.07559297683794407,
+        "11": 0.07435774681897918,
+        "00": 0.025405234751465926,
+        "01": 0.02668769625725063
+      },
+      "brier_other_source_shapley": 0.000023615743409907686,
+      "brier_revision_total": 0.04895251206751325,
+      "brier_zero_low_shapley": 0.04892889632410334,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 1,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [
+        {
+          "new_best_deaths": 7,
+          "old_best_deaths": 0,
+          "year": 2021
+        }
+      ],
+      "p_fourstate": {
+        "10": 0.274941769904,
+        "11": 0.272686169101,
+        "00": 0.159390196535,
+        "01": 0.163363693204
+      },
+      "p_other_source_shapley": 0.0008589479330000094,
+      "p_revision_total": 0.11329597256600002,
+      "p_zero_low_shapley": 0.11243702463300001,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 520,
+      "brier_fourstate": {
+        "10": 0.03155861608930867,
+        "11": 0.0312082301164424,
+        "00": 0.03155278585244369,
+        "01": 0.03120251955562467
+      },
+      "brier_other_source_shapley": -0.0003503261348426455,
+      "brier_revision_total": -0.000344555736001291,
+      "brier_zero_low_shapley": 0.000005770398841354468,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.822352551132,
+        "11": 0.82334148728,
+        "00": 0.822368961461,
+        "01": 0.82335765073
+      },
+      "p_other_source_shapley": 0.0009888127084999865,
+      "p_revision_total": 0.0009725258189999808,
+      "p_zero_low_shapley": -0.000016286889500005675,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 522,
+      "brier_fourstate": {
+        "10": 0.0037840171023374547,
+        "11": 0.0037902056073080273,
+        "00": 0.003791335027507457,
+        "01": 0.0037974703554313283
+      },
+      "brier_other_source_shapley": 0.0000061619164472219,
+      "brier_revision_total": -0.0000011294201994298259,
+      "brier_zero_low_shapley": -0.000007291336646651726,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.061514365008,
+        "11": 0.061564645758,
+        "00": 0.061573817711,
+        "01": 0.061623618487
+      },
+      "p_other_source_shapley": 0.00005004076300000118,
+      "p_revision_total": -0.000009171953000000621,
+      "p_zero_low_shapley": -0.0000592127160000018,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 530,
+      "brier_fourstate": {
+        "10": 0.02198559650309786,
+        "11": 0.021654126882500343,
+        "00": 0.02198112023264906,
+        "01": 0.02164977760243776
+      },
+      "brier_other_source_shapley": -0.00033140612540440845,
+      "brier_revision_total": -0.0003269933501487167,
+      "brier_zero_low_shapley": 0.000004412775255691753,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.851724592386,
+        "11": 0.852846587255,
+        "00": 0.851739687601,
+        "01": 0.852861366044
+      },
+      "p_other_source_shapley": 0.0011218366559999637,
+      "p_revision_total": 0.0011068996539999043,
+      "p_zero_low_shapley": -0.00001493700200005943,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 531,
+      "brier_fourstate": {
+        "10": 0.010047473015037755,
+        "11": 0.010033590217492087,
+        "00": 0.010062574344441001,
+        "01": 0.010048571129866244
+      },
+      "brier_other_source_shapley": -0.000013943006060212863,
+      "brier_revision_total": -0.000028984126948914182,
+      "brier_zero_low_shapley": -0.000015041120888701319,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.100237084031,
+        "11": 0.100167810286,
+        "00": 0.100312383804,
+        "01": 0.100242561469
+      },
+      "p_other_source_shapley": -0.00006954803999999898,
+      "p_revision_total": -0.00014457351799999907,
+      "p_zero_low_shapley": -0.00007502547800000009,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 540,
+      "brier_fourstate": {
+        "10": 0.0037041474339728326,
+        "11": 0.0037355383072514067,
+        "00": 0.003715901012686068,
+        "01": 0.0037472443969404842
+      },
+      "brier_other_source_shapley": 0.000031367128766495106,
+      "brier_revision_total": 0.000019637294565338567,
+      "brier_zero_low_shapley": -0.000011729834201156539,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.060861707452,
+        "11": 0.061119050281,
+        "00": 0.060958190694,
+        "01": 0.06121474003
+      },
+      "p_other_source_shapley": 0.00025694608250000084,
+      "p_revision_total": 0.00016085958700000347,
+      "p_zero_low_shapley": -0.00009608649549999737,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 541,
+      "brier_fourstate": {
+        "10": 0.04919438115688601,
+        "11": 0.048388289820633035,
+        "00": 0.04918675129947959,
+        "01": 0.0483808790950494
+      },
+      "brier_other_source_shapley": -0.0008059817703415829,
+      "brier_revision_total": -0.000798461478846553,
+      "brier_zero_low_shapley": 0.000007520291495029946,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.778201936084,
+        "11": 0.780026615654,
+        "00": 0.77821913676,
+        "01": 0.780043460895
+      },
+      "p_other_source_shapley": 0.0018245018524999934,
+      "p_revision_total": 0.0018074788940000142,
+      "p_zero_low_shapley": -0.000017022958499979257,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 551,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 552,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 553,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 560,
+      "brier_fourstate": {
+        "10": 0.0001846529868486186,
+        "11": 0.00018777539474176418,
+        "00": 0.00018624925878738268,
+        "01": 0.000189371562909149
+      },
+      "brier_other_source_shapley": 0.000003122356007455952,
+      "brier_revision_total": 0.0000015261359543814997,
+      "brier_zero_low_shapley": -0.0000015962200530744524,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013588708064,
+        "11": 0.013703116242,
+        "00": 0.013647316908,
+        "01": 0.013761234062
+      },
+      "p_other_source_shapley": 0.00011416266600000006,
+      "p_revision_total": 0.000055799334000000006,
+      "p_zero_low_shapley": -0.00005836333200000005,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 565,
+      "brier_fourstate": {
+        "10": 0.0004280777240010202,
+        "11": 0.00043301757451308305,
+        "00": 0.0004303299815024674,
+        "01": 0.0004352623246943516
+      },
+      "brier_other_source_shapley": 0.000004936096851973552,
+      "brier_revision_total": 0.0000026875930106156796,
+      "brier_zero_low_shapley": -0.0000022485038413578727,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.020690039246,
+        "11": 0.020809074331,
+        "00": 0.020744396388,
+        "01": 0.02086294142
+      },
+      "p_other_source_shapley": 0.00011879005850000054,
+      "p_revision_total": 0.0000646779430000001,
+      "p_zero_low_shapley": -0.000054112115500000446,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 570,
+      "brier_fourstate": {
+        "10": 0.0019982014984640307,
+        "11": 0.0020006851948244746,
+        "00": 0.002003390124062473,
+        "01": 0.0020058344887991515
+      },
+      "brier_other_source_shapley": 0.0000024640305485612753,
+      "brier_revision_total": -0.000002704929237998255,
+      "brier_zero_low_shapley": -0.00000516895978655953,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.044701247169,
+        "11": 0.044729019605,
+        "00": 0.044759246241,
+        "01": 0.044786543613
+      },
+      "p_other_source_shapley": 0.000027534904000002525,
+      "p_revision_total": -0.000030226635999996976,
+      "p_zero_low_shapley": -0.0000577615399999995,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 571,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 572,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 580,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 581,
+      "brier_fourstate": {
+        "10": 0.0020169961249196875,
+        "11": 0.0020199716121776278,
+        "00": 0.002022114334475917,
+        "01": 0.002025051485907255
+      },
+      "brier_other_source_shapley": 0.0000029563193446391963,
+      "brier_revision_total": -0.0000021427222982890043,
+      "brier_zero_low_shapley": -0.000005099041642928201,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.044910980004,
+        "11": 0.044944094297,
+        "00": 0.044967925619,
+        "01": 0.045000572062
+      },
+      "p_other_source_shapley": 0.00003288036799999755,
+      "p_revision_total": -0.000023831322000004984,
+      "p_zero_low_shapley": -0.000056711690000002535,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 590,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 591,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 600,
+      "brier_fourstate": {
+        "10": 0.07354503444204322,
+        "11": 0.07354453960285331,
+        "00": 0.07399276640024438,
+        "01": 0.07400039331385964
+      },
+      "brier_other_source_shapley": 0.0000035660372126808393,
+      "brier_revision_total": -0.00044822679739106586,
+      "brier_zero_low_shapley": -0.0004517928346037467,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 1,
+      "origin_four_state_24_1": 1,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.271191877537,
+        "11": 0.271190965194,
+        "00": 0.272016114229,
+        "01": 0.272030133099
+      },
+      "p_other_source_shapley": 0.0000065532634999643236,
+      "p_revision_total": -0.0008251490350000279,
+      "p_zero_low_shapley": -0.0008317022984999922,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 615,
+      "brier_fourstate": {
+        "10": 0.12575945472265532,
+        "11": 0.12580030606294523,
+        "00": 0.12649574475195427,
+        "01": 0.1265484682736758
+      },
+      "brier_other_source_shapley": 0.00004678743100572369,
+      "brier_revision_total": -0.0006954386890090369,
+      "brier_zero_low_shapley": -0.0007422261200147606,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 1,
+      "origin_four_state_24_1": 1,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.354625795343,
+        "11": 0.354683388479,
+        "00": 0.355662402781,
+        "01": 0.355736515238
+      },
+      "p_other_source_shapley": 0.00006585279650000997,
+      "p_revision_total": -0.0009790143019999809,
+      "p_zero_low_shapley": -0.0010448670984999908,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 616,
+      "brier_fourstate": {
+        "10": 0.089228399601408,
+        "11": 0.08921136864653606,
+        "00": 0.08967568530352824,
+        "01": 0.08966583871788648
+      },
+      "brier_other_source_shapley": -0.00001343877025684892,
+      "brier_revision_total": -0.0004643166569921753,
+      "brier_zero_low_shapley": -0.00045087788673532636,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 1,
+      "origin_four_state_24_1": 1,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.298711231127,
+        "11": 0.298682722377,
+        "00": 0.299458987682,
+        "01": 0.299442546606
+      },
+      "p_other_source_shapley": -0.000022474913000003482,
+      "p_revision_total": -0.0007762653050000234,
+      "p_zero_low_shapley": -0.00075379039200002,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 620,
+      "brier_fourstate": {
+        "10": 0.11493805386491619,
+        "11": 0.11491312239740706,
+        "00": 0.11552638888918863,
+        "01": 0.11551263302652794
+      },
+      "brier_other_source_shapley": -0.00001934366508491575,
+      "brier_revision_total": -0.000613266491781575,
+      "brier_zero_low_shapley": -0.0005939228266966592,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 1,
+      "origin_four_state_24_1": 1,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.33902515226,
+        "11": 0.338988380918,
+        "00": 0.339891731128,
+        "01": 0.339871494872
+      },
+      "p_other_source_shapley": -0.000028503798999990337,
+      "p_revision_total": -0.0009033502099999868,
+      "p_zero_low_shapley": -0.0008748464109999965,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 625,
+      "brier_fourstate": {
+        "10": 0.18098609585566974,
+        "11": 0.18642881219661211,
+        "00": 0.1817582786861767,
+        "01": 0.1872141645569793
+      },
+      "brier_other_source_shapley": 0.005449301105872495,
+      "brier_revision_total": 0.004670533510435421,
+      "brier_zero_low_shapley": -0.0007787675954370743,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 2,
+      "origin_four_state_24_1": 2,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.574575393453,
+        "11": 0.56822597091,
+        "00": 0.573668815724,
+        "01": 0.567317478332
+      },
+      "p_other_source_shapley": -0.006350379967499986,
+      "p_revision_total": -0.005442844813999925,
+      "p_zero_low_shapley": 0.0009075351535000609,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 626,
+      "brier_fourstate": {
+        "10": 0.7218448710602786,
+        "11": 0.7244549455697648,
+        "00": 0.7218743429024995,
+        "01": 0.7244838388474242
+      },
+      "brier_other_source_shapley": 0.0026097852272053967,
+      "brier_revision_total": 0.0025806026672652305,
+      "brier_zero_low_shapley": -0.000029182559940166275,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.849614542637,
+        "11": 0.851149191135,
+        "00": 0.849631886703,
+        "01": 0.851166164064
+      },
+      "p_other_source_shapley": 0.0015344629294999912,
+      "p_revision_total": 0.001517304431999933,
+      "p_zero_low_shapley": -0.000017158497500058267,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 630,
+      "brier_fourstate": {
+        "10": 0.13581647503069236,
+        "11": 0.13805257649154962,
+        "00": 0.13612542359066393,
+        "01": 0.13836467788819012
+      },
+      "brier_other_source_shapley": 0.0022376778791917268,
+      "brier_revision_total": 0.001927152900885687,
+      "brier_zero_low_shapley": -0.00031052497830603987,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 2,
+      "origin_four_state_24_1": 2,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.631467131682,
+        "11": 0.62844572874,
+        "00": 0.631048209666,
+        "01": 0.628025971487
+      },
+      "p_other_source_shapley": -0.0030218205604999326,
+      "p_revision_total": -0.002602480925999906,
+      "p_zero_low_shapley": 0.00041933963450002665,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 640,
+      "brier_fourstate": {
+        "10": 0.0151259951234277,
+        "11": 0.014897024255919412,
+        "00": 0.015122024582953501,
+        "01": 0.014893132880475111
+      },
+      "brier_other_source_shapley": -0.00022893128499333875,
+      "brier_revision_total": -0.00022500032703408855,
+      "brier_zero_low_shapley": 0.000003930957959250199,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.877012215552,
+        "11": 0.877946633574,
+        "00": 0.877028358623,
+        "01": 0.877962575902
+      },
+      "p_other_source_shapley": 0.000934317650500005,
+      "p_revision_total": 0.0009182749510000532,
+      "p_zero_low_shapley": -0.00001604269949995185,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 645,
+      "brier_fourstate": {
+        "10": 0.009738042736869354,
+        "11": 0.009550768991294338,
+        "00": 0.009735884829306816,
+        "01": 0.009548677662300869
+      },
+      "brier_other_source_shapley": -0.00018724045629048194,
+      "brier_revision_total": -0.00018511583801247844,
+      "brier_zero_low_shapley": 0.000002124618278003497,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.90131847824,
+        "11": 0.902271964149,
+        "00": 0.901329412542,
+        "01": 0.902282664474
+      },
+      "p_other_source_shapley": 0.000953368920499964,
+      "p_revision_total": 0.000942551606999964,
+      "p_zero_low_shapley": -0.000010817313500000036,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 651,
+      "brier_fourstate": {
+        "10": 0.72898372646724,
+        "11": 0.7316190959092664,
+        "00": 0.7290039002687699,
+        "01": 0.7316388032073763
+      },
+      "brier_other_source_shapley": 0.0026351361903164117,
+      "brier_revision_total": 0.0026151956404965038,
+      "brier_zero_low_shapley": -0.000019940549819907893,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.853805438298,
+        "11": 0.85534735395,
+        "00": 0.853817252267,
+        "01": 0.855358873928
+      },
+      "p_other_source_shapley": 0.0015417686564999644,
+      "p_revision_total": 0.0015301016829999403,
+      "p_zero_low_shapley": -0.000011666973500024103,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 652,
+      "brier_fourstate": {
+        "10": 0.019013075702106034,
+        "11": 0.018545596444381907,
+        "00": 0.0190098019543997,
+        "01": 0.01854244990087379
+      },
+      "brier_other_source_shapley": -0.00046741565562501836,
+      "brier_revision_total": -0.00046420551001779414,
+      "brier_zero_low_shapley": 0.000003210145607224213,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.86211209008,
+        "11": 0.863817782202,
+        "00": 0.862123961638,
+        "01": 0.863829335388
+      },
+      "p_other_source_shapley": 0.0017055329360000093,
+      "p_revision_total": 0.001693820564000026,
+      "p_zero_low_shapley": -0.000011712371999983429,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 660,
+      "brier_fourstate": {
+        "10": 0.8713226545625712,
+        "11": 0.870975398212676,
+        "00": 0.8711307933792651,
+        "01": 0.870784685789051
+      },
+      "brier_other_source_shapley": -0.00034668197005466306,
+      "brier_revision_total": -0.000155395166589134,
+      "brier_zero_low_shapley": 0.00019128680346552906,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.066553346697,
+        "11": 0.066739372837,
+        "00": 0.066656122654,
+        "01": 0.06684155376
+      },
+      "p_other_source_shapley": 0.00018572862300000187,
+      "p_revision_total": 0.00008325018299999709,
+      "p_zero_low_shapley": -0.00010247844000000478,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 663,
+      "brier_fourstate": {
+        "10": 0.0004113185752960324,
+        "11": 0.00041606637032770566,
+        "00": 0.0004134834778287998,
+        "01": 0.0004182240581770217
+      },
+      "brier_other_source_shapley": 0.000004744187689947589,
+      "brier_revision_total": 0.0000025828924989058856,
+      "brier_zero_low_shapley": -0.0000021612951910417037,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.020280990491,
+        "11": 0.020397705026,
+        "00": 0.020334293148,
+        "01": 0.020450527088
+      },
+      "p_other_source_shapley": 0.00011647423749999893,
+      "p_revision_total": 0.00006341187799999842,
+      "p_zero_low_shapley": -0.0000530623595000005,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 666,
+      "brier_fourstate": {
+        "10": 0.045872602805126415,
+        "11": 0.0453518875904673,
+        "00": 0.04586125514525069,
+        "01": 0.04534069957530013
+      },
+      "brier_other_source_shapley": -0.0005206353923048364,
+      "brier_revision_total": -0.0005093675547833895,
+      "brier_zero_low_shapley": 0.00001126783752144686,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.785821096265,
+        "11": 0.787040173764,
+        "00": 0.785847588981,
+        "01": 0.787066443285
+      },
+      "p_other_source_shapley": 0.001218965901500002,
+      "p_revision_total": 0.0011925847829999947,
+      "p_zero_low_shapley": -0.00002638111850000735,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 670,
+      "brier_fourstate": {
+        "10": 0.0753556153286684,
+        "11": 0.07530500297716905,
+        "00": 0.07574594666220896,
+        "01": 0.07570041324215121
+      },
+      "brier_other_source_shapley": -0.0000480728857785509,
+      "brier_revision_total": -0.0004409436850399129,
+      "brier_zero_low_shapley": -0.000392870799261362,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 1,
+      "origin_four_state_24_1": 1,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.274509772738,
+        "11": 0.27441757046,
+        "00": 0.27521981517,
+        "01": 0.27513708082
+      },
+      "p_other_source_shapley": -0.00008746831399999988,
+      "p_revision_total": -0.0008022447100000107,
+      "p_zero_low_shapley": -0.0007147763960000109,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 678,
+      "brier_fourstate": {
+        "10": 0.03346088729282551,
+        "11": 0.03291752598884023,
+        "00": 0.03327641288117168,
+        "01": 0.03274385094543616
+      },
+      "brier_other_source_shapley": -0.0005379616198604026,
+      "brier_revision_total": -0.0003588868923314545,
+      "brier_zero_low_shapley": 0.0001790747275289481,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [
+        {
+          "new_best_deaths": 19,
+          "old_best_deaths": 0,
+          "year": 2000
+        },
+        {
+          "new_best_deaths": 2,
+          "old_best_deaths": 0,
+          "year": 2002
+        }
+      ],
+      "p_fourstate": {
+        "10": 0.817076826802,
+        "11": 0.818568123008,
+        "00": 0.817581763847,
+        "01": 0.81904737928
+      },
+      "p_other_source_shapley": 0.001478455819500013,
+      "p_revision_total": 0.0009863591609999833,
+      "p_zero_low_shapley": -0.0004920966585000297,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 690,
+      "brier_fourstate": {
+        "10": 0.0025265865729134545,
+        "11": 0.002541093903675719,
+        "00": 0.0025327996710465678,
+        "01": 0.002547274385863268
+      },
+      "brier_other_source_shapley": 0.000014491022789482264,
+      "brier_revision_total": 0.000008294232629151022,
+      "brier_zero_low_shapley": -0.000006196790160331242,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.050265162617,
+        "11": 0.050409264066,
+        "00": 0.050326927892,
+        "01": 0.050470529875
+      },
+      "p_other_source_shapley": 0.00014385171599999927,
+      "p_revision_total": 0.00008233617399999726,
+      "p_zero_low_shapley": -0.000061515542000002,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 692,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 694,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 696,
+      "brier_fourstate": {
+        "10": 0.0003463458866857414,
+        "11": 0.0003507350510889634,
+        "00": 0.0003488265525208212,
+        "01": 0.0003532128536973241
+      },
+      "brier_other_source_shapley": 0.000004387732789862438,
+      "brier_revision_total": 0.000001908498568142184,
+      "brier_zero_low_shapley": -0.0000024792342217202536,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.018610370407,
+        "11": 0.018727921697,
+        "00": 0.0186768989,
+        "01": 0.018793957904
+      },
+      "p_other_source_shapley": 0.00011730514700000055,
+      "p_revision_total": 0.00005102279700000198,
+      "p_zero_low_shapley": -0.00006628234999999857,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 698,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 700,
+      "brier_fourstate": {
+        "10": 0.006658495385196756,
+        "11": 0.006490212346180479,
+        "00": 0.0066569169096098385,
+        "01": 0.006488687291604988
+      },
+      "brier_other_source_shapley": -0.00016825632851056368,
+      "brier_revision_total": -0.00016670456342935975,
+      "brier_zero_low_shapley": 0.000001551765081203929,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.918400395925,
+        "11": 0.919438145837,
+        "00": 0.918410068577,
+        "01": 0.919447611509
+      },
+      "p_other_source_shapley": 0.0010376464219999937,
+      "p_revision_total": 0.0010280772599999821,
+      "p_zero_low_shapley": -0.000009569162000011566,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 701,
+      "brier_fourstate": {
+        "10": 0.0001957584196740308,
+        "11": 0.00019914228247014672,
+        "00": 0.00019743173795235284,
+        "01": 0.0002008156974409621
+      },
+      "brier_other_source_shapley": 0.000003383911142362586,
+      "brier_revision_total": 0.0000017105445177938736,
+      "brier_zero_low_shapley": -0.0000016733666245687123,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013991369471,
+        "11": 0.014111778147,
+        "00": 0.014051040458,
+        "01": 0.014170945538
+      },
+      "p_other_source_shapley": 0.0001201568779999997,
+      "p_revision_total": 0.00006073768899999936,
+      "p_zero_low_shapley": -0.00005941918900000034,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 702,
+      "brier_fourstate": {
+        "10": 0.0884472986499157,
+        "11": 0.08833687916446094,
+        "00": 0.08886640742580258,
+        "01": 0.08876231323254939
+      },
+      "brier_other_source_shapley": -0.00010725683935397523,
+      "brier_revision_total": -0.0005295282613416441,
+      "brier_zero_low_shapley": -0.00042227142198766887,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 1,
+      "origin_four_state_24_1": 1,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.297400905597,
+        "11": 0.297215206819,
+        "00": 0.298104692056,
+        "01": 0.297930047549
+      },
+      "p_other_source_shapley": -0.0001801716425000044,
+      "p_revision_total": -0.0008894852369999984,
+      "p_zero_low_shapley": -0.000709313594499994,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 703,
+      "brier_fourstate": {
+        "10": 0.29141694444975424,
+        "11": 0.28516142929035077,
+        "00": 0.2905194107531274,
+        "01": 0.2842710641196471
+      },
+      "brier_other_source_shapley": -0.00625193089644191,
+      "brier_revision_total": -0.005357981462776662,
+      "brier_zero_low_shapley": 0.0008939494336652476,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 2,
+      "origin_four_state_24_1": 2,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.539830477511,
+        "11": 0.534005083581,
+        "00": 0.538998525743,
+        "01": 0.533170764502
+      },
+      "p_other_source_shapley": -0.005826577585500037,
+      "p_revision_total": -0.004993442162000039,
+      "p_zero_low_shapley": 0.0008331354234999977,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 704,
+      "brier_fourstate": {
+        "10": 0.007741796778762193,
+        "11": 0.007730231893367081,
+        "00": 0.007755385887683366,
+        "01": 0.007743722860559586
+      },
+      "brier_other_source_shapley": -0.000011613956259446355,
+      "brier_revision_total": -0.00002515399431628554,
+      "brier_zero_low_shapley": -0.000013540038056839183,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.087987480807,
+        "11": 0.08792173732,
+        "00": 0.088064668782,
+        "01": 0.08799842533
+      },
+      "p_other_source_shapley": -0.00006599346950000168,
+      "p_revision_total": -0.00014293146200000661,
+      "p_zero_low_shapley": -0.00007693799250000494,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 705,
+      "brier_fourstate": {
+        "10": 0.0001957584196740308,
+        "11": 0.00019914228247014672,
+        "00": 0.00019743173795235284,
+        "01": 0.0002008156974409621
+      },
+      "brier_other_source_shapley": 0.000003383911142362586,
+      "brier_revision_total": 0.0000017105445177938736,
+      "brier_zero_low_shapley": -0.0000016733666245687123,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013991369471,
+        "11": 0.014111778147,
+        "00": 0.014051040458,
+        "01": 0.014170945538
+      },
+      "p_other_source_shapley": 0.0001201568779999997,
+      "p_revision_total": 0.00006073768899999936,
+      "p_zero_low_shapley": -0.00005941918900000034,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 710,
+      "brier_fourstate": {
+        "10": 0.003695878201875603,
+        "11": 0.0036993212404567185,
+        "00": 0.003706574421990415,
+        "01": 0.0037099605829122007
+      },
+      "brier_other_source_shapley": 0.0000034145997514505207,
+      "brier_revision_total": -0.000007253181533696529,
+      "brier_zero_low_shapley": -0.00001066778128514705,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.06079373489,
+        "11": 0.060822045678,
+        "00": 0.060881642734,
+        "01": 0.060909445761
+      },
+      "p_other_source_shapley": 0.000028056907500000755,
+      "p_revision_total": -0.00005959705599999782,
+      "p_zero_low_shapley": -0.00008765396349999857,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 712,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 713,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 731,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 732,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 740,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 750,
+      "brier_fourstate": {
+        "10": 0.006658495385196756,
+        "11": 0.006490212346180479,
+        "00": 0.0066569169096098385,
+        "01": 0.006488687291604988
+      },
+      "brier_other_source_shapley": -0.00016825632851056368,
+      "brier_revision_total": -0.00016670456342935975,
+      "brier_zero_low_shapley": 0.000001551765081203929,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.918400395925,
+        "11": 0.919438145837,
+        "00": 0.918410068577,
+        "01": 0.919447611509
+      },
+      "p_other_source_shapley": 0.0010376464219999937,
+      "p_revision_total": 0.0010280772599999821,
+      "p_zero_low_shapley": -0.000009569162000011566,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 760,
+      "brier_fourstate": {
+        "10": 0.0003463458866857414,
+        "11": 0.0003507350510889634,
+        "00": 0.0003488265525208212,
+        "01": 0.0003532128536973241
+      },
+      "brier_other_source_shapley": 0.000004387732789862438,
+      "brier_revision_total": 0.000001908498568142184,
+      "brier_zero_low_shapley": -0.0000024792342217202536,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.018610370407,
+        "11": 0.018727921697,
+        "00": 0.0186768989,
+        "01": 0.018793957904
+      },
+      "p_other_source_shapley": 0.00011730514700000055,
+      "p_revision_total": 0.00005102279700000198,
+      "p_zero_low_shapley": -0.00006628234999999857,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 770,
+      "brier_fourstate": {
+        "10": 0.010459267173537495,
+        "11": 0.0101922832592988,
+        "00": 0.01045681110659438,
+        "01": 0.010189911678836983
+      },
+      "brier_other_source_shapley": -0.00026694167099804676,
+      "brier_revision_total": -0.00026452784729558143,
+      "brier_zero_low_shapley": 0.0000024138237024653314,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.897729441316,
+        "11": 0.899043161404,
+        "00": 0.897741449714,
+        "01": 0.899054907604
+      },
+      "p_other_source_shapley": 0.0013135889889999697,
+      "p_revision_total": 0.0013017116899999293,
+      "p_zero_low_shapley": -0.00001187729900004042,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 771,
+      "brier_fourstate": {
+        "10": 0.0020105542516733713,
+        "11": 0.002030653277565125,
+        "00": 0.0020235786207596675,
+        "01": 0.002043679395882983
+      },
+      "brier_other_source_shapley": 0.000020099900507534628,
+      "brier_revision_total": 0.000007074656805457387,
+      "brier_zero_low_shapley": -0.00001302524370207724,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.044839204405,
+        "11": 0.045062770416,
+        "00": 0.044984204125,
+        "01": 0.04520707241
+      },
+      "p_other_source_shapley": 0.00022321714799999892,
+      "p_revision_total": 0.00007856629099999707,
+      "p_zero_low_shapley": -0.00014465085700000185,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 775,
+      "brier_fourstate": {
+        "10": 0.010481676857192581,
+        "11": 0.01031116106911623,
+        "00": 0.010479485699128587,
+        "01": 0.010309034309983244
+      },
+      "brier_other_source_shapley": -0.00017048358861084748,
+      "brier_revision_total": -0.00016832463001235747,
+      "brier_zero_low_shapley": 0.000002158958598490017,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.897619939162,
+        "11": 0.898456112596,
+        "00": 0.897630640819,
+        "01": 0.898466585254
+      },
+      "p_other_source_shapley": 0.0008360589345000058,
+      "p_revision_total": 0.0008254717769999864,
+      "p_zero_low_shapley": -0.000010587157500019373,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 780,
+      "brier_fourstate": {
+        "10": 0.0005460435094578746,
+        "11": 0.0005545771549788699,
+        "00": 0.0005491796957569756,
+        "01": 0.0005577034086932836
+      },
+      "brier_other_source_shapley": 0.000008528679228651673,
+      "brier_revision_total": 0.000005397459221894319,
+      "brier_zero_low_shapley": -0.000003131220006757354,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.023367573889,
+        "11": 0.023549461883,
+        "00": 0.023434583328,
+        "01": 0.023615744932
+      },
+      "p_other_source_shapley": 0.00018152479899999872,
+      "p_revision_total": 0.00011487855499999963,
+      "p_zero_low_shapley": -0.00006664624399999909,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 781,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 790,
+      "brier_fourstate": {
+        "10": 0.004102599284840096,
+        "11": 0.00410734173570021,
+        "00": 0.004114199372896601,
+        "01": 0.00411887470923149
+      },
+      "brier_other_source_shapley": 0.000004708893597501519,
+      "brier_revision_total": -0.000006857637196391007,
+      "brier_zero_low_shapley": -0.000011566530793892527,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.064051536163,
+        "11": 0.064088546057,
+        "00": 0.064142025014,
+        "01": 0.064178459854
+      },
+      "p_other_source_shapley": 0.000036722367000002754,
+      "p_revision_total": -0.000053478957000002714,
+      "p_zero_low_shapley": -0.00009020132400000547,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 800,
+      "brier_fourstate": {
+        "10": 0.1375057889364923,
+        "11": 0.13708053866435546,
+        "00": 0.137930146870792,
+        "01": 0.13748883830954606
+      },
+      "brier_other_source_shapley": -0.0004332794166913845,
+      "brier_revision_total": -0.0008496082064365362,
+      "brier_zero_low_shapley": -0.00041632878974515175,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 2,
+      "origin_four_state_24_1": 2,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.629182269927,
+        "11": 0.629756109214,
+        "00": 0.628610518632,
+        "01": 0.629205126371
+      },
+      "p_other_source_shapley": 0.0005842235130000262,
+      "p_revision_total": 0.0011455905820000334,
+      "p_zero_low_shapley": 0.0005613670690000072,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 811,
+      "brier_fourstate": {
+        "10": 0.0008589701803249994,
+        "11": 0.0008677967225387304,
+        "00": 0.0008647139340203885,
+        "01": 0.0008735324844601093
+      },
+      "brier_other_source_shapley": 0.000008822546326725902,
+      "brier_revision_total": 0.0000030827885183419383,
+      "brier_zero_low_shapley": -0.000005739757808383963,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.029308193058,
+        "11": 0.02945838968,
+        "00": 0.02940601867,
+        "01": 0.029555582966
+      },
+      "p_other_source_shapley": 0.00014988045899999927,
+      "p_revision_total": 0.0000523710099999998,
+      "p_zero_low_shapley": -0.00009750944899999947,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 812,
+      "brier_fourstate": {
+        "10": 0.0003717381585222369,
+        "11": 0.00037634866524734287,
+        "00": 0.00037446558029891183,
+        "01": 0.0003790738298139866
+      },
+      "brier_other_source_shapley": 0.00000460937812009037,
+      "brier_revision_total": 0.000001883084948431043,
+      "brier_zero_low_shapley": -0.0000027262931716593266,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.019280512403,
+        "11": 0.019399707865,
+        "00": 0.019351113154,
+        "01": 0.019469818433
+      },
+      "p_other_source_shapley": 0.00011895037050000008,
+      "p_revision_total": 0.000048594711000000956,
+      "p_zero_low_shapley": -0.00007035565949999913,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 816,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 820,
+      "brier_fourstate": {
+        "10": 0.002516348502919873,
+        "11": 0.002519128908589138,
+        "00": 0.0025231103880601646,
+        "01": 0.002525846032844593
+      },
+      "brier_other_source_shapley": 0.0000027580252268467106,
+      "brier_revision_total": -0.000003981479471026374,
+      "brier_zero_low_shapley": -0.000006739504697873084,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.050163218626,
+        "11": 0.050190924564,
+        "00": 0.050230572245,
+        "01": 0.050257795742
+      },
+      "p_other_source_shapley": 0.000027464717499998265,
+      "p_revision_total": -0.00003964768100000321,
+      "p_zero_low_shapley": -0.00006711239850000147,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 830,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 835,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 840,
+      "brier_fourstate": {
+        "10": 0.007787321975141969,
+        "11": 0.007620272129083018,
+        "00": 0.007785581457274406,
+        "01": 0.007618587222496701
+      },
+      "brier_other_source_shapley": -0.00016702204041832772,
+      "brier_revision_total": -0.0001653093281913879,
+      "brier_zero_low_shapley": 0.0000017127122269398193,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 3,
+      "origin_four_state_24_1": 3,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.911754195708,
+        "11": 0.912705829925,
+        "00": 0.911764058019,
+        "01": 0.912715481198
+      },
+      "p_other_source_shapley": 0.0009515286980000259,
+      "p_revision_total": 0.0009417719060000884,
+      "p_zero_low_shapley": -0.000009756791999937509,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 850,
+      "brier_fourstate": {
+        "10": 0.20609942154182784,
+        "11": 0.21021427166401366,
+        "00": 0.20681671155081363,
+        "01": 0.21094065039435556
+      },
+      "brier_other_source_shapley": 0.004119394482863872,
+      "brier_revision_total": 0.0033975601132000266,
+      "brier_zero_low_shapley": -0.0007218343696638457,
+      "fixed_outcome_26_1": 1,
+      "origin_four_state_23_1": 2,
+      "origin_four_state_24_1": 2,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.546018258581,
+        "11": 0.541508700558,
+        "00": 0.545228946006,
+        "01": 0.540717243526
+      },
+      "p_other_source_shapley": -0.0045106302514999475,
+      "p_revision_total": -0.0037202454479999814,
+      "p_zero_low_shapley": 0.0007903848034999661,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 860,
+      "brier_fourstate": {
+        "10": 0.0003204167575720296,
+        "11": 0.00032594997153833694,
+        "00": 0.00032316045856392133,
+        "01": 0.0003286940032675021
+      },
+      "brier_other_source_shapley": 0.000005533379334944047,
+      "brier_revision_total": 0.000002789512974415607,
+      "brier_zero_low_shapley": -0.00000274386636052844,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.017900188758,
+        "11": 0.018054084622,
+        "00": 0.017976664278,
+        "01": 0.018129920112
+      },
+      "p_other_source_shapley": 0.00015357584900000006,
+      "p_revision_total": 0.00007742034400000028,
+      "p_zero_low_shapley": -0.00007615550499999978,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 900,
+      "brier_fourstate": {
+        "10": 0.0003463458866857414,
+        "11": 0.0003507350510889634,
+        "00": 0.0003488265525208212,
+        "01": 0.0003532128536973241
+      },
+      "brier_other_source_shapley": 0.000004387732789862438,
+      "brier_revision_total": 0.000001908498568142184,
+      "brier_zero_low_shapley": -0.0000024792342217202536,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.018610370407,
+        "11": 0.018727921697,
+        "00": 0.0186768989,
+        "01": 0.018793957904
+      },
+      "p_other_source_shapley": 0.00011730514700000055,
+      "p_revision_total": 0.00005102279700000198,
+      "p_zero_low_shapley": -0.00006628234999999857,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 910,
+      "brier_fourstate": {
+        "10": 0.0002830865301683457,
+        "11": 0.00028779060797438243,
+        "00": 0.0002849079037424052,
+        "01": 0.00028961093346088914
+      },
+      "brier_other_source_shapley": 0.00000470355376226033,
+      "brier_revision_total": 0.0000028827042319772077,
+      "brier_zero_low_shapley": -0.000001820849530283122,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.016825175487,
+        "11": 0.016964392355,
+        "00": 0.01687921514,
+        "01": 0.017017959145
+      },
+      "p_other_source_shapley": 0.0001389804364999997,
+      "p_revision_total": 0.00008517721499999922,
+      "p_zero_low_shapley": -0.00005380322150000047,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 920,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 935,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 940,
+      "brier_fourstate": {
+        "10": 0.0003463458866857414,
+        "11": 0.0003507350510889634,
+        "00": 0.0003488265525208212,
+        "01": 0.0003532128536973241
+      },
+      "brier_other_source_shapley": 0.000004387732789862438,
+      "brier_revision_total": 0.000001908498568142184,
+      "brier_zero_low_shapley": -0.0000024792342217202536,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.018610370407,
+        "11": 0.018727921697,
+        "00": 0.0186768989,
+        "01": 0.018793957904
+      },
+      "p_other_source_shapley": 0.00011730514700000055,
+      "p_revision_total": 0.00005102279700000198,
+      "p_zero_low_shapley": -0.00006628234999999857,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 950,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 970,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 971,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 972,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 973,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 983,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 986,
+      "brier_fourstate": {
+        "10": 0.0002213370406981033,
+        "11": 0.00022516219770068435,
+        "00": 0.00022322975392334284,
+        "01": 0.00022705504716753598
+      },
+      "brier_other_source_shapley": 0.000003825225123387093,
+      "brier_revision_total": 0.0000019324437773415154,
+      "brier_zero_low_shapley": -0.0000018927813460455778,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.014877400334,
+        "11": 0.015005405616,
+        "00": 0.014940875273,
+        "01": 0.015068345867
+      },
+      "p_other_source_shapley": 0.00012773793799999988,
+      "p_revision_total": 0.00006453034300000007,
+      "p_zero_low_shapley": -0.00006320759499999981,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 987,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    },
+    {
+      "GWNO": 990,
+      "brier_fourstate": {
+        "10": 0.00018109277238720307,
+        "11": 0.00018422354754990067,
+        "00": 0.00018264036004582939,
+        "01": 0.00018577121139948778
+      },
+      "brier_other_source_shapley": 0.0000031308132581779965,
+      "brier_revision_total": 0.0000015831875040712854,
+      "brier_zero_low_shapley": -0.0000015476257541067112,
+      "fixed_outcome_26_1": 0,
+      "origin_four_state_23_1": 0,
+      "origin_four_state_24_1": 0,
+      "origin_year": 2021,
+      "own_zero_low_revisions": [],
+      "p_fourstate": {
+        "10": 0.013457071464,
+        "11": 0.013572897537,
+        "00": 0.013514450046,
+        "01": 0.013629791319
+      },
+      "p_other_source_shapley": 0.00011558367300000105,
+      "p_revision_total": 0.00005844749100000074,
+      "p_zero_low_shapley": -0.000057136182000000306,
+      "target_year": 2023
+    }
+  ],
+  "evaluation_countries": 196,
+  "four_factorial_scenarios": {
+    "10": {
+      "global_four_state_transition_matrix_counts": [
+        [
+          4693,
+          116,
+          40,
+          37
+        ],
+        [
+          111,
+          103,
+          59,
+          21
+        ],
+        [
+          37,
+          57,
+          121,
+          62
+        ],
+        [
+          44,
+          25,
+          53,
+          570
+        ]
+      ],
+      "other_source_revisions_enabled": false,
+      "zero_low_source_revisions_enabled": true
+    },
+    "11": {
+      "global_four_state_transition_matrix_counts": [
+        [
+          4693,
+          115,
+          40,
+          38
+        ],
+        [
+          110,
+          104,
+          59,
+          21
+        ],
+        [
+          38,
+          57,
+          121,
+          60
+        ],
+        [
+          44,
+          24,
+          52,
+          573
+        ]
+      ],
+      "other_source_revisions_enabled": true,
+      "zero_low_source_revisions_enabled": true
+    },
+    "00": {
+      "global_four_state_transition_matrix_counts": [
+        [
+          4699,
+          113,
+          41,
+          37
+        ],
+        [
+          109,
+          102,
+          58,
+          21
+        ],
+        [
+          38,
+          56,
+          121,
+          62
+        ],
+        [
+          44,
+          25,
+          53,
+          570
+        ]
+      ],
+      "other_source_revisions_enabled": false,
+      "zero_low_source_revisions_enabled": false
+    },
+    "01": {
+      "global_four_state_transition_matrix_counts": [
+        [
+          4699,
+          112,
+          41,
+          38
+        ],
+        [
+          108,
+          103,
+          58,
+          21
+        ],
+        [
+          39,
+          56,
+          121,
+          60
+        ],
+        [
+          44,
+          24,
+          52,
+          573
+        ]
+      ],
+      "other_source_revisions_enabled": true,
+      "zero_low_source_revisions_enabled": false
+    }
+  },
+  "historical_origins_issued_at_actual_date": false,
+  "limitations": "2x2 exact factorization of five zero-to-low source edits and all other official source edits; Shapley is mechanical, not causal. Global transition priors propagate a country's edit to other countries. Fixed target labels 26.1, and official source releases postdate simulated origin 2021. Original 196-country cohort is not 196 independent samples.",
+  "n_forecasts_from_original_endpoints_reproduced": 392,
+  "no_prospective_forecasts_reissued": true,
+  "origin_year": 2021,
+  "original_GEO2027_SHA256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "schema": "idealab.psico.geo_h2_196_zero_low_source_factorial.v1",
+  "source_SHA256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260"
+  },
+  "source_versions": [
+    "23.1",
+    "24.1"
+  ],
+  "status": "SHA_REPLAYED_RETROSPECTIVE_196_COUNTRY_SOURCE_SENSITIVITY_NOT_PROSPECTIVE",
+  "target_label_source": "26.1",
+  "target_year": 2023,
+  "top20_absolute_zero_low_shapley_probability_countries": [
+    {
+      "GWNO": 517,
+      "own_zero_low_revisions": [
+        {
+          "new_best_deaths": 7,
+          "old_best_deaths": 0,
+          "year": 2021
+        }
+      ],
+      "p_zero_low_shapley": 0.11243702463300001
+    },
+    {
+      "GWNO": 516,
+      "own_zero_low_revisions": [
+        {
+          "new_best_deaths": 6,
+          "old_best_deaths": 0,
+          "year": 1993
+        },
+        {
+          "new_best_deaths": 2,
+          "old_best_deaths": 0,
+          "year": 2011
+        }
+      ],
+      "p_zero_low_shapley": 0.0010598584369999886
+    },
+    {
+      "GWNO": 615,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": -0.0010448670984999908
+    },
+    {
+      "GWNO": 500,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": -0.0010257278935000003
+    },
+    {
+      "GWNO": 510,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": -0.0009700342325
+    },
+    {
+      "GWNO": 434,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": -0.000929089571500008
+    },
+    {
+      "GWNO": 625,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": 0.0009075351535000609
+    },
+    {
+      "GWNO": 620,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": -0.0008748464109999965
+    },
+    {
+      "GWNO": 703,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": 0.0008331354234999977
+    },
+    {
+      "GWNO": 600,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": -0.0008317022984999922
+    },
+    {
+      "GWNO": 850,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": 0.0007903848034999661
+    },
+    {
+      "GWNO": 365,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": -0.00078236633699999
+    },
+    {
+      "GWNO": 616,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": -0.00075379039200002
+    },
+    {
+      "GWNO": 670,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": -0.0007147763960000109
+    },
+    {
+      "GWNO": 702,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": -0.000709313594499994
+    },
+    {
+      "GWNO": 135,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": -0.0005962960970000014
+    },
+    {
+      "GWNO": 501,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": 0.0005962302334999725
+    },
+    {
+      "GWNO": 373,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": 0.0005799719229999667
+    },
+    {
+      "GWNO": 371,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": -0.0005769879200000078
+    },
+    {
+      "GWNO": 800,
+      "own_zero_low_revisions": [],
+      "p_zero_low_shapley": 0.0005613670690000072
+    }
+  ],
+  "total_revised_source_country_years": 93,
+  "training_source_countries": 199,
+  "zero_low_directly_revised_eval_GWNO": [
+    516,
+    517,
+    678
+  ],
+  "zero_low_directly_revised_eval_countries_n": 3,
+  "zero_low_revised_source_country_years": 5
+}
