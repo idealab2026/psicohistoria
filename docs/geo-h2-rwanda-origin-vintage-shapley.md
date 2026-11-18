@@ -7,7 +7,7 @@ La auditoría anterior identificó que Ruanda (GWNO 517) tuvo el mayor cambio in
 El presente experimento separa **dos bloques de ediciones de la fuente**, no dos mecanismos causales:
 
 - **Ruanda:** registros propios de fallecidos UCDP 1989–2021.
-- **Resto del mundo:** registros de los otros 195 países GWNO, que también determinan la matriz de transiciones global usada para suavizar las probabilidades locales.
+- **Resto del mundo:** registros de los otros países incluidos en la fuente original (incluidos los que no pertenecen a la cohorte evaluada de 196), que también determinan la matriz de transiciones global usada para suavizar las probabilidades locales.
 
 Se reconstruye cuatro veces el mismo estimador `4 estados, prior Dirichlet 1, shrinkage 20, H2`, con el mismo corte temporal 2021 y la misma cohorte de 196 países. Se usa UCDP 23.1 como base y se sustituyen por 24.1 solo los registros del bloque indicado.
 
