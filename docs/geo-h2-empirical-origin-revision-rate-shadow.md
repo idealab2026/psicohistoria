@@ -32,3 +32,31 @@ Se publicarán dos análisis explícitamente distintos:
 Los archivos oficiales tienen SHA-256 comprobado; cobertura anual estricta y sin imputación de cero, horizonte 2 años, 199 países de entrenamiento, 196 evaluados, reproducción de probabilidades de origen históricas, pruebas sintéticas y auditoría pública de privacidad. Ningún peso puede seleccionarse por el Brier de los datos objetivo.
 
 Informe: `data/geo-h2-empirical-origin-revision-rate-2027-shadow.json`.
+
+## Resultados de la reproducción oficial
+
+Se han conservado los 199 países de entrenamiento y todos los país-años de categorías iniciales 0 y 1 hasta 2021. Las tasas se estimaron a partir de dos pares consecutivos y se evaluaron en el tercero, sin emplearlo para ajustar los pesos.
+
+| Estado original | Exposiciones de entrenamiento | Reclasificaciones al estado contiguo | Tasa suavizada Jeffreys | Exposiciones reservadas 25.1→26.1 | Reclasificaciones reservadas | Frecuencia reservada |
+|---|---:|---:|---:|---:|---:|---:|
+| 0 → 1 | 10.083 | 6 | 0,0006445855 | 5.037 | 4 | 0,0007941235 |
+| 1 → 0 | 611 | 0 | 0,0008169935 | 306 | 2 | 0,0065359477 |
+
+La tasa estimada para 1→0 subestima la observada en el par reservado casi **ocho veces**; el resultado se basa en **solo dos eventos**, así que no demuestra estabilidad ni calibración fiable. Las observaciones históricas solapadas entre ediciones tampoco son independientes. **Ninguna de las tasas es una estimación validada de verdad latente**.
+
+### Error histórico y nueva emisión experimental
+
+| Origen histórico | Brier original | Brier mezcla editorial | Diferencia |
+|---|---:|---:|---:|
+| UCDP 23.1 | 0,044307424755 | 0,044309812569 | +0,000002387814 |
+| UCDP 24.1 | 0,044259671874 | 0,044261995427 | +0,000002323554 |
+
+El nuevo comparador **no mejora** el Brier histórico. La diferencia pequeña respecto al modelo duro es consistente con tasas de revisión inferiores al 0,1%, pero no autoriza a inferir mejor estabilidad prospectiva.
+
+La nueva sombra independiente para objetivo **2027** contiene exactamente **196 probabilidades**, calculadas con UCDP 26.1 y corte 2025, y es una emisión distinta de la sombra anterior del 10%. Para GWNO 517 (Ruanda), la probabilidad del Markov duro es **0,239089456600**, y la de la mezcla por tasa editorial **0,239025443946**. Para GWNO 2 (Estados Unidos), respectivamente **0,045387672383** y **0,045541504889**.
+
+[Informe SHA reproducible con las 196 nuevas probabilidades](../data/geo-h2-empirical-origin-revision-rate-2027-shadow.json) · [Reproductor](../scripts/experiment_geo_h2_empirical_revision_rate_shadow.py) · [Pruebas](../scripts/test_experiment_geo_h2_empirical_revision_rate_shadow.py).
+
+### Conclusión y límites
+
+Las revisiones editoriales son eventos raros en el universo completo de registros, pero **el dato del año inicial puede producir saltos individuales importantes** al cambiar de estado. Una frecuencia global de revisión baja no prueba que el estado registrado sea correcto; tampoco captura heterogeneidad por país, era o intensidad ni la revisión esperada después de una actualización de metodología UCDP. Se necesita un proceso de medición con estado latente o fuentes contemporáneas adicionales y validación prospectiva auténtica para justificar un nuevo estimador.
