@@ -6,7 +6,7 @@ UCDP editions 23.1->24.1 and 24.1->25.1, country-years <=2021.
 Jeffreys Beta(.5,.5) pooled pseudo-counts chosen before evaluation.
 Hold out edition 25.1->26.1 to test revision occurrence, NOT true-state
 accuracy. Never treat editorial revision probabilities as P(true state).
-Use frozen rates in an uns cored 2027 shadow and a retrospective diagnostic.
+Use frozen rates in an unscored 2027 shadow and a retrospective diagnostic.
 No reissuance of original GEO2027/GEO2028 vectors.
 """
 from __future__ import annotations
@@ -201,11 +201,10 @@ def evaluate(sources,cohort,prior_shadow):
                 "delta_brier_mixture_minus_hard":(brier_empirical-brier_hard)/N,
             })
     new=conditional_h2(sources["26.1"],PROSPECTIVE_ORIGIN,cohort)
-    hard,meta=four_state_forecast(sources["26.1"],PROSPECTIVE_ORIGIN,
-                                  historical_rolling_diagnostic=True)
-    if (meta["cutoff_max"]!=PROSPECTIVE_ORIGIN or
-        any(new[c]["hard_p"]!=hard[c]["p_intensity_markov"] for c in cohort)):
-        raise AssertionError("Source-cut 2025 comparator disagrees with original H2")
+    # The original historical diagnostic API intentionally rejects origins >2023.
+    # Do not weaken that contract just to introduce the distinct 2025 shadow;
+    # the identical transition arithmetic is independently replayed at every
+    # valid historical origin above, including both source vintages.
     forecasts=[]
     for cid in sorted(cohort):
         row=new[cid]
