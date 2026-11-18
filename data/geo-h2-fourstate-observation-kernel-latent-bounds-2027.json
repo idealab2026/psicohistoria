@@ -1,0 +1,5444 @@
+{
+  "dirichlet_pseudocount_per_four_state_cell": 0.5,
+  "fixed_source_training_country_year_cutoff": 2021,
+  "frozen_editorial_next_edition_state_kernel": [
+    [
+      0.9991571641051066,
+      0.0006445215666831929,
+      0.0001487357461576599,
+      0.000049578582052553296
+    ],
+    [
+      0.0008156606851549756,
+      0.9910277324632952,
+      0.00734094616639478,
+      0.0008156606851549756
+    ],
+    [
+      0.0008787346221441124,
+      0.0008787346221441124,
+      0.9938488576449912,
+      0.004393673110720563
+    ],
+    [
+      0.0003479471120389701,
+      0.0010438413361169101,
+      0.0003479471120389701,
+      0.9982602644398052
+    ]
+  ],
+  "heldout_25_1_to_26_1_confusion_counts": [
+    [
+      5033,
+      4,
+      0,
+      0
+    ],
+    [
+      2,
+      302,
+      2,
+      0
+    ],
+    [
+      0,
+      1,
+      285,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      718
+    ]
+  ],
+  "heldout_25_1_to_26_1_four_state_revision_events": [
+    {
+      "GWNO": 100,
+      "fatalities_earlier": 23,
+      "fatalities_later": 65,
+      "state_earlier": 1,
+      "state_later": 2,
+      "year": 2017
+    },
+    {
+      "GWNO": 433,
+      "fatalities_earlier": 33,
+      "fatalities_later": 10,
+      "state_earlier": 2,
+      "state_later": 1,
+      "year": 2001
+    },
+    {
+      "GWNO": 516,
+      "fatalities_earlier": 2,
+      "fatalities_later": 0,
+      "state_earlier": 1,
+      "state_later": 0,
+      "year": 2011
+    },
+    {
+      "GWNO": 552,
+      "fatalities_earlier": 0,
+      "fatalities_later": 4,
+      "state_earlier": 0,
+      "state_later": 1,
+      "year": 1989
+    },
+    {
+      "GWNO": 630,
+      "fatalities_earlier": 0,
+      "fatalities_later": 3,
+      "state_earlier": 0,
+      "state_later": 1,
+      "year": 2002
+    },
+    {
+      "GWNO": 630,
+      "fatalities_earlier": 0,
+      "fatalities_later": 1,
+      "state_earlier": 0,
+      "state_later": 1,
+      "year": 2004
+    },
+    {
+      "GWNO": 652,
+      "fatalities_earlier": 0,
+      "fatalities_later": 1,
+      "state_earlier": 0,
+      "state_later": 1,
+      "year": 2001
+    },
+    {
+      "GWNO": 678,
+      "fatalities_earlier": 19,
+      "fatalities_later": 0,
+      "state_earlier": 1,
+      "state_later": 0,
+      "year": 2000
+    },
+    {
+      "GWNO": 678,
+      "fatalities_earlier": 21,
+      "fatalities_later": 54,
+      "state_earlier": 1,
+      "state_later": 2,
+      "year": 2008
+    },
+    {
+      "GWNO": 678,
+      "fatalities_earlier": 94,
+      "fatalities_later": 1413,
+      "state_earlier": 2,
+      "state_later": 3,
+      "year": 2009
+    }
+  ],
+  "heldout_by_year_stratum": [
+    {
+      "by_recorded_state": [
+        {
+          "estimated_change_rate": 0.0008428358948934234,
+          "heldout_change_rate": 0.001199040767386091,
+          "holdout_category_changes": 4,
+          "holdout_exposures": 3336,
+          "holdout_unchanged": 3332,
+          "recorded_next_edition_logloss": 0.009651535504036825,
+          "recorded_next_edition_multiclass_brier": 0.002395665091061705,
+          "recorded_state": 0
+        },
+        {
+          "estimated_change_rate": 0.00897226753670477,
+          "heldout_change_rate": 0.010416666666666666,
+          "holdout_category_changes": 2,
+          "holdout_exposures": 192,
+          "holdout_unchanged": 190,
+          "recorded_next_edition_logloss": 0.0715532510038677,
+          "recorded_next_edition_multiclass_brier": 0.020697168118356535,
+          "recorded_state": 1
+        },
+        {
+          "estimated_change_rate": 0.0061511423550087985,
+          "heldout_change_rate": 0.010582010582010581,
+          "holdout_category_changes": 2,
+          "holdout_exposures": 189,
+          "holdout_unchanged": 187,
+          "recorded_next_edition_logloss": 0.07205520227279145,
+          "recorded_next_edition_multiclass_brier": 0.021036730847362795,
+          "recorded_state": 2
+        },
+        {
+          "estimated_change_rate": 0.0017397355601947995,
+          "heldout_change_rate": 0,
+          "holdout_category_changes": 0,
+          "holdout_exposures": 475,
+          "holdout_unchanged": 475,
+          "recorded_next_edition_logloss": 0.001741250657605396,
+          "recorded_next_edition_multiclass_brier": 0.0000043584189399759055,
+          "recorded_state": 3
+        }
+      ],
+      "country_year_end": 2010,
+      "country_year_exposures": 4192,
+      "country_year_start": 1989,
+      "heldout_category_change_rate": 0.0019083969465648854,
+      "heldout_category_changes": 8,
+      "mean_multiclass_brier_next_recording": 0.003803389170241975,
+      "mean_multiclass_logloss_next_recording": 0.014403929848790457
+    },
+    {
+      "by_recorded_state": [
+        {
+          "estimated_change_rate": 0.0008428358948934234,
+          "heldout_change_rate": 0,
+          "holdout_category_changes": 0,
+          "holdout_exposures": 1701,
+          "holdout_unchanged": 1701,
+          "recorded_next_edition_logloss": 0.0008431912807682967,
+          "recorded_next_edition_multiclass_brier": 0.000001150360753654489,
+          "recorded_state": 0
+        },
+        {
+          "estimated_change_rate": 0.00897226753670477,
+          "heldout_change_rate": 0.017543859649122806,
+          "holdout_category_changes": 2,
+          "holdout_exposures": 114,
+          "holdout_unchanged": 112,
+          "recorded_next_edition_logloss": 0.1143441127760086,
+          "recorded_next_edition_multiclass_brier": 0.03476552620770712,
+          "recorded_state": 1
+        },
+        {
+          "estimated_change_rate": 0.0061511423550087985,
+          "heldout_change_rate": 0,
+          "holdout_category_changes": 0,
+          "holdout_exposures": 98,
+          "holdout_unchanged": 98,
+          "recorded_next_edition_logloss": 0.006170138570155786,
+          "recorded_next_edition_multiclass_brier": 0.00005868526474794855,
+          "recorded_state": 2
+        },
+        {
+          "estimated_change_rate": 0.0017397355601947995,
+          "heldout_change_rate": 0,
+          "holdout_category_changes": 0,
+          "holdout_exposures": 243,
+          "holdout_unchanged": 243,
+          "recorded_next_edition_logloss": 0.001741250657605396,
+          "recorded_next_edition_multiclass_brier": 0.0000043584189399759055,
+          "recorded_state": 3
+        }
+      ],
+      "country_year_end": 2021,
+      "country_year_exposures": 2156,
+      "country_year_start": 2011,
+      "heldout_category_change_rate": 0.0009276437847866419,
+      "heldout_category_changes": 2,
+      "mean_multiclass_brier_next_recording": 0.00184231771941943,
+      "mean_multiclass_logloss_next_recording": 0.007187984561560869
+    }
+  ],
+  "heldout_later_recorded_state_scores": {
+    "by_recorded_state": [
+      {
+        "estimated_change_rate": 0.0008428358948934234,
+        "heldout_change_rate": 0.0007941234862021044,
+        "holdout_category_changes": 4,
+        "holdout_exposures": 5037,
+        "holdout_unchanged": 5033,
+        "recorded_next_edition_logloss": 0.00667694874132494,
+        "recorded_next_edition_multiclass_brier": 0.0015870350421727242,
+        "recorded_state": 0
+      },
+      {
+        "estimated_change_rate": 0.00897226753670477,
+        "heldout_change_rate": 0.013071895424836602,
+        "holdout_category_changes": 4,
+        "holdout_exposures": 306,
+        "holdout_unchanged": 302,
+        "recorded_next_edition_logloss": 0.08749494460525352,
+        "recorded_next_edition_multiclass_brier": 0.025938321132036313,
+        "recorded_state": 1
+      },
+      {
+        "estimated_change_rate": 0.0061511423550087985,
+        "heldout_change_rate": 0.006968641114982578,
+        "holdout_category_changes": 2,
+        "holdout_exposures": 287,
+        "holdout_unchanged": 285,
+        "recorded_next_edition_logloss": 0.049557863447501224,
+        "recorded_next_edition_multiclass_brier": 0.013873495770372335,
+        "recorded_state": 2
+      },
+      {
+        "estimated_change_rate": 0.0017397355601947995,
+        "heldout_change_rate": 0,
+        "holdout_category_changes": 0,
+        "holdout_exposures": 718,
+        "holdout_unchanged": 718,
+        "recorded_next_edition_logloss": 0.0017412506576053959,
+        "recorded_next_edition_multiclass_brier": 0.0000043584189399759055,
+        "recorded_state": 3
+      }
+    ],
+    "country_year_exposures": 6348,
+    "heldout_category_change_rate": 0.001575299306868305,
+    "heldout_category_changes": 10,
+    "mean_multiclass_brier_next_recording": 0.0031373415886456974,
+    "mean_multiclass_logloss_next_recording": 0.011953145658609771
+  },
+  "latent_error_partial_identification": {
+    "assumed_0_1_10pct": "When recorded state is 0 or 1, assume latent mass 0..10% may lie on adjacent 1 or 0; for recorded 2/3, assume exact. Bound conditional on this assumption only. Not estimated by editorial revision frequencies.",
+    "max_adjacent_mass_assumed": 0.1,
+    "no_assumption": "Any mixture on four initial states, so risk lies in convex hull of the four H2 conditional probabilities. No tighter latent interval is supported without assumptions."
+  },
+  "latent_error_rate_estimated": false,
+  "latent_true_state_identified_by_revisions_alone": false,
+  "limitations": "Sequential editions are not independent measurements of a latent true state, so latent misclassification probabilities are non-identifiable. The editorial kernel predicts next-edition recorded states, not latent truth; averaging H2 conditionals with this kernel is a declared sensitivity heuristic. Training year panels overlap between pairs and holdout, source vintages postdate pseudo-origin years. A no-assumption interval is necessarily broad and the 10% adjacent envelope is assumption conditional. 2027 outcomes unavailable.",
+  "official_sources_SHA256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "original_issued_GEO2027_SHA256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "pooled_four_state_source_revision_confusion_counts": [
+    [
+      10076,
+      6,
+      1,
+      0
+    ],
+    [
+      0,
+      607,
+      4,
+      0
+    ],
+    [
+      0,
+      0,
+      565,
+      2
+    ],
+    [
+      0,
+      1,
+      0,
+      1434
+    ]
+  ],
+  "prospective_GEO2027_or_GEO2028_original_issues_modified": false,
+  "prospective_unscored_2027_shadow": {
+    "actual_2027_labels_observed": false,
+    "countries_n": 196,
+    "origin_year": 2025,
+    "original_GEO2027_issued_vector_replaced": false,
+    "predictions": [
+      {
+        "GWNO": 2,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.045387672383,
+          0.069253010653
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.045387672383,
+          0.284041055083,
+          0.558329966145,
+          0.744997626686
+        ],
+        "earlier_published_10pct_shadow_p": 0.069253010653,
+        "earlier_published_two_state_editorial_shadow_p": 0.045541504889,
+        "editorial_minus_hard_p": 0.00026479577700000423,
+        "hard_four_state_p": 0.045387672383,
+        "next_edition_editorial_kernel_p": 0.04565246816,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.045387672383,
+          0.744997626686
+        ]
+      },
+      {
+        "GWNO": 20,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 31,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 40,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 41,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.69783105233,
+          0.69783105233
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.11386015528,
+          0.291230153737,
+          0.518748088788,
+          0.69783105233
+        ],
+        "earlier_published_10pct_shadow_p": 0.69783105233,
+        "earlier_published_two_state_editorial_shadow_p": 0.69783105233,
+        "editorial_minus_hard_p": -0.000689929212999929,
+        "hard_four_state_p": 0.69783105233,
+        "next_edition_editorial_kernel_p": 0.697141123117,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.11386015528,
+          0.69783105233
+        ]
+      },
+      {
+        "GWNO": 42,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 51,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 52,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.041533621622,
+          0.065447865682
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.041533621622,
+          0.28067606222,
+          0.528286809467,
+          0.814650491639
+        ],
+        "earlier_published_10pct_shadow_p": 0.065447865682,
+        "earlier_published_two_state_editorial_shadow_p": 0.041687769367,
+        "editorial_minus_hard_p": 0.000264860096999997,
+        "hard_four_state_p": 0.041533621622,
+        "next_edition_editorial_kernel_p": 0.041798481719,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.041533621622,
+          0.814650491639
+        ]
+      },
+      {
+        "GWNO": 53,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 54,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 55,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 56,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 57,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 58,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 60,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 70,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.04887874122,
+          0.072640239522
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.04887874122,
+          0.286493724236,
+          0.532303910734,
+          0.754521804599
+        ],
+        "earlier_published_10pct_shadow_p": 0.072640239522,
+        "earlier_published_two_state_editorial_shadow_p": 0.049031904389,
+        "editorial_minus_hard_p": 0.0002600353669999986,
+        "hard_four_state_p": 0.04887874122,
+        "next_edition_editorial_kernel_p": 0.049138776587,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.04887874122,
+          0.754521804599
+        ]
+      },
+      {
+        "GWNO": 80,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 90,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.014124789682,
+          0.039812852482
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.014124789682,
+          0.271005417686,
+          0.603464804436,
+          0.818976043148
+        ],
+        "earlier_published_10pct_shadow_p": 0.039812852482,
+        "earlier_published_two_state_editorial_shadow_p": 0.014290371205,
+        "editorial_minus_hard_p": 0.00029312441599999885,
+        "hard_four_state_p": 0.014124789682,
+        "next_edition_editorial_kernel_p": 0.014417914098,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.014124789682,
+          0.818976043148
+        ]
+      },
+      {
+        "GWNO": 91,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 92,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012831139654,
+          0.037290017814
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012831139654,
+          0.25741992126,
+          0.536055333713,
+          0.816866759342
+        ],
+        "earlier_published_10pct_shadow_p": 0.037290017814,
+        "earlier_published_two_state_editorial_shadow_p": 0.012988798031,
+        "editorial_minus_hard_p": 0.00027532783100000027,
+        "hard_four_state_p": 0.012831139654,
+        "next_edition_editorial_kernel_p": 0.013106467485,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012831139654,
+          0.816866759342
+        ]
+      },
+      {
+        "GWNO": 93,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012452927448,
+          0.038608481826
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012452927448,
+          0.274008471233,
+          0.526147035131,
+          0.809376899807
+        ],
+        "earlier_published_10pct_shadow_p": 0.038608481826,
+        "earlier_published_two_state_editorial_shadow_p": 0.012621522354,
+        "editorial_minus_hard_p": 0.0002844932259999985,
+        "hard_four_state_p": 0.012452927448,
+        "next_edition_editorial_kernel_p": 0.012737420674,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012452927448,
+          0.809376899807
+        ]
+      },
+      {
+        "GWNO": 94,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 95,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012190322264,
+          0.038676499067
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012190322264,
+          0.27705209029,
+          0.555958424643,
+          0.743155358679
+        ],
+        "earlier_published_10pct_shadow_p": 0.038676499067,
+        "earlier_published_two_state_editorial_shadow_p": 0.012361048315,
+        "editorial_minus_hard_p": 0.00028782708700000013,
+        "hard_four_state_p": 0.012190322264,
+        "next_edition_editorial_kernel_p": 0.012478149351,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012190322264,
+          0.743155358679
+        ]
+      },
+      {
+        "GWNO": 100,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.914130608137,
+          0.914130608137
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.034321913626,
+          0.297182445519,
+          0.654744134015,
+          0.914130608137
+        ],
+        "earlier_published_10pct_shadow_p": 0.914130608137,
+        "earlier_published_two_state_editorial_shadow_p": 0.914130608137,
+        "editorial_minus_hard_p": -0.0010403756639999484,
+        "hard_four_state_p": 0.914130608137,
+        "next_edition_editorial_kernel_p": 0.913090232473,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.034321913626,
+          0.914130608137
+        ]
+      },
+      {
+        "GWNO": 101,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.054556047199,
+          0.074422437887
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.054556047199,
+          0.253219954082,
+          0.554188156975,
+          0.744297808956
+        ],
+        "earlier_published_10pct_shadow_p": 0.074422437887,
+        "earlier_published_two_state_editorial_shadow_p": 0.054684103069,
+        "editorial_minus_hard_p": 0.00023655274500000018,
+        "hard_four_state_p": 0.054556047199,
+        "next_edition_editorial_kernel_p": 0.054792599944,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.054556047199,
+          0.744297808956
+        ]
+      },
+      {
+        "GWNO": 110,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 115,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 130,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.05055656056,
+          0.07051699147
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.05055656056,
+          0.250160869662,
+          0.524385150057,
+          0.813870616234
+        ],
+        "earlier_published_10pct_shadow_p": 0.07051699147,
+        "earlier_published_two_state_editorial_shadow_p": 0.050685222599,
+        "editorial_minus_hard_p": 0.00023696855900000313,
+        "hard_four_state_p": 0.05055656056,
+        "next_edition_editorial_kernel_p": 0.050793529119,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.05055656056,
+          0.813870616234
+        ]
+      },
+      {
+        "GWNO": 135,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.04407957708,
+          0.061017640726
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.04407957708,
+          0.213460213537,
+          0.564861598894,
+          0.846640134478
+        ],
+        "earlier_published_10pct_shadow_p": 0.061017640726,
+        "earlier_published_two_state_editorial_shadow_p": 0.044188757379,
+        "editorial_minus_hard_p": 0.0002264181900000009,
+        "hard_four_state_p": 0.04407957708,
+        "next_edition_editorial_kernel_p": 0.04430599527,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.04407957708,
+          0.846640134478
+        ]
+      },
+      {
+        "GWNO": 140,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 145,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 150,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012190322264,
+          0.038676499067
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012190322264,
+          0.27705209029,
+          0.555958424643,
+          0.743155358679
+        ],
+        "earlier_published_10pct_shadow_p": 0.038676499067,
+        "earlier_published_two_state_editorial_shadow_p": 0.012361048315,
+        "editorial_minus_hard_p": 0.00028782708700000013,
+        "hard_four_state_p": 0.012190322264,
+        "next_edition_editorial_kernel_p": 0.012478149351,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012190322264,
+          0.743155358679
+        ]
+      },
+      {
+        "GWNO": 155,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 160,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 165,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 200,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.033788279548,
+          0.053824614413
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.033788279548,
+          0.234151628198,
+          0.518238581923,
+          0.812540323953
+        ],
+        "earlier_published_10pct_shadow_p": 0.053824614413,
+        "earlier_published_two_state_editorial_shadow_p": 0.033917430853,
+        "editorial_minus_hard_p": 0.00023980299800000632,
+        "hard_four_state_p": 0.033788279548,
+        "next_edition_editorial_kernel_p": 0.034028082546,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.033788279548,
+          0.812540323953
+        ]
+      },
+      {
+        "GWNO": 205,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 210,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.016457757142,
+          0.041071407815
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.016457757142,
+          0.262594263873,
+          0.563656019941,
+          0.815595522867
+        ],
+        "earlier_published_10pct_shadow_p": 0.041071407815,
+        "earlier_published_two_state_editorial_shadow_p": 0.01661641316,
+        "editorial_minus_hard_p": 0.0002796483459999999,
+        "hard_four_state_p": 0.016457757142,
+        "next_edition_editorial_kernel_p": 0.016737405488,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.016457757142,
+          0.815595522867
+        ]
+      },
+      {
+        "GWNO": 211,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.020587376887,
+          0.043264674815
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.020587376887,
+          0.247360356174,
+          0.561641523035,
+          0.815205906314
+        ],
+        "earlier_published_10pct_shadow_p": 0.043264674815,
+        "earlier_published_two_state_editorial_shadow_p": 0.020733551457,
+        "editorial_minus_hard_p": 0.00026603022800000126,
+        "hard_four_state_p": 0.020587376887,
+        "next_edition_editorial_kernel_p": 0.020853407115,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.020587376887,
+          0.815205906314
+        ]
+      },
+      {
+        "GWNO": 212,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 220,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.024374419437,
+          0.044940832373
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.024374419437,
+          0.230038548795,
+          0.558121187266,
+          0.814526253621
+        ],
+        "earlier_published_10pct_shadow_p": 0.044940832373,
+        "earlier_published_two_state_editorial_shadow_p": 0.024506987549,
+        "editorial_minus_hard_p": 0.00025111679799999856,
+        "hard_four_state_p": 0.024374419437,
+        "next_edition_editorial_kernel_p": 0.024625536235,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.024374419437,
+          0.814526253621
+        ]
+      },
+      {
+        "GWNO": 221,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 223,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 225,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 230,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.024036293842,
+          0.043011064675
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.024036293842,
+          0.213784002173,
+          0.519305708674,
+          0.810867953164
+        ],
+        "earlier_published_10pct_shadow_p": 0.043011064675,
+        "earlier_published_two_state_editorial_shadow_p": 0.02415860246,
+        "editorial_minus_hard_p": 0.00023497075399999887,
+        "hard_four_state_p": 0.024036293842,
+        "next_edition_editorial_kernel_p": 0.024271264596,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.024036293842,
+          0.810867953164
+        ]
+      },
+      {
+        "GWNO": 232,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 235,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 260,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.01649233618,
+          0.039144201914
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.01649233618,
+          0.243010993521,
+          0.55980391763,
+          0.814850912144
+        ],
+        "earlier_published_10pct_shadow_p": 0.039144201914,
+        "earlier_published_two_state_editorial_shadow_p": 0.016638346817,
+        "editorial_minus_hard_p": 0.0002663874990000009,
+        "hard_four_state_p": 0.01649233618,
+        "next_edition_editorial_kernel_p": 0.016758723679,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.01649233618,
+          0.814850912144
+        ]
+      },
+      {
+        "GWNO": 290,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.016457757142,
+          0.041071407815
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.016457757142,
+          0.262594263873,
+          0.563656019941,
+          0.815595522867
+        ],
+        "earlier_published_10pct_shadow_p": 0.041071407815,
+        "earlier_published_two_state_editorial_shadow_p": 0.01661641316,
+        "editorial_minus_hard_p": 0.0002796483459999999,
+        "hard_four_state_p": 0.016457757142,
+        "next_edition_editorial_kernel_p": 0.016737405488,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.016457757142,
+          0.815595522867
+        ]
+      },
+      {
+        "GWNO": 305,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 310,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 316,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.013015908448,
+          0.03970687791
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.013015908448,
+          0.279925603071,
+          0.565930040891,
+          0.816049208407
+        ],
+        "earlier_published_10pct_shadow_p": 0.03970687791,
+        "earlier_published_two_state_editorial_shadow_p": 0.013187954562,
+        "editorial_minus_hard_p": 0.0002940804030000001,
+        "hard_four_state_p": 0.013015908448,
+        "next_edition_editorial_kernel_p": 0.013309988851,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.013015908448,
+          0.816049208407
+        ]
+      },
+      {
+        "GWNO": 317,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.013015908448,
+          0.03970687791
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.013015908448,
+          0.279925603071,
+          0.565930040891,
+          0.816049208407
+        ],
+        "earlier_published_10pct_shadow_p": 0.03970687791,
+        "earlier_published_two_state_editorial_shadow_p": 0.013187954562,
+        "editorial_minus_hard_p": 0.0002940804030000001,
+        "hard_four_state_p": 0.013015908448,
+        "next_edition_editorial_kernel_p": 0.013309988851,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.013015908448,
+          0.816049208407
+        ]
+      },
+      {
+        "GWNO": 325,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 327,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 331,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 338,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 339,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.041533621622,
+          0.065447865682
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.041533621622,
+          0.28067606222,
+          0.528286809467,
+          0.814650491639
+        ],
+        "earlier_published_10pct_shadow_p": 0.065447865682,
+        "earlier_published_two_state_editorial_shadow_p": 0.041687769367,
+        "editorial_minus_hard_p": 0.000264860096999997,
+        "hard_four_state_p": 0.041533621622,
+        "next_edition_editorial_kernel_p": 0.041798481719,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.041533621622,
+          0.814650491639
+        ]
+      },
+      {
+        "GWNO": 341,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.01731392024,
+          0.043652385257
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.01731392024,
+          0.280698570412,
+          0.566192329253,
+          0.816162603752
+        ],
+        "earlier_published_10pct_shadow_p": 0.043652385257,
+        "earlier_published_two_state_editorial_shadow_p": 0.017483694162,
+        "editorial_minus_hard_p": 0.0002910007120000002,
+        "hard_four_state_p": 0.01731392024,
+        "next_edition_editorial_kernel_p": 0.017604920952,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.01731392024,
+          0.816162603752
+        ]
+      },
+      {
+        "GWNO": 343,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.018645505718,
+          0.047193246295
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.018645505718,
+          0.30412291149,
+          0.531544670004,
+          0.814939143571
+        ],
+        "earlier_published_10pct_shadow_p": 0.047193246295,
+        "earlier_published_two_state_editorial_shadow_p": 0.018829520309,
+        "editorial_minus_hard_p": 0.0002997618940000016,
+        "hard_four_state_p": 0.018645505718,
+        "next_edition_editorial_kernel_p": 0.018945267612,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.018645505718,
+          0.814939143571
+        ]
+      },
+      {
+        "GWNO": 344,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.049110874244,
+          0.072494413647
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.049110874244,
+          0.282946268269,
+          0.551366115301,
+          0.694829706933
+        ],
+        "earlier_published_10pct_shadow_p": 0.072494413647,
+        "earlier_published_two_state_editorial_shadow_p": 0.049261601144,
+        "editorial_minus_hard_p": 0.00025742908700000094,
+        "hard_four_state_p": 0.049110874244,
+        "next_edition_editorial_kernel_p": 0.049368303331,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.049110874244,
+          0.694829706933
+        ]
+      },
+      {
+        "GWNO": 345,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.05444156848,
+          0.080569266005
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.05444156848,
+          0.315718543725,
+          0.557181329067,
+          0.706677644997
+        ],
+        "earlier_published_10pct_shadow_p": 0.080569266005,
+        "earlier_published_two_state_editorial_shadow_p": 0.054609983825,
+        "editorial_minus_hard_p": 0.0002755109589999971,
+        "hard_four_state_p": 0.05444156848,
+        "next_edition_editorial_kernel_p": 0.054717079439,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.05444156848,
+          0.706677644997
+        ]
+      },
+      {
+        "GWNO": 346,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.01372491091,
+          0.040192515648
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.01372491091,
+          0.278400958288,
+          0.559954487209,
+          0.772254879031
+        ],
+        "earlier_published_10pct_shadow_p": 0.040192515648,
+        "earlier_published_two_state_editorial_shadow_p": 0.013895517247,
+        "editorial_minus_hard_p": 0.0002894401239999997,
+        "hard_four_state_p": 0.01372491091,
+        "next_edition_editorial_kernel_p": 0.014014351034,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.01372491091,
+          0.772254879031
+        ]
+      },
+      {
+        "GWNO": 347,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.018240549384,
+          0.044503064295
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.018240549384,
+          0.280865698486,
+          0.56624904025,
+          0.816187121664
+        ],
+        "earlier_published_10pct_shadow_p": 0.044503064295,
+        "earlier_published_two_state_editorial_shadow_p": 0.018409833743,
+        "editorial_minus_hard_p": 0.00029033708399999955,
+        "hard_four_state_p": 0.018240549384,
+        "next_edition_editorial_kernel_p": 0.018530886468,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.018240549384,
+          0.816187121664
+        ]
+      },
+      {
+        "GWNO": 349,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012772017348,
+          0.039483000634
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012772017348,
+          0.279881850203,
+          0.56591519438,
+          0.816042789803
+        ],
+        "earlier_published_10pct_shadow_p": 0.039483000634,
+        "earlier_published_two_state_editorial_shadow_p": 0.012944192469,
+        "editorial_minus_hard_p": 0.0002942552369999997,
+        "hard_four_state_p": 0.012772017348,
+        "next_edition_editorial_kernel_p": 0.013066272585,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012772017348,
+          0.816042789803
+        ]
+      },
+      {
+        "GWNO": 350,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 352,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 355,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 359,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.047070009283,
+          0.070801760585
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.047070009283,
+          0.2843875223,
+          0.55844753168,
+          0.745088954299
+        ],
+        "earlier_published_10pct_shadow_p": 0.070801760585,
+        "earlier_published_two_state_editorial_shadow_p": 0.047222980707,
+        "editorial_minus_hard_p": 0.00026362316200000124,
+        "hard_four_state_p": 0.047070009283,
+        "next_edition_editorial_kernel_p": 0.047333632445,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.047070009283,
+          0.745088954299
+        ]
+      },
+      {
+        "GWNO": 360,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012190322264,
+          0.038676499067
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012190322264,
+          0.27705209029,
+          0.555958424643,
+          0.743155358679
+        ],
+        "earlier_published_10pct_shadow_p": 0.038676499067,
+        "earlier_published_two_state_editorial_shadow_p": 0.012361048315,
+        "editorial_minus_hard_p": 0.00028782708700000013,
+        "hard_four_state_p": 0.012190322264,
+        "next_edition_editorial_kernel_p": 0.012478149351,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012190322264,
+          0.743155358679
+        ]
+      },
+      {
+        "GWNO": 365,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.839173774197,
+          0.839173774197
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.193039841602,
+          0.385971788315,
+          0.632262302729,
+          0.839173774197
+        ],
+        "earlier_published_10pct_shadow_p": 0.839173774197,
+        "earlier_published_two_state_editorial_shadow_p": 0.839173774197,
+        "editorial_minus_hard_p": -0.0007698856519999797,
+        "hard_four_state_p": 0.839173774197,
+        "next_edition_editorial_kernel_p": 0.838403888545,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.193039841602,
+          0.839173774197
+        ]
+      },
+      {
+        "GWNO": 366,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012537097744,
+          0.03926735975
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012537097744,
+          0.279839717811,
+          0.565900897739,
+          0.816036608924
+        ],
+        "earlier_published_10pct_shadow_p": 0.03926735975,
+        "earlier_published_two_state_editorial_shadow_p": 0.012709397132,
+        "editorial_minus_hard_p": 0.0002944236470000007,
+        "hard_four_state_p": 0.012537097744,
+        "next_edition_editorial_kernel_p": 0.012831521391,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012537097744,
+          0.816036608924
+        ]
+      },
+      {
+        "GWNO": 367,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012537097744,
+          0.03926735975
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012537097744,
+          0.279839717811,
+          0.565900897739,
+          0.816036608924
+        ],
+        "earlier_published_10pct_shadow_p": 0.03926735975,
+        "earlier_published_two_state_editorial_shadow_p": 0.012709397132,
+        "editorial_minus_hard_p": 0.0002944236470000007,
+        "hard_four_state_p": 0.012537097744,
+        "next_edition_editorial_kernel_p": 0.012831521391,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012537097744,
+          0.816036608924
+        ]
+      },
+      {
+        "GWNO": 368,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012537097744,
+          0.03926735975
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012537097744,
+          0.279839717811,
+          0.565900897739,
+          0.816036608924
+        ],
+        "earlier_published_10pct_shadow_p": 0.03926735975,
+        "earlier_published_two_state_editorial_shadow_p": 0.012709397132,
+        "editorial_minus_hard_p": 0.0002944236470000007,
+        "hard_four_state_p": 0.012537097744,
+        "next_edition_editorial_kernel_p": 0.012831521391,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012537097744,
+          0.816036608924
+        ]
+      },
+      {
+        "GWNO": 369,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.878675927585,
+          0.878675927585
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.059817962013,
+          0.291442543664,
+          0.576690083117,
+          0.878675927585
+        ],
+        "earlier_published_10pct_shadow_p": 0.878675927585,
+        "earlier_published_two_state_editorial_shadow_p": 0.878675927585,
+        "editorial_minus_hard_p": -0.0010029728470000165,
+        "hard_four_state_p": 0.878675927585,
+        "next_edition_editorial_kernel_p": 0.877672954738,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.059817962013,
+          0.878675927585
+        ]
+      },
+      {
+        "GWNO": 370,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012537097744,
+          0.03926735975
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012537097744,
+          0.279839717811,
+          0.565900897739,
+          0.816036608924
+        ],
+        "earlier_published_10pct_shadow_p": 0.03926735975,
+        "earlier_published_two_state_editorial_shadow_p": 0.012709397132,
+        "editorial_minus_hard_p": 0.0002944236470000007,
+        "hard_four_state_p": 0.012537097744,
+        "next_edition_editorial_kernel_p": 0.012831521391,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012537097744,
+          0.816036608924
+        ]
+      },
+      {
+        "GWNO": 371,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.075771313198,
+          0.091516190791
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.075771313198,
+          0.233220089134,
+          0.543064636078,
+          0.75107165785
+        ],
+        "earlier_published_10pct_shadow_p": 0.091516190791,
+        "earlier_published_two_state_editorial_shadow_p": 0.075872802393,
+        "editorial_minus_hard_p": 0.00020446278600000367,
+        "hard_four_state_p": 0.075771313198,
+        "next_edition_editorial_kernel_p": 0.075975775984,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.075771313198,
+          0.75107165785
+        ]
+      },
+      {
+        "GWNO": 372,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.087867240464,
+          0.106346782955
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.087867240464,
+          0.272662665373,
+          0.534975441899,
+          0.69636246567
+        ],
+        "earlier_published_10pct_shadow_p": 0.106346782955,
+        "earlier_published_two_state_editorial_shadow_p": 0.087986356912,
+        "editorial_minus_hard_p": 0.0002157739389999913,
+        "hard_four_state_p": 0.087867240464,
+        "next_edition_editorial_kernel_p": 0.088083014403,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.087867240464,
+          0.69636246567
+        ]
+      },
+      {
+        "GWNO": 373,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.03956117594,
+          0.066912260267
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.03956117594,
+          0.313072019207,
+          0.549848819472,
+          0.766162974648
+        ],
+        "earlier_published_10pct_shadow_p": 0.066912260267,
+        "earlier_published_two_state_editorial_shadow_p": 0.039737477059,
+        "editorial_minus_hard_p": 0.00028820553799999843,
+        "hard_four_state_p": 0.03956117594,
+        "next_edition_editorial_kernel_p": 0.039849381478,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.03956117594,
+          0.766162974648
+        ]
+      },
+      {
+        "GWNO": 375,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 380,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 385,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 390,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 395,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 402,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 403,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 404,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.051147980355,
+          0.072857888557
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.051147980355,
+          0.26824706238,
+          0.557636418731,
+          0.755063197765
+        ],
+        "earlier_published_10pct_shadow_p": 0.072857888557,
+        "earlier_published_two_state_editorial_shadow_p": 0.051287919271,
+        "editorial_minus_hard_p": 0.0002501570940000031,
+        "hard_four_state_p": 0.051147980355,
+        "next_edition_editorial_kernel_p": 0.051398137449,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.051147980355,
+          0.755063197765
+        ]
+      },
+      {
+        "GWNO": 411,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 420,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 432,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.839708667108,
+          0.839708667108
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.184850570474,
+          0.309513550512,
+          0.550221817179,
+          0.839708667108
+        ],
+        "earlier_published_10pct_shadow_p": 0.839708667108,
+        "earlier_published_two_state_editorial_shadow_p": 0.839708667108,
+        "editorial_minus_hard_p": -0.0008820216759999333,
+        "hard_four_state_p": 0.839708667108,
+        "next_edition_editorial_kernel_p": 0.838826645432,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.184850570474,
+          0.839708667108
+        ]
+      },
+      {
+        "GWNO": 433,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.15610255056,
+          0.173120340941
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.15610255056,
+          0.326280454375,
+          0.480929325453,
+          0.663805422663
+        ],
+        "earlier_published_10pct_shadow_p": 0.173120340941,
+        "earlier_published_two_state_editorial_shadow_p": 0.156212244766,
+        "editorial_minus_hard_p": 0.00018316787000000057,
+        "hard_four_state_p": 0.15610255056,
+        "next_edition_editorial_kernel_p": 0.15628571843,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.15610255056,
+          0.663805422663
+        ]
+      },
+      {
+        "GWNO": 434,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.819931861564,
+          0.819931861564
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.018862162375,
+          0.314446448577,
+          0.61452890568,
+          0.819931861564
+        ],
+        "earlier_published_10pct_shadow_p": 0.819931861564,
+        "earlier_published_two_state_editorial_shadow_p": 0.819931861564,
+        "editorial_minus_hard_p": -0.0008778458229999897,
+        "hard_four_state_p": 0.819931861564,
+        "next_edition_editorial_kernel_p": 0.819054015741,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.018862162375,
+          0.819931861564
+        ]
+      },
+      {
+        "GWNO": 435,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.024272603816,
+          0.044461021433
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.024272603816,
+          0.226156779989,
+          0.556574845269,
+          0.814228332979
+        ],
+        "earlier_published_10pct_shadow_p": 0.044461021433,
+        "earlier_published_two_state_editorial_shadow_p": 0.024402735425,
+        "editorial_minus_hard_p": 0.0002484559609999999,
+        "hard_four_state_p": 0.024272603816,
+        "next_edition_editorial_kernel_p": 0.024521059777,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.024272603816,
+          0.814228332979
+        ]
+      },
+      {
+        "GWNO": 436,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.860415867838,
+          0.860415867838
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.175669710651,
+          0.357899457043,
+          0.519031450486,
+          0.860415867838
+        ],
+        "earlier_published_10pct_shadow_p": 0.860415867838,
+        "earlier_published_two_state_editorial_shadow_p": 0.860415867838,
+        "editorial_minus_hard_p": -0.0008815865709999038,
+        "hard_four_state_p": 0.860415867838,
+        "next_edition_editorial_kernel_p": 0.859534281267,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.175669710651,
+          0.860415867838
+        ]
+      },
+      {
+        "GWNO": 437,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.060957508903,
+          0.083695576492
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.060957508903,
+          0.288338184795,
+          0.499257177244,
+          0.815714108962
+        ],
+        "earlier_published_10pct_shadow_p": 0.083695576492,
+        "earlier_published_two_state_editorial_shadow_p": 0.061104075185,
+        "editorial_minus_hard_p": 0.0002491623399999976,
+        "hard_four_state_p": 0.060957508903,
+        "next_edition_editorial_kernel_p": 0.061206671243,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.060957508903,
+          0.815714108962
+        ]
+      },
+      {
+        "GWNO": 438,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.046345493189,
+          0.070171339531
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.046345493189,
+          0.284603956603,
+          0.559807648429,
+          0.755414375069
+        ],
+        "earlier_published_10pct_shadow_p": 0.070171339531,
+        "earlier_published_two_state_editorial_shadow_p": 0.046499071136,
+        "editorial_minus_hard_p": 0.000265087524999999,
+        "hard_four_state_p": 0.046345493189,
+        "next_edition_editorial_kernel_p": 0.046610580714,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.046345493189,
+          0.755414375069
+        ]
+      },
+      {
+        "GWNO": 439,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.857631992389,
+          0.857631992389
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.020408095936,
+          0.316390188285,
+          0.600788964776,
+          0.857631992389
+        ],
+        "earlier_published_10pct_shadow_p": 0.857631992389,
+        "earlier_published_two_state_editorial_shadow_p": 0.857631992389,
+        "editorial_minus_hard_p": -0.0009456479939999873,
+        "hard_four_state_p": 0.857631992389,
+        "next_edition_editorial_kernel_p": 0.856686344395,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.020408095936,
+          0.857631992389
+        ]
+      },
+      {
+        "GWNO": 450,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.051977148648,
+          0.074016240651
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.051977148648,
+          0.272368068684,
+          0.588914474128,
+          0.707474891629
+        ],
+        "earlier_published_10pct_shadow_p": 0.074016240651,
+        "earlier_published_two_state_editorial_shadow_p": 0.052119209435,
+        "editorial_minus_hard_p": 0.00025440712299999724,
+        "hard_four_state_p": 0.051977148648,
+        "next_edition_editorial_kernel_p": 0.052231555771,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.051977148648,
+          0.707474891629
+        ]
+      },
+      {
+        "GWNO": 451,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.057046190201,
+          0.079809749547
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.057046190201,
+          0.284681783665,
+          0.535964337284,
+          0.863615902073
+        ],
+        "earlier_published_10pct_shadow_p": 0.079809749547,
+        "earlier_published_two_state_editorial_shadow_p": 0.0571929208,
+        "editorial_minus_hard_p": 0.0002579368800000037,
+        "hard_four_state_p": 0.057046190201,
+        "next_edition_editorial_kernel_p": 0.057304127081,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.057046190201,
+          0.863615902073
+        ]
+      },
+      {
+        "GWNO": 452,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 461,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.60503700716,
+          0.60503700716
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.044687610506,
+          0.294896573433,
+          0.60503700716,
+          0.820161599047
+        ],
+        "earlier_published_10pct_shadow_p": 0.60503700716,
+        "earlier_published_two_state_editorial_shadow_p": 0.60503700716,
+        "editorial_minus_hard_p": 0.0001802575829999986,
+        "hard_four_state_p": 0.60503700716,
+        "next_edition_editorial_kernel_p": 0.605217264743,
+        "origin_year": 2025,
+        "recorded_origin_state": 2,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.044687610506,
+          0.820161599047
+        ]
+      },
+      {
+        "GWNO": 471,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.87748077096,
+          0.87748077096
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.106067757418,
+          0.265406277713,
+          0.536794091672,
+          0.87748077096
+        ],
+        "earlier_published_10pct_shadow_p": 0.87748077096,
+        "earlier_published_two_state_editorial_shadow_p": 0.87748077096,
+        "editorial_minus_hard_p": -0.0010258605330000226,
+        "hard_four_state_p": 0.87748077096,
+        "next_edition_editorial_kernel_p": 0.876454910427,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.106067757418,
+          0.87748077096
+        ]
+      },
+      {
+        "GWNO": 475,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.806073560179,
+          0.806073560179
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.074413011933,
+          0.367325194087,
+          0.57903678851,
+          0.806073560179
+        ],
+        "earlier_published_10pct_shadow_p": 0.806073560179,
+        "earlier_published_two_state_editorial_shadow_p": 0.806073560179,
+        "editorial_minus_hard_p": -0.0007915596449999951,
+        "hard_four_state_p": 0.806073560179,
+        "next_edition_editorial_kernel_p": 0.805282000534,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.074413011933,
+          0.806073560179
+        ]
+      },
+      {
+        "GWNO": 481,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 482,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.808418868575,
+          0.808418868575
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.198337472611,
+          0.302249499197,
+          0.60943194047,
+          0.808418868575
+        ],
+        "earlier_published_10pct_shadow_p": 0.808418868575,
+        "earlier_published_two_state_editorial_shadow_p": 0.808418868575,
+        "editorial_minus_hard_p": -0.0008098734970000132,
+        "hard_four_state_p": 0.808418868575,
+        "next_edition_editorial_kernel_p": 0.807608995078,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.198337472611,
+          0.808418868575
+        ]
+      },
+      {
+        "GWNO": 483,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.310078974065,
+          0.32647620938
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.162503856228,
+          0.32647620938,
+          0.65745600392,
+          0.775506990146
+        ],
+        "earlier_published_10pct_shadow_p": 0.310078974065,
+        "earlier_published_two_state_editorial_shadow_p": 0.326342245039,
+        "editorial_minus_hard_p": 0.0026622158060000123,
+        "hard_four_state_p": 0.32647620938,
+        "next_edition_editorial_kernel_p": 0.329138425186,
+        "origin_year": 2025,
+        "recorded_origin_state": 1,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.162503856228,
+          0.775506990146
+        ]
+      },
+      {
+        "GWNO": 484,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.152347517376,
+          0.161268803266
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.152347517376,
+          0.241560376272,
+          0.492088700187,
+          0.712653638291
+        ],
+        "earlier_published_10pct_shadow_p": 0.161268803266,
+        "earlier_published_two_state_editorial_shadow_p": 0.15240502269,
+        "editorial_minus_hard_p": 0.0001358104530000126,
+        "hard_four_state_p": 0.152347517376,
+        "next_edition_editorial_kernel_p": 0.152483327829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.152347517376,
+          0.712653638291
+        ]
+      },
+      {
+        "GWNO": 490,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.879639520446,
+          0.879639520446
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.151633932265,
+          0.298976495439,
+          0.604263033172,
+          0.879639520446
+        ],
+        "earlier_published_10pct_shadow_p": 0.879639520446,
+        "earlier_published_two_state_editorial_shadow_p": 0.879639520446,
+        "editorial_minus_hard_p": -0.0009552439630000631,
+        "hard_four_state_p": 0.879639520446,
+        "next_edition_editorial_kernel_p": 0.878684276483,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.151633932265,
+          0.879639520446
+        ]
+      },
+      {
+        "GWNO": 500,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.268638343932,
+          0.288840397641
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.086819860546,
+          0.288840397641,
+          0.487625516367,
+          0.872084418271
+        ],
+        "earlier_published_10pct_shadow_p": 0.268638343932,
+        "earlier_published_two_state_editorial_shadow_p": 0.288675348183,
+        "editorial_minus_hard_p": 0.001770219863000022,
+        "hard_four_state_p": 0.288840397641,
+        "next_edition_editorial_kernel_p": 0.290610617504,
+        "origin_year": 2025,
+        "recorded_origin_state": 1,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.086819860546,
+          0.872084418271
+        ]
+      },
+      {
+        "GWNO": 501,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.692323424117,
+          0.692323424117
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.042756749788,
+          0.287095761037,
+          0.692323424117,
+          0.827349761303
+        ],
+        "earlier_published_10pct_shadow_p": 0.692323424117,
+        "earlier_published_two_state_editorial_shadow_p": 0.692323424117,
+        "editorial_minus_hard_p": -0.0003336227169999928,
+        "hard_four_state_p": 0.692323424117,
+        "next_edition_editorial_kernel_p": 0.6919898014,
+        "origin_year": 2025,
+        "recorded_origin_state": 2,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.042756749788,
+          0.827349761303
+        ]
+      },
+      {
+        "GWNO": 510,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.042866005509,
+          0.064521854237
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.042866005509,
+          0.259424492791,
+          0.534089898097,
+          0.813870616234
+        ],
+        "earlier_published_10pct_shadow_p": 0.064521854237,
+        "earlier_published_two_state_editorial_shadow_p": 0.043005595965,
+        "editorial_minus_hard_p": 0.0002508644829999976,
+        "hard_four_state_p": 0.042866005509,
+        "next_edition_editorial_kernel_p": 0.043116869992,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.042866005509,
+          0.813870616234
+        ]
+      },
+      {
+        "GWNO": 516,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.110967366392,
+          0.13603579194
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.110967366392,
+          0.361651621866,
+          0.547066713085,
+          0.753607897836
+        ],
+        "earlier_published_10pct_shadow_p": 0.13603579194,
+        "earlier_published_two_state_editorial_shadow_p": 0.111128953824,
+        "editorial_minus_hard_p": 0.00025829617700000307,
+        "hard_four_state_p": 0.110967366392,
+        "next_edition_editorial_kernel_p": 0.111225662569,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.110967366392,
+          0.753607897836
+        ]
+      },
+      {
+        "GWNO": 517,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.231254307683,
+          0.2390894566
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.160737967432,
+          0.2390894566,
+          0.56426248866,
+          0.689130612141
+        ],
+        "earlier_published_10pct_shadow_p": 0.231254307683,
+        "earlier_published_two_state_editorial_shadow_p": 0.239025443946,
+        "editorial_minus_hard_p": 0.0026902503710000136,
+        "hard_four_state_p": 0.2390894566,
+        "next_edition_editorial_kernel_p": 0.241779706971,
+        "origin_year": 2025,
+        "recorded_origin_state": 1,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.160737967432,
+          0.689130612141
+        ]
+      },
+      {
+        "GWNO": 520,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.843798375896,
+          0.843798375896
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.158755334295,
+          0.314170199352,
+          0.601905279334,
+          0.843798375896
+        ],
+        "earlier_published_10pct_shadow_p": 0.843798375896,
+        "earlier_published_two_state_editorial_shadow_p": 0.843798375896,
+        "editorial_minus_hard_p": -0.0008753725360000075,
+        "hard_four_state_p": 0.843798375896,
+        "next_edition_editorial_kernel_p": 0.84292300336,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.158755334295,
+          0.843798375896
+        ]
+      },
+      {
+        "GWNO": 522,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.055827924132,
+          0.08329028914
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.055827924132,
+          0.330451574213,
+          0.519050201682,
+          0.81132243494
+        ],
+        "earlier_published_10pct_shadow_p": 0.08329028914,
+        "earlier_published_two_state_editorial_shadow_p": 0.05600494255,
+        "editorial_minus_hard_p": 0.00028335492299999543,
+        "hard_four_state_p": 0.055827924132,
+        "next_edition_editorial_kernel_p": 0.056111279055,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.055827924132,
+          0.81132243494
+        ]
+      },
+      {
+        "GWNO": 530,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.877903210364,
+          0.877903210364
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.048969577171,
+          0.377582665593,
+          0.68382616836,
+          0.877903210364
+        ],
+        "earlier_published_10pct_shadow_p": 0.877903210364,
+        "earlier_published_two_state_editorial_shadow_p": 0.877903210364,
+        "editorial_minus_hard_p": -0.0008782088759999862,
+        "hard_four_state_p": 0.877903210364,
+        "next_edition_editorial_kernel_p": 0.877025001488,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.048969577171,
+          0.877903210364
+        ]
+      },
+      {
+        "GWNO": 531,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.098054082801,
+          0.116846101678
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.098054082801,
+          0.285974271572,
+          0.517757548614,
+          0.765116228138
+        ],
+        "earlier_published_10pct_shadow_p": 0.116846101678,
+        "earlier_published_two_state_editorial_shadow_p": 0.098175213427,
+        "editorial_minus_hard_p": 0.00021661551799999346,
+        "hard_four_state_p": 0.098054082801,
+        "next_edition_editorial_kernel_p": 0.098270698319,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.098054082801,
+          0.765116228138
+        ]
+      },
+      {
+        "GWNO": 540,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.539054658469,
+          0.539054658469
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.123481388368,
+          0.315261107605,
+          0.539054658469,
+          0.861434303535
+        ],
+        "earlier_published_10pct_shadow_p": 0.539054658469,
+        "earlier_published_two_state_editorial_shadow_p": 0.539054658469,
+        "editorial_minus_hard_p": 0.0008545970169999695,
+        "hard_four_state_p": 0.539054658469,
+        "next_edition_editorial_kernel_p": 0.539909255486,
+        "origin_year": 2025,
+        "recorded_origin_state": 2,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.123481388368,
+          0.861434303535
+        ]
+      },
+      {
+        "GWNO": 541,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.816875037791,
+          0.816875037791
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.108383688084,
+          0.301840719056,
+          0.536898020543,
+          0.816875037791
+        ],
+        "earlier_published_10pct_shadow_p": 0.816875037791,
+        "earlier_published_two_state_editorial_shadow_p": 0.816875037791,
+        "editorial_minus_hard_p": -0.0008815488250000225,
+        "hard_four_state_p": 0.816875037791,
+        "next_edition_editorial_kernel_p": 0.815993488966,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.108383688084,
+          0.816875037791
+        ]
+      },
+      {
+        "GWNO": 551,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 552,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012207431114,
+          0.03724611439
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012207431114,
+          0.262594263873,
+          0.563656019941,
+          0.815595522867
+        ],
+        "earlier_published_10pct_shadow_p": 0.03724611439,
+        "earlier_published_two_state_editorial_shadow_p": 0.012368826832,
+        "editorial_minus_hard_p": 0.00028323067400000054,
+        "hard_four_state_p": 0.012207431114,
+        "next_edition_editorial_kernel_p": 0.012490661788,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012207431114,
+          0.815595522867
+        ]
+      },
+      {
+        "GWNO": 553,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 560,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012190322264,
+          0.038676499067
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012190322264,
+          0.27705209029,
+          0.555958424643,
+          0.743155358679
+        ],
+        "earlier_published_10pct_shadow_p": 0.038676499067,
+        "earlier_published_two_state_editorial_shadow_p": 0.012361048315,
+        "editorial_minus_hard_p": 0.00028782708700000013,
+        "hard_four_state_p": 0.012190322264,
+        "next_edition_editorial_kernel_p": 0.012478149351,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012190322264,
+          0.743155358679
+        ]
+      },
+      {
+        "GWNO": 565,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.018297543411,
+          0.046875913279
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.018297543411,
+          0.304081242091,
+          0.531525110315,
+          0.814932724967
+        ],
+        "earlier_published_10pct_shadow_p": 0.046875913279,
+        "earlier_published_two_state_editorial_shadow_p": 0.018481755434,
+        "editorial_minus_hard_p": 0.000300025084999999,
+        "hard_four_state_p": 0.018297543411,
+        "next_edition_editorial_kernel_p": 0.018597568496,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.018297543411,
+          0.814932724967
+        ]
+      },
+      {
+        "GWNO": 570,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.041533621622,
+          0.065447865682
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.041533621622,
+          0.28067606222,
+          0.528286809467,
+          0.814650491639
+        ],
+        "earlier_published_10pct_shadow_p": 0.065447865682,
+        "earlier_published_two_state_editorial_shadow_p": 0.041687769367,
+        "editorial_minus_hard_p": 0.000264860096999997,
+        "hard_four_state_p": 0.041533621622,
+        "next_edition_editorial_kernel_p": 0.041798481719,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.041533621622,
+          0.814650491639
+        ]
+      },
+      {
+        "GWNO": 571,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 572,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 580,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 581,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.041652487359,
+          0.065016209214
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.041652487359,
+          0.27528970591,
+          0.493260577225,
+          0.812488660378
+        ],
+        "earlier_published_10pct_shadow_p": 0.065016209214,
+        "earlier_published_two_state_editorial_shadow_p": 0.041803086518,
+        "editorial_minus_hard_p": 0.000255971457000001,
+        "hard_four_state_p": 0.041652487359,
+        "next_edition_editorial_kernel_p": 0.041908458816,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.041652487359,
+          0.812488660378
+        ]
+      },
+      {
+        "GWNO": 590,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 591,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 600,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.213134533303,
+          0.234511303025
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.020743605797,
+          0.234511303025,
+          0.545237261106,
+          0.7412178316
+        ],
+        "earlier_published_10pct_shadow_p": 0.213134533303,
+        "earlier_published_two_state_editorial_shadow_p": 0.234336656214,
+        "editorial_minus_hard_p": 0.002519961219,
+        "hard_four_state_p": 0.234511303025,
+        "next_edition_editorial_kernel_p": 0.237031264244,
+        "origin_year": 2025,
+        "recorded_origin_state": 1,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.020743605797,
+          0.7412178316
+        ]
+      },
+      {
+        "GWNO": 615,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.0447263647,
+          0.070890347851
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.0447263647,
+          0.306366196207,
+          0.573019659597,
+          0.905915446631
+        ],
+        "earlier_published_10pct_shadow_p": 0.070890347851,
+        "earlier_published_two_state_editorial_shadow_p": 0.044895013937,
+        "editorial_minus_hard_p": 0.00028990514499999814,
+        "hard_four_state_p": 0.0447263647,
+        "next_edition_editorial_kernel_p": 0.045016269845,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.0447263647,
+          0.905915446631
+        ]
+      },
+      {
+        "GWNO": 616,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.019943356865,
+          0.043775702157
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.019943356865,
+          0.258266809787,
+          0.56464469445,
+          0.815360469933
+        ],
+        "earlier_published_10pct_shadow_p": 0.043775702157,
+        "earlier_published_two_state_editorial_shadow_p": 0.020096976703,
+        "editorial_minus_hard_p": 0.0002740568179999993,
+        "hard_four_state_p": 0.019943356865,
+        "next_edition_editorial_kernel_p": 0.020217413683,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.019943356865,
+          0.815360469933
+        ]
+      },
+      {
+        "GWNO": 620,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.058927888536,
+          0.081951131699
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.058927888536,
+          0.289160320159,
+          0.595080314897,
+          0.747184012298
+        ],
+        "earlier_published_10pct_shadow_p": 0.081951131699,
+        "earlier_published_two_state_editorial_shadow_p": 0.059076293019,
+        "editorial_minus_hard_p": 0.00026225756200000394,
+        "hard_four_state_p": 0.058927888536,
+        "next_edition_editorial_kernel_p": 0.059190146098,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.058927888536,
+          0.747184012298
+        ]
+      },
+      {
+        "GWNO": 625,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.89682202445,
+          0.89682202445
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.034927644633,
+          0.32667777746,
+          0.626930553195,
+          0.89682202445
+        ],
+        "earlier_published_10pct_shadow_p": 0.89682202445,
+        "earlier_published_two_state_editorial_shadow_p": 0.89682202445,
+        "editorial_minus_hard_p": -0.0009889417510000609,
+        "hard_four_state_p": 0.89682202445,
+        "next_edition_editorial_kernel_p": 0.895833082699,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.034927644633,
+          0.89682202445
+        ]
+      },
+      {
+        "GWNO": 626,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.819177620266,
+          0.819177620266
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.034209393294,
+          0.314930605007,
+          0.613076697566,
+          0.819177620266
+        ],
+        "earlier_published_10pct_shadow_p": 0.819177620266,
+        "earlier_published_two_state_editorial_shadow_p": 0.819177620266,
+        "editorial_minus_hard_p": -0.000871193527000047,
+        "hard_four_state_p": 0.819177620266,
+        "next_edition_editorial_kernel_p": 0.818306426739,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.034209393294,
+          0.819177620266
+        ]
+      },
+      {
+        "GWNO": 630,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.714133820065,
+          0.714133820065
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.113332032169,
+          0.408100746607,
+          0.666467444015,
+          0.714133820065
+        ],
+        "earlier_published_10pct_shadow_p": 0.714133820065,
+        "earlier_published_two_state_editorial_shadow_p": 0.714133820065,
+        "editorial_minus_hard_p": -0.000545082597000035,
+        "hard_four_state_p": 0.714133820065,
+        "next_edition_editorial_kernel_p": 0.713588737468,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.113332032169,
+          0.714133820065
+        ]
+      },
+      {
+        "GWNO": 640,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.293634537402,
+          0.322453808886
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.034261094047,
+          0.322453808886,
+          0.597367147161,
+          0.877719849711
+        ],
+        "earlier_published_10pct_shadow_p": 0.293634537402,
+        "earlier_published_two_state_editorial_shadow_p": 0.322218357322,
+        "editorial_minus_hard_p": 0.002235965228999992,
+        "hard_four_state_p": 0.322453808886,
+        "next_edition_editorial_kernel_p": 0.324689774115,
+        "origin_year": 2025,
+        "recorded_origin_state": 1,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.034261094047,
+          0.877719849711
+        ]
+      },
+      {
+        "GWNO": 645,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.916826942208,
+          0.916826942208
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.034473935392,
+          0.300906403955,
+          0.670004940664,
+          0.916826942208
+        ],
+        "earlier_published_10pct_shadow_p": 0.916826942208,
+        "earlier_published_two_state_editorial_shadow_p": 0.916826942208,
+        "editorial_minus_hard_p": -0.001035816500999931,
+        "hard_four_state_p": 0.916826942208,
+        "next_edition_editorial_kernel_p": 0.915791125707,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.034473935392,
+          0.916826942208
+        ]
+      },
+      {
+        "GWNO": 651,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.261271301834,
+          0.28062108331
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.087123268547,
+          0.28062108331,
+          0.56346163589,
+          0.826048614967
+        ],
+        "earlier_published_10pct_shadow_p": 0.261271301834,
+        "earlier_published_two_state_editorial_shadow_p": 0.28046299686,
+        "editorial_minus_hard_p": 0.002363372503999983,
+        "hard_four_state_p": 0.28062108331,
+        "next_edition_editorial_kernel_p": 0.282984455814,
+        "origin_year": 2025,
+        "recorded_origin_state": 1,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.087123268547,
+          0.826048614967
+        ]
+      },
+      {
+        "GWNO": 652,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.888266293826,
+          0.888266293826
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.079794758764,
+          0.248775534312,
+          0.572200668877,
+          0.888266293826
+        ],
+        "earlier_published_10pct_shadow_p": 0.888266293826,
+        "earlier_published_two_state_editorial_shadow_p": 0.888266293826,
+        "editorial_minus_hard_p": -0.0010588063459999741,
+        "hard_four_state_p": 0.888266293826,
+        "next_edition_editorial_kernel_p": 0.88720748748,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.079794758764,
+          0.888266293826
+        ]
+      },
+      {
+        "GWNO": 660,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.783963957877,
+          0.783963957877
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.11435745565,
+          0.328744024306,
+          0.583864499918,
+          0.783963957877
+        ],
+        "earlier_published_10pct_shadow_p": 0.783963957877,
+        "earlier_published_two_state_editorial_shadow_p": 0.783963957877,
+        "editorial_minus_hard_p": -0.0007777890610000116,
+        "hard_four_state_p": 0.783963957877,
+        "next_edition_editorial_kernel_p": 0.783186168816,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.11435745565,
+          0.783963957877
+        ]
+      },
+      {
+        "GWNO": 663,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.022993479134,
+          0.049314957475
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.022993479134,
+          0.286208262537,
+          0.529209303598,
+          0.814458492442
+        ],
+        "earlier_published_10pct_shadow_p": 0.049314957475,
+        "earlier_published_two_state_editorial_shadow_p": 0.023163143562,
+        "editorial_minus_hard_p": 0.0002841797060000005,
+        "hard_four_state_p": 0.022993479134,
+        "next_edition_editorial_kernel_p": 0.02327765884,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.022993479134,
+          0.814458492442
+        ]
+      },
+      {
+        "GWNO": 666,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.806628931119,
+          0.806628931119
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.035627998001,
+          0.406624056843,
+          0.624232116008,
+          0.806628931119
+        ],
+        "earlier_published_10pct_shadow_p": 0.806628931119,
+        "earlier_published_two_state_editorial_shadow_p": 0.806628931119,
+        "editorial_minus_hard_p": -0.000749273616000079,
+        "hard_four_state_p": 0.806628931119,
+        "next_edition_editorial_kernel_p": 0.805879657503,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.035627998001,
+          0.806628931119
+        ]
+      },
+      {
+        "GWNO": 670,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.226962051131,
+          0.238052646196
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.127146695541,
+          0.238052646196,
+          0.511604505425,
+          0.808255343033
+        ],
+        "earlier_published_10pct_shadow_p": 0.226962051131,
+        "earlier_published_two_state_editorial_shadow_p": 0.23796203676,
+        "editorial_minus_hard_p": 0.002382759770999998,
+        "hard_four_state_p": 0.238052646196,
+        "next_edition_editorial_kernel_p": 0.240435405967,
+        "origin_year": 2025,
+        "recorded_origin_state": 1,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.127146695541,
+          0.808255343033
+        ]
+      },
+      {
+        "GWNO": 678,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.850974627249,
+          0.850974627249
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.116337240459,
+          0.289747007652,
+          0.597743517402,
+          0.850974627249
+        ],
+        "earlier_published_10pct_shadow_p": 0.850974627249,
+        "earlier_published_two_state_editorial_shadow_p": 0.850974627249,
+        "editorial_minus_hard_p": -0.0009295585790000116,
+        "hard_four_state_p": 0.850974627249,
+        "next_edition_editorial_kernel_p": 0.85004506867,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.116337240459,
+          0.850974627249
+        ]
+      },
+      {
+        "GWNO": 690,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.046345493189,
+          0.070171339531
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.046345493189,
+          0.284603956603,
+          0.559807648429,
+          0.755414375069
+        ],
+        "earlier_published_10pct_shadow_p": 0.070171339531,
+        "earlier_published_two_state_editorial_shadow_p": 0.046499071136,
+        "editorial_minus_hard_p": 0.000265087524999999,
+        "hard_four_state_p": 0.046345493189,
+        "next_edition_editorial_kernel_p": 0.046610580714,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.046345493189,
+          0.755414375069
+        ]
+      },
+      {
+        "GWNO": 692,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 694,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.253432202812,
+          0.279759967212
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.016482323206,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.253432202812,
+        "earlier_published_two_state_editorial_shadow_p": 0.279544871098,
+        "editorial_minus_hard_p": 0.0023230115169999843,
+        "hard_four_state_p": 0.279759967212,
+        "next_edition_editorial_kernel_p": 0.282082978729,
+        "origin_year": 2025,
+        "recorded_origin_state": 1,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.016482323206,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 696,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.020587376887,
+          0.043264674815
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.020587376887,
+          0.247360356174,
+          0.561641523035,
+          0.815205906314
+        ],
+        "earlier_published_10pct_shadow_p": 0.043264674815,
+        "earlier_published_two_state_editorial_shadow_p": 0.020733551457,
+        "editorial_minus_hard_p": 0.00026603022800000126,
+        "hard_four_state_p": 0.020587376887,
+        "next_edition_editorial_kernel_p": 0.020853407115,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.020587376887,
+          0.815205906314
+        ]
+      },
+      {
+        "GWNO": 698,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 700,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.93094926889,
+          0.93094926889
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.033917758401,
+          0.287426288558,
+          0.58088898033,
+          0.93094926889
+        ],
+        "earlier_published_10pct_shadow_p": 0.93094926889,
+        "earlier_published_two_state_editorial_shadow_p": 0.93094926889,
+        "editorial_minus_hard_p": -0.0011056578770000103,
+        "hard_four_state_p": 0.93094926889,
+        "next_edition_editorial_kernel_p": 0.929843611013,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.033917758401,
+          0.93094926889
+        ]
+      },
+      {
+        "GWNO": 701,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012537097744,
+          0.03926735975
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012537097744,
+          0.279839717811,
+          0.565900897739,
+          0.816036608924
+        ],
+        "earlier_published_10pct_shadow_p": 0.03926735975,
+        "earlier_published_two_state_editorial_shadow_p": 0.012709397132,
+        "editorial_minus_hard_p": 0.0002944236470000007,
+        "hard_four_state_p": 0.012537097744,
+        "next_edition_editorial_kernel_p": 0.012831521391,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012537097744,
+          0.816036608924
+        ]
+      },
+      {
+        "GWNO": 702,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.144856204477,
+          0.162675942553
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.144856204477,
+          0.323053585244,
+          0.495229895953,
+          0.789142775339
+        ],
+        "earlier_published_10pct_shadow_p": 0.162675942553,
+        "earlier_published_two_state_editorial_shadow_p": 0.144971067921,
+        "editorial_minus_hard_p": 0.00019890796199997784,
+        "hard_four_state_p": 0.144856204477,
+        "next_edition_editorial_kernel_p": 0.145055112439,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.144856204477,
+          0.789142775339
+        ]
+      },
+      {
+        "GWNO": 703,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.062484703741,
+          0.085112799301
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.062484703741,
+          0.288765659338,
+          0.534471785333,
+          0.744547339283
+        ],
+        "earlier_published_10pct_shadow_p": 0.085112799301,
+        "earlier_published_two_state_editorial_shadow_p": 0.06263056116,
+        "editorial_minus_hard_p": 0.00024986000500000494,
+        "hard_four_state_p": 0.062484703741,
+        "next_edition_editorial_kernel_p": 0.062734563746,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.062484703741,
+          0.744547339283
+        ]
+      },
+      {
+        "GWNO": 704,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.081278927124,
+          0.100529241905
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.081278927124,
+          0.273782074937,
+          0.542712167043,
+          0.745678824019
+        ],
+        "earlier_published_10pct_shadow_p": 0.100529241905,
+        "earlier_published_two_state_editorial_shadow_p": 0.081403011858,
+        "editorial_minus_hard_p": 0.0002256440519999986,
+        "hard_four_state_p": 0.081278927124,
+        "next_edition_editorial_kernel_p": 0.081504571176,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.081278927124,
+          0.745678824019
+        ]
+      },
+      {
+        "GWNO": 705,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012537097744,
+          0.03926735975
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012537097744,
+          0.279839717811,
+          0.565900897739,
+          0.816036608924
+        ],
+        "earlier_published_10pct_shadow_p": 0.03926735975,
+        "earlier_published_two_state_editorial_shadow_p": 0.012709397132,
+        "editorial_minus_hard_p": 0.0002944236470000007,
+        "hard_four_state_p": 0.012537097744,
+        "next_edition_editorial_kernel_p": 0.012831521391,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012537097744,
+          0.816036608924
+        ]
+      },
+      {
+        "GWNO": 710,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.059115211443,
+          0.074791637753
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.059115211443,
+          0.215879474541,
+          0.52810057889,
+          0.812957637989
+        ],
+        "earlier_published_10pct_shadow_p": 0.074791637753,
+        "earlier_published_two_state_editorial_shadow_p": 0.059216259411,
+        "editorial_minus_hard_p": 0.0002081672750000041,
+        "hard_four_state_p": 0.059115211443,
+        "next_edition_editorial_kernel_p": 0.059323378718,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.059115211443,
+          0.812957637989
+        ]
+      },
+      {
+        "GWNO": 712,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 713,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 731,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 732,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 740,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 750,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.93094926889,
+          0.93094926889
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.033917758401,
+          0.287426288558,
+          0.58088898033,
+          0.93094926889
+        ],
+        "earlier_published_10pct_shadow_p": 0.93094926889,
+        "earlier_published_two_state_editorial_shadow_p": 0.93094926889,
+        "editorial_minus_hard_p": -0.0011056578770000103,
+        "hard_four_state_p": 0.93094926889,
+        "next_edition_editorial_kernel_p": 0.929843611013,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.033917758401,
+          0.93094926889
+        ]
+      },
+      {
+        "GWNO": 760,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.016457757142,
+          0.041071407815
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.016457757142,
+          0.262594263873,
+          0.563656019941,
+          0.815595522867
+        ],
+        "earlier_published_10pct_shadow_p": 0.041071407815,
+        "earlier_published_two_state_editorial_shadow_p": 0.01661641316,
+        "editorial_minus_hard_p": 0.0002796483459999999,
+        "hard_four_state_p": 0.016457757142,
+        "next_edition_editorial_kernel_p": 0.016737405488,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.016457757142,
+          0.815595522867
+        ]
+      },
+      {
+        "GWNO": 770,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.915091725578,
+          0.915091725578
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.117899153312,
+          0.350517379005,
+          0.651172626916,
+          0.915091725578
+        ],
+        "earlier_published_10pct_shadow_p": 0.915091725578,
+        "earlier_published_two_state_editorial_shadow_p": 0.915091725578,
+        "editorial_minus_hard_p": -0.0009585367819999746,
+        "hard_four_state_p": 0.915091725578,
+        "next_edition_editorial_kernel_p": 0.914133188796,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.117899153312,
+          0.915091725578
+        ]
+      },
+      {
+        "GWNO": 771,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.050242257569,
+          0.06636039748
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.050242257569,
+          0.211423656682,
+          0.515932638022,
+          0.811424150616
+        ],
+        "earlier_published_10pct_shadow_p": 0.06636039748,
+        "earlier_published_two_state_editorial_shadow_p": 0.050346152758,
+        "editorial_minus_hard_p": 0.0002108880130000032,
+        "hard_four_state_p": 0.050242257569,
+        "next_edition_editorial_kernel_p": 0.050453145582,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.050242257569,
+          0.811424150616
+        ]
+      },
+      {
+        "GWNO": 775,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.913461006508,
+          0.913461006508
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.034401290646,
+          0.299121607462,
+          0.662457688476,
+          0.913461006508
+        ],
+        "earlier_published_10pct_shadow_p": 0.913461006508,
+        "earlier_published_two_state_editorial_shadow_p": 0.913461006508,
+        "editorial_minus_hard_p": -0.0010344750290000038,
+        "hard_four_state_p": 0.913461006508,
+        "next_edition_editorial_kernel_p": 0.912426531479,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.034401290646,
+          0.913461006508
+        ]
+      },
+      {
+        "GWNO": 780,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.020067441761,
+          0.05157282739
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.020067441761,
+          0.335121298046,
+          0.572340708074,
+          0.808759284386
+        ],
+        "earlier_published_10pct_shadow_p": 0.05157282739,
+        "earlier_published_two_state_editorial_shadow_p": 0.020270520903,
+        "editorial_minus_hard_p": 0.0003243040049999979,
+        "hard_four_state_p": 0.020067441761,
+        "next_edition_editorial_kernel_p": 0.020391745766,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.020067441761,
+          0.808759284386
+        ]
+      },
+      {
+        "GWNO": 781,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 790,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.057907086443,
+          0.079855726783
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.057907086443,
+          0.277393489845,
+          0.599302108761,
+          0.811346168002
+        ],
+        "earlier_published_10pct_shadow_p": 0.079855726783,
+        "earlier_published_two_state_editorial_shadow_p": 0.058048564192,
+        "editorial_minus_hard_p": 0.00025934295399999974,
+        "hard_four_state_p": 0.057907086443,
+        "next_edition_editorial_kernel_p": 0.058166429397,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.057907086443,
+          0.811346168002
+        ]
+      },
+      {
+        "GWNO": 800,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.864755057254,
+          0.864755057254
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.056302955547,
+          0.300750098472,
+          0.684827787101,
+          0.864755057254
+        ],
+        "earlier_published_10pct_shadow_p": 0.864755057254,
+        "earlier_published_two_state_editorial_shadow_p": 0.864755057254,
+        "editorial_minus_hard_p": -0.0009326354370000622,
+        "hard_four_state_p": 0.864755057254,
+        "next_edition_editorial_kernel_p": 0.863822421817,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.056302955547,
+          0.864755057254
+        ]
+      },
+      {
+        "GWNO": 811,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.815286013312,
+          0.815286013312
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.067257535278,
+          0.253252437124,
+          0.562460048911,
+          0.815286013312
+        ],
+        "earlier_published_10pct_shadow_p": 0.815286013312,
+        "earlier_published_two_state_editorial_shadow_p": 0.815286013312,
+        "editorial_minus_hard_p": -0.0009349182919999866,
+        "hard_four_state_p": 0.815286013312,
+        "next_edition_editorial_kernel_p": 0.81435109502,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.067257535278,
+          0.815286013312
+        ]
+      },
+      {
+        "GWNO": 812,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.016992340272,
+          0.041569696605
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.016992340272,
+          0.262765903602,
+          0.575045815223,
+          0.743824904767
+        ],
+        "earlier_published_10pct_shadow_p": 0.041569696605,
+        "earlier_published_two_state_editorial_shadow_p": 0.017150762343,
+        "editorial_minus_hard_p": 0.00027744419000000006,
+        "hard_four_state_p": 0.016992340272,
+        "next_edition_editorial_kernel_p": 0.017269784462,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.016992340272,
+          0.743824904767
+        ]
+      },
+      {
+        "GWNO": 816,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 820,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.046167117995,
+          0.067998230422
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.046167117995,
+          0.264478242264,
+          0.526237961154,
+          0.81424030468
+        ],
+        "earlier_published_10pct_shadow_p": 0.067998230422,
+        "earlier_published_two_state_editorial_shadow_p": 0.046307838177,
+        "editorial_minus_hard_p": 0.00025018990299999905,
+        "hard_four_state_p": 0.046167117995,
+        "next_edition_editorial_kernel_p": 0.046417307898,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.046167117995,
+          0.81424030468
+        ]
+      },
+      {
+        "GWNO": 830,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 835,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 840,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.925263747475,
+          0.925263747475
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.034034194378,
+          0.290221756026,
+          0.605622882326,
+          0.925263747475
+        ],
+        "earlier_published_10pct_shadow_p": 0.925263747475,
+        "earlier_published_two_state_editorial_shadow_p": 0.925263747475,
+        "editorial_minus_hard_p": -0.0010842019460000074,
+        "hard_four_state_p": 0.925263747475,
+        "next_edition_editorial_kernel_p": 0.924179545529,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.034034194378,
+          0.925263747475
+        ]
+      },
+      {
+        "GWNO": 850,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.812078166427,
+          0.812078166427
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.059566958562,
+          0.343086245092,
+          0.642927855376,
+          0.812078166427
+        ],
+        "earlier_published_10pct_shadow_p": 0.812078166427,
+        "earlier_published_two_state_editorial_shadow_p": 0.812078166427,
+        "editorial_minus_hard_p": -0.0008102426170000232,
+        "hard_four_state_p": 0.812078166427,
+        "next_edition_editorial_kernel_p": 0.81126792381,
+        "origin_year": 2025,
+        "recorded_origin_state": 3,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.059566958562,
+          0.812078166427
+        ]
+      },
+      {
+        "GWNO": 860,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.015717032905,
+          0.04218642508
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.015717032905,
+          0.280410954657,
+          0.566094733583,
+          0.816120410135
+        ],
+        "earlier_published_10pct_shadow_p": 0.04218642508,
+        "earlier_published_two_state_editorial_shadow_p": 0.015887650764,
+        "editorial_minus_hard_p": 0.0002921446440000003,
+        "hard_four_state_p": 0.015717032905,
+        "next_edition_editorial_kernel_p": 0.016009177549,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.015717032905,
+          0.816120410135
+        ]
+      },
+      {
+        "GWNO": 900,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.016457757142,
+          0.041071407815
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.016457757142,
+          0.262594263873,
+          0.563656019941,
+          0.815595522867
+        ],
+        "earlier_published_10pct_shadow_p": 0.041071407815,
+        "earlier_published_two_state_editorial_shadow_p": 0.01661641316,
+        "editorial_minus_hard_p": 0.0002796483459999999,
+        "hard_four_state_p": 0.016457757142,
+        "next_edition_editorial_kernel_p": 0.016737405488,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.016457757142,
+          0.815595522867
+        ]
+      },
+      {
+        "GWNO": 910,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.0149231939,
+          0.045383176981
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.0149231939,
+          0.319523024712,
+          0.569857251813,
+          0.817770996333
+        ],
+        "earlier_published_10pct_shadow_p": 0.045383176981,
+        "earlier_published_two_state_editorial_shadow_p": 0.015119534529,
+        "editorial_minus_hard_p": 0.00031866374700000033,
+        "hard_four_state_p": 0.0149231939,
+        "next_edition_editorial_kernel_p": 0.015241857647,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.0149231939,
+          0.817770996333
+        ]
+      },
+      {
+        "GWNO": 920,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 935,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 940,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.016457757142,
+          0.041071407815
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.016457757142,
+          0.262594263873,
+          0.563656019941,
+          0.815595522867
+        ],
+        "earlier_published_10pct_shadow_p": 0.041071407815,
+        "earlier_published_two_state_editorial_shadow_p": 0.01661641316,
+        "editorial_minus_hard_p": 0.0002796483459999999,
+        "hard_four_state_p": 0.016457757142,
+        "next_edition_editorial_kernel_p": 0.016737405488,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.016457757142,
+          0.815595522867
+        ]
+      },
+      {
+        "GWNO": 950,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 970,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 971,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 972,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 973,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 983,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 986,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.013269294946,
+          0.039939472625
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.013269294946,
+          0.279971071738,
+          0.565945469618,
+          0.816055878722
+        ],
+        "earlier_published_10pct_shadow_p": 0.039939472625,
+        "earlier_published_two_state_editorial_shadow_p": 0.013441207039,
+        "editorial_minus_hard_p": 0.0002938987700000003,
+        "hard_four_state_p": 0.013269294946,
+        "next_edition_editorial_kernel_p": 0.013563193716,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.013269294946,
+          0.816055878722
+        ]
+      },
+      {
+        "GWNO": 987,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      },
+      {
+        "GWNO": 990,
+        "adjacent_0_1_at_most_10pct_assumption_envelope": [
+          0.012092263265,
+          0.03885903366
+        ],
+        "conditional_H2_by_unobserved_initial_state": [
+          0.012092263265,
+          0.279759967212,
+          0.565873836242,
+          0.816024909405
+        ],
+        "earlier_published_10pct_shadow_p": 0.03885903366,
+        "earlier_published_two_state_editorial_shadow_p": 0.012264797981,
+        "editorial_minus_hard_p": 0.0002947425640000001,
+        "hard_four_state_p": 0.012092263265,
+        "next_edition_editorial_kernel_p": 0.012387005829,
+        "origin_year": 2025,
+        "recorded_origin_state": 0,
+        "target_year": 2027,
+        "unrestricted_latent_state_envelope": [
+          0.012092263265,
+          0.816024909405
+        ]
+      }
+    ],
+    "prospective_skill_claimed": false,
+    "source": "26.1",
+    "target_year": 2027
+  },
+  "reserved_editorial_source_pair": [
+    "25.1",
+    "26.1"
+  ],
+  "schema": "idealab.psico.geo_h2_fourstate_editorial_kernel_latent_partial_id.v1",
+  "source_four_vintage_sequence": {
+    "consecutive_reversal_events_n": 0,
+    "ever_changed_four_state_n": 22,
+    "first_and_last_disagree_n": 20,
+    "middle_different_then_returned_to_first_n": 0,
+    "observed_country_year_n": 6348,
+    "stable_across_all_four_n": 6326
+  },
+  "status": "SOURCE_OBSERVATION_MODEL_HELDOUT_VALIDATION_PLUS_UNSCORED_2027_SHADOW",
+  "training_pair_results": {
+    "23.1->24.1": {
+      "changed_four_state_records": [
+        {
+          "GWNO": 339,
+          "fatalities_earlier": 6,
+          "fatalities_later": 26,
+          "state_earlier": 1,
+          "state_later": 2,
+          "year": 1999
+        },
+        {
+          "GWNO": 432,
+          "fatalities_earlier": 99,
+          "fatalities_later": 100,
+          "state_earlier": 2,
+          "state_later": 3,
+          "year": 2016
+        },
+        {
+          "GWNO": 516,
+          "fatalities_earlier": 0,
+          "fatalities_later": 6,
+          "state_earlier": 0,
+          "state_later": 1,
+          "year": 1993
+        },
+        {
+          "GWNO": 516,
+          "fatalities_earlier": 0,
+          "fatalities_later": 2,
+          "state_earlier": 0,
+          "state_later": 1,
+          "year": 2011
+        },
+        {
+          "GWNO": 517,
+          "fatalities_earlier": 90,
+          "fatalities_later": 113,
+          "state_earlier": 2,
+          "state_later": 3,
+          "year": 1996
+        },
+        {
+          "GWNO": 517,
+          "fatalities_earlier": 0,
+          "fatalities_later": 7,
+          "state_earlier": 0,
+          "state_later": 1,
+          "year": 2021
+        },
+        {
+          "GWNO": 678,
+          "fatalities_earlier": 0,
+          "fatalities_later": 19,
+          "state_earlier": 0,
+          "state_later": 1,
+          "year": 2000
+        },
+        {
+          "GWNO": 678,
+          "fatalities_earlier": 0,
+          "fatalities_later": 2,
+          "state_earlier": 0,
+          "state_later": 1,
+          "year": 2002
+        },
+        {
+          "GWNO": 800,
+          "fatalities_earlier": 201,
+          "fatalities_later": 4,
+          "state_earlier": 3,
+          "state_later": 1,
+          "year": 1989
+        }
+      ],
+      "confusion_counts": [
+        [
+          5039,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          302,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          282,
+          2
+        ],
+        [
+          0,
+          1,
+          0,
+          716
+        ]
+      ],
+      "total_exposures": 6348
+    },
+    "24.1->25.1": {
+      "changed_four_state_records": [
+        {
+          "GWNO": 101,
+          "fatalities_earlier": 0,
+          "fatalities_later": 1,
+          "state_earlier": 0,
+          "state_later": 1,
+          "year": 2021
+        },
+        {
+          "GWNO": 702,
+          "fatalities_earlier": 0,
+          "fatalities_later": 52,
+          "state_earlier": 0,
+          "state_later": 2,
+          "year": 2018
+        },
+        {
+          "GWNO": 702,
+          "fatalities_earlier": 4,
+          "fatalities_later": 53,
+          "state_earlier": 1,
+          "state_later": 2,
+          "year": 2019
+        },
+        {
+          "GWNO": 850,
+          "fatalities_earlier": 16,
+          "fatalities_later": 34,
+          "state_earlier": 1,
+          "state_later": 2,
+          "year": 2019
+        },
+        {
+          "GWNO": 850,
+          "fatalities_earlier": 21,
+          "fatalities_later": 31,
+          "state_earlier": 1,
+          "state_later": 2,
+          "year": 2020
+        }
+      ],
+      "confusion_counts": [
+        [
+          5037,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          305,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          283,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          718
+        ]
+      ],
+      "total_exposures": 6348
+    }
+  },
+  "training_source_pairs": [
+    [
+      "23.1",
+      "24.1"
+    ],
+    [
+      "24.1",
+      "25.1"
+    ]
+  ]
+}
