@@ -104,6 +104,7 @@ def parse_ged_source(raw):
     raw_case_rows={key:0 for key in target}
     rejected={key:0 for key in target}
     excluded_non_statebased={key:0 for key in target}
+    statebased_rejected_examples={key:[] for key in target}
     with ZipFile(io.BytesIO(raw)) as z:
         candidates=[x for x in z.infolist()
                     if x.filename.lower().endswith(".csv")
@@ -136,6 +137,11 @@ def parse_ged_source(raw):
                 event=eligible_ged_event(row)
                 if event is None:
                     rejected[key]+=1
+                    if len(statebased_rejected_examples[key])<10:
+                        statebased_rejected_examples[key].append({
+                            k:row.get(k,"") for k in
+                            ("id","best","date_start","date_end",
+                             "latitude","longitude","type_of_violence")})
                     continue
                 bycase[key].append(event)
     if total<100_000:
@@ -158,6 +164,7 @@ def parse_ged_source(raw):
             "single_day_point_eligible_n":len(bycase[key]),
             "ineligible_statebased_events_n":rejected[key],
             "excluded_non_statebased_events_n":excluded_non_statebased[key],
+            "ineligible_statebased_event_examples":statebased_rejected_examples[key],
             "selected":chosen,
         }
     return {"sha256":actual,"zip_bytes":len(raw),
@@ -319,6 +326,8 @@ def analyze(ged,gdelt_daily,anchor):
                          info["single_day_point_eligible_n"],
                      "GED_case_excluded_non_statebased_events_n":
                          info["excluded_non_statebased_events_n"],
+                     "GED_case_ineligible_statebased_event_examples":
+                         info["ineligible_statebased_event_examples"],
                      "GED_case_no_eligible_point_date":
                          len(info["selected"])==0,
                      "sample_rule":"top best deaths, at most 2 distinct single-day geocoded GED25.1 state-based (type-1) events",
