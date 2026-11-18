@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Audit UCDP GED event dates against independent GDELT 1.0 news-event files.
 
-Three PRESELECTED country-year revision cases: Rwanda 2021, Burundi 2022,
+Three PRESELECTED country-year state-based revision cases: Rwanda 2021, Burundi 2022,
 Venezuela 2021. Select at most two highest-'best deaths', distinct-date,
-single-day geolocated GED events, using official GED25.1 (no outcome-driven
+single-day geolocated GED type-1 (state-based) events, using official GED25.1 (no outcome-driven
 sample tuning). For each date read GDELT daily news-coded event zip and next
 day (coverage of news reported late), and compare violent CAMEO roots
 18/19/20, country and <=100km. Report near misses, no matches, and archive
@@ -83,7 +83,7 @@ def eligible_ged_event(row):
     except (ValueError,TypeError,OverflowError):
         return None
     if (start!=end or start.year!=year or
-        not 1<=best<=1_000_000 or typ not in (1,2,3)
+        not 1<=best<=1_000_000 or typ!=1
         or not -90<=lat<=90 or not -180<=lon<=180
         or eid<=0 or cid<=0):
         return None
@@ -103,6 +103,7 @@ def parse_ged_source(raw):
     bycase={key:[] for key in target}
     raw_case_rows={key:0 for key in target}
     rejected={key:0 for key in target}
+    excluded_non_statebased={key:0 for key in target}
     with ZipFile(io.BytesIO(raw)) as z:
         candidates=[x for x in z.infolist()
                     if x.filename.lower().endswith(".csv")
@@ -129,6 +130,9 @@ def parse_ged_source(raw):
                 if key not in bycase:
                     continue
                 raw_case_rows[key]+=1
+                if row["type_of_violence"].strip()!="1":
+                    excluded_non_statebased[key]+=1
+                    continue
                 event=eligible_ged_event(row)
                 if event is None:
                     rejected[key]+=1
@@ -152,7 +156,8 @@ def parse_ged_source(raw):
         selection[key]={
             "all_case_ged_events_n":raw_case_rows[key],
             "single_day_point_eligible_n":len(bycase[key]),
-            "ineligible_case_ged_events_n":rejected[key],
+            "ineligible_statebased_events_n":rejected[key],
+            "excluded_non_statebased_events_n":excluded_non_statebased[key],
             "selected":chosen,
         }
     return {"sha256":actual,"zip_bytes":len(raw),
@@ -312,9 +317,11 @@ def analyze(ged,gdelt_daily,anchor):
                      "GED_case_raw_events_n":info["all_case_ged_events_n"],
                      "GED_case_point_dated_eligible_n":
                          info["single_day_point_eligible_n"],
+                     "GED_case_excluded_non_statebased_events_n":
+                         info["excluded_non_statebased_events_n"],
                      "GED_case_no_eligible_point_date":
                          len(info["selected"])==0,
-                     "sample_rule":"top best deaths, at most 2 distinct single-day geocoded GED25.1 events",
+                     "sample_rule":"top best deaths, at most 2 distinct single-day geocoded GED25.1 state-based (type-1) events",
                      "sampled_events":outcomes,
                      "has_any_geographic_media_footprint":any(
                          x["violent_same_date_near100km_n"]>0 for x in outcomes)})
@@ -344,7 +351,7 @@ def analyze(ged,gdelt_daily,anchor):
         "event_identity_certified":False,
         "historical_origin_date_asof_prospectivity_claimed":False,
         "GEO2027_or_GEO2028_original_issues_modified":False,
-        "limitations":"Only top two dated point-geolocated GED25.1 events per prespecified revision case, not exhaustive annual matching. GDELT daily 1.0 media coding may miss events, report with lag, geolocate inaccurately, and count news about nonfatal violence. Violent CAMEO 18/19/20 + same date + <=100km is candidate co-occurrence, not independently verified event identity or fatalities; no match does NOT show no violence. UCDP GED and CY are one institution. Date of later GED edition postdates event year.",
+        "limitations":"Only top two dated point-geolocated GED25.1 state-based type-1 events per prespecified revision case, not exhaustive annual matching. Nonstate violence types 2 and 3 are excluded because the original forecast target is sb_total_deaths_best. GDELT daily 1.0 media coding may miss events, report with lag, geolocate inaccurately, and count news about nonfatal violence. Violent CAMEO 18/19/20 + same date + <=100km is candidate co-occurrence, not independently verified event identity or fatalities; no match does NOT show no violence. UCDP GED and CY are one institution. Date of later GED edition postdates event year.",
     }
 
 
