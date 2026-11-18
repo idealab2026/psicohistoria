@@ -46,3 +46,52 @@ Se almacenan por país la mezcla editorial, las cuatro probabilidades condiciona
 ## Condiciones de aprobación
 
 SHA-256 de las cuatro ediciones oficiales, 199 países en el prior global, cohorte fija de 196 países, corte temporal sin fuga, reproducción exacta del modelo y las sombras 2027 anteriores, pruebas del caso de reversión, evaluación reservada y auditoría pública institucional de privacidad. El informe numérico definitivo `data/geo-h2-fourstate-observation-kernel-latent-bounds-2027.json` se fija después de la primera ejecución de CI; se publica solo tras nueva reproducción.
+
+## Resultados reproducidos
+
+La auditoría SHA de UCDP23.1, 24.1, 25.1 y 26.1 sobre los **6.348 mismos país-años históricos** (años ≤2021) muestra que **6.326** mantuvieron su misma categoría de intensidad en las cuatro ediciones. Hubo **22** país-años con al menos una reclasificación 4-state y **20** con discrepancia entre primera y última edición. No se observó ninguna reversión inmediata A→B→A de categoría en estos registros. Esto **no convierte** la edición final en verdad histórica.
+
+### Matriz empírica del entrenamiento
+
+Cada fila corresponde al estado registrado en la edición anterior y cada columna al estado en la siguiente. La tabla combina las ediciones **23.1→24.1 y 24.1→25.1**; aún no aplica los pseudoconteos Dirichlet de la matriz de probabilidades.
+
+| Estado anterior | Nuevo 0 | Nuevo 1 (1–24) | Nuevo 2 (25–99) | Nuevo 3 (≥100) |
+|---|---:|---:|---:|---:|
+| 0 | 10.076 | 6 | 1 | 0 |
+| 1 | 0 | 607 | 4 | 0 |
+| 2 | 0 | 0 | 565 | 2 |
+| 3 | 0 | 1 | 0 | 1.434 |
+
+Se estima de esta matriz un kernel estocástico de **próxima edición registrada** mediante Dirichlet(0,5). Nunca se interpreta como una matriz de errores del estado histórico real.
+
+### Contrastación fuera del par de ediciones de entrenamiento
+
+El par reservado **25.1→26.1** muestra **10 cambios entre estados en 6.348 exposiciones** (0,1575 %). Las tasas observadas de cambio de categoría no son uniformes:
+
+| Estado inicial | Tasa de cambio prevista por kernel | Tasa observada en par reservado |
+|---|---:|---:|
+| 0 fallecidos | 0,0843 % | 0,0794 % |
+| 1–24 fallecidos | 0,8972 % | 1,3072 % |
+| 25–99 fallecidos | 0,6151 % | 0,6969 % |
+| ≥100 fallecidos | 0,1740 % | 0 % |
+
+Sobre las **cuatro clases registradas**, el *log-loss* multinomial medio en el par reservado es **0,0119531** y el Brier multicategoría medio **0,00313734**. La escasez de revisiones y las dependencias entre ediciones impiden afirmar calibración estadística robusta o independencia de la muestra.
+
+### Identificación parcial: ilustración con dos países
+
+Para la nueva sombra 2027 calculada con UCDP26.1, el Markov original se mantiene inalterado. El kernel de revisión genera una probabilidad experimental adicional, distinta de la del 10% fijo y distinta de la sombra editorial binaria anterior.
+
+| GWNO | Riesgo H2 estado registrado | Sombra kernel editorial 4×4 | Banda latente sin supuestos | Banda con supuesto de ≤10 % de masa 0↔1 |
+|---|---:|---:|---|---|
+| 2 | 4,5388 % | 4,5652 % | [4,5388 %, 74,4998 %] | [4,5388 %, 6,9253 %] |
+| 517 | 23,9089 % | 24,1780 % | [16,0738 %, 68,9131 %] | [23,1254 %, 23,9089 %] |
+
+La banda sin supuestos es amplia **porque el estado verdadero no está identificado**. La banda pequeña no es un intervalo de confianza: exige la hipótesis no verificada de masa contigua máxima de 10%, además de estados 2/3 exactos. La sombra del kernel puede quedar **fuera de la banda estrecha**, ya que modela transiciones editoriales entre los cuatro estados, no se limita a la vecindad 0↔1.
+
+[Informe JSON completo, matrices, reservas y 196 sombras](../data/geo-h2-fourstate-observation-kernel-latent-bounds-2027.json) · [Script de reconstrucción](../scripts/experiment_geo_h2_fourstate_observation_identifiability.py) · [Pruebas](../scripts/test_experiment_geo_h2_fourstate_observation_identifiability.py).
+
+### Decisión científica
+
+El kernel de próxima edición está estimado y se puede contrastar con un par reservado, pero **no estima P(estado verdadero | estado registrado)**. Esta última magnitud requeriría una referencia independiente, supuestos de independencia condicional contrastables o un diseño de medición adicional. Sin tal información, un modelo latente aparentemente más preciso podría esconder parámetros imposibles de identificar.
+
+Este avance no justifica sustituir el H2 original ni elegir pesos con resultados retrospectivos; permite registrar escenarios prospectivos separados y comunicar cuándo un intervalo procede de datos y cuándo de supuestos.
