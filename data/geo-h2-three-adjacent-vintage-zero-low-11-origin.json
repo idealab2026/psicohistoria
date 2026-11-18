@@ -1,0 +1,2868 @@
+{
+  "country_year_pair_evaluations_n": 6468,
+  "fixed_target_release": "26.1",
+  "folds": [
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.0012115559789999675,
+      "mean_shapley_brier_other": -0.00008257620317872131,
+      "mean_shapley_brier_zero_low": 0.000007645264184249015,
+      "mean_shapley_p_zero_low": -0.00016048565830612213,
+      "new_four_state_brier_fixed_26_1": 0.046426124805478225,
+      "old_four_state_brier_fixed_26_1": 0.0465010557444727,
+      "origin_year": 2012,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "23.1->24.1",
+      "target_year": 2014,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 501,
+          "effect": 0.0012115559789999675,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.515770302903,
+          "p_old": 0.520503277287
+        },
+        {
+          "GWNO": 616,
+          "effect": -0.0011482121755000407,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.278854334856,
+          "p_old": 0.279572227506
+        },
+        {
+          "GWNO": 620,
+          "effect": -0.001102393575499988,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.290423613979,
+          "p_old": 0.291134866412
+        },
+        {
+          "GWNO": 436,
+          "effect": -0.0010737698209999924,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.328547445197,
+          "p_old": 0.329307447975
+        },
+        {
+          "GWNO": 541,
+          "effect": -0.0010550540709999834,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.261533406482,
+          "p_old": 0.262244964357
+        }
+      ],
+      "training_death_count_revision_n": 56,
+      "training_four_state_revision_n": 7,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 6,
+          "old": 0,
+          "year": 1993
+        },
+        {
+          "GWNO": 516,
+          "new": 2,
+          "old": 0,
+          "year": 2011
+        },
+        {
+          "GWNO": 678,
+          "new": 19,
+          "old": 0,
+          "year": 2000
+        },
+        {
+          "GWNO": 678,
+          "new": 2,
+          "old": 0,
+          "year": 2002
+        }
+      ],
+      "training_zero_low_revision_n": 4
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.052540416585,
+      "mean_shapley_brier_other": -0.00009227448668440991,
+      "mean_shapley_brier_zero_low": 0.00048359236217436946,
+      "mean_shapley_p_zero_low": -0.00040065174280612127,
+      "new_four_state_brier_fixed_26_1": 0.05359285946186078,
+      "old_four_state_brier_fixed_26_1": 0.05320154158637082,
+      "origin_year": 2013,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "23.1->24.1",
+      "target_year": 2015,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 516,
+          "effect": -0.052540416585,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.062167572233,
+          "p_old": 0.114504960302
+        },
+        {
+          "GWNO": 640,
+          "effect": -0.0013325490870000067,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.300777835781,
+          "p_old": 0.301700784625
+        },
+        {
+          "GWNO": 616,
+          "effect": 0.001324305729999975,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.526901421375,
+          "p_old": 0.531472291897
+        },
+        {
+          "GWNO": 620,
+          "effect": 0.0012718335214999543,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.523909757114,
+          "p_old": 0.528228760734
+        },
+        {
+          "GWNO": 541,
+          "effect": 0.0012557710620000329,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.519690513649,
+          "p_old": 0.524292731405
+        }
+      ],
+      "training_death_count_revision_n": 58,
+      "training_four_state_revision_n": 7,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 6,
+          "old": 0,
+          "year": 1993
+        },
+        {
+          "GWNO": 516,
+          "new": 2,
+          "old": 0,
+          "year": 2011
+        },
+        {
+          "GWNO": 678,
+          "new": 19,
+          "old": 0,
+          "year": 2000
+        },
+        {
+          "GWNO": 678,
+          "new": 2,
+          "old": 0,
+          "year": 2002
+        }
+      ],
+      "training_zero_low_revision_n": 4
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.009869732502500006,
+      "mean_shapley_brier_other": 0.00006842833357534497,
+      "mean_shapley_brier_zero_low": 0.00003775224023730573,
+      "mean_shapley_p_zero_low": -0.000051885554563773384,
+      "new_four_state_brier_fixed_26_1": 0.05828103712209537,
+      "old_four_state_brier_fixed_26_1": 0.05817485654828272,
+      "origin_year": 2014,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "23.1->24.1",
+      "target_year": 2016,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 516,
+          "effect": 0.009869732502500006,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.542700265739,
+          "p_old": 0.537659198718
+        },
+        {
+          "GWNO": 616,
+          "effect": 0.0012203816685000257,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.540712671524,
+          "p_old": 0.545094290065
+        },
+        {
+          "GWNO": 640,
+          "effect": -0.0012115742194999946,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.29626282572,
+          "p_old": 0.297150852442
+        },
+        {
+          "GWNO": 541,
+          "effect": 0.0011570623564999827,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.533846155644,
+          "p_old": 0.538252350771
+        },
+        {
+          "GWNO": 501,
+          "effect": 0.0010590475155000112,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.549144119957,
+          "p_old": 0.55353818352
+        }
+      ],
+      "training_death_count_revision_n": 63,
+      "training_four_state_revision_n": 7,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 6,
+          "old": 0,
+          "year": 1993
+        },
+        {
+          "GWNO": 516,
+          "new": 2,
+          "old": 0,
+          "year": 2011
+        },
+        {
+          "GWNO": 678,
+          "new": 19,
+          "old": 0,
+          "year": 2000
+        },
+        {
+          "GWNO": 678,
+          "new": 2,
+          "old": 0,
+          "year": 2002
+        }
+      ],
+      "training_zero_low_revision_n": 4
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.0019237510745000463,
+      "mean_shapley_brier_other": 0.000056992675784182614,
+      "mean_shapley_brier_zero_low": -0.00004344292536837301,
+      "mean_shapley_p_zero_low": -0.00011331960538520542,
+      "new_four_state_brier_fixed_26_1": 0.02923005581757325,
+      "old_four_state_brier_fixed_26_1": 0.02921650606715744,
+      "origin_year": 2015,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "23.1->24.1",
+      "target_year": 2017,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 516,
+          "effect": -0.0019237510745000463,
+          "origin_state_new": 3,
+          "origin_state_old": 3,
+          "p_new": 0.766590128188,
+          "p_old": 0.767399538844
+        },
+        {
+          "GWNO": 663,
+          "effect": -0.0012231412105000172,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.296052066231,
+          "p_old": 0.296842686788
+        },
+        {
+          "GWNO": 220,
+          "effect": -0.001144036467499998,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.278137319908,
+          "p_old": 0.278917834167
+        },
+        {
+          "GWNO": 616,
+          "effect": 0.0011317076485000133,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.559618258519,
+          "p_old": 0.5638262721
+        },
+        {
+          "GWNO": 703,
+          "effect": -0.0010815114225000422,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.311295058305,
+          "p_old": 0.311827152107
+        }
+      ],
+      "training_death_count_revision_n": 66,
+      "training_four_state_revision_n": 7,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 6,
+          "old": 0,
+          "year": 1993
+        },
+        {
+          "GWNO": 516,
+          "new": 2,
+          "old": 0,
+          "year": 2011
+        },
+        {
+          "GWNO": 678,
+          "new": 19,
+          "old": 0,
+          "year": 2000
+        },
+        {
+          "GWNO": 678,
+          "new": 2,
+          "old": 0,
+          "year": 2002
+        }
+      ],
+      "training_zero_low_revision_n": 4
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.0012575773355000819,
+      "mean_shapley_brier_other": -0.0009150317656824146,
+      "mean_shapley_brier_zero_low": 0.000010429519940206437,
+      "mean_shapley_p_zero_low": -0.00005461430706122531,
+      "new_four_state_brier_fixed_26_1": 0.05254692625011843,
+      "old_four_state_brier_fixed_26_1": 0.05345152849586064,
+      "origin_year": 2016,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "23.1->24.1",
+      "target_year": 2018,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 663,
+          "effect": 0.0012575773355000819,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.54265643093,
+          "p_old": 0.546826174785
+        },
+        {
+          "GWNO": 211,
+          "effect": -0.0011982606034999788,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.298728113728,
+          "p_old": 0.299523624505
+        },
+        {
+          "GWNO": 615,
+          "effect": 0.0011401896525000121,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.58347159674,
+          "p_old": 0.587784803511
+        },
+        {
+          "GWNO": 616,
+          "effect": 0.001037634020999989,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.578194287482,
+          "p_old": 0.582156297253
+        },
+        {
+          "GWNO": 100,
+          "effect": 0.001034836869500011,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.552651615973,
+          "p_old": 0.557494198631
+        }
+      ],
+      "training_death_count_revision_n": 69,
+      "training_four_state_revision_n": 8,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 6,
+          "old": 0,
+          "year": 1993
+        },
+        {
+          "GWNO": 516,
+          "new": 2,
+          "old": 0,
+          "year": 2011
+        },
+        {
+          "GWNO": 678,
+          "new": 19,
+          "old": 0,
+          "year": 2000
+        },
+        {
+          "GWNO": 678,
+          "new": 2,
+          "old": 0,
+          "year": 2002
+        }
+      ],
+      "training_zero_low_revision_n": 4
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.0014082606670000053,
+      "mean_shapley_brier_other": -0.00008672127990683463,
+      "mean_shapley_brier_zero_low": 0.000021974621271993513,
+      "mean_shapley_p_zero_low": -0.00008984545865306128,
+      "new_four_state_brier_fixed_26_1": 0.04802788391553629,
+      "old_four_state_brier_fixed_26_1": 0.04809263057417113,
+      "origin_year": 2017,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "23.1->24.1",
+      "target_year": 2019,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 516,
+          "effect": 0.0014082606670000053,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.372715195648,
+          "p_old": 0.371185956615
+        },
+        {
+          "GWNO": 100,
+          "effect": -0.0013136670624999958,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.299959784789,
+          "p_old": 0.301164297923
+        },
+        {
+          "GWNO": 439,
+          "effect": -0.0011832123459999955,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.297409021219,
+          "p_old": 0.29846687414
+        },
+        {
+          "GWNO": 820,
+          "effect": -0.001165964096999983,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.299247293247,
+          "p_old": 0.300318823701
+        },
+        {
+          "GWNO": 616,
+          "effect": -0.0010998094795000024,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.323962849312,
+          "p_old": 0.324914756286
+        }
+      ],
+      "training_death_count_revision_n": 73,
+      "training_four_state_revision_n": 8,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 6,
+          "old": 0,
+          "year": 1993
+        },
+        {
+          "GWNO": 516,
+          "new": 2,
+          "old": 0,
+          "year": 2011
+        },
+        {
+          "GWNO": 678,
+          "new": 19,
+          "old": 0,
+          "year": 2000
+        },
+        {
+          "GWNO": 678,
+          "new": 2,
+          "old": 0,
+          "year": 2002
+        }
+      ],
+      "training_zero_low_revision_n": 4
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.0018169503945000276,
+      "mean_shapley_brier_other": 0.00011965138886832007,
+      "mean_shapley_brier_zero_low": -0.000059321708088599816,
+      "mean_shapley_p_zero_low": -0.00008763406801275414,
+      "new_four_state_brier_fixed_26_1": 0.0321168446079573,
+      "old_four_state_brier_fixed_26_1": 0.03205651492717758,
+      "origin_year": 2018,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "23.1->24.1",
+      "target_year": 2020,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 516,
+          "effect": 0.0018169503945000276,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.368366834636,
+          "p_old": 0.36647235844
+        },
+        {
+          "GWNO": 900,
+          "effect": -0.001187489201000036,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.29976528819,
+          "p_old": 0.300828493555
+        },
+        {
+          "GWNO": 530,
+          "effect": -0.0011628483064999862,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.368165258249,
+          "p_old": 0.368578493827
+        },
+        {
+          "GWNO": 439,
+          "effect": 0.0011229054015000073,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.531835841357,
+          "p_old": 0.537607879173
+        },
+        {
+          "GWNO": 211,
+          "effect": -0.0011103068284999962,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.281542310731,
+          "p_old": 0.282578949639
+        }
+      ],
+      "training_death_count_revision_n": 78,
+      "training_four_state_revision_n": 8,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 6,
+          "old": 0,
+          "year": 1993
+        },
+        {
+          "GWNO": 516,
+          "new": 2,
+          "old": 0,
+          "year": 2011
+        },
+        {
+          "GWNO": 678,
+          "new": 19,
+          "old": 0,
+          "year": 2000
+        },
+        {
+          "GWNO": 678,
+          "new": 2,
+          "old": 0,
+          "year": 2002
+        }
+      ],
+      "training_zero_low_revision_n": 4
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.0030845307470000194,
+      "mean_shapley_brier_other": -0.00004164441040281109,
+      "mean_shapley_brier_zero_low": 5.227974157585534e-7,
+      "mean_shapley_p_zero_low": -0.0000888519150127538,
+      "new_four_state_brier_fixed_26_1": 0.03172252548252682,
+      "old_four_state_brier_fixed_26_1": 0.031763647095513874,
+      "origin_year": 2019,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "23.1->24.1",
+      "target_year": 2021,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 516,
+          "effect": 0.0030845307470000194,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.360270499858,
+          "p_old": 0.357150426188
+        },
+        {
+          "GWNO": 625,
+          "effect": -0.00113537672249997,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.30393872767,
+          "p_old": 0.305032969585
+        },
+        {
+          "GWNO": 615,
+          "effect": -0.0011244100935000056,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.336615251078,
+          "p_old": 0.33761267826
+        },
+        {
+          "GWNO": 130,
+          "effect": -0.0009749947170000217,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.281258146379,
+          "p_old": 0.282200544626
+        },
+        {
+          "GWNO": 616,
+          "effect": -0.0008942804375000057,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.311194774922,
+          "p_old": 0.312047620926
+        }
+      ],
+      "training_death_count_revision_n": 81,
+      "training_four_state_revision_n": 8,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 6,
+          "old": 0,
+          "year": 1993
+        },
+        {
+          "GWNO": 516,
+          "new": 2,
+          "old": 0,
+          "year": 2011
+        },
+        {
+          "GWNO": 678,
+          "new": 19,
+          "old": 0,
+          "year": 2000
+        },
+        {
+          "GWNO": 678,
+          "new": 2,
+          "old": 0,
+          "year": 2002
+        }
+      ],
+      "training_zero_low_revision_n": 4
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.00904299618300003,
+      "mean_shapley_brier_other": -0.00007429198320902452,
+      "mean_shapley_brier_zero_low": 0.000060068436150862525,
+      "mean_shapley_p_zero_low": -0.000035266788170917255,
+      "new_four_state_brier_fixed_26_1": 0.05002645847966353,
+      "old_four_state_brier_fixed_26_1": 0.05004068202672168,
+      "origin_year": 2020,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "23.1->24.1",
+      "target_year": 2022,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 516,
+          "effect": 0.00904299618300003,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.564657973553,
+          "p_old": 0.560475011687
+        },
+        {
+          "GWNO": 434,
+          "effect": -0.001029451665000014,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.298641284071,
+          "p_old": 0.299584781432
+        },
+        {
+          "GWNO": 625,
+          "effect": 0.000991038197500016,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.555481203988,
+          "p_old": 0.561313370967
+        },
+        {
+          "GWNO": 100,
+          "effect": 0.0009261027589999582,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.534712003712,
+          "p_old": 0.540351146322
+        },
+        {
+          "GWNO": 600,
+          "effect": -0.0009200859624999835,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.277497647861,
+          "p_old": 0.278380996437
+        }
+      ],
+      "training_death_count_revision_n": 86,
+      "training_four_state_revision_n": 8,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 6,
+          "old": 0,
+          "year": 1993
+        },
+        {
+          "GWNO": 516,
+          "new": 2,
+          "old": 0,
+          "year": 2011
+        },
+        {
+          "GWNO": 678,
+          "new": 19,
+          "old": 0,
+          "year": 2000
+        },
+        {
+          "GWNO": 678,
+          "new": 2,
+          "old": 0,
+          "year": 2002
+        }
+      ],
+      "training_zero_low_revision_n": 4
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        517,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.11243702463300001,
+      "mean_shapley_brier_other": 0.00002583572459535939,
+      "mean_shapley_brier_zero_low": 0.0002183904289596123,
+      "mean_shapley_p_zero_low": 0.0004997690339642839,
+      "new_four_state_brier_fixed_26_1": 0.038848592066495505,
+      "old_four_state_brier_fixed_26_1": 0.03860436591294053,
+      "origin_year": 2021,
+      "origin_zero_low_reclassified_GWNO": [
+        517
+      ],
+      "source_pair": "23.1->24.1",
+      "target_year": 2023,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 517,
+          "effect": 0.11243702463300001,
+          "origin_state_new": 1,
+          "origin_state_old": 0,
+          "p_new": 0.272686169101,
+          "p_old": 0.159390196535
+        },
+        {
+          "GWNO": 516,
+          "effect": 0.0010598584369999886,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.374176161026,
+          "p_old": 0.373140238575
+        },
+        {
+          "GWNO": 615,
+          "effect": -0.0010448670984999908,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.354683388479,
+          "p_old": 0.355662402781
+        },
+        {
+          "GWNO": 500,
+          "effect": -0.0010257278935000003,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.300830193094,
+          "p_old": 0.301822967414
+        },
+        {
+          "GWNO": 510,
+          "effect": -0.0009700342325,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.298384883475,
+          "p_old": 0.299282435116
+        }
+      ],
+      "training_death_count_revision_n": 93,
+      "training_four_state_revision_n": 9,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 6,
+          "old": 0,
+          "year": 1993
+        },
+        {
+          "GWNO": 516,
+          "new": 2,
+          "old": 0,
+          "year": 2011
+        },
+        {
+          "GWNO": 517,
+          "new": 7,
+          "old": 0,
+          "year": 2021
+        },
+        {
+          "GWNO": 678,
+          "new": 19,
+          "old": 0,
+          "year": 2000
+        },
+        {
+          "GWNO": 678,
+          "new": 2,
+          "old": 0,
+          "year": 2002
+        }
+      ],
+      "training_zero_low_revision_n": 5
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        517,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.213549341091,
+      "mean_shapley_brier_other": -0.0007811420768601279,
+      "mean_shapley_brier_zero_low": 0.0005398813485655079,
+      "mean_shapley_p_zero_low": 0.0009923061457270403,
+      "new_four_state_brier_fixed_26_1": 0.04603708260243677,
+      "old_four_state_brier_fixed_26_1": 0.046278343330731386,
+      "origin_year": 2022,
+      "origin_zero_low_reclassified_GWNO": [
+        516
+      ],
+      "source_pair": "23.1->24.1",
+      "target_year": 2024,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 516,
+          "effect": 0.213549341091,
+          "origin_state_new": 1,
+          "origin_state_old": 0,
+          "p_new": 0.373848182935,
+          "p_old": 0.1603921651
+        },
+        {
+          "GWNO": 517,
+          "effect": -0.00533362327350001,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.272377303152,
+          "p_old": 0.279918090927
+        },
+        {
+          "GWNO": 434,
+          "effect": 0.000776768821000029,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.551312481561,
+          "p_old": 0.556578181117
+        },
+        {
+          "GWNO": 625,
+          "effect": 0.0006966017489999365,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.588109539106,
+          "p_old": 0.593421472222
+        },
+        {
+          "GWNO": 640,
+          "effect": 0.000693111920499978,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.585977914598,
+          "p_old": 0.591264368233
+        }
+      ],
+      "training_death_count_revision_n": 115,
+      "training_four_state_revision_n": 11,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 6,
+          "old": 0,
+          "year": 1993
+        },
+        {
+          "GWNO": 516,
+          "new": 2,
+          "old": 0,
+          "year": 2011
+        },
+        {
+          "GWNO": 516,
+          "new": 10,
+          "old": 0,
+          "year": 2022
+        },
+        {
+          "GWNO": 517,
+          "new": 7,
+          "old": 0,
+          "year": 2021
+        },
+        {
+          "GWNO": 678,
+          "new": 19,
+          "old": 0,
+          "year": 2000
+        },
+        {
+          "GWNO": 678,
+          "new": 2,
+          "old": 0,
+          "year": 2002
+        }
+      ],
+      "training_zero_low_revision_n": 6
+    },
+    {
+      "direct_zero_low_scored_GWNO": [],
+      "max_abs_shapley_p_zero_low": 0,
+      "mean_shapley_brier_other": 0,
+      "mean_shapley_brier_zero_low": 0,
+      "mean_shapley_p_zero_low": 0,
+      "new_four_state_brier_fixed_26_1": 0.046426124805478225,
+      "old_four_state_brier_fixed_26_1": 0.046426124805478225,
+      "origin_year": 2012,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "24.1->25.1",
+      "target_year": 2014,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 2,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.06061362363,
+          "p_old": 0.06061362363
+        },
+        {
+          "GWNO": 20,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.018008039399,
+          "p_old": 0.018008039399
+        },
+        {
+          "GWNO": 31,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.018008039399,
+          "p_old": 0.018008039399
+        },
+        {
+          "GWNO": 40,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.018008039399,
+          "p_old": 0.018008039399
+        },
+        {
+          "GWNO": 41,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.104535544658,
+          "p_old": 0.104535544658
+        }
+      ],
+      "training_death_count_revision_n": 41,
+      "training_four_state_revision_n": 0,
+      "training_zero_low_events": [],
+      "training_zero_low_revision_n": 0
+    },
+    {
+      "direct_zero_low_scored_GWNO": [],
+      "max_abs_shapley_p_zero_low": 0,
+      "mean_shapley_brier_other": 0,
+      "mean_shapley_brier_zero_low": 0,
+      "mean_shapley_p_zero_low": 0,
+      "new_four_state_brier_fixed_26_1": 0.05359285946186078,
+      "old_four_state_brier_fixed_26_1": 0.05359285946186078,
+      "origin_year": 2013,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "24.1->25.1",
+      "target_year": 2015,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 2,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.058934452792,
+          "p_old": 0.058934452792
+        },
+        {
+          "GWNO": 20,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.017269432318,
+          "p_old": 0.017269432318
+        },
+        {
+          "GWNO": 31,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.017269432318,
+          "p_old": 0.017269432318
+        },
+        {
+          "GWNO": 40,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.017269432318,
+          "p_old": 0.017269432318
+        },
+        {
+          "GWNO": 41,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.101808745384,
+          "p_old": 0.101808745384
+        }
+      ],
+      "training_death_count_revision_n": 42,
+      "training_four_state_revision_n": 0,
+      "training_zero_low_events": [],
+      "training_zero_low_revision_n": 0
+    },
+    {
+      "direct_zero_low_scored_GWNO": [],
+      "max_abs_shapley_p_zero_low": 0,
+      "mean_shapley_brier_other": 0,
+      "mean_shapley_brier_zero_low": 0,
+      "mean_shapley_p_zero_low": 0,
+      "new_four_state_brier_fixed_26_1": 0.05828103712209537,
+      "old_four_state_brier_fixed_26_1": 0.05828103712209537,
+      "origin_year": 2014,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "24.1->25.1",
+      "target_year": 2016,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 2,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.057875310485,
+          "p_old": 0.057875310485
+        },
+        {
+          "GWNO": 20,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.017044967724,
+          "p_old": 0.017044967724
+        },
+        {
+          "GWNO": 31,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.017044967724,
+          "p_old": 0.017044967724
+        },
+        {
+          "GWNO": 40,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.017044967724,
+          "p_old": 0.017044967724
+        },
+        {
+          "GWNO": 41,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.099827716602,
+          "p_old": 0.099827716602
+        }
+      ],
+      "training_death_count_revision_n": 44,
+      "training_four_state_revision_n": 0,
+      "training_zero_low_events": [],
+      "training_zero_low_revision_n": 0
+    },
+    {
+      "direct_zero_low_scored_GWNO": [],
+      "max_abs_shapley_p_zero_low": 0,
+      "mean_shapley_brier_other": 0,
+      "mean_shapley_brier_zero_low": 0,
+      "mean_shapley_p_zero_low": 0,
+      "new_four_state_brier_fixed_26_1": 0.02923005581757325,
+      "old_four_state_brier_fixed_26_1": 0.02923005581757325,
+      "origin_year": 2015,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "24.1->25.1",
+      "target_year": 2017,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 2,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.056869246099,
+          "p_old": 0.056869246099
+        },
+        {
+          "GWNO": 20,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.016865813521,
+          "p_old": 0.016865813521
+        },
+        {
+          "GWNO": 31,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.016865813521,
+          "p_old": 0.016865813521
+        },
+        {
+          "GWNO": 40,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.016865813521,
+          "p_old": 0.016865813521
+        },
+        {
+          "GWNO": 41,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.097911085836,
+          "p_old": 0.097911085836
+        }
+      ],
+      "training_death_count_revision_n": 50,
+      "training_four_state_revision_n": 0,
+      "training_zero_low_events": [],
+      "training_zero_low_revision_n": 0
+    },
+    {
+      "direct_zero_low_scored_GWNO": [],
+      "max_abs_shapley_p_zero_low": 0,
+      "mean_shapley_brier_other": 0,
+      "mean_shapley_brier_zero_low": 0,
+      "mean_shapley_p_zero_low": 0,
+      "new_four_state_brier_fixed_26_1": 0.05254692625011843,
+      "old_four_state_brier_fixed_26_1": 0.05254692625011843,
+      "origin_year": 2016,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "24.1->25.1",
+      "target_year": 2018,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 2,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.055673998827,
+          "p_old": 0.055673998827
+        },
+        {
+          "GWNO": 20,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.016484949855,
+          "p_old": 0.016484949855
+        },
+        {
+          "GWNO": 31,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.016484949855,
+          "p_old": 0.016484949855
+        },
+        {
+          "GWNO": 40,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.016484949855,
+          "p_old": 0.016484949855
+        },
+        {
+          "GWNO": 41,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.095814061558,
+          "p_old": 0.095814061558
+        }
+      ],
+      "training_death_count_revision_n": 54,
+      "training_four_state_revision_n": 0,
+      "training_zero_low_events": [],
+      "training_zero_low_revision_n": 0
+    },
+    {
+      "direct_zero_low_scored_GWNO": [],
+      "max_abs_shapley_p_zero_low": 0,
+      "mean_shapley_brier_other": 0,
+      "mean_shapley_brier_zero_low": 0,
+      "mean_shapley_p_zero_low": 0,
+      "new_four_state_brier_fixed_26_1": 0.04802788391553629,
+      "old_four_state_brier_fixed_26_1": 0.04802788391553629,
+      "origin_year": 2017,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "24.1->25.1",
+      "target_year": 2019,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 2,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.054304652759,
+          "p_old": 0.054304652759
+        },
+        {
+          "GWNO": 20,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.015846559906,
+          "p_old": 0.015846559906
+        },
+        {
+          "GWNO": 31,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.015846559906,
+          "p_old": 0.015846559906
+        },
+        {
+          "GWNO": 40,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.015846559906,
+          "p_old": 0.015846559906
+        },
+        {
+          "GWNO": 41,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.093635116964,
+          "p_old": 0.093635116964
+        }
+      ],
+      "training_death_count_revision_n": 59,
+      "training_four_state_revision_n": 0,
+      "training_zero_low_events": [],
+      "training_zero_low_revision_n": 0
+    },
+    {
+      "direct_zero_low_scored_GWNO": [],
+      "max_abs_shapley_p_zero_low": 0,
+      "mean_shapley_brier_other": 0.0012528751106980099,
+      "mean_shapley_brier_zero_low": 0,
+      "mean_shapley_p_zero_low": 0,
+      "new_four_state_brier_fixed_26_1": 0.033369719718655315,
+      "old_four_state_brier_fixed_26_1": 0.0321168446079573,
+      "origin_year": 2018,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "24.1->25.1",
+      "target_year": 2020,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 2,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.05319852478,
+          "p_old": 0.053050165437
+        },
+        {
+          "GWNO": 20,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.015453992945,
+          "p_old": 0.015304780432
+        },
+        {
+          "GWNO": 31,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.015453992945,
+          "p_old": 0.015304780432
+        },
+        {
+          "GWNO": 40,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.015453992945,
+          "p_old": 0.015304780432
+        },
+        {
+          "GWNO": 41,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.091742331268,
+          "p_old": 0.09159507941
+        }
+      ],
+      "training_death_count_revision_n": 65,
+      "training_four_state_revision_n": 1,
+      "training_zero_low_events": [],
+      "training_zero_low_revision_n": 0
+    },
+    {
+      "direct_zero_low_scored_GWNO": [],
+      "max_abs_shapley_p_zero_low": 0,
+      "mean_shapley_brier_other": -0.00046472763731186996,
+      "mean_shapley_brier_zero_low": 0,
+      "mean_shapley_p_zero_low": 0,
+      "new_four_state_brier_fixed_26_1": 0.03125779784521495,
+      "old_four_state_brier_fixed_26_1": 0.03172252548252682,
+      "origin_year": 2019,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "24.1->25.1",
+      "target_year": 2021,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 2,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.051729845842,
+          "p_old": 0.051589296378
+        },
+        {
+          "GWNO": 20,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.014696687185,
+          "p_old": 0.014557004336
+        },
+        {
+          "GWNO": 31,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.014696687185,
+          "p_old": 0.014557004336
+        },
+        {
+          "GWNO": 40,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.014696687185,
+          "p_old": 0.014557004336
+        },
+        {
+          "GWNO": 41,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.089490801522,
+          "p_old": 0.089350357619
+        }
+      ],
+      "training_death_count_revision_n": 71,
+      "training_four_state_revision_n": 3,
+      "training_zero_low_events": [],
+      "training_zero_low_revision_n": 0
+    },
+    {
+      "direct_zero_low_scored_GWNO": [],
+      "max_abs_shapley_p_zero_low": 0,
+      "mean_shapley_brier_other": -0.0018186253475849067,
+      "mean_shapley_brier_zero_low": 0,
+      "mean_shapley_p_zero_low": 0,
+      "new_four_state_brier_fixed_26_1": 0.04820783313207862,
+      "old_four_state_brier_fixed_26_1": 0.05002645847966353,
+      "origin_year": 2020,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "24.1->25.1",
+      "target_year": 2022,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 2,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.050602819511,
+          "p_old": 0.050455334693
+        },
+        {
+          "GWNO": 20,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.014224145773,
+          "p_old": 0.014077746567
+        },
+        {
+          "GWNO": 31,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.014224145773,
+          "p_old": 0.014077746567
+        },
+        {
+          "GWNO": 40,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.014224145773,
+          "p_old": 0.014077746567
+        },
+        {
+          "GWNO": 41,
+          "effect": 0,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.087645653821,
+          "p_old": 0.087497546463
+        }
+      ],
+      "training_death_count_revision_n": 78,
+      "training_four_state_revision_n": 4,
+      "training_zero_low_events": [],
+      "training_zero_low_revision_n": 0
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        101
+      ],
+      "max_abs_shapley_p_zero_low": 0.22958784831350001,
+      "mean_shapley_brier_other": -0.00015597259323476333,
+      "mean_shapley_brier_zero_low": 0.0003977729083105124,
+      "mean_shapley_p_zero_low": 0.0011881905039209187,
+      "new_four_state_brier_fixed_26_1": 0.039090392381571255,
+      "old_four_state_brier_fixed_26_1": 0.038848592066495505,
+      "origin_year": 2021,
+      "origin_zero_low_reclassified_GWNO": [
+        101
+      ],
+      "source_pair": "24.1->25.1",
+      "target_year": 2023,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 101,
+          "effect": 0.22958784831350001,
+          "origin_state_new": 1,
+          "origin_state_old": 0,
+          "p_new": 0.284792818584,
+          "p_old": 0.054844324873
+        },
+        {
+          "GWNO": 540,
+          "effect": 0.00005810796349999675,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.061374667842,
+          "p_old": 0.061119050281
+        },
+        {
+          "GWNO": 780,
+          "effect": 0.00004356549099999822,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.023782118111,
+          "p_old": 0.023549461883
+        },
+        {
+          "GWNO": 660,
+          "effect": 0.00004278917300000462,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.066906212692,
+          "p_old": 0.066739372837
+        },
+        {
+          "GWNO": 347,
+          "effect": 0.000032833982499999234,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.021521522685,
+          "p_old": 0.021299590438
+        }
+      ],
+      "training_death_count_revision_n": 86,
+      "training_four_state_revision_n": 5,
+      "training_zero_low_events": [
+        {
+          "GWNO": 101,
+          "new": 1,
+          "old": 0,
+          "year": 2021
+        }
+      ],
+      "training_zero_low_revision_n": 1
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        101
+      ],
+      "max_abs_shapley_p_zero_low": 0.005206739648000003,
+      "mean_shapley_brier_other": -0.0002949082590182786,
+      "mean_shapley_brier_zero_low": -0.000017016290737691745,
+      "mean_shapley_p_zero_low": -0.00005462008694387643,
+      "new_four_state_brier_fixed_26_1": 0.04572515805268079,
+      "old_four_state_brier_fixed_26_1": 0.04603708260243677,
+      "origin_year": 2022,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "24.1->25.1",
+      "target_year": 2024,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 101,
+          "effect": 0.005206739648000003,
+          "origin_state_new": 0,
+          "origin_state_old": 0,
+          "p_new": 0.059130943838,
+          "p_old": 0.053820245222
+        },
+        {
+          "GWNO": 290,
+          "effect": -0.001284629439500029,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.30482935127,
+          "p_old": 0.305437262159
+        },
+        {
+          "GWNO": 626,
+          "effect": -0.001273550677499985,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.311675477806,
+          "p_old": 0.312289966837
+        },
+        {
+          "GWNO": 696,
+          "effect": -0.0011938158780000208,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.286106880841,
+          "p_old": 0.286646699935
+        },
+        {
+          "GWNO": 510,
+          "effect": -0.001175984132000013,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.299034783888,
+          "p_old": 0.299584716238
+        }
+      ],
+      "training_death_count_revision_n": 96,
+      "training_four_state_revision_n": 5,
+      "training_zero_low_events": [
+        {
+          "GWNO": 101,
+          "new": 1,
+          "old": 0,
+          "year": 2021
+        }
+      ],
+      "training_zero_low_revision_n": 1
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        552,
+        630,
+        652,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.012958098242000005,
+      "mean_shapley_brier_other": 0.000024497390842937387,
+      "mean_shapley_brier_zero_low": -0.00005088594789064633,
+      "mean_shapley_p_zero_low": 0.000046673556489796015,
+      "new_four_state_brier_fixed_26_1": 0.046399736248430516,
+      "old_four_state_brier_fixed_26_1": 0.046426124805478225,
+      "origin_year": 2012,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "25.1->26.1",
+      "target_year": 2014,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 630,
+          "effect": 0.012958098242000005,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.383187356919,
+          "p_old": 0.372959185613
+        },
+        {
+          "GWNO": 516,
+          "effect": 0.007129125479999998,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.37640541725,
+          "p_old": 0.371864621506
+        },
+        {
+          "GWNO": 620,
+          "effect": 0.0022587506969999893,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.289020851589,
+          "p_old": 0.290423613979
+        },
+        {
+          "GWNO": 616,
+          "effect": 0.0022553984864999987,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.277420090949,
+          "p_old": 0.278854334856
+        },
+        {
+          "GWNO": 541,
+          "effect": 0.002099132052999997,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.260143501077,
+          "p_old": 0.261533406482
+        }
+      ],
+      "training_death_count_revision_n": 73,
+      "training_four_state_revision_n": 9,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 0,
+          "old": 2,
+          "year": 2011
+        },
+        {
+          "GWNO": 552,
+          "new": 4,
+          "old": 0,
+          "year": 1989
+        },
+        {
+          "GWNO": 630,
+          "new": 3,
+          "old": 0,
+          "year": 2002
+        },
+        {
+          "GWNO": 630,
+          "new": 1,
+          "old": 0,
+          "year": 2004
+        },
+        {
+          "GWNO": 652,
+          "new": 1,
+          "old": 0,
+          "year": 2001
+        },
+        {
+          "GWNO": 678,
+          "new": 0,
+          "old": 19,
+          "year": 2000
+        }
+      ],
+      "training_zero_low_revision_n": 6
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        552,
+        630,
+        652,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.012910303458500028,
+      "mean_shapley_brier_other": -0.00003127548717778678,
+      "mean_shapley_brier_zero_low": -0.00008290982570284394,
+      "mean_shapley_p_zero_low": 0.000038121779170918334,
+      "new_four_state_brier_fixed_26_1": 0.05347867414898015,
+      "old_four_state_brier_fixed_26_1": 0.05359285946186078,
+      "origin_year": 2013,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "25.1->26.1",
+      "target_year": 2015,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 630,
+          "effect": 0.012910303458500028,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.381787653284,
+          "p_old": 0.371521395108
+        },
+        {
+          "GWNO": 640,
+          "effect": 0.0021211597200000154,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.299351953245,
+          "p_old": 0.300777835781
+        },
+        {
+          "GWNO": 660,
+          "effect": 0.0019506714069999764,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.304483654871,
+          "p_old": 0.305528067011
+        },
+        {
+          "GWNO": 666,
+          "effect": 0.0019110523780000166,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.350419816586,
+          "p_old": 0.351568716531
+        },
+        {
+          "GWNO": 517,
+          "effect": 0.0017544653690000078,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.301736237314,
+          "p_old": 0.303395255999
+        }
+      ],
+      "training_death_count_revision_n": 75,
+      "training_four_state_revision_n": 9,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 0,
+          "old": 2,
+          "year": 2011
+        },
+        {
+          "GWNO": 552,
+          "new": 4,
+          "old": 0,
+          "year": 1989
+        },
+        {
+          "GWNO": 630,
+          "new": 3,
+          "old": 0,
+          "year": 2002
+        },
+        {
+          "GWNO": 630,
+          "new": 1,
+          "old": 0,
+          "year": 2004
+        },
+        {
+          "GWNO": 652,
+          "new": 1,
+          "old": 0,
+          "year": 2001
+        },
+        {
+          "GWNO": 678,
+          "new": 0,
+          "old": 19,
+          "year": 2000
+        }
+      ],
+      "training_zero_low_revision_n": 6
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        552,
+        630,
+        652,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.012730202468500013,
+      "mean_shapley_brier_other": 0.000026867770768875396,
+      "mean_shapley_brier_zero_low": -0.00007302760813163197,
+      "mean_shapley_p_zero_low": 0.000011523030933674164,
+      "new_four_state_brier_fixed_26_1": 0.05823487728473262,
+      "old_four_state_brier_fixed_26_1": 0.05828103712209537,
+      "origin_year": 2014,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "25.1->26.1",
+      "target_year": 2016,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 630,
+          "effect": 0.012730202468500013,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.376127817106,
+          "p_old": 0.365927562667
+        },
+        {
+          "GWNO": 516,
+          "effect": 0.003174072799999983,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.544141526548,
+          "p_old": 0.542700265739
+        },
+        {
+          "GWNO": 640,
+          "effect": 0.0019575663540000177,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.294811619683,
+          "p_old": 0.29626282572
+        },
+        {
+          "GWNO": 702,
+          "effect": 0.0015291051200000128,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.323020249652,
+          "p_old": 0.324102982151
+        },
+        {
+          "GWNO": 850,
+          "effect": 0.0015159098664999926,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.324444266693,
+          "p_old": 0.325318171802
+        }
+      ],
+      "training_death_count_revision_n": 78,
+      "training_four_state_revision_n": 9,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 0,
+          "old": 2,
+          "year": 2011
+        },
+        {
+          "GWNO": 552,
+          "new": 4,
+          "old": 0,
+          "year": 1989
+        },
+        {
+          "GWNO": 630,
+          "new": 3,
+          "old": 0,
+          "year": 2002
+        },
+        {
+          "GWNO": 630,
+          "new": 1,
+          "old": 0,
+          "year": 2004
+        },
+        {
+          "GWNO": 652,
+          "new": 1,
+          "old": 0,
+          "year": 2001
+        },
+        {
+          "GWNO": 678,
+          "new": 0,
+          "old": 19,
+          "year": 2000
+        }
+      ],
+      "training_zero_low_revision_n": 6
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        552,
+        630,
+        652,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.0020323412290000342,
+      "mean_shapley_brier_other": -0.000011341007764047496,
+      "mean_shapley_brier_zero_low": 0.00000229321521303051,
+      "mean_shapley_p_zero_low": -0.000015780746977039212,
+      "new_four_state_brier_fixed_26_1": 0.029221008025022234,
+      "old_four_state_brier_fixed_26_1": 0.02923005581757325,
+      "origin_year": 2015,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "25.1->26.1",
+      "target_year": 2017,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 663,
+          "effect": 0.0020323412290000342,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.294782086694,
+          "p_old": 0.296052066231
+        },
+        {
+          "GWNO": 220,
+          "effect": 0.001882813950500023,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.276894302553,
+          "p_old": 0.278137319908
+        },
+        {
+          "GWNO": 703,
+          "effect": 0.0018316400654999898,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.310341905351,
+          "p_old": 0.311295058305
+        },
+        {
+          "GWNO": 666,
+          "effect": 0.0017175018754999882,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.382308578852,
+          "p_old": 0.383191825639
+        },
+        {
+          "GWNO": 630,
+          "effect": -0.0016733147285000194,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.575383960285,
+          "p_old": 0.578501561809
+        }
+      ],
+      "training_death_count_revision_n": 81,
+      "training_four_state_revision_n": 9,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 0,
+          "old": 2,
+          "year": 2011
+        },
+        {
+          "GWNO": 552,
+          "new": 4,
+          "old": 0,
+          "year": 1989
+        },
+        {
+          "GWNO": 630,
+          "new": 3,
+          "old": 0,
+          "year": 2002
+        },
+        {
+          "GWNO": 630,
+          "new": 1,
+          "old": 0,
+          "year": 2004
+        },
+        {
+          "GWNO": 652,
+          "new": 1,
+          "old": 0,
+          "year": 2001
+        },
+        {
+          "GWNO": 678,
+          "new": 0,
+          "old": 19,
+          "year": 2000
+        }
+      ],
+      "training_zero_low_revision_n": 6
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        552,
+        630,
+        652,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.006284699495499979,
+      "mean_shapley_brier_other": -0.00003638483656606477,
+      "mean_shapley_brier_zero_low": 0.00002507519308074401,
+      "mean_shapley_p_zero_low": -0.0000051712286147964655,
+      "new_four_state_brier_fixed_26_1": 0.05253561660663311,
+      "old_four_state_brier_fixed_26_1": 0.05254692625011843,
+      "origin_year": 2016,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "25.1->26.1",
+      "target_year": 2018,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 516,
+          "effect": 0.006284699495499979,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.383676416305,
+          "p_old": 0.379606301509
+        },
+        {
+          "GWNO": 211,
+          "effect": 0.0019659712815000008,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.297494643478,
+          "p_old": 0.298728113728
+        },
+        {
+          "GWNO": 660,
+          "effect": 0.0016252230419999958,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.339630606931,
+          "p_old": 0.340353331388
+        },
+        {
+          "GWNO": 483,
+          "effect": 0.0016140287320000057,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.312545215185,
+          "p_old": 0.314004134333
+        },
+        {
+          "GWNO": 630,
+          "effect": -0.0016129634950000082,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.588463111534,
+          "p_old": 0.591438147008
+        }
+      ],
+      "training_death_count_revision_n": 85,
+      "training_four_state_revision_n": 9,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 0,
+          "old": 2,
+          "year": 2011
+        },
+        {
+          "GWNO": 552,
+          "new": 4,
+          "old": 0,
+          "year": 1989
+        },
+        {
+          "GWNO": 630,
+          "new": 3,
+          "old": 0,
+          "year": 2002
+        },
+        {
+          "GWNO": 630,
+          "new": 1,
+          "old": 0,
+          "year": 2004
+        },
+        {
+          "GWNO": 652,
+          "new": 1,
+          "old": 0,
+          "year": 2001
+        },
+        {
+          "GWNO": 678,
+          "new": 0,
+          "old": 19,
+          "year": 2000
+        }
+      ],
+      "training_zero_low_revision_n": 6
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        552,
+        630,
+        652,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.006527687514500002,
+      "mean_shapley_brier_other": -0.0015133431153032805,
+      "mean_shapley_brier_zero_low": 0.00001012050442892488,
+      "mean_shapley_p_zero_low": 0.000018638881772958297,
+      "new_four_state_brier_fixed_26_1": 0.046524661304661936,
+      "old_four_state_brier_fixed_26_1": 0.04802788391553629,
+      "origin_year": 2017,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "25.1->26.1",
+      "target_year": 2019,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 516,
+          "effect": 0.006527687514500002,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.377780833235,
+          "p_old": 0.372715195648
+        },
+        {
+          "GWNO": 439,
+          "effect": 0.0018958505499999945,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.297060114928,
+          "p_old": 0.297409021219
+        },
+        {
+          "GWNO": 616,
+          "effect": 0.001796928901,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.323705455451,
+          "p_old": 0.323962849312
+        },
+        {
+          "GWNO": 630,
+          "effect": -0.0017632192544999592,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.592754564943,
+          "p_old": 0.593518038602
+        },
+        {
+          "GWNO": 820,
+          "effect": 0.001757859658000016,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.298857726177,
+          "p_old": 0.299247293247
+        }
+      ],
+      "training_death_count_revision_n": 90,
+      "training_four_state_revision_n": 10,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 0,
+          "old": 2,
+          "year": 2011
+        },
+        {
+          "GWNO": 552,
+          "new": 4,
+          "old": 0,
+          "year": 1989
+        },
+        {
+          "GWNO": 630,
+          "new": 3,
+          "old": 0,
+          "year": 2002
+        },
+        {
+          "GWNO": 630,
+          "new": 1,
+          "old": 0,
+          "year": 2004
+        },
+        {
+          "GWNO": 652,
+          "new": 1,
+          "old": 0,
+          "year": 2001
+        },
+        {
+          "GWNO": 678,
+          "new": 0,
+          "old": 19,
+          "year": 2000
+        }
+      ],
+      "training_zero_low_revision_n": 6
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        552,
+        630,
+        652,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.006606295851000005,
+      "mean_shapley_brier_other": -0.00015611360406623818,
+      "mean_shapley_brier_zero_low": -0.00003584545402618259,
+      "mean_shapley_p_zero_low": 0.00004118223583163251,
+      "new_four_state_brier_fixed_26_1": 0.03317776066056289,
+      "old_four_state_brier_fixed_26_1": 0.033369719718655315,
+      "origin_year": 2018,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "25.1->26.1",
+      "target_year": 2020,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 516,
+          "effect": 0.006606295851000005,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.37158894486,
+          "p_old": 0.368426386544
+        },
+        {
+          "GWNO": 530,
+          "effect": 0.001871818698999994,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.36485003559,
+          "p_old": 0.368242537283
+        },
+        {
+          "GWNO": 900,
+          "effect": 0.0018025887515000227,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.296561216539,
+          "p_old": 0.299800063755
+        },
+        {
+          "GWNO": 211,
+          "effect": 0.0016700833654999803,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.278491607853,
+          "p_old": 0.281580594101
+        },
+        {
+          "GWNO": 616,
+          "effect": 0.0016617155724999721,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.317190763655,
+          "p_old": 0.320135476147
+        }
+      ],
+      "training_death_count_revision_n": 96,
+      "training_four_state_revision_n": 10,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 0,
+          "old": 2,
+          "year": 2011
+        },
+        {
+          "GWNO": 552,
+          "new": 4,
+          "old": 0,
+          "year": 1989
+        },
+        {
+          "GWNO": 630,
+          "new": 3,
+          "old": 0,
+          "year": 2002
+        },
+        {
+          "GWNO": 630,
+          "new": 1,
+          "old": 0,
+          "year": 2004
+        },
+        {
+          "GWNO": 652,
+          "new": 1,
+          "old": 0,
+          "year": 2001
+        },
+        {
+          "GWNO": 678,
+          "new": 0,
+          "old": 19,
+          "year": 2000
+        }
+      ],
+      "training_zero_low_revision_n": 6
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        552,
+        630,
+        652,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.006838121419000004,
+      "mean_shapley_brier_other": -0.0000923958022022903,
+      "mean_shapley_brier_zero_low": 0.00002954933098429049,
+      "mean_shapley_p_zero_low": 0.000030186800535714556,
+      "new_four_state_brier_fixed_26_1": 0.03119495137399695,
+      "old_four_state_brier_fixed_26_1": 0.03125779784521495,
+      "origin_year": 2019,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "25.1->26.1",
+      "target_year": 2021,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 516,
+          "effect": 0.006838121419000004,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.364573559788,
+          "p_old": 0.361133608339
+        },
+        {
+          "GWNO": 625,
+          "effect": 0.0016858410475000252,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.301702206763,
+          "p_old": 0.305065019389
+        },
+        {
+          "GWNO": 615,
+          "effect": 0.0016443263435000077,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.334756481935,
+          "p_old": 0.337721843267
+        },
+        {
+          "GWNO": 616,
+          "effect": 0.0015924200569999991,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.309223705476,
+          "p_old": 0.31213007535
+        },
+        {
+          "GWNO": 130,
+          "effect": 0.0015346294534999971,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.279178384286,
+          "p_old": 0.28224174011
+        }
+      ],
+      "training_death_count_revision_n": 101,
+      "training_four_state_revision_n": 10,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 0,
+          "old": 2,
+          "year": 2011
+        },
+        {
+          "GWNO": 552,
+          "new": 4,
+          "old": 0,
+          "year": 1989
+        },
+        {
+          "GWNO": 630,
+          "new": 3,
+          "old": 0,
+          "year": 2002
+        },
+        {
+          "GWNO": 630,
+          "new": 1,
+          "old": 0,
+          "year": 2004
+        },
+        {
+          "GWNO": 652,
+          "new": 1,
+          "old": 0,
+          "year": 2001
+        },
+        {
+          "GWNO": 678,
+          "new": 0,
+          "old": 19,
+          "year": 2000
+        }
+      ],
+      "training_zero_low_revision_n": 6
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        552,
+        630,
+        652,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.009161996652000015,
+      "mean_shapley_brier_other": -0.0002561750613203752,
+      "mean_shapley_brier_zero_low": -0.000030884952748428895,
+      "mean_shapley_p_zero_low": 0.000057497076270408055,
+      "new_four_state_brier_fixed_26_1": 0.04792077311800981,
+      "old_four_state_brier_fixed_26_1": 0.04820783313207862,
+      "origin_year": 2020,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "25.1->26.1",
+      "target_year": 2022,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 630,
+          "effect": 0.009161996652000015,
+          "origin_state_new": 3,
+          "origin_state_old": 3,
+          "p_new": 0.685468227798,
+          "p_old": 0.676424646481
+        },
+        {
+          "GWNO": 516,
+          "effect": 0.002402515985999998,
+          "origin_state_new": 2,
+          "origin_state_old": 2,
+          "p_new": 0.5708747078,
+          "p_old": 0.566419819329
+        },
+        {
+          "GWNO": 434,
+          "effect": 0.0016965961874999824,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.298188427966,
+          "p_old": 0.301220307459
+        },
+        {
+          "GWNO": 600,
+          "effect": 0.0015924832344999806,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.277183396855,
+          "p_old": 0.279921244354
+        },
+        {
+          "GWNO": 616,
+          "effect": 0.0014725090954999798,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.305854634202,
+          "p_old": 0.308661610583
+        }
+      ],
+      "training_death_count_revision_n": 107,
+      "training_four_state_revision_n": 10,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 0,
+          "old": 2,
+          "year": 2011
+        },
+        {
+          "GWNO": 552,
+          "new": 4,
+          "old": 0,
+          "year": 1989
+        },
+        {
+          "GWNO": 630,
+          "new": 3,
+          "old": 0,
+          "year": 2002
+        },
+        {
+          "GWNO": 630,
+          "new": 1,
+          "old": 0,
+          "year": 2004
+        },
+        {
+          "GWNO": 652,
+          "new": 1,
+          "old": 0,
+          "year": 2001
+        },
+        {
+          "GWNO": 678,
+          "new": 0,
+          "old": 19,
+          "year": 2000
+        }
+      ],
+      "training_zero_low_revision_n": 6
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        552,
+        630,
+        652,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.006343892720999972,
+      "mean_shapley_brier_other": -0.00011147204818483995,
+      "mean_shapley_brier_zero_low": -0.000019236187342486854,
+      "mean_shapley_p_zero_low": 0.00006518773276020307,
+      "new_four_state_brier_fixed_26_1": 0.03895968414604393,
+      "old_four_state_brier_fixed_26_1": 0.039090392381571255,
+      "origin_year": 2021,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "25.1->26.1",
+      "target_year": 2023,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 516,
+          "effect": 0.006343892720999972,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.378352639512,
+          "p_old": 0.374833727412
+        },
+        {
+          "GWNO": 434,
+          "effect": 0.0016215352164999919,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.288800688725,
+          "p_old": 0.291871124456
+        },
+        {
+          "GWNO": 620,
+          "effect": 0.001612051093499961,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.337275100013,
+          "p_old": 0.339692625236
+        },
+        {
+          "GWNO": 510,
+          "effect": 0.0015547177124999867,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.295983070051,
+          "p_old": 0.29903957306
+        },
+        {
+          "GWNO": 600,
+          "effect": 0.0015265851589999768,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.268966480794,
+          "p_old": 0.271747544865
+        }
+      ],
+      "training_death_count_revision_n": 114,
+      "training_four_state_revision_n": 10,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 0,
+          "old": 2,
+          "year": 2011
+        },
+        {
+          "GWNO": 552,
+          "new": 4,
+          "old": 0,
+          "year": 1989
+        },
+        {
+          "GWNO": 630,
+          "new": 3,
+          "old": 0,
+          "year": 2002
+        },
+        {
+          "GWNO": 630,
+          "new": 1,
+          "old": 0,
+          "year": 2004
+        },
+        {
+          "GWNO": 652,
+          "new": 1,
+          "old": 0,
+          "year": 2001
+        },
+        {
+          "GWNO": 678,
+          "new": 0,
+          "old": 19,
+          "year": 2000
+        }
+      ],
+      "training_zero_low_revision_n": 6
+    },
+    {
+      "direct_zero_low_scored_GWNO": [
+        516,
+        552,
+        630,
+        652,
+        678
+      ],
+      "max_abs_shapley_p_zero_low": 0.006564769668999992,
+      "mean_shapley_brier_other": -0.00016116844255813768,
+      "mean_shapley_brier_zero_low": 0.00004929131597810472,
+      "mean_shapley_p_zero_low": 0.00006777468149745022,
+      "new_four_state_brier_fixed_26_1": 0.045613280926100765,
+      "old_four_state_brier_fixed_26_1": 0.04572515805268079,
+      "origin_year": 2022,
+      "origin_zero_low_reclassified_GWNO": [],
+      "source_pair": "25.1->26.1",
+      "target_year": 2024,
+      "top5_abs_zero_low": [
+        {
+          "GWNO": 516,
+          "effect": 0.006564769668999992,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.377507064918,
+          "p_old": 0.373652454481
+        },
+        {
+          "GWNO": 290,
+          "effect": 0.0015858825635000073,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.301935002298,
+          "p_old": 0.30482935127
+        },
+        {
+          "GWNO": 626,
+          "effect": 0.001549682097499977,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.308725990405,
+          "p_old": 0.311675477806
+        },
+        {
+          "GWNO": 620,
+          "effect": 0.0014874006844999843,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.337254629974,
+          "p_old": 0.339644123113
+        },
+        {
+          "GWNO": 696,
+          "effect": 0.0014712753554999847,
+          "origin_state_new": 1,
+          "origin_state_old": 1,
+          "p_new": 0.283352350913,
+          "p_old": 0.286106880841
+        }
+      ],
+      "training_death_count_revision_n": 121,
+      "training_four_state_revision_n": 10,
+      "training_zero_low_events": [
+        {
+          "GWNO": 516,
+          "new": 0,
+          "old": 2,
+          "year": 2011
+        },
+        {
+          "GWNO": 552,
+          "new": 4,
+          "old": 0,
+          "year": 1989
+        },
+        {
+          "GWNO": 630,
+          "new": 3,
+          "old": 0,
+          "year": 2002
+        },
+        {
+          "GWNO": 630,
+          "new": 1,
+          "old": 0,
+          "year": 2004
+        },
+        {
+          "GWNO": 652,
+          "new": 1,
+          "old": 0,
+          "year": 2001
+        },
+        {
+          "GWNO": 678,
+          "new": 0,
+          "old": 19,
+          "year": 2000
+        }
+      ],
+      "training_zero_low_revision_n": 6
+    }
+  ],
+  "historical_asof_issues_genuinely_timestamped": false,
+  "limitations": "All source editions 23.1..26.1 postdate many pseudo-origins; neither the 33 fold comparisons nor the 3 adjacent edition comparisons are independent, and the held-fixed 26.1 outcome labels share the final source vintage with one origin pair. This measures archive-revision sensitivity, not unbiased forecast skill or causal source effects.",
+  "origin_pair_folds_n": 33,
+  "origin_years": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "original_GEO2027_SHA256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "pairs": [
+    {
+      "fold_n": 11,
+      "max_abs_zero_low_probability_attribution": 0.213549341091,
+      "mean_brier_other_attribution": -0.00016388855300919426,
+      "mean_brier_total_revision": -0.00004775288160529479,
+      "mean_brier_zero_low_attribution": 0.00011613567140389933,
+      "origins_with_any_zero_low_revision_n": 11,
+      "origins_with_zero_low_initial_state_revision_n": 2,
+      "pair": "23.1->24.1",
+      "unique_zero_low_revised_training_country_years": 6
+    },
+    {
+      "fold_n": 11,
+      "max_abs_zero_low_probability_attribution": 0.22958784831350001,
+      "mean_brier_other_attribution": -0.00013466897513198263,
+      "mean_brier_total_revision": -0.00010005473717081712,
+      "mean_brier_zero_low_attribution": 0.00003461423796116551,
+      "origins_with_any_zero_low_revision_n": 2,
+      "origins_with_zero_low_initial_state_revision_n": 1,
+      "pair": "24.1->25.1",
+      "unique_zero_low_revised_training_country_years": 1
+    },
+    {
+      "fold_n": 11,
+      "max_abs_zero_low_probability_attribution": 0.012958098242000005,
+      "mean_brier_other_attribution": -0.00021075493123011346,
+      "mean_brier_total_revision": -0.00022679678724439663,
+      "mean_brier_zero_low_attribution": -0.000016041856014284177,
+      "origins_with_any_zero_low_revision_n": 11,
+      "origins_with_zero_low_initial_state_revision_n": 0,
+      "pair": "25.1->26.1",
+      "unique_zero_low_revised_training_country_years": 6
+    }
+  ],
+  "prospective_GEO2027_GEO2028_reissued": false,
+  "schema": "idealab.psico.geo_h2_three_adjacent_vintage_zero_low_11_origin.v1",
+  "scored_GWNO_n": 196,
+  "source_SHA256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "source_pairs": [
+    [
+      "23.1",
+      "24.1"
+    ],
+    [
+      "24.1",
+      "25.1"
+    ],
+    [
+      "25.1",
+      "26.1"
+    ]
+  ],
+  "status": "SHA_REPLAYED_RETROSPECTIVE_SOURCE_STRESS_NOT_PROSPECTIVE",
+  "target_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "training_source_countries_n": 199
+}
