@@ -98,7 +98,7 @@ def fetch_wgi():
         year=row.get("date","")
         value=row.get("value")
         if (not isinstance(iso,str) or not re.fullmatch(r"[A-Z]{3}",iso)
-            or not isinstance(year,str) or not re.fullmatch(r"20\\d{2}",year)):
+            or not isinstance(year,str) or not re.fullmatch(r"20[0-9]{2}",year)):
             continue
         y=int(year)
         if y not in YEARS or value is None:
