@@ -1,0 +1,38 @@
+name: GEO H2 25.1-26.1 fixed Brier model-ranking stability
+on:
+  push:
+    paths:
+      - 'scripts/audit_geo_h2_2526_fixed_brier_ranking.py'
+      - 'scripts/test_audit_geo_h2_2526_fixed_brier_ranking.py'
+      - 'data/geo-h2-2526-fixed-brier-ranking-stability.json'
+      - '.github/workflows/geo-h2-2526-fixed-brier-ranking.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_geo_h2_2526_fixed_brier_ranking.py'
+      - 'scripts/test_audit_geo_h2_2526_fixed_brier_ranking.py'
+      - 'data/geo-h2-2526-fixed-brier-ranking-stability.json'
+      - '.github/workflows/geo-h2-2526-fixed-brier-ranking.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify tie/reversal arithmetic and historical source guards
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_h2_2526_fixed_brier_ranking.py' -v
+      - name: Recalculate annual and 11-year historical ranking from locked inputs
+        run: |
+          if [ -f data/geo-h2-2526-fixed-brier-ranking-stability.json ]; then
+            python3 -B scripts/audit_geo_h2_2526_fixed_brier_ranking.py --check-report
+          else
+            python3 -B scripts/audit_geo_h2_2526_fixed_brier_ranking.py --print-report
+          fi
+      - name: Verify institutional file allowlist and privacy
+        run: python3 -B scripts/audit_public.py
