@@ -4,7 +4,7 @@
 Exact two-group *mechanical* counterfactual source intervention, not causal
 interpretation. Original 23.1 vs 24.1 UCDP OrganizedViolenceCY country-year
 best-death archives, clipped at pseudo-origin 2021, same four-state Markov
-estimator. Groups: Rwanda's own 1989..2021 rows vs other 195 GWNO rows.
+estimator. Groups: Rwanda's own 1989..2021 rows vs all other official source-country rows (including any not in GWNO evaluation cohort).
 For each 2x2 combination reconstruct global transition Dirichlet prior and
 Rwanda local shrinkage. Exact averaging of both intervention orders.
 """
@@ -101,7 +101,7 @@ def evaluate(old_source,new_source,reference):
             predicted[f"{use_own}{use_other}"]=p
             source_provenance[f"{use_own}{use_other}"]={
                 "rwanda_source":("24.1" if use_own else "23.1"),
-                "other_195_source":("24.1" if use_other else "23.1"),
+                "other_source_countries":("24.1" if use_other else "23.1"),
                 "origin_four_state":f[RWANDA]["origin_intensity_state"],
                 "rwanda_H2_probability":p,
                 "global_4x4_transition_counts":meta["global_4x4_transitions"],
