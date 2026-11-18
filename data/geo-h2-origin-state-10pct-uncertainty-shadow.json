@@ -1,0 +1,1899 @@
+{
+  "historical_annual": {
+    "2014": {
+      "23.1": {
+        "changed_prediction_n": 173,
+        "mean_brier_hard": 0.0465010557444727,
+        "mean_brier_uncertain_shadow": 0.047838713574063836,
+        "shadow_minus_hard_brier": 0.0013376578295911379
+      },
+      "24.1": {
+        "changed_prediction_n": 173,
+        "mean_brier_hard": 0.046426124805478225,
+        "mean_brier_uncertain_shadow": 0.047805815467014186,
+        "shadow_minus_hard_brier": 0.0013796906615359608
+      },
+      "source_vintage_probability_stability": {
+        "country_cases_with_larger_absolute_shadow_drift": 15,
+        "country_cases_with_smaller_absolute_shadow_drift": 158,
+        "max_absolute_hard": 0.045662059721000015,
+        "max_absolute_uncertain_shadow": 0.045662059721000015,
+        "mean_absolute_hard": 0.0007090856757499996,
+        "mean_absolute_uncertain_shadow": 0.0006762550168112255,
+        "source_revision_origin_state_disagreement_zero_low_GWNO": []
+      }
+    },
+    "2015": {
+      "23.1": {
+        "changed_prediction_n": 170,
+        "mean_brier_hard": 0.05320154158637082,
+        "mean_brier_uncertain_shadow": 0.05368190815554833,
+        "shadow_minus_hard_brier": 0.0004803665691775136
+      },
+      "24.1": {
+        "changed_prediction_n": 170,
+        "mean_brier_hard": 0.05359285946186078,
+        "mean_brier_uncertain_shadow": 0.05402117141480444,
+        "shadow_minus_hard_brier": 0.00042831195294366214
+      },
+      "source_vintage_probability_stability": {
+        "country_cases_with_larger_absolute_shadow_drift": 16,
+        "country_cases_with_smaller_absolute_shadow_drift": 154,
+        "max_absolute_hard": 0.052337388069,
+        "max_absolute_uncertain_shadow": 0.04711849584099999,
+        "mean_absolute_hard": 0.00104249573207143,
+        "mean_absolute_uncertain_shadow": 0.000975722623591837,
+        "source_revision_origin_state_disagreement_zero_low_GWNO": []
+      }
+    },
+    "2016": {
+      "23.1": {
+        "changed_prediction_n": 165,
+        "mean_brier_hard": 0.05817485654828272,
+        "mean_brier_uncertain_shadow": 0.05855573828102427,
+        "shadow_minus_hard_brier": 0.0003808817327415476
+      },
+      "24.1": {
+        "changed_prediction_n": 165,
+        "mean_brier_hard": 0.05828103712209537,
+        "mean_brier_uncertain_shadow": 0.05866854974790984,
+        "shadow_minus_hard_brier": 0.00038751262581446927
+      },
+      "source_vintage_probability_stability": {
+        "country_cases_with_larger_absolute_shadow_drift": 18,
+        "country_cases_with_smaller_absolute_shadow_drift": 147,
+        "max_absolute_hard": 0.029866826641999997,
+        "max_absolute_uncertain_shadow": 0.028849803406999996,
+        "mean_absolute_hard": 0.0005693760364030628,
+        "mean_absolute_uncertain_shadow": 0.0005338145066020411,
+        "source_revision_origin_state_disagreement_zero_low_GWNO": []
+      }
+    },
+    "2017": {
+      "23.1": {
+        "changed_prediction_n": 162,
+        "mean_brier_hard": 0.02921650606715744,
+        "mean_brier_uncertain_shadow": 0.03073041326025428,
+        "shadow_minus_hard_brier": 0.0015139071930968424
+      },
+      "24.1": {
+        "changed_prediction_n": 162,
+        "mean_brier_hard": 0.02923005581757325,
+        "mean_brier_uncertain_shadow": 0.03074649142900309,
+        "shadow_minus_hard_brier": 0.0015164356114298408
+      },
+      "source_vintage_probability_stability": {
+        "country_cases_with_larger_absolute_shadow_drift": 14,
+        "country_cases_with_smaller_absolute_shadow_drift": 148,
+        "max_absolute_hard": 0.029307730373999998,
+        "max_absolute_uncertain_shadow": 0.028341277890999994,
+        "mean_absolute_hard": 0.0005962046933877569,
+        "mean_absolute_uncertain_shadow": 0.0005637991139438763,
+        "source_revision_origin_state_disagreement_zero_low_GWNO": []
+      }
+    },
+    "2018": {
+      "23.1": {
+        "changed_prediction_n": 160,
+        "mean_brier_hard": 0.05345152849586064,
+        "mean_brier_uncertain_shadow": 0.05422351830542474,
+        "shadow_minus_hard_brier": 0.000771989809564097
+      },
+      "24.1": {
+        "changed_prediction_n": 160,
+        "mean_brier_hard": 0.05254692625011843,
+        "mean_brier_uncertain_shadow": 0.0533067440851248,
+        "shadow_minus_hard_brier": 0.0007598178350063725
+      },
+      "source_vintage_probability_stability": {
+        "country_cases_with_larger_absolute_shadow_drift": 19,
+        "country_cases_with_smaller_absolute_shadow_drift": 141,
+        "max_absolute_hard": 0.23916703331799993,
+        "max_absolute_uncertain_shadow": 0.23916703331799993,
+        "mean_absolute_hard": 0.0018968729155357114,
+        "mean_absolute_uncertain_shadow": 0.0018835626549081625,
+        "source_revision_origin_state_disagreement_zero_low_GWNO": []
+      }
+    },
+    "2019": {
+      "23.1": {
+        "changed_prediction_n": 164,
+        "mean_brier_hard": 0.04809263057417113,
+        "mean_brier_uncertain_shadow": 0.04935939253730956,
+        "shadow_minus_hard_brier": 0.0012667619631384283
+      },
+      "24.1": {
+        "changed_prediction_n": 164,
+        "mean_brier_hard": 0.04802788391553629,
+        "mean_brier_uncertain_shadow": 0.049279683834147506,
+        "shadow_minus_hard_brier": 0.0012517999186112128
+      },
+      "source_vintage_probability_stability": {
+        "country_cases_with_larger_absolute_shadow_drift": 131,
+        "country_cases_with_smaller_absolute_shadow_drift": 33,
+        "max_absolute_hard": 0.027990759582000004,
+        "max_absolute_uncertain_shadow": 0.027079669357000007,
+        "mean_absolute_hard": 0.0007759527529795913,
+        "mean_absolute_uncertain_shadow": 0.0007845257637448977,
+        "source_revision_origin_state_disagreement_zero_low_GWNO": []
+      }
+    },
+    "2020": {
+      "23.1": {
+        "changed_prediction_n": 164,
+        "mean_brier_hard": 0.03205651492717758,
+        "mean_brier_uncertain_shadow": 0.03326300500336305,
+        "shadow_minus_hard_brier": 0.0012064900761854722
+      },
+      "24.1": {
+        "changed_prediction_n": 164,
+        "mean_brier_hard": 0.0321168446079573,
+        "mean_brier_uncertain_shadow": 0.03336038318142561,
+        "shadow_minus_hard_brier": 0.00124353857346831
+      },
+      "source_vintage_probability_stability": {
+        "country_cases_with_larger_absolute_shadow_drift": 130,
+        "country_cases_with_smaller_absolute_shadow_drift": 34,
+        "max_absolute_hard": 0.027295942666,
+        "max_absolute_uncertain_shadow": 0.026444393922000008,
+        "mean_absolute_hard": 0.0007287599470204084,
+        "mean_absolute_uncertain_shadow": 0.0007377621557040803,
+        "source_revision_origin_state_disagreement_zero_low_GWNO": []
+      }
+    },
+    "2021": {
+      "23.1": {
+        "changed_prediction_n": 165,
+        "mean_brier_hard": 0.031763647095513874,
+        "mean_brier_uncertain_shadow": 0.03304291142986012,
+        "shadow_minus_hard_brier": 0.0012792643343462473
+      },
+      "24.1": {
+        "changed_prediction_n": 165,
+        "mean_brier_hard": 0.03172252548252682,
+        "mean_brier_uncertain_shadow": 0.03298959810297044,
+        "shadow_minus_hard_brier": 0.0012670726204436211
+      },
+      "source_vintage_probability_stability": {
+        "country_cases_with_larger_absolute_shadow_drift": 130,
+        "country_cases_with_smaller_absolute_shadow_drift": 35,
+        "max_absolute_hard": 0.02701979066,
+        "max_absolute_uncertain_shadow": 0.026174751879000008,
+        "mean_absolute_hard": 0.0006472079290510215,
+        "mean_absolute_uncertain_shadow": 0.0006391037728367346,
+        "source_revision_origin_state_disagreement_zero_low_GWNO": []
+      }
+    },
+    "2022": {
+      "23.1": {
+        "changed_prediction_n": 162,
+        "mean_brier_hard": 0.05004068202672168,
+        "mean_brier_uncertain_shadow": 0.050964491149338986,
+        "shadow_minus_hard_brier": 0.0009238091226173029
+      },
+      "24.1": {
+        "changed_prediction_n": 162,
+        "mean_brier_hard": 0.05002645847966353,
+        "mean_brier_uncertain_shadow": 0.050954324264304886,
+        "shadow_minus_hard_brier": 0.0009278657846413588
+      },
+      "source_vintage_probability_stability": {
+        "country_cases_with_larger_absolute_shadow_drift": 130,
+        "country_cases_with_smaller_absolute_shadow_drift": 32,
+        "max_absolute_hard": 0.026524044837,
+        "max_absolute_uncertain_shadow": 0.025718173476999992,
+        "mean_absolute_hard": 0.0006997174126938772,
+        "mean_absolute_uncertain_shadow": 0.0007033661843622437,
+        "source_revision_origin_state_disagreement_zero_low_GWNO": []
+      }
+    },
+    "2023": {
+      "23.1": {
+        "changed_prediction_n": 164,
+        "mean_brier_hard": 0.03860436591294053,
+        "mean_brier_uncertain_shadow": 0.039389063171346904,
+        "shadow_minus_hard_brier": 0.0007846972584063736
+      },
+      "24.1": {
+        "changed_prediction_n": 164,
+        "mean_brier_hard": 0.038848592066495505,
+        "mean_brier_uncertain_shadow": 0.0396208828248618,
+        "shadow_minus_hard_brier": 0.0007722907583662952
+      },
+      "source_vintage_probability_stability": {
+        "country_cases_with_larger_absolute_shadow_drift": 18,
+        "country_cases_with_smaller_absolute_shadow_drift": 146,
+        "max_absolute_hard": 0.11329597256600002,
+        "max_absolute_uncertain_shadow": 0.091090483325,
+        "mean_absolute_hard": 0.0011737872357346923,
+        "mean_absolute_uncertain_shadow": 0.0010485827247806113,
+        "source_revision_origin_state_disagreement_zero_low_GWNO": [
+          517
+        ]
+      }
+    },
+    "2024": {
+      "23.1": {
+        "changed_prediction_n": 159,
+        "mean_brier_hard": 0.046278343330731386,
+        "mean_brier_uncertain_shadow": 0.046870053985271616,
+        "shadow_minus_hard_brier": 0.0005917106545402298
+      },
+      "24.1": {
+        "changed_prediction_n": 159,
+        "mean_brier_hard": 0.04603708260243677,
+        "mean_brier_uncertain_shadow": 0.04650965740449094,
+        "shadow_minus_hard_brier": 0.0004725748020541695
+      },
+      "source_vintage_probability_stability": {
+        "country_cases_with_larger_absolute_shadow_drift": 31,
+        "country_cases_with_smaller_absolute_shadow_drift": 128,
+        "max_absolute_hard": 0.331865783509,
+        "max_absolute_uncertain_shadow": 0.331865783509,
+        "mean_absolute_hard": 0.0035418074314846936,
+        "mean_absolute_uncertain_shadow": 0.0032917275470714293,
+        "source_revision_origin_state_disagreement_zero_low_GWNO": [
+          516
+        ]
+      }
+    }
+  },
+  "historical_origins": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "historical_outcome_fixed_source": "26.1",
+  "historical_pooled": {
+    "23.1": {
+      "mean_delta_shadow_minus_hard": 0.0009579578675822902,
+      "mean_hard_brier": 0.044307424755400046,
+      "mean_shadow_brier": 0.04526538262298234
+    },
+    "24.1": {
+      "mean_delta_shadow_minus_hard": 0.0009460828313013884,
+      "mean_hard_brier": 0.04425967187379475,
+      "mean_shadow_brier": 0.04520575470509614
+    },
+    "cross_source_drift": {
+      "mean_absolute_hard": 0.0011255697965556585,
+      "mean_absolute_uncertain_shadow": 0.001076202005850649
+    }
+  },
+  "historical_targets": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "lambda_assumed_a_priori_not_fitted": 0.1,
+  "lambda_not_empirically_calibrated": true,
+  "limitations": "Fixed 10% categorical-state uncertainty is a declared sensitivity assumption, not a calibrated posterior. Historical 23.1/24.1 editions postdate many pseudo-origins; only cutoff masking is strict, not historical publication as-of. Unscored new 2027 shadow must be independently timestamped before 2027 outcome labels become available.",
+  "method": "For initial state 0 or 1 only: 90% recorded four-state H2 probability and 10% counterfactual adjacent-state probability under identical transition matrix. States 2/3 unchanged.",
+  "new_prospective_shadow": {
+    "country_n": 196,
+    "may_replace_original_GEO2027_or_GEO2028": false,
+    "origin_source": "26.1",
+    "origin_year": 2025,
+    "outcomes_2027_available": false,
+    "probabilities": [
+      {
+        "GWNO": 2,
+        "difference_shadow_minus_original": 0.02386533827000001,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.045387672383,
+        "p_uncertain_origin_shadow": 0.069253010653
+      },
+      {
+        "GWNO": 20,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 31,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 40,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 41,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.69783105233,
+        "p_uncertain_origin_shadow": 0.69783105233
+      },
+      {
+        "GWNO": 42,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 51,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 52,
+        "difference_shadow_minus_original": 0.023914244060000006,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.041533621622,
+        "p_uncertain_origin_shadow": 0.065447865682
+      },
+      {
+        "GWNO": 53,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 54,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 55,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 56,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 57,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 58,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 60,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 70,
+        "difference_shadow_minus_original": 0.023761498301999993,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.04887874122,
+        "p_uncertain_origin_shadow": 0.072640239522
+      },
+      {
+        "GWNO": 80,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 90,
+        "difference_shadow_minus_original": 0.025688062799999998,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.014124789682,
+        "p_uncertain_origin_shadow": 0.039812852482
+      },
+      {
+        "GWNO": 91,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 92,
+        "difference_shadow_minus_original": 0.024458878160000003,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012831139654,
+        "p_uncertain_origin_shadow": 0.037290017814
+      },
+      {
+        "GWNO": 93,
+        "difference_shadow_minus_original": 0.026155554377999997,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012452927448,
+        "p_uncertain_origin_shadow": 0.038608481826
+      },
+      {
+        "GWNO": 94,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 95,
+        "difference_shadow_minus_original": 0.026486176803,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012190322264,
+        "p_uncertain_origin_shadow": 0.038676499067
+      },
+      {
+        "GWNO": 100,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.914130608137,
+        "p_uncertain_origin_shadow": 0.914130608137
+      },
+      {
+        "GWNO": 101,
+        "difference_shadow_minus_original": 0.019866390687999995,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.054556047199,
+        "p_uncertain_origin_shadow": 0.074422437887
+      },
+      {
+        "GWNO": 110,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 115,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 130,
+        "difference_shadow_minus_original": 0.01996043091,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.05055656056,
+        "p_uncertain_origin_shadow": 0.07051699147
+      },
+      {
+        "GWNO": 135,
+        "difference_shadow_minus_original": 0.016938063646,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.04407957708,
+        "p_uncertain_origin_shadow": 0.061017640726
+      },
+      {
+        "GWNO": 140,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 145,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 150,
+        "difference_shadow_minus_original": 0.026486176803,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012190322264,
+        "p_uncertain_origin_shadow": 0.038676499067
+      },
+      {
+        "GWNO": 155,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 160,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 165,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 200,
+        "difference_shadow_minus_original": 0.020036334865000005,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.033788279548,
+        "p_uncertain_origin_shadow": 0.053824614413
+      },
+      {
+        "GWNO": 205,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 210,
+        "difference_shadow_minus_original": 0.024613650673000004,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.016457757142,
+        "p_uncertain_origin_shadow": 0.041071407815
+      },
+      {
+        "GWNO": 211,
+        "difference_shadow_minus_original": 0.022677297928000002,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.020587376887,
+        "p_uncertain_origin_shadow": 0.043264674815
+      },
+      {
+        "GWNO": 212,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 220,
+        "difference_shadow_minus_original": 0.020566412936,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.024374419437,
+        "p_uncertain_origin_shadow": 0.044940832373
+      },
+      {
+        "GWNO": 221,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 223,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 225,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 230,
+        "difference_shadow_minus_original": 0.018974770833,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.024036293842,
+        "p_uncertain_origin_shadow": 0.043011064675
+      },
+      {
+        "GWNO": 232,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 235,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 260,
+        "difference_shadow_minus_original": 0.022651865733999996,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.01649233618,
+        "p_uncertain_origin_shadow": 0.039144201914
+      },
+      {
+        "GWNO": 290,
+        "difference_shadow_minus_original": 0.024613650673000004,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.016457757142,
+        "p_uncertain_origin_shadow": 0.041071407815
+      },
+      {
+        "GWNO": 305,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 310,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 316,
+        "difference_shadow_minus_original": 0.026690969462000003,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.013015908448,
+        "p_uncertain_origin_shadow": 0.03970687791
+      },
+      {
+        "GWNO": 317,
+        "difference_shadow_minus_original": 0.026690969462000003,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.013015908448,
+        "p_uncertain_origin_shadow": 0.03970687791
+      },
+      {
+        "GWNO": 325,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 327,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 331,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 338,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 339,
+        "difference_shadow_minus_original": 0.023914244060000006,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.041533621622,
+        "p_uncertain_origin_shadow": 0.065447865682
+      },
+      {
+        "GWNO": 341,
+        "difference_shadow_minus_original": 0.026338465017,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.01731392024,
+        "p_uncertain_origin_shadow": 0.043652385257
+      },
+      {
+        "GWNO": 343,
+        "difference_shadow_minus_original": 0.028547740577,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.018645505718,
+        "p_uncertain_origin_shadow": 0.047193246295
+      },
+      {
+        "GWNO": 344,
+        "difference_shadow_minus_original": 0.023383539403000003,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.049110874244,
+        "p_uncertain_origin_shadow": 0.072494413647
+      },
+      {
+        "GWNO": 345,
+        "difference_shadow_minus_original": 0.026127697525,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.05444156848,
+        "p_uncertain_origin_shadow": 0.080569266005
+      },
+      {
+        "GWNO": 346,
+        "difference_shadow_minus_original": 0.026467604738,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.01372491091,
+        "p_uncertain_origin_shadow": 0.040192515648
+      },
+      {
+        "GWNO": 347,
+        "difference_shadow_minus_original": 0.026262514911,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.018240549384,
+        "p_uncertain_origin_shadow": 0.044503064295
+      },
+      {
+        "GWNO": 349,
+        "difference_shadow_minus_original": 0.026710983286000002,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012772017348,
+        "p_uncertain_origin_shadow": 0.039483000634
+      },
+      {
+        "GWNO": 350,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 352,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 355,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 359,
+        "difference_shadow_minus_original": 0.023731751301999997,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.047070009283,
+        "p_uncertain_origin_shadow": 0.070801760585
+      },
+      {
+        "GWNO": 360,
+        "difference_shadow_minus_original": 0.026486176803,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012190322264,
+        "p_uncertain_origin_shadow": 0.038676499067
+      },
+      {
+        "GWNO": 365,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.839173774197,
+        "p_uncertain_origin_shadow": 0.839173774197
+      },
+      {
+        "GWNO": 366,
+        "difference_shadow_minus_original": 0.026730262006000004,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012537097744,
+        "p_uncertain_origin_shadow": 0.03926735975
+      },
+      {
+        "GWNO": 367,
+        "difference_shadow_minus_original": 0.026730262006000004,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012537097744,
+        "p_uncertain_origin_shadow": 0.03926735975
+      },
+      {
+        "GWNO": 368,
+        "difference_shadow_minus_original": 0.026730262006000004,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012537097744,
+        "p_uncertain_origin_shadow": 0.03926735975
+      },
+      {
+        "GWNO": 369,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.878675927585,
+        "p_uncertain_origin_shadow": 0.878675927585
+      },
+      {
+        "GWNO": 370,
+        "difference_shadow_minus_original": 0.026730262006000004,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012537097744,
+        "p_uncertain_origin_shadow": 0.03926735975
+      },
+      {
+        "GWNO": 371,
+        "difference_shadow_minus_original": 0.015744877593,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.075771313198,
+        "p_uncertain_origin_shadow": 0.091516190791
+      },
+      {
+        "GWNO": 372,
+        "difference_shadow_minus_original": 0.018479542490999992,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.087867240464,
+        "p_uncertain_origin_shadow": 0.106346782955
+      },
+      {
+        "GWNO": 373,
+        "difference_shadow_minus_original": 0.027351084327000008,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.03956117594,
+        "p_uncertain_origin_shadow": 0.066912260267
+      },
+      {
+        "GWNO": 375,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 380,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 385,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 390,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 395,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 402,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 403,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 404,
+        "difference_shadow_minus_original": 0.021709908202,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.051147980355,
+        "p_uncertain_origin_shadow": 0.072857888557
+      },
+      {
+        "GWNO": 411,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 420,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 432,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.839708667108,
+        "p_uncertain_origin_shadow": 0.839708667108
+      },
+      {
+        "GWNO": 433,
+        "difference_shadow_minus_original": 0.017017790381000014,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.15610255056,
+        "p_uncertain_origin_shadow": 0.173120340941
+      },
+      {
+        "GWNO": 434,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.819931861564,
+        "p_uncertain_origin_shadow": 0.819931861564
+      },
+      {
+        "GWNO": 435,
+        "difference_shadow_minus_original": 0.020188417617,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.024272603816,
+        "p_uncertain_origin_shadow": 0.044461021433
+      },
+      {
+        "GWNO": 436,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.860415867838,
+        "p_uncertain_origin_shadow": 0.860415867838
+      },
+      {
+        "GWNO": 437,
+        "difference_shadow_minus_original": 0.022738067589000002,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.060957508903,
+        "p_uncertain_origin_shadow": 0.083695576492
+      },
+      {
+        "GWNO": 438,
+        "difference_shadow_minus_original": 0.023825846341999996,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.046345493189,
+        "p_uncertain_origin_shadow": 0.070171339531
+      },
+      {
+        "GWNO": 439,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.857631992389,
+        "p_uncertain_origin_shadow": 0.857631992389
+      },
+      {
+        "GWNO": 450,
+        "difference_shadow_minus_original": 0.022039092003,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.051977148648,
+        "p_uncertain_origin_shadow": 0.074016240651
+      },
+      {
+        "GWNO": 451,
+        "difference_shadow_minus_original": 0.022763559346000002,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.057046190201,
+        "p_uncertain_origin_shadow": 0.079809749547
+      },
+      {
+        "GWNO": 452,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 461,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 2,
+        "origin_year": 2025,
+        "p_original_four_state": 0.60503700716,
+        "p_uncertain_origin_shadow": 0.60503700716
+      },
+      {
+        "GWNO": 471,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.87748077096,
+        "p_uncertain_origin_shadow": 0.87748077096
+      },
+      {
+        "GWNO": 475,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.806073560179,
+        "p_uncertain_origin_shadow": 0.806073560179
+      },
+      {
+        "GWNO": 481,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 482,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.808418868575,
+        "p_uncertain_origin_shadow": 0.808418868575
+      },
+      {
+        "GWNO": 483,
+        "difference_shadow_minus_original": -0.01639723531499998,
+        "origin_intensity_state": 1,
+        "origin_year": 2025,
+        "p_original_four_state": 0.32647620938,
+        "p_uncertain_origin_shadow": 0.310078974065
+      },
+      {
+        "GWNO": 484,
+        "difference_shadow_minus_original": 0.008921285889999991,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.152347517376,
+        "p_uncertain_origin_shadow": 0.161268803266
+      },
+      {
+        "GWNO": 490,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.879639520446,
+        "p_uncertain_origin_shadow": 0.879639520446
+      },
+      {
+        "GWNO": 500,
+        "difference_shadow_minus_original": -0.020202053709000023,
+        "origin_intensity_state": 1,
+        "origin_year": 2025,
+        "p_original_four_state": 0.288840397641,
+        "p_uncertain_origin_shadow": 0.268638343932
+      },
+      {
+        "GWNO": 501,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 2,
+        "origin_year": 2025,
+        "p_original_four_state": 0.692323424117,
+        "p_uncertain_origin_shadow": 0.692323424117
+      },
+      {
+        "GWNO": 510,
+        "difference_shadow_minus_original": 0.021655848728000006,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.042866005509,
+        "p_uncertain_origin_shadow": 0.064521854237
+      },
+      {
+        "GWNO": 516,
+        "difference_shadow_minus_original": 0.025068425548000012,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.110967366392,
+        "p_uncertain_origin_shadow": 0.13603579194
+      },
+      {
+        "GWNO": 517,
+        "difference_shadow_minus_original": -0.00783514891699999,
+        "origin_intensity_state": 1,
+        "origin_year": 2025,
+        "p_original_four_state": 0.2390894566,
+        "p_uncertain_origin_shadow": 0.231254307683
+      },
+      {
+        "GWNO": 520,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.843798375896,
+        "p_uncertain_origin_shadow": 0.843798375896
+      },
+      {
+        "GWNO": 522,
+        "difference_shadow_minus_original": 0.027462365008,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.055827924132,
+        "p_uncertain_origin_shadow": 0.08329028914
+      },
+      {
+        "GWNO": 530,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.877903210364,
+        "p_uncertain_origin_shadow": 0.877903210364
+      },
+      {
+        "GWNO": 531,
+        "difference_shadow_minus_original": 0.018792018876999994,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.098054082801,
+        "p_uncertain_origin_shadow": 0.116846101678
+      },
+      {
+        "GWNO": 540,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 2,
+        "origin_year": 2025,
+        "p_original_four_state": 0.539054658469,
+        "p_uncertain_origin_shadow": 0.539054658469
+      },
+      {
+        "GWNO": 541,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.816875037791,
+        "p_uncertain_origin_shadow": 0.816875037791
+      },
+      {
+        "GWNO": 551,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 552,
+        "difference_shadow_minus_original": 0.025038683276,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012207431114,
+        "p_uncertain_origin_shadow": 0.03724611439
+      },
+      {
+        "GWNO": 553,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 560,
+        "difference_shadow_minus_original": 0.026486176803,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012190322264,
+        "p_uncertain_origin_shadow": 0.038676499067
+      },
+      {
+        "GWNO": 565,
+        "difference_shadow_minus_original": 0.028578369868,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.018297543411,
+        "p_uncertain_origin_shadow": 0.046875913279
+      },
+      {
+        "GWNO": 570,
+        "difference_shadow_minus_original": 0.023914244060000006,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.041533621622,
+        "p_uncertain_origin_shadow": 0.065447865682
+      },
+      {
+        "GWNO": 571,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 572,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 580,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 581,
+        "difference_shadow_minus_original": 0.023363721855000005,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.041652487359,
+        "p_uncertain_origin_shadow": 0.065016209214
+      },
+      {
+        "GWNO": 590,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 591,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 600,
+        "difference_shadow_minus_original": -0.021376769722000005,
+        "origin_intensity_state": 1,
+        "origin_year": 2025,
+        "p_original_four_state": 0.234511303025,
+        "p_uncertain_origin_shadow": 0.213134533303
+      },
+      {
+        "GWNO": 615,
+        "difference_shadow_minus_original": 0.026163983151,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.0447263647,
+        "p_uncertain_origin_shadow": 0.070890347851
+      },
+      {
+        "GWNO": 616,
+        "difference_shadow_minus_original": 0.023832345292000002,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.019943356865,
+        "p_uncertain_origin_shadow": 0.043775702157
+      },
+      {
+        "GWNO": 620,
+        "difference_shadow_minus_original": 0.023023243162999994,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.058927888536,
+        "p_uncertain_origin_shadow": 0.081951131699
+      },
+      {
+        "GWNO": 625,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.89682202445,
+        "p_uncertain_origin_shadow": 0.89682202445
+      },
+      {
+        "GWNO": 626,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.819177620266,
+        "p_uncertain_origin_shadow": 0.819177620266
+      },
+      {
+        "GWNO": 630,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.714133820065,
+        "p_uncertain_origin_shadow": 0.714133820065
+      },
+      {
+        "GWNO": 640,
+        "difference_shadow_minus_original": -0.028819271483999986,
+        "origin_intensity_state": 1,
+        "origin_year": 2025,
+        "p_original_four_state": 0.322453808886,
+        "p_uncertain_origin_shadow": 0.293634537402
+      },
+      {
+        "GWNO": 645,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.916826942208,
+        "p_uncertain_origin_shadow": 0.916826942208
+      },
+      {
+        "GWNO": 651,
+        "difference_shadow_minus_original": -0.019349781476000028,
+        "origin_intensity_state": 1,
+        "origin_year": 2025,
+        "p_original_four_state": 0.28062108331,
+        "p_uncertain_origin_shadow": 0.261271301834
+      },
+      {
+        "GWNO": 652,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.888266293826,
+        "p_uncertain_origin_shadow": 0.888266293826
+      },
+      {
+        "GWNO": 660,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.783963957877,
+        "p_uncertain_origin_shadow": 0.783963957877
+      },
+      {
+        "GWNO": 663,
+        "difference_shadow_minus_original": 0.026321478340999998,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.022993479134,
+        "p_uncertain_origin_shadow": 0.049314957475
+      },
+      {
+        "GWNO": 666,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.806628931119,
+        "p_uncertain_origin_shadow": 0.806628931119
+      },
+      {
+        "GWNO": 670,
+        "difference_shadow_minus_original": -0.011090595065000014,
+        "origin_intensity_state": 1,
+        "origin_year": 2025,
+        "p_original_four_state": 0.238052646196,
+        "p_uncertain_origin_shadow": 0.226962051131
+      },
+      {
+        "GWNO": 678,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.850974627249,
+        "p_uncertain_origin_shadow": 0.850974627249
+      },
+      {
+        "GWNO": 690,
+        "difference_shadow_minus_original": 0.023825846341999996,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.046345493189,
+        "p_uncertain_origin_shadow": 0.070171339531
+      },
+      {
+        "GWNO": 692,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 694,
+        "difference_shadow_minus_original": -0.02632776440000001,
+        "origin_intensity_state": 1,
+        "origin_year": 2025,
+        "p_original_four_state": 0.279759967212,
+        "p_uncertain_origin_shadow": 0.253432202812
+      },
+      {
+        "GWNO": 696,
+        "difference_shadow_minus_original": 0.022677297928000002,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.020587376887,
+        "p_uncertain_origin_shadow": 0.043264674815
+      },
+      {
+        "GWNO": 698,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 700,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.93094926889,
+        "p_uncertain_origin_shadow": 0.93094926889
+      },
+      {
+        "GWNO": 701,
+        "difference_shadow_minus_original": 0.026730262006000004,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012537097744,
+        "p_uncertain_origin_shadow": 0.03926735975
+      },
+      {
+        "GWNO": 702,
+        "difference_shadow_minus_original": 0.017819738075999986,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.144856204477,
+        "p_uncertain_origin_shadow": 0.162675942553
+      },
+      {
+        "GWNO": 703,
+        "difference_shadow_minus_original": 0.022628095560000006,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.062484703741,
+        "p_uncertain_origin_shadow": 0.085112799301
+      },
+      {
+        "GWNO": 704,
+        "difference_shadow_minus_original": 0.01925031478099999,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.081278927124,
+        "p_uncertain_origin_shadow": 0.100529241905
+      },
+      {
+        "GWNO": 705,
+        "difference_shadow_minus_original": 0.026730262006000004,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012537097744,
+        "p_uncertain_origin_shadow": 0.03926735975
+      },
+      {
+        "GWNO": 710,
+        "difference_shadow_minus_original": 0.015676426310000005,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.059115211443,
+        "p_uncertain_origin_shadow": 0.074791637753
+      },
+      {
+        "GWNO": 712,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 713,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 731,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 732,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 740,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 750,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.93094926889,
+        "p_uncertain_origin_shadow": 0.93094926889
+      },
+      {
+        "GWNO": 760,
+        "difference_shadow_minus_original": 0.024613650673000004,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.016457757142,
+        "p_uncertain_origin_shadow": 0.041071407815
+      },
+      {
+        "GWNO": 770,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.915091725578,
+        "p_uncertain_origin_shadow": 0.915091725578
+      },
+      {
+        "GWNO": 771,
+        "difference_shadow_minus_original": 0.016118139911,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.050242257569,
+        "p_uncertain_origin_shadow": 0.06636039748
+      },
+      {
+        "GWNO": 775,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.913461006508,
+        "p_uncertain_origin_shadow": 0.913461006508
+      },
+      {
+        "GWNO": 780,
+        "difference_shadow_minus_original": 0.031505385629,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.020067441761,
+        "p_uncertain_origin_shadow": 0.05157282739
+      },
+      {
+        "GWNO": 781,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 790,
+        "difference_shadow_minus_original": 0.02194864034,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.057907086443,
+        "p_uncertain_origin_shadow": 0.079855726783
+      },
+      {
+        "GWNO": 800,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.864755057254,
+        "p_uncertain_origin_shadow": 0.864755057254
+      },
+      {
+        "GWNO": 811,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.815286013312,
+        "p_uncertain_origin_shadow": 0.815286013312
+      },
+      {
+        "GWNO": 812,
+        "difference_shadow_minus_original": 0.024577356332999997,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.016992340272,
+        "p_uncertain_origin_shadow": 0.041569696605
+      },
+      {
+        "GWNO": 816,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 820,
+        "difference_shadow_minus_original": 0.021831112426999998,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.046167117995,
+        "p_uncertain_origin_shadow": 0.067998230422
+      },
+      {
+        "GWNO": 830,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 835,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 840,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.925263747475,
+        "p_uncertain_origin_shadow": 0.925263747475
+      },
+      {
+        "GWNO": 850,
+        "difference_shadow_minus_original": 0,
+        "origin_intensity_state": 3,
+        "origin_year": 2025,
+        "p_original_four_state": 0.812078166427,
+        "p_uncertain_origin_shadow": 0.812078166427
+      },
+      {
+        "GWNO": 860,
+        "difference_shadow_minus_original": 0.026469392175,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.015717032905,
+        "p_uncertain_origin_shadow": 0.04218642508
+      },
+      {
+        "GWNO": 900,
+        "difference_shadow_minus_original": 0.024613650673000004,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.016457757142,
+        "p_uncertain_origin_shadow": 0.041071407815
+      },
+      {
+        "GWNO": 910,
+        "difference_shadow_minus_original": 0.030459983081,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.0149231939,
+        "p_uncertain_origin_shadow": 0.045383176981
+      },
+      {
+        "GWNO": 920,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 935,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 940,
+        "difference_shadow_minus_original": 0.024613650673000004,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.016457757142,
+        "p_uncertain_origin_shadow": 0.041071407815
+      },
+      {
+        "GWNO": 950,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 970,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 971,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 972,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 973,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 983,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 986,
+        "difference_shadow_minus_original": 0.026670177679,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.013269294946,
+        "p_uncertain_origin_shadow": 0.039939472625
+      },
+      {
+        "GWNO": 987,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      },
+      {
+        "GWNO": 990,
+        "difference_shadow_minus_original": 0.026766770395,
+        "origin_intensity_state": 0,
+        "origin_year": 2025,
+        "p_original_four_state": 0.012092263265,
+        "p_uncertain_origin_shadow": 0.03885903366
+      }
+    ],
+    "prospective_skill_evaluated": false,
+    "pseudo_issue_class": "NEW_DISTINCT_FOURSTATE_10PCT_2027_SHADOW",
+    "target_year": 2027
+  },
+  "original_GEO2027_source_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "original_issued_GEO2027_or_GEO2028_modified": false,
+  "retrospective_not_genuine_origin_date_issue": true,
+  "schema": "idealab.psico.geo_h2_fixed10pct_origin_state_uncertainty.v1",
+  "source_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "status": "RETROSPECTIVE_STRESS_PLUS_NEW_PROSPECTIVE_UNSCORED_SHADOW"
+}
