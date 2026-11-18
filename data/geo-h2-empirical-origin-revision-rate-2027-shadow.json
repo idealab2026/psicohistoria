@@ -1,0 +1,2157 @@
+{
+  "beta_smoothing_prior": "Jeffreys Beta(0.5, 0.5), fixed before holdout",
+  "editorial_calibration_training_max_country_year": 2021,
+  "editorial_transition_training_pairs": [
+    [
+      "23.1",
+      "24.1"
+    ],
+    [
+      "24.1",
+      "25.1"
+    ]
+  ],
+  "held_out_editorial_transition_pair": [
+    "25.1",
+    "26.1"
+  ],
+  "historical_11_origin_by_source": [
+    {
+      "delta_brier_mixture_minus_hard": 0.000005978811001023161,
+      "mean_brier_hard": 0.04650105574447274,
+      "mean_brier_revision_rate_mixture": 0.04650703455547376,
+      "origin_release": "23.1",
+      "origin_year": 2012,
+      "target_year": 2014
+    },
+    {
+      "delta_brier_mixture_minus_hard": -4.5894004803284595e-7,
+      "mean_brier_hard": 0.05320154158637085,
+      "mean_brier_revision_rate_mixture": 0.05320108264632282,
+      "origin_release": "23.1",
+      "origin_year": 2013,
+      "target_year": 2015
+    },
+    {
+      "delta_brier_mixture_minus_hard": -0.0000010497409357459963,
+      "mean_brier_hard": 0.05817485654828274,
+      "mean_brier_revision_rate_mixture": 0.058173806807346996,
+      "origin_release": "23.1",
+      "origin_year": 2014,
+      "target_year": 2016
+    },
+    {
+      "delta_brier_mixture_minus_hard": 0.000005635381168242527,
+      "mean_brier_hard": 0.02921650606715744,
+      "mean_brier_revision_rate_mixture": 0.029222141448325682,
+      "origin_release": "23.1",
+      "origin_year": 2015,
+      "target_year": 2017
+    },
+    {
+      "delta_brier_mixture_minus_hard": 0.0000011190348730552297,
+      "mean_brier_hard": 0.05345152849586056,
+      "mean_brier_revision_rate_mixture": 0.053452647530733616,
+      "origin_release": "23.1",
+      "origin_year": 2016,
+      "target_year": 2018
+    },
+    {
+      "delta_brier_mixture_minus_hard": 0.000004861649263048082,
+      "mean_brier_hard": 0.04809263057417117,
+      "mean_brier_revision_rate_mixture": 0.04809749222343422,
+      "origin_release": "23.1",
+      "origin_year": 2017,
+      "target_year": 2019
+    },
+    {
+      "delta_brier_mixture_minus_hard": 0.000003552705712229787,
+      "mean_brier_hard": 0.03205651492717752,
+      "mean_brier_revision_rate_mixture": 0.032060067632889745,
+      "origin_release": "23.1",
+      "origin_year": 2018,
+      "target_year": 2020
+    },
+    {
+      "delta_brier_mixture_minus_hard": 0.000004264802873059274,
+      "mean_brier_hard": 0.03176364709551388,
+      "mean_brier_revision_rate_mixture": 0.03176791189838694,
+      "origin_release": "23.1",
+      "origin_year": 2019,
+      "target_year": 2021
+    },
+    {
+      "delta_brier_mixture_minus_hard": 0.0000025564741491626063,
+      "mean_brier_hard": 0.050040682026721676,
+      "mean_brier_revision_rate_mixture": 0.05004323850087084,
+      "origin_release": "23.1",
+      "origin_year": 2020,
+      "target_year": 2022
+    },
+    {
+      "delta_brier_mixture_minus_hard": 7.923137864798192e-7,
+      "mean_brier_hard": 0.038604365912940496,
+      "mean_brier_revision_rate_mixture": 0.03860515822672697,
+      "origin_release": "23.1",
+      "origin_year": 2021,
+      "target_year": 2023
+    },
+    {
+      "delta_brier_mixture_minus_hard": -9.865407996645597e-7,
+      "mean_brier_hard": 0.04627834333073142,
+      "mean_brier_revision_rate_mixture": 0.04627735678993176,
+      "origin_release": "23.1",
+      "origin_year": 2022,
+      "target_year": 2024
+    },
+    {
+      "delta_brier_mixture_minus_hard": 0.000006325413128946921,
+      "mean_brier_hard": 0.04642612480547832,
+      "mean_brier_revision_rate_mixture": 0.04643245021860727,
+      "origin_release": "24.1",
+      "origin_year": 2012,
+      "target_year": 2014
+    },
+    {
+      "delta_brier_mixture_minus_hard": -7.689318525035212e-7,
+      "mean_brier_hard": 0.05359285946186079,
+      "mean_brier_revision_rate_mixture": 0.05359209053000829,
+      "origin_release": "24.1",
+      "origin_year": 2013,
+      "target_year": 2015
+    },
+    {
+      "delta_brier_mixture_minus_hard": -9.803926355733456e-7,
+      "mean_brier_hard": 0.05828103712209533,
+      "mean_brier_revision_rate_mixture": 0.05828005672945975,
+      "origin_release": "24.1",
+      "origin_year": 2014,
+      "target_year": 2016
+    },
+    {
+      "delta_brier_mixture_minus_hard": 0.000005679850810188672,
+      "mean_brier_hard": 0.029230055817573285,
+      "mean_brier_revision_rate_mixture": 0.029235735668383472,
+      "origin_release": "24.1",
+      "origin_year": 2015,
+      "target_year": 2017
+    },
+    {
+      "delta_brier_mixture_minus_hard": 0.0000010284168104867754,
+      "mean_brier_hard": 0.05254692625011846,
+      "mean_brier_revision_rate_mixture": 0.05254795466692895,
+      "origin_release": "24.1",
+      "origin_year": 2016,
+      "target_year": 2018
+    },
+    {
+      "delta_brier_mixture_minus_hard": 0.000004761413297035436,
+      "mean_brier_hard": 0.0480278839155362,
+      "mean_brier_revision_rate_mixture": 0.04803264532883324,
+      "origin_release": "24.1",
+      "origin_year": 2017,
+      "target_year": 2019
+    },
+    {
+      "delta_brier_mixture_minus_hard": 0.000003879128652608125,
+      "mean_brier_hard": 0.03211684460795737,
+      "mean_brier_revision_rate_mixture": 0.03212072373660998,
+      "origin_release": "24.1",
+      "origin_year": 2018,
+      "target_year": 2020
+    },
+    {
+      "delta_brier_mixture_minus_hard": 0.000004184870998837727,
+      "mean_brier_hard": 0.0317225254825268,
+      "mean_brier_revision_rate_mixture": 0.03172671035352563,
+      "origin_release": "24.1",
+      "origin_year": 2019,
+      "target_year": 2021
+    },
+    {
+      "delta_brier_mixture_minus_hard": 0.000002613142681523575,
+      "mean_brier_hard": 0.050026458479663506,
+      "mean_brier_revision_rate_mixture": 0.05002907162234503,
+      "origin_release": "24.1",
+      "origin_year": 2020,
+      "target_year": 2022
+    },
+    {
+      "delta_brier_mixture_minus_hard": 7.385442436117563e-7,
+      "mean_brier_hard": 0.038848592066495546,
+      "mean_brier_revision_rate_mixture": 0.038849330610739155,
+      "origin_release": "24.1",
+      "origin_year": 2021,
+      "target_year": 2023
+    },
+    {
+      "delta_brier_mixture_minus_hard": -0.0000019023675701934412,
+      "mean_brier_hard": 0.046037082602436816,
+      "mean_brier_revision_rate_mixture": 0.04603518023486662,
+      "origin_release": "24.1",
+      "origin_year": 2022,
+      "target_year": 2024
+    }
+  ],
+  "historical_editions_postdate_some_pseudoorigins": true,
+  "historical_pooled_brier": {
+    "23.1": {
+      "pooled_delta_brier": 0.0000023878137311688257,
+      "pooled_empirical_mixture_brier": 0.04430981256913122,
+      "pooled_hard_brier": 0.044307424755400046
+    },
+    "24.1": {
+      "pooled_delta_brier": 0.000002323553505906244,
+      "pooled_empirical_mixture_brier": 0.04426199542730067,
+      "pooled_hard_brier": 0.044259671873794766
+    }
+  },
+  "holdout_editorial_transition_examples": [
+    {
+      "GWNO": 516,
+      "new": 0,
+      "new_state": 0,
+      "old": 2,
+      "old_state": 1,
+      "year": 2011
+    },
+    {
+      "GWNO": 552,
+      "new": 4,
+      "new_state": 1,
+      "old": 0,
+      "old_state": 0,
+      "year": 1989
+    },
+    {
+      "GWNO": 630,
+      "new": 3,
+      "new_state": 1,
+      "old": 0,
+      "old_state": 0,
+      "year": 2002
+    },
+    {
+      "GWNO": 630,
+      "new": 1,
+      "new_state": 1,
+      "old": 0,
+      "old_state": 0,
+      "year": 2004
+    },
+    {
+      "GWNO": 652,
+      "new": 1,
+      "new_state": 1,
+      "old": 0,
+      "old_state": 0,
+      "year": 2001
+    },
+    {
+      "GWNO": 678,
+      "new": 0,
+      "new_state": 0,
+      "old": 19,
+      "old_state": 1,
+      "year": 2000
+    }
+  ],
+  "holdout_revision_event_assessment": {
+    "0": {
+      "estimated_training_transition_rate": 0.0006445854819516065,
+      "mean_holdout_revision_event_brier": 0.0007935152157054819,
+      "mean_holdout_revision_event_logloss": 0.006478629582592217,
+      "observed_holdout_transition_rate": 0.0007941234862021044,
+      "old_state_exposure_n": 5037,
+      "revised_n": 4,
+      "unskilled_half_probability_event_brier": 0.25
+    },
+    "1": {
+      "estimated_training_transition_rate": 0.0008169934640522876,
+      "mean_holdout_revision_event_brier": 0.006525935537613738,
+      "mean_holdout_revision_event_logloss": 0.04728178578828317,
+      "observed_holdout_transition_rate": 0.006535947712418301,
+      "old_state_exposure_n": 306,
+      "revised_n": 2,
+      "unskilled_half_probability_event_brier": 0.25
+    }
+  },
+  "input_source_SHA256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "limitations": "Editorial cross-vintage revision rate is NOT probability recorded state is incorrect or probability of true latent state. Source training country-years recur across overlapping edition transitions (not IID), and same two empirical rates are applied to all countries and years. Retrospective Brier uses later editions than simulated origins; 2027 shadow is distinct and unscored.",
+  "not_estimated_latent_state_truth_probabilities": true,
+  "observed_editorial_revision_probabilities": {
+    "0": 0.0006445854819516065,
+    "1": 0.0008169934640522876
+  },
+  "original_GEO2027_issue_SHA256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "original_GEO2027_or_GEO2028_issued_vectors_modified": false,
+  "pooled_training_exposure_counts": {
+    "0": {
+      "cross_to_adjacent": 6,
+      "n": 10083
+    },
+    "1": {
+      "cross_to_adjacent": 0,
+      "n": 611
+    }
+  },
+  "prospective_unscored_2027_shadow": {
+    "country_n": 196,
+    "issued_result_labels_2027_available": false,
+    "origin_year": 2025,
+    "probabilities": [
+      {
+        "GWNO": 2,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.045387672383,
+        "p_revision_rate_shadow": 0.045541504889,
+        "shadow_minus_hard": 0.00015383250600000536,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 20,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 31,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 40,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 41,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.69783105233,
+        "p_revision_rate_shadow": 0.69783105233,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 42,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 51,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 52,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.041533621622,
+        "p_revision_rate_shadow": 0.041687769367,
+        "shadow_minus_hard": 0.0001541477449999995,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 53,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 54,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 55,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 56,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 57,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 58,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 60,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 70,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.04887874122,
+        "p_revision_rate_shadow": 0.049031904389,
+        "shadow_minus_hard": 0.00015316316899999932,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 80,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 90,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.014124789682,
+        "p_revision_rate_shadow": 0.014290371205,
+        "shadow_minus_hard": 0.00016558152299999893,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 91,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 92,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012831139654,
+        "p_revision_rate_shadow": 0.012988798031,
+        "shadow_minus_hard": 0.00015765837700000042,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 93,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012452927448,
+        "p_revision_rate_shadow": 0.012621522354,
+        "shadow_minus_hard": 0.00016859490600000006,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 94,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 95,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012190322264,
+        "p_revision_rate_shadow": 0.012361048315,
+        "shadow_minus_hard": 0.00017072605099999888,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 100,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.914130608137,
+        "p_revision_rate_shadow": 0.914130608137,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 101,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.054556047199,
+        "p_revision_rate_shadow": 0.054684103069,
+        "shadow_minus_hard": 0.00012805586999999757,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 110,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 115,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 130,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.05055656056,
+        "p_revision_rate_shadow": 0.050685222599,
+        "shadow_minus_hard": 0.00012866203899999928,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 135,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.04407957708,
+        "p_revision_rate_shadow": 0.044188757379,
+        "shadow_minus_hard": 0.00010918029899999876,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 140,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 145,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 150,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012190322264,
+        "p_revision_rate_shadow": 0.012361048315,
+        "shadow_minus_hard": 0.00017072605099999888,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 155,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 160,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 165,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 200,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.033788279548,
+        "p_revision_rate_shadow": 0.033917430853,
+        "shadow_minus_hard": 0.00012915130500000538,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 205,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 210,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.016457757142,
+        "p_revision_rate_shadow": 0.01661641316,
+        "shadow_minus_hard": 0.00015865601800000087,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 211,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.020587376887,
+        "p_revision_rate_shadow": 0.020733551457,
+        "shadow_minus_hard": 0.00014617457000000098,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 212,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 220,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.024374419437,
+        "p_revision_rate_shadow": 0.024506987549,
+        "shadow_minus_hard": 0.00013256811199999913,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 221,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 223,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 225,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 230,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.024036293842,
+        "p_revision_rate_shadow": 0.02415860246,
+        "shadow_minus_hard": 0.00012230861799999992,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 232,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 235,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 260,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.01649233618,
+        "p_revision_rate_shadow": 0.016638346817,
+        "shadow_minus_hard": 0.00014601063699999986,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 290,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.016457757142,
+        "p_revision_rate_shadow": 0.01661641316,
+        "shadow_minus_hard": 0.00015865601800000087,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 305,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 310,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 316,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.013015908448,
+        "p_revision_rate_shadow": 0.013187954562,
+        "shadow_minus_hard": 0.00017204611400000076,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 317,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.013015908448,
+        "p_revision_rate_shadow": 0.013187954562,
+        "shadow_minus_hard": 0.00017204611400000076,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 325,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 327,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 331,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 338,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 339,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.041533621622,
+        "p_revision_rate_shadow": 0.041687769367,
+        "shadow_minus_hard": 0.0001541477449999995,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 341,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.01731392024,
+        "p_revision_rate_shadow": 0.017483694162,
+        "shadow_minus_hard": 0.0001697739220000022,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 343,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.018645505718,
+        "p_revision_rate_shadow": 0.018829520309,
+        "shadow_minus_hard": 0.00018401459100000211,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 344,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.049110874244,
+        "p_revision_rate_shadow": 0.049261601144,
+        "shadow_minus_hard": 0.00015072690000000194,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 345,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.05444156848,
+        "p_revision_rate_shadow": 0.054609983825,
+        "shadow_minus_hard": 0.00016841534499999894,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 346,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.01372491091,
+        "p_revision_rate_shadow": 0.013895517247,
+        "shadow_minus_hard": 0.00017060633699999932,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 347,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.018240549384,
+        "p_revision_rate_shadow": 0.018409833743,
+        "shadow_minus_hard": 0.00016928435899999858,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 349,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012772017348,
+        "p_revision_rate_shadow": 0.012944192469,
+        "shadow_minus_hard": 0.00017217512100000006,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 350,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 352,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 355,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 359,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.047070009283,
+        "p_revision_rate_shadow": 0.047222980707,
+        "shadow_minus_hard": 0.00015297142399999658,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 360,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012190322264,
+        "p_revision_rate_shadow": 0.012361048315,
+        "shadow_minus_hard": 0.00017072605099999888,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 365,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.839173774197,
+        "p_revision_rate_shadow": 0.839173774197,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 366,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012537097744,
+        "p_revision_rate_shadow": 0.012709397132,
+        "shadow_minus_hard": 0.00017229938800000094,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 367,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012537097744,
+        "p_revision_rate_shadow": 0.012709397132,
+        "shadow_minus_hard": 0.00017229938800000094,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 368,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012537097744,
+        "p_revision_rate_shadow": 0.012709397132,
+        "shadow_minus_hard": 0.00017229938800000094,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 369,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.878675927585,
+        "p_revision_rate_shadow": 0.878675927585,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 370,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012537097744,
+        "p_revision_rate_shadow": 0.012709397132,
+        "shadow_minus_hard": 0.00017229938800000094,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 371,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.075771313198,
+        "p_revision_rate_shadow": 0.075872802393,
+        "shadow_minus_hard": 0.00010148919499999853,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 372,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.087867240464,
+        "p_revision_rate_shadow": 0.087986356912,
+        "shadow_minus_hard": 0.00011911644800000065,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 373,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.03956117594,
+        "p_revision_rate_shadow": 0.039737477059,
+        "shadow_minus_hard": 0.00017630111900000106,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 375,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 380,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 385,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 390,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 395,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 402,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 403,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 404,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.051147980355,
+        "p_revision_rate_shadow": 0.051287919271,
+        "shadow_minus_hard": 0.0001399389160000042,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 411,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 420,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 432,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.839708667108,
+        "p_revision_rate_shadow": 0.839708667108,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 433,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.15610255056,
+        "p_revision_rate_shadow": 0.156212244766,
+        "shadow_minus_hard": 0.00010969420600001611,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 434,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.819931861564,
+        "p_revision_rate_shadow": 0.819931861564,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 435,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.024272603816,
+        "p_revision_rate_shadow": 0.024402735425,
+        "shadow_minus_hard": 0.00013013160899999834,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 436,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.860415867838,
+        "p_revision_rate_shadow": 0.860415867838,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 437,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.060957508903,
+        "p_revision_rate_shadow": 0.061104075185,
+        "shadow_minus_hard": 0.0001465662820000005,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 438,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.046345493189,
+        "p_revision_rate_shadow": 0.046499071136,
+        "shadow_minus_hard": 0.00015357794700000121,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 439,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.857631992389,
+        "p_revision_rate_shadow": 0.857631992389,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 450,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.051977148648,
+        "p_revision_rate_shadow": 0.052119209435,
+        "shadow_minus_hard": 0.0001420607869999993,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 451,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.057046190201,
+        "p_revision_rate_shadow": 0.0571929208,
+        "shadow_minus_hard": 0.00014673059900000007,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 452,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 461,
+        "origin_four_state": 2,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.60503700716,
+        "p_revision_rate_shadow": 0.60503700716,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 471,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.87748077096,
+        "p_revision_rate_shadow": 0.87748077096,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 475,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.806073560179,
+        "p_revision_rate_shadow": 0.806073560179,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 481,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 482,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.808418868575,
+        "p_revision_rate_shadow": 0.808418868575,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 483,
+        "origin_four_state": 1,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.32647620938,
+        "p_revision_rate_shadow": 0.326342245039,
+        "shadow_minus_hard": -0.00013396434099999244,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 484,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.152347517376,
+        "p_revision_rate_shadow": 0.15240502269,
+        "shadow_minus_hard": 0.000057505314000005914,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 490,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.879639520446,
+        "p_revision_rate_shadow": 0.879639520446,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 500,
+        "origin_four_state": 1,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.288840397641,
+        "p_revision_rate_shadow": 0.288675348183,
+        "shadow_minus_hard": -0.00016504945799999948,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 501,
+        "origin_four_state": 2,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.692323424117,
+        "p_revision_rate_shadow": 0.692323424117,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 510,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.042866005509,
+        "p_revision_rate_shadow": 0.043005595965,
+        "shadow_minus_hard": 0.00013959045599999664,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 516,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.110967366392,
+        "p_revision_rate_shadow": 0.111128953824,
+        "shadow_minus_hard": 0.00016158743199999603,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 517,
+        "origin_four_state": 1,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.2390894566,
+        "p_revision_rate_shadow": 0.239025443946,
+        "shadow_minus_hard": -0.00006401265399999523,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 520,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.843798375896,
+        "p_revision_rate_shadow": 0.843798375896,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 522,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.055827924132,
+        "p_revision_rate_shadow": 0.05600494255,
+        "shadow_minus_hard": 0.00017701841799999674,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 530,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.877903210364,
+        "p_revision_rate_shadow": 0.877903210364,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 531,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.098054082801,
+        "p_revision_rate_shadow": 0.098175213427,
+        "shadow_minus_hard": 0.00012113062599999891,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 540,
+        "origin_four_state": 2,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.539054658469,
+        "p_revision_rate_shadow": 0.539054658469,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 541,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.816875037791,
+        "p_revision_rate_shadow": 0.816875037791,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 551,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 552,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012207431114,
+        "p_revision_rate_shadow": 0.012368826832,
+        "shadow_minus_hard": 0.00016139571799999967,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 553,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 560,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012190322264,
+        "p_revision_rate_shadow": 0.012361048315,
+        "shadow_minus_hard": 0.00017072605099999888,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 565,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.018297543411,
+        "p_revision_rate_shadow": 0.018481755434,
+        "shadow_minus_hard": 0.00018421202300000078,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 570,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.041533621622,
+        "p_revision_rate_shadow": 0.041687769367,
+        "shadow_minus_hard": 0.0001541477449999995,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 571,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 572,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 580,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 581,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.041652487359,
+        "p_revision_rate_shadow": 0.041803086518,
+        "shadow_minus_hard": 0.00015059915900000193,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 590,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 591,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 600,
+        "origin_four_state": 1,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.234511303025,
+        "p_revision_rate_shadow": 0.234336656214,
+        "shadow_minus_hard": -0.00017464681100001767,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 615,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.0447263647,
+        "p_revision_rate_shadow": 0.044895013937,
+        "shadow_minus_hard": 0.00016864923700000284,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 616,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.019943356865,
+        "p_revision_rate_shadow": 0.020096976703,
+        "shadow_minus_hard": 0.00015361983799999993,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 620,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.058927888536,
+        "p_revision_rate_shadow": 0.059076293019,
+        "shadow_minus_hard": 0.00014840448299999892,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 625,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.89682202445,
+        "p_revision_rate_shadow": 0.89682202445,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 626,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.819177620266,
+        "p_revision_rate_shadow": 0.819177620266,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 630,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.714133820065,
+        "p_revision_rate_shadow": 0.714133820065,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 640,
+        "origin_four_state": 1,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.322453808886,
+        "p_revision_rate_shadow": 0.322218357322,
+        "shadow_minus_hard": -0.000235451564000011,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 645,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.916826942208,
+        "p_revision_rate_shadow": 0.916826942208,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 651,
+        "origin_four_state": 1,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.28062108331,
+        "p_revision_rate_shadow": 0.28046299686,
+        "shadow_minus_hard": -0.00015808645000003896,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 652,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.888266293826,
+        "p_revision_rate_shadow": 0.888266293826,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 660,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.783963957877,
+        "p_revision_rate_shadow": 0.783963957877,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 663,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.022993479134,
+        "p_revision_rate_shadow": 0.023163143562,
+        "shadow_minus_hard": 0.00016966442799999995,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 666,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.806628931119,
+        "p_revision_rate_shadow": 0.806628931119,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 670,
+        "origin_four_state": 1,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.238052646196,
+        "p_revision_rate_shadow": 0.23796203676,
+        "shadow_minus_hard": -0.00009060943600000537,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 678,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.850974627249,
+        "p_revision_rate_shadow": 0.850974627249,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 690,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.046345493189,
+        "p_revision_rate_shadow": 0.046499071136,
+        "shadow_minus_hard": 0.00015357794700000121,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 692,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 694,
+        "origin_four_state": 1,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.279759967212,
+        "p_revision_rate_shadow": 0.279544871098,
+        "shadow_minus_hard": -0.00021509611400000184,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 696,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.020587376887,
+        "p_revision_rate_shadow": 0.020733551457,
+        "shadow_minus_hard": 0.00014617457000000098,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 698,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 700,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.93094926889,
+        "p_revision_rate_shadow": 0.93094926889,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 701,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012537097744,
+        "p_revision_rate_shadow": 0.012709397132,
+        "shadow_minus_hard": 0.00017229938800000094,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 702,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.144856204477,
+        "p_revision_rate_shadow": 0.144971067921,
+        "shadow_minus_hard": 0.00011486344399999626,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 703,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.062484703741,
+        "p_revision_rate_shadow": 0.06263056116,
+        "shadow_minus_hard": 0.0001458574190000006,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 704,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.081278927124,
+        "p_revision_rate_shadow": 0.081403011858,
+        "shadow_minus_hard": 0.0001240847339999962,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 705,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012537097744,
+        "p_revision_rate_shadow": 0.012709397132,
+        "shadow_minus_hard": 0.00017229938800000094,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 710,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.059115211443,
+        "p_revision_rate_shadow": 0.059216259411,
+        "shadow_minus_hard": 0.00010104796799999954,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 712,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 713,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 731,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 732,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 740,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 750,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.93094926889,
+        "p_revision_rate_shadow": 0.93094926889,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 760,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.016457757142,
+        "p_revision_rate_shadow": 0.01661641316,
+        "shadow_minus_hard": 0.00015865601800000087,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 770,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.915091725578,
+        "p_revision_rate_shadow": 0.915091725578,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 771,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.050242257569,
+        "p_revision_rate_shadow": 0.050346152758,
+        "shadow_minus_hard": 0.00010389518900000283,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 775,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.913461006508,
+        "p_revision_rate_shadow": 0.913461006508,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 780,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.020067441761,
+        "p_revision_rate_shadow": 0.020270520903,
+        "shadow_minus_hard": 0.0002030791420000004,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 781,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 790,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.057907086443,
+        "p_revision_rate_shadow": 0.058048564192,
+        "shadow_minus_hard": 0.00014147774900000187,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 800,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.864755057254,
+        "p_revision_rate_shadow": 0.864755057254,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 811,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.815286013312,
+        "p_revision_rate_shadow": 0.815286013312,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 812,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.016992340272,
+        "p_revision_rate_shadow": 0.017150762343,
+        "shadow_minus_hard": 0.00015842207099999936,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 816,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 820,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.046167117995,
+        "p_revision_rate_shadow": 0.046307838177,
+        "shadow_minus_hard": 0.0001407201820000023,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 830,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 835,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 840,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.925263747475,
+        "p_revision_rate_shadow": 0.925263747475,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 850,
+        "origin_four_state": 3,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.812078166427,
+        "p_revision_rate_shadow": 0.812078166427,
+        "shadow_minus_hard": 0,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 860,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.015717032905,
+        "p_revision_rate_shadow": 0.015887650764,
+        "shadow_minus_hard": 0.0001706178589999975,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 900,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.016457757142,
+        "p_revision_rate_shadow": 0.01661641316,
+        "shadow_minus_hard": 0.00015865601800000087,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 910,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.0149231939,
+        "p_revision_rate_shadow": 0.015119534529,
+        "shadow_minus_hard": 0.0001963406290000011,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 920,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 935,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 940,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.016457757142,
+        "p_revision_rate_shadow": 0.01661641316,
+        "shadow_minus_hard": 0.00015865601800000087,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 950,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 970,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 971,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 972,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 973,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 983,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 986,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.013269294946,
+        "p_revision_rate_shadow": 0.013441207039,
+        "shadow_minus_hard": 0.00017191209299999982,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 987,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      },
+      {
+        "GWNO": 990,
+        "origin_four_state": 0,
+        "origin_year": 2025,
+        "p_hard_four_state": 0.012092263265,
+        "p_revision_rate_shadow": 0.012264797981,
+        "shadow_minus_hard": 0.0001725347159999991,
+        "target_year": 2027
+      }
+    ],
+    "prospective_skill_established": false,
+    "source": "26.1",
+    "target_year": 2027
+  },
+  "schema": "idealab.psico.geo_h2_empirical_editorial_revision_rate_shadow.v1",
+  "status": "PROSPECTIVE_UNSCORED_SHADOW_AND_RETROSPECTIVE_CAVEATED_DIAGNOSTIC",
+  "training_pair_details": {
+    "23.1->24.1": {
+      "denominator_by_old_state": {
+        "0": {
+          "cross_to_adjacent": 5,
+          "n": 5044
+        },
+        "1": {
+          "cross_to_adjacent": 0,
+          "n": 303
+        }
+      },
+      "observed_zero_low_revisions": [
+        {
+          "GWNO": 516,
+          "new": 6,
+          "new_state": 1,
+          "old": 0,
+          "old_state": 0,
+          "year": 1993
+        },
+        {
+          "GWNO": 516,
+          "new": 2,
+          "new_state": 1,
+          "old": 0,
+          "old_state": 0,
+          "year": 2011
+        },
+        {
+          "GWNO": 517,
+          "new": 7,
+          "new_state": 1,
+          "old": 0,
+          "old_state": 0,
+          "year": 2021
+        },
+        {
+          "GWNO": 678,
+          "new": 19,
+          "new_state": 1,
+          "old": 0,
+          "old_state": 0,
+          "year": 2000
+        },
+        {
+          "GWNO": 678,
+          "new": 2,
+          "new_state": 1,
+          "old": 0,
+          "old_state": 0,
+          "year": 2002
+        }
+      ]
+    },
+    "24.1->25.1": {
+      "denominator_by_old_state": {
+        "0": {
+          "cross_to_adjacent": 1,
+          "n": 5039
+        },
+        "1": {
+          "cross_to_adjacent": 0,
+          "n": 308
+        }
+      },
+      "observed_zero_low_revisions": [
+        {
+          "GWNO": 101,
+          "new": 1,
+          "new_state": 1,
+          "old": 0,
+          "old_state": 0,
+          "year": 2021
+        }
+      ]
+    }
+  }
+}
