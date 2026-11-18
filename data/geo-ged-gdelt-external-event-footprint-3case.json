@@ -1,0 +1,237 @@
+{
+  "GDELT_and_UCDP_underlying_news_sources_may_overlap": true,
+  "GDELT_is_a_fatality_ground_truth": false,
+  "GEO2027_or_GEO2028_original_issues_modified": false,
+  "GEO2027_original_SHA256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "UCDP_GED_and_OrganizedViolenceCY_are_independent_institutions": false,
+  "case_with_eligible_GED_event_n": 2,
+  "event_identity_certified": false,
+  "historical_origin_date_asof_prospectivity_claimed": false,
+  "limitations": "Only top two dated point-geolocated GED25.1 state-based type-1 events per prespecified revision case, not exhaustive annual matching. Nonstate violence types 2 and 3 are excluded because the original forecast target is sb_total_deaths_best. GDELT daily 1.0 media coding may miss events, report with lag, geolocate inaccurately, and count news about nonfatal violence. Violent CAMEO 18/19/20 + same date + <=100km is candidate co-occurrence, not independently verified event identity or fatalities; no match does NOT show no violence. UCDP GED and CY are one institution. Date of later GED edition postdates event year.",
+  "sampled_UCDP_GED_events_n": 2,
+  "sampled_events_with_nearby_violent_GDELT_news_footprint_n": 2,
+  "schema": "idealab.psico.geo_ged_gdelt_independent_media_event_footprint_v1",
+  "selected_0_to_low_revision_cases_n": 3,
+  "selected_country_years": [
+    {
+      "GDELT_FIPS": "VE",
+      "GED_case_excluded_non_statebased_events_n": 9,
+      "GED_case_ineligible_statebased_event_examples": [],
+      "GED_case_no_eligible_point_date": false,
+      "GED_case_point_dated_eligible_n": 1,
+      "GED_case_raw_events_n": 10,
+      "GWNO": 101,
+      "has_any_geographic_media_footprint": true,
+      "revision": {
+        "GWNO": 101,
+        "new": 1,
+        "old": 0,
+        "year": 2021
+      },
+      "sample_rule": "top best deaths, at most 2 distinct single-day geocoded GED25.1 state-based (type-1) events",
+      "sampled_events": [
+        {
+          "GDELT_days_queried": [
+            "2021-05-18",
+            "2021-05-19"
+          ],
+          "GED_best_deaths": 1,
+          "GED_event_id": 400895,
+          "GED_type_of_violence": 1,
+          "GWNO": 101,
+          "closest_five_GDELT_violent_news_events": [
+            {
+              "CAMEO_root": "18",
+              "GDELT_event_id": 985500733,
+              "distance_km": 0
+            },
+            {
+              "CAMEO_root": "18",
+              "GDELT_event_id": 985501486,
+              "distance_km": 0
+            },
+            {
+              "CAMEO_root": "19",
+              "GDELT_event_id": 985587676,
+              "distance_km": 0
+            },
+            {
+              "CAMEO_root": "19",
+              "GDELT_event_id": 985588989,
+              "distance_km": 0
+            },
+            {
+              "CAMEO_root": "19",
+              "GDELT_event_id": 985590328,
+              "distance_km": 0
+            }
+          ],
+          "event_date": "2021-05-18",
+          "fatality_confirmation_from_GDELT": false,
+          "lat": 8,
+          "lon": -66,
+          "one_to_one_event_match_verified": false,
+          "same_SQLDATE_same_FIPS_violent_root_events_n": 16,
+          "same_date_country_nonviolent_near100km_n": 90,
+          "violent_same_date_near100km_n": 14,
+          "violent_same_date_near25km_n": 14,
+          "year": 2021
+        }
+      ],
+      "source_pair": "24.1->25.1",
+      "year": 2021
+    },
+    {
+      "GDELT_FIPS": "BY",
+      "GED_case_excluded_non_statebased_events_n": 41,
+      "GED_case_ineligible_statebased_event_examples": [
+        {
+          "best": "10",
+          "date_end": "2022-06-21 00:00:00.000",
+          "date_start": "2022-06-19 00:00:00.000",
+          "id": "442626",
+          "latitude": "-2.708333",
+          "longitude": "29.243056",
+          "type_of_violence": "1"
+        }
+      ],
+      "GED_case_no_eligible_point_date": true,
+      "GED_case_point_dated_eligible_n": 0,
+      "GED_case_raw_events_n": 42,
+      "GWNO": 516,
+      "has_any_geographic_media_footprint": false,
+      "revision": {
+        "GWNO": 516,
+        "new": 10,
+        "old": 0,
+        "year": 2022
+      },
+      "sample_rule": "top best deaths, at most 2 distinct single-day geocoded GED25.1 state-based (type-1) events",
+      "sampled_events": [],
+      "source_pair": "23.1->24.1",
+      "year": 2022
+    },
+    {
+      "GDELT_FIPS": "RW",
+      "GED_case_excluded_non_statebased_events_n": 0,
+      "GED_case_ineligible_statebased_event_examples": [
+        {
+          "best": "2",
+          "date_end": "2021-05-24 00:00:00.000",
+          "date_start": "2021-05-23 00:00:00.000",
+          "id": "403028",
+          "latitude": "-2.622716",
+          "longitude": "29.227835",
+          "type_of_violence": "1"
+        }
+      ],
+      "GED_case_no_eligible_point_date": false,
+      "GED_case_point_dated_eligible_n": 1,
+      "GED_case_raw_events_n": 2,
+      "GWNO": 517,
+      "has_any_geographic_media_footprint": true,
+      "revision": {
+        "GWNO": 517,
+        "new": 7,
+        "old": 0,
+        "year": 2021
+      },
+      "sample_rule": "top best deaths, at most 2 distinct single-day geocoded GED25.1 state-based (type-1) events",
+      "sampled_events": [
+        {
+          "GDELT_days_queried": [
+            "2021-05-23",
+            "2021-05-24"
+          ],
+          "GED_best_deaths": 5,
+          "GED_event_id": 428252,
+          "GED_type_of_violence": 1,
+          "GWNO": 517,
+          "closest_five_GDELT_violent_news_events": [
+            {
+              "CAMEO_root": "19",
+              "GDELT_event_id": 986385798,
+              "distance_km": 28.916
+            },
+            {
+              "CAMEO_root": "19",
+              "GDELT_event_id": 986385839,
+              "distance_km": 28.916
+            },
+            {
+              "CAMEO_root": "19",
+              "GDELT_event_id": 986385945,
+              "distance_km": 28.916
+            },
+            {
+              "CAMEO_root": "19",
+              "GDELT_event_id": 986390643,
+              "distance_km": 28.916
+            },
+            {
+              "CAMEO_root": "19",
+              "GDELT_event_id": 986390644,
+              "distance_km": 28.916
+            }
+          ],
+          "event_date": "2021-05-23",
+          "fatality_confirmation_from_GDELT": false,
+          "lat": -2.5833,
+          "lon": 29.2489,
+          "one_to_one_event_match_verified": false,
+          "same_SQLDATE_same_FIPS_violent_root_events_n": 31,
+          "same_date_country_nonviolent_near100km_n": 162,
+          "violent_same_date_near100km_n": 23,
+          "violent_same_date_near25km_n": 0,
+          "year": 2021
+        }
+      ],
+      "source_pair": "23.1->24.1",
+      "year": 2021
+    }
+  ],
+  "source_GDELT_daily_zip_sha256_and_row_counts": {
+    "20210518": {
+      "date": "2021-05-18",
+      "geocoded_selected_country_rows": 326,
+      "malformed_rows": 0,
+      "selected_country_rows": 326,
+      "sha256": "8dde445688c1d8d0a0b0166de7e8b575b61b48dc23d41ff76b857be1e08c80b1",
+      "total_news_coded_events": 129876,
+      "zip_bytes": 8624165
+    },
+    "20210519": {
+      "date": "2021-05-19",
+      "geocoded_selected_country_rows": 323,
+      "malformed_rows": 0,
+      "selected_country_rows": 323,
+      "sha256": "61146c9efcee67b42a0ebb6ecdc3b71f17798f01fcb0faa8b5106557c134f5af",
+      "total_news_coded_events": 143206,
+      "zip_bytes": 9446540
+    },
+    "20210523": {
+      "date": "2021-05-23",
+      "geocoded_selected_country_rows": 482,
+      "malformed_rows": 0,
+      "selected_country_rows": 482,
+      "sha256": "28909323d4b931df5160e92e700d5c9ad3590bf0452deaddfd5441605f2076be",
+      "total_news_coded_events": 67374,
+      "zip_bytes": 4128263
+    },
+    "20210524": {
+      "date": "2021-05-24",
+      "geocoded_selected_country_rows": 444,
+      "malformed_rows": 0,
+      "selected_country_rows": 444,
+      "sha256": "d8cfdb7c00e175731e6cd0e7f18ea17fafa6d60c02760f8b02265aad81f7a417",
+      "total_news_coded_events": 116819,
+      "zip_bytes": 7616037
+    }
+  },
+  "source_UCDP_GED_25_1_member": "GEDEvent_v25_1.csv",
+  "source_UCDP_GED_25_1_sha256": "e256f1fb20a579d8b2f910e5bae212f486d3002adaa2e4359ace740c737da05d",
+  "source_UCDP_GED_25_1_total_events": 385918,
+  "source_UCDP_GED_25_1_url": "https://ucdp.uu.se/downloads/ged/ged251-csv.zip",
+  "status": "EVENT_LEVEL_EXTERNAL_MEDIA_FEASIBILITY_NOT_FATALITY_GROUND_TRUTH",
+  "target_case_revision_release_source": "data/geo-h2-three-adjacent-vintage-zero-low-11-origin.json"
+}
