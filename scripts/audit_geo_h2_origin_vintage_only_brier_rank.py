@@ -124,7 +124,7 @@ def audit(rolling,fixed):
         origin23_target26={}
         for name in FIELDS:
             change=shift[SHIFT[name]]
-            if not isinstance(change,float) or not math.isfinite(change):
+            if type(change) not in (int,float) or not math.isfinite(change):
                 raise ValueError("Non-finite or missing label-only revision score")
             value=origin23_target25[name]+change
             if not -1e-12<=value<=1+1e-12:
