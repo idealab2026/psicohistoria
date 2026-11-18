@@ -1,0 +1,765 @@
+{
+  "annual": [
+    {
+      "combined_old_to_later_brier_shift": {
+        "four_state_intensity": -0.00007493093899441777,
+        "global_markov": 1.4613037803423712e-7,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00011253815667201794
+      },
+      "country_n": 196,
+      "fixed_target_release": "26.1",
+      "new_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.04642612480547832,
+        "global_markov": 0.058679548084305595,
+        "global_prevalence_5y": 0.13407679656814322,
+        "original_binary": 0.05458547605731363
+      },
+      "new_origin_release": "24.1",
+      "old_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.04650105574447274,
+        "global_markov": 0.05867940195392756,
+        "global_prevalence_5y": 0.13407679656814322,
+        "original_binary": 0.054698014213985645
+      },
+      "old_origin_old_target_25_1_brier": {
+        "four_state_intensity": 0.04650105574447274,
+        "global_markov": 0.05867940195392756,
+        "global_prevalence_5y": 0.13407679656814322,
+        "original_binary": 0.054698014213985645
+      },
+      "old_origin_release": "23.1",
+      "origin23_1_rank": [
+        "four_state_intensity",
+        "original_binary",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin24_1_rank": [
+        "four_state_intensity",
+        "original_binary",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin_vintage_only_brier_shift": {
+        "four_state_intensity": -0.00007493093899441777,
+        "global_markov": 1.4613037803423712e-7,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00011253815667201794
+      },
+      "origin_year": 2012,
+      "outcome_label_only_brier_shift": {
+        "four_state_intensity": 0,
+        "global_markov": 0,
+        "global_prevalence_5y": 0,
+        "original_binary": 0
+      },
+      "outcome_label_revisions_n": 0,
+      "pairwise_reversals_or_tie_changes": [],
+      "rank_changed": false,
+      "target_year": 2014,
+      "winner_changed": false,
+      "winner_origin23_1": "four_state_intensity",
+      "winner_origin24_1": "four_state_intensity"
+    },
+    {
+      "combined_old_to_later_brier_shift": {
+        "four_state_intensity": 0.0003913178754899396,
+        "global_markov": -0.000005221254884474336,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00011332852426932521
+      },
+      "country_n": 196,
+      "fixed_target_release": "26.1",
+      "new_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.05359285946186079,
+        "global_markov": 0.06619212731882217,
+        "global_prevalence_5y": 0.14567784256556246,
+        "original_binary": 0.05727940842687459
+      },
+      "new_origin_release": "24.1",
+      "old_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.05320154158637085,
+        "global_markov": 0.06619734857370664,
+        "global_prevalence_5y": 0.14567784256556246,
+        "original_binary": 0.05739273695114391
+      },
+      "old_origin_old_target_25_1_brier": {
+        "four_state_intensity": 0.05320154158637085,
+        "global_markov": 0.06619734857370664,
+        "global_prevalence_5y": 0.14567784256556246,
+        "original_binary": 0.05739273695114391
+      },
+      "old_origin_release": "23.1",
+      "origin23_1_rank": [
+        "four_state_intensity",
+        "original_binary",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin24_1_rank": [
+        "four_state_intensity",
+        "original_binary",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin_vintage_only_brier_shift": {
+        "four_state_intensity": 0.0003913178754899396,
+        "global_markov": -0.000005221254884474336,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00011332852426932521
+      },
+      "origin_year": 2013,
+      "outcome_label_only_brier_shift": {
+        "four_state_intensity": 0,
+        "global_markov": 0,
+        "global_prevalence_5y": 0,
+        "original_binary": 0
+      },
+      "outcome_label_revisions_n": 0,
+      "pairwise_reversals_or_tie_changes": [],
+      "rank_changed": false,
+      "target_year": 2015,
+      "winner_changed": false,
+      "winner_origin23_1": "four_state_intensity",
+      "winner_origin24_1": "four_state_intensity"
+    },
+    {
+      "combined_old_to_later_brier_shift": {
+        "four_state_intensity": 0.00010618057381258511,
+        "global_markov": -9.14805767845972e-7,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00010397821890437836
+      },
+      "country_n": 196,
+      "fixed_target_release": "26.1",
+      "new_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.05828103712209533,
+        "global_markov": 0.06742423978101507,
+        "global_prevalence_5y": 0.15265975649300892,
+        "original_binary": 0.057695269253821534
+      },
+      "new_origin_release": "24.1",
+      "old_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.05817485654828274,
+        "global_markov": 0.06742515458678291,
+        "global_prevalence_5y": 0.15265975649300892,
+        "original_binary": 0.05779924747272591
+      },
+      "old_origin_old_target_25_1_brier": {
+        "four_state_intensity": 0.05817485654828274,
+        "global_markov": 0.06742515458678291,
+        "global_prevalence_5y": 0.15265975649300892,
+        "original_binary": 0.05779924747272591
+      },
+      "old_origin_release": "23.1",
+      "origin23_1_rank": [
+        "original_binary",
+        "four_state_intensity",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin24_1_rank": [
+        "original_binary",
+        "four_state_intensity",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin_vintage_only_brier_shift": {
+        "four_state_intensity": 0.00010618057381258511,
+        "global_markov": -9.14805767845972e-7,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00010397821890437836
+      },
+      "origin_year": 2014,
+      "outcome_label_only_brier_shift": {
+        "four_state_intensity": 0,
+        "global_markov": 0,
+        "global_prevalence_5y": 0,
+        "original_binary": 0
+      },
+      "outcome_label_revisions_n": 0,
+      "pairwise_reversals_or_tie_changes": [],
+      "rank_changed": false,
+      "target_year": 2016,
+      "winner_changed": false,
+      "winner_origin23_1": "original_binary",
+      "winner_origin24_1": "original_binary"
+    },
+    {
+      "combined_old_to_later_brier_shift": {
+        "four_state_intensity": -0.004017607164798431,
+        "global_markov": -0.0018105445662595712,
+        "global_prevalence_5y": 0.0036368926389285794,
+        "original_binary": -0.003686997151532749
+      },
+      "country_n": 196,
+      "fixed_target_release": "26.1",
+      "new_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.029230055817573285,
+        "global_markov": 0.03501784245393801,
+        "global_prevalence_5y": 0.14063397186600238,
+        "original_binary": 0.031929789919491525
+      },
+      "new_origin_release": "24.1",
+      "old_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.02921650606715743,
+        "global_markov": 0.034990251040748606,
+        "global_prevalence_5y": 0.14063397186600238,
+        "original_binary": 0.032013963475432436
+      },
+      "old_origin_old_target_25_1_brier": {
+        "four_state_intensity": 0.033247662982371716,
+        "global_markov": 0.036828387020197584,
+        "global_prevalence_5y": 0.1369970792270738,
+        "original_binary": 0.035616787071024274
+      },
+      "old_origin_release": "23.1",
+      "origin23_1_rank": [
+        "four_state_intensity",
+        "original_binary",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin24_1_rank": [
+        "four_state_intensity",
+        "original_binary",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin_vintage_only_brier_shift": {
+        "four_state_intensity": 0.000013549750415856043,
+        "global_markov": 0.00002759141318940672,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00008417355594091125
+      },
+      "origin_year": 2015,
+      "outcome_label_only_brier_shift": {
+        "four_state_intensity": -0.004031156915214286,
+        "global_markov": -0.0018381359794489792,
+        "global_prevalence_5y": 0.0036368926389285716,
+        "original_binary": -0.0036028235955918365
+      },
+      "outcome_label_revisions_n": 1,
+      "pairwise_reversals_or_tie_changes": [],
+      "rank_changed": false,
+      "target_year": 2017,
+      "winner_changed": false,
+      "winner_origin23_1": "four_state_intensity",
+      "winner_origin24_1": "four_state_intensity"
+    },
+    {
+      "combined_old_to_later_brier_shift": {
+        "four_state_intensity": -0.0009046022457420977,
+        "global_markov": 0.000012277062887186552,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00008720418774675609
+      },
+      "country_n": 196,
+      "fixed_target_release": "26.1",
+      "new_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.05254692625011846,
+        "global_markov": 0.06503206900509897,
+        "global_prevalence_5y": 0.1402329295878095,
+        "original_binary": 0.05458850381370662
+      },
+      "new_origin_release": "24.1",
+      "old_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.05345152849586056,
+        "global_markov": 0.06501979194221179,
+        "global_prevalence_5y": 0.1402329295878095,
+        "original_binary": 0.054675708001453376
+      },
+      "old_origin_old_target_25_1_brier": {
+        "four_state_intensity": 0.05345152849586056,
+        "global_markov": 0.06501979194221179,
+        "global_prevalence_5y": 0.1402329295878095,
+        "original_binary": 0.054675708001453376
+      },
+      "old_origin_release": "23.1",
+      "origin23_1_rank": [
+        "four_state_intensity",
+        "original_binary",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin24_1_rank": [
+        "four_state_intensity",
+        "original_binary",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin_vintage_only_brier_shift": {
+        "four_state_intensity": -0.0009046022457420977,
+        "global_markov": 0.000012277062887186552,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00008720418774675609
+      },
+      "origin_year": 2016,
+      "outcome_label_only_brier_shift": {
+        "four_state_intensity": 0,
+        "global_markov": 0,
+        "global_prevalence_5y": 0,
+        "original_binary": 0
+      },
+      "outcome_label_revisions_n": 0,
+      "pairwise_reversals_or_tie_changes": [],
+      "rank_changed": false,
+      "target_year": 2018,
+      "winner_changed": false,
+      "winner_origin23_1": "four_state_intensity",
+      "winner_origin24_1": "four_state_intensity"
+    },
+    {
+      "combined_old_to_later_brier_shift": {
+        "four_state_intensity": -0.00006474665863497042,
+        "global_markov": 0.000007519012122050861,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00008901106283942806
+      },
+      "country_n": 196,
+      "fixed_target_release": "26.1",
+      "new_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.0480278839155362,
+        "global_markov": 0.06197028757127207,
+        "global_prevalence_5y": 0.14004931783025965,
+        "original_binary": 0.055509800479579346
+      },
+      "new_origin_release": "24.1",
+      "old_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.04809263057417117,
+        "global_markov": 0.06196276855915002,
+        "global_prevalence_5y": 0.14004931783025965,
+        "original_binary": 0.055598811542418775
+      },
+      "old_origin_old_target_25_1_brier": {
+        "four_state_intensity": 0.04809263057417117,
+        "global_markov": 0.06196276855915002,
+        "global_prevalence_5y": 0.14004931783025965,
+        "original_binary": 0.055598811542418775
+      },
+      "old_origin_release": "23.1",
+      "origin23_1_rank": [
+        "four_state_intensity",
+        "original_binary",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin24_1_rank": [
+        "four_state_intensity",
+        "original_binary",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin_vintage_only_brier_shift": {
+        "four_state_intensity": -0.00006474665863497042,
+        "global_markov": 0.000007519012122050861,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00008901106283942806
+      },
+      "origin_year": 2017,
+      "outcome_label_only_brier_shift": {
+        "four_state_intensity": 0,
+        "global_markov": 0,
+        "global_prevalence_5y": 0,
+        "original_binary": 0
+      },
+      "outcome_label_revisions_n": 0,
+      "pairwise_reversals_or_tie_changes": [],
+      "rank_changed": false,
+      "target_year": 2019,
+      "winner_changed": false,
+      "winner_origin23_1": "four_state_intensity",
+      "winner_origin24_1": "four_state_intensity"
+    },
+    {
+      "combined_old_to_later_brier_shift": {
+        "four_state_intensity": 0.000060329680779853956,
+        "global_markov": 0.000016822503358542018,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.0000779523329602766
+      },
+      "country_n": 196,
+      "fixed_target_release": "26.1",
+      "new_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.03211684460795737,
+        "global_markov": 0.038954028290571416,
+        "global_prevalence_5y": 0.14677446880628378,
+        "original_binary": 0.031497033581417685
+      },
+      "new_origin_release": "24.1",
+      "old_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.03205651492717752,
+        "global_markov": 0.038937205787212874,
+        "global_prevalence_5y": 0.14677446880628378,
+        "original_binary": 0.03157498591437796
+      },
+      "old_origin_old_target_25_1_brier": {
+        "four_state_intensity": 0.03205651492717752,
+        "global_markov": 0.038937205787212874,
+        "global_prevalence_5y": 0.14677446880628378,
+        "original_binary": 0.03157498591437796
+      },
+      "old_origin_release": "23.1",
+      "origin23_1_rank": [
+        "original_binary",
+        "four_state_intensity",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin24_1_rank": [
+        "original_binary",
+        "four_state_intensity",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin_vintage_only_brier_shift": {
+        "four_state_intensity": 0.000060329680779853956,
+        "global_markov": 0.000016822503358542018,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.0000779523329602766
+      },
+      "origin_year": 2018,
+      "outcome_label_only_brier_shift": {
+        "four_state_intensity": 0,
+        "global_markov": 0,
+        "global_prevalence_5y": 0,
+        "original_binary": 0
+      },
+      "outcome_label_revisions_n": 0,
+      "pairwise_reversals_or_tie_changes": [],
+      "rank_changed": false,
+      "target_year": 2020,
+      "winner_changed": false,
+      "winner_origin23_1": "original_binary",
+      "winner_origin24_1": "original_binary"
+    },
+    {
+      "combined_old_to_later_brier_shift": {
+        "four_state_intensity": -0.000041121612987082834,
+        "global_markov": 0.000016809610742296588,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00007435751064733404
+      },
+      "country_n": 196,
+      "fixed_target_release": "26.1",
+      "new_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.0317225254825268,
+        "global_markov": 0.041848527510049784,
+        "global_prevalence_5y": 0.13664312502639603,
+        "original_binary": 0.03606841492703588
+      },
+      "new_origin_release": "24.1",
+      "old_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.03176364709551388,
+        "global_markov": 0.04183171789930749,
+        "global_prevalence_5y": 0.13664312502639603,
+        "original_binary": 0.03614277243768321
+      },
+      "old_origin_old_target_25_1_brier": {
+        "four_state_intensity": 0.03176364709551388,
+        "global_markov": 0.04183171789930749,
+        "global_prevalence_5y": 0.13664312502639603,
+        "original_binary": 0.03614277243768321
+      },
+      "old_origin_release": "23.1",
+      "origin23_1_rank": [
+        "four_state_intensity",
+        "original_binary",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin24_1_rank": [
+        "four_state_intensity",
+        "original_binary",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin_vintage_only_brier_shift": {
+        "four_state_intensity": -0.000041121612987082834,
+        "global_markov": 0.000016809610742296588,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00007435751064733404
+      },
+      "origin_year": 2019,
+      "outcome_label_only_brier_shift": {
+        "four_state_intensity": 0,
+        "global_markov": 0,
+        "global_prevalence_5y": 0,
+        "original_binary": 0
+      },
+      "outcome_label_revisions_n": 0,
+      "pairwise_reversals_or_tie_changes": [],
+      "rank_changed": false,
+      "target_year": 2021,
+      "winner_changed": false,
+      "winner_origin23_1": "four_state_intensity",
+      "winner_origin24_1": "four_state_intensity"
+    },
+    {
+      "combined_old_to_later_brier_shift": {
+        "four_state_intensity": -0.000014223547058170305,
+        "global_markov": 0.000001843643931243033,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00007564705423963869
+      },
+      "country_n": 196,
+      "fixed_target_release": "26.1",
+      "new_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.050026458479663506,
+        "global_markov": 0.06493907780666072,
+        "global_prevalence_5y": 0.15352869799287563,
+        "original_binary": 0.05831693718691096
+      },
+      "new_origin_release": "24.1",
+      "old_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.050040682026721676,
+        "global_markov": 0.06493723416272948,
+        "global_prevalence_5y": 0.15352869799287563,
+        "original_binary": 0.0583925842411506
+      },
+      "old_origin_old_target_25_1_brier": {
+        "four_state_intensity": 0.050040682026721676,
+        "global_markov": 0.06493723416272948,
+        "global_prevalence_5y": 0.15352869799287563,
+        "original_binary": 0.0583925842411506
+      },
+      "old_origin_release": "23.1",
+      "origin23_1_rank": [
+        "four_state_intensity",
+        "original_binary",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin24_1_rank": [
+        "four_state_intensity",
+        "original_binary",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin_vintage_only_brier_shift": {
+        "four_state_intensity": -0.000014223547058170305,
+        "global_markov": 0.000001843643931243033,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00007564705423963869
+      },
+      "origin_year": 2020,
+      "outcome_label_only_brier_shift": {
+        "four_state_intensity": 0,
+        "global_markov": 0,
+        "global_prevalence_5y": 0,
+        "original_binary": 0
+      },
+      "outcome_label_revisions_n": 0,
+      "pairwise_reversals_or_tie_changes": [],
+      "rank_changed": false,
+      "target_year": 2022,
+      "winner_changed": false,
+      "winner_origin23_1": "four_state_intensity",
+      "winner_origin24_1": "four_state_intensity"
+    },
+    {
+      "combined_old_to_later_brier_shift": {
+        "four_state_intensity": 0.0002442261535550508,
+        "global_markov": 0.000011812916837071474,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00006792982926938362
+      },
+      "country_n": 196,
+      "fixed_target_release": "26.1",
+      "new_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.038848592066495546,
+        "global_markov": 0.04633951583124332,
+        "global_prevalence_5y": 0.1434500082070787,
+        "original_binary": 0.03881363399270893
+      },
+      "new_origin_release": "24.1",
+      "old_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.038604365912940496,
+        "global_markov": 0.04632770291440625,
+        "global_prevalence_5y": 0.1434500082070787,
+        "original_binary": 0.03888156382197831
+      },
+      "old_origin_old_target_25_1_brier": {
+        "four_state_intensity": 0.038604365912940496,
+        "global_markov": 0.04632770291440625,
+        "global_prevalence_5y": 0.1434500082070787,
+        "original_binary": 0.03888156382197831
+      },
+      "old_origin_release": "23.1",
+      "origin23_1_rank": [
+        "four_state_intensity",
+        "original_binary",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin24_1_rank": [
+        "original_binary",
+        "four_state_intensity",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin_vintage_only_brier_shift": {
+        "four_state_intensity": 0.0002442261535550508,
+        "global_markov": 0.000011812916837071474,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00006792982926938362
+      },
+      "origin_year": 2021,
+      "outcome_label_only_brier_shift": {
+        "four_state_intensity": 0,
+        "global_markov": 0,
+        "global_prevalence_5y": 0,
+        "original_binary": 0
+      },
+      "outcome_label_revisions_n": 0,
+      "pairwise_reversals_or_tie_changes": [
+        {
+          "delta_origin23_1": -0.0002771979090378171,
+          "delta_origin24_1": 0.000034958073786617305,
+          "model_a": "four_state_intensity",
+          "model_b": "original_binary"
+        }
+      ],
+      "rank_changed": true,
+      "target_year": 2023,
+      "winner_changed": true,
+      "winner_origin23_1": "four_state_intensity",
+      "winner_origin24_1": "original_binary"
+    },
+    {
+      "combined_old_to_later_brier_shift": {
+        "four_state_intensity": -0.00024126072829460526,
+        "global_markov": 0.00001478801727790996,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00006470233520811802
+      },
+      "country_n": 196,
+      "fixed_target_release": "26.1",
+      "new_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.046037082602436816,
+        "global_markov": 0.04972525146453116,
+        "global_prevalence_5y": 0.14675609916525365,
+        "original_binary": 0.04136675954163056
+      },
+      "new_origin_release": "24.1",
+      "old_origin_fixed_target_26_1_brier": {
+        "four_state_intensity": 0.04627834333073142,
+        "global_markov": 0.04971046344725325,
+        "global_prevalence_5y": 0.14675609916525365,
+        "original_binary": 0.04143146187683868
+      },
+      "old_origin_old_target_25_1_brier": {
+        "four_state_intensity": 0.04627834333073142,
+        "global_markov": 0.04971046344725325,
+        "global_prevalence_5y": 0.14675609916525365,
+        "original_binary": 0.04143146187683868
+      },
+      "old_origin_release": "23.1",
+      "origin23_1_rank": [
+        "original_binary",
+        "four_state_intensity",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin24_1_rank": [
+        "original_binary",
+        "four_state_intensity",
+        "global_markov",
+        "global_prevalence_5y"
+      ],
+      "origin_vintage_only_brier_shift": {
+        "four_state_intensity": -0.00024126072829460526,
+        "global_markov": 0.00001478801727790996,
+        "global_prevalence_5y": 0,
+        "original_binary": -0.00006470233520811802
+      },
+      "origin_year": 2022,
+      "outcome_label_only_brier_shift": {
+        "four_state_intensity": 0,
+        "global_markov": 0,
+        "global_prevalence_5y": 0,
+        "original_binary": 0
+      },
+      "outcome_label_revisions_n": 0,
+      "pairwise_reversals_or_tie_changes": [],
+      "rank_changed": false,
+      "target_year": 2024,
+      "winner_changed": false,
+      "winner_origin23_1": "original_binary",
+      "winner_origin24_1": "original_binary"
+    }
+  ],
+  "annual_pairwise_reversal_or_tie_count": 1,
+  "annual_ranking_changes_n": 1,
+  "annual_winner_changes_n": 1,
+  "country_n": 196,
+  "held_fixed_outcome_release": "26.1",
+  "historical_issued_asof_evidence": false,
+  "historical_targets": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "later_origin_release": "24.1",
+  "limitations": "Both origin releases were retrospective for many years; this isolates revision of the origin dataset holding outcome release 26.1 fixed, not model hyperparameter tuning, causal attribution within a source revision, or prospective skill. Country-years correlated; 2025 excluded from pooled results.",
+  "no_2027_2028_forecasts_reissued": true,
+  "official_UCDP_ZIP_sha256": {
+    "23.1": "6c7dc09cc3173b21568a88d70862bee6a9199b2c6b217719698d9298ca8ecaff",
+    "24.1": "00410bdb65023d1bc8799f47f188677965046bb73447ee33094782db30076260",
+    "25.1": "564ce9a33652a5d7adef30f00ce6ac86411dedbcc10ef60ca9bdfbfeb9fea917",
+    "26.1": "66910888f5653af42776d2debc1d72fe527559e7f7fc82e69b7c8771467f2d34"
+  },
+  "old_origin_release": "23.1",
+  "original_GEO2027_issue_SHA256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "pooled_country_year_n": 2156,
+  "pooled_new_origin_fixed_outcome_Brier": {
+    "four_state_intensity": 0.044259671873794766,
+    "global_markov": 0.054192955919773494,
+    "global_prevalence_5y": 0.14368027400987946,
+    "original_binary": 0.047059184289135574
+  },
+  "pooled_old_origin_fixed_outcome_Brier": {
+    "four_state_intensity": 0.044307424755400046,
+    "global_markov": 0.05418354916976698,
+    "global_prevalence_5y": 0.14368027400987946,
+    "original_binary": 0.04714562272265354
+  },
+  "pooled_origin_only_Brier_shift": {
+    "four_state_intensity": -0.00004775288160527996,
+    "global_markov": 0.000009406750006511755,
+    "global_prevalence_5y": 0,
+    "original_binary": -0.00008643843351796576
+  },
+  "pooled_ranking": {
+    "origin23_1_rank": [
+      "four_state_intensity",
+      "original_binary",
+      "global_markov",
+      "global_prevalence_5y"
+    ],
+    "origin24_1_rank": [
+      "four_state_intensity",
+      "original_binary",
+      "global_markov",
+      "global_prevalence_5y"
+    ],
+    "pairwise_reversals_or_tie_changes": [],
+    "rank_changed": false,
+    "winner_changed": false,
+    "winner_origin23_1": "four_state_intensity",
+    "winner_origin24_1": "four_state_intensity"
+  },
+  "schema": "idealab.psico.geo_h2_origin_vintage_only_brier_rank.v1",
+  "source_fixed_outcome_label_report": "data/geo-h2-fixed-vector-2526-outcome-revision.json",
+  "source_rolling_report": "data/geo-h2-rolling-historical-2014-2025.json",
+  "status": "RETROSPECTIVE_ORIGIN_VINTAGE_ONLY_SCORE_ATTRIBUTION_NOT_PROSPECTIVE"
+}
