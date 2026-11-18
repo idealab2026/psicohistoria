@@ -25,4 +25,28 @@ El resultado incluye la tabla de los 196 países con probabilidades y contribuci
 - El modelo no se reajusta ni se selecciona a partir del resultado 2023; las emisiones prospectivas de 2027/2028 no se modifican.
 - No se presume independencia estadística entre países ni se atribuye significación a una diferencia de Brier muy pequeña.
 
-Los recuentos oficiales y las ediciones están sujetos a SHA. El informe final se registra en `data/geo-h2-2023-country-origin-vintage-rank-influence.json` una vez reproducido en GitHub Actions y confirmado.
+## Resultados originales reconstruidos y fijados
+
+La reproducción de los cuatro archivos oficiales UCDP por SHA, el origen 2021 y las 196 etiquetas idénticas de 2023 reproduce la inversión exacta registrada en la PR #119:
+
+| Margen Brier: 4 estados menos binario | Origen 23.1 | Origen 24.1 |
+|---|---:|---:|
+| Objetivo 2023 fijo (UCDP 26.1) | −0,0002771979 | +0,0000349581 |
+
+El cambio de margen es **+0,00031215598**. Se descompone exactamente como la suma de 196 contribuciones dividida entre 196. Los cinco mayores movimientos absolutos son:
+
+| País (GWNO) | Cambio de contribución individual no normalizado |
+|---|---:|
+| Ruanda (517) | +0,04891129 |
+| Uganda (800) | +0,01546486 |
+| Kirguistán (703) | −0,00537892 |
+| Mali (432) | −0,00513975 |
+| Sudán (625) | +0,00467551 |
+
+Las variaciones positivas desplazan la comparación hacia el binario, mientras que las negativas favorecen al modelo de cuatro estados. Ruanda y Uganda suman aportes positivos superiores al movimiento neto porque existen aportes compensatorios.
+
+**Análisis de influencia:** al retirar una sola contribución país-año (sin reentrenar) se pierde la inversión del ranking en **29 de las 196** exclusiones posibles. Por tanto, no sería válido afirmar que el cambio de ganador está explicado por un único país causal: los márgenes son suficientemente pequeños para que muchos países resulten decisivos *en un leave-one-out de evaluación*.
+
+[Informe JSON completo con 196 países y 196 experimentos leave-one-out](../data/geo-h2-2023-country-origin-vintage-rank-influence.json).
+
+El informe y las probabilidades originales se reproducen desde las fuentes oficiales y son comprobados por igualdad exacta de datos en CI. Las fechas de origen siguen siendo simuladas retrospectivamente.
