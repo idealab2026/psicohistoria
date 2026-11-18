@@ -36,3 +36,36 @@ Fuentes metodológicas: [World Bank, WGI preguntas frecuentes](https://www.world
 SHA de UCDP26.1, serie WGI oficial normalizada e identificada, cobertura por país-año explícita, ninguna imputación 0, pruebas de AUC y Spearman con dirección verificable, todas las 196 emisiones previas intactas y auditoría pública institucional. Las cifras se insertarán después de la ejecución inicial y antes de fusionar.
 
 Informe futuro: `data/geo-h2-wgi-political-stability-contextual-concordance.json`.
+
+## Resultados oficiales reproducidos
+
+El emparejamiento exacto por GWNO/ISO3, con excepciones explícitas verificadas, ha cubierto **194 de los 196 países** de la cohorte. Solo permanecen excluidos los GWNO **327 (Ciudad del Vaticano)** y **713 (Taiwán)**, por falta de correspondencia institucional que pueda garantizarse bajo el protocolo. No se imputaron observaciones ausentes ni se usaron nombres aproximados.
+
+Se ha almacenado el contenido numérico de la consulta oficial WGI de 2012–2025, con **2.885 observaciones disponibles en los territorios ISO3 consultados** y SHA-256 normalizada **`77959f040db841106c37d83de9cdeeca774b4575266efb3a1ae552facd6ff6e9`**. El análisis utiliza **194 países en cada uno de los 14 años**, todos con recuentos UCDP 26.1 y estimación WGI del mismo año.
+
+| Año | AUC ordinal contextual: WGI menor en países con UCDP ≥25 muertes | Países emparejados |
+|---|---:|---:|
+| 2012 | 0,9636 | 194 |
+| 2013 | 0,9439 | 194 |
+| 2014 | 0,9636 | 194 |
+| 2015 | 0,9711 | 194 |
+| 2016 | 0,9545 | 194 |
+| 2017 | 0,9590 | 194 |
+| 2018 | 0,9537 | 194 |
+| 2019 | 0,9499 | 194 |
+| 2020 | 0,9704 | 194 |
+| 2021 | 0,9608 | 194 |
+| 2022 | 0,9513 | 194 |
+| 2023 | 0,9586 | 194 |
+| 2024 | 0,9624 | 194 |
+| 2025 | 0,9507 | 194 |
+
+En 2025, la estimación media de estabilidad percibida fue **−1,4142** para 34 países con al menos 25 fallecidos según UCDP y **+0,3100** en los otros 160 países. El contraste ordinal es alto, pero mide **concordancia de constructos parcialmente relacionados**, no precisión de recuentos ni verdad latente.
+
+Para el diagnóstico retrospectivo con indicador de origen y violencia dos años después se reconstruyeron doce comparaciones 2012→2014 a 2023→2025, con AUC por año disponible en el informe. Estos valores no son validación prospectiva: WGI consultado actualmente incorpora revisiones y publicaciones posteriores a los años simulados.
+
+En la comparación **WGI 2025 vs probabilidades H2 ya registradas para 2027** (sin observar los resultados de 2027), la correlación de rangos de Spearman entre mayor riesgo H2 y menor estabilidad WGI es **+0,7691** en los 194 países. Esto señala similitud entre ordenaciones, no que las probabilidades estén calibradas o que predigan correctamente 2027.
+
+**Decisión científica:** la evidencia del Banco Mundial es consistente con la intensidad geopolítica de UCDP a nivel agregado, pero no identifica la categoría verdadera de fallecidos para Ruanda, Burundi, Venezuela ni otros casos específicos. Para verificar discrepancias de conteos se requiere evidencia independiente con eventos, fechas, localizaciones y criterios de muertes comparables; la mayor AUC contextual no resuelve esa necesidad.
+
+[Informe JSON SHA con los 194 países, cobertura y 14 años](../data/geo-h2-wgi-political-stability-contextual-concordance.json) · [Reproductor oficial](../scripts/experiment_geo_h2_worldbank_wgi_external_context.py) · [Pruebas de mapeo y métricas](../scripts/test_experiment_geo_h2_worldbank_wgi_external_context.py).
