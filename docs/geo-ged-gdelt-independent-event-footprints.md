@@ -45,3 +45,32 @@ La siguiente fase requerirá fuentes primarias y contraste documental manual, o 
 Se exige SHA-256 oficial de GED25.1 y de cada archivo GDELT utilizado, archivo GED ZIP íntegro, GDELT correctamente delimitado por tabuladores, cohorte y casos congelados mediante informe anterior, comparación de fechas y distancias estricta, pruebas negativas de falsos emparejamientos, auditoría pública y preservación de GEO2027/GEO2028. El informe `data/geo-ged-gdelt-external-event-footprint-3case.json` quedará congelado tras ejecución y reproducción de CI.
 
 No se ajustan parámetros predictivos, ni se reemiten probabilidades.
+
+## Resultados reproducidos desde archivos oficiales SHA
+
+La descarga oficial **GED25.1** (385.918 eventos; SHA-256 `e256f1fb20a579d8b2f910e5bae212f486d3002adaa2e4359ace740c737da05d`) fue comparada con cuatro archivos diarios históricos **GDELT1.0** (18, 19, 23 y 24 de mayo de 2021), cuyas huellas SHA figuran fijadas en el script y el informe.
+
+**Se corrigió el universo de estudio antes de cerrar este experimento:** las predicciones H2 usan `sb_total_deaths_best`, muertes de violencia *state-based*. Por eso solo son elegibles los registros GED `type_of_violence=1`. Los registros no estatales (`2`) y unilaterales (`3`) son excluidos explícitamente, aunque tengan víctimas; mezclarlos era una incongruencia de estimandos.
+
+| País-año | Eventos GED25.1 totales | Excluidos por tipos 2/3 | Eventos tipo 1 con día único/geolocalización | Eventos seleccionados con huellas GDELT ≤100km |
+|---|---:|---:|---:|---:|
+| Venezuela 2021 (GWNO101) | 10 | 9 | 1 | 1/1 |
+| Burundi 2022 (GWNO516) | 42 | 41 | 0 | No evaluable |
+| Ruanda 2021 (GWNO517) | 2 | 0 | 1 | 1/1 |
+| **Total** | **54** | **50** | **2** | **2/2** |
+
+### Evidencia por acontecimiento
+
+**Venezuela, 18/05/2021.** UCDP GED identifica el evento **400895**, `best=1` fallecido, estado estatal `type1`. Se observan **14 registros** de acciones violentas GDELT con misma fecha, país y coordenadas a ≤25km, el más próximo a distancia reportada **0km**. Las 14 filas son códigos de acontecimientos basados en noticias, **no 14 eventos de muerte distintos ni una verificación independiente de la víctima**.
+
+**Ruanda, 23/05/2021.** UCDP GED registra el evento **428252**, `best=5` muertes, estado estatal. GDELT presenta **23 registros** de acciones violentas a ≤100km, ninguno a ≤25km; distancia mínima **28,916km**. El contacto temporal-geográfico es compatible con huella informativa regional pero no identifica el mismo evento.
+
+**Burundi, 2022.** La edición GED25.1 contiene un único registro estatal del año, **evento 442626, `best=10`**, pero está codificado como **intervalo 19/06/2022–21/06/2022**, no fecha única. Se excluye legítimamente del experimento principal, evitando crear una fecha de violencia ficticia. Hay 41 registros de otros tipos de violencia ese año que tampoco corresponden al objetivo del Markov H2. El registro estatal de diez víctimas es **coherente dentro de UCDP** con la revisión country-year 0→10, pero procede de la misma institución y no constituye una confirmación independiente. Una extensión por ventanas multi-día, identificada ahora como exploratoria posterior a los resultados principales, requiere protocolo distinto y deberá estar separada de esta prueba.
+
+### Interpretación
+
+La proporción 2/2 es descriptiva de dos eventos seleccionados de manera no representativa; no estima sensibilidad de GDELT, exactitud de UCDP ni riesgo futuro. Los códigos CAMEO 18–20 indican acciones violentas, **no necesariamente muertes**; los eventos de noticias pueden estar duplicados, desplazados geográficamente o basados en las mismas fuentes periodísticas que UCDP.
+
+El hecho de no tener evidencia elegible en Burundi bajo el requisito original de fecha puntual se debe a una **restricción de temporalidad del método**, no a una ausencia de violencia, y fue explicitado antes de cualquier ampliación post hoc.
+
+Informe JSON verificable: [datos de tres casos, dos eventos elegibles y cuatro archivos GDELT](../data/geo-ged-gdelt-external-event-footprint-3case.json). La siguiente fase deberá distinguir eventos ocurridos durante **intervalos de varios días** y exigir corroboración manual de la identidad y del número de víctimas antes de actualizar cualquier afirmación científica sobre la validez de las etiquetas.
