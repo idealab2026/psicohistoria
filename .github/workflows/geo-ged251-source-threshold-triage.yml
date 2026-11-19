@@ -32,7 +32,7 @@ jobs:
           python-version: '3.12'
       - name: Adversarial pair-provenance and annual threshold unit tests
         run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_ged251_candidate_source_threshold.py' -v
-      - name: Verify UCDP official SHA, prior study and emit source-overlap/threshold report
-        run: python3 -B scripts/audit_geo_ged251_candidate_source_threshold.py --print-report
+      - name: Verify frozen source-overlap/threshold report against official UCDP SHA
+        run: python3 -B scripts/audit_geo_ged251_candidate_source_threshold.py --check-report
       - name: Institutional privacy publication gate
         run: python3 -B scripts/audit_public.py
