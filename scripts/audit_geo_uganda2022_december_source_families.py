@@ -29,6 +29,12 @@ from audit_geo_uganda2022_statebased_eligibility import (
 
 ROOT=Path(__file__).resolve().parents[1]
 OUTPUT=ROOT/"data/geo-ged251-uganda-2022-december-source-families.json"
+PUBLIC_REVIEW=ROOT/"data/geo-ged251-uganda-2022-december-public-source-review.json"
+REVIEW_HOSTS={
+    "www.updf.go.ug","www.monitor.co.ug","www.theeastafrican.co.ke",
+    "crisisgroup-staging.sbx.so","ugandaradionetwork.net",
+    "www.independent.co.ug","upf.go.ug","documents.un.org",
+}
 DECEMBER_IDS=(460796,460859,460862,462156)
 EXPECTED_BEST={460796:19,460859:2,460862:0,462156:2}
 EXPECTED_DATES={
@@ -126,12 +132,99 @@ def normalize_and_publish(eid,row):
     out["latitude"]=ev["lat"]
     out["longitude"]=ev["lon"]
     out["GED_source_article_fingerprints"]=ev["citation_fingerprints"]
+    out["distinct_GED_bibliographic_refs_n"]=len(set(ev["citation_fingerprints"]))
+    out["repeated_identical_bibliographic_fragments_n"]=(
+        len(ev["citation_fingerprints"])-len(set(ev["citation_fingerprints"])))
     out["GED_bibliographic_previews"]=[x[:PREVIEW_MAX] for x in fragments[:SOURCES_MAX]]
     out["GED_bibliography_truncated"]=len(fragments)>SOURCES_MAX or any(
         len(x)>PREVIEW_MAX for x in fragments)
     out["independently_verified_fatality_or_rebel_status"]=False
     out["duplicate_event_verified"]=False
     return out,ev
+
+
+def audit_public_review(records):
+    """Check editorial case attributions against exact GED source metadata.
+
+    This does not fetch external sources or certify their independence.
+    Source URLs and claims were examined manually, and the complete editorial
+    evidence file is SHA-committed. All source facts require future rereading.
+    """
+    from urllib.parse import urlsplit
+    review=json.loads(PUBLIC_REVIEW.read_text(encoding="utf-8"))
+    if (review.get("schema")!="idealab.psico.uganda_december2022_public_source_reconciliation.v1"
+        or review.get("event_fatality_labels_modified") is not False
+        or review.get("issued_GEO_forecasts_modified") is not False
+        or review.get("duplicate_events_confirmed_by_external_sources_n")!=0
+        or review.get("independent_full_casualty_roster_verified") is not False):
+        raise ValueError("Public-source audit overclaims victim counts or label changes")
+    sources=review["source_publications"]
+    if len(sources)!=9:
+        raise ValueError("Fixed public source catalog changed")
+    entries={x["id"]:x for x in sources}
+    if len(entries)!=len(sources):
+        raise ValueError("Repeated public source identifier")
+    for x in sources:
+        u=urlsplit(x["url"])
+        if (u.scheme!="https" or u.hostname not in REVIEW_HOSTS or not u.path
+            or u.query or len(x["origin_group"])<5):
+            raise ValueError("External source domain or provenance not reviewed")
+        if x["kind"] not in (
+            "involved_state_actor","journalism_mixed_primary_locals_and_army",
+            "journalism_mixed_army_and_local_leaders","secondary_synthesis",
+            "interview_local_state_official","syndication_of_urn",
+            "journalism_neighbors_and_police",
+            "independent_institution_retrospective_investigation"):
+            raise ValueError("Source role classification not justified")
+    if (entries["urn_ntoroko_followup"]["origin_group"] !=
+        entries["independent_ntoroko_followup"]["origin_group"]):
+        raise ValueError("Repeated URN article incorrectly treated as independent")
+    episodes=review["episode_claims"]
+    if len(episodes)!=4 or {x["GED_id"] for x in episodes}!=set(DECEMBER_IDS):
+        raise ValueError("Fixed December GED case selection changed")
+    for item in episodes:
+        ev=records[item["GED_id"]]
+        if (item["GED_date_start"]!=ev["date_start"]
+            or item["GED_date_end"]!=ev["date_end"]
+            or item["GED_best"]!=ev["best"]
+            or item["GED_high"]!=ev["high"]
+            or item["independent_full_fatality_count_supported"] is not False
+            or item["independent_conflict_actor_membership_per_deceased"] is not False
+            or not set(item["source_ids"]).issubset(entries)):
+            raise ValueError("External finding fails pinned official GED case contract")
+    case={x["GED_id"]:x for x in episodes}
+    # Tuesday, 20 Dec vs issued 21 Dec AND Sunday, 18 Dec vs issued 19;
+    # both dated 'exact' in the GED dataset. This is a source chronology
+    # discrepancy, not an independently verified UCDP correction.
+    day_off=[]
+    for eid in (460859,462156):
+        ev=records[eid]
+        item=case[eid]
+        ged=date.fromisoformat(ev["date_start"])
+        dates=[date.fromisoformat(d) for d in item["reported_event_dates"]]
+        if (ev["date_prec"]!=1 or len(dates)!=1
+            or (ged-dates[0]).days!=1):
+            raise ValueError("Exact-day source/issued GED discrepancy disappeared")
+        day_off.append(eid)
+    if (case[460862]["reported_event_dates"]
+        or records[460862]["best"]!=0 or records[460862]["high"]!=3
+        or case[460862]["source_ids"]):
+        raise ValueError("Cumulative best-zero GED record misattributed or reclassified")
+    if (case[460796]["independent_conflict_exchange_supported"] is not True
+        or "un_experts_northkivu" not in case[460796]["source_ids"]
+        or case[460859]["independent_conflict_exchange_supported"] is not False
+        or case[462156]["independent_conflict_exchange_supported"] is not False):
+        raise ValueError("Unjustified extrapolation of 2022 armed combat testimony")
+    return {
+        "public_source_review_sha256":sha256(PUBLIC_REVIEW.read_bytes()).hexdigest(),
+        "public_source_publications_n":len(sources),
+        "reviewed_original_reporting_groups_n":len(set(x["origin_group"] for x in sources)),
+        "GED_exact_date_vs_contemporary_event_day_discrepancies":day_off,
+        "GED_cumulative_best_zero_high3_id":460862,
+        "external_qualitative_Ntoroko_armed_combat_supported":True,
+        "independently_verified_full_19_fatality_roster":False,
+        "December_events_reclassified":0,
+    }
 
 
 def build(raw):
@@ -160,6 +253,9 @@ def build(raw):
                 "same_original_source_string":a["source_original"]==b["source_original"],
                 "duplicate_episodes_verified":False,
             })
+    # Source categories are editorially constrained by the exact official
+    # GED metadata; they are NOT independently SHA-hashed online witness pages.
+    external_review=audit_public_review(records)
     # Comparing the 19-count row with the remaining December records is
     # hypothesis generation, never a mechanical correction.
     return {
@@ -170,6 +266,10 @@ def build(raw):
         "previous_six_event_census_SHA256":sha256(PREVIOUS.read_bytes()).hexdigest(),
         "GWNO":GWNO,"year":YEAR,"dyad_new_id":DYAD,
         "December_record_count":len(records),
+        "public_source_reconciliation":external_review,
+        "same_event_GED_repeated_bibliography_fragments_n":sum(
+            records[eid]["repeated_identical_bibliographic_fragments_n"]
+            for eid in DECEMBER_IDS),
         "December_type1_best_sum":sum(x["best"] for x in records.values()),
         "December_type1_low_sum":sum(x["low"] for x in records.values()),
         "December_type1_high_sum":sum(x["high"] for x in records.values()),
