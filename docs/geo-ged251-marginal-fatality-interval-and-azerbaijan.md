@@ -21,6 +21,19 @@ GED **427299**, GWNO **373**, evento estatal con best=1 de fecha exacta **17/06/
 
 El año Azerbaiyán 2021 consta con best=30 en la cohorte anterior; eliminar hipotéticamente el registro de una muerte no cruza 25, por lo que la prioridad de este caso es documental, **no** de estabilidad individual de etiqueta.
 
+## Enmienda de protocolo tras la primera ejecución (documentada en Git)
+
+**La preregistración inicial contenía un supuesto metodológico incorrecto:** que cada fila GED respetaría siempre `low ≤ best ≤ high`. La primera ejecución sobre el archivo oficial no superó ese control. La consulta del [codebook oficial UCDP GED25.1, §5.5, página 23](https://ucdp.uu.se/downloads/replication_data/2025_ucdp-ged-251.pdf) reveló que las filas `event_clarity=2` pueden contener un `high` inferior a `best` o `low`, porque la estimación agregada se corrige al identificar episodios claros que ya se contabilizan por separado.
+
+No se debe transformar ese comportamiento oficialmente documentado en un «error» de UCDP ni excluir las filas. **La enmienda conserva el universo congelado de 14 países-año y 118 IDs, pero modifica la fórmula**, antes de calcular nuevos resultados:
+
+1. Reproducir por separado las sumas **literales** de `low`, `best` y `high` de las filas oficiales, sin reordenarlas ni llamar «intervalo ordenado» a las tres.
+2. Calcular una **envolvente aritmética descriptiva** sumando el mínimo y el máximo de las tres estimaciones de **cada fila**. Esta envolvente contiene necesariamente best incluso en eventos agregados no monótonos, pero **no es un intervalo estadístico de confianza ni asegura consistencia conjunta**.
+3. Publicar cuántos eventos presentan orden no monótono, su `event_clarity`, los valores originales y en qué país-año ocurren; comparar también cada escenario literal `low` y `high` con la etiqueta basada en `best`.
+4. Mantener el test de entradas ordenadas para la función de clasificación sobre **mínimo/best/máximo normalizados**, no como requisito indebidamente impuesto a las filas originales.
+
+**Control de transparencia:** el fallo inicial, esta corrección y la reproducción posterior quedan visibles en el historial de commits y CI de la PR. No se modifican los datos oficiales para forzarlos a superar un test artificial.
+
 ## Límites y reproducibilidad
 
 El informe estructurado se congelará en [JSON](../data/geo-ged251-marginal-low-best-high-2021-22.json) tras la primera ejecución SHA-verificada, y CI comprobará luego coincidencia exacta.
