@@ -144,6 +144,9 @@ def interpret_ged_row(r):
         "UCDP_source_original":r["source_original"],
         "where_prec":int(r["where_prec"]),
         "bibliographic_references_n":count,
+        "exact_distinct_bibliographic_refs_n":len(set(x["UCDP_reference_sha256"] for x in sources)),
+        "repeated_exact_bibliographic_ref_entries_n":(
+            count-len(set(x["UCDP_reference_sha256"] for x in sources))),
         "bibliographic_pre_event_references_n":sum(
             x["published_before_exact_event_day"] for x in sources),
         "bibliographic_references":sources,
@@ -189,6 +192,8 @@ def validate_public_review(ged,review):
         raise ValueError("Later assailant toll is not independently documented")
     if review["source_before_11May_explains_event_day_error"] is not False:
         raise ValueError("Pre-event published item is not an event-day error proof")
+    if ged["official_GED_fatality_components"]["low"]!=8:
+        raise ValueError("The original official lower casualty estimate has changed")
     return {
         "reviewed_public_publications_n":len(refs),
         "original_publisher_roots_n":len(set(s["original_reporting_root"]
@@ -215,6 +220,11 @@ def build(raw):
         "public_review_sha256":sha256(GOV_REVIEW.read_bytes()).hexdigest(),
         "original_country_year_best":COUNTRY_BEST,
         "hypothetical_drop_entire_event_total":COUNTRY_BEST-BEST,
+        "hypothetical_replace_best_with_official_low_total":(
+            COUNTRY_BEST-BEST+official["official_GED_fatality_components"]["low"]),
+        "hypothetical_replace_best_with_official_low_crosses_25":(
+            COUNTRY_BEST-BEST+official["official_GED_fatality_components"]["low"]<25),
+        "low_and_best_are_UCDP_sensitivity_estimates_not_errors":True,
         "hypothetical_drop_entire_event_crosses_25":COUNTRY_BEST-BEST<25,
         "original_ged_event":official,
         "contemporaneous_source_audit":external,
