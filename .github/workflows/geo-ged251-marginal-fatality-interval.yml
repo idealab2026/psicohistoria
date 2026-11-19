@@ -1,0 +1,40 @@
+name: GEO GED25.1 marginal low-best-high 2021-22 plus Azerbaijan provenance
+on:
+  push:
+    paths:
+      - 'scripts/audit_geo_ged251_marginal_fatality_interval.py'
+      - 'scripts/test_audit_geo_ged251_marginal_fatality_interval.py'
+      - 'data/geo-ged251-marginal-low-best-high-2021-22.json'
+      - 'data/geo-ged251-azerbaijan-2021-external-date-review.json'
+      - 'docs/geo-ged251-marginal-fatality-interval-and-azerbaijan.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/geo-ged251-marginal-fatality-interval.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_geo_ged251_marginal_fatality_interval.py'
+      - 'scripts/test_audit_geo_ged251_marginal_fatality_interval.py'
+      - 'data/geo-ged251-marginal-low-best-high-2021-22.json'
+      - 'data/geo-ged251-azerbaijan-2021-external-date-review.json'
+      - 'docs/geo-ged251-marginal-fatality-interval-and-azerbaijan.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/geo-ged251-marginal-fatality-interval.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  intervals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Adversarial tests for low-best-high bounds, exact source corpus and original scope
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_ged251_marginal_fatality_interval.py' -v
+      - name: Verify frozen 14-country-year fatality uncertainty report against UCDP ZIP SHA
+        run: python3 -B scripts/audit_geo_ged251_marginal_fatality_interval.py --check-report
+      - name: Verify institutional public privacy boundary
+        run: python3 -B scripts/audit_public.py
