@@ -29,7 +29,7 @@ GWNO,YEAR=500,2022
 DYAD="16938"
 GED_IDS=(444764,444765)
 THRESHOLD=25
-HOSTS={"upf.go.ug","www.independent.co.ug","softpower.ug",
+HOSTS={"upf.go.ug","www.independent.co.ug","softpower.ug","dailyexpress.co.ug",
        "www.ugandaradionetwork.net","ugandaradionetwork.net",
        "observer.ug","www.uu.se","journals.sagepub.com"}
 REQUIRED={"id","country_id","year","type_of_violence",
