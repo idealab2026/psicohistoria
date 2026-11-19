@@ -1,0 +1,38 @@
+name: Candidate Q1 Q2 Q3 May-label revision and onset alert ties
+on:
+  push:
+    paths:
+      - 'scripts/audit_candidate_onset_label_stability.py'
+      - 'scripts/test_audit_candidate_onset_label_stability.py'
+      - 'data/candidate-onset-label-revision-ties.json'
+      - 'docs/candidate-onset-label-revision-tie-protocol.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-onset-label-stability.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_candidate_onset_label_stability.py'
+      - 'scripts/test_audit_candidate_onset_label_stability.py'
+      - 'data/candidate-onset-label-revision-ties.json'
+      - 'docs/candidate-onset-label-revision-tie-protocol.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-onset-label-stability.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  revision_stability:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Adversarial synthetic time-cutoff, source-SHA and tied-alert tests
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_onset_label_stability.py' -v
+      - name: Replay original nine official UCDP Candidate vintages with pinned SHA
+        run: python3 -B scripts/audit_candidate_onset_label_stability.py --print-report
+      - name: Verify institutional privacy release boundary
+        run: python3 -B scripts/audit_public.py
