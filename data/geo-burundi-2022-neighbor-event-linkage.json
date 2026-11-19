@@ -1,0 +1,141 @@
+{
+  "schema": "idealab.psico.geo_burundi_2022_neighbor_event_linkage.v1",
+  "research_date": "2026-11-19",
+  "target": {
+    "ged_event_id": 442626,
+    "place": "Mabayi / Cibitoke / Kibira",
+    "uncertain_event_window": [
+      "2022-06-18",
+      "2022-06-21"
+    ],
+    "conflicting_source_windows": [
+      [
+        "2022-06-18",
+        "2022-06-20"
+      ],
+      [
+        "2022-06-19",
+        "2022-06-21"
+      ]
+    ],
+    "fatalities_in_GED_best": 10
+  },
+  "temporal_tolerance_days": 3,
+  "case_records": [
+    {
+      "id": "mabayi_may_2022",
+      "publisher": "SOS Médias Burundi",
+      "published": "2022-05-09",
+      "source_url": "https://www.sosmediasburundi.org/2022/05/09/cibitoke-trois-rebelles-rwandais-et-un-militaire-burundais-tues-a-mabayi/",
+      "place": "Mabayi / Gafumbegeti / Kibira",
+      "incident_type": "armed_clash",
+      "observation_day": "2022-05-08",
+      "event_window": null,
+      "window_basis": "Bodies observed 8 May; battle date not independently pinned",
+      "reported_count": 4,
+      "count_semantics": "three suspected rebels plus one Burundian soldier, bodies found",
+      "local_primary_june_2022_fatality_verification": false,
+      "expected_relation": "EXCLUDE_PUBLICATION_PREDATES_JUNE"
+    },
+    {
+      "id": "mabayi_july_2022",
+      "publisher": "SOS Médias Burundi",
+      "published": "2022-07-18",
+      "source_url": "https://www.sosmediasburundi.org/2022/07/18/cibitoke-quatre-corps-retrouves-dans-la-reserve-naturelle-de-la-kibira/",
+      "place": "Mabayi / Ngara / Gafumbegeti / Kibira",
+      "incident_type": "armed_clash",
+      "observation_day": "2022-07-17",
+      "event_window": [
+        "2022-07-13",
+        "2022-07-17"
+      ],
+      "window_basis": "Approximate conservative translation of publisher's relative 'last four days' of fighting, not verified death dates",
+      "reported_count": 4,
+      "count_semantics": "four bodies discovered; one additional soldier death alleged in context, not added",
+      "local_primary_june_2022_fatality_verification": false,
+      "expected_relation": "EXCLUDE_SEPARATE_REPORTED_BATTLE_WINDOW"
+    },
+    {
+      "id": "mabayi_october_2022",
+      "publisher": "SOS Médias Burundi",
+      "published": "2022-10-14",
+      "source_url": "https://www.sosmediasburundi.org/2022/10/14/cibitoke-plus-de-40-rebelles-rwandais-tues-par-larmee-burundaise/",
+      "place": "Mabayi / Bukinanyana / Kibira",
+      "incident_type": "armed_clash",
+      "observation_day": null,
+      "event_window": [
+        "2022-09-26",
+        "2022-10-14"
+      ],
+      "window_basis": "Publisher states military operations started on 26 September; counts are reported estimates",
+      "reported_count": 42,
+      "count_semantics": "at least 42 alleged rebel fatalities in September–October offensive, excluding separate soldier toll",
+      "local_primary_june_2022_fatality_verification": false,
+      "expected_relation": "EXCLUDE_SEPARATE_REPORTED_BATTLE_WINDOW"
+    },
+    {
+      "id": "mabayi_december_2022",
+      "publisher": "SOS Médias Burundi",
+      "published": "2022-12-03",
+      "source_url": "https://www.sosmediasburundi.org/2022/12/03/cibitoke-neuf-corps-de-rebelles-rwandais-retrouves-dans-la-kibira/",
+      "place": "Mabayi / Gafumbegeti / Kibira",
+      "incident_type": "armed_clash",
+      "observation_day": "2022-12-02",
+      "event_window": null,
+      "window_basis": "Bodies discovered 2 December; publisher refers to recent clashes without exact death date; persons not identified against June",
+      "reported_count": 9,
+      "count_semantics": "nine decomposing bodies observed, not linked by identity to June",
+      "local_primary_june_2022_fatality_verification": false,
+      "expected_relation": "UNRESOLVED_DEATH_DATES_NOT_JUNE_CORROBORATION"
+    },
+    {
+      "id": "mabayi_mine_april_2023",
+      "publisher": "IWACU",
+      "published": "2023-04-03",
+      "source_url": "https://www.iwacu-burundi.org/mabayi-13-cadavres-extraits-de-la-mine-dor-de-gafumbegeti/",
+      "place": "Mabayi / Gafumbegeti / Butahana",
+      "incident_type": "mining_accident",
+      "observation_day": "2023-04-02",
+      "event_window": [
+        "2023-03-31",
+        "2023-04-02"
+      ],
+      "window_basis": "Mine disaster and recovery report, not armed violence; 13 bodies recovered by 2 April",
+      "reported_count": 13,
+      "count_semantics": "thirteen mine-collapse victims, non-battle",
+      "local_primary_june_2022_fatality_verification": false,
+      "expected_relation": "EXCLUDE_INCOMPATIBLE_CAUSE"
+    }
+  ],
+  "scope_notes": "Manual metadata from five verified public HTML articles. Event window and victim identity are different estimands. An article about a later discovery does not establish death dates or disjoint victim rosters. None verifies June deaths independently. No remote raw HTML or PDF bytes archived or hashed; Git history pins only the editorial annotations. No issued GEO vector or source label is recoded.",
+  "expected_results": {
+    "records_n": 5,
+    "potential_location_only_false_matches_n": 5,
+    "excluded_as_direct_june_episode_n": 4,
+    "ambiguous_later_discovery_n": 1,
+    "additional_independent_june_fatality_verifications_n": 0,
+    "confirmed_disjoint_person_rosters_n": 0,
+    "results": [
+      {
+        "case_id": "mabayi_may_2022",
+        "relation": "EXCLUDE_PUBLICATION_PREDATES_JUNE"
+      },
+      {
+        "case_id": "mabayi_july_2022",
+        "relation": "EXCLUDE_SEPARATE_REPORTED_BATTLE_WINDOW"
+      },
+      {
+        "case_id": "mabayi_october_2022",
+        "relation": "EXCLUDE_SEPARATE_REPORTED_BATTLE_WINDOW"
+      },
+      {
+        "case_id": "mabayi_december_2022",
+        "relation": "UNRESOLVED_DEATH_DATES_NOT_JUNE_CORROBORATION"
+      },
+      {
+        "case_id": "mabayi_mine_april_2023",
+        "relation": "EXCLUDE_INCOMPATIBLE_CAUSE"
+      }
+    ]
+  }
+}
