@@ -105,13 +105,31 @@ class CandidateVintageGateTests(unittest.TestCase):
         self._blocked(issued="2026-10-xx")
         self._blocked(issued="2026-09-28")
 
-    def test_event_after_cutoff_or_event_start_after_end(self):
-        for row in ("1005,550,1,2026-10-01,2026-10-01,1\n",
-                    "1005,550,1,2026-09-30,2026-09-01,1\n"):
+    def test_spanning_cutoff_event_quarantined_not_attributed_to_september(self):
+        self._source(HEADER + RECORDS +
+                     "1005,550,1,2026-09-28 00:00:00.000,2026-10-04 00:00:00.000,99\n")
+        meta = deepcopy(self.meta)
+        meta["source_sha256"] = hashlib.sha256(self.source.read_bytes()).hexdigest()
+        report = self._run(meta)
+        self.assertEqual(report["event_counts"]["total"], 4)
+        self.assertEqual(report["event_counts"]["retained"], 3)
+        self.assertEqual(report["event_counts"]["state_based"], 2)
+        self.assertEqual(report["event_counts"]["post_cutoff_quarantined"], 1)
+
+    def test_invalid_date_order_and_release_after_event_requirement(self):
+        for row in ("1005,550,1,2026-09-30,2026-09-01,1\n",
+                    "1005,550,1,2026-10-01,2026-10-10,1\n"):
             self._source(HEADER + RECORDS + row)
             meta = deepcopy(self.meta)
             meta["source_sha256"] = hashlib.sha256(self.source.read_bytes()).hexdigest()
             self._blocked(meta)
+
+    def test_real_ged_datetime_syntax_is_parsed_without_future_date(self):
+        self._source(HEADER + "1008,510,1,2026-09-10 00:00:00.000,2026-09-10 00:00:00.000,3\n")
+        meta = deepcopy(self.meta)
+        meta["source_sha256"] = hashlib.sha256(self.source.read_bytes()).hexdigest()
+        report = self._run(meta)
+        self.assertEqual(report["event_counts"]["state_based"], 1)
 
     def test_duplicate_ged_event_and_invalid_casualties(self):
         for row in ("1001,550,1,2026-09-01,2026-09-01,1\n",
