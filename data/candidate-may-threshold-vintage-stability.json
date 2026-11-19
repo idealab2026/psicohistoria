@@ -1,0 +1,18 @@
+{
+  "schema": "idealab.psico.candidate.may_threshold_vintage_stability.v1",
+  "status": "PREREGISTERED_POST_SELECTION_SENSITIVITY_NOT_RESULTS",
+  "years": [
+    2024,
+    2025,
+    2026
+  ],
+  "thresholds": [
+    1,
+    5,
+    10,
+    25
+  ],
+  "target_window": "May 1-May 30",
+  "original_release_dates_independently_verified": false,
+  "new_prospective_predictions": 0
+}
