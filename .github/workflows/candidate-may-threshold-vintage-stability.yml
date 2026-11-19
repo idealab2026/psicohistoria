@@ -32,7 +32,7 @@ jobs:
           python-version: '3.12'
       - name: Synthetic frozen-outcome and source-hash adversarial tests
         run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_may_threshold_stability.py' -v
-      - name: Audit nine SHA-pinned official Candidate archives for Q2-Q3 threshold label flips
-        run: python3 -B scripts/audit_candidate_may_threshold_stability.py --print-report
+      - name: Demand byte-exact replay of frozen nine-original Candidate Q2-Q3 label sensitivity
+        run: python3 -B scripts/audit_candidate_may_threshold_stability.py --check-report
       - name: Verify institutional public privacy control
         run: python3 -B scripts/audit_public.py
