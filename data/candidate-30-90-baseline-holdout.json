@@ -1,22 +1,4851 @@
 {
-  "schema": "idealab.psico.candidate.q1q3_30_90_holdout.v1",
-  "status": "PREREGISTERED_NOT_RESULTS",
+  "fit_2024_2025": {
+    "30": {
+      "global": 0.10913705583756345,
+      "groups": {
+        "persistence": {
+          "False": {
+            "p": 0.005992465783311274,
+            "train_n": 339,
+            "train_positive": 1
+          },
+          "True": {
+            "p": 0.6681169929900894,
+            "train_n": 53,
+            "train_positive": 41
+          }
+        },
+        "recent_volume": {
+          "100_plus": {
+            "p": 0.7520766035994463,
+            "train_n": 34,
+            "train_positive": 32
+          },
+          "25_to_99": {
+            "p": 0.3479782951164012,
+            "train_n": 19,
+            "train_positive": 9
+          },
+          "one_to_24": {
+            "p": 0.03945982185614405,
+            "train_n": 43,
+            "train_positive": 1
+          },
+          "zero": {
+            "p": 0.0035665704522079562,
+            "train_n": 296,
+            "train_positive": 0
+          }
+        }
+      },
+      "train_n": 392,
+      "train_positive": 42
+    },
+    "90": {
+      "global": 0.14720812182741116,
+      "groups": {
+        "persistence": {
+          "False": {
+            "p": 0.02140997483746164,
+            "train_n": 339,
+            "train_positive": 6
+          },
+          "True": {
+            "p": 0.832890178067843,
+            "train_n": 53,
+            "train_positive": 51
+          }
+        },
+        "recent_volume": {
+          "100_plus": {
+            "p": 0.7834563913244117,
+            "train_n": 34,
+            "train_positive": 33
+          },
+          "25_to_99": {
+            "p": 0.6714510764922108,
+            "train_n": 19,
+            "train_positive": 18
+          },
+          "one_to_24": {
+            "p": 0.14098266449573796,
+            "train_n": 43,
+            "train_positive": 6
+          },
+          "zero": {
+            "p": 0.004810722935536312,
+            "train_n": 296,
+            "train_positive": 0
+          }
+        }
+      },
+      "train_n": 392,
+      "train_positive": 57
+    }
+  },
+  "historical_issue_dates_independently_verified": false,
+  "holdout_year": 2026,
+  "hypothetical_issue_date": "2026-04-30",
+  "interpretation": "This is a reconstructed historical check of Candidate >=25 registered state-based fatalities, restricted to well-dated events. Source vintages are real but availability by Apr30 was not certified; countries without registered records are not asserted violence-free. One 2026 holdout year, strong country dependence, previously studied project, no blind skill claim.",
+  "n_countries": 196,
+  "prospective_issued_probabilities": 0,
+  "prospective_outcomes_resolved": 0,
   "protocol_fixed_date": "2026-11-19",
+  "retrospective_2026_country_vector": [
+    {
+      "country": "United States of America",
+      "country_id": 2,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Canada",
+      "country_id": 20,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Bahamas",
+      "country_id": 31,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Cuba",
+      "country_id": 40,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Haiti",
+      "country_id": 41,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.3479782951
+        },
+        "target": 1,
+        "target_best_q3_2026": 29
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.6714510765
+        },
+        "target": 1,
+        "target_best_q3_2026": 55
+      },
+      "prior_best_q1_2026": 85
+    },
+    {
+      "country": "Dominican Republic",
+      "country_id": 42,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Jamaica",
+      "country_id": 51,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "country_id": 52,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Barbados",
+      "country_id": 53,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Dominica",
+      "country_id": 54,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Grenada",
+      "country_id": 55,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Saint Lucia",
+      "country_id": 56,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Saint Vincent and the Grenadines",
+      "country_id": 57,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Antigua & Barbuda",
+      "country_id": 58,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Saint Kitts and Nevis",
+      "country_id": 60,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Mexico",
+      "country_id": 70,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 1
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 2
+      },
+      "prior_best_q1_2026": 18
+    },
+    {
+      "country": "Belize",
+      "country_id": 80,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 1
+    },
+    {
+      "country": "Guatemala",
+      "country_id": 90,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Honduras",
+      "country_id": 91,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "El Salvador",
+      "country_id": 92,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Nicaragua",
+      "country_id": 93,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Costa Rica",
+      "country_id": 94,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Panama",
+      "country_id": 95,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Colombia",
+      "country_id": 100,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 0,
+        "target_best_q3_2026": 23
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 73
+      },
+      "prior_best_q1_2026": 102
+    },
+    {
+      "country": "Venezuela",
+      "country_id": 101,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.3479782951
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.6714510765
+        },
+        "target": 0,
+        "target_best_q3_2026": 1
+      },
+      "prior_best_q1_2026": 94
+    },
+    {
+      "country": "Guyana",
+      "country_id": 110,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Suriname",
+      "country_id": 115,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Ecuador",
+      "country_id": 130,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Peru",
+      "country_id": 135,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 1
+    },
+    {
+      "country": "Brazil",
+      "country_id": 140,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 1
+    },
+    {
+      "country": "Bolivia",
+      "country_id": 145,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Paraguay",
+      "country_id": 150,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Chile",
+      "country_id": 155,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Argentina",
+      "country_id": 160,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Uruguay",
+      "country_id": 165,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "United Kingdom",
+      "country_id": 200,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Ireland",
+      "country_id": 205,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Netherlands",
+      "country_id": 210,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Belgium",
+      "country_id": 211,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Luxembourg",
+      "country_id": 212,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "France",
+      "country_id": 220,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Monaco",
+      "country_id": 221,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Liechtenstein",
+      "country_id": 223,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Switzerland",
+      "country_id": 225,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Spain",
+      "country_id": 230,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Andorra",
+      "country_id": 232,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Portugal",
+      "country_id": 235,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Germany",
+      "country_id": 260,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Poland",
+      "country_id": 290,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Austria",
+      "country_id": 305,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Hungary",
+      "country_id": 310,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Czech Republic",
+      "country_id": 316,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Slovakia",
+      "country_id": 317,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Italy",
+      "country_id": 325,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Vatican City State",
+      "country_id": 327,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "San Marino",
+      "country_id": 331,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Malta",
+      "country_id": 338,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Albania",
+      "country_id": 339,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Montenegro",
+      "country_id": 341,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "North Macedonia",
+      "country_id": 343,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Croatia",
+      "country_id": 344,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Serbia (Yugoslavia)",
+      "country_id": 345,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Bosnia-Herzegovina",
+      "country_id": 346,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Kosovo",
+      "country_id": 347,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Slovenia",
+      "country_id": 349,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Greece",
+      "country_id": 350,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Cyprus",
+      "country_id": 352,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Bulgaria",
+      "country_id": 355,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Moldova",
+      "country_id": 359,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Romania",
+      "country_id": 360,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Russia (Soviet Union)",
+      "country_id": 365,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.3479782951
+        },
+        "target": 1,
+        "target_best_q3_2026": 77
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.6714510765
+        },
+        "target": 1,
+        "target_best_q3_2026": 229
+      },
+      "prior_best_q1_2026": 30
+    },
+    {
+      "country": "Estonia",
+      "country_id": 366,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Latvia",
+      "country_id": 367,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Lithuania",
+      "country_id": 368,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Ukraine",
+      "country_id": 369,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 1,
+        "target_best_q3_2026": 595
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 2071
+      },
+      "prior_best_q1_2026": 1339
+    },
+    {
+      "country": "Belarus",
+      "country_id": 370,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Armenia",
+      "country_id": 371,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Georgia",
+      "country_id": 372,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Azerbaijan",
+      "country_id": 373,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Finland",
+      "country_id": 375,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Sweden",
+      "country_id": 380,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Norway",
+      "country_id": 385,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Denmark",
+      "country_id": 390,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Iceland",
+      "country_id": 395,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Cape Verde",
+      "country_id": 402,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Sao Tome and Principe",
+      "country_id": 403,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Guinea-Bissau",
+      "country_id": 404,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Equatorial Guinea",
+      "country_id": 411,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Gambia",
+      "country_id": 420,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Mali",
+      "country_id": 432,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 1,
+        "target_best_q3_2026": 322
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 606
+      },
+      "prior_best_q1_2026": 170
+    },
+    {
+      "country": "Senegal",
+      "country_id": 433,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Benin",
+      "country_id": 434,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 6
+      },
+      "prior_best_q1_2026": 22
+    },
+    {
+      "country": "Mauritania",
+      "country_id": 435,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Niger",
+      "country_id": 436,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 1,
+        "target_best_q3_2026": 84
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 336
+      },
+      "prior_best_q1_2026": 189
+    },
+    {
+      "country": "Ivory Coast",
+      "country_id": 437,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Guinea",
+      "country_id": 438,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Burkina Faso",
+      "country_id": 439,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 1,
+        "target_best_q3_2026": 101
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 540
+      },
+      "prior_best_q1_2026": 681
+    },
+    {
+      "country": "Liberia",
+      "country_id": 450,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Sierra Leone",
+      "country_id": 451,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Ghana",
+      "country_id": 452,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 21
+    },
+    {
+      "country": "Togo",
+      "country_id": 461,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 1
+    },
+    {
+      "country": "Cameroon",
+      "country_id": 471,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.3479782951
+        },
+        "target": 0,
+        "target_best_q3_2026": 17
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.6714510765
+        },
+        "target": 1,
+        "target_best_q3_2026": 80
+      },
+      "prior_best_q1_2026": 56
+    },
+    {
+      "country": "Nigeria",
+      "country_id": 475,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 1,
+        "target_best_q3_2026": 648
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 1142
+      },
+      "prior_best_q1_2026": 1136
+    },
+    {
+      "country": "Gabon",
+      "country_id": 481,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Central African Republic",
+      "country_id": 482,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.3479782951
+        },
+        "target": 0,
+        "target_best_q3_2026": 1
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.6714510765
+        },
+        "target": 1,
+        "target_best_q3_2026": 31
+      },
+      "prior_best_q1_2026": 55
+    },
+    {
+      "country": "Chad",
+      "country_id": 483,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.3479782951
+        },
+        "target": 1,
+        "target_best_q3_2026": 50
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.6714510765
+        },
+        "target": 1,
+        "target_best_q3_2026": 50
+      },
+      "prior_best_q1_2026": 45
+    },
+    {
+      "country": "Congo",
+      "country_id": 484,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "DR Congo (Zaire)",
+      "country_id": 490,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 1,
+        "target_best_q3_2026": 93
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 276
+      },
+      "prior_best_q1_2026": 198
+    },
+    {
+      "country": "Uganda",
+      "country_id": 500,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Kenya",
+      "country_id": 501,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 12
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 1,
+        "target_best_q3_2026": 29
+      },
+      "prior_best_q1_2026": 3
+    },
+    {
+      "country": "Tanzania",
+      "country_id": 510,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Burundi",
+      "country_id": 516,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 1
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 1
+      },
+      "prior_best_q1_2026": 1
+    },
+    {
+      "country": "Rwanda",
+      "country_id": 517,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Somalia",
+      "country_id": 520,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 1,
+        "target_best_q3_2026": 338
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 995
+      },
+      "prior_best_q1_2026": 794
+    },
+    {
+      "country": "Djibouti",
+      "country_id": 522,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 14
+    },
+    {
+      "country": "Ethiopia",
+      "country_id": 530,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 1,
+        "target_best_q3_2026": 143
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 357
+      },
+      "prior_best_q1_2026": 1176
+    },
+    {
+      "country": "Eritrea",
+      "country_id": 531,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Angola",
+      "country_id": 540,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Mozambique",
+      "country_id": 541,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.3479782951
+        },
+        "target": 0,
+        "target_best_q3_2026": 2
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.6714510765
+        },
+        "target": 1,
+        "target_best_q3_2026": 33
+      },
+      "prior_best_q1_2026": 64
+    },
+    {
+      "country": "Zambia",
+      "country_id": 551,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Zimbabwe (Rhodesia)",
+      "country_id": 552,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Malawi",
+      "country_id": 553,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "South Africa",
+      "country_id": 560,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 6
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Namibia",
+      "country_id": 565,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Lesotho",
+      "country_id": 570,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Botswana",
+      "country_id": 571,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Kingdom of eSwatini (Swaziland)",
+      "country_id": 572,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Madagascar (Malagasy)",
+      "country_id": 580,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Comoros",
+      "country_id": 581,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Mauritius",
+      "country_id": 590,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Seychelles",
+      "country_id": 591,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Morocco",
+      "country_id": 600,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 3
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Algeria",
+      "country_id": 615,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 16
+    },
+    {
+      "country": "Tunisia",
+      "country_id": 616,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 5
+    },
+    {
+      "country": "Libya",
+      "country_id": 620,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 5
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 5
+      },
+      "prior_best_q1_2026": 3
+    },
+    {
+      "country": "Sudan",
+      "country_id": 625,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 1,
+        "target_best_q3_2026": 223
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 609
+      },
+      "prior_best_q1_2026": 1408
+    },
+    {
+      "country": "South Sudan",
+      "country_id": 626,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 0,
+        "target_best_q3_2026": 2
+      },
+      "prior_best_q1_2026": 118
+    },
+    {
+      "country": "Iran",
+      "country_id": 630,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 0,
+        "target_best_q3_2026": 24
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 139
+      },
+      "prior_best_q1_2026": 940
+    },
+    {
+      "country": "Turkey",
+      "country_id": 640,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 4
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Iraq",
+      "country_id": 645,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 0,
+        "target_best_q3_2026": 18
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 72
+      },
+      "prior_best_q1_2026": 107
+    },
+    {
+      "country": "Egypt",
+      "country_id": 651,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Syria",
+      "country_id": 652,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 0,
+        "target_best_q3_2026": 14
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 55
+      },
+      "prior_best_q1_2026": 121
+    },
+    {
+      "country": "Lebanon",
+      "country_id": 660,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 1,
+        "target_best_q3_2026": 317
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 591
+      },
+      "prior_best_q1_2026": 664
+    },
+    {
+      "country": "Jordan",
+      "country_id": 663,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 3
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Israel",
+      "country_id": 666,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 1,
+        "target_best_q3_2026": 118
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 395
+      },
+      "prior_best_q1_2026": 388
+    },
+    {
+      "country": "Saudi Arabia",
+      "country_id": 670,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 4
+    },
+    {
+      "country": "Yemen (North Yemen)",
+      "country_id": 678,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.3479782951
+        },
+        "target": 1,
+        "target_best_q3_2026": 29
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.6714510765
+        },
+        "target": 1,
+        "target_best_q3_2026": 222
+      },
+      "prior_best_q1_2026": 88
+    },
+    {
+      "country": "Kuwait",
+      "country_id": 690,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 1
+      },
+      "prior_best_q1_2026": 13
+    },
+    {
+      "country": "Bahrain",
+      "country_id": 692,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 3
+    },
+    {
+      "country": "Qatar",
+      "country_id": 694,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "United Arab Emirates",
+      "country_id": 696,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 9
+    },
+    {
+      "country": "Oman",
+      "country_id": 698,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 2
+    },
+    {
+      "country": "Afghanistan",
+      "country_id": 700,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 0,
+        "target_best_q3_2026": 8
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 66
+      },
+      "prior_best_q1_2026": 451
+    },
+    {
+      "country": "Turkmenistan",
+      "country_id": 701,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Tajikistan",
+      "country_id": 702,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Kyrgyzstan",
+      "country_id": 703,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Uzbekistan",
+      "country_id": 704,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Kazakhstan",
+      "country_id": 705,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "China",
+      "country_id": 710,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Mongolia",
+      "country_id": 712,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Taiwan",
+      "country_id": 713,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "North Korea",
+      "country_id": 731,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "South Korea",
+      "country_id": 732,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Japan",
+      "country_id": 740,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "India",
+      "country_id": 750,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 0,
+        "target_best_q3_2026": 10
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 0,
+        "target_best_q3_2026": 17
+      },
+      "prior_best_q1_2026": 102
+    },
+    {
+      "country": "Bhutan",
+      "country_id": 760,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Pakistan",
+      "country_id": 770,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 1,
+        "target_best_q3_2026": 280
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 1267
+      },
+      "prior_best_q1_2026": 798
+    },
+    {
+      "country": "Bangladesh",
+      "country_id": 771,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 1
+      },
+      "prior_best_q1_2026": 5
+    },
+    {
+      "country": "Myanmar (Burma)",
+      "country_id": 775,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 1,
+        "target_best_q3_2026": 127
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 1,
+        "target_best_q3_2026": 271
+      },
+      "prior_best_q1_2026": 494
+    },
+    {
+      "country": "Sri Lanka",
+      "country_id": 780,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.7520766036
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.7834563913
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 104
+    },
+    {
+      "country": "Maldives",
+      "country_id": 781,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Nepal",
+      "country_id": 790,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Thailand",
+      "country_id": 800,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 7
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 0,
+        "target_best_q3_2026": 19
+      },
+      "prior_best_q1_2026": 9
+    },
+    {
+      "country": "Cambodia (Kampuchea)",
+      "country_id": 811,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Laos",
+      "country_id": 812,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Vietnam (North Vietnam)",
+      "country_id": 816,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Malaysia",
+      "country_id": 820,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Singapore",
+      "country_id": 830,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Brunei",
+      "country_id": 835,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Philippines",
+      "country_id": 840,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.668116993,
+          "recent_volume": 0.3479782951
+        },
+        "target": 0,
+        "target_best_q3_2026": 7
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.8328901781,
+          "recent_volume": 0.6714510765
+        },
+        "target": 0,
+        "target_best_q3_2026": 20
+      },
+      "prior_best_q1_2026": 26
+    },
+    {
+      "country": "Indonesia",
+      "country_id": 850,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0394598219
+        },
+        "target": 0,
+        "target_best_q3_2026": 16
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.1409826645
+        },
+        "target": 1,
+        "target_best_q3_2026": 27
+      },
+      "prior_best_q1_2026": 13
+    },
+    {
+      "country": "East Timor",
+      "country_id": 860,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Australia",
+      "country_id": 900,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Papua New Guinea",
+      "country_id": 910,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "New Zealand",
+      "country_id": 920,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Vanuatu",
+      "country_id": 935,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Solomon Islands",
+      "country_id": 940,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Fiji",
+      "country_id": 950,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Kiribati",
+      "country_id": 970,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Nauru",
+      "country_id": 971,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Tonga",
+      "country_id": 972,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Tuvalu",
+      "country_id": 973,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Marshall Islands",
+      "country_id": 983,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Palau",
+      "country_id": 986,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Federated States of Micronesia",
+      "country_id": 987,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    },
+    {
+      "country": "Samoa (Western Samoa)",
+      "country_id": 990,
+      "h30": {
+        "predicted_probabilities": {
+          "global": 0.1091370558,
+          "persistence": 0.0059924658,
+          "recent_volume": 0.0035665705
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "h90": {
+        "predicted_probabilities": {
+          "global": 0.1472081218,
+          "persistence": 0.0214099748,
+          "recent_volume": 0.0048107229
+        },
+        "target": 0,
+        "target_best_q3_2026": 0
+      },
+      "prior_best_q1_2026": 0
+    }
+  ],
+  "retrospective_2026_metrics": {
+    "30": {
+      "always_zero_reference_brier": 0.08673469,
+      "holdout_2026": {
+        "global": {
+          "brier": 0.07971365,
+          "log_loss": 0.29767164,
+          "n": 196,
+          "p_mean": 0.10913706,
+          "positive_rate": 0.08673469,
+          "positives": 17,
+          "precision_top_10": 0.1,
+          "true_positives_top_10": 1
+        },
+        "persistence": {
+          "brier": 0.03919078,
+          "log_loss": 0.11322628,
+          "n": 196,
+          "p_mean": 0.10733806,
+          "positive_rate": 0.08673469,
+          "positives": 17,
+          "precision_top_10": 0.7,
+          "true_positives_top_10": 7
+        },
+        "recent_volume": {
+          "brier": 0.03910474,
+          "log_loss": 0.11523153,
+          "n": 196,
+          "p_mean": 0.1034246,
+          "positive_rate": 0.08673469,
+          "positives": 17,
+          "precision_top_10": 0.9,
+          "true_positives_top_10": 9
+        }
+      },
+      "holdout_positive_count": 17,
+      "subthreshold_origin_2026": {
+        "global": {
+          "brier": 0.0119109,
+          "log_loss": 0.11556469,
+          "n": 166,
+          "p_mean": 0.10913706,
+          "positive_rate": 0,
+          "positives": 0,
+          "precision_top_10": 0,
+          "true_positives_top_10": 0
+        },
+        "persistence": {
+          "brier": 0.00003591,
+          "log_loss": 0.00601049,
+          "n": 166,
+          "p_mean": 0.00599247,
+          "positive_rate": 0,
+          "positives": 0,
+          "precision_top_10": 0,
+          "true_positives_top_10": 0
+        },
+        "recent_volume": {
+          "brier": 0.00020809,
+          "log_loss": 0.00821401,
+          "n": 166,
+          "p_mean": 0.00810728,
+          "positive_rate": 0,
+          "positives": 0,
+          "precision_top_10": 0,
+          "true_positives_top_10": 0
+        }
+      }
+    },
+    "90": {
+      "always_zero_reference_brier": 0.1377551,
+      "holdout_2026": {
+        "global": {
+          "brier": 0.11886799,
+          "log_loss": 0.40122975,
+          "n": 196,
+          "p_mean": 0.14720812,
+          "positive_rate": 0.1377551,
+          "positives": 27,
+          "precision_top_10": 0.1,
+          "true_positives_top_10": 1
+        },
+        "persistence": {
+          "brier": 0.0314139,
+          "log_loss": 0.12629604,
+          "n": 196,
+          "p_mean": 0.14561613,
+          "positive_rate": 0.1377551,
+          "positives": 27,
+          "precision_top_10": 0.9,
+          "true_positives_top_10": 9
+        },
+        "recent_volume": {
+          "brier": 0.03163051,
+          "log_loss": 0.10970295,
+          "n": 196,
+          "p_mean": 0.13343793,
+          "positive_rate": 0.1377551,
+          "positives": 27,
+          "precision_top_10": 1,
+          "true_positives_top_10": 10
+        }
+      },
+      "holdout_positive_count": 27,
+      "subthreshold_origin_2026": {
+        "global": {
+          "brier": 0.03017124,
+          "log_loss": 0.18040443,
+          "n": 166,
+          "p_mean": 0.14720812,
+          "positive_rate": 0.01204819,
+          "positives": 2,
+          "precision_top_10": 0,
+          "true_positives_top_10": 0
+        },
+        "persistence": {
+          "brier": 0.01199068,
+          "log_loss": 0.06769377,
+          "n": 166,
+          "p_mean": 0.02140997,
+          "positive_rate": 0.01204819,
+          "positives": 2,
+          "precision_top_10": 0,
+          "true_positives_top_10": 0
+        },
+        "recent_volume": {
+          "brier": 0.01118568,
+          "log_loss": 0.04520983,
+          "n": 166,
+          "p_mean": 0.02203729,
+          "positive_rate": 0.01204819,
+          "positives": 2,
+          "precision_top_10": 0.1,
+          "true_positives_top_10": 1
+        }
+      }
+    }
+  },
+  "schema": "idealab.psico.candidate.q1q3_30_90_holdout.v1",
+  "sources": [
+    {
+      "audit": {
+        "excluded_type1_high_precision_outside_196": 0,
+        "excluded_type1_high_precision_outside_date_window": 8,
+        "excluded_type1_low_or_unknown_date_precision": 44,
+        "excluded_type1_unknown_date_precision_zero": 1,
+        "retained_statebased_high_precision_within_outer_window": 3338,
+        "source_rows": 5534
+      },
+      "month": 3,
+      "source_bytes": 4503217,
+      "source_sha256": "ae794cc614a56a7445cdb72be95df7681431245c6ffda4ed6f3d56d36db29b6f",
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v24_01_24_03.csv",
+      "year": 2024
+    },
+    {
+      "audit": {
+        "excluded_type1_high_precision_outside_196": 0,
+        "excluded_type1_high_precision_outside_date_window": 3062,
+        "excluded_type1_low_or_unknown_date_precision": 159,
+        "excluded_type1_unknown_date_precision_zero": 1,
+        "retained_statebased_high_precision_within_outer_window": 11207,
+        "source_rows": 20866
+      },
+      "month": 9,
+      "source_bytes": 16856392,
+      "source_sha256": "3f9f7acea9690cd8c5150981ae85b5a9365b2ca233f2b351b680de95cd4af390",
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v24_01_24_09.csv",
+      "year": 2024
+    },
+    {
+      "audit": {
+        "excluded_type1_high_precision_outside_196": 0,
+        "excluded_type1_high_precision_outside_date_window": 1,
+        "excluded_type1_low_or_unknown_date_precision": 62,
+        "excluded_type1_unknown_date_precision_zero": 0,
+        "retained_statebased_high_precision_within_outer_window": 3601,
+        "source_rows": 6641
+      },
+      "month": 3,
+      "source_bytes": 4767333,
+      "source_sha256": "42465f8c081bd70e67221e216d2c0b3fae59586f1ca45561f48052a26a2910e8",
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v25_01_25_03.csv",
+      "year": 2025
+    },
+    {
+      "audit": {
+        "excluded_type1_high_precision_outside_196": 0,
+        "excluded_type1_high_precision_outside_date_window": 3522,
+        "excluded_type1_low_or_unknown_date_precision": 248,
+        "excluded_type1_unknown_date_precision_zero": 0,
+        "retained_statebased_high_precision_within_outer_window": 9950,
+        "source_rows": 21958
+      },
+      "month": 9,
+      "source_bytes": 15883361,
+      "source_sha256": "086362d535c61d1237f0824bee8afb6459bac71ca8d02026946b715264c910be",
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v25_01_25_09.csv",
+      "year": 2025
+    },
+    {
+      "audit": {
+        "excluded_type1_high_precision_outside_196": 0,
+        "excluded_type1_high_precision_outside_date_window": 8,
+        "excluded_type1_low_or_unknown_date_precision": 64,
+        "excluded_type1_unknown_date_precision_zero": 0,
+        "retained_statebased_high_precision_within_outer_window": 2765,
+        "source_rows": 4849
+      },
+      "month": 3,
+      "source_bytes": 3761748,
+      "source_sha256": "a3cae550d6b806b3872aa4a12d0d47e2634ca2fc30dae385463230c659865346",
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v26_01_26_03.csv",
+      "year": 2026
+    },
+    {
+      "audit": {
+        "excluded_type1_high_precision_outside_196": 0,
+        "excluded_type1_high_precision_outside_date_window": 2315,
+        "excluded_type1_low_or_unknown_date_precision": 297,
+        "excluded_type1_unknown_date_precision_zero": 0,
+        "retained_statebased_high_precision_within_outer_window": 7364,
+        "source_rows": 16633
+      },
+      "month": 9,
+      "source_bytes": 13065779,
+      "source_sha256": "134da9b3df08b65266802c4b662e572f396c70c92ab62297319be657540bcede",
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v26_01_26_09.csv",
+      "year": 2026
+    }
+  ],
+  "status": "RETROSPECTIVE_ONLY_NOT_ISSUED",
+  "target_windows_2026": {
+    "30": {
+      "end": "2026-05-30",
+      "start": "2026-05-01"
+    },
+    "90": {
+      "end": "2026-07-29",
+      "start": "2026-05-01"
+    }
+  },
   "training_years": [
     2024,
     2025
   ],
-  "holdout_year": 2026,
-  "targets_2026": {
-    "30": [
-      "2026-05-01",
-      "2026-05-30"
-    ],
-    "90": [
-      "2026-05-01",
-      "2026-07-29"
-    ]
-  },
-  "prospective_issued_probabilities": 0,
-  "prospective_outcomes_resolved": 0
+  "universe_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5"
 }
