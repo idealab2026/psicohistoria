@@ -1,0 +1,39 @@
+name: GEO Burundi June 2022 documentary source genealogy audit
+on:
+  push:
+    paths:
+      - 'scripts/audit_geo_burundi_2022_source_genealogy.py'
+      - 'scripts/test_audit_geo_burundi_2022_source_genealogy.py'
+      - 'data/geo-burundi-2022-source-dependency-evidence.json'
+      - '.github/workflows/geo-burundi-2022-source-chain.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_geo_burundi_2022_source_genealogy.py'
+      - 'scripts/test_audit_geo_burundi_2022_source_genealogy.py'
+      - 'data/geo-burundi-2022-source-dependency-evidence.json'
+      - '.github/workflows/geo-burundi-2022-source-chain.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tests for dependent reporting, separate Rwanda event and historical anchor
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_burundi_2022_source_genealogy.py' -v
+      - name: Verify structured source lineage against original 2022 Burundi issued evidence
+        run: |
+          if [ -f data/geo-burundi-2022-source-dependency-evidence.json ]; then
+            python3 -B scripts/audit_geo_burundi_2022_source_genealogy.py --check-report
+          else
+            python3 -B scripts/audit_geo_burundi_2022_source_genealogy.py --print-report
+          fi
+      - name: Institutional privacy public release gate
+        run: python3 -B scripts/audit_public.py
