@@ -34,7 +34,7 @@ Ejecución:
 - python3 -B scripts/audit_geo_ged251_benin_uganda_source_pair.py --check-report
 - python3 -B scripts/audit_public.py
 
-La primera ejecución pública emitirá metadatos oficiales; se congelarán los resultados y el workflow pasará a replay exacto antes de fusionar. El informe no tiene estatus de validación externa mientras las noticias originales no hayan sido leídas y cotejadas por sus fechas y hechos.
+El protocolo se registró antes de inspeccionar las cuatro entradas. **Se ha completado la reproducción oficial SHA y congelado el JSON; CI exige ahora repetición exacta.** Las noticias originales disponibles se han leído y comparado; no se han archivado por SHA ni hay verificación forense independiente de todas las víctimas o de su adscripción al conflicto.
 
 ## Resultados de las cuatro filas oficiales y revisión de fuentes públicas
 
