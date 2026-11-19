@@ -1,30 +1,3401 @@
 {
-  "schema": "idealab.psico.candidate.state_reactivation_threshold_grid.v1",
-  "status": "PREREGISTERED_NOT_RESULTS",
+  "excluded_noncomparable_year": 2023,
+  "historical_original_release_dates_certified": false,
+  "holdout_2026_country_observations": [
+    {
+      "country": "United States of America",
+      "country_id": 2,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 4,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Canada",
+      "country_id": 20,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 3,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Bahamas",
+      "country_id": 31,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Cuba",
+      "country_id": 40,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Haiti",
+      "country_id": 41,
+      "future_best_30": 29,
+      "future_best_90": 55,
+      "q1_other_best": 74,
+      "q1_state_best": 85
+    },
+    {
+      "country": "Dominican Republic",
+      "country_id": 42,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 8,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Jamaica",
+      "country_id": 51,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "country_id": 52,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 1,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Barbados",
+      "country_id": 53,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Dominica",
+      "country_id": 54,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Grenada",
+      "country_id": 55,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Saint Lucia",
+      "country_id": 56,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Saint Vincent and the Grenadines",
+      "country_id": 57,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Antigua & Barbuda",
+      "country_id": 58,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Saint Kitts and Nevis",
+      "country_id": 60,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Mexico",
+      "country_id": 70,
+      "future_best_30": 1,
+      "future_best_90": 2,
+      "q1_other_best": 668,
+      "q1_state_best": 18
+    },
+    {
+      "country": "Belize",
+      "country_id": 80,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 12,
+      "q1_state_best": 1
+    },
+    {
+      "country": "Guatemala",
+      "country_id": 90,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 8,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Honduras",
+      "country_id": 91,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "El Salvador",
+      "country_id": 92,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Nicaragua",
+      "country_id": 93,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Costa Rica",
+      "country_id": 94,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Panama",
+      "country_id": 95,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Colombia",
+      "country_id": 100,
+      "future_best_30": 23,
+      "future_best_90": 73,
+      "q1_other_best": 504,
+      "q1_state_best": 102
+    },
+    {
+      "country": "Venezuela",
+      "country_id": 101,
+      "future_best_30": 0,
+      "future_best_90": 1,
+      "q1_other_best": 3,
+      "q1_state_best": 94
+    },
+    {
+      "country": "Guyana",
+      "country_id": 110,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Suriname",
+      "country_id": 115,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Ecuador",
+      "country_id": 130,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 75,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Peru",
+      "country_id": 135,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 1
+    },
+    {
+      "country": "Brazil",
+      "country_id": 140,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 82,
+      "q1_state_best": 1
+    },
+    {
+      "country": "Bolivia",
+      "country_id": 145,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Paraguay",
+      "country_id": 150,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Chile",
+      "country_id": 155,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Argentina",
+      "country_id": 160,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 9,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Uruguay",
+      "country_id": 165,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "United Kingdom",
+      "country_id": 200,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Ireland",
+      "country_id": 205,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Netherlands",
+      "country_id": 210,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Belgium",
+      "country_id": 211,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Luxembourg",
+      "country_id": 212,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "France",
+      "country_id": 220,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Monaco",
+      "country_id": 221,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Liechtenstein",
+      "country_id": 223,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Switzerland",
+      "country_id": 225,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Spain",
+      "country_id": 230,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Andorra",
+      "country_id": 232,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Portugal",
+      "country_id": 235,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Germany",
+      "country_id": 260,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Poland",
+      "country_id": 290,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Austria",
+      "country_id": 305,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Hungary",
+      "country_id": 310,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Czech Republic",
+      "country_id": 316,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Slovakia",
+      "country_id": 317,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Italy",
+      "country_id": 325,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Vatican City State",
+      "country_id": 327,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "San Marino",
+      "country_id": 331,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Malta",
+      "country_id": 338,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Albania",
+      "country_id": 339,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Montenegro",
+      "country_id": 341,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "North Macedonia",
+      "country_id": 343,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Croatia",
+      "country_id": 344,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Serbia (Yugoslavia)",
+      "country_id": 345,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Bosnia-Herzegovina",
+      "country_id": 346,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Kosovo",
+      "country_id": 347,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Slovenia",
+      "country_id": 349,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Greece",
+      "country_id": 350,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Cyprus",
+      "country_id": 352,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Bulgaria",
+      "country_id": 355,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Moldova",
+      "country_id": 359,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Romania",
+      "country_id": 360,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Russia (Soviet Union)",
+      "country_id": 365,
+      "future_best_30": 77,
+      "future_best_90": 229,
+      "q1_other_best": 0,
+      "q1_state_best": 30
+    },
+    {
+      "country": "Estonia",
+      "country_id": 366,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Latvia",
+      "country_id": 367,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Lithuania",
+      "country_id": 368,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Ukraine",
+      "country_id": 369,
+      "future_best_30": 595,
+      "future_best_90": 2071,
+      "q1_other_best": 4,
+      "q1_state_best": 1339
+    },
+    {
+      "country": "Belarus",
+      "country_id": 370,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Armenia",
+      "country_id": 371,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Georgia",
+      "country_id": 372,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Azerbaijan",
+      "country_id": 373,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Finland",
+      "country_id": 375,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Sweden",
+      "country_id": 380,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 2,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Norway",
+      "country_id": 385,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Denmark",
+      "country_id": 390,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Iceland",
+      "country_id": 395,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Cape Verde",
+      "country_id": 402,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Sao Tome and Principe",
+      "country_id": 403,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Guinea-Bissau",
+      "country_id": 404,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 1,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Equatorial Guinea",
+      "country_id": 411,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Gambia",
+      "country_id": 420,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Mali",
+      "country_id": 432,
+      "future_best_30": 322,
+      "future_best_90": 606,
+      "q1_other_best": 103,
+      "q1_state_best": 170
+    },
+    {
+      "country": "Senegal",
+      "country_id": 433,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Benin",
+      "country_id": 434,
+      "future_best_30": 0,
+      "future_best_90": 6,
+      "q1_other_best": 0,
+      "q1_state_best": 22
+    },
+    {
+      "country": "Mauritania",
+      "country_id": 435,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Niger",
+      "country_id": 436,
+      "future_best_30": 84,
+      "future_best_90": 336,
+      "q1_other_best": 193,
+      "q1_state_best": 189
+    },
+    {
+      "country": "Ivory Coast",
+      "country_id": 437,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Guinea",
+      "country_id": 438,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Burkina Faso",
+      "country_id": 439,
+      "future_best_30": 101,
+      "future_best_90": 540,
+      "q1_other_best": 79,
+      "q1_state_best": 681
+    },
+    {
+      "country": "Liberia",
+      "country_id": 450,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Sierra Leone",
+      "country_id": 451,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Ghana",
+      "country_id": 452,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 18,
+      "q1_state_best": 21
+    },
+    {
+      "country": "Togo",
+      "country_id": 461,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 1
+    },
+    {
+      "country": "Cameroon",
+      "country_id": 471,
+      "future_best_30": 17,
+      "future_best_90": 80,
+      "q1_other_best": 48,
+      "q1_state_best": 56
+    },
+    {
+      "country": "Nigeria",
+      "country_id": 475,
+      "future_best_30": 648,
+      "future_best_90": 1142,
+      "q1_other_best": 1068,
+      "q1_state_best": 1136
+    },
+    {
+      "country": "Gabon",
+      "country_id": 481,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Central African Republic",
+      "country_id": 482,
+      "future_best_30": 1,
+      "future_best_90": 31,
+      "q1_other_best": 18,
+      "q1_state_best": 55
+    },
+    {
+      "country": "Chad",
+      "country_id": 483,
+      "future_best_30": 50,
+      "future_best_90": 50,
+      "q1_other_best": 9,
+      "q1_state_best": 45
+    },
+    {
+      "country": "Congo",
+      "country_id": 484,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "DR Congo (Zaire)",
+      "country_id": 490,
+      "future_best_30": 93,
+      "future_best_90": 276,
+      "q1_other_best": 351,
+      "q1_state_best": 198
+    },
+    {
+      "country": "Uganda",
+      "country_id": 500,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 2,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Kenya",
+      "country_id": 501,
+      "future_best_30": 12,
+      "future_best_90": 29,
+      "q1_other_best": 3,
+      "q1_state_best": 3
+    },
+    {
+      "country": "Tanzania",
+      "country_id": 510,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Burundi",
+      "country_id": 516,
+      "future_best_30": 1,
+      "future_best_90": 1,
+      "q1_other_best": 8,
+      "q1_state_best": 1
+    },
+    {
+      "country": "Rwanda",
+      "country_id": 517,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Somalia",
+      "country_id": 520,
+      "future_best_30": 338,
+      "future_best_90": 995,
+      "q1_other_best": 65,
+      "q1_state_best": 794
+    },
+    {
+      "country": "Djibouti",
+      "country_id": 522,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 14
+    },
+    {
+      "country": "Ethiopia",
+      "country_id": 530,
+      "future_best_30": 143,
+      "future_best_90": 357,
+      "q1_other_best": 117,
+      "q1_state_best": 1176
+    },
+    {
+      "country": "Eritrea",
+      "country_id": 531,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Angola",
+      "country_id": 540,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 1,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Mozambique",
+      "country_id": 541,
+      "future_best_30": 2,
+      "future_best_90": 33,
+      "q1_other_best": 13,
+      "q1_state_best": 64
+    },
+    {
+      "country": "Zambia",
+      "country_id": 551,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Zimbabwe (Rhodesia)",
+      "country_id": 552,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Malawi",
+      "country_id": 553,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "South Africa",
+      "country_id": 560,
+      "future_best_30": 0,
+      "future_best_90": 6,
+      "q1_other_best": 50,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Namibia",
+      "country_id": 565,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Lesotho",
+      "country_id": 570,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Botswana",
+      "country_id": 571,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Kingdom of eSwatini (Swaziland)",
+      "country_id": 572,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Madagascar (Malagasy)",
+      "country_id": 580,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Comoros",
+      "country_id": 581,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Mauritius",
+      "country_id": 590,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Seychelles",
+      "country_id": 591,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Morocco",
+      "country_id": 600,
+      "future_best_30": 0,
+      "future_best_90": 3,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Algeria",
+      "country_id": 615,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 16
+    },
+    {
+      "country": "Tunisia",
+      "country_id": 616,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 5
+    },
+    {
+      "country": "Libya",
+      "country_id": 620,
+      "future_best_30": 5,
+      "future_best_90": 5,
+      "q1_other_best": 4,
+      "q1_state_best": 3
+    },
+    {
+      "country": "Sudan",
+      "country_id": 625,
+      "future_best_30": 223,
+      "future_best_90": 609,
+      "q1_other_best": 359,
+      "q1_state_best": 1408
+    },
+    {
+      "country": "South Sudan",
+      "country_id": 626,
+      "future_best_30": 0,
+      "future_best_90": 2,
+      "q1_other_best": 162,
+      "q1_state_best": 118
+    },
+    {
+      "country": "Iran",
+      "country_id": 630,
+      "future_best_30": 24,
+      "future_best_90": 139,
+      "q1_other_best": 19815,
+      "q1_state_best": 940
+    },
+    {
+      "country": "Turkey",
+      "country_id": 640,
+      "future_best_30": 0,
+      "future_best_90": 4,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Iraq",
+      "country_id": 645,
+      "future_best_30": 18,
+      "future_best_90": 72,
+      "q1_other_best": 8,
+      "q1_state_best": 107
+    },
+    {
+      "country": "Egypt",
+      "country_id": 651,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Syria",
+      "country_id": 652,
+      "future_best_30": 14,
+      "future_best_90": 55,
+      "q1_other_best": 144,
+      "q1_state_best": 121
+    },
+    {
+      "country": "Lebanon",
+      "country_id": 660,
+      "future_best_30": 317,
+      "future_best_90": 591,
+      "q1_other_best": 0,
+      "q1_state_best": 664
+    },
+    {
+      "country": "Jordan",
+      "country_id": 663,
+      "future_best_30": 0,
+      "future_best_90": 3,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Israel",
+      "country_id": 666,
+      "future_best_30": 118,
+      "future_best_90": 395,
+      "q1_other_best": 38,
+      "q1_state_best": 388
+    },
+    {
+      "country": "Saudi Arabia",
+      "country_id": 670,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 4
+    },
+    {
+      "country": "Yemen (North Yemen)",
+      "country_id": 678,
+      "future_best_30": 29,
+      "future_best_90": 222,
+      "q1_other_best": 184,
+      "q1_state_best": 88
+    },
+    {
+      "country": "Kuwait",
+      "country_id": 690,
+      "future_best_30": 0,
+      "future_best_90": 1,
+      "q1_other_best": 0,
+      "q1_state_best": 13
+    },
+    {
+      "country": "Bahrain",
+      "country_id": 692,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 3
+    },
+    {
+      "country": "Qatar",
+      "country_id": 694,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "United Arab Emirates",
+      "country_id": 696,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 9
+    },
+    {
+      "country": "Oman",
+      "country_id": 698,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 2
+    },
+    {
+      "country": "Afghanistan",
+      "country_id": 700,
+      "future_best_30": 8,
+      "future_best_90": 66,
+      "q1_other_best": 1,
+      "q1_state_best": 451
+    },
+    {
+      "country": "Turkmenistan",
+      "country_id": 701,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Tajikistan",
+      "country_id": 702,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Kyrgyzstan",
+      "country_id": 703,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Uzbekistan",
+      "country_id": 704,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Kazakhstan",
+      "country_id": 705,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "China",
+      "country_id": 710,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Mongolia",
+      "country_id": 712,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Taiwan",
+      "country_id": 713,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "North Korea",
+      "country_id": 731,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "South Korea",
+      "country_id": 732,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Japan",
+      "country_id": 740,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "India",
+      "country_id": 750,
+      "future_best_30": 10,
+      "future_best_90": 17,
+      "q1_other_best": 30,
+      "q1_state_best": 102
+    },
+    {
+      "country": "Bhutan",
+      "country_id": 760,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Pakistan",
+      "country_id": 770,
+      "future_best_30": 280,
+      "future_best_90": 1267,
+      "q1_other_best": 92,
+      "q1_state_best": 798
+    },
+    {
+      "country": "Bangladesh",
+      "country_id": 771,
+      "future_best_30": 0,
+      "future_best_90": 1,
+      "q1_other_best": 28,
+      "q1_state_best": 5
+    },
+    {
+      "country": "Myanmar (Burma)",
+      "country_id": 775,
+      "future_best_30": 127,
+      "future_best_90": 271,
+      "q1_other_best": 24,
+      "q1_state_best": 494
+    },
+    {
+      "country": "Sri Lanka",
+      "country_id": 780,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 104
+    },
+    {
+      "country": "Maldives",
+      "country_id": 781,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Nepal",
+      "country_id": 790,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Thailand",
+      "country_id": 800,
+      "future_best_30": 7,
+      "future_best_90": 19,
+      "q1_other_best": 0,
+      "q1_state_best": 9
+    },
+    {
+      "country": "Cambodia (Kampuchea)",
+      "country_id": 811,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Laos",
+      "country_id": 812,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Vietnam (North Vietnam)",
+      "country_id": 816,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Malaysia",
+      "country_id": 820,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Singapore",
+      "country_id": 830,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Brunei",
+      "country_id": 835,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Philippines",
+      "country_id": 840,
+      "future_best_30": 7,
+      "future_best_90": 20,
+      "q1_other_best": 7,
+      "q1_state_best": 26
+    },
+    {
+      "country": "Indonesia",
+      "country_id": 850,
+      "future_best_30": 16,
+      "future_best_90": 27,
+      "q1_other_best": 7,
+      "q1_state_best": 13
+    },
+    {
+      "country": "East Timor",
+      "country_id": 860,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Australia",
+      "country_id": 900,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Papua New Guinea",
+      "country_id": 910,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 5,
+      "q1_state_best": 0
+    },
+    {
+      "country": "New Zealand",
+      "country_id": 920,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Vanuatu",
+      "country_id": 935,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Solomon Islands",
+      "country_id": 940,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Fiji",
+      "country_id": 950,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Kiribati",
+      "country_id": 970,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Nauru",
+      "country_id": 971,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Tonga",
+      "country_id": 972,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Tuvalu",
+      "country_id": 973,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Marshall Islands",
+      "country_id": 983,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Palau",
+      "country_id": 986,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Federated States of Micronesia",
+      "country_id": 987,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    },
+    {
+      "country": "Samoa (Western Samoa)",
+      "country_id": 990,
+      "future_best_30": 0,
+      "future_best_90": 0,
+      "q1_other_best": 0,
+      "q1_state_best": 0
+    }
+  ],
+  "holdout_2026_model_scores": {
+    "1": {
+      "30": {
+        "climatology": {
+          "brier": 0.0004,
+          "log_loss": 0.02020271,
+          "mean_probability": 0.02,
+          "n": 145,
+          "positive": 0,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 0,
+              "risk_probability": 0.02,
+              "selected_from_tie": 10,
+              "tied_countries": 145
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0,
+            "expected_precision": 0,
+            "expected_recall": null,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 0,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "combined": {
+          "brier": 0.00036824,
+          "log_loss": 0.017702,
+          "mean_probability": 0.01751446,
+          "n": 145,
+          "positive": 0,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 0,
+              "risk_probability": 0.042499999999999996,
+              "selected_from_tie": 10,
+              "tied_countries": 13
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0,
+            "expected_precision": 0,
+            "expected_recall": null,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 0,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "other_violence": {
+          "brier": 0.00036824,
+          "log_loss": 0.017702,
+          "mean_probability": 0.01751446,
+          "n": 145,
+          "positive": 0,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 0,
+              "risk_probability": 0.042499999999999996,
+              "selected_from_tie": 10,
+              "tied_countries": 13
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0,
+            "expected_precision": 0,
+            "expected_recall": null,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 0,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "state_recency": {
+          "brier": 0.00034028,
+          "log_loss": 0.01861886,
+          "mean_probability": 0.0184466,
+          "n": 145,
+          "positive": 0,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 0,
+              "risk_probability": 0.018446601941747572,
+              "selected_from_tie": 10,
+              "tied_countries": 145
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0,
+            "expected_precision": 0,
+            "expected_recall": null,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 0,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        }
+      },
+      "90": {
+        "climatology": {
+          "brier": 0.02732759,
+          "log_loss": 0.1325192,
+          "mean_probability": 0.05,
+          "n": 145,
+          "positive": 4,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 4,
+              "risk_probability": 0.05,
+              "selected_from_tie": 10,
+              "tied_countries": 145
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0.27586207,
+            "expected_precision": 0.02758621,
+            "expected_recall": 0.06896552,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 4,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "combined": {
+          "brier": 0.0269445,
+          "log_loss": 0.12802346,
+          "mean_probability": 0.04648869,
+          "n": 145,
+          "positive": 4,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 1,
+              "risk_probability": 0.1,
+              "selected_from_tie": 10,
+              "tied_countries": 13
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0.76923077,
+            "expected_precision": 0.07692308,
+            "expected_recall": 0.19230769,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 1,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "other_violence": {
+          "brier": 0.0269445,
+          "log_loss": 0.12802346,
+          "mean_probability": 0.04648869,
+          "n": 145,
+          "positive": 4,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 1,
+              "risk_probability": 0.1,
+              "selected_from_tie": 10,
+              "tied_countries": 13
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0.76923077,
+            "expected_precision": 0.07692308,
+            "expected_recall": 0.19230769,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 1,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "state_recency": {
+          "brier": 0.02726442,
+          "log_loss": 0.13184508,
+          "mean_probability": 0.04854369,
+          "n": 145,
+          "positive": 4,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 4,
+              "risk_probability": 0.04854368932038835,
+              "selected_from_tie": 10,
+              "tied_countries": 145
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0.27586207,
+            "expected_precision": 0.02758621,
+            "expected_recall": 0.06896552,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 4,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        }
+      }
+    },
+    "5": {
+      "30": {
+        "climatology": {
+          "brier": 0.01275418,
+          "log_loss": 0.0695196,
+          "mean_probability": 0.01708075,
+          "n": 155,
+          "positive": 2,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 2,
+              "risk_probability": 0.017080745341614908,
+              "selected_from_tie": 10,
+              "tied_countries": 155
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0.12903226,
+            "expected_precision": 0.01290323,
+            "expected_recall": 0.06451613,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 2,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "combined": {
+          "brier": 0.01063877,
+          "log_loss": 0.04023132,
+          "mean_probability": 0.01245502,
+          "n": 155,
+          "positive": 2,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 0,
+              "risk_probability": 0.031200346670518565,
+              "selected_from_tie": 5,
+              "tied_countries": 5
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 2,
+            "expected_hits_random_tie_break": 2,
+            "expected_precision": 0.2,
+            "expected_recall": 1,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 2,
+            "min_hits_across_valid_tie_breaks": 2
+          }
+        },
+        "other_violence": {
+          "brier": 0.01193792,
+          "log_loss": 0.05170297,
+          "mean_probability": 0.01426791,
+          "n": 155,
+          "positive": 2,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 2,
+              "risk_probability": 0.05288727630527028,
+              "selected_from_tie": 10,
+              "tied_countries": 18
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 1.11111111,
+            "expected_precision": 0.11111111,
+            "expected_recall": 0.55555556,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 2,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "state_recency": {
+          "brier": 0.01126866,
+          "log_loss": 0.04466239,
+          "mean_probability": 0.01347044,
+          "n": 155,
+          "positive": 2,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 2,
+              "risk_probability": 0.08346273291925466,
+              "selected_from_tie": 10,
+              "tied_countries": 10
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 2,
+            "expected_hits_random_tie_break": 2,
+            "expected_precision": 0.2,
+            "expected_recall": 1,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 2,
+            "min_hits_across_valid_tie_breaks": 2
+          }
+        }
+      },
+      "90": {
+        "climatology": {
+          "brier": 0.01942198,
+          "log_loss": 0.10253398,
+          "mean_probability": 0.04037267,
+          "n": 155,
+          "positive": 3,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 3,
+              "risk_probability": 0.040372670807453416,
+              "selected_from_tie": 10,
+              "tied_countries": 155
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0.19354839,
+            "expected_precision": 0.01935484,
+            "expected_recall": 0.06451613,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 3,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "combined": {
+          "brier": 0.01559832,
+          "log_loss": 0.06842687,
+          "mean_probability": 0.03102193,
+          "n": 155,
+          "positive": 3,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 0,
+              "risk_probability": 0.11180124223602483,
+              "selected_from_tie": 5,
+              "tied_countries": 5
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 2,
+            "expected_hits_random_tie_break": 2,
+            "expected_precision": 0.2,
+            "expected_recall": 0.66666667,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 2,
+            "min_hits_across_valid_tie_breaks": 2
+          }
+        },
+        "other_violence": {
+          "brier": 0.0169907,
+          "log_loss": 0.07639278,
+          "mean_probability": 0.03610259,
+          "n": 155,
+          "positive": 3,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 3,
+              "risk_probability": 0.11690547936781255,
+              "selected_from_tie": 10,
+              "tied_countries": 18
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 1.66666667,
+            "expected_precision": 0.16666667,
+            "expected_recall": 0.55555556,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 3,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "state_recency": {
+          "brier": 0.01695288,
+          "log_loss": 0.07780039,
+          "mean_probability": 0.03381147,
+          "n": 155,
+          "positive": 3,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 2,
+              "risk_probability": 0.20011645962732919,
+              "selected_from_tie": 10,
+              "tied_countries": 10
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 2,
+            "expected_hits_random_tie_break": 2,
+            "expected_precision": 0.2,
+            "expected_recall": 0.66666667,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 2,
+            "min_hits_across_valid_tie_breaks": 2
+          }
+        }
+      }
+    },
+    "10": {
+      "30": {
+        "climatology": {
+          "brier": 0.00628313,
+          "log_loss": 0.03984538,
+          "mean_probability": 0.01206637,
+          "n": 159,
+          "positive": 1,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 1,
+              "risk_probability": 0.012066365007541479,
+              "selected_from_tie": 10,
+              "tied_countries": 159
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0.06289308,
+            "expected_precision": 0.00628931,
+            "expected_recall": 0.06289308,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 1,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "combined": {
+          "brier": 0.00604041,
+          "log_loss": 0.02938317,
+          "mean_probability": 0.00751309,
+          "n": 159,
+          "positive": 1,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 0,
+              "risk_probability": 0.028868076747693712,
+              "selected_from_tie": 1,
+              "tied_countries": 5
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 1,
+            "expected_hits_random_tie_break": 1,
+            "expected_precision": 0.1,
+            "expected_recall": 1,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 1,
+            "min_hits_across_valid_tie_breaks": 1
+          }
+        },
+        "other_violence": {
+          "brier": 0.00606776,
+          "log_loss": 0.03189437,
+          "mean_probability": 0.00984012,
+          "n": 159,
+          "positive": 1,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 1,
+              "risk_probability": 0.029466611819552995,
+              "selected_from_tie": 10,
+              "tied_countries": 19
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0.52631579,
+            "expected_precision": 0.05263158,
+            "expected_recall": 0.52631579,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 1,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "state_recency": {
+          "brier": 0.00603411,
+          "log_loss": 0.02938308,
+          "mean_probability": 0.0084314,
+          "n": 159,
+          "positive": 1,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 1,
+              "risk_probability": 0.03502073906485671,
+              "selected_from_tie": 6,
+              "tied_countries": 10
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 1,
+            "expected_hits_random_tie_break": 0.6,
+            "expected_precision": 0.06,
+            "expected_recall": 0.6,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 1,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        }
+      },
+      "90": {
+        "climatology": {
+          "brier": 0.01290934,
+          "log_loss": 0.07714296,
+          "mean_probability": 0.0346908,
+          "n": 159,
+          "positive": 2,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 2,
+              "risk_probability": 0.03469079939668175,
+              "selected_from_tie": 10,
+              "tied_countries": 159
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0.12578616,
+            "expected_precision": 0.01257862,
+            "expected_recall": 0.06289308,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 2,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "combined": {
+          "brier": 0.01122443,
+          "log_loss": 0.05008395,
+          "mean_probability": 0.0222007,
+          "n": 159,
+          "positive": 2,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 0,
+              "risk_probability": 0.0626468834403171,
+              "selected_from_tie": 4,
+              "tied_countries": 5
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 1,
+            "expected_hits_random_tie_break": 1,
+            "expected_precision": 0.1,
+            "expected_recall": 0.5,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 1,
+            "min_hits_across_valid_tie_breaks": 1
+          }
+        },
+        "other_violence": {
+          "brier": 0.01303612,
+          "log_loss": 0.06838444,
+          "mean_probability": 0.02891492,
+          "n": 159,
+          "positive": 2,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 1,
+              "risk_probability": 0.13358014534485121,
+              "selected_from_tie": 10,
+              "tied_countries": 19
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0.52631579,
+            "expected_precision": 0.05263158,
+            "expected_recall": 0.26315789,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 1,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "state_recency": {
+          "brier": 0.01099655,
+          "log_loss": 0.04916686,
+          "mean_probability": 0.02602799,
+          "n": 159,
+          "positive": 2,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 1,
+              "risk_probability": 0.15146587481146304,
+              "selected_from_tie": 10,
+              "tied_countries": 10
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 1,
+            "expected_hits_random_tie_break": 1,
+            "expected_precision": 0.1,
+            "expected_recall": 0.5,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 1,
+            "min_hits_across_valid_tie_breaks": 1
+          }
+        }
+      }
+    },
+    "25": {
+      "30": {
+        "climatology": {
+          "brier": 0.00003361,
+          "log_loss": 0.00581397,
+          "mean_probability": 0.0057971,
+          "n": 166,
+          "positive": 0,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 0,
+              "risk_probability": 0.005797101449275362,
+              "selected_from_tie": 10,
+              "tied_countries": 166
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0,
+            "expected_precision": 0,
+            "expected_recall": null,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 0,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "combined": {
+          "brier": 0.00004075,
+          "log_loss": 0.00332713,
+          "mean_probability": 0.00330641,
+          "n": 166,
+          "positive": 0,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 0,
+              "risk_probability": 0.0042941492216854536,
+              "selected_from_tie": 2,
+              "tied_countries": 4
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0,
+            "expected_precision": 0,
+            "expected_recall": null,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 0,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "other_violence": {
+          "brier": 0.00003813,
+          "log_loss": 0.00379519,
+          "mean_probability": 0.00377593,
+          "n": 166,
+          "positive": 0,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 0,
+              "risk_probability": 0.016276477146042363,
+              "selected_from_tie": 10,
+              "tied_countries": 22
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0,
+            "expected_precision": 0,
+            "expected_recall": null,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 0,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "state_recency": {
+          "brier": 0.00004515,
+          "log_loss": 0.00372343,
+          "mean_probability": 0.00370056,
+          "n": 166,
+          "positive": 0,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 0,
+              "risk_probability": 0.017436594202898552,
+              "selected_from_tie": 3,
+              "tied_countries": 10
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0,
+            "expected_precision": 0,
+            "expected_recall": null,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 0,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        }
+      },
+      "90": {
+        "climatology": {
+          "brier": 0.01194917,
+          "log_loss": 0.06664348,
+          "mean_probability": 0.01884058,
+          "n": 166,
+          "positive": 2,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 2,
+              "risk_probability": 0.01884057971014493,
+              "selected_from_tie": 10,
+              "tied_countries": 166
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0.12048193,
+            "expected_precision": 0.01204819,
+            "expected_recall": 0.06024096,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 2,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "combined": {
+          "brier": 0.01036276,
+          "log_loss": 0.03955061,
+          "mean_probability": 0.00894537,
+          "n": 166,
+          "positive": 2,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 1,
+              "risk_probability": 0.0335807705903146,
+              "selected_from_tie": 1,
+              "tied_countries": 5
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 1,
+            "expected_hits_random_tie_break": 1.2,
+            "expected_precision": 0.12,
+            "expected_recall": 0.6,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 2,
+            "min_hits_across_valid_tie_breaks": 1
+          }
+        },
+        "other_violence": {
+          "brier": 0.0110273,
+          "log_loss": 0.04561022,
+          "mean_probability": 0.01445777,
+          "n": 166,
+          "positive": 2,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 2,
+              "risk_probability": 0.07212931995540692,
+              "selected_from_tie": 10,
+              "tied_countries": 22
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 0,
+            "expected_hits_random_tie_break": 0.90909091,
+            "expected_precision": 0.09090909,
+            "expected_recall": 0.45454545,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 2,
+            "min_hits_across_valid_tie_breaks": 0
+          }
+        },
+        "state_recency": {
+          "brier": 0.01081562,
+          "log_loss": 0.04142802,
+          "mean_probability": 0.01231433,
+          "n": 166,
+          "positive": 2,
+          "top10_with_tie_bounds": {
+            "cutoff_tie": {
+              "positive_countries_in_tie": 0,
+              "risk_probability": 0.06094388703084355,
+              "selected_from_tie": 3,
+              "tied_countries": 4
+            },
+            "deterministic_country_id_tiebreak_hits_not_skill": 1,
+            "expected_hits_random_tie_break": 1,
+            "expected_precision": 0.1,
+            "expected_recall": 0.5,
+            "k": 10,
+            "max_hits_across_valid_tie_breaks": 1,
+            "min_hits_across_valid_tie_breaks": 1
+          }
+        }
+      }
+    }
+  },
+  "holdout_year": 2026,
+  "horizons_days": [
+    30,
+    90
+  ],
+  "limitations": "Retrospective source snapshots only; no independent first-publication date; thresholds fixed for this exploratory sweep after previous 2026 investigations; low thresholds count provisional coded violence, not new wars; 2023 excluded as Q1 cumulative archive is Jan-Apr not Jan-Mar; one holdout year with dependent countries. Tie-aware ranking prevents country-ID order from pretending to be individual discriminatory skill.",
+  "n_countries": 196,
+  "prospective_issued_probabilities": 0,
+  "prospective_outcomes_resolved": 0,
   "protocol_date": "2026-11-19",
+  "schema": "idealab.psico.candidate.state_reactivation_threshold_grid.v1",
+  "source_snapshots": [
+    {
+      "distinct_countries_with_eligible_events": 61,
+      "eligible_events": 3576,
+      "exclusions": {
+        "low_or_unknown_date_precision": 75,
+        "outside_q1_window": 10,
+        "unknown_precision_zero": 1
+      },
+      "month": 3,
+      "sha256": "e14d274b78b52605d26e19c5e387ee4f7c98b398e4099bbe66d039757bc2970e",
+      "source_bytes": 2955553,
+      "source_rows": 3661,
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v21_01_21_03.csv",
+      "year": 2021
+    },
+    {
+      "distinct_countries_with_eligible_events": 46,
+      "eligible_events": 3599,
+      "exclusions": {
+        "low_or_unknown_date_precision": 303,
+        "not_state_based_outcome": 5273,
+        "outside_target_90_window": 4483,
+        "unknown_precision_zero": 3
+      },
+      "month": 9,
+      "sha256": "077b27b7b6490431bb040fb2c08739587d1a0a4fb6ff3ef3852ee5d8d8ef79c9",
+      "source_bytes": 11164361,
+      "source_rows": 13658,
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v21_01_21_09.csv",
+      "year": 2021
+    },
+    {
+      "distinct_countries_with_eligible_events": 54,
+      "eligible_events": 3535,
+      "exclusions": {
+        "low_or_unknown_date_precision": 202,
+        "outside_q1_window": 7,
+        "unknown_precision_zero": 1
+      },
+      "month": 3,
+      "sha256": "4111f9331f794e6bc20900af9c2ba63be3a7ac1ca97bfc231ee6129f97e83eb2",
+      "source_bytes": 3075138,
+      "source_rows": 3744,
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v22_01_22_03.csv",
+      "year": 2022
+    },
+    {
+      "distinct_countries_with_eligible_events": 44,
+      "eligible_events": 2394,
+      "exclusions": {
+        "low_or_unknown_date_precision": 494,
+        "not_state_based_outcome": 4925,
+        "outside_target_90_window": 4757,
+        "unknown_precision_zero": 1
+      },
+      "month": 9,
+      "sha256": "20d15637aa4b9ee80aed52a059d0552a8045867e493f103f6f8d7c117547b733",
+      "source_bytes": 10483708,
+      "source_rows": 12570,
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v22_01_22_09.csv",
+      "year": 2022
+    },
+    {
+      "distinct_countries_with_eligible_events": 66,
+      "eligible_events": 5455,
+      "exclusions": {
+        "low_or_unknown_date_precision": 66,
+        "outside_q1_window": 13,
+        "unknown_precision_zero": 1
+      },
+      "month": 3,
+      "sha256": "ae794cc614a56a7445cdb72be95df7681431245c6ffda4ed6f3d56d36db29b6f",
+      "source_bytes": 4503217,
+      "source_rows": 5534,
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v24_01_24_03.csv",
+      "year": 2024
+    },
+    {
+      "distinct_countries_with_eligible_events": 45,
+      "eligible_events": 4276,
+      "exclusions": {
+        "low_or_unknown_date_precision": 301,
+        "not_state_based_outcome": 6296,
+        "outside_target_90_window": 9993,
+        "unknown_precision_zero": 3
+      },
+      "month": 9,
+      "sha256": "3f9f7acea9690cd8c5150981ae85b5a9365b2ca233f2b351b680de95cd4af390",
+      "source_bytes": 16856392,
+      "source_rows": 20866,
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v24_01_24_09.csv",
+      "year": 2024
+    },
+    {
+      "distinct_countries_with_eligible_events": 68,
+      "eligible_events": 6510,
+      "exclusions": {
+        "low_or_unknown_date_precision": 122,
+        "outside_q1_window": 9,
+        "unknown_precision_zero": 1
+      },
+      "month": 3,
+      "sha256": "42465f8c081bd70e67221e216d2c0b3fae59586f1ca45561f48052a26a2910e8",
+      "source_bytes": 4767333,
+      "source_rows": 6641,
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v25_01_25_03.csv",
+      "year": 2025
+    },
+    {
+      "distinct_countries_with_eligible_events": 44,
+      "eligible_events": 4627,
+      "exclusions": {
+        "low_or_unknown_date_precision": 428,
+        "not_state_based_outcome": 8058,
+        "outside_target_90_window": 8845,
+        "unknown_precision_zero": 1
+      },
+      "month": 9,
+      "sha256": "086362d535c61d1237f0824bee8afb6459bac71ca8d02026946b715264c910be",
+      "source_bytes": 15883361,
+      "source_rows": 21958,
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v25_01_25_09.csv",
+      "year": 2025
+    },
+    {
+      "distinct_countries_with_eligible_events": 64,
+      "eligible_events": 4740,
+      "exclusions": {
+        "low_or_unknown_date_precision": 99,
+        "outside_q1_window": 10,
+        "unknown_precision_zero": 0
+      },
+      "month": 3,
+      "sha256": "a3cae550d6b806b3872aa4a12d0d47e2634ca2fc30dae385463230c659865346",
+      "source_bytes": 3761748,
+      "source_rows": 4849,
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v26_01_26_03.csv",
+      "year": 2026
+    },
+    {
+      "distinct_countries_with_eligible_events": 42,
+      "eligible_events": 3240,
+      "exclusions": {
+        "low_or_unknown_date_precision": 442,
+        "not_state_based_outcome": 6512,
+        "outside_target_90_window": 6439,
+        "unknown_precision_zero": 0
+      },
+      "month": 9,
+      "sha256": "134da9b3df08b65266802c4b662e572f396c70c92ab62297319be657540bcede",
+      "source_bytes": 13065779,
+      "source_rows": 16633,
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v26_01_26_09.csv",
+      "year": 2026
+    }
+  ],
+  "status": "EXPLORATORY_HISTORICAL_NOT_ASOF_NOT_ISSUED",
+  "target_best_thresholds": [
+    1,
+    5,
+    10,
+    25
+  ],
+  "train_years": [
+    2021,
+    2022,
+    2024,
+    2025
+  ],
+  "trained_models": {
+    "1": {
+      "30": {
+        "groups": {
+          "combined": {
+            "1-4|False": {
+              "n": 0,
+              "p": 0.02,
+              "positives": 0
+            },
+            "1-4|True": {
+              "n": 0,
+              "p": 0.02,
+              "positives": 0
+            },
+            "10+|False": {
+              "n": 0,
+              "p": 0.02,
+              "positives": 0
+            },
+            "10+|True": {
+              "n": 0,
+              "p": 0.02,
+              "positives": 0
+            },
+            "5-9|False": {
+              "n": 0,
+              "p": 0.02,
+              "positives": 0
+            },
+            "5-9|True": {
+              "n": 0,
+              "p": 0.02,
+              "positives": 0
+            },
+            "zero|False": {
+              "n": 538,
+              "p": 0.015053763440860216,
+              "positives": 8
+            },
+            "zero|True": {
+              "n": 60,
+              "p": 0.042499999999999996,
+              "positives": 3
+            }
+          },
+          "other_violence": {
+            "False": {
+              "n": 538,
+              "p": 0.015053763440860216,
+              "positives": 8
+            },
+            "True": {
+              "n": 60,
+              "p": 0.042499999999999996,
+              "positives": 3
+            }
+          },
+          "state_recency": {
+            "1-4": {
+              "n": 0,
+              "p": 0.02,
+              "positives": 0
+            },
+            "10+": {
+              "n": 0,
+              "p": 0.02,
+              "positives": 0
+            },
+            "5-9": {
+              "n": 0,
+              "p": 0.02,
+              "positives": 0
+            },
+            "zero": {
+              "n": 598,
+              "p": 0.018446601941747572,
+              "positives": 11
+            }
+          }
+        },
+        "p_global": 0.02,
+        "shrinkage_k": 20,
+        "train_n_at_risk": 598,
+        "train_positive": 11
+      },
+      "90": {
+        "groups": {
+          "combined": {
+            "1-4|False": {
+              "n": 0,
+              "p": 0.05,
+              "positives": 0
+            },
+            "1-4|True": {
+              "n": 0,
+              "p": 0.05,
+              "positives": 0
+            },
+            "10+|False": {
+              "n": 0,
+              "p": 0.05,
+              "positives": 0
+            },
+            "10+|True": {
+              "n": 0,
+              "p": 0.05,
+              "positives": 0
+            },
+            "5-9|False": {
+              "n": 0,
+              "p": 0.05,
+              "positives": 0
+            },
+            "5-9|True": {
+              "n": 0,
+              "p": 0.05,
+              "positives": 0
+            },
+            "zero|False": {
+              "n": 538,
+              "p": 0.04121863799283154,
+              "positives": 22
+            },
+            "zero|True": {
+              "n": 60,
+              "p": 0.1,
+              "positives": 7
+            }
+          },
+          "other_violence": {
+            "False": {
+              "n": 538,
+              "p": 0.04121863799283154,
+              "positives": 22
+            },
+            "True": {
+              "n": 60,
+              "p": 0.1,
+              "positives": 7
+            }
+          },
+          "state_recency": {
+            "1-4": {
+              "n": 0,
+              "p": 0.05,
+              "positives": 0
+            },
+            "10+": {
+              "n": 0,
+              "p": 0.05,
+              "positives": 0
+            },
+            "5-9": {
+              "n": 0,
+              "p": 0.05,
+              "positives": 0
+            },
+            "zero": {
+              "n": 598,
+              "p": 0.04854368932038835,
+              "positives": 29
+            }
+          }
+        },
+        "p_global": 0.05,
+        "shrinkage_k": 20,
+        "train_n_at_risk": 598,
+        "train_positive": 29
+      }
+    },
+    "5": {
+      "30": {
+        "groups": {
+          "combined": {
+            "1-4|False": {
+              "n": 23,
+              "p": 0.031200346670518565,
+              "positives": 1
+            },
+            "1-4|True": {
+              "n": 21,
+              "p": 0.10589304650810483,
+              "positives": 4
+            },
+            "10+|False": {
+              "n": 0,
+              "p": 0.017080745341614908,
+              "positives": 0
+            },
+            "10+|True": {
+              "n": 0,
+              "p": 0.017080745341614908,
+              "positives": 0
+            },
+            "5-9|False": {
+              "n": 0,
+              "p": 0.017080745341614908,
+              "positives": 0
+            },
+            "5-9|True": {
+              "n": 0,
+              "p": 0.017080745341614908,
+              "positives": 0
+            },
+            "zero|False": {
+              "n": 538,
+              "p": 0.007780671876043544,
+              "positives": 4
+            },
+            "zero|True": {
+              "n": 60,
+              "p": 0.01677018633540373,
+              "positives": 1
+            }
+          },
+          "other_violence": {
+            "False": {
+              "n": 561,
+              "p": 0.009193829443773319,
+              "positives": 5
+            },
+            "True": {
+              "n": 81,
+              "p": 0.05288727630527028,
+              "positives": 5
+            }
+          },
+          "state_recency": {
+            "1-4": {
+              "n": 44,
+              "p": 0.08346273291925466,
+              "positives": 5
+            },
+            "10+": {
+              "n": 0,
+              "p": 0.017080745341614908,
+              "positives": 0
+            },
+            "5-9": {
+              "n": 0,
+              "p": 0.017080745341614908,
+              "positives": 0
+            },
+            "zero": {
+              "n": 598,
+              "p": 0.008643389816880741,
+              "positives": 5
+            }
+          }
+        },
+        "p_global": 0.017080745341614908,
+        "shrinkage_k": 20,
+        "train_n_at_risk": 642,
+        "train_positive": 10
+      },
+      "90": {
+        "groups": {
+          "combined": {
+            "1-4|False": {
+              "n": 23,
+              "p": 0.11180124223602483,
+              "positives": 4
+            },
+            "1-4|True": {
+              "n": 21,
+              "p": 0.21481593697924556,
+              "positives": 8
+            },
+            "10+|False": {
+              "n": 0,
+              "p": 0.040372670807453416,
+              "positives": 0
+            },
+            "10+|True": {
+              "n": 0,
+              "p": 0.040372670807453416,
+              "positives": 0
+            },
+            "5-9|False": {
+              "n": 0,
+              "p": 0.040372670807453416,
+              "positives": 0
+            },
+            "5-9|True": {
+              "n": 0,
+              "p": 0.040372670807453416,
+              "positives": 0
+            },
+            "zero|False": {
+              "n": 538,
+              "p": 0.01936819608628865,
+              "positives": 10
+            },
+            "zero|True": {
+              "n": 60,
+              "p": 0.04759316770186335,
+              "positives": 3
+            }
+          },
+          "other_violence": {
+            "False": {
+              "n": 561,
+              "p": 0.025486150458087897,
+              "positives": 14
+            },
+            "True": {
+              "n": 81,
+              "p": 0.11690547936781255,
+              "positives": 11
+            }
+          },
+          "state_recency": {
+            "1-4": {
+              "n": 44,
+              "p": 0.20011645962732919,
+              "positives": 12
+            },
+            "10+": {
+              "n": 0,
+              "p": 0.040372670807453416,
+              "positives": 0
+            },
+            "5-9": {
+              "n": 0,
+              "p": 0.040372670807453416,
+              "positives": 0
+            },
+            "zero": {
+              "n": 598,
+              "p": 0.022342157631309173,
+              "positives": 13
+            }
+          }
+        },
+        "p_global": 0.040372670807453416,
+        "shrinkage_k": 20,
+        "train_n_at_risk": 642,
+        "train_positive": 25
+      }
+    },
+    "10": {
+      "30": {
+        "groups": {
+          "combined": {
+            "1-4|False": {
+              "n": 23,
+              "p": 0.028868076747693712,
+              "positives": 1
+            },
+            "1-4|True": {
+              "n": 21,
+              "p": 0.030276275613434867,
+              "positives": 1
+            },
+            "10+|False": {
+              "n": 0,
+              "p": 0.012066365007541479,
+              "positives": 0
+            },
+            "10+|True": {
+              "n": 0,
+              "p": 0.012066365007541479,
+              "positives": 0
+            },
+            "5-9|False": {
+              "n": 10,
+              "p": 0.04137757667169432,
+              "positives": 1
+            },
+            "5-9|True": {
+              "n": 9,
+              "p": 0.042804389660373435,
+              "positives": 1
+            },
+            "zero|False": {
+              "n": 538,
+              "p": 0.004016715591668153,
+              "positives": 2
+            },
+            "zero|True": {
+              "n": 60,
+              "p": 0.01551659125188537,
+              "positives": 1
+            }
+          },
+          "other_violence": {
+            "False": {
+              "n": 571,
+              "p": 0.007176526734603773,
+              "positives": 4
+            },
+            "True": {
+              "n": 90,
+              "p": 0.029466611819552995,
+              "positives": 3
+            }
+          },
+          "state_recency": {
+            "1-4": {
+              "n": 44,
+              "p": 0.03502073906485671,
+              "positives": 2
+            },
+            "10+": {
+              "n": 0,
+              "p": 0.012066365007541479,
+              "positives": 0
+            },
+            "5-9": {
+              "n": 19,
+              "p": 0.05746993077309819,
+              "positives": 2
+            },
+            "zero": {
+              "n": 598,
+              "p": 0.005244866181473834,
+              "positives": 3
+            }
+          }
+        },
+        "p_global": 0.012066365007541479,
+        "shrinkage_k": 20,
+        "train_n_at_risk": 661,
+        "train_positive": 7
+      },
+      "90": {
+        "groups": {
+          "combined": {
+            "1-4|False": {
+              "n": 23,
+              "p": 0.0626468834403171,
+              "positives": 2
+            },
+            "1-4|True": {
+              "n": 21,
+              "p": 0.18765404848618622,
+              "positives": 7
+            },
+            "10+|False": {
+              "n": 0,
+              "p": 0.03469079939668175,
+              "positives": 0
+            },
+            "10+|True": {
+              "n": 0,
+              "p": 0.03469079939668175,
+              "positives": 0
+            },
+            "5-9|False": {
+              "n": 10,
+              "p": 0.05646053293112117,
+              "positives": 1
+            },
+            "5-9|True": {
+              "n": 9,
+              "p": 0.16185572372184948,
+              "positives": 4
+            },
+            "zero|False": {
+              "n": 538,
+              "p": 0.010203971304540566,
+              "positives": 5
+            },
+            "zero|True": {
+              "n": 60,
+              "p": 0.04617269984917044,
+              "positives": 3
+            }
+          },
+          "other_violence": {
+            "False": {
+              "n": 571,
+              "p": 0.014710348541342866,
+              "positives": 8
+            },
+            "True": {
+              "n": 90,
+              "p": 0.13358014534485121,
+              "positives": 14
+            }
+          },
+          "state_recency": {
+            "1-4": {
+              "n": 44,
+              "p": 0.15146587481146304,
+              "positives": 9
+            },
+            "10+": {
+              "n": 0,
+              "p": 0.03469079939668175,
+              "positives": 0
+            },
+            "5-9": {
+              "n": 19,
+              "p": 0.14599528174188808,
+              "positives": 5
+            },
+            "zero": {
+              "n": 598,
+              "p": 0.014067663410895848,
+              "positives": 8
+            }
+          }
+        },
+        "p_global": 0.03469079939668175,
+        "shrinkage_k": 20,
+        "train_n_at_risk": 661,
+        "train_positive": 22
+      }
+    },
+    "25": {
+      "30": {
+        "groups": {
+          "combined": {
+            "1-4|False": {
+              "n": 23,
+              "p": 0.002696326255476913,
+              "positives": 0
+            },
+            "1-4|True": {
+              "n": 21,
+              "p": 0.0272180982679392,
+              "positives": 1
+            },
+            "10+|False": {
+              "n": 7,
+              "p": 0.0042941492216854536,
+              "positives": 0
+            },
+            "10+|True": {
+              "n": 20,
+              "p": 0.027898550724637684,
+              "positives": 1
+            },
+            "5-9|False": {
+              "n": 10,
+              "p": 0.003864734299516908,
+              "positives": 0
+            },
+            "5-9|True": {
+              "n": 9,
+              "p": 0.00399800099950025,
+              "positives": 0
+            },
+            "zero|False": {
+              "n": 538,
+              "p": 0.001999896109293024,
+              "positives": 1
+            },
+            "zero|True": {
+              "n": 60,
+              "p": 0.0014492753623188406,
+              "positives": 0
+            }
+          },
+          "other_violence": {
+            "False": {
+              "n": 578,
+              "p": 0.001866123794290146,
+              "positives": 1
+            },
+            "True": {
+              "n": 110,
+              "p": 0.016276477146042363,
+              "positives": 2
+            }
+          },
+          "state_recency": {
+            "1-4": {
+              "n": 44,
+              "p": 0.017436594202898552,
+              "positives": 1
+            },
+            "10+": {
+              "n": 27,
+              "p": 0.02374344742522356,
+              "positives": 1
+            },
+            "5-9": {
+              "n": 19,
+              "p": 0.0029728725380899295,
+              "positives": 0
+            },
+            "zero": {
+              "n": 598,
+              "p": 0.0018057314384878759,
+              "positives": 1
+            }
+          }
+        },
+        "p_global": 0.005797101449275362,
+        "shrinkage_k": 20,
+        "train_n_at_risk": 688,
+        "train_positive": 3
+      },
+      "90": {
+        "groups": {
+          "combined": {
+            "1-4|False": {
+              "n": 23,
+              "p": 0.05527468823727671,
+              "positives": 2
+            },
+            "1-4|True": {
+              "n": 21,
+              "p": 0.0335807705903146,
+              "positives": 1
+            },
+            "10+|False": {
+              "n": 7,
+              "p": 0.013955984970477724,
+              "positives": 0
+            },
+            "10+|True": {
+              "n": 20,
+              "p": 0.15942028985507245,
+              "positives": 6
+            },
+            "5-9|False": {
+              "n": 10,
+              "p": 0.012560386473429951,
+              "positives": 0
+            },
+            "5-9|True": {
+              "n": 9,
+              "p": 0.08195902048975512,
+              "positives": 2
+            },
+            "zero|False": {
+              "n": 538,
+              "p": 0.002467404290686198,
+              "positives": 1
+            },
+            "zero|True": {
+              "n": 60,
+              "p": 0.004710144927536232,
+              "positives": 0
+            }
+          },
+          "other_violence": {
+            "False": {
+              "n": 578,
+              "p": 0.005646842130774077,
+              "positives": 3
+            },
+            "True": {
+              "n": 110,
+              "p": 0.07212931995540692,
+              "positives": 9
+            }
+          },
+          "state_recency": {
+            "1-4": {
+              "n": 44,
+              "p": 0.05276268115942029,
+              "positives": 3
+            },
+            "10+": {
+              "n": 27,
+              "p": 0.1356768424298489,
+              "positives": 6
+            },
+            "5-9": {
+              "n": 19,
+              "p": 0.06094388703084355,
+              "positives": 2
+            },
+            "zero": {
+              "n": 598,
+              "p": 0.00222785047605647,
+              "positives": 1
+            }
+          }
+        },
+        "p_global": 0.01884057971014493,
+        "shrinkage_k": 20,
+        "train_n_at_risk": 688,
+        "train_positive": 12
+      }
+    }
+  },
+  "universe_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "yearly_threshold_rates": {
+    "1": {
+      "30": {
+        "2021": {
+          "at_risk": 152,
+          "positive": 4,
+          "rate": 0.02631579
+        },
+        "2022": {
+          "at_risk": 150,
+          "positive": 3,
+          "rate": 0.02
+        },
+        "2024": {
+          "at_risk": 149,
+          "positive": 1,
+          "rate": 0.00671141
+        },
+        "2025": {
+          "at_risk": 147,
+          "positive": 3,
+          "rate": 0.02040816
+        },
+        "2026": {
+          "at_risk": 145,
+          "positive": 0,
+          "rate": 0
+        }
+      },
+      "90": {
+        "2021": {
+          "at_risk": 152,
+          "positive": 8,
+          "rate": 0.05263158
+        },
+        "2022": {
+          "at_risk": 150,
+          "positive": 10,
+          "rate": 0.06666667
+        },
+        "2024": {
+          "at_risk": 149,
+          "positive": 6,
+          "rate": 0.04026846
+        },
+        "2025": {
+          "at_risk": 147,
+          "positive": 5,
+          "rate": 0.03401361
+        },
+        "2026": {
+          "at_risk": 145,
+          "positive": 4,
+          "rate": 0.02758621
+        }
+      }
+    },
+    "5": {
+      "30": {
+        "2021": {
+          "at_risk": 160,
+          "positive": 3,
+          "rate": 0.01875
+        },
+        "2022": {
+          "at_risk": 161,
+          "positive": 1,
+          "rate": 0.00621118
+        },
+        "2024": {
+          "at_risk": 161,
+          "positive": 2,
+          "rate": 0.01242236
+        },
+        "2025": {
+          "at_risk": 160,
+          "positive": 4,
+          "rate": 0.025
+        },
+        "2026": {
+          "at_risk": 155,
+          "positive": 2,
+          "rate": 0.01290323
+        }
+      },
+      "90": {
+        "2021": {
+          "at_risk": 160,
+          "positive": 5,
+          "rate": 0.03125
+        },
+        "2022": {
+          "at_risk": 161,
+          "positive": 8,
+          "rate": 0.04968944
+        },
+        "2024": {
+          "at_risk": 161,
+          "positive": 5,
+          "rate": 0.0310559
+        },
+        "2025": {
+          "at_risk": 160,
+          "positive": 7,
+          "rate": 0.04375
+        },
+        "2026": {
+          "at_risk": 155,
+          "positive": 3,
+          "rate": 0.01935484
+        }
+      }
+    },
+    "10": {
+      "30": {
+        "2021": {
+          "at_risk": 168,
+          "positive": 4,
+          "rate": 0.02380952
+        },
+        "2022": {
+          "at_risk": 166,
+          "positive": 1,
+          "rate": 0.0060241
+        },
+        "2024": {
+          "at_risk": 163,
+          "positive": 0,
+          "rate": 0
+        },
+        "2025": {
+          "at_risk": 164,
+          "positive": 2,
+          "rate": 0.01219512
+        },
+        "2026": {
+          "at_risk": 159,
+          "positive": 1,
+          "rate": 0.00628931
+        }
+      },
+      "90": {
+        "2021": {
+          "at_risk": 168,
+          "positive": 5,
+          "rate": 0.0297619
+        },
+        "2022": {
+          "at_risk": 166,
+          "positive": 7,
+          "rate": 0.04216867
+        },
+        "2024": {
+          "at_risk": 163,
+          "positive": 4,
+          "rate": 0.02453988
+        },
+        "2025": {
+          "at_risk": 164,
+          "positive": 6,
+          "rate": 0.03658537
+        },
+        "2026": {
+          "at_risk": 159,
+          "positive": 2,
+          "rate": 0.01257862
+        }
+      }
+    },
+    "25": {
+      "30": {
+        "2021": {
+          "at_risk": 175,
+          "positive": 2,
+          "rate": 0.01142857
+        },
+        "2022": {
+          "at_risk": 174,
+          "positive": 0,
+          "rate": 0
+        },
+        "2024": {
+          "at_risk": 170,
+          "positive": 0,
+          "rate": 0
+        },
+        "2025": {
+          "at_risk": 169,
+          "positive": 1,
+          "rate": 0.00591716
+        },
+        "2026": {
+          "at_risk": 166,
+          "positive": 0,
+          "rate": 0
+        }
+      },
+      "90": {
+        "2021": {
+          "at_risk": 175,
+          "positive": 5,
+          "rate": 0.02857143
+        },
+        "2022": {
+          "at_risk": 174,
+          "positive": 1,
+          "rate": 0.00574713
+        },
+        "2024": {
+          "at_risk": 170,
+          "positive": 2,
+          "rate": 0.01176471
+        },
+        "2025": {
+          "at_risk": 169,
+          "positive": 4,
+          "rate": 0.02366864
+        },
+        "2026": {
+          "at_risk": 166,
+          "positive": 2,
+          "rate": 0.01204819
+        }
+      }
+    }
+  },
   "years": [
     2021,
     2022,
     2024,
     2025,
     2026
-  ],
-  "training": [
-    2021,
-    2022,
-    2024,
-    2025
-  ],
-  "holdout": 2026,
-  "thresholds": [
-    1,
-    5,
-    10,
-    25
-  ],
-  "horizons_days": [
-    30,
-    90
-  ],
-  "prospective_issued_probabilities": 0
+  ]
 }
