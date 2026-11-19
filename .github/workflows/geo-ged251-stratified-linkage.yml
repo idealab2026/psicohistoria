@@ -1,0 +1,38 @@
+name: GEO GED25.1 cross-country temporal-spatial linkage screening
+on:
+  push:
+    paths:
+      - 'scripts/audit_geo_ged251_stratified_linkage.py'
+      - 'scripts/test_audit_geo_ged251_stratified_linkage.py'
+      - 'data/geo-ged251-2021-22-linkage-sample24.json'
+      - 'docs/geo-ged251-2021-22-stratified-linkage.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/geo-ged251-stratified-linkage.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_geo_ged251_stratified_linkage.py'
+      - 'scripts/test_audit_geo_ged251_stratified_linkage.py'
+      - 'data/geo-ged251-2021-22-linkage-sample24.json'
+      - 'docs/geo-ged251-2021-22-stratified-linkage.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/geo-ged251-stratified-linkage.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  cross_country_screen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Adversarial temporal-spatial precision tests
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_ged251_stratified_linkage.py' -v
+      - name: Replay original official UCDP GED25.1 SHA and emit preregistered results
+        run: python3 -B scripts/audit_geo_ged251_stratified_linkage.py --emit-report
+      - name: Institutional privacy publication boundary
+        run: python3 -B scripts/audit_public.py
