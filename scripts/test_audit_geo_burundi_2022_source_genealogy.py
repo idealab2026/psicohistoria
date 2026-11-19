@@ -63,7 +63,7 @@ class BurundiGenealogyTest(unittest.TestCase):
 
     def test_near_verbatim_ngo_claim_coverage_and_no_two_witnesses(self):
         o=m.build_report(frozen_prior())
-        pair=next(x for x in o["semantic_claim_overlap_diagnostic"]
+        pair=next(x for x in o["semantic_claim_overlap_diagnostic_not_independence"]
                   if x["left"]=="iteka_q2_2022")
         self.assertGreaterEqual(pair["claim_jaccard"],.8)
         self.assertEqual(o["other_NGO_pair_with_near_verbatim_case_text_n"],1)
