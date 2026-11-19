@@ -31,9 +31,14 @@ class GED251PairSource(unittest.TestCase):
         self.assertEqual({name for name,_ in cases},{"benin_2022","uganda_2022"})
 
     def test_normalization_deduplicates_spacing(self):
-        x=m.citation_fragments("  One  publisher, 2022-01-01, Article /// Other publisher, 2022-01-02, News ")
+        x=m.citation_fragments('"One publisher, 2022-01-01, Article";"Other publisher, 2022-01-02, News"')
         self.assertEqual(x,["One publisher, 2022-01-01, Article",
                             "Other publisher, 2022-01-02, News"])
+
+    def test_source_refs_with_embedded_semicolon_are_preserved(self):
+        x=m.citation_fragments('"Agency, 2022-01-01, Title; part two";"Agency, 2022-01-02, Another"')
+        self.assertEqual(len(x),2)
+        self.assertIn("Title; part two",x[0])
 
     def test_distinct_source_fragments_are_not_witness_identity(self):
         a=sample(431254,best=8)
