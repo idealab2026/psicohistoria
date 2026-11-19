@@ -44,7 +44,13 @@ def citation_fragments(raw):
     """These are UCDP bibliographic metadata, not primary event testimonies."""
     if not isinstance(raw,str):
         raise ValueError("Unexpected source_article type")
-    pieces=[" ".join(s.split()) for s in raw.split("///")
+    # GED25.1 CSV serializes each bibliographic reference as a quoted
+    # semicolon-delimited cell; the /// separator is used in other UCDP
+    # formats (not this official 25.1 ZIP). Splitting on /// would turn
+    # multiple distinct citations into ONE and underestimate source overlap.
+    parts=next(csv.reader([raw],delimiter=";",quotechar='"',
+                          skipinitialspace=True))
+    pieces=[" ".join(s.split()) for s in parts
             if s.strip() and s.strip().lower() not in ("na","n/a","unknown")]
     if len(pieces)>100:
         raise ValueError("Implausibly many GED citation fragments")
@@ -99,6 +105,8 @@ def parse_source_row(r):
            and -90<=lat<=90 and -180<=lon<=180):
         raise ValueError("Unexpected official GED precision/estimate metadata")
     refs=citation_fragments(r["source_article"])
+    if num_sources>=0 and num_sources!=len(refs):
+        raise ValueError("GED number_of_sources differs from citation list")
     return {
         "GED_event_id":eid,
         "GWNO":int(r["country_id"]),
