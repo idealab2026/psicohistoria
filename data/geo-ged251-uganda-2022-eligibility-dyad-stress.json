@@ -1,0 +1,110 @@
+{
+  "Brier_improvement_demonstrated": false,
+  "GEO2027_or_GEO2028_prediction_vectors_modified": false,
+  "UCDP25_1_annual_country_type1_best": 25,
+  "UCDP25_1_annual_country_type1_ge25": true,
+  "country_GWNO": 500,
+  "dyads": {
+    "16938": {
+      "best_total": 25,
+      "dyad_new_id": "16938",
+      "event_rows": [
+        {
+          "GED_event_id": 444764,
+          "best": 1,
+          "date_end": "2022-06-05",
+          "date_start": "2022-06-05"
+        },
+        {
+          "GED_event_id": 444765,
+          "best": 1,
+          "date_end": "2022-06-02",
+          "date_start": "2022-06-02"
+        },
+        {
+          "GED_event_id": 460796,
+          "best": 19,
+          "date_end": "2022-12-13",
+          "date_start": "2022-12-12"
+        },
+        {
+          "GED_event_id": 460859,
+          "best": 2,
+          "date_end": "2022-12-21",
+          "date_start": "2022-12-21"
+        },
+        {
+          "GED_event_id": 460862,
+          "best": 0,
+          "date_end": "2022-12-27",
+          "date_start": "2022-12-13"
+        },
+        {
+          "GED_event_id": 462156,
+          "best": 2,
+          "date_end": "2022-12-19",
+          "date_start": "2022-12-19"
+        }
+      ],
+      "high_sum_diagnostic": 28,
+      "low_sum_diagnostic": 25,
+      "rows_n": 6
+    }
+  },
+  "frozen_prior_pair_report_sha256": "df777bd1771bb7285cc0781e7fcfa14d55725f83793d2e612f9af0dfa769c930",
+  "hypothetical_event_exclusion_scenarios": [
+    {
+      "crosses_observed_label": false,
+      "excluded_ged_ids": [],
+      "hypothetical_best": 25,
+      "hypothetical_ge25": true
+    },
+    {
+      "crosses_observed_label": true,
+      "excluded_ged_ids": [
+        444764
+      ],
+      "hypothetical_best": 24,
+      "hypothetical_ge25": false
+    },
+    {
+      "crosses_observed_label": true,
+      "excluded_ged_ids": [
+        444765
+      ],
+      "hypothetical_best": 24,
+      "hypothetical_ge25": false
+    },
+    {
+      "crosses_observed_label": true,
+      "excluded_ged_ids": [
+        444764,
+        444765
+      ],
+      "hypothetical_best": 23,
+      "hypothetical_ge25": false
+    }
+  ],
+  "independent_victim_rosters_or_membership_verified": false,
+  "manual_evidence_review_sha256": "6a9c6aea512607ebfa7d62b8368c0a5dd411dd9642f46569e3676421da827867",
+  "methodology": "UCDP defines a state-based battle death by direct use of armed force between warring parties in a political incompatibility over government/territory. A report that someone financed an insurgency and was shot by police during a robbery or an arrest does NOT establish the required facts automatically. Existing armed conflict context alone does not settle the individual event; a dyad-year cutoff is not interchangeable with the GEO country-year cutoff. Published news repeating a police communique is institutionally dependent. The later police-officer interview belongs to the SAME state institution and does not provide an independent nonstate eyewitness. No source page HTML bytes are archived or SHA-hashed. None of the hypothetical exclusions is an observation or justified label correction.",
+  "official_UCDP_GED25_1_sha256": "e256f1fb20a579d8b2f910e5bae212f486d3002adaa2e4359ace740c737da05d",
+  "phase": "INSTITUTIONAL_SOURCE_GENEALOGY_NOT_ELIGIBILITY_ADJUDICATION",
+  "recode_or_deleted_GED_events_n": 0,
+  "research_date": "2026-11-19",
+  "schema": "idealab.psico.uganda_2022_ged251_dyad_eligibility_audit.v1",
+  "source_dependency_audit": {
+    "dependency_edges_n": 3,
+    "independently_verified_statebased_battle_events_n": 0,
+    "independently_verified_warring_party_member_events_n": 0,
+    "nonstate_original_witness_groups_verified": 0,
+    "publication_origin_groups": [
+      "UGANDA_STATE_JUNE_24_ENANGA",
+      "UGANDA_STATE_SEPT_09_SENIOR_OFFICER"
+    ],
+    "separate_reported_persons_n": 2,
+    "total_publications_reviewed": 8
+  },
+  "statebased_dyad_n": 1,
+  "year": 2022
+}
