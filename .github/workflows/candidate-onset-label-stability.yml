@@ -32,7 +32,7 @@ jobs:
           python-version: '3.12'
       - name: Adversarial synthetic time-cutoff, source-SHA and tied-alert tests
         run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_onset_label_stability.py' -v
-      - name: Replay original nine official UCDP Candidate vintages with pinned SHA
-        run: python3 -B scripts/audit_candidate_onset_label_stability.py --print-report
+      - name: Require nine-source original-byte replay exactly equal to frozen aggregate findings
+        run: python3 -B scripts/audit_candidate_onset_label_stability.py --check-report
       - name: Verify institutional privacy release boundary
         run: python3 -B scripts/audit_public.py
