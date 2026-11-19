@@ -4,6 +4,12 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## UCDP Candidate · Revisión de datos históricos Q2→Q3, 2024–2026 (19-11-2026)
+
+**Primer contraste oficial reproducido de seis archivos UCDP Candidate, SIN pronóstico emitido.** Para los mismos registros enero–junio de 2024–2026, las ediciones de septiembre aportan **3.359 IDs adicionales**, dejan fuera **1.042 IDs** presentes en junio y modifican el número de fallecidos `best` de **431 de los 35.989 eventos emparejados**. En 2024 y 2025 cambia la clasificación semestral ≥25 fallecidos estatales de un país al revisar los datos. Estas son **revisiones de dos versiones** de información provisional, no acontecimientos futuros ni evidencia de mayor precisión. No se ha certificado la fecha original de cada primera publicación.
+
+[Informe con fuentes SHA-256 y límites](docs/candidate-q2-q3-vintage-revisions.md) · [Censo agregado congelado](data/candidate-q2-q3-vintage-revisions.json) · [Código de reproducción](scripts/audit_candidate_q2_q3_vintages.py). La CI exige el mismo resultado con los seis archivos originales antes de aceptar cambios.
+
 ## NUEVA LÍNEA · Predicción experimental de 30/90 días con UCDP Candidate (19-11-2026)
 
 **Estado verificable: puerta de elegibilidad de ediciones implementada; CERO pronósticos emitidos, CERO resultados resueltos.** El objetivo es llegar a predicciones de escalada en un horizonte práctico, pero primero debe probarse la disponibilidad original de las fuentes y su calidad temporal. El catálogo UCDP consultado el 19/11/2026 muestra como última edición Candidate de 2026 la de septiembre (26.0.9) y el acumulado enero–septiembre (26.01.26.09); el catálogo no demuestra por sí solo las fechas originales de publicación.
