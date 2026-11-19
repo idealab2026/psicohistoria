@@ -18,6 +18,44 @@ Realizar el mismo contraste en los años **2024, 2025 y 2026**, usando exclusiva
 6. Incluir integridad: `q2_total_rows`, `q3_total_rows`, registros elegibles, resultados exactos por año, resumen combinado **sin presentar los años como independientes**. La salida debe generarse de los bytes oficiales y congelarse antes de interpretarla.
 7. Es una auditoría de **revisiones de información registrada**. Las URLs históricas no acreditan fecha de publicación original; no etiquetar los orígenes como as-of cronológicamente certificados. No generar simulaciones de predicción con este contraste.
 
+## Resultados verificados sobre seis archivos oficiales
+
+La CI del repositorio ha descargado y procesado las **seis ediciones UCDP Candidate originales**, identificadas por URL, bytes y SHA-256; el informe [JSON congelado](../data/candidate-q2-q3-vintage-revisions.json) reproduce exactamente los valores calculados con el script [audit_candidate_q2_q3_vintages.py](../scripts/audit_candidate_q2_q3_vintages.py). Las fechas originales de publicación de los seis archivos NO están certificadas por este experimento. Los años 2024, 2025 y 2026 son cohortes correlacionadas y no replicaciones independientes de una habilidad de pronóstico.
+
+| Enero–junio del año | Filas elegibles Q2 | Filas elegibles Q3 | IDs solo Q2 | IDs solo Q3 | IDs compartidos | IDs compartidos con cambio en `best` |
+|---|---:|---:|---:|---:|---:|---:|
+| 2024 | 12.922 | 14.380 | 442 | 1.900 | 12.480 | 208 |
+| 2025 | 14.071 | 14.245 | 393 | 567 | 13.678 | 134 |
+| 2026 | 10.038 | 10.723 | 207 | 892 | 9.831 | 89 |
+| **Total descriptivo** | **37.031** | **39.348** | **1.042** | **3.359** | **35.989** | **431** |
+
+**Importante:** «solo Q2» y «solo Q3» significan diferencias de IDs **dentro del mismo intervalo enero–junio**; un registro pudo cambiar de identificador o salir/entrar del corte por revisión de fechas. No son automáticamente eventos falsos ni eventos descubiertos por primera vez. El conjunto total Q3 de cada año también incluye julio–septiembre, pero esas filas se han filtrado y **no forman parte de la comparación**.
+
+En los **35.989 emparejamientos por ID**: 431 filas cambian su mejor estimación de fallecidos; 147 cambian tipo de violencia, 234 cambian fecha y 1 cambia país. Son conteos de revisiones que pueden solaparse, no categorías mutuamente excluyentes. La suma absoluta de revisiones de `best` en filas compartidas alcanza **11.421**, dominada por 2025 (**7.736**); no significa que aumentaran o disminuyeran 11.421 víctimas reales.
+
+### Sensibilidad del umbral semestral de 25 fallecimientos estatales
+
+| Año | Fallecidos `best` estatales, Q2 | Mismo enero–junio reestimado en Q3 | Países con ≥25 en Q2 | Países con ≥25 en Q3 | Cruces hacia arriba / abajo |
+|---|---:|---:|---:|---:|---|
+| 2024 | 48.455 | 50.572 | 32 | 31 | 0 / 1 |
+| 2025 | 64.923 | 60.126 | 31 | 32 | 1 / 0 |
+| 2026 | 74.291 | 72.343 | 33 | 33 | 0 / 0 |
+
+Estos totales son exclusivamente los `best` de los eventos Candidate que pasan el filtro de fechas y `type_of_violence=1`, **no estimaciones finales de víctimas ni la variable anual GEO2027**. Solo prueban que decisiones dependientes de umbrales pueden cambiar al revisar un mismo semestre.
+
+### Identidad de los seis orígenes históricos
+
+| Fuente | SHA-256 original |
+|---|---|
+| `24.01.24.06` | `dd1afaad1d0c06772daa762b623fcef036044528e654f29cb9b4143e1130d478` |
+| `24.01.24.09` | `3f9f7acea9690cd8c5150981ae85b5a9365b2ca233f2b351b680de95cd4af390` |
+| `25.01.25.06` | `8185c986f040ec2169728a7debf5fb1833426b534e846f51912046f78e4c6f7a` |
+| `25.01.25.09` | `086362d535c61d1237f0824bee8afb6459bac71ca8d02026946b715264c910be` |
+| `26.01.26.06` | `68dd3d363b8edf4808bd6bf6f5d0412c3c722ffb1db367aeb8eff48bab80589a` |
+| `26.01.26.09` | `134da9b3df08b65266802c4b662e572f396c70c92ab62297319be657540bcede` |
+
+**Conclusión específica:** la fuente Candidate tiene revisiones no triviales incluso en registros históricos de meses ya cerrados. Por eso sería engañoso construir un backtest de 30/90 días a partir de un único CSV acumulado retrospectivo sin controlar qué versión se conocía en cada origen. El siguiente paso debe estudiar **ediciones mensuales y su cronología de disponibilidad**, y elegir objetivos y baselines que toleren ese retraso; este estudio no demuestra por sí mismo *forecasting skill*.
+
 ## Secuencia y criterios para el desarrollo posterior
 
 Después de fijar el informe, medir la tasa de revisión por tipo y país y cómo la definición de escalada depende de las versiones. Solo después reconstruir fechas de primera publicación, calendarios de orígenes y objetivos a 30/90 días, asociar referencias sencillas (persistencia, tasa histórica), y emitir predicciones futuras inmutables. No consultar ni sustituir cohortes congeladas GEO2027/28.
