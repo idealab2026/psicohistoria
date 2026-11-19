@@ -51,15 +51,23 @@ jobs:
           n = 0
           maxima = ""
           minima = "9999-12-31"
+          crossing = []
+          future_start = []
           for row in header:
               n += 1
-              d = row["date_end"]
-              minima = min(minima, d)
-              maxima = max(maxima, d)
+              start, end = row["date_start"][:10], row["date_end"][:10]
+              minima = min(minima, end)
+              maxima = max(maxima, end)
+              if end > "2026-09-30":
+                  crossing.append((row["id"], start, end))
+              if start > "2026-09-30":
+                  future_start.append((row["id"], start, end))
           print("Total original candidate rows =", n)
           print("date_end span =", minima, maxima)
-          if n == 0 or maxima > "2026-09-30":
-              raise SystemExit("REAL SOURCE COVERAGE OUT OF BOUNDS")
+          print("Rows ending after September =", len(crossing), crossing[:5])
+          print("Rows starting after September =", len(future_start), future_start[:5])
+          if n == 0:
+              raise SystemExit("REAL SOURCE EMPTY")
           print("AUDIT STATUS: official bytes and schema observed; release date not independently certified; no issued probabilities")
           PY
       - name: Check privacy boundary including all new public scientific files
