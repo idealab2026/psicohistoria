@@ -38,7 +38,7 @@ REQUIRED={"id","country_id","year","type_of_violence","best","low","high",
     "date_start","date_end","date_prec","source_date","source_article",
     "source_office","source_original","number_of_sources","where_description",
     "where_coordinates","where_prec","dyad_name","dyad_new_id","side_a","side_b",
-    "deaths_a","deaths_b","deaths_civilians","deaths_unknown"}
+    "deaths_a","deaths_b","deaths_civilians","deaths_unknown","event_clarity"}
 
 
 def label_class(lo,be,hi,threshold=THRESHOLD):
@@ -54,14 +54,24 @@ def label_class(lo,be,hi,threshold=THRESHOLD):
 
 
 def sum_envelope(rows):
+    # UCDP GED25.1 codebook §5.5 explicitly warns that event_clarity=2
+    # aggregate rows can have high < low or best after subtracting already
+    # disaggregated clarity=1 events. Preserve literal scenario totals AND
+    # separately calculate min/max of the three estimates of EACH row.
     counts={k:sum(r[k] for r in rows) for k in ("low","best","high")}
-    counts["class"]=label_class(counts["low"],counts["best"],counts["high"])
+    counts["per_row_min_total"]=sum(min(r[k] for k in ("low","best","high"))
+                                    for r in rows)
+    counts["per_row_max_total"]=sum(max(r[k] for k in ("low","best","high"))
+                                    for r in rows)
+    counts["class"]=label_class(counts["per_row_min_total"],counts["best"],
+                                 counts["per_row_max_total"])
     counts["best_label_ge25"]=counts["best"]>=THRESHOLD
     counts["low_label_ge25"]=counts["low"]>=THRESHOLD
     counts["high_label_ge25"]=counts["high"]>=THRESHOLD
     counts["best_vs_low_label_disagrees"]=counts["best_label_ge25"]!=counts["low_label_ge25"]
     counts["best_vs_high_label_disagrees"]=counts["best_label_ge25"]!=counts["high_label_ge25"]
-    counts["uncertainty_range_total"]=counts["high"]-counts["low"]
+    counts["raw_scenario_totals_monotone"]=counts["low"]<=counts["best"]<=counts["high"]
+    counts["uncertainty_range_total"]=counts["per_row_max_total"]-counts["per_row_min_total"]
     return counts
 
 
@@ -93,14 +103,18 @@ def source_extract(raw,selection):
                     eid=int(r["id"])
                     low,best,high=(int(r[n]) for n in ("low","best","high"))
                     p=int(r["date_prec"])
+                    clarity=int(r["event_clarity"])
                 except (TypeError,ValueError) as e:
                     raise ValueError("Malformed GED marginal annual casualty row") from e
-                if eid in ids or eid<=0 or not 1<=p<=5:
-                    raise ValueError("Duplicate GED ID or invalid source date precision")
+                if (eid in ids or eid<=0 or not 1<=p<=5 or clarity not in (1,2)
+                    or min(low,best,high)<0):
+                    raise ValueError("Duplicate GED ID or invalid official fatality/precision")
                 ids.add(eid)
-                label_class(low,best,high)
+                is_nonmonotone=not(low<=best<=high)
                 output[k].append({"GED_event_id":eid,"low":low,
                                   "best":best,"high":high,
+                                  "event_clarity":clarity,
+                                  "source_fatality_order_nonmonotone":is_nonmonotone,
                                   "date_start":r["date_start"][:10],
                                   "date_end":r["date_end"][:10],
                                   "date_prec":p})
@@ -192,12 +206,18 @@ def build(raw):
         envelope=sum_envelope(group)
         if envelope["best"]!=upstream["GED25_1_type1_annual_best"]:
             raise ValueError("Original annual best changed")
-        variable=[r for r in group if r["low"]<r["high"]]
+        variable=[r for r in group if len({r["low"],r["best"],r["high"]})>1]
+        anomalous=[r for r in group if r["source_fatality_order_nonmonotone"]]
         report.append({"GWNO":key[0],"year":key[1],
             "GED_type1_rows_n":len(group),
             **envelope,
             "rows_with_nonpoint_fatality_estimate_n":len(variable),
             "rows_with_nonpoint_fatality_estimate_ids":[r["GED_event_id"] for r in variable],
+            "source_row_nonmonotone_fatality_estimates_n":len(anomalous),
+            "source_row_nonmonotone_fatality_estimates":[
+                {"GED_event_id":r["GED_event_id"],"event_clarity":r["event_clarity"],
+                 "source_low":r["low"],"source_best":r["best"],"source_high":r["high"]}
+                for r in anomalous],
             "single_row_low_replacement_flips_best_label_n":sum(
                 (envelope["best"]>=THRESHOLD)!=(
                 envelope["best"]-r["best"]+r["low"]>=THRESHOLD) for r in group),
@@ -224,6 +244,11 @@ def build(raw):
         "binary_threshold":THRESHOLD,
         "countryyear_class_counts":dict(sorted(classes.items())),
         "countryyears_best_ge25_n":sum(r["best_label_ge25"] for r in report),
+        "nonmonotone_official_event_rows_n":sum(
+            r["source_row_nonmonotone_fatality_estimates_n"] for r in report),
+        "nonmonotone_official_event_details":[
+            {"GWNO":r["GWNO"],"year":r["year"],**e}
+            for r in report for e in r["source_row_nonmonotone_fatality_estimates"]],
         "countryyears_low_ge25_n":sum(r["low_label_ge25"] for r in report),
         "countryyears_high_ge25_n":sum(r["high_label_ge25"] for r in report),
         "countryyears_best_vs_low_label_disagreement_n":sum(
@@ -238,7 +263,7 @@ def build(raw):
         "actual_GED_label_corrections_n":0,
         "issued_GEO2027_or_GEO2028_probabilities_modified":False,
         "model_skill_or_Brier_gain_demonstrated":False,
-        "limitations":"Summing all original GED event low/high values is a deterministic extreme combination. It is not a simultaneous statistical confidence interval, independent evidence of miscoding, a valid victim identity review or an estimate of the true number of casualties. The 14 country-years are conditioned on 2025 GED25.1 best in [15,35], so results are NOT prevalence estimates for all countries, years or future forecasts. UCDP source_date refers to publication, not fatal event chronology. Azerbaijan June6 bibliographic source predates June17 event but does not prove date error. Historical hindsight 2025 must not enter prospective GEO2027 or 2028 feature sets."}
+        "limitations":"UCDP GED25.1 official codebook §5.5 permits event_clarity=2 rows with high below best or low after subtraction of more precise subevents. The ORIGINAL preregistration erroneously assumed rowwise low<=best<=high and was amended transparently after initial CI failure and review of the codebook. We report verbatim low/best/high scenario totals, and separate per-row min/max arithmetic envelopes that always contain best but are NOT jointly credible confidence bands. Combinations may have correlated or mutually incompatible casualty estimates. The 14 country-years are conditioned on 2025 GED25.1 best in [15,35], NOT global future uncertainty rates. UCDP source_date is source publication date, not death date. Azerbaijan June6 bibliography precedes June17 exact GED event but proves no miscoding. No GED corrections or prospective GEO skill changes are inferred."}
 
 
 def main():
