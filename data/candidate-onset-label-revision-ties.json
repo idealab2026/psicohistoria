@@ -1,0 +1,18 @@
+{
+  "schema": "idealab.psico.candidate.onset_label_stability_tie_v1",
+  "status": "PREREGISTERED_NOT_RESULTS",
+  "protocol_date": "2026-11-19",
+  "years": [
+    2024,
+    2025,
+    2026
+  ],
+  "window": "May 1-30",
+  "tie_aware_k": [
+    5,
+    10,
+    20,
+    50
+  ],
+  "prospective_issued_probabilities": 0
+}
