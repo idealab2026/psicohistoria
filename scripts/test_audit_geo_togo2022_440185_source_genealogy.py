@@ -10,7 +10,7 @@ def fixture():
            "2022-05-19","2022-05-19","2022-05-20","2022-05-26"]
     return {
         "id":"440185","country_id":"461","year":"2022",
-        "type_of_violence":"1","best":"23","low":"23","high":"23",
+        "type_of_violence":"1","best":"23","low":"8","high":"23",
         "deaths_a":"8","deaths_b":"15","deaths_civilians":"0",
         "deaths_unknown":"0","date_start":"2022-05-11","date_end":"2022-05-11",
         "date_prec":"1","where_prec":"2",
@@ -97,6 +97,23 @@ class TogoSources(unittest.TestCase):
     def test_non_UCDP_official_bytes_rejected(self):
         with self.assertRaises(ValueError):
             m.original_ged_row(b"unverified media source")
+
+    def test_official_low_best_23_to_8_mathematically_flips_Togo_label(self):
+        ged=m.interpret_ged_row(fixture())
+        value=m.COUNTRY_BEST-m.BEST+ged["official_GED_fatality_components"]["low"]
+        self.assertEqual((m.COUNTRY_BEST,m.BEST,value),(34,23,19))
+        self.assertFalse(value>=25)
+        self.assertEqual(ged["official_GED_fatality_components"]["low"],8)
+
+    def test_repeated_exact_bibliography_entry_is_not_new_witness(self):
+        r=fixture()
+        items=r["source_article"].split(";")
+        items[6]=items[0]
+        r["source_article"]=";".join(items)
+        out=m.interpret_ged_row(r)
+        self.assertEqual(out["bibliographic_references_n"],8)
+        self.assertEqual(out["exact_distinct_bibliographic_refs_n"],7)
+        self.assertEqual(out["repeated_exact_bibliographic_ref_entries_n"],1)
 
     def test_original_official_UCDP_issue_still_immutable(self):
         self.assertEqual(m.GED_SHA,
