@@ -64,6 +64,7 @@ def extract_state_based(raw, year, purpose, universe_ids):
             raise SourceError("UCDP GED required fields missing")
         ids = set()
         source_n, excluded_boundary, excluded_date_precision = 0, 0, 0
+        excluded_unknown_precision_zero = 0
         outside_universe, retained = 0, 0
         accepted = []
         minimum = date(year, 1, 1)
@@ -81,7 +82,7 @@ def extract_state_based(raw, year, purpose, universe_ids):
                 precision = int(row["date_prec"])
             except (ValueError, TypeError) as exc:
                 raise SourceError("Unparseable required GED event field") from exc
-            if country <= 0 or kind not in (1, 2, 3) or best < 0 or precision not in (1, 2, 3, 4, 5):
+            if country <= 0 or kind not in (1, 2, 3) or best < 0 or precision not in (0, 1, 2, 3, 4, 5):
                 raise SourceError(f"Invalid GED category/death/precision in {year} {purpose}: id={event_id} country={country} type={kind} best={best} date_prec={precision}")
             start = ged_day(row["date_start"], "date_start")
             end = ged_day(row["date_end"], "date_end")
@@ -89,8 +90,9 @@ def extract_state_based(raw, year, purpose, universe_ids):
                 raise SourceError("Reversed GED event chronology")
             if kind != 1:
                 continue
-            if precision > 2:
+            if precision not in (1, 2):
                 excluded_date_precision += 1
+                excluded_unknown_precision_zero += int(precision == 0)
                 continue
             if country not in universe_ids:
                 outside_universe += 1
@@ -106,7 +108,8 @@ def extract_state_based(raw, year, purpose, universe_ids):
             "source_rows": source_n,
             "retained_statebased_high_precision_within_outer_window": retained,
             "excluded_type1_high_precision_outside_date_window": excluded_boundary,
-            "excluded_type1_low_date_precision": excluded_date_precision,
+            "excluded_type1_low_or_unknown_date_precision": excluded_date_precision,
+            "excluded_type1_unknown_date_precision_zero": excluded_unknown_precision_zero,
             "excluded_type1_high_precision_outside_196": outside_universe,
         }, accepted
     except UnicodeError as exc:
