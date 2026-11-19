@@ -1,0 +1,65 @@
+{
+  "schema": "idealab.psico.azerbaijan_2021_ged427299_external_date_review.v1",
+  "research_date": "2026-11-19",
+  "source_event_ref": {
+    "UCDP_version": "GED25.1",
+    "event_id": 427299,
+    "GWNO": 373,
+    "date_start": "2021-06-17",
+    "date_end": "2021-06-17",
+    "date_prec": 1,
+    "best": 1,
+    "deaths_civilians": 1,
+    "dyad": "Government of Azerbaijan - Republic of Artsakh",
+    "where": "Agdam rayon",
+    "where_prec": 4
+  },
+  "UCDP_source_date": "2021-06-06",
+  "UCDP_source_title": "A criminal case has been launched into the death of a civilian by a landmine",
+  "UCDP_source_origin": "Prosecutor General's Office of Azerbaijan",
+  "reviewed_references": [
+    {
+      "publisher": "APA",
+      "date": "2021-06-17",
+      "url": "https://apa.az/en/xeber/accidents-incidents-news/43-year-old-man-missing-in-aghdam-found-out-to-be-killed-in-mine-explosion-351875",
+      "firsthand_status": "reports official investigation; APA bureau does not give independent exact death time",
+      "supports": "Report published June17 about one man missing more than ten days and found killed by landmine near Seyidli village Agdam; exact day of death not established by article."
+    },
+    {
+      "publisher": "Report.az",
+      "date": "2021-06-17",
+      "url": "https://report.az/en/karabakh/body-of-landmine-victim-in-aghdam-handed-over-to-his-family",
+      "firsthand_status": "reports local Azerbaijan Ministry of Internal Affairs; not independent forensic source",
+      "supports": "Missing since June7, body discovered June16, public account June17; same probable victim/incident as APA, but no proof that GED single June6 Prosecutor source refers to this particular person."
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "June17 GED date may be discovery/reporting date instead of actual incident day",
+      "support": "News June17 reports an already missing person and retrieval of body June16",
+      "status": "POSSIBLE_NOT_ADJUDICATED"
+    },
+    {
+      "hypothesis": "GED source publication date June6 refers to a report about the same deceased",
+      "support": "Bibliography dated June6 before reported disappearance June7; original Prosecutor full document not recovered",
+      "status": "UNRESOLVED"
+    },
+    {
+      "hypothesis": "There may be another Aghdam mine victim in early June to which source refers",
+      "support": "Multiple separate mine incidents reported in June; no exact Prosecutor original page verified",
+      "status": "POSSIBLE_NOT_VERIFIED"
+    },
+    {
+      "hypothesis": "The mine death is state-based battle-related violence involving Republic of Artsakh",
+      "support": "GED assigns the death to government-vs-republic dyad; reviewed articles attribute it to mine but do not identify installer, timing or organized direct exchange",
+      "status": "ELIGIBILITY_UNRESOLVED"
+    }
+  ],
+  "independence_assessment": "Both contemporary reports reproduce Azerbaijan law-enforcement data; neither establishes exact death day independently. No source original dated June6 and matching this victim was located in the reviewed public material.",
+  "recode_GED_event_day": false,
+  "recode_GED_event_type": false,
+  "victim_identity_match_to_GED_verified": false,
+  "issue_for_coder": "Please reconcile GED 427299 precise event day June17 with news reporting disappearance June7 and body found June16, and explain June6 Prosecutor General original source date and its connection to this death; state-based dyad eligibility should also be documented.",
+  "original_forecasts_untouched": true,
+  "external_page_content_cryptographically_archived": false
+}
