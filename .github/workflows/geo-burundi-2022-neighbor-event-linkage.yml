@@ -1,0 +1,38 @@
+name: GEO Burundi 2022 adjacent-event linkage negative controls
+on:
+  push:
+    paths:
+      - 'scripts/audit_geo_burundi_2022_neighbor_event_linkage.py'
+      - 'scripts/test_audit_geo_burundi_2022_neighbor_event_linkage.py'
+      - 'data/geo-burundi-2022-neighbor-event-linkage.json'
+      - 'docs/geo-burundi-2022-neighbor-event-linkage.md'
+      - '.github/workflows/geo-burundi-2022-neighbor-event-linkage.yml'
+      - 'scripts/audit_public.py'
+  pull_request:
+    paths:
+      - 'scripts/audit_geo_burundi_2022_neighbor_event_linkage.py'
+      - 'scripts/test_audit_geo_burundi_2022_neighbor_event_linkage.py'
+      - 'data/geo-burundi-2022-neighbor-event-linkage.json'
+      - 'docs/geo-burundi-2022-neighbor-event-linkage.md'
+      - '.github/workflows/geo-burundi-2022-neighbor-event-linkage.yml'
+      - 'scripts/audit_public.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test five neighboring episode controls and adversarial matches
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_burundi_2022_neighbor_event_linkage.py' -v
+      - name: Verify frozen chain and immutable GEO2027 issue
+        run: python3 -B scripts/audit_geo_burundi_2022_neighbor_event_linkage.py --check-report
+      - name: Verify institutional public-release privacy policy
+        run: python3 -B scripts/audit_public.py
