@@ -48,3 +48,36 @@ La revisión editorial está en [JSON de genealogía](../data/geo-ged251-uganda-
 - python3 -B scripts/audit_public.py
 
 **Prohibiciones expresas:** ningún evento UCDP eliminado, ninguna probabilidad GEO2027/GEO2028 reemitida y ninguna mejora de Brier declarada. El hallazgo es una **cuestión de elegibilidad documental aún irresuelta**, no una demostración de error del conjunto de datos.
+
+## Resultado: reconstrucción efectiva de la díada en el ZIP oficial
+
+La descarga UCDP GED25.1 fue verificada mediante SHA-256. **Para Uganda 2022 solo se encontró una díada de violencia de base estatal**, identificada con `dyad_new_id=16938` (Gobierno de Uganda–IS), y **seis filas**. La suma exacta es **low=25, best=25, high=28**.
+
+| ID GED25.1 | Fecha o ventana de observación | Muertes best | Significado para este protocolo |
+|---|---|---:|---|
+| **444765** | 02/06/2022 | **1** | Old Kampala, asesinato policial comunicado en el contexto de robo frustrado |
+| **444764** | 05/06/2022 | **1** | Makindye, muerte policial en operativo; versión posterior de otro agente de seguridad |
+| 460796 | 12–13/12/2022 | 19 | Otro episodio registrado en diciembre, **no revisado aquí** en fuentes externas |
+| 462156 | 19/12/2022 | 2 | Otro episodio de diciembre, **no revisado aquí** |
+| 460859 | 21/12/2022 | 2 | Otro episodio de diciembre, **no revisado aquí** |
+| 460862 | 13–27/12/2022 | 0 | Registro con best=0, conservado por UCDP; **no una muerte adicional verificada** |
+| **Total** | **2022** | **25** | **Única díada estatal identificada para Uganda en esa edición** |
+
+La cifra de **23 muertes best en diciembre** es una suma de registros UCDP, no una comprobación externa independiente de esos eventos. La banda high supera a best por tres; sumas de estimaciones high no representan pruebas de víctimas adicionales verificadas.
+
+### Contrafactuales, no cambios reales
+
+| Hipótesis de exclusión de un evento | Total hipotético | Umbral país-año ≥25 |
+|---|---:|---|
+| Ningún registro excluido | 25 | Sí |
+| Solo GED 444764 excluido | 24 | No |
+| Solo GED 444765 excluido | 24 | No |
+| Ambos excluidos | 23 | No |
+
+El mismo umbral numérico aparece en la regla de díada activa de UCDP, pero esa coincidencia no permite equiparar la definición de una díada con el agregado usado para GEO, ni implica borrar automáticamente otros registros por un año que quedase bajo 25.
+
+**Hecho corroborado por la auditoría:** 2 muertes reportadas individualmente en junio, asignadas por UCDP a una sola díada que acumula 25 en el año. **No corroborado por esta auditoría:** pertenencia personal de ambos fallecidos a la parte insurgente, confrontación armada organizada en cada episodio o evidencia externa independiente del relato de la Policía.
+
+La reconstrucción exacta de las seis filas y los escenarios está en [el JSON de resultados](../data/geo-ged251-uganda-2022-eligibility-dyad-stress.json). Los 13 tests adversariales previenen afirmaciones de independencia por mera republicación, mezcla de dos personas, cambios injustificados de clasificación y modificaciones de GEO.
+
+**Siguiente comprobación legítima:** contrastar fuentes originales de los eventos de diciembre para comprender la estructura real de la díada y solicitar, si fuera posible, el criterio documental individual usado por UCDP para asignar 444764/444765 a un enfrentamiento state-based. Hasta entonces, estado de elegibilidad **NO RESUELTO**, cero etiquetas recodificadas.
