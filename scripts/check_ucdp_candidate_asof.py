@@ -79,7 +79,7 @@ def validate(source_path, manifest, issued_on, horizon_days):
         raise SourceError("Release must postdate coverage and precede issuance")
     if (issued - vintage["coverage_end"]).days > 45:
         raise SourceError("Source is too stale for a short-horizon issue (>45 days)")
-    if (vintage["coverage_end"] - vintage["coverage_start"]).days < 90:
+    if (vintage["coverage_end"] - vintage["coverage_start"]).days + 1 < 90:
         raise SourceError("Archive lacks the predeclared 90-day source-history window")
     evidence = manifest.get("release_evidence_url", "")
     e = urlsplit(evidence)
