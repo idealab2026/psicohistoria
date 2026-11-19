@@ -39,7 +39,7 @@ def ged_day(value, field):
     return iso_day(value[:10], field)
 
 
-def audit_candidate_rows(raw, coverage_start, coverage_end):
+def audit_candidate_rows(raw, coverage_start, coverage_end, released_on=None):
     """Read official CSV bytes; quarantine boundary-crossing events rather than leak dates."""
     try:
         reader = csv.DictReader(io.StringIO(raw.decode("utf-8-sig"), newline=""))
@@ -71,6 +71,8 @@ def audit_candidate_rows(raw, coverage_start, coverage_end):
             end = ged_day(row["date_end"], "date_end")
             if start > end or end < coverage_start:
                 raise SourceError("Impossible GED chronology or event before source period")
+            if released_on is not None and end >= released_on:
+                raise SourceError("Archive contains event ending on/after claimed release date")
             # An event may span the September/October boundary in a September
             # release. Its total deaths cannot safely be assigned to September.
             if end > coverage_end:
@@ -156,7 +158,7 @@ def validate(source_path, manifest, issued_on, horizon_days):
     if actual_sha != expected_sha:
         raise SourceError("Official source bytes do not match declared SHA-256")
     counts, country_count = audit_candidate_rows(
-        raw, vintage["coverage_start"], vintage["coverage_end"]
+        raw, vintage["coverage_start"], vintage["coverage_end"], released
     )
     return {
         "status": "SOURCE_ELIGIBLE_NO_FORECAST",
