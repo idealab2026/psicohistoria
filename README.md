@@ -4,6 +4,14 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## NUEVA LÍNEA · Predicción experimental de 30/90 días con UCDP Candidate (19-11-2026)
+
+**Estado verificable: puerta de elegibilidad de ediciones implementada; CERO pronósticos emitidos, CERO resultados resueltos.** El objetivo es llegar a predicciones de escalada en un horizonte práctico, pero primero debe probarse la disponibilidad original de las fuentes y su calidad temporal. El catálogo UCDP consultado el 19/11/2026 muestra como última edición Candidate de 2026 la de septiembre (26.0.9) y el acumulado enero–septiembre (26.01.26.09); el catálogo no demuestra por sí solo las fechas originales de publicación.
+
+El programa `scripts/check_ucdp_candidate_asof.py` bloquea archivos no oficiales, fechas futuras, cobertura insuficiente para 90 días, datos obsoletos (más de 45 días respecto a emisión), duplicados, cronologías incoherentes y SHA incorrectos. **Un archivo elegible no constituye una predicción ni una validación científica.** La combinación origen 19/11/2026 / última cobertura 30/09/2026 ya supera el límite fijado (50 días): no se emitirán riesgos fingiendo que esos datos son actuales. El proceso incluye tests adversariales sintéticos y nueva comprobación institucional de privacidad.
+
+[Protocolo completo y siguientes hitos](docs/candidate-30-90-day-asof-protocol.md) · [Auditor de edición as-of](scripts/check_ucdp_candidate_asof.py) · [Pruebas](scripts/test_check_ucdp_candidate_asof.py) · [UCDP Candidate — fuente](https://ucdp.uu.se/downloads/).
+
 ## GEO2027 · Auditoría de interpretación oficial: «cero codificado» no significa «sin violencia» (16-11-2026)
 
 **Resultado científico relevante del manual oficial UCDP OrganizedViolenceCY 26.1:** la etiqueta del laboratorio se refiere a **`sb_total_deaths_best >=25` según UCDP**, no a la existencia de cualquier guerra, ataque ni víctimas reales. **Un cero codificado de fallecidos no prueba ausencia de violencia**: el conjunto omite incidentes de díadas/actores aún no incluidos bajo sus reglas de umbral. El campo `sb_exist` indica existencia de algún evento estatal recogido, y **no es equivalente** al recuento de muertes ni al estado «≥25» del modelo.
