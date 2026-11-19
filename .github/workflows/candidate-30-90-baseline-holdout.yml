@@ -1,0 +1,38 @@
+name: UCDP Candidate Q1-Q3 historical 30-90d baseline holdout
+on:
+  push:
+    paths:
+      - 'scripts/experiment_candidate_30_90_holdout.py'
+      - 'scripts/test_experiment_candidate_30_90_holdout.py'
+      - 'docs/candidate-30-90-baseline-holdout-protocol.md'
+      - 'data/candidate-30-90-baseline-holdout.json'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-30-90-baseline-holdout.yml'
+  pull_request:
+    paths:
+      - 'scripts/experiment_candidate_30_90_holdout.py'
+      - 'scripts/test_experiment_candidate_30_90_holdout.py'
+      - 'docs/candidate-30-90-baseline-holdout-protocol.md'
+      - 'data/candidate-30-90-baseline-holdout.json'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-30-90-baseline-holdout.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  baseline_holdout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Synthetic anti-leakage and exact horizon adversarial tests
+        run: python3 -B -m unittest discover -s scripts -p 'test_experiment_candidate_30_90_holdout.py' -v
+      - name: Reconstruct pinned 2026 holdout exactly from six official UCDP original CSVs
+        run: python3 -B scripts/experiment_candidate_30_90_holdout.py --check-report
+      - name: Check institutional privacy and no unpublished private files
+        run: python3 -B scripts/audit_public.py

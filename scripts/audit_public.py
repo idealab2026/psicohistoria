@@ -24,6 +24,15 @@ REPOSITORY |= {
     ".github/workflows/candidate-q2-q3-vintage-revisions.yml",
     "data/candidate-q2-q3-vintage-revisions.json",
 }
+# Historical-only 30/90-day institutional benchmark; fixed source references and public aggregate vectors.
+RELEASE |= {"data/candidate-30-90-baseline-holdout.json"}
+REPOSITORY |= {
+    "scripts/experiment_candidate_30_90_holdout.py",
+    "scripts/test_experiment_candidate_30_90_holdout.py",
+    "docs/candidate-30-90-baseline-holdout-protocol.md",
+    ".github/workflows/candidate-30-90-baseline-holdout.yml",
+    "data/candidate-30-90-baseline-holdout.json",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",

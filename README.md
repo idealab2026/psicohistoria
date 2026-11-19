@@ -4,6 +4,31 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## Q-CANDIDATE · Primer experimento retrospectivo 30/90 días (19-11-2026)
+
+Se ha ejecutado y congelado un primer **holdout temporal de 2026** sobre los
+196 países, entrenando los tres modelos de referencia solamente con los
+vintages de 2024–2025, para estimar `>=25` muertes estatales *registradas*
+en UCDP Candidate con precisión temporal 1–2 en una ventana posterior.
+El origen usa el acumulado enero–marzo y **abril se deja sin observar**:
+se evalúa 1–30 mayo (30 días) y 1 mayo–29 julio (90 días). **La fecha
+original de publicación de los archivos no está certificada; la evaluación
+no es retrospectiva as-of validada ni una emisión prospectiva.**
+
+**Brier 2026 (menor es mejor):** 30 días: global 0,07971;
+persistencia 0,03919; volumen reciente **0,03910**.
+90 días: global 0,11887; persistencia **0,03141**; volumen 0,03163.
+El resultado útil científicamente es que el volumen reciente identifica
+bien *persistencia* en este histórico; **no demuestra anticipación de
+nuevos conflictos**: 0/166 entradas al umbral a 30 días y
+solo 2/166 a 90 días (Kenia e Indonesia en la muestra Candidate).
+Se han detectado además códigos de precisión no documentados,
+con tratamiento conservador y prueba adversarial.
+
+[Protocolo, tabla de métricas y límites](docs/candidate-30-90-baseline-holdout-protocol.md)
+· [196 registros retrospectivos, parámetros y SHA](data/candidate-30-90-baseline-holdout.json)
+· [Código reproducible](scripts/experiment_candidate_30_90_holdout.py).
+
 ## UCDP Candidate · Revisión de datos históricos Q2→Q3, 2024–2026 (19-11-2026)
 
 **Primer contraste oficial reproducido de seis archivos UCDP Candidate, SIN pronóstico emitido.** Para los mismos registros enero–junio de 2024–2026, las ediciones de septiembre aportan **3.359 IDs adicionales**, dejan fuera **1.042 IDs** presentes en junio y modifican el número de fallecidos `best` de **431 de los 35.989 eventos emparejados**. En 2024 y 2025 cambia la clasificación semestral ≥25 fallecidos estatales de un país al revisar los datos. Estas son **revisiones de dos versiones** de información provisional, no acontecimientos futuros ni evidencia de mayor precisión. No se ha certificado la fecha original de cada primera publicación.
