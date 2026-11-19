@@ -82,6 +82,21 @@ class IntervalAudit(unittest.TestCase):
         with self.assertRaises(ValueError):
             m.source_extract(b"not official UCDP archive",sel)
 
+    def test_Azerbaijan_external_public_reports_do_not_prove_exact_death_date(self):
+        import json
+        from pathlib import Path
+        review=json.loads((m.ROOT / "data/geo-ged251-azerbaijan-2021-external-date-review.json").read_text(encoding="utf-8"))
+        self.assertEqual(review["schema"],"idealab.psico.azerbaijan_2021_ged427299_external_date_review.v1")
+        self.assertEqual(review["source_event_ref"]["event_id"],m.AZER_ID)
+        self.assertEqual(review["source_event_ref"]["date_start"],"2021-06-17")
+        self.assertEqual(review["UCDP_source_date"],"2021-06-06")
+        self.assertEqual(len(review["reviewed_references"]),2)
+        self.assertFalse(review["recode_GED_event_day"])
+        self.assertFalse(review["victim_identity_match_to_GED_verified"])
+        self.assertTrue(review["original_forecasts_untouched"])
+        self.assertEqual({x["date"] for x in review["reviewed_references"]},{"2021-06-17"})
+        self.assertEqual({x["url"].split("/")[2] for x in review["reviewed_references"]},{"apa.az","report.az"})
+
     def test_original_issued_ged_zip_locked(self):
         self.assertEqual(m.GED_SHA,
           "e256f1fb20a579d8b2f910e5bae212f486d3002adaa2e4359ace740c737da05d")
