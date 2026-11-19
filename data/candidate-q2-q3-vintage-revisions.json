@@ -1,14 +1,149 @@
 {
+  "comparison": "first-half Jan-Jun identical calendar dates from 2 archival UCDP Candidate editions",
+  "independent_vintage_publication_dates_verified": false,
+  "limitations": "Later Candidate editions are not ground truth; release timestamps are not certified by archived URLs; event IDs may be recoded; country-year absence is not proof of zero violence. No as-of prediction or skill claims.",
+  "outcomes_resolved": 0,
+  "pooled_event_accounting_descriptive_only": {
+    "matched_best_changed_ids": 431,
+    "matched_country_changed_ids": 1,
+    "matched_date_changed_ids": 234,
+    "matched_sum_absolute_best_change": 11421,
+    "matched_type_changed_ids": 147,
+    "only_q2_ids": 1042,
+    "only_q3_ids": 3359,
+    "same_id_events": 35989
+  },
+  "prospective_issued_probabilities": 0,
   "schema": "idealab.psico.candidate.quarterly_vintage_revisions.v1",
-  "status": "PREREGISTERED_NOT_RESULTS",
+  "status": "ARCHIVED_SOURCE_REVISIONS_NOT_PREDICTIVE_VALIDATION",
   "study_design_date": "2026-11-19",
+  "year_count": 3,
   "years": [
-    2024,
-    2025,
-    2026
-  ],
-  "planned_comparison": "Each year's Jan–Jun records in original Q2 versus Q3 archived UCDP Candidate editions",
-  "no_actual_result_yet": true,
-  "issued_probabilities": 0,
-  "outcomes_resolved": 0
+    {
+      "q2": {
+        "bytes": 9351239,
+        "eligible_rows": 12922,
+        "excluded": {
+          "outside_first_half": 17
+        },
+        "sha256": "dd1afaad1d0c06772daa762b623fcef036044528e654f29cb9b4143e1130d478",
+        "total_rows": 12939,
+        "url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v24_01_24_06.csv"
+      },
+      "q3": {
+        "bytes": 16856392,
+        "eligible_rows": 14380,
+        "excluded": {
+          "outside_first_half": 6486
+        },
+        "sha256": "3f9f7acea9690cd8c5150981ae85b5a9365b2ca233f2b351b680de95cd4af390",
+        "total_rows": 20866,
+        "url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v24_01_24_09.csv"
+      },
+      "revisions": {
+        "matched_best_changed_ids": 208,
+        "matched_country_changed_ids": 0,
+        "matched_date_changed_ids": 152,
+        "matched_sum_absolute_best_change": 2058,
+        "matched_type_changed_ids": 56,
+        "only_q2_ids": 442,
+        "only_q3_ids": 1900,
+        "same_id_events": 12480,
+        "statebased": {
+          "countries_with_changed_recorded_best": 34,
+          "country_crosses_down_25": 1,
+          "country_crosses_up_25": 0,
+          "q2_countries_with_25_or_more_best": 32,
+          "q2_fatalities_best": 48455,
+          "q3_countries_with_25_or_more_best": 31,
+          "q3_fatalities_best": 50572
+        }
+      },
+      "year": 2024
+    },
+    {
+      "q2": {
+        "bytes": 10147956,
+        "eligible_rows": 14071,
+        "excluded": {
+          "outside_first_half": 6
+        },
+        "sha256": "8185c986f040ec2169728a7debf5fb1833426b534e846f51912046f78e4c6f7a",
+        "total_rows": 14077,
+        "url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v25_01_25_06.csv"
+      },
+      "q3": {
+        "bytes": 15883361,
+        "eligible_rows": 14245,
+        "excluded": {
+          "outside_first_half": 7713
+        },
+        "sha256": "086362d535c61d1237f0824bee8afb6459bac71ca8d02026946b715264c910be",
+        "total_rows": 21958,
+        "url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v25_01_25_09.csv"
+      },
+      "revisions": {
+        "matched_best_changed_ids": 134,
+        "matched_country_changed_ids": 1,
+        "matched_date_changed_ids": 61,
+        "matched_sum_absolute_best_change": 7736,
+        "matched_type_changed_ids": 74,
+        "only_q2_ids": 393,
+        "only_q3_ids": 567,
+        "same_id_events": 13678,
+        "statebased": {
+          "countries_with_changed_recorded_best": 25,
+          "country_crosses_down_25": 0,
+          "country_crosses_up_25": 1,
+          "q2_countries_with_25_or_more_best": 31,
+          "q2_fatalities_best": 64923,
+          "q3_countries_with_25_or_more_best": 32,
+          "q3_fatalities_best": 60126
+        }
+      },
+      "year": 2025
+    },
+    {
+      "q2": {
+        "bytes": 7800501,
+        "eligible_rows": 10038,
+        "excluded": {
+          "outside_first_half": 13
+        },
+        "sha256": "68dd3d363b8edf4808bd6bf6f5d0412c3c722ffb1db367aeb8eff48bab80589a",
+        "total_rows": 10051,
+        "url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v26_01_26_06.csv"
+      },
+      "q3": {
+        "bytes": 13065779,
+        "eligible_rows": 10723,
+        "excluded": {
+          "outside_first_half": 5910
+        },
+        "sha256": "134da9b3df08b65266802c4b662e572f396c70c92ab62297319be657540bcede",
+        "total_rows": 16633,
+        "url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v26_01_26_09.csv"
+      },
+      "revisions": {
+        "matched_best_changed_ids": 89,
+        "matched_country_changed_ids": 0,
+        "matched_date_changed_ids": 21,
+        "matched_sum_absolute_best_change": 1627,
+        "matched_type_changed_ids": 17,
+        "only_q2_ids": 207,
+        "only_q3_ids": 892,
+        "same_id_events": 9831,
+        "statebased": {
+          "countries_with_changed_recorded_best": 26,
+          "country_crosses_down_25": 0,
+          "country_crosses_up_25": 0,
+          "q2_countries_with_25_or_more_best": 33,
+          "q2_fatalities_best": 74291,
+          "q3_countries_with_25_or_more_best": 33,
+          "q3_fatalities_best": 72343
+        }
+      },
+      "year": 2026
+    }
+  ]
 }
