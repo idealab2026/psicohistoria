@@ -89,6 +89,36 @@ class GED251PairSource(unittest.TestCase):
         with self.assertRaises(ValueError):
             m.parse_source_row(x)
 
+    def test_manual_first_party_review_contract_is_anchored(self):
+        # No network call: checks only how editorial annotations are tied to
+        # the four source-verified GED event IDs, days and shared references.
+        report={"cases":{
+            "benin_2022":{
+                "pair_ged_ids":[431254,431259],
+                "duplicate_event_proven":False,
+                "common_identical_normalized_UCDP_bibliographic_citations_n":4,
+                "events":[{"date_start":"2022-02-08",
+                           "where_description":"W National Park"},
+                          {"date_start":"2022-02-10",
+                           "where_description":"W National Park"}],
+            },
+            "uganda_2022":{
+                "pair_ged_ids":[444764,444765],
+                "duplicate_event_proven":False,
+                "common_identical_normalized_UCDP_bibliographic_citations_n":2,
+                "events":[{"date_start":"2022-06-05",
+                           "where_description":"Makindye"},
+                          {"date_start":"2022-06-02",
+                           "where_description":"Old Kampala"}],
+            },
+        }}
+        review=m.check_public_review(report)
+        self.assertEqual(len(review["cases"]),2)
+        self.assertFalse(review["coded_GED_records_corrected"])
+        report["cases"]["uganda_2022"]["events"][0]["date_start"]="2022-06-04"
+        with self.assertRaises(ValueError):
+            m.check_public_review(report)
+
     def test_audit_original_zip_still_immutable(self):
         self.assertEqual(m.GED_SHA,"e256f1fb20a579d8b2f910e5bae212f486d3002adaa2e4359ace740c737da05d")
 
