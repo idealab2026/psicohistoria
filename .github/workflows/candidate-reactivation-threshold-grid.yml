@@ -32,7 +32,7 @@ jobs:
           python-version: '3.12'
       - name: Run adversarial synthetic risk-set, exact-window and source-pinning tests
         run: python3 -B -m unittest discover -s scripts -p 'test_experiment_candidate_reactivation_grid.py' -v
-      - name: Replay ten original UCDP Candidate quarterly sources with 2026 holdout (exploratory)
-        run: python3 -B scripts/experiment_candidate_reactivation_grid.py --print-report
+      - name: Require ten official-source SHA and all frozen 2026 threshold diagnostics to replay exactly
+        run: python3 -B scripts/experiment_candidate_reactivation_grid.py --check-report
       - name: Verify institutional public privacy gate
         run: python3 -B scripts/audit_public.py
