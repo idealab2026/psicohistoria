@@ -1,0 +1,22 @@
+{
+  "schema": "idealab.psico.candidate.q1q3_30_90_holdout.v1",
+  "status": "PREREGISTERED_NOT_RESULTS",
+  "protocol_fixed_date": "2026-11-19",
+  "training_years": [
+    2024,
+    2025
+  ],
+  "holdout_year": 2026,
+  "targets_2026": {
+    "30": [
+      "2026-05-01",
+      "2026-05-30"
+    ],
+    "90": [
+      "2026-05-01",
+      "2026-07-29"
+    ]
+  },
+  "prospective_issued_probabilities": 0,
+  "prospective_outcomes_resolved": 0
+}
