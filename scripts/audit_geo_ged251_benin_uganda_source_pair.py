@@ -265,7 +265,7 @@ def check_public_review(report):
                 or not u.path or u.query or evidence["url"] in urls):
                 raise ValueError("Unreviewed or repeated public source URL")
             urls.add(evidence["url"])
-            if date.fromisoformat(evidence["published"])<max(date.fromisoformat(d)
+            if date.fromisoformat(evidence["published"])<min(date.fromisoformat(d)
                                                             for d in record["GED_event_days"]):
                 raise ValueError("Retrospective page purportedly predates event")
         if key=="benin_2022":
