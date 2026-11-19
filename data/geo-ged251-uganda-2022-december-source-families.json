@@ -1,0 +1,310 @@
+{
+  "December_event_identity_verified_independently_n": 0,
+  "December_fatality_lists_verified_independently_n": 0,
+  "December_record_count": 4,
+  "December_type1_best_sum": 23,
+  "December_type1_high_sum": 26,
+  "December_type1_low_sum": 23,
+  "GEO2027_GEO2028_issue_vectors_changed": false,
+  "GWNO": 500,
+  "corrections_to_GED_events": 0,
+  "current_2022_country_statebased_best": 25,
+  "dyad_new_id": "16938",
+  "event_records": [
+    {
+      "GED_bibliographic_previews": [
+        "Reuters News,2022-12-13,Uganda army says 11 Islamist militants killed in cross-border raid",
+        "AllAfrica,2022-12-13,11 Killed as UPDF Battles ADF Rebels Who Attacked Ntoroko",
+        "Reuters News,2022-12-13,Uganda army says 11 Islamist militants killed in cross-border raid",
+        "International Crisis Group,2023-01-05,CRISIS WATCH Uganda DECEMBER 2022",
+        "Daily Monitor,2022-12-21,UPDF kill two more ADF rebels in Ntoroko",
+        "New Vision,2022-12-13,UPDF kills more ADF rebels, death toll rises to 17 in Ntoroko battle",
+        "Daily Monitor,2022-12-13,17 ADF rebels killed, 13 captured in Ntoroko – UPDF",
+        "The Independent,2022-12-23,Ntoroko residents living in fear following recent ADF attack"
+      ],
+      "GED_bibliography_truncated": false,
+      "GED_event_id": 460796,
+      "GED_source_article_fingerprints": [
+        "b748cb104e63518d38a4a5fe905e54ba2516234119c65de2ae0ef0b3b25a083b",
+        "ddb8035ca8d6a9df774593c8b6e0b7248c765fcc61f46ed1969e56a9db178a9e",
+        "b748cb104e63518d38a4a5fe905e54ba2516234119c65de2ae0ef0b3b25a083b",
+        "0a7e0707e6afee4175223c3487f6aeee91463389ae27ff1f3ad83e32969a63c0",
+        "0a82b9a99b3cfce1d473da5c051e117928c32a5f50afb9d0e1477774aa2415b8",
+        "e7d87f8a907bac802432fe43daf7bf837c2300ddeb4b350c74a5395f8b7d55a5",
+        "e916906f14b60b738ef037b27fe708ef0a5727dc52c53ab7fd50462ebe8fcc0a",
+        "6316a12bd6d5e3158f400b3feace6c7017e6dbe3902b1c7f7f0c25aa7ab244db"
+      ],
+      "GWNO": 500,
+      "adm_1": "Ntoroko district",
+      "adm_2": "",
+      "best": 19,
+      "date_end": "2022-12-13",
+      "date_prec": 2,
+      "date_start": "2022-12-12",
+      "distinct_GED_bibliographic_refs_n": 7,
+      "duplicate_event_verified": false,
+      "dyad_id": "16938",
+      "dyad_name": "Government of Uganda - IS",
+      "event_clarity": 1,
+      "high": 19,
+      "independently_verified_fatality_or_rebel_status": false,
+      "latitude": 0.98002,
+      "longitude": 30.34515,
+      "low": 19,
+      "number_of_sources": 8,
+      "repeated_identical_bibliographic_fragments_n": 1,
+      "side_a": "Government of Uganda",
+      "side_b": "IS",
+      "source_date": "2022-12-13;2022-12-13;2022-12-13;2023-01-05;2022-12-21;2022-12-13;2022-12-13;2022-12-23",
+      "source_headline": "Uganda army says 11 Islamist militants killed in cross-border raid;11 Killed as UPDF Battles ADF Rebels Who Attacked Ntoroko;Uganda army says 11 Islamist militants killed in cross-border raid;CRISIS WATCH Uganda DECEMBER 2022;UPDF kill two more ADF rebels in Ntoroko;UPDF kills more ADF rebels, death toll rises to 17 in Ntoroko battle;17 ADF rebels killed, 13 captured in Ntoroko – UPDF;Ntoroko residents living in fear following recent ADF attack",
+      "source_office": "Reuters News;AllAfrica;Reuters News;International Crisis Group;Daily Monitor;New Vision;Daily Monitor;The Independent",
+      "source_original": "Gen Dick Olumu, the Commander of the Mountain Division and\nFelix Kulayigye, spokesman for the Ugandan military",
+      "type_of_violence": 1,
+      "where_coordinates": "Rwebisengo sub-county",
+      "where_description": "Uganda's southwestern Ntoroko district\n\n->Bweramule village, Rwebisengo sub county, Ntoroko district",
+      "where_prec": 2,
+      "year": 2022
+    },
+    {
+      "GED_bibliographic_previews": [
+        "Daily Monitor,2022-12-21,UPDF kill two more ADF rebels in Ntoroko",
+        "The Independent,2022-12-21,Two ADF rebels killed in Ntoroko",
+        "The Independent,2022-12-21,MUSEVENI: ADF now have nowhere to hide"
+      ],
+      "GED_bibliography_truncated": false,
+      "GED_event_id": 460859,
+      "GED_source_article_fingerprints": [
+        "0a82b9a99b3cfce1d473da5c051e117928c32a5f50afb9d0e1477774aa2415b8",
+        "ae6dc2bc201747cfbad591322f79481572afa22084fb43b66ba337ff332e07cc",
+        "fd04cd995ebc264b2f876a51d0ba695a26457b2b3ab91c34928905c3d261d1a2"
+      ],
+      "GWNO": 500,
+      "adm_1": "Ntoroko district",
+      "adm_2": "",
+      "best": 2,
+      "date_end": "2022-12-21",
+      "date_prec": 1,
+      "date_start": "2022-12-21",
+      "distinct_GED_bibliographic_refs_n": 3,
+      "duplicate_event_verified": false,
+      "dyad_id": "16938",
+      "dyad_name": "Government of Uganda - IS",
+      "event_clarity": 1,
+      "high": 2,
+      "independently_verified_fatality_or_rebel_status": false,
+      "latitude": 0.933789,
+      "longitude": 30.250484,
+      "low": 2,
+      "number_of_sources": 3,
+      "repeated_identical_bibliographic_fragments_n": 0,
+      "side_a": "Government of Uganda",
+      "side_b": "IS",
+      "source_date": "2022-12-21;2022-12-21;2022-12-21",
+      "source_headline": "UPDF kill two more ADF rebels in Ntoroko;Two ADF rebels killed in Ntoroko;MUSEVENI: ADF now have nowhere to hide",
+      "source_office": "Daily Monitor;The Independent;The Independent",
+      "source_original": "Rtd Maj Edward Jones Mugabirwe, the Ntoroko Resident District Commissioner-RDC",
+      "type_of_violence": 1,
+      "where_coordinates": "Bweramule sub-county",
+      "where_description": "Kayanja village in Bweramule Sub County",
+      "where_prec": 2,
+      "year": 2022
+    },
+    {
+      "GED_bibliographic_previews": [
+        "CE NoticiasFinancieras,2022-12-27,Ugandan Army kills 26 ADF rebels on Ugandan soil this month",
+        "Africa Research Bulletin,2023-02-05,IN BRIEF: Uganda"
+      ],
+      "GED_bibliography_truncated": false,
+      "GED_event_id": 460862,
+      "GED_source_article_fingerprints": [
+        "0fbf34207c507eca20cbe1e297af8f8c729890e4d178db15f2b20f09a16599b1",
+        "ec9788f3399b9c39e252193e22fb8dab7916ccc14da1df39cf0815f4c9fbde2b"
+      ],
+      "GWNO": 500,
+      "adm_1": "Ntoroko district",
+      "adm_2": "",
+      "best": 0,
+      "date_end": "2022-12-27",
+      "date_prec": 4,
+      "date_start": "2022-12-13",
+      "distinct_GED_bibliographic_refs_n": 2,
+      "duplicate_event_verified": false,
+      "dyad_id": "16938",
+      "dyad_name": "Government of Uganda - IS",
+      "event_clarity": 1,
+      "high": 3,
+      "independently_verified_fatality_or_rebel_status": false,
+      "latitude": 1.00669,
+      "longitude": 30.35878,
+      "low": 0,
+      "number_of_sources": 2,
+      "repeated_identical_bibliographic_fragments_n": 0,
+      "side_a": "Government of Uganda",
+      "side_b": "IS",
+      "source_date": "2022-12-27;2023-02-05",
+      "source_headline": "Ugandan Army kills 26 ADF rebels on Ugandan soil this month;IN BRIEF: Uganda",
+      "source_office": "CE NoticiasFinancieras;Africa Research Bulletin",
+      "source_original": "lieutenant colonel of the 8th battalion of the Ugandan Army, Saul Nabimanya",
+      "type_of_violence": 1,
+      "where_coordinates": "Ntoroko district",
+      "where_description": "",
+      "where_prec": 4,
+      "year": 2022
+    },
+    {
+      "GED_bibliographic_previews": [
+        "Monitor,2022-12-20,How security hunted down suspected ADF rebels in Wakiso",
+        "Uganda Police Force,2022-12-19,FSU/CI TASK TEAMS COUNTER TERRORISTS AND DISMANTLES TWO TERROR CELLS IN MAGANJO AND MATUGGA"
+      ],
+      "GED_bibliography_truncated": false,
+      "GED_event_id": 462156,
+      "GED_source_article_fingerprints": [
+        "73f08c0a43d22d830274d77721ee81d3b4ad80de9692966ed5ac2e6cf11aba1b",
+        "76b04420e4c4955ab7bbc4ce23a10ec74948715d8d37c5891c0c1178326190a5"
+      ],
+      "GWNO": 500,
+      "adm_1": "Wakiso district",
+      "adm_2": "",
+      "best": 2,
+      "date_end": "2022-12-19",
+      "date_prec": 1,
+      "date_start": "2022-12-19",
+      "distinct_GED_bibliographic_refs_n": 2,
+      "duplicate_event_verified": false,
+      "dyad_id": "16938",
+      "dyad_name": "Government of Uganda - IS",
+      "event_clarity": 1,
+      "high": 2,
+      "independently_verified_fatality_or_rebel_status": false,
+      "latitude": 0.433054,
+      "longitude": 32.916711,
+      "low": 2,
+      "number_of_sources": 2,
+      "repeated_identical_bibliographic_fragments_n": 0,
+      "side_a": "Government of Uganda",
+      "side_b": "IS",
+      "source_date": "2022-12-20;2022-12-19",
+      "source_headline": "How security hunted down suspected ADF rebels in Wakiso;FSU/CI TASK TEAMS COUNTER TERRORISTS AND DISMANTLES TWO TERROR CELLS IN MAGANJO AND MATUGGA",
+      "source_office": "Monitor;Uganda Police Force",
+      "source_original": "",
+      "type_of_violence": 1,
+      "where_coordinates": "Kito village",
+      "where_description": "Kito Village, Kiryanira Parish, Gombe Sub-county, Nansana Municipality, Wakiso District",
+      "where_prec": 1,
+      "year": 2022
+    }
+  ],
+  "hypothetical_remove_all_December_best": 2,
+  "hypothetical_remove_only_19_death_row_best": 6,
+  "limitations": "GED25.1 2022 December 19+2+0+2=23 is a publisher estimate, not independently recounted deaths. A zero best row is not an observed zero-death episode. UCDP references can reuse one involved army source even when publisher differs. A coordinate centroid can coincide despite distinct villages/dates. Source article titles and publisher names in GED are bibliographic metadata, not a validated source genealogy; external story verification must be performed separately. Hypothetical row deletion is sensitivity, not a correction. Annual country threshold is not interchangeable with conflict dyad definition.",
+  "official_GED25_1_ZIP_SHA256": "e256f1fb20a579d8b2f910e5bae212f486d3002adaa2e4359ace740c737da05d",
+  "pairs_sharing_exact_bibliographic_fragments_n": 1,
+  "previous_six_event_census_SHA256": "4408f295a3412faf96b727f2a7be152159ea7fc620ef00c12a7136b6735965a0",
+  "public_source_reconciliation": {
+    "December_events_reclassified": 0,
+    "GED_cumulative_best_zero_high3_id": 460862,
+    "GED_exact_date_vs_contemporary_event_day_discrepancies": [
+      460859,
+      462156
+    ],
+    "external_qualitative_Ntoroko_armed_combat_supported": true,
+    "independently_verified_full_19_fatality_roster": false,
+    "public_source_publications_n": 9,
+    "public_source_review_sha256": "14f6b3687cc4cb0f951322b7d539dd25fd27a8ec56cff99740630020ef970a3d",
+    "reviewed_original_reporting_groups_n": 7
+  },
+  "research_date": "2026-11-19",
+  "same_event_GED_repeated_bibliography_fragments_n": 1,
+  "schema": "idealab.psico.geo_ged251_uganda_december_source_family_audit.v1",
+  "status": "OFFICIAL_CITATION_AND_GEO_METADATA_NOT_EXTERNAL_ADJUDICATION",
+  "unique_unordered_December_pairs": [
+    {
+      "GED_pair_ids": [
+        460796,
+        460859
+      ],
+      "coordinate_distance_km": 11.713,
+      "duplicate_episodes_verified": false,
+      "interval_gap_days": 8,
+      "same_assigned_coordinates": false,
+      "same_dyad_new_id": true,
+      "same_original_source_string": false,
+      "shared_citation_is_not_independent_confirmation": true,
+      "shared_exact_GED_citations_n": 1
+    },
+    {
+      "GED_pair_ids": [
+        460796,
+        460862
+      ],
+      "coordinate_distance_km": 3.33,
+      "duplicate_episodes_verified": false,
+      "interval_gap_days": 0,
+      "same_assigned_coordinates": false,
+      "same_dyad_new_id": true,
+      "same_original_source_string": false,
+      "shared_citation_is_not_independent_confirmation": true,
+      "shared_exact_GED_citations_n": 0
+    },
+    {
+      "GED_pair_ids": [
+        460796,
+        462156
+      ],
+      "coordinate_distance_km": 292.319,
+      "duplicate_episodes_verified": false,
+      "interval_gap_days": 6,
+      "same_assigned_coordinates": false,
+      "same_dyad_new_id": true,
+      "same_original_source_string": false,
+      "shared_citation_is_not_independent_confirmation": true,
+      "shared_exact_GED_citations_n": 0
+    },
+    {
+      "GED_pair_ids": [
+        460859,
+        460862
+      ],
+      "coordinate_distance_km": 14.515,
+      "duplicate_episodes_verified": false,
+      "interval_gap_days": 0,
+      "same_assigned_coordinates": false,
+      "same_dyad_new_id": true,
+      "same_original_source_string": false,
+      "shared_citation_is_not_independent_confirmation": true,
+      "shared_exact_GED_citations_n": 0
+    },
+    {
+      "GED_pair_ids": [
+        460859,
+        462156
+      ],
+      "coordinate_distance_km": 301.632,
+      "duplicate_episodes_verified": false,
+      "interval_gap_days": 2,
+      "same_assigned_coordinates": false,
+      "same_dyad_new_id": true,
+      "same_original_source_string": false,
+      "shared_citation_is_not_independent_confirmation": true,
+      "shared_exact_GED_citations_n": 0
+    },
+    {
+      "GED_pair_ids": [
+        460862,
+        462156
+      ],
+      "coordinate_distance_km": 291.47,
+      "duplicate_episodes_verified": false,
+      "interval_gap_days": 0,
+      "same_assigned_coordinates": false,
+      "same_dyad_new_id": true,
+      "same_original_source_string": false,
+      "shared_citation_is_not_independent_confirmation": true,
+      "shared_exact_GED_citations_n": 0
+    }
+  ],
+  "year": 2022,
+  "zero_best_event_ids": [
+    460862
+  ]
+}
