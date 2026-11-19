@@ -33,6 +33,15 @@ REPOSITORY |= {
     ".github/workflows/candidate-30-90-baseline-holdout.yml",
     "data/candidate-30-90-baseline-holdout.json",
 }
+# Data-science revisions, exact historical sources and aggregate rare-onset diagnostics only.
+RELEASE |= {"data/candidate-onset-label-revision-ties.json"}
+REPOSITORY |= {
+    "scripts/audit_candidate_onset_label_stability.py",
+    "scripts/test_audit_candidate_onset_label_stability.py",
+    "docs/candidate-onset-label-revision-tie-protocol.md",
+    ".github/workflows/candidate-onset-label-stability.yml",
+    "data/candidate-onset-label-revision-ties.json",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",

@@ -4,6 +4,14 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## Q-CANDIDATE · Alertas de escalada: sensibilidad de versiones y empates (19-11-2026)
+
+**Nuevo estudio reproducible sobre 9 vintages Candidate oficiales, sin emisión prospectiva:** en el conjunto inicial de países con menos de 25 fallecidos estatales registrados de enero a marzo hubo solo **1 caso positivo de 505 países-año** a 30 días (mayo, 2024–2026), incluso usando dos ediciones posteriores de Candidate. A 90 días en 2026 hay solo **2 positivos de 166 países**, Kenia e Indonesia, ambos incluidos en un grupo de **21 países con la misma probabilidad** para el modelo de volumen. En este grupo el supuesto acierto `top10` depende de un desempate arbitrario y admite **0 a 2 aciertos**; no identifica países individuales entre los 21. Una vigilancia sobre todo ese grupo produciría **19 falsas alertas/21** en esta muestra, para este endpoint estricto.
+
+No hay todavía evidencia de un clasificador con habilidad prospectiva para nuevos cruces del umbral; la señal retrospectiva observada sigue refiriéndose principalmente a la **continuación de violencia ya registrada**. La fecha de publicación original de cada vintage sigue sin certificarse.
+
+[Estudio con inferencias y límites](docs/candidate-onset-label-revision-tie-protocol.md) · [Informe agregado y nueve hashes originales](data/candidate-onset-label-revision-ties.json) · [Código y cotas de empates](scripts/audit_candidate_onset_label_stability.py).
+
 ## Q-CANDIDATE · Primer experimento retrospectivo 30/90 días (19-11-2026)
 
 Se ha ejecutado y congelado un primer **holdout temporal de 2026** sobre los
