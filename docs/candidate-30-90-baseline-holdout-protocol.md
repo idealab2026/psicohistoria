@@ -76,6 +76,73 @@ ajenos al universo canónico y resultados agregados; publicar vector
 2026 por país para reproducibilidad y con etiqueta
 `RETROSPECTIVE_ONLY_NOT_ISSUED`.
 
+## Resultado empírico ya ejecutado y congelado (holdout 2026)
+
+Los seis archivos UCDP Candidate originales se descargaron y cotejaron por SHA-256. El
+script `scripts/experiment_candidate_30_90_holdout.py` **aprendió solo de 2024–25**
+y evaluó los 196 países de 2026 sin usar sus etiquetas durante el entrenamiento.
+El informe reproducible en
+[`data/candidate-30-90-baseline-holdout.json`](../data/candidate-30-90-baseline-holdout.json)
+contiene las 196 filas, predicciones de los tres modelos, etiquetas retrospectivas,
+fechas, métricas, parámetros y hashes completos. La CI rechaza cualquier desviación
+respecto de los seis originales.
+
+| Modelo | Brier 30d ↓ | Log-loss 30d ↓ | Brier 90d ↓ | Log-loss 90d ↓ |
+|---|---:|---:|---:|---:|
+| Climatología global | 0,07971365 | 0,29767164 | 0,11886799 | 0,40122975 |
+| Persistencia binaria | 0,03919078 | **0,11322628** | **0,03141390** | 0,12629604 |
+| Volumen previo, cuatro grupos | **0,03910474** | 0,11523153 | 0,03163051 | **0,10970295** |
+| Referencia siempre cero (solo Brier) | 0,08673469 | — | 0,13775510 | — |
+
+**Tasa observada en esta edición Candidate (NO de conflicto real):** 17/196
+(8,67 %) a 30 días y 27/196 (13,78 %) a 90 días. El 2026 es un único año
+de evaluación, con dependencia fuerte entre países. Los resultados pueden
+cambiar si se usa otra edición o reglas distintas de precisión temporal.
+
+**Concentración de la continuidad, no detección demostrada de onset:**
+
+- Entre los **166 países** con menos de 25 muertes estatales registradas en
+  Q1 de 2026, el horizonte 30d tiene **0 positivos**. Por definición, no hay
+  en ese subconjunto nuevos casos que anticipar en esta cohorte.
+- A 90d hay **solo 2 positivos de 166**, identificados como
+  **Kenya** (Q1: 3; ventana posterior: 29) e **Indonesia**
+  (Q1: 13; ventana posterior: 27). El modelo de volumen reciente
+  les habría asignado `p≈0,14098`, y el binario de persistencia
+  `p≈0,02141`. Son *registros Candidate* y no nuevos conflictos.
+- La precisión retrospectiva entre las diez probabilidades mayores
+  del modelo de volumen reciente es 9/10 a 30d y 10/10 a 90d, pero
+  **domina la continuación** de episodios ya intensos. No mide
+  habilidad para detectar países que antes estaban por debajo del umbral.
+- El Brier en el subgrupo Q1<25 es 0,00020809 a 30d y 0,01118568 a
+  90d con volumen reciente: los valores pequeños responden en buena
+  parte al predominio de negativos, y a 30d **ninguna** escalada nueva
+  ocurre dentro del subgrupo; no certificar onboarding de alertas.
+
+**Integridad de los archivos:** la edición Q3 de cada año conserva el SHA
+ya congelado en el estudio independiente Q2→Q3; los archivos Q1 tienen estos
+nuevos hashes oficiales de bytes:
+
+| Edición Q1 | SHA-256 |
+|---|---|
+| `24.01.24.03` | `ae794cc614a56a7445cdb72be95df7681431245c6ffda4ed6f3d56d36db29b6f` |
+| `25.01.25.03` | `42465f8c081bd70e67221e216d2c0b3fae59586f1ca45561f48052a26a2910e8` |
+| `26.01.26.03` | `a3cae550d6b806b3872aa4a12d0d47e2634ca2fc30dae385463230c659865346` |
+
+**Incidencia de precisión temporal:** uno de los archivos originales incluye
+`date_prec=0` en un evento estatal con gran valor de `best`.
+Como esta codificación no se identifica con ninguno de los niveles 1–5
+habituales descritos por UCDP, el auditor **la excluye y contabiliza**
+como precisión temporal desconocida; jamás se transforma en `date_prec=1`
+por conveniencia. La definición principal mantiene solo `date_prec∈{1,2}`.
+Es imprescindible un análisis posterior de sensibilidad al tratamiento
+de esa incertidumbre antes de aumentar la ambición del modelo.
+
+**Lectura científica:** hay una señal descriptiva considerable para
+*persistencia de intensidad de violencia organizada estatal registrada*,
+pero **no hay todavía evidencia prospectiva** y el tamaño de muestra para
+evaluar nuevas escaladas es insuficiente. Un único holdout temporal de un
+año no certifica un sistema de alertas operativo.
+
 **Reserva metodológica obligatoria:** la edición de marzo podría haberse
 publicado después de la fecha de emisión hipotética; las URLs históricas
 no demuestran cuándo apareció por primera vez cada archivo.
