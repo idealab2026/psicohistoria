@@ -32,3 +32,44 @@ Si un solo registro de un par hipotéticamente eliminado no cruza el umbral de 2
 La primera ejecución se realizará con el código y preguntas registrados antes de extraer las columnas de citas/díadas. Tras verificar el ZIP oficial, el informe JSON se fijará por commit y CI pasará a exigir repetición exacta. No se certifica independencia periodística ni se estima tasa de duplicación a partir de una muestra estratificada **no representativa**.
 
 **Fuente metodológica:** [UCDP GED 25.1, descarga y codebook](https://ucdp.uu.se/downloads/olddw.html), [metodología oficial UCDP](https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-methodology.html).
+
+## Resultados SHA-verificados: fuentes, díadas y umbral anual
+
+La ejecución de UCDP GED25.1 oficial reproduce por completo la cohorte anterior **sin alterar** las probabilidades de GEO2027/GEO2028 ni el historial documental de Burundi.
+
+| Magnitud | Resultado |
+|---|---:|
+| Anclas iniciales / anclas señaladas | 24 / 14 |
+| Relaciones ancla-vecino | 81 |
+| Pares únicos sin orden | **81** |
+| Países-año distintos entre esos pares | **9** |
+| Parejas con el mismo ID de díada de UCDP | **77** |
+| Parejas con distinto ID de díada | **4** |
+| Parejas que comparten ≥1 referencia bibliográfica idéntica de UCDP | **2** |
+| Pares donde eliminar hipotéticamente un evento cambia la clase ≥25 | **0** |
+| Países-año cuya clase cambiaría por cualquiera de esas eliminaciones unitarias | **0** |
+| Duplicados verificados documentalmente | **0 (sin revisión externa)** |
+
+Se reconstruyeron los totales anuales de fallecidos tipo 1 sumando **todas las filas GED25.1** de cada país-año (no solo las seleccionadas para el estudio). El mínimo de los nueve totales agregados examinados fue **415**; todos están muy lejos del umbral de 25. Por tanto, ninguna de las 81 hipótesis de eliminación de *un solo registro* modifica el indicador anual. **No se han ejecutado eliminaciones combinadas, correcciones UCDP ni nuevos cálculos de Brier.**
+
+| GWNO | Año | Total anual estatal GED25.1 (best) | Pares candidatos |
+|---|---:|---:|---:|
+| 369 | 2022 | 91.485 | 45 |
+| 471 | 2022 | 415 | 1 |
+| 490 | 2021 | 1.080 | 1 |
+| 490 | 2022 | 1.755 | 4 |
+| 530 | 2021 | 124.553 | 1 |
+| 645 | 2022 | 1.013 | 1 |
+| 652 | 2022 | 973 | 4 |
+| 678 | 2021 | 23.366 | 16 |
+| 700 | 2021 | 35.787 | 8 |
+
+### Interpretación para el programa GEO
+
+La coincidencia de **77 identificadores de díada** es esperable en conflictos prolongados; no prueba duplicación, y cuatro díadas distintas tampoco excluyen que haya diferencias de codificación. Dos pares comparten alguna misma referencia de UCDP, pero compartir noticia no demuestra identidad de episodio ni corroboración independiente.
+
+**El hallazgo principal es una limitación de selección:** las 14 anclas pertenecen a países-año con cifras altas de víctimas. Son útiles para auditar correspondencias entre eventos, pero no son una muestra adecuada para examinar la fragilidad de un **umbral de 25**. Concluir que el modelo global es robusto a las revisiones sería un error.
+
+La próxima cohorte científica debe construirse **a partir de todos los GWNO/años GED25.1 con totales cercanos a 25**, seleccionados antes de inspeccionar vecindades y referencias de fuentes. Solo entonces sería posible estimar cuánto importa este fenómeno de cara al objetivo binario; para medir impacto real seguiría siendo necesaria una corrección documentada.
+
+Informe estructurado y reproducible: [JSON de pares y contrafactuales](../data/geo-ged251-candidate-provenance-threshold-triage.json).
