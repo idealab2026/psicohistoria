@@ -1,0 +1,195 @@
+{
+  "schema": "idealab.psico.uganda_december2022_public_source_reconciliation.v1",
+  "research_date": "2026-11-19",
+  "scope": "Historical publicly reviewed source claims for four PRESELECTED GED25.1 December Uganda–IS events. Official data is SHA-pinned; external webpages and UN PDF have not been downloaded and SHA-archived. Screenshot of UN S/2023/990 annex 10 pp39-40/160 was inspected in research. No UCDP correction or independent fatality roster is claimed.",
+  "source_publications": [
+    {
+      "id": "updf_ntoroko",
+      "publisher": "Uganda People's Defence Forces",
+      "published": "2022-12-15",
+      "url": "https://www.updf.go.ug/press-release/general-security-update-on-updf-operations/",
+      "origin_group": "UPDF_NTOROKO_ARMY_REPORTS",
+      "kind": "involved_state_actor",
+      "supports": "Reported direct UPDF-ADF armed exchange on 13 December, claimed 20 fighters killed, 15 captured; army engaged same broad attack",
+      "cannot_verify": "Unbiased independent fatality identities or separation from later cumulative updates"
+    },
+    {
+      "id": "monitor_ntoroko",
+      "publisher": "Daily Monitor",
+      "published": "2022-12-14",
+      "url": "https://www.monitor.co.ug/uganda/news/national/armed-cross-border-attack-leaves-19-dead-4054508",
+      "origin_group": "NATION_MEDIA_NTOROKO_FIELD_REPORT",
+      "kind": "journalism_mixed_primary_locals_and_army",
+      "supports": "On-site local residents describe armed raid/fleeing; army states 17 fighters, one soldier and one civilian reported killed; journalist explicitly could not independently verify military toll",
+      "cannot_verify": "All military/rebel fatality identities or 19-count verified by civilian witnesses"
+    },
+    {
+      "id": "eastafrican_ntoroko",
+      "publisher": "The EastAfrican",
+      "published": "2022-12-14",
+      "url": "https://www.theeastafrican.co.ke/tea/news/east-africa/ugandan-troops-kill-15-adf-rebels-4053852",
+      "origin_group": "NATION_MEDIA_NTOROKO_FIELD_REPORT",
+      "kind": "journalism_mixed_army_and_local_leaders",
+      "supports": "Military spokesmen 15/17 rebels and 1 soldier/2 civilians, local leaders disputed official count citing potential larger civilian death toll",
+      "cannot_verify": "Reported 19 civilian deaths versus 17 rebels or individual identities, local claim contested"
+    },
+    {
+      "id": "crisiswatch_uganda_dec",
+      "publisher": "International Crisis Group",
+      "published": "2023-01-05",
+      "url": "https://crisisgroup-staging.sbx.so/crisiswatch/january-alerts-and-december-trends-2022",
+      "origin_group": "ICG_SECONDARY_DECEMBER_SUMMARY",
+      "kind": "secondary_synthesis",
+      "supports": "Summary 17 fighters plus two civilians killed in 13 Dec Ntoroko attack; retrospective monthly synthesis",
+      "cannot_verify": "Independent fatality roster or own event-site witnesses; civilian/military status differs from one other account of 17+soldier+civilian"
+    },
+    {
+      "id": "urn_ntoroko_followup",
+      "publisher": "Uganda Radio Network",
+      "published": "2022-12-21",
+      "url": "https://ugandaradionetwork.net/story/two-adf-rebels-killed-in-ntoroko-",
+      "origin_group": "URN_DEC20_RDC_INTERVIEW",
+      "kind": "interview_local_state_official",
+      "supports": "Published Wed 21 Dec describes two additional suspected rebels shot on Tuesday 20 Dec in Kayanja, as survivors of earlier raid",
+      "cannot_verify": "Independent victim identities; reporter relies on resident district commissioner"
+    },
+    {
+      "id": "independent_ntoroko_followup",
+      "publisher": "The Independent Uganda",
+      "published": "2022-12-21",
+      "url": "https://www.independent.co.ug/two-adf-rebels-killed-in-ntoroko/",
+      "origin_group": "URN_DEC20_RDC_INTERVIEW",
+      "kind": "syndication_of_urn",
+      "supports": "Explicit byline URN and same official/claims as URN; not second witness",
+      "cannot_verify": "Separately independently corroborated deaths"
+    },
+    {
+      "id": "upf_wakiso",
+      "publisher": "Uganda Police Force",
+      "published": "2022-12-19",
+      "url": "https://upf.go.ug/fsu-ci-task-teams-counter-terrorists-and-dismantles-two-terror-cells-in-maganjo-and-matugga/",
+      "origin_group": "UPF_DEC19_ENANGA_BRIEFING",
+      "kind": "involved_state_actor",
+      "supports": "Police explicitly dates Matugga raid to 18 Dec; says two killed during claimed firearms exchange and alleges ties with earlier anti-police violence",
+      "cannot_verify": "Independent actual raid death date, victims' rebel membership or initiation of gunfire"
+    },
+    {
+      "id": "monitor_wakiso",
+      "publisher": "Daily Monitor",
+      "published": "2022-12-20",
+      "url": "https://www.monitor.co.ug/uganda/news/national/how-security-hunted-down-suspected-adf-rebels-in-wakiso-4060832",
+      "origin_group": "MONITOR_WAKISO_LOCAL_INTERVIEWS_PLUS_POLICE",
+      "kind": "journalism_neighbors_and_police",
+      "supports": "Reports Sunday operation (18 Dec) and neighbors describing repeated police shots at door, confirms scene distinct from Ntoroko",
+      "cannot_verify": "Who fired first, confirmed two victims' ADF membership, or whether death was battle-related"
+    },
+    {
+      "id": "un_experts_northkivu",
+      "publisher": "United Nations Security Council Group of Experts on DRC",
+      "published": "2023-12-30",
+      "url": "https://documents.un.org/doc/undoc/gen/n23/364/37/pdf/n2336437.pdf",
+      "origin_group": "UN_GOEP_2023_RETROSPECTIVE",
+      "kind": "independent_institution_retrospective_investigation",
+      "supports": "Annex 10 pp39-40/160 describes a planned ADF incursion on 13 Dec 2022 and combat with UPDF; names two ADF commanders killed in combat, others apprehended; qualitative evidence of armed conflict, not full 19/20 killed independently",
+      "cannot_verify": "Exact full Ntoroko 19-death roster; UN map caption prints December 13 2023 while narrative correctly discusses December 2022"
+    }
+  ],
+  "episode_claims": [
+    {
+      "GED_id": 460796,
+      "GED_date_start": "2022-12-12",
+      "GED_date_end": "2022-12-13",
+      "GED_best": 19,
+      "GED_high": 19,
+      "reported_event_dates": [
+        "2022-12-13"
+      ],
+      "source_ids": [
+        "updf_ntoroko",
+        "monitor_ntoroko",
+        "eastafrican_ntoroko",
+        "crisiswatch_uganda_dec",
+        "un_experts_northkivu"
+      ],
+      "assessment": "ACTIVE_ARMED_COMBAT_QUALITATIVELY_CORROBORATED",
+      "independent_conflict_exchange_supported": true,
+      "independent_full_fatality_count_supported": false,
+      "independent_conflict_actor_membership_per_deceased": false,
+      "why": "Contemporary residents/army and retrospective UN investigation support active UPDF vs ADF attack; contradictory military tallies and civilian categories mean 19 distinct deaths not independently enumerated."
+    },
+    {
+      "GED_id": 460859,
+      "GED_date_start": "2022-12-21",
+      "GED_date_end": "2022-12-21",
+      "GED_best": 2,
+      "GED_high": 2,
+      "reported_event_dates": [
+        "2022-12-20"
+      ],
+      "source_ids": [
+        "urn_ntoroko_followup",
+        "independent_ntoroko_followup"
+      ],
+      "assessment": "DISTINCT_FOLLOWUP_BATTLE_REPORTED__EVENT_DAY_POSSIBLE_PLUS_ONE",
+      "independent_conflict_exchange_supported": false,
+      "independent_full_fatality_count_supported": false,
+      "independent_conflict_actor_membership_per_deceased": false,
+      "why": "URN primary report published Wednesday 21 describes Tuesday engagement with survivors; plus-one GED day versus reported event day must be assessed alongside official date_prec=2."
+    },
+    {
+      "GED_id": 460862,
+      "GED_date_start": "2022-12-13",
+      "GED_date_end": "2022-12-27",
+      "GED_best": 0,
+      "GED_high": 3,
+      "reported_event_dates": [],
+      "source_ids": [],
+      "assessment": "CUMULATIVE_REPORTED_26_MAY_INCLUDE_PREVIOUS_ATTACKS__NO_ADDITIONAL_BEST",
+      "independent_conflict_exchange_supported": false,
+      "independent_full_fatality_count_supported": false,
+      "independent_conflict_actor_membership_per_deceased": false,
+      "why": "GED bibliographic source 27 Dec says 26 fighters killed this month and another 5 Feb 2023 abstract; no directly accessed independent report adjudicates 3 additional distinct deaths. GED best0/high3 prevents treating cumulative 26 as fresh best estimate."
+    },
+    {
+      "GED_id": 462156,
+      "GED_date_start": "2022-12-19",
+      "GED_date_end": "2022-12-19",
+      "GED_best": 2,
+      "GED_high": 2,
+      "reported_event_dates": [
+        "2022-12-18"
+      ],
+      "source_ids": [
+        "upf_wakiso",
+        "monitor_wakiso"
+      ],
+      "assessment": "POLICE_RAID_REPORTED__EXACT_GED_DATE_POSSIBLE_PLUS_ONE__ELIGIBILITY_UNRESOLVED",
+      "independent_conflict_exchange_supported": false,
+      "independent_full_fatality_count_supported": false,
+      "independent_conflict_actor_membership_per_deceased": false,
+      "why": "Police explicitly dates Matugga operation on 18 Dec while GED exact date 19; local Monitor neighbor heard/saw police firing at door but independent combatant status and exchange of shots not established."
+    }
+  ],
+  "reporting_root_notes": {
+    "URN_DEC20_RDC_INTERVIEW": "Two publications, one journalist/source: Uganda Radio Network citing district commissioner; cannot count as two fatality witnesses.",
+    "UPF_DEC19_ENANGA_BRIEFING": "Police communiqué by an involved government actor; Monitoring article includes additional neighbor observations but cannot independently adjudicate deaths.",
+    "UPDF_NTOROKO_ARMY_REPORTS": "Army press statements are involved-party claims and often underlie later media reports. Multiple dated cumulative counts must not be summed.",
+    "UN_GOEP_2023_RETROSPECTIVE": "Separate institutional investigation published one year later, qualitative support for invasion/armed fight; independent victim roster of 19 not supplied in the reviewed annex.",
+    "ICG_SECONDARY_DECEMBER_SUMMARY": "Synthesizes prior contemporary reporting; two civilians+17 rebels vs one civilian+soldier+17 rebels means composition remains unverified."
+  },
+  "internal_source_inconsistency": "UN annex 10 map marks Ntoroko 'December 13 2023', while the narrative on pages 39-40 states 13 December 2022. Use narrative context, not map year, for 2022 case; editorial typo cannot be used as a second 2023 attack without independent evidence.",
+  "key_findings": [
+    "All four historical GED entries represent 23 best, 23 low and 26 high, not four independently verified victim rosters.",
+    "460796 Ntoroko 12-13 Dec has external qualitative evidence of armed exchange from local reports and later UN panel, but its 19 fatality breakdown lacks independent nominal confirmation.",
+    "460859 event on Dec21 GED may refer to two rebels killed Tuesday Dec20, with date_prec=2 and publication day Wed21.",
+    "460862 is best0/high3 and based on cumulative reported 26; cannot be treated as additional 26 deaths or proven double count.",
+    "462156 event Dec19 GED (date_prec=1) is dated Dec18 in signed police communique and newspaper; source discrepancy requires adjudication by UCDP.",
+    "Evidence for December armed incursions does NOT prove June 2 and June 5 police killings were eligible state-based battle deaths."
+  ],
+  "event_fatality_labels_modified": false,
+  "issued_GEO_forecasts_modified": false,
+  "duplicate_events_confirmed_by_external_sources_n": 0,
+  "independent_full_casualty_roster_verified": false,
+  "direct_links_last_reviewed": "2026-11-19",
+  "limitations": "Web pages are not SHA-archived in this experiment; PDF UN inspected via web screenshot, but not cryptographically timestamped. Narrative vs map-year conflict in UN annex cannot be resolved without erratum. Assessing UCDP exact dates requires the coders' full chronology; event_date vs publication_date difference is a candidate source-date offset, not a confirmed data error. We do not infer false 19-death UCDP count from contested civilian composition. Source origin groups are editorial hypotheses grounded in explicit attribution, not an exhaustive network of reporters. Single source/organization reports cannot validate independent deaths."
+}
