@@ -1,0 +1,30 @@
+{
+  "schema": "idealab.psico.candidate.state_reactivation_threshold_grid.v1",
+  "status": "PREREGISTERED_NOT_RESULTS",
+  "protocol_date": "2026-11-19",
+  "years": [
+    2021,
+    2022,
+    2024,
+    2025,
+    2026
+  ],
+  "training": [
+    2021,
+    2022,
+    2024,
+    2025
+  ],
+  "holdout": 2026,
+  "thresholds": [
+    1,
+    5,
+    10,
+    25
+  ],
+  "horizons_days": [
+    30,
+    90
+  ],
+  "prospective_issued_probabilities": 0
+}
