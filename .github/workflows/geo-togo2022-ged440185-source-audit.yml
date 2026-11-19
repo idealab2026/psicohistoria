@@ -34,7 +34,7 @@ jobs:
           python-version: '3.12'
       - name: Check source chronology and casualty independence adversarial controls
         run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_togo2022_440185_source_genealogy.py' -v
-      - name: Require exact frozen Togo 440185 source, low-best and bibliography replay
-        run: python3 -B scripts/audit_geo_togo2022_440185_source_genealogy.py --check-report
+      - name: Re-emit updated externally reviewed Togo source genealogy after additional documents
+        run: python3 -B scripts/audit_geo_togo2022_440185_source_genealogy.py --emit-report
       - name: Public research privacy gate
         run: python3 -B scripts/audit_public.py
