@@ -33,3 +33,23 @@ python3 -B scripts/audit_public.py
 ```
 
 **Fuentes y límites:** [descarga histórica UCDP](https://ucdp.uu.se/downloads/olddw.html), [codebook GED25.1](https://ucdp.uu.se/downloads/ged/ged251.pdf). El archivo oficial SHA fija sus bytes accesibles en la ejecución, no una prueba notarial de publicación en 2025. La muestra de anclas resulta reproducible, pero no es una muestra simple representativa de países o episodios y no autoriza extrapolar una tasa global de duplicación.
+
+## Primer resultado oficial reproducido: cohorte GED25.1
+
+La ejecución oficial UCDP GED25.1, con ZIP de **385.918 registros** y SHA-256 correcto, dejó **20.716 eventos elegibles** de violencia estatal en los años 2021–2022 y los 196 GWNO de la cohorte. El muestreo SHA estratificado seleccionó exactamente **24 anclas de 14 países distintos**.
+
+| Estrato predeterminado | Elegibles del universo | Anclas seleccionadas | Con vecino ≤25 km y gap ≤3 días |
+|---|---:|---:|---:|
+| Fecha puntual + precisión espacial 1–2 | 11.528 | 6 | 4 |
+| Fecha puntual + precisión espacial 3–7 | 4.562 | 6 | 3 |
+| Fecha intervalo + precisión espacial 1–2 | 2.092 | 6 | 5 |
+| Fecha intervalo + precisión espacial 3–7 | 2.534 | 6 | 2 |
+| **Total** | **20.716** | **24** | **14** |
+
+**Comparación de filtros sobre las mismas 24 anclas:** 21 tienen alguna fila del mismo país-año a ≤25 km sin restringir la fecha; 16 tienen algún vecino a ≤100 km y gap ≤3 días; 14 a ≤25 km y gap ≤3 días; 5 a ≤5 km y con intervalos solapados. De las 24, **8** tienen al menos un vecino a ≤25 km, gap ≤3 días y precisión espacial `where_prec<=2` en **ambos** registros.
+
+La combinación de filtro espacial y temporal reduce coincidencias sospechosas, **pero no ofrece ninguna verificación de identidad**. Algunos vecinos están a distancia 0 por uso de centroides o coordenadas compartidas y pueden ser episodios distintos. El muestreo no fue diseñado para estimar tasas del universo: cuatro estratos reciben idéntica cuota aunque sus poblaciones sean muy diferentes. No presentar 14/24 como porcentaje de errores de GED, duplicaciones o aciertos de GEO.
+
+**Estado de la verdad documental:** 0 pares revisados manualmente, 0 duplicados comprobados, 0 verificaciones independientes de víctimas obtenidas y **ninguna etiqueta o probabilidad GEO reemitida**. Estos ceros designan el trabajo de adjudicación realizado, no una demostración de ausencia de problemas.
+
+Evidencia reproducible: [JSON de la muestra y sus 24 anclas](../data/geo-ged251-2021-22-linkage-sample24.json), [implementación](../scripts/audit_geo_ged251_stratified_linkage.py). El CI ejecuta ahora `--check-report` para rechazar cualquier revisión silenciosa del resultado.
