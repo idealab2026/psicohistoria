@@ -32,7 +32,7 @@ jobs:
           python-version: '3.12'
       - name: Synthetic anti-leakage and exact horizon adversarial tests
         run: python3 -B -m unittest discover -s scripts -p 'test_experiment_candidate_30_90_holdout.py' -v
-      - name: Run historical UCDP Candidate holdout over six official original CSVs
-        run: python3 -B scripts/experiment_candidate_30_90_holdout.py --print-report
+      - name: Reconstruct pinned 2026 holdout exactly from six official UCDP original CSVs
+        run: python3 -B scripts/experiment_candidate_30_90_holdout.py --check-report
       - name: Check institutional privacy and no unpublished private files
         run: python3 -B scripts/audit_public.py
