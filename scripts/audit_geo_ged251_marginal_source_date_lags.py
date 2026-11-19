@@ -160,7 +160,7 @@ def scan_official_source_dates(raw,selected):
 
 
 def manual_text_discordances(records):
-    """Two previously source-reviewed Ukraine? No: Uganda exact-day controls.
+    """Two previously source-reviewed Uganda exact-day controls.
 
     They are not discovered from source_date; use contemporaneous explicit
     event-day claims in the frozen PR140 review, not publication lags.
