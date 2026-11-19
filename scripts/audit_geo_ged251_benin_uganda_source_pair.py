@@ -24,6 +24,11 @@ from audit_geo_burundi_2022_neighbor_event_linkage import check_frozen_chain
 ROOT=Path(__file__).resolve().parents[1]
 UPSTREAM=ROOT/"data/geo-ged251-near25-2021-22-countryyear-census.json"
 REPORT=ROOT/"data/geo-ged251-benin-uganda-2022-source-pair-audit.json"
+PUBLIC_REVIEW=ROOT/"data/geo-ged251-benin-uganda-public-firstparty-review.json"
+REVIEW_URL_HOSTS={
+    "www.africanparks.org","whc.unesco.org",
+    "crisisgroup-staging.sbx.so","upf.go.ug","nilepost.co.ug",
+}
 CASES={
     "benin_2022": {"GWNO":434,"year":2022,"pair":(431254,431259),
                    "total":30,"best":(8,1)},
@@ -226,6 +231,59 @@ def build(raw):
     }
 
 
+def check_public_review(report):
+    """Validate first-party editorial review against SAME official GED event IDs.
+
+    The remote web pages were manually read, not fetched or hash-verified here.
+    This check protects metadata links and case boundaries, not factual truth.
+    """
+    review=json.loads(PUBLIC_REVIEW.read_text(encoding="utf-8"))
+    if (review.get("schema")!="idealab.psico.ged251_benin_uganda_public_first_party_review.v1"
+        or review.get("independent_third_party_victim_rosters_verified") is not False
+        or review.get("coded_GED_records_corrected") is not False
+        or review.get("original_GEO_issued_forecasts_modified") is not False):
+        raise ValueError("Public first-party source review contract violated")
+    cases=review["cases"]
+    if len(cases)!=len(CASES) or {x["case_id"] for x in cases}!=set(CASES):
+        raise ValueError("Public review cases or evidence scope changed")
+    expected_overlap={"benin_2022":4,"uganda_2022":2}
+    for record in cases:
+        key=record["case_id"]
+        official=report["cases"][key]
+        spec=CASES[key]
+        if (record["GED_event_ids"]!=list(spec["pair"])
+            or official["pair_ged_ids"]!=list(spec["pair"])
+            or record["GED_event_days"]!=[x["date_start"] for x in official["events"]]
+            or record["verdict_for_duplicate_detection"].split("__")[0]!="NO_DUPLICATE_SUPPORTED"
+            or official["duplicate_event_proven"] is not False
+            or official["common_identical_normalized_UCDP_bibliographic_citations_n"]!=expected_overlap[key]):
+            raise ValueError("Public review mismatches official GED metadata")
+        urls=set()
+        for evidence in record["original_source_evidence"]:
+            u=urlsplit(evidence["url"])
+            if (u.scheme!="https" or u.hostname not in REVIEW_URL_HOSTS
+                or not u.path or u.query or evidence["url"] in urls):
+                raise ValueError("Unreviewed or repeated public source URL")
+            urls.add(evidence["url"])
+            if date.fromisoformat(evidence["published"])<max(date.fromisoformat(d)
+                                                            for d in record["GED_event_days"]):
+                raise ValueError("Retrospective page purportedly predates event")
+        if key=="benin_2022":
+            if (record["participant_death_total_reported_for_both_dates"]!=8
+                or record["competing_reported_aggregate"]!=9
+                or record["competing_reported_aggregate_is_verified"] is not False
+                or len(urls)<3
+                or record["full_fatality_roster_independently_matched"] is not False):
+                raise ValueError("Benin competing-count source claim changed")
+        if key=="uganda_2022":
+            if (record["separate_reported_victims_in_same_primary_statement"] is not True
+                or record["independent_person_identity_or_combatant_status_verified"] is not False
+                or len(urls)<2 or official["events"][0]["where_description"]==
+                                            official["events"][1]["where_description"]):
+                raise ValueError("Uganda distinct reported locations not preserved")
+    return review
+
+
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--emit-report",action="store_true")
@@ -235,6 +293,7 @@ def main():
     audit_existing_forecasts()
     check_frozen_chain()
     report=build(get_official_bytes())
+    check_public_review(report)
     for key,case in report["cases"].items():
         if case["GWNO"] not in frame:
             raise ValueError("Case outside original prospectively issued country frame")
