@@ -34,7 +34,7 @@ jobs:
           python-version: '3.12'
       - name: Source-independence and eligibility counterfactual adversarial tests
         run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_uganda2022_statebased_eligibility.py' -v
-      - name: Recompute UCDP GED25.1 official Uganda dyad-year and emit prespecified report
-        run: python3 -B scripts/audit_geo_uganda2022_statebased_eligibility.py --emit-report
+      - name: Verify frozen Uganda UCDP GED25.1 eligibility report against official ZIP
+        run: python3 -B scripts/audit_geo_uganda2022_statebased_eligibility.py --check-report
       - name: Public institutional allowlist gate
         run: python3 -B scripts/audit_public.py
