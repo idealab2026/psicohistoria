@@ -84,6 +84,59 @@ class DecemberGED(unittest.TestCase):
         with self.assertRaises(ValueError):
             m.official_december_metadata(b"any zip")
 
+    def editorial_case_fixture(self):
+        return {
+            460796:{"date_start":"2022-12-12","date_end":"2022-12-13",
+                    "best":19,"high":19,"date_prec":2},
+            460859:{"date_start":"2022-12-21","date_end":"2022-12-21",
+                    "best":2,"high":2,"date_prec":1},
+            460862:{"date_start":"2022-12-13","date_end":"2022-12-27",
+                    "best":0,"high":3,"date_prec":4},
+            462156:{"date_start":"2022-12-19","date_end":"2022-12-19",
+                    "best":2,"high":2,"date_prec":1},
+        }
+
+    def test_external_review_exact_date_and_zero_best_controls(self):
+        a=m.audit_public_review(self.editorial_case_fixture())
+        self.assertEqual(a["GED_exact_date_vs_contemporary_event_day_discrepancies"],
+                         [460859,462156])
+        self.assertFalse(a["independently_verified_full_19_fatality_roster"])
+        self.assertEqual(a["December_events_reclassified"],0)
+
+    def test_source_review_does_not_silently_change_exact_date_precision(self):
+        rows=self.editorial_case_fixture()
+        rows[460859]["date_prec"]=2
+        with self.assertRaises(ValueError):
+            m.audit_public_review(rows)
+
+    def test_historical_date_mismatch_not_silently_corrected(self):
+        rows=self.editorial_case_fixture()
+        rows[462156]["date_start"]="2022-12-18"
+        with self.assertRaises(ValueError):
+            m.audit_public_review(rows)
+
+    def test_duplicate_GED_citations_inside_single_row_are_not_sources(self):
+        r=row(460796,19,"2022-12-12","2022-12-13")
+        r["source_article"]='"Agency A,2022-12-15,One report";"Agency A,2022-12-15,One report"'
+        ev,_=m.normalize_and_publish(460796,r)
+        self.assertEqual(ev["number_of_sources"],2)
+        self.assertEqual(ev["distinct_GED_bibliographic_refs_n"],1)
+        self.assertEqual(ev["repeated_identical_bibliographic_fragments_n"],1)
+
+    def test_label_recode_or_independent_roster_claim_rejected(self):
+        from pathlib import Path
+        import json
+        import tempfile
+        from unittest.mock import patch
+        original=json.loads(m.PUBLIC_REVIEW.read_text(encoding="utf-8"))
+        original["event_fatality_labels_modified"]=True
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d)/"bad.json"
+            p.write_text(json.dumps(original),encoding="utf-8")
+            with patch.object(m,"PUBLIC_REVIEW",p):
+                with self.assertRaises(ValueError):
+                    m.audit_public_review(self.editorial_case_fixture())
+
     def test_original_issue_unchanged(self):
         self.assertEqual(m.GED_SHA,
             "e256f1fb20a579d8b2f910e5bae212f486d3002adaa2e4359ace740c737da05d")
