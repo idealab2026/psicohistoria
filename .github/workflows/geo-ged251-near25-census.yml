@@ -32,7 +32,7 @@ jobs:
           python-version: '3.12'
       - name: Adversarial tests around 25 threshold and negative controls
         run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_ged251_near25_countryyear_census.py' -v
-      - name: Official GED25.1 SHA replay and emit preregistered near-threshold census
-        run: python3 -B scripts/audit_geo_ged251_near25_countryyear_census.py --print-report
+      - name: Verify frozen near-25 census against official GED25.1 SHA
+        run: python3 -B scripts/audit_geo_ged251_near25_countryyear_census.py --check-report
       - name: Public institutional privacy gate
         run: python3 -B scripts/audit_public.py
