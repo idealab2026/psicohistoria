@@ -82,7 +82,7 @@ def extract_state_based(raw, year, purpose, universe_ids):
             except (ValueError, TypeError) as exc:
                 raise SourceError("Unparseable required GED event field") from exc
             if country <= 0 or kind not in (1, 2, 3) or best < 0 or precision not in (1, 2, 3, 4, 5):
-                raise SourceError("Invalid GED category, fatality or date precision")
+                raise SourceError(f"Invalid GED category/death/precision in {year} {purpose}: id={event_id} country={country} type={kind} best={best} date_prec={precision}")
             start = ged_day(row["date_start"], "date_start")
             end = ged_day(row["date_end"], "date_end")
             if start > end:
