@@ -33,3 +33,37 @@ Reproducir (cuando el JSON haya quedado congelado por commit):
 - `python3 -B scripts/audit_public.py`
 
 La calidad de información bibliográfica se mide usando la edición *retrospectiva* GED25.1 (extracción en 2025). **No** debe incorporarse como feature del modelo predictivo as-of 2021/22 ni utilizarse para reclamar mejora de Brier GEO2027/GEO2028.
+
+## Resultado oficial reproducido · 19/11/2026
+
+El ZIP oficial GED25.1 con SHA-256 fijado se ha reproducido para **los 14 países-año marginales** (2021–2022) y **todas sus 118 filas de violencia tipo 1**, de las cuales **98** constan como fecha exacta (date_prec=1, un día). Se han reproducido exactamente los totales de fallecidos y las 13 filas matemáticamente decisivas previamente congeladas; **cero etiquetas modificadas**.
+
+| Primera publicación conocida frente a fecha del hecho GED | Filas GED | Interpretación |
+|---|---:|---|
+| Antes del inicio del intervalo | **2** | **Candidatos de revisión bibliográfica**, nunca error probado |
+| Dentro del intervalo | **63** | Normal para cobertura contemporánea |
+| +1 día después del fin del intervalo | **26** | Retraso normal; no se recodifica |
+| +2–7 días | **12** | Retraso moderado |
+| +8–30 días | **10** | Prensa posterior o consolidación |
+| +31 o más días | **4** | Posible fuente retrospectiva |
+| Sin fecha de publicación válida | **1** | No imputar fecha |
+| **Total** | **118** | Selección condicional 15–35 muertes |
+
+No se encontraron fechas `1753-01-01` ni tokens no interpretables en estas filas, pero el parser **excluye explícitamente** ese marcador y registra su frecuencia; en una fila falta información utilizable de la fecha de fuente.
+
+### Casos donde la publicación conocida precede al evento GED
+
+| País y año | Evento GED | Día exacto GED | Primera / última fecha de fuente | Best | Cambia clase con supresión unitaria |
+|---|---|---|---|---:|---|
+| **Azerbaiyán 2021 (GWNO 373)** | **427299** | 17/06/2021 | 06/06/2021 (una fuente) | 1 | No |
+| **Togo 2022 (GWNO 461)** | **440185** | 11/05/2022 | 05/05–26/05/2022 (8 fuentes) | **23** | **Sí** |
+
+**Importante:** que uno o varios artículos citados antecedan a la fecha de un evento no demuestra que UCDP codificara mal la fecha. Un codificador puede consultar una publicación previa como contexto de actores u operaciones, y noticias posteriores para obtener el día real. El caso Togo es prioritario para cotejar las **ocho referencias bibliográficas individuales y los hechos descritos**, porque su best=23 podría afectar al indicador país-año 34→11 si se justificara una exclusión completa, que **no está justificada** por estas métricas.
+
+### Controles de interpretación
+
+Los dos registros de Uganda **460859** y **462156**, previamente revisados en la PR #140, presentaron **discordancias explícitas de un día entre el texto público del evento y la fecha exacta GED**, una prueba diferente de los retrasos normales de publicación. En el censo son controles preexistentes: **no** se han redescubierto ni clasificado como dos errores independientes nuevos.
+
+En total, solo **uno de los 13 registros matemáticamente pivote** tiene la primera fecha conocida de fuente anterior al evento codificado; los otros doce no se declaran correctos solo por la cronología de sus publicaciones.
+
+**Consecuencia científica:** antes de atribuir fragilidad a GEO por errores de fecha hay que pasar del *metadata screening* a la **adjudicación de cada fuente original**. El orden lógico de la siguiente auditoría es **Togo GED 440185**, luego Azerbaiyán GED 427299; ambos serán evaluados sin reetiquetar UCDP, sin nuevas emisiones GEO y sin cambios en Brier.
