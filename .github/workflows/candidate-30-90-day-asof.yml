@@ -1,0 +1,34 @@
+name: UCDP Candidate 30-90 day as-of source gate
+on:
+  push:
+    paths:
+      - 'scripts/check_ucdp_candidate_asof.py'
+      - 'scripts/test_check_ucdp_candidate_asof.py'
+      - 'docs/candidate-30-90-day-asof-protocol.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-30-90-day-asof.yml'
+  pull_request:
+    paths:
+      - 'scripts/check_ucdp_candidate_asof.py'
+      - 'scripts/test_check_ucdp_candidate_asof.py'
+      - 'docs/candidate-30-90-day-asof-protocol.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-30-90-day-asof.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  source_vintage_gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Synthetic adversarial tests (never real results)
+        run: python3 -B -m unittest discover -s scripts -p 'test_check_ucdp_candidate_asof.py' -v
+      - name: Check privacy boundary including all new public scientific files
+        run: python3 -B scripts/audit_public.py
