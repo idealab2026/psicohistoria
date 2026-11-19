@@ -1,0 +1,38 @@
+name: GEO GED25.1 marginal source-publication lag census
+on:
+  push:
+    paths:
+      - 'scripts/audit_geo_ged251_marginal_source_date_lags.py'
+      - 'scripts/test_audit_geo_ged251_marginal_source_date_lags.py'
+      - 'data/geo-ged251-marginal-source-publication-lags-2021-22.json'
+      - 'docs/geo-ged251-near25-source-publication-lag-census.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/geo-ged251-marginal-publication-lags.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_geo_ged251_marginal_source_date_lags.py'
+      - 'scripts/test_audit_geo_ged251_marginal_source_date_lags.py'
+      - 'data/geo-ged251-marginal-source-publication-lags-2021-22.json'
+      - 'docs/geo-ged251-near25-source-publication-lag-census.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/geo-ged251-marginal-publication-lags.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  lag_census:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: False-positive tests for UCDP source publication dates
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_ged251_marginal_source_date_lags.py' -v
+      - name: Require exact frozen 118-event source-publication lag replay from official GED25.1
+        run: python3 -B scripts/audit_geo_ged251_marginal_source_date_lags.py --check-report
+      - name: Institutional public privacy allowlist
+        run: python3 -B scripts/audit_public.py
