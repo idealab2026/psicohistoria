@@ -1,5 +1,532 @@
 {
+  "GWNO_n": 196,
+  "eligible_geocoded_positive_events_n": 20716,
+  "forecast_skill_or_Brier_change_claimed": false,
+  "frame_category_counts": {
+    "above_band": 63,
+    "at_or_above25_in_band": 6,
+    "below25_in_band": 8,
+    "no_recorded_type1_deaths": 293,
+    "positive_below_band": 22
+  },
+  "frozen_original_GEO2027_SHA256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "frozen_prior_triage_path": "data/geo-ged251-candidate-provenance-threshold-triage.json",
+  "frozen_prior_triage_sha256": "3be005520eeb9f8a53195aefacd02a2cf71bc04204524206cebff6c3fba8a48b",
+  "issued_GEO2027_or_GEO2028_modified": false,
+  "marginal_active_country_years_n": 6,
+  "marginal_candidate_near_event_pairs_n": 15,
+  "marginal_candidate_pairs_with_one_row_pivot_n": 2,
+  "marginal_country_years": [
+    {
+      "GED25_1_type1_annual_best": 20,
+      "GED_type1_event_rows_including_zero_best_n": 3,
+      "GWNO": 135,
+      "candidate_25km_gap3d_pairs_n": 0,
+      "candidate_pairs": [],
+      "candidate_pairs_with_either_one_row_threshold_flip_n": 0,
+      "geocoded_positive_best_events_within_year_n": 3,
+      "independent_documentary_review_complete": false,
+      "observed_annual_label_ge25": false,
+      "pivotal_event_rows_under_hypothetical_one_row_removal_n": 0,
+      "year": 2021
+    },
+    {
+      "GED25_1_type1_annual_best": 30,
+      "GED_type1_event_rows_including_zero_best_n": 18,
+      "GWNO": 373,
+      "candidate_25km_gap3d_pairs_n": 0,
+      "candidate_pairs": [],
+      "candidate_pairs_with_either_one_row_threshold_flip_n": 0,
+      "geocoded_positive_best_events_within_year_n": 15,
+      "independent_documentary_review_complete": false,
+      "observed_annual_label_ge25": true,
+      "pivotal_event_rows_under_hypothetical_one_row_removal_n": 2,
+      "year": 2021
+    },
+    {
+      "GED25_1_type1_annual_best": 30,
+      "GED_type1_event_rows_including_zero_best_n": 8,
+      "GWNO": 434,
+      "candidate_25km_gap3d_pairs_n": 1,
+      "candidate_pairs": [
+        {
+          "best_pair": [
+            8,
+            1
+          ],
+          "both_single_row_removal_options_flip_label": false,
+          "both_where_prec_1_or_2": true,
+          "distance_km": 0,
+          "duplicate_identity_proven": false,
+          "either_single_row_removal_flips_label": true,
+          "gap_days": 2,
+          "pair_ids": [
+            431254,
+            431259
+          ],
+          "where_prec_pair": [
+            2,
+            2
+          ]
+        }
+      ],
+      "candidate_pairs_with_either_one_row_threshold_flip_n": 1,
+      "geocoded_positive_best_events_within_year_n": 8,
+      "independent_documentary_review_complete": false,
+      "observed_annual_label_ge25": true,
+      "pivotal_event_rows_under_hypothetical_one_row_removal_n": 2,
+      "year": 2022
+    },
+    {
+      "GED25_1_type1_annual_best": 34,
+      "GED_type1_event_rows_including_zero_best_n": 4,
+      "GWNO": 461,
+      "candidate_25km_gap3d_pairs_n": 0,
+      "candidate_pairs": [],
+      "candidate_pairs_with_either_one_row_threshold_flip_n": 0,
+      "geocoded_positive_best_events_within_year_n": 4,
+      "independent_documentary_review_complete": false,
+      "observed_annual_label_ge25": true,
+      "pivotal_event_rows_under_hypothetical_one_row_removal_n": 1,
+      "year": 2022
+    },
+    {
+      "GED25_1_type1_annual_best": 22,
+      "GED_type1_event_rows_including_zero_best_n": 10,
+      "GWNO": 500,
+      "candidate_25km_gap3d_pairs_n": 3,
+      "candidate_pairs": [
+        {
+          "best_pair": [
+            3,
+            4
+          ],
+          "both_single_row_removal_options_flip_label": false,
+          "both_where_prec_1_or_2": true,
+          "distance_km": 0,
+          "duplicate_identity_proven": false,
+          "either_single_row_removal_flips_label": false,
+          "gap_days": 0,
+          "pair_ids": [
+            423531,
+            423532
+          ],
+          "where_prec_pair": [
+            1,
+            1
+          ]
+        },
+        {
+          "best_pair": [
+            3,
+            1
+          ],
+          "both_single_row_removal_options_flip_label": false,
+          "both_where_prec_1_or_2": true,
+          "distance_km": 12.779,
+          "duplicate_identity_proven": false,
+          "either_single_row_removal_flips_label": false,
+          "gap_days": 2,
+          "pair_ids": [
+            423531,
+            423533
+          ],
+          "where_prec_pair": [
+            1,
+            1
+          ]
+        },
+        {
+          "best_pair": [
+            4,
+            1
+          ],
+          "both_single_row_removal_options_flip_label": false,
+          "both_where_prec_1_or_2": true,
+          "distance_km": 12.779,
+          "duplicate_identity_proven": false,
+          "either_single_row_removal_flips_label": false,
+          "gap_days": 2,
+          "pair_ids": [
+            423532,
+            423533
+          ],
+          "where_prec_pair": [
+            1,
+            1
+          ]
+        }
+      ],
+      "candidate_pairs_with_either_one_row_threshold_flip_n": 0,
+      "geocoded_positive_best_events_within_year_n": 10,
+      "independent_documentary_review_complete": false,
+      "observed_annual_label_ge25": false,
+      "pivotal_event_rows_under_hypothetical_one_row_removal_n": 0,
+      "year": 2021
+    },
+    {
+      "GED25_1_type1_annual_best": 25,
+      "GED_type1_event_rows_including_zero_best_n": 6,
+      "GWNO": 500,
+      "candidate_25km_gap3d_pairs_n": 1,
+      "candidate_pairs": [
+        {
+          "best_pair": [
+            1,
+            1
+          ],
+          "both_single_row_removal_options_flip_label": true,
+          "both_where_prec_1_or_2": true,
+          "distance_km": 0,
+          "duplicate_identity_proven": false,
+          "either_single_row_removal_flips_label": true,
+          "gap_days": 3,
+          "pair_ids": [
+            444764,
+            444765
+          ],
+          "where_prec_pair": [
+            1,
+            1
+          ]
+        }
+      ],
+      "candidate_pairs_with_either_one_row_threshold_flip_n": 1,
+      "geocoded_positive_best_events_within_year_n": 5,
+      "independent_documentary_review_complete": false,
+      "observed_annual_label_ge25": true,
+      "pivotal_event_rows_under_hypothetical_one_row_removal_n": 5,
+      "year": 2022
+    },
+    {
+      "GED25_1_type1_annual_best": 24,
+      "GED_type1_event_rows_including_zero_best_n": 3,
+      "GWNO": 516,
+      "candidate_25km_gap3d_pairs_n": 0,
+      "candidate_pairs": [],
+      "candidate_pairs_with_either_one_row_threshold_flip_n": 0,
+      "geocoded_positive_best_events_within_year_n": 2,
+      "independent_documentary_review_complete": false,
+      "observed_annual_label_ge25": false,
+      "pivotal_event_rows_under_hypothetical_one_row_removal_n": 0,
+      "year": 2021
+    },
+    {
+      "GED25_1_type1_annual_best": 20,
+      "GED_type1_event_rows_including_zero_best_n": 16,
+      "GWNO": 540,
+      "candidate_25km_gap3d_pairs_n": 1,
+      "candidate_pairs": [
+        {
+          "best_pair": [
+            1,
+            19
+          ],
+          "both_single_row_removal_options_flip_label": false,
+          "both_where_prec_1_or_2": false,
+          "distance_km": 14.069,
+          "duplicate_identity_proven": false,
+          "either_single_row_removal_flips_label": false,
+          "gap_days": 0,
+          "pair_ids": [
+            447302,
+            464758
+          ],
+          "where_prec_pair": [
+            2,
+            4
+          ]
+        }
+      ],
+      "candidate_pairs_with_either_one_row_threshold_flip_n": 0,
+      "geocoded_positive_best_events_within_year_n": 2,
+      "independent_documentary_review_complete": false,
+      "observed_annual_label_ge25": false,
+      "pivotal_event_rows_under_hypothetical_one_row_removal_n": 0,
+      "year": 2022
+    },
+    {
+      "GED25_1_type1_annual_best": 18,
+      "GED_type1_event_rows_including_zero_best_n": 6,
+      "GWNO": 615,
+      "candidate_25km_gap3d_pairs_n": 1,
+      "candidate_pairs": [
+        {
+          "best_pair": [
+            6,
+            3
+          ],
+          "both_single_row_removal_options_flip_label": false,
+          "both_where_prec_1_or_2": true,
+          "distance_km": 0,
+          "duplicate_identity_proven": false,
+          "either_single_row_removal_flips_label": false,
+          "gap_days": 1,
+          "pair_ids": [
+            375019,
+            375021
+          ],
+          "where_prec_pair": [
+            2,
+            2
+          ]
+        }
+      ],
+      "candidate_pairs_with_either_one_row_threshold_flip_n": 0,
+      "geocoded_positive_best_events_within_year_n": 6,
+      "independent_documentary_review_complete": false,
+      "observed_annual_label_ge25": false,
+      "pivotal_event_rows_under_hypothetical_one_row_removal_n": 0,
+      "year": 2021
+    },
+    {
+      "GED25_1_type1_annual_best": 18,
+      "GED_type1_event_rows_including_zero_best_n": 9,
+      "GWNO": 616,
+      "candidate_25km_gap3d_pairs_n": 0,
+      "candidate_pairs": [],
+      "candidate_pairs_with_either_one_row_threshold_flip_n": 0,
+      "geocoded_positive_best_events_within_year_n": 8,
+      "independent_documentary_review_complete": false,
+      "observed_annual_label_ge25": false,
+      "pivotal_event_rows_under_hypothetical_one_row_removal_n": 0,
+      "year": 2021
+    },
+    {
+      "GED25_1_type1_annual_best": 31,
+      "GED_type1_event_rows_including_zero_best_n": 5,
+      "GWNO": 625,
+      "candidate_25km_gap3d_pairs_n": 0,
+      "candidate_pairs": [],
+      "candidate_pairs_with_either_one_row_threshold_flip_n": 0,
+      "geocoded_positive_best_events_within_year_n": 3,
+      "independent_documentary_review_complete": false,
+      "observed_annual_label_ge25": true,
+      "pivotal_event_rows_under_hypothetical_one_row_removal_n": 3,
+      "year": 2021
+    },
+    {
+      "GED25_1_type1_annual_best": 23,
+      "GED_type1_event_rows_including_zero_best_n": 4,
+      "GWNO": 626,
+      "candidate_25km_gap3d_pairs_n": 0,
+      "candidate_pairs": [],
+      "candidate_pairs_with_either_one_row_threshold_flip_n": 0,
+      "geocoded_positive_best_events_within_year_n": 3,
+      "independent_documentary_review_complete": false,
+      "observed_annual_label_ge25": false,
+      "pivotal_event_rows_under_hypothetical_one_row_removal_n": 0,
+      "year": 2022
+    },
+    {
+      "GED25_1_type1_annual_best": 16,
+      "GED_type1_event_rows_including_zero_best_n": 5,
+      "GWNO": 702,
+      "candidate_25km_gap3d_pairs_n": 6,
+      "candidate_pairs": [
+        {
+          "best_pair": [
+            8,
+            1
+          ],
+          "both_single_row_removal_options_flip_label": false,
+          "both_where_prec_1_or_2": true,
+          "distance_km": 9.697,
+          "duplicate_identity_proven": false,
+          "either_single_row_removal_flips_label": false,
+          "gap_days": 0,
+          "pair_ids": [
+            396873,
+            396956
+          ],
+          "where_prec_pair": [
+            2,
+            1
+          ]
+        },
+        {
+          "best_pair": [
+            8,
+            1
+          ],
+          "both_single_row_removal_options_flip_label": false,
+          "both_where_prec_1_or_2": true,
+          "distance_km": 15.318,
+          "duplicate_identity_proven": false,
+          "either_single_row_removal_flips_label": false,
+          "gap_days": 0,
+          "pair_ids": [
+            396873,
+            396957
+          ],
+          "where_prec_pair": [
+            2,
+            1
+          ]
+        },
+        {
+          "best_pair": [
+            8,
+            5
+          ],
+          "both_single_row_removal_options_flip_label": false,
+          "both_where_prec_1_or_2": true,
+          "distance_km": 7.869,
+          "duplicate_identity_proven": false,
+          "either_single_row_removal_flips_label": false,
+          "gap_days": 0,
+          "pair_ids": [
+            396873,
+            396958
+          ],
+          "where_prec_pair": [
+            2,
+            1
+          ]
+        },
+        {
+          "best_pair": [
+            1,
+            1
+          ],
+          "both_single_row_removal_options_flip_label": false,
+          "both_where_prec_1_or_2": true,
+          "distance_km": 8.261,
+          "duplicate_identity_proven": false,
+          "either_single_row_removal_flips_label": false,
+          "gap_days": 0,
+          "pair_ids": [
+            396956,
+            396957
+          ],
+          "where_prec_pair": [
+            1,
+            1
+          ]
+        },
+        {
+          "best_pair": [
+            1,
+            5
+          ],
+          "both_single_row_removal_options_flip_label": false,
+          "both_where_prec_1_or_2": true,
+          "distance_km": 1.926,
+          "duplicate_identity_proven": false,
+          "either_single_row_removal_flips_label": false,
+          "gap_days": 0,
+          "pair_ids": [
+            396956,
+            396958
+          ],
+          "where_prec_pair": [
+            1,
+            1
+          ]
+        },
+        {
+          "best_pair": [
+            1,
+            5
+          ],
+          "both_single_row_removal_options_flip_label": false,
+          "both_where_prec_1_or_2": true,
+          "distance_km": 9.684,
+          "duplicate_identity_proven": false,
+          "either_single_row_removal_flips_label": false,
+          "gap_days": 0,
+          "pair_ids": [
+            396957,
+            396958
+          ],
+          "where_prec_pair": [
+            1,
+            1
+          ]
+        }
+      ],
+      "candidate_pairs_with_either_one_row_threshold_flip_n": 0,
+      "geocoded_positive_best_events_within_year_n": 5,
+      "independent_documentary_review_complete": false,
+      "observed_annual_label_ge25": false,
+      "pivotal_event_rows_under_hypothetical_one_row_removal_n": 0,
+      "year": 2021
+    },
+    {
+      "GED25_1_type1_annual_best": 29,
+      "GED_type1_event_rows_including_zero_best_n": 21,
+      "GWNO": 800,
+      "candidate_25km_gap3d_pairs_n": 2,
+      "candidate_pairs": [
+        {
+          "best_pair": [
+            2,
+            2
+          ],
+          "both_single_row_removal_options_flip_label": false,
+          "both_where_prec_1_or_2": false,
+          "distance_km": 22.427,
+          "duplicate_identity_proven": false,
+          "either_single_row_removal_flips_label": false,
+          "gap_days": 2,
+          "pair_ids": [
+            444423,
+            444425
+          ],
+          "where_prec_pair": [
+            2,
+            3
+          ]
+        },
+        {
+          "best_pair": [
+            1,
+            1
+          ],
+          "both_single_row_removal_options_flip_label": false,
+          "both_where_prec_1_or_2": true,
+          "distance_km": 15.231,
+          "duplicate_identity_proven": false,
+          "either_single_row_removal_flips_label": false,
+          "gap_days": 0,
+          "pair_ids": [
+            447053,
+            447091
+          ],
+          "where_prec_pair": [
+            2,
+            1
+          ]
+        }
+      ],
+      "candidate_pairs_with_either_one_row_threshold_flip_n": 0,
+      "geocoded_positive_best_events_within_year_n": 21,
+      "independent_documentary_review_complete": false,
+      "observed_annual_label_ge25": true,
+      "pivotal_event_rows_under_hypothetical_one_row_removal_n": 0,
+      "year": 2022
+    }
+  ],
+  "marginal_country_years_n": 14,
+  "marginal_inactive_country_years_n": 8,
+  "marginal_pivotal_event_rows_n": 13,
+  "marginal_with_any_pivotal_event_row_n": 5,
+  "no_actual_duplicate_corrections_performed": true,
+  "no_independent_victim_verification": true,
+  "notes": "Census of 196 issued GWNO x 2 years (392 cells) with all type1 GED25.1 event best totals; band 15..35 chosen from the model target before querying these conditional results. This retrospective band-conditioned analysis cannot estimate GED data error rates, true casualties, documentary identity or model skill. Rows with no GED events have sum 0 as database output, not evidence of true absence of violence. Date/coordinate eligibility applies ONLY to candidate-pair screening, not annual death aggregation. Deleting one recorded event is a hypothetical counterfactual, not a suggested edit. Historical source vintage 25.1 cannot be treated as 2021/22 real-time information.",
+  "official_GED25_1_zip_SHA256": "e256f1fb20a579d8b2f910e5bae212f486d3002adaa2e4359ace740c737da05d",
+  "phase": "RETROSPECTIVE_THRESHOLD_STRESS_NOT_ERROR_ESTIMATE",
+  "prespecified_band_inclusive": [
+    15,
+    35
+  ],
+  "research_design_date": "2026-11-19",
   "schema": "idealab.psico.geo_ged251_near25_countryyear_census.v1",
-  "phase": "AWAITING_FIRST_OFFICIAL_GED25_1_REPLAY_NOT_RESULTS",
-  "research_design_date": "2026-11-19"
+  "target_variable": "GED25.1 type1 state-based annual sum(best) >=25",
+  "total_GED25_1_events_scanned": 385918,
+  "total_frame_country_year_cells_n": 392,
+  "years": [
+    2021,
+    2022
+  ]
 }
