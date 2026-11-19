@@ -9,6 +9,7 @@ import calendar
 import csv
 from datetime import date, timedelta
 import hashlib
+import io
 import json
 from pathlib import Path
 import re
@@ -29,6 +30,64 @@ def iso_day(value, field):
         raise SourceError(f"Invalid ISO date in {field}") from exc
 
 
+def ged_day(value, field):
+    """GED CSV uses date-time strings such as 2026-01-01 00:00:00.000."""
+    if not isinstance(value, str) or not re.fullmatch(
+        r"\d{4}-\d{2}-\d{2}(?: \d{2}:\d{2}:\d{2}(?:\.\d{1,6})?)?", value
+    ):
+        raise SourceError(f"Invalid GED date-time in {field}")
+    return iso_day(value[:10], field)
+
+
+def audit_candidate_rows(raw, coverage_start, coverage_end):
+    """Read official CSV bytes; quarantine boundary-crossing events rather than leak dates."""
+    try:
+        reader = csv.DictReader(io.StringIO(raw.decode("utf-8-sig"), newline=""))
+        required = {"id", "country_id", "type_of_violence", "date_start", "date_end", "best"}
+        if not reader.fieldnames or not required.issubset(reader.fieldnames):
+            raise SourceError("Candidate CSV schema missing essential GED columns")
+        observed_ids = set()
+        counts = {
+            "total": 0, "retained": 0, "state_based": 0, "other": 0,
+            "multiday": 0, "post_cutoff_quarantined": 0,
+            "post_cutoff_start_quarantined": 0,
+        }
+        countries = set()
+        for row in reader:
+            counts["total"] += 1
+            identifier = (row["id"] or "").strip()
+            if not identifier or identifier in observed_ids:
+                raise SourceError("Blank or duplicated GED event id")
+            observed_ids.add(identifier)
+            try:
+                country = int(row["country_id"])
+                violence = int(row["type_of_violence"])
+                deaths = int(row["best"])
+            except (TypeError, ValueError) as exc:
+                raise SourceError("Invalid country, type or best death count") from exc
+            if country <= 0 or violence not in (1, 2, 3) or deaths < 0:
+                raise SourceError("Invalid GED country, violence type or fatalities")
+            start = ged_day(row["date_start"], "date_start")
+            end = ged_day(row["date_end"], "date_end")
+            if start > end or end < coverage_start:
+                raise SourceError("Impossible GED chronology or event before source period")
+            # An event may span the September/October boundary in a September
+            # release. Its total deaths cannot safely be assigned to September.
+            if end > coverage_end:
+                counts["post_cutoff_quarantined"] += 1
+                counts["post_cutoff_start_quarantined"] += int(start > coverage_end)
+                continue
+            countries.add(country)
+            counts["retained"] += 1
+            counts["multiday"] += int(start != end)
+            counts["state_based" if violence == 1 else "other"] += 1
+        if counts["total"] == 0 or counts["retained"] == 0:
+            raise SourceError("No eligible Candidate events; absence is not zero")
+        return counts, len(countries)
+    except UnicodeError as exc:
+        raise SourceError("CSV cannot be decoded as UTF-8") from exc
+
+
 def expected_vintage(url):
     """Derive FULL calendar coverage from an official source filename, not user claims."""
     u = urlsplit(url)
@@ -37,6 +96,8 @@ def expected_vintage(url):
     if not u.path.startswith("/downloads/candidateged/"):
         raise SourceError("Source path is outside official Candidate download directory")
     basename = u.path.rsplit("/", 1)[-1]
+    if u.path != "/downloads/candidateged/" + basename:
+        raise SourceError("Nested or noncanonical Candidate source path")
     single = re.fullmatch(r"GEDEvent_v(\d{2})_0_(\d{1,2})\.csv", basename)
     cumulative = re.fullmatch(r"GEDEvent_v(\d{2})_01_(\d{2})_(\d{2})\.csv", basename)
     if single:
@@ -94,40 +155,9 @@ def validate(source_path, manifest, issued_on, horizon_days):
     actual_sha = hashlib.sha256(raw).hexdigest()
     if actual_sha != expected_sha:
         raise SourceError("Official source bytes do not match declared SHA-256")
-    try:
-        text = raw.decode("utf-8-sig")
-        reader = csv.DictReader(text.splitlines())
-        required = {"id", "country_id", "type_of_violence", "date_start", "date_end", "best"}
-        if not reader.fieldnames or not required.issubset(reader.fieldnames):
-            raise SourceError("Candidate CSV schema missing essential GED columns")
-        observed_ids = set()
-        counts = {"total": 0, "state_based": 0, "other": 0, "multiday": 0}
-        countries = set()
-        for row in reader:
-            counts["total"] += 1
-            identifier = (row["id"] or "").strip()
-            if not identifier or identifier in observed_ids:
-                raise SourceError("Blank or duplicated GED event id")
-            observed_ids.add(identifier)
-            try:
-                country = int(row["country_id"])
-                violence = int(row["type_of_violence"])
-                deaths = int(row["best"])
-            except (TypeError, ValueError) as exc:
-                raise SourceError("Invalid country, type or best death count") from exc
-            if country <= 0 or violence not in (1, 2, 3) or deaths < 0:
-                raise SourceError("Invalid GED country, violence type or fatalities")
-            start = iso_day(row["date_start"], "date_start")
-            end = iso_day(row["date_end"], "date_end")
-            if start > end or end > vintage["coverage_end"] or end < vintage["coverage_start"]:
-                raise SourceError("GED event falls outside declared source window")
-            countries.add(country)
-            counts["multiday"] += int(start != end)
-            counts["state_based" if violence == 1 else "other"] += 1
-        if counts["total"] == 0:
-            raise SourceError("Empty candidate source: zero events cannot be assumed")
-    except UnicodeError as exc:
-        raise SourceError("CSV cannot be decoded as UTF-8") from exc
+    counts, country_count = audit_candidate_rows(
+        raw, vintage["coverage_start"], vintage["coverage_end"]
+    )
     return {
         "status": "SOURCE_ELIGIBLE_NO_FORECAST",
         "source_version": vintage["version"],
@@ -140,7 +170,7 @@ def validate(source_path, manifest, issued_on, horizon_days):
         "last_observation": vintage["coverage_end"].isoformat(),
         "observation_lag_days": (issued - vintage["coverage_end"]).days,
         "event_counts": counts,
-        "distinct_countries_with_events": len(countries),
+        "distinct_countries_with_events": country_count,
         "outcomes_resolved": 0,
         "issued_probabilities": 0,
         "release_date_is_independently_verified": False,
