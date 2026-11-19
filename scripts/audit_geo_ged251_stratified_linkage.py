@@ -254,6 +254,10 @@ def audit_existing_forecasts():
         audit as audit_issued)
     audit_issued(ISSUE.read_bytes(), MANIFEST.read_bytes(), ORIGINAL.read_bytes(),
                  OLD_SHADOW.read_bytes(), OLD_MANIFEST.read_bytes(), ALERTS.read_bytes())
+    # The June 2022 Burundi incident and its institutional source genealogy
+    # must remain byte-reproducible when the study extends internationally.
+    from audit_geo_burundi_2022_neighbor_event_linkage import check_frozen_chain
+    check_frozen_chain()
 
 
 def get_official_bytes():
