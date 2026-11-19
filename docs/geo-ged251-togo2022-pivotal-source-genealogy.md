@@ -74,3 +74,11 @@ El registro 440185 **no debe suprimirse ni cambiar de fecha** basándose en la p
 En este estudio: **cero correcciones a GED**, **cero reemisiones de GEO2027/GEO2028** y **ninguna mejora de Brier demostrada**. El resultado es una sensibilidad de medición etiquetada e históricamente trazable.
 
 Evidencia reproducible: [JSON de las ocho referencias, campos de muertes y contrafactuales](../data/geo-ged251-togo2022-440185-source-genealogy.json), [genealogía de fuentes públicas](../data/geo-ged251-togo2022-440185-public-review.json).
+
+### Comprobación adicional del relato atribuido a JNIM
+
+La referencia GED fechada **05/05/2022** se titula «Togo: JNIM claims Attack», pero se han encontrado **fuentes públicas posteriores al enfrentamiento** sobre su reivindicación: [Togo Breaking News, 28/05](https://togobreakingnews.info/togo-jnim-claim-kpekpakandi-terrorist-attack/) la atribuye a información de Menastream, y [AFP/Ahram, 04/06](https://english.ahram.org.eg/NewsContent/2/10/467359/World/Africa/AlQaeda-affiliate-claims-May-attack-in-Togo.aspx) menciona una declaración difundida el viernes anterior, comunicada por SITE. Ambas publicaciones se refieren al ataque del **11 de mayo** en Kpékpakandi.
+
+Esto **refuerza la necesidad de auditar el metadato bibliográfico del 5 de mayo**, pero no demuestra que el evento sucediera en otra fecha. Las explicaciones plausibles incluyen una fuente de otro incidente, fecha nominal de edición anterior al contenido o un error de indexación. No se ha examinado la noticia íntegra de *Africa Research Bulletin* ni su fecha real de publicación, por lo que el origen del desfase permanece **sin resolver**.
+
+Además, las noticias de la reivindicación posteriores al ataque **no son listas de fallecidos ni validan independientemente los quince atacantes** utilizados en la estimación best.
