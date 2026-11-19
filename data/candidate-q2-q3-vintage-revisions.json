@@ -1,0 +1,14 @@
+{
+  "schema": "idealab.psico.candidate.quarterly_vintage_revisions.v1",
+  "status": "PREREGISTERED_NOT_RESULTS",
+  "study_design_date": "2026-11-19",
+  "years": [
+    2024,
+    2025,
+    2026
+  ],
+  "planned_comparison": "Each year's Jan–Jun records in original Q2 versus Q3 archived UCDP Candidate editions",
+  "no_actual_result_yet": true,
+  "issued_probabilities": 0,
+  "outcomes_resolved": 0
+}
