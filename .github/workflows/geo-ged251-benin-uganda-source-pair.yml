@@ -1,0 +1,38 @@
+name: GEO GED25.1 Benin Uganda near25 provenance
+on:
+  push:
+    paths:
+      - 'scripts/audit_geo_ged251_benin_uganda_source_pair.py'
+      - 'scripts/test_audit_geo_ged251_benin_uganda_source_pair.py'
+      - 'data/geo-ged251-benin-uganda-2022-source-pair-audit.json'
+      - 'docs/geo-ged251-benin-uganda-event-source-genealogy.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/geo-ged251-benin-uganda-source-pair.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_geo_ged251_benin_uganda_source_pair.py'
+      - 'scripts/test_audit_geo_ged251_benin_uganda_source_pair.py'
+      - 'data/geo-ged251-benin-uganda-2022-source-pair-audit.json'
+      - 'docs/geo-ged251-benin-uganda-event-source-genealogy.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/geo-ged251-benin-uganda-source-pair.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests and original marginal source anchor
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_ged251_benin_uganda_source_pair.py' -v
+      - name: Fetch official SHA-pinned GED25.1 and emit four event metadata observations
+        run: python3 -B scripts/audit_geo_ged251_benin_uganda_source_pair.py --emit-report
+      - name: Institutional privacy boundary
+        run: python3 -B scripts/audit_public.py
