@@ -171,7 +171,8 @@ def validate_public_review(ged,review):
         raise ValueError("Not enough distinct public publication records")
     from urllib.parse import urlsplit
     allowed={"securite.gouv.tg","www.republiquetogolaise.tg","au.int",
-             "www.africanews.com","unowas.unmissions.org"}
+             "www.africanews.com","unowas.unmissions.org",
+             "togobreakingnews.info","english.ahram.org.eg"}
     for s in refs:
         u=urlsplit(s["url"])
         if u.scheme!="https" or u.hostname not in allowed or not u.path:
@@ -180,7 +181,8 @@ def validate_public_review(ged,review):
             "TOGO_STATE_MAY11_COMMUNIQUE",
             "TOGO_STATE_MAY18_MINISTER_PRESS",
             "AFRICAN_UNION_RELAY_OF_MAY11",
-            "UNITED_NATIONS_REPORT_DERIVED_MAY11"):
+            "UNITED_NATIONS_REPORT_DERIVED_MAY11",
+            "JNIM_POST_EVENT_CLAIM_REPORTS"):
             raise ValueError("Unjustified statement of independent 23-victim witness")
     if review["initial_Togo_state_military_dead"]!=8:
         raise ValueError("Original 11 May soldier toll altered")
