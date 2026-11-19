@@ -1,0 +1,2616 @@
+{
+  "adjudicated_duplicate_event_pairs_n": 0,
+  "audited_distinct_GWNO_year_n": 9,
+  "candidate_paired_events_with_different_dyad_n": 4,
+  "candidate_paired_events_with_same_dyad_n": 77,
+  "candidate_paired_events_with_unknown_dyad_n": 0,
+  "candidate_pairs": [
+    {
+      "GED_pair_ids": [
+        394855,
+        396321
+      ],
+      "GWNO": 700,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 35787,
+      "distance_km": 0,
+      "interval_gap_days": 3,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        6,
+        4
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        4,
+        4
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        400828,
+        400881
+      ],
+      "GWNO": 700,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 35787,
+      "distance_km": 18.698,
+      "interval_gap_days": 3,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        8,
+        1
+      ],
+      "same_UCDP_dyad_id": false,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        2
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        400881,
+        400933
+      ],
+      "GWNO": 700,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 35787,
+      "distance_km": 14.527,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        9
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        2,
+        4
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        400881,
+        401485
+      ],
+      "GWNO": 700,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 35787,
+      "distance_km": 19.281,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        3
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        1
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        400881,
+        401487
+      ],
+      "GWNO": 700,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 35787,
+      "distance_km": 14.527,
+      "interval_gap_days": 3,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        8
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        2,
+        4
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        411763,
+        411953
+      ],
+      "GWNO": 700,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 35787,
+      "distance_km": 21.213,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        7,
+        7
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        2,
+        3
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        411953,
+        412190
+      ],
+      "GWNO": 700,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 35787,
+      "distance_km": 10.191,
+      "interval_gap_days": 3,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        7,
+        6
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        3,
+        4
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        411953,
+        412291
+      ],
+      "GWNO": 700,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 35787,
+      "distance_km": 10.191,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        7,
+        24
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        3,
+        4
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419524,
+        419966
+      ],
+      "GWNO": 678,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 23366,
+      "distance_km": 3.191,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        13,
+        43
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        2
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419525,
+        419966
+      ],
+      "GWNO": 678,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 23366,
+      "distance_km": 13.432,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        2,
+        43
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        3,
+        2
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419710,
+        419966
+      ],
+      "GWNO": 678,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 23366,
+      "distance_km": 13.588,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        43
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        2
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419766,
+        422823
+      ],
+      "GWNO": 490,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 1080,
+      "distance_km": 0.271,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        8,
+        3
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        1
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419945,
+        419966
+      ],
+      "GWNO": 678,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 23366,
+      "distance_km": 0,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        86,
+        43
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        2
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419949,
+        419966
+      ],
+      "GWNO": 678,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 23366,
+      "distance_km": 24.718,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        74,
+        43
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        3,
+        2
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419961,
+        419966
+      ],
+      "GWNO": 678,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 23366,
+      "distance_km": 0,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        53,
+        43
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        2
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419966,
+        419975
+      ],
+      "GWNO": 678,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 23366,
+      "distance_km": 0,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        43,
+        52
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        2
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419966,
+        419985
+      ],
+      "GWNO": 678,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 23366,
+      "distance_km": 0,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        43,
+        47
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        2
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419966,
+        419998
+      ],
+      "GWNO": 678,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 23366,
+      "distance_km": 0,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        43,
+        36
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        2
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419966,
+        422936
+      ],
+      "GWNO": 678,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 23366,
+      "distance_km": 19.864,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        43,
+        8355
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        2,
+        4
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419966,
+        422940
+      ],
+      "GWNO": 678,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 23366,
+      "distance_km": 13.432,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        43,
+        167
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        2,
+        3
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419966,
+        424814
+      ],
+      "GWNO": 678,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 23366,
+      "distance_km": 24.718,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        43,
+        50
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        2,
+        3
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419966,
+        424815
+      ],
+      "GWNO": 678,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 23366,
+      "distance_km": 10.227,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        43,
+        50
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        2
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419966,
+        424816
+      ],
+      "GWNO": 678,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 23366,
+      "distance_km": 3.191,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        43,
+        50
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        2
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419966,
+        424817
+      ],
+      "GWNO": 678,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 23366,
+      "distance_km": 13.432,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        43,
+        50
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        2,
+        3
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        419966,
+        427083
+      ],
+      "GWNO": 678,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 23366,
+      "distance_km": 13.432,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        43,
+        73
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        2,
+        3
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        426209,
+        426214
+      ],
+      "GWNO": 490,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 1755,
+      "distance_km": 1.203,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        10,
+        2
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        426214,
+        427784
+      ],
+      "GWNO": 490,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 1755,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        2,
+        8
+      ],
+      "same_UCDP_dyad_id": false,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        426214,
+        427814
+      ],
+      "GWNO": 490,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 1755,
+      "distance_km": 4.317,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        2,
+        4
+      ],
+      "same_UCDP_dyad_id": false,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        426214,
+        427836
+      ],
+      "GWNO": 490,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 1755,
+      "distance_km": 11.598,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        2,
+        5
+      ],
+      "same_UCDP_dyad_id": false,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        2,
+        5
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434455,
+        434463
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        22,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        434575
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        5
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        435113
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        5717
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        437265
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        437267
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        437269
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        7
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        438282
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        15996
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        438289
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        200
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        441901
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        447941
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 3,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        3
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        460602
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        487092
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        491983
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        8
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        492439
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        510042
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        510043
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        48
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        512728
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        82
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        529797
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 3,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        5
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        529798
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        4
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        529799
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        2
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        434463,
+        529802
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        3
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        435618,
+        464345
+      ],
+      "GWNO": 645,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 1013,
+      "distance_km": 14.227,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        5,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        438399,
+        440609
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 12.68,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        2,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        438400,
+        440609
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 12.28,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        438669,
+        440609
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 12.68,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        4,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        438671,
+        440609
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 12.68,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        3,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        440278,
+        440609
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 12.812,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        440606,
+        440609
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 12.68,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        2,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        440609,
+        440620
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 12.68,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        2
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        440609,
+        440647
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 12.812,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        440609,
+        440649
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 12.68,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        440609,
+        440672
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 12.68,
+      "interval_gap_days": 3,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        2
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        440609,
+        457572
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 12.68,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        1393
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        440609,
+        487311
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 12.68,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        2
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        441082,
+        487360
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        113,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        4,
+        4
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        441271,
+        487360
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        2,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        4,
+        4
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        441329,
+        487360
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        97,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        4,
+        4
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        449625,
+        461186
+      ],
+      "GWNO": 471,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 415,
+      "distance_km": 19.219,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 1,
+      "pair_best_deaths": [
+        5,
+        5
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": true,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        1,
+        1
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        454103,
+        454154
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 3,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        2,
+        2
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        5,
+        5
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        454119,
+        454154
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        2,
+        2
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        5,
+        5
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        454136,
+        454154
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        2,
+        2
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        5,
+        5
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        454147,
+        454154
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        2,
+        2
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        5,
+        5
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        454154,
+        455408
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        2,
+        2
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        5,
+        5
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        454154,
+        455436
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        2,
+        2
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        5,
+        5
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        454154,
+        455457
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 2,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        2,
+        2
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        5,
+        5
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        454154,
+        455580
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 3,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        2,
+        2
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        5,
+        5
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        459825,
+        460457
+      ],
+      "GWNO": 652,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 973,
+      "distance_km": 14.379,
+      "interval_gap_days": 3,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        2,
+        5
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        460457,
+        460492
+      ],
+      "GWNO": 652,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 973,
+      "distance_km": 12.457,
+      "interval_gap_days": 3,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        4
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        5,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        460457,
+        460495
+      ],
+      "GWNO": 652,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 973,
+      "distance_km": 15.545,
+      "interval_gap_days": 3,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        3
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        5,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        460457,
+        460496
+      ],
+      "GWNO": 652,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 973,
+      "distance_km": 16.409,
+      "interval_gap_days": 3,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        1,
+        3
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        5,
+        2
+      ],
+      "year": 2022
+    },
+    {
+      "GED_pair_ids": [
+        485800,
+        485802
+      ],
+      "GWNO": 530,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 124553,
+      "distance_km": 21.507,
+      "interval_gap_days": 0,
+      "number_of_identical_normalized_UCDP_source_citations": 1,
+      "pair_best_deaths": [
+        1,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": true,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": true,
+      "where_prec_pair": [
+        2,
+        2
+      ],
+      "year": 2021
+    },
+    {
+      "GED_pair_ids": [
+        487339,
+        487360
+      ],
+      "GWNO": 369,
+      "adjudicated_duplicate": false,
+      "country_year_GED_type1_best_total": 91485,
+      "distance_km": 0,
+      "interval_gap_days": 1,
+      "number_of_identical_normalized_UCDP_source_citations": 0,
+      "pair_best_deaths": [
+        4,
+        1
+      ],
+      "same_UCDP_dyad_id": true,
+      "shared_UCDP_source_reference_present": false,
+      "single_GED_row_removal_counterfactual": {
+        "baseline_ge25": true,
+        "both_possible_single_removals_flip_label": false,
+        "either_single_removal_flips_label": false,
+        "remove_left_flips_label": false,
+        "remove_right_flips_label": false
+      },
+      "where_both_high_precision": false,
+      "where_prec_pair": [
+        4,
+        4
+      ],
+      "year": 2022
+    }
+  ],
+  "candidate_pairs_both_where_prec_le2_n": 50,
+  "candidate_pairs_pivotal_under_both_possible_one_row_deletions_n": 0,
+  "candidate_pairs_pivotal_under_either_one_row_deletion_n": 0,
+  "candidate_pairs_sharing_at_least_one_exact_UCDP_source_reference_n": 2,
+  "country_year_summaries": [
+    {
+      "GED_country_year_state_ge25": true,
+      "GWNO": 369,
+      "at_least_one_single_row_removal_flips_label": false,
+      "candidate_unordered_pairs_n": 45,
+      "total_GED25_1_type1_best_deaths": 91485,
+      "year": 2022
+    },
+    {
+      "GED_country_year_state_ge25": true,
+      "GWNO": 471,
+      "at_least_one_single_row_removal_flips_label": false,
+      "candidate_unordered_pairs_n": 1,
+      "total_GED25_1_type1_best_deaths": 415,
+      "year": 2022
+    },
+    {
+      "GED_country_year_state_ge25": true,
+      "GWNO": 490,
+      "at_least_one_single_row_removal_flips_label": false,
+      "candidate_unordered_pairs_n": 1,
+      "total_GED25_1_type1_best_deaths": 1080,
+      "year": 2021
+    },
+    {
+      "GED_country_year_state_ge25": true,
+      "GWNO": 490,
+      "at_least_one_single_row_removal_flips_label": false,
+      "candidate_unordered_pairs_n": 4,
+      "total_GED25_1_type1_best_deaths": 1755,
+      "year": 2022
+    },
+    {
+      "GED_country_year_state_ge25": true,
+      "GWNO": 530,
+      "at_least_one_single_row_removal_flips_label": false,
+      "candidate_unordered_pairs_n": 1,
+      "total_GED25_1_type1_best_deaths": 124553,
+      "year": 2021
+    },
+    {
+      "GED_country_year_state_ge25": true,
+      "GWNO": 645,
+      "at_least_one_single_row_removal_flips_label": false,
+      "candidate_unordered_pairs_n": 1,
+      "total_GED25_1_type1_best_deaths": 1013,
+      "year": 2022
+    },
+    {
+      "GED_country_year_state_ge25": true,
+      "GWNO": 652,
+      "at_least_one_single_row_removal_flips_label": false,
+      "candidate_unordered_pairs_n": 4,
+      "total_GED25_1_type1_best_deaths": 973,
+      "year": 2022
+    },
+    {
+      "GED_country_year_state_ge25": true,
+      "GWNO": 678,
+      "at_least_one_single_row_removal_flips_label": false,
+      "candidate_unordered_pairs_n": 16,
+      "total_GED25_1_type1_best_deaths": 23366,
+      "year": 2021
+    },
+    {
+      "GED_country_year_state_ge25": true,
+      "GWNO": 700,
+      "at_least_one_single_row_removal_flips_label": false,
+      "candidate_unordered_pairs_n": 8,
+      "total_GED25_1_type1_best_deaths": 35787,
+      "year": 2021
+    }
+  ],
+  "country_years_pivotal_under_any_single_candidate_row_deletion_n": 0,
+  "frozen_24_anchor_prior": "data/geo-ged251-2021-22-linkage-sample24.json",
+  "frozen_24_anchor_sha256": "936d74e6b89df7c98ee3cf9750f475ba078d0a1484bf49f892622c661952b949",
+  "frozen_anchor_neighbor_observations_n": 81,
+  "frozen_flagged_anchors_n": 14,
+  "frozen_screening_24_anchors_n": 24,
+  "ged25_1_official_zip_sha256": "e256f1fb20a579d8b2f910e5bae212f486d3002adaa2e4359ace740c737da05d",
+  "ged_country_year_labels_recoded": false,
+  "independent_victim_identity_or_fatality_verification_completed": false,
+  "is_population_duplicate_or_error_rate_estimate": false,
+  "issued_GEO2027_or_GEO2028_vectors_changed": false,
+  "issued_geo2027_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "limitations": "These are SAME UCDP publisher GED25.1 event rows. No external source was obtained for per-pair identity. Shared bibliographic citation is reporting overlap, not independent corroboration or proof of duplicated event. Different dyad IDs can indicate distinct parties but are not guaranteed distinct persons. Deleting either one event in a pair is an explicitly hypothetical perturbation only, does not assert a source correction, and does not aggregate multiple candidate removals or retune the issued GEO forecast. The 14 flagged anchors were selected after the older source-vintage problem study, and the 24-anchor screen is non-proportional across precision/date strata. No global error-rate or real model Brier change is established.",
+  "phase": "POST_SCREENING_SENSITIVITY_NO_DOCUMENTARY_ADJUDICATION",
+  "research_date": "2026-11-19",
+  "schema": "idealab.psico.geo_ged251_candidate_source_threshold_triage.v1",
+  "target": "UCDP GED25.1 state-based (type1) sum(best) >=25 per GWNO/year",
+  "unique_unordered_candidate_pairs_n": 81
+}

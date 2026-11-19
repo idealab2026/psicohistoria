@@ -1,0 +1,38 @@
+name: GEO GED25.1 candidate source-overlap and threshold sensitivity
+on:
+  push:
+    paths:
+      - 'scripts/audit_geo_ged251_candidate_source_threshold.py'
+      - 'scripts/test_audit_geo_ged251_candidate_source_threshold.py'
+      - 'data/geo-ged251-candidate-provenance-threshold-triage.json'
+      - 'docs/geo-ged251-candidate-source-threshold-triage.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/geo-ged251-source-threshold-triage.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_geo_ged251_candidate_source_threshold.py'
+      - 'scripts/test_audit_geo_ged251_candidate_source_threshold.py'
+      - 'data/geo-ged251-candidate-provenance-threshold-triage.json'
+      - 'docs/geo-ged251-candidate-source-threshold-triage.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/geo-ged251-source-threshold-triage.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Adversarial pair-provenance and annual threshold unit tests
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_ged251_candidate_source_threshold.py' -v
+      - name: Verify frozen source-overlap/threshold report against official UCDP SHA
+        run: python3 -B scripts/audit_geo_ged251_candidate_source_threshold.py --check-report
+      - name: Institutional privacy publication gate
+        run: python3 -B scripts/audit_public.py
