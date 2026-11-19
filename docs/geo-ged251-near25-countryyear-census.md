@@ -30,3 +30,37 @@ El interés es **priorizar futuras verificaciones**: un par próximo potencialme
 La primera ejecución emitirá resultados sobre el ZIP oficial, se congelarán en un JSON verificable y el workflow pasará a comparación exacta. Esta es una **investigación histórica**, no una predicción realizada en 2021/2022 ni una tasa de error global de UCDP.
 
 Referencia: [UCDP metodología GED](https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-methodology.html).
+
+## Resultados oficiales reproducidos desde GED25.1
+
+Se han evaluado los **392 países-año** de la cohorte de **196 GWNO × 2021–2022** y el **ZIP oficial GED25.1** fijado por SHA-256, sin leer probabilidades prospectivas para seleccionar casos.
+
+| Rango de muertos estatales registrados (best) | Países-año |
+|---|---:|
+| 0 en GED25.1 (no prueba ausencia real) | 293 |
+| 1–14 | 22 |
+| **15–24** | **8** |
+| **25–35** | **6** |
+| ≥36 | 63 |
+| **Total** | **392** |
+
+De los **14 países-año** de la banda preseleccionada 15–35, **5** contienen al menos una fila GED cuya eliminación hipotética aislada cambiaría el estado anual; en total son **13 filas potencialmente pivote**. La búsqueda espacio-temporal encuentra **15 pares cercanos**, de los que **2** incluyen un extremo cuya supresión hipotética cruzaría el umbral.
+
+### Prioridades documentales propuestas
+
+| País-año | Muertes estatales GED25.1 (best) | IDs GED próximos | Muertes individuales del par | Gap entre fechas | Distancia | Sensibilidad |
+|---|---:|---|---|---:|---:|---|
+| **Benín 2022** | 30 | 431254 / 431259 | 8 / 1 | 2 días | 0 km | Solo eliminar el evento con 8 fallecidos cambiaría el estado 30→22 |
+| **Uganda 2022** | 25 | 444764 / 444765 | 1 / 1 | 3 días | 0 km | Cualquiera de las dos eliminaciones individuales cambiaría 25→24 |
+
+**No son duplicaciones verificadas.** En ambos pares las coordenadas coinciden exactamente y los niveles de precisión UCDP son 2/2 para Benín y 1/1 para Uganda. Esto aumenta el interés de la revisión de fuentes, pero el mismo lugar puede sufrir enfrentamientos diferentes incluso con los mismos actores. En Uganda, dos eventos codificados en días separados pueden ser legítimos.
+
+Estos pares se deben contrastar con documentos, partes locales, actores, víctimas y genealogía de las fuentes **antes de concluir cualquier error de medición**. Incluso si se demostrase una duplicación, habría que verificar las reglas UCDP de inclusión de dyadas/país-año y la compatibilidad con el objetivo de las predicciones emitidas. No editar automáticamente la serie.
+
+### Otros registros hipotéticamente decisivos
+
+Además de Benín y Uganda, en la banda marginal hay casos con posibilidad de cambiar la etiqueta mediante una única supresión *aunque no tengan un par cercano con el filtro fijado*: **Azerbaiyán 2021** (30 muertes; 2 filas pivote), **Togo 2022** (34; 1 fila pivote) y **Sudán 2021** (31; 3 filas pivote). Son sensibilidades aritméticas, no investigaciones documentales realizadas.
+
+El resultado respalda **priorizar auditorías de fuentes alrededor del umbral**, pero no establece cuántos errores existen en UCDP ni si el modelo GEO anticipa mejor los años futuros. Las revisiones de datos potenciales son retrospectivas y no modifican ninguna predicción ya emitida.
+
+Fuente reproducible: [JSON del censo near25 con 14 país-años](../data/geo-ged251-near25-2021-22-countryyear-census.json). El pipeline debe exigir ahora comparación exacta del JSON congelado.
