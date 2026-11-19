@@ -1,0 +1,27 @@
+{
+  "schema": "idealab.psico.candidate.2026q3.source_audit.v1",
+  "status": "ORIGINAL_BYTES_SCHEMA_AUDITED_NO_FORECAST",
+  "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v26_01_26_09.csv",
+  "source_version": "26.01.26.09",
+  "source_sha256": "134da9b3df08b65266802c4b662e572f396c70c92ab62297319be657540bcede",
+  "source_bytes": 13065779,
+  "coverage_start": "2026-01-01",
+  "coverage_end": "2026-09-30",
+  "event_counts": {
+    "total": 16633,
+    "retained": 16609,
+    "state_based": 9960,
+    "other": 6649,
+    "multiday": 2188,
+    "post_cutoff_quarantined": 24,
+    "post_cutoff_start_quarantined": 0
+  },
+  "distinct_countries_with_retained_candidate_events": 79,
+  "latest_available_catalog_month_at_review": "2026-09",
+  "reviewed_on": "2026-11-19",
+  "days_since_coverage_end_at_review": 50,
+  "release_date_independently_verified": false,
+  "issued_probabilities": 0,
+  "certified_future_outcomes": 0,
+  "interpretative_warning": "Candidate events are provisional. Missing country events do not prove zero real violence; cross-boundary event fatalities are quarantined."
+}
