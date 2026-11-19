@@ -34,6 +34,10 @@ jobs:
         run: |
           python3 -B - <<'PY'
           import csv, hashlib, io, urllib.request
+          from datetime import date
+          import sys
+          sys.path.insert(0, "scripts")
+          from check_ucdp_candidate_asof import audit_candidate_rows
           url = "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v26_01_26_09.csv"
           request = urllib.request.Request(url, headers={"User-Agent": "IDEA-LAB-science-provenance-check/1.0"})
           with urllib.request.urlopen(request, timeout=60) as response:
@@ -43,7 +47,11 @@ jobs:
           header = csv.DictReader(io.StringIO(payload.decode("utf-8-sig"), newline=""))
           required = {"id", "country_id", "type_of_violence", "date_start", "date_end", "best"}
           print("Candidate source =", url)
-          print("Source sha256 =", hashlib.sha256(payload).hexdigest())
+          actual_sha = hashlib.sha256(payload).hexdigest()
+          print("Source sha256 =", actual_sha)
+          pinned_sha = "134da9b3df08b65266802c4b662e572f396c70c92ab62297319be657540bcede"
+          if actual_sha != pinned_sha:
+              raise SystemExit("Official archived release changed bytes: investigate provenance, DO NOT silently update")
           print("Source bytes =", len(payload))
           print("Header columns =", header.fieldnames)
           if not header.fieldnames or not required.issubset(header.fieldnames):
@@ -66,6 +74,13 @@ jobs:
           print("date_end span =", minima, maxima)
           print("Rows ending after September =", len(crossing), crossing[:5])
           print("Rows starting after September =", len(future_start), future_start[:5])
+          counts, distinct_countries = audit_candidate_rows(
+              payload, date(2026, 1, 1), date(2026, 9, 30)
+          )
+          print("Validated official archive counts =", counts)
+          print("Countries with retained events =", distinct_countries)
+          if counts["total"] != 16633 or counts["post_cutoff_quarantined"] != 24:
+              raise SystemExit("Previously inspected original Candidate census changed")
           if n == 0:
               raise SystemExit("REAL SOURCE EMPTY")
           print("AUDIT STATUS: official bytes and schema observed; release date not independently certified; no issued probabilities")
