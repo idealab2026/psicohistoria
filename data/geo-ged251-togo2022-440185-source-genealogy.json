@@ -1,0 +1,130 @@
+{
+  "Brier_skill_gain_demonstrated": false,
+  "contemporaneous_source_audit": {
+    "GED_best_correction_justified": false,
+    "exact_11May_event_day_contemporaneously_supported": true,
+    "later_additional_assailant_deaths_documentarily_independent": false,
+    "original_publisher_roots_n": 5,
+    "reviewed_public_publications_n": 7,
+    "togo_initial_8_plus_later_15_equals_GED_best": true
+  },
+  "fatality_corrections_applied": 0,
+  "hypothetical_drop_entire_event_crosses_25": true,
+  "hypothetical_drop_entire_event_total": 11,
+  "hypothetical_replace_best_with_official_low_crosses_25": true,
+  "hypothetical_replace_best_with_official_low_total": 19,
+  "limitations": "The minister's later about-15 attacker death count is a single interested-party allegation; no forensic victim list or independent count is in the reviewed records. Initial eight soldier fatalities from 11 May government communique are reported also by AU and UN, but that repetition does not independently verify bodies. The GED best=23 can be arithmetically consistent with later official 8+~15 yet such arithmetic does not prove the true casualty count. Pre-event dated bibliography can be unrelated contextual material; textual citation-by-citation chronology must be considered. No GED date error, event deletion or correction to 2022 country label is justified. Event source extraction is retrospective GED25.1, not as-of 2022 real time data.",
+  "low_and_best_are_UCDP_sensitivity_estimates_not_errors": true,
+  "model_issued_predictions_modified": false,
+  "official_GED25_1_zip_SHA256": "e256f1fb20a579d8b2f910e5bae212f486d3002adaa2e4359ace740c737da05d",
+  "original_country_year_best": 34,
+  "original_ged_event": {
+    "GED_id": 440185,
+    "GWNO": 461,
+    "UCDP_GED_event_day": "2022-05-11",
+    "UCDP_dyad_name": "Government of Togo - JNIM",
+    "UCDP_dyad_new_id": "16955",
+    "UCDP_source_original": "army",
+    "bibliographic_pre_event_references_n": 1,
+    "bibliographic_references": [
+      {
+        "UCDP_reference_sha256": "37e8b0afbc29a3a41b99eed0bb95d42e9762dda640e5026aca80ba56c114d0bc",
+        "independent_original_casualty_witness_verified": false,
+        "published": "2022-05-11",
+        "published_before_exact_event_day": false,
+        "publisher_as_recorded": "Reuters News",
+        "reference_preview": "Reuters News,2022-05-11,Eight soldiers killed in Togo, raising spectre of first deadly Islamist attack",
+        "sequence": 1
+      },
+      {
+        "UCDP_reference_sha256": "6e4a015221baa153d0a4c8d4972646d75f6988bf7498338b10b0ad30e5a93364",
+        "independent_original_casualty_witness_verified": false,
+        "published": "2022-05-11",
+        "published_before_exact_event_day": false,
+        "publisher_as_recorded": "Twitter",
+        "reference_preview": "Twitter,2022-05-11,#Togo",
+        "sequence": 2
+      },
+      {
+        "UCDP_reference_sha256": "5fcd8d16c6247236944b60362967187c45a86a30e2ef770fe9f93c7114217e93",
+        "independent_original_casualty_witness_verified": false,
+        "published": "2022-05-11",
+        "published_before_exact_event_day": false,
+        "publisher_as_recorded": "Agence France Presse",
+        "reference_preview": "Agence France Presse,2022-05-11,Eight soldiers killed in Togo 'terrorist attack'",
+        "sequence": 3
+      },
+      {
+        "UCDP_reference_sha256": "7e6de56d9ecd310dcd72e15bd028c0640e496840df04bcfffeb620f6c0d15ec8",
+        "independent_original_casualty_witness_verified": false,
+        "published": "2022-05-12",
+        "published_before_exact_event_day": false,
+        "publisher_as_recorded": "BBC Monitoring Africa",
+        "reference_preview": "BBC Monitoring Africa,2022-05-12,West African bloc condemns northern Togo militant attack",
+        "sequence": 4
+      },
+      {
+        "UCDP_reference_sha256": "d5c34c3cea9c4e08480684ddacc53d041d53931a26c07372d295e34902ecfab9",
+        "independent_original_casualty_witness_verified": false,
+        "published": "2022-05-19",
+        "published_before_exact_event_day": false,
+        "publisher_as_recorded": "Agence France Presse",
+        "reference_preview": "Agence France Presse,2022-05-19,Togo 'terrorist' attack also left 15 assailants dead: minister",
+        "sequence": 5
+      },
+      {
+        "UCDP_reference_sha256": "38de78056a5d326940f7cd017e34c584bbe5beb6a8cc756490059aa65594a156",
+        "independent_original_casualty_witness_verified": false,
+        "published": "2022-05-26",
+        "published_before_exact_event_day": false,
+        "publisher_as_recorded": "Twitter: Menastream",
+        "reference_preview": "Twitter: Menastream,2022-05-26,#Togo",
+        "sequence": 6
+      },
+      {
+        "UCDP_reference_sha256": "6e4a015221baa153d0a4c8d4972646d75f6988bf7498338b10b0ad30e5a93364",
+        "independent_original_casualty_witness_verified": false,
+        "published": "2022-05-11",
+        "published_before_exact_event_day": false,
+        "publisher_as_recorded": "Twitter",
+        "reference_preview": "Twitter,2022-05-11,#Togo",
+        "sequence": 7
+      },
+      {
+        "UCDP_reference_sha256": "6b6b8f23cd4973012c7f39f5194912aa271c025038a8e2b655503f2fd853700f",
+        "independent_original_casualty_witness_verified": false,
+        "published": "2022-05-05",
+        "published_before_exact_event_day": true,
+        "publisher_as_recorded": "Africa Research Bulletin",
+        "reference_preview": "Africa Research Bulletin,2022-05-05,Togo: JNIM claims Attack",
+        "sequence": 8
+      }
+    ],
+    "bibliographic_references_n": 8,
+    "date_prec": 1,
+    "earliest_publication_day": "2022-05-05",
+    "exact_distinct_bibliographic_refs_n": 7,
+    "latest_publication_day": "2022-05-26",
+    "official_GED_fatality_components": {
+      "best": 23,
+      "deaths_a": 8,
+      "deaths_b": 15,
+      "deaths_civilians": 0,
+      "deaths_unknown": 0,
+      "high": 23,
+      "low": 8
+    },
+    "pre_event_bibliography_is_proven_coding_error": false,
+    "repeated_exact_bibliographic_ref_entries_n": 1,
+    "side_a": "Government of Togo",
+    "side_b": "JNIM",
+    "source_publisher_independence_verified": false,
+    "where_prec": 2,
+    "year": 2022
+  },
+  "preselected_118_event_lag_study_SHA256": "34ff1fc61a4b19ee0aa80e8a0427fdef3662e3b310ff44528cb653a9764dddbe",
+  "public_review_sha256": "88dba6467dd60b617301803de191fbed730380c3cef04a71c3af49463e39e0f1",
+  "research_date": "2026-11-19",
+  "schema": "idealab.psico.ged251_togo2022_event440185_source_audit.v1",
+  "status": "FIRST_PARTY_TOLL_GENEALOGY_NOT_INDEPENDENT_VICTIM_VALIDATION"
+}

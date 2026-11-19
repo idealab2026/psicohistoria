@@ -1,0 +1,129 @@
+{
+  "schema": "idealab.psico.togo2022_440185_public_source_genealogy.v1",
+  "research_date": "2026-11-19",
+  "GED_event_id": 440185,
+  "scope": "Public contemporaneous and institutional source statements about night 10–11 May 2022 Kpékpakandi military post assault; these notes do not archive external HTML/PDF bytes or independently verify a list of dead militants.",
+  "initial_Togo_state_military_dead": 8,
+  "initial_Togo_state_military_wounded": 13,
+  "later_Togo_minister_alleged_assailant_dead_approx": 15,
+  "claims_15_assailant_fatalities_independently_verified": false,
+  "independent_all_23_fatalities_verified": false,
+  "source_before_11May_explains_event_day_error": false,
+  "GED_labels_corrected": false,
+  "issued_GEO_probabilities_modified": false,
+  "source_evidence": [
+    {
+      "id": "gov_may11",
+      "publisher": "Togo Ministry of Security and Civil Protection",
+      "published": "2022-05-11",
+      "url": "https://securite.gouv.tg/wp-content/uploads/2022/05/COMMUNIQUE-DU-GOUVERNEMENT.pdf",
+      "kind": "involved-government-communique",
+      "original_reporting_root": "TOGO_STATE_MAY11_COMMUNIQUE",
+      "supports": "Attack at about 3 a.m. 11 May at Kpekpakandi outpost; eight security personnel killed, 13 wounded; attackers described as as-yet unidentified.",
+      "independence_limit": "Initial government tally for soldiers, not independent per-person medical/forensic certification; does not mention 15 assailant deaths."
+    },
+    {
+      "id": "au_may12",
+      "publisher": "African Union Commission",
+      "published": "2022-05-12",
+      "url": "https://au.int/en/pressreleases/20220512/auc-chairperson-statement-terrorist-attack-togo",
+      "kind": "regional-institution",
+      "original_reporting_root": "AFRICAN_UNION_RELAY_OF_MAY11",
+      "supports": "Condemns 11 May attack and reproduces eight dead, 13 injured initial report.",
+      "independence_limit": "No indication of separate investigation of deaths or captured militants."
+    },
+    {
+      "id": "state_may19",
+      "publisher": "Togo government official portal",
+      "published": "2022-05-19",
+      "url": "https://www.republiquetogolaise.tg/securite/1905-6907-attaque-terroriste-de-kpekpakandi-une-quinzaine-de-morts-parmi-les-assaillants",
+      "kind": "involved-government-minister-followup",
+      "original_reporting_root": "TOGO_STATE_MAY18_MINISTER_PRESS",
+      "supports": "Minister Damehame Yark estimates roughly fifteen attackers killed in same previous week's attack, claiming bodies removed and buried outside country.",
+      "independence_limit": "Approximate second-hand claim attributed to minister; unverified victim names, bodies and exact number."
+    },
+    {
+      "id": "africanews_may19",
+      "publisher": "Africanews / AFP",
+      "published": "2022-05-19",
+      "url": "https://www.africanews.com/2022/05/19/togo-s-government-alleges-15-assailants-killed-during-last-week-s-attack/",
+      "kind": "press-repeat-of-minister",
+      "original_reporting_root": "TOGO_STATE_MAY18_MINISTER_PRESS",
+      "supports": "Repeats minister's about-fifteen assailant statement and earlier eight soldiers, confirms they refer to same incident May 11.",
+      "independence_limit": "Media outlet and AFP syndication do not independently identify the bodies; cannot count as second casualty source."
+    },
+    {
+      "id": "un_june2022",
+      "publisher": "UN Secretary-General S/2022/521",
+      "published": "2022-06-25",
+      "url": "https://unowas.unmissions.org/sites/default/files/s_2022_521-en.pdf",
+      "kind": "institutional-retrospective",
+      "original_reporting_root": "UNITED_NATIONS_REPORT_DERIVED_MAY11",
+      "supports": "UNOWAS report cites May 11 attack in Kpendjal killing eight soldiers and injuring 13.",
+      "independence_limit": "No independent check of later claimed fifteen dead attackers in quoted report."
+    },
+    {
+      "id": "togobreakingnews_may28",
+      "publisher": "Togo Breaking News",
+      "published": "2022-05-28",
+      "url": "https://togobreakingnews.info/togo-jnim-claim-kpekpakandi-terrorist-attack/",
+      "kind": "press-on-post-event-JNIM-claim",
+      "original_reporting_root": "JNIM_POST_EVENT_CLAIM_REPORTS",
+      "supports": "Reports JNIM claimed responsibility for the May11 attack, with reference to Menastream, dated 28 May after the assault.",
+      "independence_limit": "Reports the militant group's claim, not a fatality roster, and cannot certify 15 attacker casualties."
+    },
+    {
+      "id": "ahram_afp_june4",
+      "publisher": "AFP / Ahram Online",
+      "published": "2022-06-04",
+      "url": "https://english.ahram.org.eg/NewsContent/2/10/467359/World/Africa/AlQaeda-affiliate-claims-May-attack-in-Togo.aspx",
+      "kind": "press-on-post-event-JNIM-claim",
+      "original_reporting_root": "JNIM_POST_EVENT_CLAIM_REPORTS",
+      "supports": "AFP reports JNIM claimed the previous month's May11 attack, via SITE and a late Friday statement; claim reporting occurred AFTER 11 May.",
+      "independence_limit": "Claim attribution derived via SITE/JNIM; not independent evidence of attacker death count."
+    }
+  ],
+  "date_and_toll_conclusion": "The 11 May 2022 event is supported by contemporary government, AU and later UN descriptions; the UCDP best23 plausibly derives arithmetically from eight soldier deaths plus about fifteen attackers announced by the same government more than a week later. Neither AU nor AFP news repeating those claims is an independent witness list. May5 UCDP bibliographic date is earlier than the event but cannot erase the later, event-specific reporting or establish a coding mistake without checking the exact source article.",
+  "fatality_source_independence_conclusion": "Eight military fatalities in the first-party government bulletin; approximate fifteen rebel fatalities solely attributed to minister's May18/19 account. None of 15 attackers independently confirmed by nominal roster in sources reviewed.",
+  "event_day_conclusion": "11 May attack date is independently repeated by institutions; 5 May citation publication cannot be assumed to describe deaths of a future event. Event-day coding error NOT demonstrated.",
+  "policy": "No modification of UCDP 25.1, no retrospective labels, no prospective GEO issues modified, no true Brier improvement asserted.",
+  "official_UCDP_GED25_1_fatality_diagnostic": {
+    "GED_event_id": 440185,
+    "official_low": 8,
+    "official_best": 23,
+    "official_high": 23,
+    "deaths_a": 8,
+    "deaths_b": 15,
+    "deaths_civilians": 0,
+    "deaths_unknown": 0,
+    "if_only_this_event_replaced_best_with_low_country_year_best_otherwise_unchanged": 19,
+    "one_event_low_sensitivity_can_flip_country_year_label": true,
+    "actual_UCDP_corrected": false
+  },
+  "original_bibliography_reconciliation": {
+    "GED_original_references_n": 8,
+    "distinct_exact_UCDP_reference_strings_n": 7,
+    "one_repeated_reference": "Twitter,2022-05-11,#Togo",
+    "earliest_before_event_reference": {
+      "published": "2022-05-05",
+      "publisher": "Africa Research Bulletin",
+      "title": "Togo: JNIM claims Attack"
+    },
+    "first_pre_event_reference_explained_by_full_article": false,
+    "can_use_pre_event_reference_to_invalidate_attack": false,
+    "date_issue_potentially_from_publication_metadata_not_verified": false,
+    "other_references_include": "Reuters/AFP on 11 May for eight soldiers, AFP on 19 May for about fifteen attackers; later references also contextual",
+    "claim_of_responsibility_post_event_published_evidence": [
+      {
+        "source_id": "togobreakingnews_may28",
+        "date": "2022-05-28"
+      },
+      {
+        "source_id": "ahram_afp_june4",
+        "date": "2022-06-04"
+      }
+    ],
+    "what_May5_means_remains_unresolved": "The original Africa Research Bulletin May5 dated reference titled 'Togo: JNIM claims Attack' conflicts on its face with contemporaneous May28/June4 news about the May11 claim if interpreted as the same incident. This may reflect another attack, nominal issue cover date, or source_date error. No actual Africa Research Bulletin article was recovered; do not resolve categorically."
+  },
+  "public_research_conclusion": "Event date and eight soldier deaths are supported by signed contemporary government and institutional statements. GED's central23 includes 15 additional attacker fatalities attributed to later official statement; GED low8 independently records uncertainty between initial and later government claims. If only this event were at low rather than best, annual type1 best otherwise held fixed would be 19 instead of 34, changing >=25 threshold; this is a sensitivity diagnostic, not corrected target. Earliest cited item dated 5 May and listed as JNIM claims attack cannot support future May11 casualty narrative as a same-day report unless the source publication date/issue chronology is itself misrepresented; full text was not independently retrieved; neither date error nor source miscoding is proven."
+}
