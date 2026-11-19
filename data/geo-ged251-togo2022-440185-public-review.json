@@ -66,5 +66,33 @@
   "date_and_toll_conclusion": "The 11 May 2022 event is supported by contemporary government, AU and later UN descriptions; the UCDP best23 plausibly derives arithmetically from eight soldier deaths plus about fifteen attackers announced by the same government more than a week later. Neither AU nor AFP news repeating those claims is an independent witness list. May5 UCDP bibliographic date is earlier than the event but cannot erase the later, event-specific reporting or establish a coding mistake without checking the exact source article.",
   "fatality_source_independence_conclusion": "Eight military fatalities in the first-party government bulletin; approximate fifteen rebel fatalities solely attributed to minister's May18/19 account. None of 15 attackers independently confirmed by nominal roster in sources reviewed.",
   "event_day_conclusion": "11 May attack date is independently repeated by institutions; 5 May citation publication cannot be assumed to describe deaths of a future event. Event-day coding error NOT demonstrated.",
-  "policy": "No modification of UCDP 25.1, no retrospective labels, no prospective GEO issues modified, no true Brier improvement asserted."
+  "policy": "No modification of UCDP 25.1, no retrospective labels, no prospective GEO issues modified, no true Brier improvement asserted.",
+  "official_UCDP_GED25_1_fatality_diagnostic": {
+    "GED_event_id": 440185,
+    "official_low": 8,
+    "official_best": 23,
+    "official_high": 23,
+    "deaths_a": 8,
+    "deaths_b": 15,
+    "deaths_civilians": 0,
+    "deaths_unknown": 0,
+    "if_only_this_event_replaced_best_with_low_country_year_best_otherwise_unchanged": 19,
+    "one_event_low_sensitivity_can_flip_country_year_label": true,
+    "actual_UCDP_corrected": false
+  },
+  "original_bibliography_reconciliation": {
+    "GED_original_references_n": 8,
+    "distinct_exact_UCDP_reference_strings_n": 7,
+    "one_repeated_reference": "Twitter,2022-05-11,#Togo",
+    "earliest_before_event_reference": {
+      "published": "2022-05-05",
+      "publisher": "Africa Research Bulletin",
+      "title": "Togo: JNIM claims Attack"
+    },
+    "first_pre_event_reference_explained_by_full_article": false,
+    "can_use_pre_event_reference_to_invalidate_attack": false,
+    "date_issue_potentially_from_publication_metadata_not_verified": false,
+    "other_references_include": "Reuters/AFP on 11 May for eight soldiers, AFP on 19 May for about fifteen attackers; later references also contextual"
+  },
+  "public_research_conclusion": "Event date and eight soldier deaths are supported by signed contemporary government and institutional statements. GED's central23 includes 15 additional attacker fatalities attributed to later official statement; GED low8 independently records uncertainty between initial and later government claims. If only this event were at low rather than best, annual type1 best otherwise held fixed would be 19 instead of 34, changing >=25 threshold; this is a sensitivity diagnostic, not corrected target. Earliest cited item dated 5 May and listed as JNIM claims attack cannot support future May11 casualty narrative as a same-day report unless the source publication date/issue chronology is itself misrepresented; full text was not independently retrieved; neither date error nor source miscoding is proven."
 }
