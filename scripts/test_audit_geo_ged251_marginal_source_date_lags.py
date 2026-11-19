@@ -71,10 +71,12 @@ class SourceDateSemantics(unittest.TestCase):
     def test_prior_source_text_discordances_require_real_reported_dates(self):
         observed={
             (500,2022):[
-                {"GED_event_id":460859,"date_start":"2022-12-21",
+                {"GED_event_id":460859,"GWNO":500,"year":2022,
+                 "date_start":"2022-12-21",
                  "date_end":"2022-12-21","date_prec":1,"best":2,
                  "earliest_publication_date":"2022-12-21"},
-                {"GED_event_id":462156,"date_start":"2022-12-19",
+                {"GED_event_id":462156,"GWNO":500,"year":2022,
+                 "date_start":"2022-12-19",
                  "date_end":"2022-12-19","date_prec":1,"best":2,
                  "earliest_publication_date":"2022-12-19"},
             ]}
