@@ -4,6 +4,28 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## Q-CANDIDATE · ¿Sobreviven las reactivaciones a las revisiones? (19-11-2026)
+
+Se ha comprobado **sin reentrenar modelos** el umbral de reactivación
+para los días 1–30 de mayo en **nueve ediciones originales UCDP Candidate**
+(Q1/Q2/Q3 de 2024, 2025, 2026), preservadas mediante SHA-256 y
+con resultados exactos reproducidos en CI. El análisis fue motivado
+por un resultado favorable del umbral ≥5 que ya se había examinado:
+**es sensibilidad post selección, no validación independiente**.
+
+**Hallazgo:** para ≥5 muertes estatales registradas, los positivos
+en riesgo de 2026 son **2 en Q2 y los mismos 2 en Q3**
+(Kenia y Libia); el top10 de la referencia combinada retiene
+2/10 con ambas versiones, sin alterar el modelo. Pero
+**en 2025 la misma etiqueta pierde 1 positivo (5→4)**
+y la etiqueta ≥1 también pierde un caso en 2024 y 2025.
+No se ha comprobado estabilidad frente a GED anual, fechas
+originales de publicación ni vigencia prospectiva.
+
+[Diagnóstico, límites y sensibilidad](docs/candidate-may-threshold-vintage-stability.md)
+· [Informe congelado con 9 archivos SHA](data/candidate-may-threshold-vintage-stability.json)
+· [Código de cotejo](scripts/audit_candidate_may_threshold_stability.py).
+
 ## Q-CANDIDATE · Grid de reactivación estatal de 1/5/10/25 muertes (19-11-2026)
 
 **Nueva investigación exploratoria reproducida en diez ediciones originales UCDP Candidate**

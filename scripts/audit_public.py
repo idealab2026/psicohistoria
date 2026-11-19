@@ -51,6 +51,15 @@ REPOSITORY |= {
     ".github/workflows/candidate-reactivation-threshold-grid.yml",
     "data/candidate-reactivation-threshold-grid.json",
 }
+# Post-selection sensitivity of previously issued institutional Candidate experiment results only.
+RELEASE |= {"data/candidate-may-threshold-vintage-stability.json"}
+REPOSITORY |= {
+    "scripts/audit_candidate_may_threshold_stability.py",
+    "scripts/test_audit_candidate_may_threshold_stability.py",
+    "docs/candidate-may-threshold-vintage-stability.md",
+    ".github/workflows/candidate-may-threshold-vintage-stability.yml",
+    "data/candidate-may-threshold-vintage-stability.json",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",

@@ -1,0 +1,437 @@
+{
+  "country_universe_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "limitations": "This is a post-hoc sensitivity triggered by favorable threshold-5 results previously inspected. May candidate labels in Q2 and Q3 are not final events or ground truth. Source vintage first-public dates have not been certified. Rankings are not new country forecasts.",
+  "may_label_revision_by_year": [
+    {
+      "countries_with_best_revision_may_196": 16,
+      "thresholds": {
+        "1": {
+          "gained_ids": [],
+          "gained_q3": 0,
+          "lost_ids": [
+            510
+          ],
+          "lost_q3": 1,
+          "q2_positive_country_ids": [
+            2,
+            510
+          ],
+          "q2_positives": 2,
+          "q3_positive_country_ids": [
+            2
+          ],
+          "q3_positives": 1,
+          "risk_set": 149
+        },
+        "5": {
+          "gained_ids": [],
+          "gained_q3": 0,
+          "lost_ids": [],
+          "lost_q3": 0,
+          "q2_positive_country_ids": [
+            140,
+            771
+          ],
+          "q2_positives": 2,
+          "q3_positive_country_ids": [
+            140,
+            771
+          ],
+          "q3_positives": 2,
+          "risk_set": 161
+        },
+        "10": {
+          "gained_ids": [],
+          "gained_q3": 0,
+          "lost_ids": [],
+          "lost_q3": 0,
+          "q2_positive_country_ids": [],
+          "q2_positives": 0,
+          "q3_positive_country_ids": [],
+          "q3_positives": 0,
+          "risk_set": 163
+        },
+        "25": {
+          "gained_ids": [],
+          "gained_q3": 0,
+          "lost_ids": [],
+          "lost_q3": 0,
+          "q2_positive_country_ids": [],
+          "q2_positives": 0,
+          "q3_positive_country_ids": [],
+          "q3_positives": 0,
+          "risk_set": 170
+        }
+      },
+      "total_abs_best_revision_may_196": 418,
+      "year": 2024
+    },
+    {
+      "countries_with_best_revision_may_196": 11,
+      "thresholds": {
+        "1": {
+          "gained_ids": [],
+          "gained_q3": 0,
+          "lost_ids": [
+            812
+          ],
+          "lost_q3": 1,
+          "q2_positive_country_ids": [
+            130,
+            615,
+            620,
+            812
+          ],
+          "q2_positives": 4,
+          "q3_positive_country_ids": [
+            130,
+            615,
+            620
+          ],
+          "q3_positives": 3,
+          "risk_set": 147
+        },
+        "5": {
+          "gained_ids": [],
+          "gained_q3": 0,
+          "lost_ids": [
+            812
+          ],
+          "lost_q3": 1,
+          "q2_positive_country_ids": [
+            130,
+            140,
+            620,
+            812,
+            850
+          ],
+          "q2_positives": 5,
+          "q3_positive_country_ids": [
+            130,
+            140,
+            620,
+            850
+          ],
+          "q3_positives": 4,
+          "risk_set": 160
+        },
+        "10": {
+          "gained_ids": [],
+          "gained_q3": 0,
+          "lost_ids": [],
+          "lost_q3": 0,
+          "q2_positive_country_ids": [
+            130,
+            850
+          ],
+          "q2_positives": 2,
+          "q3_positive_country_ids": [
+            130,
+            850
+          ],
+          "q3_positives": 2,
+          "risk_set": 164
+        },
+        "25": {
+          "gained_ids": [],
+          "gained_q3": 0,
+          "lost_ids": [],
+          "lost_q3": 0,
+          "q2_positive_country_ids": [
+            850
+          ],
+          "q2_positives": 1,
+          "q3_positive_country_ids": [
+            850
+          ],
+          "q3_positives": 1,
+          "risk_set": 169
+        }
+      },
+      "total_abs_best_revision_may_196": 287,
+      "year": 2025
+    },
+    {
+      "countries_with_best_revision_may_196": 8,
+      "thresholds": {
+        "1": {
+          "gained_ids": [],
+          "gained_q3": 0,
+          "lost_ids": [],
+          "lost_q3": 0,
+          "q2_positive_country_ids": [],
+          "q2_positives": 0,
+          "q3_positive_country_ids": [],
+          "q3_positives": 0,
+          "risk_set": 145
+        },
+        "5": {
+          "gained_ids": [],
+          "gained_q3": 0,
+          "lost_ids": [],
+          "lost_q3": 0,
+          "q2_positive_country_ids": [
+            501,
+            620
+          ],
+          "q2_positives": 2,
+          "q3_positive_country_ids": [
+            501,
+            620
+          ],
+          "q3_positives": 2,
+          "risk_set": 155
+        },
+        "10": {
+          "gained_ids": [],
+          "gained_q3": 0,
+          "lost_ids": [],
+          "lost_q3": 0,
+          "q2_positive_country_ids": [
+            501
+          ],
+          "q2_positives": 1,
+          "q3_positive_country_ids": [
+            501
+          ],
+          "q3_positives": 1,
+          "risk_set": 159
+        },
+        "25": {
+          "gained_ids": [],
+          "gained_q3": 0,
+          "lost_ids": [],
+          "lost_q3": 0,
+          "q2_positive_country_ids": [],
+          "q2_positives": 0,
+          "q3_positive_country_ids": [],
+          "q3_positives": 0,
+          "risk_set": 166
+        }
+      },
+      "total_abs_best_revision_may_196": 120,
+      "year": 2026
+    }
+  ],
+  "new_prospective_predictions": 0,
+  "nine_original_sha_pinned_sources": [
+    {
+      "month": 3,
+      "source_rows": 5534,
+      "source_sha256": "ae794cc614a56a7445cdb72be95df7681431245c6ffda4ed6f3d56d36db29b6f",
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v24_01_24_03.csv",
+      "year": 2024
+    },
+    {
+      "month": 6,
+      "source_rows": 12939,
+      "source_sha256": "dd1afaad1d0c06772daa762b623fcef036044528e654f29cb9b4143e1130d478",
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v24_01_24_06.csv",
+      "year": 2024
+    },
+    {
+      "month": 9,
+      "source_rows": 20866,
+      "source_sha256": "3f9f7acea9690cd8c5150981ae85b5a9365b2ca233f2b351b680de95cd4af390",
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v24_01_24_09.csv",
+      "year": 2024
+    },
+    {
+      "month": 3,
+      "source_rows": 6641,
+      "source_sha256": "42465f8c081bd70e67221e216d2c0b3fae59586f1ca45561f48052a26a2910e8",
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v25_01_25_03.csv",
+      "year": 2025
+    },
+    {
+      "month": 6,
+      "source_rows": 14077,
+      "source_sha256": "8185c986f040ec2169728a7debf5fb1833426b534e846f51912046f78e4c6f7a",
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v25_01_25_06.csv",
+      "year": 2025
+    },
+    {
+      "month": 9,
+      "source_rows": 21958,
+      "source_sha256": "086362d535c61d1237f0824bee8afb6459bac71ca8d02026946b715264c910be",
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v25_01_25_09.csv",
+      "year": 2025
+    },
+    {
+      "month": 3,
+      "source_rows": 4849,
+      "source_sha256": "a3cae550d6b806b3872aa4a12d0d47e2634ca2fc30dae385463230c659865346",
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v26_01_26_03.csv",
+      "year": 2026
+    },
+    {
+      "month": 6,
+      "source_rows": 10051,
+      "source_sha256": "68dd3d363b8edf4808bd6bf6f5d0412c3c722ffb1db367aeb8eff48bab80589a",
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v26_01_26_06.csv",
+      "year": 2026
+    },
+    {
+      "month": 9,
+      "source_rows": 16633,
+      "source_sha256": "134da9b3df08b65266802c4b662e572f396c70c92ab62297319be657540bcede",
+      "source_url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v26_01_26_09.csv",
+      "year": 2026
+    }
+  ],
+  "original_2026_combined_model_tie_aware_top10": {
+    "1": {
+      "positive_q2": 0,
+      "positive_q3": 0,
+      "top10_q2": {
+        "cutoff_tie": {
+          "positive_countries_in_tie": 0,
+          "risk_probability": 0.042499999999999996,
+          "selected_from_tie": 10,
+          "tied_countries": 13
+        },
+        "deterministic_country_id_tiebreak_hits_not_skill": 0,
+        "expected_hits_random_tie_break": 0,
+        "expected_precision": 0,
+        "expected_recall": null,
+        "k": 10,
+        "max_hits_across_valid_tie_breaks": 0,
+        "min_hits_across_valid_tie_breaks": 0
+      },
+      "top10_q3": {
+        "cutoff_tie": {
+          "positive_countries_in_tie": 0,
+          "risk_probability": 0.042499999999999996,
+          "selected_from_tie": 10,
+          "tied_countries": 13
+        },
+        "deterministic_country_id_tiebreak_hits_not_skill": 0,
+        "expected_hits_random_tie_break": 0,
+        "expected_precision": 0,
+        "expected_recall": null,
+        "k": 10,
+        "max_hits_across_valid_tie_breaks": 0,
+        "min_hits_across_valid_tie_breaks": 0
+      }
+    },
+    "5": {
+      "positive_q2": 2,
+      "positive_q3": 2,
+      "top10_q2": {
+        "cutoff_tie": {
+          "positive_countries_in_tie": 0,
+          "risk_probability": 0.031200346670518565,
+          "selected_from_tie": 5,
+          "tied_countries": 5
+        },
+        "deterministic_country_id_tiebreak_hits_not_skill": 2,
+        "expected_hits_random_tie_break": 2,
+        "expected_precision": 0.2,
+        "expected_recall": 1,
+        "k": 10,
+        "max_hits_across_valid_tie_breaks": 2,
+        "min_hits_across_valid_tie_breaks": 2
+      },
+      "top10_q3": {
+        "cutoff_tie": {
+          "positive_countries_in_tie": 0,
+          "risk_probability": 0.031200346670518565,
+          "selected_from_tie": 5,
+          "tied_countries": 5
+        },
+        "deterministic_country_id_tiebreak_hits_not_skill": 2,
+        "expected_hits_random_tie_break": 2,
+        "expected_precision": 0.2,
+        "expected_recall": 1,
+        "k": 10,
+        "max_hits_across_valid_tie_breaks": 2,
+        "min_hits_across_valid_tie_breaks": 2
+      }
+    },
+    "10": {
+      "positive_q2": 1,
+      "positive_q3": 1,
+      "top10_q2": {
+        "cutoff_tie": {
+          "positive_countries_in_tie": 0,
+          "risk_probability": 0.028868076747693712,
+          "selected_from_tie": 1,
+          "tied_countries": 5
+        },
+        "deterministic_country_id_tiebreak_hits_not_skill": 1,
+        "expected_hits_random_tie_break": 1,
+        "expected_precision": 0.1,
+        "expected_recall": 1,
+        "k": 10,
+        "max_hits_across_valid_tie_breaks": 1,
+        "min_hits_across_valid_tie_breaks": 1
+      },
+      "top10_q3": {
+        "cutoff_tie": {
+          "positive_countries_in_tie": 0,
+          "risk_probability": 0.028868076747693712,
+          "selected_from_tie": 1,
+          "tied_countries": 5
+        },
+        "deterministic_country_id_tiebreak_hits_not_skill": 1,
+        "expected_hits_random_tie_break": 1,
+        "expected_precision": 0.1,
+        "expected_recall": 1,
+        "k": 10,
+        "max_hits_across_valid_tie_breaks": 1,
+        "min_hits_across_valid_tie_breaks": 1
+      }
+    },
+    "25": {
+      "positive_q2": 0,
+      "positive_q3": 0,
+      "top10_q2": {
+        "cutoff_tie": {
+          "positive_countries_in_tie": 0,
+          "risk_probability": 0.0042941492216854536,
+          "selected_from_tie": 2,
+          "tied_countries": 4
+        },
+        "deterministic_country_id_tiebreak_hits_not_skill": 0,
+        "expected_hits_random_tie_break": 0,
+        "expected_precision": 0,
+        "expected_recall": null,
+        "k": 10,
+        "max_hits_across_valid_tie_breaks": 0,
+        "min_hits_across_valid_tie_breaks": 0
+      },
+      "top10_q3": {
+        "cutoff_tie": {
+          "positive_countries_in_tie": 0,
+          "risk_probability": 0.0042941492216854536,
+          "selected_from_tie": 2,
+          "tied_countries": 4
+        },
+        "deterministic_country_id_tiebreak_hits_not_skill": 0,
+        "expected_hits_random_tie_break": 0,
+        "expected_precision": 0,
+        "expected_recall": null,
+        "k": 10,
+        "max_hits_across_valid_tie_breaks": 0,
+        "min_hits_across_valid_tie_breaks": 0
+      }
+    }
+  },
+  "original_release_dates_independently_verified": false,
+  "protocol_date": "2026-11-19",
+  "retraining_performed": false,
+  "schema": "idealab.psico.candidate.may_threshold_vintage_stability.v1",
+  "source_grid_sha256": "9fa1275511dd151e65778cdb3bf86b92f18b64f70a2caae690f700e77b0560f8",
+  "status": "POST_SELECTION_SOURCE_REVISION_SENSITIVITY_NOT_PROSPECTIVE",
+  "thresholds": [
+    1,
+    5,
+    10,
+    25
+  ],
+  "years": [
+    2024,
+    2025,
+    2026
+  ]
+}
