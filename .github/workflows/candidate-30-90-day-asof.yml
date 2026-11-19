@@ -5,6 +5,7 @@ on:
       - 'scripts/check_ucdp_candidate_asof.py'
       - 'scripts/test_check_ucdp_candidate_asof.py'
       - 'docs/candidate-30-90-day-asof-protocol.md'
+      - 'data/candidate-2026q3-source-audit.json'
       - 'scripts/audit_public.py'
       - '.github/workflows/candidate-30-90-day-asof.yml'
   pull_request:
@@ -33,7 +34,7 @@ jobs:
       - name: Inspect original UCDP 2026 Candidate quarterly schema (no outcome scoring)
         run: |
           python3 -B - <<'PY'
-          import csv, hashlib, io, urllib.request
+          import csv, hashlib, io, json, urllib.request
           from datetime import date
           import sys
           sys.path.insert(0, "scripts")
@@ -81,6 +82,33 @@ jobs:
           print("Countries with retained events =", distinct_countries)
           if counts["total"] != 16633 or counts["post_cutoff_quarantined"] != 24:
               raise SystemExit("Previously inspected original Candidate census changed")
+          with open("data/candidate-2026q3-source-audit.json", encoding="utf8") as stream:
+              frozen = json.load(stream)
+          derived = {
+              "schema": "idealab.psico.candidate.2026q3.source_audit.v1",
+              "status": "ORIGINAL_BYTES_SCHEMA_AUDITED_NO_FORECAST",
+              "source_url": url,
+              "source_version": "26.01.26.09",
+              "source_sha256": actual_sha,
+              "source_bytes": len(payload),
+              "coverage_start": "2026-01-01",
+              "coverage_end": "2026-09-30",
+              "event_counts": counts,
+              "distinct_countries_with_retained_candidate_events": distinct_countries,
+              "latest_available_catalog_month_at_review": "2026-09",
+              "reviewed_on": "2026-11-19",
+              "days_since_coverage_end_at_review": (date(2026,11,19) - date(2026,9,30)).days,
+              "release_date_independently_verified": False,
+              "issued_probabilities": 0,
+              "certified_future_outcomes": 0,
+              "interpretative_warning": (
+                  "Candidate events are provisional. Missing country events do not prove zero real violence; "
+                  "cross-boundary event fatalities are quarantined."
+              ),
+          }
+          if derived != frozen:
+              raise SystemExit("Frozen Candidate report diverges from original-source audit")
+          print("Frozen aggregate report exactly matches real official bytes")
           if n == 0:
               raise SystemExit("REAL SOURCE EMPTY")
           print("AUDIT STATUS: official bytes and schema observed; release date not independently certified; no issued probabilities")
