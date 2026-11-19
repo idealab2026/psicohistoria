@@ -32,7 +32,7 @@ jobs:
           python-version: '3.12'
       - name: Adversarial temporal-spatial precision tests
         run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_ged251_stratified_linkage.py' -v
-      - name: Replay original official UCDP GED25.1 SHA and emit preregistered results
-        run: python3 -B scripts/audit_geo_ged251_stratified_linkage.py --emit-report
+      - name: Replay frozen sample against official UCDP GED25.1 SHA
+        run: python3 -B scripts/audit_geo_ged251_stratified_linkage.py --check-report
       - name: Institutional privacy publication boundary
         run: python3 -B scripts/audit_public.py
