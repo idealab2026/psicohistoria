@@ -42,6 +42,15 @@ REPOSITORY |= {
     ".github/workflows/candidate-onset-label-stability.yml",
     "data/candidate-onset-label-revision-ties.json",
 }
+# Historical-only Candidate threshold grid and explicit original-source aggregates.
+RELEASE |= {"data/candidate-reactivation-threshold-grid.json"}
+REPOSITORY |= {
+    "scripts/experiment_candidate_reactivation_grid.py",
+    "scripts/test_experiment_candidate_reactivation_grid.py",
+    "docs/candidate-reactivation-threshold-grid-protocol.md",
+    ".github/workflows/candidate-reactivation-threshold-grid.yml",
+    "data/candidate-reactivation-threshold-grid.json",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",

@@ -4,6 +4,31 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## Q-CANDIDATE · Grid de reactivación estatal de 1/5/10/25 muertes (19-11-2026)
+
+**Nueva investigación exploratoria reproducida en diez ediciones originales UCDP Candidate**
+de 2021, 2022, 2024, 2025 y 2026; 2023 se excluye de esta comparación por no tener
+un acumulado Q1 enero–marzo comparable en el catálogo. El entrenamiento usa los
+primeros cuatro años y se evalúa retrospectivamente en 2026 sin reajustar,
+con horizontes de 30/90 días, umbrales predefinidos 1/5/10/25
+y cuatro modelos sencillos (climatología, estado previo, otras violencias
+y combinación). Las fuentes siguen sin tener **fecha original de publicación
+as-of certificada**, y los positivos son registros Candidate provisionales,
+no el comienzo de guerras ni daños finales.
+
+**Hallazgos:** los positivos en riesgo de superar un nuevo umbral de 25
+fallecidos son demasiado escasos (2026: 0/166 a 30d, 2/166 a 90d).
+El umbral de cinco muertes genera 2/155 a 30d y 3/155 a 90d;
+su modelo combinado logra Brier 0,010639 y 0,015598, respectivamente,
+frente a 0,012754 y 0,019422 de climatología. El top10
+histórico a 30d incluye los dos positivos, **pero representa
+un resultado no ciego y de un solo año, no una habilidad prospectiva**.
+No optimizar ni promocionar el umbral favorable después de observarlo.
+
+[Estudio, definiciones y límites](docs/candidate-reactivation-threshold-grid-protocol.md)
+· [Informe completo con 196 observaciones 2026 y diez SHA](data/candidate-reactivation-threshold-grid.json)
+· [Script reproducible](scripts/experiment_candidate_reactivation_grid.py).
+
 ## Q-CANDIDATE · Alertas de escalada: sensibilidad de versiones y empates (19-11-2026)
 
 **Nuevo estudio reproducible sobre 9 vintages Candidate oficiales, sin emisión prospectiva:** en el conjunto inicial de países con menos de 25 fallecidos estatales registrados de enero a marzo hubo solo **1 caso positivo de 505 países-año** a 30 días (mayo, 2024–2026), incluso usando dos ediciones posteriores de Candidate. A 90 días en 2026 hay solo **2 positivos de 166 países**, Kenia e Indonesia, ambos incluidos en un grupo de **21 países con la misma probabilidad** para el modelo de volumen. En este grupo el supuesto acierto `top10` depende de un desempate arbitrario y admite **0 a 2 aciertos**; no identifica países individuales entre los 21. Una vigilancia sobre todo ese grupo produciría **19 falsas alertas/21** en esta muestra, para este endpoint estricto.
