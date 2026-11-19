@@ -4,8 +4,8 @@
     "GED_best_correction_justified": false,
     "exact_11May_event_day_contemporaneously_supported": true,
     "later_additional_assailant_deaths_documentarily_independent": false,
-    "original_publisher_roots_n": 4,
-    "reviewed_public_publications_n": 5,
+    "original_publisher_roots_n": 5,
+    "reviewed_public_publications_n": 7,
     "togo_initial_8_plus_later_15_equals_GED_best": true
   },
   "fatality_corrections_applied": 0,
@@ -123,7 +123,7 @@
     "year": 2022
   },
   "preselected_118_event_lag_study_SHA256": "34ff1fc61a4b19ee0aa80e8a0427fdef3662e3b310ff44528cb653a9764dddbe",
-  "public_review_sha256": "f9c5376744ec1a384bf47d30fac9f4b9857a60e6b217109df9ac40fbc03cfb9c",
+  "public_review_sha256": "88dba6467dd60b617301803de191fbed730380c3cef04a71c3af49463e39e0f1",
   "research_date": "2026-11-19",
   "schema": "idealab.psico.ged251_togo2022_event440185_source_audit.v1",
   "status": "FIRST_PARTY_TOLL_GENEALOGY_NOT_INDEPENDENT_VICTIM_VALIDATION"
