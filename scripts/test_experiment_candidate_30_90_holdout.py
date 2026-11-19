@@ -45,7 +45,7 @@ class ShortHorizonTests(unittest.TestCase):
         ]
         m, events = research.extract_state_based(csv_bytes(rows), 2026, "outcome", set(range(1, 197)))
         self.assertEqual(m["retained_statebased_high_precision_within_outer_window"], 5)
-        self.assertEqual(m["excluded_type1_low_date_precision"], 1)
+        self.assertEqual(m["excluded_type1_low_or_unknown_date_precision"], 1)
         start = date(2026, 5, 1)
         self.assertEqual(sum(best for _, country, s, e, best in events
                              if s >= start and e <= date(2026, 5, 30)), 50)
@@ -57,7 +57,7 @@ class ShortHorizonTests(unittest.TestCase):
         bads = [
             [good, good],
             [("a", 1, 1, 1, "2026-03-02", "2026-03-01", 1)],
-            [("a", 1, 1, 0, "2026-03-01", "2026-03-01", 1)],
+            [("a", 1, 1, 7, "2026-03-01", "2026-03-01", 1)],
             [("a", 1, 1, 1, "2026-03-01", "2026-03-01", -5)],
             [("a", 1, 1, 1, "2026-03-01", "2026-03-01", 5),
              ("b", 1, 1, 1, "2026-03-01", "2026-03-01", 1)],
@@ -65,6 +65,15 @@ class ShortHorizonTests(unittest.TestCase):
         for index, rows in enumerate(bads[:-1]):
             with self.subTest(index=index), self.assertRaises(SourceError):
                 research.extract_state_based(csv_bytes(rows), 2026, "origin", {1})
+
+    def test_undocumented_date_prec_zero_is_quarantined_not_trusted(self):
+        m, records = research.extract_state_based(csv_bytes([
+            ("known", 1, 1, 1, "2026-03-01", "2026-03-01", 2),
+            ("unknown", 1, 1, 0, "2026-03-02", "2026-03-02", 10000),
+        ]), 2026, "origin", {1})
+        self.assertEqual(len(records), 1)
+        self.assertEqual(m["excluded_type1_unknown_date_precision_zero"], 1)
+        self.assertEqual(m["excluded_type1_low_or_unknown_date_precision"], 1)
 
     def test_probabilities_are_shrunk_and_fit_uses_exactly_two_years(self):
         train = [
