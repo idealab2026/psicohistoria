@@ -1,0 +1,376 @@
+{
+  "Rwandan_force_involvement_proven": false,
+  "anchor_report_path": "data/geo-burundi-2022-multiday-independent-event-evidence.json",
+  "burundi_provisional_editorial_reporting_groups_n": 3,
+  "burundi_reporting_publishers_n": 5,
+  "dependency_edges": [
+    {
+      "basis": "HITAMWONEZA directly attributes military-source information to SOS Médias Burundi",
+      "count_as_independent_confirmation": false,
+      "direction_established": true,
+      "from": "hitamwoneza_20220622",
+      "kind": "explicit_editorial_attribution",
+      "to": "sos_20220621"
+    },
+    {
+      "basis": "Manually compared NGO passages: same ten bodies, eight injured, Congolese uniforms, hill names, transfer and burial details, parallel phrasing",
+      "count_as_independent_confirmation": false,
+      "direction_established": false,
+      "from": "aprodh_june2022",
+      "kind": "near_verbatim_same_report_unresolved_direction",
+      "to": "iteka_q2_2022"
+    },
+    {
+      "basis": "Later summary gives same ten/eight, site and suspected actors but visible excerpt does not document distinct witnesses",
+      "count_as_independent_confirmation": false,
+      "direction_established": false,
+      "from": "icg_crisiswatch_june2022",
+      "kind": "potential_upstream_overlap_unverified",
+      "to": "sos_20220621"
+    },
+    {
+      "basis": "HITAMWONEZA hypothesizes connection to 18 June Rwanda bus attack; Reuters independently reports Rwanda bus from police statement, not Burundi reprisal",
+      "count_as_independent_confirmation": false,
+      "direction_established": false,
+      "from": "hitamwoneza_20220622",
+      "kind": "proposed_temporal_context_not_proven_event_identity",
+      "to": "rwanda_bus_reuters_20220620"
+    }
+  ],
+  "editorial_groups_proven_statistically_independent": false,
+  "explicit_derivative_outlets_n": 1,
+  "methodology": "Curated citation and claim ledger; exact manual editorial checks of NGO PDF passages plus contemporary HTML; dependent outlets are grouped for cautious interpretation. Structural CI checks verify frozen logical claims and previously published GEO source anchors, but do NOT attest live availability or original PDF-byte integrity. Semantically identical reporting can reflect shared origin, so no casualty verification or source-independence probability is inferred.",
+  "original_GEO2027_GEO2028_not_modified": true,
+  "original_GEO2027_SHA256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "other_NGO_pair_with_near_verbatim_case_text_n": 1,
+  "prior_GDELT_no_local_100km_footprint": true,
+  "prior_GED_best_deaths": 10,
+  "prior_GED_event_id": 442626,
+  "raw_web_pages_or_pdf_bytes_snapshotted": false,
+  "reported_temporal_discrepancies": [
+    {
+      "GED_interval": [
+        "2022-06-19",
+        "2022-06-21"
+      ],
+      "effect_on_ten_deaths_truth": "not_determined",
+      "kind": "one_day_shift_in_reported_fighting_window",
+      "source": "hitamwoneza_20220622",
+      "source_claimed_dates": [
+        "2022-06-18",
+        "2022-06-20"
+      ]
+    },
+    {
+      "claimed_information_received_date": "2022-06-20",
+      "document_archival_month": "2022-07",
+      "kind": "received_date_is_not_publication_date",
+      "source": "iteka_q2_2022",
+      "source_reported_body_discovery_date": "2022-06-19",
+      "source_was_public_by_received_date_verified": false
+    }
+  ],
+  "review_date": "2026-11-19",
+  "rwanda_bus_event_is_separate_from_burundi_ged_event": true,
+  "schema": "idealab.psico.geo_burundi_2022_documentary_source_genealogy.v1",
+  "secondary_ICG_upstream_provenance_resolved": false,
+  "semantic_claim_overlap_diagnostic_not_independence": [
+    {
+      "claim_jaccard": 0.9,
+      "left": "iteka_q2_2022",
+      "overlap_claims": [
+        "bodies_buried_imbonerakure_reported",
+        "bodies_observed_june_19_reported",
+        "burundi_mabayi_kibira",
+        "casualties_10_deaths",
+        "casualties_8_injured",
+        "congolese_army_uniforms_reported",
+        "fighters_kinyarwanda_speaking",
+        "injured_transported_bujumbura_reported",
+        "rutorero_gafumbegeti"
+      ],
+      "right": "aprodh_june2022",
+      "shared_claim_id_n": 9,
+      "this_is_not_a_textual_source_independence_probability": true
+    },
+    {
+      "claim_jaccard": 0.38461538461538464,
+      "left": "sos_20220621",
+      "overlap_claims": [
+        "burundi_mabayi_kibira",
+        "casualties_10_deaths",
+        "casualties_8_injured",
+        "fighters_kinyarwanda_speaking",
+        "rutorero_gafumbegeti"
+      ],
+      "right": "iteka_q2_2022",
+      "shared_claim_id_n": 5,
+      "this_is_not_a_textual_source_independence_probability": true
+    },
+    {
+      "claim_jaccard": 0.5555555555555556,
+      "left": "sos_20220621",
+      "overlap_claims": [
+        "FLN_identity_reported_unverified",
+        "RDF_perpetrator_speculated_not_proven",
+        "burundi_mabayi_kibira",
+        "casualties_10_deaths",
+        "casualties_8_injured"
+      ],
+      "right": "icg_crisiswatch_june2022",
+      "shared_claim_id_n": 5,
+      "this_is_not_a_textual_source_independence_probability": true
+    }
+  ],
+  "source_claim_support": {
+    "FLN_identity_reported_unverified": [
+      "hitamwoneza_20220622",
+      "icg_crisiswatch_june2022",
+      "sos_20220621"
+    ],
+    "RDF_perpetrator_speculated_not_proven": [
+      "hitamwoneza_20220622",
+      "icg_crisiswatch_june2022",
+      "sos_20220621"
+    ],
+    "bodies_buried_imbonerakure_reported": [
+      "aprodh_june2022",
+      "iteka_q2_2022"
+    ],
+    "bodies_observed_june_19_reported": [
+      "aprodh_june2022",
+      "iteka_q2_2022"
+    ],
+    "burundi_mabayi_kibira": [
+      "aprodh_june2022",
+      "hitamwoneza_20220622",
+      "icg_crisiswatch_june2022",
+      "iteka_q2_2022",
+      "sos_20220621"
+    ],
+    "casualties_10_deaths": [
+      "aprodh_june2022",
+      "hitamwoneza_20220622",
+      "icg_crisiswatch_june2022",
+      "iteka_q2_2022",
+      "sos_20220621"
+    ],
+    "casualties_8_injured": [
+      "aprodh_june2022",
+      "hitamwoneza_20220622",
+      "icg_crisiswatch_june2022",
+      "iteka_q2_2022",
+      "sos_20220621"
+    ],
+    "congolese_army_uniforms_reported": [
+      "aprodh_june2022",
+      "iteka_q2_2022"
+    ],
+    "event_dates_june_18_20_alternate": [
+      "hitamwoneza_20220622"
+    ],
+    "event_dates_june_19_21_reported": [
+      "icg_crisiswatch_june2022"
+    ],
+    "fighters_kinyarwanda_speaking": [
+      "aprodh_june2022",
+      "hitamwoneza_20220622",
+      "iteka_q2_2022",
+      "sos_20220621"
+    ],
+    "information_received_june_20_claimed": [
+      "iteka_q2_2022"
+    ],
+    "injured_transported_bujumbura_reported": [
+      "aprodh_june2022",
+      "iteka_q2_2022"
+    ],
+    "rutorero_gafumbegeti": [
+      "aprodh_june2022",
+      "hitamwoneza_20220622",
+      "iteka_q2_2022",
+      "sos_20220621"
+    ],
+    "rwanda_bus_attack_june_18_police_report": [
+      "rwanda_bus_reuters_20220620"
+    ],
+    "rwanda_bus_causal_link_proposed_not_demonstrated": [
+      "hitamwoneza_20220622"
+    ],
+    "rwanda_bus_six_injured_police_report": [
+      "rwanda_bus_reuters_20220620"
+    ],
+    "rwanda_bus_two_killed_police_report": [
+      "rwanda_bus_reuters_20220620"
+    ],
+    "suspected_FLN_perpetrator_police_attribution_only": [
+      "rwanda_bus_reuters_20220620"
+    ],
+    "three_days_of_fighting_reported": [
+      "sos_20220621"
+    ]
+  },
+  "source_snapshot_sha256_not_remote_page_byte_hash": "a6e8523183564a44b8ab7c7a7d1434e879dff74cdc8f83af00f44bdef464d3ba",
+  "source_url_and_claim_manual_review_required": true,
+  "sources": [
+    {
+      "claims": [
+        "burundi_mabayi_kibira",
+        "rutorero_gafumbegeti",
+        "casualties_10_deaths",
+        "casualties_8_injured",
+        "fighters_kinyarwanda_speaking",
+        "FLN_identity_reported_unverified",
+        "RDF_perpetrator_speculated_not_proven",
+        "three_days_of_fighting_reported"
+      ],
+      "claims_direct_local_or_military_contacts": true,
+      "date_precision": "day",
+      "document_type": "contemporaneous_journalism",
+      "event": "burundi_kibira_mabayi_2022",
+      "id": "sos_20220621",
+      "limitations": "Anonymous residents and military source: no independently identified victims or RDF attribution.",
+      "named_independently_verifiable_event_witnesses_n": 0,
+      "own_publication_before_2022_06_21_verified": false,
+      "publication_date": "2022-06-21",
+      "publisher": "SOS Médias Burundi",
+      "reference_locator": "article body, paragraphs on clashes, casualties, and military source",
+      "reporting_stream": "sos_reporting",
+      "url": "https://www.sosmediasburundi.org/2022/06/21/cibitoke-une-dizaine-de-morts-et-plusieurs-blesses-decouverts-a-la-kibira/"
+    },
+    {
+      "claims": [
+        "burundi_mabayi_kibira",
+        "rutorero_gafumbegeti",
+        "casualties_10_deaths",
+        "casualties_8_injured",
+        "bodies_observed_june_19_reported",
+        "information_received_june_20_claimed",
+        "congolese_army_uniforms_reported",
+        "injured_transported_bujumbura_reported",
+        "bodies_buried_imbonerakure_reported",
+        "fighters_kinyarwanda_speaking"
+      ],
+      "claims_direct_local_or_military_contacts": true,
+      "date_precision": "month_unverified_release_day",
+      "document_type": "ngo_quarterly_compilation",
+      "event": "burundi_kibira_mabayi_2022",
+      "id": "iteka_q2_2022",
+      "limitations": "States information reached Ligue Iteka on 20 June, but the July compilation is NOT independently authenticated as published on 20 June.",
+      "named_independently_verifiable_event_witnesses_n": 0,
+      "own_publication_before_2022_06_21_verified": false,
+      "publication_date": "2022-07",
+      "publisher": "Ligue Iteka",
+      "reference_locator": "Mabayi section, PDF extracted text near lines 411-420",
+      "reporting_stream": "ngo_text_overlap",
+      "url": "https://ligue-iteka.bi/wp-content/uploads/2022/07/PERS-TUEES-PAR-DES-GENS-NON-IDENTIFIES-TRIM-2-2022.pdf"
+    },
+    {
+      "claims": [
+        "burundi_mabayi_kibira",
+        "rutorero_gafumbegeti",
+        "casualties_10_deaths",
+        "casualties_8_injured",
+        "bodies_observed_june_19_reported",
+        "congolese_army_uniforms_reported",
+        "injured_transported_bujumbura_reported",
+        "bodies_buried_imbonerakure_reported",
+        "fighters_kinyarwanda_speaking"
+      ],
+      "claims_direct_local_or_military_contacts": false,
+      "date_precision": "month_unverified_release_day",
+      "document_type": "ngo_monthly_compilation",
+      "event": "burundi_kibira_mabayi_2022",
+      "id": "aprodh_june2022",
+      "limitations": "Near-verbatim overlap with Ligue Iteka; no independently named witnesses; copying direction not established.",
+      "named_independently_verifiable_event_witnesses_n": 0,
+      "own_publication_before_2022_06_21_verified": false,
+      "publication_date": "2022-07",
+      "publisher": "APRODH",
+      "reference_locator": "monthly June 2022 PDF page 12, item 16; visually inspected",
+      "reporting_stream": "ngo_text_overlap",
+      "url": "https://www.aprodhasbl.org/wp-content/uploads/2022/07/Rapport-Mensuel-Juin-2022.pdf"
+    },
+    {
+      "claims": [
+        "burundi_mabayi_kibira",
+        "rutorero_gafumbegeti",
+        "casualties_10_deaths",
+        "casualties_8_injured",
+        "fighters_kinyarwanda_speaking",
+        "FLN_identity_reported_unverified",
+        "RDF_perpetrator_speculated_not_proven",
+        "event_dates_june_18_20_alternate",
+        "rwanda_bus_causal_link_proposed_not_demonstrated"
+      ],
+      "claims_direct_local_or_military_contacts": false,
+      "date_precision": "day",
+      "document_type": "commentary_explicitly_citing_reporting",
+      "event": "burundi_kibira_mabayi_2022",
+      "id": "hitamwoneza_20220622",
+      "limitations": "Explicitly attributes military testimony to SOS; dates 18-20 conflict with GED 19-21; proposed chase after Rwanda bus attack unverified.",
+      "named_independently_verifiable_event_witnesses_n": 0,
+      "own_publication_before_2022_06_21_verified": false,
+      "publication_date": "2022-06-22",
+      "publisher": "HITAMWONEZA",
+      "reference_locator": "article paragraphs 14-18, direct attribution to SOS Médias",
+      "reporting_stream": "sos_reporting",
+      "url": "https://hitamwukuri.org/burundi-que-ferrait-le-pouvoir-cnddfdd-des-cadavres-et-blesses-fln-ramasses-dans-cibitoke/"
+    },
+    {
+      "claims": [
+        "burundi_mabayi_kibira",
+        "casualties_10_deaths",
+        "casualties_8_injured",
+        "event_dates_june_19_21_reported",
+        "FLN_identity_reported_unverified",
+        "RDF_perpetrator_speculated_not_proven"
+      ],
+      "claims_direct_local_or_military_contacts": false,
+      "date_precision": "month",
+      "document_type": "secondary_monthly_conflict_digest",
+      "event": "burundi_kibira_mabayi_2022",
+      "id": "icg_crisiswatch_june2022",
+      "limitations": "No separately named witness or source in the excerpt; could repeat upstream reporting rather than independently count casualties.",
+      "named_independently_verifiable_event_witnesses_n": 0,
+      "own_publication_before_2022_06_21_verified": false,
+      "publication_date": "2022-07",
+      "publisher": "International Crisis Group",
+      "reference_locator": "CrisisWatch Burundi / June 2022 paragraph",
+      "reporting_stream": "icg_digest_unresolved",
+      "url": "https://crisisgroup-staging-3.sbx.so/crisiswatch/july-alerts-and-june-trends-2022"
+    },
+    {
+      "claims": [
+        "rwanda_bus_attack_june_18_police_report",
+        "rwanda_bus_two_killed_police_report",
+        "rwanda_bus_six_injured_police_report",
+        "suspected_FLN_perpetrator_police_attribution_only"
+      ],
+      "claims_direct_local_or_military_contacts": false,
+      "date_precision": "day",
+      "document_type": "press_account_of_rwandan_police_statement",
+      "event": "rwanda_bus_nyamagabe_2022_06_18",
+      "id": "rwanda_bus_reuters_20220620",
+      "limitations": "The bus attack took place in RWANDA, not the Mabayi GED incident. The police attribution does not prove a cross-border chase or 10 deaths in Burundi.",
+      "named_independently_verifiable_event_witnesses_n": 0,
+      "own_publication_before_2022_06_21_verified": true,
+      "publication_date": "2022-06-20",
+      "publisher": "Reuters, as published by Citizen Digital",
+      "reference_locator": "Reuters report of Rwanda police statement, 18 June bus attack",
+      "reporting_stream": "separate_rwanda_bus_police_statement",
+      "url": "https://citizen.digital/article/suspected-militants-shoot-at-bus-in-southwestern-rwanda-kill-two-n300483"
+    }
+  ],
+  "status": "DOCUMENTARY_GENEALOGY_NOT_INDEPENDENT_CASUALTY_VERIFICATION",
+  "ten_burundi_deaths_confirmed_by_independent_forensic_source": false,
+  "unresolved_source_dependencies": [
+    "Whether SOS and Ligue Iteka interviewed different local witnesses or share one original informant is unverified.",
+    "Whether International Crisis Group independently corroborated the Burundi casualty count is unknown.",
+    "The direction of near-verbatim copying or information sharing between APRODH and Ligue Iteka cannot be determined from the published PDFs.",
+    "No independent roster of ten identified deceased persons, burial register, clinical record, or forensic confirmation has been located in the reviewed material.",
+    "A separately reported 18 June 2022 attack on a bus in RWANDA is documented, but its causal link to the Burundi 19-21 June deaths is NOT established."
+  ],
+  "verified_disjoint_firsthand_witness_sets_n": 0,
+  "verified_independent_named_victim_lists_n": 0
+}
