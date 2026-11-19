@@ -42,3 +42,51 @@ cohortes GEO2027/28 ni cambiar retrospectivamente el criterio.
 **Fuentes:** <https://ucdp.uu.se/downloads/olddw.html>. Privacidad:
 solo agregados institucionales y país, sin información personal,
 fuentes de prensa ni registros de víctimas individuales.
+
+## Resultado empírico: nueve originales con SHA y etiquetas revisadas
+
+La CI recuperó los nueve CSV originales, verificó cada SHA contra
+`data/candidate-onset-label-revision-ties.json`, reconstruyó los datos
+2026 del grid anterior y calculó este
+[informe agregado congelado](../data/candidate-may-threshold-vintage-stability.json).
+El resultado consta solo de comparaciones *post hoc* de etiquetas
+Candidate, nunca de observaciones independientes ni de eventos finales.
+
+| Umbral de fallecimientos de violencia estatal en mayo | 2024 Q2→Q3: positivos en riesgo | 2025 Q2→Q3 | 2026 Q2→Q3 |
+|---|---:|---:|---:|
+| ≥1 | 2→1 (1 pérdida) | 4→3 (1 pérdida) | 0→0 |
+| ≥5 | 2→2 | 5→4 (1 pérdida) | **2→2** |
+| ≥10 | 0→0 | 2→2 | 1→1 |
+| ≥25 | 0→0 | 1→1 | 0→0 |
+
+Los conjuntos de riesgo están definidos con las ediciones Q1 de cada año:
+para el umbral de cinco, **161 países en 2024, 160 en 2025
+y 155 en 2026**. En este control no cambia únicamente la
+cantidad total de positivos: las identidades se comparan por
+`country_id`, y los casos que desaparecen están registrados en el JSON.
+
+**Comprobación específica del indicio prometedor:** ambos positivos
+del objetivo ≥5 en 2026 conservan su etiqueta entre Q2 y Q3
+(Kenia y Libia). El modelo combinado del PR #148 se mantiene
+**sin reentrenar**, con 2 aciertos entre diez alertas de mayor riesgo
+en ambas ediciones. El límite de aciertos corregido por empates
+es `[2,2]` para estas diez alertas. El resultado sobrevive
+a **esta revisión Q2→Q3 concreta**, pero la etiqueta de
+Libia alcanza justamente cinco fallecimientos registrados en Q3
+y podría ser sensible a otras revisiones, incertidumbre de muertes,
+recodificación de eventos o GED anual.
+
+**Evidencia adversa dentro del mismo diseño:** en 2025 el
+umbral ≥5 pierde un positivo al pasar a Q3; los umbrales
+≥1 también pierden un positivo en 2024 y otro en 2025.
+Las tasas observadas y los recuentos de 2026 no deben
+tratarse como etiquetas irrevocables.
+
+**Decisión de investigación:** no seleccionar un «umbral ganador»
+por estos resultados. Priorizar un diagnóstico `low/best/high`,
+de `code_status` y de correspondencia Candidate→GED anual
+para los pocos positivos de ≥5, seguido de un piloto
+prospectivo *futuro* con baseline y coste de falsas alertas
+previamente definidos. Ninguna habilidad prospectiva ha
+sido certificada y los cuatro registros anuales congelados
+GEO2027/NEWCONF2027/ACD2027/GEO2028 siguen intactos.
