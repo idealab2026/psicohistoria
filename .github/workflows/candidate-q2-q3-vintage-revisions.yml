@@ -1,0 +1,38 @@
+name: UCDP Candidate quarterly Q2-Q3 archival revision audit
+on:
+  push:
+    paths:
+      - 'scripts/audit_candidate_q2_q3_vintages.py'
+      - 'scripts/test_audit_candidate_q2_q3_vintages.py'
+      - 'docs/candidate-q2-q3-vintage-revisions.md'
+      - 'data/candidate-q2-q3-vintage-revisions.json'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-q2-q3-vintage-revisions.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_candidate_q2_q3_vintages.py'
+      - 'scripts/test_audit_candidate_q2_q3_vintages.py'
+      - 'docs/candidate-q2-q3-vintage-revisions.md'
+      - 'data/candidate-q2-q3-vintage-revisions.json'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-q2-q3-vintage-revisions.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  candidate_revision_audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Synthetic adversarial UCDP revision tests (NOT observational results)
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_q2_q3_vintages.py' -v
+      - name: Replay six original-source SHA-based UCDP revisions against frozen report
+        run: python3 -B scripts/audit_candidate_q2_q3_vintages.py --check-report
+      - name: Verify repository institutional privacy
+        run: python3 -B scripts/audit_public.py
