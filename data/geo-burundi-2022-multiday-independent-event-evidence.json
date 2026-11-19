@@ -1,0 +1,171 @@
+{
+  "GDELT_FIPS_action_country": "BY",
+  "GDELT_coded_violence_CAMEO_roots": [
+    "18",
+    "19",
+    "20"
+  ],
+  "GDELT_news_article_hosts_are_independent_witnesses": false,
+  "GDELT_news_events": {
+    "all_inferred_dates_including_22": {
+      "city_precision_type4_near100km_n": 0,
+      "closest_coded_events": [
+        {
+          "ActionGeo_name": "Burundi",
+          "CAMEO_event_code": "192",
+          "CAMEO_root": "19",
+          "DATEADDED": "20220621",
+          "GDELT_event_id": 1050430960,
+          "archive_day": "2022-06-21",
+          "distance_km": 121.707,
+          "geo_type": 1,
+          "inferred_event_date": "20220621",
+          "source_host": "crisis24.garda.com",
+          "source_url_sha256": "1aa87806d2d7810b428f8eaf7648ae518a9492838a1e3a0b2c2a4f2f08db6da9"
+        }
+      ],
+      "coded_events_n": 1,
+      "country_centroid_type1_near100km_n": 0,
+      "distinct_source_hosts_near100km_n": 0,
+      "sources_near100km": [],
+      "within_100km_n": 0,
+      "within_250km_n": 1,
+      "within_25km_n": 0
+    },
+    "all_observed_GDELT_event_ids_n": 1,
+    "by_daily_archive": [
+      {
+        "all_burundi_violent_root_rows_n": 0,
+        "all_gdelt_event_rows_n": 60343,
+        "archive_day": "20220619",
+        "burundi_violent_root_rows_sql_date_in_window_n": 0,
+        "date_of_gdelt_daily_archive": "2022-06-19",
+        "source_archive_bytes": 3623060,
+        "source_archive_sha256": "42c087d1091b188761bcf50b7066feb534714cdd61bf92ae161fae08da50da9b"
+      },
+      {
+        "all_burundi_violent_root_rows_n": 1,
+        "all_gdelt_event_rows_n": 98444,
+        "archive_day": "20220620",
+        "burundi_violent_root_rows_sql_date_in_window_n": 0,
+        "date_of_gdelt_daily_archive": "2022-06-20",
+        "source_archive_bytes": 6235066,
+        "source_archive_sha256": "f4f73ca505b6eb133a2350c09e64292132618e11e4f5eebbddf434ca32cbba87"
+      },
+      {
+        "all_burundi_violent_root_rows_n": 1,
+        "all_gdelt_event_rows_n": 111155,
+        "archive_day": "20220621",
+        "burundi_violent_root_rows_sql_date_in_window_n": 1,
+        "date_of_gdelt_daily_archive": "2022-06-21",
+        "source_archive_bytes": 7244423,
+        "source_archive_sha256": "dd9aa095b48b58c8adceb559737728d68e300495b947e166fc74e8ca11a3c08b"
+      },
+      {
+        "all_burundi_violent_root_rows_n": 0,
+        "all_gdelt_event_rows_n": 122325,
+        "archive_day": "20220622",
+        "burundi_violent_root_rows_sql_date_in_window_n": 0,
+        "date_of_gdelt_daily_archive": "2022-06-22",
+        "source_archive_bytes": 7989126,
+        "source_archive_sha256": "14b82c4475e1df059326926ae408271df9a7e7557f71c8709e48dda03dc82881"
+      }
+    ],
+    "post_interval_2022_06_22_inferred_event_date_not_a_direct_match": {
+      "city_precision_type4_near100km_n": 0,
+      "closest_coded_events": [],
+      "coded_events_n": 0,
+      "country_centroid_type1_near100km_n": 0,
+      "distinct_source_hosts_near100km_n": 0,
+      "sources_near100km": [],
+      "within_100km_n": 0,
+      "within_250km_n": 0,
+      "within_25km_n": 0
+    },
+    "same_2022_06_19_to_21_event_date": {
+      "city_precision_type4_near100km_n": 0,
+      "closest_coded_events": [
+        {
+          "ActionGeo_name": "Burundi",
+          "CAMEO_event_code": "192",
+          "CAMEO_root": "19",
+          "DATEADDED": "20220621",
+          "GDELT_event_id": 1050430960,
+          "archive_day": "2022-06-21",
+          "distance_km": 121.707,
+          "geo_type": 1,
+          "inferred_event_date": "20220621",
+          "source_host": "crisis24.garda.com",
+          "source_url_sha256": "1aa87806d2d7810b428f8eaf7648ae518a9492838a1e3a0b2c2a4f2f08db6da9"
+        }
+      ],
+      "coded_events_n": 1,
+      "country_centroid_type1_near100km_n": 0,
+      "distinct_source_hosts_near100km_n": 0,
+      "sources_near100km": [],
+      "within_100km_n": 0,
+      "within_250km_n": 1,
+      "within_25km_n": 0
+    }
+  },
+  "GDELT_source": "GDELT 1.0 daily historical events (not fatalities)",
+  "GED_event_type_one_only": true,
+  "GED_official_ZIP_sha256": "e256f1fb20a579d8b2f910e5bae212f486d3002adaa2e4359ace740c737da05d",
+  "GED_official_ZIP_url": "https://ucdp.uu.se/downloads/ged/ged251-csv.zip",
+  "GED_official_release": "25.1",
+  "GED_record": {
+    "GED_event_id": 442626,
+    "GED_type_of_violence": 1,
+    "GWNO": 516,
+    "best_fatalities_estimate": 10,
+    "event_end": "2022-06-21",
+    "event_start": "2022-06-19",
+    "event_year": 2022,
+    "latitude": -2.708333,
+    "longitude": 29.243056
+  },
+  "documentary_source_independence_verified": false,
+  "event_date_interval_inclusive": [
+    "2022-06-19",
+    "2022-06-21"
+  ],
+  "event_identity_verified_with_primary_source": false,
+  "exact_date_source_selection_posthoc_extension": true,
+  "extra_reporting_lag_archive_day": "2022-06-22",
+  "limitations": "A posthoc exploratory exception for GED interval 2022-06-19..21; never merged into original point-date sample or denominator. Institutional documents may recycle SOS Médias Burundi; matching killed/injured totals is not independent forensic verification. GDELT 1.0 news event extraction may duplicate articles, use broad or centroid geocodes and have inconsistent event dates. SOURCEURL hosts are neither proof of separate news reporting nor verified event identity. No claim that recorded fatality estimate, identity of alleged Rwandan forces, or state-based threshold is independently proven.",
+  "news_media_coded_events_are_a_fatality_ground_truth": false,
+  "original_GEO2027_SHA256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "prior_frozen_primary_report_path": "data/geo-ged-gdelt-external-event-footprint-3case.json",
+  "same_source_individual_fatality_confirmation": false,
+  "schema": "idealab.psico.geo_burundi_2022_statebased_multiday_external_evidence.v1",
+  "source_documents": [
+    {
+      "event_location": "Kibira forest, Mabayi commune, Cibitoke, Burundi",
+      "id": "sosmediasburundi-2022-06-21",
+      "publication_date": "2022-06-21",
+      "publisher": "SOS Médias Burundi",
+      "reported_fatalities": 10,
+      "reported_injured": 8,
+      "reporting_type": "contemporaneous_local_reporting_with_anonymous_sources",
+      "same_underlying_reporting_possible": true,
+      "time_claim": "Combat over the three days preceding 2022-06-21",
+      "uncertainty": "Armed group identity and alleged Rwandan military involvement not independently established",
+      "url": "https://www.sosmediasburundi.org/2022/06/21/cibitoke-une-dizaine-de-morts-et-plusieurs-blesses-decouverts-a-la-kibira/"
+    },
+    {
+      "event_location": "Mabayi commune, Cibitoke, Burundi",
+      "id": "icg-crisiswatch-june-2022",
+      "publication_date": "2022-07",
+      "publisher": "International Crisis Group / CrisisWatch",
+      "reported_fatalities": 10,
+      "reported_injured": 8,
+      "reporting_type": "secondary_monthly_conflict_digest",
+      "same_underlying_reporting_possible": true,
+      "time_claim": "2022-06-19 through 2022-06-21",
+      "uncertainty": "Likely overlapping upstream reporting; no separate witness established",
+      "url": "https://crisisgroup-staging-3.sbx.so/crisiswatch/july-alerts-and-june-trends-2022"
+    }
+  ],
+  "status": "POST_HOC_EXPLORATORY_HISTORICAL_MULTI_DAY_EVIDENCE_NOT_PROSPECTIVE",
+  "two_original_GEO2027_GEO2028_issues_unchanged": true
+}
