@@ -61,6 +61,26 @@
       "original_reporting_root": "UNITED_NATIONS_REPORT_DERIVED_MAY11",
       "supports": "UNOWAS report cites May 11 attack in Kpendjal killing eight soldiers and injuring 13.",
       "independence_limit": "No independent check of later claimed fifteen dead attackers in quoted report."
+    },
+    {
+      "id": "togobreakingnews_may28",
+      "publisher": "Togo Breaking News",
+      "published": "2022-05-28",
+      "url": "https://togobreakingnews.info/togo-jnim-claim-kpekpakandi-terrorist-attack/",
+      "kind": "press-on-post-event-JNIM-claim",
+      "original_reporting_root": "JNIM_POST_EVENT_CLAIM_REPORTS",
+      "supports": "Reports JNIM claimed responsibility for the May11 attack, with reference to Menastream, dated 28 May after the assault.",
+      "independence_limit": "Reports the militant group's claim, not a fatality roster, and cannot certify 15 attacker casualties."
+    },
+    {
+      "id": "ahram_afp_june4",
+      "publisher": "AFP / Ahram Online",
+      "published": "2022-06-04",
+      "url": "https://english.ahram.org.eg/NewsContent/2/10/467359/World/Africa/AlQaeda-affiliate-claims-May-attack-in-Togo.aspx",
+      "kind": "press-on-post-event-JNIM-claim",
+      "original_reporting_root": "JNIM_POST_EVENT_CLAIM_REPORTS",
+      "supports": "AFP reports JNIM claimed the previous month's May11 attack, via SITE and a late Friday statement; claim reporting occurred AFTER 11 May.",
+      "independence_limit": "Claim attribution derived via SITE/JNIM; not independent evidence of attacker death count."
     }
   ],
   "date_and_toll_conclusion": "The 11 May 2022 event is supported by contemporary government, AU and later UN descriptions; the UCDP best23 plausibly derives arithmetically from eight soldier deaths plus about fifteen attackers announced by the same government more than a week later. Neither AU nor AFP news repeating those claims is an independent witness list. May5 UCDP bibliographic date is earlier than the event but cannot erase the later, event-specific reporting or establish a coding mistake without checking the exact source article.",
@@ -92,7 +112,18 @@
     "first_pre_event_reference_explained_by_full_article": false,
     "can_use_pre_event_reference_to_invalidate_attack": false,
     "date_issue_potentially_from_publication_metadata_not_verified": false,
-    "other_references_include": "Reuters/AFP on 11 May for eight soldiers, AFP on 19 May for about fifteen attackers; later references also contextual"
+    "other_references_include": "Reuters/AFP on 11 May for eight soldiers, AFP on 19 May for about fifteen attackers; later references also contextual",
+    "claim_of_responsibility_post_event_published_evidence": [
+      {
+        "source_id": "togobreakingnews_may28",
+        "date": "2022-05-28"
+      },
+      {
+        "source_id": "ahram_afp_june4",
+        "date": "2022-06-04"
+      }
+    ],
+    "what_May5_means_remains_unresolved": "The original Africa Research Bulletin May5 dated reference titled 'Togo: JNIM claims Attack' conflicts on its face with contemporaneous May28/June4 news about the May11 claim if interpreted as the same incident. This may reflect another attack, nominal issue cover date, or source_date error. No actual Africa Research Bulletin article was recovered; do not resolve categorically."
   },
   "public_research_conclusion": "Event date and eight soldier deaths are supported by signed contemporary government and institutional statements. GED's central23 includes 15 additional attacker fatalities attributed to later official statement; GED low8 independently records uncertainty between initial and later government claims. If only this event were at low rather than best, annual type1 best otherwise held fixed would be 19 instead of 34, changing >=25 threshold; this is a sensitivity diagnostic, not corrected target. Earliest cited item dated 5 May and listed as JNIM claims attack cannot support future May11 casualty narrative as a same-day report unless the source publication date/issue chronology is itself misrepresented; full text was not independently retrieved; neither date error nor source miscoding is proven."
 }
