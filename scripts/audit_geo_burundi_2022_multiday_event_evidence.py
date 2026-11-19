@@ -50,7 +50,12 @@ LAT=-2.708333
 LON=29.243056
 WINDOW=[START+timedelta(days=i) for i in range((REPORT_THROUGH-START).days+1)]
 VIOLENT={"18","19","20"}
-EXPECTED_DAILY_SHA256={}  # Filled after first official four-day replay.
+EXPECTED_DAILY_SHA256={
+    "20220619":"42c087d1091b188761bcf50b7066feb534714cdd61bf92ae161fae08da50da9b",
+    "20220620":"f4f73ca505b6eb133a2350c09e64292132618e11e4f5eebbddf434ca32cbba87",
+    "20220621":"dd9aa095b48b58c8adceb559737728d68e300495b947e166fc74e8ca11a3c08b",
+    "20220622":"14b82c4475e1df059326926ae408271df9a7e7557f71c8709e48dda03dc82881",
+}  # Four official GDELT 1.0 daily ZIPs, frozen after first SHA replay.
 DOCUMENTS=(
     {"id":"sosmediasburundi-2022-06-21",
      "publication_date":"2022-06-21",
