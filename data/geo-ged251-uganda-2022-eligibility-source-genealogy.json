@@ -1,0 +1,159 @@
+{
+  "schema": "idealab.psico.uganda_2022_eligibility_source_genealogy.v1",
+  "research_date": "2026-11-19",
+  "manual_review_is_not_fatality_verification": true,
+  "independently_verified_combatant_or_conflict_dyad": false,
+  "revision_of_UCDP_or_GEO_labels": false,
+  "scope": "Sources reviewed to test whether Uganda June 2 and June 5 2022 police fatalities, UCDP GED25.1 444765 and 444764, meet state-based battle-related conflict definitions. HTML read publicly during this research; pages not archived by SHA. Media republication does not produce independent eyewitnesses.",
+  "sources": [
+    {
+      "id": "upf_june",
+      "source_role": "involved_actor_press_release",
+      "origin_group": "UGANDA_STATE_JUNE_24_ENANGA",
+      "publisher": "Uganda Police Force",
+      "published": "2022-06-24",
+      "url": "https://upf.go.ug/dci-arrests-24-suspects-involved-in-terror-financing-two-others-killed/",
+      "supports": "Reports separate June 2 Old Kampala foiled robbery killing and June 5 Makindye operation killing; police alleges money-laundering/robbery for ADF, not independently verified individual dyad status",
+      "limitations": "Involved police service; distinguishes alleged affiliation of arrested people from details of the two deceased"
+    },
+    {
+      "id": "softpower_june",
+      "source_role": "press_report_same_briefing",
+      "origin_group": "UGANDA_STATE_JUNE_24_ENANGA",
+      "publisher": "SoftPower News",
+      "published": "2022-06-24",
+      "url": "https://softpower.ug/24-suspects-arrested-for-funding-adf-terrorist-activities-in-uganda-and-drc/",
+      "supports": "Repeats police spokesperson's statements about shootings and funding allegations",
+      "limitations": "No separate crime scene witness, shooter, medical record or rebel organization declaration"
+    },
+    {
+      "id": "dailyexpress_june",
+      "source_role": "press_report_same_briefing",
+      "origin_group": "UGANDA_STATE_JUNE_24_ENANGA",
+      "publisher": "Daily Express",
+      "published": "2022-06-25",
+      "url": "https://dailyexpress.co.ug/2022/06/25/two-killed-24-arrested-on-allegations-of-terror-financing/",
+      "supports": "Distinguishes police descriptions of Makindye and Old Kampala; repeats police account",
+      "limitations": "Not independent verification of IS membership or a politically motivated armed exchange"
+    },
+    {
+      "id": "urn_june",
+      "source_role": "press_report_same_briefing",
+      "origin_group": "UGANDA_STATE_JUNE_24_ENANGA",
+      "publisher": "Uganda Radio Network",
+      "published": "2022-06-24",
+      "url": "https://ugandaradionetwork.net/story/two-killed-24-arrested-in-adf-terror-related-activities-",
+      "supports": "Names separate killed persons but attributes material facts to Police spokesperson Fred Enanga",
+      "limitations": "Media institution distinct from police but underlying event testimony is the same police briefing"
+    },
+    {
+      "id": "independent_sep",
+      "source_role": "interview_with_other_state_actor",
+      "origin_group": "UGANDA_STATE_SEPT_09_SENIOR_OFFICER",
+      "publisher": "The Independent Uganda",
+      "published": "2022-09-09",
+      "url": "https://www.independent.co.ug/investigators-cite-soldiers-policemen-as-collaborators-in-kampala-violent-crimes/",
+      "supports": "Reports another senior security officer stating that operatives located a June 5 deceased robbery suspect at Kyeyagalire and killed him at the house",
+      "limitations": "Different interviewee but still state security institution; statement may be compatible with police resisting-arrest narrative and cannot resolve force justification; does not independently prove ADF combatant status"
+    },
+    {
+      "id": "observer_sep",
+      "source_role": "republished_original_interview",
+      "origin_group": "UGANDA_STATE_SEPT_09_SENIOR_OFFICER",
+      "publisher": "The Observer Uganda (by URN)",
+      "published": "2022-09-11",
+      "url": "https://observer.ug/news/investigators-cite-soldiers-policemen-as-collaborators-in-kampala-violent-crimes/",
+      "supports": "Reproduces the anonymous senior officer's narrative of the June 5 killing",
+      "limitations": "Editorial reuse of the same security-officer interview, not a new eyewitness"
+    },
+    {
+      "id": "ucdp_definition",
+      "source_role": "institutional_codebook",
+      "origin_group": "UCDP_METHODOLOGY",
+      "publisher": "Uppsala University — UCDP Definitions",
+      "published": "2026-11-19",
+      "url": "https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-definitions",
+      "supports": "Defines state-based armed conflict by stated government/territory incompatibility and armed force between warring parties; separately defines battle-related deaths and per-dyad >=25 activity",
+      "limitations": "Methodological rule, not evidence about two individual deaths"
+    },
+    {
+      "id": "ucdp_methodology",
+      "source_role": "institutional_codebook",
+      "origin_group": "UCDP_METHODOLOGY",
+      "publisher": "Uppsala University — UCDP Methodology",
+      "published": "2026-11-19",
+      "url": "https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-methodology.html",
+      "supports": "Event-level fatal organized violence and source independence; official notes historic dyad inclusion after threshold crossing",
+      "limitations": "Methodological rule, not an independent victim witness"
+    }
+  ],
+  "dependencies": [
+    {
+      "publication": "softpower_june",
+      "origin_publication": "upf_june",
+      "basis": "Attributes shooting, terrorism funding and suspects to same police spokesperson"
+    },
+    {
+      "publication": "dailyexpress_june",
+      "origin_publication": "upf_june",
+      "basis": "Attributes observations and key assertions to police spokesperson"
+    },
+    {
+      "publication": "urn_june",
+      "origin_publication": "upf_june",
+      "basis": "Attributes original facts of 2 and 5 June to police spokesperson"
+    },
+    {
+      "publication": "observer_sep",
+      "origin_publication": "independent_sep",
+      "basis": "Shares senior-security-officer interview published by/attributed to URN; publication-to-publication editorial dependency not independently proven, but both use same officer claim"
+    }
+  ],
+  "event_claims": [
+    {
+      "GED_event_id": 444764,
+      "date": "2022-06-05",
+      "place": "Kyeyagalire, Makindye",
+      "source_ids": [
+        "upf_june",
+        "softpower_june",
+        "dailyexpress_june",
+        "urn_june",
+        "independent_sep",
+        "observer_sep"
+      ],
+      "victim_separate_from_other_event": true,
+      "official_death_report": "Police reports killing during violent counter operation and alleged resistance",
+      "other_official_testimony": "Later security commander says operatives located him at home and killed him; no independent confirmation of who fired first or any rebel engagement",
+      "independent_nonstate_witness_verified": false,
+      "documented_AFD_affiliation_of_deceased_verified": false,
+      "battle_related_classification": "UNRESOLVED",
+      "reason": "Police killing during arrest/anti-robbery operation plus alleged terror-financing link not sufficient alone to establish exchange of armed force between parties to territorial/governmental conflict"
+    },
+    {
+      "GED_event_id": 444765,
+      "date": "2022-06-02",
+      "place": "Apollo Kaggwa road, Old Kampala",
+      "source_ids": [
+        "upf_june",
+        "softpower_june",
+        "dailyexpress_june",
+        "urn_june"
+      ],
+      "victim_separate_from_other_event": true,
+      "official_death_report": "Police reports killing during foiled commercial robbery",
+      "other_official_testimony": null,
+      "independent_nonstate_witness_verified": false,
+      "documented_AFD_affiliation_of_deceased_verified": false,
+      "battle_related_classification": "UNRESOLVED",
+      "reason": "Reported robbery by person police associates with fundraising gang; no independently identified armed conflict encounter or direct affiliation of this deceased person to IS under UCDP rules"
+    }
+  ],
+  "required_missing_evidence": [
+    "independent_person_specific_conflict_dyad_membership_or_warring_party_status",
+    "independent_event_specific_armed_exchange_between_dyad_parties",
+    "event_specific_link_to_government_or_territory_incompatibility"
+  ],
+  "independence_conclusion": "Four June articles have one identified original event reporter: police spokesperson. September two publications use another police-security interviewee, but still no nonstate eyewitness, victim family account or independent conflict status confirmation in sources reviewed. Do not mistake 6 publications for 6 independent witnesses.",
+  "conflict_eligibility_conclusion": "Two reported killings and separate identities are supported by official source, but whether they qualify as Government of Uganda vs IS state-based battle deaths is unresolved in publicly examined material. No evidence demonstrates a source coding error. Ask UCDP coders for dyad-specific basis before proposing reclassification."
+}
