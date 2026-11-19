@@ -71,20 +71,20 @@
       "source_role": "institutional_codebook",
       "origin_group": "UCDP_METHODOLOGY",
       "publisher": "Uppsala University — UCDP Definitions",
-      "published": "2026-11-19",
       "url": "https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-definitions",
       "supports": "Defines state-based armed conflict by stated government/territory incompatibility and armed force between warring parties; separately defines battle-related deaths and per-dyad >=25 activity",
-      "limitations": "Methodological rule, not evidence about two individual deaths"
+      "limitations": "Methodological rule, not evidence about two individual deaths",
+      "last_reviewed": "2026-11-19"
     },
     {
       "id": "ucdp_methodology",
       "source_role": "institutional_codebook",
       "origin_group": "UCDP_METHODOLOGY",
       "publisher": "Uppsala University — UCDP Methodology",
-      "published": "2026-11-19",
       "url": "https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-methodology.html",
       "supports": "Event-level fatal organized violence and source independence; official notes historic dyad inclusion after threshold crossing",
-      "limitations": "Methodological rule, not an independent victim witness"
+      "limitations": "Methodological rule, not an independent victim witness",
+      "last_reviewed": "2026-11-19"
     }
   ],
   "dependencies": [
@@ -102,11 +102,6 @@
       "publication": "urn_june",
       "origin_publication": "upf_june",
       "basis": "Attributes original facts of 2 and 5 June to police spokesperson"
-    },
-    {
-      "publication": "observer_sep",
-      "origin_publication": "independent_sep",
-      "basis": "Shares senior-security-officer interview published by/attributed to URN; publication-to-publication editorial dependency not independently proven, but both use same officer claim"
     }
   ],
   "event_claims": [
@@ -126,9 +121,9 @@
       "official_death_report": "Police reports killing during violent counter operation and alleged resistance",
       "other_official_testimony": "Later security commander says operatives located him at home and killed him; no independent confirmation of who fired first or any rebel engagement",
       "independent_nonstate_witness_verified": false,
-      "documented_AFD_affiliation_of_deceased_verified": false,
       "battle_related_classification": "UNRESOLVED",
-      "reason": "Police killing during arrest/anti-robbery operation plus alleged terror-financing link not sufficient alone to establish exchange of armed force between parties to territorial/governmental conflict"
+      "reason": "Police killing during arrest/anti-robbery operation plus alleged terror-financing link not sufficient alone to establish exchange of armed force between parties to territorial/governmental conflict",
+      "documented_ADF_affiliation_of_deceased_verified": false
     },
     {
       "GED_event_id": 444765,
@@ -144,9 +139,9 @@
       "official_death_report": "Police reports killing during foiled commercial robbery",
       "other_official_testimony": null,
       "independent_nonstate_witness_verified": false,
-      "documented_AFD_affiliation_of_deceased_verified": false,
       "battle_related_classification": "UNRESOLVED",
-      "reason": "Reported robbery by person police associates with fundraising gang; no independently identified armed conflict encounter or direct affiliation of this deceased person to IS under UCDP rules"
+      "reason": "Reported robbery by person police associates with fundraising gang; no independently identified armed conflict encounter or direct affiliation of this deceased person to IS under UCDP rules",
+      "documented_ADF_affiliation_of_deceased_verified": false
     }
   ],
   "required_missing_evidence": [
