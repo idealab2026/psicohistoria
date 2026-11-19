@@ -1,0 +1,102 @@
+{
+  "schema": "idealab.psico.ged251_benin_uganda_public_first_party_review.v1",
+  "research_date": "2026-11-19",
+  "method": "Manual contemporaneous public HTML review, checked web pages; this JSON pins editorial notes and URLs but does NOT archive or SHA-hash remote pages. Institutional reporters may reuse a single underlying witness.",
+  "review_scope": "Specific report identities and dated episode distinction, not independent verification of casualties or UCDP state-based eligibility.",
+  "independent_third_party_victim_rosters_verified": false,
+  "coded_GED_records_corrected": false,
+  "original_GEO_issued_forecasts_modified": false,
+  "cases": [
+    {
+      "case_id": "benin_2022",
+      "GED_event_ids": [
+        431254,
+        431259
+      ],
+      "GED_event_days": [
+        "2022-02-08",
+        "2022-02-10"
+      ],
+      "assessment": "DISTINCT_DATED_ATTACKS_SUPPORTED_BY_CONTEMPORANEOUS_PARTICIPANT_REPORT",
+      "evidence_of_distinct_dates": "African Parks' 11 February bulletin distinguishes complex 8 February ambush/reinforcement attack and another IED incident on 10 February; UNESCO independently published a statement specifying both dates. ICG also describes 8 February deaths and one 10 February death.",
+      "participant_death_total_reported_for_both_dates": 8,
+      "retrospective_ICG_8_feb_estimate": 8,
+      "retrospective_ICG_10_feb_estimate": 1,
+      "competing_reported_aggregate": 9,
+      "competing_reported_aggregate_is_verified": false,
+      "deaths_disagreement": "African Parks 11 Feb lists eight fatalities in aggregate for 8+10 Feb, while ICG March trend says 8 fatalities on 8 Feb plus one on 10 Feb (nine). Differences in tallies require source reconciliation and cannot be resolved from shared journalism alone.",
+      "source_role_warning": "African Parks is an involved park management organisation; UNESCO is a separate institution but it is not proven to have independent forensic victim enumeration. ICG's fatality summary is not an independently verified roster.",
+      "original_source_evidence": [
+        {
+          "kind": "participant",
+          "publisher": "African Parks",
+          "published": "2022-02-09",
+          "url": "https://www.africanparks.org/incident-w-national-park",
+          "supports": "8 Feb initial report; fatality figures preliminary"
+        },
+        {
+          "kind": "participant",
+          "publisher": "African Parks",
+          "published": "2022-02-11",
+          "url": "https://www.africanparks.org/update-incidents-w-national-park-benin",
+          "supports": "distinct 8 Feb and 10 Feb IED attacks; eight combined fatalities according to update"
+        },
+        {
+          "kind": "institutional",
+          "publisher": "UNESCO World Heritage Centre",
+          "published": "2022-02-14",
+          "url": "https://whc.unesco.org/en/news/2404/",
+          "supports": "two dated attacks on 8 Feb and 10 Feb; no independent nominal victim list"
+        },
+        {
+          "kind": "secondary_synthesis",
+          "publisher": "International Crisis Group",
+          "published": "2022-03-05",
+          "url": "https://crisisgroup-staging.sbx.so/crisiswatch/march-alerts-and-february-trends-2022",
+          "supports": "eight dead in 8 Feb attacks and one in separate 10 Feb incident; secondary fatality count"
+        }
+      ],
+      "actor_attribution_to_JNIM_verified_independently": false,
+      "full_fatality_roster_independently_matched": false,
+      "verdict_for_duplicate_detection": "NO_DUPLICATE_SUPPORTED__TWO_DISTINCT_REPORTED_ATTACK_DATES",
+      "unchanged_hypothetical_counterfactual": "Deleting GED 431254 changes 30 to 22 but independent evidence does not justify deleting the 8 Feb attack. A one-fatality discrepancy in the combined Feb toll, if substantiated and not offset, would instead give annual 29, above threshold; this scenario is not an actual correction."
+    },
+    {
+      "case_id": "uganda_2022",
+      "GED_event_ids": [
+        444764,
+        444765
+      ],
+      "GED_event_days": [
+        "2022-06-05",
+        "2022-06-02"
+      ],
+      "assessment": "TWO_DIFFERENT_REPORTED_PERSONS_AND_KILLINGS_IN_ONE_ORIGINAL_POLICE_STATEMENT",
+      "evidence_of_distinct_dates": "Uganda Police Force 24 June 2022 identifies one killed in a Makindye security operation on 5 June and a second different person killed in a thwarted robbery in Old Kampala on 2 June. GED records reproduce these distinct reported dates, locations and separate cases.",
+      "shared_reporting_origin": "Both UCDP records cite the same Uganda Police Force communique and a news article repeating its information; two citations are not two independent victim witnesses.",
+      "source_role_warning": "The Uganda Police Force was the actor involved in the operations; police attribution of terror-financing connections to ADF is an interested-party claim, not independent proof of the deceased persons' militant status.",
+      "original_source_evidence": [
+        {
+          "kind": "involved_official",
+          "publisher": "Uganda Police Force",
+          "published": "2022-06-24",
+          "url": "https://upf.go.ug/dci-arrests-24-suspects-involved-in-terror-financing-two-others-killed/",
+          "supports": "two separate individuals killed June 2 in Old Kampala and June 5 in Makindye; allege financing ADF"
+        },
+        {
+          "kind": "secondary_report_of_same_official",
+          "publisher": "Nile Post",
+          "published": "2022-06-24",
+          "url": "https://nilepost.co.ug/news/137037/police-say-two-killed-24-arrested-in-operations-targeting-suspected-adf-funders-in-kampala",
+          "supports": "media reports same police briefing; not an independent determination of organized-conflict eligibility"
+        }
+      ],
+      "independent_person_identity_or_combatant_status_verified": false,
+      "separate_reported_victims_in_same_primary_statement": true,
+      "UCDP_actor_dyad": "Government of Uganda - IS",
+      "classification_risk": "A reported foiled robbery and another police operation against alleged terror-financing suspects are not automatically equivalent to verified direct state-based combat against IS. UCDP classification requires further actor/organized-violence evidence; no recoding is justified solely by a police press release.",
+      "verdict_for_duplicate_detection": "NO_DUPLICATE_SUPPORTED__TWO_DISTINCT_REPORTED_PERSONS",
+      "unchanged_hypothetical_counterfactual": "Deleting either of two GED records would change annual 25 to 24, but existing sources distinguish the persons. The remaining open question is the correctness of state-based conflict eligibility, not duplicate counting."
+    }
+  ]
+}
