@@ -23,6 +23,27 @@ class IntervalAudit(unittest.TestCase):
         self.assertFalse(sums["best_vs_high_label_disagrees"])
         self.assertEqual(sums["class"],"low_high_straddle_binary_threshold")
 
+    def test_ucdp_clarity2_high_below_best_is_valid_official_semantics(self):
+        # GED25.1 codebook section 5.5, page 23: when a clarity-2
+        # aggregate has clear subevents subtracted, high may be below best.
+        rows=[
+            {"low":9,"best":15,"high":4,"event_clarity":2},
+            {"low":10,"best":11,"high":11,"event_clarity":1}
+        ]
+        v=m.sum_envelope(rows)
+        self.assertEqual([v[k] for k in ("low","best","high")],[19,26,15])
+        self.assertEqual((v["per_row_min_total"],v["per_row_max_total"]),(14,26))
+        self.assertEqual(v["class"],"low_high_straddle_binary_threshold")
+        self.assertFalse(v["raw_scenario_totals_monotone"])
+        self.assertTrue(v["best_vs_high_label_disagrees"])
+
+    def test_monotone_input_has_same_raw_and_normalized_bounds(self):
+        rows=[{"low":8,"best":23,"high":23}]
+        v=m.sum_envelope(rows)
+        self.assertEqual(v["per_row_min_total"],v["low"])
+        self.assertEqual(v["per_row_max_total"],v["high"])
+        self.assertTrue(v["raw_scenario_totals_monotone"])
+
     def test_high_bound_can_flip_inactive_to_active(self):
         sums=m.sum_envelope([
             {"low":18,"best":18,"high":26}])
