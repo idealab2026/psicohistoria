@@ -1,0 +1,39 @@
+name: GEO Burundi June 2022 multi-day event and source corroboration audit
+on:
+  push:
+    paths:
+      - 'scripts/audit_geo_burundi_2022_multiday_event_evidence.py'
+      - 'scripts/test_audit_geo_burundi_2022_multiday_event_evidence.py'
+      - 'data/geo-burundi-2022-multiday-independent-event-evidence.json'
+      - '.github/workflows/geo-burundi-2022-multiday-event-evidence.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_geo_burundi_2022_multiday_event_evidence.py'
+      - 'scripts/test_audit_geo_burundi_2022_multiday_event_evidence.py'
+      - 'data/geo-burundi-2022-multiday-independent-event-evidence.json'
+      - '.github/workflows/geo-burundi-2022-multiday-event-evidence.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Strict GED interval, GDELT archive-date and media-event matching tests
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_geo_burundi_2022_multiday_event_evidence.py' -v
+      - name: SHA replay UCDP GED25.1 and GDELT daily 19 to 22 June 2022
+        run: |
+          if [ -f data/geo-burundi-2022-multiday-independent-event-evidence.json ]; then
+            python3 -B scripts/audit_geo_burundi_2022_multiday_event_evidence.py --check-report
+          else
+            python3 -B scripts/audit_geo_burundi_2022_multiday_event_evidence.py --print-report
+          fi
+      - name: Institutional privacy and public release guard
+        run: python3 -B scripts/audit_public.py
