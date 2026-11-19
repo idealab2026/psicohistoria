@@ -134,7 +134,7 @@
       "independent_conflict_exchange_supported": false,
       "independent_full_fatality_count_supported": false,
       "independent_conflict_actor_membership_per_deceased": false,
-      "why": "URN primary report published Wednesday 21 describes Tuesday engagement with survivors; plus-one GED day versus reported event day must be assessed alongside official date_prec=2."
+      "why": "Uganda Radio Network report published Wednesday 21 December describes a Tuesday 20 December engagement; GED25.1 encodes 21 December with DATE_PREC=1 (exact), making a potentially material one-day event-vs-publication mismatch. No event date is changed absent coder confirmation."
     },
     {
       "GED_id": 460862,
@@ -181,7 +181,7 @@
   "key_findings": [
     "All four historical GED entries represent 23 best, 23 low and 26 high, not four independently verified victim rosters.",
     "460796 Ntoroko 12-13 Dec has external qualitative evidence of armed exchange from local reports and later UN panel, but its 19 fatality breakdown lacks independent nominal confirmation.",
-    "460859 event on Dec21 GED may refer to two rebels killed Tuesday Dec20, with date_prec=2 and publication day Wed21.",
+    "460859 event on Dec21 GED may refer to two rebels killed Tuesday Dec20, although GED marks date_prec=1 (exact) and publication day Wed21.",
     "460862 is best0/high3 and based on cumulative reported 26; cannot be treated as additional 26 deaths or proven double count.",
     "462156 event Dec19 GED (date_prec=1) is dated Dec18 in signed police communique and newspaper; source discrepancy requires adjudication by UCDP.",
     "Evidence for December armed incursions does NOT prove June 2 and June 5 police killings were eligible state-based battle deaths."
