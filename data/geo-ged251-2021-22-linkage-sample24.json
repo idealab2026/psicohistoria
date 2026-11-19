@@ -1,0 +1,708 @@
+{
+  "candidate_definition": "same country and year, interval gap <=3 days, coordinate separation <=25km; no identity inference",
+  "country_frame": "196 GWNO in issued GEO2027; use IDs only, no probabilities",
+  "eligible_by_stratum": {
+    "day_highgeo": 11528,
+    "day_lowgeo": 4562,
+    "interval_highgeo": 2092,
+    "interval_lowgeo": 2534
+  },
+  "eligible_events": 20716,
+  "external_documentary_verification_performed": false,
+  "forecast_vectors_or_GED_labels_modified": false,
+  "geographic_precision_high": "where_prec=1/2 only; 2 is approximate <=25km",
+  "geographic_precision_low": "where_prec=3..7; coordinates may represent large zones",
+  "limitations": "Stratified SHA deterministic sample, not representative random population survey; on-disk GED25.1 official ZIP content SHA verified but publication-era bytes are not independently timestamped. Nearby state-based GED rows need not share people or episode, especially where_prec>=3. Coincident date/place is a screening signal, not an adjudicated duplicate. No news independence, true victim counts, forecasting skill or Brier change established.",
+  "n_per_stratum": 6,
+  "official_GED25_1_zip_SHA256": "e256f1fb20a579d8b2f910e5bae212f486d3002adaa2e4359ace740c737da05d",
+  "original_issued_GEO2027_SHA256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "phase": "SCREENING_ONLY_NOT_MANUAL_VALIDATION",
+  "population_duplication_rate_estimated": false,
+  "population_total_GED_events": 385918,
+  "preregistered_sampling_seed": "IDEALAB-20261119-GED251-2021-22-FOUR-STRATA-V1",
+  "research_design_date": "2026-11-19",
+  "sampled_anchors": [
+    {
+      "GWNO": 490,
+      "best_deaths": 3,
+      "both_high_geo_precision_neighbors_gap3d_25km": 1,
+      "closest_three_candidate_neighbors": [
+        {
+          "distance_km": 0.271,
+          "ged_id": 419766,
+          "interval_gap_days": 2,
+          "where_prec": 1
+        }
+      ],
+      "end": "2021-11-07",
+      "ged_id": 422823,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 21,
+      "same_country_year_other_GED_events": 259,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 6,
+      "space_time_neighbors_gap3d_25km": 1,
+      "start": "2021-11-07",
+      "stratum": "day_highgeo",
+      "time_only_neighbors_gap3d": 10,
+      "where_prec": 1,
+      "year": 2021
+    },
+    {
+      "GWNO": 678,
+      "best_deaths": 43,
+      "both_high_geo_precision_neighbors_gap3d_25km": 9,
+      "closest_three_candidate_neighbors": [
+        {
+          "distance_km": 0,
+          "ged_id": 419961,
+          "interval_gap_days": 1,
+          "where_prec": 2
+        },
+        {
+          "distance_km": 0,
+          "ged_id": 419975,
+          "interval_gap_days": 1,
+          "where_prec": 2
+        },
+        {
+          "distance_km": 0,
+          "ged_id": 419945,
+          "interval_gap_days": 2,
+          "where_prec": 2
+        }
+      ],
+      "end": "2021-10-26",
+      "ged_id": 419966,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 108,
+      "same_country_year_other_GED_events": 709,
+      "space_time_neighbors_gap0d_5km": 1,
+      "space_time_neighbors_gap3d_100km": 31,
+      "space_time_neighbors_gap3d_25km": 16,
+      "start": "2021-10-26",
+      "stratum": "day_highgeo",
+      "time_only_neighbors_gap3d": 36,
+      "where_prec": 2,
+      "year": 2021
+    },
+    {
+      "GWNO": 432,
+      "best_deaths": 2,
+      "both_high_geo_precision_neighbors_gap3d_25km": 0,
+      "closest_three_candidate_neighbors": [],
+      "end": "2021-02-14",
+      "ged_id": 385011,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 0,
+      "same_country_year_other_GED_events": 100,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 0,
+      "space_time_neighbors_gap3d_25km": 0,
+      "start": "2021-02-14",
+      "stratum": "day_highgeo",
+      "time_only_neighbors_gap3d": 2,
+      "where_prec": 2,
+      "year": 2021
+    },
+    {
+      "GWNO": 475,
+      "best_deaths": 3,
+      "both_high_geo_precision_neighbors_gap3d_25km": 0,
+      "closest_three_candidate_neighbors": [],
+      "end": "2021-11-12",
+      "ged_id": 422876,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 1,
+      "same_country_year_other_GED_events": 177,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 0,
+      "space_time_neighbors_gap3d_25km": 0,
+      "start": "2021-11-12",
+      "stratum": "day_highgeo",
+      "time_only_neighbors_gap3d": 1,
+      "where_prec": 2,
+      "year": 2021
+    },
+    {
+      "GWNO": 369,
+      "best_deaths": 1,
+      "both_high_geo_precision_neighbors_gap3d_25km": 12,
+      "closest_three_candidate_neighbors": [
+        {
+          "distance_km": 12.28,
+          "ged_id": 438400,
+          "interval_gap_days": 2,
+          "where_prec": 1
+        },
+        {
+          "distance_km": 12.68,
+          "ged_id": 438671,
+          "interval_gap_days": 0,
+          "where_prec": 1
+        },
+        {
+          "distance_km": 12.68,
+          "ged_id": 440606,
+          "interval_gap_days": 0,
+          "where_prec": 1
+        }
+      ],
+      "end": "2022-06-03",
+      "ged_id": 440609,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 304,
+      "same_country_year_other_GED_events": 7143,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 102,
+      "space_time_neighbors_gap3d_25km": 12,
+      "start": "2022-06-03",
+      "stratum": "day_highgeo",
+      "time_only_neighbors_gap3d": 211,
+      "where_prec": 2,
+      "year": 2022
+    },
+    {
+      "GWNO": 645,
+      "best_deaths": 1,
+      "both_high_geo_precision_neighbors_gap3d_25km": 0,
+      "closest_three_candidate_neighbors": [
+        {
+          "distance_km": 14.227,
+          "ged_id": 435618,
+          "interval_gap_days": 2,
+          "where_prec": 5
+        }
+      ],
+      "end": "2022-04-19",
+      "ged_id": 464345,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 48,
+      "same_country_year_other_GED_events": 358,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 10,
+      "space_time_neighbors_gap3d_25km": 1,
+      "start": "2022-04-19",
+      "stratum": "day_highgeo",
+      "time_only_neighbors_gap3d": 13,
+      "where_prec": 2,
+      "year": 2022
+    },
+    {
+      "GWNO": 770,
+      "best_deaths": 3,
+      "both_high_geo_precision_neighbors_gap3d_25km": 0,
+      "closest_three_candidate_neighbors": [],
+      "end": "2021-02-03",
+      "ged_id": 380891,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 0,
+      "same_country_year_other_GED_events": 170,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 0,
+      "space_time_neighbors_gap3d_25km": 0,
+      "start": "2021-02-03",
+      "stratum": "day_lowgeo",
+      "time_only_neighbors_gap3d": 3,
+      "where_prec": 3,
+      "year": 2021
+    },
+    {
+      "GWNO": 652,
+      "best_deaths": 1,
+      "both_high_geo_precision_neighbors_gap3d_25km": 0,
+      "closest_three_candidate_neighbors": [
+        {
+          "distance_km": 12.457,
+          "ged_id": 460492,
+          "interval_gap_days": 3,
+          "where_prec": 2
+        },
+        {
+          "distance_km": 14.379,
+          "ged_id": 459825,
+          "interval_gap_days": 3,
+          "where_prec": 2
+        },
+        {
+          "distance_km": 15.545,
+          "ged_id": 460495,
+          "interval_gap_days": 3,
+          "where_prec": 2
+        }
+      ],
+      "end": "2022-12-19",
+      "ged_id": 460457,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 44,
+      "same_country_year_other_GED_events": 417,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 7,
+      "space_time_neighbors_gap3d_25km": 4,
+      "start": "2022-12-19",
+      "stratum": "day_lowgeo",
+      "time_only_neighbors_gap3d": 14,
+      "where_prec": 5,
+      "year": 2022
+    },
+    {
+      "GWNO": 645,
+      "best_deaths": 3,
+      "both_high_geo_precision_neighbors_gap3d_25km": 0,
+      "closest_three_candidate_neighbors": [],
+      "end": "2022-08-13",
+      "ged_id": 445138,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 2,
+      "same_country_year_other_GED_events": 358,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 5,
+      "space_time_neighbors_gap3d_25km": 0,
+      "start": "2022-08-13",
+      "stratum": "day_lowgeo",
+      "time_only_neighbors_gap3d": 9,
+      "where_prec": 5,
+      "year": 2022
+    },
+    {
+      "GWNO": 369,
+      "best_deaths": 1,
+      "both_high_geo_precision_neighbors_gap3d_25km": 0,
+      "closest_three_candidate_neighbors": [
+        {
+          "distance_km": 0,
+          "ged_id": 441082,
+          "interval_gap_days": 0,
+          "where_prec": 4
+        },
+        {
+          "distance_km": 0,
+          "ged_id": 441271,
+          "interval_gap_days": 0,
+          "where_prec": 4
+        },
+        {
+          "distance_km": 0,
+          "ged_id": 441329,
+          "interval_gap_days": 0,
+          "where_prec": 4
+        }
+      ],
+      "end": "2022-06-12",
+      "ged_id": 487360,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 113,
+      "same_country_year_other_GED_events": 7143,
+      "space_time_neighbors_gap0d_5km": 3,
+      "space_time_neighbors_gap3d_100km": 31,
+      "space_time_neighbors_gap3d_25km": 4,
+      "start": "2022-06-12",
+      "stratum": "day_lowgeo",
+      "time_only_neighbors_gap3d": 211,
+      "where_prec": 4,
+      "year": 2022
+    },
+    {
+      "GWNO": 700,
+      "best_deaths": 7,
+      "both_high_geo_precision_neighbors_gap3d_25km": 0,
+      "closest_three_candidate_neighbors": [
+        {
+          "distance_km": 10.191,
+          "ged_id": 412291,
+          "interval_gap_days": 0,
+          "where_prec": 4
+        },
+        {
+          "distance_km": 10.191,
+          "ged_id": 412190,
+          "interval_gap_days": 3,
+          "where_prec": 4
+        },
+        {
+          "distance_km": 21.213,
+          "ged_id": 411763,
+          "interval_gap_days": 1,
+          "where_prec": 2
+        }
+      ],
+      "end": "2021-08-11",
+      "ged_id": 411953,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 90,
+      "same_country_year_other_GED_events": 4229,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 23,
+      "space_time_neighbors_gap3d_25km": 3,
+      "start": "2021-08-11",
+      "stratum": "day_lowgeo",
+      "time_only_neighbors_gap3d": 163,
+      "where_prec": 3,
+      "year": 2021
+    },
+    {
+      "GWNO": 640,
+      "best_deaths": 1,
+      "both_high_geo_precision_neighbors_gap3d_25km": 0,
+      "closest_three_candidate_neighbors": [],
+      "end": "2021-04-30",
+      "ged_id": 397305,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 5,
+      "same_country_year_other_GED_events": 61,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 0,
+      "space_time_neighbors_gap3d_25km": 0,
+      "start": "2021-04-30",
+      "stratum": "day_lowgeo",
+      "time_only_neighbors_gap3d": 3,
+      "where_prec": 4,
+      "year": 2021
+    },
+    {
+      "GWNO": 700,
+      "best_deaths": 1,
+      "both_high_geo_precision_neighbors_gap3d_25km": 2,
+      "closest_three_candidate_neighbors": [
+        {
+          "distance_km": 14.527,
+          "ged_id": 400933,
+          "interval_gap_days": 1,
+          "where_prec": 4
+        },
+        {
+          "distance_km": 14.527,
+          "ged_id": 401487,
+          "interval_gap_days": 3,
+          "where_prec": 4
+        },
+        {
+          "distance_km": 18.698,
+          "ged_id": 400828,
+          "interval_gap_days": 3,
+          "where_prec": 2
+        }
+      ],
+      "end": "2021-05-16",
+      "ged_id": 400881,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 132,
+      "same_country_year_other_GED_events": 4229,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 19,
+      "space_time_neighbors_gap3d_25km": 4,
+      "start": "2021-05-15",
+      "stratum": "interval_highgeo",
+      "time_only_neighbors_gap3d": 110,
+      "where_prec": 2,
+      "year": 2021
+    },
+    {
+      "GWNO": 369,
+      "best_deaths": 1,
+      "both_high_geo_precision_neighbors_gap3d_25km": 21,
+      "closest_three_candidate_neighbors": [
+        {
+          "distance_km": 0,
+          "ged_id": 434455,
+          "interval_gap_days": 0,
+          "where_prec": 2
+        },
+        {
+          "distance_km": 0,
+          "ged_id": 435113,
+          "interval_gap_days": 0,
+          "where_prec": 1
+        },
+        {
+          "distance_km": 0,
+          "ged_id": 437265,
+          "interval_gap_days": 0,
+          "where_prec": 1
+        }
+      ],
+      "end": "2022-04-08",
+      "ged_id": 434463,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 192,
+      "same_country_year_other_GED_events": 7143,
+      "space_time_neighbors_gap0d_5km": 12,
+      "space_time_neighbors_gap3d_100km": 38,
+      "space_time_neighbors_gap3d_25km": 21,
+      "start": "2022-04-07",
+      "stratum": "interval_highgeo",
+      "time_only_neighbors_gap3d": 168,
+      "where_prec": 1,
+      "year": 2022
+    },
+    {
+      "GWNO": 530,
+      "best_deaths": 1,
+      "both_high_geo_precision_neighbors_gap3d_25km": 1,
+      "closest_three_candidate_neighbors": [
+        {
+          "distance_km": 21.507,
+          "ged_id": 485800,
+          "interval_gap_days": 0,
+          "where_prec": 2
+        }
+      ],
+      "end": "2021-01-20",
+      "ged_id": 485802,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 17,
+      "same_country_year_other_GED_events": 326,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 8,
+      "space_time_neighbors_gap3d_25km": 1,
+      "start": "2021-01-10",
+      "stratum": "interval_highgeo",
+      "time_only_neighbors_gap3d": 13,
+      "where_prec": 2,
+      "year": 2021
+    },
+    {
+      "GWNO": 471,
+      "best_deaths": 5,
+      "both_high_geo_precision_neighbors_gap3d_25km": 1,
+      "closest_three_candidate_neighbors": [
+        {
+          "distance_km": 19.219,
+          "ged_id": 449625,
+          "interval_gap_days": 0,
+          "where_prec": 1
+        }
+      ],
+      "end": "2022-09-16",
+      "ged_id": 461186,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 20,
+      "same_country_year_other_GED_events": 123,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 6,
+      "space_time_neighbors_gap3d_25km": 1,
+      "start": "2022-09-09",
+      "stratum": "interval_highgeo",
+      "time_only_neighbors_gap3d": 7,
+      "where_prec": 1,
+      "year": 2022
+    },
+    {
+      "GWNO": 678,
+      "best_deaths": 1,
+      "both_high_geo_precision_neighbors_gap3d_25km": 0,
+      "closest_three_candidate_neighbors": [],
+      "end": "2022-07-10",
+      "ged_id": 444520,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 2,
+      "same_country_year_other_GED_events": 389,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 2,
+      "space_time_neighbors_gap3d_25km": 0,
+      "start": "2022-07-09",
+      "stratum": "interval_highgeo",
+      "time_only_neighbors_gap3d": 5,
+      "where_prec": 2,
+      "year": 2022
+    },
+    {
+      "GWNO": 490,
+      "best_deaths": 2,
+      "both_high_geo_precision_neighbors_gap3d_25km": 3,
+      "closest_three_candidate_neighbors": [
+        {
+          "distance_km": 0,
+          "ged_id": 427784,
+          "interval_gap_days": 0,
+          "where_prec": 1
+        },
+        {
+          "distance_km": 1.203,
+          "ged_id": 426209,
+          "interval_gap_days": 0,
+          "where_prec": 2
+        },
+        {
+          "distance_km": 4.317,
+          "ged_id": 427814,
+          "interval_gap_days": 0,
+          "where_prec": 1
+        }
+      ],
+      "end": "2022-01-08",
+      "ged_id": 426214,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 18,
+      "same_country_year_other_GED_events": 235,
+      "space_time_neighbors_gap0d_5km": 3,
+      "space_time_neighbors_gap3d_100km": 5,
+      "space_time_neighbors_gap3d_25km": 4,
+      "start": "2022-01-07",
+      "stratum": "interval_highgeo",
+      "time_only_neighbors_gap3d": 9,
+      "where_prec": 2,
+      "year": 2022
+    },
+    {
+      "GWNO": 369,
+      "best_deaths": 2,
+      "both_high_geo_precision_neighbors_gap3d_25km": 0,
+      "closest_three_candidate_neighbors": [
+        {
+          "distance_km": 0,
+          "ged_id": 454147,
+          "interval_gap_days": 0,
+          "where_prec": 5
+        },
+        {
+          "distance_km": 0,
+          "ged_id": 455408,
+          "interval_gap_days": 0,
+          "where_prec": 5
+        },
+        {
+          "distance_km": 0,
+          "ged_id": 454136,
+          "interval_gap_days": 1,
+          "where_prec": 5
+        }
+      ],
+      "end": "2022-11-20",
+      "ged_id": 454154,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 152,
+      "same_country_year_other_GED_events": 7143,
+      "space_time_neighbors_gap0d_5km": 2,
+      "space_time_neighbors_gap3d_100km": 23,
+      "space_time_neighbors_gap3d_25km": 8,
+      "start": "2022-11-19",
+      "stratum": "interval_lowgeo",
+      "time_only_neighbors_gap3d": 152,
+      "where_prec": 5,
+      "year": 2022
+    },
+    {
+      "GWNO": 700,
+      "best_deaths": 4,
+      "both_high_geo_precision_neighbors_gap3d_25km": 0,
+      "closest_three_candidate_neighbors": [
+        {
+          "distance_km": 0,
+          "ged_id": 394855,
+          "interval_gap_days": 3,
+          "where_prec": 4
+        }
+      ],
+      "end": "2021-04-29",
+      "ged_id": 396321,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 60,
+      "same_country_year_other_GED_events": 4229,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 17,
+      "space_time_neighbors_gap3d_25km": 1,
+      "start": "2021-04-28",
+      "stratum": "interval_lowgeo",
+      "time_only_neighbors_gap3d": 159,
+      "where_prec": 4,
+      "year": 2021
+    },
+    {
+      "GWNO": 520,
+      "best_deaths": 12,
+      "both_high_geo_precision_neighbors_gap3d_25km": 0,
+      "closest_three_candidate_neighbors": [],
+      "end": "2022-06-13",
+      "ged_id": 442292,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 19,
+      "same_country_year_other_GED_events": 220,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 0,
+      "space_time_neighbors_gap3d_25km": 0,
+      "start": "2022-06-12",
+      "stratum": "interval_lowgeo",
+      "time_only_neighbors_gap3d": 3,
+      "where_prec": 4,
+      "year": 2022
+    },
+    {
+      "GWNO": 530,
+      "best_deaths": 1,
+      "both_high_geo_precision_neighbors_gap3d_25km": 0,
+      "closest_three_candidate_neighbors": [],
+      "end": "2022-11-17",
+      "ged_id": 457238,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 0,
+      "same_country_year_other_GED_events": 482,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 0,
+      "space_time_neighbors_gap3d_25km": 0,
+      "start": "2022-11-15",
+      "stratum": "interval_lowgeo",
+      "time_only_neighbors_gap3d": 6,
+      "where_prec": 5,
+      "year": 2022
+    },
+    {
+      "GWNO": 775,
+      "best_deaths": 4,
+      "both_high_geo_precision_neighbors_gap3d_25km": 0,
+      "closest_three_candidate_neighbors": [],
+      "end": "2021-04-12",
+      "ged_id": 392761,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 4,
+      "same_country_year_other_GED_events": 310,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 0,
+      "space_time_neighbors_gap3d_25km": 0,
+      "start": "2021-04-11",
+      "stratum": "interval_lowgeo",
+      "time_only_neighbors_gap3d": 9,
+      "where_prec": 5,
+      "year": 2021
+    },
+    {
+      "GWNO": 652,
+      "best_deaths": 18,
+      "both_high_geo_precision_neighbors_gap3d_25km": 0,
+      "closest_three_candidate_neighbors": [],
+      "end": "2021-02-06",
+      "ged_id": 381088,
+      "identity_or_duplicate_proven": false,
+      "location_only_neighbors_25km": 9,
+      "same_country_year_other_GED_events": 456,
+      "space_time_neighbors_gap0d_5km": 0,
+      "space_time_neighbors_gap3d_100km": 0,
+      "space_time_neighbors_gap3d_25km": 0,
+      "start": "2021-02-05",
+      "stratum": "interval_lowgeo",
+      "time_only_neighbors_gap3d": 11,
+      "where_prec": 5,
+      "year": 2021
+    }
+  ],
+  "sampled_anchors_n": 24,
+  "sampled_distinct_GWNO_n": 14,
+  "schema": "idealab.psico.geo_ged251_2021_22_temporal_spatial_sample.v1",
+  "selection_is_without_GEO2027_probabilities": true,
+  "source": "https://ucdp.uu.se/downloads/ged/ged251-csv.zip",
+  "source_fatality_rosters_verified": false,
+  "summary": {
+    "anchors_with_any_25km_place_only_neighbor": 21,
+    "anchors_with_any_gap0d_5km_candidate": 5,
+    "anchors_with_any_gap3d_100km_candidate": 16,
+    "anchors_with_any_gap3d_25km_candidate": 14,
+    "anchors_with_high_precision_gap3d_25km_candidate": 8,
+    "manual_case_reviews_completed": 0,
+    "verified_duplicate_GED_events": 0
+  },
+  "violence_type": 1,
+  "years": [
+    2021,
+    2022
+  ]
+}
