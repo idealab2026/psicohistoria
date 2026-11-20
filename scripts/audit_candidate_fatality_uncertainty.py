@@ -51,7 +51,7 @@ def official_pins(registry):
 
 def blank_country_sums():
     return {"low": 0, "best": 0, "high": 0, "clear_best": 0,
-            "n_state_events": 0, "code_status_counts": {}}
+            "n_state_events": 0, "nonmonotone_events": 0, "code_status_counts": {}}
 
 
 def audit_csv(raw, year, month, universe):
@@ -67,7 +67,7 @@ def audit_csv(raw, year, month, universe):
     counts = Counter()
     data = defaultdict(lambda: defaultdict(lambda: {
         "low": 0, "best": 0, "high": 0, "clear_best": 0,
-        "n_state_events": 0, "statuses": Counter()
+        "n_state_events": 0, "nonmonotone_events": 0, "statuses": Counter()
     }))
     first = date(year, 1, 1)
     q1_end = date(year, 3, 31)
@@ -125,9 +125,12 @@ def audit_csv(raw, year, month, universe):
             counts["state_invalid_bounds_excluded_outside_windows"] += int(malformed_bounds)
             counts["skip_outside_fixed_windows"] += 1
             continue
-        # Fail closed ONLY when this state-based event can change the declared estimand.
-        if malformed_bounds:
-            raise SourceError(f"In-window type1 Candidate {year}-{month} invalid deaths at id={event_id}, country={country}, date_prec={precision}, dates={row.get('date_start')}/{row.get('date_end')}, deaths={death}")
+        # Amendment: original Candidate contains non-monotone low/best/high even
+        # in eligible state-based events. Never silently clamp or reorder.
+        # Use each native field as a separate scenario; flag uncertainty explicitly.
+        if any(value < 0 for value in death.values()):
+            raise SourceError("Negative death estimate inside evaluated window")
+        counts["eligible_nonmonotone_event_rows"] += int(malformed_bounds)
         status = (row["code_status"] or "").strip()
         normalized = status.casefold() if status else "(blank)"
         if not status:
@@ -135,6 +138,7 @@ def audit_csv(raw, year, month, universe):
         for target in targets:
             record = data[target][country]
             record["n_state_events"] += 1
+            record["nonmonotone_events"] += int(malformed_bounds)
             record["statuses"][normalized] += 1
             for field in ("low", "best", "high"):
                 record[field] += death[field]
@@ -148,7 +152,7 @@ def audit_csv(raw, year, month, universe):
         out[window] = {}
         for country, r in countries.items():
             out[window][country] = {
-                **{k: r[k] for k in ("low", "best", "high", "clear_best", "n_state_events")},
+                **{k: r[k] for k in ("low", "best", "high", "clear_best", "n_state_events", "nonmonotone_events")},
                 "code_status_counts": dict(sorted(r["statuses"].items()))
             }
     return {"source_rows": counts["source_rows"],
@@ -181,6 +185,12 @@ def aggregate_window(data, window, risk_set, focus=FOCUS):
         "clear_best_positive_ids": classifications["clear_best"],
         "best_not_low_ids": sorted(best_positive - low_positive),
         "best_not_clear_ids": sorted(best_positive - clear_positive),
+        "countries_with_nonmonotone_source_event": sum(
+            bool(row["nonmonotone_events"]) for row in records.values()
+        ),
+        "best_positive_countries_with_nonmonotone_event": sorted(
+            country for country in best_positive if records[country]["nonmonotone_events"]
+        ),
         "all_risk_state_event_code_status_counts": dict(sorted(all_status.items())),
         "focus": {
             str(country): get_record(data, window, country)
@@ -308,10 +318,11 @@ def build_report(fetcher=get_source, registry=None, grid=None, universe_raw=None
         "forecast_issued": False,
         "historical_model_refit": False,
         "limitations": (
-            "UCDP Candidate early-coded events can be recoded, removed or added in annual GED. "
-            "low/high are NOT statistical confidence intervals. clear-only is a descriptive "
-            "coding filter, NOT final validity. This audit follows an already-inspected "
-            "favorable May 2026 result, and source first-publication dates are not proved."
+            "UCDP Candidate early-coded events can be revised in annual GED; some raw low/best/high "
+            "event tuples are nonmonotone. They are used as separate unmodified estimation scenarios, "
+            "NOT mathematically guaranteed bounds or confidence intervals; nonmonotone counts flag "
+            "this contamination. Clear-only is a coding filter, NOT definitive inclusion. "
+            "Post-selection sensitivity, no independently verified original publication dates."
         )
     }
 
