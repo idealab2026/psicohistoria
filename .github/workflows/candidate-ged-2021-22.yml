@@ -32,7 +32,7 @@ jobs:
           python-version: '3.12'
       - name: Synthetic original-source year, window, ZIP and no-tamper tests
         run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_ged_2021_22.py' -v
-      - name: Source-only census of GED22.1 and GED23.1 original ZIP archives
-        run: python3 -B scripts/audit_candidate_ged_2021_22.py --source-census
+      - name: Compare source-hash-frozen 2021/22 Candidate labels against first annual GED outcomes
+        run: python3 -B scripts/audit_candidate_ged_2021_22.py --print-report
       - name: Institutional public privacy allowlist
         run: python3 -B scripts/audit_public.py
