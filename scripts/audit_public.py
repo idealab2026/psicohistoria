@@ -78,8 +78,8 @@ REPOSITORY |= {
     ".github/workflows/candidate-to-annual-ged.yml",
     "data/candidate-to-annual-ged-resolution.json",
 }
-# Subsequent annual-release revision study: source-pinned, no private identifiers.
-# Placeholder is NOT released until first official comparison is frozen.
+# Subsequent annual-release revision study: original ZIPs and CI-frozen public aggregates.
+RELEASE |= {"data/ged2024-annual-vintage-drift.json"}
 REPOSITORY |= {
     "scripts/audit_ged2024_annual_vintage_drift.py",
     "scripts/test_audit_ged2024_annual_vintage_drift.py",
