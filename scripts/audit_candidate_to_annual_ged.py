@@ -33,8 +33,9 @@ GED_URL = {
 # These MUST be set using SHA of original official ZIPs in a source-only census,
 # prior to calculating the outcome comparison. No unpinned calculation allowed.
 ANNUAL_ZIP_SHA = {
-    2024: None,
-    2025: None,
+    # Original official ZIP SHA-256, fixed after source-only census on 2026-11-20.
+    2024: "e256f1fb20a579d8b2f910e5bae212f486d3002adaa2e4359ace740c737da05d",
+    2025: "8c941d84954e555ee2e54f40fa04d9203bf1e2f962203d0a9930966c4947c667",
 }
 COUNTRY_SOURCE = ROOT / "data/forecast-2027-ucdp261.json"
 CANDIDATE_REGISTRY = ROOT / "data/candidate-onset-label-revision-ties.json"
