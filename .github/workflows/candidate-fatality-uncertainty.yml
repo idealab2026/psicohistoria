@@ -1,0 +1,38 @@
+name: Candidate low best high fatality uncertainty and code-status validation
+on:
+  push:
+    paths:
+      - 'scripts/audit_candidate_fatality_uncertainty.py'
+      - 'scripts/test_audit_candidate_fatality_uncertainty.py'
+      - 'docs/candidate-fatality-uncertainty-coding-status.md'
+      - 'data/candidate-fatality-uncertainty-code-status.json'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-fatality-uncertainty.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_candidate_fatality_uncertainty.py'
+      - 'scripts/test_audit_candidate_fatality_uncertainty.py'
+      - 'docs/candidate-fatality-uncertainty-coding-status.md'
+      - 'data/candidate-fatality-uncertainty-code-status.json'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-fatality-uncertainty.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  fatality_coding_audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Adversarial bound ordering, status uncertainty and fixed-source tests
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_fatality_uncertainty.py' -v
+      - name: Require nine-original Candidate source SHA and frozen uncertainty results to replay exactly
+        run: python3 -B scripts/audit_candidate_fatality_uncertainty.py --check-report
+      - name: Enforce institutional public privacy allowlist
+        run: python3 -B scripts/audit_public.py

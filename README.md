@@ -4,6 +4,33 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## Q-CANDIDATE · Estimaciones de fallecidos y calidad de codificación (20-11-2026)
+
+**Hallazgo central de la auditoría de 9 fuentes originales Candidate**:
+los **dos resultados** de reactivación ≥5 muertes estatales del
+1–30 mayo de 2026, **Kenia y Libia**, mantienen el umbral bajo los
+campos `low`, `best` y `high` en las ediciones Q2 y Q3. Pero
+**ambos dejan de ser positivos** si el desenlace se restringe a
+eventos `code_status=Clear` (0 positivos frente a 2), porque
+dependen de registros marcados como pendientes de comprobar
+tipo de violencia o actores (`check type of violence`, `check dyad`).
+No significa que esos eventos sean falsos; Candidate es provisional
+y la edición GED anual puede confirmar, revisar o descartar casos.
+
+El estudio también detectó triples oficiales `low/best/high`
+**no monótonos** incluso en eventos estatales elegibles de
+otros periodos/países. Por ello los informes presentan estimaciones
+como **escenarios sin manipular**, con anomalías contabilizadas;
+no las describen como intervalos estadísticos fiables.
+Los cambios metodológicos tras hallar esas irregularidades se
+registran en el protocolo. No existe habilidad prospectiva
+demostrada para esas dos alertas ni fecha de primera publicación
+histórica independientemente acreditada.
+
+[Estudio, enmiendas y conclusiones](docs/candidate-fatality-uncertainty-coding-status.md)
+· [Informe congelado y nueve SHA](data/candidate-fatality-uncertainty-code-status.json)
+· [Código y pruebas](scripts/audit_candidate_fatality_uncertainty.py).
+
 ## Q-CANDIDATE · ¿Sobreviven las reactivaciones a las revisiones? (19-11-2026)
 
 Se ha comprobado **sin reentrenar modelos** el umbral de reactivación
