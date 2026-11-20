@@ -75,6 +75,18 @@ class FatalityUncertaintyTests(unittest.TestCase):
             with self.subTest(rows=rows), self.assertRaises(SourceError):
                 audit.audit_csv(fixture(rows), 2026, 6, {501})
 
+    def test_nonstate_inconsistent_bounds_are_counted_not_used(self):
+        records = fixture([
+            row("other", 501, "2026-05-12", 43, 44, 43,
+                type_of_violence=3),
+            row("state", 501, "2026-05-12", 4, 5, 6,
+                type_of_violence=1),
+        ])
+        stats, data = audit.audit_csv(records, 2026, 6, {501})
+        self.assertEqual(stats["checks"]["nonstate_invalid_bounds_excluded"], 1)
+        self.assertEqual(data["may30"][501]["best"], 5)
+        self.assertEqual(data["may30"][501]["low"], 4)
+
     def test_90_day_window_only_exposed_from_q3(self):
         f = fixture([
             row("a", 501, "2026-05-30", 3, 6, 8),
