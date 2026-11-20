@@ -38,7 +38,7 @@ ANNUAL_ZIP_SHA = {
     2025: "8c941d84954e555ee2e54f40fa04d9203bf1e2f962203d0a9930966c4947c667",
 }
 COUNTRY_SOURCE = ROOT / "data/forecast-2027-ucdp261.json"
-CANDIDATE_REGISTRY = ROOT / "data/candidate-onset-label-revision-ties.json"
+CANDIDATE_REGISTRY = ROOT / "data/candidate-may-threshold-vintage-stability.json"
 PREVIOUS_THRESHOLD_STUDY = ROOT / "data/candidate-may-threshold-vintage-stability.json"
 PREVIOUS_GRID = ROOT / "data/candidate-reactivation-threshold-grid.json"
 REPORT = ROOT / "data/candidate-to-annual-ged-resolution.json"
@@ -266,10 +266,10 @@ def matching_event_ids(candidate_ids, annual_ids, annual_window_ids, country_nam
 
 
 def candidate_registry_pins(registry):
-    if registry.get("status") != "RETROSPECTIVE_REVISIONS_NOT_ASOF_NOT_PROSPECTIVE":
+    if registry.get("status") != "POST_SELECTION_SOURCE_REVISION_SENSITIVITY_NOT_PROSPECTIVE":
         raise SourceError("Prior institutional Candidate source registry unavailable")
     pins = {}
-    for item in registry.get("nine_official_archives", []):
+    for item in registry.get("nine_original_sha_pinned_sources", []):
         y, m = item["year"],item["month"]
         if y not in YEARS:
             continue
