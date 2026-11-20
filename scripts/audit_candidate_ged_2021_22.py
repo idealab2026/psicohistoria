@@ -35,7 +35,11 @@ ORIGINAL_ZIP_URLS = {
 }
 ZIP_VERSIONS = {2021: "22", 2022: "23"}
 # To be filled ONLY after source census records original ZIP hash, no outcome scan.
-ZIP_SHA = {2021: None, 2022: None}
+ZIP_SHA = {
+    # Raw official ZIP SHA-256, recorded in source-only census before GED outcome analysis.
+    2021: "1741045a14a59e2ddbe9de4a190a7ef5b68d60d57be7e94178aff2e926a59f0d",
+    2022: "9aa082f9e1f62da5ea3245c39b1cee45daab6dc8b3a17fb0f0cdae9ba13ce6f7",
+}
 GRID_FILE = ROOT / "data/candidate-reactivation-threshold-grid.json"
 PREVIOUS_ANNUAL = ROOT / "data/candidate-to-annual-ged-resolution.json"
 UNIVERSE = ROOT / "data/forecast-2027-ucdp261.json"
