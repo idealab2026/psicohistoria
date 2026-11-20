@@ -60,6 +60,15 @@ REPOSITORY |= {
     ".github/workflows/candidate-may-threshold-vintage-stability.yml",
     "data/candidate-may-threshold-vintage-stability.json",
 }
+# Candidate uncertainty sensitivity study, aggregate nation-level observables only.
+RELEASE |= {"data/candidate-fatality-uncertainty-code-status.json"}
+REPOSITORY |= {
+    "scripts/audit_candidate_fatality_uncertainty.py",
+    "scripts/test_audit_candidate_fatality_uncertainty.py",
+    "docs/candidate-fatality-uncertainty-coding-status.md",
+    ".github/workflows/candidate-fatality-uncertainty.yml",
+    "data/candidate-fatality-uncertainty-code-status.json",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",
