@@ -74,5 +74,5 @@ Entre los 2.218 IDs de eventos GED25.1 que pasan el filtro de mayo 30d, **2.214*
 
 **Conclusión condicionada:** para el indicador de reactivación de mayo 2024, las dos etiquetas Candidate Q3 positivas de T=5 que no figuraban en GED25.1 tampoco se recuperan en GED26.1. Así, en este año y estimando la discrepancia relevante está en el **salto Candidate→GED anual**, no en la revisión posterior GED25.1→26.1. No extrapolar a 2025, 2026, otros filtros ni habilidad predictiva. El protocolo original figura arriba y el resultado se ha obtenido con ediciones oficiales SHA-fijadas.
 
-**Estado de publicación:** primer cálculo oficial efectuado; la congelación del informe completo y el gate de replay exacto se verifican por separado antes de dar por cerrada esta entrega.
+**Artefacto científico congelado:** [informe íntegro con ocho matrices, ocho países y metadatos originales de las dos ediciones](../data/ged2024-annual-vintage-drift.json). Fue capturado a partir de la primera ejecución oficial de CI (run 44773835671). El workflow de reproducción exige igualdad exacta del objeto JSON calculado con ambas fuentes oficiales SHA-256. Esta publicación no implica validación prospectiva.
 
