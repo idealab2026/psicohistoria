@@ -39,6 +39,6 @@ jobs:
           python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_to_annual_ged.py' -v
           python3 -B -m unittest discover -s scripts -p 'test_audit_ged2024_annual_vintage_drift.py' -v
       - name: First official source-pinned GED25.1 to GED26.1 retrospective result
-        run: python3 -B scripts/audit_ged2024_annual_vintage_drift.py --summary
+        run: python3 -B scripts/audit_ged2024_annual_vintage_drift.py --print-report
       - name: Institutional-only public release gate
         run: python3 -B scripts/audit_public.py
