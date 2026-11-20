@@ -1,0 +1,46 @@
+name: GED2024 original annual edition drift audit
+on:
+  push:
+    paths:
+      - 'scripts/audit_ged2024_annual_vintage_drift.py'
+      - 'scripts/test_audit_ged2024_annual_vintage_drift.py'
+      - 'scripts/audit_candidate_to_annual_ged.py'
+      - 'scripts/test_audit_candidate_to_annual_ged.py'
+      - 'docs/ged2024-annual-vintage-drift-protocol.md'
+      - 'data/ged2024-annual-vintage-drift.json'
+      - 'README.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/ged2024-annual-vintage-drift.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_ged2024_annual_vintage_drift.py'
+      - 'scripts/test_audit_ged2024_annual_vintage_drift.py'
+      - 'scripts/audit_candidate_to_annual_ged.py'
+      - 'scripts/test_audit_candidate_to_annual_ged.py'
+      - 'docs/ged2024-annual-vintage-drift-protocol.md'
+      - 'data/ged2024-annual-vintage-drift.json'
+      - 'README.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/ged2024-annual-vintage-drift.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  ged2024_vintage_drift:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Historical annual GED and 2024-in-later-release adversarial tests
+        run: |
+          python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_to_annual_ged.py' -v
+          python3 -B -m unittest discover -s scripts -p 'test_audit_ged2024_annual_vintage_drift.py' -v
+      - name: Require exact byte-frozen GED2024 annual-vintage results from both original ZIPs
+        run: python3 -B scripts/audit_ged2024_annual_vintage_drift.py --check-report
+      - name: Institutional-only public release gate
+        run: python3 -B scripts/audit_public.py

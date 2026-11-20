@@ -102,9 +102,12 @@ def annual_census(fetcher=fetch_annual_zip):
             "status": "SOURCES_ONLY_NO_OUTCOMES_EVALUATED", "sources": census}
 
 
-def csv_member(archive, year):
-    # annual v25.1 or v26.1 should contain only one GEDEvent CSV.
-    version = {2024: "25", 2025: "26"}[year]
+def csv_member(archive, year, release_year=None):
+    # Event year and annual edition year are separate: GED26.1 also revises 2024.
+    edition = year if release_year is None else release_year
+    if year not in YEARS or edition not in YEARS or edition < year:
+        raise SourceError("Unregistered annual edition/event-year combination")
+    version = {2024: "25", 2025: "26"}[edition]
     candidates = [
         item for item in archive.infolist()
         if re.fullmatch(r"GEDEvent_v" + version + r"[_\.]1\.csv",
@@ -115,16 +118,17 @@ def csv_member(archive, year):
     return candidates[0]
 
 
-def read_annual(raw, year, population):
-    """Scan the annual GED ZIP, retaining target-year ID census and precise May/Jul windows."""
-    if year not in YEARS:
-        raise SourceError("Unplanned annual GED origin year")
+def read_annual(raw, year, population, release_year=None):
+    """Read a target event year from a fixed annual release, including later revising editions."""
+    edition = year if release_year is None else release_year
+    if year not in YEARS or edition not in YEARS or edition < year:
+        raise SourceError("Unregistered annual GED release-year pairing")
     examine_zip(raw)
     event_window = []
     by_id_annual_year = {}
     counter = Counter()
     with zipfile.ZipFile(io.BytesIO(raw), "r") as zipped:
-        item = csv_member(zipped, year)
+        item = csv_member(zipped, year, release_year=edition)
         if item.file_size > MAX_UNCOMPRESSED:
             raise SourceError("GED annual CSV uncompressed too large")
         with zipped.open(item, "r") as stream:

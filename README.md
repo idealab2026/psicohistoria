@@ -39,6 +39,30 @@ solapados y países dependientes.
 · [Informe congelado, trazabilidad y resumen a cuatro años](data/candidate-ged-2021-22-resolution.json)
 · [Código y tests](scripts/audit_candidate_ged_2021_22.py).
 
+## Q-CANDIDATE · ¿Cambia una etiqueta incluso entre dos ediciones GED anuales? (20-11-2026)
+
+**Nuevo contraste retrospectivo original SHA-protegido** para los mismos acontecimientos
+de **2024**, comparando GED 25.1 frente a GED 26.1. Se han mantenido exactamente
+los 196 países, las cohortes de riesgo Candidate Q1 fijadas en el estudio anterior,
+cuatro umbrales (1/5/10/25 muertes estatales) y dos horizontes (30/90 días).
+
+**Resultado:** **0 países cambian de etiqueta binaria en las ocho matrices**, aunque
+**8 países sí presentan revisiones del recuento de muertes** en mayo–julio.
+Ucrania pasa de 7.127 a 8.149 fallecidos `best` estatales codificados
+en 90 días bajo los filtros originales. De 2.218 IDs elegibles GED25.1
+en mayo, 2.214 mantienen el mismo ID, país y ventana en GED26.1
+(99,82 %). Ni las etiquetas ni los IDs equivalen a verdad histórica completa.
+
+La diferencia Candidate→GED anual ya detectada para el umbral cinco
+en 2024 **no se corrige usando GED26.1 en lugar de GED25.1**.
+Esto identifica un problema de comparabilidad **entre familias de fuentes**,
+no una demostración de que ninguna edición anual vaya a revisarse en el futuro.
+**No hay nueva predicción, ni destreza prospectiva validada.**
+
+[Protocolo y resultados](docs/ged2024-annual-vintage-drift-protocol.md)
+· [informe completo congelado, ocho matrices y fuentes SHA](data/ged2024-annual-vintage-drift.json)
+· [script reproducible](scripts/audit_ged2024_annual_vintage_drift.py).
+
 ## Q-CANDIDATE · ¿Se conservan las alertas en GED anual? (20-11-2026)
 
 **Contraste implementado contra los archivos anuales oficiales UCDP GED 25.1
