@@ -1,14 +1,562 @@
 {
-  "schema": "idealab.psico.ged2024_annual_vintage_drift.preregistered_placeholder.v1",
-  "status": "PREREGISTERED_NO_OUTCOME_REPORTED",
+  "by_threshold_and_horizon": {
+    "1": {
+      "30": {
+        "candidate_q3_vs_first_annual_previous_replayed": {
+          "both_negative": 148,
+          "both_positive": 0,
+          "candidate_only": 1,
+          "candidate_only_country_ids": [
+            2
+          ],
+          "candidate_positive": 1,
+          "candidate_positive_matching_ged_share": 0,
+          "candidate_sensitivity_to_ged_label": null,
+          "disagreements": 1,
+          "ged_only": 0,
+          "ged_only_country_ids": [],
+          "ged_positive": 0,
+          "n_at_risk": 149
+        },
+        "candidate_q3_vs_later_annual": {
+          "both_negative": 148,
+          "both_positive": 0,
+          "candidate_q3_positive": 1,
+          "disagreements": 1,
+          "first_only": 1,
+          "first_only_country_ids": [
+            2
+          ],
+          "later_annual_positive": 0,
+          "later_only": 0,
+          "later_only_country_ids": [],
+          "n_at_risk": 149,
+          "positive_overlap_share_of_first": 0
+        },
+        "first_annual_vs_later_annual": {
+          "both_negative": 149,
+          "both_positive": 0,
+          "disagreements": 0,
+          "first_annual_positive": 0,
+          "first_only": 0,
+          "first_only_country_ids": [],
+          "later_annual_positive": 0,
+          "later_only": 0,
+          "later_only_country_ids": [],
+          "n_at_risk": 149,
+          "positive_overlap_share_of_first": null
+        }
+      },
+      "90": {
+        "candidate_q3_vs_first_annual_previous_replayed": {
+          "both_negative": 143,
+          "both_positive": 1,
+          "candidate_only": 5,
+          "candidate_only_country_ids": [
+            2,
+            94,
+            435,
+            616,
+            698
+          ],
+          "candidate_positive": 6,
+          "candidate_positive_matching_ged_share": 0.16666667,
+          "candidate_sensitivity_to_ged_label": 1,
+          "disagreements": 5,
+          "ged_only": 0,
+          "ged_only_country_ids": [],
+          "ged_positive": 1,
+          "n_at_risk": 149
+        },
+        "candidate_q3_vs_later_annual": {
+          "both_negative": 143,
+          "both_positive": 1,
+          "candidate_q3_positive": 6,
+          "disagreements": 5,
+          "first_only": 5,
+          "first_only_country_ids": [
+            2,
+            94,
+            435,
+            616,
+            698
+          ],
+          "later_annual_positive": 1,
+          "later_only": 0,
+          "later_only_country_ids": [],
+          "n_at_risk": 149,
+          "positive_overlap_share_of_first": 0.16666667
+        },
+        "first_annual_vs_later_annual": {
+          "both_negative": 148,
+          "both_positive": 1,
+          "disagreements": 0,
+          "first_annual_positive": 1,
+          "first_only": 0,
+          "first_only_country_ids": [],
+          "later_annual_positive": 1,
+          "later_only": 0,
+          "later_only_country_ids": [],
+          "n_at_risk": 149,
+          "positive_overlap_share_of_first": 1
+        }
+      }
+    },
+    "5": {
+      "30": {
+        "candidate_q3_vs_first_annual_previous_replayed": {
+          "both_negative": 159,
+          "both_positive": 0,
+          "candidate_only": 2,
+          "candidate_only_country_ids": [
+            140,
+            771
+          ],
+          "candidate_positive": 2,
+          "candidate_positive_matching_ged_share": 0,
+          "candidate_sensitivity_to_ged_label": null,
+          "disagreements": 2,
+          "ged_only": 0,
+          "ged_only_country_ids": [],
+          "ged_positive": 0,
+          "n_at_risk": 161
+        },
+        "candidate_q3_vs_later_annual": {
+          "both_negative": 159,
+          "both_positive": 0,
+          "candidate_q3_positive": 2,
+          "disagreements": 2,
+          "first_only": 2,
+          "first_only_country_ids": [
+            140,
+            771
+          ],
+          "later_annual_positive": 0,
+          "later_only": 0,
+          "later_only_country_ids": [],
+          "n_at_risk": 161,
+          "positive_overlap_share_of_first": 0
+        },
+        "first_annual_vs_later_annual": {
+          "both_negative": 161,
+          "both_positive": 0,
+          "disagreements": 0,
+          "first_annual_positive": 0,
+          "first_only": 0,
+          "first_only_country_ids": [],
+          "later_annual_positive": 0,
+          "later_only": 0,
+          "later_only_country_ids": [],
+          "n_at_risk": 161,
+          "positive_overlap_share_of_first": null
+        }
+      },
+      "90": {
+        "candidate_q3_vs_first_annual_previous_replayed": {
+          "both_negative": 155,
+          "both_positive": 1,
+          "candidate_only": 4,
+          "candidate_only_country_ids": [
+            70,
+            140,
+            698,
+            771
+          ],
+          "candidate_positive": 5,
+          "candidate_positive_matching_ged_share": 0.2,
+          "candidate_sensitivity_to_ged_label": 0.5,
+          "disagreements": 5,
+          "ged_only": 1,
+          "ged_only_country_ids": [
+            640
+          ],
+          "ged_positive": 2,
+          "n_at_risk": 161
+        },
+        "candidate_q3_vs_later_annual": {
+          "both_negative": 155,
+          "both_positive": 1,
+          "candidate_q3_positive": 5,
+          "disagreements": 5,
+          "first_only": 4,
+          "first_only_country_ids": [
+            70,
+            140,
+            698,
+            771
+          ],
+          "later_annual_positive": 2,
+          "later_only": 1,
+          "later_only_country_ids": [
+            640
+          ],
+          "n_at_risk": 161,
+          "positive_overlap_share_of_first": 0.2
+        },
+        "first_annual_vs_later_annual": {
+          "both_negative": 159,
+          "both_positive": 2,
+          "disagreements": 0,
+          "first_annual_positive": 2,
+          "first_only": 0,
+          "first_only_country_ids": [],
+          "later_annual_positive": 2,
+          "later_only": 0,
+          "later_only_country_ids": [],
+          "n_at_risk": 161,
+          "positive_overlap_share_of_first": 1
+        }
+      }
+    },
+    "10": {
+      "30": {
+        "candidate_q3_vs_first_annual_previous_replayed": {
+          "both_negative": 163,
+          "both_positive": 0,
+          "candidate_only": 0,
+          "candidate_only_country_ids": [],
+          "candidate_positive": 0,
+          "candidate_positive_matching_ged_share": null,
+          "candidate_sensitivity_to_ged_label": null,
+          "disagreements": 0,
+          "ged_only": 0,
+          "ged_only_country_ids": [],
+          "ged_positive": 0,
+          "n_at_risk": 163
+        },
+        "candidate_q3_vs_later_annual": {
+          "both_negative": 163,
+          "both_positive": 0,
+          "candidate_q3_positive": 0,
+          "disagreements": 0,
+          "first_only": 0,
+          "first_only_country_ids": [],
+          "later_annual_positive": 0,
+          "later_only": 0,
+          "later_only_country_ids": [],
+          "n_at_risk": 163,
+          "positive_overlap_share_of_first": null
+        },
+        "first_annual_vs_later_annual": {
+          "both_negative": 163,
+          "both_positive": 0,
+          "disagreements": 0,
+          "first_annual_positive": 0,
+          "first_only": 0,
+          "first_only_country_ids": [],
+          "later_annual_positive": 0,
+          "later_only": 0,
+          "later_only_country_ids": [],
+          "n_at_risk": 163,
+          "positive_overlap_share_of_first": null
+        }
+      },
+      "90": {
+        "candidate_q3_vs_first_annual_previous_replayed": {
+          "both_negative": 158,
+          "both_positive": 2,
+          "candidate_only": 2,
+          "candidate_only_country_ids": [
+            70,
+            140
+          ],
+          "candidate_positive": 4,
+          "candidate_positive_matching_ged_share": 0.5,
+          "candidate_sensitivity_to_ged_label": 0.66666667,
+          "disagreements": 3,
+          "ged_only": 1,
+          "ged_only_country_ids": [
+            640
+          ],
+          "ged_positive": 3,
+          "n_at_risk": 163
+        },
+        "candidate_q3_vs_later_annual": {
+          "both_negative": 158,
+          "both_positive": 2,
+          "candidate_q3_positive": 4,
+          "disagreements": 3,
+          "first_only": 2,
+          "first_only_country_ids": [
+            70,
+            140
+          ],
+          "later_annual_positive": 3,
+          "later_only": 1,
+          "later_only_country_ids": [
+            640
+          ],
+          "n_at_risk": 163,
+          "positive_overlap_share_of_first": 0.5
+        },
+        "first_annual_vs_later_annual": {
+          "both_negative": 160,
+          "both_positive": 3,
+          "disagreements": 0,
+          "first_annual_positive": 3,
+          "first_only": 0,
+          "first_only_country_ids": [],
+          "later_annual_positive": 3,
+          "later_only": 0,
+          "later_only_country_ids": [],
+          "n_at_risk": 163,
+          "positive_overlap_share_of_first": 1
+        }
+      }
+    },
+    "25": {
+      "30": {
+        "candidate_q3_vs_first_annual_previous_replayed": {
+          "both_negative": 170,
+          "both_positive": 0,
+          "candidate_only": 0,
+          "candidate_only_country_ids": [],
+          "candidate_positive": 0,
+          "candidate_positive_matching_ged_share": null,
+          "candidate_sensitivity_to_ged_label": null,
+          "disagreements": 0,
+          "ged_only": 0,
+          "ged_only_country_ids": [],
+          "ged_positive": 0,
+          "n_at_risk": 170
+        },
+        "candidate_q3_vs_later_annual": {
+          "both_negative": 170,
+          "both_positive": 0,
+          "candidate_q3_positive": 0,
+          "disagreements": 0,
+          "first_only": 0,
+          "first_only_country_ids": [],
+          "later_annual_positive": 0,
+          "later_only": 0,
+          "later_only_country_ids": [],
+          "n_at_risk": 170,
+          "positive_overlap_share_of_first": null
+        },
+        "first_annual_vs_later_annual": {
+          "both_negative": 170,
+          "both_positive": 0,
+          "disagreements": 0,
+          "first_annual_positive": 0,
+          "first_only": 0,
+          "first_only_country_ids": [],
+          "later_annual_positive": 0,
+          "later_only": 0,
+          "later_only_country_ids": [],
+          "n_at_risk": 170,
+          "positive_overlap_share_of_first": null
+        }
+      },
+      "90": {
+        "candidate_q3_vs_first_annual_previous_replayed": {
+          "both_negative": 168,
+          "both_positive": 1,
+          "candidate_only": 1,
+          "candidate_only_country_ids": [
+            501
+          ],
+          "candidate_positive": 2,
+          "candidate_positive_matching_ged_share": 0.5,
+          "candidate_sensitivity_to_ged_label": 1,
+          "disagreements": 1,
+          "ged_only": 0,
+          "ged_only_country_ids": [],
+          "ged_positive": 1,
+          "n_at_risk": 170
+        },
+        "candidate_q3_vs_later_annual": {
+          "both_negative": 168,
+          "both_positive": 1,
+          "candidate_q3_positive": 2,
+          "disagreements": 1,
+          "first_only": 1,
+          "first_only_country_ids": [
+            501
+          ],
+          "later_annual_positive": 1,
+          "later_only": 0,
+          "later_only_country_ids": [],
+          "n_at_risk": 170,
+          "positive_overlap_share_of_first": 0.5
+        },
+        "first_annual_vs_later_annual": {
+          "both_negative": 169,
+          "both_positive": 1,
+          "disagreements": 0,
+          "first_annual_positive": 1,
+          "first_only": 0,
+          "first_only_country_ids": [],
+          "later_annual_positive": 1,
+          "later_only": 0,
+          "later_only_country_ids": [],
+          "n_at_risk": 170,
+          "positive_overlap_share_of_first": 1
+        }
+      }
+    }
+  },
+  "cohorts_modified": 0,
+  "country_annual_best_changes": [
+    {
+      "candidate_q1_prior_best": 129,
+      "candidate_q3_may30_best": 5,
+      "country": "Haiti",
+      "country_id": 41,
+      "first_annual_90_best": 11,
+      "first_annual_may30_best": 5,
+      "later_annual_90_best": 17,
+      "later_annual_may30_best": 6
+    },
+    {
+      "candidate_q1_prior_best": 26,
+      "candidate_q3_may30_best": 24,
+      "country": "Colombia",
+      "country_id": 100,
+      "first_annual_90_best": 34,
+      "first_annual_may30_best": 21,
+      "later_annual_90_best": 41,
+      "later_annual_may30_best": 22
+    },
+    {
+      "candidate_q1_prior_best": 3144,
+      "candidate_q3_may30_best": 2056,
+      "country": "Ukraine",
+      "country_id": 369,
+      "first_annual_90_best": 7127,
+      "first_annual_may30_best": 3145,
+      "later_annual_90_best": 8149,
+      "later_annual_may30_best": 3149
+    },
+    {
+      "candidate_q1_prior_best": 979,
+      "candidate_q3_may30_best": 111,
+      "country": "Nigeria",
+      "country_id": 475,
+      "first_annual_90_best": 246,
+      "first_annual_may30_best": 116,
+      "later_annual_90_best": 243,
+      "later_annual_may30_best": 116
+    },
+    {
+      "candidate_q1_prior_best": 443,
+      "candidate_q3_may30_best": 40,
+      "country": "Ethiopia",
+      "country_id": 530,
+      "first_annual_90_best": 245,
+      "first_annual_may30_best": 76,
+      "later_annual_90_best": 276,
+      "later_annual_may30_best": 76
+    },
+    {
+      "candidate_q1_prior_best": 77,
+      "candidate_q3_may30_best": 10,
+      "country": "Iraq",
+      "country_id": 645,
+      "first_annual_90_best": 78,
+      "first_annual_may30_best": 13,
+      "later_annual_90_best": 90,
+      "later_annual_may30_best": 14
+    },
+    {
+      "candidate_q1_prior_best": 7086,
+      "candidate_q3_may30_best": 1309,
+      "country": "Israel",
+      "country_id": 666,
+      "first_annual_90_best": 3850,
+      "first_annual_may30_best": 1245,
+      "later_annual_90_best": 3881,
+      "later_annual_may30_best": 1265
+    },
+    {
+      "candidate_q1_prior_best": 283,
+      "candidate_q3_may30_best": 110,
+      "country": "Pakistan",
+      "country_id": 770,
+      "first_annual_90_best": 308,
+      "first_annual_may30_best": 105,
+      "later_annual_90_best": 305,
+      "later_annual_may30_best": 102
+    }
+  ],
+  "country_universe_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
   "design_fixed_date": "2026-11-20",
-  "event_year": 2024,
   "editions": [
     "GED 25.1",
     "GED 26.1"
   ],
-  "outcomes_inspected_for_later_vintage": false,
+  "event_year": 2024,
+  "first_to_later_annual_exact_event_id_overlap": {
+    "30": {
+      "first_annual_eligible_event_ids": 2218,
+      "first_annual_ids_in_later_same_country_window": 2214,
+      "first_annual_ids_in_later_same_event_year": 2214,
+      "first_annual_ids_missing_in_later_exact_id": 4,
+      "warning": "Exact IDs track coding revisions, not the existence of real-world incidents."
+    },
+    "90": {
+      "first_annual_eligible_event_ids": 5211,
+      "first_annual_ids_in_later_same_country_window": 5140,
+      "first_annual_ids_in_later_same_event_year": 5140,
+      "first_annual_ids_missing_in_later_exact_id": 71,
+      "warning": "Exact IDs track coding revisions, not the existence of real-world incidents."
+    }
+  },
+  "horizons": [
+    30,
+    90
+  ],
+  "interpretation": "Post-selection sensitivity of the 2024 outcome definition, not a forecasting benchmark. Neither GED edition is ground truth. GED26.1 revises 2024 and is NOT an available 2024 as-of source. Missing exact IDs do not mean the historical events did not occur.",
+  "n_countries": 196,
+  "original_candidate_release_dates_verified": false,
+  "original_previous_report_sha256": "01e59980294c67115e1253b52cd9595d9389e59c2bd003ee8bb747cd433a4db4",
   "prospective_issued_probabilities": 0,
-  "cohorts_modified": 0,
-  "warning": "NOT A RESULT. Replace only after running official source-SHA-pinned comparison. This placeholder has no GED26.1-for-2024 outcomes."
+  "risk_set_uses_later_ged": false,
+  "schema": "idealab.psico.ged2024_annual_vintage_drift.v1",
+  "source_archives_byte_pinned": true,
+  "source_of_risk_set": "Candidate Q1 2024 from earlier frozen study",
+  "sources": [
+    {
+      "bytes": 29307888,
+      "edition": "25.1",
+      "event_year": 2024,
+      "release_year": 2024,
+      "sha256": "e256f1fb20a579d8b2f910e5bae212f486d3002adaa2e4359ace740c737da05d",
+      "target_year_metadata": {
+        "all_annual_rows": 385918,
+        "retained_statebased_may_to_july": 5211,
+        "skip_date_precision": 312,
+        "skip_nonstate": 7854,
+        "skip_outside_target_90_window": 15439,
+        "target_year_rows": 28816,
+        "zip_csv_bytes": 250393383,
+        "zip_member": "GEDEvent_v25_1.csv"
+      },
+      "url": "https://ucdp.uu.se/downloads/ged/ged251-csv.zip"
+    },
+    {
+      "bytes": 39122522,
+      "edition": "26.1",
+      "event_year": 2024,
+      "release_year": 2025,
+      "sha256": "8c941d84954e555ee2e54f40fa04d9203bf1e2f962203d0a9930966c4947c667",
+      "target_year_metadata": {
+        "all_annual_rows": 417968,
+        "retained_statebased_may_to_july": 5941,
+        "skip_date_precision": 320,
+        "skip_nonstate": 8221,
+        "skip_outside_target_90_window": 15584,
+        "target_year_rows": 30066,
+        "zip_csv_bytes": 273992720,
+        "zip_member": "GEDEvent_v26_1.csv"
+      },
+      "url": "https://ucdp.uu.se/downloads/ged/ged261-csv.zip"
+    }
+  ],
+  "status": "RETROSPECTIVE_ANNUAL_VINTAGE_DRIFT_NOT_PROSPECTIVE",
+  "thresholds": [
+    1,
+    5,
+    10,
+    25
+  ]
 }
