@@ -1,0 +1,38 @@
+name: Candidate-to-annual-GED 2024-25 country threshold resolution
+on:
+  push:
+    paths:
+      - 'scripts/audit_candidate_to_annual_ged.py'
+      - 'scripts/test_audit_candidate_to_annual_ged.py'
+      - 'docs/candidate-to-ged-annual-resolution-protocol.md'
+      - 'data/candidate-to-annual-ged-resolution.json'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-to-annual-ged.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_candidate_to_annual_ged.py'
+      - 'scripts/test_audit_candidate_to_annual_ged.py'
+      - 'docs/candidate-to-ged-annual-resolution-protocol.md'
+      - 'data/candidate-to-annual-ged-resolution.json'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-to-annual-ged.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  annual_resolution:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Adversarial synthetic annual GED original-ZIP and label tests
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_to_annual_ged.py' -v
+      - name: GED 25.1 and 26.1 original ZIP-only SHA census - no outcomes read
+        run: python3 -B scripts/audit_candidate_to_annual_ged.py --source-census
+      - name: Institutional public-release privacy audit
+        run: python3 -B scripts/audit_public.py
