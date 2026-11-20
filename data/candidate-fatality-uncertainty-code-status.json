@@ -1,0 +1,21 @@
+{
+  "schema": "idealab.psico.candidate.fatality_uncertainty_code_status_v1",
+  "status": "PREREGISTERED_NOT_RESULTS",
+  "design_date": "2026-11-20",
+  "years": [
+    2024,
+    2025,
+    2026
+  ],
+  "threshold": 5,
+  "focus_country_codes": [
+    501,
+    620
+  ],
+  "target_windows": [
+    "2026-05-01/2026-05-30",
+    "2026-05-01/2026-07-29"
+  ],
+  "original_release_dates_certified": false,
+  "forecast_issued": false
+}
