@@ -89,17 +89,22 @@ def audit_csv(raw, year, month, universe):
             raise SourceError(f"Invalid GED fields in {year} quarter{month} event id={event_id}") from exc
         if country <= 0 or violence not in (1, 2, 3) or precision not in (0, 1, 2, 3, 4, 5):
             raise SourceError("Invalid country/type/date precision")
-        if any(value < 0 for value in death.values()) or not (
+        malformed_bounds = any(value < 0 for value in death.values()) or not (
             death["low"] <= death["best"] <= death["high"]
-        ):
-            raise SourceError(f"Candidate {year}-{month} invalid deaths at id={event_id}, country={country}, type={violence}, date_prec={precision}, dates={row.get('date_start')}/{row.get('date_end')}, deaths={death}")
+        )
+        # Amendment after inspecting real source: non-state events can have
+        # nonmonotone bounds. They are never part of this state-based estimand.
+        # Log those cases but NEVER change source or silently use their deaths.
+        if violence != 1:
+            counts["skip_non_state_based"] += 1
+            counts["nonstate_invalid_bounds_excluded"] += int(malformed_bounds)
+            continue
+        if malformed_bounds:
+            raise SourceError(f"State-based Candidate {year}-{month} invalid deaths at id={event_id}, country={country}, date_prec={precision}, dates={row.get('date_start')}/{row.get('date_end')}, deaths={death}")
         start = ged_day(row["date_start"], "date_start")
         end = ged_day(row["date_end"], "date_end")
         if start > end:
             raise SourceError("GED event date_start > date_end")
-        if violence != 1:
-            counts["skip_non_state_based"] += 1
-            continue
         if precision not in (1, 2):
             counts["skip_low_or_unknown_date_precision"] += 1
             counts["skip_date_prec_zero"] += int(precision == 0)
