@@ -46,4 +46,33 @@ Si los positivos o sus sumas cambian entre GED 25.1 y GED 26.1, hay **inestabili
 
 No se propondrá un umbral alternativo seleccionado después de ver el resultado, no se llamará *precisión predictiva* a la coincidencia de etiquetas, no se interpretará un ID ausente como falsedad del acontecimiento, ni se confirmarán Kenia/Libia 2026 sin su GED anual. Esta extensión no establece la fecha original de disponibilidad de Candidate ni valida un uso operativo en tiempo real.
 
-**Estado del protocolo inicial:** diseño e implementación previos al nuevo cálculo GED 26.1→eventos 2024; pendiente de la primera ejecución reproducible y congelación del informe resultante.
+## Primera ejecución real de los dos ZIP oficiales (20-11-2026)
+
+La primera ejecución de GitHub Actions con versiones 25.1 y 26.1 originales **pasó pruebas sintéticas, reprodujo los 196 valores de GED25.1 del estudio anterior y pasó el control institucional de privacidad**. La comparación con GED26.1 se ejecutó después de registrar el diseño y la lista completa de ocho celdas.
+
+| Umbral en países Candidate Q1 bajo T | 30d, GED25.1 → GED26.1 | 90d, GED25.1 → GED26.1 | Países que cambian etiqueta |
+|---|---:|---:|---:|
+| T=1 | 0 → 0 | 1 → 1 | 0 en ambas ventanas |
+| T=5 | 0 → 0 | 2 → 2 | 0 en ambas ventanas |
+| T=10 | 0 → 0 | 3 → 3 | 0 en ambas ventanas |
+| T=25 | 0 → 0 | 1 → 1 | 0 en ambas ventanas |
+
+El indicador **no cambia en ninguno de los ocho contrastes**, pero **sí hay ocho países cuyos totales elegibles de mayo–julio cambian**:
+
+| País | GED25.1 90d `best` | GED26.1 90d `best` |
+|---|---:|---:|
+| Haití | 11 | 17 |
+| Colombia | 34 | 41 |
+| Ucrania | 7.127 | 8.149 |
+| Nigeria | 246 | 243 |
+| Etiopía | 245 | 276 |
+| Irak | 78 | 90 |
+| Israel | 3.850 | 3.881 |
+| Pakistán | 308 | 305 |
+
+Entre los 2.218 IDs de eventos GED25.1 que pasan el filtro de mayo 30d, **2.214** conservan su ID en la ventana y país de GED26.1 (**99,82 %**); 5.140 de 5.211 a 90d (**98,64 %**). Un ID no coincidente no prueba que el acontecimiento histórico fuera falso. Los datos del ZIP son registros codificados, no una reconstrucción exhaustiva de víctimas.
+
+**Conclusión condicionada:** para el indicador de reactivación de mayo 2024, las dos etiquetas Candidate Q3 positivas de T=5 que no figuraban en GED25.1 tampoco se recuperan en GED26.1. Así, en este año y estimando la discrepancia relevante está en el **salto Candidate→GED anual**, no en la revisión posterior GED25.1→26.1. No extrapolar a 2025, 2026, otros filtros ni habilidad predictiva. El protocolo original figura arriba y el resultado se ha obtenido con ediciones oficiales SHA-fijadas.
+
+**Estado de publicación:** primer cálculo oficial efectuado; la congelación del informe completo y el gate de replay exacto se verifican por separado antes de dar por cerrada esta entrega.
+
