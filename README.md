@@ -9,7 +9,7 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 El contraste con las primeras versiones GED anuales se ha extendido a
 **2021 (GED 22.1) y 2022 (GED 23.1)**, manteniendo los resultados
 2024/25 publicados anteriormente, sin reetiquetar fuentes
-y con SHA-256 de **10 archivos** originales en los dos estudios.
+y con SHA-256 de **14 archivos** originales entre los dos estudios.
 
 **Indicador exploratorio:** en países cuyo Candidate Q1 registra
 menos de 5 muertes estatales bien fechadas, los que superan
