@@ -69,6 +69,15 @@ REPOSITORY |= {
     ".github/workflows/candidate-fatality-uncertainty.yml",
     "data/candidate-fatality-uncertainty-code-status.json",
 }
+# Two-year official annual GED source-resolution audit, institutionally bounded.
+RELEASE |= {"data/candidate-to-annual-ged-resolution.json"}
+REPOSITORY |= {
+    "scripts/audit_candidate_to_annual_ged.py",
+    "scripts/test_audit_candidate_to_annual_ged.py",
+    "docs/candidate-to-ged-annual-resolution-protocol.md",
+    ".github/workflows/candidate-to-annual-ged.yml",
+    "data/candidate-to-annual-ged-resolution.json",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",

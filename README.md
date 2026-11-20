@@ -4,6 +4,41 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## Q-CANDIDATE · ¿Se conservan las alertas en GED anual? (20-11-2026)
+
+**Contraste implementado contra los archivos anuales oficiales UCDP GED 25.1
+(2024) y GED 26.1 (2025), con ZIP originales y seis Candidate Q1/Q2/Q3
+verificados por SHA-256.** Para el estimando exploratorio de reactivación
+`>=5` muertes estatales bien fechadas entre el 1 y el 30 de mayo,
+en países cuyo Candidate Q1 estaba por debajo de cinco, la
+comparación encontró:
+
+| Año | En riesgo | Positivos Candidate Q3 | Positivos GED anual | Positivos coincidentes |
+|---|---:|---:|---:|---:|
+| 2024 | 161 | 2 | 0 | 0 |
+| 2025 | 160 | 4 | 1 | 1 |
+
+**Solamente uno de seis indicadores positivos provisionales del mes
+conserva la etiqueta en GED anual**: Indonesia 2025 (de 38
+muertes registradas en Candidate a 14 en GED, bajo los mismos filtros).
+Brasil y Bangladés 2024, así como Ecuador, Brasil y Libia 2025,
+dejan de cumplir ese umbral en la edición GED del año.
+En 2024 Bangladés había sido clasificado `Clear` en Candidate,
+por lo que `Clear` **tampoco garantiza** la etiqueta anual.
+
+Esta fragilidad del *indicador nacional en países de baja incidencia*
+**NO implica que la mayoría de los acontecimientos Candidate sean
+falsos**: aproximadamente **91 % de los IDs elegibles de mayo** coinciden
+exactamente con registros GED del mismo año, y Candidate/GED tienen
+criterios de inclusión diferentes. Los dos países de 2026 (Kenia,
+Libia) siguen sin un GED anual 2026 de referencia.
+**No se ha validado habilidad prospectiva ni disponibilidad
+histórica original `as-of`**. Se preservan las cohortes fijadas.
+
+[Resultados, matrices de confusión y límites](docs/candidate-to-ged-annual-resolution-protocol.md)
+· [Informe verificable con 392 país-años y ocho SHA](data/candidate-to-annual-ged-resolution.json)
+· [Código y reproducción](scripts/audit_candidate_to_annual_ged.py).
+
 ## Q-CANDIDATE · Estimaciones de fallecidos y calidad de codificación (20-11-2026)
 
 **Hallazgo central de la auditoría de 9 fuentes originales Candidate**:
