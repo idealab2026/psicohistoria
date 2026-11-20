@@ -92,7 +92,7 @@ def audit_csv(raw, year, month, universe):
         if any(value < 0 for value in death.values()) or not (
             death["low"] <= death["best"] <= death["high"]
         ):
-            raise SourceError(f"Impossible low/best/high ordering: event id={event_id}")
+            raise SourceError(f"Impossible low/best/high in original Candidate {year}-{month}: id={event_id}, country={country}, type={violence}, date_prec={precision}, start={row[\'date_start\']}, end={row[\'date_end\']}, low={death[\'low\']}, best={death[\'best\']}, high={death[\'high\']}")
         start = ged_day(row["date_start"], "date_start")
         end = ged_day(row["date_end"], "date_end")
         if start > end:
