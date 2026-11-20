@@ -32,7 +32,7 @@ jobs:
           python-version: '3.12'
       - name: Adversarial synthetic annual GED original-ZIP and label tests
         run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_to_annual_ged.py' -v
-      - name: GED 25.1 and 26.1 original ZIP-only SHA census - no outcomes read
-        run: python3 -B scripts/audit_candidate_to_annual_ged.py --source-census
+      - name: Compare six SHA-frozen Candidate vintages against two newly SHA-frozen annual GED ZIPs
+        run: python3 -B scripts/audit_candidate_to_annual_ged.py --print-report
       - name: Institutional public-release privacy audit
         run: python3 -B scripts/audit_public.py
