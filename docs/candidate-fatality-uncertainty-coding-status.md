@@ -47,3 +47,45 @@ La reejecución halló además un evento **estatal tipo 1** en Q1 de 2024 (`id=5
 La validación posterior encontró en Q1 de 2024 un evento **estatal de precisión 2 elegible** (`id=514686`, país 530) con `low=18`, `best=18` y `high=17`. La hipótesis de que **todos** los eventos oficiales satisfacen `low≤best≤high` es empíricamente falsa. El bloqueo total impediría cualquier análisis de la incertidumbre, a pesar de que el objetivo `best` original ya está publicado y congelado. Antes de calcular los resultados finales se sustituye la regla: el script no modifica los números, cuenta `eligible_nonmonotone_event_rows` y `nonmonotone_events` en las ventanas, y ejecuta **escenarios `low`, `best`, `high` individuales**, no intervalos garantizados. Los valores negativos en un evento evaluable, duplicados, fechas inválidas y fuentes con SHA distinto siguen bloqueados.
 
 La conclusión solo podrá describir como robusto un país-ventana cuando sus eventos analizados **no tengan triples no monótonos** y supere el umbral en los escenarios pertinentes. La modificación es **posterior a examinar anomalías de 2024**, debe ser reproducida y no debe presentarse como un protocolo ciego o exactamente igual al inicial. Ningún cambio se ha efectuado en `best`, en las probabilidades históricas ni en las fuentes. El código en CI conservará esta historia de enmiendas, en lugar de ocultarla.
+
+## Resultados originales reproducidos (20-11-2026)
+
+La CI descargó **nueve CSV UCDP Candidate**, comprobó el SHA-256 contra los estudios anteriores y verificó los `best` de los **196 países de 2026** contra el benchmark congelado. El [informe completo](../data/candidate-fatality-uncertainty-code-status.json) contiene los 9 hashes, cada decisión de selección, tasas agregadas, triples originales `low/best/high`, estados de codificación, top10 sin reentrenamiento y contadores de estimaciones no monótonas.
+
+### Desenlace de mayo, reactivación ≥5 fallecidos estatales registrados
+
+| Año / vintage | Países Q1 `best<5` | `low>=5` | `best>=5` | `high>=5` | `Clear-only best>=5` |
+|---|---:|---:|---:|---:|---:|
+| 2024 Q2 | 161 | 2 | 2 | 2 | 1 |
+| 2024 Q3 | 161 | 2 | 2 | 2 | 1 |
+| 2025 Q2 | 160 | 4 | 5 | 6 | **0** |
+| 2025 Q3 | 160 | 4 | 4 | 5 | **0** |
+| 2026 Q2 | 155 | 2 | 2 | 2 | **0** |
+| 2026 Q3 | 155 | 2 | 2 | 2 | **0** |
+
+Estas cifras se refieren **solo a los países de cada año inicialmente por debajo de 5 muertes estatales registradas en Q1**. No equivalen a incidencia real ni confirman ausencia de conflictos. El filtro `Clear` es **una comprobación severa de codificación**, no el estándar por el que UCDP define los eventos definitivos.
+
+### Kenia y Libia en mayo de 2026
+
+| País | `low` | `best` | `high` | `Clear-only best` | Eventos estatales con fecha admitida | Estados de código |
+|---|---:|---:|---:|---:|---:|---|
+| Kenia | 12 | 12 | 16 | **0** | 6 | 4 `check type of violence`, 1 `check dyad`, 1 `clear` |
+| Libia | 5 | 5 | 5 | **0** | 1 | 1 `check dyad` |
+
+**Las estimaciones y las etiquetas anteriores coinciden exactamente en Q2 y Q3**. Los siete eventos de ambos países tienen triples `low/best/high` monótonos, de acuerdo con los contadores por país. La advertencia crítica procede de `code_status`: aunque Kenia cuenta con un registro `clear`, este no aporta suficientes fallecidos para alcanzar cinco. Libia depende íntegramente de un registro `check dyad`.
+
+**Resultado del mismo modelo combinado original, sin nuevo entrenamiento**: de los diez países de mayor puntuación en 2026, obtiene **2/10** aciertos si el objetivo se mide con `low`, `best` o `high`, en Q2 y Q3. Con `Clear-only best`, obtiene **0/10**, porque **ningún** país del conjunto de riesgo supera el umbral con este filtro en 2026. La contabilidad incluye cotas exactas por empates, no atribuye mérito al orden de identificadores.
+
+### También en el horizonte 90 días
+
+La edición Q3 registra para Kenia **29** fallecidos `best` (29 `low`, 65 `high`, 16 `Clear-only best`) y para Libia **5** `best` (5 `low`, 5 `high`, **0 `Clear-only best`). El subconjunto de 155 países a riesgo de T=5 tiene **3 positivos `best`** a 90 días, pero solo **1 positivo `Clear-only best`**. La señal de Kenia permanece; la de Libia no supera el filtro `Clear`. Este es un endpoint de registros provisionales con precisiones restringidas, no de guerras nuevas.
+
+### Anomalías de integridad, conservadas
+
+El estudio ha observado triples no monótonos `low/best/high` en eventos originales de diversas versiones, **incluso en eventos estatales elegibles de otras regiones**. Se han conservado los números sin invertir, truncar ni corregir y se cuentan por archivo y país. Por ello `low` y `high` aquí son **escenarios derivados de los campos originales**, no cotas matemáticas garantizadas de todos los eventos de la base. Ninguno de los eventos admitidos que sustentan la comparación Kenia/Libia de mayo presenta esa anomalía.
+
+### Decisión científica
+
+**No promocionar el resultado de Kenia y Libia como dos alertas confirmadas.** Su interpretación depende de cómo se traten los eventos pendientes de comprobación, especialmente la atribución de actores y el tipo de violencia. Como explica la [investigación original de UCDP Candidate](https://doi.org/10.1177/2053168020935257), esos eventos pueden ser revisados, eliminados o confirmados durante el paso a GED anual. El filtro `Clear` puede ser demasiado estricto para un objetivo operativo, pero su efecto es demasiado grande para ignorarlo.
+
+La siguiente fase útil no es elegir a posteriori un umbral o un modelo: debe analizar **Candidate→GED anual** sobre años ya resueltos, mantener el mismo estimando y conservar las etiquetas provisionales como una medida **diferente**. Después, solo emitir nuevas predicciones si existen fuentes oportunas con fecha de publicación original verificable. Ninguna predicción prospectiva nueva se ha emitido.
