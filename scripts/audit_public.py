@@ -78,6 +78,15 @@ REPOSITORY |= {
     ".github/workflows/candidate-to-annual-ged.yml",
     "data/candidate-to-annual-ged-resolution.json",
 }
+# Subsequent annual-release revision study: source-pinned, no private identifiers.
+# Placeholder is NOT released until first official comparison is frozen.
+REPOSITORY |= {
+    "scripts/audit_ged2024_annual_vintage_drift.py",
+    "scripts/test_audit_ged2024_annual_vintage_drift.py",
+    "docs/ged2024-annual-vintage-drift-protocol.md",
+    ".github/workflows/ged2024-annual-vintage-drift.yml",
+    "data/ged2024-annual-vintage-drift.json",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",
