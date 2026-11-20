@@ -100,3 +100,120 @@ GEO2027, NEWCONF2027, ACD2027 ni GEO2028.
 
 Solo se usan fuentes públicas institucionales
 y se citan sus versiones. Privacidad intacta.
+
+
+## Resultados observados · censo previo SHA y evaluación separada
+
+La primera ejecución de CI realizó **solo el censo original de ZIP**
+(run [44773159865](https://github.com/idealab2026/psicohistoria/actions/runs/44773159865))
+y dejó fijados los SHA antes del análisis de etiquetas:
+
+| Año de eventos | Edición GED histórica | Archivo interno | ZIP (bytes) | SHA-256 ZIP |
+|---|---|---|---:|---|
+| 2021 | GED 22.1 | `GEDEvent_v22_1.csv` | 24.139.312 | `1741045a14a59e2ddbe9de4a190a7ef5b68d60d57be7e94178aff2e926a59f0d` |
+| 2022 | GED 23.1 | `GEDEvent_v23_1.csv` | 26.587.114 | `9aa082f9e1f62da5ea3245c39b1cee45daab6dc8b3a17fb0f0cdae9ba13ce6f7` |
+
+La evaluación posterior utilizó esos archivos y las cuatro ediciones Candidate
+con SHA congelado desde el estudio anterior, sin sustituir fuentes ni
+consultar la edición GED más moderna. El script comprobó que las **ocho**
+combinaciones históricas de riesgo/positivos Candidate
+(4 umbrales × 2 horizontes) por año coincidían con
+`data/candidate-reactivation-threshold-grid.json`.
+
+El [informe agregado y 392 vectores nuevos](../data/candidate-ged-2021-22-resolution.json)
+conserva seis fuentes originales, referencias SHA, tasas, indicadores por país y
+un **pooled** que incorpora literalmente los resultados de 2024/25
+publicados en PR #151, sin volver a evaluarlos ni a calibrar modelos.
+
+### Primario: países que partían de `Candidate Q1 best <5`, mayo 1–30
+
+| Año | Población en riesgo | Candidate Q3 ≥5 | GED del primer corte anual ≥5 | Coincidentes |
+|---|---:|---:|---:|---:|
+| 2021 | 160 | 3 | 3 | **3** |
+| 2022 | 161 | 1 | 1 | **1** |
+| 2024 (PR #151) | 161 | 2 | 0 | **0** |
+| 2025 (PR #151) | 160 | 4 | 1 | **1** |
+| **Suma descriptiva** | **642 país-años** | **10** | **5** | **5** |
+
+La **coincidencia de etiquetas positivas es 5/10** en cuatro anualidades.
+Esta proporción no es una tasa estable de «confirmación»;
+**2021–2022 retienen 4/4** y **2024–2025 solo 1/6**. No hay
+casos GED-only a 30 días bajo T=5 entre estos 642 país-años,
+pero otros T/horizontes sí introducen casos GED-only.
+El tamaño 10 y la dependencia temporal/geopolítica descartan
+interpretaciones de habilidad prospectiva o una probabilidad
+universal de inclusión en GED.
+
+Los tres casos 2021 son:
+- **Perú:** Candidate Q3=16, GED22.1=16 (mayo 30d), `Clear`.
+- **Turquía:** Candidate Q3=19, GED22.1=19, combinación `Clear`
+  y `Check`; algunos IDs conservan cobertura del mismo año
+  pero no exactamente la misma ventana.
+- **Israel:** Candidate Q3=247, GED22.1=252,
+  códigos `Clear`; el indicador no clasifica si este
+  episodio constituye el inicio de un conflicto nuevo.
+  
+En 2022, **Togo**: Candidate Q3=8 y GED23.1=23,
+con `Check deaths` en Candidate. Que un `Check` se mantenga
+y un `Clear` pueda perder la etiqueta en 2024 (Bangladés)
+refuta la heurística «`Clear` = definitivo, `Check` = incorrecto».
+
+### Secundario: 90 días
+
+| Año | Población en riesgo T=5 | Candidate Q3 ≥5 | GED anual ≥5 | Ambos | Solo Candidate | Solo GED |
+|---|---:|---:|---:|---:|---:|---:|
+| 2021 | 160 | 5 | 5 | 4 | 1 | 1 |
+| 2022 | 161 | 8 | 2 | 2 | 6 | 0 |
+| 2024 | 161 | 5 | 2 | 1 | 4 | 1 |
+| 2025 | 160 | 7 | 3 | 3 | 4 | 0 |
+| **Total** | **642** | **25** | **12** | **10** | **15** | **2** |
+
+En 90 días la proporción de etiquetas positivas Candidate que
+se mantienen en GED anual es **10/25 = 40 %**. No asumir que
+la trayectoria de 30d (5/10) y la de 90d (10/25)
+sean comparables como hipótesis independientes; los horizontes
+se solapan. El resultado es muy sensible al año, criterio y
+fuente de cierre. Mantener `T∈{1,5,10,25}`
+por separado: la tabla principal no selecciona
+un nuevo umbral tras observar el test.
+
+### Control de identidad de eventos: no equiparar baja concordancia con desapariciones
+
+| Año | IDs Candidate Q3 de mayo elegibles | ID existente en GED anual del mismo año | Mismo ID y misma ventana/país |
+|---|---:|---:|---:|
+| 2021 | 1.135 | 1.058 | 1.054 |
+| 2022 | 752 | 715 | 711 |
+| 2024 (PR #151) | 1.433 | 1.315 | 1.312 |
+| 2025 (PR #151) | 1.545 | 1.412 | 1.404 |
+
+En 2021–2022 **1.773 de los 1.887** IDs Candidate elegibles
+de mayo están presentes de forma exacta en GED (94 % aprox.;
+1.058+715 / 1.135+752). A pesar de ese solapamiento, algunas
+**etiquetas nacionales de incidencia baja** cambian mucho.
+No confundir match de ID con «verdad» o con inclusión causal
+del mismo acontecimiento: es solo trazabilidad mecánica.
+
+### Interpretación y siguiente decisión
+
+La discordancia entre años **no** permite fijar una tasa universal
+de revisión Candidate→GED ni seleccionar modelos con un único
+bloque de años. Hay explicaciones potenciales que necesitan
+prueba: modificaciones de criterios de inclusión,
+composición de países/díadas próximos al umbral,
+cambios de cobertura y revisión de estimaciones
+de fallecidos. No se ha demostrado ninguna causa concreta;
+la comparación aquí es descriptiva.
+
+Próximo contraste más discriminativo: estratificar la
+retención de etiquetas Candidate por `code_status` y
+**distancia del total Candidate al umbral** (exactamente 5 frente
+a muy por encima), y comprobar la estabilidad de los campos
+de `year`, `type_of_violence`, fechas e IDs.
+Solo con más casos (u objetivos menos raros) tiene sentido
+considerar un modelo de incertidumbre de fuente.
+El objetivo GED anual seguirá siendo distinto del
+objetivo Candidate.
+
+**No se emite pronóstico nuevo**, no se certifica
+disponibilidad original as-of de Q1, no se resuelve GED 2026
+ni se cambia ninguno de los 620 pronósticos preemitidos.
