@@ -1,0 +1,4903 @@
+{
+  "candidate_original_release_dates_certified": false,
+  "conclusions_scope": "Retrospective country-level Candidate vs first annual GED vintage label comparison, four highly dependent country-year cohorts. Provisional versus annual thresholds are different outcomes; IDs can be recoded/split/removed. Cannot infer new conflict onset or predictive validity; 2026 unresolved.",
+  "country_vectors_new": [
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "United States of America",
+      "country_id": 2,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Canada",
+      "country_id": 20,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Bahamas",
+      "country_id": 31,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Cuba",
+      "country_id": 40,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Haiti",
+      "country_id": 41,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 4,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Dominican Republic",
+      "country_id": 42,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Jamaica",
+      "country_id": 51,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Trinidad and Tobago",
+      "country_id": 52,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Barbados",
+      "country_id": 53,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Dominica",
+      "country_id": 54,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Grenada",
+      "country_id": 55,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Saint Lucia",
+      "country_id": 56,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Saint Vincent and the Grenadines",
+      "country_id": 57,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Antigua & Barbuda",
+      "country_id": 58,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Saint Kitts and Nevis",
+      "country_id": 60,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Mexico",
+      "country_id": 70,
+      "q1_candidate_best": 31,
+      "q3_candidate_may30_best": 7,
+      "q3_candidate_may90_best": 8,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Belize",
+      "country_id": 80,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Guatemala",
+      "country_id": 90,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Honduras",
+      "country_id": 91,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "El Salvador",
+      "country_id": 92,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Nicaragua",
+      "country_id": 93,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Costa Rica",
+      "country_id": 94,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Panama",
+      "country_id": 95,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 18,
+      "country": "Colombia",
+      "country_id": 100,
+      "q1_candidate_best": 12,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 19,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 1,
+      "annual_ged_may90_best": 1,
+      "country": "Venezuela",
+      "country_id": 101,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 1,
+      "q3_candidate_may90_best": 17,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Guyana",
+      "country_id": 110,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Suriname",
+      "country_id": 115,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Ecuador",
+      "country_id": 130,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 16,
+      "annual_ged_may90_best": 19,
+      "country": "Peru",
+      "country_id": 135,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 16,
+      "q3_candidate_may90_best": 19,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Brazil",
+      "country_id": 140,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Bolivia",
+      "country_id": 145,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Paraguay",
+      "country_id": 150,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Chile",
+      "country_id": 155,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Argentina",
+      "country_id": 160,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Uruguay",
+      "country_id": 165,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "United Kingdom",
+      "country_id": 200,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Ireland",
+      "country_id": 205,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Netherlands",
+      "country_id": 210,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Belgium",
+      "country_id": 211,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Luxembourg",
+      "country_id": 212,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "France",
+      "country_id": 220,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Monaco",
+      "country_id": 221,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Liechtenstein",
+      "country_id": 223,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Switzerland",
+      "country_id": 225,
+      "q1_candidate_best": 2,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Spain",
+      "country_id": 230,
+      "q1_candidate_best": 1,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Andorra",
+      "country_id": 232,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Portugal",
+      "country_id": 235,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Germany",
+      "country_id": 260,
+      "q1_candidate_best": 2,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Poland",
+      "country_id": 290,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Austria",
+      "country_id": 305,
+      "q1_candidate_best": 2,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Hungary",
+      "country_id": 310,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Czech Republic",
+      "country_id": 316,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Slovakia",
+      "country_id": 317,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Italy",
+      "country_id": 325,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Vatican City State",
+      "country_id": 327,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "San Marino",
+      "country_id": 331,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Malta",
+      "country_id": 338,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Albania",
+      "country_id": 339,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Montenegro",
+      "country_id": 341,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "North Macedonia",
+      "country_id": 343,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Croatia",
+      "country_id": 344,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Serbia (Yugoslavia)",
+      "country_id": 345,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Bosnia-Herzegovina",
+      "country_id": 346,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Kosovo",
+      "country_id": 347,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Slovenia",
+      "country_id": 349,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Greece",
+      "country_id": 350,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Cyprus",
+      "country_id": 352,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Bulgaria",
+      "country_id": 355,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Moldova",
+      "country_id": 359,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Romania",
+      "country_id": 360,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 1,
+      "country": "Russia (Soviet Union)",
+      "country_id": 365,
+      "q1_candidate_best": 6,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 1,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Estonia",
+      "country_id": 366,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Latvia",
+      "country_id": 367,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Lithuania",
+      "country_id": 368,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 15,
+      "annual_ged_may90_best": 37,
+      "country": "Ukraine",
+      "country_id": 369,
+      "q1_candidate_best": 45,
+      "q3_candidate_may30_best": 15,
+      "q3_candidate_may90_best": 43,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Belarus",
+      "country_id": 370,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 1,
+      "annual_ged_may90_best": 5,
+      "country": "Armenia",
+      "country_id": 371,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 5,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Georgia",
+      "country_id": 372,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 6,
+      "country": "Azerbaijan",
+      "country_id": 373,
+      "q1_candidate_best": 3,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 4,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Finland",
+      "country_id": 375,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Sweden",
+      "country_id": 380,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Norway",
+      "country_id": 385,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Denmark",
+      "country_id": 390,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Iceland",
+      "country_id": 395,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Cape Verde",
+      "country_id": 402,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Sao Tome and Principe",
+      "country_id": 403,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Guinea-Bissau",
+      "country_id": 404,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Equatorial Guinea",
+      "country_id": 411,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Gambia",
+      "country_id": 420,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 41,
+      "annual_ged_may90_best": 77,
+      "country": "Mali",
+      "country_id": 432,
+      "q1_candidate_best": 254,
+      "q3_candidate_may30_best": 41,
+      "q3_candidate_may90_best": 82,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Senegal",
+      "country_id": 433,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Benin",
+      "country_id": 434,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Mauritania",
+      "country_id": 435,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 56,
+      "annual_ged_may90_best": 124,
+      "country": "Niger",
+      "country_id": 436,
+      "q1_candidate_best": 39,
+      "q3_candidate_may30_best": 56,
+      "q3_candidate_may90_best": 131,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Ivory Coast",
+      "country_id": 437,
+      "q1_candidate_best": 6,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 4,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Guinea",
+      "country_id": 438,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 53,
+      "annual_ged_may90_best": 157,
+      "country": "Burkina Faso",
+      "country_id": 439,
+      "q1_candidate_best": 106,
+      "q3_candidate_may30_best": 58,
+      "q3_candidate_may90_best": 173,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Liberia",
+      "country_id": 450,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Sierra Leone",
+      "country_id": 451,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Ghana",
+      "country_id": 452,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Togo",
+      "country_id": 461,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 40,
+      "annual_ged_may90_best": 174,
+      "country": "Cameroon",
+      "country_id": 471,
+      "q1_candidate_best": 162,
+      "q3_candidate_may30_best": 73,
+      "q3_candidate_may90_best": 206,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 123,
+      "annual_ged_may90_best": 280,
+      "country": "Nigeria",
+      "country_id": 475,
+      "q1_candidate_best": 915,
+      "q3_candidate_may30_best": 256,
+      "q3_candidate_may90_best": 704,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Gabon",
+      "country_id": 481,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 45,
+      "annual_ged_may90_best": 107,
+      "country": "Central African Republic",
+      "country_id": 482,
+      "q1_candidate_best": 162,
+      "q3_candidate_may30_best": 44,
+      "q3_candidate_may90_best": 89,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Chad",
+      "country_id": 483,
+      "q1_candidate_best": 14,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Congo",
+      "country_id": 484,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 62,
+      "annual_ged_may90_best": 230,
+      "country": "DR Congo (Zaire)",
+      "country_id": 490,
+      "q1_candidate_best": 220,
+      "q3_candidate_may30_best": 62,
+      "q3_candidate_may90_best": 239,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Uganda",
+      "country_id": 500,
+      "q1_candidate_best": 6,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 6,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 22,
+      "annual_ged_may90_best": 36,
+      "country": "Kenya",
+      "country_id": 501,
+      "q1_candidate_best": 11,
+      "q3_candidate_may30_best": 22,
+      "q3_candidate_may90_best": 36,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Tanzania",
+      "country_id": 510,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 12,
+      "annual_ged_may90_best": 12,
+      "country": "Burundi",
+      "country_id": 516,
+      "q1_candidate_best": 5,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 9,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Rwanda",
+      "country_id": 517,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 2,
+      "q3_candidate_may90_best": 2,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 177,
+      "annual_ged_may90_best": 804,
+      "country": "Somalia",
+      "country_id": 520,
+      "q1_candidate_best": 408,
+      "q3_candidate_may30_best": 177,
+      "q3_candidate_may90_best": 915,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Djibouti",
+      "country_id": 522,
+      "q1_candidate_best": 1,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 88,
+      "annual_ged_may90_best": 2818,
+      "country": "Ethiopia",
+      "country_id": 530,
+      "q1_candidate_best": 204,
+      "q3_candidate_may30_best": 47,
+      "q3_candidate_may90_best": 383,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Eritrea",
+      "country_id": 531,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Angola",
+      "country_id": 540,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 25,
+      "annual_ged_may90_best": 163,
+      "country": "Mozambique",
+      "country_id": 541,
+      "q1_candidate_best": 116,
+      "q3_candidate_may30_best": 25,
+      "q3_candidate_may90_best": 163,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Zambia",
+      "country_id": 551,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Zimbabwe (Rhodesia)",
+      "country_id": 552,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Malawi",
+      "country_id": 553,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "South Africa",
+      "country_id": 560,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 2,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Namibia",
+      "country_id": 565,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Lesotho",
+      "country_id": 570,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Botswana",
+      "country_id": 571,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Kingdom of eSwatini (Swaziland)",
+      "country_id": 572,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Madagascar (Malagasy)",
+      "country_id": 580,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Comoros",
+      "country_id": 581,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Mauritius",
+      "country_id": 590,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Seychelles",
+      "country_id": 591,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Morocco",
+      "country_id": 600,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 1,
+      "annual_ged_may90_best": 1,
+      "country": "Algeria",
+      "country_id": 615,
+      "q1_candidate_best": 15,
+      "q3_candidate_may30_best": 1,
+      "q3_candidate_may90_best": 1,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 5,
+      "annual_ged_may90_best": 6,
+      "country": "Tunisia",
+      "country_id": 616,
+      "q1_candidate_best": 6,
+      "q3_candidate_may30_best": 5,
+      "q3_candidate_may90_best": 5,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 3,
+      "country": "Libya",
+      "country_id": 620,
+      "q1_candidate_best": 7,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 3,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 17,
+      "country": "Sudan",
+      "country_id": 625,
+      "q1_candidate_best": 24,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 17,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 9,
+      "annual_ged_may90_best": 24,
+      "country": "South Sudan",
+      "country_id": 626,
+      "q1_candidate_best": 43,
+      "q3_candidate_may30_best": 22,
+      "q3_candidate_may90_best": 37,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 19,
+      "annual_ged_may90_best": 35,
+      "country": "Iran",
+      "country_id": 630,
+      "q1_candidate_best": 8,
+      "q3_candidate_may30_best": 18,
+      "q3_candidate_may90_best": 29,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 19,
+      "annual_ged_may90_best": 47,
+      "country": "Turkey",
+      "country_id": 640,
+      "q1_candidate_best": 1,
+      "q3_candidate_may30_best": 19,
+      "q3_candidate_may90_best": 46,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 80,
+      "annual_ged_may90_best": 174,
+      "country": "Iraq",
+      "country_id": 645,
+      "q1_candidate_best": 160,
+      "q3_candidate_may30_best": 80,
+      "q3_candidate_may90_best": 171,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 1,
+      "annual_ged_may90_best": 10,
+      "country": "Egypt",
+      "country_id": 651,
+      "q1_candidate_best": 40,
+      "q3_candidate_may30_best": 1,
+      "q3_candidate_may90_best": 10,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 100,
+      "annual_ged_may90_best": 373,
+      "country": "Syria",
+      "country_id": 652,
+      "q1_candidate_best": 564,
+      "q3_candidate_may30_best": 100,
+      "q3_candidate_may90_best": 373,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Lebanon",
+      "country_id": 660,
+      "q1_candidate_best": 1,
+      "q3_candidate_may30_best": 1,
+      "q3_candidate_may90_best": 1,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Jordan",
+      "country_id": 663,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 252,
+      "annual_ged_may90_best": 255,
+      "country": "Israel",
+      "country_id": 666,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 247,
+      "q3_candidate_may90_best": 248,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Saudi Arabia",
+      "country_id": 670,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 207,
+      "annual_ged_may90_best": 1318,
+      "country": "Yemen (North Yemen)",
+      "country_id": 678,
+      "q1_candidate_best": 1104,
+      "q3_candidate_may30_best": 107,
+      "q3_candidate_may90_best": 1063,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Kuwait",
+      "country_id": 690,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Bahrain",
+      "country_id": 692,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Qatar",
+      "country_id": 694,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "United Arab Emirates",
+      "country_id": 696,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Oman",
+      "country_id": 698,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 4678,
+      "annual_ged_may90_best": 20053,
+      "country": "Afghanistan",
+      "country_id": 700,
+      "q1_candidate_best": 6335,
+      "q3_candidate_may30_best": 4678,
+      "q3_candidate_may90_best": 20050,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Turkmenistan",
+      "country_id": 701,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Tajikistan",
+      "country_id": 702,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 1,
+      "country": "Kyrgyzstan",
+      "country_id": 703,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 1,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Uzbekistan",
+      "country_id": 704,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Kazakhstan",
+      "country_id": 705,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "China",
+      "country_id": 710,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Mongolia",
+      "country_id": 712,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Taiwan",
+      "country_id": 713,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "North Korea",
+      "country_id": 731,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "South Korea",
+      "country_id": 732,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Japan",
+      "country_id": 740,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 32,
+      "annual_ged_may90_best": 125,
+      "country": "India",
+      "country_id": 750,
+      "q1_candidate_best": 84,
+      "q3_candidate_may30_best": 40,
+      "q3_candidate_may90_best": 138,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Bhutan",
+      "country_id": 760,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 33,
+      "annual_ged_may90_best": 91,
+      "country": "Pakistan",
+      "country_id": 770,
+      "q1_candidate_best": 122,
+      "q3_candidate_may30_best": 36,
+      "q3_candidate_may90_best": 110,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Bangladesh",
+      "country_id": 771,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 154,
+      "annual_ged_may90_best": 429,
+      "country": "Myanmar (Burma)",
+      "country_id": 775,
+      "q1_candidate_best": 22,
+      "q3_candidate_may30_best": 281,
+      "q3_candidate_may90_best": 886,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Sri Lanka",
+      "country_id": 780,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Maldives",
+      "country_id": 781,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Nepal",
+      "country_id": 790,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 4,
+      "annual_ged_may90_best": 7,
+      "country": "Thailand",
+      "country_id": 800,
+      "q1_candidate_best": 7,
+      "q3_candidate_may30_best": 4,
+      "q3_candidate_may90_best": 7,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Cambodia (Kampuchea)",
+      "country_id": 811,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Laos",
+      "country_id": 812,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Vietnam (North Vietnam)",
+      "country_id": 816,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Malaysia",
+      "country_id": 820,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Singapore",
+      "country_id": 830,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Brunei",
+      "country_id": 835,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 30,
+      "annual_ged_may90_best": 66,
+      "country": "Philippines",
+      "country_id": 840,
+      "q1_candidate_best": 84,
+      "q3_candidate_may30_best": 30,
+      "q3_candidate_may90_best": 66,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 8,
+      "annual_ged_may90_best": 11,
+      "country": "Indonesia",
+      "country_id": 850,
+      "q1_candidate_best": 13,
+      "q3_candidate_may30_best": 8,
+      "q3_candidate_may90_best": 11,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "East Timor",
+      "country_id": 860,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Australia",
+      "country_id": 900,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Papua New Guinea",
+      "country_id": 910,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "New Zealand",
+      "country_id": 920,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Vanuatu",
+      "country_id": 935,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Solomon Islands",
+      "country_id": 940,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Fiji",
+      "country_id": 950,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Kiribati",
+      "country_id": 970,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Nauru",
+      "country_id": 971,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Tonga",
+      "country_id": 972,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Tuvalu",
+      "country_id": 973,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Marshall Islands",
+      "country_id": 983,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Palau",
+      "country_id": 986,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Federated States of Micronesia",
+      "country_id": 987,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Samoa (Western Samoa)",
+      "country_id": 990,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "United States of America",
+      "country_id": 2,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Canada",
+      "country_id": 20,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 2,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Bahamas",
+      "country_id": 31,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Cuba",
+      "country_id": 40,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Haiti",
+      "country_id": 41,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Dominican Republic",
+      "country_id": 42,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Jamaica",
+      "country_id": 51,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Trinidad and Tobago",
+      "country_id": 52,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Barbados",
+      "country_id": 53,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Dominica",
+      "country_id": 54,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Grenada",
+      "country_id": 55,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Saint Lucia",
+      "country_id": 56,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Saint Vincent and the Grenadines",
+      "country_id": 57,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Antigua & Barbuda",
+      "country_id": 58,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Saint Kitts and Nevis",
+      "country_id": 60,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Mexico",
+      "country_id": 70,
+      "q1_candidate_best": 3,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Belize",
+      "country_id": 80,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Guatemala",
+      "country_id": 90,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Honduras",
+      "country_id": 91,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "El Salvador",
+      "country_id": 92,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Nicaragua",
+      "country_id": 93,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Costa Rica",
+      "country_id": 94,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Panama",
+      "country_id": 95,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 6,
+      "annual_ged_may90_best": 20,
+      "country": "Colombia",
+      "country_id": 100,
+      "q1_candidate_best": 39,
+      "q3_candidate_may30_best": 6,
+      "q3_candidate_may90_best": 20,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Venezuela",
+      "country_id": 101,
+      "q1_candidate_best": 5,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Guyana",
+      "country_id": 110,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Suriname",
+      "country_id": 115,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Ecuador",
+      "country_id": 130,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 1,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Peru",
+      "country_id": 135,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Brazil",
+      "country_id": 140,
+      "q1_candidate_best": 17,
+      "q3_candidate_may30_best": 1,
+      "q3_candidate_may90_best": 15,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Bolivia",
+      "country_id": 145,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Paraguay",
+      "country_id": 150,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Chile",
+      "country_id": 155,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Argentina",
+      "country_id": 160,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Uruguay",
+      "country_id": 165,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "United Kingdom",
+      "country_id": 200,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Ireland",
+      "country_id": 205,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Netherlands",
+      "country_id": 210,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Belgium",
+      "country_id": 211,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Luxembourg",
+      "country_id": 212,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "France",
+      "country_id": 220,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Monaco",
+      "country_id": 221,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Liechtenstein",
+      "country_id": 223,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Switzerland",
+      "country_id": 225,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Spain",
+      "country_id": 230,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Andorra",
+      "country_id": 232,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Portugal",
+      "country_id": 235,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Germany",
+      "country_id": 260,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Poland",
+      "country_id": 290,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Austria",
+      "country_id": 305,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Hungary",
+      "country_id": 310,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Czech Republic",
+      "country_id": 316,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Slovakia",
+      "country_id": 317,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Italy",
+      "country_id": 325,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Vatican City State",
+      "country_id": 327,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "San Marino",
+      "country_id": 331,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Malta",
+      "country_id": 338,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Albania",
+      "country_id": 339,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Montenegro",
+      "country_id": 341,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "North Macedonia",
+      "country_id": 343,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Croatia",
+      "country_id": 344,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Serbia (Yugoslavia)",
+      "country_id": 345,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Bosnia-Herzegovina",
+      "country_id": 346,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Kosovo",
+      "country_id": 347,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Slovenia",
+      "country_id": 349,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Greece",
+      "country_id": 350,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Cyprus",
+      "country_id": 352,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Bulgaria",
+      "country_id": 355,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Moldova",
+      "country_id": 359,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Romania",
+      "country_id": 360,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 11,
+      "annual_ged_may90_best": 23,
+      "country": "Russia (Soviet Union)",
+      "country_id": 365,
+      "q1_candidate_best": 6,
+      "q3_candidate_may30_best": 11,
+      "q3_candidate_may90_best": 23,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Estonia",
+      "country_id": 366,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Latvia",
+      "country_id": 367,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Lithuania",
+      "country_id": 368,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 2223,
+      "annual_ged_may90_best": 5261,
+      "country": "Ukraine",
+      "country_id": 369,
+      "q1_candidate_best": 2894,
+      "q3_candidate_may30_best": 2108,
+      "q3_candidate_may90_best": 4879,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Belarus",
+      "country_id": 370,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 1,
+      "annual_ged_may90_best": 2,
+      "country": "Armenia",
+      "country_id": 371,
+      "q1_candidate_best": 3,
+      "q3_candidate_may30_best": 1,
+      "q3_candidate_may90_best": 2,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Georgia",
+      "country_id": 372,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Azerbaijan",
+      "country_id": 373,
+      "q1_candidate_best": 4,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Finland",
+      "country_id": 375,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Sweden",
+      "country_id": 380,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Norway",
+      "country_id": 385,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Denmark",
+      "country_id": 390,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Iceland",
+      "country_id": 395,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Cape Verde",
+      "country_id": 402,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Sao Tome and Principe",
+      "country_id": 403,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Guinea-Bissau",
+      "country_id": 404,
+      "q1_candidate_best": 11,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Equatorial Guinea",
+      "country_id": 411,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Gambia",
+      "country_id": 420,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 73,
+      "annual_ged_may90_best": 262,
+      "country": "Mali",
+      "country_id": 432,
+      "q1_candidate_best": 614,
+      "q3_candidate_may30_best": 63,
+      "q3_candidate_may90_best": 221,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Senegal",
+      "country_id": 433,
+      "q1_candidate_best": 5,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 4,
+      "country": "Benin",
+      "country_id": 434,
+      "q1_candidate_best": 12,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 6,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Mauritania",
+      "country_id": 435,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 117,
+      "annual_ged_may90_best": 229,
+      "country": "Niger",
+      "country_id": 436,
+      "q1_candidate_best": 79,
+      "q3_candidate_may30_best": 117,
+      "q3_candidate_may90_best": 206,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Ivory Coast",
+      "country_id": 437,
+      "q1_candidate_best": 1,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Guinea",
+      "country_id": 438,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 280,
+      "annual_ged_may90_best": 568,
+      "country": "Burkina Faso",
+      "country_id": 439,
+      "q1_candidate_best": 326,
+      "q3_candidate_may30_best": 283,
+      "q3_candidate_may90_best": 572,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Liberia",
+      "country_id": 450,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Sierra Leone",
+      "country_id": 451,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Ghana",
+      "country_id": 452,
+      "q1_candidate_best": 1,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 23,
+      "annual_ged_may90_best": 31,
+      "country": "Togo",
+      "country_id": 461,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 8,
+      "q3_candidate_may90_best": 15,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 40,
+      "annual_ged_may90_best": 115,
+      "country": "Cameroon",
+      "country_id": 471,
+      "q1_candidate_best": 49,
+      "q3_candidate_may30_best": 40,
+      "q3_candidate_may90_best": 121,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 22,
+      "annual_ged_may90_best": 158,
+      "country": "Nigeria",
+      "country_id": 475,
+      "q1_candidate_best": 808,
+      "q3_candidate_may30_best": 108,
+      "q3_candidate_may90_best": 352,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Gabon",
+      "country_id": 481,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 69,
+      "annual_ged_may90_best": 128,
+      "country": "Central African Republic",
+      "country_id": 482,
+      "q1_candidate_best": 279,
+      "q3_candidate_may30_best": 79,
+      "q3_candidate_may90_best": 138,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Chad",
+      "country_id": 483,
+      "q1_candidate_best": 5,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 3,
+      "annual_ged_may90_best": 3,
+      "country": "Congo",
+      "country_id": 484,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 3,
+      "q3_candidate_may90_best": 3,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 191,
+      "annual_ged_may90_best": 346,
+      "country": "DR Congo (Zaire)",
+      "country_id": 490,
+      "q1_candidate_best": 459,
+      "q3_candidate_may30_best": 209,
+      "q3_candidate_may90_best": 368,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 2,
+      "country": "Uganda",
+      "country_id": 500,
+      "q1_candidate_best": 16,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 2,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 10,
+      "country": "Kenya",
+      "country_id": 501,
+      "q1_candidate_best": 57,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 14,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Tanzania",
+      "country_id": 510,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Burundi",
+      "country_id": 516,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 14,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 4,
+      "country": "Rwanda",
+      "country_id": 517,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 5,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 106,
+      "annual_ged_may90_best": 458,
+      "country": "Somalia",
+      "country_id": 520,
+      "q1_candidate_best": 450,
+      "q3_candidate_may30_best": 106,
+      "q3_candidate_may90_best": 438,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Djibouti",
+      "country_id": 522,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 54,
+      "annual_ged_may90_best": 208,
+      "country": "Ethiopia",
+      "country_id": 530,
+      "q1_candidate_best": 224,
+      "q3_candidate_may30_best": 24,
+      "q3_candidate_may90_best": 84,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 2,
+      "annual_ged_may90_best": 2,
+      "country": "Eritrea",
+      "country_id": 531,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Angola",
+      "country_id": 540,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 1,
+      "q3_candidate_may90_best": 1,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 15,
+      "annual_ged_may90_best": 57,
+      "country": "Mozambique",
+      "country_id": 541,
+      "q1_candidate_best": 109,
+      "q3_candidate_may30_best": 15,
+      "q3_candidate_may90_best": 61,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Zambia",
+      "country_id": 551,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Zimbabwe (Rhodesia)",
+      "country_id": 552,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Malawi",
+      "country_id": 553,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "South Africa",
+      "country_id": 560,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Namibia",
+      "country_id": 565,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Lesotho",
+      "country_id": 570,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Botswana",
+      "country_id": 571,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Kingdom of eSwatini (Swaziland)",
+      "country_id": 572,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Madagascar (Malagasy)",
+      "country_id": 580,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Comoros",
+      "country_id": 581,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Mauritius",
+      "country_id": 590,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Seychelles",
+      "country_id": 591,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Morocco",
+      "country_id": 600,
+      "q1_candidate_best": 3,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Algeria",
+      "country_id": 615,
+      "q1_candidate_best": 14,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Tunisia",
+      "country_id": 616,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 1,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Libya",
+      "country_id": 620,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 1,
+      "country": "Sudan",
+      "country_id": 625,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "South Sudan",
+      "country_id": 626,
+      "q1_candidate_best": 1,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 22,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Iran",
+      "country_id": 630,
+      "q1_candidate_best": 11,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 2,
+      "annual_ged_may90_best": 29,
+      "country": "Turkey",
+      "country_id": 640,
+      "q1_candidate_best": 4,
+      "q3_candidate_may30_best": 1,
+      "q3_candidate_may90_best": 38,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 105,
+      "annual_ged_may90_best": 265,
+      "country": "Iraq",
+      "country_id": 645,
+      "q1_candidate_best": 139,
+      "q3_candidate_may30_best": 126,
+      "q3_candidate_may90_best": 355,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 47,
+      "annual_ged_may90_best": 107,
+      "country": "Egypt",
+      "country_id": 651,
+      "q1_candidate_best": 50,
+      "q3_candidate_may30_best": 48,
+      "q3_candidate_may90_best": 108,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 75,
+      "annual_ged_may90_best": 183,
+      "country": "Syria",
+      "country_id": 652,
+      "q1_candidate_best": 245,
+      "q3_candidate_may30_best": 97,
+      "q3_candidate_may90_best": 207,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Lebanon",
+      "country_id": 660,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Jordan",
+      "country_id": 663,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 5,
+      "annual_ged_may90_best": 11,
+      "country": "Israel",
+      "country_id": 666,
+      "q1_candidate_best": 16,
+      "q3_candidate_may30_best": 5,
+      "q3_candidate_may90_best": 14,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Saudi Arabia",
+      "country_id": 670,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 41,
+      "annual_ged_may90_best": 144,
+      "country": "Yemen (North Yemen)",
+      "country_id": 678,
+      "q1_candidate_best": 2134,
+      "q3_candidate_may30_best": 41,
+      "q3_candidate_may90_best": 145,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Kuwait",
+      "country_id": 690,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Bahrain",
+      "country_id": 692,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Qatar",
+      "country_id": 694,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "United Arab Emirates",
+      "country_id": 696,
+      "q1_candidate_best": 3,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Oman",
+      "country_id": 698,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 97,
+      "annual_ged_may90_best": 209,
+      "country": "Afghanistan",
+      "country_id": 700,
+      "q1_candidate_best": 60,
+      "q3_candidate_may30_best": 98,
+      "q3_candidate_may90_best": 210,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Turkmenistan",
+      "country_id": 701,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 1,
+      "country": "Tajikistan",
+      "country_id": 702,
+      "q1_candidate_best": 3,
+      "q3_candidate_may30_best": 2,
+      "q3_candidate_may90_best": 8,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Kyrgyzstan",
+      "country_id": 703,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Uzbekistan",
+      "country_id": 704,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 21,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Kazakhstan",
+      "country_id": 705,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "China",
+      "country_id": 710,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Mongolia",
+      "country_id": 712,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Taiwan",
+      "country_id": 713,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "North Korea",
+      "country_id": 731,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "South Korea",
+      "country_id": 732,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Japan",
+      "country_id": 740,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 35,
+      "annual_ged_may90_best": 94,
+      "country": "India",
+      "country_id": 750,
+      "q1_candidate_best": 91,
+      "q3_candidate_may30_best": 36,
+      "q3_candidate_may90_best": 96,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Bhutan",
+      "country_id": 760,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 17,
+      "annual_ged_may90_best": 101,
+      "country": "Pakistan",
+      "country_id": 770,
+      "q1_candidate_best": 285,
+      "q3_candidate_may30_best": 24,
+      "q3_candidate_may90_best": 114,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Bangladesh",
+      "country_id": 771,
+      "q1_candidate_best": 4,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 103,
+      "annual_ged_may90_best": 340,
+      "country": "Myanmar (Burma)",
+      "country_id": 775,
+      "q1_candidate_best": 484,
+      "q3_candidate_may30_best": 97,
+      "q3_candidate_may90_best": 331,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Sri Lanka",
+      "country_id": 780,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Maldives",
+      "country_id": 781,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Nepal",
+      "country_id": 790,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 5,
+      "country": "Thailand",
+      "country_id": 800,
+      "q1_candidate_best": 11,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 5,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Cambodia (Kampuchea)",
+      "country_id": 811,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Laos",
+      "country_id": 812,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Vietnam (North Vietnam)",
+      "country_id": 816,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Malaysia",
+      "country_id": 820,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Singapore",
+      "country_id": 830,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Brunei",
+      "country_id": 835,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 12,
+      "annual_ged_may90_best": 49,
+      "country": "Philippines",
+      "country_id": 840,
+      "q1_candidate_best": 61,
+      "q3_candidate_may30_best": 12,
+      "q3_candidate_may90_best": 49,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 1,
+      "annual_ged_may90_best": 14,
+      "country": "Indonesia",
+      "country_id": 850,
+      "q1_candidate_best": 8,
+      "q3_candidate_may30_best": 1,
+      "q3_candidate_may90_best": 15,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "East Timor",
+      "country_id": 860,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Australia",
+      "country_id": 900,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Papua New Guinea",
+      "country_id": 910,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 5,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "New Zealand",
+      "country_id": 920,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Vanuatu",
+      "country_id": 935,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Solomon Islands",
+      "country_id": 940,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Fiji",
+      "country_id": 950,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Kiribati",
+      "country_id": 970,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Nauru",
+      "country_id": 971,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Tonga",
+      "country_id": 972,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Tuvalu",
+      "country_id": 973,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Marshall Islands",
+      "country_id": 983,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Palau",
+      "country_id": 986,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Federated States of Micronesia",
+      "country_id": 987,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    },
+    {
+      "annual_ged_may30_best": 0,
+      "annual_ged_may90_best": 0,
+      "country": "Samoa (Western Samoa)",
+      "country_id": 990,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 0,
+      "q3_candidate_may90_best": 0,
+      "year": 2022
+    }
+  ],
+  "design_date": "2026-11-20",
+  "eligible_may_candidate_id_matches_annual": {
+    "2021": {
+      "candidate_id_in_annual_same_country_same_window": 1054,
+      "candidate_id_in_annual_target_year_any_type_any_date": 1058,
+      "not_matched_by_exact_id_in_annual_target_year": 77,
+      "q3_candidate_eligible_may_event_ids": 1135,
+      "warning": "No exact ID match can reflect deletion, split, merge or recoding; do not infer disappearance of an event."
+    },
+    "2022": {
+      "candidate_id_in_annual_same_country_same_window": 711,
+      "candidate_id_in_annual_target_year_any_type_any_date": 715,
+      "not_matched_by_exact_id_in_annual_target_year": 37,
+      "q3_candidate_eligible_may_event_ids": 752,
+      "warning": "No exact ID match can reflect deletion, split, merge or recoding; do not infer disappearance of an event."
+    }
+  },
+  "ged_annual_versions": {
+    "2021": "22.1",
+    "2022": "23.1",
+    "2024": "25.1",
+    "2025": "26.1"
+  },
+  "n_countries": 196,
+  "new_prospective_issues": 0,
+  "pooled_2021_22_24_25_results": {
+    "1": {
+      "30": {
+        "annual_breakdown": {
+          "2021": {
+            "both_negative": 147,
+            "both_positive": 3,
+            "candidate_only": 1,
+            "candidate_positive": 4,
+            "disagreements": 2,
+            "ged_only": 1,
+            "ged_positive": 4,
+            "n_at_risk": 152
+          },
+          "2022": {
+            "both_negative": 146,
+            "both_positive": 2,
+            "candidate_only": 1,
+            "candidate_positive": 3,
+            "disagreements": 2,
+            "ged_only": 1,
+            "ged_positive": 3,
+            "n_at_risk": 150
+          },
+          "2024": {
+            "both_negative": 148,
+            "both_positive": 0,
+            "candidate_only": 1,
+            "candidate_positive": 1,
+            "disagreements": 1,
+            "ged_only": 0,
+            "ged_positive": 0,
+            "n_at_risk": 149
+          },
+          "2025": {
+            "both_negative": 144,
+            "both_positive": 0,
+            "candidate_only": 3,
+            "candidate_positive": 3,
+            "disagreements": 3,
+            "ged_only": 0,
+            "ged_positive": 0,
+            "n_at_risk": 147
+          }
+        },
+        "both_negative": 585,
+        "both_positive": 5,
+        "candidate_only": 6,
+        "candidate_positive": 11,
+        "candidate_positive_matching_ged_share": 0.45454545,
+        "candidate_sensitivity_to_ged_label": 0.71428571,
+        "disagreements": 8,
+        "ged_only": 2,
+        "ged_positive": 7,
+        "n_at_risk": 598
+      },
+      "90": {
+        "annual_breakdown": {
+          "2021": {
+            "both_negative": 144,
+            "both_positive": 5,
+            "candidate_only": 3,
+            "candidate_positive": 8,
+            "disagreements": 3,
+            "ged_only": 0,
+            "ged_positive": 5,
+            "n_at_risk": 152
+          },
+          "2022": {
+            "both_negative": 138,
+            "both_positive": 3,
+            "candidate_only": 7,
+            "candidate_positive": 10,
+            "disagreements": 9,
+            "ged_only": 2,
+            "ged_positive": 5,
+            "n_at_risk": 150
+          },
+          "2024": {
+            "both_negative": 143,
+            "both_positive": 1,
+            "candidate_only": 5,
+            "candidate_positive": 6,
+            "disagreements": 5,
+            "ged_only": 0,
+            "ged_positive": 1,
+            "n_at_risk": 149
+          },
+          "2025": {
+            "both_negative": 142,
+            "both_positive": 2,
+            "candidate_only": 3,
+            "candidate_positive": 5,
+            "disagreements": 3,
+            "ged_only": 0,
+            "ged_positive": 2,
+            "n_at_risk": 147
+          }
+        },
+        "both_negative": 567,
+        "both_positive": 11,
+        "candidate_only": 18,
+        "candidate_positive": 29,
+        "candidate_positive_matching_ged_share": 0.37931034,
+        "candidate_sensitivity_to_ged_label": 0.84615385,
+        "disagreements": 20,
+        "ged_only": 2,
+        "ged_positive": 13,
+        "n_at_risk": 598
+      }
+    },
+    "5": {
+      "30": {
+        "annual_breakdown": {
+          "2021": {
+            "both_negative": 157,
+            "both_positive": 3,
+            "candidate_only": 0,
+            "candidate_positive": 3,
+            "disagreements": 0,
+            "ged_only": 0,
+            "ged_positive": 3,
+            "n_at_risk": 160
+          },
+          "2022": {
+            "both_negative": 160,
+            "both_positive": 1,
+            "candidate_only": 0,
+            "candidate_positive": 1,
+            "disagreements": 0,
+            "ged_only": 0,
+            "ged_positive": 1,
+            "n_at_risk": 161
+          },
+          "2024": {
+            "both_negative": 159,
+            "both_positive": 0,
+            "candidate_only": 2,
+            "candidate_positive": 2,
+            "disagreements": 2,
+            "ged_only": 0,
+            "ged_positive": 0,
+            "n_at_risk": 161
+          },
+          "2025": {
+            "both_negative": 156,
+            "both_positive": 1,
+            "candidate_only": 3,
+            "candidate_positive": 4,
+            "disagreements": 3,
+            "ged_only": 0,
+            "ged_positive": 1,
+            "n_at_risk": 160
+          }
+        },
+        "both_negative": 632,
+        "both_positive": 5,
+        "candidate_only": 5,
+        "candidate_positive": 10,
+        "candidate_positive_matching_ged_share": 0.5,
+        "candidate_sensitivity_to_ged_label": 1,
+        "disagreements": 5,
+        "ged_only": 0,
+        "ged_positive": 5,
+        "n_at_risk": 642
+      },
+      "90": {
+        "annual_breakdown": {
+          "2021": {
+            "both_negative": 154,
+            "both_positive": 4,
+            "candidate_only": 1,
+            "candidate_positive": 5,
+            "disagreements": 2,
+            "ged_only": 1,
+            "ged_positive": 5,
+            "n_at_risk": 160
+          },
+          "2022": {
+            "both_negative": 153,
+            "both_positive": 2,
+            "candidate_only": 6,
+            "candidate_positive": 8,
+            "disagreements": 6,
+            "ged_only": 0,
+            "ged_positive": 2,
+            "n_at_risk": 161
+          },
+          "2024": {
+            "both_negative": 155,
+            "both_positive": 1,
+            "candidate_only": 4,
+            "candidate_positive": 5,
+            "disagreements": 5,
+            "ged_only": 1,
+            "ged_positive": 2,
+            "n_at_risk": 161
+          },
+          "2025": {
+            "both_negative": 153,
+            "both_positive": 3,
+            "candidate_only": 4,
+            "candidate_positive": 7,
+            "disagreements": 4,
+            "ged_only": 0,
+            "ged_positive": 3,
+            "n_at_risk": 160
+          }
+        },
+        "both_negative": 615,
+        "both_positive": 10,
+        "candidate_only": 15,
+        "candidate_positive": 25,
+        "candidate_positive_matching_ged_share": 0.4,
+        "candidate_sensitivity_to_ged_label": 0.83333333,
+        "disagreements": 17,
+        "ged_only": 2,
+        "ged_positive": 12,
+        "n_at_risk": 642
+      }
+    },
+    "10": {
+      "30": {
+        "annual_breakdown": {
+          "2021": {
+            "both_negative": 163,
+            "both_positive": 4,
+            "candidate_only": 0,
+            "candidate_positive": 4,
+            "disagreements": 1,
+            "ged_only": 1,
+            "ged_positive": 5,
+            "n_at_risk": 168
+          },
+          "2022": {
+            "both_negative": 164,
+            "both_positive": 1,
+            "candidate_only": 0,
+            "candidate_positive": 1,
+            "disagreements": 1,
+            "ged_only": 1,
+            "ged_positive": 2,
+            "n_at_risk": 166
+          },
+          "2024": {
+            "both_negative": 163,
+            "both_positive": 0,
+            "candidate_only": 0,
+            "candidate_positive": 0,
+            "disagreements": 0,
+            "ged_only": 0,
+            "ged_positive": 0,
+            "n_at_risk": 163
+          },
+          "2025": {
+            "both_negative": 162,
+            "both_positive": 1,
+            "candidate_only": 1,
+            "candidate_positive": 2,
+            "disagreements": 1,
+            "ged_only": 0,
+            "ged_positive": 1,
+            "n_at_risk": 164
+          }
+        },
+        "both_negative": 652,
+        "both_positive": 6,
+        "candidate_only": 1,
+        "candidate_positive": 7,
+        "candidate_positive_matching_ged_share": 0.85714286,
+        "candidate_sensitivity_to_ged_label": 0.75,
+        "disagreements": 3,
+        "ged_only": 2,
+        "ged_positive": 8,
+        "n_at_risk": 661
+      },
+      "90": {
+        "annual_breakdown": {
+          "2021": {
+            "both_negative": 162,
+            "both_positive": 4,
+            "candidate_only": 1,
+            "candidate_positive": 5,
+            "disagreements": 2,
+            "ged_only": 1,
+            "ged_positive": 5,
+            "n_at_risk": 168
+          },
+          "2022": {
+            "both_negative": 159,
+            "both_positive": 4,
+            "candidate_only": 3,
+            "candidate_positive": 7,
+            "disagreements": 3,
+            "ged_only": 0,
+            "ged_positive": 4,
+            "n_at_risk": 166
+          },
+          "2024": {
+            "both_negative": 158,
+            "both_positive": 2,
+            "candidate_only": 2,
+            "candidate_positive": 4,
+            "disagreements": 3,
+            "ged_only": 1,
+            "ged_positive": 3,
+            "n_at_risk": 163
+          },
+          "2025": {
+            "both_negative": 158,
+            "both_positive": 3,
+            "candidate_only": 3,
+            "candidate_positive": 6,
+            "disagreements": 3,
+            "ged_only": 0,
+            "ged_positive": 3,
+            "n_at_risk": 164
+          }
+        },
+        "both_negative": 637,
+        "both_positive": 13,
+        "candidate_only": 9,
+        "candidate_positive": 22,
+        "candidate_positive_matching_ged_share": 0.59090909,
+        "candidate_sensitivity_to_ged_label": 0.86666667,
+        "disagreements": 11,
+        "ged_only": 2,
+        "ged_positive": 15,
+        "n_at_risk": 661
+      }
+    },
+    "25": {
+      "30": {
+        "annual_breakdown": {
+          "2021": {
+            "both_negative": 173,
+            "both_positive": 2,
+            "candidate_only": 0,
+            "candidate_positive": 2,
+            "disagreements": 0,
+            "ged_only": 0,
+            "ged_positive": 2,
+            "n_at_risk": 175
+          },
+          "2022": {
+            "both_negative": 174,
+            "both_positive": 0,
+            "candidate_only": 0,
+            "candidate_positive": 0,
+            "disagreements": 0,
+            "ged_only": 0,
+            "ged_positive": 0,
+            "n_at_risk": 174
+          },
+          "2024": {
+            "both_negative": 170,
+            "both_positive": 0,
+            "candidate_only": 0,
+            "candidate_positive": 0,
+            "disagreements": 0,
+            "ged_only": 0,
+            "ged_positive": 0,
+            "n_at_risk": 170
+          },
+          "2025": {
+            "both_negative": 168,
+            "both_positive": 0,
+            "candidate_only": 1,
+            "candidate_positive": 1,
+            "disagreements": 1,
+            "ged_only": 0,
+            "ged_positive": 0,
+            "n_at_risk": 169
+          }
+        },
+        "both_negative": 685,
+        "both_positive": 2,
+        "candidate_only": 1,
+        "candidate_positive": 3,
+        "candidate_positive_matching_ged_share": 0.66666667,
+        "candidate_sensitivity_to_ged_label": 1,
+        "disagreements": 1,
+        "ged_only": 0,
+        "ged_positive": 2,
+        "n_at_risk": 688
+      },
+      "90": {
+        "annual_breakdown": {
+          "2021": {
+            "both_negative": 170,
+            "both_positive": 5,
+            "candidate_only": 0,
+            "candidate_positive": 5,
+            "disagreements": 0,
+            "ged_only": 0,
+            "ged_positive": 5,
+            "n_at_risk": 175
+          },
+          "2022": {
+            "both_negative": 172,
+            "both_positive": 1,
+            "candidate_only": 0,
+            "candidate_positive": 1,
+            "disagreements": 1,
+            "ged_only": 1,
+            "ged_positive": 2,
+            "n_at_risk": 174
+          },
+          "2024": {
+            "both_negative": 168,
+            "both_positive": 1,
+            "candidate_only": 1,
+            "candidate_positive": 2,
+            "disagreements": 1,
+            "ged_only": 0,
+            "ged_positive": 1,
+            "n_at_risk": 170
+          },
+          "2025": {
+            "both_negative": 164,
+            "both_positive": 3,
+            "candidate_only": 1,
+            "candidate_positive": 4,
+            "disagreements": 2,
+            "ged_only": 1,
+            "ged_positive": 4,
+            "n_at_risk": 169
+          }
+        },
+        "both_negative": 674,
+        "both_positive": 10,
+        "candidate_only": 2,
+        "candidate_positive": 12,
+        "candidate_positive_matching_ged_share": 0.83333333,
+        "candidate_sensitivity_to_ged_label": 0.83333333,
+        "disagreements": 4,
+        "ged_only": 2,
+        "ged_positive": 12,
+        "n_at_risk": 688
+      }
+    }
+  },
+  "primary_t5_may30_2021_22_changed_cases": [
+    {
+      "annual_ged_may30_best": 16,
+      "annual_ged_may90_best": 19,
+      "candidate_exact_id_in_annual_any_type_window": 1,
+      "candidate_exact_id_in_annual_same_country_window": 1,
+      "candidate_q3_may30_code_status_best": {
+        "clear": 16
+      },
+      "candidate_q3_may30_events": 1,
+      "country": "Peru",
+      "country_id": 135,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 16,
+      "q3_candidate_may90_best": 19,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 19,
+      "annual_ged_may90_best": 47,
+      "candidate_exact_id_in_annual_any_type_window": 11,
+      "candidate_exact_id_in_annual_same_country_window": 10,
+      "candidate_q3_may30_code_status_best": {
+        "check": 2,
+        "clear": 17
+      },
+      "candidate_q3_may30_events": 11,
+      "country": "Turkey",
+      "country_id": 640,
+      "q1_candidate_best": 1,
+      "q3_candidate_may30_best": 19,
+      "q3_candidate_may90_best": 46,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 252,
+      "annual_ged_may90_best": 255,
+      "candidate_exact_id_in_annual_any_type_window": 21,
+      "candidate_exact_id_in_annual_same_country_window": 20,
+      "candidate_q3_may30_code_status_best": {
+        "clear": 247
+      },
+      "candidate_q3_may30_events": 36,
+      "country": "Israel",
+      "country_id": 666,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 247,
+      "q3_candidate_may90_best": 248,
+      "year": 2021
+    },
+    {
+      "annual_ged_may30_best": 23,
+      "annual_ged_may90_best": 31,
+      "candidate_exact_id_in_annual_any_type_window": 1,
+      "candidate_exact_id_in_annual_same_country_window": 1,
+      "candidate_q3_may30_code_status_best": {
+        "check deaths": 8
+      },
+      "candidate_q3_may30_events": 1,
+      "country": "Togo",
+      "country_id": 461,
+      "q1_candidate_best": 0,
+      "q3_candidate_may30_best": 8,
+      "q3_candidate_may90_best": 15,
+      "year": 2022
+    }
+  ],
+  "prospective_cohorts_changed": 0,
+  "schema": "idealab.psico.candidate_ged_2021_22_extension.v1",
+  "source_prev_2024_25_sha256": "01b068e45a6e840fdaf7b3ee5d0946ab54fc251a2618a1953907f3950e97fa2f",
+  "source_provenance": [
+    {
+      "audit": {
+        "eligible_events": 2061,
+        "skip_date_precision": 31,
+        "skip_nonstate": 1564,
+        "skip_outside_q1": 5,
+        "skip_unknown_precision_zero": 1,
+        "source_rows": 3661
+      },
+      "bytes": 2955553,
+      "family": "candidate",
+      "month": 3,
+      "sha256": "e14d274b78b52605d26e19c5e387ee4f7c98b398e4099bbe66d039757bc2970e",
+      "url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v21_01_21_03.csv",
+      "year": 2021
+    },
+    {
+      "audit": {
+        "eligible_events": 3599,
+        "skip_date_precision": 131,
+        "skip_nonstate": 5445,
+        "skip_outside_may_july": 4483,
+        "skip_unknown_precision_zero": 1,
+        "source_rows": 13658
+      },
+      "bytes": 11164361,
+      "family": "candidate",
+      "month": 9,
+      "sha256": "077b27b7b6490431bb040fb2c08739587d1a0a4fb6ff3ef3852ee5d8d8ef79c9",
+      "url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v21_01_21_09.csv",
+      "year": 2021
+    },
+    {
+      "audit": {
+        "eligible_state_events_may_july": 3575,
+        "member_bytes": 207918534,
+        "skip_date_precision": 198,
+        "skip_nonstate": 6943,
+        "skip_outside_may_july": 5893,
+        "source_rows": 293634,
+        "target_year_rows": 16609,
+        "zip_member": "GEDEvent_v22_1.csv"
+      },
+      "bytes": 24139312,
+      "family": "annual_GED",
+      "sha256": "1741045a14a59e2ddbe9de4a190a7ef5b68d60d57be7e94178aff2e926a59f0d",
+      "url": "https://ucdp.uu.se/downloads/ged/ged221-csv.zip",
+      "version": "22.1",
+      "year": 2021
+    },
+    {
+      "audit": {
+        "eligible_events": 1862,
+        "skip_date_precision": 148,
+        "skip_nonstate": 1730,
+        "skip_outside_q1": 4,
+        "skip_unknown_precision_zero": 0,
+        "source_rows": 3744
+      },
+      "bytes": 3075138,
+      "family": "candidate",
+      "month": 3,
+      "sha256": "4111f9331f794e6bc20900af9c2ba63be3a7ac1ca97bfc231ee6129f97e83eb2",
+      "url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v22_01_22_03.csv",
+      "year": 2022
+    },
+    {
+      "audit": {
+        "eligible_events": 2394,
+        "skip_date_precision": 350,
+        "skip_nonstate": 5069,
+        "skip_outside_may_july": 4757,
+        "skip_unknown_precision_zero": 0,
+        "source_rows": 12570
+      },
+      "bytes": 10483708,
+      "family": "candidate",
+      "month": 9,
+      "sha256": "20d15637aa4b9ee80aed52a059d0552a8045867e493f103f6f8d7c117547b733",
+      "url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v22_01_22_09.csv",
+      "year": 2022
+    },
+    {
+      "audit": {
+        "eligible_state_events_may_july": 2417,
+        "member_bytes": 228682471,
+        "skip_date_precision": 535,
+        "skip_nonstate": 6926,
+        "skip_outside_may_july": 7667,
+        "source_rows": 316818,
+        "target_year_rows": 17545,
+        "zip_member": "GEDEvent_v23_1.csv"
+      },
+      "bytes": 26587114,
+      "family": "annual_GED",
+      "sha256": "9aa082f9e1f62da5ea3245c39b1cee45daab6dc8b3a17fb0f0cdae9ba13ce6f7",
+      "url": "https://ucdp.uu.se/downloads/ged/ged231-csv.zip",
+      "version": "23.1",
+      "year": 2022
+    }
+  ],
+  "source_universe_sha256": "5eacde2a8950de4321a063d9705600a43cd1c56413c6c6921d0c63d9bb1b5ed5",
+  "status": "ARCHIVED_FIRST_ANNUAL_GED_LABEL_RESOLUTION_NOT_ASOF",
+  "years_new": [
+    2021,
+    2022
+  ],
+  "years_new_by_threshold_horizon": {
+    "2021": {
+      "1": {
+        "30": {
+          "candidate_q3_vs_annual": {
+            "both_negative": 147,
+            "both_positive": 3,
+            "candidate_only": 1,
+            "candidate_only_country_ids": [
+              517
+            ],
+            "candidate_positive": 4,
+            "candidate_positive_matching_ged_share": 0.75,
+            "candidate_sensitivity_to_ged_label": 0.75,
+            "disagreements": 2,
+            "ged_only": 1,
+            "ged_only_country_ids": [
+              371
+            ],
+            "ged_positive": 4,
+            "n_at_risk": 152
+          }
+        },
+        "90": {
+          "candidate_q3_vs_annual": {
+            "both_negative": 144,
+            "both_positive": 5,
+            "candidate_only": 3,
+            "candidate_only_country_ids": [
+              41,
+              517,
+              560
+            ],
+            "candidate_positive": 8,
+            "candidate_positive_matching_ged_share": 0.625,
+            "candidate_sensitivity_to_ged_label": 1,
+            "disagreements": 3,
+            "ged_only": 0,
+            "ged_only_country_ids": [],
+            "ged_positive": 5,
+            "n_at_risk": 152
+          }
+        }
+      },
+      "5": {
+        "30": {
+          "candidate_q3_vs_annual": {
+            "both_negative": 157,
+            "both_positive": 3,
+            "candidate_only": 0,
+            "candidate_only_country_ids": [],
+            "candidate_positive": 3,
+            "candidate_positive_matching_ged_share": 1,
+            "candidate_sensitivity_to_ged_label": 1,
+            "disagreements": 0,
+            "ged_only": 0,
+            "ged_only_country_ids": [],
+            "ged_positive": 3,
+            "n_at_risk": 160
+          }
+        },
+        "90": {
+          "candidate_q3_vs_annual": {
+            "both_negative": 154,
+            "both_positive": 4,
+            "candidate_only": 1,
+            "candidate_only_country_ids": [
+              101
+            ],
+            "candidate_positive": 5,
+            "candidate_positive_matching_ged_share": 0.8,
+            "candidate_sensitivity_to_ged_label": 0.8,
+            "disagreements": 2,
+            "ged_only": 1,
+            "ged_only_country_ids": [
+              373
+            ],
+            "ged_positive": 5,
+            "n_at_risk": 160
+          }
+        }
+      },
+      "10": {
+        "30": {
+          "candidate_q3_vs_annual": {
+            "both_negative": 163,
+            "both_positive": 4,
+            "candidate_only": 0,
+            "candidate_only_country_ids": [],
+            "candidate_positive": 4,
+            "candidate_positive_matching_ged_share": 1,
+            "candidate_sensitivity_to_ged_label": 0.8,
+            "disagreements": 1,
+            "ged_only": 1,
+            "ged_only_country_ids": [
+              516
+            ],
+            "ged_positive": 5,
+            "n_at_risk": 168
+          }
+        },
+        "90": {
+          "candidate_q3_vs_annual": {
+            "both_negative": 162,
+            "both_positive": 4,
+            "candidate_only": 1,
+            "candidate_only_country_ids": [
+              101
+            ],
+            "candidate_positive": 5,
+            "candidate_positive_matching_ged_share": 0.8,
+            "candidate_sensitivity_to_ged_label": 0.8,
+            "disagreements": 2,
+            "ged_only": 1,
+            "ged_only_country_ids": [
+              516
+            ],
+            "ged_positive": 5,
+            "n_at_risk": 168
+          }
+        }
+      },
+      "25": {
+        "30": {
+          "candidate_q3_vs_annual": {
+            "both_negative": 173,
+            "both_positive": 2,
+            "candidate_only": 0,
+            "candidate_only_country_ids": [],
+            "candidate_positive": 2,
+            "candidate_positive_matching_ged_share": 1,
+            "candidate_sensitivity_to_ged_label": 1,
+            "disagreements": 0,
+            "ged_only": 0,
+            "ged_only_country_ids": [],
+            "ged_positive": 2,
+            "n_at_risk": 175
+          }
+        },
+        "90": {
+          "candidate_q3_vs_annual": {
+            "both_negative": 170,
+            "both_positive": 5,
+            "candidate_only": 0,
+            "candidate_only_country_ids": [],
+            "candidate_positive": 5,
+            "candidate_positive_matching_ged_share": 1,
+            "candidate_sensitivity_to_ged_label": 1,
+            "disagreements": 0,
+            "ged_only": 0,
+            "ged_only_country_ids": [],
+            "ged_positive": 5,
+            "n_at_risk": 175
+          }
+        }
+      }
+    },
+    "2022": {
+      "1": {
+        "30": {
+          "candidate_q3_vs_annual": {
+            "both_negative": 146,
+            "both_positive": 2,
+            "candidate_only": 1,
+            "candidate_only_country_ids": [
+              540
+            ],
+            "candidate_positive": 3,
+            "candidate_positive_matching_ged_share": 0.66666667,
+            "candidate_sensitivity_to_ged_label": 0.66666667,
+            "disagreements": 2,
+            "ged_only": 1,
+            "ged_only_country_ids": [
+              531
+            ],
+            "ged_positive": 3,
+            "n_at_risk": 150
+          }
+        },
+        "90": {
+          "candidate_q3_vs_annual": {
+            "both_negative": 138,
+            "both_positive": 3,
+            "candidate_only": 7,
+            "candidate_only_country_ids": [
+              20,
+              130,
+              516,
+              540,
+              616,
+              704,
+              910
+            ],
+            "candidate_positive": 10,
+            "candidate_positive_matching_ged_share": 0.3,
+            "candidate_sensitivity_to_ged_label": 0.6,
+            "disagreements": 9,
+            "ged_only": 2,
+            "ged_only_country_ids": [
+              531,
+              625
+            ],
+            "ged_positive": 5,
+            "n_at_risk": 150
+          }
+        }
+      },
+      "5": {
+        "30": {
+          "candidate_q3_vs_annual": {
+            "both_negative": 160,
+            "both_positive": 1,
+            "candidate_only": 0,
+            "candidate_only_country_ids": [],
+            "candidate_positive": 1,
+            "candidate_positive_matching_ged_share": 1,
+            "candidate_sensitivity_to_ged_label": 1,
+            "disagreements": 0,
+            "ged_only": 0,
+            "ged_only_country_ids": [],
+            "ged_positive": 1,
+            "n_at_risk": 161
+          }
+        },
+        "90": {
+          "candidate_q3_vs_annual": {
+            "both_negative": 153,
+            "both_positive": 2,
+            "candidate_only": 6,
+            "candidate_only_country_ids": [
+              516,
+              517,
+              626,
+              702,
+              704,
+              910
+            ],
+            "candidate_positive": 8,
+            "candidate_positive_matching_ged_share": 0.25,
+            "candidate_sensitivity_to_ged_label": 1,
+            "disagreements": 6,
+            "ged_only": 0,
+            "ged_only_country_ids": [],
+            "ged_positive": 2,
+            "n_at_risk": 161
+          }
+        }
+      },
+      "10": {
+        "30": {
+          "candidate_q3_vs_annual": {
+            "both_negative": 164,
+            "both_positive": 1,
+            "candidate_only": 0,
+            "candidate_only_country_ids": [],
+            "candidate_positive": 1,
+            "candidate_positive_matching_ged_share": 1,
+            "candidate_sensitivity_to_ged_label": 0.5,
+            "disagreements": 1,
+            "ged_only": 1,
+            "ged_only_country_ids": [
+              461
+            ],
+            "ged_positive": 2,
+            "n_at_risk": 166
+          }
+        },
+        "90": {
+          "candidate_q3_vs_annual": {
+            "both_negative": 159,
+            "both_positive": 4,
+            "candidate_only": 3,
+            "candidate_only_country_ids": [
+              516,
+              626,
+              704
+            ],
+            "candidate_positive": 7,
+            "candidate_positive_matching_ged_share": 0.57142857,
+            "candidate_sensitivity_to_ged_label": 1,
+            "disagreements": 3,
+            "ged_only": 0,
+            "ged_only_country_ids": [],
+            "ged_positive": 4,
+            "n_at_risk": 166
+          }
+        }
+      },
+      "25": {
+        "30": {
+          "candidate_q3_vs_annual": {
+            "both_negative": 174,
+            "both_positive": 0,
+            "candidate_only": 0,
+            "candidate_only_country_ids": [],
+            "candidate_positive": 0,
+            "candidate_positive_matching_ged_share": null,
+            "candidate_sensitivity_to_ged_label": null,
+            "disagreements": 0,
+            "ged_only": 0,
+            "ged_only_country_ids": [],
+            "ged_positive": 0,
+            "n_at_risk": 174
+          }
+        },
+        "90": {
+          "candidate_q3_vs_annual": {
+            "both_negative": 172,
+            "both_positive": 1,
+            "candidate_only": 0,
+            "candidate_only_country_ids": [],
+            "candidate_positive": 1,
+            "candidate_positive_matching_ged_share": 1,
+            "candidate_sensitivity_to_ged_label": 0.5,
+            "disagreements": 1,
+            "ged_only": 1,
+            "ged_only_country_ids": [
+              461
+            ],
+            "ged_positive": 2,
+            "n_at_risk": 174
+          }
+        }
+      }
+    }
+  },
+  "years_pooled": [
+    2021,
+    2022,
+    2024,
+    2025
+  ]
+}

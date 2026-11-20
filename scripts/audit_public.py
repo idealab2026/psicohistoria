@@ -78,6 +78,15 @@ REPOSITORY |= {
     ".github/workflows/candidate-to-annual-ged.yml",
     "data/candidate-to-annual-ged-resolution.json",
 }
+# 2021/22 original GED annual label reconciliation, no personal sources.
+RELEASE |= {"data/candidate-ged-2021-22-resolution.json"}
+REPOSITORY |= {
+    "scripts/audit_candidate_ged_2021_22.py",
+    "scripts/test_audit_candidate_ged_2021_22.py",
+    "docs/candidate-ged-2021-22-annual-resolution.md",
+    "data/candidate-ged-2021-22-resolution.json",
+    ".github/workflows/candidate-ged-2021-22.yml",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",
