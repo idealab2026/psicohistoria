@@ -32,7 +32,7 @@ jobs:
           python-version: '3.12'
       - name: Adversarial bound ordering, status uncertainty and fixed-source tests
         run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_fatality_uncertainty.py' -v
-      - name: Replay nine original Candidate source snapshots for fatality uncertainty
-        run: python3 -B scripts/audit_candidate_fatality_uncertainty.py --print-report
+      - name: Require nine-original Candidate source SHA and frozen uncertainty results to replay exactly
+        run: python3 -B scripts/audit_candidate_fatality_uncertainty.py --check-report
       - name: Enforce institutional public privacy allowlist
         run: python3 -B scripts/audit_public.py
