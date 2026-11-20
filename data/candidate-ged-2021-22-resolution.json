@@ -1,0 +1,31 @@
+{
+  "schema": "idealab.psico.candidate_ged_2021_22_extension.v1",
+  "status": "PREREGISTERED_SOURCE_CENSUS_ONLY",
+  "design_date": "2026-11-20",
+  "years_new": [
+    2021,
+    2022
+  ],
+  "annual_versions": {
+    "2021": "GED 22.1",
+    "2022": "GED 23.1"
+  },
+  "years_pooled": [
+    2021,
+    2022,
+    2024,
+    2025
+  ],
+  "thresholds": [
+    1,
+    5,
+    10,
+    25
+  ],
+  "horizons": [
+    30,
+    90
+  ],
+  "primary": "Q1 state best <5, May1-30 state best >=5",
+  "prospective_issued_probabilities": 0
+}
