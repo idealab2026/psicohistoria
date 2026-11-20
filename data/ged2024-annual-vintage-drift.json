@@ -1,0 +1,14 @@
+{
+  "schema": "idealab.psico.ged2024_annual_vintage_drift.preregistered_placeholder.v1",
+  "status": "PREREGISTERED_NO_OUTCOME_REPORTED",
+  "design_fixed_date": "2026-11-20",
+  "event_year": 2024,
+  "editions": [
+    "GED 25.1",
+    "GED 26.1"
+  ],
+  "outcomes_inspected_for_later_vintage": false,
+  "prospective_issued_probabilities": 0,
+  "cohorts_modified": 0,
+  "warning": "NOT A RESULT. Replace only after running official source-SHA-pinned comparison. This placeholder has no GED26.1-for-2024 outcomes."
+}
