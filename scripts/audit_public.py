@@ -78,6 +78,15 @@ REPOSITORY |= {
     ".github/workflows/candidate-to-annual-ged.yml",
     "data/candidate-to-annual-ged-resolution.json",
 }
+# 2021/22 original GED annual label reconciliation, no personal sources.
+RELEASE |= {"data/candidate-ged-2021-22-resolution.json"}
+REPOSITORY |= {
+    "scripts/audit_candidate_ged_2021_22.py",
+    "scripts/test_audit_candidate_ged_2021_22.py",
+    "docs/candidate-ged-2021-22-annual-resolution.md",
+    "data/candidate-ged-2021-22-resolution.json",
+    ".github/workflows/candidate-ged-2021-22.yml",
+}
 # Subsequent annual-release revision study: original ZIPs and CI-frozen public aggregates.
 RELEASE |= {"data/ged2024-annual-vintage-drift.json"}
 REPOSITORY |= {
