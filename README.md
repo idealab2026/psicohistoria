@@ -4,6 +4,41 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## Q-CANDIDATE · Cuatro cohortes Candidate→GED anual (20-11-2026)
+
+El contraste con las primeras versiones GED anuales se ha extendido a
+**2021 (GED 22.1) y 2022 (GED 23.1)**, manteniendo los resultados
+2024/25 publicados anteriormente, sin reetiquetar fuentes
+y con SHA-256 de **10 archivos** originales en los dos estudios.
+
+**Indicador exploratorio:** en países cuyo Candidate Q1 registra
+menos de 5 muertes estatales bien fechadas, los que superan
+5 muertes del 1–30 de mayo aparecen así:
+
+| Año | Candidate Q3 positivos | También positivos en GED anual |
+|---|---:|---:|
+| 2021 | 3 | **3/3** |
+| 2022 | 1 | **1/1** |
+| 2024 | 2 | **0/2** |
+| 2025 | 4 | **1/4** |
+| **Cuatro años** | **10** | **5/10** |
+
+**La concordancia es temporalmente inestable:** los cuatro
+positivos de 2021/22 se conservan, pero solo 1/6
+de 2024/25. Esto impide tomar una tasa global
+del indicador provisional como parámetro universal
+de conversión a GED anual. No demuestra cambios
+reales de guerras: hay diferencias de codificación,
+revisión e inclusión. Tampoco permite certificar
+habilidad prospectiva. A 90 días, mismo T=5,
+la coincidencia positiva es **10/25** en 642
+observaciones país-año a riesgo, con horizontes
+solapados y países dependientes.
+
+[Estudio, casos nacionales y limitaciones](docs/candidate-ged-2021-22-annual-resolution.md)
+· [Informe congelado, trazabilidad y resumen a cuatro años](data/candidate-ged-2021-22-resolution.json)
+· [Código y tests](scripts/audit_candidate_ged_2021_22.py).
+
 ## Q-CANDIDATE · ¿Se conservan las alertas en GED anual? (20-11-2026)
 
 **Contraste implementado contra los archivos anuales oficiales UCDP GED 25.1
