@@ -135,8 +135,8 @@ class CandidateAnnualValidationTests(unittest.TestCase):
             str(year):threshold_rows[str(year)][str(t)][str(h)]
             for year in experiment.YEARS
         } for h in experiment.HORIZONS} for t in experiment.THRESHOLDS}
-        registry={"status":"RETROSPECTIVE_REVISIONS_NOT_ASOF_NOT_PROSPECTIVE",
-                  "nine_official_archives":archive_rows}
+        registry={"status":"POST_SELECTION_SOURCE_REVISION_SENSITIVITY_NOT_PROSPECTIVE",
+                  "nine_original_sha_pinned_sources":archive_rows}
         stability={"status":"POST_SELECTION_SOURCE_REVISION_SENSITIVITY_NOT_PROSPECTIVE",
                    "may_label_revision_by_year":saved_years}
         grid={"universe_sha256":hashlib.sha256(raw_universe).hexdigest(),
