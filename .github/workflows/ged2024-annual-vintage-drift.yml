@@ -8,6 +8,7 @@ on:
       - 'scripts/test_audit_candidate_to_annual_ged.py'
       - 'docs/ged2024-annual-vintage-drift-protocol.md'
       - 'data/ged2024-annual-vintage-drift.json'
+      - 'README.md'
       - 'scripts/audit_public.py'
       - '.github/workflows/ged2024-annual-vintage-drift.yml'
   pull_request:
@@ -18,6 +19,7 @@ on:
       - 'scripts/test_audit_candidate_to_annual_ged.py'
       - 'docs/ged2024-annual-vintage-drift-protocol.md'
       - 'data/ged2024-annual-vintage-drift.json'
+      - 'README.md'
       - 'scripts/audit_public.py'
       - '.github/workflows/ged2024-annual-vintage-drift.yml'
   workflow_dispatch:
