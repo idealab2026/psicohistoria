@@ -63,10 +63,19 @@ class FatalityUncertaintyTests(unittest.TestCase):
         self.assertEqual(agg["best_not_low_ids"], [501, 620])
         self.assertEqual(agg["best_not_clear_ids"], [620])
 
-    def test_original_fatality_order_and_duplicate_ids_fail_closed(self):
+    def test_nonmonotone_source_estimates_are_flagged_not_silently_repaired(self):
+        original = fixture([
+            row("x", 501, "2026-05-10", 8, 5, 9),
+            row("y", 620, "2026-05-10", 1, 12, 10),
+        ])
+        meta, data = audit.audit_csv(original, 2026, 6, {501, 620})
+        self.assertEqual(meta["checks"]["eligible_nonmonotone_event_rows"], 2)
+        self.assertEqual(data["may30"][501]["low"], 8)
+        self.assertEqual(data["may30"][501]["best"], 5)
+        self.assertEqual(data["may30"][620]["high"], 10)
+        self.assertEqual(data["may30"][620]["nonmonotone_events"], 1)
+        # Invalid *negative* numeric estimates, duplicate IDs, impossible dates still fail.
         bad = [
-            [row("x", 501, "2026-05-10", 8, 5, 9)],
-            [row("x", 501, "2026-05-10", 1, 12, 10)],
             [row("x", 501, "2026-05-10", -1, 0, 1)],
             [row("x", 501, "2026-05-10", 1, 2, 3)] * 2,
             [row("x", 501, "2026-05-11", 1, 2, 3, end="2026-05-10")],
@@ -96,10 +105,15 @@ class FatalityUncertaintyTests(unittest.TestCase):
         stats, data = audit.audit_csv(records, 2026, 3, {501})
         self.assertEqual(stats["checks"]["state_invalid_bounds_excluded_low_precision"], 1)
         self.assertEqual(data["q1"][501]["best"], 3)
-        # Same invalid coding cannot enter with exact dates in the target window.
-        with self.assertRaises(SourceError):
-            audit.audit_csv(fixture([row("bad", 501, "2026-03-02", 50, 32, 10)]),
-                            2026, 3, {501})
+        # Same coding inside the window must be included WITHOUT mutation,
+        # while flagged as nonmonotone; it is not a valid confidence interval.
+        meta2, dataset2 = audit.audit_csv(
+            fixture([row("bad", 501, "2026-03-02", 50, 32, 10)]),
+            2026, 3, {501}
+        )
+        self.assertEqual(meta2["checks"]["eligible_nonmonotone_event_rows"], 1)
+        self.assertEqual(dataset2["q1"][501]["high"], 10)
+        self.assertEqual(dataset2["q1"][501]["nonmonotone_events"], 1)
 
     def test_90_day_window_only_exposed_from_q3(self):
         f = fixture([
