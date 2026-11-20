@@ -63,13 +63,13 @@ def fetch_annual_zip(url):
                 raise SourceError("GED ZIP exceeds declared source size budget")
             parts.append(piece)
     raw = b"".join(parts)
-    if not raw.startswith(b"PK\\x03\\x04".replace(b"\\\\", b"\\")):
+    if not raw.startswith(bytes((80, 75, 3, 4))):
         raise SourceError("Downloaded GED archive is not a ZIP")
     return raw
 
 
 def examine_zip(raw):
-    if not isinstance(raw, bytes) or not raw.startswith(b"PK\\x03\\x04".replace(b"\\\\", b"\\")):
+    if not isinstance(raw, bytes) or not raw.startswith(bytes((80, 75, 3, 4))):
         raise SourceError("GED official archive ZIP signature invalid")
     if len(raw) > MAX_ARCHIVE_BYTES:
         raise SourceError("GED official archive ZIP too large")
@@ -106,7 +106,7 @@ def csv_member(archive, year):
     version = {2024: "25", 2025: "26"}[year]
     candidates = [
         item for item in archive.infolist()
-        if re.fullmatch(r"GEDEvent_v" + version + r"[_\\.]1\\.csv",
+        if re.fullmatch(r"GEDEvent_v" + version + r"[_\.]1\.csv",
                         PurePosixPath(item.filename).name, re.IGNORECASE)
     ]
     if len(candidates) != 1:
