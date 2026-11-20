@@ -99,17 +99,17 @@ def audit_csv(raw, year, month, universe):
             counts["skip_non_state_based"] += 1
             counts["nonstate_invalid_bounds_excluded"] += int(malformed_bounds)
             continue
-        if malformed_bounds:
-            raise SourceError(f"State-based Candidate {year}-{month} invalid deaths at id={event_id}, country={country}, date_prec={precision}, dates={row.get('date_start')}/{row.get('date_end')}, deaths={death}")
         start = ged_day(row["date_start"], "date_start")
         end = ged_day(row["date_end"], "date_end")
         if start > end:
             raise SourceError("GED event date_start > date_end")
         if precision not in (1, 2):
+            counts["state_invalid_bounds_excluded_low_precision"] += int(malformed_bounds)
             counts["skip_low_or_unknown_date_precision"] += 1
             counts["skip_date_prec_zero"] += int(precision == 0)
             continue
         if country not in universe:
+            counts["state_invalid_bounds_excluded_outside_universe"] += int(malformed_bounds)
             counts["skip_outside_country_universe"] += 1
             continue
         targets = []
@@ -122,8 +122,12 @@ def audit_csv(raw, year, month, universe):
             if month == 9 and start >= may_start and end <= long_end:
                 targets.append("may90")
         if not targets:
+            counts["state_invalid_bounds_excluded_outside_windows"] += int(malformed_bounds)
             counts["skip_outside_fixed_windows"] += 1
             continue
+        # Fail closed ONLY when this state-based event can change the declared estimand.
+        if malformed_bounds:
+            raise SourceError(f"In-window type1 Candidate {year}-{month} invalid deaths at id={event_id}, country={country}, date_prec={precision}, dates={row.get('date_start')}/{row.get('date_end')}, deaths={death}")
         status = (row["code_status"] or "").strip()
         normalized = status.casefold() if status else "(blank)"
         if not status:
