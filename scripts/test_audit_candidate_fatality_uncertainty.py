@@ -87,6 +87,20 @@ class FatalityUncertaintyTests(unittest.TestCase):
         self.assertEqual(data["may30"][501]["best"], 5)
         self.assertEqual(data["may30"][501]["low"], 4)
 
+    def test_state_invalid_bounds_with_imprecise_date_are_quarantined(self):
+        records = fixture([
+            row("monthly-ambiguous", 501, "2026-01-01", 50, 32, 10,
+                date_prec=4, end="2026-01-31"),
+            row("good", 501, "2026-03-02", 1, 3, 5),
+        ])
+        stats, data = audit.audit_csv(records, 2026, 3, {501})
+        self.assertEqual(stats["checks"]["state_invalid_bounds_excluded_low_precision"], 1)
+        self.assertEqual(data["q1"][501]["best"], 3)
+        # Same invalid coding cannot enter with exact dates in the target window.
+        with self.assertRaises(SourceError):
+            audit.audit_csv(fixture([row("bad", 501, "2026-03-02", 50, 32, 10)]),
+                            2026, 3, {501})
+
     def test_90_day_window_only_exposed_from_q3(self):
         f = fixture([
             row("a", 501, "2026-05-30", 3, 6, 8),
