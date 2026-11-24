@@ -13,6 +13,7 @@ from generate_dec2026_pilot import OBS,DEADLINE,TARGET,TRAIN,MODELS,THRESHOLDS
 from experiment_annual_ged_rolling_probability import load,validate
 ROOT=Path(__file__).resolve().parents[1]
 PROTOCOL="e9ff37ba21f0a4994d6baa347c7f932ea5bf9393"
+FROZEN_SHA="540e4327e4b39c78227a28f1fabbf8911ad7a2b9391e7b4bacd1ce4296a295bd"
 def moment(s):
     d=datetime.fromisoformat(s.replace("Z","+00:00"))
     if d.tzinfo is None or d.utcoffset()!=timedelta(0): raise ValueError("UTC required")
@@ -77,4 +78,6 @@ if __name__=="__main__":
     raw=(ROOT/"data/forecast-dec2026-pilot.json").read_bytes()
     receipt=json.loads((ROOT/"data/forecast-dec2026-pilot-manifest.json").read_text())
     source=json.loads((ROOT/"data/candidate-october-2026-source-observation.json").read_text())
+    if digest(raw)!=FROZEN_SHA or receipt["candidate_run_id"]!="45475399804" or receipt["first_document_commit"]!="e71de1d02908ada1aa8ebcaa8c58c4def1438715":
+        raise ValueError("Original publication evidence changed")
     print(json.dumps(check(raw,receipt,{x[1] for x in rows},source["source_manifest"]),sort_keys=True))
