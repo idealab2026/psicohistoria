@@ -1,0 +1,72 @@
+{
+  "api_docs_sha256": "d211eff65f3851e608f8156cbf56a1d7f5affe611c6209f8308c6264f00f7708",
+  "catalogue_link_evidence": {
+    "8": {
+      "current": false,
+      "historical": true
+    },
+    "9": {
+      "current": false,
+      "historical": false
+    },
+    "10": {
+      "current": true,
+      "historical": false
+    }
+  },
+  "catalogue_sha256": "6d4bed1827d05c4f6d839da8a8201fb024359ee28583d1f33a0db671e0561402",
+  "ci_run_id": "45469065091",
+  "convention_derived_months": [
+    9
+  ],
+  "countries_with_eligible_records": 59,
+  "countries_with_positive_other_violence_best": 47,
+  "countries_with_positive_state_based_best": 41,
+  "current_catalogue_sha256": "db03b5cc3756df5b50dc297069eaa4a1eec08ecd0826924f17cfffcd0cfbe1e5",
+  "deduplication": {
+    "changed_representations": 7,
+    "repeated_ids": 46
+  },
+  "event_counts": {
+    "all_rows": 6192,
+    "eligible_recent_rows": 6074,
+    "other_violence_rows": 2440,
+    "outside_recent_window": 44,
+    "precision_excluded": 74,
+    "state_based_rows": 3634
+  },
+  "modified_forecasts": 0,
+  "new_forecasts": 0,
+  "observed_at_utc": "2026-11-24T19:20:07.692599+00:00",
+  "original_release_date_certified": false,
+  "recent_end": "2026-10-31",
+  "recent_start": "2026-08-01",
+  "source_manifest": [
+    {
+      "bytes": 1443396,
+      "month": 8,
+      "rows": 1806,
+      "rows_wholly_in_calendar_month": 1750,
+      "sha256": "2ad6e0b2bfdbaa31873716a3455096923a8539519d69d96aeeea2d0f44a34593",
+      "url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v26_0_8.csv"
+    },
+    {
+      "bytes": 1611352,
+      "month": 9,
+      "rows": 2014,
+      "rows_wholly_in_calendar_month": 1961,
+      "sha256": "20256b0d674f4c58d747c7c75ddc012eabfedf44ada22f436ef2d9a6405567d5",
+      "url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v26_0_9.csv"
+    },
+    {
+      "bytes": 1963135,
+      "month": 10,
+      "rows": 2418,
+      "rows_wholly_in_calendar_month": 2381,
+      "sha256": "4f985429c1c16cc06e9246f61a3c3e2950b6a5549c59d93813cd6b8723fbc7e0",
+      "url": "https://ucdp.uu.se/downloads/candidateged/GEDEvent_v26_0_10.csv"
+    }
+  ],
+  "status": "OBSERVED_MONTHLY_SOURCES_ONLY_NO_FORECAST",
+  "universe_size": 196
+}
