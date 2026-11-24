@@ -200,6 +200,13 @@ REPOSITORY |= {
 }
 RELEASE |= {"src/prospective-dec2026.mjs"}
 REPOSITORY |= {"src/prospective-dec2026.mjs","tests/prospective-dec2026.test.mjs"}
+# DEC2026 future outcome resolver; no actual outcome data yet.
+REPOSITORY |= {
+    "docs/dec2026-future-resolution.md",
+    "scripts/resolve_dec2026_pilot.py",
+    "scripts/test_resolve_dec2026_pilot.py",
+    ".github/workflows/dec2026-resolution.yml",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",
