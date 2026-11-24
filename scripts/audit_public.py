@@ -141,6 +141,13 @@ REPOSITORY |= {
     "data/annual-ged-rolling-probability.json",
     ".github/workflows/annual-ged-rolling-probability.yml",
 }
+# Source-only monthly Candidate bridge protocol; no event-level publication.
+REPOSITORY |= {
+    "scripts/audit_candidate_monthly_bridge_census.py",
+    "scripts/test_audit_candidate_monthly_bridge_census.py",
+    "docs/candidate-monthly-bridge-protocol.md",
+    ".github/workflows/candidate-monthly-bridge-census.yml",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",
