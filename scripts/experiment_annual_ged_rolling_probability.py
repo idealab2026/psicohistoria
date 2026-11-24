@@ -56,6 +56,20 @@ def summary(pred,y):
     base=s["global"]["brier"]
     return {m:{**{k:round(v,9) for k,v in vals.items()},
                "brier_skill_vs_global":round(1-vals["brier"]/base,9)} for m,vals in s.items()}
+def decompose_q1_gain(pred,y):
+    """Post-outcome descriptive attribution; not a training input."""
+    n=len(y)
+    out={}
+    for label,name in ((0,"negative"),(1,"positive")):
+        subset=[p for p,v in zip(pred,y) if v==label]
+        count=len(subset)
+        out[name]={
+            "n":count,
+            "global_mean_probability":round(sum(p[0] for p in subset)/count,9) if count else None,
+            "q1_mean_probability":round(sum(p[1] for p in subset)/count,9) if count else None,
+            "brier_gain_contribution":round(sum((p[0]-label)**2-(p[1]-label)**2 for p in subset)/n,9)
+        }
+    return out
 def run(rows):
     validate(rows)
     results=[]
@@ -74,7 +88,8 @@ def run(rows):
                     "n_test":len(test),"positives":sum(y),"scores":summary(p,y)})
                 allp+=p; ally+=y
             results.append({"threshold":t,"horizon":h,"folds":folds,"n_test":len(ally),
-                 "positives":sum(ally),"scores":summary(allp,ally)})
+                 "positives":sum(ally),"scores":summary(allp,ally),
+                 "q1_brier_gain_by_outcome":decompose_q1_gain(allp,ally)})
     return {"status":"RETROSPECTIVE_NOT_ASOF_NOT_PROSPECTIVE","source_sha256":SOURCES,
              "new_forecasts":0,"modified_prior_forecasts":0,"results":results}
 if __name__=="__main__":
