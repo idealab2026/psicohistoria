@@ -145,7 +145,24 @@ def capture_monthly():
         "recent_start":START.isoformat(),"recent_end":END.isoformat(),
         "deduplication":stats,"original_release_date_certified":False,
         "new_forecasts":0,"modified_forecasts":0,**inspect_events(events,ids,observed)}
+def replay_monthly():
+    frozen=json.loads((Path(__file__).resolve().parents[1]/"data/candidate-october-2026-source-observation.json").read_text())
+    observed=datetime.fromisoformat(frozen["observed_at_utc"])
+    if frozen["status"]!="OBSERVED_MONTHLY_SOURCES_ONLY_NO_FORECAST" or frozen["ci_run_id"]!="45469065091":
+        raise ValueError("Unexpected frozen observation")
+    snapshots=[]
+    for m,meta in zip(MONTHLY,frozen["source_manifest"],strict=True):
+        raw=fetch(MONTHLY[m],30_000_000)
+        events,actual=monthly_metadata(raw,m)
+        if actual!=meta or any(x[5]>=observed.date() for x in events.values()):
+            raise ValueError("Frozen source bytes or chronology changed")
+        snapshots.append(events)
+    rows=load();validate(rows);ids={x[1] for x in rows}
+    events,stats=union(snapshots)
+    if stats!=frozen["deduplication"] or any(frozen[k]!=v for k,v in inspect_events(events,ids,observed).items()):
+        raise ValueError("Frozen observation does not reproduce")
+    return frozen
 if __name__=="__main__":
     print("OCTOBER_SOURCE_BEGIN",flush=True)
-    print(json.dumps(capture_monthly() if "--monthly" in sys.argv else capture(),sort_keys=True,indent=2),flush=True)
+    print(json.dumps(replay_monthly() if "--check" in sys.argv else (capture_monthly() if "--monthly" in sys.argv else capture()),sort_keys=True,indent=2),flush=True)
     print("OCTOBER_SOURCE_END",flush=True)
