@@ -156,8 +156,10 @@ REPOSITORY |= {
     ".github/workflows/candidate-monthly-bridge-census.yml",
 }
 # Complementary signal study: aggregate-only public research.
+RELEASE |= {"data/candidate-monthly-complementary-signals.json"}
 REPOSITORY |= {
     "docs/candidate-monthly-complementary-signals.md",
+    "data/candidate-monthly-complementary-signals.json",
     "scripts/experiment_candidate_monthly_complementary_signals.py",
     "scripts/test_experiment_candidate_monthly_complementary_signals.py",
     ".github/workflows/candidate-monthly-complementary-signals.yml",
