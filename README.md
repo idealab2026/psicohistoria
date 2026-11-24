@@ -4,6 +4,41 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## Q-CANDIDATE · ¿Qué ocurrió con los eventos y las díadas? (24-11-2026)
+
+**Auditoría de ocho archivos oficiales UCDP original-SHA, diez países-año
+Candidate positivos T≥5 de mayo 2021/22/24/25, sin emitir pronósticos.**
+El salto Candidate Q3→primera GED anual muestra un mecanismo
+de codificación más preciso que la tasa agregada de «acierto»:
+
+- Los cinco países que **pierden la etiqueta** (Brasil y Bangladés
+  2024; Ecuador, Brasil y Libia 2025) registran **8 eventos
+  Candidate y 36 muertes `best`**, pero ninguno de esos ocho
+  **IDs de evento** ni sus **IDs de díada estatal** aparece
+  en el GED anual del correspondiente año con la clave original.
+- En los cuatro países que **conservan la etiqueta** en 2021–22,
+  **17 eventos Candidate dejan de ser elegibles con igual ID**,
+  pero los **17 IDs de díada** sí aparecen entre eventos
+  estatales GED de ese año.
+- Indonesia 2025 **conserva el umbral pese a pasar de 38
+  a 14 muertes**: siete IDs compartidos se reestiman de 23
+  a 14 (`−9`) y otro ID provisional con 15 muertes
+  no aparece (`−15`). Togo 2022 mantiene el mismo ID
+  pero pasa de 8 a 23 muertes (`+15`).
+
+Todos los balances de fallecidos se **reconcilian exactamente**
+por IDs compartidos, IDs solo Candidate e IDs solo GED.
+**Ausencia de un identificador no demuestra ausencia de hechos**,
+ni la ausencia de una díada con la misma clave prueba que
+no existiera o que fuera eliminada por la regla de 25 muertes:
+puede haber cambios de actores/IDs, fusiones, recodificación
+y otros criterios de inclusión. UCDP Candidate y GED anual
+siguen siendo objetivos diferentes.
+
+[Descomposición, metodología y límites](docs/candidate-ged-event-dyad-fates-protocol.md)
+· [Informe nacional agregado con ocho fuentes SHA](data/candidate-ged-event-dyad-fates.json)
+· [Script y pruebas de integridad](scripts/audit_candidate_ged_event_dyad_fates.py).
+
 ## Q-CANDIDATE · ¿Qué cambia la retención anual? (24-11-2026)
 
 **Nuevo contraste explicativo, posterior a conocer los resultados,
