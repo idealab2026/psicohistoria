@@ -1,3 +1,4 @@
+import {verifyDEC2026,renderDEC2026} from "./prospective-dec2026.mjs";
 import {verify,score,calibration} from "./metrics.mjs";
 import {verifyResearch,verifyIssuedForecast2027,parseForecastCSV,evaluateLocalForecast,CSV_TEMPLATE} from "./research.mjs";
 import {domainGraph} from "./visuals.mjs";
@@ -15,13 +16,13 @@ const format=n=>typeof n==="number"&&Number.isFinite(n)?new Intl.NumberFormat("e
 const formatPct=n=>typeof n==="number"&&Number.isFinite(n)?format(n*100)+" %":"—";
 const groupViews={
  brief:[["brief","Inicio"]],
- predictions:[["evaluationRegister","Evaluaciones futuras"],["registry2027","Registro real 2027"],["registry2028","GEO-2028 emitida"],["futures","Explorador"],["shadow2027","GEO-2027"]],
+ predictions:[["dec2026","DEC2026 · 30/90 días"],["evaluationRegister","Evaluaciones futuras"],["registry2027","Registro real 2027"],["registry2028","GEO-2028 emitida"],["futures","Explorador"],["shadow2027","GEO-2027"]],
  research:[["questions","Preguntas útiles"],["archive","Archivo científico"],["overview","Mapa del proyecto"],["registry","Líneas y fuentes"],["science","Evidencia"],["operations","Registro"],["roadmap","Hitos"]],
  create:[["portfolio","Catálogo recuperado"],["ideas","Nuevas ideas"],["video","Estudio audiovisual"]]
 };
 const viewIds=new Set(Object.values(groupViews).flat().map(x=>x[0]));
 const viewToGroup=Object.fromEntries(Object.entries(groupViews).flatMap(([k,items])=>items.map(([id])=>[id,k])));
-const state={archive:null,projectCatalog:null,archiveTable:0,archiveQuery:"",archivePage:0,data:null,research:null,registryFilter:"todos",registryOutput:null,questionPriority:"P1",view:viewIds.has(new URLSearchParams(location.search).get("view"))?new URLSearchParams(location.search).get("view"):"brief",scenario:null,program:null,study:null,filter:"todos",ideas:[],flowState:"00",markovOrigin:2020,markovHorizon:6,markovQuestion:"atleast25",markovSelection:null,countryTreeOrigin:2020,countryTreeId:null,countryTreeModel:"country_shrinkage",countryTreeQuestion:"atleast25",countryTreeYear:null,countryTreeSelection:null,videoText:"",forecastCountryId:null,prospective2027:null,prospective2027Manifest:null,prospectiveRegistry:null,prospectiveCohort:"TODAS",prospectiveQuery:"",prospectivePage:0,prospective2028:null,prospective2028Manifest:null,prospective2028Query:"",prospective2028Order:"risk",prospective2028Page:0,futureEvaluationReport:null,busy:false};
+const state={archive:null,projectCatalog:null,archiveTable:0,archiveQuery:"",archivePage:0,data:null,research:null,registryFilter:"todos",registryOutput:null,questionPriority:"P1",view:viewIds.has(new URLSearchParams(location.search).get("view"))?new URLSearchParams(location.search).get("view"):"brief",scenario:null,program:null,study:null,filter:"todos",ideas:[],flowState:"00",markovOrigin:2020,markovHorizon:6,markovQuestion:"atleast25",markovSelection:null,countryTreeOrigin:2020,countryTreeId:null,countryTreeModel:"country_shrinkage",countryTreeQuestion:"atleast25",countryTreeYear:null,countryTreeSelection:null,videoText:"",forecastCountryId:null,prospective2027:null,prospective2027Manifest:null,prospectiveRegistry:null,prospectiveCohort:"TODAS",prospectiveQuery:"",prospectivePage:0,prospective2028:null,prospective2028Manifest:null,prospective2028Query:"",prospective2028Order:"risk",prospective2028Page:0,futureEvaluationReport:null,dec2026:null,dec2026Filters:{threshold:10,horizon:90,model:"pool_three",query:"",page:0,includeExcluded:false},busy:false};
 const section=(eyebrow,title,description)=>'<header class="section-head"><div class="eyebrow">'+safe(eyebrow)+'</div><h2>'+safe(title)+'</h2><p>'+safe(description)+'</p></header>';
 const box=(contents,extra="")=>'<article class="panel '+extra+'">'+contents+'</article>';
 const tag=(t,cls="")=>'<span class="tag '+cls+'">'+safe(t)+'</span>';
@@ -829,7 +830,7 @@ function render(){
   const b=document.createElement("button");b.type="button";b.textContent=label;b.dataset.action="navigate";b.dataset.value=id;
   b.classList.toggle("active",state.view===id);sub.append(b);
  }
- const views={archive:renderArchive,brief:()=>button("Ver estructura del archivo científico","navigate","archive")+renderBrief(),evaluationRegister:()=>renderFutureEvaluationContracts(state.futureEvaluationReport,state.prospectiveRegistry,state.prospective2028,state.prospective2028Manifest),registry2027:()=>renderProspectiveRegistry(state.prospectiveRegistry,{cohort:state.prospectiveCohort,query:state.prospectiveQuery,page:state.prospectivePage}),registry2028:()=>renderGEO2028(state.prospective2028,state.prospective2028Manifest,state.prospectiveRegistry,{query:state.prospective2028Query,order:state.prospective2028Order,page:state.prospective2028Page}),futures:renderFutures,shadow2027:()=>renderProspectiveNewconf2027()+renderShadow(),overview:renderOverview,
+ const views={dec2026:()=>renderDEC2026(state.dec2026,state.dec2026Filters),archive:renderArchive,brief:()=>button("Ver estructura del archivo científico","navigate","archive")+renderBrief(),evaluationRegister:()=>renderFutureEvaluationContracts(state.futureEvaluationReport,state.prospectiveRegistry,state.prospective2028,state.prospective2028Manifest),registry2027:()=>renderProspectiveRegistry(state.prospectiveRegistry,{cohort:state.prospectiveCohort,query:state.prospectiveQuery,page:state.prospectivePage}),registry2028:()=>renderGEO2028(state.prospective2028,state.prospective2028Manifest,state.prospectiveRegistry,{query:state.prospective2028Query,order:state.prospective2028Order,page:state.prospective2028Page}),futures:renderFutures,shadow2027:()=>renderProspectiveNewconf2027()+renderShadow(),overview:renderOverview,
   science:renderScience,questions:renderUsefulQuestions,registry:renderResearchRegistry,operations:renderOperations,roadmap:renderRoadmap,
   portfolio:()=>renderHistoricalProjectPortfolio(state.projectCatalog),ideas:renderIdeas,video:renderVideo};
  $("app").innerHTML=views[state.view]();
@@ -896,6 +897,13 @@ async function load(){
      throw Error("GEO2027 registry differs from its original issue");
    state.prospectiveRegistry=registry;
    state.research=research;state.prospective2027=prospective;state.prospective2027Manifest=manifest;
+   // Independent DEC2026 issue; failure must not invalidate the annual registries.
+   state.dec2026=null;
+   try{
+     const [dr,dm]=await Promise.all([fetch("./data/forecast-dec2026-pilot.json",{cache:"no-store"}),fetch("./data/forecast-dec2026-pilot-manifest.json",{cache:"no-store"})]);
+     if(!dr.ok||!dm.ok)throw Error("DEC2026 unavailable");
+     state.dec2026=await verifyDEC2026(await dr.text(),await dm.json(),prospective.countries);
+   }catch{state.dec2026=null;}
    // Four-cohort evaluation register is separately source-frozen, never a scored report.
    state.futureEvaluationReport=null;
    // Separate endpoint/year; a 2028 source failure NEVER degrades the verified 2027 registry.
@@ -943,6 +951,7 @@ async function load(){
   $("sync-status").textContent=state.prospective2028?
     "4 emisiones verificadas (2027×3; 2028×1) · 620 preguntas, no independientes":
     "GEO · NEWCONF · ACD: 2027 verificado; GEO2028 no disponible o sin autenticar";
+  if(state.dec2026)$("sync-status").textContent+=" · DEC2026: 1.304 país-escenarios experimentales, sin resolver";
   render();
   await loadPublicTree();
  }catch{
@@ -977,6 +986,15 @@ document.querySelectorAll("[data-section]").forEach(button=>button.addEventListe
  const group=button.dataset.section;navigate(groupViews[group][0][0]);
 }));
 $("refresh").addEventListener("click",load);
+$("app").addEventListener("change",event=>{
+ const id=event.target?.id,f=state.dec2026Filters;
+ if(id==="dec2026-threshold")f.threshold=Number(event.target.value);
+ else if(id==="dec2026-horizon")f.horizon=Number(event.target.value);
+ else if(id==="dec2026-model")f.model=event.target.value;
+ else if(id==="dec2026-excluded")f.includeExcluded=event.target.checked;
+ else return;
+ f.query=String($("dec2026-query")?.value||"").slice(0,120);f.page=0;render();
+});
 // Registry controls display only authenticated, immutable, prospectively issued rows.
 $("app").addEventListener("change",event=>{
  if(event.target?.id!=="prospective-cohort")return;
@@ -1072,6 +1090,8 @@ $("app").addEventListener("click",async event=>{
  case "navigate":navigate(value);break;
  case "question-priority":if(["P1","P2","P3"].includes(value)){state.questionPriority=value;render();}break;
  case "archive-page":state.archivePage=Number(value);render();break;
+ case "dec2026-search":state.dec2026Filters.query=String($("dec2026-query")?.value||"").slice(0,120);state.dec2026Filters.page=0;render();break;
+ case "dec2026-page":{const p=Number(value);if(Number.isInteger(p)&&p>=0&&p<=9){state.dec2026Filters.page=p;render();}break;}
  case "prospective-page":{
   const p=Number(value);
   if(Number.isInteger(p)&&p>=0&&p<=21){state.prospectivePage=p;render();}
