@@ -35,9 +35,21 @@ def get_ged():
 def census(fetch_csv=get_source,fetch_ged=get_ged):
     result=[]
     for url in CSV_URLS:
-        raw=fetch_csv(url)
-        result.append({"url":url,"sha256":hashlib.sha256(raw).hexdigest(),
-                       "bytes":len(raw),"header":header_metadata(raw)})
+        try:
+            raw=fetch_csv(url)
+            # Inspect first CSV record only, even if the historic schema differs.
+            fields=next(csv.reader(io.StringIO(raw.decode("utf-8-sig"),newline="")),[])
+            entry={"url":url,"sha256":hashlib.sha256(raw).hexdigest(),
+                   "bytes":len(raw),"header":fields,
+                   "missing_required":sorted(REQUIRED-set(fields)),
+                   "duplicate_fields":len(fields)!=len(set(fields))}
+            entry["schema_eligible"]=not entry["missing_required"] and not entry["duplicate_fields"]
+            result.append(entry)
+            print("SOURCE_METADATA "+json.dumps(entry,sort_keys=True),flush=True)
+        except (OSError,ValueError) as exc:
+            entry={"url":url,"schema_eligible":False,"error":str(exc)}
+            result.append(entry)
+            print("SOURCE_METADATA "+json.dumps(entry,sort_keys=True),flush=True)
     raw=fetch_ged()
     return {"status":"SOURCE_CENSUS_ONLY_NO_EVENT_OR_OUTCOME_ROWS_READ",
             "candidate_sources":result,
@@ -45,4 +57,9 @@ def census(fetch_csv=get_source,fetch_ged=get_ged):
                           "bytes":len(raw),"members":examine_zip(raw)},
             "new_forecasts":0,"modified_forecasts":0}
 if __name__=="__main__":
-    print(json.dumps(census(),sort_keys=True,indent=2))
+    report=census()
+    print("MONTHLY_CENSUS_BEGIN")
+    print(json.dumps(report,sort_keys=True,indent=2))
+    print("MONTHLY_CENSUS_END")
+    if not all(x["schema_eligible"] for x in report["candidate_sources"]):
+        raise SourceError("One or more monthly sources not yet schema eligible")
