@@ -1,0 +1,15 @@
+{
+  "schema": "idealab.psico.candidate_ged_event_dyad_fates.v1",
+  "status": "PREREGISTERED_NOT_COMPUTED",
+  "design_date": "2026-11-24",
+  "years": [
+    2021,
+    2022,
+    2024,
+    2025
+  ],
+  "case_definition": "Candidate Q1 state best <5, Q3 state May1-30 best >=5",
+  "case_count_expected": 10,
+  "source_archives_expected": 8,
+  "forecast_issued": 0
+}
