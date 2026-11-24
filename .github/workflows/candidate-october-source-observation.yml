@@ -1,0 +1,32 @@
+name: October 2026 contemporary source observation
+on:
+  push:
+    paths:
+      - 'scripts/audit_candidate_october_source_observation.py'
+      - 'data/candidate-october-2026-source-observation.json'
+      - 'scripts/test_audit_candidate_october_source_observation.py'
+      - '.github/workflows/candidate-october-source-observation.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_candidate_october_source_observation.py'
+      - 'data/candidate-october-2026-source-observation.json'
+      - 'scripts/test_audit_candidate_october_source_observation.py'
+      - '.github/workflows/candidate-october-source-observation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_october_source_observation.py' -v
+      - run: python3 -B scripts/audit_public.py
+      - name: Observe exact official bytes, UTC clock and aggregate quality
+        run: python3 -B scripts/audit_candidate_october_source_observation.py --check
