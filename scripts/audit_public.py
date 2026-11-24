@@ -132,6 +132,15 @@ REPOSITORY |= {
     "data/candidate-ged-annual-null-baseline-audit.json",
     ".github/workflows/candidate-ged-annual-null-baseline.yml",
 }
+# Conservative annual GED probability benchmark; retrospective aggregate results only.
+RELEASE |= {"data/annual-ged-rolling-probability.json"}
+REPOSITORY |= {
+    "scripts/experiment_annual_ged_rolling_probability.py",
+    "scripts/test_experiment_annual_ged_rolling_probability.py",
+    "docs/annual-ged-rolling-probability-protocol.md",
+    "data/annual-ged-rolling-probability.json",
+    ".github/workflows/annual-ged-rolling-probability.yml",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",
