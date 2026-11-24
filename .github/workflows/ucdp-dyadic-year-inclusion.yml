@@ -1,0 +1,38 @@
+name: Independent UCDP Dyadic annual original dyad-year check
+on:
+  push:
+    paths:
+      - 'scripts/audit_ucdp_dyadic_year_inclusion.py'
+      - 'scripts/test_audit_ucdp_dyadic_year_inclusion.py'
+      - 'docs/ucdp-dyadic-year-inclusion-audit.md'
+      - 'data/ucdp-official-dyadyear-case-resolution.json'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/ucdp-dyadic-year-inclusion.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_ucdp_dyadic_year_inclusion.py'
+      - 'scripts/test_audit_ucdp_dyadic_year_inclusion.py'
+      - 'docs/ucdp-dyadic-year-inclusion-audit.md'
+      - 'data/ucdp-official-dyadyear-case-resolution.json'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/ucdp-dyadic-year-inclusion.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  official_dyadic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Adversarial independent dyad-year source, year-matching and conservation tests
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_ucdp_dyadic_year_inclusion.py' -v
+      - name: Source-only SHA census of four official historical Dyadic original ZIP archives
+        run: python3 -B scripts/audit_ucdp_dyadic_year_inclusion.py --source-census
+      - name: Institutional public privacy allowlist
+        run: python3 -B scripts/audit_public.py
