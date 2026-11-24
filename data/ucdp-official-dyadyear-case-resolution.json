@@ -1,0 +1,20 @@
+{
+  "schema": "idealab.psico.ucdp_dyadic_year_inclusion_v1",
+  "status": "PREREGISTERED_SOURCES_UNVERIFIED",
+  "design_date": "2026-11-24",
+  "years": [
+    2021,
+    2022,
+    2024,
+    2025
+  ],
+  "editions": [
+    "22.1",
+    "23.1",
+    "25.1",
+    "26.1"
+  ],
+  "case_count": 10,
+  "source_census_first": true,
+  "forecast_issued": 0
+}
