@@ -1,0 +1,26 @@
+{
+  "schema": "idealab.psico.candidate_ged_retention_strata.v1",
+  "status": "EXPLORATORY_POSTSELECTION_DESIGN_AWAITING_COMPUTATION",
+  "analysis_date": "2026-11-24",
+  "sources": [
+    "candidate-ged-2021-22-resolution.json",
+    "candidate-to-annual-ged-resolution.json",
+    "ged2024-annual-vintage-drift.json"
+  ],
+  "primary_threshold": 5,
+  "window": "May 1-30",
+  "years": [
+    2021,
+    2022,
+    2024,
+    2025
+  ],
+  "subgroups": [
+    "era",
+    "best>=10",
+    "clear_best>=5",
+    "check dyad present",
+    "GED exact-id match (hindsight only)"
+  ],
+  "prospective_issues": 0
+}
