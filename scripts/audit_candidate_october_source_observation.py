@@ -101,15 +101,31 @@ def capture_monthly():
     docs=fetch(API_DOC,5_000_000)
     history=Links(INDEX);history.feed(index.decode("utf-8-sig"))
     latest=Links(CURRENT);latest.feed(current.decode("utf-8-sig"))
-    if MONTHLY[9] not in history.hrefs or MONTHLY[10] not in latest.hrefs:
-        raise ValueError("September or October official link absent")
+    # The catalogue currently uses a shared hyperlink for Aug/Sep labels.
+    # Record actual canonical href presence, rather than assuming label mapping.
+    link_evidence={str(m):{"historical":url in history.hrefs,
+                           "current":url in latest.hrefs}
+                   for m,url in MONTHLY.items()}
+    print("CATALOGUE_LINK_EVIDENCE "+json.dumps(link_evidence,sort_keys=True),flush=True)
+    if not any(link_evidence["10"].values()):
+        raise ValueError("October official monthly link absent")
+    if not any(any(link_evidence[str(m)].values()) for m in (8,9)):
+        raise ValueError("Neither August nor September monthly link present")
     if any(f"26.0.{m}".encode() not in docs for m in MONTHLY):
         raise ValueError("Monthly version not documented")
-    snapshots=[];manifest=[]
+    snapshots=[];manifest=[];failures=[]
     for m,url in MONTHLY.items():
-        raw=fetch(url,30_000_000)
-        events,meta=monthly_metadata(raw,m)
-        snapshots.append(events);manifest.append(meta)
+        try:
+            raw=fetch(url,30_000_000)
+            events,meta=monthly_metadata(raw,m)
+            snapshots.append(events);manifest.append(meta)
+            print("MONTHLY_SOURCE_METADATA "+json.dumps(meta,sort_keys=True),flush=True)
+        except (OSError,ValueError) as exc:
+            failure={"month":m,"url":url,"error_type":type(exc).__name__,
+                     "http_status":getattr(exc,"code",None)}
+            failures.append(failure)
+            print("MONTHLY_SOURCE_BLOCKED "+json.dumps(failure,sort_keys=True),flush=True)
+    if failures: raise ValueError("Monthly source gate blocked; see per-source diagnostics")
     observed=datetime.now(timezone.utc)
     run=os.environ.get("GITHUB_RUN_ID","")
     if not run.isdecimal(): raise ValueError("Public CI run ID required")
@@ -124,7 +140,8 @@ def capture_monthly():
         "source_manifest":manifest,"catalogue_sha256":hashlib.sha256(index).hexdigest(),
         "current_catalogue_sha256":hashlib.sha256(current).hexdigest(),
         "api_docs_sha256":hashlib.sha256(docs).hexdigest(),
-        "august_link_convention_derived":MONTHLY[8] not in history.hrefs,
+        "catalogue_link_evidence":link_evidence,
+        "convention_derived_months":[m for m in MONTHLY if not any(link_evidence[str(m)].values())],
         "recent_start":START.isoformat(),"recent_end":END.isoformat(),
         "deduplication":stats,"original_release_date_certified":False,
         "new_forecasts":0,"modified_forecasts":0,**inspect_events(events,ids,observed)}
