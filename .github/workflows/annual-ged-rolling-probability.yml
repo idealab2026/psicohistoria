@@ -1,0 +1,36 @@
+name: Annual GED conservative rolling-origin probability benchmark
+on:
+  push:
+    paths:
+      - 'scripts/experiment_annual_ged_rolling_probability.py'
+      - 'scripts/test_experiment_annual_ged_rolling_probability.py'
+      - 'data/annual-ged-rolling-probability.json'
+      - 'data/candidate-ged-2021-22-resolution.json'
+      - 'data/candidate-to-annual-ged-resolution.json'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/annual-ged-rolling-probability.yml'
+  pull_request:
+    paths:
+      - 'scripts/experiment_annual_ged_rolling_probability.py'
+      - 'scripts/test_experiment_annual_ged_rolling_probability.py'
+      - 'data/annual-ged-rolling-probability.json'
+      - 'data/candidate-ged-2021-22-resolution.json'
+      - 'data/candidate-to-annual-ged-resolution.json'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/annual-ged-rolling-probability.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_annual_ged_rolling_probability.py' -v
+      - run: python3 -B scripts/experiment_annual_ged_rolling_probability.py --check
+      - run: python3 -B scripts/audit_public.py
