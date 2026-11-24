@@ -3,6 +3,8 @@ on:
   push:
     paths:
       - 'scripts/audit_candidate_monthly_bridge_census.py'
+      - 'scripts/audit_candidate_monthly_bridge.py'
+      - 'scripts/test_audit_candidate_monthly_bridge.py'
       - 'scripts/test_audit_candidate_monthly_bridge_census.py'
       - 'docs/candidate-monthly-bridge-protocol.md'
       - 'scripts/audit_public.py'
@@ -10,6 +12,8 @@ on:
   pull_request:
     paths:
       - 'scripts/audit_candidate_monthly_bridge_census.py'
+      - 'scripts/audit_candidate_monthly_bridge.py'
+      - 'scripts/test_audit_candidate_monthly_bridge.py'
       - 'scripts/test_audit_candidate_monthly_bridge_census.py'
       - 'docs/candidate-monthly-bridge-protocol.md'
       - 'scripts/audit_public.py'
@@ -31,4 +35,7 @@ jobs:
       - run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_monthly_bridge_census.py' -v
       - name: Source-only census (no event rows or outcome computation)
         run: python3 -B scripts/audit_candidate_monthly_bridge_census.py
+      - run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_monthly_bridge.py' -v
+      - name: Monthly-to-quarterly comparability and 2023 annual outcome census
+        run: python3 -B scripts/audit_candidate_monthly_bridge.py
       - run: python3 -B scripts/audit_public.py
