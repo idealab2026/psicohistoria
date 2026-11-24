@@ -29,5 +29,5 @@ jobs:
         with:
           python-version: '3.12'
       - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_candidate_monthly_complementary_signals.py' -v
-      - run: python3 -B scripts/experiment_candidate_monthly_complementary_signals.py
+      - run: python3 -B scripts/experiment_candidate_monthly_complementary_signals.py --check
       - run: python3 -B scripts/audit_public.py
