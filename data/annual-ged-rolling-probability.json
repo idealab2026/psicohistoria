@@ -1,0 +1,755 @@
+{
+  "status": "RETROSPECTIVE_NOT_ASOF_NOT_PROSPECTIVE",
+  "source_sha256": {
+    "candidate-ged-2021-22-resolution.json": "3b2576bae226251aa9a0fc4582cd4b5a185185662a1c04646bb7254d04caa1b0",
+    "candidate-to-annual-ged-resolution.json": "01e59980294c67115e1253b52cd9595d9389e59c2bd003ee8bb747cd433a4db4"
+  },
+  "new_forecasts": 0,
+  "modified_prior_forecasts": 0,
+  "results": [
+    {
+      "threshold": 1,
+      "horizon": 30,
+      "folds": [
+        {
+          "origin": 2024,
+          "train_years": [
+            2021,
+            2022
+          ],
+          "n_train": 302,
+          "n_test": 149,
+          "positives": 0,
+          "scores": {
+            "global": {
+              "brier": 0.000692521,
+              "log_loss": 0.026668247,
+              "brier_skill_vs_global": 0
+            },
+            "q1_nonzero": {
+              "brier": 0.000546328,
+              "log_loss": 0.023651148,
+              "brier_skill_vs_global": 0.211102967
+            },
+            "country_history": {
+              "brier": 0.000695873,
+              "log_loss": 0.02565396,
+              "brier_skill_vs_global": -0.004839897
+            }
+          }
+        },
+        {
+          "origin": 2025,
+          "train_years": [
+            2021,
+            2022
+          ],
+          "n_train": 302,
+          "n_test": 147,
+          "positives": 0,
+          "scores": {
+            "global": {
+              "brier": 0.000692521,
+              "log_loss": 0.026668247,
+              "brier_skill_vs_global": 0
+            },
+            "q1_nonzero": {
+              "brier": 0.000546328,
+              "log_loss": 0.023651148,
+              "brier_skill_vs_global": 0.211102967
+            },
+            "country_history": {
+              "brier": 0.000730034,
+              "log_loss": 0.026030897,
+              "brier_skill_vs_global": -0.054169349
+            }
+          }
+        }
+      ],
+      "n_test": 296,
+      "positives": 0,
+      "scores": {
+        "global": {
+          "brier": 0.000692521,
+          "log_loss": 0.026668247,
+          "brier_skill_vs_global": 0
+        },
+        "q1_nonzero": {
+          "brier": 0.000546328,
+          "log_loss": 0.023651148,
+          "brier_skill_vs_global": 0.211102967
+        },
+        "country_history": {
+          "brier": 0.000712838,
+          "log_loss": 0.025841155,
+          "brier_skill_vs_global": -0.029337969
+        }
+      },
+      "q1_brier_gain_by_outcome": {
+        "negative": {
+          "n": 296,
+          "global_mean_probability": 0.026315789,
+          "q1_mean_probability": 0.023373652,
+          "brier_gain_contribution": 0.000146193
+        },
+        "positive": {
+          "n": 0,
+          "global_mean_probability": null,
+          "q1_mean_probability": null,
+          "brier_gain_contribution": 0
+        }
+      }
+    },
+    {
+      "threshold": 1,
+      "horizon": 90,
+      "folds": [
+        {
+          "origin": 2024,
+          "train_years": [
+            2021,
+            2022
+          ],
+          "n_train": 302,
+          "n_test": 149,
+          "positives": 1,
+          "scores": {
+            "global": {
+              "brier": 0.007535012,
+              "log_loss": 0.058883799,
+              "brier_skill_vs_global": 0
+            },
+            "q1_nonzero": {
+              "brier": 0.007373499,
+              "log_loss": 0.056476098,
+              "brier_skill_vs_global": 0.021435106
+            },
+            "country_history": {
+              "brier": 0.00752778,
+              "log_loss": 0.057630702,
+              "brier_skill_vs_global": 0.000959873
+            }
+          }
+        },
+        {
+          "origin": 2025,
+          "train_years": [
+            2021,
+            2022
+          ],
+          "n_train": 302,
+          "n_test": 147,
+          "positives": 2,
+          "scores": {
+            "global": {
+              "brier": 0.013930135,
+              "log_loss": 0.081511927,
+              "brier_skill_vs_global": 0
+            },
+            "q1_nonzero": {
+              "brier": 0.013808342,
+              "log_loss": 0.07969676,
+              "brier_skill_vs_global": 0.008743098
+            },
+            "country_history": {
+              "brier": 0.01397555,
+              "log_loss": 0.080999427,
+              "brier_skill_vs_global": -0.003260207
+            }
+          }
+        }
+      ],
+      "n_test": 296,
+      "positives": 3,
+      "scores": {
+        "global": {
+          "brier": 0.010710968,
+          "log_loss": 0.070121417,
+          "brier_skill_vs_global": 0
+        },
+        "q1_nonzero": {
+          "brier": 0.010569181,
+          "log_loss": 0.068007981,
+          "brier_skill_vs_global": 0.013237585
+        },
+        "country_history": {
+          "brier": 0.010729882,
+          "log_loss": 0.069236116,
+          "brier_skill_vs_global": -0.001765795
+        }
+      },
+      "q1_brier_gain_by_outcome": {
+        "negative": {
+          "n": 293,
+          "global_mean_probability": 0.036184211,
+          "q1_mean_probability": 0.033303367,
+          "brier_gain_contribution": 0.000198154
+        },
+        "positive": {
+          "n": 3,
+          "global_mean_probability": 0.036184211,
+          "q1_mean_probability": 0.033303367,
+          "brier_gain_contribution": -0.000056367
+        }
+      }
+    },
+    {
+      "threshold": 5,
+      "horizon": 30,
+      "folds": [
+        {
+          "origin": 2024,
+          "train_years": [
+            2021,
+            2022
+          ],
+          "n_train": 321,
+          "n_test": 161,
+          "positives": 0,
+          "scores": {
+            "global": {
+              "brier": 0.000239627,
+              "log_loss": 0.01560094,
+              "brier_skill_vs_global": 0
+            },
+            "q1_nonzero": {
+              "brier": 0.000181812,
+              "log_loss": 0.012107195,
+              "brier_skill_vs_global": 0.24127122
+            },
+            "country_history": {
+              "brier": 0.00026211,
+              "log_loss": 0.015112475,
+              "brier_skill_vs_global": -0.093828578
+            }
+          }
+        },
+        {
+          "origin": 2025,
+          "train_years": [
+            2021,
+            2022
+          ],
+          "n_train": 321,
+          "n_test": 160,
+          "positives": 1,
+          "scores": {
+            "global": {
+              "brier": 0.006296128,
+              "log_loss": 0.041554775,
+              "brier_skill_vs_global": 0
+            },
+            "q1_nonzero": {
+              "brier": 0.006018932,
+              "log_loss": 0.033265233,
+              "brier_skill_vs_global": 0.044026453
+            },
+            "country_history": {
+              "brier": 0.006319393,
+              "log_loss": 0.041085361,
+              "brier_skill_vs_global": -0.003695109
+            }
+          }
+        }
+      ],
+      "n_test": 321,
+      "positives": 1,
+      "scores": {
+        "global": {
+          "brier": 0.003258444,
+          "log_loss": 0.028537431,
+          "brier_skill_vs_global": 0
+        },
+        "q1_nonzero": {
+          "brier": 0.00309128,
+          "log_loss": 0.022653257,
+          "brier_skill_vs_global": 0.051301756
+        },
+        "country_history": {
+          "brier": 0.003281317,
+          "log_loss": 0.028058462,
+          "brier_skill_vs_global": -0.00701965
+        }
+      },
+      "q1_brier_gain_by_outcome": {
+        "negative": {
+          "n": 320,
+          "global_mean_probability": 0.015479876,
+          "q1_mean_probability": 0.012025841,
+          "brier_gain_contribution": 0.00005716
+        },
+        "positive": {
+          "n": 1,
+          "global_mean_probability": 0.015479876,
+          "q1_mean_probability": 0.033579424,
+          "brier_gain_contribution": 0.000110004
+        }
+      }
+    },
+    {
+      "threshold": 5,
+      "horizon": 90,
+      "folds": [
+        {
+          "origin": 2024,
+          "train_years": [
+            2021,
+            2022
+          ],
+          "n_train": 321,
+          "n_test": 161,
+          "positives": 2,
+          "scores": {
+            "global": {
+              "brier": 0.012420455,
+              "log_loss": 0.070708642,
+              "brier_skill_vs_global": 0
+            },
+            "q1_nonzero": {
+              "brier": 0.010974739,
+              "log_loss": 0.048807703,
+              "brier_skill_vs_global": 0.116397993
+            },
+            "country_history": {
+              "brier": 0.010859359,
+              "log_loss": 0.053694618,
+              "brier_skill_vs_global": 0.125687476
+            }
+          }
+        },
+        {
+          "origin": 2025,
+          "train_years": [
+            2021,
+            2022
+          ],
+          "n_train": 321,
+          "n_test": 160,
+          "positives": 3,
+          "scores": {
+            "global": {
+              "brier": 0.018434651,
+              "log_loss": 0.093950892,
+              "brier_skill_vs_global": 0
+            },
+            "q1_nonzero": {
+              "brier": 0.017166589,
+              "log_loss": 0.076132923,
+              "brier_skill_vs_global": 0.068786883
+            },
+            "country_history": {
+              "brier": 0.018001802,
+              "log_loss": 0.087582006,
+              "brier_skill_vs_global": 0.023480188
+            }
+          }
+        }
+      ],
+      "n_test": 321,
+      "positives": 5,
+      "scores": {
+        "global": {
+          "brier": 0.015418185,
+          "log_loss": 0.082293564,
+          "brier_skill_vs_global": 0
+        },
+        "q1_nonzero": {
+          "brier": 0.01406102,
+          "log_loss": 0.062427751,
+          "brier_skill_vs_global": 0.088023708
+        },
+        "country_history": {
+          "brier": 0.014419456,
+          "log_loss": 0.070585528,
+          "brier_skill_vs_global": 0.06477609
+        }
+      },
+      "q1_brier_gain_by_outcome": {
+        "negative": {
+          "n": 316,
+          "global_mean_probability": 0.024767802,
+          "q1_mean_probability": 0.018989022,
+          "brier_gain_contribution": -0.000100721
+        },
+        "positive": {
+          "n": 5,
+          "global_mean_probability": 0.024767802,
+          "q1_mean_probability": 0.074491758,
+          "brier_gain_contribution": 0.001457887
+        }
+      }
+    },
+    {
+      "threshold": 10,
+      "horizon": 30,
+      "folds": [
+        {
+          "origin": 2024,
+          "train_years": [
+            2021,
+            2022
+          ],
+          "n_train": 334,
+          "n_test": 163,
+          "positives": 0,
+          "scores": {
+            "global": {
+              "brier": 0.000566893,
+              "log_loss": 0.024097552,
+              "brier_skill_vs_global": 0
+            },
+            "q1_nonzero": {
+              "brier": 0.000742966,
+              "log_loss": 0.017653213,
+              "brier_skill_vs_global": -0.310591578
+            },
+            "country_history": {
+              "brier": 0.000545358,
+              "log_loss": 0.022817818,
+              "brier_skill_vs_global": 0.037988499
+            }
+          }
+        },
+        {
+          "origin": 2025,
+          "train_years": [
+            2021,
+            2022
+          ],
+          "n_train": 334,
+          "n_test": 164,
+          "positives": 1,
+          "scores": {
+            "global": {
+              "brier": 0.006374094,
+              "log_loss": 0.046741284,
+              "brier_skill_vs_global": 0
+            },
+            "q1_nonzero": {
+              "brier": 0.005920358,
+              "log_loss": 0.033465014,
+              "brier_skill_vs_global": 0.071184401
+            },
+            "country_history": {
+              "brier": 0.006417787,
+              "log_loss": 0.046361519,
+              "brier_skill_vs_global": -0.006854735
+            }
+          }
+        }
+      ],
+      "n_test": 327,
+      "positives": 1,
+      "scores": {
+        "global": {
+          "brier": 0.003479373,
+          "log_loss": 0.035454041,
+          "brier_skill_vs_global": 0
+        },
+        "q1_nonzero": {
+          "brier": 0.003339579,
+          "log_loss": 0.02558329,
+          "brier_skill_vs_global": 0.04017818
+        },
+        "country_history": {
+          "brier": 0.003490552,
+          "log_loss": 0.034625668,
+          "brier_skill_vs_global": -0.003212758
+        }
+      },
+      "q1_brier_gain_by_outcome": {
+        "negative": {
+          "n": 326,
+          "global_mean_probability": 0.023809524,
+          "q1_mean_probability": 0.017723687,
+          "brier_gain_contribution": -0.000220141
+        },
+        "positive": {
+          "n": 1,
+          "global_mean_probability": 0.023809524,
+          "q1_mean_probability": 0.086080586,
+          "brier_gain_contribution": 0.000359936
+        }
+      }
+    },
+    {
+      "threshold": 10,
+      "horizon": 90,
+      "folds": [
+        {
+          "origin": 2024,
+          "train_years": [
+            2021,
+            2022
+          ],
+          "n_train": 334,
+          "n_test": 163,
+          "positives": 3,
+          "scores": {
+            "global": {
+              "brier": 0.018195149,
+              "log_loss": 0.094342226,
+              "brier_skill_vs_global": 0
+            },
+            "q1_nonzero": {
+              "brier": 0.01523186,
+              "log_loss": 0.057420698,
+              "brier_skill_vs_global": 0.162861449
+            },
+            "country_history": {
+              "brier": 0.01659252,
+              "log_loss": 0.078356201,
+              "brier_skill_vs_global": 0.088079976
+            }
+          }
+        },
+        {
+          "origin": 2025,
+          "train_years": [
+            2021,
+            2022
+          ],
+          "n_train": 334,
+          "n_test": 164,
+          "positives": 3,
+          "scores": {
+            "global": {
+              "brier": 0.018089604,
+              "log_loss": 0.093951199,
+              "brier_skill_vs_global": 0
+            },
+            "q1_nonzero": {
+              "brier": 0.016842286,
+              "log_loss": 0.074990499,
+              "brier_skill_vs_global": 0.068952173
+            },
+            "country_history": {
+              "brier": 0.017070234,
+              "log_loss": 0.081911038,
+              "brier_skill_vs_global": 0.056351109
+            }
+          }
+        }
+      ],
+      "n_test": 327,
+      "positives": 6,
+      "scores": {
+        "global": {
+          "brier": 0.018142215,
+          "log_loss": 0.094146114,
+          "brier_skill_vs_global": 0
+        },
+        "q1_nonzero": {
+          "brier": 0.016039536,
+          "log_loss": 0.066232464,
+          "brier_skill_vs_global": 0.1158998
+        },
+        "country_history": {
+          "brier": 0.016832108,
+          "log_loss": 0.080139055,
+          "brier_skill_vs_global": 0.072213174
+        }
+      },
+      "q1_brier_gain_by_outcome": {
+        "negative": {
+          "n": 321,
+          "global_mean_probability": 0.029761905,
+          "q1_mean_probability": 0.020533935,
+          "brier_gain_contribution": -0.000521974
+        },
+        "positive": {
+          "n": 6,
+          "global_mean_probability": 0.029761905,
+          "q1_mean_probability": 0.107553807,
+          "brier_gain_contribution": 0.002624653
+        }
+      }
+    },
+    {
+      "threshold": 25,
+      "horizon": 30,
+      "folds": [
+        {
+          "origin": 2024,
+          "train_years": [
+            2021,
+            2022
+          ],
+          "n_train": 349,
+          "n_test": 170,
+          "positives": 0,
+          "scores": {
+            "global": {
+              "brier": 0.000073051,
+              "log_loss": 0.008583744,
+              "brier_skill_vs_global": 0
+            },
+            "q1_nonzero": {
+              "brier": 0.000049321,
+              "log_loss": 0.005371036,
+              "brier_skill_vs_global": 0.324850278
+            },
+            "country_history": {
+              "brier": 0.000060517,
+              "log_loss": 0.007809348,
+              "brier_skill_vs_global": 0.171584777
+            }
+          }
+        },
+        {
+          "origin": 2025,
+          "train_years": [
+            2021,
+            2022
+          ],
+          "n_train": 349,
+          "n_test": 169,
+          "positives": 0,
+          "scores": {
+            "global": {
+              "brier": 0.000073051,
+              "log_loss": 0.008583744,
+              "brier_skill_vs_global": 0
+            },
+            "q1_nonzero": {
+              "brier": 0.000051263,
+              "log_loss": 0.005464031,
+              "brier_skill_vs_global": 0.29825728
+            },
+            "country_history": {
+              "brier": 0.000060518,
+              "log_loss": 0.007809401,
+              "brier_skill_vs_global": 0.171573127
+            }
+          }
+        }
+      ],
+      "n_test": 339,
+      "positives": 0,
+      "scores": {
+        "global": {
+          "brier": 0.000073051,
+          "log_loss": 0.008583744,
+          "brier_skill_vs_global": 0
+        },
+        "q1_nonzero": {
+          "brier": 0.000050289,
+          "log_loss": 0.005417396,
+          "brier_skill_vs_global": 0.311593002
+        },
+        "country_history": {
+          "brier": 0.000060517,
+          "log_loss": 0.007809374,
+          "brier_skill_vs_global": 0.171578969
+        }
+      },
+      "q1_brier_gain_by_outcome": {
+        "negative": {
+          "n": 339,
+          "global_mean_probability": 0.008547009,
+          "q1_mean_probability": 0.005392009,
+          "brier_gain_contribution": 0.000022762
+        },
+        "positive": {
+          "n": 0,
+          "global_mean_probability": null,
+          "q1_mean_probability": null,
+          "brier_gain_contribution": 0
+        }
+      }
+    },
+    {
+      "threshold": 25,
+      "horizon": 90,
+      "folds": [
+        {
+          "origin": 2024,
+          "train_years": [
+            2021,
+            2022
+          ],
+          "n_train": 349,
+          "n_test": 170,
+          "positives": 1,
+          "scores": {
+            "global": {
+              "brier": 0.006133688,
+              "log_loss": 0.045163358,
+              "brier_skill_vs_global": 0
+            },
+            "q1_nonzero": {
+              "brier": 0.005794444,
+              "log_loss": 0.031455959,
+              "brier_skill_vs_global": 0.055308265
+            },
+            "country_history": {
+              "brier": 0.006211672,
+              "log_loss": 0.045068492,
+              "brier_skill_vs_global": -0.012714077
+            }
+          }
+        },
+        {
+          "origin": 2025,
+          "train_years": [
+            2021,
+            2022
+          ],
+          "n_train": 349,
+          "n_test": 169,
+          "positives": 4,
+          "scores": {
+            "global": {
+              "brier": 0.023109203,
+              "log_loss": 0.11200936,
+              "brier_skill_vs_global": 0
+            },
+            "q1_nonzero": {
+              "brier": 0.021601152,
+              "log_loss": 0.089536696,
+              "brier_skill_vs_global": 0.065257617
+            },
+            "country_history": {
+              "brier": 0.022723821,
+              "log_loss": 0.106503749,
+              "brier_skill_vs_global": 0.016676573
+            }
+          }
+        }
+      ],
+      "n_test": 339,
+      "positives": 5,
+      "scores": {
+        "global": {
+          "brier": 0.014596408,
+          "log_loss": 0.078487766,
+          "brier_skill_vs_global": 0
+        },
+        "q1_nonzero": {
+          "brier": 0.013674484,
+          "log_loss": 0.060410663,
+          "brier_skill_vs_global": 0.063160997
+        },
+        "country_history": {
+          "brier": 0.014443392,
+          "log_loss": 0.075695508,
+          "brier_skill_vs_global": 0.010483102
+        }
+      },
+      "q1_brier_gain_by_outcome": {
+        "negative": {
+          "n": 334,
+          "global_mean_probability": 0.022792023,
+          "q1_mean_probability": 0.016244622,
+          "brier_gain_contribution": -0.000301653
+        },
+        "positive": {
+          "n": 5,
+          "global_mean_probability": 0.022792023,
+          "q1_mean_probability": 0.06666973,
+          "brier_gain_contribution": 0.001223577
+        }
+      }
+    }
+  ]
+}

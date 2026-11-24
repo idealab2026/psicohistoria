@@ -191,8 +191,24 @@ def main():
     print("UCDP_MULTIPLE_ONSET_PROBE_END")
     if args.check_report:
         from pathlib import Path
-        if Path(args.check_report).read_bytes()!=data.encode("utf8"):
-            raise ValueError("Frozen official multiple-onset study does not reproduce")
+        # The archive HTML is a live catalogue, not a versioned data file.
+        # Keep its original digest in the frozen report for provenance.
+        # source_urls() already requires exact pinned URLs, and probe()
+        # verifies all four original CSV digests before computing results.
+        expected=json.loads(Path(args.check_report).read_bytes())
+        original_hash=expected["archive_index_sha256"]
+        current_hash=study["archive_index_sha256"]
+        if original_hash!="07b1513207ba3c28522cee19f9773fec710733ad84a61d257c629610c47c98ec":
+            raise ValueError("Original frozen discovery catalogue digest changed")
+        if any(len(h)!=64 or any(c not in "0123456789abcdef" for c in h)
+               for h in (original_hash,current_hash)):
+            raise ValueError("Malformed discovery catalogue digest")
+        if {**study,"archive_index_sha256":original_hash}!=expected:
+            raise ValueError("Frozen official multiple-onset scientific results do not reproduce")
+        if current_hash!=original_hash:
+            print("NOTICE: live archive catalogue HTML changed; all pinned links, CSV digests and scientific results reproduced.")
+            print("Original catalogue SHA-256:",original_hash)
+            print("Current catalogue SHA-256:",current_hash)
 
 if __name__=="__main__":
     main()
