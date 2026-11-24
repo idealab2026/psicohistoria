@@ -144,6 +144,8 @@ REPOSITORY |= {
 # Source-only monthly Candidate bridge protocol; no event-level publication.
 REPOSITORY |= {
     "scripts/audit_candidate_monthly_bridge_census.py",
+    "scripts/audit_candidate_monthly_bridge.py",
+    "scripts/test_audit_candidate_monthly_bridge.py",
     "scripts/test_audit_candidate_monthly_bridge_census.py",
     "docs/candidate-monthly-bridge-protocol.md",
     ".github/workflows/candidate-monthly-bridge-census.yml",
