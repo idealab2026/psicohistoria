@@ -4,6 +4,9 @@ on:
     paths:
       - 'scripts/audit_candidate_monthly_bridge_census.py'
       - 'scripts/audit_candidate_monthly_bridge.py'
+      - 'scripts/experiment_candidate_monthly_probability.py'
+      - 'scripts/test_experiment_candidate_monthly_probability.py'
+      - 'data/candidate-monthly-bridge-audit.json'
       - 'scripts/test_audit_candidate_monthly_bridge.py'
       - 'scripts/test_audit_candidate_monthly_bridge_census.py'
       - 'docs/candidate-monthly-bridge-protocol.md'
@@ -13,6 +16,9 @@ on:
     paths:
       - 'scripts/audit_candidate_monthly_bridge_census.py'
       - 'scripts/audit_candidate_monthly_bridge.py'
+      - 'scripts/experiment_candidate_monthly_probability.py'
+      - 'scripts/test_experiment_candidate_monthly_probability.py'
+      - 'data/candidate-monthly-bridge-audit.json'
       - 'scripts/test_audit_candidate_monthly_bridge.py'
       - 'scripts/test_audit_candidate_monthly_bridge_census.py'
       - 'docs/candidate-monthly-bridge-protocol.md'
@@ -37,5 +43,8 @@ jobs:
         run: python3 -B scripts/audit_candidate_monthly_bridge_census.py
       - run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_monthly_bridge.py' -v
       - name: Monthly-to-quarterly comparability and 2023 annual outcome census
-        run: python3 -B scripts/audit_candidate_monthly_bridge.py
+        run: python3 -B scripts/audit_candidate_monthly_bridge.py --check
+      - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_candidate_monthly_probability.py' -v
+      - name: Homogeneous monthly probability benchmark, no prospective issue
+        run: python3 -B scripts/experiment_candidate_monthly_probability.py
       - run: python3 -B scripts/audit_public.py
