@@ -4,6 +4,47 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## Q-CANDIDATE · Elegibilidad histórica comprobada con UCDP Dyadic (24-11-2026)
+
+**Resultado reproducido con cuatro ZIP originales UCDP Dyadic 22.1,
+23.1, 25.1 y 26.1**, fijados por SHA-256 tras un censo de
+fuentes **anterior** a la evaluación, y los cuatro CSV
+Candidate Q3 ya verificados en PR #155.
+
+En **diez países-año previamente seleccionados** por superar
+T≥5 muertes estatales provisionales de mayo, se compararon
+sus `dyad_new_id` con las díadas registradas en cada
+primera edición anual Dyadic:
+
+| Resultado del umbral en GED anual | Países-año | Al menos una díada activa **ese año** | Al menos una díada registrada activa **en algún año** |
+|---|---:|---:|---:|
+| Mantienen T≥5 | 5 | 4 | **5** |
+| Pierden T≥5 | 5 | 0 | **0** |
+
+Los cinco países que pierden la etiqueta tenían seis
+díadas Candidate distintas y 36 fallecimientos `best`
+provisionales en mayo; **ninguna de las seis díadas aparece
+registrada activa en ningún año de la edición Dyadic correspondiente**.
+La excepción a la regla de *actividad ese año* es
+**Perú 2021**: GED conserva 16 fallecimientos, aunque
+Dyadic no marca la díada activa en 2021, porque
+sí la registra en otro año.
+
+UCDP explica expresamente que **GED conserva eventos de
+díadas históricamente activas también en años sin 25 muertes**,
+mientras el dataset Dyadic solo incluye los años activos.
+Es compatible con el patrón observado, pero ambos conjuntos
+comparten criterios y fuentes UCDP: **no constituye validación
+externa independiente ni causal**, y no verifica existencia
+o ausencia de hechos violentos. Los identificadores pueden
+cambiar con escisiones o recodificaciones. La elegibilidad
+de un año posterior supone además **fuga temporal** si se
+usa como variable de predicción de ese mismo año.
+
+[Resultados, diez casos y metodología oficial](docs/ucdp-dyadic-year-inclusion-audit.md)
+· [Informe agregado reproducible y cuatro SHA](data/ucdp-official-dyadyear-case-resolution.json)
+· [Script y controles](scripts/audit_ucdp_dyadic_year_inclusion.py).
+
 ## Q-CANDIDATE · ¿Qué ocurrió con los eventos y las díadas? (24-11-2026)
 
 **Auditoría de ocho archivos oficiales UCDP original-SHA, diez países-año
