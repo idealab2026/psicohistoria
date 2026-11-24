@@ -182,7 +182,8 @@ def build_report(early_raw=None,late_raw=None,drift_raw=None):
                 vectors[(year,cid)]!={"q1":prior,"candidate_q3":cand,
                     "annual":annual,"country":row["country"]}):
                 raise AuditError("Case does not reproduce fixed country-level risk/outcome")
-            raw_codes=row["candidate_q3_may30_code_status_best"]
+            raw_codes=(row["candidate_q3_may30_code_status_best"] if source=="early"
+                       else row["q3_candidate_may30_code_status_best"])
             if (not isinstance(raw_codes,dict) or
                 any((not isinstance(n,int) or n<0 or not isinstance(k,str))
                     for k,n in raw_codes.items()) or
