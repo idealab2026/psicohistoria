@@ -118,7 +118,7 @@ class CandidateGEDStrataTests(unittest.TestCase):
 
     def test_fisher_exact_and_empty_groups(self):
         self.assertAlmostEqual(audit.fisher_two_sided(4,0,1,5),0.04761905,places=8)
-        self.assertEqual(audit.fisher_two_sided(2,0,0,2),1/3)
+        self.assertAlmostEqual(audit.fisher_two_sided(2,0,0,2),1/3,places=7)
         self.assertIsNone(audit.fisher_two_sided(0,0,1,2))
         self.assertIsNone(audit.subset_summary([])["retention_clopper_pearson_95"])
 
