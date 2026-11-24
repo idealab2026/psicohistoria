@@ -32,7 +32,7 @@ jobs:
           python-version: '3.12'
       - name: Synthetic adversarial exact small-sample intervals and source anti-tamper tests
         run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_ged_retention_strata.py' -v
-      - name: Compute four-year annual retention strata from three verified frozen reports
-        run: python3 -B scripts/audit_candidate_ged_retention_strata.py --print-report
+      - name: Require exact frozen four-year small-sample GED retention and source integrity replay
+        run: python3 -B scripts/audit_candidate_ged_retention_strata.py --check-report
       - name: Verify strict institutional public-release allowlist
         run: python3 -B scripts/audit_public.py
