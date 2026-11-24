@@ -1,0 +1,33 @@
+name: Monthly complementary signals fixed-model study
+on:
+  push:
+    paths:
+      - 'scripts/experiment_candidate_monthly_complementary_signals.py'
+      - 'scripts/test_experiment_candidate_monthly_complementary_signals.py'
+      - 'scripts/audit_candidate_monthly_bridge.py'
+      - 'data/candidate-monthly-complementary-signals.json'
+      - '.github/workflows/candidate-monthly-complementary-signals.yml'
+  pull_request:
+    paths:
+      - 'scripts/experiment_candidate_monthly_complementary_signals.py'
+      - 'scripts/test_experiment_candidate_monthly_complementary_signals.py'
+      - 'scripts/audit_candidate_monthly_bridge.py'
+      - 'data/candidate-monthly-complementary-signals.json'
+      - '.github/workflows/candidate-monthly-complementary-signals.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  study:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_candidate_monthly_complementary_signals.py' -v
+      - run: python3 -B scripts/experiment_candidate_monthly_complementary_signals.py --check
+      - run: python3 -B scripts/audit_public.py

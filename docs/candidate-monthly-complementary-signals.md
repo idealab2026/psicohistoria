@@ -1,0 +1,14 @@
+# Monthly complementary signals: fixed exploratory ablation
+
+2026-11-24. Protocol before new scores; historical labels and previous model results already known. This is not blinded, prospectively issued or historically as-of certified.
+
+Reuse PR159 monthly panel (2021, 2022, 2023, 2025; 2024 remains quarantined). Verify source hashes and exact replay of both previous aggregate reports before scoring. Maintain identical risk sets, outcomes, folds (2023 trained on 2021; 2025 trained on 2021/22/23), eight threshold/horizon cells. No test labels in predictors. Compare the original global Laplace, Q1 nonzero and country-history k=20 probabilities with:
+
+- fixed arithmetic mean of Q1 and country-history (50/50, no fitting weights);
+- other violence: binary Q1 positive best for GED types 2 or 3 (non-state or one-sided), same date precision 1/2, same fully contained dates, same last-observed ID union before filtering; shrink its group event frequency to global with k=20;
+- equal-weight three-signal pool of Q1, country history and other violence.
+
+No hyperparameter search, threshold selection or outcome-dependent weighting. Report all models per fold and pooled, Brier and log loss, relative Brier skill vs global, mean probability among positives/negatives and differences vs Q1. For T1 the Q1 signal is constant within a threshold-specific risk set. Evaluate the other-violence feature even if it is negative evidence. No claim of improvement over the best retrospectively selected baseline. No country-level probabilities or event records published, no changes to previous 620 forecasts. Only two dependent test years, outcomes are annual GED coded fatalities, not probability of war in general. Any future model selection requires independent validation.
+
+## Results (CI run 45451866589)
+All eight pooled cells show lower Brier and log loss for the three-signal pool than global climatology. However, the three-signal pool improves on Q1 alone in only five of eight cells by Brier and four of eight by log loss. At T5/H90 and T25/H90, Q1 alone beats both pools on both metrics. At T10/H90 (335 observations, 8 positives), pool-three Brier .021566811 vs Q1 .022355995 and global .023536599; log loss .093508981 vs Q1 .100234038 and global .116065943; Brier skill +8.369%. Pool-three beats Q1 in both evaluation years at T10/H90, with Brier gains .000715913 and .000864673 respectively. The two pools differ little (.021594157 vs .021566811). At T1/H30 and T1/H90, other-violence alone beats all five alternatives on both pooled scores, but not Q1 in the 2025 Brier fold; the T1 risk set cannot distinguish state-based recency. These are exploratory post-outcome comparisons, not a model-selection claim. At T25/H30 one test year has zero positives. No independent prospective validation, no new issue. Freeze report and require exact replay.

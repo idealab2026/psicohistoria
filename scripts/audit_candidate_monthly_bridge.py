@@ -46,10 +46,10 @@ def union(snapshots):
             events[eid]=x
     return events,dict(stats)
 
-def counts(events,year,ids):
+def counts(events,year,ids,types=(1,)):
     out=dict.fromkeys(ids,0)
     for c,t,p,b,start,end in events.values():
-        if c in out and t==1 and p in (1,2) and date(year,1,1)<=start<=end<=date(year,3,31):
+        if c in out and t in types and p in (1,2) and date(year,1,1)<=start<=end<=date(year,3,31):
             out[c]+=b
     return out
 
@@ -101,16 +101,17 @@ def annual_2023(raw,ids):
     if not n: raise SourceError("No 2023 annual records")
     return out30,out90
 
-def build(include_panel=False):
+def build(include_panel=False,include_other=False):
     previous=load();validate(previous)
     ids=sorted({x[1] for x in previous})
     refs={y:{x[1]:x[2] for x in previous if x[0]==y} for y in (2021,2022,2025)}
     refs[2023]=counts(decode(verified("GEDEvent_v23_01_23_04.csv"),2023),2023,ids)
-    diagnostics={}; monthly={}
+    diagnostics={}; monthly={}; other={}
     for y in YEARS:
         snapshots=[decode(verified(f"GEDEvent_v{y%100}_0_{m}.csv"),y) for m in (1,2,3)]
         events,stats=union(snapshots)
         monthly[y]=counts(events,y,ids)
+        if include_other: other.update({(y,c):n for c,n in counts(events,y,ids,(2,3)).items()})
         diagnostics[str(y)]={**stats,**compare(monthly[y],refs[y]),
           "reference":"Jan-Apr restricted to Q1 (retrospective)" if y==2023 else "original cumulative Q1"}
     a,b=annual_2023(get_ged(),ids)
@@ -129,6 +130,7 @@ def build(include_panel=False):
         panel=[(x[0],x[1],monthly[x[0]][x[1]],x[3],x[4])
                for x in previous if x[0] in (2021,2022,2025)]
         panel.extend((2023,c,monthly[2023][c],a[c],b[c]) for c in ids)
+        if include_other: return report,sorted(panel),other
         return report,sorted(panel)
     return report
 
