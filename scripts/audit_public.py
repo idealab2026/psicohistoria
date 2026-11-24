@@ -96,6 +96,15 @@ REPOSITORY |= {
     ".github/workflows/ged2024-annual-vintage-drift.yml",
     "data/ged2024-annual-vintage-drift.json",
 }
+# Postselected explanatory strata of source-audited public Candidate vs GED labels.
+RELEASE |= {"data/candidate-ged-retention-strata.json"}
+REPOSITORY |= {
+    "scripts/audit_candidate_ged_retention_strata.py",
+    "scripts/test_audit_candidate_ged_retention_strata.py",
+    "docs/candidate-ged-retention-strata-protocol.md",
+    ".github/workflows/candidate-ged-retention-strata.yml",
+    "data/candidate-ged-retention-strata.json",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",

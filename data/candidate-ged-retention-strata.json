@@ -1,0 +1,490 @@
+{
+  "after_outcome_event_id_match_must_never_be_used_for_prediction": true,
+  "analysis_date": "2026-11-24",
+  "annual": {
+    "2021": {
+      "ged_annual_positive": 3,
+      "n_at_risk": 160,
+      "n_candidate_positive": 3,
+      "n_lose_ged_label": 0,
+      "n_retain_ged_label": 3,
+      "retention_clopper_pearson_95": [
+        0.29240177,
+        1
+      ],
+      "retention_share": 1
+    },
+    "2022": {
+      "ged_annual_positive": 1,
+      "n_at_risk": 161,
+      "n_candidate_positive": 1,
+      "n_lose_ged_label": 0,
+      "n_retain_ged_label": 1,
+      "retention_clopper_pearson_95": [
+        0.025,
+        1
+      ],
+      "retention_share": 1
+    },
+    "2024": {
+      "ged_annual_positive": 0,
+      "n_at_risk": 161,
+      "n_candidate_positive": 2,
+      "n_lose_ged_label": 2,
+      "n_retain_ged_label": 0,
+      "retention_clopper_pearson_95": [
+        0,
+        0.84188612
+      ],
+      "retention_share": 0
+    },
+    "2025": {
+      "ged_annual_positive": 1,
+      "n_at_risk": 160,
+      "n_candidate_positive": 4,
+      "n_lose_ged_label": 3,
+      "n_retain_ged_label": 1,
+      "retention_clopper_pearson_95": [
+        0.00630946,
+        0.80587955
+      ],
+      "retention_share": 0.25
+    }
+  },
+  "candidate_first_release_dates_certified": false,
+  "candidate_positive_cases": [
+    {
+      "candidate_best_5_to_9": false,
+      "candidate_clear_best": 16,
+      "candidate_code_status_best": {
+        "clear": 16
+      },
+      "candidate_margin_over_threshold": 11,
+      "candidate_q1_best": 0,
+      "candidate_q3_may30_best": 16,
+      "candidate_same_country_window_exact_id_match_count": 1,
+      "candidate_state_events": 1,
+      "clear_only_meets_threshold": true,
+      "country": "Peru",
+      "country_id": 135,
+      "era": "2021-2022",
+      "ged_first_annual_may30_best": 16,
+      "has_check_dyad": false,
+      "post_ged_has_exact_id_match": true,
+      "retained_ged": true,
+      "year": 2021
+    },
+    {
+      "candidate_best_5_to_9": false,
+      "candidate_clear_best": 17,
+      "candidate_code_status_best": {
+        "check": 2,
+        "clear": 17
+      },
+      "candidate_margin_over_threshold": 14,
+      "candidate_q1_best": 1,
+      "candidate_q3_may30_best": 19,
+      "candidate_same_country_window_exact_id_match_count": 10,
+      "candidate_state_events": 11,
+      "clear_only_meets_threshold": true,
+      "country": "Turkey",
+      "country_id": 640,
+      "era": "2021-2022",
+      "ged_first_annual_may30_best": 19,
+      "has_check_dyad": false,
+      "post_ged_has_exact_id_match": true,
+      "retained_ged": true,
+      "year": 2021
+    },
+    {
+      "candidate_best_5_to_9": false,
+      "candidate_clear_best": 247,
+      "candidate_code_status_best": {
+        "clear": 247
+      },
+      "candidate_margin_over_threshold": 242,
+      "candidate_q1_best": 0,
+      "candidate_q3_may30_best": 247,
+      "candidate_same_country_window_exact_id_match_count": 20,
+      "candidate_state_events": 36,
+      "clear_only_meets_threshold": true,
+      "country": "Israel",
+      "country_id": 666,
+      "era": "2021-2022",
+      "ged_first_annual_may30_best": 252,
+      "has_check_dyad": false,
+      "post_ged_has_exact_id_match": true,
+      "retained_ged": true,
+      "year": 2021
+    },
+    {
+      "candidate_best_5_to_9": true,
+      "candidate_clear_best": 0,
+      "candidate_code_status_best": {
+        "check deaths": 8
+      },
+      "candidate_margin_over_threshold": 3,
+      "candidate_q1_best": 0,
+      "candidate_q3_may30_best": 8,
+      "candidate_same_country_window_exact_id_match_count": 1,
+      "candidate_state_events": 1,
+      "clear_only_meets_threshold": false,
+      "country": "Togo",
+      "country_id": 461,
+      "era": "2021-2022",
+      "ged_first_annual_may30_best": 23,
+      "has_check_dyad": false,
+      "post_ged_has_exact_id_match": true,
+      "retained_ged": true,
+      "year": 2022
+    },
+    {
+      "candidate_best_5_to_9": true,
+      "candidate_clear_best": 0,
+      "candidate_code_status_best": {
+        "check dyad": 5
+      },
+      "candidate_margin_over_threshold": 0,
+      "candidate_q1_best": 1,
+      "candidate_q3_may30_best": 5,
+      "candidate_same_country_window_exact_id_match_count": 0,
+      "candidate_state_events": 2,
+      "clear_only_meets_threshold": false,
+      "country": "Brazil",
+      "country_id": 140,
+      "era": "2024-2025",
+      "ged_first_annual_may30_best": 0,
+      "has_check_dyad": true,
+      "post_ged_has_exact_id_match": false,
+      "retained_ged": false,
+      "year": 2024
+    },
+    {
+      "candidate_best_5_to_9": true,
+      "candidate_clear_best": 5,
+      "candidate_code_status_best": {
+        "clear": 5
+      },
+      "candidate_margin_over_threshold": 0,
+      "candidate_q1_best": 2,
+      "candidate_q3_may30_best": 5,
+      "candidate_same_country_window_exact_id_match_count": 0,
+      "candidate_state_events": 2,
+      "clear_only_meets_threshold": true,
+      "country": "Bangladesh",
+      "country_id": 771,
+      "era": "2024-2025",
+      "ged_first_annual_may30_best": 0,
+      "has_check_dyad": false,
+      "post_ged_has_exact_id_match": false,
+      "retained_ged": false,
+      "year": 2024
+    },
+    {
+      "candidate_best_5_to_9": false,
+      "candidate_clear_best": 0,
+      "candidate_code_status_best": {
+        "check": 12
+      },
+      "candidate_margin_over_threshold": 7,
+      "candidate_q1_best": 0,
+      "candidate_q3_may30_best": 12,
+      "candidate_same_country_window_exact_id_match_count": 0,
+      "candidate_state_events": 1,
+      "clear_only_meets_threshold": false,
+      "country": "Ecuador",
+      "country_id": 130,
+      "era": "2024-2025",
+      "ged_first_annual_may30_best": 0,
+      "has_check_dyad": false,
+      "post_ged_has_exact_id_match": false,
+      "retained_ged": false,
+      "year": 2025
+    },
+    {
+      "candidate_best_5_to_9": true,
+      "candidate_clear_best": 0,
+      "candidate_code_status_best": {
+        "check dyad": 7
+      },
+      "candidate_margin_over_threshold": 2,
+      "candidate_q1_best": 1,
+      "candidate_q3_may30_best": 7,
+      "candidate_same_country_window_exact_id_match_count": 0,
+      "candidate_state_events": 1,
+      "clear_only_meets_threshold": false,
+      "country": "Brazil",
+      "country_id": 140,
+      "era": "2024-2025",
+      "ged_first_annual_may30_best": 0,
+      "has_check_dyad": true,
+      "post_ged_has_exact_id_match": false,
+      "retained_ged": false,
+      "year": 2025
+    },
+    {
+      "candidate_best_5_to_9": true,
+      "candidate_clear_best": 0,
+      "candidate_code_status_best": {
+        "check dyad": 7
+      },
+      "candidate_margin_over_threshold": 2,
+      "candidate_q1_best": 0,
+      "candidate_q3_may30_best": 7,
+      "candidate_same_country_window_exact_id_match_count": 0,
+      "candidate_state_events": 2,
+      "clear_only_meets_threshold": false,
+      "country": "Libya",
+      "country_id": 620,
+      "era": "2024-2025",
+      "ged_first_annual_may30_best": 0,
+      "has_check_dyad": true,
+      "post_ged_has_exact_id_match": false,
+      "retained_ged": false,
+      "year": 2025
+    },
+    {
+      "candidate_best_5_to_9": false,
+      "candidate_clear_best": 4,
+      "candidate_code_status_best": {
+        "check deaths": 32,
+        "check dyad": 1,
+        "check geography": 1,
+        "clear": 4
+      },
+      "candidate_margin_over_threshold": 33,
+      "candidate_q1_best": 2,
+      "candidate_q3_may30_best": 38,
+      "candidate_same_country_window_exact_id_match_count": 7,
+      "candidate_state_events": 8,
+      "clear_only_meets_threshold": false,
+      "country": "Indonesia",
+      "country_id": 850,
+      "era": "2024-2025",
+      "ged_first_annual_may30_best": 14,
+      "has_check_dyad": true,
+      "post_ged_has_exact_id_match": true,
+      "retained_ged": true,
+      "year": 2025
+    }
+  ],
+  "conditioned_by_era": {
+    "2021-2022": {
+      "clear_only_at_least_5": {
+        "n_candidate_positive": 3,
+        "n_lose_ged_label": 0,
+        "n_retain_ged_label": 3,
+        "retention_clopper_pearson_95": [
+          0.29240177,
+          1
+        ],
+        "retention_share": 1
+      },
+      "margin_5_to_9": {
+        "n_candidate_positive": 1,
+        "n_lose_ged_label": 0,
+        "n_retain_ged_label": 1,
+        "retention_clopper_pearson_95": [
+          0.025,
+          1
+        ],
+        "retention_share": 1
+      },
+      "margin_at_least_10": {
+        "n_candidate_positive": 3,
+        "n_lose_ged_label": 0,
+        "n_retain_ged_label": 3,
+        "retention_clopper_pearson_95": [
+          0.29240177,
+          1
+        ],
+        "retention_share": 1
+      }
+    },
+    "2024-2025": {
+      "clear_only_at_least_5": {
+        "n_candidate_positive": 1,
+        "n_lose_ged_label": 1,
+        "n_retain_ged_label": 0,
+        "retention_clopper_pearson_95": [
+          0,
+          0.975
+        ],
+        "retention_share": 0
+      },
+      "margin_5_to_9": {
+        "n_candidate_positive": 4,
+        "n_lose_ged_label": 4,
+        "n_retain_ged_label": 0,
+        "retention_clopper_pearson_95": [
+          0,
+          0.60236464
+        ],
+        "retention_share": 0
+      },
+      "margin_at_least_10": {
+        "n_candidate_positive": 2,
+        "n_lose_ged_label": 1,
+        "n_retain_ged_label": 1,
+        "retention_clopper_pearson_95": [
+          0.01257912,
+          0.98742088
+        ],
+        "retention_share": 0.5
+      }
+    }
+  },
+  "criterion": "Candidate Q1 state-based best <5, Candidate Q3 May1-30 best >=5; retain if first annual GED same period best >=5",
+  "exploratory_postselection_contrasts": {
+    "candidate_best_at_least_10": {
+      "comparison": "candidate_best_at_least_10",
+      "fisher_exact_two_sided_exploratory_postselection": 0.20634921,
+      "no": {
+        "n_candidate_positive": 5,
+        "n_lose_ged_label": 4,
+        "n_retain_ged_label": 1,
+        "retention_clopper_pearson_95": [
+          0.00505076,
+          0.71641794
+        ],
+        "retention_share": 0.2
+      },
+      "not_a_prospective_feature_assessment": false,
+      "yes": {
+        "n_candidate_positive": 5,
+        "n_lose_ged_label": 1,
+        "n_retain_ged_label": 4,
+        "retention_clopper_pearson_95": [
+          0.28358206,
+          0.99494924
+        ],
+        "retention_share": 0.8
+      }
+    },
+    "candidate_clear_only_at_least_5": {
+      "comparison": "candidate_clear_only_at_least_5",
+      "fisher_exact_two_sided_exploratory_postselection": 0.52380952,
+      "no": {
+        "n_candidate_positive": 6,
+        "n_lose_ged_label": 4,
+        "n_retain_ged_label": 2,
+        "retention_clopper_pearson_95": [
+          0.04327187,
+          0.7772219
+        ],
+        "retention_share": 0.33333333
+      },
+      "not_a_prospective_feature_assessment": false,
+      "yes": {
+        "n_candidate_positive": 4,
+        "n_lose_ged_label": 1,
+        "n_retain_ged_label": 3,
+        "retention_clopper_pearson_95": [
+          0.19412045,
+          0.99369054
+        ],
+        "retention_share": 0.75
+      }
+    },
+    "candidate_has_check_dyad": {
+      "comparison": "candidate_has_check_dyad",
+      "fisher_exact_two_sided_exploratory_postselection": 0.52380952,
+      "no": {
+        "n_candidate_positive": 6,
+        "n_lose_ged_label": 2,
+        "n_retain_ged_label": 4,
+        "retention_clopper_pearson_95": [
+          0.2227781,
+          0.95672813
+        ],
+        "retention_share": 0.66666667
+      },
+      "not_a_prospective_feature_assessment": false,
+      "yes": {
+        "n_candidate_positive": 4,
+        "n_lose_ged_label": 3,
+        "n_retain_ged_label": 1,
+        "retention_clopper_pearson_95": [
+          0.00630946,
+          0.80587955
+        ],
+        "retention_share": 0.25
+      }
+    },
+    "era_2021_22_vs_2024_25": {
+      "comparison": "early_era_2021_2022",
+      "fisher_exact_two_sided_exploratory_postselection": 0.04761905,
+      "no": {
+        "n_candidate_positive": 6,
+        "n_lose_ged_label": 5,
+        "n_retain_ged_label": 1,
+        "retention_clopper_pearson_95": [
+          0.00421074,
+          0.64123458
+        ],
+        "retention_share": 0.16666667
+      },
+      "not_a_prospective_feature_assessment": false,
+      "yes": {
+        "n_candidate_positive": 4,
+        "n_lose_ged_label": 0,
+        "n_retain_ged_label": 4,
+        "retention_clopper_pearson_95": [
+          0.39763536,
+          1
+        ],
+        "retention_share": 1
+      }
+    },
+    "same_country_window_exact_id_in_later_ged": {
+      "comparison": "same_country_window_exact_id_in_later_ged",
+      "fisher_exact_two_sided_exploratory_postselection": 0.00793651,
+      "no": {
+        "n_candidate_positive": 5,
+        "n_lose_ged_label": 5,
+        "n_retain_ged_label": 0,
+        "retention_clopper_pearson_95": [
+          0,
+          0.52182375
+        ],
+        "retention_share": 0
+      },
+      "not_a_prospective_feature_assessment": true,
+      "yes": {
+        "n_candidate_positive": 5,
+        "n_lose_ged_label": 0,
+        "n_retain_ged_label": 5,
+        "retention_clopper_pearson_95": [
+          0.47817625,
+          1
+        ],
+        "retention_share": 1
+      }
+    }
+  },
+  "ged2024_25_1_to_26_1_t5_30d_label_disagreements": 0,
+  "interpretation": "The year split was noticed before this audit, and code-status/margin subgroups were chosen after seeing the ten events. All Fisher tests and binomial confidence intervals describe a tiny dependent postselected sample; do not use them as evidence for causal change, external prediction skill or an alerting rule. GED exact event ID match is post-outcome leakage. The mapping between Candidate and first annual GED is temporally heterogeneous and provisional coding status Clear is neither necessary nor sufficient.",
+  "n_candidate_positive_country_years": 10,
+  "n_country_years_at_risk": 642,
+  "n_ged_annual_positive_country_years": 5,
+  "new_forecasts_issued": 0,
+  "overall_retention": {
+    "n_candidate_positive": 10,
+    "n_lose_ged_label": 5,
+    "n_retain_ged_label": 5,
+    "retention_clopper_pearson_95": [
+      0.18708603,
+      0.81291397
+    ],
+    "retention_share": 0.5
+  },
+  "preregistered_before_seeing_categorization_outcomes": false,
+  "prospective_cohorts_modified": 0,
+  "schema": "idealab.psico.candidate_ged_retention_strata.v1",
+  "source_reports": {
+    "candidate_2021_22_and_4year_pool_sha256": "3b2576bae226251aa9a0fc4582cd4b5a185185662a1c04646bb7254d04caa1b0",
+    "candidate_2024_25_sha256": "01e59980294c67115e1253b52cd9595d9389e59c2bd003ee8bb747cd433a4db4",
+    "ged2024_two_annual_vintages_sha256": "f71c33a21921e0afd6e1cb5e069fd297433de71ba266eb1bcd9cd7cbff8e78d3"
+  },
+  "status": "POST_SELECTED_EXPLORATORY_NON_CAUSAL_NO_FORECASTS"
+}
