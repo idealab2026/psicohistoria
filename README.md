@@ -4,6 +4,40 @@ Laboratorio público de investigación de sistemas complejos, fenómenos colecti
 
 **Estado actual: versión pública experimental, reconstruida de forma independiente.** El sitio incluye diez vistas navegables con formato oscuro, mapa de investigación, explorador de escenarios, evaluación probabilística, registro y hoja de ruta, y herramientas locales de preparación de hipótesis y guiones.
 
+## Q-CANDIDATE · ¿Qué cambia la retención anual? (24-11-2026)
+
+**Nuevo contraste explicativo, posterior a conocer los resultados,
+con diez casos Candidate positivos a 30 días y cuatro cohortes.**
+Las etiquetas T≥5 de mayo conservadas en la primera GED anual
+son 4/4 en 2021–2022 y 1/6 en 2024–2025 (5/10 global,
+IC binomial exacto 95 %: 18,7–81,3 %). Las hipótesis de margen
+y codificación se han probado de forma **exploratoria, sin optimización
+de ningún pronóstico**:
+
+- `best` Candidate 5–9: **1/5** conserva umbral GED; `best≥10`: **4/5**.
+- Si `Clear` suma ≥5: **3/4**; en caso contrario: **2/6**.
+- Bangladés 2024 (5 `Clear`) pierde la etiqueta anual;
+  Togo 2022 (`check deaths`) e Indonesia 2025 (mayoría
+  `check deaths`) la retienen.
+
+Los contrastes usan solo diez casos y las particiones se observaron
+**después** de detectar la heterogeneidad; sus valores p exactos
+son descriptivos, no validación de una regla causal ni de un
+clasificador operativo. Una coincidencia exacta de ID entre
+Candidate y GED posterior es **leakage** y nunca puede
+usarse para alertas emitidas antes de GED. El control previo
+GED25.1→26.1 tampoco cambia las dos etiquetas 2024 perdidas.
+
+**Consecuencia:** separar siempre el objetivo provisional
+Candidate del objetivo GED anual. No emitir nuevos pronósticos
+30/90 días sin fuente con fecha de primera disponibilidad
+certificada. Las 620 probabilidades prospectivas congeladas
+permanecen intactas.
+
+[Estudio estratificado, sesgos y límites](docs/candidate-ged-retention-strata-protocol.md)
+· [Informe reproducible y análisis caso a caso](data/candidate-ged-retention-strata.json)
+· [Código de auditoría](scripts/audit_candidate_ged_retention_strata.py).
+
 ## Q-CANDIDATE · Cuatro cohortes Candidate→GED anual (20-11-2026)
 
 El contraste con las primeras versiones GED anuales se ha extendido a
