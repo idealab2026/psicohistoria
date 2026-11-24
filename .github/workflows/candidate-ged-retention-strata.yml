@@ -1,0 +1,38 @@
+name: Candidate-to-GED four-year retention strata and exact small-sample tests
+on:
+  push:
+    paths:
+      - 'scripts/audit_candidate_ged_retention_strata.py'
+      - 'scripts/test_audit_candidate_ged_retention_strata.py'
+      - 'docs/candidate-ged-retention-strata-protocol.md'
+      - 'data/candidate-ged-retention-strata.json'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-ged-retention-strata.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_candidate_ged_retention_strata.py'
+      - 'scripts/test_audit_candidate_ged_retention_strata.py'
+      - 'docs/candidate-ged-retention-strata-protocol.md'
+      - 'data/candidate-ged-retention-strata.json'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-ged-retention-strata.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  retention_strata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Synthetic adversarial exact small-sample intervals and source anti-tamper tests
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_ged_retention_strata.py' -v
+      - name: Compute four-year annual retention strata from three verified frozen reports
+        run: python3 -B scripts/audit_candidate_ged_retention_strata.py --print-report
+      - name: Verify strict institutional public-release allowlist
+        run: python3 -B scripts/audit_public.py
