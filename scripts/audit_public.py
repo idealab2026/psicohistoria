@@ -174,8 +174,10 @@ REPOSITORY |= {
     ".github/workflows/candidate-monthly-alert-value.yml",
 }
 # Contemporary October 2026 source observation, not an issuance.
+RELEASE |= {"data/candidate-october-2026-source-observation.json"}
 REPOSITORY |= {
     "docs/candidate-october-2026-source-observation.md",
+    "data/candidate-october-2026-source-observation.json",
     "scripts/audit_candidate_october_source_observation.py",
     "scripts/test_audit_candidate_october_source_observation.py",
     ".github/workflows/candidate-october-source-observation.yml",
