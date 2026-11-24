@@ -164,6 +164,13 @@ REPOSITORY |= {
     "scripts/test_experiment_candidate_monthly_complementary_signals.py",
     ".github/workflows/candidate-monthly-complementary-signals.yml",
 }
+# Operational alert budget research: aggregate outputs only.
+REPOSITORY |= {
+    "docs/candidate-monthly-alert-value.md",
+    "scripts/experiment_candidate_monthly_alert_value.py",
+    "scripts/test_experiment_candidate_monthly_alert_value.py",
+    ".github/workflows/candidate-monthly-alert-value.yml",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",
