@@ -7,6 +7,7 @@ on:
       - 'scripts/experiment_candidate_monthly_probability.py'
       - 'scripts/test_experiment_candidate_monthly_probability.py'
       - 'data/candidate-monthly-bridge-audit.json'
+      - 'data/candidate-monthly-probability.json'
       - 'scripts/test_audit_candidate_monthly_bridge.py'
       - 'scripts/test_audit_candidate_monthly_bridge_census.py'
       - 'docs/candidate-monthly-bridge-protocol.md'
@@ -19,6 +20,7 @@ on:
       - 'scripts/experiment_candidate_monthly_probability.py'
       - 'scripts/test_experiment_candidate_monthly_probability.py'
       - 'data/candidate-monthly-bridge-audit.json'
+      - 'data/candidate-monthly-probability.json'
       - 'scripts/test_audit_candidate_monthly_bridge.py'
       - 'scripts/test_audit_candidate_monthly_bridge_census.py'
       - 'docs/candidate-monthly-bridge-protocol.md'
@@ -46,5 +48,5 @@ jobs:
         run: python3 -B scripts/audit_candidate_monthly_bridge.py --check
       - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_candidate_monthly_probability.py' -v
       - name: Homogeneous monthly probability benchmark, no prospective issue
-        run: python3 -B scripts/experiment_candidate_monthly_probability.py
+        run: python3 -B scripts/experiment_candidate_monthly_probability.py --check
       - run: python3 -B scripts/audit_public.py
