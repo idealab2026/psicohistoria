@@ -32,7 +32,7 @@ jobs:
           python-version: '3.12'
       - name: Synthetic event ID, dyad, dates, year and conservation adversarial tests
         run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_ged_event_dyad_fates.py' -v
-      - name: Decompose 10 original Candidate-to-GED cases across 8 SHA-pinned sources
-        run: python3 -B scripts/audit_candidate_ged_event_dyad_fates.py --print-report
+      - name: Demand exact replay of eight-original candidate/annual GED event and dyad fate decomposition
+        run: python3 -B scripts/audit_candidate_ged_event_dyad_fates.py --check-report
       - name: Enforce institutional publication privacy gate
         run: python3 -B scripts/audit_public.py
