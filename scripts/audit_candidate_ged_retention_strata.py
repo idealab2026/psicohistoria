@@ -127,8 +127,12 @@ def build_report(early_raw=None,late_raw=None,drift_raw=None):
         raise AuditError("Later report wrong frozen research status")
     if drift.get("status")!="RETROSPECTIVE_ANNUAL_VINTAGE_DRIFT_NOT_PROSPECTIVE":
         raise AuditError("Intra-GED historical drift source status mismatch")
-    if early["source_prev_2024_25_sha256"]!=hashlib.sha256(late_bytes).hexdigest():
-        raise AuditError("2024/25 report SHA mismatch: pinned="+early["source_prev_2024_25_sha256"]+" actual="+hashlib.sha256(late_bytes).hexdigest())
+    # PR #152 normalized 'previous' to a parsed dict before the source hash
+    # calculation, so its stored digest represents sorted JSON serialization,
+    # NOT raw-file bytes. Reproduce that exact historical serialization.
+    late_canonical = json.dumps(late, ensure_ascii=False, sort_keys=True).encode("utf8")
+    if early["source_prev_2024_25_sha256"] != hashlib.sha256(late_canonical).hexdigest():
+        raise AuditError("2024/25 canonical JSON SHA no longer matches the exact hash recorded in PR #152")
     if early["source_universe_sha256"]!=late["country_universe_sha256"] or early["source_universe_sha256"]!=drift["country_universe_sha256"]:
         raise AuditError("Country universe not the same across frozen studies")
     if (early["years_pooled"]!=list(YEARS)
