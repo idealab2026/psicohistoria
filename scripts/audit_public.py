@@ -105,6 +105,15 @@ REPOSITORY |= {
     ".github/workflows/candidate-ged-retention-strata.yml",
     "data/candidate-ged-retention-strata.json",
 }
+# Candidate event/dyad fate decomposition from official archives only; no raw event IDs published.
+RELEASE |= {"data/candidate-ged-event-dyad-fates.json"}
+REPOSITORY |= {
+    "scripts/audit_candidate_ged_event_dyad_fates.py",
+    "scripts/test_audit_candidate_ged_event_dyad_fates.py",
+    "docs/candidate-ged-event-dyad-fates-protocol.md",
+    ".github/workflows/candidate-ged-event-dyad-fates.yml",
+    "data/candidate-ged-event-dyad-fates.json",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",
