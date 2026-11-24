@@ -32,7 +32,7 @@ jobs:
           python-version: '3.12'
       - name: Adversarial independent dyad-year source, year-matching and conservation tests
         run: python3 -B -m unittest discover -s scripts -p 'test_audit_ucdp_dyadic_year_inclusion.py' -v
-      - name: Source-only SHA census of four official historical Dyadic original ZIP archives
-        run: python3 -B scripts/audit_ucdp_dyadic_year_inclusion.py --source-census
+      - name: Evaluate ten preregistered Candidate cases using four SHA-pinned original Dyadic archives
+        run: python3 -B scripts/audit_ucdp_dyadic_year_inclusion.py --print-report
       - name: Institutional public privacy allowlist
         run: python3 -B scripts/audit_public.py
