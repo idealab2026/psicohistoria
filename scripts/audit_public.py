@@ -155,6 +155,13 @@ REPOSITORY |= {
     "docs/candidate-monthly-bridge-protocol.md",
     ".github/workflows/candidate-monthly-bridge-census.yml",
 }
+# Complementary signal study: aggregate-only public research.
+REPOSITORY |= {
+    "docs/candidate-monthly-complementary-signals.md",
+    "scripts/experiment_candidate_monthly_complementary_signals.py",
+    "scripts/test_experiment_candidate_monthly_complementary_signals.py",
+    ".github/workflows/candidate-monthly-complementary-signals.yml",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",
