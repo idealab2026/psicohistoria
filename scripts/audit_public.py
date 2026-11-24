@@ -114,6 +114,15 @@ REPOSITORY |= {
     ".github/workflows/candidate-ged-event-dyad-fates.yml",
     "data/candidate-ged-event-dyad-fates.json",
 }
+# Historical UCDP Dyadic annual inclusion study, no event/dyad raw IDs in public reports.
+RELEASE |= {"data/ucdp-official-dyadyear-case-resolution.json"}
+REPOSITORY |= {
+    "scripts/audit_ucdp_dyadic_year_inclusion.py",
+    "scripts/test_audit_ucdp_dyadic_year_inclusion.py",
+    "docs/ucdp-dyadic-year-inclusion-audit.md",
+    "data/ucdp-official-dyadyear-case-resolution.json",
+    ".github/workflows/ucdp-dyadic-year-inclusion.yml",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",
