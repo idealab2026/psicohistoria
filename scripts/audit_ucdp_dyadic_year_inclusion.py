@@ -227,6 +227,7 @@ def analyze_case(case,events,active,ever,jan_sep):
         "n_distinct_candidate_may_dyads_active_in_original_dyadic_year":n_active,
         "n_distinct_candidate_may_dyads_not_active_in_original_dyadic_year":n_absent,
         "n_distinct_candidate_may_dyads_not_active_that_appear_in_dyadic_other_year":n_ever_outside,
+        "n_distinct_candidate_may_dyads_ever_active_in_historical_dyadic_edition":n_active+n_ever_outside,
         "candidate_may_events_active_dyads":events_active,
         "candidate_may_events_inactive_dyads":events_absent,
         "candidate_may_best_active_dyads":best_active,
@@ -299,6 +300,12 @@ def build_report(candidate_fetch=get_source,dyadic_fetch=fetch_dyadic_zip,
                 x["n_distinct_candidate_may_dyads_active_in_original_dyadic_year"]>0 for x in subset),
             "n_country_years_with_no_original_dyad_active":sum(
                 x["n_distinct_candidate_may_dyads_active_in_original_dyadic_year"]==0 for x in subset),
+            "n_country_years_with_any_dyad_ever_active_in_edition":sum(
+                x["n_distinct_candidate_may_dyads_ever_active_in_historical_dyadic_edition"]>0 for x in subset),
+            "n_country_years_with_no_dyad_ever_active_in_edition":sum(
+                x["n_distinct_candidate_may_dyads_ever_active_in_historical_dyadic_edition"]==0 for x in subset),
+            "n_distinct_original_candidate_dyads_ever_active_in_edition":sum(
+                x["n_distinct_candidate_may_dyads_ever_active_in_historical_dyadic_edition"] for x in subset),
             "n_distinct_original_candidate_dyads_active":sum(
                 x["n_distinct_candidate_may_dyads_active_in_original_dyadic_year"] for x in subset),
             "n_distinct_original_candidate_dyads_inactive":sum(
