@@ -142,13 +142,14 @@ REPOSITORY |= {
     ".github/workflows/annual-ged-rolling-probability.yml",
 }
 # Monthly Candidate bridge protocol; aggregate results only.
-RELEASE |= {"data/candidate-monthly-bridge-audit.json"}
+RELEASE |= {"data/candidate-monthly-bridge-audit.json", "data/candidate-monthly-probability.json"}
 REPOSITORY |= {
     "scripts/audit_candidate_monthly_bridge_census.py",
     "scripts/audit_candidate_monthly_bridge.py",
     "scripts/experiment_candidate_monthly_probability.py",
     "scripts/test_experiment_candidate_monthly_probability.py",
     "data/candidate-monthly-bridge-audit.json",
+    "data/candidate-monthly-probability.json",
     "scripts/test_audit_candidate_monthly_bridge.py",
     "scripts/test_audit_candidate_monthly_bridge_census.py",
     "docs/candidate-monthly-bridge-protocol.md",
