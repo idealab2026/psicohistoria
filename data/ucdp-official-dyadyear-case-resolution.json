@@ -1,20 +1,408 @@
 {
-  "schema": "idealab.psico.ucdp_dyadic_year_inclusion_v1",
-  "status": "PREREGISTERED_SOURCES_UNVERIFIED",
+  "annual_dyadic_activity_definition": "25 battle-related deaths per dyad per calendar year (official first annual edition)",
+  "candidate_q3_partial_jan_sep_best_not_annual_brd": true,
+  "case_level_country_aggregates": [
+    {
+      "candidate_may_best_active_dyads": 0,
+      "candidate_may_best_inactive_dyads": 16,
+      "candidate_may_code_status_best_by_dyadic_activity": {
+        "not_active_same_year": {
+          "clear": 16
+        }
+      },
+      "candidate_may_events_active_dyads": 0,
+      "candidate_may_events_inactive_dyads": 1,
+      "candidate_q3_best": 16,
+      "candidate_q3_jan_sep_best_active_dyads": 0,
+      "candidate_q3_jan_sep_best_inactive_dyads": 20,
+      "country": "Peru",
+      "country_id": 135,
+      "ged_first_annual_best": 16,
+      "n_candidate_may_events": 1,
+      "n_candidate_may_events_unavailable_dyad": 0,
+      "n_candidate_q3_jan_sep_dyads_ge25_best": 0,
+      "n_distinct_candidate_may_dyads_active_in_original_dyadic_year": 0,
+      "n_distinct_candidate_may_dyads_not_active_in_original_dyadic_year": 1,
+      "n_distinct_candidate_may_dyads_not_active_that_appear_in_dyadic_other_year": 1,
+      "n_distinct_candidate_may_dyads_with_valid_ids": 1,
+      "no_identifiers_published": true,
+      "retained_ged_threshold_5": true,
+      "year": 2021
+    },
+    {
+      "candidate_may_best_active_dyads": 19,
+      "candidate_may_best_inactive_dyads": 0,
+      "candidate_may_code_status_best_by_dyadic_activity": {
+        "dyadic_annual_active": {
+          "check": 2,
+          "clear": 17
+        }
+      },
+      "candidate_may_events_active_dyads": 11,
+      "candidate_may_events_inactive_dyads": 0,
+      "candidate_q3_best": 19,
+      "candidate_q3_jan_sep_best_active_dyads": 303,
+      "candidate_q3_jan_sep_best_inactive_dyads": 0,
+      "country": "Turkey",
+      "country_id": 640,
+      "ged_first_annual_best": 19,
+      "n_candidate_may_events": 11,
+      "n_candidate_may_events_unavailable_dyad": 0,
+      "n_candidate_q3_jan_sep_dyads_ge25_best": 1,
+      "n_distinct_candidate_may_dyads_active_in_original_dyadic_year": 1,
+      "n_distinct_candidate_may_dyads_not_active_in_original_dyadic_year": 0,
+      "n_distinct_candidate_may_dyads_not_active_that_appear_in_dyadic_other_year": 0,
+      "n_distinct_candidate_may_dyads_with_valid_ids": 1,
+      "no_identifiers_published": true,
+      "retained_ged_threshold_5": true,
+      "year": 2021
+    },
+    {
+      "candidate_may_best_active_dyads": 247,
+      "candidate_may_best_inactive_dyads": 0,
+      "candidate_may_code_status_best_by_dyadic_activity": {
+        "dyadic_annual_active": {
+          "clear": 247
+        }
+      },
+      "candidate_may_events_active_dyads": 36,
+      "candidate_may_events_inactive_dyads": 0,
+      "candidate_q3_best": 247,
+      "candidate_q3_jan_sep_best_active_dyads": 256,
+      "candidate_q3_jan_sep_best_inactive_dyads": 0,
+      "country": "Israel",
+      "country_id": 666,
+      "ged_first_annual_best": 252,
+      "n_candidate_may_events": 36,
+      "n_candidate_may_events_unavailable_dyad": 0,
+      "n_candidate_q3_jan_sep_dyads_ge25_best": 1,
+      "n_distinct_candidate_may_dyads_active_in_original_dyadic_year": 2,
+      "n_distinct_candidate_may_dyads_not_active_in_original_dyadic_year": 0,
+      "n_distinct_candidate_may_dyads_not_active_that_appear_in_dyadic_other_year": 0,
+      "n_distinct_candidate_may_dyads_with_valid_ids": 2,
+      "no_identifiers_published": true,
+      "retained_ged_threshold_5": true,
+      "year": 2021
+    },
+    {
+      "candidate_may_best_active_dyads": 8,
+      "candidate_may_best_inactive_dyads": 0,
+      "candidate_may_code_status_best_by_dyadic_activity": {
+        "dyadic_annual_active": {
+          "check deaths": 8
+        }
+      },
+      "candidate_may_events_active_dyads": 1,
+      "candidate_may_events_inactive_dyads": 0,
+      "candidate_q3_best": 8,
+      "candidate_q3_jan_sep_best_active_dyads": 15,
+      "candidate_q3_jan_sep_best_inactive_dyads": 0,
+      "country": "Togo",
+      "country_id": 461,
+      "ged_first_annual_best": 23,
+      "n_candidate_may_events": 1,
+      "n_candidate_may_events_unavailable_dyad": 0,
+      "n_candidate_q3_jan_sep_dyads_ge25_best": 0,
+      "n_distinct_candidate_may_dyads_active_in_original_dyadic_year": 1,
+      "n_distinct_candidate_may_dyads_not_active_in_original_dyadic_year": 0,
+      "n_distinct_candidate_may_dyads_not_active_that_appear_in_dyadic_other_year": 0,
+      "n_distinct_candidate_may_dyads_with_valid_ids": 1,
+      "no_identifiers_published": true,
+      "retained_ged_threshold_5": true,
+      "year": 2022
+    },
+    {
+      "candidate_may_best_active_dyads": 0,
+      "candidate_may_best_inactive_dyads": 5,
+      "candidate_may_code_status_best_by_dyadic_activity": {
+        "not_active_same_year": {
+          "check dyad": 5
+        }
+      },
+      "candidate_may_events_active_dyads": 0,
+      "candidate_may_events_inactive_dyads": 2,
+      "candidate_q3_best": 5,
+      "candidate_q3_jan_sep_best_active_dyads": 0,
+      "candidate_q3_jan_sep_best_inactive_dyads": 23,
+      "country": "Brazil",
+      "country_id": 140,
+      "ged_first_annual_best": 0,
+      "n_candidate_may_events": 2,
+      "n_candidate_may_events_unavailable_dyad": 0,
+      "n_candidate_q3_jan_sep_dyads_ge25_best": 0,
+      "n_distinct_candidate_may_dyads_active_in_original_dyadic_year": 0,
+      "n_distinct_candidate_may_dyads_not_active_in_original_dyadic_year": 2,
+      "n_distinct_candidate_may_dyads_not_active_that_appear_in_dyadic_other_year": 0,
+      "n_distinct_candidate_may_dyads_with_valid_ids": 2,
+      "no_identifiers_published": true,
+      "retained_ged_threshold_5": false,
+      "year": 2024
+    },
+    {
+      "candidate_may_best_active_dyads": 0,
+      "candidate_may_best_inactive_dyads": 5,
+      "candidate_may_code_status_best_by_dyadic_activity": {
+        "not_active_same_year": {
+          "clear": 5
+        }
+      },
+      "candidate_may_events_active_dyads": 0,
+      "candidate_may_events_inactive_dyads": 2,
+      "candidate_q3_best": 5,
+      "candidate_q3_jan_sep_best_active_dyads": 0,
+      "candidate_q3_jan_sep_best_inactive_dyads": 10,
+      "country": "Bangladesh",
+      "country_id": 771,
+      "ged_first_annual_best": 0,
+      "n_candidate_may_events": 2,
+      "n_candidate_may_events_unavailable_dyad": 0,
+      "n_candidate_q3_jan_sep_dyads_ge25_best": 0,
+      "n_distinct_candidate_may_dyads_active_in_original_dyadic_year": 0,
+      "n_distinct_candidate_may_dyads_not_active_in_original_dyadic_year": 1,
+      "n_distinct_candidate_may_dyads_not_active_that_appear_in_dyadic_other_year": 0,
+      "n_distinct_candidate_may_dyads_with_valid_ids": 1,
+      "no_identifiers_published": true,
+      "retained_ged_threshold_5": false,
+      "year": 2024
+    },
+    {
+      "candidate_may_best_active_dyads": 0,
+      "candidate_may_best_inactive_dyads": 12,
+      "candidate_may_code_status_best_by_dyadic_activity": {
+        "not_active_same_year": {
+          "check": 12
+        }
+      },
+      "candidate_may_events_active_dyads": 0,
+      "candidate_may_events_inactive_dyads": 1,
+      "candidate_q3_best": 12,
+      "candidate_q3_jan_sep_best_active_dyads": 0,
+      "candidate_q3_jan_sep_best_inactive_dyads": 12,
+      "country": "Ecuador",
+      "country_id": 130,
+      "ged_first_annual_best": 0,
+      "n_candidate_may_events": 1,
+      "n_candidate_may_events_unavailable_dyad": 0,
+      "n_candidate_q3_jan_sep_dyads_ge25_best": 0,
+      "n_distinct_candidate_may_dyads_active_in_original_dyadic_year": 0,
+      "n_distinct_candidate_may_dyads_not_active_in_original_dyadic_year": 1,
+      "n_distinct_candidate_may_dyads_not_active_that_appear_in_dyadic_other_year": 0,
+      "n_distinct_candidate_may_dyads_with_valid_ids": 1,
+      "no_identifiers_published": true,
+      "retained_ged_threshold_5": false,
+      "year": 2025
+    },
+    {
+      "candidate_may_best_active_dyads": 0,
+      "candidate_may_best_inactive_dyads": 7,
+      "candidate_may_code_status_best_by_dyadic_activity": {
+        "not_active_same_year": {
+          "check dyad": 7
+        }
+      },
+      "candidate_may_events_active_dyads": 0,
+      "candidate_may_events_inactive_dyads": 1,
+      "candidate_q3_best": 7,
+      "candidate_q3_jan_sep_best_active_dyads": 0,
+      "candidate_q3_jan_sep_best_inactive_dyads": 15,
+      "country": "Brazil",
+      "country_id": 140,
+      "ged_first_annual_best": 0,
+      "n_candidate_may_events": 1,
+      "n_candidate_may_events_unavailable_dyad": 0,
+      "n_candidate_q3_jan_sep_dyads_ge25_best": 0,
+      "n_distinct_candidate_may_dyads_active_in_original_dyadic_year": 0,
+      "n_distinct_candidate_may_dyads_not_active_in_original_dyadic_year": 1,
+      "n_distinct_candidate_may_dyads_not_active_that_appear_in_dyadic_other_year": 0,
+      "n_distinct_candidate_may_dyads_with_valid_ids": 1,
+      "no_identifiers_published": true,
+      "retained_ged_threshold_5": false,
+      "year": 2025
+    },
+    {
+      "candidate_may_best_active_dyads": 0,
+      "candidate_may_best_inactive_dyads": 7,
+      "candidate_may_code_status_best_by_dyadic_activity": {
+        "not_active_same_year": {
+          "check dyad": 7
+        }
+      },
+      "candidate_may_events_active_dyads": 0,
+      "candidate_may_events_inactive_dyads": 2,
+      "candidate_q3_best": 7,
+      "candidate_q3_jan_sep_best_active_dyads": 0,
+      "candidate_q3_jan_sep_best_inactive_dyads": 12,
+      "country": "Libya",
+      "country_id": 620,
+      "ged_first_annual_best": 0,
+      "n_candidate_may_events": 2,
+      "n_candidate_may_events_unavailable_dyad": 0,
+      "n_candidate_q3_jan_sep_dyads_ge25_best": 0,
+      "n_distinct_candidate_may_dyads_active_in_original_dyadic_year": 0,
+      "n_distinct_candidate_may_dyads_not_active_in_original_dyadic_year": 1,
+      "n_distinct_candidate_may_dyads_not_active_that_appear_in_dyadic_other_year": 0,
+      "n_distinct_candidate_may_dyads_with_valid_ids": 1,
+      "no_identifiers_published": true,
+      "retained_ged_threshold_5": false,
+      "year": 2025
+    },
+    {
+      "candidate_may_best_active_dyads": 38,
+      "candidate_may_best_inactive_dyads": 0,
+      "candidate_may_code_status_best_by_dyadic_activity": {
+        "dyadic_annual_active": {
+          "check deaths": 32,
+          "check dyad": 1,
+          "check geography": 1,
+          "clear": 4
+        }
+      },
+      "candidate_may_events_active_dyads": 8,
+      "candidate_may_events_inactive_dyads": 0,
+      "candidate_q3_best": 38,
+      "candidate_q3_jan_sep_best_active_dyads": 97,
+      "candidate_q3_jan_sep_best_inactive_dyads": 0,
+      "country": "Indonesia",
+      "country_id": 850,
+      "ged_first_annual_best": 14,
+      "n_candidate_may_events": 8,
+      "n_candidate_may_events_unavailable_dyad": 0,
+      "n_candidate_q3_jan_sep_dyads_ge25_best": 1,
+      "n_distinct_candidate_may_dyads_active_in_original_dyadic_year": 1,
+      "n_distinct_candidate_may_dyads_not_active_in_original_dyadic_year": 0,
+      "n_distinct_candidate_may_dyads_not_active_that_appear_in_dyadic_other_year": 0,
+      "n_distinct_candidate_may_dyads_with_valid_ids": 1,
+      "no_identifiers_published": true,
+      "retained_ged_threshold_5": true,
+      "year": 2025
+    }
+  ],
   "design_date": "2026-11-24",
-  "years": [
-    2021,
-    2022,
-    2024,
-    2025
+  "dyad_missing_or_unmatched_is_not_proof_of_absence_of_real_violence": true,
+  "existing_620_forecasts_modified": 0,
+  "interpretation": "Only ten already-selected Candidate-positive country-years. Exact dyad_id-year membership in UCDP Dyadic is a hindsight annual product, not an as-of predictive feature; an absent ID may mean inclusion failure, actor recoding or coalition/split rather than absence of violence. Numeric Candidate best Jan-Sep is not equivalent to Dyadic annual battle deaths; no causal conclusion or confirmed short-horizon forecast.",
+  "n_original_csv_sources": 4,
+  "n_original_dyadic_zip_sources": 4,
+  "new_forecasts_issued": 0,
+  "retention_strata": {
+    "all": {
+      "candidate_may_best_on_active_dyads": 312,
+      "candidate_may_best_on_inactive_dyads": 52,
+      "n_candidate_events_without_numeric_dyad": 0,
+      "n_country_years": 10,
+      "n_country_years_with_any_original_dyad_active": 4,
+      "n_country_years_with_no_original_dyad_active": 6,
+      "n_distinct_original_candidate_dyads_active": 5,
+      "n_distinct_original_candidate_dyads_inactive": 7
+    },
+    "lost": {
+      "candidate_may_best_on_active_dyads": 0,
+      "candidate_may_best_on_inactive_dyads": 36,
+      "n_candidate_events_without_numeric_dyad": 0,
+      "n_country_years": 5,
+      "n_country_years_with_any_original_dyad_active": 0,
+      "n_country_years_with_no_original_dyad_active": 5,
+      "n_distinct_original_candidate_dyads_active": 0,
+      "n_distinct_original_candidate_dyads_inactive": 6
+    },
+    "retained": {
+      "candidate_may_best_on_active_dyads": 312,
+      "candidate_may_best_on_inactive_dyads": 16,
+      "n_candidate_events_without_numeric_dyad": 0,
+      "n_country_years": 5,
+      "n_country_years_with_any_original_dyad_active": 4,
+      "n_country_years_with_no_original_dyad_active": 1,
+      "n_distinct_original_candidate_dyads_active": 5,
+      "n_distinct_original_candidate_dyads_inactive": 1
+    }
+  },
+  "schema": "idealab.psico.ucdp_dyadic_year_inclusion_v1",
+  "source_previous_event_fate_sha256": "bc5755a79727359e49cc0f5df80c855a6f92dd16d05eedf597ddf9575e6ddf6a",
+  "source_provenance": [
+    {
+      "candidate_events_in_all_focus_countries": 48,
+      "candidate_q3_sha256": "077b27b7b6490431bb040fb2c08739587d1a0a4fb6ff3ef3852ee5d8d8ef79c9",
+      "dyadic_audit": {
+        "csv_member": "ucdp-dyadic-221.csv",
+        "edition": "221",
+        "fields_nonblank_target_year": {
+          "conflict_id": 64,
+          "side_a_id": 64,
+          "side_b_id": 64
+        },
+        "n_unique_dyads_in_archive": 658,
+        "source_rows": 3217,
+        "target_year_rows": 64,
+        "year": 2021
+      },
+      "dyadic_original_url": "https://ucdp.uu.se/downloads/dyadic/ucdp-dyadic-221-csv.zip",
+      "dyadic_original_zip_sha256": "4b20a049560db91bba52b1c4062ffbfedd706da8eed71928cbbba444da9ea538",
+      "dyadic_zip_bytes": 45310,
+      "year": 2021
+    },
+    {
+      "candidate_events_in_all_focus_countries": 1,
+      "candidate_q3_sha256": "20d15637aa4b9ee80aed52a059d0552a8045867e493f103f6f8d7c117547b733",
+      "dyadic_audit": {
+        "csv_member": "Dyadic_v23_1.csv",
+        "edition": "231",
+        "fields_nonblank_target_year": {
+          "conflict_id": 64,
+          "side_a_id": 64,
+          "side_b_id": 64
+        },
+        "n_unique_dyads_in_archive": 666,
+        "source_rows": 3285,
+        "target_year_rows": 64,
+        "year": 2022
+      },
+      "dyadic_original_url": "https://ucdp.uu.se/downloads/dyadic/ucdp-dyadic-231-csv.zip",
+      "dyadic_original_zip_sha256": "748daa222c45d2e4b43930640ff79ff8b585c3ac404f5dc192776876ef8dd9d1",
+      "dyadic_zip_bytes": 46306,
+      "year": 2022
+    },
+    {
+      "candidate_events_in_all_focus_countries": 4,
+      "candidate_q3_sha256": "3f9f7acea9690cd8c5150981ae85b5a9365b2ca233f2b351b680de95cd4af390",
+      "dyadic_audit": {
+        "csv_member": "Dyadic_v25_1.csv",
+        "edition": "251",
+        "fields_nonblank_target_year": {
+          "conflict_id": 68,
+          "side_a_id": 68,
+          "side_b_id": 68
+        },
+        "n_unique_dyads_in_archive": 684,
+        "source_rows": 3432,
+        "target_year_rows": 68,
+        "year": 2024
+      },
+      "dyadic_original_url": "https://ucdp.uu.se/downloads/dyadic/ucdp-dyadic-251-csv.zip",
+      "dyadic_original_zip_sha256": "e34d26c39d23739ab65bc52fd42747aa88e7ecdf84d16c7bacafd590ed767330",
+      "dyadic_zip_bytes": 47759,
+      "year": 2024
+    },
+    {
+      "candidate_events_in_all_focus_countries": 12,
+      "candidate_q3_sha256": "086362d535c61d1237f0824bee8afb6459bac71ca8d02026946b715264c910be",
+      "dyadic_audit": {
+        "csv_member": "Dyadic_v26_1.csv",
+        "edition": "261",
+        "fields_nonblank_target_year": {
+          "conflict_id": 78,
+          "side_a_id": 78,
+          "side_b_id": 78
+        },
+        "n_unique_dyads_in_archive": 697,
+        "source_rows": 3518,
+        "target_year_rows": 78,
+        "year": 2025
+      },
+      "dyadic_original_url": "https://ucdp.uu.se/downloads/dyadic/ucdp-dyadic-261-csv.zip",
+      "dyadic_original_zip_sha256": "1f89ca62c82819ecfcd8dd483826bc6760530118ddc63a191a9d4252a2174557",
+      "dyadic_zip_bytes": 49716,
+      "year": 2025
+    }
   ],
-  "editions": [
-    "22.1",
-    "23.1",
-    "25.1",
-    "26.1"
-  ],
-  "case_count": 10,
-  "source_census_first": true,
-  "forecast_issued": 0
+  "status": "POSTSELECTED_OFFICIAL_DYADYEAR_LABEL_CHECK_NOT_FORECAST"
 }
