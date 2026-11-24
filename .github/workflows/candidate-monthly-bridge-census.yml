@@ -1,0 +1,52 @@
+name: Candidate monthly bridge source-only census
+on:
+  push:
+    paths:
+      - 'scripts/audit_candidate_monthly_bridge_census.py'
+      - 'scripts/audit_candidate_monthly_bridge.py'
+      - 'scripts/experiment_candidate_monthly_probability.py'
+      - 'scripts/test_experiment_candidate_monthly_probability.py'
+      - 'data/candidate-monthly-bridge-audit.json'
+      - 'data/candidate-monthly-probability.json'
+      - 'scripts/test_audit_candidate_monthly_bridge.py'
+      - 'scripts/test_audit_candidate_monthly_bridge_census.py'
+      - 'docs/candidate-monthly-bridge-protocol.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-monthly-bridge-census.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_candidate_monthly_bridge_census.py'
+      - 'scripts/audit_candidate_monthly_bridge.py'
+      - 'scripts/experiment_candidate_monthly_probability.py'
+      - 'scripts/test_experiment_candidate_monthly_probability.py'
+      - 'data/candidate-monthly-bridge-audit.json'
+      - 'data/candidate-monthly-probability.json'
+      - 'scripts/test_audit_candidate_monthly_bridge.py'
+      - 'scripts/test_audit_candidate_monthly_bridge_census.py'
+      - 'docs/candidate-monthly-bridge-protocol.md'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-monthly-bridge-census.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  census:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_monthly_bridge_census.py' -v
+      - name: Source-only census (no event rows or outcome computation)
+        run: python3 -B scripts/audit_candidate_monthly_bridge_census.py
+      - run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_monthly_bridge.py' -v
+      - name: Monthly-to-quarterly comparability and 2023 annual outcome census
+        run: python3 -B scripts/audit_candidate_monthly_bridge.py --check
+      - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_candidate_monthly_probability.py' -v
+      - name: Homogeneous monthly probability benchmark, no prospective issue
+        run: python3 -B scripts/experiment_candidate_monthly_probability.py --check
+      - run: python3 -B scripts/audit_public.py

@@ -1,0 +1,195 @@
+{
+  "2023_annual_outcomes": [
+    {
+      "annual_positive": 4,
+      "horizon": 30,
+      "n_at_risk": 155,
+      "threshold": 1
+    },
+    {
+      "annual_positive": 5,
+      "horizon": 90,
+      "n_at_risk": 155,
+      "threshold": 1
+    },
+    {
+      "annual_positive": 2,
+      "horizon": 30,
+      "n_at_risk": 162,
+      "threshold": 5
+    },
+    {
+      "annual_positive": 4,
+      "horizon": 90,
+      "n_at_risk": 162,
+      "threshold": 5
+    },
+    {
+      "annual_positive": 3,
+      "horizon": 30,
+      "n_at_risk": 170,
+      "threshold": 10
+    },
+    {
+      "annual_positive": 5,
+      "horizon": 90,
+      "n_at_risk": 170,
+      "threshold": 10
+    },
+    {
+      "annual_positive": 2,
+      "horizon": 30,
+      "n_at_risk": 174,
+      "threshold": 25
+    },
+    {
+      "annual_positive": 3,
+      "horizon": 90,
+      "n_at_risk": 174,
+      "threshold": 25
+    }
+  ],
+  "control_years": [
+    2021,
+    2022,
+    2025
+  ],
+  "diagnostics": {
+    "2021": {
+      "absolute_country_count_change": 457,
+      "changed_representations": 1,
+      "country_counts_changed": 21,
+      "country_nonzero_changed": 3,
+      "monthly_best_total": 11080,
+      "n": 196,
+      "reference": "original cumulative Q1",
+      "reference_best_total": 11373,
+      "repeated_ids": 7,
+      "risk_sets": {
+        "1": {
+          "changed_membership": 3,
+          "monthly_n": 149,
+          "reference_n": 152
+        },
+        "5": {
+          "changed_membership": 3,
+          "monthly_n": 159,
+          "reference_n": 160
+        },
+        "10": {
+          "changed_membership": 3,
+          "monthly_n": 171,
+          "reference_n": 168
+        },
+        "25": {
+          "changed_membership": 1,
+          "monthly_n": 176,
+          "reference_n": 175
+        }
+      }
+    },
+    "2022": {
+      "absolute_country_count_change": 335,
+      "changed_representations": 0,
+      "country_counts_changed": 18,
+      "country_nonzero_changed": 1,
+      "monthly_best_total": 9914,
+      "n": 196,
+      "reference": "original cumulative Q1",
+      "reference_best_total": 10103,
+      "repeated_ids": 2,
+      "risk_sets": {
+        "1": {
+          "changed_membership": 1,
+          "monthly_n": 149,
+          "reference_n": 150
+        },
+        "5": {
+          "changed_membership": 1,
+          "monthly_n": 162,
+          "reference_n": 161
+        },
+        "10": {
+          "changed_membership": 2,
+          "monthly_n": 166,
+          "reference_n": 166
+        },
+        "25": {
+          "changed_membership": 0,
+          "monthly_n": 174,
+          "reference_n": 174
+        }
+      }
+    },
+    "2023": {
+      "absolute_country_count_change": 2439,
+      "changed_representations": 2,
+      "country_counts_changed": 20,
+      "country_nonzero_changed": 1,
+      "monthly_best_total": 11675,
+      "n": 196,
+      "reference": "Jan-Apr restricted to Q1 (retrospective)",
+      "reference_best_total": 14110,
+      "repeated_ids": 40,
+      "risk_sets": {
+        "1": {
+          "changed_membership": 1,
+          "monthly_n": 155,
+          "reference_n": 154
+        },
+        "5": {
+          "changed_membership": 0,
+          "monthly_n": 162,
+          "reference_n": 162
+        },
+        "10": {
+          "changed_membership": 1,
+          "monthly_n": 170,
+          "reference_n": 169
+        },
+        "25": {
+          "changed_membership": 0,
+          "monthly_n": 174,
+          "reference_n": 174
+        }
+      }
+    },
+    "2025": {
+      "absolute_country_count_change": 365,
+      "changed_representations": 1,
+      "country_counts_changed": 21,
+      "country_nonzero_changed": 3,
+      "monthly_best_total": 18292,
+      "n": 196,
+      "reference": "original cumulative Q1",
+      "reference_best_total": 18497,
+      "repeated_ids": 20,
+      "risk_sets": {
+        "1": {
+          "changed_membership": 3,
+          "monthly_n": 148,
+          "reference_n": 147
+        },
+        "5": {
+          "changed_membership": 0,
+          "monthly_n": 160,
+          "reference_n": 160
+        },
+        "10": {
+          "changed_membership": 1,
+          "monthly_n": 165,
+          "reference_n": 164
+        },
+        "25": {
+          "changed_membership": 0,
+          "monthly_n": 169,
+          "reference_n": 169
+        }
+      }
+    }
+  },
+  "modified_forecasts": 0,
+  "new_forecasts": 0,
+  "quarantined_year": 2024,
+  "status": "RETROSPECTIVE_MONTHLY_BRIDGE_NOT_ASOF_NOT_ISSUED"
+}
