@@ -1,0 +1,38 @@
+name: Candidate-to-GED original event and dyad-ID fate decomposition
+on:
+  push:
+    paths:
+      - 'scripts/audit_candidate_ged_event_dyad_fates.py'
+      - 'scripts/test_audit_candidate_ged_event_dyad_fates.py'
+      - 'docs/candidate-ged-event-dyad-fates-protocol.md'
+      - 'data/candidate-ged-event-dyad-fates.json'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-ged-event-dyad-fates.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_candidate_ged_event_dyad_fates.py'
+      - 'scripts/test_audit_candidate_ged_event_dyad_fates.py'
+      - 'docs/candidate-ged-event-dyad-fates-protocol.md'
+      - 'data/candidate-ged-event-dyad-fates.json'
+      - 'scripts/audit_public.py'
+      - '.github/workflows/candidate-ged-event-dyad-fates.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  event_dyad_diagnostics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Synthetic event ID, dyad, dates, year and conservation adversarial tests
+        run: python3 -B -m unittest discover -s scripts -p 'test_audit_candidate_ged_event_dyad_fates.py' -v
+      - name: Decompose 10 original Candidate-to-GED cases across 8 SHA-pinned sources
+        run: python3 -B scripts/audit_candidate_ged_event_dyad_fates.py --print-report
+      - name: Enforce institutional publication privacy gate
+        run: python3 -B scripts/audit_public.py
