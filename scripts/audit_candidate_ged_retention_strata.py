@@ -128,7 +128,7 @@ def build_report(early_raw=None,late_raw=None,drift_raw=None):
     if drift.get("status")!="RETROSPECTIVE_ANNUAL_VINTAGE_DRIFT_NOT_PROSPECTIVE":
         raise AuditError("Intra-GED historical drift source status mismatch")
     if early["source_prev_2024_25_sha256"]!=hashlib.sha256(late_bytes).hexdigest():
-        raise AuditError("2024/25 report changed from exact source SHA fixed in 2021/22 extension")
+        raise AuditError("2024/25 report SHA mismatch: pinned="+early["source_prev_2024_25_sha256"]+" actual="+hashlib.sha256(late_bytes).hexdigest())
     if early["source_universe_sha256"]!=late["country_universe_sha256"] or early["source_universe_sha256"]!=drift["country_universe_sha256"]:
         raise AuditError("Country universe not the same across frozen studies")
     if (early["years_pooled"]!=list(YEARS)
