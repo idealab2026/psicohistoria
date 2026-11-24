@@ -189,6 +189,15 @@ REPOSITORY |= {
     "scripts/test_generate_dec2026_pilot.py",
     ".github/workflows/dec2026-pilot.yml",
 }
+# DEC2026 experimental forecast: original bytes and publication receipt.
+RELEASE |= {"data/forecast-dec2026-pilot.json","data/forecast-dec2026-pilot-manifest.json"}
+REPOSITORY |= {
+    "data/forecast-dec2026-pilot.json",
+    "data/forecast-dec2026-pilot-manifest.json",
+    "scripts/check_dec2026_publication.py",
+    "scripts/test_check_dec2026_publication.py",
+    ".github/workflows/dec2026-publication.yml",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",

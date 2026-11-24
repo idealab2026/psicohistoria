@@ -1,0 +1,14 @@
+{
+  "status": "ISSUED_EXPERIMENTAL_UNRESOLVED",
+  "candidate_sha256": "540e4327e4b39c78227a28f1fabbf8911ad7a2b9391e7b4bacd1ce4296a295bd",
+  "protocol_main_commit": "e9ff37ba21f0a4994d6baa347c7f932ea5bf9393",
+  "candidate_run_id": "45475399804",
+  "candidate_run_head": "42923475d52e5ce3d1938094a900f10109a42347",
+  "first_public_candidate_at_utc": "2026-11-24T19:56:40Z",
+  "first_document_commit": "e71de1d02908ada1aa8ebcaa8c58c4def1438715",
+  "document_published_at_utc": "2026-11-24T19:57:11Z",
+  "time_evidence_note": "Candidate time is conservative successful public run completion; document time is GitHub contents API commit committer timestamp; not independent notarization. Main integration pending.",
+  "independently_notarized": false,
+  "outcomes_resolved": 0,
+  "demonstrated_predictive_skill": false
+}
