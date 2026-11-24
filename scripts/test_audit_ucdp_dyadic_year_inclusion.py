@@ -69,7 +69,13 @@ class DyadYearTests(unittest.TestCase):
         self.assertEqual(out["candidate_may_best_active_dyads"],5)
         self.assertEqual(out["candidate_may_best_inactive_dyads"],7)
         self.assertEqual(out["n_distinct_candidate_may_dyads_not_active_that_appear_in_dyadic_other_year"],1)
+        self.assertEqual(out["n_distinct_candidate_may_dyads_ever_active_in_historical_dyadic_edition"],2)
         self.assertEqual(out["n_candidate_q3_jan_sep_dyads_ge25_best"],0)
+        # If a dyad is active in a different year, UCDP GED can still include its events.
+        # It must NOT be misclassified as never eligible in historical Dyadic.
+        peru_like=audit.analyze_case(expected,cases,set(),{11,12},{11:16,12:7})
+        self.assertEqual(peru_like["n_distinct_candidate_may_dyads_active_in_original_dyadic_year"],0)
+        self.assertEqual(peru_like["n_distinct_candidate_may_dyads_ever_active_in_historical_dyadic_edition"],2)
         with self.assertRaises(SourceError):
             audit.analyze_case({**expected,"candidate_q3_best":18},
                                cases,{11},{11,12},{11:16,12:7})
