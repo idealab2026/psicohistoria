@@ -68,6 +68,8 @@ def main():
     raw=(json.dumps(candidate,sort_keys=True,separators=(",",":"))+"\n").encode()
     print("CANDIDATE_SHA256 "+hashlib.sha256(raw).hexdigest())
     print("CANDIDATE_BEGIN")
-    print(raw.decode().strip())
+    payload=raw.decode().rstrip("\n")
+    for i in range(0,len(payload),4000):
+        print(payload[i:i+4000])
     print("CANDIDATE_END")
 if __name__=="__main__": main()
