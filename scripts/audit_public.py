@@ -123,6 +123,15 @@ REPOSITORY |= {
     "data/ucdp-official-dyadyear-case-resolution.json",
     ".github/workflows/ucdp-dyadic-year-inclusion.yml",
 }
+# Historical UCDP Candidate/GED labels versus all-negative comparator; zero forecasts.
+RELEASE |= {"data/candidate-ged-annual-null-baseline-audit.json"}
+REPOSITORY |= {
+    "scripts/audit_candidate_ged_annual_null_baseline.py",
+    "scripts/test_audit_candidate_ged_annual_null_baseline.py",
+    "docs/candidate-ged-annual-null-baseline.md",
+    "data/candidate-ged-annual-null-baseline-audit.json",
+    ".github/workflows/candidate-ged-annual-null-baseline.yml",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",
