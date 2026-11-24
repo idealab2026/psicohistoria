@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime,timezone
-from audit_candidate_october_source_observation import inspect,verify_index,URL
+from audit_candidate_october_source_observation import inspect,verify_index,URL,monthly_metadata
 HEADER="id,country_id,type_of_violence,date_prec,date_start,date_end,best\n"
 OBS=datetime(2026,11,24,tzinfo=timezone.utc)
 class Tests(unittest.TestCase):
@@ -16,6 +16,10 @@ class Tests(unittest.TestCase):
     def test_future_event_rejected(self):
         with self.assertRaises(ValueError):
             inspect((HEADER+"1,1,1,1,2026-11-24,2026-11-24,1\n").encode(),{1},OBS)
+    def test_month_mismatch_rejected(self):
+        raw=(HEADER+"1,1,1,1,2026-08-01,2026-08-01,1\n").encode()
+        self.assertEqual(monthly_metadata(raw,8)[1]["rows_wholly_in_calendar_month"],1)
+        with self.assertRaises(ValueError): monthly_metadata(raw,9)
     def test_stale_source_rejected(self):
         with self.assertRaises(ValueError):
             inspect(HEADER.encode(),{1},datetime(2026,12,20,tzinfo=timezone.utc))
