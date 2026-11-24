@@ -182,6 +182,13 @@ REPOSITORY |= {
     "scripts/test_audit_candidate_october_source_observation.py",
     ".github/workflows/candidate-october-source-observation.yml",
 }
+# DEC2026 pilot protocol and generator only; no issued probabilities yet.
+REPOSITORY |= {
+    "docs/prospective-short-horizon-pilot-dec2026.md",
+    "scripts/generate_dec2026_pilot.py",
+    "scripts/test_generate_dec2026_pilot.py",
+    ".github/workflows/dec2026-pilot.yml",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",
