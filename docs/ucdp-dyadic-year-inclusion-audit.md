@@ -38,3 +38,125 @@ En los 10 países-año:
 - No tocar las cuatro cohortes de probabilidades prospectivas de GEO2027/GEO2028/NEWCONF2027/ACD2027 (620 pronósticos); no declarar aciertos de 2026. Privacidad institucional intacta.
 
 Fuentes: [portal UCDP](https://ucdp.uu.se/downloads/), [ediciones históricas](https://ucdp.uu.se/downloads/olddw.html), [UCDP Dyadic codebook 25.1](https://ucdp.uu.se/downloads/dyadic/ucdp-dyadic-251.pdf), cuya unidad de observación y regla anual de 25 muertes constituyen la definición del estimando dyad-year.
+
+
+## Registro de fuentes originales: censo sin resultados y análisis posterior
+
+La [CI de censo de fuentes](https://github.com/idealab2026/psicohistoria/actions/runs/45413445161)
+ha recuperado los cuatro ZIP originales y **únicamente ha examinado
+bytes, SHA, nombres de archivo CSV y encabezados**. Los cuatro
+archivos contienen `dyad_id`, `year`, `conflict_id`, `side_a_id`
+y `side_b_id`. Solo posteriormente se fijaron estos SHA en el
+programa para evaluar los registros:
+
+| Año de evento | UCDP Dyadic, edición de primera publicación anual | SHA-256 ZIP oficial | Registros díada-año para el año estudiado |
+|---|---|---|---:|
+| 2021 | 22.1 | `4b20a049560db91bba52b1c4062ffbfedd706da8eed71928cbbba444da9ea538` | 64 |
+| 2022 | 23.1 | `748daa222c45d2e4b43930640ff79ff8b585c3ac404f5dc192776876ef8dd9d1` | 64 |
+| 2024 | 25.1 | `e34d26c39d23739ab65bc52fd42747aa88e7ecdf84d16c7bacafd590ed767330` | 68 |
+| 2025 | 26.1 | `1f89ca62c82819ecfcd8dd483826bc6760530118ddc63a191a9d4252a2174557` | 78 |
+
+Los otros cuatro originales son las ediciones UCDP Candidate Q3
+ya protegidas por SHA desde #155. En total el estudio reproduce **ocho
+fuentes originales**, pero no republica las fichas individuales.
+
+[Informe agregado con controles de originales](../data/ucdp-official-dyadyear-case-resolution.json).
+
+## Evidencia: actividad de una díada durante el año no equivale a elegibilidad histórica
+
+En los 10 países-año Candidate positivos T≥5 de mayo:
+
+| Año | País | Mantiene T≥5 en GED anual | Díadas Candidate distintas | Activas en Dyadic ese año | Activas alguna vez en esa edición |
+|---|---|---|---:|---:|---:|
+| 2021 | Perú | Sí | 1 | 0 | 1 |
+| 2021 | Turquía | Sí | 1 | 1 | 1 |
+| 2021 | Israel | Sí | 2 | 2 | 2 |
+| 2022 | Togo | Sí | 1 | 1 | 1 |
+| 2024 | Brasil | No | 2 | 0 | 0 |
+| 2024 | Bangladés | No | 1 | 0 | 0 |
+| 2025 | Ecuador | No | 1 | 0 | 0 |
+| 2025 | Brasil | No | 1 | 0 | 0 |
+| 2025 | Libia | No | 1 | 0 | 0 |
+| 2025 | Indonesia | Sí | 1 | 1 | 1 |
+
+**Contraste nacional, solo estos diez ejemplos postseleccionados:**
+los cinco países que dejan de superar T=5 en GED anual
+tienen **0/6 díadas Candidate con misma clave activas en
+cualquier año de la primera edición Dyadic**.
+Los cinco países que sí mantienen el indicador tienen
+**6/6 díadas Candidate con clave activa en algún año** de esa
+edición. Al exigir el **mismo año**, solo 5 de esas 6
+díadas figuran activas y **Perú constituye la excepción**.
+
+**Perú, 2021**: GED22.1 conserva 16 fallecimientos estatales
+bajo las reglas del estudio, pero la misma clave de díada
+no aparece activa en Dyadic22.1 para **2021**; sí está
+presente en **otro año anterior** dentro de esa edición.
+No es una contradicción de UCDP. Según su
+[metodología oficial](https://www.uu.se/en/department/peace-and-conflict-research/research/ucdp/ucdp-methodology.html),
+GED conserva los eventos de díadas que **hayan superado las
+25 muertes en algún año**, incluso si en un año particular no
+cumplen ese umbral. Dyadic registra únicamente sus **años activos**.
+El [manual oficial de UCDP Candidate](https://ucdp.uu.se/downloads/candidateged/ucdp-candidate-codebook%201.1.pdf)
+explica además que Candidate contiene provisionalmente
+eventos de díadas que aún no cumplen los criterios de
+inclusión anual.
+
+Por tanto, la variable retrospectiva que describe la
+correspondencia entre las fuentes no es solo
+`active(year)`, sino **`ever_active(as_of_annual_version)`**,
+registrada exactamente con el ID de díada original.
+No sabemos que ese estado pudiera conocerse sin
+fuga temporal en la fecha de una supuesta alerta Candidate;
+solo lo conocemos tras cerrar GED y Dyadic anuales.
+
+## Muertes Candidate y edición anual: separadas por fuente
+
+En las diez observaciones positivas originales se contabilizaron
+**364 muertes `best` en Candidate mayo**, sin corregir.
+El reparto por la **actividad durante el año** de sus díadas fue:
+
+| Clasificación Dyadic (mismo año) | Fallecidos Candidate de mayo |
+|---|---:|
+| En díadas que Dyadic marca activas ese año | 312 |
+| En díadas no activas ese año | 52 |
+| **Total** | **364** |
+
+De las 52 muertes en díadas inactivas ese año, **16**
+corresponden a Perú (díada activa en otro año), y
+**36** a los cinco países que pierden la etiqueta GED anual
+(díadas que no figuran activas en ninguna anualidad de
+la edición histórica consultada). Estos recuentos
+Candidate no son *battle-related deaths* anuales Dyadic
+ni corresponden exactamente a su umbral de 25.
+
+## Conclusión y límites
+
+El cotejo con una **segunda familia oficial de UCDP**
+respalda fuertemente —en estos diez casos seleccionados—
+una explicación de la pérdida de etiquetas basada en
+**elegibilidad histórica de las díadas**. El manual de
+UCDP confirma que los eventos GED pueden persistir en
+años subumbrales de díadas previamente activas,
+mientras Candidate admite registros todavía pendientes
+de inclusión.
+
+Pero esto **no demuestra** que ninguna de las seis
+díadas de los cinco casos perdidos fuese real o ficticia:
+una clave ausente puede haber sido recodificada, fusionada,
+dividida o clasificada bajo actores/tipos distintos.
+No se han reconstruido identidades de actores a mano ni
+hecho *fuzzy joins*. La separación perfecta 5/5 frente
+a 0/5 es **postselección**, no pronóstico ni prueba de
+generalización fuera de los diez casos.
+
+**Decisión científica:** cualquier futura tarea de
+*forecasting* debe distinguir entre (a) probabilidad
+de violencia medida con Candidate y (b) probabilidad
+de satisfacer los criterios anuales de las díadas GED.
+Los indicadores de actividad/elegibilidad tomados de
+la edición GED/Dyadic posterior son **fuga temporal**
+y nunca deben usarse como insumos de previsiones
+emitidas antes del cierre. Las 620 probabilidades
+prospectivas anteriores permanecen intactas y
+no se han certificado nuevas alertas de 2026.
