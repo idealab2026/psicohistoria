@@ -28,11 +28,15 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: python3 -B -m unittest discover -s scripts -p 'test_generate_dec2026_pilot.py' -v
       - run: python3 -B scripts/audit_public.py
       - name: Generate public deterministic candidate only on merged main
-        if: ${{ github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' && inputs.generate_candidate == true }}
-        run: python3 -B scripts/generate_dec2026_pilot.py --candidate
+        if: ${{ github.ref == 'refs/heads/main' && (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.generate_candidate == true)) }}
+        run: |
+          git merge-base --is-ancestor e9ff37ba21f0a4994d6baa347c7f932ea5bf9393 HEAD
+          python3 -B scripts/generate_dec2026_pilot.py --candidate
