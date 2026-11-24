@@ -33,7 +33,13 @@ ORIGINAL_URLS = {
     y:f"https://ucdp.uu.se/downloads/dyadic/ucdp-dyadic-{EDITIONS[y]}-csv.zip"
     for y in YEARS
 }
-ZIP_SHA = {2021:None,2022:None,2024:None,2025:None}  # pin AFTER census only
+ZIP_SHA = {
+    # Original ZIPs pinned AFTER header/SHA-only census in Actions run 45413445161.
+    2021:"4b20a049560db91bba52b1c4062ffbfedd706da8eed71928cbbba444da9ea538",
+    2022:"748daa222c45d2e4b43930640ff79ff8b585c3ac404f5dc192776876ef8dd9d1",
+    2024:"e34d26c39d23739ab65bc52fd42747aa88e7ecdf84d16c7bacafd590ed767330",
+    2025:"1f89ca62c82819ecfcd8dd483826bc6760530118ddc63a191a9d4252a2174557",
+}
 MAX_BYTES = 50_000_000
 MAX_UNCOMPRESSED = 300_000_000
 
