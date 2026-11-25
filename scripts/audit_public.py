@@ -207,6 +207,13 @@ REPOSITORY |= {
     "scripts/test_resolve_dec2026_pilot.py",
     ".github/workflows/dec2026-resolution.yml",
 }
+# DEC2026 provisional monitoring contract, no actual observations yet.
+REPOSITORY |= {
+    "docs/dec2026-provisional-monitor.md",
+    "scripts/monitor_dec2026_pilot.py",
+    "scripts/test_monitor_dec2026_pilot.py",
+    ".github/workflows/dec2026-monitor.yml",
+}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
     "scripts/check_ucdp_candidate_asof.py",
