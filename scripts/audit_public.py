@@ -215,7 +215,7 @@ REPOSITORY |= {
     ".github/workflows/dec2026-monitor.yml",
 }
 # COUP source census and reconciliation, institutional references and no raw data.
-REPOSITORY |= {"docs/coup-mean-constraint.md","scripts/experiment_coup_mean_constraint.py","scripts/test_experiment_coup_mean_constraint.py"}
+REPOSITORY |= {"data/coup-mean-constraint.json","docs/coup-mean-constraint.md","scripts/experiment_coup_mean_constraint.py","scripts/test_experiment_coup_mean_constraint.py"}
 REPOSITORY |= {"data/coup-rolling-backtest.json","docs/coup-rolling-backtest.md","scripts/experiment_coup_rolling_backtest.py","scripts/test_experiment_coup_rolling_backtest.py"}
 REPOSITORY |= {"data/coup-origin-panel.json","docs/coup-origin-panel-protocol.md","scripts/audit_coup_origin_panel.py","scripts/test_audit_coup_origin_panel.py"}
 REPOSITORY |= {"data/coup-membership-reconciliation.json","docs/coup-membership-reconciliation.md","scripts/audit_coup_reconciliation.py","scripts/test_audit_coup_reconciliation.py"}
