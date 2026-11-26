@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Audit official coup data bytes and metadata only, before modelling."""
-import csv,hashlib,io,json,re,zipfile
+import csv,hashlib,io,json,re,zipfile,sys
+from pathlib import Path
 from datetime import datetime,timezone
 from html.parser import HTMLParser
 from urllib.parse import urlsplit,urljoin
@@ -89,6 +90,17 @@ def capture():
     return {"status":"SOURCE_CENSUS_ONLY_NO_OUTCOMES","author_page_sha256":meta(page)["sha256"],
       "observed_at_utc":datetime.now(timezone.utc).isoformat(),"sources":out,
       "new_forecasts":0,"modified_forecasts":0,"outcomes_read":0}
+def replay():
+    report=json.loads((Path(__file__).resolve().parents[1]/"data/coup-source-census.json").read_text())
+    for entry in report["sources"]:
+        if entry["provider"]!="Powell-Thyne": continue
+        raw=fetch(entry["url"])
+        if any(entry[k]!=v for k,v in meta(raw).items()):
+            raise ValueError("Frozen author source bytes changed")
+        schema=csv_schema(raw) if entry["url"].endswith(".csv") else xlsx_schema(raw)
+        if any(entry[k]!=v for k,v in schema.items()):
+            raise ValueError("Frozen author schema changed")
+    return report
 if __name__=="__main__":
-    d=capture();print("COUP_CENSUS_BEGIN");print(json.dumps(d,sort_keys=True,indent=2));print("COUP_CENSUS_END")
+    d=replay() if "--check" in sys.argv else capture();print("COUP_CENSUS_BEGIN");print(json.dumps(d,sort_keys=True,indent=2));print("COUP_CENSUS_END")
     if not any(x["status"]=="ORIGINAL_BYTES_OBSERVED" for x in d["sources"]): raise ValueError("No original data bytes available")
