@@ -5,6 +5,9 @@ on:
       - 'scripts/audit_coup_sources.py'
       - 'scripts/audit_coup_membership.py'
       - 'scripts/audit_coup_reconciliation.py'
+      - 'scripts/audit_coup_origin_panel.py'
+      - 'scripts/test_audit_coup_origin_panel.py'
+      - 'docs/coup-origin-panel-protocol.md'
       - 'scripts/test_audit_coup_reconciliation.py'
       - 'docs/coup-membership-reconciliation.md'
       - 'scripts/test_audit_coup_membership.py'
@@ -18,6 +21,9 @@ on:
       - 'scripts/audit_coup_sources.py'
       - 'scripts/audit_coup_membership.py'
       - 'scripts/audit_coup_reconciliation.py'
+      - 'scripts/audit_coup_origin_panel.py'
+      - 'scripts/test_audit_coup_origin_panel.py'
+      - 'docs/coup-origin-panel-protocol.md'
       - 'scripts/test_audit_coup_reconciliation.py'
       - 'docs/coup-membership-reconciliation.md'
       - 'scripts/test_audit_coup_membership.py'
@@ -47,3 +53,5 @@ jobs:
       - run: python3 -B scripts/audit_coup_membership.py --check
       - run: python3 -B -m unittest discover -s scripts -p 'test_audit_coup_reconciliation.py' -v
       - run: python3 -B scripts/audit_coup_reconciliation.py --check
+      - run: python3 -B -m unittest discover -s scripts -p 'test_audit_coup_origin_panel.py' -v
+      - run: python3 -B scripts/audit_coup_origin_panel.py
