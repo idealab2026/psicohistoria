@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Coup/membership reconciliation, not a model or definitive negative-label panel."""
-import csv,hashlib,io,json,re,zipfile
+import csv,hashlib,io,json,re,zipfile,sys
 from collections import Counter,defaultdict
 from datetime import date,timedelta
 from pathlib import Path
@@ -108,5 +108,7 @@ def run():
         "new_forecasts":0,"modified_forecasts":0}
 if __name__=="__main__":
     print("COUP_RECONCILE_BEGIN",flush=True)
-    print(json.dumps(run(),sort_keys=True,indent=2))
+    d=run()
+    if "--check" in sys.argv and d!=json.loads((ROOT/"data/coup-membership-reconciliation.json").read_text()): raise ValueError("Frozen reconciliation mismatch")
+    print(json.dumps(d,sort_keys=True,indent=2))
     print("COUP_RECONCILE_END",flush=True)
