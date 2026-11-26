@@ -216,7 +216,7 @@ REPOSITORY |= {
 }
 # COUP source census only, institutional references and no raw data.
 RELEASE |= {"data/coup-source-census.json"}
-REPOSITORY |= {"data/coup-source-census.json"}
+REPOSITORY |= {"data/coup-source-census.json","scripts/audit_coup_membership.py","scripts/test_audit_coup_membership.py"}
 REPOSITORY |= {"docs/coup-source-census.md","scripts/audit_coup_sources.py","scripts/test_audit_coup_sources.py",".github/workflows/coup-source-census.yml"}
 # Short-horizon scientific source gate: institutional-only code, tests and protocol.
 REPOSITORY |= {
