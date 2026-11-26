@@ -9,6 +9,7 @@ on:
       - 'scripts/experiment_coup_rolling_backtest.py'
       - 'scripts/test_experiment_coup_rolling_backtest.py'
       - 'docs/coup-rolling-backtest.md'
+      - 'data/coup-rolling-backtest.json'
       - 'scripts/test_audit_coup_origin_panel.py'
       - 'docs/coup-origin-panel-protocol.md'
       - 'scripts/test_audit_coup_reconciliation.py'
@@ -29,6 +30,7 @@ on:
       - 'scripts/experiment_coup_rolling_backtest.py'
       - 'scripts/test_experiment_coup_rolling_backtest.py'
       - 'docs/coup-rolling-backtest.md'
+      - 'data/coup-rolling-backtest.json'
       - 'scripts/test_audit_coup_origin_panel.py'
       - 'docs/coup-origin-panel-protocol.md'
       - 'scripts/test_audit_coup_reconciliation.py'
@@ -64,4 +66,4 @@ jobs:
       - run: python3 -B -m unittest discover -s scripts -p 'test_audit_coup_origin_panel.py' -v
       - run: python3 -B scripts/audit_coup_origin_panel.py --check
       - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_coup_rolling_backtest.py' -v
-      - run: python3 -B scripts/experiment_coup_rolling_backtest.py
+      - run: python3 -B scripts/experiment_coup_rolling_backtest.py --check
