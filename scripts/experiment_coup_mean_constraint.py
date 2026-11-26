@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Exploratory intercept correction, no future outcome access or model selection."""
-import json,math
+import json,math,sys
 from experiment_coup_rolling_backtest import forecast,run,ROOT
 from audit_coup_origin_panel import build,summarize
 from experiment_annual_ged_rolling_probability import score
@@ -68,6 +68,7 @@ def main():
     frozen=json.loads((ROOT/"data/coup-rolling-backtest.json").read_text())
     if run(rows)!=frozen["results"]: raise ValueError("Original benchmark changed")
     result=evaluate(rows)
+    if "--check" in sys.argv and result!=json.loads((ROOT/"data/coup-mean-constraint.json").read_text()): raise ValueError("Frozen constraint diagnostic mismatch")
     print("COUP_CONSTRAINT_BEGIN",flush=True)
     raw=json.dumps(result,sort_keys=True,separators=(",",":"))
     for i in range(0,len(raw),4000):print(raw[i:i+4000])
