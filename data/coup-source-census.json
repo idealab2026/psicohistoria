@@ -1,0 +1,101 @@
+{
+  "author_page_sha256": "b1eaa02ff5c1f7cec1b1079c4aa560dedb39f14715f61524b4657e78a1daa2b8",
+  "modified_forecasts": 0,
+  "new_forecasts": 0,
+  "observed_at_utc": "2026-11-25T20:14:41.540002+00:00",
+  "outcomes_read": 0,
+  "sources": [
+    {
+      "archive_label": "2026-08-29",
+      "bytes": 20089,
+      "columns": 9,
+      "header": [
+        "country",
+        "ccode",
+        "ccode_gw",
+        "ccode_polity",
+        "year",
+        "month",
+        "day",
+        "coup",
+        "version"
+      ],
+      "linked_by_author": true,
+      "provider": "Powell-Thyne",
+      "sha256": "1e8f933b22f4b9a77d0ba5eb59bf0d8158adcaab27746adcf345195be87a9012",
+      "status": "ORIGINAL_BYTES_OBSERVED",
+      "url": "https://jonathanmpowell.com/wp-content/uploads/2026/08/pt_20260829.csv"
+    },
+    {
+      "archive_label": "2026-07-08",
+      "bytes": 27007,
+      "linked_by_author": true,
+      "provider": "Powell-Thyne",
+      "sha256": "d25e10d0af2cc47e625de3be1c1fa461124ed18e7fc0c45f49216af0168264b9",
+      "sheet_count": 1,
+      "status": "ORIGINAL_BYTES_OBSERVED",
+      "url": "https://jonathanmpowell.com/wp-content/uploads/2026/08/pt_20260708-1.xlsx",
+      "worksheet_members": 1
+    },
+    {
+      "dates": [
+        {
+          "date": "2025-01-30",
+          "type": "Available"
+        }
+      ],
+      "doi": "10.13012/b2idb-9651987_v8",
+      "expected_version": "2.2.0",
+      "landing_error_type": "HTTPError",
+      "landing_http_status": 403,
+      "landing_url": "https://databank.illinois.edu/datasets/IDB-7633503",
+      "metadata_sha256": "7e6180ede4506e208ceb566ef16014dac0c6a0ed509c7837d5783afbd87d1adf",
+      "provider": "Cline Center",
+      "publication_year": 2025,
+      "status": "DOI_METADATA_ONLY_NO_DATA_BYTES",
+      "version_field": "8"
+    },
+    {
+      "dates": [
+        {
+          "date": "2026-02-10",
+          "type": "Available"
+        },
+        {
+          "date": "2026",
+          "type": "Issued"
+        }
+      ],
+      "doi": "10.13012/b2idb-9651987_v9",
+      "expected_version": "2.2.1",
+      "landing_error_type": "HTTPError",
+      "landing_http_status": 403,
+      "landing_url": "https://databank.illinois.edu/datasets/IDB-4572187",
+      "metadata_sha256": "1bc5b0cc8c37b57fa9a98b608ed6ffb492faa8761f3b8cb2f5e8815d9e762d4d",
+      "provider": "Cline Center",
+      "publication_year": 2026,
+      "status": "DOI_METADATA_ONLY_NO_DATA_BYTES",
+      "version_field": "9"
+    },
+    {
+      "dates": [
+        {
+          "date": "2026-02-17",
+          "type": "Available"
+        }
+      ],
+      "doi": "10.13012/b2idb-9651987_v10",
+      "expected_version": "2.2.2",
+      "landing_error_type": "HTTPError",
+      "landing_http_status": 403,
+      "landing_url": "https://databank.illinois.edu/datasets/IDB-7095878",
+      "metadata_sha256": "d04bbd0b847dffcab89e5ac3f2ac56b84b7f8c813b94eafbe431600947f52da7",
+      "provider": "Cline Center",
+      "publication_year": 2026,
+      "status": "DOI_METADATA_ONLY_NO_DATA_BYTES",
+      "version_field": "10"
+    }
+  ],
+  "status": "SOURCE_CENSUS_ONLY_NO_OUTCOMES",
+  "ci_run_id": "45692883443"
+}
