@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """COW historical membership census; no coup outcomes read."""
-import csv,hashlib,io,json,zipfile,re
+import csv,hashlib,io,json,zipfile,re,sys
+from pathlib import Path
 from collections import Counter
 from datetime import datetime,timezone
 from urllib.request import Request,urlopen
@@ -67,5 +68,14 @@ def run():
         raw=get(url)
         sources.append({"kind":kind,"url":url,**census_zip(raw,kind)})
     return {"status":"MEMBERSHIP_CENSUS_ONLY_NO_COUP_OUTCOMES","observed_at_utc":datetime.now(timezone.utc).isoformat(),"catalogue_sha256":sha(page),"sources":sources,"new_forecasts":0,"modified_forecasts":0}
+def replay():
+    frozen=json.loads((Path(__file__).resolve().parents[1]/"data/coup-membership-census.json").read_text())
+    for entry in frozen["sources"]:
+        kind=entry["kind"]
+        raw=get(URLS[kind])
+        actual=census_zip(raw,kind)
+        if entry["url"]!=URLS[kind] or any(entry[k]!=v for k,v in actual.items()):
+            raise ValueError("Membership source or denominator changed")
+    return frozen
 if __name__=="__main__":
-    d=run();print("COUP_MEMBERSHIP_BEGIN");print(json.dumps(d,sort_keys=True,indent=2));print("COUP_MEMBERSHIP_END")
+    d=replay() if "--check" in sys.argv else run();print("COUP_MEMBERSHIP_BEGIN");print(json.dumps(d,sort_keys=True,indent=2));print("COUP_MEMBERSHIP_END")
