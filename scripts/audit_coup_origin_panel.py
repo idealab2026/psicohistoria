@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Frozen-origin COUP label sensitivity; no model fit, no forecast."""
-import csv,io,json
+import csv,io,json,sys
 from collections import Counter
 from datetime import date
 from audit_coup_reconciliation import ROOT,FIRST,LAST,pinned,rows,memberships,reconcile
@@ -70,5 +70,7 @@ def build():
 if __name__=="__main__":
     p,d=build()
     print("COUP_PANEL_BEGIN",flush=True)
-    print(json.dumps(summarize(p,d),sort_keys=True,indent=2))
+    report=summarize(p,d)
+    if "--check" in sys.argv and report!=json.loads((ROOT/"data/coup-origin-panel.json").read_text()): raise ValueError("Frozen panel report mismatch")
+    print(json.dumps(report,sort_keys=True,indent=2))
     print("COUP_PANEL_END",flush=True)
