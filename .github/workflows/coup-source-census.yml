@@ -10,6 +10,7 @@ on:
       - 'scripts/test_audit_coup_membership.py'
       - 'data/coup-source-census.json'
       - 'data/coup-membership-census.json'
+      - 'data/coup-membership-reconciliation.json'
       - 'scripts/test_audit_coup_sources.py'
       - '.github/workflows/coup-source-census.yml'
   pull_request:
@@ -22,6 +23,7 @@ on:
       - 'scripts/test_audit_coup_membership.py'
       - 'data/coup-source-census.json'
       - 'data/coup-membership-census.json'
+      - 'data/coup-membership-reconciliation.json'
       - 'scripts/test_audit_coup_sources.py'
       - '.github/workflows/coup-source-census.yml'
   workflow_dispatch:
@@ -44,4 +46,4 @@ jobs:
       - run: python3 -B -m unittest discover -s scripts -p 'test_audit_coup_membership.py' -v
       - run: python3 -B scripts/audit_coup_membership.py --check
       - run: python3 -B -m unittest discover -s scripts -p 'test_audit_coup_reconciliation.py' -v
-      - run: python3 -B scripts/audit_coup_reconciliation.py
+      - run: python3 -B scripts/audit_coup_reconciliation.py --check
