@@ -16,23 +16,38 @@ def constrain(p,target):
         if sum(sigmoid(x+mid) for x in logit)/len(p)<target:lo=mid
         else:hi=mid
     delta=(lo+hi)/2
-    out=[sigmoid(x+delta) for x in logit]
+    # The exact real-valued transform is strictly monotone. Binary64
+    # can collapse adjacent inputs into one output or invert them by rounding.
+    # Preserve the frozen ordering using minimal representable increments.
+    # Identical input floats are always mapped to identical output floats.
+    mapped={};previous=None;repairs=0;max_adjustment=0.
+    for value in sorted(set(p)):
+        ideal=sigmoid(math.log(value)-math.log1p(-value)+delta)
+        corrected=ideal
+        if previous is not None and corrected<=previous:
+            corrected=math.nextafter(previous,math.inf)
+            repairs+=1
+        adjustment=abs(corrected-ideal)
+        if adjustment>1e-14: raise ValueError("Non-negligible rank repair")
+        max_adjustment=max(max_adjustment,adjustment)
+        mapped[value]=corrected;previous=corrected
+    out=[mapped[x] for x in p]
     if abs(sum(out)/len(out)-target)>1e-12 or any(not 0<x<1 for x in out): raise ValueError("Mean constraint failed")
     ordered=sorted(set(zip(p,out)))
     if any(a>=b or x>=y for (a,x),(b,y) in zip(ordered,ordered[1:])): raise ValueError("Ranking or ties changed")
-    return out,delta
+    return out,delta,{"repaired_distinct_values":repairs,"max_adjustment":max_adjustment}
 def evaluate(rows):
     names=("global_recent","country_history","country_constrained","prior5_group","prior5_constrained")
     allp={m:[] for m in names};labels=[];folds=[]
     for y in range(1980,2025):
         test,p=forecast(rows,y);obs=[x[2] for x in test];labels+=obs
         g=[x[1] for x in p];c=[x[2] for x in p];r=[x[3] for x in p]
-        cc,dc=constrain(c,g[0]);rr,dr=constrain(r,g[0])
+        cc,dc,rc=constrain(c,g[0]);rr,dr,rrp=constrain(r,g[0])
         probs=dict(zip(names,(g,c,cc,r,rr)))
         scores={m:score(v,obs) for m,v in probs.items()}
         for m,v in probs.items():allp[m]+=v
         folds.append({"year":y,"n":len(obs),"positives":sum(obs),"scores":scores,
-            "country_intercept":dc,"prior5_intercept":dr})
+            "country_intercept":dc,"prior5_intercept":dr,"country_numeric_repair":{**rc,"max_adjustment":format(rc["max_adjustment"],".17g")},"prior5_numeric_repair":{**rrp,"max_adjustment":format(rrp["max_adjustment"],".17g")}})
     base=score(allp["global_recent"],labels);results={};n=len(labels)
     for m in names:
         s=score(allp[m],labels)
