@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """FIN-01C fixed monthly return and direction models."""
-import hashlib, json, math, statistics
+import hashlib, json, math, statistics, sys
+from pathlib import Path
 from experiment_fin01_monthly_downside import retrieve,parse,month_index
 
 SHA="fc9e41cc3b66c62fa8f565a01fb4c8c0d7962c777303c46b8ab7102190b98ea2"
@@ -78,5 +79,8 @@ def run():
 
 if __name__=="__main__":
     print("FIN01_DIRECTION_BEGIN",flush=True)
-    print(json.dumps(run(),sort_keys=True,indent=2,allow_nan=False))
+    report=run()
+    if "--check" in sys.argv and report!=json.loads((Path(__file__).resolve().parents[1]/"data/fin01-direction.json").read_text()):
+        raise ValueError("Frozen direction benchmark differs")
+    print(json.dumps(report,sort_keys=True,indent=2,allow_nan=False))
     print("FIN01_DIRECTION_END",flush=True)
