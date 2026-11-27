@@ -1,0 +1,18 @@
+{
+  "schema": "idealab.psico.fin_dic2026.publication.v1",
+  "status": "ISSUED_EXPERIMENTAL_UNRESOLVED",
+  "candidate_file": "data/forecast-fin-dic2026.json",
+  "candidate_sha256": "ff8cd766d67b2f1f124c540c4941a7b6b534bdda7b5bc97ac63218a439a63f6a",
+  "candidate_run_id": "46019614340",
+  "candidate_run_head": "7bb953cae2462f1dd163a3895cc99e1439ddcc8a",
+  "candidate_job_id": "140575539150",
+  "protocol_commit": "2c9aa2237d497788dff677513f4799190ce96bb2",
+  "first_public_candidate_at_utc": "2026-11-27T14:52:24Z",
+  "first_document_commit": "6f3e2e35a394305356a433298955845005591f0c",
+  "document_published_at_utc": "2026-11-27T14:52:45Z",
+  "publication_deadline_utc": "2026-12-01T00:00:00Z",
+  "time_evidence_note": "Successful public run completion and first GitHub document commit metadata, not independent notarization; main integration pending.",
+  "independently_notarized": false,
+  "outcomes_resolved": 0,
+  "demonstrated_predictive_skill": false
+}
