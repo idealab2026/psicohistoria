@@ -28,7 +28,7 @@ def retrieve():
     if not raw or len(raw)>LIMIT: raise ValueError("Source size invalid")
     return raw
 
-def parse(raw):
+def parse(raw,end_month="202412"):
     with zipfile.ZipFile(io.BytesIO(raw)) as z:
         items=z.infolist()
         if sum(i.file_size for i in items)>20_000_000 or any(i.filename.startswith("/") or ".." in i.filename.split("/") for i in items):
@@ -58,8 +58,8 @@ def parse(raw):
         total=(vals[0]+vals[3])/100
         if not -1<total<1: raise ValueError("Unexpected market return")
         out[idx]=float(total)
-    first,last=month_index("192607"),month_index("202412")
-    if set(out)!=set(range(first,last+1)): raise ValueError("Monthly coverage not exactly 1926-07..2024-12")
+    first,last=month_index("192607"),month_index(end_month)
+    if set(out)!=set(range(first,last+1)): raise ValueError("Monthly coverage not exactly source cut")
     return out,files[0].filename
 
 def label(x):
