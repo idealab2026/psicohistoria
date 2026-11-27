@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Historical fixed-roster sensitivity, missing-label bounds, no issuance."""
-import json, math
+import json, math, sys
 from audit_coup_fixed_cohort import ROOT, cohort, summarize
 from audit_coup_reconciliation import pinned, rows, memberships
 from audit_coup_membership import get, URLS
@@ -94,5 +94,8 @@ def run():
 
 if __name__=="__main__":
     print("COUP_ROSTER_SCORE_BEGIN",flush=True)
-    print(json.dumps(run(),sort_keys=True,indent=2))
+    report=run()
+    if "--check" in sys.argv and report!=json.loads((ROOT/"data/coup-fixed-cohort-score.json").read_text()):
+        raise ValueError("Frozen fixed cohort score differs")
+    print(json.dumps(report,sort_keys=True,indent=2))
     print("COUP_ROSTER_SCORE_END",flush=True)
