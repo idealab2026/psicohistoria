@@ -4,7 +4,7 @@ import hashlib, json
 from pathlib import Path
 from urllib.request import Request,urlopen
 from html.parser import HTMLParser
-from urllib.parse import urljoin
+from urllib.parse import urljoin, quote
 from experiment_fin01_monthly_downside import (URL,LIMIT,parse,month_index,month_name,
     label,predict,summary,evaluate)
 
@@ -22,7 +22,7 @@ class Links(HTMLParser):
         super().__init__();self.urls=set()
     def handle_starttag(self,tag,attrs):
         if tag=="a" and dict(attrs).get("href"):
-            self.urls.add(urljoin(CATALOGUE,dict(attrs)["href"]))
+            self.urls.add(quote(urljoin(CATALOGUE,dict(attrs)["href"]),safe=":/%"))
 
 def get(url):
     if url not in (CATALOGUE,URL,*SOURCES.values()):
