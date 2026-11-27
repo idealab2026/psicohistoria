@@ -24,6 +24,9 @@ on:
       - 'scripts/experiment_coup2025_temporal_extension.py'
       - 'scripts/test_experiment_coup2025_temporal_extension.py'
       - 'docs/coup2025-temporal-extension-protocol.md'
+      - 'docs/coup2027-resolution-draft.md'
+      - 'scripts/resolve_coup2027_contract.py'
+      - 'scripts/test_resolve_coup2027_contract.py'
       - 'docs/coup-temporal-uncertainty.md'
       - 'scripts/test_experiment_coup_rolling_backtest.py'
       - 'docs/coup-rolling-backtest.md'
@@ -63,6 +66,9 @@ on:
       - 'scripts/experiment_coup2025_temporal_extension.py'
       - 'scripts/test_experiment_coup2025_temporal_extension.py'
       - 'docs/coup2025-temporal-extension-protocol.md'
+      - 'docs/coup2027-resolution-draft.md'
+      - 'scripts/resolve_coup2027_contract.py'
+      - 'scripts/test_resolve_coup2027_contract.py'
       - 'docs/coup-temporal-uncertainty.md'
       - 'scripts/test_experiment_coup_rolling_backtest.py'
       - 'docs/coup-rolling-backtest.md'
@@ -112,3 +118,4 @@ jobs:
       - run: python3 -B scripts/experiment_coup_fixed_cohort.py --check
       - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_coup2025_temporal_extension.py' -v
       - run: python3 -B scripts/experiment_coup2025_temporal_extension.py
+      - run: python3 -B -m unittest discover -s scripts -p 'test_resolve_coup2027_contract.py' -v
