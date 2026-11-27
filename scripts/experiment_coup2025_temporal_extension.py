@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """One-year retrospective extension; fixed source-record endpoint, no issuance."""
-import csv, io, json
+import csv, io, json, sys
 from datetime import date
 from audit_coup_fixed_cohort import ROOT, cohort, summarize
 from audit_coup_reconciliation import pinned, rows, memberships
@@ -79,5 +79,8 @@ def run():
 
 if __name__=="__main__":
     print("COUP2025_EXTENSION_BEGIN",flush=True)
-    print(json.dumps(run(),sort_keys=True,indent=2))
+    report=run()
+    if "--check" in sys.argv and report!=json.loads((ROOT/"data/coup2025-temporal-extension.json").read_text()):
+        raise ValueError("Frozen 2025 extension differs")
+    print(json.dumps(report,sort_keys=True,indent=2))
     print("COUP2025_EXTENSION_END",flush=True)
