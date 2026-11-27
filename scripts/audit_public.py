@@ -214,6 +214,8 @@ REPOSITORY |= {
     "scripts/test_monitor_dec2026_pilot.py",
     ".github/workflows/dec2026-monitor.yml",
 }
+# COUP 2025 retrospective extension; no issued forecasts or event data.
+REPOSITORY |= {"scripts/experiment_coup2025_temporal_extension.py", "scripts/test_experiment_coup2025_temporal_extension.py", "docs/coup2025-temporal-extension-protocol.md"}
 # COUP fixed-roster score sensitivity, aggregate-only research.
 REPOSITORY |= {"scripts/experiment_coup_fixed_cohort.py", "scripts/test_experiment_coup_fixed_cohort.py", "docs/coup-fixed-cohort-score-protocol.md", "data/coup-fixed-cohort-score.json"}
 # COUP frozen-roster feasibility, source-only research.
