@@ -214,6 +214,8 @@ REPOSITORY |= {
     "scripts/test_monitor_dec2026_pilot.py",
     ".github/workflows/dec2026-monitor.yml",
 }
+# FIN-01 source-separated revision research; no raw observations.
+REPOSITORY |= {"docs/fin01-vintage-extension-protocol.md", "scripts/experiment_fin01_vintage_extension.py", "scripts/test_experiment_fin01_vintage_extension.py"}
 # FIN-01 aggregate-only historical financial research; raw market observations are not redistributed.
 REPOSITORY |= {"data/fin01-monthly-downside.json", "docs/fin01-monthly-downside-protocol.md", "scripts/experiment_fin01_monthly_downside.py", "scripts/test_experiment_fin01_monthly_downside.py", ".github/workflows/fin01-monthly-downside.yml"}
 # COUP temporal uncertainty, aggregate-only institutional research; not a Pages release.
