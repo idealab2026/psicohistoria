@@ -1,0 +1,28 @@
+name: FIN-01 publication lag and source census
+on:
+  push:
+    paths:
+      - 'scripts/experiment_fin01_publication_lag.py'
+      - 'scripts/test_experiment_fin01_publication_lag.py'
+      - 'docs/fin01-publication-lag-protocol.md'
+      - '.github/workflows/fin01-publication-lag.yml'
+  pull_request:
+    paths:
+      - 'scripts/experiment_fin01_publication_lag.py'
+      - 'scripts/test_experiment_fin01_publication_lag.py'
+      - 'docs/fin01-publication-lag-protocol.md'
+      - '.github/workflows/fin01-publication-lag.yml'
+permissions:
+  contents: read
+jobs:
+  lag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -B scripts/audit_public.py
+      - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_fin01_publication_lag.py' -v
+      - run: python3 -B scripts/experiment_fin01_publication_lag.py
