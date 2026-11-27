@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Source-only historical roster drift; no coup data, model or forecast."""
-import json
+import json, sys
 from audit_coup_reconciliation import ROOT, pinned, rows, memberships
 from audit_coup_membership import get, URLS, census_zip
 
@@ -63,5 +63,8 @@ def run():
 
 if __name__ == "__main__":
     print("COUP_ROSTER_BEGIN", flush=True)
-    print(json.dumps(run(), sort_keys=True, indent=2))
+    report = run()
+    if "--check" in sys.argv and report != json.loads((ROOT/"data/coup-fixed-cohort-audit.json").read_text()):
+        raise ValueError("Frozen roster audit differs")
+    print(json.dumps(report, sort_keys=True, indent=2))
     print("COUP_ROSTER_END", flush=True)
