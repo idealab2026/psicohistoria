@@ -223,7 +223,7 @@ REPOSITORY |= {"docs/fin01-publication-lag-protocol.md", "scripts/experiment_fin
 # FIN-01 source-separated revision research; no raw observations.
 REPOSITORY |= {"docs/fin01-vintage-extension-protocol.md", "scripts/experiment_fin01_vintage_extension.py", "scripts/test_experiment_fin01_vintage_extension.py"}
 # FIN-01C direction and expected return, aggregate research only.
-REPOSITORY |= {"docs/fin01-direction-protocol.md", "scripts/experiment_fin01_direction.py", "scripts/test_experiment_fin01_direction.py", ".github/workflows/fin01-direction.yml"}
+REPOSITORY |= {"data/fin01-direction.json", "docs/fin01-direction-protocol.md", "scripts/experiment_fin01_direction.py", "scripts/test_experiment_fin01_direction.py", ".github/workflows/fin01-direction.yml"}
 # FIN-01B realized volatility; aggregate research only.
 REPOSITORY |= {"data/fin01-volatility.json", "docs/fin01-volatility-protocol.md", "scripts/experiment_fin01_volatility.py", "scripts/test_experiment_fin01_volatility.py", ".github/workflows/fin01-volatility.yml"}
 # FIN-01 aggregate-only historical financial research; raw market observations are not redistributed.
