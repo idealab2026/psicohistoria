@@ -4,6 +4,8 @@ on:
     paths:
       - 'docs/fin01-direction-protocol.md'
       - 'data/fin01-direction.json'
+      - 'docs/fin01-paired-uncertainty.md'
+      - 'scripts/experiment_fin01_paired_uncertainty.py'
       - 'scripts/experiment_fin01_direction.py'
       - 'scripts/test_experiment_fin01_direction.py'
       - '.github/workflows/fin01-direction.yml'
@@ -11,6 +13,8 @@ on:
     paths:
       - 'docs/fin01-direction-protocol.md'
       - 'data/fin01-direction.json'
+      - 'docs/fin01-paired-uncertainty.md'
+      - 'scripts/experiment_fin01_paired_uncertainty.py'
       - 'scripts/experiment_fin01_direction.py'
       - 'scripts/test_experiment_fin01_direction.py'
       - '.github/workflows/fin01-direction.yml'
@@ -28,3 +32,4 @@ jobs:
       - run: python3 -B scripts/audit_public.py
       - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_fin01_direction.py' -v
       - run: python3 -B scripts/experiment_fin01_direction.py --check
+      - run: python3 -B scripts/experiment_fin01_paired_uncertainty.py
