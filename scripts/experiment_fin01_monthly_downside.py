@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """FIN-01 preregistered monthly downside retrospective benchmark."""
-import csv, hashlib, io, json, math, re, statistics, zipfile
+import csv, hashlib, io, json, math, re, statistics, zipfile, sys
+from pathlib import Path
 from collections import defaultdict
 from decimal import Decimal
 from urllib.request import Request, urlopen
@@ -132,5 +133,8 @@ def run():
 
 if __name__=="__main__":
     print("FIN01_BEGIN",flush=True)
-    print(json.dumps(run(),sort_keys=True,indent=2))
+    report=run()
+    if "--check" in sys.argv and report!=json.loads((Path(__file__).resolve().parents[1]/"data/fin01-monthly-downside.json").read_text()):
+        raise ValueError("Frozen FIN-01 benchmark differs")
+    print(json.dumps(report,sort_keys=True,indent=2))
     print("FIN01_END",flush=True)
