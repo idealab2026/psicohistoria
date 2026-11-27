@@ -214,6 +214,8 @@ REPOSITORY |= {
     "scripts/test_monitor_dec2026_pilot.py",
     ".github/workflows/dec2026-monitor.yml",
 }
+# COUP 2027 draft resolution contract: synthetic tests only, no source or forecasts.
+REPOSITORY |= {"docs/coup2027-resolution-draft.md", "scripts/resolve_coup2027_contract.py", "scripts/test_resolve_coup2027_contract.py"}
 # COUP 2025 retrospective extension; no issued forecasts or event data.
 REPOSITORY |= {"scripts/experiment_coup2025_temporal_extension.py", "scripts/test_experiment_coup2025_temporal_extension.py", "docs/coup2025-temporal-extension-protocol.md"}
 # COUP fixed-roster score sensitivity, aggregate-only research.
