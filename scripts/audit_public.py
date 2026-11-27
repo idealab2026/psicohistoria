@@ -214,6 +214,8 @@ REPOSITORY |= {
     "scripts/test_monitor_dec2026_pilot.py",
     ".github/workflows/dec2026-monitor.yml",
 }
+# COUP frozen-roster feasibility, source-only research.
+REPOSITORY |= {"scripts/audit_coup_fixed_cohort.py", "scripts/test_audit_coup_fixed_cohort.py", "docs/coup-fixed-cohort-audit.md"}
 # COUP temporal uncertainty, aggregate-only institutional research; not a Pages release.
 REPOSITORY |= {"scripts/experiment_coup_temporal_uncertainty.py", "data/coup-temporal-uncertainty.json", "docs/coup-temporal-uncertainty.md"}
 # COUP source census and reconciliation, institutional references and no raw data.
