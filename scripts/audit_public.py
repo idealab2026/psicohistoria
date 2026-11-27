@@ -214,6 +214,12 @@ REPOSITORY |= {
     "scripts/test_monitor_dec2026_pilot.py",
     ".github/workflows/dec2026-monitor.yml",
 }
+# FIN-DIC2026 frozen issuance and evidence, no raw source data.
+REPOSITORY |= {"data/forecast-fin-dic2026.json", "data/forecast-fin-dic2026-manifest.json", "scripts/audit_fin_dic2026_issuance.py", ".github/workflows/fin-dic2026-immutable.yml"}
+# FIN-DIC2026 pretarget candidate experiment; not a Pages release.
+REPOSITORY |= {"docs/fin-dic2026-candidate-protocol.md", "scripts/generate_fin_dic2026_candidate.py", "scripts/test_generate_fin_dic2026_candidate.py"}
+# FIN-01 publication lag and current archive census; no issued forecasts or raw data.
+REPOSITORY |= {"docs/fin01-publication-lag-protocol.md", "scripts/experiment_fin01_publication_lag.py", "scripts/test_experiment_fin01_publication_lag.py", ".github/workflows/fin01-publication-lag.yml"}
 # FIN-01 source-separated revision research; no raw observations.
 REPOSITORY |= {"docs/fin01-vintage-extension-protocol.md", "scripts/experiment_fin01_vintage_extension.py", "scripts/test_experiment_fin01_vintage_extension.py"}
 # FIN-01 aggregate-only historical financial research; raw market observations are not redistributed.

@@ -1,0 +1,16 @@
+name: FIN-DIC2026 immutable issuance audit
+on:
+  push:
+    paths:
+      - 'data/forecast-fin-dic2026*.json'
+      - 'scripts/audit_fin_dic2026_issuance.py'
+      - '.github/workflows/fin-dic2026-immutable.yml'
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -B scripts/audit_fin_dic2026_issuance.py
