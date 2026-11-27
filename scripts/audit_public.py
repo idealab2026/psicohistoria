@@ -214,6 +214,8 @@ REPOSITORY |= {
     "scripts/test_monitor_dec2026_pilot.py",
     ".github/workflows/dec2026-monitor.yml",
 }
+# COUP source-vintage bridge; aggregate-only revision counts.
+REPOSITORY |= {"docs/coup-source-vintage-bridge.md", "scripts/audit_coup_source_vintage_bridge.py", "scripts/test_audit_coup_source_vintage_bridge.py"}
 # COUP 2025 retrospective extension; no issued forecasts or event data.
 REPOSITORY |= {"scripts/experiment_coup2025_temporal_extension.py", "scripts/test_experiment_coup2025_temporal_extension.py", "docs/coup2025-temporal-extension-protocol.md", "data/coup2025-temporal-extension.json"}
 # COUP fixed-roster score sensitivity, aggregate-only research.
