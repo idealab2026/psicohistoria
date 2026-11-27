@@ -1,0 +1,28 @@
+name: FIN-01C monthly direction and return
+on:
+  push:
+    paths:
+      - 'docs/fin01-direction-protocol.md'
+      - 'scripts/experiment_fin01_direction.py'
+      - 'scripts/test_experiment_fin01_direction.py'
+      - '.github/workflows/fin01-direction.yml'
+  pull_request:
+    paths:
+      - 'docs/fin01-direction-protocol.md'
+      - 'scripts/experiment_fin01_direction.py'
+      - 'scripts/test_experiment_fin01_direction.py'
+      - '.github/workflows/fin01-direction.yml'
+permissions:
+  contents: read
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -B scripts/audit_public.py
+      - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_fin01_direction.py' -v
+      - run: python3 -B scripts/experiment_fin01_direction.py
