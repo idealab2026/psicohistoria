@@ -13,6 +13,18 @@ on:
       - 'data/coup-mean-constraint.json'
       - 'scripts/experiment_coup_temporal_uncertainty.py'
       - 'data/coup-temporal-uncertainty.json'
+      - 'scripts/audit_coup_fixed_cohort.py'
+      - 'scripts/test_audit_coup_fixed_cohort.py'
+      - 'docs/coup-fixed-cohort-audit.md'
+      - 'data/coup-fixed-cohort-audit.json'
+      - 'scripts/experiment_coup_fixed_cohort.py'
+      - 'scripts/test_experiment_coup_fixed_cohort.py'
+      - 'docs/coup-fixed-cohort-score-protocol.md'
+      - 'data/coup-fixed-cohort-score.json'
+      - 'scripts/experiment_coup2025_temporal_extension.py'
+      - 'scripts/test_experiment_coup2025_temporal_extension.py'
+      - 'docs/coup2025-temporal-extension-protocol.md'
+      - 'data/coup2025-temporal-extension.json'
       - 'docs/coup-temporal-uncertainty.md'
       - 'scripts/test_experiment_coup_rolling_backtest.py'
       - 'docs/coup-rolling-backtest.md'
@@ -41,6 +53,18 @@ on:
       - 'data/coup-mean-constraint.json'
       - 'scripts/experiment_coup_temporal_uncertainty.py'
       - 'data/coup-temporal-uncertainty.json'
+      - 'scripts/audit_coup_fixed_cohort.py'
+      - 'scripts/test_audit_coup_fixed_cohort.py'
+      - 'docs/coup-fixed-cohort-audit.md'
+      - 'data/coup-fixed-cohort-audit.json'
+      - 'scripts/experiment_coup_fixed_cohort.py'
+      - 'scripts/test_experiment_coup_fixed_cohort.py'
+      - 'docs/coup-fixed-cohort-score-protocol.md'
+      - 'data/coup-fixed-cohort-score.json'
+      - 'scripts/experiment_coup2025_temporal_extension.py'
+      - 'scripts/test_experiment_coup2025_temporal_extension.py'
+      - 'docs/coup2025-temporal-extension-protocol.md'
+      - 'data/coup2025-temporal-extension.json'
       - 'docs/coup-temporal-uncertainty.md'
       - 'scripts/test_experiment_coup_rolling_backtest.py'
       - 'docs/coup-rolling-backtest.md'
@@ -84,3 +108,9 @@ jobs:
       - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_coup_mean_constraint.py' -v
       - run: python3 -B scripts/experiment_coup_mean_constraint.py --check
       - run: python3 -B scripts/experiment_coup_temporal_uncertainty.py --check
+      - run: python3 -B -m unittest discover -s scripts -p 'test_audit_coup_fixed_cohort.py' -v
+      - run: python3 -B scripts/audit_coup_fixed_cohort.py --check
+      - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_coup_fixed_cohort.py' -v
+      - run: python3 -B scripts/experiment_coup_fixed_cohort.py --check
+      - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_coup2025_temporal_extension.py' -v
+      - run: python3 -B scripts/experiment_coup2025_temporal_extension.py --check
