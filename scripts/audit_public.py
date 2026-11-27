@@ -214,6 +214,8 @@ REPOSITORY |= {
     "scripts/test_monitor_dec2026_pilot.py",
     ".github/workflows/dec2026-monitor.yml",
 }
+# COUP fixed-roster score sensitivity, aggregate-only research.
+REPOSITORY |= {"scripts/experiment_coup_fixed_cohort.py", "scripts/test_experiment_coup_fixed_cohort.py", "docs/coup-fixed-cohort-score-protocol.md"}
 # COUP frozen-roster feasibility, source-only research.
 REPOSITORY |= {"scripts/audit_coup_fixed_cohort.py", "scripts/test_audit_coup_fixed_cohort.py", "docs/coup-fixed-cohort-audit.md", "data/coup-fixed-cohort-audit.json"}
 # COUP temporal uncertainty, aggregate-only institutional research; not a Pages release.
