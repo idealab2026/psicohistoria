@@ -215,7 +215,7 @@ REPOSITORY |= {
     ".github/workflows/dec2026-monitor.yml",
 }
 # FIN-01 aggregate-only historical financial research; raw market observations are not redistributed.
-REPOSITORY |= {"docs/fin01-monthly-downside-protocol.md", "scripts/experiment_fin01_monthly_downside.py", "scripts/test_experiment_fin01_monthly_downside.py", ".github/workflows/fin01-monthly-downside.yml"}
+REPOSITORY |= {"data/fin01-monthly-downside.json", "docs/fin01-monthly-downside-protocol.md", "scripts/experiment_fin01_monthly_downside.py", "scripts/test_experiment_fin01_monthly_downside.py", ".github/workflows/fin01-monthly-downside.yml"}
 # COUP temporal uncertainty, aggregate-only institutional research; not a Pages release.
 REPOSITORY |= {"scripts/experiment_coup_temporal_uncertainty.py", "data/coup-temporal-uncertainty.json", "docs/coup-temporal-uncertainty.md"}
 # COUP source census and reconciliation, institutional references and no raw data.
