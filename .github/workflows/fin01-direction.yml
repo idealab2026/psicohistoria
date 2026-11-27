@@ -3,12 +3,14 @@ on:
   push:
     paths:
       - 'docs/fin01-direction-protocol.md'
+      - 'data/fin01-direction.json'
       - 'scripts/experiment_fin01_direction.py'
       - 'scripts/test_experiment_fin01_direction.py'
       - '.github/workflows/fin01-direction.yml'
   pull_request:
     paths:
       - 'docs/fin01-direction-protocol.md'
+      - 'data/fin01-direction.json'
       - 'scripts/experiment_fin01_direction.py'
       - 'scripts/test_experiment_fin01_direction.py'
       - '.github/workflows/fin01-direction.yml'
@@ -25,4 +27,4 @@ jobs:
           python-version: '3.12'
       - run: python3 -B scripts/audit_public.py
       - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_fin01_direction.py' -v
-      - run: python3 -B scripts/experiment_fin01_direction.py
+      - run: python3 -B scripts/experiment_fin01_direction.py --check
