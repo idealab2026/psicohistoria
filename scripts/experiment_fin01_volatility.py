@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """FIN-01B fixed monthly realized-volatility benchmark; no issuance."""
-import csv, hashlib, io, json, math, re, zipfile
+import csv, hashlib, io, json, math, re, zipfile, sys
+from pathlib import Path
 from collections import defaultdict
 from datetime import datetime
 from decimal import Decimal
@@ -104,5 +105,8 @@ def run():
 
 if __name__=="__main__":
     print("FIN01_VOL_BEGIN",flush=True)
-    print(json.dumps(run(),sort_keys=True,indent=2))
+    report=run()
+    if "--check" in sys.argv and report!=json.loads((Path(__file__).resolve().parents[1]/"data/fin01-volatility.json").read_text()):
+        raise ValueError("Frozen volatility benchmark differs")
+    print(json.dumps(report,sort_keys=True,indent=2))
     print("FIN01_VOL_END",flush=True)
