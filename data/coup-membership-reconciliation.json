@@ -1,0 +1,62 @@
+{
+  "events": {
+    "event_diagnostics": {
+      "date_outside_membership": 3,
+      "in_scope_rows": 493,
+      "matched_rows": 490,
+      "out_of_scope_year": 4,
+      "source_rows": 497,
+      "unmatched_in_scope_rows": 3
+    },
+    "matched_rows_by_outcome": {
+      "1": 247,
+      "2": 243
+    },
+    "matched_unique_positive_country_years": 423,
+    "positive_years_entering_after_jan1": 2,
+    "positive_years_in_full_year_membership": 421,
+    "positive_years_in_jan1_membership": 421
+  },
+  "membership": {
+    "any_day": {
+      "interval_only": 0,
+      "rows": 11797,
+      "system_only": 0
+    },
+    "codes_with_separate_membership_spans": 26,
+    "dec31": {
+      "interval_only": 0,
+      "rows": 11790,
+      "system_only": 7
+    },
+    "entered_after_jan1": 123,
+    "full_year": {
+      "interval_only": 0,
+      "rows": 11667,
+      "system_only": 130
+    },
+    "jan1": {
+      "interval_only": 0,
+      "rows": 11674,
+      "system_only": 123
+    },
+    "jan1_not_full_year": 7,
+    "jul1": {
+      "interval_only": 0,
+      "rows": 11704,
+      "system_only": 93
+    },
+    "overlapping_interval_pairs": 1,
+    "system_rows": 11797
+  },
+  "modified_forecasts": 0,
+  "new_forecasts": 0,
+  "source_sha256": [
+    "1e8f933b22f4b9a77d0ba5eb59bf0d8158adcaab27746adcf345195be87a9012",
+    "c11689e8c0aa70ede855f6b605c4dd71c7b04122b71d5827dab5ba06b32e2015",
+    "de7cae05d9908cff3606df185518cda380dbdc4c4f24739e72b0b13c1cb4a3d4"
+  ],
+  "status": "RECONCILIATION_ONLY_NO_MODEL_NO_FINAL_NEGATIVES",
+  "year_end": 2024,
+  "year_start": 1950
+}

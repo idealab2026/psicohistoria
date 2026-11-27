@@ -1,0 +1,468 @@
+{
+  "annual": [
+    {
+      "n": 75,
+      "relaxed_positive": 2,
+      "strict_positive": 2,
+      "year": 1950
+    },
+    {
+      "n": 75,
+      "relaxed_positive": 5,
+      "strict_positive": 5,
+      "year": 1951
+    },
+    {
+      "n": 76,
+      "relaxed_positive": 5,
+      "strict_positive": 5,
+      "year": 1952
+    },
+    {
+      "n": 77,
+      "relaxed_positive": 3,
+      "strict_positive": 3,
+      "year": 1953
+    },
+    {
+      "n": 79,
+      "relaxed_positive": 6,
+      "strict_positive": 6,
+      "year": 1954
+    },
+    {
+      "n": 82,
+      "relaxed_positive": 5,
+      "strict_positive": 5,
+      "year": 1955
+    },
+    {
+      "n": 85,
+      "relaxed_positive": 5,
+      "strict_positive": 5,
+      "year": 1956
+    },
+    {
+      "n": 87,
+      "relaxed_positive": 6,
+      "strict_positive": 6,
+      "year": 1957
+    },
+    {
+      "n": 89,
+      "relaxed_positive": 9,
+      "strict_positive": 9,
+      "year": 1958
+    },
+    {
+      "n": 89,
+      "relaxed_positive": 5,
+      "strict_positive": 5,
+      "year": 1959
+    },
+    {
+      "n": 90,
+      "relaxed_positive": 9,
+      "strict_positive": 9,
+      "year": 1960
+    },
+    {
+      "n": 107,
+      "relaxed_positive": 9,
+      "strict_positive": 9,
+      "year": 1961
+    },
+    {
+      "n": 111,
+      "relaxed_positive": 11,
+      "strict_positive": 11,
+      "year": 1962
+    },
+    {
+      "n": 117,
+      "relaxed_positive": 14,
+      "strict_positive": 14,
+      "year": 1963
+    },
+    {
+      "n": 119,
+      "relaxed_positive": 6,
+      "strict_positive": 6,
+      "year": 1964
+    },
+    {
+      "n": 121,
+      "relaxed_positive": 9,
+      "strict_positive": 9,
+      "year": 1965
+    },
+    {
+      "n": 125,
+      "relaxed_positive": 14,
+      "strict_positive": 14,
+      "year": 1966
+    },
+    {
+      "n": 129,
+      "relaxed_positive": 7,
+      "strict_positive": 7,
+      "year": 1967
+    },
+    {
+      "n": 130,
+      "relaxed_positive": 8,
+      "strict_positive": 8,
+      "year": 1968
+    },
+    {
+      "n": 133,
+      "relaxed_positive": 10,
+      "strict_positive": 10,
+      "year": 1969
+    },
+    {
+      "n": 133,
+      "relaxed_positive": 7,
+      "strict_positive": 7,
+      "year": 1970
+    },
+    {
+      "n": 134,
+      "relaxed_positive": 8,
+      "strict_positive": 8,
+      "year": 1971
+    },
+    {
+      "n": 140,
+      "relaxed_positive": 9,
+      "strict_positive": 9,
+      "year": 1972
+    },
+    {
+      "n": 140,
+      "relaxed_positive": 7,
+      "strict_positive": 7,
+      "year": 1973
+    },
+    {
+      "n": 141,
+      "relaxed_positive": 9,
+      "strict_positive": 9,
+      "year": 1974
+    },
+    {
+      "n": 143,
+      "relaxed_positive": 11,
+      "strict_positive": 11,
+      "year": 1975
+    },
+    {
+      "n": 149,
+      "relaxed_positive": 11,
+      "strict_positive": 11,
+      "year": 1976
+    },
+    {
+      "n": 151,
+      "relaxed_positive": 9,
+      "strict_positive": 9,
+      "year": 1977
+    },
+    {
+      "n": 152,
+      "relaxed_positive": 11,
+      "strict_positive": 11,
+      "year": 1978
+    },
+    {
+      "n": 154,
+      "relaxed_positive": 5,
+      "strict_positive": 5,
+      "year": 1979
+    },
+    {
+      "n": 156,
+      "relaxed_positive": 9,
+      "strict_positive": 9,
+      "year": 1980
+    },
+    {
+      "n": 156,
+      "relaxed_positive": 8,
+      "strict_positive": 8,
+      "year": 1981
+    },
+    {
+      "n": 159,
+      "relaxed_positive": 7,
+      "strict_positive": 7,
+      "year": 1982
+    },
+    {
+      "n": 159,
+      "relaxed_positive": 7,
+      "strict_positive": 7,
+      "year": 1983
+    },
+    {
+      "n": 161,
+      "relaxed_positive": 5,
+      "strict_positive": 5,
+      "year": 1984
+    },
+    {
+      "n": 161,
+      "relaxed_positive": 7,
+      "strict_positive": 7,
+      "year": 1985
+    },
+    {
+      "n": 161,
+      "relaxed_positive": 5,
+      "strict_positive": 5,
+      "year": 1986
+    },
+    {
+      "n": 161,
+      "relaxed_positive": 8,
+      "strict_positive": 8,
+      "year": 1987
+    },
+    {
+      "n": 161,
+      "relaxed_positive": 5,
+      "strict_positive": 5,
+      "year": 1988
+    },
+    {
+      "n": 161,
+      "relaxed_positive": 9,
+      "strict_positive": 9,
+      "year": 1989
+    },
+    {
+      "n": 161,
+      "relaxed_positive": 5,
+      "strict_positive": 5,
+      "year": 1990
+    },
+    {
+      "n": 161,
+      "relaxed_positive": 9,
+      "strict_positive": 9,
+      "year": 1991
+    },
+    {
+      "n": 177,
+      "relaxed_positive": 8,
+      "strict_positive": 8,
+      "year": 1992
+    },
+    {
+      "n": 182,
+      "relaxed_positive": 4,
+      "strict_positive": 4,
+      "year": 1993
+    },
+    {
+      "n": 186,
+      "relaxed_positive": 5,
+      "strict_positive": 5,
+      "year": 1994
+    },
+    {
+      "n": 187,
+      "relaxed_positive": 5,
+      "strict_positive": 5,
+      "year": 1995
+    },
+    {
+      "n": 187,
+      "relaxed_positive": 6,
+      "strict_positive": 6,
+      "year": 1996
+    },
+    {
+      "n": 187,
+      "relaxed_positive": 3,
+      "strict_positive": 3,
+      "year": 1997
+    },
+    {
+      "n": 187,
+      "relaxed_positive": 1,
+      "strict_positive": 1,
+      "year": 1998
+    },
+    {
+      "n": 187,
+      "relaxed_positive": 6,
+      "strict_positive": 6,
+      "year": 1999
+    },
+    {
+      "n": 190,
+      "relaxed_positive": 8,
+      "strict_positive": 8,
+      "year": 2000
+    },
+    {
+      "n": 191,
+      "relaxed_positive": 3,
+      "strict_positive": 3,
+      "year": 2001
+    },
+    {
+      "n": 191,
+      "relaxed_positive": 2,
+      "strict_positive": 2,
+      "year": 2002
+    },
+    {
+      "n": 192,
+      "relaxed_positive": 4,
+      "strict_positive": 4,
+      "year": 2003
+    },
+    {
+      "n": 192,
+      "relaxed_positive": 1,
+      "strict_positive": 1,
+      "year": 2004
+    },
+    {
+      "n": 192,
+      "relaxed_positive": 2,
+      "strict_positive": 2,
+      "year": 2005
+    },
+    {
+      "n": 192,
+      "relaxed_positive": 3,
+      "strict_positive": 3,
+      "year": 2006
+    },
+    {
+      "n": 193,
+      "relaxed_positive": 0,
+      "strict_positive": 0,
+      "year": 2007
+    },
+    {
+      "n": 193,
+      "relaxed_positive": 3,
+      "strict_positive": 3,
+      "year": 2008
+    },
+    {
+      "n": 194,
+      "relaxed_positive": 2,
+      "strict_positive": 2,
+      "year": 2009
+    },
+    {
+      "n": 194,
+      "relaxed_positive": 3,
+      "strict_positive": 3,
+      "year": 2010
+    },
+    {
+      "n": 194,
+      "relaxed_positive": 2,
+      "strict_positive": 2,
+      "year": 2011
+    },
+    {
+      "n": 195,
+      "relaxed_positive": 5,
+      "strict_positive": 5,
+      "year": 2012
+    },
+    {
+      "n": 195,
+      "relaxed_positive": 1,
+      "strict_positive": 1,
+      "year": 2013
+    },
+    {
+      "n": 195,
+      "relaxed_positive": 4,
+      "strict_positive": 4,
+      "year": 2014
+    },
+    {
+      "n": 195,
+      "relaxed_positive": 2,
+      "strict_positive": 2,
+      "year": 2015
+    },
+    {
+      "n": 195,
+      "relaxed_positive": 1,
+      "strict_positive": 1,
+      "year": 2016
+    },
+    {
+      "n": 195,
+      "relaxed_positive": 1,
+      "strict_positive": 1,
+      "year": 2017
+    },
+    {
+      "n": 195,
+      "relaxed_positive": 0,
+      "strict_positive": 0,
+      "year": 2018
+    },
+    {
+      "n": 195,
+      "relaxed_positive": 2,
+      "strict_positive": 2,
+      "year": 2019
+    },
+    {
+      "n": 195,
+      "relaxed_positive": 1,
+      "strict_positive": 1,
+      "year": 2020
+    },
+    {
+      "n": 195,
+      "relaxed_positive": 6,
+      "strict_positive": 6,
+      "year": 2021
+    },
+    {
+      "n": 195,
+      "relaxed_positive": 3,
+      "strict_positive": 3,
+      "year": 2022
+    },
+    {
+      "n": 195,
+      "relaxed_positive": 3,
+      "strict_positive": 3,
+      "year": 2023
+    },
+    {
+      "n": 195,
+      "relaxed_positive": 2,
+      "strict_positive": 2,
+      "year": 2024
+    }
+  ],
+  "label_sensitivity": {
+    "changed_binary_labels": 0,
+    "date_mismatch_distinct_origin_keys": 0,
+    "date_mismatch_rows": 3,
+    "date_mismatch_rows_in_origin_risk": 0
+  },
+  "modified_forecasts": 0,
+  "n": 11674,
+  "new_forecasts": 0,
+  "relaxed_positive": 421,
+  "relaxed_rate": 0.036063046,
+  "status": "RETROSPECTIVE_ORIGIN_PANEL_NO_MODEL_NO_FORECAST",
+  "strict_positive": 421,
+  "strict_rate": 0.036063046
+}

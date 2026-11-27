@@ -1,0 +1,79 @@
+name: COUP official source census
+on:
+  push:
+    paths:
+      - 'scripts/audit_coup_sources.py'
+      - 'scripts/audit_coup_membership.py'
+      - 'scripts/audit_coup_reconciliation.py'
+      - 'scripts/audit_coup_origin_panel.py'
+      - 'scripts/experiment_coup_rolling_backtest.py'
+      - 'scripts/experiment_coup_mean_constraint.py'
+      - 'scripts/test_experiment_coup_mean_constraint.py'
+      - 'docs/coup-mean-constraint.md'
+      - 'data/coup-mean-constraint.json'
+      - 'scripts/test_experiment_coup_rolling_backtest.py'
+      - 'docs/coup-rolling-backtest.md'
+      - 'data/coup-rolling-backtest.json'
+      - 'scripts/test_audit_coup_origin_panel.py'
+      - 'docs/coup-origin-panel-protocol.md'
+      - 'scripts/test_audit_coup_reconciliation.py'
+      - 'docs/coup-membership-reconciliation.md'
+      - 'scripts/test_audit_coup_membership.py'
+      - 'data/coup-source-census.json'
+      - 'data/coup-membership-census.json'
+      - 'data/coup-membership-reconciliation.json'
+      - 'data/coup-origin-panel.json'
+      - 'scripts/test_audit_coup_sources.py'
+      - '.github/workflows/coup-source-census.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_coup_sources.py'
+      - 'scripts/audit_coup_membership.py'
+      - 'scripts/audit_coup_reconciliation.py'
+      - 'scripts/audit_coup_origin_panel.py'
+      - 'scripts/experiment_coup_rolling_backtest.py'
+      - 'scripts/experiment_coup_mean_constraint.py'
+      - 'scripts/test_experiment_coup_mean_constraint.py'
+      - 'docs/coup-mean-constraint.md'
+      - 'data/coup-mean-constraint.json'
+      - 'scripts/test_experiment_coup_rolling_backtest.py'
+      - 'docs/coup-rolling-backtest.md'
+      - 'data/coup-rolling-backtest.json'
+      - 'scripts/test_audit_coup_origin_panel.py'
+      - 'docs/coup-origin-panel-protocol.md'
+      - 'scripts/test_audit_coup_reconciliation.py'
+      - 'docs/coup-membership-reconciliation.md'
+      - 'scripts/test_audit_coup_membership.py'
+      - 'data/coup-source-census.json'
+      - 'data/coup-membership-census.json'
+      - 'data/coup-membership-reconciliation.json'
+      - 'data/coup-origin-panel.json'
+      - 'scripts/test_audit_coup_sources.py'
+      - '.github/workflows/coup-source-census.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+jobs:
+  census:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -B -m unittest discover -s scripts -p 'test_audit_coup_sources.py' -v
+      - run: python3 -B scripts/audit_public.py
+      - run: python3 -B scripts/audit_coup_sources.py --check
+      - run: python3 -B -m unittest discover -s scripts -p 'test_audit_coup_membership.py' -v
+      - run: python3 -B scripts/audit_coup_membership.py --check
+      - run: python3 -B -m unittest discover -s scripts -p 'test_audit_coup_reconciliation.py' -v
+      - run: python3 -B scripts/audit_coup_reconciliation.py --check
+      - run: python3 -B -m unittest discover -s scripts -p 'test_audit_coup_origin_panel.py' -v
+      - run: python3 -B scripts/audit_coup_origin_panel.py --check
+      - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_coup_rolling_backtest.py' -v
+      - run: python3 -B scripts/experiment_coup_rolling_backtest.py --check
+      - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_coup_mean_constraint.py' -v
+      - run: python3 -B scripts/experiment_coup_mean_constraint.py --check
