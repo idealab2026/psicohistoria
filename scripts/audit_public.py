@@ -214,6 +214,8 @@ REPOSITORY |= {
     "scripts/test_monitor_dec2026_pilot.py",
     ".github/workflows/dec2026-monitor.yml",
 }
+# COUP temporal uncertainty, aggregate-only institutional research; not a Pages release.
+REPOSITORY |= {"scripts/experiment_coup_temporal_uncertainty.py", "data/coup-temporal-uncertainty.json", "docs/coup-temporal-uncertainty.md"}
 # COUP source census and reconciliation, institutional references and no raw data.
 REPOSITORY |= {"data/coup-mean-constraint.json","docs/coup-mean-constraint.md","scripts/experiment_coup_mean_constraint.py","scripts/test_experiment_coup_mean_constraint.py"}
 REPOSITORY |= {"data/coup-rolling-backtest.json","docs/coup-rolling-backtest.md","scripts/experiment_coup_rolling_backtest.py","scripts/test_experiment_coup_rolling_backtest.py"}
