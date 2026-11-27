@@ -222,6 +222,8 @@ REPOSITORY |= {"docs/fin-dic2026-candidate-protocol.md", "scripts/generate_fin_d
 REPOSITORY |= {"docs/fin01-publication-lag-protocol.md", "scripts/experiment_fin01_publication_lag.py", "scripts/test_experiment_fin01_publication_lag.py", ".github/workflows/fin01-publication-lag.yml"}
 # FIN-01 source-separated revision research; no raw observations.
 REPOSITORY |= {"docs/fin01-vintage-extension-protocol.md", "scripts/experiment_fin01_vintage_extension.py", "scripts/test_experiment_fin01_vintage_extension.py"}
+# FIN-01 paired uncertainty, aggregate-only replay.
+REPOSITORY |= {"docs/fin01-paired-uncertainty.md", "scripts/experiment_fin01_paired_uncertainty.py"}
 # FIN-01C direction and expected return, aggregate research only.
 REPOSITORY |= {"data/fin01-direction.json", "docs/fin01-direction-protocol.md", "scripts/experiment_fin01_direction.py", "scripts/test_experiment_fin01_direction.py", ".github/workflows/fin01-direction.yml"}
 # FIN-01B realized volatility; aggregate research only.
