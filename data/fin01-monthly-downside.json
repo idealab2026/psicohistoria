@@ -1,0 +1,1667 @@
+{
+  "endpoint": "US_BROAD_MARKET_MONTHLY_TOTAL_RETURN_LE_MINUS_5_PERCENT",
+  "feature_lag_months": 2,
+  "modified_forecasts": 0,
+  "new_forecasts": 0,
+  "results": {
+    "models": {
+      "global": {
+        "brier": 0.08638293838327427,
+        "brier_skill_vs_recent": 0.012661725641546218,
+        "log_loss": 0.3156598002155245,
+        "log_loss_gain_vs_recent": 0.008549138566123882,
+        "mean_probability": 0.10343716358308076
+      },
+      "joint_regime": {
+        "brier": 0.0854466754245932,
+        "brier_skill_vs_recent": 0.023363008455849044,
+        "leave_one_year_out_skill_range": [
+          0.009419252540421197,
+          0.03173391921976765
+        ],
+        "log_loss": 0.3112097909798151,
+        "log_loss_gain_vs_recent": 0.012999147801833255,
+        "mean_probability": 0.0991591873802515
+      },
+      "normal_vol": {
+        "brier": 0.08877031267908618,
+        "brier_skill_vs_recent": -0.014625445431706519,
+        "log_loss": 0.3211781541370792,
+        "log_loss_gain_vs_recent": 0.0030307846445691844,
+        "mean_probability": 0.10664005618082469
+      },
+      "recent": {
+        "brier": 0.08749072190015485,
+        "brier_skill_vs_recent": 0,
+        "log_loss": 0.32420893878164836,
+        "log_loss_gain_vs_recent": 0,
+        "mean_probability": 0.09596018735362999
+      },
+      "vol_regime": {
+        "brier": 0.08711064269540808,
+        "brier_skill_vs_recent": 0.004344222981501056,
+        "leave_one_year_out_skill_range": [
+          -0.011675564071307543,
+          0.013870998973764315
+        ],
+        "log_loss": 0.31867341215086964,
+        "log_loss_gain_vs_recent": 0.00553552663077872,
+        "mean_probability": 0.10419885086162146
+      }
+    },
+    "n": 420,
+    "observed_rate": 0.09523809523809523,
+    "periods": {
+      "1990-2004": {
+        "models": {
+          "global": {
+            "brier": 0.08139100682519053,
+            "brier_skill_vs_recent": 0.018803184892098757,
+            "log_loss": 0.3021824365190262,
+            "log_loss_gain_vs_recent": 0.014439220211304171,
+            "mean_probability": 0.10345620077330688
+          },
+          "joint_regime": {
+            "brier": 0.07934275045959245,
+            "brier_skill_vs_recent": 0.043495625750654354,
+            "log_loss": 0.29162573913393613,
+            "log_loss_gain_vs_recent": 0.024995917596394246,
+            "mean_probability": 0.10146584825769084
+          },
+          "normal_vol": {
+            "brier": 0.08047003382439948,
+            "brier_skill_vs_recent": 0.029905833826242012,
+            "log_loss": 0.30303551197568085,
+            "log_loss_gain_vs_recent": 0.013586144754649532,
+            "mean_probability": 0.1087161843610659
+          },
+          "recent": {
+            "brier": 0.08295074502075309,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.3166216567303304,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.07172131147540983
+          },
+          "vol_regime": {
+            "brier": 0.08034701538790337,
+            "brier_skill_vs_recent": 0.0313888637431563,
+            "log_loss": 0.29602636610170896,
+            "log_loss_gain_vs_recent": 0.02059529062862142,
+            "mean_probability": 0.10454631725905658
+          }
+        },
+        "n": 180,
+        "observed_rate": 0.08888888888888889,
+        "positives": 16
+      },
+      "2005-2014": {
+        "models": {
+          "global": {
+            "brier": 0.09016626680669095,
+            "brier_skill_vs_recent": -0.00579683365868866,
+            "log_loss": 0.3259784175072479,
+            "log_loss_gain_vs_recent": -0.0031065944391781564,
+            "mean_probability": 0.10379071121095759
+          },
+          "joint_regime": {
+            "brier": 0.08859072112087914,
+            "brier_skill_vs_recent": 0.011778240902971415,
+            "log_loss": 0.31732626297259764,
+            "log_loss_gain_vs_recent": 0.00554556009547208,
+            "mean_probability": 0.10049851758529442
+          },
+          "normal_vol": {
+            "brier": 0.0917499869689675,
+            "brier_skill_vs_recent": -0.0234630937915854,
+            "log_loss": 0.31221045521114027,
+            "log_loss_gain_vs_recent": 0.010661367856929449,
+            "mean_probability": 0.09305068178977367
+          },
+          "recent": {
+            "brier": 0.08964660037624293,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.3228718230680697,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.125
+          },
+          "vol_regime": {
+            "brier": 0.09199589595949474,
+            "brier_skill_vs_recent": -0.026206187110185075,
+            "log_loss": 0.33442089771341094,
+            "log_loss_gain_vs_recent": -0.011549074645341217,
+            "mean_probability": 0.10523658503584946
+          }
+        },
+        "n": 120,
+        "observed_rate": 0.1,
+        "positives": 12
+      },
+      "2015-2024": {
+        "models": {
+          "global": {
+            "brier": 0.09008750729698319,
+            "brier_skill_vs_recent": 0.022326829630960776,
+            "log_loss": 0.32555722846854857,
+            "log_loss_gain_vs_recent": 0.011369749103655347,
+            "mean_probability": 0.10305506016986474
+          },
+          "joint_regime": {
+            "brier": 0.09145851717580838,
+            "brier_skill_vs_recent": 0.007447967788113519,
+            "log_loss": 0.334469396755851,
+            "log_loss_gain_vs_recent": 0.002457580816352889,
+            "mean_probability": 0.09435986585904962
+          },
+          "normal_vol": {
+            "brier": 0.09824105667123496,
+            "brier_skill_vs_recent": -0.06615942895988125,
+            "log_loss": 0.35735981630511565,
+            "log_loss_gain_vs_recent": -0.02043283873291174,
+            "mean_probability": 0.11711523830151385
+          },
+          "recent": {
+            "brier": 0.0921448087431694,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.3369269775722039,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.10327868852459017
+          },
+          "vol_regime": {
+            "brier": 0.09237083039257851,
+            "brier_skill_vs_recent": -0.002452896180392461,
+            "log_loss": 0.33689649566206953,
+            "log_loss_gain_vs_recent": 0.000030481910134383394,
+            "mean_probability": 0.10263991709124078
+          }
+        },
+        "n": 120,
+        "observed_rate": 0.1,
+        "positives": 12
+      }
+    },
+    "positives": 40,
+    "years": {
+      "1990": {
+        "models": {
+          "global": {
+            "brier": 0.20791585554448408,
+            "brier_skill_vs_recent": 0.052014522066494484,
+            "log_loss": 0.6434281433371243,
+            "log_loss_gain_vs_recent": 0.07094439944880127,
+            "mean_probability": 0.10832537524874854
+          },
+          "joint_regime": {
+            "brier": 0.221147993898527,
+            "brier_skill_vs_recent": -0.008316975831008877,
+            "log_loss": 0.7287068022414571,
+            "log_loss_gain_vs_recent": -0.014334259455531573,
+            "mean_probability": 0.11068926163755716
+          },
+          "normal_vol": {
+            "brier": 0.21396487658061336,
+            "brier_skill_vs_recent": 0.024434210392101918,
+            "log_loss": 0.6814379526499256,
+            "log_loss_gain_vs_recent": 0.032934590135999975,
+            "mean_probability": 0.11319455483902492
+          },
+          "recent": {
+            "brier": 0.21932388246887038,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.7143725427859255,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.078551912568306
+          },
+          "vol_regime": {
+            "brier": 0.21628927609998524,
+            "brier_skill_vs_recent": 0.013836187535645417,
+            "log_loss": 0.6902624691027729,
+            "log_loss_gain_vs_recent": 0.024110073683152655,
+            "mean_probability": 0.09227418712923502
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.25,
+        "positives": 3
+      },
+      "1991": {
+        "models": {
+          "global": {
+            "brier": 0.011860896716243791,
+            "brier_skill_vs_recent": -0.5680614660953891,
+            "log_loss": 0.11530626551396234,
+            "log_loss_gain_vs_recent": -0.02453908082493768,
+            "mean_probability": 0.10890667881053856
+          },
+          "joint_regime": {
+            "brier": 0.015814979817987965,
+            "brier_skill_vs_recent": -1.0908082274842297,
+            "log_loss": 0.12878558638104143,
+            "log_loss_gain_vs_recent": -0.03801840169201677,
+            "mean_probability": 0.1200382467213345
+          },
+          "normal_vol": {
+            "brier": 0.025750887089833183,
+            "brier_skill_vs_recent": -2.404377824826739,
+            "log_loss": 0.17014913563068176,
+            "log_loss_gain_vs_recent": -0.0793819509416571,
+            "mean_probability": 0.15557818613034535
+          },
+          "recent": {
+            "brier": 0.0075640508823792895,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.09076718468902466,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.08674863387978142
+          },
+          "vol_regime": {
+            "brier": 0.02038234301884828,
+            "brier_skill_vs_recent": -1.694633250858959,
+            "log_loss": 0.1510000129052177,
+            "log_loss_gain_vs_recent": -0.06023282821619304,
+            "mean_probability": 0.13965440928060416
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "1992": {
+        "models": {
+          "global": {
+            "brier": 0.011504401527946469,
+            "brier_skill_vs_recent": -1.1139692881722874,
+            "log_loss": 0.11345729280814193,
+            "log_loss_gain_vs_recent": -0.03682406678722594,
+            "mean_probability": 0.10725755562743407
+          },
+          "joint_regime": {
+            "brier": 0.01009179958887298,
+            "brier_skill_vs_recent": -0.8543993219850057,
+            "log_loss": 0.0995523718878148,
+            "log_loss_gain_vs_recent": -0.022919145866898805,
+            "mean_probability": 0.09406471943758897
+          },
+          "normal_vol": {
+            "brier": 0.012649807530394222,
+            "brier_skill_vs_recent": -1.3244411763257733,
+            "log_loss": 0.11839980384159045,
+            "log_loss_gain_vs_recent": -0.04176657782067446,
+            "mean_probability": 0.11154184152919772
+          },
+          "recent": {
+            "brier": 0.0054420854608976076,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.07663322602091599,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.07377049180327869
+          },
+          "vol_regime": {
+            "brier": 0.007597603793079351,
+            "brier_skill_vs_recent": -0.3960831463727539,
+            "log_loss": 0.09119778236024147,
+            "log_loss_gain_vs_recent": -0.014564556339325477,
+            "mean_probability": 0.08716270387848901
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "1993": {
+        "models": {
+          "global": {
+            "brier": 0.011163740787664786,
+            "brier_skill_vs_recent": -1.05137182572349,
+            "log_loss": 0.11166674383215457,
+            "log_loss_gain_vs_recent": -0.035033517811238576,
+            "mean_probability": 0.10565763216608359
+          },
+          "joint_regime": {
+            "brier": 0.003959126098344459,
+            "brier_skill_vs_recent": 0.2724983599042108,
+            "log_loss": 0.06498625335652407,
+            "log_loss_gain_vs_recent": 0.011646972664391922,
+            "mean_probability": 0.0629195159457101
+          },
+          "normal_vol": {
+            "brier": 0.0007774759003648635,
+            "brier_skill_vs_recent": 0.8571364036909799,
+            "log_loss": 0.016728223775729686,
+            "log_loss_gain_vs_recent": 0.0599050022451863,
+            "mean_probability": 0.0163171568798069
+          },
+          "recent": {
+            "brier": 0.0054420854608976076,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.07663322602091599,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.07377049180327869
+          },
+          "vol_regime": {
+            "brier": 0.007293952898816572,
+            "brier_skill_vs_recent": -0.3402863573578503,
+            "log_loss": 0.08927211604215575,
+            "log_loss_gain_vs_recent": -0.01263889002123976,
+            "mean_probability": 0.08540320225962543
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "1994": {
+        "models": {
+          "global": {
+            "brier": 0.010837990418775844,
+            "brier_skill_vs_recent": -1.2250020605939267,
+            "log_loss": 0.1099318897554779,
+            "log_loss_gain_vs_recent": -0.03770397857563934,
+            "mean_probability": 0.10410473902107341
+          },
+          "joint_regime": {
+            "brier": 0.008352570283356302,
+            "brier_skill_vs_recent": -0.7147538772065545,
+            "log_loss": 0.08950575460618725,
+            "log_loss_gain_vs_recent": -0.017277843426348694,
+            "mean_probability": 0.08498866665623779
+          },
+          "normal_vol": {
+            "brier": 0.0005815467641666607,
+            "brier_skill_vs_recent": 0.8806104546502541,
+            "log_loss": 0.02152450539142035,
+            "log_loss_gain_vs_recent": 0.0507034057884182,
+            "mean_probability": 0.02122770499742106
+          },
+          "recent": {
+            "brier": 0.004871002418704649,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.07222791117983855,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.06967213114754099
+          },
+          "vol_regime": {
+            "brier": 0.0069813153495535225,
+            "brier_skill_vs_recent": -0.4332399677621328,
+            "log_loss": 0.08725012952163906,
+            "log_loss_gain_vs_recent": -0.015022218341800508,
+            "mean_probability": 0.08355195281038497
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "1995": {
+        "models": {
+          "global": {
+            "brier": 0.010526292785107366,
+            "brier_skill_vs_recent": -1.4480209658365313,
+            "log_loss": 0.10825016925085783,
+            "log_loss_gain_vs_recent": -0.040427572912096726,
+            "mean_probability": 0.1025968324849657
+          },
+          "joint_regime": {
+            "brier": 0.006884392435397104,
+            "brier_skill_vs_recent": -0.6010515157570389,
+            "log_loss": 0.08097698041160668,
+            "log_loss_gain_vs_recent": -0.013154384072845582,
+            "mean_probability": 0.07727761849720237
+          },
+          "normal_vol": {
+            "brier": 0.0010028091350499904,
+            "brier_skill_vs_recent": 0.7667842005299366,
+            "log_loss": 0.029560909321101652,
+            "log_loss_gain_vs_recent": 0.038261687017659446,
+            "mean_probability": 0.029046217526691207
+          },
+          "recent": {
+            "brier": 0.004299919376511691,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.0678225963387611,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.06557377049180328
+          },
+          "vol_regime": {
+            "brier": 0.006686700125486167,
+            "brier_skill_vs_recent": -0.5550756979333764,
+            "log_loss": 0.08530855687634409,
+            "log_loss_gain_vs_recent": -0.017485960537582987,
+            "mean_probability": 0.08177097173023128
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "1996": {
+        "models": {
+          "global": {
+            "brier": 0.07679608272428545,
+            "brier_skill_vs_recent": -0.0033939095259090113,
+            "log_loss": 0.28917419450028065,
+            "log_loss_gain_vs_recent": -0.0014108025967570215,
+            "mean_probability": 0.10152669714037187
+          },
+          "joint_regime": {
+            "brier": 0.07921932125688685,
+            "brier_skill_vs_recent": -0.03505519612655794,
+            "log_loss": 0.3051069547690484,
+            "log_loss_gain_vs_recent": -0.017343562865524798,
+            "mean_probability": 0.07042605847111374
+          },
+          "normal_vol": {
+            "brier": 0.0835849398277404,
+            "brier_skill_vs_recent": -0.09209502068420305,
+            "log_loss": 0.5882431995661273,
+            "log_loss_gain_vs_recent": -0.3004798076626036,
+            "mean_probability": 0.012465983196834026
+          },
+          "recent": {
+            "brier": 0.07653632536056616,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.2877633919035236,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.06420765027322405
+          },
+          "vol_regime": {
+            "brier": 0.07648602061118533,
+            "brier_skill_vs_recent": 0.0006572663260725475,
+            "log_loss": 0.28749098234233245,
+            "log_loss_gain_vs_recent": 0.0002724095611911781,
+            "mean_probability": 0.08068832773338708
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.08333333333333333,
+        "positives": 1
+      },
+      "1997": {
+        "models": {
+          "global": {
+            "brier": 0.010177227695975434,
+            "brier_skill_vs_recent": -2.161277016213531,
+            "log_loss": 0.10634045383866715,
+            "log_loss_gain_vs_recent": -0.04797304269725354,
+            "mean_probability": 0.1008814195759433
+          },
+          "joint_regime": {
+            "brier": 0.005503807494529625,
+            "brier_skill_vs_recent": -0.7096070417094735,
+            "log_loss": 0.07294986258285181,
+            "log_loss_gain_vs_recent": -0.014582451441438202,
+            "mean_probability": 0.07001873962930817
+          },
+          "normal_vol": {
+            "brier": 0.010357478769311942,
+            "brier_skill_vs_recent": -2.2172670748335084,
+            "log_loss": 0.10323767969915615,
+            "log_loss_gain_vs_recent": -0.04487026855774254,
+            "mean_probability": 0.09763215771394983
+          },
+          "recent": {
+            "brier": 0.003219340679028935,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.05836741114141361,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.05669398907103825
+          },
+          "vol_regime": {
+            "brier": 0.006390835769246911,
+            "brier_skill_vs_recent": -0.9851380783889605,
+            "log_loss": 0.08331792803682221,
+            "log_loss_gain_vs_recent": -0.0249505168954086,
+            "mean_probability": 0.07994128884153746
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "1998": {
+        "models": {
+          "global": {
+            "brier": 0.07673605075411513,
+            "brier_skill_vs_recent": 0.020813563399943114,
+            "log_loss": 0.28884921378837064,
+            "log_loss_gain_vs_recent": 0.017871833933615633,
+            "mean_probability": 0.09976874139725671
+          },
+          "joint_regime": {
+            "brier": 0.08457952749642006,
+            "brier_skill_vs_recent": -0.07927271894553067,
+            "log_loss": 0.3311440511696262,
+            "log_loss_gain_vs_recent": -0.024423003447639924,
+            "mean_probability": 0.0909036940620701
+          },
+          "normal_vol": {
+            "brier": 0.0864843971907056,
+            "brier_skill_vs_recent": -0.10357971089787421,
+            "log_loss": 0.32692025379671463,
+            "log_loss_gain_vs_recent": -0.02019920607472836,
+            "mean_probability": 0.13778926526040783
+          },
+          "recent": {
+            "brier": 0.07836715040759652,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.3067210477219863,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.0430327868852459
+          },
+          "vol_regime": {
+            "brier": 0.08047925269338818,
+            "brier_skill_vs_recent": -0.026951372798505124,
+            "log_loss": 0.3073601457757662,
+            "log_loss_gain_vs_recent": -0.0006390980537799296,
+            "mean_probability": 0.09572959994782142
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.08333333333333333,
+        "positives": 1
+      },
+      "1999": {
+        "models": {
+          "global": {
+            "brier": 0.009852691265869925,
+            "brier_skill_vs_recent": -3.073540466700222,
+            "log_loss": 0.1045386741996403,
+            "log_loss_gain_vs_recent": -0.0541078205727484,
+            "mean_probability": 0.09925995382656361
+          },
+          "joint_regime": {
+            "brier": 0.012717436400359576,
+            "brier_skill_vs_recent": -4.257953427304221,
+            "log_loss": 0.11643184908705174,
+            "log_loss_gain_vs_recent": -0.06600099546015983,
+            "mean_probability": 0.10950310212178384
+          },
+          "normal_vol": {
+            "brier": 0.04156497108788718,
+            "brier_skill_vs_recent": -16.184806379780913,
+            "log_loss": 0.22264822056124747,
+            "log_loss_gain_vs_recent": -0.17221736693435558,
+            "mean_probability": 0.1982538824309196
+          },
+          "recent": {
+            "brier": 0.0024187046492878256,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.050430853626891904,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.04918032786885246
+          },
+          "vol_regime": {
+            "brier": 0.01740555514095156,
+            "brier_skill_vs_recent": -6.196230075497862,
+            "log_loss": 0.13838276325991136,
+            "log_loss_gain_vs_recent": -0.08795190963301946,
+            "mean_probability": 0.12877388208679327
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "2000": {
+        "models": {
+          "global": {
+            "brier": 0.1435938664237937,
+            "brier_skill_vs_recent": 0.08141069863105499,
+            "log_loss": 0.473023922281417,
+            "log_loss_gain_vs_recent": 0.1164571350309136,
+            "mean_probability": 0.09857401558520716
+          },
+          "joint_regime": {
+            "brier": 0.14873448209768697,
+            "brier_skill_vs_recent": 0.04852548787594291,
+            "log_loss": 0.5055681588189983,
+            "log_loss_gain_vs_recent": 0.08391289849333228,
+            "mean_probability": 0.09128353446035982
+          },
+          "normal_vol": {
+            "brier": 0.13861502548148358,
+            "brier_skill_vs_recent": 0.11326101464194782,
+            "log_loss": 0.45094603392473614,
+            "log_loss_gain_vs_recent": 0.13853502338759444,
+            "mean_probability": 0.1418802282927382
+          },
+          "recent": {
+            "brier": 0.15631998566693542,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.5894810573123306,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.04371584699453552
+          },
+          "vol_regime": {
+            "brier": 0.13984280397357604,
+            "brier_skill_vs_recent": 0.10540675028250468,
+            "log_loss": 0.4561009844039523,
+            "log_loss_gain_vs_recent": 0.13338007290837828,
+            "mean_probability": 0.09437997714511592
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.16666666666666666,
+        "positives": 2
+      },
+      "2001": {
+        "models": {
+          "global": {
+            "brier": 0.27680652943862794,
+            "brier_skill_vs_recent": 0.08886770465566218,
+            "log_loss": 0.8385457694989,
+            "log_loss_gain_vs_recent": 0.21112271525170034,
+            "mean_probability": 0.100865923320697
+          },
+          "joint_regime": {
+            "brier": 0.2582451404169052,
+            "brier_skill_vs_recent": 0.14996409937741684,
+            "log_loss": 0.7519544426878849,
+            "log_loss_gain_vs_recent": 0.29771404206271546,
+            "mean_probability": 0.16288165806461025
+          },
+          "normal_vol": {
+            "brier": 0.24475689576199303,
+            "brier_skill_vs_recent": 0.19436180682138415,
+            "log_loss": 0.7007536763221593,
+            "log_loss_gain_vs_recent": 0.348914808428441,
+            "mean_probability": 0.19776808446909713
+          },
+          "recent": {
+            "brier": 0.30380498073994444,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 1.0496684847506004,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.056010928961748634
+          },
+          "vol_regime": {
+            "brier": 0.2582966795699622,
+            "brier_skill_vs_recent": 0.14979445386031076,
+            "log_loss": 0.7505009385632441,
+            "log_loss_gain_vs_recent": 0.2991675461873563,
+            "mean_probability": 0.14919710110977957
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.3333333333333333,
+        "positives": 4
+      },
+      "2002": {
+        "models": {
+          "global": {
+            "brier": 0.34092454617074397,
+            "brier_skill_vs_recent": 0.027224561593963914,
+            "log_loss": 1.0077337493142011,
+            "log_loss_gain_vs_recent": 0.05769058752263012,
+            "mean_probability": 0.10355702616791906
+          },
+          "joint_regime": {
+            "brier": 0.3053420657433115,
+            "brier_skill_vs_recent": 0.12875366352033069,
+            "log_loss": 0.8565766493063519,
+            "log_loss_gain_vs_recent": 0.20884768753047933,
+            "mean_probability": 0.15127242206524796
+          },
+          "normal_vol": {
+            "brier": 0.3100111937302802,
+            "brier_skill_vs_recent": 0.11543102930254523,
+            "log_loss": 0.8709714134626694,
+            "log_loss_gain_vs_recent": 0.19445292337416187,
+            "mean_probability": 0.17518922141225537
+          },
+          "recent": {
+            "brier": 0.3504658245991221,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 1.0654243368368312,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.0860655737704918
+          },
+          "vol_regime": {
+            "brier": 0.3311851271586335,
+            "brier_skill_vs_recent": 0.055014486683666486,
+            "log_loss": 0.9743704810514805,
+            "log_loss_gain_vs_recent": 0.09105385578535075,
+            "mean_probability": 0.1376072070280089
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.4166666666666667,
+        "positives": 5
+      },
+      "2003": {
+        "models": {
+          "global": {
+            "brier": 0.011217917207010356,
+            "brier_skill_vs_recent": 0.1382323627915244,
+            "log_loss": 0.11195344435507532,
+            "log_loss_gain_vs_recent": 0.009168318661884542,
+            "mean_probability": 0.10591404471184586
+          },
+          "joint_regime": {
+            "brier": 0.01968767992669324,
+            "brier_skill_vs_recent": -0.5124202736975596,
+            "log_loss": 0.14404505102975088,
+            "log_loss_gain_vs_recent": -0.022923288012791018,
+            "mean_probability": 0.132984363247612
+          },
+          "normal_vol": {
+            "brier": 0.034811660262812565,
+            "brier_skill_vs_recent": -1.6742542005249148,
+            "log_loss": 0.20424278509699523,
+            "log_loss_gain_vs_recent": -0.08312102208003537,
+            "mean_probability": 0.18421306677002422
+          },
+          "recent": {
+            "brier": 0.013017334049986562,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.12112176301695986,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.11407103825136612
+          },
+          "vol_regime": {
+            "brier": 0.022931569950849908,
+            "brier_skill_vs_recent": -0.7616179981855487,
+            "log_loss": 0.16149300760415589,
+            "log_loss_gain_vs_recent": -0.04037124458719603,
+            "mean_probability": 0.14865721622493497
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "2004": {
+        "models": {
+          "global": {
+            "brier": 0.010951012917213692,
+            "brier_skill_vs_recent": 0.1683934884703644,
+            "log_loss": 0.11053662151112233,
+            "log_loss_gain_vs_recent": 0.011353196097914547,
+            "mean_probability": 0.1046463765149548
+          },
+          "joint_regime": {
+            "brier": 0.009860933938607869,
+            "brier_skill_vs_recent": 0.2511727513151045,
+            "log_loss": 0.09809531867284632,
+            "log_loss_gain_vs_recent": 0.023794498936190553,
+            "mean_probability": 0.09273612284762571
+          },
+          "normal_vol": {
+            "brier": 0.0021365422533552547,
+            "brier_skill_vs_recent": 0.8377535974543897,
+            "log_loss": 0.03976888659495748,
+            "log_loss_gain_vs_recent": 0.08212093101407938,
+            "mean_probability": 0.038645213967275084
+          },
+          "recent": {
+            "brier": 0.013168503090567052,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.12188981760903687,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.11475409836065574
+          },
+          "vol_regime": {
+            "brier": 0.006956194664987848,
+            "brier_skill_vs_recent": 0.4717550949302085,
+            "log_loss": 0.08708719367959827,
+            "log_loss_gain_vs_recent": 0.0348026239294386,
+            "mean_probability": 0.08340273167990024
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "2005": {
+        "models": {
+          "global": {
+            "brier": 0.010675660128353122,
+            "brier_skill_vs_recent": 0.1893034420897558,
+            "log_loss": 0.10905899178707773,
+            "log_loss_gain_vs_recent": 0.012830825821959144,
+            "mean_probability": 0.10332240181847539
+          },
+          "joint_regime": {
+            "brier": 0.00834618209914579,
+            "brier_skill_vs_recent": 0.3662011512056841,
+            "log_loss": 0.08968132827883703,
+            "log_loss_gain_vs_recent": 0.032208489330199847,
+            "mean_probability": 0.08516997581422069
+          },
+          "normal_vol": {
+            "brier": 0.0008277320420572057,
+            "brier_skill_vs_recent": 0.9371430422756151,
+            "log_loss": 0.028550915086115087,
+            "log_loss_gain_vs_recent": 0.09333890252292179,
+            "mean_probability": 0.028128385391547384
+          },
+          "recent": {
+            "brier": 0.013168503090567052,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.12188981760903687,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.11475409836065574
+          },
+          "vol_regime": {
+            "brier": 0.006717184521963204,
+            "brier_skill_vs_recent": 0.4899052325260188,
+            "log_loss": 0.08551159775125532,
+            "log_loss_gain_vs_recent": 0.03637821985778156,
+            "mean_probability": 0.08195741332312616
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "2006": {
+        "models": {
+          "global": {
+            "brier": 0.010410563621741777,
+            "brier_skill_vs_recent": 0.1713859414652159,
+            "log_loss": 0.10762038438881465,
+            "log_loss_gain_vs_recent": 0.011197214851914217,
+            "mean_probability": 0.1020315105574967
+          },
+          "joint_regime": {
+            "brier": 0.0069570500906322745,
+            "brier_skill_vs_recent": 0.44626345695737546,
+            "log_loss": 0.08161137347780707,
+            "log_loss_gain_vs_recent": 0.03720622576292179,
+            "mean_probability": 0.07787328191909446
+          },
+          "normal_vol": {
+            "brier": 0.00025066020284085863,
+            "brier_skill_vs_recent": 0.9800490563685383,
+            "log_loss": 0.014105936354062576,
+            "log_loss_gain_vs_recent": 0.10471166288666629,
+            "mean_probability": 0.013978793121413093
+          },
+          "recent": {
+            "brier": 0.012563826928245094,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.11881759924072886,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.11202185792349727
+          },
+          "vol_regime": {
+            "brier": 0.006475482421580228,
+            "brier_skill_vs_recent": 0.4845931531401063,
+            "log_loss": 0.08389143736627304,
+            "log_loss_gain_vs_recent": 0.034926161874455824,
+            "mean_probability": 0.08046878263430772
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "2007": {
+        "models": {
+          "global": {
+            "brier": 0.010155220279006364,
+            "brier_skill_vs_recent": 0.10561953471756957,
+            "log_loss": 0.10621927221312781,
+            "log_loss_gain_vs_recent": 0.006453890290985045,
+            "mean_probability": 0.10077247798666998
+          },
+          "joint_regime": {
+            "brier": 0.005636191720688404,
+            "brier_skill_vs_recent": 0.5036149256170046,
+            "log_loss": 0.07364379279096629,
+            "log_loss_gain_vs_recent": 0.039029369713146564,
+            "mean_probability": 0.07063778163023968
+          },
+          "normal_vol": {
+            "brier": 0.00009270150439229356,
+            "brier_skill_vs_recent": 0.9918356852581367,
+            "log_loss": 0.007907819066495911,
+            "log_loss_gain_vs_recent": 0.10476534343761694,
+            "mean_probability": 0.007861025366548367
+          },
+          "recent": {
+            "brier": 0.011354474603601181,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.11267316250411286,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.10655737704918032
+          },
+          "vol_regime": {
+            "brier": 0.0062312672068681975,
+            "brier_skill_vs_recent": 0.4512060289525073,
+            "log_loss": 0.08222742561015943,
+            "log_loss_gain_vs_recent": 0.030445736893953426,
+            "mean_probability": 0.07893745979498505
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "2008": {
+        "models": {
+          "global": {
+            "brier": 0.34265345409035836,
+            "brier_skill_vs_recent": -0.027874038530940393,
+            "log_loss": 1.017117730828473,
+            "log_loss_gain_vs_recent": -0.04770544761158868,
+            "mean_probability": 0.10106407933701848
+          },
+          "joint_regime": {
+            "brier": 0.3484156620584471,
+            "brier_skill_vs_recent": -0.045159210778037195,
+            "log_loss": 1.0668554952892884,
+            "log_loss_gain_vs_recent": -0.09744321207240414,
+            "mean_probability": 0.11595052246911292
+          },
+          "normal_vol": {
+            "brier": 0.3517095543206879,
+            "brier_skill_vs_recent": -0.05504005774356191,
+            "log_loss": 1.0947881140657332,
+            "log_loss_gain_vs_recent": -0.12537583084884896,
+            "mean_probability": 0.08952027126153962
+          },
+          "recent": {
+            "brier": 0.3333613276001075,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.9694122832168842,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.11680327868852458
+          },
+          "vol_regime": {
+            "brier": 0.3579099307801201,
+            "brier_skill_vs_recent": -0.07363962507810906,
+            "log_loss": 1.1080619638604994,
+            "log_loss_gain_vs_recent": -0.13864968064361516,
+            "mean_probability": 0.08639049414714454
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.4166666666666667,
+        "positives": 5
+      },
+      "2009": {
+        "models": {
+          "global": {
+            "brier": 0.1430537807991428,
+            "brier_skill_vs_recent": 0.002827550209838936,
+            "log_loss": 0.4700100710250952,
+            "log_loss_gain_vs_recent": -0.0012705664018824447,
+            "mean_probability": 0.10494994345463497
+          },
+          "joint_regime": {
+            "brier": 0.12677298728958827,
+            "brier_skill_vs_recent": 0.11631465036027078,
+            "log_loss": 0.40491119609560683,
+            "log_loss_gain_vs_recent": 0.0638283085276059,
+            "mean_probability": 0.15887776978651272
+          },
+          "normal_vol": {
+            "brier": 0.16138837090013325,
+            "brier_skill_vs_recent": -0.12497576980568237,
+            "log_loss": 0.5127620463175563,
+            "log_loss_gain_vs_recent": -0.04402254169434355,
+            "mean_probability": 0.25312324228967586
+          },
+          "recent": {
+            "brier": 0.14345941951088417,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.46873950462321273,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.1523224043715847
+          },
+          "vol_regime": {
+            "brier": 0.14013853803004614,
+            "brier_skill_vs_recent": 0.023148577431585715,
+            "log_loss": 0.45515195017024085,
+            "log_loss_gain_vs_recent": 0.013587554452971884,
+            "mean_probability": 0.16379517466982094
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.16666666666666666,
+        "positives": 2
+      },
+      "2010": {
+        "models": {
+          "global": {
+            "brier": 0.14295729677274757,
+            "brier_skill_vs_recent": -0.01202207142238998,
+            "log_loss": 0.46949141642227094,
+            "log_loss_gain_vs_recent": -0.009913683741692658,
+            "mean_probability": 0.10502228575542165
+          },
+          "joint_regime": {
+            "brier": 0.16107263324614982,
+            "brier_skill_vs_recent": -0.14026400629521696,
+            "log_loss": 0.5748896411119752,
+            "log_loss_gain_vs_recent": -0.11531190843139688,
+            "mean_probability": 0.11907416069031894
+          },
+          "normal_vol": {
+            "brier": 0.1649494531208698,
+            "brier_skill_vs_recent": -0.16770875636196259,
+            "log_loss": 0.5703931552468876,
+            "log_loss_gain_vs_recent": -0.11081542256630933,
+            "mean_probability": 0.15838267110428492
+          },
+          "recent": {
+            "brier": 0.14125907014243483,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.4595777326805783,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.15846994535519124
+          },
+          "vol_regime": {
+            "brier": 0.15493849538393384,
+            "brier_skill_vs_recent": -0.09683927005682347,
+            "log_loss": 0.5285067714676391,
+            "log_loss_gain_vs_recent": -0.06892903878706086,
+            "mean_probability": 0.12358145599813573
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.16666666666666666,
+        "positives": 2
+      },
+      "2011": {
+        "models": {
+          "global": {
+            "brier": 0.14286440133430964,
+            "brier_skill_vs_recent": -0.012930212914071593,
+            "log_loss": 0.46899382065461576,
+            "log_loss_gain_vs_recent": -0.009869996995346852,
+            "mean_probability": 0.10525818822728468
+          },
+          "joint_regime": {
+            "brier": 0.13827958474754568,
+            "brier_skill_vs_recent": 0.01957683011434086,
+            "log_loss": 0.44416874741088613,
+            "log_loss_gain_vs_recent": 0.01495507624838277,
+            "mean_probability": 0.12721911723835774
+          },
+          "normal_vol": {
+            "brier": 0.15467706957213628,
+            "brier_skill_vs_recent": -0.0966838173212703,
+            "log_loss": 0.5166901868167902,
+            "log_loss_gain_vs_recent": -0.05756636315752134,
+            "mean_probability": 0.15310548564449064
+          },
+          "recent": {
+            "brier": 0.14104071486159633,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.4591238236592689,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.14412568306010928
+          },
+          "vol_regime": {
+            "brier": 0.1552250163303788,
+            "brier_skill_vs_recent": -0.10056884271113886,
+            "log_loss": 0.5297273040964238,
+            "log_loss_gain_vs_recent": -0.07060348043715486,
+            "mean_probability": 0.12776416641584706
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.16666666666666666,
+        "positives": 2
+      },
+      "2012": {
+        "models": {
+          "global": {
+            "brier": 0.07696021070725906,
+            "brier_skill_vs_recent": 0.005663388744059028,
+            "log_loss": 0.2900419929216981,
+            "log_loss_gain_vs_recent": 0.0023279346248735733,
+            "mean_probability": 0.10605304720240542
+          },
+          "joint_regime": {
+            "brier": 0.08230348464675727,
+            "brier_skill_vs_recent": -0.06337245267563829,
+            "log_loss": 0.305805930260775,
+            "log_loss_gain_vs_recent": -0.013436002714203366,
+            "mean_probability": 0.12273047672229781
+          },
+          "normal_vol": {
+            "brier": 0.08052792816179392,
+            "brier_skill_vs_recent": -0.04043201628484461,
+            "log_loss": 0.3025341193740117,
+            "log_loss_gain_vs_recent": -0.01016419182744005,
+            "mean_probability": 0.1536213283904708
+          },
+          "recent": {
+            "brier": 0.07739854877721042,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.29236992754657165,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.13114754098360656
+          },
+          "vol_regime": {
+            "brier": 0.07741440898449539,
+            "brier_skill_vs_recent": -0.00020491608092831903,
+            "log_loss": 0.29054798104346535,
+            "log_loss_gain_vs_recent": 0.0018219465031062976,
+            "mean_probability": 0.13680165705966643
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.08333333333333333,
+        "positives": 1
+      },
+      "2013": {
+        "models": {
+          "global": {
+            "brier": 0.011091306661226897,
+            "brier_skill_vs_recent": 0.03601163009809538,
+            "log_loss": 0.11128331553718585,
+            "log_loss_gain_vs_recent": 0.0021579015590040135,
+            "mean_probability": 0.10531469750335255
+          },
+          "joint_regime": {
+            "brier": 0.004153532367804137,
+            "brier_skill_vs_recent": 0.6390004335042523,
+            "log_loss": 0.06661672292263497,
+            "log_loss_gain_vs_recent": 0.04682449417355489,
+            "mean_probability": 0.06444617171017643
+          },
+          "normal_vol": {
+            "brier": 0.001716255071373002,
+            "brier_skill_vs_recent": 0.8508336322200539,
+            "log_loss": 0.03769015281557923,
+            "log_loss_gain_vs_recent": 0.07575106428061062,
+            "mean_probability": 0.036801989157316306
+          },
+          "recent": {
+            "brier": 0.01150564364418167,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.11344121709618986,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.10724043715846994
+          },
+          "vol_regime": {
+            "brier": 0.0075739884750176505,
+            "brier_skill_vs_recent": 0.3417153608048892,
+            "log_loss": 0.09104970117769996,
+            "log_loss_gain_vs_recent": 0.022391515918489896,
+            "mean_probability": 0.08702756079113327
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "2014": {
+        "models": {
+          "global": {
+            "brier": 0.010840773672763863,
+            "brier_skill_vs_recent": 0.04524215771942386,
+            "log_loss": 0.10994717929412001,
+            "log_loss_gain_vs_recent": 0.002725983209992844,
+            "mean_probability": 0.1041184802668162
+          },
+          "joint_regime": {
+            "brier": 0.003969902942032601,
+            "brier_skill_vs_recent": 0.6503666545016968,
+            "log_loss": 0.06507840208719953,
+            "log_loss_gain_vs_recent": 0.04759476041691332,
+            "mean_probability": 0.06300591787261291
+          },
+          "normal_vol": {
+            "brier": 0.0013601447933903924,
+            "brier_skill_vs_recent": 0.8802106798531207,
+            "log_loss": 0.03668210696817071,
+            "log_loss_gain_vs_recent": 0.07599105553594215,
+            "mean_probability": 0.03598362617044981
+          },
+          "recent": {
+            "brier": 0.011354474603601181,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.11267316250411286,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.10655737704918032
+          },
+          "vol_regime": {
+            "brier": 0.007334647460543831,
+            "brier_skill_vs_recent": 0.35403022010216334,
+            "log_loss": 0.08953284459045308,
+            "log_loss_gain_vs_recent": 0.02314031791365978,
+            "mean_probability": 0.08564168552432773
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "2015": {
+        "models": {
+          "global": {
+            "brier": 0.07684599957909143,
+            "brier_skill_vs_recent": 0.00692350098962724,
+            "log_loss": 0.28944026258792016,
+            "log_loss_gain_vs_recent": 0.002736940756390971,
+            "mean_probability": 0.10318212433572527
+          },
+          "joint_regime": {
+            "brier": 0.0820841186572675,
+            "brier_skill_vs_recent": -0.06076841510290398,
+            "log_loss": 0.31952676398817387,
+            "log_loss_gain_vs_recent": -0.027349560643862736,
+            "mean_probability": 0.0876672778385767
+          },
+          "normal_vol": {
+            "brier": 0.0792048355760779,
+            "brier_skill_vs_recent": -0.023559602964483117,
+            "log_loss": 0.3128811619709622,
+            "log_loss_gain_vs_recent": -0.020703958626651087,
+            "mean_probability": 0.0420936071051553
+          },
+          "recent": {
+            "brier": 0.07738175221714592,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.29217720334431113,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.10860655737704918
+          },
+          "vol_regime": {
+            "brier": 0.0764820709317838,
+            "brier_skill_vs_recent": 0.011626530281163339,
+            "log_loss": 0.28743751773010423,
+            "log_loss_gain_vs_recent": 0.004739685614206901,
+            "mean_probability": 0.08470241602212152
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.08333333333333333,
+        "positives": 1
+      },
+      "2016": {
+        "models": {
+          "global": {
+            "brier": 0.07683673561907599,
+            "brier_skill_vs_recent": 0.02738088763629165,
+            "log_loss": 0.28938914207489064,
+            "log_loss_gain_vs_recent": 0.010508827545154253,
+            "mean_probability": 0.10350180628164829
+          },
+          "joint_regime": {
+            "brier": 0.08067996213441304,
+            "brier_skill_vs_recent": -0.02126765959626109,
+            "log_loss": 0.31173592993652516,
+            "log_loss_gain_vs_recent": -0.011837960316480267,
+            "mean_probability": 0.08305498010362745
+          },
+          "normal_vol": {
+            "brier": 0.0785700551904774,
+            "brier_skill_vs_recent": 0.005440083808590512,
+            "log_loss": 0.2970932119251289,
+            "log_loss_gain_vs_recent": 0.0028047576949160047,
+            "mean_probability": 0.1037892683003802
+          },
+          "recent": {
+            "brier": 0.07899982083669264,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.2998979696200449,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.12158469945355192
+          },
+          "vol_regime": {
+            "brier": 0.07650691013673315,
+            "brier_skill_vs_recent": 0.03155590321037316,
+            "log_loss": 0.2875899787928252,
+            "log_loss_gain_vs_recent": 0.012307990827219673,
+            "mean_probability": 0.08581557185103128
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.08333333333333333,
+        "positives": 1
+      },
+      "2017": {
+        "models": {
+          "global": {
+            "brier": 0.010510083404428381,
+            "brier_skill_vs_recent": 0.30474630492661325,
+            "log_loss": 0.10816248695960506,
+            "log_loss_gain_vs_recent": 0.023029723311745326,
+            "mean_probability": 0.10251818603823963
+          },
+          "joint_regime": {
+            "brier": 0.004093191626020385,
+            "brier_skill_vs_recent": 0.729230825948056,
+            "log_loss": 0.06611530209669558,
+            "log_loss_gain_vs_recent": 0.06507690817465481,
+            "mean_probability": 0.06397699481936181
+          },
+          "normal_vol": {
+            "brier": 0.000837922556750199,
+            "brier_skill_vs_recent": 0.9445704918459112,
+            "log_loss": 0.017336732012434266,
+            "log_loss_gain_vs_recent": 0.11385547825891612,
+            "mean_probability": 0.016899289788255594
+          },
+          "recent": {
+            "brier": 0.015116904058048912,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.1311922102713504,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.12295081967213113
+          },
+          "vol_regime": {
+            "brier": 0.0071879743012456905,
+            "brier_skill_vs_recent": 0.5245075133344851,
+            "log_loss": 0.08859212587882981,
+            "log_loss_gain_vs_recent": 0.04260008439252058,
+            "mean_probability": 0.08478113563647248
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "2018": {
+        "models": {
+          "global": {
+            "brier": 0.14315068625943883,
+            "brier_skill_vs_recent": 0.012557147822737869,
+            "log_loss": 0.4705566618371451,
+            "log_loss_gain_vs_recent": 0.009352221059015509,
+            "mean_probability": 0.10147941557271795
+          },
+          "joint_regime": {
+            "brier": 0.14160739233307273,
+            "brier_skill_vs_recent": 0.02320267524715358,
+            "log_loss": 0.4671273793237378,
+            "log_loss_gain_vs_recent": 0.012781503572422803,
+            "mean_probability": 0.080594066332442
+          },
+          "normal_vol": {
+            "brier": 0.14915954260492928,
+            "brier_skill_vs_recent": -0.028891499076244775,
+            "log_loss": 0.5220108393337475,
+            "log_loss_gain_vs_recent": -0.04210195643758685,
+            "mean_probability": 0.021192978011096555
+          },
+          "recent": {
+            "brier": 0.14497110991668907,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.4799088828961606,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.11133879781420765
+          },
+          "vol_regime": {
+            "brier": 0.1459112382407769,
+            "brier_skill_vs_recent": -0.006484935685655557,
+            "log_loss": 0.48717157429877833,
+            "log_loss_gain_vs_recent": -0.007262691402617705,
+            "mean_probability": 0.08329057023788482
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.16666666666666666,
+        "positives": 2
+      },
+      "2019": {
+        "models": {
+          "global": {
+            "brier": 0.07679469740908772,
+            "brier_skill_vs_recent": 0.010093294252140672,
+            "log_loss": 0.2891633936304793,
+            "log_loss_gain_vs_recent": 0.005165583446500199,
+            "mean_probability": 0.10247738934978139
+          },
+          "joint_regime": {
+            "brier": 0.08516522507809625,
+            "brier_skill_vs_recent": -0.09780532049282731,
+            "log_loss": 0.33680536204087014,
+            "log_loss_gain_vs_recent": -0.04247638496389061,
+            "mean_probability": 0.10391696815630656
+          },
+          "normal_vol": {
+            "brier": 0.08520165332766826,
+            "brier_skill_vs_recent": -0.09827489156669822,
+            "log_loss": 0.32073298631839436,
+            "log_loss_gain_vs_recent": -0.02640400924141484,
+            "mean_probability": 0.16229116269950766
+          },
+          "recent": {
+            "brier": 0.07757771208456508,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.2943289770769795,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.08879781420765027
+          },
+          "vol_regime": {
+            "brier": 0.08383250682534023,
+            "brier_skill_vs_recent": -0.08062618209153927,
+            "log_loss": 0.32321574355457255,
+            "log_loss_gain_vs_recent": -0.02888676647759303,
+            "mean_probability": 0.11585200555054165
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.08333333333333333,
+        "positives": 1
+      },
+      "2020": {
+        "models": {
+          "global": {
+            "brier": 0.14321961810093292,
+            "brier_skill_vs_recent": 0.01592022967717832,
+            "log_loss": 0.47092386772666867,
+            "log_loss_gain_vs_recent": 0.013378156213765813,
+            "mean_probability": 0.10315956971808123
+          },
+          "joint_regime": {
+            "brier": 0.16017980601067458,
+            "brier_skill_vs_recent": -0.1006153263043228,
+            "log_loss": 0.5708317715754401,
+            "log_loss_gain_vs_recent": -0.0865297476350056,
+            "mean_probability": 0.1150113911443195
+          },
+          "normal_vol": {
+            "brier": 0.1773975966674403,
+            "brier_skill_vs_recent": -0.21892090273055986,
+            "log_loss": 0.6027331730318675,
+            "log_loss_gain_vs_recent": -0.11843114909143299,
+            "mean_probability": 0.19559816877608893
+          },
+          "recent": {
+            "brier": 0.1455365941055272,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.4843020239404345,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.0942622950819672
+          },
+          "vol_regime": {
+            "brier": 0.15595896061413067,
+            "brier_skill_vs_recent": -0.0716133737542759,
+            "log_loss": 0.5360987999851611,
+            "log_loss_gain_vs_recent": -0.0517967760447266,
+            "mean_probability": 0.1300168763982456
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.16666666666666666,
+        "positives": 2
+      },
+      "2021": {
+        "models": {
+          "global": {
+            "brier": 0.010524296640707845,
+            "brier_skill_vs_recent": -0.3913571979300863,
+            "log_loss": 0.10823974378107493,
+            "log_loss_gain_vs_recent": -0.01747255909205027,
+            "mean_probability": 0.1025875246884287
+          },
+          "joint_regime": {
+            "brier": 0.007962364343573964,
+            "brier_skill_vs_recent": -0.05265874957591299,
+            "log_loss": 0.09082295587408412,
+            "log_loss_gain_vs_recent": -0.00005577118505946388,
+            "mean_probability": 0.08656123801683023
+          },
+          "normal_vol": {
+            "brier": 0.033339967731804004,
+            "brier_skill_vs_recent": -3.4076868665004065,
+            "log_loss": 0.1902500539254445,
+            "log_loss_gain_vs_recent": -0.09948286923641984,
+            "mean_probability": 0.1706086278790615
+          },
+          "recent": {
+            "brier": 0.0075640508823792895,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.09076718468902466,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.08674863387978142
+          },
+          "vol_regime": {
+            "brier": 0.012731794719582067,
+            "brier_skill_vs_recent": -0.6831979210030448,
+            "log_loss": 0.11645743696695667,
+            "log_loss_gain_vs_recent": -0.025690252277932007,
+            "mean_probability": 0.1095144518134017
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "2022": {
+        "models": {
+          "global": {
+            "brier": 0.3412783980464397,
+            "brier_skill_vs_recent": 0.02971805866927979,
+            "log_loss": 1.0096275611968075,
+            "log_loss_gain_vs_recent": 0.06248247797563944,
+            "mean_probability": 0.10325127177458109
+          },
+          "joint_regime": {
+            "brier": 0.3337629518569774,
+            "brier_skill_vs_recent": 0.05108507679999019,
+            "log_loss": 0.9862795593590253,
+            "log_loss_gain_vs_recent": 0.08583047981342162,
+            "mean_probability": 0.13770820267128167
+          },
+          "normal_vol": {
+            "brier": 0.32169581446162016,
+            "brier_skill_vs_recent": 0.085392919210451,
+            "log_loss": 0.95602828440305,
+            "log_loss_gain_vs_recent": 0.11608175476939697,
+            "mean_probability": 0.13694978796154114
+          },
+          "recent": {
+            "brier": 0.35173116545731437,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 1.072110039172447,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.0860655737704918
+          },
+          "vol_regime": {
+            "brier": 0.3388049497601208,
+            "brier_skill_vs_recent": 0.03675027113502183,
+            "log_loss": 1.0050467978191466,
+            "log_loss_gain_vs_recent": 0.06706324135330033,
+            "mean_probability": 0.10942306171304837
+          }
+        },
+        "n": 12,
+        "observed_rate": 0.4166666666666667,
+        "positives": 5
+      },
+      "2023": {
+        "models": {
+          "global": {
+            "brier": 0.01096112783454264,
+            "brier_skill_vs_recent": 0.02259354953969439,
+            "log_loss": 0.11059090294796164,
+            "log_loss_gain_vs_recent": 0.001321219259211845,
+            "mean_probability": 0.10469501359249002
+          },
+          "joint_regime": {
+            "brier": 0.014447548031968882,
+            "brier_skill_vs_recent": -0.2882913923584116,
+            "log_loss": 0.12519639676707423,
+            "log_loss_gain_vs_recent": -0.013284274559900736,
+            "mean_probability": 0.11726598905518691
+          },
+          "normal_vol": {
+            "brier": 0.04226238295073515,
+            "brier_skill_vs_recent": -2.7685470264927137,
+            "log_loss": 0.22717811715049263,
+            "log_loss_gain_vs_recent": -0.11526599494331914,
+            "mean_probability": 0.20243758441796467
+          },
+          "recent": {
+            "brier": 0.011214503269730357,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.11191212220717349,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.1058743169398907
+          },
+          "vol_regime": {
+            "brier": 0.018399180599840727,
+            "brier_skill_vs_recent": -0.6406594351354735,
+            "log_loss": 0.1443178768578211,
+            "log_loss_gain_vs_recent": -0.032405754650647614,
+            "mean_probability": 0.13416284437242296
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      },
+      "2024": {
+        "models": {
+          "global": {
+            "brier": 0.010753430076086382,
+            "brier_skill_vs_recent": 0.05293459613923235,
+            "log_loss": 0.10947826194293242,
+            "log_loss_gain_vs_recent": 0.003194900561180436,
+            "mean_probability": 0.10369830034695375
+          },
+          "joint_regime": {
+            "brier": 0.0046026116860191455,
+            "brier_skill_vs_recent": 0.5946433589662191,
+            "log_loss": 0.07025254659688396,
+            "log_loss_gain_vs_recent": 0.0424206159072289,
+            "mean_probability": 0.06784155045256335
+          },
+          "normal_vol": {
+            "brier": 0.014740795644847001,
+            "brier_skill_vs_recent": -0.2982367004609634,
+            "log_loss": 0.12735360297963463,
+            "log_loss_gain_vs_recent": -0.014680440475521778,
+            "mean_probability": 0.11929190807608699
+          },
+          "recent": {
+            "brier": 0.011354474603601181,
+            "brier_skill_vs_recent": 0,
+            "log_loss": 0.11267316250411286,
+            "log_loss_gain_vs_recent": 0,
+            "mean_probability": 0.10655737704918032
+          },
+          "vol_regime": {
+            "brier": 0.007892717796231059,
+            "brier_skill_vs_recent": 0.3048804042656621,
+            "log_loss": 0.09303710473649936,
+            "log_loss_gain_vs_recent": 0.0196360577676135,
+            "mean_probability": 0.08884023731723735
+          }
+        },
+        "n": 12,
+        "observed_rate": 0,
+        "positives": 0
+      }
+    }
+  },
+  "source": {
+    "bytes": 12995,
+    "csv_member": "F-F_Research_Data_Factors.CSV",
+    "first_month": "1926-07",
+    "last_month": "2024-12",
+    "months": 1182,
+    "sha256": "fc9e41cc3b66c62fa8f565a01fb4c8c0d7962c777303c46b8ab7102190b98ea2",
+    "url": "https://mba.tuck.dartmouth.edu/pages/faculty/Ken.french/ftp_202412/F-F_Research_Data_Factors_CSV.zip"
+  },
+  "status": "RETROSPECTIVE_REVISED_SOURCE_NOT_ASOF_NOT_PROSPECTIVE",
+  "trading_strategies_tested": 0
+}
