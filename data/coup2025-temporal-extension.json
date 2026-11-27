@@ -1,0 +1,117 @@
+{
+  "event_rows": 3,
+  "models": {
+    "country_constrained": {
+      "alerts": {
+        "5": {
+          "expected_hits": 1,
+          "maximum_hits": 1,
+          "minimum_hits": 1,
+          "random_expected_hits": 0.076923077,
+          "slots_in_tie": 1,
+          "tied_at_cutoff": 1
+        },
+        "10": {
+          "expected_hits": 1,
+          "maximum_hits": 1,
+          "minimum_hits": 1,
+          "random_expected_hits": 0.153846154,
+          "slots_in_tie": 2,
+          "tied_at_cutoff": 2
+        },
+        "20": {
+          "expected_hits": 1,
+          "maximum_hits": 1,
+          "minimum_hits": 1,
+          "random_expected_hits": 0.307692308,
+          "slots_in_tie": 1,
+          "tied_at_cutoff": 3
+        }
+      },
+      "brier": 0.014534387,
+      "brier_gain": 0.000614527,
+      "log_loss": 0.063152942,
+      "log_loss_gain": 0.016365235,
+      "mean_probability": 0.016376663
+    },
+    "global_recent": {
+      "alerts": {
+        "5": {
+          "expected_hits": 0.076923077,
+          "maximum_hits": 3,
+          "minimum_hits": 0,
+          "random_expected_hits": 0.076923077,
+          "slots_in_tie": 5,
+          "tied_at_cutoff": 195
+        },
+        "10": {
+          "expected_hits": 0.153846154,
+          "maximum_hits": 3,
+          "minimum_hits": 0,
+          "random_expected_hits": 0.153846154,
+          "slots_in_tie": 10,
+          "tied_at_cutoff": 195
+        },
+        "20": {
+          "expected_hits": 0.307692308,
+          "maximum_hits": 3,
+          "minimum_hits": 0,
+          "random_expected_hits": 0.307692308,
+          "slots_in_tie": 20,
+          "tied_at_cutoff": 195
+        }
+      },
+      "brier": 0.015148913,
+      "brier_gain": 0,
+      "log_loss": 0.079518177,
+      "log_loss_gain": 0,
+      "mean_probability": 0.016376663
+    },
+    "prior5_constrained": {
+      "alerts": {
+        "5": {
+          "expected_hits": 0.5,
+          "maximum_hits": 1,
+          "minimum_hits": 0,
+          "random_expected_hits": 0.076923077,
+          "slots_in_tie": 5,
+          "tied_at_cutoff": 10
+        },
+        "10": {
+          "expected_hits": 1,
+          "maximum_hits": 1,
+          "minimum_hits": 1,
+          "random_expected_hits": 0.153846154,
+          "slots_in_tie": 10,
+          "tied_at_cutoff": 10
+        },
+        "20": {
+          "expected_hits": 1.108108108,
+          "maximum_hits": 3,
+          "minimum_hits": 1,
+          "random_expected_hits": 0.307692308,
+          "slots_in_tie": 10,
+          "tied_at_cutoff": 185
+        }
+      },
+      "brier": 0.014799669,
+      "brier_gain": 0.000349244,
+      "log_loss": 0.073750639,
+      "log_loss_gain": 0.005767538,
+      "mean_probability": 0.016376663
+    }
+  },
+  "modified_forecasts": 0,
+  "n": 195,
+  "new_forecasts": 0,
+  "positives": 3,
+  "recent_first_year": 2019,
+  "roster_source_sha256": [
+    "c11689e8c0aa70ede855f6b605c4dd71c7b04122b71d5827dab5ba06b32e2015",
+    "de7cae05d9908cff3606df185518cda380dbdc4c4f24739e72b0b13c1cb4a3d4"
+  ],
+  "source_sha256": "1e8f933b22f4b9a77d0ba5eb59bf0d8158adcaab27746adcf345195be87a9012",
+  "status": "RETROSPECTIVE_2025_SOURCE_RECORD_ENDPOINT_NOT_ASOF_NOT_PROSPECTIVE",
+  "training_last_year": 2023,
+  "year": 2025
+}
