@@ -33,4 +33,4 @@ jobs:
       - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_fin01_publication_lag.py' -v
       - run: python3 -B scripts/experiment_fin01_publication_lag.py
       - run: python3 -B -m unittest discover -s scripts -p 'test_generate_fin_dic2026_candidate.py' -v
-      - run: python3 -B scripts/generate_fin_dic2026_candidate.py
+      - run: python3 -B scripts/audit_fin_dic2026_issuance.py
