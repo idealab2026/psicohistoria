@@ -6,6 +6,9 @@ on:
       - 'scripts/test_experiment_fin01_monthly_downside.py'
       - 'docs/fin01-monthly-downside-protocol.md'
       - 'data/fin01-monthly-downside.json'
+      - 'docs/fin01-vintage-extension-protocol.md'
+      - 'scripts/experiment_fin01_vintage_extension.py'
+      - 'scripts/test_experiment_fin01_vintage_extension.py'
       - '.github/workflows/fin01-monthly-downside.yml'
       - 'scripts/audit_public.py'
   pull_request:
@@ -14,6 +17,9 @@ on:
       - 'scripts/test_experiment_fin01_monthly_downside.py'
       - 'docs/fin01-monthly-downside-protocol.md'
       - 'data/fin01-monthly-downside.json'
+      - 'docs/fin01-vintage-extension-protocol.md'
+      - 'scripts/experiment_fin01_vintage_extension.py'
+      - 'scripts/test_experiment_fin01_vintage_extension.py'
       - '.github/workflows/fin01-monthly-downside.yml'
       - 'scripts/audit_public.py'
 permissions:
@@ -30,3 +36,5 @@ jobs:
       - run: python3 -B scripts/audit_public.py
       - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_fin01_monthly_downside.py' -v
       - run: python3 -B scripts/experiment_fin01_monthly_downside.py --check
+      - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_fin01_vintage_extension.py' -v
+      - run: python3 -B scripts/experiment_fin01_vintage_extension.py
