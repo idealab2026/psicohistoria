@@ -25,6 +25,9 @@ on:
       - 'scripts/test_experiment_coup2025_temporal_extension.py'
       - 'docs/coup2025-temporal-extension-protocol.md'
       - 'data/coup2025-temporal-extension.json'
+      - 'docs/coup-source-vintage-bridge.md'
+      - 'scripts/audit_coup_source_vintage_bridge.py'
+      - 'scripts/test_audit_coup_source_vintage_bridge.py'
       - 'docs/coup-temporal-uncertainty.md'
       - 'scripts/test_experiment_coup_rolling_backtest.py'
       - 'docs/coup-rolling-backtest.md'
@@ -65,6 +68,9 @@ on:
       - 'scripts/test_experiment_coup2025_temporal_extension.py'
       - 'docs/coup2025-temporal-extension-protocol.md'
       - 'data/coup2025-temporal-extension.json'
+      - 'docs/coup-source-vintage-bridge.md'
+      - 'scripts/audit_coup_source_vintage_bridge.py'
+      - 'scripts/test_audit_coup_source_vintage_bridge.py'
       - 'docs/coup-temporal-uncertainty.md'
       - 'scripts/test_experiment_coup_rolling_backtest.py'
       - 'docs/coup-rolling-backtest.md'
@@ -114,3 +120,5 @@ jobs:
       - run: python3 -B scripts/experiment_coup_fixed_cohort.py --check
       - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_coup2025_temporal_extension.py' -v
       - run: python3 -B scripts/experiment_coup2025_temporal_extension.py --check
+      - run: python3 -B -m unittest discover -s scripts -p 'test_audit_coup_source_vintage_bridge.py' -v
+      - run: python3 -B scripts/audit_coup_source_vintage_bridge.py
