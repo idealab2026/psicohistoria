@@ -1,0 +1,147 @@
+{
+  "status": "EXPLORATORY_POST_SELECTION_TEMPORAL_BOOTSTRAP_NOT_INDEPENDENT",
+  "source_commit": "eace3f5bf71bbdef2e7066712dcd128413a87719",
+  "source": "data/coup-mean-constraint.json",
+  "seed": 27012026,
+  "draws_per_block": 20000,
+  "folds": 45,
+  "results": [
+    {
+      "block": 1,
+      "model": "country_constrained",
+      "reference": "global_recent",
+      "brier": {
+        "lo": 0.0000027,
+        "hi": 0.000529444,
+        "fraction_positive": 0.9763
+      },
+      "log_loss": {
+        "lo": 0.005982833,
+        "hi": 0.01122436,
+        "fraction_positive": 1
+      }
+    },
+    {
+      "block": 1,
+      "model": "prior5_constrained",
+      "reference": "global_recent",
+      "brier": {
+        "lo": 0.000110291,
+        "hi": 0.000589141,
+        "fraction_positive": 0.9986
+      },
+      "log_loss": {
+        "lo": 0.002631744,
+        "hi": 0.007143861,
+        "fraction_positive": 1
+      }
+    },
+    {
+      "block": 1,
+      "model": "prior5_constrained",
+      "reference": "country_constrained",
+      "brier": {
+        "lo": -0.00012471,
+        "hi": 0.000285632,
+        "fraction_positive": 0.7783
+      },
+      "log_loss": {
+        "lo": -0.006259182,
+        "hi": -0.001338433,
+        "fraction_positive": 0.00125
+      }
+    },
+    {
+      "block": 3,
+      "model": "country_constrained",
+      "reference": "global_recent",
+      "brier": {
+        "lo": -0.00001102,
+        "hi": 0.000575229,
+        "fraction_positive": 0.97015
+      },
+      "log_loss": {
+        "lo": 0.005880343,
+        "hi": 0.011487425,
+        "fraction_positive": 1
+      }
+    },
+    {
+      "block": 3,
+      "model": "prior5_constrained",
+      "reference": "global_recent",
+      "brier": {
+        "lo": 0.000101773,
+        "hi": 0.000635508,
+        "fraction_positive": 0.9986
+      },
+      "log_loss": {
+        "lo": 0.002578227,
+        "hi": 0.007300492,
+        "fraction_positive": 1
+      }
+    },
+    {
+      "block": 3,
+      "model": "prior5_constrained",
+      "reference": "country_constrained",
+      "brier": {
+        "lo": -0.000108881,
+        "hi": 0.000275596,
+        "fraction_positive": 0.7945
+      },
+      "log_loss": {
+        "lo": -0.005923523,
+        "hi": -0.00176385,
+        "fraction_positive": 0.00005
+      }
+    },
+    {
+      "block": 5,
+      "model": "country_constrained",
+      "reference": "global_recent",
+      "brier": {
+        "lo": -0.000041389,
+        "hi": 0.000628158,
+        "fraction_positive": 0.9519
+      },
+      "log_loss": {
+        "lo": 0.005802478,
+        "hi": 0.011680465,
+        "fraction_positive": 1
+      }
+    },
+    {
+      "block": 5,
+      "model": "prior5_constrained",
+      "reference": "global_recent",
+      "brier": {
+        "lo": 0.000093764,
+        "hi": 0.000660845,
+        "fraction_positive": 0.9986
+      },
+      "log_loss": {
+        "lo": 0.002455908,
+        "hi": 0.007482545,
+        "fraction_positive": 1
+      }
+    },
+    {
+      "block": 5,
+      "model": "prior5_constrained",
+      "reference": "country_constrained",
+      "brier": {
+        "lo": -0.00011642,
+        "hi": 0.000293511,
+        "fraction_positive": 0.775
+      },
+      "log_loss": {
+        "lo": -0.005774083,
+        "hi": -0.002049876,
+        "fraction_positive": 0
+      }
+    }
+  ],
+  "new_forecasts": 0,
+  "modified_forecasts": 0
+}

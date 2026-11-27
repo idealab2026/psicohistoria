@@ -11,6 +11,9 @@ on:
       - 'scripts/test_experiment_coup_mean_constraint.py'
       - 'docs/coup-mean-constraint.md'
       - 'data/coup-mean-constraint.json'
+      - 'scripts/experiment_coup_temporal_uncertainty.py'
+      - 'data/coup-temporal-uncertainty.json'
+      - 'docs/coup-temporal-uncertainty.md'
       - 'scripts/test_experiment_coup_rolling_backtest.py'
       - 'docs/coup-rolling-backtest.md'
       - 'data/coup-rolling-backtest.json'
@@ -36,6 +39,9 @@ on:
       - 'scripts/test_experiment_coup_mean_constraint.py'
       - 'docs/coup-mean-constraint.md'
       - 'data/coup-mean-constraint.json'
+      - 'scripts/experiment_coup_temporal_uncertainty.py'
+      - 'data/coup-temporal-uncertainty.json'
+      - 'docs/coup-temporal-uncertainty.md'
       - 'scripts/test_experiment_coup_rolling_backtest.py'
       - 'docs/coup-rolling-backtest.md'
       - 'data/coup-rolling-backtest.json'
@@ -77,3 +83,4 @@ jobs:
       - run: python3 -B scripts/experiment_coup_rolling_backtest.py --check
       - run: python3 -B -m unittest discover -s scripts -p 'test_experiment_coup_mean_constraint.py' -v
       - run: python3 -B scripts/experiment_coup_mean_constraint.py --check
+      - run: python3 -B scripts/experiment_coup_temporal_uncertainty.py --check
