@@ -214,6 +214,8 @@ REPOSITORY |= {
     "scripts/test_monitor_dec2026_pilot.py",
     ".github/workflows/dec2026-monitor.yml",
 }
+# FIN-01 publication lag and current archive census; no issued forecasts or raw data.
+REPOSITORY |= {"docs/fin01-publication-lag-protocol.md", "scripts/experiment_fin01_publication_lag.py", "scripts/test_experiment_fin01_publication_lag.py", ".github/workflows/fin01-publication-lag.yml"}
 # FIN-01 source-separated revision research; no raw observations.
 REPOSITORY |= {"docs/fin01-vintage-extension-protocol.md", "scripts/experiment_fin01_vintage_extension.py", "scripts/test_experiment_fin01_vintage_extension.py"}
 # FIN-01 aggregate-only historical financial research; raw market observations are not redistributed.
