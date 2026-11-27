@@ -1,0 +1,1622 @@
+{
+  "endpoint": "MONTHLY_REALIZED_VARIANCE_SUM_DAILY_MARKET_TOTAL_RETURNS_SQUARED",
+  "feature_lag_months": 2,
+  "modified_forecasts": 0,
+  "new_forecasts": 0,
+  "results": {
+    "mean_observed_monthly_volatility": 0.044597444818498,
+    "models": {
+      "ewma94": {
+        "mae_skill_vs_trailing12": -0.03945358452779235,
+        "mean_predicted_monthly_volatility": 0.049704592363977,
+        "qlike": 0.5264340681883067,
+        "qlike_skill_vs_trailing12": 0.03018756500203279,
+        "volatility_mae": 0.01836611549519714
+      },
+      "global": {
+        "mae_skill_vs_trailing12": 0.03266980506286188,
+        "mean_predicted_monthly_volatility": 0.03983235867226038,
+        "qlike": 0.7366829438336772,
+        "qlike_skill_vs_trailing12": -0.35713914192432306,
+        "volatility_mae": 0.017091766623016556
+      },
+      "har_proxy": {
+        "mae_skill_vs_trailing12": 0.10132080681227817,
+        "mean_predicted_monthly_volatility": 0.046863857851334303,
+        "qlike": 0.5340455170889534,
+        "qlike_skill_vs_trailing12": 0.016165528362948267,
+        "volatility_mae": 0.015878771405376756
+      },
+      "last_month": {
+        "mae_skill_vs_trailing12": 0.07307498304505988,
+        "mean_predicted_monthly_volatility": 0.04452588587171386,
+        "qlike": 0.6511828106223526,
+        "qlike_skill_vs_trailing12": -0.19962826374790366,
+        "volatility_mae": 0.016377847140250847
+      },
+      "trailing12": {
+        "mae_skill_vs_trailing12": 0,
+        "mean_predicted_monthly_volatility": 0.047727422745100175,
+        "qlike": 0.5428204972329626,
+        "qlike_skill_vs_trailing12": 0,
+        "volatility_mae": 0.01766900972643293
+      }
+    },
+    "n": 420,
+    "periods": {
+      "1990-2004": {
+        "mean_observed_monthly_volatility": 0.04210651817997194,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.06935080407118877,
+            "mean_predicted_monthly_volatility": 0.04463061354110538,
+            "qlike": 0.2790119025111411,
+            "qlike_skill_vs_trailing12": -0.1582026809203243,
+            "volatility_mae": 0.013094617603150354
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.1983870624963464,
+            "mean_predicted_monthly_volatility": 0.03655817605233939,
+            "qlike": 0.5324143763572693,
+            "qlike_skill_vs_trailing12": -1.210098395472175,
+            "volatility_mae": 0.01467471690693901
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.032338851426640836,
+            "mean_predicted_monthly_volatility": 0.04347430233428865,
+            "qlike": 0.23135341032630974,
+            "qlike_skill_vs_trailing12": 0.03963186635275451,
+            "volatility_mae": 0.01184938811637145
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.03602284505551401,
+            "mean_predicted_monthly_volatility": 0.04209022229673578,
+            "qlike": 0.31599755847239186,
+            "qlike_skill_vs_trailing12": -0.3117333565093592,
+            "volatility_mae": 0.012686503748330944
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.0439390821320027,
+            "qlike": 0.2409007569292054,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.012245389963047729
+          }
+        },
+        "n": 180
+      },
+      "2005-2014": {
+        "mean_observed_monthly_volatility": 0.04860269061997697,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.11943159489234234,
+            "mean_predicted_monthly_volatility": 0.05674155831859989,
+            "qlike": 0.6484091650218066,
+            "qlike_skill_vs_trailing12": -0.15559430790547557,
+            "volatility_mae": 0.024468202382462223
+          },
+          "global": {
+            "mae_skill_vs_trailing12": 0.08701926714485198,
+            "mean_predicted_monthly_volatility": 0.04121904020189891,
+            "qlike": 1.0759003099399798,
+            "qlike_skill_vs_trailing12": -0.9174686927791409,
+            "volatility_mae": 0.01995566093070369
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.1566396185117993,
+            "mean_predicted_monthly_volatility": 0.0513194388854423,
+            "qlike": 0.4723934446077727,
+            "qlike_skill_vs_trailing12": 0.15810077165975311,
+            "volatility_mae": 0.01843392002669747
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.1518650837686467,
+            "mean_predicted_monthly_volatility": 0.048580431092968626,
+            "qlike": 0.5470869213502316,
+            "qlike_skill_vs_trailing12": 0.024982115697583462,
+            "volatility_mae": 0.018538280385035213
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.05238268286427709,
+            "qlike": 0.5611044988591659,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.02185770215357855
+          }
+        },
+        "n": 120
+      },
+      "2015-2024": {
+        "mean_observed_monthly_volatility": 0.04432858897480814,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.06682496339731758,
+            "mean_predicted_monthly_volatility": 0.05027859464366155,
+            "qlike": 0.7755922198705555,
+            "qlike_skill_vs_trailing12": 0.20648717055104016,
+            "volatility_mae": 0.02017127544600224
+          },
+          "global": {
+            "mae_skill_vs_trailing12": 0.17405366858720328,
+            "mean_predicted_monthly_volatility": 0.04335695107250331,
+            "qlike": 0.7038684289419864,
+            "qlike_skill_vs_trailing12": 0.27986819065466273,
+            "volatility_mae": 0.01785344688944574
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.10400053408226773,
+            "mean_predicted_monthly_volatility": 0.047492610092794804,
+            "qlike": 1.0497357497140998,
+            "qlike_skill_vs_trailing12": -0.07399064042749504,
+            "volatility_mae": 0.019367697717564
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.08610935193724589,
+            "mean_predicted_monthly_volatility": 0.0441248360129262,
+            "qlike": 1.2580565781194148,
+            "qlike_skill_vs_trailing12": -0.2871248696602766,
+            "volatility_mae": 0.019754428983346336
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.048754673545569484,
+            "qlike": 0.9774161060623947,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.02161574694436512
+          }
+        },
+        "n": 120
+      }
+    },
+    "years": {
+      "1990": {
+        "mean_observed_monthly_volatility": 0.04030511099384647,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.22218817309258077,
+            "mean_predicted_monthly_volatility": 0.04369934695000665,
+            "qlike": 0.2723374087925506,
+            "qlike_skill_vs_trailing12": 0.1460542647964106,
+            "volatility_mae": 0.013208974578797897
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.07129254557892328,
+            "mean_predicted_monthly_volatility": 0.03585492417626055,
+            "qlike": 0.32637812531224636,
+            "qlike_skill_vs_trailing12": -0.02339671002171606,
+            "volatility_mae": 0.011578148367449283
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.021812009808328425,
+            "mean_predicted_monthly_volatility": 0.03874864364120939,
+            "qlike": 0.36073966398531176,
+            "qlike_skill_vs_trailing12": -0.13114132555211122,
+            "volatility_mae": 0.010571907485434684
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.23771291756600688,
+            "mean_predicted_monthly_volatility": 0.038694210390803306,
+            "qlike": 0.4994437371595614,
+            "qlike_skill_vs_trailing12": -0.5660641379107381,
+            "volatility_mae": 0.013376760489025556
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.036003825278160186,
+            "qlike": 0.31891652779040175,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.01080764392063653
+          }
+        },
+        "n": 12
+      },
+      "1991": {
+        "mean_observed_monthly_volatility": 0.03783008583038316,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.14802205295275894,
+            "mean_predicted_monthly_volatility": 0.04362462043354818,
+            "qlike": 0.12393059451893788,
+            "qlike_skill_vs_trailing12": 0.16623984777860112,
+            "volatility_mae": 0.00803091471087671
+          },
+          "global": {
+            "mae_skill_vs_trailing12": 0.24886357953176064,
+            "mean_predicted_monthly_volatility": 0.03606806867728946,
+            "qlike": 0.11064514196753698,
+            "qlike_skill_vs_trailing12": 0.25561956054915125,
+            "volatility_mae": 0.007080362290972742
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.07521642130998829,
+            "mean_predicted_monthly_volatility": 0.04044556830439164,
+            "qlike": 0.12227073940633698,
+            "qlike_skill_vs_trailing12": 0.17740675177611331,
+            "volatility_mae": 0.008717195171798284
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.18251694270562657,
+            "mean_predicted_monthly_volatility": 0.03667324141930119,
+            "qlike": 0.33019431285990625,
+            "qlike_skill_vs_trailing12": -1.2214277404329446,
+            "volatility_mae": 0.01114664146407652
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.04373750760583206,
+            "qlike": 0.14864058229305857,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.009426200218808488
+          }
+        },
+        "n": 12
+      },
+      "1992": {
+        "mean_observed_monthly_volatility": 0.026148317310299245,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.43382744983531296,
+            "mean_predicted_monthly_volatility": 0.03866074875850151,
+            "qlike": 0.3003754453117727,
+            "qlike_skill_vs_trailing12": -0.6419591710418673,
+            "volatility_mae": 0.012622911694357655
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.20991903393005606,
+            "mean_predicted_monthly_volatility": 0.036022949719931564,
+            "qlike": 0.24009814226336113,
+            "qlike_skill_vs_trailing12": -0.312461963161639,
+            "volatility_mae": 0.01065170088937537
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.15865366318016705,
+            "mean_predicted_monthly_volatility": 0.0317751149588562,
+            "qlike": 0.1452857594042912,
+            "qlike_skill_vs_trailing12": 0.20581629158117987,
+            "volatility_mae": 0.007406916721581713
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.0326679748980605,
+            "mean_predicted_monthly_volatility": 0.030034950723202614,
+            "qlike": 0.19464568624065906,
+            "qlike_skill_vs_trailing12": -0.06400264940052258,
+            "volatility_mae": 0.00851605033324507
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.03400145205799718,
+            "qlike": 0.1829372195175696,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.008803647674486565
+          }
+        },
+        "n": 12
+      },
+      "1993": {
+        "mean_observed_monthly_volatility": 0.023187447385746112,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.6680890006896609,
+            "mean_predicted_monthly_volatility": 0.032595504705168914,
+            "qlike": 0.2890962624214873,
+            "qlike_skill_vs_trailing12": -0.895682934196453,
+            "volatility_mae": 0.009733892471814477
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -1.1739509443958935,
+            "mean_predicted_monthly_volatility": 0.03582586561473556,
+            "qlike": 0.39543247300549716,
+            "qlike_skill_vs_trailing12": -1.5929584299181339,
+            "volatility_mae": 0.012685776791885971
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.03013430160211794,
+            "mean_predicted_monthly_volatility": 0.02463794062789698,
+            "qlike": 0.15462156708357072,
+            "qlike_skill_vs_trailing12": -0.013895729830269765,
+            "volatility_mae": 0.0056595112229641765
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.04388677276978892,
+            "mean_predicted_monthly_volatility": 0.02303830599712155,
+            "qlike": 0.2266641257785206,
+            "qlike_skill_vs_trailing12": -0.48629840951192893,
+            "volatility_mae": 0.005579260663484142
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.02610757036502723,
+            "qlike": 0.15250243445591294,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.0058353555882150535
+          }
+        },
+        "n": 12
+      },
+      "1994": {
+        "mean_observed_monthly_volatility": 0.02657367225792147,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.025252575053154702,
+            "mean_predicted_monthly_volatility": 0.02875833970744132,
+            "qlike": 0.09937245859241266,
+            "qlike_skill_vs_trailing12": 0.18860212751939398,
+            "volatility_mae": 0.004812710865623653
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.9145612158741019,
+            "mean_predicted_monthly_volatility": 0.03561170161930793,
+            "qlike": 0.2107586688249461,
+            "qlike_skill_vs_trailing12": -0.7208906563620321,
+            "volatility_mae": 0.009452940660029331
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": -0.31137152628057074,
+            "mean_predicted_monthly_volatility": 0.025320443310815902,
+            "qlike": 0.1836812609849602,
+            "qlike_skill_vs_trailing12": -0.4997976953458525,
+            "volatility_mae": 0.006474756261853311
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.6653014645773072,
+            "mean_predicted_monthly_volatility": 0.025631074464805812,
+            "qlike": 0.3568882853022572,
+            "qlike_skill_vs_trailing12": -1.9140709559702196,
+            "volatility_mae": 0.008222247371976634
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.02458040983393318,
+            "qlike": 0.12247069158390954,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.004937392746522104
+          }
+        },
+        "n": 12
+      },
+      "1995": {
+        "mean_observed_monthly_volatility": 0.02220465666066897,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.05775224227259623,
+            "mean_predicted_monthly_volatility": 0.026607381368806523,
+            "qlike": 0.16105483591520722,
+            "qlike_skill_vs_trailing12": -0.10593349370422556,
+            "volatility_mae": 0.005705164960654738
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -1.448140839324231,
+            "mean_predicted_monthly_volatility": 0.03540911681407132,
+            "qlike": 0.4034566159430378,
+            "qlike_skill_vs_trailing12": -1.7704612673840034,
+            "volatility_mae": 0.013204460153402348
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": -0.10866899624016901,
+            "mean_predicted_monthly_volatility": 0.02356869114548274,
+            "qlike": 0.15818855401184376,
+            "qlike_skill_vs_trailing12": -0.08625127093013352,
+            "volatility_mae": 0.0059797930531671735
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.27198100847602547,
+            "mean_predicted_monthly_volatility": 0.022294934771554708,
+            "qlike": 0.30027480130962786,
+            "qlike_skill_vs_trailing12": -1.0619310075143336,
+            "volatility_mae": 0.006860643910888077
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.024751081008464838,
+            "qlike": 0.145627957587005,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.005393668510120203
+          }
+        },
+        "n": 12
+      },
+      "1996": {
+        "mean_observed_monthly_volatility": 0.031406288966662387,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.11210635376127287,
+            "mean_predicted_monthly_volatility": 0.02761477817018834,
+            "qlike": 0.21626374112772617,
+            "qlike_skill_vs_trailing12": 0.20114990795429255,
+            "volatility_mae": 0.007666849431235742
+          },
+          "global": {
+            "mae_skill_vs_trailing12": 0.16012730284131738,
+            "mean_predicted_monthly_volatility": 0.035263619943422586,
+            "qlike": 0.14053131678187322,
+            "qlike_skill_vs_trailing12": 0.48089561957498606,
+            "volatility_mae": 0.0072521946043864124
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": -0.04742752590124755,
+            "mean_predicted_monthly_volatility": 0.030265528964296236,
+            "qlike": 0.23743411921589005,
+            "qlike_skill_vs_trailing12": 0.1229492886725615,
+            "volatility_mae": 0.009044404321660723
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.11052998348494936,
+            "mean_predicted_monthly_volatility": 0.03079033335569331,
+            "qlike": 0.2944278920443855,
+            "qlike_skill_vs_trailing12": -0.087578284894132,
+            "volatility_mae": 0.009589286068573353
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.02769462115292473,
+            "qlike": 0.27071880354161904,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.008634873628968805
+          }
+        },
+        "n": 12
+      },
+      "1997": {
+        "mean_observed_monthly_volatility": 0.04476437444197943,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.2864574011941574,
+            "mean_predicted_monthly_volatility": 0.03215967251519321,
+            "qlike": 0.4892264007772427,
+            "qlike_skill_vs_trailing12": -0.40044968429484773,
+            "volatility_mae": 0.012604701926786227
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.02290042549564464,
+            "mean_predicted_monthly_volatility": 0.03526487836403922,
+            "qlike": 0.3565722496660159,
+            "qlike_skill_vs_trailing12": -0.020716571468201828,
+            "volatility_mae": 0.010022372254368557
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": -0.11579936586562822,
+            "mean_predicted_monthly_volatility": 0.03888461314708339,
+            "qlike": 0.29628369137842175,
+            "qlike_skill_vs_trailing12": 0.1518642465054717,
+            "volatility_mae": 0.010932595516787493
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.29434595681515563,
+            "mean_predicted_monthly_volatility": 0.04206795248867078,
+            "qlike": 0.29732641714635893,
+            "qlike_skill_vs_trailing12": 0.14887936063219553,
+            "volatility_mae": 0.012681993947604995
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.03518190618232784,
+            "qlike": 0.34933522158175734,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.009797994022255133
+          }
+        },
+        "n": 12
+      },
+      "1998": {
+        "mean_observed_monthly_volatility": 0.052245074465245435,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.04720015155717161,
+            "mean_predicted_monthly_volatility": 0.04216349149709104,
+            "qlike": 0.6261934632519364,
+            "qlike_skill_vs_trailing12": -0.4395007878499688,
+            "volatility_mae": 0.016488788034879336
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.12476345327706695,
+            "mean_predicted_monthly_volatility": 0.0356039115214956,
+            "qlike": 0.9669739155049791,
+            "qlike_skill_vs_trailing12": -1.222890839471698,
+            "volatility_mae": 0.01946472409790407
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": -0.11267091125963424,
+            "mean_predicted_monthly_volatility": 0.05183624926199786,
+            "qlike": 0.5402315354278001,
+            "qlike_skill_vs_trailing12": -0.24189051228859482,
+            "volatility_mae": 0.019255455212676822
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.2485894801835251,
+            "mean_predicted_monthly_volatility": 0.05183627723126141,
+            "qlike": 0.5733445988270919,
+            "qlike_skill_vs_trailing12": -0.3180112060497,
+            "volatility_mae": 0.021607609735636583
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.04890290843980307,
+            "qlike": 0.4350073779308004,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.017305615719636343
+          }
+        },
+        "n": 12
+      },
+      "1999": {
+        "mean_observed_monthly_volatility": 0.049808997244582015,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.4043361475633481,
+            "mean_predicted_monthly_volatility": 0.051502707476467215,
+            "qlike": 0.059580639122721823,
+            "qlike_skill_vs_trailing12": 0.35968621289362435,
+            "volatility_mae": 0.006059679009907067
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.3582617920405926,
+            "mean_predicted_monthly_volatility": 0.036220057174640274,
+            "qlike": 0.33763762554798826,
+            "qlike_skill_vs_trailing12": -2.6285952931610703,
+            "volatility_mae": 0.01381757586517717
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.23964514104031032,
+            "mean_predicted_monthly_volatility": 0.055190410019554416,
+            "qlike": 0.07657682194833508,
+            "qlike_skill_vs_trailing12": 0.17702804823371499,
+            "volatility_mae": 0.007735078031126427
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.13107603265155332,
+            "mean_predicted_monthly_volatility": 0.051796886862231495,
+            "qlike": 0.1027160807113779,
+            "qlike_skill_vs_trailing12": -0.10389085457030811,
+            "volatility_mae": 0.008839549864588308
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.058648964446270734,
+            "qlike": 0.09304912735359182,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.010172984284876521
+          }
+        },
+        "n": 12
+      },
+      "2000": {
+        "mean_observed_monthly_volatility": 0.06828021636681834,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.01517495307886585,
+            "mean_predicted_monthly_volatility": 0.05627084650956716,
+            "qlike": 0.3675344271468761,
+            "qlike_skill_vs_trailing12": -0.05636430270410986,
+            "volatility_mae": 0.0207834327860108
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.5651821511891415,
+            "mean_predicted_monthly_volatility": 0.03682103944503182,
+            "qlike": 1.597485731184532,
+            "qlike_skill_vs_trailing12": -3.591479806674368,
+            "volatility_mae": 0.032043597941857585
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": -0.19304559393675147,
+            "mean_predicted_monthly_volatility": 0.06189130471888633,
+            "qlike": 0.39896283753525247,
+            "qlike_skill_vs_trailing12": -0.1466955706692421,
+            "volatility_mae": 0.02442493565964143
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.2284854572155648,
+            "mean_predicted_monthly_volatility": 0.061461458548041935,
+            "qlike": 0.7418742120101705,
+            "qlike_skill_vs_trailing12": -1.1322885062712844,
+            "volatility_mae": 0.02515048746149268
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.059130407079624296,
+            "qlike": 0.3479239370414653,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.020472759619391632
+          }
+        },
+        "n": 12
+      },
+      "2001": {
+        "mean_observed_monthly_volatility": 0.06123128130005264,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.06798401221352113,
+            "mean_predicted_monthly_volatility": 0.06352537546232483,
+            "qlike": 0.17952685831823176,
+            "qlike_skill_vs_trailing12": -0.012622655503387037,
+            "volatility_mae": 0.01759123990609761
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.24513568463560387,
+            "mean_predicted_monthly_volatility": 0.03773009587930854,
+            "qlike": 0.9824733355809682,
+            "qlike_skill_vs_trailing12": -4.54164857201334,
+            "volatility_mae": 0.023501185420744097
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": -0.0840268723048041,
+            "mean_predicted_monthly_volatility": 0.06866495146828507,
+            "qlike": 0.22106637123631254,
+            "qlike_skill_vs_trailing12": -0.24692660463650906,
+            "volatility_mae": 0.02046035371202148
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.21987898510681547,
+            "mean_predicted_monthly_volatility": 0.06665504100558749,
+            "qlike": 0.3294902410694988,
+            "qlike_skill_vs_trailing12": -0.8584922946894986,
+            "volatility_mae": 0.0230244804430727
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.0695149224905091,
+            "qlike": 0.17728900034237016,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.018874397152645942
+          }
+        },
+        "n": 12
+      },
+      "2002": {
+        "mean_observed_monthly_volatility": 0.06860196268843291,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.10568140477906418,
+            "mean_predicted_monthly_volatility": 0.06264733754111451,
+            "qlike": 0.3080717976918683,
+            "qlike_skill_vs_trailing12": 0.24961697120434923,
+            "volatility_mae": 0.01957581163040756
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.38319691416418555,
+            "mean_predicted_monthly_volatility": 0.03832505423082686,
+            "qlike": 1.5529722304663698,
+            "qlike_skill_vs_trailing12": -2.7826377314110475,
+            "volatility_mae": 0.030276908457606052
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.08619024451519663,
+            "mean_predicted_monthly_volatility": 0.06496149842068147,
+            "qlike": 0.3253301151534474,
+            "qlike_skill_vs_trailing12": 0.20758018424181968,
+            "volatility_mae": 0.020002455204434215
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.04298414733002098,
+            "mean_predicted_monthly_volatility": 0.06632548862889946,
+            "qlike": 0.29051023639777784,
+            "qlike_skill_vs_trailing12": 0.2923923815241882,
+            "volatility_mae": 0.020948196939316887
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.0613268164730641,
+            "qlike": 0.4105527255677906,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.0218890803959762
+          }
+        },
+        "n": 12
+      },
+      "2003": {
+        "mean_observed_monthly_volatility": 0.04649138579418893,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.12533385658217444,
+            "mean_predicted_monthly_volatility": 0.06612157316492569,
+            "qlike": 0.29240338442416847,
+            "qlike_skill_vs_trailing12": 0.14080486779432844,
+            "volatility_mae": 0.020545614176321707
+          },
+          "global": {
+            "mae_skill_vs_trailing12": 0.5220178604483187,
+            "mean_predicted_monthly_volatility": 0.0391683547307889,
+            "qlike": 0.2551359245941179,
+            "qlike_skill_vs_trailing12": 0.25031119289623194,
+            "volatility_mae": 0.011227640050211032
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.3816671535488594,
+            "mean_predicted_monthly_volatility": 0.06002999837387799,
+            "qlike": 0.16702438379470408,
+            "qlike_skill_vs_trailing12": 0.509217248635238,
+            "volatility_mae": 0.01452443105444774
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.667176040823011,
+            "mean_predicted_monthly_volatility": 0.05092956972699392,
+            "qlike": 0.0803342509513964,
+            "qlike_skill_vs_trailing12": 0.7639466536861207,
+            "volatility_mae": 0.007817923107399547
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.06995099616107966,
+            "qlike": 0.34032244069345335,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.023489664406167742
+          }
+        },
+        "n": 12
+      },
+      "2004": {
+        "mean_observed_monthly_volatility": 0.03251890099275157,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -1.6772608312657162,
+            "mean_predicted_monthly_volatility": 0.05350747885623566,
+            "qlike": 0.40021082025397686,
+            "qlike_skill_vs_trailing12": -2.3853826615581095,
+            "volatility_mae": 0.020988577863484095
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.0027545129921255906,
+            "mean_predicted_monthly_volatility": 0.03918300287394064,
+            "qlike": 0.10966414871557072,
+            "qlike_skill_vs_trailing12": 0.07235114877548343,
+            "volatility_mae": 0.007861165758715148
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.16436337517457933,
+            "mean_predicted_monthly_volatility": 0.035893578651014175,
+            "qlike": 0.0826037343281681,
+            "qlike_skill_vs_trailing12": 0.3012551489810603,
+            "volatility_mae": 0.006551033115976092
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.11520363400703215,
+            "mean_predicted_monthly_volatility": 0.033123608836867706,
+            "qlike": 0.12182849927728769,
+            "qlike_skill_vs_trailing12": -0.030547072353614313,
+            "volatility_mae": 0.006936424424583102
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.03955284340502227,
+            "qlike": 0.11821730665737544,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.007839571557008668
+          }
+        },
+        "n": 12
+      },
+      "2005": {
+        "mean_observed_monthly_volatility": 0.02960282010715426,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -1.3257554170760173,
+            "mean_predicted_monthly_volatility": 0.04345850884979612,
+            "qlike": 0.3001545492630116,
+            "qlike_skill_vs_trailing12": -1.9424944626818714,
+            "volatility_mae": 0.014430079251930223
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.7636004255023205,
+            "mean_predicted_monthly_volatility": 0.0390634671722356,
+            "qlike": 0.20399025754753172,
+            "qlike_skill_vs_trailing12": -0.9997704674091017,
+            "volatility_mae": 0.010942205582705325
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": -0.0005330040582929296,
+            "mean_predicted_monthly_volatility": 0.030976535572469762,
+            "qlike": 0.14345740903180745,
+            "qlike_skill_vs_trailing12": -0.40635093735292727,
+            "volatility_mae": 0.006207776809516979
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.2093064493185175,
+            "mean_predicted_monthly_volatility": 0.030405998879873955,
+            "qlike": 0.19320705419286033,
+            "qlike_skill_vs_trailing12": -0.894059871854243,
+            "volatility_mae": 0.007503105346079553
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.031873328090667376,
+            "qlike": 0.10200683572041198,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.006204469801932993
+          }
+        },
+        "n": 12
+      },
+      "2006": {
+        "mean_observed_monthly_volatility": 0.0294612916388505,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.3357045950521538,
+            "mean_predicted_monthly_volatility": 0.03741264275759822,
+            "qlike": 0.23284478271595999,
+            "qlike_skill_vs_trailing12": -0.1115534662321962,
+            "volatility_mae": 0.011218635488029939
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.4008353157675222,
+            "mean_predicted_monthly_volatility": 0.03893099207131976,
+            "qlike": 0.25362922355934286,
+            "qlike_skill_vs_trailing12": -0.21077414446118992,
+            "volatility_mae": 0.011765670975880356
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": -0.05956476659274945,
+            "mean_predicted_monthly_volatility": 0.030778192274338003,
+            "qlike": 0.2530766490569914,
+            "qlike_skill_vs_trailing12": -0.20813626657414463,
+            "volatility_mae": 0.008899326195624448
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.10405263939847753,
+            "mean_predicted_monthly_volatility": 0.029484390777264072,
+            "qlike": 0.31633213638841245,
+            "qlike_skill_vs_trailing12": -0.510105051879586,
+            "volatility_mae": 0.00927298159105701
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.03068624298040105,
+            "qlike": 0.2094769075798287,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.008399039375612762
+          }
+        },
+        "n": 12
+      },
+      "2007": {
+        "mean_observed_monthly_volatility": 0.042749975708258336,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.07227224429624624,
+            "mean_predicted_monthly_volatility": 0.03533082892433715,
+            "qlike": 0.36245342644928086,
+            "qlike_skill_vs_trailing12": 0.2292250024809499,
+            "volatility_mae": 0.012387913955125627
+          },
+          "global": {
+            "mae_skill_vs_trailing12": 0.151892563408217,
+            "mean_predicted_monthly_volatility": 0.038833446229262415,
+            "qlike": 0.29189844912673274,
+            "qlike_skill_vs_trailing12": 0.37926362400396507,
+            "volatility_mae": 0.011324746817811156
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.015419315950954915,
+            "mean_predicted_monthly_volatility": 0.0354489369746066,
+            "qlike": 0.4031799113947028,
+            "qlike_skill_vs_trailing12": 0.1426181337301593,
+            "volatility_mae": 0.013147068976745233
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.26672201156507436,
+            "mean_predicted_monthly_volatility": 0.036494706104352855,
+            "qlike": 0.5833876108985868,
+            "qlike_skill_vs_trailing12": -0.24060238234752918,
+            "volatility_mae": 0.016914491549763058
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.032752854130187144,
+            "qlike": 0.4702454381835636,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.013352962524796327
+          }
+        },
+        "n": 12
+      },
+      "2008": {
+        "mean_observed_monthly_volatility": 0.0986120079832311,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.15329609948114986,
+            "mean_predicted_monthly_volatility": 0.05016811932196228,
+            "qlike": 2.813971034428435,
+            "qlike_skill_vs_trailing12": -0.5434198956357079,
+            "volatility_mae": 0.04985737493735851
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.37345513494569116,
+            "mean_predicted_monthly_volatility": 0.039277735553085655,
+            "qlike": 6.071389556307793,
+            "qlike_skill_vs_trailing12": -2.330063927706224,
+            "volatility_mae": 0.059374923450651006
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.12829990713464434,
+            "mean_predicted_monthly_volatility": 0.0715176244409176,
+            "qlike": 1.442163720743489,
+            "qlike_skill_vs_trailing12": 0.20899534781045448,
+            "volatility_mae": 0.03768388567556117
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.0593475349579794,
+            "mean_predicted_monthly_volatility": 0.08128065272433939,
+            "qlike": 1.4626325500211497,
+            "qlike_skill_vs_trailing12": 0.19776850931034573,
+            "volatility_mae": 0.040664719716341224
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.058020044754976074,
+            "qlike": 1.8232051060022194,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.04323033344150611
+          }
+        },
+        "n": 12
+      },
+      "2009": {
+        "mean_observed_monthly_volatility": 0.07261877834376741,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.37274992541063867,
+            "mean_predicted_monthly_volatility": 0.09475590884320416,
+            "qlike": 0.3902630824146893,
+            "qlike_skill_vs_trailing12": 0.3829811422047874,
+            "volatility_mae": 0.032959117099829446
+          },
+          "global": {
+            "mae_skill_vs_trailing12": 0.3823577271533266,
+            "mean_predicted_monthly_volatility": 0.04200971917270194,
+            "qlike": 1.646315892040931,
+            "qlike_skill_vs_trailing12": -1.6028799470143462,
+            "volatility_mae": 0.032454271145181283
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.21946087408010495,
+            "mean_predicted_monthly_volatility": 0.11097095999654238,
+            "qlike": 0.40296472856449767,
+            "qlike_skill_vs_trailing12": 0.36289941899647726,
+            "volatility_mae": 0.04101375431327637
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.4386486618015556,
+            "mean_predicted_monthly_volatility": 0.0936303110751562,
+            "qlike": 0.23325913262342715,
+            "qlike_skill_vs_trailing12": 0.6312095863869707,
+            "volatility_mae": 0.02949644047781241
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.12108979248315423,
+            "qlike": 0.6324978199357026,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.05254541758549272
+          }
+        },
+        "n": 12
+      },
+      "2010": {
+        "mean_observed_monthly_volatility": 0.050182300223957456,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.321709183728746,
+            "mean_predicted_monthly_volatility": 0.07892788042656816,
+            "qlike": 0.48705101747254514,
+            "qlike_skill_vs_trailing12": -0.2642051049350329,
+            "volatility_mae": 0.031003840288383145
+          },
+          "global": {
+            "mae_skill_vs_trailing12": 0.404983959222068,
+            "mean_predicted_monthly_volatility": 0.0424528815839908,
+            "qlike": 0.37269423314365463,
+            "qlike_skill_vs_trailing12": 0.03262300001946983,
+            "volatility_mae": 0.013957519947966943
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.14241183264968282,
+            "mean_predicted_monthly_volatility": 0.05684870752181623,
+            "qlike": 0.41338036100810255,
+            "qlike_skill_vs_trailing12": -0.07298320693024452,
+            "volatility_mae": 0.020116775233963408
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.15447244151720052,
+            "mean_predicted_monthly_volatility": 0.050671867381517056,
+            "qlike": 0.894312262366148,
+            "qlike_skill_vs_trailing12": -1.3213053395438474,
+            "volatility_mae": 0.019833864896566588
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.06224647580557144,
+            "qlike": 0.38526265680407495,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.023457384324830455
+          }
+        },
+        "n": 12
+      },
+      "2011": {
+        "mean_observed_monthly_volatility": 0.06126109262772982,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.15690092006700773,
+            "mean_predicted_monthly_volatility": 0.06656844613623904,
+            "qlike": 0.5911538944192076,
+            "qlike_skill_vs_trailing12": 0.447156754388778,
+            "volatility_mae": 0.030378548528168795
+          },
+          "global": {
+            "mae_skill_vs_trailing12": 0.010516796445462107,
+            "mean_predicted_monthly_volatility": 0.04263633766038558,
+            "qlike": 1.214987167598333,
+            "qlike_skill_vs_trailing12": -0.1362480319460171,
+            "volatility_mae": 0.025982400908842244
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.14425202351836286,
+            "mean_predicted_monthly_volatility": 0.054923542377234104,
+            "qlike": 0.892352650711795,
+            "qlike_skill_vs_trailing12": 0.165477652593374,
+            "volatility_mae": 0.02247070685182267
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.02391813980908708,
+            "mean_predicted_monthly_volatility": 0.05508497464716841,
+            "qlike": 0.839975977992574,
+            "qlike_skill_vs_trailing12": 0.21445997346408308,
+            "volatility_mae": 0.02688661263858366
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.05216498042301423,
+            "qlike": 1.0692974891384075,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.0262585568057196
+          }
+        },
+        "n": 12
+      },
+      "2012": {
+        "mean_observed_monthly_volatility": 0.03671419712853181,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.008422068491450219,
+            "mean_predicted_monthly_volatility": 0.06533067048635764,
+            "qlike": 0.546691200147228,
+            "qlike_skill_vs_trailing12": -0.019395035278567008,
+            "volatility_mae": 0.028616473357825828
+          },
+          "global": {
+            "mae_skill_vs_trailing12": 0.6654893249397503,
+            "mean_predicted_monthly_volatility": 0.043101623046772834,
+            "qlike": 0.1489196513816974,
+            "qlike_skill_vs_trailing12": 0.7223149865352976,
+            "volatility_mae": 0.009492568756542565
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.3235083992301575,
+            "mean_predicted_monthly_volatility": 0.053794613210616314,
+            "qlike": 0.3630338580474513,
+            "qlike_skill_vs_trailing12": 0.3230640763342597,
+            "volatility_mae": 0.019197124373907207
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.43728137965668235,
+            "mean_predicted_monthly_volatility": 0.04252746675784743,
+            "qlike": 0.35622667415549825,
+            "qlike_skill_vs_trailing12": 0.33575718253720643,
+            "volatility_mae": 0.01596853431727886
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.06509167343727093,
+            "qlike": 0.5362898397850597,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.02837747630873912
+          }
+        },
+        "n": 12
+      },
+      "2013": {
+        "mean_observed_monthly_volatility": 0.03232787513387688,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -1.6501469268549953,
+            "mean_predicted_monthly_volatility": 0.05223430402827801,
+            "qlike": 0.4134122279544345,
+            "qlike_skill_vs_trailing12": -2.459843257342713,
+            "volatility_mae": 0.019906428894401126
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.5108725612029583,
+            "mean_predicted_monthly_volatility": 0.04301025801477537,
+            "qlike": 0.22016479477776596,
+            "qlike_skill_vs_trailing12": -0.8425572085401711,
+            "volatility_mae": 0.011348833871554638
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.07471154843992733,
+            "mean_predicted_monthly_volatility": 0.035326459105538575,
+            "qlike": 0.10195689596110484,
+            "qlike_skill_vs_trailing12": 0.14672364488091272,
+            "volatility_mae": 0.0069502519204283075
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.04475800671039143,
+            "mean_predicted_monthly_volatility": 0.03407868834270973,
+            "qlike": 0.13656690404483005,
+            "qlike_skill_vs_trailing12": -0.14292720482315446,
+            "volatility_mae": 0.00784764073330739
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.036813258581173576,
+            "qlike": 0.1194887158766696,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.007511443494955449
+          }
+        },
+        "n": 12
+      },
+      "2014": {
+        "mean_observed_monthly_volatility": 0.032496567304412055,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.5068945501745534,
+            "mean_predicted_monthly_volatility": 0.0432282734116581,
+            "qlike": 0.3460964349532735,
+            "qlike_skill_vs_trailing12": -0.31458556066595933,
+            "volatility_mae": 0.013923612023569574
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.3975708525870014,
+            "mean_predicted_monthly_volatility": 0.04287394151445914,
+            "qlike": 0.33501387391601617,
+            "qlike_skill_vs_trailing12": -0.27249042981971217,
+            "volatility_mae": 0.012913467849901416
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.06357271706754297,
+            "mean_predicted_monthly_volatility": 0.03260881738034336,
+            "qlike": 0.3083682615577852,
+            "qlike_skill_vs_trailing12": -0.17128182515447787,
+            "volatility_mae": 0.008652529916128913
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.1898794922248439,
+            "mean_predicted_monthly_volatility": 0.03214525423945714,
+            "qlike": 0.4549689108188298,
+            "qlike_skill_vs_trailing12": -0.7281182361647298,
+            "volatility_mae": 0.01099441258356239
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.033088177956354804,
+            "qlike": 0.2632741795657208,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.009239937872199957
+          }
+        },
+        "n": 12
+      },
+      "2015": {
+        "mean_observed_monthly_volatility": 0.041883259437287663,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.05783416287090004,
+            "mean_predicted_monthly_volatility": 0.04030700389639789,
+            "qlike": 0.2689573002609398,
+            "qlike_skill_vs_trailing12": 0.18558314052268432,
+            "volatility_mae": 0.01164345988999499
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.09902408632892601,
+            "mean_predicted_monthly_volatility": 0.04278739875552745,
+            "qlike": 0.2248382468936774,
+            "qlike_skill_vs_trailing12": 0.3191779559510728,
+            "volatility_mae": 0.012096832676097777
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": -0.2911434054585218,
+            "mean_predicted_monthly_volatility": 0.03972132822130344,
+            "qlike": 0.47098045733892796,
+            "qlike_skill_vs_trailing12": -0.4261536108855173,
+            "volatility_mae": 0.014211468093342847
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.758978050715738,
+            "mean_predicted_monthly_volatility": 0.03961711050569651,
+            "qlike": 1.2800668648816242,
+            "qlike_skill_vs_trailing12": -2.8761098323281598,
+            "volatility_mae": 0.01936087063524886
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.036631642724618434,
+            "qlike": 0.3302452511034138,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.011006885860440846
+          }
+        },
+        "n": 12
+      },
+      "2016": {
+        "mean_observed_monthly_volatility": 0.03657965140679741,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.10498230860625168,
+            "mean_predicted_monthly_volatility": 0.04359848738633142,
+            "qlike": 0.3338275144097446,
+            "qlike_skill_vs_trailing12": 0.10712657913229984,
+            "volatility_mae": 0.014864317472463693
+          },
+          "global": {
+            "mae_skill_vs_trailing12": 0.1379147300128889,
+            "mean_predicted_monthly_volatility": 0.042845756412893,
+            "qlike": 0.322586729341106,
+            "qlike_skill_vs_trailing12": 0.1371918007939119,
+            "volatility_mae": 0.014317380834638217
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.09702523685538,
+            "mean_predicted_monthly_volatility": 0.04332042801573089,
+            "qlike": 0.3287360184359059,
+            "qlike_skill_vs_trailing12": 0.1207445741484795,
+            "volatility_mae": 0.014996467307928895
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.007512478187982952,
+            "mean_predicted_monthly_volatility": 0.038978107985241435,
+            "qlike": 0.5476618315974767,
+            "qlike_skill_vs_trailing12": -0.4648064403011214,
+            "volatility_mae": 0.016483081567582523
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.04642408636153924,
+            "qlike": 0.37387999979362013,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.01660784766088426
+          }
+        },
+        "n": 12
+      },
+      "2017": {
+        "mean_observed_monthly_volatility": 0.020817482400529694,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.6338340111987175,
+            "mean_predicted_monthly_volatility": 0.03677635220677475,
+            "qlike": 0.500769274246338,
+            "qlike_skill_vs_trailing12": -0.8380170758845396,
+            "volatility_mae": 0.015958869806245054
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -1.2392640902939158,
+            "mean_predicted_monthly_volatility": 0.042690037283006,
+            "qlike": 0.7184272918535973,
+            "qlike_skill_vs_trailing12": -1.6369062522770266,
+            "volatility_mae": 0.021872554882476313
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.41196659909790956,
+            "mean_predicted_monthly_volatility": 0.025784538567141867,
+            "qlike": 0.1511323773762675,
+            "qlike_skill_vs_trailing12": 0.44528567421658793,
+            "volatility_mae": 0.005743758804381125
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.4674271066165625,
+            "mean_predicted_monthly_volatility": 0.022500788634331564,
+            "qlike": 0.13562115849027764,
+            "qlike_skill_vs_trailing12": 0.50221785166126,
+            "volatility_mae": 0.00520203485151208
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.03004776161352885,
+            "qlike": 0.27245082802364307,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.009767742437027792
+          }
+        },
+        "n": 12
+      },
+      "2018": {
+        "mean_observed_monthly_volatility": 0.04468094502511236,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.054474706761856395,
+            "mean_predicted_monthly_volatility": 0.03522274757508725,
+            "qlike": 0.8449100148006353,
+            "qlike_skill_vs_trailing12": 0.4366705935798286,
+            "volatility_mae": 0.020791145326371302
+          },
+          "global": {
+            "mae_skill_vs_trailing12": 0.09518987655755784,
+            "mean_predicted_monthly_volatility": 0.04256056914370915,
+            "qlike": 0.5238460932237997,
+            "qlike_skill_vs_trailing12": 0.6507345118628756,
+            "volatility_mae": 0.019895859903269347
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": -0.056184097118611165,
+            "mean_predicted_monthly_volatility": 0.035258009625971226,
+            "qlike": 1.82923010104904,
+            "qlike_skill_vs_trailing12": -0.2196081108980732,
+            "volatility_mae": 0.023224420553987823
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.07133147610992463,
+            "mean_predicted_monthly_volatility": 0.036114888931145075,
+            "qlike": 2.7343727927822403,
+            "qlike_skill_vs_trailing12": -0.8230966319566551,
+            "volatility_mae": 0.02355749610487391
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.032045113825233236,
+            "qlike": 1.4998507181967364,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.021988989057254934
+          }
+        },
+        "n": 12
+      },
+      "2019": {
+        "mean_observed_monthly_volatility": 0.035025439249756325,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.17513514617982806,
+            "mean_predicted_monthly_volatility": 0.042032738893474975,
+            "qlike": 0.35637984663622024,
+            "qlike_skill_vs_trailing12": 0.1633388865654568,
+            "volatility_mae": 0.014851513232174976
+          },
+          "global": {
+            "mae_skill_vs_trailing12": 0.18516187487116942,
+            "mean_predicted_monthly_volatility": 0.04263294028762319,
+            "qlike": 0.3430274077406243,
+            "qlike_skill_vs_trailing12": 0.19468596328402177,
+            "volatility_mae": 0.01467098415138649
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": -0.030137574251758892,
+            "mean_predicted_monthly_volatility": 0.046686758339096336,
+            "qlike": 0.4562007527964447,
+            "qlike_skill_vs_trailing12": -0.0710073349741378,
+            "volatility_mae": 0.01854740415245765
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.004967637034062333,
+            "mean_predicted_monthly_volatility": 0.043196661478759106,
+            "qlike": 0.4849317862511799,
+            "qlike_skill_vs_trailing12": -0.13845822667649932,
+            "volatility_mae": 0.018094224878410017
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.04726067804829135,
+            "qlike": 0.4259548351342158,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.018004783648368102
+          }
+        },
+        "n": 12
+      },
+      "2020": {
+        "mean_observed_monthly_volatility": 0.07691821881085775,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.20149901659096403,
+            "mean_predicted_monthly_volatility": 0.06562625455197534,
+            "qlike": 4.214361740354419,
+            "qlike_skill_vs_trailing12": 0.21519615535726966,
+            "volatility_mae": 0.045616814028885566
+          },
+          "global": {
+            "mae_skill_vs_trailing12": 0.2836192574148638,
+            "mean_predicted_monthly_volatility": 0.043411600726835566,
+            "qlike": 3.7153566818207477,
+            "qlike_skill_vs_trailing12": 0.30812151690928047,
+            "volatility_mae": 0.040925443784508304
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": -0.07469153637731041,
+            "mean_predicted_monthly_volatility": 0.08105765221618615,
+            "qlike": 6.374482335606966,
+            "qlike_skill_vs_trailing12": -0.18706427041803964,
+            "volatility_mae": 0.06139504518083767
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.14506502771301166,
+            "mean_predicted_monthly_volatility": 0.07406077801779858,
+            "qlike": 6.24677494445038,
+            "qlike_skill_vs_trailing12": -0.16328243636016104,
+            "volatility_mae": 0.0654153463871289
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.07661584114148585,
+            "qlike": 5.369955523437759,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.057128062427843164
+          }
+        },
+        "n": 12
+      },
+      "2021": {
+        "mean_observed_monthly_volatility": 0.039507147019300366,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.05752036916514214,
+            "mean_predicted_monthly_volatility": 0.06632818225738361,
+            "qlike": 0.4691426896142337,
+            "qlike_skill_vs_trailing12": -0.02486722615983128,
+            "volatility_mae": 0.026821035238083244
+          },
+          "global": {
+            "mae_skill_vs_trailing12": 0.6895940322401007,
+            "mean_predicted_monthly_volatility": 0.04390132053308205,
+            "qlike": 0.1272236032407726,
+            "qlike_skill_vs_trailing12": 0.7220732535283789,
+            "volatility_mae": 0.00883351653130674
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.5017094516966626,
+            "mean_predicted_monthly_volatility": 0.05049090923760819,
+            "qlike": 0.22317595157799297,
+            "qlike_skill_vs_trailing12": 0.512460231177438,
+            "volatility_mae": 0.014180325937664114
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.6754282249160657,
+            "mean_predicted_monthly_volatility": 0.0381645741022805,
+            "qlike": 0.18700088841835036,
+            "qlike_skill_vs_trailing12": 0.5914865859674174,
+            "volatility_mae": 0.009236646323170025
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.06545586986406332,
+            "qlike": 0.45775948107161873,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.028457946846368345
+          }
+        },
+        "n": 12
+      },
+      "2022": {
+        "mean_observed_monthly_volatility": 0.07193228772185155,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.35724727741830475,
+            "mean_predicted_monthly_volatility": 0.061450705503105475,
+            "qlike": 0.13864789608023534,
+            "qlike_skill_vs_trailing12": 0.7207239646263572,
+            "volatility_mae": 0.013701411040460678
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.30737118453184964,
+            "mean_predicted_monthly_volatility": 0.04406335873501543,
+            "qlike": 0.7912534685987415,
+            "qlike_skill_vs_trailing12": -0.593808041328084,
+            "volatility_mae": 0.027868928986836117
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.12067472137383684,
+            "mean_predicted_monthly_volatility": 0.06294782684707965,
+            "qlike": 0.2179614510514499,
+            "qlike_skill_vs_trailing12": 0.5609640561822227,
+            "volatility_mae": 0.01874437346967962
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.12179123494521571,
+            "mean_predicted_monthly_volatility": 0.0682721602646631,
+            "qlike": 0.1808100260717899,
+            "qlike_skill_vs_trailing12": 0.6357975226114319,
+            "volatility_mae": 0.018720573008263807
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.05339431608493789,
+            "qlike": 0.49645468468047627,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.021316768578478015
+          }
+        },
+        "n": 12
+      },
+      "2023": {
+        "mean_observed_monthly_volatility": 0.03872985578212881,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": 0.054484404422676436,
+            "mean_predicted_monthly_volatility": 0.06137787785077612,
+            "qlike": 0.3661036595344,
+            "qlike_skill_vs_trailing12": 0.04497499096836255,
+            "volatility_mae": 0.022648022068647324
+          },
+          "global": {
+            "mae_skill_vs_trailing12": 0.6487516475993407,
+            "mean_predicted_monthly_volatility": 0.04438351564425507,
+            "qlike": 0.1055433099769698,
+            "qlike_skill_vs_trailing12": 0.724677702779113,
+            "volatility_mae": 0.008413484107460798
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": 0.4174078137394034,
+            "mean_predicted_monthly_volatility": 0.052596534401014756,
+            "qlike": 0.1956388840742221,
+            "qlike_skill_vs_trailing12": 0.48965266485579206,
+            "volatility_mae": 0.013954884248519456
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": 0.5682323218306142,
+            "mean_predicted_monthly_volatility": 0.044196327614058194,
+            "qlike": 0.12219412731299228,
+            "qlike_skill_vs_trailing12": 0.6812420621822868,
+            "volatility_mae": 0.010342170927109972
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.06268294780365029,
+            "qlike": 0.3833445784897471,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.023953092021521485
+          }
+        },
+        "n": 12
+      },
+      "2024": {
+        "mean_observed_monthly_volatility": 0.037211602894459433,
+        "models": {
+          "ewma94": {
+            "mae_skill_vs_trailing12": -0.8694650285428227,
+            "mean_predicted_monthly_volatility": 0.05006559631530864,
+            "qlike": 0.26282226276838966,
+            "qlike_skill_vs_trailing12": -0.5999878590204355,
+            "volatility_mae": 0.014816166356695583
+          },
+          "global": {
+            "mae_skill_vs_trailing12": -0.21628469848965848,
+            "mean_predicted_monthly_volatility": 0.0442930132030862,
+            "qlike": 0.16658145672982785,
+            "qlike_skill_vs_trailing12": -0.014100957423606397,
+            "volatility_mae": 0.00963948303647731
+          },
+          "har_proxy": {
+            "mae_skill_vs_trailing12": -0.09507194449359346,
+            "mean_predicted_monthly_volatility": 0.037062115456815516,
+            "qlike": 0.2498191678337812,
+            "qlike_skill_vs_trailing12": -0.5208286819936485,
+            "volatility_mae": 0.008678829426840782
+          },
+          "last_month": {
+            "mae_skill_vs_trailing12": -0.4045870375894993,
+            "mean_predicted_monthly_volatility": 0.036146962595288025,
+            "qlike": 0.6611313609378362,
+            "qlike_skill_vs_trailing12": -3.0247813848645553,
+            "volatility_mae": 0.011131845150163267
+          },
+          "trailing12": {
+            "mae_skill_vs_trailing12": 0,
+            "mean_predicted_monthly_volatility": 0.0369884779883464,
+            "qlike": 0.164265160692718,
+            "qlike_skill_vs_trailing12": 0,
+            "volatility_mae": 0.007925350905464236
+          }
+        },
+        "n": 12
+      }
+    }
+  },
+  "source": {
+    "bytes": 179691,
+    "csv_member": "F-F_Research_Data_Factors_daily.CSV",
+    "daily_rows": 25901,
+    "first_month": "1926-07",
+    "last_month": "2024-12",
+    "min_daily_rows_since_1950": 15,
+    "months": 1182,
+    "sha256": "2ea687afb4b1b8f75c67bcb8b414a6bc5510e42d36b8671335b0fced2ae3b985",
+    "url": "https://mba.tuck.dartmouth.edu/pages/faculty/Ken.french/ftp_202412/F-F_Research_Data_Factors_daily_CSV.zip"
+  },
+  "status": "RETROSPECTIVE_REVISED_SOURCE_NOT_ASOF_NOT_PROSPECTIVE",
+  "trading_strategies_tested": 0
+}
